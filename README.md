@@ -11,7 +11,7 @@ A utility planning and management tool based off the NC Triangle model.
 To compile WaterPaths, run the following in your command line interface:
 ```
 make gcc
-``'
+```
 
 In your WaterPaths directory, make three new folders by typing in the command
 ```
