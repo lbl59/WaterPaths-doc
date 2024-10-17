@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>API Documentation &#8212; waterpaths-doc 1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="api-documentation">
+<h1>API Documentation<a class="headerlink" href="#api-documentation" title="Permalink to this heading">¶</a></h1>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv49Constants">
+<span id="_CPPv39Constants"></span><span id="_CPPv29Constants"></span><span id="Constants"></span><span class="target" id="namespaceConstants"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Constants</span></span></span><a class="headerlink" href="#_CPPv49Constants" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv49Solutions">
+<span id="_CPPv39Solutions"></span><span id="_CPPv29Solutions"></span><span id="Solutions"></span><span class="target" id="namespaceSolutions"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Solutions</span></span></span><a class="headerlink" href="#_CPPv49Solutions" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4St">
+<span id="_CPPv3St"></span><span id="_CPPv2St"></span><span id="std"></span><span class="target" id="namespacestd"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">std</span></span></span><a class="headerlink" href="#_CPPv4St" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="main_8cpp"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">main.cpp</span></span></dt>
+<dd><div class="docutils container">
+<em>#include “SystemComponents/WaterSources/Base/WaterSource.h”</em></div>
+<div class="docutils container">
+<em>#include &lt;string&gt;</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Catchment.h”</em></div>
+<div class="docutils container">
+<em>#include &lt;vector&gt;</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Constants.h”</em></div>
+<div class="docutils container">
+<em>#include &lt;map&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;cmath&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;cstring&gt;</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Bonds/Base/Bond.h”</em></div>
+<div class="docutils container">
+<em>#include “Utils/QPSolver/QuadProg++.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h”</em></div>
+<div class="docutils container">
+<em>#include &lt;set&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;stdexcept&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;iostream&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;iomanip&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;cstdlib&gt;</em></div>
+<div class="docutils container">
+<em>#include “Utils/Solutions.h”</em></div>
+<div class="docutils container">
+<em>#include “Problem/PaperTestProblem.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Base/Problem.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/MasterDataCollector.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h”</em></div>
+<div class="docutils container">
+<em>#include &lt;memory&gt;</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Base/WaterSource.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/ControlRules.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/EvaporationSeries.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/InfrastructureManager.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h”</em></div>
+<div class="docutils container">
+<em>#include &lt;list&gt;</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h”</em></div>
+<div class="docutils container">
+<em>#include &lt;fstream&gt;</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvFlowControl.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Restrictions.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Intake.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/Base/ContinuityModel.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h”</em></div>
+<div class="docutils container">
+<em>#include “/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h”</em></div>
+<div class="docutils container">
+<em>#include “Problem/Triangle.h”</em></div>
+<div class="docutils container">
+<em>#include “Utils/Utils.h”</em></div>
+<div class="docutils container">
+<em>#include &lt;sys/stat.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;algorithm&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;getopt.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;omp.h&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv419print_decision_varsPd">
+<span id="_CPPv319print_decision_varsPd"></span><span id="_CPPv219print_decision_varsPd"></span><span id="print_decision_vars__doubleP"></span><span class="target" id="main_8cpp_1a53e524e1bfeca8d980ba44566b7e99bc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">print_decision_vars</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">vars</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv419print_decision_varsPd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv44evalPdPdPd">
+<span id="_CPPv34evalPdPdPd"></span><span id="_CPPv24evalPdPdPd"></span><span id="eval__doubleP.doubleP.doubleP"></span><span class="target" id="main_8cpp_1acf7a8c87863d56fdc4585c495bbde106"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">eval</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">vars</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">objs</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">consts</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv44evalPdPdPd" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv44mainiA_Pc">
+<span id="_CPPv34mainiA_Pc"></span><span id="_CPPv24mainiA_Pc"></span><span id="main__i.cPA"></span><span class="target" id="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">main</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">argc</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">argv</span></span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv44mainiA_Pc" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv411problem_ptr">
+<span id="_CPPv311problem_ptr"></span><span id="_CPPv211problem_ptr"></span><span id="problem_ptr__PaperTestProblemP"></span><span class="target" id="main_8cpp_1a2a0c06f842d927e6a159cb3794aaa566"></span><span class="n"><span class="pre">PaperTestProblem</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">problem_ptr</span></span></span><a class="headerlink" href="#_CPPv411problem_ptr" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv48failures">
+<span id="_CPPv38failures"></span><span id="_CPPv28failures"></span><span id="failures__i"></span><span class="target" id="main_8cpp_1a5c7ba59d434acf5dafb8ec5fd28e9a1e"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">failures</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv48failures" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47sol_out">
+<span id="_CPPv37sol_out"></span><span id="_CPPv27sol_out"></span><span id="sol_out__ofstream"></span><span class="target" id="main_8cpp_1ad90a737468fa7019b3a1f7f235b5cefb"></span><span class="n"><span class="pre">ofstream</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sol_out</span></span></span><a class="headerlink" href="#_CPPv47sol_out" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">waterpaths-doc</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Bernardo Trindade, David Gold, Lillian Bei Jia Lau.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.13</a>
+      
+      |
+      <a href="_sources/api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'WaterPaths-doc'
+project = 'waterpaths-doc'
 copyright = '2024, Bernardo Trindade, David Gold, Lillian Bei Jia Lau'
 author = 'Bernardo Trindade, David Gold, Lillian Bei Jia Lau'
 release = '1.0'
@@ -15,14 +15,15 @@ release = '1.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ['breathe']
+breathe_projects = {
+    "waterpaths-doc": "../xml/"  # e.g., ../xml/
+}
+breathe_default_project = "waterpaths-doc"
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-breathe_projects = {
-    "WaterPaths-doc": "xml/"  # e.g., ../xml/
-}
-breathe_default_project = "WaterPaths-doc"
+
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
