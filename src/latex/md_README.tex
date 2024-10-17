@@ -1,0 +1,561 @@
+A utility planning and management tool based off the NC Triangle model.
+
+\subsection*{What is included in this repository}
+
+
+\begin{DoxyItemize}
+\item Source code ({\ttfamily /src}).
+\item NC Triangle water planning and management problem ({\ttfamily src/\+Problem/\+Paper\+Test\+Problem.\+cpp}).
+\item NC Triangle data ({\ttfamily /\+Test\+Files}).
+\item Sample input time series ({\ttfamily /\+Test\+Files/inflows}, {\ttfamily evaporation}, {\ttfamily demand}) with 64 realizations each.
+\end{DoxyItemize}
+
+\subsection*{Compile and Setup Water\+Paths}
+
+To compile Water\+Paths, run the following in your command line interface\+: 
+\begin{DoxyCode}
+make gcc
+\end{DoxyCode}
+
+
+In your Water\+Paths directory, make three new folders by typing in the command 
+\begin{DoxyCode}
+mkdir output error rof\_tables
+\end{DoxyCode}
+
+
+This will create three folders\+:
+\begin{DoxyItemize}
+\item {\ttfamily output} will store the output files of all Water\+Paths simulations, includeing your objectives and utility-\/specific timeseries files.
+\item {\ttfamily error} will store any error messages that may be generated.
+\item {\ttfamily rof\+\_\+tables} will store your R\+OF tables should you choose to generate them.
+\end{DoxyItemize}
+
+Note that Water\+Paths requires a minimum of C++ 14.
+
+\subsection*{Running Water\+Paths}
+
+To print a list of flags to for running Water\+Paths, use 
+\begin{DoxyCode}
+./waterpaths -?
+\end{DoxyCode}
+
+
+\subsubsection*{Running Water\+Paths in simulation mode}
+
+For running a reduced version of the Sedento Valley test case model in full simulation mode, run\+: 
+\begin{DoxyCode}
+./waterpaths -T 4 -t 2344 -r 64 -d /your/current/path/ -s sample\_solutions.csv -m 0 
+\end{DoxyCode}
+ The argument of flag -\/T is the number of threads to be created using Open\+MP. If -\/T flag is not used, the 64 realizations will be distributed across all physical and virtual cores.
+
+There are three options for decreasing runtime for testing purposes that can be used individually or together\+:
+\begin{DoxyItemize}
+\item Decreasing the number of realizations (-\/r flag)
+\item Decreasing the simulation time (-\/t flag) to no less than 53 (weeks)
+\item Generating pre-\/computed risk-\/of-\/failure (R\+OF) tables to be used during runs. Keep in mind that if using a different set of inflow, evaporation, of R\+DM files will warrant new tables. To generate tables, run 
+\begin{DoxyCode}
+./triangleSimulation -T 4 -t 2344 -r 64 -d /your/current/path/ -s sample\_solutions.csv -m 0 -C 1
+\end{DoxyCode}
+ To run a function evaluation using the tables, set value of -\/C flag to -\/1.
+\end{DoxyItemize}
+
+\subsubsection*{Runnning Water\+Paths with Borg MS in optimization mode}
+
+To get a copy of Borg, go to Borg\textquotesingle{}s \href{http://borgmoea.org/}{\tt official website} and request access to the source code (free for non-\/commercial use). You should soon after get an e-\/mail with a link to its repository, where you can download the source code from.
+
+To run Water\+Paths in optimization mode, Water\+Paths needs to be re-\/compiled with Borg and the appropriate flags must be passed when calling it from the command line with a program like mpirun. To do so, follow the following steps\+:
+\begin{DoxyEnumerate}
+\item In order to run Water\+Paths with Borg, the library libborgms.\+a must be provided in the /lib folder. To do so, borgmoea.\+org/ and request a licence, move Borg files to the folder /borg, compile borg by running {\ttfamily make mpi} in /borg, and finally move the file libborgms.\+a to the /lib folder.
+\item After libborgms.\+a is compiled and place in /lib, compile Water\+Paths with {\ttfamily make borg}.
+\item Copy directories cube\+:/scratch/bct52/\+Test\+Files and cube\+:/scratch/bct52/rof\+\_\+tables\+\_\+cac/ to your directory of preference, or Define a {\ttfamily \$\{D\+A\+T\+A\+\_\+\+D\+IR\}} that includes a {\ttfamily rof\+\_\+tables\+\_\+cac/} directory and the {\ttfamily Test\+Files/} directory.
+\item Run Water\+Paths with 
+\begin{DoxyCode}
+mpiexec --hostfile nodefile -np 3 -x OMP\_NUM\_THREADS ./waterpaths -T 5 -t 2344 -r $\{N\_REALIZATIONS\} -d
+       $\{DATA\_DIR\} -C -1 -O $\{DATA\_DIR\}rof\_tables\_cac/ -U TestFiles/rdm\_utilities\_reeval.csv -P
+       TestFiles/rdm\_dmp\_reeval.csv -W TestFiles/rdm\_water\_sources\_reeval.csv -b true -n 202 -o 100 -e 1
+\end{DoxyCode}
+ The Water\+Paths call above is optimized for a node with 16 cores and will spawn 3 M\+PI processes running on 5 threats each. Be sure to change the nodefile (see single\+\_\+run\+\_\+borgms.\+sh) and the value of the -\/T flag for nodes with different number of cores.
+\item The run should take less than 10 minutes if 16 or more cores are being used. The two output files of this run should now be in {\ttfamily \$\{D\+A\+T\+A\+\_\+\+D\+IR\}/output/}. The N\+C\+\_\+output\+\_\+\+M\+M\+\_\+\+S1\+\_\+\+N202.\+set file should consist on a space-\/separated matrix with 20-\/80 rows by 63 columns. The /scratch/bct52/output/\+N\+C\+\_\+runtime\+\_\+\+M\+M\+\_\+\+S1\+\_\+\+N202.runtime file should have between 90 and 200 lines.
+\end{DoxyEnumerate}
+
+\section*{Using the Input\+File\+Parser}
+
+To simulate and optimize a custom water resource system, the Input\+File\+Parser provides front-\/end support.
+
+\subsection*{Structure}
+
+To create your own model in Water\+Paths, generate a plain-\/text file (.wp extension), following the format of the files in the {\ttfamily Tests} directory and described in detail below.
+
+\subsubsection*{Blocks}
+
+Water\+Paths looks for {\itshape {\bfseries blocks}} of information, which are delimited by {\itshape tags} and describe information on {\itshape parameters}. A {\itshape {\bfseries block}} follows the following form\+:
+
+
+\begin{DoxyCode}
+[TAG]
+parameter value
+parameter value
+...
+\end{DoxyCode}
+
+
+where a \mbox{[}T\+AG\mbox{]} is an upper-\/case keyword (defined below) enclosed in brackets and each {\itshape parameter} with a corresponding {\itshape value}.
+
+\subsubsection*{Values}
+
+The rest of this documentation will refer to value types as follows\+:
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-2}
+\endhead
+int  &Standard integer (e.\+g. 1)   \\\cline{1-2}
+double  &Standard double-\/precision value (e.\+g. 1.\+05)   \\\cline{1-2}
+string  &Standard string   \\\cline{1-2}
+csv  &Path to comma-\/separated values file   \\\cline{1-2}
+ref  &Path to .reference file   \\\cline{1-2}
+dir  &Path to a directory   \\\cline{1-2}
+Utility  &Name of a declared utility.   \\\cline{1-2}
+Source  &Name of a declared water source (reservoir, allocated reservoir, reuse)   \\\cline{1-2}
+type,type  &Two values of type separated by commas   \\\cline{1-2}
+type,type,...  &One or more values of type separated by commas   \\\cline{1-2}
+type type  &Two values of type separated by spaces   \\\cline{1-2}
+type type ...  &One or more values of type separated by spaces   \\\cline{1-2}
+\end{longtabu}
+
+
+Additionally, the type {\ttfamily bond info} can be represented as 
+\begin{DoxyCode}
+level int int int int deferred
+\end{DoxyCode}
+ which corresponds to 
+\begin{DoxyCode}
+type cost\_of\_capital n\_payments coupon\_rate pay\_on\_weeks begin\_repayment\_at\_issuance
+\end{DoxyCode}
+ Currently, {\ttfamily level} is the only bond type available and {\ttfamily deferred} is the only repayment setting.
+
+\subsubsection*{Tags}
+
+The currently implemented input file parser \mbox{[}T\+AG\mbox{]}s are described below.
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Tag  }&\textbf{ Description   }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Tag  }&\textbf{ Description   }\\\cline{1-2}
+\endhead
+R\+UN P\+A\+R\+A\+M\+E\+T\+E\+RS  &Information on the type and size of a Water\+Paths simulation.   \\\cline{1-2}
+D\+A\+TA TO L\+O\+AD  &Location of price, demand, inflow, and evaporation files.   \\\cline{1-2}
+R\+E\+S\+E\+R\+V\+O\+IR  &Defines an existing or potential reservoir.   \\\cline{1-2}
+A\+L\+L\+O\+C\+A\+T\+ED R\+E\+S\+E\+R\+V\+O\+IR  &Defines an existing or potential reservoir allocated between utilities.   \\\cline{1-2}
+R\+E\+S\+E\+R\+V\+O\+IR E\+X\+P\+A\+N\+S\+I\+ON  &Defines an infrastructure expansion for a reservoir.   \\\cline{1-2}
+W\+A\+T\+ER R\+E\+U\+SE  &Defines a water reuse development project.   \\\cline{1-2}
+U\+T\+I\+L\+I\+TY  &Defines a basic water utility.   \\\cline{1-2}
+W\+A\+T\+ER S\+O\+U\+R\+C\+ES G\+R\+A\+PH  &Specify the connections between water sources.   \\\cline{1-2}
+WS TO U\+T\+I\+L\+I\+TY M\+A\+T\+R\+IX  &Set up the water source -\/ utility connectivity matrix.   \\\cline{1-2}
+U\+T\+I\+L\+I\+T\+I\+ES G\+R\+A\+PH  &Specify the connections between utilities.   \\\cline{1-2}
+T\+A\+B\+LE S\+T\+O\+R\+A\+GE S\+H\+I\+FT  &Defines the impact of all infrastructure expansion projects on pre-\/calculated R\+OF tables.   \\\cline{1-2}
+R\+E\+S\+T\+R\+I\+C\+T\+I\+O\+NS P\+O\+L\+I\+CY  &Defines a short-\/term R\+OF water use restrictions policy for a utility.   \\\cline{1-2}
+T\+R\+A\+N\+S\+F\+E\+RS P\+O\+L\+I\+CY  &Defines a short-\/term R\+OF water transfer policy between mutiple utilities.   \\\cline{1-2}
+I\+N\+S\+U\+R\+A\+N\+CE P\+O\+L\+I\+CY  &Defines a short-\/term R\+OF insurance policy for a utility.   \\\cline{1-2}
+F\+I\+X\+ED F\+L\+OW R\+E\+S\+E\+R\+V\+O\+IR C\+O\+N\+T\+R\+OL R\+U\+LE  &A reservoir operating policy that dictates a fixed release.   \\\cline{1-2}
+I\+N\+F\+L\+O\+W-\/\+B\+A\+S\+ED R\+E\+S\+E\+R\+V\+O\+IR C\+O\+N\+T\+R\+OL R\+U\+LE  &A reservoir operating policy where release is dependent on inflow.   \\\cline{1-2}
+S\+E\+A\+S\+O\+N\+AL R\+E\+S\+E\+R\+V\+O\+IR C\+O\+N\+T\+R\+OL R\+U\+LE  &A reservoir operating policy that varies seasonally.   \\\cline{1-2}
+D\+E\+C\+I\+S\+I\+ON V\+A\+R\+I\+A\+B\+LE B\+O\+U\+N\+DS  &Declaration of decision variables and their bounds for optimization runs.   \\\cline{1-2}
+O\+B\+J\+E\+C\+T\+I\+V\+ES E\+P\+S\+I\+L\+O\+NS  &Epsilon (resolution) for objective values in optimization runs.   \\\cline{1-2}
+\end{longtabu}
+
+
+\subsubsection*{\mbox{[}R\+UN P\+A\+R\+A\+M\+E\+T\+E\+RS\mbox{]}}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endhead
+n\+\_\+realizations  &int  &Number of realizations   \\\cline{1-3}
+n\+\_\+weeks  &int  &Number of weeks   \\\cline{1-3}
+rdm\+\_\+utilities  &csv  &Input file that contains sampled deeply-\/uncertain parameters that effect water utilities. ~\newline
+ Each column represents a different factor, and each row represents a state of the world.   \\\cline{1-3}
+rdm\+\_\+water\+\_\+sources  &csv  &Same as rdm\+\_\+utilities, but for water sources.   \\\cline{1-3}
+rdm\+\_\+dmps  &csv  &Same as rdm\+\_\+utilities, but for drought management policies.   \\\cline{1-3}
+rdm\+\_\+no  &int  &R\+DM sample to run (only use is running one S\+OW)   \\\cline{1-3}
+n\+\_\+threads  &int  &Number of threads (should not exceed twice the number of core available)   \\\cline{1-3}
+rof\+\_\+tables\+\_\+dir  &dir  &Directory to export or import risk-\/of-\/failure metric table   \\\cline{1-3}
+use\+\_\+rof\+\_\+tables  &\char`\"{}generate\char`\"{}~\newline
+\char`\"{}import\char`\"{}~\newline
+\char`\"{}no\char`\"{}  &Generate R\+OF table~\newline
+Import R\+OF table for speedup~\newline
+Neither   \\\cline{1-3}
+print\+\_\+time\+\_\+series  &bool  &If present, print the time series data   \\\cline{1-3}
+realizations\+\_\+to\+\_\+run  &int,int  &Range of realizations to run.   \\\cline{1-3}
+solutions\+\_\+file  &ref  &Location of solutions to run   \\\cline{1-3}
+n\+\_\+bootstrap\+\_\+samples  &int  &Number of bootstrap samples   \\\cline{1-3}
+bootstrap\+\_\+sample\+\_\+size  &int  &Size of bootstrap samples   \\\cline{1-3}
+solutions\+\_\+to\+\_\+run  &int  &Number of solutions to run   \\\cline{1-3}
+solutions\+\_\+to\+\_\+run\+\_\+range  &int,int  &Range of solutions to run, (e.\+g. \char`\"{}3,20\char`\"{} would run solutions\+: 3, 4, ..., 20)   \\\cline{1-3}
+seed  &int  &Seed for random number generation   \\\cline{1-3}
+optimize  &int int  &If present, optimize with Borg for max evaluations and output frequency, respectively   \\\cline{1-3}
+\end{longtabu}
+
+
+\subsubsection*{\mbox{[}D\+A\+TA TO L\+O\+AD\mbox{]}}
+
+To load {\itshape csv} data needed for a Water\+Paths simulation, use 
+\begin{DoxyCode}
+filename csv
+\end{DoxyCode}
+ where {\ttfamily filename} is a unique name used to reference the csv file at {\ttfamily csv} in the remainder of the input file. ~\newline
+ To load only the first {\ttfamily n\+\_\+realizations} lines of the file, use {\ttfamily $\ast$} before the filename\+: 
+\begin{DoxyCode}
+*filename csv
+\end{DoxyCode}
+ Without {\ttfamily $\ast$}, the entire file will be loaded.
+
+\subsubsection*{\mbox{[}R\+E\+S\+E\+R\+V\+O\+IR\mbox{]}}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endhead
+name  &string  &Name of this reservoir (to be referred thereafter)   \\\cline{1-3}
+capacity  &int  &Reservoir capacity.   \\\cline{1-3}
+treatment\+\_\+capacity  &double  &Reservoir treatment capacity.   \\\cline{1-3}
+streamflow\+\_\+files  &filename filename ...  &Loaded files describing the streamflow leaving this reservoir.   \\\cline{1-3}
+evaporation\+\_\+file  &filename  &Loaded file with evaporation realizations of this reservoir.   \\\cline{1-3}
+storage\+\_\+area  &int  &Reservoir area.   \\\cline{1-3}
+storage\+\_\+area\+\_\+curve  &int,int int,int ...  &Pair-\/wise relationship defining reservoir storage to reservoir area.   \\\cline{1-3}
+bond  &bond info  &Bond for an infrastructure expansion.   \\\cline{1-3}
+ctime  &int int  &Construction time range\+: low-\/high, respectively, in years.   \\\cline{1-3}
+ptime  &int  &Permitting time for infrastructure expansion, in years.   \\\cline{1-3}
+utilities\+\_\+with\+\_\+allocations  &int  &Permitting time for infrastructure expansion, in years.   \\\cline{1-3}
+\end{longtabu}
+
+
+\subsubsection*{\mbox{[}A\+L\+L\+O\+C\+A\+T\+ED R\+E\+S\+E\+R\+V\+O\+IR\mbox{]}}
+
+Same parameters as \mbox{[}R\+E\+S\+E\+R\+V\+O\+IR\mbox{]}, in addition to\+:
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endhead
+utilities\+\_\+with\+\_\+allocations  &Utility,Utility,...  &Comma separated list of utilities with allocations on this reservoir   \\\cline{1-3}
+allocated\+\_\+fractions  &double,double,...  &Comma separated list of fractions ($<$ 1) corresponding to each ~\newline
+ utility\textquotesingle{}s allocation, in the order of utilities\+\_\+with\+\_\+allocations   \\\cline{1-3}
+allocated\+\_\+treatment\+\_\+fractions  &double,double,..  &Comma seperated list of fractions corresponding to each ~\newline
+ utility\textquotesingle{}s treatment allocations.   \\\cline{1-3}
+\end{longtabu}
+
+
+\subsubsection*{\mbox{[}R\+E\+S\+E\+R\+V\+O\+IR E\+X\+P\+A\+N\+S\+I\+ON\mbox{]}}
+
+Define a \mbox{[}R\+E\+S\+E\+R\+V\+O\+IR\mbox{]} or \mbox{[}A\+L\+L\+O\+C\+A\+T\+ED R\+E\+S\+E\+R\+V\+O\+IR\mbox{]} with parameters representing values after expansion. ~\newline
+ {\ttfamily ctime} and {\ttfamily ptime} represent the expansion duration.~\newline
+ 
+\begin{DoxyCode}
+parent\_reservoir Reservoir
+\end{DoxyCode}
+ is the reservoir the expansion is performed on.
+
+\subsubsection*{\mbox{[}W\+A\+T\+ER R\+E\+U\+SE\mbox{]}}
+
+Same parameters as \mbox{[}R\+E\+S\+E\+R\+V\+O\+IR\mbox{]}. Must include, 
+\begin{DoxyCode}
+treatment\_capacity (double)
+\end{DoxyCode}
+
+
+\subsubsection*{\mbox{[}U\+T\+I\+L\+I\+TY\mbox{]}}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endhead
+name  &string  &Name of this utility   \\\cline{1-3}
+demands  &filename  &File with demand data   \\\cline{1-3}
+number\+\_\+of\+\_\+week\+\_\+demands  &int  &Number of demand weeks   \\\cline{1-3}
+percent\+\_\+contingency\+\_\+fund\+\_\+contribution  &double  &Percent of anual volumentric revenue that is contributed to a reserve fund.   \\\cline{1-3}
+types\+Monthly\+Demand\+Fraction  &filename  &Types of water uses   \\\cline{1-3}
+types\+Monthly\+Water\+Price  &filename  &Corresponding water price for each category.   \\\cline{1-3}
+wwtp\+\_\+discharge\+\_\+rule  &filename Source,Source,...  &Rule dictating wastewater return flow.   \\\cline{1-3}
+demand\+\_\+buffer  &double  &Demand buffer for this utility   \\\cline{1-3}
+rof\+\_\+intra\+\_\+construction\+\_\+order  &Source,Source,...  &Order of precedence for infrastructure expansion   \\\cline{1-3}
+infra\+\_\+construction\+\_\+triggers  &double,double,...  &R\+OF triggers values for infrastructure expansions, in order as above   \\\cline{1-3}
+infra\+\_\+discount\+\_\+rate  &double  &Discount rate for infrastructure expansions.   \\\cline{1-3}
+water\+\_\+source\+\_\+to\+\_\+wtp  &Source Source ...  &Water source to water treatment plant connection.   \\\cline{1-3}
+utility\+\_\+owned\+\_\+wtp\+\_\+capacities  &double,double,...  &Capacities of each water treatment plant connected to the utility.   \\\cline{1-3}
+demand\+\_\+infra\+\_\+construction\+\_\+order  &Source,Source,...  &Order of infrastructure construction, triggered by demand.   \\\cline{1-3}
+infra\+\_\+if\+\_\+built\+\_\+remove  &Source Source ...  &List of mutually exclusive infrastructure options that must be removed if another option is triggered.   \\\cline{1-3}
+construction\+\_\+pre\+\_\+requesites  &Source Source ...  &List of infrastructure options that must be triggered prior to this   \\\cline{1-3}
+\end{longtabu}
+
+
+\subsubsection*{\mbox{[}W\+A\+T\+ER S\+O\+U\+R\+C\+ES G\+R\+A\+PH\mbox{]}}
+
+This tag creates the network of a water resources system as a graph, with edges corresponding to connections between reservoirs, allocated reservoirs, and water reuses. ~\newline
+ There are no parameters in this block; instead, each line represents a directed {\itshape edge} in the water source graph. Each entry must be the {\ttfamily name} of a declared water source.~\newline
+ If a connection exists between {\ttfamily source1} and {\ttfamily source2}, include a line in this block as such\+: 
+\begin{DoxyCode}
+source1,source2
+\end{DoxyCode}
+ For example, this Input\+File\+Parser graph and its visual map are shown. 
+\begin{DoxyCode}
+source1,source2
+source2,source3
+source4,source5
+source5,source3
+\end{DoxyCode}
+ 
+
+\subsubsection*{\mbox{[}U\+T\+I\+L\+I\+T\+I\+ES G\+R\+A\+PH\mbox{]}}
+
+This tag is similar to \mbox{[}W\+A\+T\+ER S\+O\+U\+R\+C\+ES G\+R\+A\+PH\mbox{]}, except for utilites. An {\itshape edge} between water sources represents a potential water exchange between two utilites. The same format as \mbox{[}W\+A\+T\+ER S\+O\+U\+R\+C\+ES G\+R\+A\+PH\mbox{]} is followed.
+
+\subsubsection*{\mbox{[}WS TO U\+T\+I\+L\+I\+TY M\+A\+T\+R\+IX\mbox{]}}
+
+Water\+Paths represents the connections between utilities and water sources as 
+\begin{DoxyCode}
+utility source1,source2,...
+\end{DoxyCode}
+ where {\ttfamily utility} is a utillity name and the subsequent {\ttfamily sources} are water source names. Here, {\ttfamily utility} uses {\ttfamily source1}, {\ttfamily source2}, and all following sources to reach its demand. Each declared utility must have its own line in this block.
+
+\subsubsection*{\mbox{[}T\+A\+B\+LE S\+T\+O\+R\+A\+GE S\+H\+I\+FT\mbox{]}}
+
+Here, we define a matrix for respective table shortage shifts for potential reservoir expansions.~\newline
+ Entries should be in the following form\+: 
+\begin{DoxyCode}
+Utility Reservoir shift
+\end{DoxyCode}
+ where {\ttfamily shift} is the integer representing associated reservoir table shift.
+
+\subsubsection*{\mbox{[}R\+E\+S\+T\+R\+I\+C\+T\+I\+O\+NS P\+O\+L\+I\+CY\mbox{]}}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endhead
+apply\+\_\+to\+\_\+utilities  &Utility,Utility,...  &Which utility (or utilities) this restriction policy is to be applied to   \\\cline{1-3}
+stage\+\_\+multipliers  &double,double,...  &Demand reductions (percentage of unrestricted demand) associated with each restriction stage.   \\\cline{1-3}
+stage\+\_\+triggers  &double,double,...  &Short term R\+OF restrictions triggers   \\\cline{1-3}
+types\+Monthly\+Demand\+Fraction  &filename  &Types of water uses   \\\cline{1-3}
+types\+Monthly\+Water\+Price  &filename  &Types of water prices   \\\cline{1-3}
+price\+Multipliers  &filename  &Multipliers on water price   \\\cline{1-3}
+\end{longtabu}
+
+
+\subsubsection*{\mbox{[}T\+R\+A\+N\+S\+F\+E\+RS P\+O\+L\+I\+CY\mbox{]}}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endhead
+apply\+\_\+to\+\_\+utilities  &Utility,Utility,...  &The utility (or utilities) that are the buyers for this transfer   \\\cline{1-3}
+source\+\_\+utility\+\_\+id  &Utility  &Which utility is the source for this transfer policy   \\\cline{1-3}
+transfer\+\_\+water\+\_\+source\+\_\+id  &Source  &Which source the transfers utilize   \\\cline{1-3}
+source\+\_\+treatment\+\_\+buffer  &double  &Buffer for source treatment   \\\cline{1-3}
+pipe\+\_\+transfer\+\_\+capacities  &double,double,...  &Capacity of inter-\/connections between utilities.   \\\cline{1-3}
+buyers\+\_\+transfer\+\_\+triggers  &double,double,...  &Short term R\+OF triggers for transfers   \\\cline{1-3}
+\end{longtabu}
+
+
+\subsubsection*{\mbox{[}I\+N\+S\+U\+R\+A\+N\+CE P\+O\+L\+I\+CY\mbox{]}}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endhead
+apply\+\_\+to\+\_\+utilities  &Utility,Utility,...  &The utility (or utilities) that are the buyers for this transfer   \\\cline{1-3}
+insurance\+\_\+triggers  &double,double,...  &Short term R\+OF triggers for this drought insurance policy   \\\cline{1-3}
+insurance\+\_\+premium  &double  &The premium on this insurance policy   \\\cline{1-3}
+fixed\+\_\+payouts  &double,double,...  &Amount of fixed payouts from insurance   \\\cline{1-3}
+\end{longtabu}
+
+
+\subsubsection*{\mbox{[}F\+I\+X\+ED F\+L\+OW R\+E\+S\+E\+R\+V\+O\+IR C\+O\+N\+T\+R\+OL R\+U\+LE\mbox{]}}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endhead
+water\+\_\+source\+\_\+id  &Source  &The source of this fixed flow control rule   \\\cline{1-3}
+release  &int  &Volume of water released.   \\\cline{1-3}
+aux\+\_\+water\+\_\+sources\+\_\+id  &Source,Source,...  &Auxiliary sources for this control rule   \\\cline{1-3}
+aux\+\_\+utilities\+\_\+id  &Utility,Utility,...  &Auxiliary utilities for this control rule   \\\cline{1-3}
+\end{longtabu}
+
+
+\subsubsection*{\mbox{[}I\+N\+F\+L\+O\+W-\/\+B\+A\+S\+ED R\+E\+S\+E\+R\+V\+O\+IR C\+O\+N\+T\+R\+OL R\+U\+LE\mbox{]}}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endhead
+water\+\_\+source\+\_\+id  &Source  &The source of this inflow-\/based control rule   \\\cline{1-3}
+inflows  &double,double,...  &Vector of reservoir inflows that define releases   \\\cline{1-3}
+releases  &double,double,...  &Vector of released defined by inflows   \\\cline{1-3}
+aux\+\_\+water\+\_\+sources\+\_\+id  &Source,Source,...  &Auxiliary sources for this control rule   \\\cline{1-3}
+aux\+\_\+utilities\+\_\+id  &Utility,Utility,...  &Auxiliary utilities for this control rule   \\\cline{1-3}
+\end{longtabu}
+
+
+\subsubsection*{\mbox{[}S\+E\+A\+S\+O\+N\+AL R\+E\+S\+E\+R\+V\+O\+IR C\+O\+N\+T\+R\+OL R\+U\+LE\mbox{]}}
+
+\tabulinesep=1mm
+\begin{longtabu} spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\rowcolor{\tableheadbgcolor}\textbf{ Parameter  }&\textbf{ Value Type  }&\textbf{ Description   }\\\cline{1-3}
+\endhead
+water\+\_\+source\+\_\+id  &Source  &The source of this fixed flow control rule   \\\cline{1-3}
+week\+\_\+thresholds  &int,int,int,int  &Weeks that define each season   \\\cline{1-3}
+releases  &double,double,double,double  &Releases for each season   \\\cline{1-3}
+aux\+\_\+water\+\_\+sources\+\_\+id  &Source,Source,...  &Auxiliary sources for this control rule   \\\cline{1-3}
+aux\+\_\+utilities\+\_\+id  &Utility,Utility,...  &Auxiliary utilities for this control rule   \\\cline{1-3}
+\end{longtabu}
+
+
+\subsubsection*{\mbox{[}D\+E\+C\+I\+S\+ON V\+A\+R\+I\+A\+B\+LE B\+O\+U\+N\+DS\mbox{]}}
+
+If this Water\+Paths simulation is an optimization, this block tells the Borg\+M\+O\+EA which variables to optimize within the Water\+Paths framework. Each line should follow this format\+: 
+\begin{DoxyCode}
+index lowerbound,upperbound
+\end{DoxyCode}
+ The {\ttfamily lowerbound} and {\ttfamily upperbound} numeric values indicate the lowest and highest values this decision variable can take. ~\newline
+ The {\ttfamily index} value is an integer, and each value in {\itshape 0..n-\/1}, where {\itshape n} is the number of decision varaibles, must be taken. ~\newline
+
+
+A decision variable\textquotesingle{}s {\ttfamily index} describes its relative ordered position within the $\ast$.wp$\ast$ file. To declare a specific decision variable instance in another block, use {\ttfamily \%\%\%} for optimized {\itshape values} and {\ttfamily @} preceding an alias for optimized orderings. ~\newline
+
+
+For example, consider a simple optimization case with 4 decision variables.~\newline
+
+
+
+\begin{DoxyEnumerate}
+\item Declare the decision varibles in a \mbox{[}D\+E\+C\+I\+S\+I\+ON V\+A\+R\+I\+A\+B\+LE B\+O\+U\+N\+DS\mbox{]} block. 
+\begin{DoxyCode}
+[DECISION VARIABLE BOUNDS]
+0 0.001,0.75    # utility1 transfer ROF trigger
+1 0.0,1,0       # source1 construction rank
+2 0.0,1.0       # source2 construction rank
+3 0.0,1.0       # source3 construction rank
+\end{DoxyCode}
+
+\item Declare decision variable {\ttfamily 0} (utility1 transfer R\+OF trigger) within a \mbox{[}T\+R\+A\+N\+S\+F\+E\+RS P\+O\+L\+I\+CY\mbox{]} block with a {\ttfamily \%\%\%} 
+\begin{DoxyCode}
+[TRANSFERS POLICY]
+apply\_to\_utilities utility1
+source\_utility\_id RandomUtility
+...
+buyers\_transfer\_triggers %%%
+\end{DoxyCode}
+
+\item Declare decison variables {\ttfamily 1} {\ttfamily 2} and {\ttfamily 3} (construction ranks) within a \mbox{[}U\+T\+I\+L\+I\+TY\mbox{]} block with a series of {\ttfamily @} 
+\begin{DoxyCode}
+[UTILITY]
+name RandomUtlity
+...
+rof\_infra\_construction\_order @source1,@source2,@source3
+...
+\end{DoxyCode}
+
+\end{DoxyEnumerate}
+
+This input file configuration will optimize a short-\/term transfer R\+OF for {\ttfamily utility1} and a long-\/term infrastructure expansion ordering for each {\ttfamily source}. Ensure that the intended ordering of decision varaibles (as declared within the \mbox{[}D\+E\+C\+I\+S\+I\+ON V\+A\+R\+I\+A\+B\+L\+ES B\+O\+U\+N\+DS\mbox{]} block) corresponds to the order of appearence in the remainder of the input file. ~\newline
+
+
+For a more advanced optimization problem formulation, refer to {\ttfamily Tests/test\+\_\+input\+\_\+file\+\_\+borg.\+wp}.
+
+\subsubsection*{\mbox{[}O\+B\+J\+E\+C\+T\+I\+V\+ES E\+P\+S\+I\+L\+O\+NS\mbox{]}}
+
+This tag declares the epsilon values for the five objectives\+:
+\begin{DoxyEnumerate}
+\item Reliability
+\item Restriction Frequency
+\item Infrastructure N\+PV
+\item Financial Cost
+\item Worse First Percentile Cost
+\end{DoxyEnumerate}
+
+This block has one line, in the form\+: 
+\begin{DoxyCode}
+ep1,ep2,ep3,ep4,ep5
+\end{DoxyCode}
+ where each epsilon corresponds to the respective numbered objective.~\newline
+
+
+To use the recommended epsilon values, include this block\+: 
+\begin{DoxyCode}
+[OBJECTIVES EPSILONS]
+0.001,0.02,10.0,0.025,0.01
+\end{DoxyCode}
+ 
