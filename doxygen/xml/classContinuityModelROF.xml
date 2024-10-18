@@ -1,0 +1,883 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classContinuityModelROF" kind="class" language="C++" prot="public">
+    <compoundname>ContinuityModelROF</compoundname>
+    <basecompoundref refid="classContinuityModel" prot="public" virt="non-virtual">ContinuityModel</basecompoundref>
+    <derivedcompoundref refid="classInsuranceStorageToROF" prot="public" virt="non-virtual">InsuranceStorageToROF</derivedcompoundref>
+    <includes refid="ContinuityModelROF_8h" local="no">ContinuityModelROF.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classContinuityModelROF_1ab4b11938d295e5e74e9cf58725d36a34" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt; &gt;</type>
+        <definition>vector&lt;Matrix2D&lt;double&gt; &gt; ContinuityModelROF::ut_storage_to_rof_rof_realization</definition>
+        <argsstring></argsstring>
+        <name>ut_storage_to_rof_rof_realization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="17" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classContinuityModelROF_1a7ab0c5f22272833f309183937fa9d0d8" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; ContinuityModelROF::online_downstream_sources</definition>
+        <argsstring></argsstring>
+        <name>online_downstream_sources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="18" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classContinuityModelROF_1ad7ee977c92769377cf6237d2fbf527e3" prot="private" static="no" mutable="no">
+        <type>bool *</type>
+        <definition>bool* ContinuityModelROF::storage_wout_downstream</definition>
+        <argsstring></argsstring>
+        <name>storage_wout_downstream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="19" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classContinuityModelROF_1aefffec319cad3a89db2d4c7335ebf2a2" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int ContinuityModelROF::n_topo_sources</definition>
+        <argsstring></argsstring>
+        <name>n_topo_sources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="20" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classContinuityModelROF_1a384967647c98d9768400de07e2bc7dab" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int ContinuityModelROF::use_precomputed_rof_tables</definition>
+        <argsstring></argsstring>
+        <name>use_precomputed_rof_tables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="21" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classContinuityModelROF_1ad0a8c47eca4ca66b58a2636ab907a4f2" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ContinuityModelROF::beginning_tier</definition>
+        <argsstring></argsstring>
+        <name>beginning_tier</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="24" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classContinuityModelROF_1a77048d247b8d1f70fbdd31559b4d3337" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> * &gt;</type>
+        <definition>vector&lt;WaterSource *&gt; ContinuityModelROF::realization_water_sources</definition>
+        <argsstring></argsstring>
+        <name>realization_water_sources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="25" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classContinuityModelROF_1a75c6823d8dd37f274ee91ce158088dc4" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> * &gt;</type>
+        <definition>vector&lt;Utility *&gt; ContinuityModelROF::realization_utilities</definition>
+        <argsstring></argsstring>
+        <name>realization_utilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="26" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classContinuityModelROF_1ada25d241caf860255ad00097f5e7adb6" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt; &gt;</type>
+        <definition>vector&lt;Matrix2D&lt;double&gt; &gt; ContinuityModelROF::ut_storage_to_rof_table</definition>
+        <argsstring></argsstring>
+        <name>ut_storage_to_rof_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="27" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classContinuityModelROF_1a1a90c8816944aab36f395e89f7b84c06" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; ContinuityModelROF::table_storage_shift</definition>
+        <argsstring></argsstring>
+        <name>table_storage_shift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="29" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classContinuityModelROF_1a6a429c37f019777325ea4e5b9ad26cae" prot="protected" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; ContinuityModelROF::utility_base_storage_capacity</definition>
+        <argsstring></argsstring>
+        <name>utility_base_storage_capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="30" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classContinuityModelROF_1a017041335a639ba56cc3e26dea07b514" prot="protected" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; ContinuityModelROF::utility_base_delta_capacity_table</definition>
+        <argsstring></argsstring>
+        <name>utility_base_delta_capacity_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="31" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classContinuityModelROF_1adcaf978b52ba016474952a42856ba373" prot="protected" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; ContinuityModelROF::current_and_base_storage_capacity_ratio</definition>
+        <argsstring></argsstring>
+        <name>current_and_base_storage_capacity_ratio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="32" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classContinuityModelROF_1a443efa8d5a8bcbb1fea1a0bc929c77cd" prot="protected" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; ContinuityModelROF::current_storage_table_shift</definition>
+        <argsstring></argsstring>
+        <name>current_storage_table_shift</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="33" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classContinuityModelROF_1a23bd422349e4e2246bd44b2007564fd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ContinuityModelROF::ContinuityModelROF</definition>
+        <argsstring>(vector&lt; WaterSource *&gt; water_sources, const Graph &amp;water_sources_graph, const vector&lt; vector&lt; int &gt;&gt; &amp;water_sources_to_utilities, vector&lt; Utility *&gt; utilities, vector&lt; MinEnvFlowControl *&gt; min_env_flow_controls, vector&lt; double &gt; &amp;utilities_rdm, vector&lt; double &gt; &amp;water_sources_rdm, unsigned long total_weeks_simulation, const int use_precomputed_rof_tables, const unsigned long realization_id)</argsstring>
+        <name>ContinuityModelROF</name>
+        <param>
+          <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt;</type>
+          <declname>water_sources</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGraph" kindref="compound">Graph</ref> &amp;</type>
+          <declname>water_sources_graph</declname>
+        </param>
+        <param>
+          <type>const vector&lt; vector&lt; int &gt;&gt; &amp;</type>
+          <declname>water_sources_to_utilities</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt;</type>
+          <declname>utilities</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref> *&gt;</type>
+          <declname>min_env_flow_controls</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>utilities_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>water_sources_rdm</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>total_weeks_simulation</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>use_precomputed_rof_tables</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>realization_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="36" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="11" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1a927597ce427aa9a9f65719bccbfba623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt; double &gt; ContinuityModelROF::calculateShortTermROF</definition>
+        <argsstring>(int week, int import_export_rof_tables)</argsstring>
+        <name>calculateShortTermROF</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>import_export_rof_tables</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="44" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="127" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1afcf6c32935729d64dc2fdc021241c5e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt; double &gt; ContinuityModelROF::calculateShortTermROFFullCalcs</definition>
+        <argsstring>(int week)</argsstring>
+        <name>calculateShortTermROFFullCalcs</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Runs one the full rof calculations for realization <ref refid="classContinuityModel_1a7b6c99bf256f6c6b633ebb78282f43c7" kindref="member">realization_id</ref> for a given week. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>for which rof is to be calculated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="46" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="181" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1acd0dd0324718521f49eb344dbba6684d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt; double &gt; ContinuityModelROF::calculateShortTermROFTable</definition>
+        <argsstring>(int week, vector&lt; Utility *&gt; utilities, vector&lt; double &gt; utilities_base_storage_capacity, const vector&lt; Matrix2D&lt; double &gt;&gt; &amp;ut_storage_to_rof_table, vector&lt; double &gt; current_storage_table_shift)</argsstring>
+        <name>calculateShortTermROFTable</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt;</type>
+          <declname>utilities</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt;</type>
+          <declname>utilities_base_storage_capacity</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt;&gt; &amp;</type>
+          <declname>ut_storage_to_rof_table</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt;</type>
+          <declname>current_storage_table_shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Runs one the full rof calculations for realization <ref refid="classContinuityModel_1a7b6c99bf256f6c6b633ebb78282f43c7" kindref="member">realization_id</ref> for a given week. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>for which rof is to be calculated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="48" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="142" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1ab6e6125e6ea195d7c29a0c6d2203d51c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt; double &gt; ContinuityModelROF::calculateLongTermROF</definition>
+        <argsstring>(int week)</argsstring>
+        <name>calculateLongTermROF</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Runs one the full rof calculations for realization <ref refid="classContinuityModel_1a7b6c99bf256f6c6b633ebb78282f43c7" kindref="member">realization_id</ref> for a given week. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>for which rof is to be calculated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="53" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="76" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1acd72d71a29cef49c4de3d111378b76c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelROF::resetUtilitiesAndReservoirs</definition>
+        <argsstring>(int rof_type)</argsstring>
+        <name>resetUtilitiesAndReservoirs</name>
+        <param>
+          <type>int</type>
+          <declname>rof_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>reset reservoirs&apos; and utilities&apos; storage and last release, and combined storage, respectively, they currently have in the corresponding realization simulation. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="55" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="421" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1a0c12b5dad97c3783361baad7e53a2634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelROF::connectRealizationWaterSources</definition>
+        <argsstring>(const vector&lt; WaterSource *&gt; &amp;realization_water_sources)</argsstring>
+        <name>connectRealizationWaterSources</name>
+        <param>
+          <type>const vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt; &amp;</type>
+          <declname>realization_water_sources</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass to the rof continuity model the locations of the utilities of the realization it calculated rofs for. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>realization_water_sources</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="57" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="451" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1abc16c650a854b60dfc42ab2d32ef4b0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelROF::connectRealizationUtilities</definition>
+        <argsstring>(const vector&lt; Utility *&gt; &amp;realization_utilities)</argsstring>
+        <name>connectRealizationUtilities</name>
+        <param>
+          <type>const vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt; &amp;</type>
+          <declname>realization_utilities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pass to the rof continuity model the locations of the utilities of the realization it calculated rofs for. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>realization_utilities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="59" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="462" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1af09f22c4fd69db45d3c8962713801287" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ContinuityModelROF::updateOnlineInfrastructure</definition>
+        <argsstring>(int week)</argsstring>
+        <name>updateOnlineInfrastructure</name>
+        <reimplementedby refid="classInsuranceStorageToROF_1a5870934b8b33e1d872eca7b0940398ac">updateOnlineInfrastructure</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if new infrastructure became online. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="61" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="470" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1a0098bd7efa9e57a7ff0efc4c9b5aa340" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>ContinuityModelROF::~ContinuityModelROF</definition>
+        <argsstring>()</argsstring>
+        <name>~ContinuityModelROF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="63" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1a28834584763c3aa27a6f0917aa68926f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelROF::updateStorageToROFTable</definition>
+        <argsstring>(double storage_percent_decrement, int week_of_the_year, const double *to_full_toposort)</argsstring>
+        <name>updateStorageToROFTable</name>
+        <param>
+          <type>double</type>
+          <declname>storage_percent_decrement</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week_of_the_year</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>to_full_toposort</declname>
+          <defname>to_full</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Updates approximate ROF table based on continuity realization ran for simulation based ROF calculations. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>storage_percent_decrement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>week_of_the_year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_full</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>empty volume of all reservoir in ID order. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="65" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="259" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1ab4a793f312b693d98c80e4b9545a8bb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt; &gt; &amp;</type>
+        <definition>vector&lt; Matrix2D&lt; double &gt; &gt; &amp; ContinuityModelROF::getUt_storage_to_rof_table</definition>
+        <argsstring>()</argsstring>
+        <name>getUt_storage_to_rof_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="69" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="547" bodyend="549"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1a4f2b25687bcdeb4a88e22397c84789de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelROF::shiftStorages</definition>
+        <argsstring>(double *available_volumes_shifted, const double *delta_storage)</argsstring>
+        <name>shiftStorages</name>
+        <param>
+          <type>double *</type>
+          <declname>available_volumes_shifted</declname>
+        </param>
+        <param>
+          <type>const double *</type>
+          <declname>delta_storage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="71" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="330" bodyend="369"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1a1bb8362ce39e694937a787805613e106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelROF::printROFTable</definition>
+        <argsstring>(const string &amp;folder)</argsstring>
+        <name>printROFTable</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>folder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Prints a binary file with the rof_table for a given realization in a given week. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="74" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="376" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1a1d3f8b8db62ec7b399095c89ce861163" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelROF::setROFTablesAndShifts</definition>
+        <argsstring>(const vector&lt; Matrix2D&lt; double &gt;&gt; &amp;storage_to_rof_table, const vector&lt; vector&lt; double &gt;&gt; &amp;table_storage_shift)</argsstring>
+        <name>setROFTablesAndShifts</name>
+        <param>
+          <type>const vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt;&gt; &amp;</type>
+          <declname>storage_to_rof_table</declname>
+        </param>
+        <param>
+          <type>const vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>table_storage_shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="76" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="520" bodyend="525"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1a10a8a95f3177d305d3881e654f01d65d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelROF::tableROFExceptionHandler</definition>
+        <argsstring>(double m, int u, int week)</argsstring>
+        <name>tableROFExceptionHandler</name>
+        <param>
+          <type>double</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="79" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="529" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1a0c46d5905f5d0ae2cf0abd0d4653bbc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelROF::setInitialTableTier</definition>
+        <argsstring>(int week, const int &amp;utilities, vector&lt; Matrix2D&lt; double &gt;&gt; &amp;vector, int &amp;tier)</argsstring>
+        <name>setInitialTableTier</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>utilities</declname>
+          <defname>n_utilities</defname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt;&gt; &amp;</type>
+          <declname>vector</declname>
+          <defname>ut_storage_to_rof_table</defname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>tier</declname>
+          <defname>beginning_tier</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set first tier for ROF table calculation close to where the first failure was observed for last week&apos;s table, so to save computations <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_utilities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ut_storage_to_rof_table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beginning_tier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="81" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="559" bodyend="573"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1aa2348a2a5dea751462771ef538243e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelROF::recordROFStorageTable</definition>
+        <argsstring>(vector&lt; Matrix2D&lt; double &gt;&gt; &amp;ut_storage_to_rof_rof_realization, vector&lt; Matrix2D&lt; double &gt;&gt; &amp;ut_storage_to_rof_table, const int &amp;n_utilities, int &amp;week, int &amp;week_of_the_year)</argsstring>
+        <name>recordROFStorageTable</name>
+        <param>
+          <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt;&gt; &amp;</type>
+          <declname>ut_storage_to_rof_rof_realization</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt;&gt; &amp;</type>
+          <declname>ut_storage_to_rof_table</declname>
+        </param>
+        <param>
+          <type>const int &amp;</type>
+          <declname>n_utilities</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>week_of_the_year</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Records failure results for one ROF realization in overall ROF table for that week. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ut_storage_to_rof_rof_realization</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ut_storage_to_rof_table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_utilities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>week_of_the_year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="83" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="583" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelROF_1aa720006d12410fc35b8768eda716c149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelROF::calculateEmptyVolumes</definition>
+        <argsstring>(vector&lt; WaterSource *&gt; &amp;realization_water_sources, double *to_full)</argsstring>
+        <name>calculateEmptyVolumes</name>
+        <param>
+          <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt; &amp;</type>
+          <declname>realization_water_sources</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>to_full</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate empty volume in storage-based water sources. This information is later used for updating the ROF tables. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>realization_water_sources</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to_full</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelROF.h" line="87" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.cpp" bodystart="601" bodyend="610"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="43">
+        <label>InsuranceStorageToROF</label>
+        <link refid="classInsuranceStorageToROF"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>ContinuityModel</label>
+        <link refid="classContinuityModel"/>
+      </node>
+      <node id="41">
+        <label>ContinuityModelROF</label>
+        <link refid="classContinuityModelROF"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="45">
+        <label>ContinuityModel</label>
+        <link refid="classContinuityModel"/>
+        <childnode refid="46" relation="usage">
+          <edgelabel>water_sources_graph</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>Graph</label>
+        <link refid="classGraph"/>
+      </node>
+      <node id="44">
+        <label>ContinuityModelROF</label>
+        <link refid="classContinuityModelROF"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/ContinuityModels/ContinuityModelROF.h" line="13" column="1" bodyfile="src/ContinuityModels/ContinuityModelROF.h" bodystart="13" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classContinuityModelROF_1ad0a8c47eca4ca66b58a2636ab907a4f2" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>beginning_tier</name></member>
+      <member refid="classContinuityModelROF_1aa720006d12410fc35b8768eda716c149" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>calculateEmptyVolumes</name></member>
+      <member refid="classContinuityModelROF_1ab6e6125e6ea195d7c29a0c6d2203d51c" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>calculateLongTermROF</name></member>
+      <member refid="classContinuityModelROF_1a927597ce427aa9a9f65719bccbfba623" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>calculateShortTermROF</name></member>
+      <member refid="classContinuityModelROF_1afcf6c32935729d64dc2fdc021241c5e9" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>calculateShortTermROFFullCalcs</name></member>
+      <member refid="classContinuityModelROF_1acd0dd0324718521f49eb344dbba6684d" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>calculateShortTermROFTable</name></member>
+      <member refid="classContinuityModelROF_1abc16c650a854b60dfc42ab2d32ef4b0c" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>connectRealizationUtilities</name></member>
+      <member refid="classContinuityModelROF_1a0c12b5dad97c3783361baad7e53a2634" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>connectRealizationWaterSources</name></member>
+      <member refid="classContinuityModel_1adc77a0214d553a961035ce86c93cf9be" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>continuity_utilities</name></member>
+      <member refid="classContinuityModel_1a3980284a9dd08bae4e76398d1b0d6f55" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>continuity_water_sources</name></member>
+      <member refid="classContinuityModel_1acadf595deb924bc08c9b702adf223365" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>ContinuityModel</name></member>
+      <member refid="classContinuityModel_1a7f46eb1f937b813226ca7fee96e5fd5c" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>ContinuityModel</name></member>
+      <member refid="classContinuityModelROF_1a23bd422349e4e2246bd44b2007564fd1" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>ContinuityModelROF</name></member>
+      <member refid="classContinuityModel_1ad880b6cb48eb24e8b78cc5425d85313b" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>continuityStep</name></member>
+      <member refid="classContinuityModelROF_1adcaf978b52ba016474952a42856ba373" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>current_and_base_storage_capacity_ratio</name></member>
+      <member refid="classContinuityModelROF_1a443efa8d5a8bcbb1fea1a0bc929c77cd" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>current_storage_table_shift</name></member>
+      <member refid="classContinuityModel_1aee4088e422a0d3723dc7895c96c9ebe3" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>delta_realization_weeks</name></member>
+      <member refid="classContinuityModel_1a1994ed4d99e0583eac5c82a4b26d9728" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>demands</name></member>
+      <member refid="classContinuityModel_1af00ea62ac8e2e398591ff608c2a203ef" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>downstream_sources</name></member>
+      <member refid="classContinuityModel_1a922c1dea6e49d67c87a7fbb34c7bc623" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>getContinuity_utilities</name></member>
+      <member refid="classContinuityModel_1ae0dec8510ab216accd44097e5a366bd8" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>getContinuity_water_sources</name></member>
+      <member refid="classContinuityModel_1a609fa24135a600af177d1460e0162014" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>getOnlineDownstreamSources</name></member>
+      <member refid="classContinuityModelROF_1ab4a793f312b693d98c80e4b9545a8bb5" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>getUt_storage_to_rof_table</name></member>
+      <member refid="classContinuityModel_1afc991e5c0d144020e49a97751a04b302" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>min_env_flow_controls</name></member>
+      <member refid="classContinuityModel_1a3c25a0d17579eb0fdad0b18319441460" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>n_sources</name></member>
+      <member refid="classContinuityModelROF_1aefffec319cad3a89db2d4c7335ebf2a2" prot="private" virt="non-virtual"><scope>ContinuityModelROF</scope><name>n_topo_sources</name></member>
+      <member refid="classContinuityModel_1a6df6198ebc99a099df08f4b8ce6b52b9" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>n_utilities</name></member>
+      <member refid="classContinuityModelROF_1a7ab0c5f22272833f309183937fa9d0d8" prot="private" virt="non-virtual"><scope>ContinuityModelROF</scope><name>online_downstream_sources</name></member>
+      <member refid="classContinuityModelROF_1a1bb8362ce39e694937a787805613e106" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>printROFTable</name></member>
+      <member refid="classContinuityModel_1a7b6c99bf256f6c6b633ebb78282f43c7" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>realization_id</name></member>
+      <member refid="classContinuityModelROF_1a75c6823d8dd37f274ee91ce158088dc4" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>realization_utilities</name></member>
+      <member refid="classContinuityModelROF_1a77048d247b8d1f70fbdd31559b4d3337" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>realization_water_sources</name></member>
+      <member refid="classContinuityModelROF_1aa2348a2a5dea751462771ef538243e75" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>recordROFStorageTable</name></member>
+      <member refid="classContinuityModelROF_1acd72d71a29cef49c4de3d111378b76c7" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>resetUtilitiesAndReservoirs</name></member>
+      <member refid="classContinuityModelROF_1a0c46d5905f5d0ae2cf0abd0d4653bbc7" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>setInitialTableTier</name></member>
+      <member refid="classContinuityModel_1a47504c599955b8193ffab3bd0f328144" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>setRealization</name></member>
+      <member refid="classContinuityModelROF_1a1d3f8b8db62ec7b399095c89ce861163" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>setROFTablesAndShifts</name></member>
+      <member refid="classContinuityModelROF_1a4f2b25687bcdeb4a88e22397c84789de" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>shiftStorages</name></member>
+      <member refid="classContinuityModel_1a6605cb6aae0370eb84d2e8bf7d6d651e" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>sources_topological_order</name></member>
+      <member refid="classContinuityModelROF_1ad7ee977c92769377cf6237d2fbf527e3" prot="private" virt="non-virtual"><scope>ContinuityModelROF</scope><name>storage_wout_downstream</name></member>
+      <member refid="classContinuityModelROF_1a1a90c8816944aab36f395e89f7b84c06" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>table_storage_shift</name></member>
+      <member refid="classContinuityModelROF_1a10a8a95f3177d305d3881e654f01d65d" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>tableROFExceptionHandler</name></member>
+      <member refid="classContinuityModelROF_1af09f22c4fd69db45d3c8962713801287" prot="public" virt="virtual"><scope>ContinuityModelROF</scope><name>updateOnlineInfrastructure</name></member>
+      <member refid="classContinuityModelROF_1a28834584763c3aa27a6f0917aa68926f" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>updateStorageToROFTable</name></member>
+      <member refid="classContinuityModelROF_1a384967647c98d9768400de07e2bc7dab" prot="private" virt="non-virtual"><scope>ContinuityModelROF</scope><name>use_precomputed_rof_tables</name></member>
+      <member refid="classContinuityModelROF_1ab4b11938d295e5e74e9cf58725d36a34" prot="private" virt="non-virtual"><scope>ContinuityModelROF</scope><name>ut_storage_to_rof_rof_realization</name></member>
+      <member refid="classContinuityModelROF_1ada25d241caf860255ad00097f5e7adb6" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>ut_storage_to_rof_table</name></member>
+      <member refid="classContinuityModel_1a781786effdf14fefcb2201eb33d9e0c7" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>utilities_capacities</name></member>
+      <member refid="classContinuityModel_1aa4a00b76da6295d2faa11e3dcaea1896" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>utilities_rdm</name></member>
+      <member refid="classContinuityModel_1a5cf4be0afa886eb09a3e143f54c29044" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>utilities_to_water_sources</name></member>
+      <member refid="classContinuityModelROF_1a017041335a639ba56cc3e26dea07b514" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>utility_base_delta_capacity_table</name></member>
+      <member refid="classContinuityModelROF_1a6a429c37f019777325ea4e5b9ad26cae" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>utility_base_storage_capacity</name></member>
+      <member refid="classContinuityModel_1aadc8d46b2d0cc0a5c6b5ccdf0c5c24d4" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>water_sources_capacities</name></member>
+      <member refid="classContinuityModel_1a563401588c6fa622f03393909a3522db" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>water_sources_graph</name></member>
+      <member refid="classContinuityModel_1a6d80a7e50e022e2cdb5e912d5b3b5cf0" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>water_sources_online_to_utilities</name></member>
+      <member refid="classContinuityModel_1ab7b8fa93a6f56b328e425e1ead6cfefa" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>water_sources_rdm</name></member>
+      <member refid="classContinuityModel_1ae8516bcbbf52650190277fc8b06c1843" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>water_sources_to_utilities</name></member>
+      <member refid="classContinuityModel_1a6644d91cc76b2ccc57103aa1a2ab0c03" prot="public" virt="virtual"><scope>ContinuityModelROF</scope><name>~ContinuityModel</name></member>
+      <member refid="classContinuityModelROF_1a0098bd7efa9e57a7ff0efc4c9b5aa340" prot="public" virt="virtual"><scope>ContinuityModelROF</scope><name>~ContinuityModelROF</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

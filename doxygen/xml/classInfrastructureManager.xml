@@ -1,0 +1,828 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classInfrastructureManager" kind="class" language="C++" prot="public">
+    <compoundname>InfrastructureManager</compoundname>
+    <includes refid="InfrastructureManager_8h" local="no">InfrastructureManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classInfrastructureManager_1a9c721676ab3c35a247c818bf34fd482e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int InfrastructureManager::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="16" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1a5b09482bd9fc258a3da82a86b157a2c3" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; InfrastructureManager::infra_construction_triggers</definition>
+        <argsstring></argsstring>
+        <name>infra_construction_triggers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="17" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1ac8aa84e40d3ef4e4ee7ba6536ca55619" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt; *</type>
+        <definition>vector&lt;int&gt;* InfrastructureManager::priority_draw_water_source</definition>
+        <argsstring></argsstring>
+        <name>priority_draw_water_source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="18" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1a4034272cf63082614f5519b0909acb3d" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt; *</type>
+        <definition>vector&lt;int&gt;* InfrastructureManager::non_priority_draw_water_source</definition>
+        <argsstring></argsstring>
+        <name>non_priority_draw_water_source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="19" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1a6505122b584011bd852a126616bf442a" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; int &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;int&gt; &gt; InfrastructureManager::infra_if_built_remove</definition>
+        <argsstring></argsstring>
+        <name>infra_if_built_remove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="20" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1a2b8810958d40b9c80d299c6db31715e2" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> * &gt; *</type>
+        <definition>vector&lt;WaterSource *&gt;* InfrastructureManager::water_sources</definition>
+        <argsstring></argsstring>
+        <name>water_sources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="21" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1a44099d2523ff67773ffb853e2c9871b3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InfrastructureManager::infra_discount_rate</definition>
+        <argsstring></argsstring>
+        <name>infra_discount_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="22" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1a6c8010bc7c65fac8411431e5c7a8d3e4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InfrastructureManager::bond_term</definition>
+        <argsstring></argsstring>
+        <name>bond_term</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="23" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1ab8ddaa0ed220e29bc296470b7a905a3b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InfrastructureManager::bond_interest_rate</definition>
+        <argsstring></argsstring>
+        <name>bond_interest_rate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="24" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1a21b02e6d9ca7f90cfb289a48cec723cb" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; InfrastructureManager::rof_infra_construction_order</definition>
+        <argsstring></argsstring>
+        <name>rof_infra_construction_order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="25" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1a9b2adee9527d11de87069901e86b540a" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; InfrastructureManager::demand_infra_construction_order</definition>
+        <argsstring></argsstring>
+        <name>demand_infra_construction_order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="26" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1a5203fc0ae8e33885012415c1d0e27399" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; InfrastructureManager::infra_built_last_week</definition>
+        <argsstring></argsstring>
+        <name>infra_built_last_week</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="28" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1abe5accdeeb4343266335d208d41704ae" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; InfrastructureManager::construction_end_date</definition>
+        <argsstring></argsstring>
+        <name>construction_end_date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="29" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1a634ca1b01e1b7fa7c8b5468c9a842a51" prot="private" static="no" mutable="no">
+        <type>vector&lt; bool &gt;</type>
+        <definition>vector&lt;bool&gt; InfrastructureManager::under_construction</definition>
+        <argsstring></argsstring>
+        <name>under_construction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="30" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classInfrastructureManager_1a959efbe51589414916d96b99bf5559cc" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double InfrastructureManager::infra_net_present_cost</definition>
+        <argsstring></argsstring>
+        <name>infra_net_present_cost</name>
+        <initializer>= NONE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="31" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classInfrastructureManager_1a2720f467b660e0f63f265e7957ca0139" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InfrastructureManager::InfrastructureManager</definition>
+        <argsstring>(int id, const vector&lt; double &gt; &amp;infra_construction_triggers, const vector&lt; vector&lt; int &gt;&gt; &amp;infra_if_built_remove, double infra_discount_rate, double bond_term, double bond_interest_rate, vector&lt; int &gt; rof_infra_construction_order, vector&lt; int &gt; demand_infra_construction_order)</argsstring>
+        <name>InfrastructureManager</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>infra_construction_triggers</declname>
+        </param>
+        <param>
+          <type>const vector&lt; vector&lt; int &gt;&gt; &amp;</type>
+          <declname>infra_if_built_remove</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>infra_discount_rate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bond_term</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bond_interest_rate</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt;</type>
+          <declname>rof_infra_construction_order</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt;</type>
+          <declname>demand_infra_construction_order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="34" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="12" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a435ec4cb56238c6e1d93e37783f3a03a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InfrastructureManager::InfrastructureManager</definition>
+        <argsstring>()</argsstring>
+        <name>InfrastructureManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="40" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a30910bd8edf01ae2899561b49d7719c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classInfrastructureManager" kindref="compound">InfrastructureManager</ref> &amp;</type>
+        <definition>InfrastructureManager &amp; InfrastructureManager::operator=</definition>
+        <argsstring>(const InfrastructureManager &amp;infrastructure_manager)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classInfrastructureManager" kindref="compound">InfrastructureManager</ref> &amp;</type>
+          <declname>infrastructure_manager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="42" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="42" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a9d1fe6a0325a3705dbfabb92afbe9055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>InfrastructureManager::InfrastructureManager</definition>
+        <argsstring>(InfrastructureManager &amp;infrastructure_manager)</argsstring>
+        <name>InfrastructureManager</name>
+        <param>
+          <type><ref refid="classInfrastructureManager" kindref="compound">InfrastructureManager</ref> &amp;</type>
+          <declname>infrastructure_manager</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="44" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="32" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a48ab4ddeb06417ef7c8657d5c2b6b63a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt; double &gt; InfrastructureManager::rearrangeInfraRofVector</definition>
+        <argsstring>(const vector&lt; double &gt; &amp;infra_construction_triggers, const vector&lt; int &gt; &amp;rof_infra_construction_order, const vector&lt; int &gt; &amp;demand_infra_construction_order)</argsstring>
+        <name>rearrangeInfraRofVector</name>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>infra_construction_triggers</declname>
+        </param>
+        <param>
+          <type>const vector&lt; int &gt; &amp;</type>
+          <declname>rof_infra_construction_order</declname>
+        </param>
+        <param>
+          <type>const vector&lt; int &gt; &amp;</type>
+          <declname>demand_infra_construction_order</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Converts the rof and demand triggers vectors into a vector in which rof and demand values are stored in the idex corresponding to the pertaining source. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>infra_construction_triggers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rof_infra_construction_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>demand_infra_construction_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="46" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="77" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a9972a27ff6d08b7c1226d703ac700a94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InfrastructureManager::setWaterSourceOnline</definition>
+        <argsstring>(unsigned int source_id, int week, double &amp;total_storage_capacity, double &amp;total_treatment_capacity, double &amp;total_available_volume, double &amp;total_stored_volume)</argsstring>
+        <name>setWaterSourceOnline</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>source_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_storage_capacity</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_treatment_capacity</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_available_volume</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_stored_volume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Sets water source online and add its ID to appropriate priority/non-priority ID vector. If reservoir expansion, add its capacity to the corresponding existing reservoir. <linebreak/>
+ Updates total storage and treatment variables. </para>        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="50" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="142" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1ad40c7049e76f7d097f1dd066c84d5c79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InfrastructureManager::waterTreatmentPlantConstructionHandler</definition>
+        <argsstring>(unsigned int source_id, double &amp;total_storage_capacity)</argsstring>
+        <name>waterTreatmentPlantConstructionHandler</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>source_id</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_storage_capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Add treatment capacity to source</para><para>If source is intake or reuse and is not in the list of active sources, add it to the priority list. If source is not intake or reuse and is not in the list of active sources, add it to the non-priority list. <linebreak/>
+ Finally, the checking. </para>        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="53" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="181" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1ad4dc157110b29560cd47501ba67bcba3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InfrastructureManager::reservoirExpansionConstructionHandler</definition>
+        <argsstring>(unsigned int source_id)</argsstring>
+        <name>reservoirExpansionConstructionHandler</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>source_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="55" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="226" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a1eb260820a0127294d18d160cb146db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InfrastructureManager::sourceRelocationConstructionHandler</definition>
+        <argsstring>(unsigned int source_id)</argsstring>
+        <name>sourceRelocationConstructionHandler</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>source_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="57" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="235" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1abf6d8d9891abddfe08df0bb7677eee35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InfrastructureManager::removeRelatedSourcesFromQueue</definition>
+        <argsstring>(int next_construction)</argsstring>
+        <name>removeRelatedSourcesFromQueue</name>
+        <param>
+          <type>int</type>
+          <declname>next_construction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks is piece of infrastructure to be built next prevents another one from being build and, if so, removes the latter from the queue. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>next_construction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="59" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="407" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a06c7a2df105a2a8dd3ef625ad42694ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int InfrastructureManager::infrastructureConstructionHandler</definition>
+        <argsstring>(double long_term_rof, int week, double past_year_average_demand, double &amp;total_storage_capacity, double &amp;total_treatment_capacity, double &amp;total_available_volume, double &amp;total_stored_volume)</argsstring>
+        <name>infrastructureConstructionHandler</name>
+        <param>
+          <type>double</type>
+          <declname>long_term_rof</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>past_year_average_demand</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_storage_capacity</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_treatment_capacity</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_available_volume</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_stored_volume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if infrastructure should be built, triggers construction, sets it online, and handles accounting/financing of it. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>long_term_rof</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Checks whether the long-term ROF has been exceeded for the next infrastructure option in the list and, if not already under construction, starts building it. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Selects next water source whose permitting period is passed.</para><para>Checks if ROF threshold for next infrastructure in line has been reached and if there is already infrastructure being built. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Begin construction.</para><para>Checks whether the target demand has been exceeded for the next infrastructure option in the list and, if not already under construction, starts building it. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Selects next water source whose permitting period is passed.</para><para>Checks if demand threshold for next infrastructure in line has been reached and if there is already infrastructure being built. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Begin construction.</para><para>If there&apos;s a water source under construction, check if it&apos;s ready and, if so, clear it from the to-build list. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Loops through vector of under-construction flags and sets online the ones for which construction period has passed. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Check if water source to be set online is part of a series of expansions or constructions That depend on previous water sources being built, in which case it&apos;s as if all of them had been constructed at the same time. The total cost of building all at the same time is approximated by the summation of their individual costs, and the construction time is approximated as that of the source that was called <ndash/> both can be pretty rough approximations at times, so any improvement here is welcome. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Check if previous source/expansion is yet to be built.</para><para>Set online all sources that at to be set online now.</para><para>Record ID of and when infrastructure option construction was completed. (utility_id, week, new source id) <linebreak/>
+ Erase infrastructure option from both vectors of infrastructure to be built. </para>        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="61" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="278" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1aaa79bdb84fc23597c4a8b3776dc26f5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InfrastructureManager::forceInfrastructureConstruction</definition>
+        <argsstring>(int week, vector&lt; int &gt; new_infra_triggered)</argsstring>
+        <name>forceInfrastructureConstruction</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt;</type>
+          <declname>new_infra_triggered</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Force utility to build a certain infrastructure option, if present in its queue. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_infra_triggered</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Variable storing the position of an infrastructure option in the queue of infrastructure to be built. <linebreak/>
+<linebreak/>
+ If one of the infrastructure options built this year by one of the other utilities is in this utility&apos;s queue, force it to be triggered. <linebreak/>
+ Force infrastructure option new_infra_triggered to be built. </para>        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="65" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="254" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a7d60e4abff73890519ced487c74f2675" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InfrastructureManager::beginConstruction</definition>
+        <argsstring>(int week, int infra_id)</argsstring>
+        <name>beginConstruction</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>infra_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Kicks off construction and records when it was initiated. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Checks is piece of infrastructure to be built next prevents another one from being build and, if so, removes the latter from the queue. E.g. if the large expansion of a reservoir is triggered the small expansion must be removed from the to build list. <linebreak/>
+ Make water utility as under construction and determine construction end date (I wish that was how it worked in real constructions...) </para>        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="67" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="426" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1ab66bdc91a6f60c6aea6ce0bf179df913" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InfrastructureManager::addWaterSourceToOnlineLists</definition>
+        <argsstring>(int source_id, double &amp;total_storage_capacity, double &amp;total_treatment_capacity, double &amp;total_available_volume, double &amp;total_stored_volume)</argsstring>
+        <name>addWaterSourceToOnlineLists</name>
+        <param>
+          <type>int</type>
+          <declname>source_id</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_storage_capacity</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_treatment_capacity</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_available_volume</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>total_stored_volume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Add capacities to utility.</para><para>Add source to the corresponding list of online water sources. </para>        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="69" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="117" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a3950df03bc8fd5743aefeca4c3d7bf98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InfrastructureManager::addWaterSource</definition>
+        <argsstring>(WaterSource *water_source)</argsstring>
+        <name>addWaterSource</name>
+        <param>
+          <type><ref refid="classWaterSource" kindref="compound">WaterSource</ref> *</type>
+          <declname>water_source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Connects a reservoir to the utility. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>water_source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Add water sources with their IDs matching the water sources vector indexes. </para>        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="72" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="59" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a8ff698443fd4f32e28677aa9ef34c2dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void InfrastructureManager::connectWaterSourcesVectorsToUtilitys</definition>
+        <argsstring>(vector&lt; WaterSource *&gt; &amp;water_sources, vector&lt; int &gt; &amp;priority_draw_water_source, vector&lt; int &gt; &amp;non_priority_draw_water_source)</argsstring>
+        <name>connectWaterSourcesVectorsToUtilitys</name>
+        <param>
+          <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt; &amp;</type>
+          <declname>water_sources</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt; &amp;</type>
+          <declname>priority_draw_water_source</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt; &amp;</type>
+          <declname>non_priority_draw_water_source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="74" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="445" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a871e836e57ac056fad1e2b71b81ade81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; int &gt; &amp;</type>
+        <definition>const vector&lt; int &gt; &amp; InfrastructureManager::getRof_infra_construction_order</definition>
+        <argsstring>() const</argsstring>
+        <name>getRof_infra_construction_order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="78" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="453" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a5766b6aa0d40f316a6ef57df2dcfa198" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; int &gt; &amp;</type>
+        <definition>const vector&lt; int &gt; &amp; InfrastructureManager::getDemand_infra_construction_order</definition>
+        <argsstring>() const</argsstring>
+        <name>getDemand_infra_construction_order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="80" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="457" bodyend="459"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a2b6b96f3742a18e86ead7b382816e7e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; int &gt; &amp;</type>
+        <definition>const vector&lt; int &gt; &amp; InfrastructureManager::getInfra_built_last_week</definition>
+        <argsstring>() const</argsstring>
+        <name>getInfra_built_last_week</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="82" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="461" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="classInfrastructureManager_1a47d132df65ee88362f996c1b64068f9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; bool &gt; &amp;</type>
+        <definition>const vector&lt; bool &gt; &amp; InfrastructureManager::getUnder_construction</definition>
+        <argsstring>() const</argsstring>
+        <name>getUnder_construction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="84" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.cpp" bodystart="465" bodyend="467"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/SystemComponents/Utility/InfrastructureManager.h" line="13" column="1" bodyfile="src/SystemComponents/Utility/InfrastructureManager.h" bodystart="13" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classInfrastructureManager_1a3950df03bc8fd5743aefeca4c3d7bf98" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>addWaterSource</name></member>
+      <member refid="classInfrastructureManager_1ab66bdc91a6f60c6aea6ce0bf179df913" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>addWaterSourceToOnlineLists</name></member>
+      <member refid="classInfrastructureManager_1a7d60e4abff73890519ced487c74f2675" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>beginConstruction</name></member>
+      <member refid="classInfrastructureManager_1ab8ddaa0ed220e29bc296470b7a905a3b" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>bond_interest_rate</name></member>
+      <member refid="classInfrastructureManager_1a6c8010bc7c65fac8411431e5c7a8d3e4" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>bond_term</name></member>
+      <member refid="classInfrastructureManager_1a8ff698443fd4f32e28677aa9ef34c2dc" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>connectWaterSourcesVectorsToUtilitys</name></member>
+      <member refid="classInfrastructureManager_1abe5accdeeb4343266335d208d41704ae" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>construction_end_date</name></member>
+      <member refid="classInfrastructureManager_1a9b2adee9527d11de87069901e86b540a" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>demand_infra_construction_order</name></member>
+      <member refid="classInfrastructureManager_1aaa79bdb84fc23597c4a8b3776dc26f5d" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>forceInfrastructureConstruction</name></member>
+      <member refid="classInfrastructureManager_1a5766b6aa0d40f316a6ef57df2dcfa198" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>getDemand_infra_construction_order</name></member>
+      <member refid="classInfrastructureManager_1a2b6b96f3742a18e86ead7b382816e7e8" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>getInfra_built_last_week</name></member>
+      <member refid="classInfrastructureManager_1a871e836e57ac056fad1e2b71b81ade81" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>getRof_infra_construction_order</name></member>
+      <member refid="classInfrastructureManager_1a47d132df65ee88362f996c1b64068f9e" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>getUnder_construction</name></member>
+      <member refid="classInfrastructureManager_1a9c721676ab3c35a247c818bf34fd482e" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>id</name></member>
+      <member refid="classInfrastructureManager_1a5203fc0ae8e33885012415c1d0e27399" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>infra_built_last_week</name></member>
+      <member refid="classInfrastructureManager_1a5b09482bd9fc258a3da82a86b157a2c3" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>infra_construction_triggers</name></member>
+      <member refid="classInfrastructureManager_1a44099d2523ff67773ffb853e2c9871b3" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>infra_discount_rate</name></member>
+      <member refid="classInfrastructureManager_1a6505122b584011bd852a126616bf442a" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>infra_if_built_remove</name></member>
+      <member refid="classInfrastructureManager_1a959efbe51589414916d96b99bf5559cc" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>infra_net_present_cost</name></member>
+      <member refid="classInfrastructureManager_1a06c7a2df105a2a8dd3ef625ad42694ce" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>infrastructureConstructionHandler</name></member>
+      <member refid="classInfrastructureManager_1a2720f467b660e0f63f265e7957ca0139" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>InfrastructureManager</name></member>
+      <member refid="classInfrastructureManager_1a435ec4cb56238c6e1d93e37783f3a03a" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>InfrastructureManager</name></member>
+      <member refid="classInfrastructureManager_1a9d1fe6a0325a3705dbfabb92afbe9055" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>InfrastructureManager</name></member>
+      <member refid="classInfrastructureManager_1a4034272cf63082614f5519b0909acb3d" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>non_priority_draw_water_source</name></member>
+      <member refid="classInfrastructureManager_1a30910bd8edf01ae2899561b49d7719c1" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>operator=</name></member>
+      <member refid="classInfrastructureManager_1ac8aa84e40d3ef4e4ee7ba6536ca55619" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>priority_draw_water_source</name></member>
+      <member refid="classInfrastructureManager_1a48ab4ddeb06417ef7c8657d5c2b6b63a" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>rearrangeInfraRofVector</name></member>
+      <member refid="classInfrastructureManager_1abf6d8d9891abddfe08df0bb7677eee35" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>removeRelatedSourcesFromQueue</name></member>
+      <member refid="classInfrastructureManager_1ad4dc157110b29560cd47501ba67bcba3" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>reservoirExpansionConstructionHandler</name></member>
+      <member refid="classInfrastructureManager_1a21b02e6d9ca7f90cfb289a48cec723cb" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>rof_infra_construction_order</name></member>
+      <member refid="classInfrastructureManager_1a9972a27ff6d08b7c1226d703ac700a94" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>setWaterSourceOnline</name></member>
+      <member refid="classInfrastructureManager_1a1eb260820a0127294d18d160cb146db9" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>sourceRelocationConstructionHandler</name></member>
+      <member refid="classInfrastructureManager_1a634ca1b01e1b7fa7c8b5468c9a842a51" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>under_construction</name></member>
+      <member refid="classInfrastructureManager_1a2b8810958d40b9c80d299c6db31715e2" prot="private" virt="non-virtual"><scope>InfrastructureManager</scope><name>water_sources</name></member>
+      <member refid="classInfrastructureManager_1ad40c7049e76f7d097f1dd066c84d5c79" prot="public" virt="non-virtual"><scope>InfrastructureManager</scope><name>waterTreatmentPlantConstructionHandler</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

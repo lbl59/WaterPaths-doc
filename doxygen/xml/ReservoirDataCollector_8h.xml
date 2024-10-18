@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="ReservoirDataCollector_8h" kind="file" language="C++">
+    <compoundname>ReservoirDataCollector.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="DataCollector_8h" local="yes">Base/DataCollector.h</includes>
+    <includes refid="Reservoir_8h" local="yes">../SystemComponents/WaterSources/Reservoir.h</includes>
+    <includedby refid="AllocatedReservoirDataCollector_8h" local="yes">src/DataCollector/AllocatedReservoirDataCollector.h</includedby>
+    <includedby refid="MasterDataCollector_8cpp" local="yes">src/DataCollector/MasterDataCollector.cpp</includedby>
+    <includedby refid="QuaryDataCollector_8h" local="yes">src/DataCollector/QuaryDataCollector.h</includedby>
+    <includedby refid="ReservoirDataCollector_8cpp" local="yes">src/DataCollector/ReservoirDataCollector.cpp</includedby>
+    <incdepgraph>
+      <node id="1185">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1186" relation="include">
+        </childnode>
+        <childnode refid="1187" relation="include">
+        </childnode>
+      </node>
+      <node id="1187">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="1173">
+        <label>src/DataCollector/ReservoirDataCollector.h</label>
+        <link refid="ReservoirDataCollector_8h"/>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1175" relation="include">
+        </childnode>
+        <childnode refid="1177" relation="include">
+        </childnode>
+      </node>
+      <node id="1181">
+        <label>cmath</label>
+      </node>
+      <node id="1186">
+        <label>stdexcept</label>
+      </node>
+      <node id="1179">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="1180" relation="include">
+        </childnode>
+        <childnode refid="1181" relation="include">
+        </childnode>
+        <childnode refid="1182" relation="include">
+        </childnode>
+        <childnode refid="1174" relation="include">
+        </childnode>
+      </node>
+      <node id="1176">
+        <label>string</label>
+      </node>
+      <node id="1180">
+        <label>map</label>
+      </node>
+      <node id="1183">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="1176" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+        <childnode refid="1184" relation="include">
+        </childnode>
+      </node>
+      <node id="1174">
+        <label>vector</label>
+      </node>
+      <node id="1178">
+        <label>../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+      </node>
+      <node id="1177">
+        <label>../SystemComponents/WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="1176" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+        <childnode refid="1183" relation="include">
+        </childnode>
+        <childnode refid="1185" relation="include">
+        </childnode>
+        <childnode refid="1188" relation="include">
+        </childnode>
+      </node>
+      <node id="1175">
+        <label>Base/DataCollector.h</label>
+        <link refid="DataCollector_8h"/>
+        <childnode refid="1176" relation="include">
+        </childnode>
+      </node>
+      <node id="1188">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1178" relation="include">
+        </childnode>
+      </node>
+      <node id="1184">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="1174" relation="include">
+        </childnode>
+        <childnode refid="1179" relation="include">
+        </childnode>
+      </node>
+      <node id="1182">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1191">
+        <label>src/DataCollector/AllocatedReservoirDataCollector.cpp</label>
+        <link refid="AllocatedReservoirDataCollector_8cpp"/>
+      </node>
+      <node id="1189">
+        <label>src/DataCollector/ReservoirDataCollector.h</label>
+        <link refid="ReservoirDataCollector_8h"/>
+        <childnode refid="1190" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1193" relation="include">
+        </childnode>
+        <childnode refid="1195" relation="include">
+        </childnode>
+      </node>
+      <node id="1190">
+        <label>src/DataCollector/AllocatedReservoirDataCollector.h</label>
+        <link refid="AllocatedReservoirDataCollector_8h"/>
+        <childnode refid="1191" relation="include">
+        </childnode>
+        <childnode refid="1192" relation="include">
+        </childnode>
+      </node>
+      <node id="1193">
+        <label>src/DataCollector/QuaryDataCollector.h</label>
+        <link refid="QuaryDataCollector_8h"/>
+        <childnode refid="1192" relation="include">
+        </childnode>
+        <childnode refid="1194" relation="include">
+        </childnode>
+      </node>
+      <node id="1192">
+        <label>src/DataCollector/MasterDataCollector.cpp</label>
+        <link refid="MasterDataCollector_8cpp"/>
+      </node>
+      <node id="1195">
+        <label>src/DataCollector/ReservoirDataCollector.cpp</label>
+        <link refid="ReservoirDataCollector_8cpp"/>
+      </node>
+      <node id="1194">
+        <label>src/DataCollector/QuaryDataCollector.cpp</label>
+        <link refid="QuaryDataCollector_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classReservoirDataCollector" prot="public">ReservoirDataCollector</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardoct<sp/>on<sp/>8/25/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_RESERVOIRDATACOLLECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_RESERVOIRDATACOLLECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DataCollector_8h" kindref="compound">Base/DataCollector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../SystemComponents/WaterSources/Reservoir.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classReservoirDataCollector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classReservoirDataCollector" kindref="compound">ReservoirDataCollector</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classDataCollector" kindref="compound">DataCollector</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classReservoir" kindref="compound">Reservoir</ref><sp/>*reservoir;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>stored_volume;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>total_upstream_sources_inflows;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>wastewater_inflows;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demands;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>outflows;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>total_catchments_inflow;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>evaporated_volume;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>area;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fixed_area;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fixed_area_value;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classReservoirDataCollector_1a7647adce7b2d7a8598ae678a5015dde5" kindref="member">ReservoirDataCollector</ref>(<ref refid="classReservoir" kindref="compound">Reservoir</ref><sp/>*reservoir,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" kindref="member">realization</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classReservoirDataCollector_1a7647adce7b2d7a8598ae678a5015dde5" kindref="member">ReservoirDataCollector</ref>(<ref refid="classReservoir" kindref="compound">Reservoir</ref><sp/>*reservoir,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDataCollector_1acad1c22d67a8eb3db056ba776a131900" kindref="member">type</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44" kindref="member">table_width</ref>,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" kindref="member">realization</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classReservoirDataCollector_1a81777b029bf26be403b9f4d67f01588b" kindref="member">printTabularString</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classReservoirDataCollector_1a0b68d7fa4a6d704350340d1ac3e8a1d2" kindref="member">printCompactString</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classReservoirDataCollector_1a62e7c7abc34c8154b338dfbd284ed665" kindref="member">printTabularStringHeaderLine1</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classReservoirDataCollector_1ae2f8e808c5960608e510a64c7f00ad1b" kindref="member">printTabularStringHeaderLine2</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classReservoirDataCollector_1aa8346433f037bbca41f3c8450f7f88cf" kindref="member">printCompactStringHeader</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classReservoirDataCollector_1a5c2e1355c40e45b409168e98245eef95" kindref="member">collect_data</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_RESERVOIRDATACOLLECTOR_H</highlight></codeline>
+    </programlisting>
+    <location file="src/DataCollector/ReservoirDataCollector.h"/>
+  </compounddef>
+</doxygen>

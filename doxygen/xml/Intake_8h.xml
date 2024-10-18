@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="Intake_8h" kind="file" language="C++">
+    <compoundname>Intake.h</compoundname>
+    <includes refid="Reservoir_8h" local="yes">Reservoir.h</includes>
+    <includedby refid="Utils_8h" local="yes">src/Utils/Utils.h</includedby>
+    <includedby refid="IntakeDataCollector_8h" local="yes">src/DataCollector/IntakeDataCollector.h</includedby>
+    <includedby refid="Intake_8cpp" local="yes">src/SystemComponents/WaterSources/Intake.cpp</includedby>
+    <incdepgraph>
+      <node id="2927">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="2920" relation="include">
+        </childnode>
+        <childnode refid="2928" relation="include">
+        </childnode>
+        <childnode refid="2929" relation="include">
+        </childnode>
+      </node>
+      <node id="2929">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="2916">
+        <label>src/SystemComponents/WaterSources/Intake.h</label>
+        <link refid="Intake_8h"/>
+        <childnode refid="2917" relation="include">
+        </childnode>
+      </node>
+      <node id="2923">
+        <label>cmath</label>
+      </node>
+      <node id="2928">
+        <label>stdexcept</label>
+      </node>
+      <node id="2921">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="2922" relation="include">
+        </childnode>
+        <childnode refid="2923" relation="include">
+        </childnode>
+        <childnode refid="2924" relation="include">
+        </childnode>
+        <childnode refid="2920" relation="include">
+        </childnode>
+      </node>
+      <node id="2918">
+        <label>string</label>
+      </node>
+      <node id="2922">
+        <label>map</label>
+      </node>
+      <node id="2925">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="2918" relation="include">
+        </childnode>
+        <childnode refid="2919" relation="include">
+        </childnode>
+        <childnode refid="2921" relation="include">
+        </childnode>
+        <childnode refid="2926" relation="include">
+        </childnode>
+      </node>
+      <node id="2920">
+        <label>vector</label>
+      </node>
+      <node id="2919">
+        <label>../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="2920" relation="include">
+        </childnode>
+        <childnode refid="2921" relation="include">
+        </childnode>
+      </node>
+      <node id="2917">
+        <label>Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="2918" relation="include">
+        </childnode>
+        <childnode refid="2919" relation="include">
+        </childnode>
+        <childnode refid="2925" relation="include">
+        </childnode>
+        <childnode refid="2927" relation="include">
+        </childnode>
+        <childnode refid="2930" relation="include">
+        </childnode>
+      </node>
+      <node id="2930">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="2920" relation="include">
+        </childnode>
+        <childnode refid="2919" relation="include">
+        </childnode>
+      </node>
+      <node id="2926">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="2920" relation="include">
+        </childnode>
+        <childnode refid="2921" relation="include">
+        </childnode>
+      </node>
+      <node id="2924">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2942">
+        <label>src/Problem/PaperTestProblem.cpp</label>
+        <link refid="PaperTestProblem_8cpp"/>
+      </node>
+      <node id="2951">
+        <label>src/SystemComponents/Utility/Utility.cpp</label>
+        <link refid="Utility_8cpp"/>
+      </node>
+      <node id="2931">
+        <label>src/SystemComponents/WaterSources/Intake.h</label>
+        <link refid="Intake_8h"/>
+        <childnode refid="2932" relation="include">
+        </childnode>
+        <childnode refid="2955" relation="include">
+        </childnode>
+        <childnode refid="2957" relation="include">
+        </childnode>
+      </node>
+      <node id="2953">
+        <label>src/Utils/ObjectivesCalculator.cpp</label>
+        <link refid="ObjectivesCalculator_8cpp"/>
+      </node>
+      <node id="2933">
+        <label>src/ContinuityModels/ContinuityModelROF.cpp</label>
+        <link refid="ContinuityModelROF_8cpp"/>
+      </node>
+      <node id="2944">
+        <label>src/Problem/Triangle.cpp</label>
+        <link refid="Triangle_8cpp"/>
+      </node>
+      <node id="2955">
+        <label>src/DataCollector/IntakeDataCollector.h</label>
+        <link refid="IntakeDataCollector_8h"/>
+        <childnode refid="2956" relation="include">
+        </childnode>
+        <childnode refid="2935" relation="include">
+        </childnode>
+      </node>
+      <node id="2956">
+        <label>src/DataCollector/IntakeDataCollector.cpp</label>
+        <link refid="IntakeDataCollector_8cpp"/>
+      </node>
+      <node id="2934">
+        <label>src/Controls/SeasonalMinEnvFlowControl.cpp</label>
+        <link refid="SeasonalMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="2946">
+        <label>src/Simulation/Simulation.cpp</label>
+        <link refid="Simulation_8cpp"/>
+      </node>
+      <node id="2954">
+        <label>src/Utils/Utils.cpp</label>
+        <link refid="Utils_8cpp"/>
+      </node>
+      <node id="2952">
+        <label>src/SystemComponents/WaterSources/Base/WaterSource.cpp</label>
+        <link refid="WaterSource_8cpp"/>
+      </node>
+      <node id="2939">
+        <label>src/Problem/Base/Problem.h</label>
+        <link refid="Problem_8h"/>
+        <childnode refid="2940" relation="include">
+        </childnode>
+        <childnode refid="2943" relation="include">
+        </childnode>
+        <childnode refid="2945" relation="include">
+        </childnode>
+      </node>
+      <node id="2945">
+        <label>src/Problem/Base/Problem.cpp</label>
+        <link refid="Problem_8cpp"/>
+      </node>
+      <node id="2938">
+        <label>src/DroughtMitigationInstruments/Transfers.cpp</label>
+        <link refid="Transfers_8cpp"/>
+      </node>
+      <node id="2949">
+        <label>src/SystemComponents/Bonds/LevelDebtServiceBond.cpp</label>
+        <link refid="LevelDebtServiceBond_8cpp"/>
+      </node>
+      <node id="2937">
+        <label>src/DroughtMitigationInstruments/Restrictions.cpp</label>
+        <link refid="Restrictions_8cpp"/>
+      </node>
+      <node id="2950">
+        <label>src/SystemComponents/Utility/InfrastructureManager.cpp</label>
+        <link refid="InfrastructureManager_8cpp"/>
+      </node>
+      <node id="2935">
+        <label>src/DataCollector/MasterDataCollector.cpp</label>
+        <link refid="MasterDataCollector_8cpp"/>
+      </node>
+      <node id="2941">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="2957">
+        <label>src/SystemComponents/WaterSources/Intake.cpp</label>
+        <link refid="Intake_8cpp"/>
+      </node>
+      <node id="2947">
+        <label>src/SystemComponents/Bonds/BalloonPaymentBond.cpp</label>
+        <link refid="BalloonPaymentBond_8cpp"/>
+      </node>
+      <node id="2948">
+        <label>src/SystemComponents/Bonds/FloatingInterestBalloonPaymentBond.cpp</label>
+        <link refid="FloatingInterestBalloonPaymentBond_8cpp"/>
+      </node>
+      <node id="2936">
+        <label>src/DroughtMitigationInstruments/InsuranceStorageToROF.cpp</label>
+        <link refid="InsuranceStorageToROF_8cpp"/>
+      </node>
+      <node id="2940">
+        <label>src/Problem/PaperTestProblem.h</label>
+        <link refid="PaperTestProblem_8h"/>
+        <childnode refid="2941" relation="include">
+        </childnode>
+        <childnode refid="2942" relation="include">
+        </childnode>
+      </node>
+      <node id="2943">
+        <label>src/Problem/Triangle.h</label>
+        <link refid="Triangle_8h"/>
+        <childnode refid="2941" relation="include">
+        </childnode>
+        <childnode refid="2944" relation="include">
+        </childnode>
+      </node>
+      <node id="2932">
+        <label>src/Utils/Utils.h</label>
+        <link refid="Utils_8h"/>
+        <childnode refid="2933" relation="include">
+        </childnode>
+        <childnode refid="2934" relation="include">
+        </childnode>
+        <childnode refid="2935" relation="include">
+        </childnode>
+        <childnode refid="2936" relation="include">
+        </childnode>
+        <childnode refid="2937" relation="include">
+        </childnode>
+        <childnode refid="2938" relation="include">
+        </childnode>
+        <childnode refid="2939" relation="include">
+        </childnode>
+        <childnode refid="2941" relation="include">
+        </childnode>
+        <childnode refid="2945" relation="include">
+        </childnode>
+        <childnode refid="2946" relation="include">
+        </childnode>
+        <childnode refid="2947" relation="include">
+        </childnode>
+        <childnode refid="2948" relation="include">
+        </childnode>
+        <childnode refid="2949" relation="include">
+        </childnode>
+        <childnode refid="2950" relation="include">
+        </childnode>
+        <childnode refid="2951" relation="include">
+        </childnode>
+        <childnode refid="2952" relation="include">
+        </childnode>
+        <childnode refid="2953" relation="include">
+        </childnode>
+        <childnode refid="2954" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classIntake" prot="public">Intake</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardo<sp/>on<sp/>2/10/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_INTAKE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_INTAKE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Reservoir_8h" kindref="compound">Reservoir.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceConstants" kindref="compound">Constants</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classIntake" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classIntake" kindref="compound">Intake</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classWaterSource" kindref="compound">WaterSource</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntake" kindref="compound">Intake</ref>(</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;catchments,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntake" kindref="compound">Intake</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;catchments,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>raw_water_main_capacity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>construction_time_range,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permitting_period,<sp/><ref refid="classBond" kindref="compound">Bond</ref><sp/>&amp;bond);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntake" kindref="compound">Intake</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classIntake" kindref="compound">Intake</ref><sp/>&amp;intake);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntake" kindref="compound">Intake</ref><sp/>&amp;operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classIntake" kindref="compound">Intake</ref><sp/>&amp;intake);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classIntake" kindref="compound">Intake</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>applyContinuity(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>upstream_source_min_env_flow,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>wastewater_inflow,<sp/>vector&lt;double&gt;<sp/>&amp;demand)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setRealization(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>r,<sp/>vector&lt;double&gt;<sp/>&amp;rdm_factors)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_INTAKE_H</highlight></codeline>
+    </programlisting>
+    <location file="src/SystemComponents/WaterSources/Intake.h"/>
+  </compounddef>
+</doxygen>

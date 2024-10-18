@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classUtils" kind="class" language="C++" prot="public">
+    <compoundname>Utils</compoundname>
+    <includes refid="Utils_8h" local="no">Utils.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUtils_1ab1dced1d690056b012aec72d28cd4176" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt; vector&lt; double &gt; &gt; Utils::parse2DCsvFile</definition>
+        <argsstring>(basic_string&lt; char, char_traits&lt; char &gt;, allocator&lt; char &gt;&gt; file_name, unsigned long max_lines=10000000, vector&lt; unsigned long &gt; rows_to_read=vector&lt; unsigned long &gt;())</argsstring>
+        <name>parse2DCsvFile</name>
+        <param>
+          <type>basic_string&lt; char, char_traits&lt; char &gt;, allocator&lt; char &gt;&gt;</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>max_lines</declname>
+          <defval>10000000</defval>
+        </param>
+        <param>
+          <type>vector&lt; unsigned long &gt;</type>
+          <declname>rows_to_read</declname>
+          <defval>vector&lt; unsigned long &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reads csv file into table, exported as a vector of vector of doubles. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>input file name (full path). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Utils.h" line="19" column="1" bodyfile="src/Utils/Utils.cpp" bodystart="35" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1a575cc5fb290f083a3101a8f0969ae483" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt; double &gt; Utils::parse1DCsvFile</definition>
+        <argsstring>(basic_string&lt; char, char_traits&lt; char &gt;, allocator&lt; char &gt;&gt; file_name, unsigned long max_lines=10000000, vector&lt; unsigned long &gt; rows_to_read=vector&lt; unsigned long &gt;())</argsstring>
+        <name>parse1DCsvFile</name>
+        <param>
+          <type>basic_string&lt; char, char_traits&lt; char &gt;, allocator&lt; char &gt;&gt;</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>max_lines</declname>
+          <defval>10000000</defval>
+        </param>
+        <param>
+          <type>vector&lt; unsigned long &gt;</type>
+          <declname>rows_to_read</declname>
+          <defval>vector&lt; unsigned long &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Utils.h" line="23" column="1" bodyfile="src/Utils/Utils.cpp" bodystart="94" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1ad83b39de47909892725f2d9a8ee0ff1a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> * &gt;</type>
+        <definition>vector&lt; WaterSource * &gt; Utils::copyWaterSourceVector</definition>
+        <argsstring>(vector&lt; WaterSource *&gt; water_sources_original)</argsstring>
+        <name>copyWaterSourceVector</name>
+        <param>
+          <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt;</type>
+          <declname>water_sources_original</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Utils.h" line="27" column="1" bodyfile="src/Utils/Utils.cpp" bodystart="163" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1aae13775d0c17ca43ae39450188958d7d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> * &gt;</type>
+        <definition>vector&lt; Utility * &gt; Utils::copyUtilityVector</definition>
+        <argsstring>(vector&lt; Utility *&gt; utility_original, bool clear_water_sources=false)</argsstring>
+        <name>copyUtilityVector</name>
+        <param>
+          <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt;</type>
+          <declname>utility_original</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_water_sources</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Utils.h" line="29" column="1" bodyfile="src/Utils/Utils.cpp" bodystart="207" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1ac387c706746bffa0308e1fad7a6cd7a6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> * &gt;</type>
+        <definition>vector&lt; DroughtMitigationPolicy * &gt; Utils::copyDroughtMitigationPolicyVector</definition>
+        <argsstring>(vector&lt; DroughtMitigationPolicy *&gt; drought_mitigation_policy_original)</argsstring>
+        <name>copyDroughtMitigationPolicyVector</name>
+        <param>
+          <type>vector&lt; <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> *&gt;</type>
+          <declname>drought_mitigation_policy_original</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Utils.h" line="31" column="1" bodyfile="src/Utils/Utils.cpp" bodystart="224" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1af0041ddac14b680b4039e378b060b6f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref> * &gt;</type>
+        <definition>vector&lt; MinEnvFlowControl * &gt; Utils::copyMinEnvFlowControlVector</definition>
+        <argsstring>(vector&lt; MinEnvFlowControl *&gt; min_env_flow_controls_original)</argsstring>
+        <name>copyMinEnvFlowControlVector</name>
+        <param>
+          <type>vector&lt; <ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref> *&gt;</type>
+          <declname>min_env_flow_controls_original</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Utils.h" line="34" column="1" bodyfile="src/Utils/Utils.cpp" bodystart="129" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1aea07106862ac4b17a93bb598952b5f3c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Utils::isFirstWeekOfTheYear</definition>
+        <argsstring>(int week)</argsstring>
+        <name>isFirstWeekOfTheYear</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Utils.h" line="37" column="1" bodyfile="src/Utils/Utils.cpp" bodystart="263" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1a8318227e82678b727c4de0dda180e64a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Utils::weekOfTheYear</definition>
+        <argsstring>(int week)</argsstring>
+        <name>weekOfTheYear</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Utils.h" line="39" column="1" bodyfile="src/Utils/Utils.cpp" bodystart="267" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1a01a90cec5c722c66a0d75d051f48dd03" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Utils::removeIntFromVector</definition>
+        <argsstring>(vector&lt; int &gt; &amp;vec, int el)</argsstring>
+        <name>removeIntFromVector</name>
+        <param>
+          <type>vector&lt; int &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>el</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Utils.h" line="41" column="1" bodyfile="src/Utils/Utils.cpp" bodystart="271" bodyend="276"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1a0ce3051b18a14aad2608d31e25b5fdca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Utils::print_exception</definition>
+        <argsstring>(const exception &amp;e, int level=0)</argsstring>
+        <name>print_exception</name>
+        <param>
+          <type>const exception &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Utils.h" line="43" column="1" bodyfile="src/Utils/Utils.cpp" bodystart="278" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1addb3e866200f4152d3f004b2c19c4aa9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classBond" kindref="compound">Bond</ref> * &gt;</type>
+        <definition>vector&lt; Bond * &gt; Utils::copyBonds</definition>
+        <argsstring>(vector&lt; Bond *&gt; bonds_original)</argsstring>
+        <name>copyBonds</name>
+        <param>
+          <type>vector&lt; <ref refid="classBond" kindref="compound">Bond</ref> *&gt;</type>
+          <declname>bonds_original</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Utils.h" line="45" column="1" bodyfile="src/Utils/Utils.cpp" bodystart="244" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1ad22978d5ae586f881920c2c2452436ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Utils::createDir</definition>
+        <argsstring>(string directory)</argsstring>
+        <name>createDir</name>
+        <param>
+          <type>string</type>
+          <declname>directory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Utils.h" line="47" column="1" bodyfile="src/Utils/Utils.cpp" bodystart="287" bodyend="299"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Utils/Utils.h" line="16" column="1" bodyfile="src/Utils/Utils.h" bodystart="16" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classUtils_1addb3e866200f4152d3f004b2c19c4aa9" prot="public" virt="non-virtual"><scope>Utils</scope><name>copyBonds</name></member>
+      <member refid="classUtils_1ac387c706746bffa0308e1fad7a6cd7a6" prot="public" virt="non-virtual"><scope>Utils</scope><name>copyDroughtMitigationPolicyVector</name></member>
+      <member refid="classUtils_1af0041ddac14b680b4039e378b060b6f7" prot="public" virt="non-virtual"><scope>Utils</scope><name>copyMinEnvFlowControlVector</name></member>
+      <member refid="classUtils_1aae13775d0c17ca43ae39450188958d7d" prot="public" virt="non-virtual"><scope>Utils</scope><name>copyUtilityVector</name></member>
+      <member refid="classUtils_1ad83b39de47909892725f2d9a8ee0ff1a" prot="public" virt="non-virtual"><scope>Utils</scope><name>copyWaterSourceVector</name></member>
+      <member refid="classUtils_1ad22978d5ae586f881920c2c2452436ce" prot="public" virt="non-virtual"><scope>Utils</scope><name>createDir</name></member>
+      <member refid="classUtils_1aea07106862ac4b17a93bb598952b5f3c" prot="public" virt="non-virtual"><scope>Utils</scope><name>isFirstWeekOfTheYear</name></member>
+      <member refid="classUtils_1a575cc5fb290f083a3101a8f0969ae483" prot="public" virt="non-virtual"><scope>Utils</scope><name>parse1DCsvFile</name></member>
+      <member refid="classUtils_1ab1dced1d690056b012aec72d28cd4176" prot="public" virt="non-virtual"><scope>Utils</scope><name>parse2DCsvFile</name></member>
+      <member refid="classUtils_1a0ce3051b18a14aad2608d31e25b5fdca" prot="public" virt="non-virtual"><scope>Utils</scope><name>print_exception</name></member>
+      <member refid="classUtils_1a01a90cec5c722c66a0d75d051f48dd03" prot="public" virt="non-virtual"><scope>Utils</scope><name>removeIntFromVector</name></member>
+      <member refid="classUtils_1a8318227e82678b727c4de0dda180e64a" prot="public" virt="non-virtual"><scope>Utils</scope><name>weekOfTheYear</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

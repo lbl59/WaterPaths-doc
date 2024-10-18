@@ -1,0 +1,142 @@
+\hypertarget{classSequentialJointTreatmentExpansion}{}\section{Sequential\+Joint\+Treatment\+Expansion Class Reference}
+\label{classSequentialJointTreatmentExpansion}\index{Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}}
+
+
+{\ttfamily \#include $<$Sequential\+Joint\+Treatment\+Expansion.\+h$>$}
+
+Inheritance diagram for Sequential\+Joint\+Treatment\+Expansion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSequentialJointTreatmentExpansion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSequentialJointTreatmentExpansion_ad3ca28eaaa041be6ebbd0a4593d5c9ab}{Sequential\+Joint\+Treatment\+Expansion}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const int \mbox{\hyperlink{classSequentialJointTreatmentExpansion_a43b9e27138606bbbf8e5ef0279232a0a}{parent\+\_\+reservoir\+\_\+\+ID}}, const int \mbox{\hyperlink{classSequentialJointTreatmentExpansion_adeaf6ba2bcfc4c024e332764144e3021}{expansion\+\_\+sequence\+\_\+id}}, vector$<$ int $>$ connected\+\_\+sources, vector$<$ double $>$ \&sequential\+\_\+treatment\+\_\+capacity, vector$<$ \mbox{\hyperlink{classBond}{Bond}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a413b094e11bdce62f4d82e5bb9e4706e}{bonds}}, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period)
+\item 
+\mbox{\hyperlink{classSequentialJointTreatmentExpansion_a677aa8de08ba7116216509b1a6d74b14}{Sequential\+Joint\+Treatment\+Expansion}} (const \mbox{\hyperlink{classSequentialJointTreatmentExpansion}{Sequential\+Joint\+Treatment\+Expansion}} \&joint\+\_\+water\+\_\+treatment\+\_\+plant)
+\item 
+\mbox{\hyperlink{classSequentialJointTreatmentExpansion_a77d4270fd89d172739fdede5b9e6c1e9}{$\sim$\+Sequential\+Joint\+Treatment\+Expansion}} () override
+\item 
+\mbox{\hyperlink{classSequentialJointTreatmentExpansion}{Sequential\+Joint\+Treatment\+Expansion}} \& \mbox{\hyperlink{classSequentialJointTreatmentExpansion_a53413658de78fecdb2e0d451a20eb82c}{operator=}} (const \mbox{\hyperlink{classSequentialJointTreatmentExpansion}{Sequential\+Joint\+Treatment\+Expansion}} \&joint\+\_\+water\+\_\+treatment\+\_\+plant)
+\item 
+void \mbox{\hyperlink{classSequentialJointTreatmentExpansion_a64fdd68fc68f6b1145291575c2116815}{apply\+Continuity}} (int week, double \mbox{\hyperlink{classWaterSource_a7a69b2e9b6030f1035e6cf44d2918ee5}{upstream\+\_\+source\+\_\+inflow}}, double wastewater\+\_\+discharge, vector$<$ double $>$ \&demand\+\_\+outflow) override
+\item 
+double \mbox{\hyperlink{classSequentialJointTreatmentExpansion_a06a2e9479bd639661cd8241e571c5711}{implement\+Treatment\+Capacity}} (int utility\+\_\+id)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classSequentialJointTreatmentExpansion_adeaf6ba2bcfc4c024e332764144e3021}{expansion\+\_\+sequence\+\_\+id}}
+\item 
+const unsigned int \mbox{\hyperlink{classSequentialJointTreatmentExpansion_a43b9e27138606bbbf8e5ef0279232a0a}{parent\+\_\+reservoir\+\_\+\+ID}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSequentialJointTreatmentExpansion_ad3ca28eaaa041be6ebbd0a4593d5c9ab}\label{classSequentialJointTreatmentExpansion_ad3ca28eaaa041be6ebbd0a4593d5c9ab}} 
+\index{Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}!Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}}
+\index{Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}!Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}}
+\subsubsection{\texorpdfstring{Sequential\+Joint\+Treatment\+Expansion()}{SequentialJointTreatmentExpansion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sequential\+Joint\+Treatment\+Expansion\+::\+Sequential\+Joint\+Treatment\+Expansion (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const int}]{parent\+\_\+reservoir\+\_\+\+ID,  }\item[{const int}]{expansion\+\_\+sequence\+\_\+id,  }\item[{vector$<$ int $>$}]{connected\+\_\+sources,  }\item[{vector$<$ double $>$ \&}]{sequential\+\_\+treatment\+\_\+capacity,  }\item[{vector$<$ \mbox{\hyperlink{classBond}{Bond}} $\ast$$>$ \&}]{bonds,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em id} & \\
+\hline
+{\em parent\+\_\+reservoir\+\_\+\+ID} & \\
+\hline
+{\em expansion\+\_\+sequence\+\_\+id} & \\
+\hline
+{\em sequential\+\_\+treatment\+\_\+capacity} & \\
+\hline
+{\em bonds} & \\
+\hline
+{\em construction\+\_\+time\+\_\+range} & \\
+\hline
+{\em permitting\+\_\+period} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSequentialJointTreatmentExpansion_a677aa8de08ba7116216509b1a6d74b14}\label{classSequentialJointTreatmentExpansion_a677aa8de08ba7116216509b1a6d74b14}} 
+\index{Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}!Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}}
+\index{Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}!Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}}
+\subsubsection{\texorpdfstring{Sequential\+Joint\+Treatment\+Expansion()}{SequentialJointTreatmentExpansion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sequential\+Joint\+Treatment\+Expansion\+::\+Sequential\+Joint\+Treatment\+Expansion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSequentialJointTreatmentExpansion}{Sequential\+Joint\+Treatment\+Expansion}} \&}]{joint\+\_\+water\+\_\+treatment\+\_\+plant }\end{DoxyParamCaption})}
+
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+{\em reservoir} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSequentialJointTreatmentExpansion_a77d4270fd89d172739fdede5b9e6c1e9}\label{classSequentialJointTreatmentExpansion_a77d4270fd89d172739fdede5b9e6c1e9}} 
+\index{Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}!````~Sequential\+Joint\+Treatment\+Expansion@{$\sim$\+Sequential\+Joint\+Treatment\+Expansion}}
+\index{````~Sequential\+Joint\+Treatment\+Expansion@{$\sim$\+Sequential\+Joint\+Treatment\+Expansion}!Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}}
+\subsubsection{\texorpdfstring{$\sim$\+Sequential\+Joint\+Treatment\+Expansion()}{~SequentialJointTreatmentExpansion()}}
+{\footnotesize\ttfamily Sequential\+Joint\+Treatment\+Expansion\+::$\sim$\+Sequential\+Joint\+Treatment\+Expansion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSequentialJointTreatmentExpansion_a64fdd68fc68f6b1145291575c2116815}\label{classSequentialJointTreatmentExpansion_a64fdd68fc68f6b1145291575c2116815}} 
+\index{Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}!apply\+Continuity@{apply\+Continuity}}
+\index{apply\+Continuity@{apply\+Continuity}!Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}}
+\subsubsection{\texorpdfstring{apply\+Continuity()}{applyContinuity()}}
+{\footnotesize\ttfamily void Sequential\+Joint\+Treatment\+Expansion\+::apply\+Continuity (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{double}]{upstream\+\_\+source\+\_\+inflow,  }\item[{double}]{wastewater\+\_\+discharge,  }\item[{vector$<$ double $>$ \&}]{demand\+\_\+outflow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classWaterSource_ac070445379fe706f65b977dade4f3fbc}{Water\+Source}}.
+
+\mbox{\Hypertarget{classSequentialJointTreatmentExpansion_a06a2e9479bd639661cd8241e571c5711}\label{classSequentialJointTreatmentExpansion_a06a2e9479bd639661cd8241e571c5711}} 
+\index{Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}!implement\+Treatment\+Capacity@{implement\+Treatment\+Capacity}}
+\index{implement\+Treatment\+Capacity@{implement\+Treatment\+Capacity}!Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}}
+\subsubsection{\texorpdfstring{implement\+Treatment\+Capacity()}{implementTreatmentCapacity()}}
+{\footnotesize\ttfamily double Sequential\+Joint\+Treatment\+Expansion\+::implement\+Treatment\+Capacity (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption})}
+
+Returns the capacity to be installed for a given utility and deducts it from maximum planned expansion. 
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSequentialJointTreatmentExpansion_a53413658de78fecdb2e0d451a20eb82c}\label{classSequentialJointTreatmentExpansion_a53413658de78fecdb2e0d451a20eb82c}} 
+\index{Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}!operator=@{operator=}}
+\index{operator=@{operator=}!Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSequentialJointTreatmentExpansion}{Sequential\+Joint\+Treatment\+Expansion}} \& Sequential\+Joint\+Treatment\+Expansion\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSequentialJointTreatmentExpansion}{Sequential\+Joint\+Treatment\+Expansion}} \&}]{joint\+\_\+water\+\_\+treatment\+\_\+plant }\end{DoxyParamCaption})}
+
+Copy assignment operator 
+\begin{DoxyParams}{Parameters}
+{\em reservoir} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classSequentialJointTreatmentExpansion_adeaf6ba2bcfc4c024e332764144e3021}\label{classSequentialJointTreatmentExpansion_adeaf6ba2bcfc4c024e332764144e3021}} 
+\index{Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}!expansion\+\_\+sequence\+\_\+id@{expansion\+\_\+sequence\+\_\+id}}
+\index{expansion\+\_\+sequence\+\_\+id@{expansion\+\_\+sequence\+\_\+id}!Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}}
+\subsubsection{\texorpdfstring{expansion\+\_\+sequence\+\_\+id}{expansion\_sequence\_id}}
+{\footnotesize\ttfamily const int Sequential\+Joint\+Treatment\+Expansion\+::expansion\+\_\+sequence\+\_\+id}
+
+\mbox{\Hypertarget{classSequentialJointTreatmentExpansion_a43b9e27138606bbbf8e5ef0279232a0a}\label{classSequentialJointTreatmentExpansion_a43b9e27138606bbbf8e5ef0279232a0a}} 
+\index{Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}!parent\+\_\+reservoir\+\_\+\+ID@{parent\+\_\+reservoir\+\_\+\+ID}}
+\index{parent\+\_\+reservoir\+\_\+\+ID@{parent\+\_\+reservoir\+\_\+\+ID}!Sequential\+Joint\+Treatment\+Expansion@{Sequential\+Joint\+Treatment\+Expansion}}
+\subsubsection{\texorpdfstring{parent\+\_\+reservoir\+\_\+\+ID}{parent\_reservoir\_ID}}
+{\footnotesize\ttfamily const unsigned int Sequential\+Joint\+Treatment\+Expansion\+::parent\+\_\+reservoir\+\_\+\+ID}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+System\+Components/\+Water\+Sources/\mbox{\hyperlink{SequentialJointTreatmentExpansion_8h}{Sequential\+Joint\+Treatment\+Expansion.\+h}}\item 
+src/\+System\+Components/\+Water\+Sources/\mbox{\hyperlink{SequentialJointTreatmentExpansion_8cpp}{Sequential\+Joint\+Treatment\+Expansion.\+cpp}}\end{DoxyCompactItemize}

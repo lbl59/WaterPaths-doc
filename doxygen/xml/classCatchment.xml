@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classCatchment" kind="class" language="C++" prot="public">
+    <compoundname>Catchment</compoundname>
+    <derivedcompoundref refid="classEvaporationSeries" prot="public" virt="non-virtual">EvaporationSeries</derivedcompoundref>
+    <includes refid="Catchment_8h" local="no">Catchment.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCatchment_1a579ccda86831f286c19c76354e7125c3" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt; *</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt;* Catchment::streamflows_all</definition>
+        <argsstring></argsstring>
+        <name>streamflows_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="16" column="1" bodyfile="src/SystemComponents/Catchment.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCatchment_1aaf04c295ecd6b666fa1439d3d5bc072a" prot="protected" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; Catchment::streamflows_realization</definition>
+        <argsstring></argsstring>
+        <name>streamflows_realization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="17" column="1" bodyfile="src/SystemComponents/Catchment.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCatchment_1a2d4994220f63b876348b4ce4892bc6d3" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Catchment::series_length</definition>
+        <argsstring></argsstring>
+        <name>series_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="18" column="1" bodyfile="src/SystemComponents/Catchment.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCatchment_1a472ff6892f90d94b8c4dba53c462dedf" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Catchment::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="19" column="1" bodyfile="src/SystemComponents/Catchment.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCatchment_1a20548a9d03f0d39f297cb15b3c0433ad" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Catchment::delta_week</definition>
+        <argsstring></argsstring>
+        <name>delta_week</name>
+        <initializer>= (int) std::round(
+            <ref refid="namespaceConstants_1a19e84af3cbc6e1318beb22408c2a1f2f" kindref="member">Constants::WEEKS_IN_YEAR</ref> * <ref refid="namespaceConstants_1ad6b1922ee031afa4b93176968d060fdf" kindref="member">Constants::NUMBER_REALIZATIONS_ROF</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="21" column="1" bodyfile="src/SystemComponents/Catchment.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCatchment_1aafdee6ee868a8892314672abb119e60f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catchment::Catchment</definition>
+        <argsstring>(vector&lt; vector&lt; double &gt;&gt; *streamflows_all, int series_length)</argsstring>
+        <name>Catchment</name>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; *</type>
+          <declname>streamflows_all</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>series_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="26" column="1" bodyfile="src/SystemComponents/Catchment.cpp" bodystart="9" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classCatchment_1ae311c4b2d857a8b5abc01f5317b04df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catchment::Catchment</definition>
+        <argsstring>(const Catchment &amp;catchment)</argsstring>
+        <name>Catchment</name>
+        <param>
+          <type>const <ref refid="classCatchment" kindref="compound">Catchment</ref> &amp;</type>
+          <declname>catchment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>catchment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="28" column="1" bodyfile="src/SystemComponents/Catchment.cpp" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classCatchment_1a7c8073fc1dd2e2fa9fa8bfc68ce120bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Catchment::~Catchment</definition>
+        <argsstring>()</argsstring>
+        <name>~Catchment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="30" column="1" bodyfile="src/SystemComponents/Catchment.cpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classCatchment_1a66d0f20f34893ea2df589e5cbce31fc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCatchment" kindref="compound">Catchment</ref> &amp;</type>
+        <definition>Catchment &amp; Catchment::operator=</definition>
+        <argsstring>(const Catchment &amp;catchment)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCatchment" kindref="compound">Catchment</ref> &amp;</type>
+          <declname>catchment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy assignment operator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>catchment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCatchment_1af4e8206ffab5c901e5e4cdd6136f73a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Catchment::getStreamflow</definition>
+        <argsstring>(int week)</argsstring>
+        <name>getStreamflow</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get streamflow for a given week. This function assures that the number of past inflows used for ROF calculations are reserved in the beginning of the time series for ROF calculations. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="34" column="1" bodyfile="src/SystemComponents/Catchment.cpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classCatchment_1affb9042c5854a76efd864ce87d7d1877" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Catchment::setRealization</definition>
+        <argsstring>(unsigned long r, vector&lt; double &gt; &amp;rdm_factors)</argsstring>
+        <name>setRealization</name>
+        <reimplementedby refid="classEvaporationSeries_1a4985ac4c81ec111657861e5750b24c0e">setRealization</reimplementedby>
+        <param>
+          <type>unsigned long</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>rdm_factors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get time series corresponding to realization index and eliminate reference to comprehensive streamflow data set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="36" column="1" bodyfile="src/SystemComponents/Catchment.cpp" bodystart="65" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="27">
+        <label>Catchment</label>
+        <link refid="classCatchment"/>
+      </node>
+      <node id="28">
+        <label>EvaporationSeries</label>
+        <link refid="classEvaporationSeries"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="src/SystemComponents/Catchment.h" line="14" column="1" bodyfile="src/SystemComponents/Catchment.h" bodystart="14" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classCatchment_1aafdee6ee868a8892314672abb119e60f" prot="public" virt="non-virtual"><scope>Catchment</scope><name>Catchment</name></member>
+      <member refid="classCatchment_1ae311c4b2d857a8b5abc01f5317b04df2" prot="public" virt="non-virtual"><scope>Catchment</scope><name>Catchment</name></member>
+      <member refid="classCatchment_1a20548a9d03f0d39f297cb15b3c0433ad" prot="protected" virt="non-virtual"><scope>Catchment</scope><name>delta_week</name></member>
+      <member refid="classCatchment_1af4e8206ffab5c901e5e4cdd6136f73a1" prot="public" virt="non-virtual"><scope>Catchment</scope><name>getStreamflow</name></member>
+      <member refid="classCatchment_1a66d0f20f34893ea2df589e5cbce31fc4" prot="public" virt="non-virtual"><scope>Catchment</scope><name>operator=</name></member>
+      <member refid="classCatchment_1a472ff6892f90d94b8c4dba53c462dedf" prot="protected" virt="non-virtual"><scope>Catchment</scope><name>parent</name></member>
+      <member refid="classCatchment_1a2d4994220f63b876348b4ce4892bc6d3" prot="protected" virt="non-virtual"><scope>Catchment</scope><name>series_length</name></member>
+      <member refid="classCatchment_1affb9042c5854a76efd864ce87d7d1877" prot="public" virt="virtual"><scope>Catchment</scope><name>setRealization</name></member>
+      <member refid="classCatchment_1a579ccda86831f286c19c76354e7125c3" prot="protected" virt="non-virtual"><scope>Catchment</scope><name>streamflows_all</name></member>
+      <member refid="classCatchment_1aaf04c295ecd6b666fa1439d3d5bc072a" prot="protected" virt="non-virtual"><scope>Catchment</scope><name>streamflows_realization</name></member>
+      <member refid="classCatchment_1a7c8073fc1dd2e2fa9fa8bfc68ce120bd" prot="public" virt="virtual"><scope>Catchment</scope><name>~Catchment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

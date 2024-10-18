@@ -1,0 +1,211 @@
+\hypertarget{classDroughtMitigationPolicy}{}\section{Drought\+Mitigation\+Policy Class Reference}
+\label{classDroughtMitigationPolicy}\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+
+
+{\ttfamily \#include $<$Drought\+Mitigation\+Policy.\+h$>$}
+
+Inheritance diagram for Drought\+Mitigation\+Policy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDroughtMitigationPolicy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDroughtMitigationPolicy_a00cce0117a5bc0c446727e0c0c59a8df}{Drought\+Mitigation\+Policy}} (const int \mbox{\hyperlink{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}{id}}, const int \mbox{\hyperlink{classDroughtMitigationPolicy_aaea5016d1462bec889cb8df85aececc6}{type}})
+\item 
+virtual void \mbox{\hyperlink{classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d}{apply\+Policy}} (int week)=0
+\item 
+virtual void \mbox{\hyperlink{classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a}{add\+System\+Components}} (vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ utilities, vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ water\+\_\+sources, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ min\+\_\+env\+\_\+flow\+\_\+controls)=0
+\item 
+const vector$<$ int $>$ \& \mbox{\hyperlink{classDroughtMitigationPolicy_aad53e4f995e3fe18b580f39d15daeefc}{get\+Utilities\+\_\+ids}} () const
+\item 
+bool \mbox{\hyperlink{classDroughtMitigationPolicy_a0bf7d0fa94377ae6814e529daf0204c4}{operator$<$}} (const \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$other)
+\item 
+bool \mbox{\hyperlink{classDroughtMitigationPolicy_a576d3ddb09dc9372898a63c0949d08a6}{operator$>$}} (const \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$other)
+\item 
+virtual \mbox{\hyperlink{classDroughtMitigationPolicy_a91ff1ca816dcb044e1e10a6c2a8e56a0}{$\sim$\+Drought\+Mitigation\+Policy}} ()
+\item 
+void \mbox{\hyperlink{classDroughtMitigationPolicy_a75710a6ab73213223222b3472f9251c0}{set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+}} (vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+, int \mbox{\hyperlink{classDroughtMitigationPolicy_ace2a2425f6608c34a3189c11445978a1}{use\+\_\+imported\+\_\+tables}})
+\item 
+virtual void \mbox{\hyperlink{classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4}{set\+Realization}} (unsigned long realization\+\_\+id, vector$<$ double $>$ \&utilities\+\_\+rdm, vector$<$ double $>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ double $>$ \&policy\+\_\+rdm)=0
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}{id}}
+\item 
+const int \mbox{\hyperlink{classDroughtMitigationPolicy_aaea5016d1462bec889cb8df85aececc6}{type}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDroughtMitigationPolicy_aaf0715876ce33a75c7db92e50523ea0c}{Drought\+Mitigation\+Policy}} (const \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} \&drought\+\_\+mitigation\+\_\+policy)
+\item 
+double \mbox{\hyperlink{classDroughtMitigationPolicy_a685ce7eacb01cb262d7e5245a736aa38}{get\+Rof\+From\+Realization\+Table}} (int utility\+\_\+id, int week, int tier)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classDroughtMitigationPolicy_ad19fbc5a9fdf17ed50c0ba0b99d47eca}{utilities\+\_\+ids}}
+\item 
+vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$ $>$ \mbox{\hyperlink{classDroughtMitigationPolicy_af6e5787a58017804d8598effbeeaba8e}{realization\+\_\+utilities}}
+\item 
+vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$ $>$ \mbox{\hyperlink{classDroughtMitigationPolicy_ae2104e99c421513902ba66d012484c0e}{realization\+\_\+water\+\_\+sources}}
+\item 
+vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$ $>$ \mbox{\hyperlink{classDroughtMitigationPolicy_af583979405bc5d530ee576df8a6e9324}{realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls}}
+\item 
+vector$<$ vector$<$ double $>$ $>$ $\ast$ \mbox{\hyperlink{classDroughtMitigationPolicy_a4c5a2dc2aa3a1c7550cdb17045e1fef3}{rdm\+\_\+factors\+\_\+all}}
+\item 
+double $\ast$ \mbox{\hyperlink{classDroughtMitigationPolicy_abef5c917bbc076514fe61bfebbd0e4fc}{rdm\+\_\+factors\+\_\+realization}}
+\item 
+bool \mbox{\hyperlink{classDroughtMitigationPolicy_ace2a2425f6608c34a3189c11445978a1}{use\+\_\+imported\+\_\+tables}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDroughtMitigationPolicy_aaf0715876ce33a75c7db92e50523ea0c}\label{classDroughtMitigationPolicy_aaf0715876ce33a75c7db92e50523ea0c}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{Drought\+Mitigation\+Policy()}{DroughtMitigationPolicy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Drought\+Mitigation\+Policy\+::\+Drought\+Mitigation\+Policy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} \&}]{drought\+\_\+mitigation\+\_\+policy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a00cce0117a5bc0c446727e0c0c59a8df}\label{classDroughtMitigationPolicy_a00cce0117a5bc0c446727e0c0c59a8df}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{Drought\+Mitigation\+Policy()}{DroughtMitigationPolicy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Drought\+Mitigation\+Policy\+::\+Drought\+Mitigation\+Policy (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const int}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a91ff1ca816dcb044e1e10a6c2a8e56a0}\label{classDroughtMitigationPolicy_a91ff1ca816dcb044e1e10a6c2a8e56a0}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!````~Drought\+Mitigation\+Policy@{$\sim$\+Drought\+Mitigation\+Policy}}
+\index{````~Drought\+Mitigation\+Policy@{$\sim$\+Drought\+Mitigation\+Policy}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{$\sim$\+Drought\+Mitigation\+Policy()}{~DroughtMitigationPolicy()}}
+{\footnotesize\ttfamily Drought\+Mitigation\+Policy\+::$\sim$\+Drought\+Mitigation\+Policy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a}\label{classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!add\+System\+Components@{add\+System\+Components}}
+\index{add\+System\+Components@{add\+System\+Components}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{add\+System\+Components()}{addSystemComponents()}}
+{\footnotesize\ttfamily virtual void Drought\+Mitigation\+Policy\+::add\+System\+Components (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{utilities,  }\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$}]{water\+\_\+sources,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$}]{min\+\_\+env\+\_\+flow\+\_\+controls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classTransfers_a3c1930dbeb1273c1c0be93ad5ca57357}{Transfers}}, \mbox{\hyperlink{classInsuranceStorageToROF_ac7d317a7f189739275960e4f021108d8}{Insurance\+Storage\+To\+R\+OF}}, and \mbox{\hyperlink{classRestrictions_ab0a2b62495d6cdd8d1fedba419c05c37}{Restrictions}}.
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d}\label{classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!apply\+Policy@{apply\+Policy}}
+\index{apply\+Policy@{apply\+Policy}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{apply\+Policy()}{applyPolicy()}}
+{\footnotesize\ttfamily virtual void Drought\+Mitigation\+Policy\+::apply\+Policy (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classTransfers_ad9e4e83ff763ac1ba518a19051cd2e69}{Transfers}}, \mbox{\hyperlink{classInsuranceStorageToROF_a17aa84e0559793b3c463c468dfda3753}{Insurance\+Storage\+To\+R\+OF}}, and \mbox{\hyperlink{classRestrictions_a1ef7559adc034bdddd047ee776b5f9a9}{Restrictions}}.
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a685ce7eacb01cb262d7e5245a736aa38}\label{classDroughtMitigationPolicy_a685ce7eacb01cb262d7e5245a736aa38}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!get\+Rof\+From\+Realization\+Table@{get\+Rof\+From\+Realization\+Table}}
+\index{get\+Rof\+From\+Realization\+Table@{get\+Rof\+From\+Realization\+Table}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{get\+Rof\+From\+Realization\+Table()}{getRofFromRealizationTable()}}
+{\footnotesize\ttfamily double Drought\+Mitigation\+Policy\+::get\+Rof\+From\+Realization\+Table (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id,  }\item[{int}]{week,  }\item[{int}]{tier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_aad53e4f995e3fe18b580f39d15daeefc}\label{classDroughtMitigationPolicy_aad53e4f995e3fe18b580f39d15daeefc}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!get\+Utilities\+\_\+ids@{get\+Utilities\+\_\+ids}}
+\index{get\+Utilities\+\_\+ids@{get\+Utilities\+\_\+ids}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{get\+Utilities\+\_\+ids()}{getUtilities\_ids()}}
+{\footnotesize\ttfamily const vector$<$ int $>$ \& Drought\+Mitigation\+Policy\+::get\+Utilities\+\_\+ids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a0bf7d0fa94377ae6814e529daf0204c4}\label{classDroughtMitigationPolicy_a0bf7d0fa94377ae6814e529daf0204c4}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Drought\+Mitigation\+Policy\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a576d3ddb09dc9372898a63c0949d08a6}\label{classDroughtMitigationPolicy_a576d3ddb09dc9372898a63c0949d08a6}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Drought\+Mitigation\+Policy\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4}\label{classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily virtual void Drought\+Mitigation\+Policy\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{realization\+\_\+id,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{policy\+\_\+rdm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classTransfers_a75342a7c14b2ff69eb2520de240a1131}{Transfers}}, \mbox{\hyperlink{classInsuranceStorageToROF_a6318c3dca8b0c4d568eac494e5ccf712}{Insurance\+Storage\+To\+R\+OF}}, and \mbox{\hyperlink{classRestrictions_abc17a8a403311933a3bb58fbecd5f5fd}{Restrictions}}.
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a75710a6ab73213223222b3472f9251c0}\label{classDroughtMitigationPolicy_a75710a6ab73213223222b3472f9251c0}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+@{set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+}}
+\index{set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+@{set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+()}{setStorage\_to\_rof\_table\_()}}
+{\footnotesize\ttfamily void Drought\+Mitigation\+Policy\+::set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+ (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&}]{storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+,  }\item[{int}]{use\+\_\+imported\+\_\+tables }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}\label{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!id@{id}}
+\index{id@{id}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily const int Drought\+Mitigation\+Policy\+::id}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a4c5a2dc2aa3a1c7550cdb17045e1fef3}\label{classDroughtMitigationPolicy_a4c5a2dc2aa3a1c7550cdb17045e1fef3}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!rdm\+\_\+factors\+\_\+all@{rdm\+\_\+factors\+\_\+all}}
+\index{rdm\+\_\+factors\+\_\+all@{rdm\+\_\+factors\+\_\+all}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{rdm\+\_\+factors\+\_\+all}{rdm\_factors\_all}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$$\ast$ Drought\+Mitigation\+Policy\+::rdm\+\_\+factors\+\_\+all\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_abef5c917bbc076514fe61bfebbd0e4fc}\label{classDroughtMitigationPolicy_abef5c917bbc076514fe61bfebbd0e4fc}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!rdm\+\_\+factors\+\_\+realization@{rdm\+\_\+factors\+\_\+realization}}
+\index{rdm\+\_\+factors\+\_\+realization@{rdm\+\_\+factors\+\_\+realization}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{rdm\+\_\+factors\+\_\+realization}{rdm\_factors\_realization}}
+{\footnotesize\ttfamily double$\ast$ Drought\+Mitigation\+Policy\+::rdm\+\_\+factors\+\_\+realization\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_af583979405bc5d530ee576df8a6e9324}\label{classDroughtMitigationPolicy_af583979405bc5d530ee576df8a6e9324}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls@{realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls}}
+\index{realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls@{realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls}{realization\_min\_env\_flow\_controls}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ Drought\+Mitigation\+Policy\+::realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_af6e5787a58017804d8598effbeeaba8e}\label{classDroughtMitigationPolicy_af6e5787a58017804d8598effbeeaba8e}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!realization\+\_\+utilities@{realization\+\_\+utilities}}
+\index{realization\+\_\+utilities@{realization\+\_\+utilities}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{realization\+\_\+utilities}{realization\_utilities}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ Drought\+Mitigation\+Policy\+::realization\+\_\+utilities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_ae2104e99c421513902ba66d012484c0e}\label{classDroughtMitigationPolicy_ae2104e99c421513902ba66d012484c0e}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!realization\+\_\+water\+\_\+sources@{realization\+\_\+water\+\_\+sources}}
+\index{realization\+\_\+water\+\_\+sources@{realization\+\_\+water\+\_\+sources}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{realization\+\_\+water\+\_\+sources}{realization\_water\_sources}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ Drought\+Mitigation\+Policy\+::realization\+\_\+water\+\_\+sources\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_aaea5016d1462bec889cb8df85aececc6}\label{classDroughtMitigationPolicy_aaea5016d1462bec889cb8df85aececc6}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!type@{type}}
+\index{type@{type}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily const int Drought\+Mitigation\+Policy\+::type}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_ace2a2425f6608c34a3189c11445978a1}\label{classDroughtMitigationPolicy_ace2a2425f6608c34a3189c11445978a1}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!use\+\_\+imported\+\_\+tables@{use\+\_\+imported\+\_\+tables}}
+\index{use\+\_\+imported\+\_\+tables@{use\+\_\+imported\+\_\+tables}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{use\+\_\+imported\+\_\+tables}{use\_imported\_tables}}
+{\footnotesize\ttfamily bool Drought\+Mitigation\+Policy\+::use\+\_\+imported\+\_\+tables\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_ad19fbc5a9fdf17ed50c0ba0b99d47eca}\label{classDroughtMitigationPolicy_ad19fbc5a9fdf17ed50c0ba0b99d47eca}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!utilities\+\_\+ids@{utilities\+\_\+ids}}
+\index{utilities\+\_\+ids@{utilities\+\_\+ids}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{utilities\+\_\+ids}{utilities\_ids}}
+{\footnotesize\ttfamily vector$<$int$>$ Drought\+Mitigation\+Policy\+::utilities\+\_\+ids\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Drought\+Mitigation\+Instruments/\+Base/\mbox{\hyperlink{DroughtMitigationPolicy_8h}{Drought\+Mitigation\+Policy.\+h}}\item 
+src/\+Drought\+Mitigation\+Instruments/\+Base/\mbox{\hyperlink{DroughtMitigationPolicy_8cpp}{Drought\+Mitigation\+Policy.\+cpp}}\end{DoxyCompactItemize}

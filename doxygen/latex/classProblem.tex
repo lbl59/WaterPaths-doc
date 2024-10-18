@@ -1,0 +1,401 @@
+\hypertarget{classProblem}{}\section{Problem Class Reference}
+\label{classProblem}\index{Problem@{Problem}}
+
+
+{\ttfamily \#include $<$Problem.\+h$>$}
+
+Inheritance diagram for Problem\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classProblem}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProblem_a41939e01b382197124fcd9f5e8c7520d}{Problem}} (unsigned long \mbox{\hyperlink{classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec}{n\+\_\+weeks}})
+\item 
+virtual \mbox{\hyperlink{classProblem_a839a525ed01c34d57fff42583003d3e7}{$\sim$\+Problem}} ()
+\item 
+virtual int \mbox{\hyperlink{classProblem_acd924a80df4422c5199748c714e9405c}{function\+Evaluation}} (double $\ast$vars, double $\ast$objs, double $\ast$consts)=0
+\item 
+void \mbox{\hyperlink{classProblem_a1ea4a3d52209fa3f284a4060fb6fa3ab}{set\+N\+\_\+weeks}} (unsigned long \mbox{\hyperlink{classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec}{n\+\_\+weeks}})
+\item 
+void \mbox{\hyperlink{classProblem_a855eaf9a98eadfab131d598b51df6d66}{set\+Sol\+\_\+number}} (unsigned long sol\+\_\+number)
+\item 
+void \mbox{\hyperlink{classProblem_a188254a95b04bf4ed67e66262ea342e9}{set\+I\+O\+Directory}} (const string \&\mbox{\hyperlink{classProblem_ac58848a0d808cf040c3fb3676b4a236f}{io\+\_\+directory}})
+\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classProblem_a55da26d3bd669809b992fff823b8ef9b}{get\+Objectives}} () const
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classProblem_afdbe1eb541cc11071478da57b35e21b0}{calculate\+And\+Print\+Objectives}} (bool print\+\_\+files)
+\item 
+void \mbox{\hyperlink{classProblem_a98115002e741e9220f7aa6bae0cb179c}{set\+R\+D\+M\+Optimization}} (vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classProblem_aa4f6db22580c8d8a941e83556f4f5208}{utilities\+\_\+rdm}}, vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classProblem_ace43e5306285f0d91a199a4bd5a38922}{water\+\_\+sources\+\_\+rdm}}, vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classProblem_a63d49161a5d6d98e26cd218d90a13bae}{policies\+\_\+rdm}})
+\item 
+void \mbox{\hyperlink{classProblem_abaf4b2698552702ccf709bf07ed76ca3}{set\+R\+D\+M\+Reevaluation}} (unsigned long \mbox{\hyperlink{classProblem_a9e780729b6be5229c5bfa1e38c99cfa5}{rdm\+\_\+no}}, vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classProblem_aa4f6db22580c8d8a941e83556f4f5208}{utilities\+\_\+rdm}}, vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classProblem_ace43e5306285f0d91a199a4bd5a38922}{water\+\_\+sources\+\_\+rdm}}, vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classProblem_a63d49161a5d6d98e26cd218d90a13bae}{policies\+\_\+rdm}})
+\item 
+void \mbox{\hyperlink{classProblem_ad770920d19d5276fd0e30b835abe21ef}{set\+N\+\_\+threads}} (unsigned long \mbox{\hyperlink{classProblem_a3303a162d648e8ae16153b57b5b4054f}{n\+\_\+threads}})
+\item 
+void \mbox{\hyperlink{classProblem_a1f055d5e57392700cab27efdd4577be9}{set\+Print\+\_\+output\+\_\+files}} (bool \mbox{\hyperlink{classProblem_a3372a73270ce989f5d2056cace66215b}{print\+\_\+output\+\_\+files}})
+\item 
+void \mbox{\hyperlink{classProblem_ae5cec2ad575abb95cf7304153c31e410}{set\+N\+\_\+realizations}} (unsigned long \mbox{\hyperlink{classProblem_a270a5672643bfe09e52e0f24e1884136}{n\+\_\+realizations}})
+\item 
+void \mbox{\hyperlink{classProblem_afe5ddeb70b303e4971251e92a10f4828}{set\+Realizations\+To\+Run}} (vector$<$ unsigned long $>$ \&\mbox{\hyperlink{classProblem_af9ed9265d0d2b4918bd468d717429de1}{realizations\+\_\+to\+\_\+run}})
+\item 
+void \mbox{\hyperlink{classProblem_afb5e51664d0f340c393f7583622e99ca}{set\+Evap\+\_\+inflows\+\_\+suffix}} (const string \&\mbox{\hyperlink{classProblem_a1ff3958eef8bfb851a84ce0772104dca}{evap\+\_\+inflows\+\_\+suffix}})
+\item 
+void \mbox{\hyperlink{classProblem_ad666ae2c231f49103593a7e03a3b58fd}{set\+Fname\+\_\+sufix}} (const string \&\mbox{\hyperlink{classProblem_a59444139a907aaf4c6159caed46c8118}{fname\+\_\+sufix}})
+\item 
+\mbox{\hyperlink{classMasterDataCollector}{Master\+Data\+Collector}} $\ast$ \mbox{\hyperlink{classProblem_afce904c6b3bc58d029da4d9077efe4c9}{get\+Master\+\_\+data\+\_\+collector}} ()
+\item 
+void \mbox{\hyperlink{classProblem_af87d1081eb2a8fa57fa7f2666292fee3}{destroy\+Data\+Collector}} ()
+\item 
+void \mbox{\hyperlink{classProblem_a77568843acf22f2ecd17a83a1f3f310a}{print\+Time\+Series\+And\+Pathways}} ()
+\item 
+void \mbox{\hyperlink{classProblem_aa9debdf28260fd9054f7d6d2ee516f94}{set\+Rof\+Tables}} (unsigned long \mbox{\hyperlink{classProblem_a270a5672643bfe09e52e0f24e1884136}{n\+\_\+realizations}}, string \mbox{\hyperlink{classProblem_abc641b49a4defb0dbabafbf3f9dbca6e}{rof\+\_\+tables\+\_\+directory}})
+\item 
+void \mbox{\hyperlink{classProblem_a13b247f6699ebad04cbd5df07e681ba0}{set\+Import\+\_\+export\+\_\+rof\+\_\+tables}} (int \mbox{\hyperlink{classProblem_ac5a286f34cec786a0ad56c77783a201c}{import\+\_\+export\+\_\+rof\+\_\+tables}}, int \mbox{\hyperlink{classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec}{n\+\_\+weeks}}, string \mbox{\hyperlink{classProblem_abc641b49a4defb0dbabafbf3f9dbca6e}{rof\+\_\+tables\+\_\+directory}})
+\item 
+void \mbox{\hyperlink{classProblem_a3604aafc0cf731fc9dfa8589ec8995ce}{run\+Bootstrap\+Realization\+Thinning}} (int standard\+\_\+solution, int n\+\_\+sets, int n\+\_\+bs\+\_\+samples, int threads, vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classProblem_af9ed9265d0d2b4918bd468d717429de1}{realizations\+\_\+to\+\_\+run}})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classProblem_ab9750751c2d4468a3dfe5dd6573b5179}{check\+And\+Fix\+Infra\+Expansion\+High\+Low\+Order}} (vector$<$ int $>$ $\ast$order, vector$<$ double $>$ $\ast$trigger, int id\+\_\+low, int id\+\_\+high, double capacity\+\_\+low, double capacity\+\_\+high)
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classProblem_ac157541eb885c80f2d2f23cc97a6a997}{vec\+Infra\+Rank\+To\+Vec\+Int}} (vector$<$ \mbox{\hyperlink{structinfraRank}{infra\+Rank}} $>$ v)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned long \mbox{\hyperlink{classProblem_a270a5672643bfe09e52e0f24e1884136}{n\+\_\+realizations}}
+\item 
+unsigned long \mbox{\hyperlink{classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec}{n\+\_\+weeks}}
+\item 
+unsigned long \mbox{\hyperlink{classProblem_a7ca15cdcbff926ddca25bdee5984ffe5}{solution\+\_\+no}}
+\item 
+unsigned long \mbox{\hyperlink{classProblem_a3303a162d648e8ae16153b57b5b4054f}{n\+\_\+threads}}
+\item 
+int \mbox{\hyperlink{classProblem_a4ca86ba2f568d232cf0421d39acff113}{n\+\_\+utilities}} = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED
+\item 
+string \mbox{\hyperlink{classProblem_ac58848a0d808cf040c3fb3676b4a236f}{io\+\_\+directory}}
+\item 
+string \mbox{\hyperlink{classProblem_a59444139a907aaf4c6159caed46c8118}{fname\+\_\+sufix}}
+\item 
+string \mbox{\hyperlink{classProblem_a1ff3958eef8bfb851a84ce0772104dca}{evap\+\_\+inflows\+\_\+suffix}}
+\item 
+string \mbox{\hyperlink{classProblem_abc641b49a4defb0dbabafbf3f9dbca6e}{rof\+\_\+tables\+\_\+directory}}
+\item 
+vector$<$ unsigned long $>$ \mbox{\hyperlink{classProblem_af9ed9265d0d2b4918bd468d717429de1}{realizations\+\_\+to\+\_\+run}}
+\item 
+\mbox{\hyperlink{classMasterDataCollector}{Master\+Data\+Collector}} $\ast$ \mbox{\hyperlink{classProblem_a6cd1db1d587a449985d6514390ba8c96}{master\+\_\+data\+\_\+collector}} = nullptr
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classProblem_a72750ee8c8117f5ee9b190a359d6a60d}{objectives}}
+\item 
+bool \mbox{\hyperlink{classProblem_a3372a73270ce989f5d2056cace66215b}{print\+\_\+output\+\_\+files}} = true
+\item 
+unsigned long \mbox{\hyperlink{classProblem_a9e780729b6be5229c5bfa1e38c99cfa5}{rdm\+\_\+no}}
+\item 
+int \mbox{\hyperlink{classProblem_ac5a286f34cec786a0ad56c77783a201c}{import\+\_\+export\+\_\+rof\+\_\+tables}}
+\item 
+double \mbox{\hyperlink{classProblem_a27cae146b3409021f6d5936404cd1083}{table\+\_\+gen\+\_\+storage\+\_\+multiplier}}
+\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classProblem_aa4f6db22580c8d8a941e83556f4f5208}{utilities\+\_\+rdm}}
+\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classProblem_ace43e5306285f0d91a199a4bd5a38922}{water\+\_\+sources\+\_\+rdm}}
+\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classProblem_a63d49161a5d6d98e26cd218d90a13bae}{policies\+\_\+rdm}}
+\item 
+vector$<$ vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$ $>$ $>$ \mbox{\hyperlink{classProblem_a0a64a8c04964a326879eccccf5437c93}{rof\+\_\+tables}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classProblem_a41939e01b382197124fcd9f5e8c7520d}\label{classProblem_a41939e01b382197124fcd9f5e8c7520d}} 
+\index{Problem@{Problem}!Problem@{Problem}}
+\index{Problem@{Problem}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{Problem()}{Problem()}}
+{\footnotesize\ttfamily Problem\+::\+Problem (\begin{DoxyParamCaption}\item[{unsigned long}]{n\+\_\+weeks }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_a839a525ed01c34d57fff42583003d3e7}\label{classProblem_a839a525ed01c34d57fff42583003d3e7}} 
+\index{Problem@{Problem}!````~Problem@{$\sim$\+Problem}}
+\index{````~Problem@{$\sim$\+Problem}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{$\sim$\+Problem()}{~Problem()}}
+{\footnotesize\ttfamily Problem\+::$\sim$\+Problem (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classProblem_afdbe1eb541cc11071478da57b35e21b0}\label{classProblem_afdbe1eb541cc11071478da57b35e21b0}} 
+\index{Problem@{Problem}!calculate\+And\+Print\+Objectives@{calculate\+And\+Print\+Objectives}}
+\index{calculate\+And\+Print\+Objectives@{calculate\+And\+Print\+Objectives}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{calculate\+And\+Print\+Objectives()}{calculateAndPrintObjectives()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Problem\+::calculate\+And\+Print\+Objectives (\begin{DoxyParamCaption}\item[{bool}]{print\+\_\+files }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_ab9750751c2d4468a3dfe5dd6573b5179}\label{classProblem_ab9750751c2d4468a3dfe5dd6573b5179}} 
+\index{Problem@{Problem}!check\+And\+Fix\+Infra\+Expansion\+High\+Low\+Order@{check\+And\+Fix\+Infra\+Expansion\+High\+Low\+Order}}
+\index{check\+And\+Fix\+Infra\+Expansion\+High\+Low\+Order@{check\+And\+Fix\+Infra\+Expansion\+High\+Low\+Order}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{check\+And\+Fix\+Infra\+Expansion\+High\+Low\+Order()}{checkAndFixInfraExpansionHighLowOrder()}}
+{\footnotesize\ttfamily double Problem\+::check\+And\+Fix\+Infra\+Expansion\+High\+Low\+Order (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ $\ast$}]{order,  }\item[{vector$<$ double $>$ $\ast$}]{trigger,  }\item[{int}]{id\+\_\+low,  }\item[{int}]{id\+\_\+high,  }\item[{double}]{capacity\+\_\+low,  }\item[{double}]{capacity\+\_\+high }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_af87d1081eb2a8fa57fa7f2666292fee3}\label{classProblem_af87d1081eb2a8fa57fa7f2666292fee3}} 
+\index{Problem@{Problem}!destroy\+Data\+Collector@{destroy\+Data\+Collector}}
+\index{destroy\+Data\+Collector@{destroy\+Data\+Collector}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{destroy\+Data\+Collector()}{destroyDataCollector()}}
+{\footnotesize\ttfamily void Problem\+::destroy\+Data\+Collector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_acd924a80df4422c5199748c714e9405c}\label{classProblem_acd924a80df4422c5199748c714e9405c}} 
+\index{Problem@{Problem}!function\+Evaluation@{function\+Evaluation}}
+\index{function\+Evaluation@{function\+Evaluation}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{function\+Evaluation()}{functionEvaluation()}}
+{\footnotesize\ttfamily virtual int Problem\+::function\+Evaluation (\begin{DoxyParamCaption}\item[{double $\ast$}]{vars,  }\item[{double $\ast$}]{objs,  }\item[{double $\ast$}]{consts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classTriangle_a9e95039d098fd61cce1a830b85ed7004}{Triangle}}, and \mbox{\hyperlink{classPaperTestProblem_a6db78df74d40f69a750b164caaca75c7}{Paper\+Test\+Problem}}.
+
+\mbox{\Hypertarget{classProblem_afce904c6b3bc58d029da4d9077efe4c9}\label{classProblem_afce904c6b3bc58d029da4d9077efe4c9}} 
+\index{Problem@{Problem}!get\+Master\+\_\+data\+\_\+collector@{get\+Master\+\_\+data\+\_\+collector}}
+\index{get\+Master\+\_\+data\+\_\+collector@{get\+Master\+\_\+data\+\_\+collector}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{get\+Master\+\_\+data\+\_\+collector()}{getMaster\_data\_collector()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMasterDataCollector}{Master\+Data\+Collector}} $\ast$ Problem\+::get\+Master\+\_\+data\+\_\+collector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_a55da26d3bd669809b992fff823b8ef9b}\label{classProblem_a55da26d3bd669809b992fff823b8ef9b}} 
+\index{Problem@{Problem}!get\+Objectives@{get\+Objectives}}
+\index{get\+Objectives@{get\+Objectives}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{get\+Objectives()}{getObjectives()}}
+{\footnotesize\ttfamily const vector$<$ double $>$ \& Problem\+::get\+Objectives (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblem_a77568843acf22f2ecd17a83a1f3f310a}\label{classProblem_a77568843acf22f2ecd17a83a1f3f310a}} 
+\index{Problem@{Problem}!print\+Time\+Series\+And\+Pathways@{print\+Time\+Series\+And\+Pathways}}
+\index{print\+Time\+Series\+And\+Pathways@{print\+Time\+Series\+And\+Pathways}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{print\+Time\+Series\+And\+Pathways()}{printTimeSeriesAndPathways()}}
+{\footnotesize\ttfamily void Problem\+::print\+Time\+Series\+And\+Pathways (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Calculate objective values.
+
+Print output files. \mbox{\Hypertarget{classProblem_a3604aafc0cf731fc9dfa8589ec8995ce}\label{classProblem_a3604aafc0cf731fc9dfa8589ec8995ce}} 
+\index{Problem@{Problem}!run\+Bootstrap\+Realization\+Thinning@{run\+Bootstrap\+Realization\+Thinning}}
+\index{run\+Bootstrap\+Realization\+Thinning@{run\+Bootstrap\+Realization\+Thinning}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{run\+Bootstrap\+Realization\+Thinning()}{runBootstrapRealizationThinning()}}
+{\footnotesize\ttfamily void Problem\+::run\+Bootstrap\+Realization\+Thinning (\begin{DoxyParamCaption}\item[{int}]{standard\+\_\+solution,  }\item[{int}]{n\+\_\+sets,  }\item[{int}]{n\+\_\+bs\+\_\+samples,  }\item[{int}]{threads,  }\item[{vector$<$ vector$<$ int $>$$>$ \&}]{realizations\+\_\+to\+\_\+run }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_afb5e51664d0f340c393f7583622e99ca}\label{classProblem_afb5e51664d0f340c393f7583622e99ca}} 
+\index{Problem@{Problem}!set\+Evap\+\_\+inflows\+\_\+suffix@{set\+Evap\+\_\+inflows\+\_\+suffix}}
+\index{set\+Evap\+\_\+inflows\+\_\+suffix@{set\+Evap\+\_\+inflows\+\_\+suffix}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+Evap\+\_\+inflows\+\_\+suffix()}{setEvap\_inflows\_suffix()}}
+{\footnotesize\ttfamily void Problem\+::set\+Evap\+\_\+inflows\+\_\+suffix (\begin{DoxyParamCaption}\item[{const string \&}]{evap\+\_\+inflows\+\_\+suffix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_ad666ae2c231f49103593a7e03a3b58fd}\label{classProblem_ad666ae2c231f49103593a7e03a3b58fd}} 
+\index{Problem@{Problem}!set\+Fname\+\_\+sufix@{set\+Fname\+\_\+sufix}}
+\index{set\+Fname\+\_\+sufix@{set\+Fname\+\_\+sufix}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+Fname\+\_\+sufix()}{setFname\_sufix()}}
+{\footnotesize\ttfamily void Problem\+::set\+Fname\+\_\+sufix (\begin{DoxyParamCaption}\item[{const string \&}]{fname\+\_\+sufix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_a13b247f6699ebad04cbd5df07e681ba0}\label{classProblem_a13b247f6699ebad04cbd5df07e681ba0}} 
+\index{Problem@{Problem}!set\+Import\+\_\+export\+\_\+rof\+\_\+tables@{set\+Import\+\_\+export\+\_\+rof\+\_\+tables}}
+\index{set\+Import\+\_\+export\+\_\+rof\+\_\+tables@{set\+Import\+\_\+export\+\_\+rof\+\_\+tables}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+Import\+\_\+export\+\_\+rof\+\_\+tables()}{setImport\_export\_rof\_tables()}}
+{\footnotesize\ttfamily void Problem\+::set\+Import\+\_\+export\+\_\+rof\+\_\+tables (\begin{DoxyParamCaption}\item[{int}]{import\+\_\+export\+\_\+rof\+\_\+tables,  }\item[{int}]{n\+\_\+weeks,  }\item[{string}]{rof\+\_\+tables\+\_\+directory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_a188254a95b04bf4ed67e66262ea342e9}\label{classProblem_a188254a95b04bf4ed67e66262ea342e9}} 
+\index{Problem@{Problem}!set\+I\+O\+Directory@{set\+I\+O\+Directory}}
+\index{set\+I\+O\+Directory@{set\+I\+O\+Directory}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+I\+O\+Directory()}{setIODirectory()}}
+{\footnotesize\ttfamily void Problem\+::set\+I\+O\+Directory (\begin{DoxyParamCaption}\item[{const string \&}]{io\+\_\+directory }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_ae5cec2ad575abb95cf7304153c31e410}\label{classProblem_ae5cec2ad575abb95cf7304153c31e410}} 
+\index{Problem@{Problem}!set\+N\+\_\+realizations@{set\+N\+\_\+realizations}}
+\index{set\+N\+\_\+realizations@{set\+N\+\_\+realizations}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+N\+\_\+realizations()}{setN\_realizations()}}
+{\footnotesize\ttfamily void Problem\+::set\+N\+\_\+realizations (\begin{DoxyParamCaption}\item[{unsigned long}]{n\+\_\+realizations }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_ad770920d19d5276fd0e30b835abe21ef}\label{classProblem_ad770920d19d5276fd0e30b835abe21ef}} 
+\index{Problem@{Problem}!set\+N\+\_\+threads@{set\+N\+\_\+threads}}
+\index{set\+N\+\_\+threads@{set\+N\+\_\+threads}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+N\+\_\+threads()}{setN\_threads()}}
+{\footnotesize\ttfamily void Problem\+::set\+N\+\_\+threads (\begin{DoxyParamCaption}\item[{unsigned long}]{n\+\_\+threads }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_a1ea4a3d52209fa3f284a4060fb6fa3ab}\label{classProblem_a1ea4a3d52209fa3f284a4060fb6fa3ab}} 
+\index{Problem@{Problem}!set\+N\+\_\+weeks@{set\+N\+\_\+weeks}}
+\index{set\+N\+\_\+weeks@{set\+N\+\_\+weeks}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+N\+\_\+weeks()}{setN\_weeks()}}
+{\footnotesize\ttfamily void Problem\+::set\+N\+\_\+weeks (\begin{DoxyParamCaption}\item[{unsigned long}]{n\+\_\+weeks }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_a1f055d5e57392700cab27efdd4577be9}\label{classProblem_a1f055d5e57392700cab27efdd4577be9}} 
+\index{Problem@{Problem}!set\+Print\+\_\+output\+\_\+files@{set\+Print\+\_\+output\+\_\+files}}
+\index{set\+Print\+\_\+output\+\_\+files@{set\+Print\+\_\+output\+\_\+files}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+Print\+\_\+output\+\_\+files()}{setPrint\_output\_files()}}
+{\footnotesize\ttfamily void Problem\+::set\+Print\+\_\+output\+\_\+files (\begin{DoxyParamCaption}\item[{bool}]{print\+\_\+output\+\_\+files }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_a98115002e741e9220f7aa6bae0cb179c}\label{classProblem_a98115002e741e9220f7aa6bae0cb179c}} 
+\index{Problem@{Problem}!set\+R\+D\+M\+Optimization@{set\+R\+D\+M\+Optimization}}
+\index{set\+R\+D\+M\+Optimization@{set\+R\+D\+M\+Optimization}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+R\+D\+M\+Optimization()}{setRDMOptimization()}}
+{\footnotesize\ttfamily void Problem\+::set\+R\+D\+M\+Optimization (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ double $>$$>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{policies\+\_\+rdm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_abaf4b2698552702ccf709bf07ed76ca3}\label{classProblem_abaf4b2698552702ccf709bf07ed76ca3}} 
+\index{Problem@{Problem}!set\+R\+D\+M\+Reevaluation@{set\+R\+D\+M\+Reevaluation}}
+\index{set\+R\+D\+M\+Reevaluation@{set\+R\+D\+M\+Reevaluation}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+R\+D\+M\+Reevaluation()}{setRDMReevaluation()}}
+{\footnotesize\ttfamily void Problem\+::set\+R\+D\+M\+Reevaluation (\begin{DoxyParamCaption}\item[{unsigned long}]{rdm\+\_\+no,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{policies\+\_\+rdm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_afe5ddeb70b303e4971251e92a10f4828}\label{classProblem_afe5ddeb70b303e4971251e92a10f4828}} 
+\index{Problem@{Problem}!set\+Realizations\+To\+Run@{set\+Realizations\+To\+Run}}
+\index{set\+Realizations\+To\+Run@{set\+Realizations\+To\+Run}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+Realizations\+To\+Run()}{setRealizationsToRun()}}
+{\footnotesize\ttfamily void Problem\+::set\+Realizations\+To\+Run (\begin{DoxyParamCaption}\item[{vector$<$ unsigned long $>$ \&}]{realizations\+\_\+to\+\_\+run }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_aa9debdf28260fd9054f7d6d2ee516f94}\label{classProblem_aa9debdf28260fd9054f7d6d2ee516f94}} 
+\index{Problem@{Problem}!set\+Rof\+Tables@{set\+Rof\+Tables}}
+\index{set\+Rof\+Tables@{set\+Rof\+Tables}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+Rof\+Tables()}{setRofTables()}}
+{\footnotesize\ttfamily void Problem\+::set\+Rof\+Tables (\begin{DoxyParamCaption}\item[{unsigned long}]{n\+\_\+realizations,  }\item[{string}]{rof\+\_\+tables\+\_\+directory }\end{DoxyParamCaption})}
+
+Read pre-\/computed R\+OF tables. 
+\begin{DoxyParams}{Parameters}
+{\em folder} & Folder containing the R\+OF tables. \\
+\hline
+{\em n\+\_\+realizations} & number of realizations. \\
+\hline
+\end{DoxyParams}
+Get number of weeks in tables \mbox{\Hypertarget{classProblem_a855eaf9a98eadfab131d598b51df6d66}\label{classProblem_a855eaf9a98eadfab131d598b51df6d66}} 
+\index{Problem@{Problem}!set\+Sol\+\_\+number@{set\+Sol\+\_\+number}}
+\index{set\+Sol\+\_\+number@{set\+Sol\+\_\+number}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{set\+Sol\+\_\+number()}{setSol\_number()}}
+{\footnotesize\ttfamily void Problem\+::set\+Sol\+\_\+number (\begin{DoxyParamCaption}\item[{unsigned long}]{sol\+\_\+number }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblem_ac157541eb885c80f2d2f23cc97a6a997}\label{classProblem_ac157541eb885c80f2d2f23cc97a6a997}} 
+\index{Problem@{Problem}!vec\+Infra\+Rank\+To\+Vec\+Int@{vec\+Infra\+Rank\+To\+Vec\+Int}}
+\index{vec\+Infra\+Rank\+To\+Vec\+Int@{vec\+Infra\+Rank\+To\+Vec\+Int}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{vec\+Infra\+Rank\+To\+Vec\+Int()}{vecInfraRankToVecInt()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Problem\+::vec\+Infra\+Rank\+To\+Vec\+Int (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structinfraRank}{infra\+Rank}} $>$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classProblem_a1ff3958eef8bfb851a84ce0772104dca}\label{classProblem_a1ff3958eef8bfb851a84ce0772104dca}} 
+\index{Problem@{Problem}!evap\+\_\+inflows\+\_\+suffix@{evap\+\_\+inflows\+\_\+suffix}}
+\index{evap\+\_\+inflows\+\_\+suffix@{evap\+\_\+inflows\+\_\+suffix}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{evap\+\_\+inflows\+\_\+suffix}{evap\_inflows\_suffix}}
+{\footnotesize\ttfamily string Problem\+::evap\+\_\+inflows\+\_\+suffix\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_a59444139a907aaf4c6159caed46c8118}\label{classProblem_a59444139a907aaf4c6159caed46c8118}} 
+\index{Problem@{Problem}!fname\+\_\+sufix@{fname\+\_\+sufix}}
+\index{fname\+\_\+sufix@{fname\+\_\+sufix}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{fname\+\_\+sufix}{fname\_sufix}}
+{\footnotesize\ttfamily string Problem\+::fname\+\_\+sufix\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_ac5a286f34cec786a0ad56c77783a201c}\label{classProblem_ac5a286f34cec786a0ad56c77783a201c}} 
+\index{Problem@{Problem}!import\+\_\+export\+\_\+rof\+\_\+tables@{import\+\_\+export\+\_\+rof\+\_\+tables}}
+\index{import\+\_\+export\+\_\+rof\+\_\+tables@{import\+\_\+export\+\_\+rof\+\_\+tables}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{import\+\_\+export\+\_\+rof\+\_\+tables}{import\_export\_rof\_tables}}
+{\footnotesize\ttfamily int Problem\+::import\+\_\+export\+\_\+rof\+\_\+tables\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_ac58848a0d808cf040c3fb3676b4a236f}\label{classProblem_ac58848a0d808cf040c3fb3676b4a236f}} 
+\index{Problem@{Problem}!io\+\_\+directory@{io\+\_\+directory}}
+\index{io\+\_\+directory@{io\+\_\+directory}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{io\+\_\+directory}{io\_directory}}
+{\footnotesize\ttfamily string Problem\+::io\+\_\+directory\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_a6cd1db1d587a449985d6514390ba8c96}\label{classProblem_a6cd1db1d587a449985d6514390ba8c96}} 
+\index{Problem@{Problem}!master\+\_\+data\+\_\+collector@{master\+\_\+data\+\_\+collector}}
+\index{master\+\_\+data\+\_\+collector@{master\+\_\+data\+\_\+collector}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{master\+\_\+data\+\_\+collector}{master\_data\_collector}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMasterDataCollector}{Master\+Data\+Collector}}$\ast$ Problem\+::master\+\_\+data\+\_\+collector = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_a270a5672643bfe09e52e0f24e1884136}\label{classProblem_a270a5672643bfe09e52e0f24e1884136}} 
+\index{Problem@{Problem}!n\+\_\+realizations@{n\+\_\+realizations}}
+\index{n\+\_\+realizations@{n\+\_\+realizations}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{n\+\_\+realizations}{n\_realizations}}
+{\footnotesize\ttfamily unsigned long Problem\+::n\+\_\+realizations\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_a3303a162d648e8ae16153b57b5b4054f}\label{classProblem_a3303a162d648e8ae16153b57b5b4054f}} 
+\index{Problem@{Problem}!n\+\_\+threads@{n\+\_\+threads}}
+\index{n\+\_\+threads@{n\+\_\+threads}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{n\+\_\+threads}{n\_threads}}
+{\footnotesize\ttfamily unsigned long Problem\+::n\+\_\+threads\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_a4ca86ba2f568d232cf0421d39acff113}\label{classProblem_a4ca86ba2f568d232cf0421d39acff113}} 
+\index{Problem@{Problem}!n\+\_\+utilities@{n\+\_\+utilities}}
+\index{n\+\_\+utilities@{n\+\_\+utilities}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{n\+\_\+utilities}{n\_utilities}}
+{\footnotesize\ttfamily int Problem\+::n\+\_\+utilities = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec}\label{classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec}} 
+\index{Problem@{Problem}!n\+\_\+weeks@{n\+\_\+weeks}}
+\index{n\+\_\+weeks@{n\+\_\+weeks}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{n\+\_\+weeks}{n\_weeks}}
+{\footnotesize\ttfamily unsigned long Problem\+::n\+\_\+weeks\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_a72750ee8c8117f5ee9b190a359d6a60d}\label{classProblem_a72750ee8c8117f5ee9b190a359d6a60d}} 
+\index{Problem@{Problem}!objectives@{objectives}}
+\index{objectives@{objectives}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{objectives}{objectives}}
+{\footnotesize\ttfamily vector$<$double$>$ Problem\+::objectives\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_a63d49161a5d6d98e26cd218d90a13bae}\label{classProblem_a63d49161a5d6d98e26cd218d90a13bae}} 
+\index{Problem@{Problem}!policies\+\_\+rdm@{policies\+\_\+rdm}}
+\index{policies\+\_\+rdm@{policies\+\_\+rdm}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{policies\+\_\+rdm}{policies\_rdm}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Problem\+::policies\+\_\+rdm\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_a3372a73270ce989f5d2056cace66215b}\label{classProblem_a3372a73270ce989f5d2056cace66215b}} 
+\index{Problem@{Problem}!print\+\_\+output\+\_\+files@{print\+\_\+output\+\_\+files}}
+\index{print\+\_\+output\+\_\+files@{print\+\_\+output\+\_\+files}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{print\+\_\+output\+\_\+files}{print\_output\_files}}
+{\footnotesize\ttfamily bool Problem\+::print\+\_\+output\+\_\+files = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_a9e780729b6be5229c5bfa1e38c99cfa5}\label{classProblem_a9e780729b6be5229c5bfa1e38c99cfa5}} 
+\index{Problem@{Problem}!rdm\+\_\+no@{rdm\+\_\+no}}
+\index{rdm\+\_\+no@{rdm\+\_\+no}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{rdm\+\_\+no}{rdm\_no}}
+{\footnotesize\ttfamily unsigned long Problem\+::rdm\+\_\+no\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_af9ed9265d0d2b4918bd468d717429de1}\label{classProblem_af9ed9265d0d2b4918bd468d717429de1}} 
+\index{Problem@{Problem}!realizations\+\_\+to\+\_\+run@{realizations\+\_\+to\+\_\+run}}
+\index{realizations\+\_\+to\+\_\+run@{realizations\+\_\+to\+\_\+run}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{realizations\+\_\+to\+\_\+run}{realizations\_to\_run}}
+{\footnotesize\ttfamily vector$<$unsigned long $>$ Problem\+::realizations\+\_\+to\+\_\+run\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_a0a64a8c04964a326879eccccf5437c93}\label{classProblem_a0a64a8c04964a326879eccccf5437c93}} 
+\index{Problem@{Problem}!rof\+\_\+tables@{rof\+\_\+tables}}
+\index{rof\+\_\+tables@{rof\+\_\+tables}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{rof\+\_\+tables}{rof\_tables}}
+{\footnotesize\ttfamily vector$<$vector$<$\mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$double$>$ $>$ $>$ Problem\+::rof\+\_\+tables\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_abc641b49a4defb0dbabafbf3f9dbca6e}\label{classProblem_abc641b49a4defb0dbabafbf3f9dbca6e}} 
+\index{Problem@{Problem}!rof\+\_\+tables\+\_\+directory@{rof\+\_\+tables\+\_\+directory}}
+\index{rof\+\_\+tables\+\_\+directory@{rof\+\_\+tables\+\_\+directory}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{rof\+\_\+tables\+\_\+directory}{rof\_tables\_directory}}
+{\footnotesize\ttfamily string Problem\+::rof\+\_\+tables\+\_\+directory\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_a7ca15cdcbff926ddca25bdee5984ffe5}\label{classProblem_a7ca15cdcbff926ddca25bdee5984ffe5}} 
+\index{Problem@{Problem}!solution\+\_\+no@{solution\+\_\+no}}
+\index{solution\+\_\+no@{solution\+\_\+no}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{solution\+\_\+no}{solution\_no}}
+{\footnotesize\ttfamily unsigned long Problem\+::solution\+\_\+no\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_a27cae146b3409021f6d5936404cd1083}\label{classProblem_a27cae146b3409021f6d5936404cd1083}} 
+\index{Problem@{Problem}!table\+\_\+gen\+\_\+storage\+\_\+multiplier@{table\+\_\+gen\+\_\+storage\+\_\+multiplier}}
+\index{table\+\_\+gen\+\_\+storage\+\_\+multiplier@{table\+\_\+gen\+\_\+storage\+\_\+multiplier}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{table\+\_\+gen\+\_\+storage\+\_\+multiplier}{table\_gen\_storage\_multiplier}}
+{\footnotesize\ttfamily double Problem\+::table\+\_\+gen\+\_\+storage\+\_\+multiplier\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_aa4f6db22580c8d8a941e83556f4f5208}\label{classProblem_aa4f6db22580c8d8a941e83556f4f5208}} 
+\index{Problem@{Problem}!utilities\+\_\+rdm@{utilities\+\_\+rdm}}
+\index{utilities\+\_\+rdm@{utilities\+\_\+rdm}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{utilities\+\_\+rdm}{utilities\_rdm}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Problem\+::utilities\+\_\+rdm\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classProblem_ace43e5306285f0d91a199a4bd5a38922}\label{classProblem_ace43e5306285f0d91a199a4bd5a38922}} 
+\index{Problem@{Problem}!water\+\_\+sources\+\_\+rdm@{water\+\_\+sources\+\_\+rdm}}
+\index{water\+\_\+sources\+\_\+rdm@{water\+\_\+sources\+\_\+rdm}!Problem@{Problem}}
+\subsubsection{\texorpdfstring{water\+\_\+sources\+\_\+rdm}{water\_sources\_rdm}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Problem\+::water\+\_\+sources\+\_\+rdm\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Problem/\+Base/\mbox{\hyperlink{Problem_8h}{Problem.\+h}}\item 
+src/\+Problem/\+Base/\mbox{\hyperlink{Problem_8cpp}{Problem.\+cpp}}\end{DoxyCompactItemize}

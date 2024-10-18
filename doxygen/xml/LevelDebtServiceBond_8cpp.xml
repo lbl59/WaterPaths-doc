@@ -1,0 +1,310 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="LevelDebtServiceBond_8cpp" kind="file" language="C++">
+    <compoundname>LevelDebtServiceBond.cpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">algorithm</includes>
+    <includes refid="LevelDebtServiceBond_8h" local="yes">LevelDebtServiceBond.h</includes>
+    <includes refid="Utils_8h" local="yes">../../Utils/Utils.h</includes>
+    <incdepgraph>
+      <node id="2390">
+        <label>list</label>
+      </node>
+      <node id="2380">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="2370" relation="include">
+        </childnode>
+        <childnode refid="2381" relation="include">
+        </childnode>
+        <childnode refid="2382" relation="include">
+        </childnode>
+      </node>
+      <node id="2382">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="2394">
+        <label>../../Controls/Base/MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="2375" relation="include">
+        </childnode>
+        <childnode refid="2384" relation="include">
+        </childnode>
+      </node>
+      <node id="2395">
+        <label>../DroughtMitigationInstruments/Restrictions.h</label>
+        <link refid="Restrictions_8h"/>
+        <childnode refid="2384" relation="include">
+        </childnode>
+        <childnode refid="2388" relation="include">
+        </childnode>
+      </node>
+      <node id="2378">
+        <label>../SystemComponents/WaterSources/Intake.h</label>
+        <link refid="Intake_8h"/>
+        <childnode refid="2379" relation="include">
+        </childnode>
+      </node>
+      <node id="2366">
+        <label>cmath</label>
+      </node>
+      <node id="2381">
+        <label>stdexcept</label>
+      </node>
+      <node id="2371">
+        <label>../../../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="2372" relation="include">
+        </childnode>
+        <childnode refid="2366" relation="include">
+        </childnode>
+        <childnode refid="2373" relation="include">
+        </childnode>
+        <childnode refid="2370" relation="include">
+        </childnode>
+      </node>
+      <node id="2386">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="2382" relation="include">
+        </childnode>
+        <childnode refid="2370" relation="include">
+        </childnode>
+      </node>
+      <node id="2376">
+        <label>string</label>
+      </node>
+      <node id="2372">
+        <label>map</label>
+      </node>
+      <node id="2387">
+        <label>InfrastructureManager.h</label>
+        <link refid="InfrastructureManager_8h"/>
+        <childnode refid="2370" relation="include">
+        </childnode>
+        <childnode refid="2375" relation="include">
+        </childnode>
+      </node>
+      <node id="2375">
+        <label>../SystemComponents/WaterSources/Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="2376" relation="include">
+        </childnode>
+        <childnode refid="2377" relation="include">
+        </childnode>
+        <childnode refid="2371" relation="include">
+        </childnode>
+        <childnode refid="2369" relation="include">
+        </childnode>
+      </node>
+      <node id="2368">
+        <label>LevelDebtServiceBond.h</label>
+        <link refid="LevelDebtServiceBond_8h"/>
+        <childnode refid="2369" relation="include">
+        </childnode>
+      </node>
+      <node id="2393">
+        <label>fstream</label>
+      </node>
+      <node id="2388">
+        <label>../DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
+        <link refid="DroughtMitigationPolicy_8h"/>
+        <childnode refid="2384" relation="include">
+        </childnode>
+        <childnode refid="2371" relation="include">
+        </childnode>
+        <childnode refid="2389" relation="include">
+        </childnode>
+        <childnode refid="2391" relation="include">
+        </childnode>
+        <childnode refid="2394" relation="include">
+        </childnode>
+      </node>
+      <node id="2384">
+        <label>../SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="2372" relation="include">
+        </childnode>
+        <childnode refid="2385" relation="include">
+        </childnode>
+        <childnode refid="2379" relation="include">
+        </childnode>
+        <childnode refid="2371" relation="include">
+        </childnode>
+        <childnode refid="2386" relation="include">
+        </childnode>
+        <childnode refid="2387" relation="include">
+        </childnode>
+      </node>
+      <node id="2370">
+        <label>vector</label>
+      </node>
+      <node id="2389">
+        <label>../../Utils/Graph/Graph.h</label>
+        <link refid="Graph_8h"/>
+        <childnode refid="2390" relation="include">
+        </childnode>
+        <childnode refid="2370" relation="include">
+        </childnode>
+        <childnode refid="2371" relation="include">
+        </childnode>
+      </node>
+      <node id="2377">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="2370" relation="include">
+        </childnode>
+        <childnode refid="2371" relation="include">
+        </childnode>
+      </node>
+      <node id="2365">
+        <label>src/SystemComponents/Bonds/LevelDebtServiceBond.cpp</label>
+        <link refid="LevelDebtServiceBond_8cpp"/>
+        <childnode refid="2366" relation="include">
+        </childnode>
+        <childnode refid="2367" relation="include">
+        </childnode>
+        <childnode refid="2368" relation="include">
+        </childnode>
+        <childnode refid="2374" relation="include">
+        </childnode>
+      </node>
+      <node id="2379">
+        <label>Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="2376" relation="include">
+        </childnode>
+        <childnode refid="2377" relation="include">
+        </childnode>
+        <childnode refid="2375" relation="include">
+        </childnode>
+        <childnode refid="2380" relation="include">
+        </childnode>
+        <childnode refid="2383" relation="include">
+        </childnode>
+      </node>
+      <node id="2392">
+        <label>iostream</label>
+      </node>
+      <node id="2383">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="2370" relation="include">
+        </childnode>
+        <childnode refid="2377" relation="include">
+        </childnode>
+      </node>
+      <node id="2367">
+        <label>algorithm</label>
+      </node>
+      <node id="2369">
+        <label>Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="2370" relation="include">
+        </childnode>
+        <childnode refid="2371" relation="include">
+        </childnode>
+      </node>
+      <node id="2373">
+        <label>cstring</label>
+      </node>
+      <node id="2391">
+        <label>../../Utils/Matrices.h</label>
+        <link refid="Matrices_8h"/>
+        <childnode refid="2392" relation="include">
+        </childnode>
+        <childnode refid="2373" relation="include">
+        </childnode>
+        <childnode refid="2393" relation="include">
+        </childnode>
+        <childnode refid="2385" relation="include">
+        </childnode>
+      </node>
+      <node id="2385">
+        <label>memory</label>
+      </node>
+      <node id="2374">
+        <label>../../Utils/Utils.h</label>
+        <link refid="Utils_8h"/>
+        <childnode refid="2375" relation="include">
+        </childnode>
+        <childnode refid="2378" relation="include">
+        </childnode>
+        <childnode refid="2384" relation="include">
+        </childnode>
+        <childnode refid="2388" relation="include">
+        </childnode>
+        <childnode refid="2395" relation="include">
+        </childnode>
+        <childnode refid="2394" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardo<sp/>on<sp/>4/12/18.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="LevelDebtServiceBond_8h" kindref="compound">LevelDebtServiceBond.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Utils/Utils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="classLevelDebtServiceBond_1a71af87d057090bd2310a10df03b36fdf" kindref="member">LevelDebtServiceBond::LevelDebtServiceBond</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cost_of_capital,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_payments,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>coupon_rate,<sp/>vector&lt;int&gt;<sp/>pay_on_weeks,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>begin_repayment_at_issuance)<sp/>:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBond" kindref="compound">Bond</ref>(id,<sp/>cost_of_capital,<sp/>n_payments,<sp/>pay_on_weeks,<sp/>coupon_rate,<sp/><ref refid="namespaceConstants_1a4b19c9668b1dd7c3cf77b16029fe3cac" kindref="member">LEVEL_DEBT_SERVICE</ref>,<sp/>begin_repayment_at_issuance)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="classLevelDebtServiceBond_1a6327829c1f1e6941cc22cea371cf024a" kindref="member">LevelDebtServiceBond::~LevelDebtServiceBond</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classLevelDebtServiceBond_1adcb3bd3c34b0cbb7b013f387ddd8b7f5" kindref="member">LevelDebtServiceBond::getDebtService</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n_payments_made<sp/>&lt;<sp/><ref refid="classBond_1a4a227b6de2eeada118d82ab1633b1db8" kindref="member">n_payments</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>week<sp/>&gt;<sp/><ref refid="classBond_1a30d48d158cbbd9c7b4bfa0012c89590a" kindref="member">week_issued</ref><sp/>+<sp/><ref refid="classBond_1a8d808753f9708e841dfceca72a110737" kindref="member">begin_repayment_after_n_years</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/><ref refid="namespaceConstants_1a19e84af3cbc6e1318beb22408c2a1f2f" kindref="member">WEEKS_IN_YEAR</ref><sp/>-<sp/>1<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::find(<ref refid="classBond_1ae8dd46fcbf95c993460ffe4ea1f52739" kindref="member">pay_on_weeks</ref>.begin(),<sp/><ref refid="classBond_1ae8dd46fcbf95c993460ffe4ea1f52739" kindref="member">pay_on_weeks</ref>.end(),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUtils_1a8318227e82678b727c4de0dda180e64a" kindref="member">Utils::weekOfTheYear</ref>(week))</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>!=<sp/><ref refid="classBond_1ae8dd46fcbf95c993460ffe4ea1f52739" kindref="member">pay_on_weeks</ref>.end())<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n_payments_made++;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>level_debt_service_payment;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classLevelDebtServiceBond_1a0f5820c3e76b8b908dbe153a8291d96a" kindref="member">LevelDebtServiceBond::getNetPresentValueAtIssuance</ref>(</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>yearly_discount_rate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>npv_at_first_payment_date<sp/>=</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>level_debt_service_payment</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>(1.<sp/>-<sp/>pow(1.<sp/>+<sp/>(yearly_discount_rate<sp/>/<sp/><ref refid="classBond_1ae8dd46fcbf95c993460ffe4ea1f52739" kindref="member">pay_on_weeks</ref>.size()),</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<ref refid="classBond_1a4a227b6de2eeada118d82ab1633b1db8" kindref="member">n_payments</ref>))<sp/>/<sp/>(yearly_discount_rate<sp/>/</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBond_1ae8dd46fcbf95c993460ffe4ea1f52739" kindref="member">pay_on_weeks</ref>.size());</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>npv<sp/>=<sp/>npv_at_first_payment_date</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/<sp/>pow(1.<sp/>+<sp/>yearly_discount_rate,<sp/><ref refid="classBond_1a8d808753f9708e841dfceca72a110737" kindref="member">begin_repayment_after_n_years</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>npv;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLevelDebtServiceBond_1a51a54a1a25be105b168bf86489aee417" kindref="member">LevelDebtServiceBond::issueBond</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>construction_time,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bond_term_multiplier,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bond_interest_rate_multiplier)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBond_1a377db8c18b83c4666e46686bc26adef1" kindref="member">Bond::issueBond</ref>(week,<sp/>construction_time,<sp/>bond_term_multiplier,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bond_interest_rate_multiplier);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>level_debt_service_payment<sp/>=<sp/><ref refid="classBond_1ad98df7d28b398e620286f95ee085439b" kindref="member">cost_of_capital</ref><sp/>*<sp/>(<ref refid="classBond_1a5f66785534e24caa43d9f730130a6463" kindref="member">coupon_rate</ref></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>pow(1.<sp/>+<sp/><ref refid="classBond_1a5f66785534e24caa43d9f730130a6463" kindref="member">coupon_rate</ref>,<sp/><ref refid="classBond_1a4a227b6de2eeada118d82ab1633b1db8" kindref="member">n_payments</ref>))<sp/>/</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(pow(1.<sp/>+<sp/><ref refid="classBond_1a5f66785534e24caa43d9f730130a6463" kindref="member">coupon_rate</ref>,<sp/><ref refid="classBond_1a4a227b6de2eeada118d82ab1633b1db8" kindref="member">n_payments</ref>)<sp/>-<sp/>1.);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/SystemComponents/Bonds/LevelDebtServiceBond.cpp"/>
+  </compounddef>
+</doxygen>

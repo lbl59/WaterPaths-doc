@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="EvaporationSeries_8cpp" kind="file" language="C++">
+    <compoundname>EvaporationSeries.cpp</compoundname>
+    <includes refid="EvaporationSeries_8h" local="yes">EvaporationSeries.h</includes>
+    <incdepgraph>
+      <node id="522">
+        <label>cmath</label>
+      </node>
+      <node id="520">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+      </node>
+      <node id="521">
+        <label>map</label>
+      </node>
+      <node id="518">
+        <label>vector</label>
+      </node>
+      <node id="519">
+        <label>../SystemComponents/Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+      </node>
+      <node id="516">
+        <label>src/Controls/EvaporationSeries.cpp</label>
+        <link refid="EvaporationSeries_8cpp"/>
+        <childnode refid="517" relation="include">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+      </node>
+      <node id="523">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardoct<sp/>on<sp/>6/22/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="EvaporationSeries_8h" kindref="compound">EvaporationSeries.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="classEvaporationSeries_1af0903d8555a148f9bf45f915877120b3" kindref="member">EvaporationSeries::EvaporationSeries</ref>(</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>*evaporation_series,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>series_length)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classCatchment" kindref="compound">Catchment</ref>(evaporation_series,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>series_length)<sp/>{}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="classEvaporationSeries_1af0903d8555a148f9bf45f915877120b3" kindref="member">EvaporationSeries::EvaporationSeries</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref><sp/>&amp;evaporation_series)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classCatchment" kindref="compound">Catchment</ref>(evaporation_series)<sp/>{}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref><sp/>&amp;<ref refid="classEvaporationSeries_1ad7eb758ce8774ce87732a86c23d24356" kindref="member">EvaporationSeries::operator=</ref>(</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;evaporation_series)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCatchment_1a579ccda86831f286c19c76354e7125c3" kindref="member">streamflows_all</ref><sp/>=<sp/>evaporation_series.<ref refid="classCatchment_1a579ccda86831f286c19c76354e7125c3" kindref="member">streamflows_all</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCatchment_1a2d4994220f63b876348b4ce4892bc6d3" kindref="member">series_length</ref><sp/>=<sp/>evaporation_series.<ref refid="classCatchment_1a2d4994220f63b876348b4ce4892bc6d3" kindref="member">series_length</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCatchment_1aaf04c295ecd6b666fa1439d3d5bc072a" kindref="member">streamflows_realization</ref><sp/>=<sp/>evaporation_series.<ref refid="classCatchment_1aaf04c295ecd6b666fa1439d3d5bc072a" kindref="member">streamflows_realization</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="classEvaporationSeries_1a201a00eaaadc9c523d544e0d6a4c50e5" kindref="member">EvaporationSeries::~EvaporationSeries</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classEvaporationSeries_1a4d793fbcb73e8fb6c179968130d6fd0a" kindref="member">EvaporationSeries::getEvaporation</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCatchment_1af4e8206ffab5c901e5e4cdd6136f73a1" kindref="member">Catchment::getStreamflow</ref>(week);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classEvaporationSeries_1a4985ac4c81ec111657861e5750b24c0e" kindref="member">EvaporationSeries::setRealization</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>r,<sp/>vector&lt;double&gt;<sp/>&amp;rdm_factors)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCatchment_1affb9042c5854a76efd864ce87d7d1877" kindref="member">Catchment::setRealization</ref>(r,<sp/>rdm_factors);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>w<sp/>=<sp/>0;<sp/>w<sp/>&lt;<sp/><ref refid="classCatchment_1aaf04c295ecd6b666fa1439d3d5bc072a" kindref="member">streamflows_realization</ref>.size();<sp/>++w)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classCatchment_1aaf04c295ecd6b666fa1439d3d5bc072a" kindref="member">streamflows_realization</ref>[w]<sp/>*=<sp/>rdm_factors.at(0);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/Controls/EvaporationSeries.cpp"/>
+  </compounddef>
+</doxygen>

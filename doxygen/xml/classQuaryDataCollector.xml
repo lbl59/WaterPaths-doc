@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classQuaryDataCollector" kind="class" language="C++" prot="public">
+    <compoundname>QuaryDataCollector</compoundname>
+    <basecompoundref refid="classReservoirDataCollector" prot="public" virt="non-virtual">ReservoirDataCollector</basecompoundref>
+    <includes refid="QuaryDataCollector_8h" local="no">QuaryDataCollector.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classQuaryDataCollector_1af2f534feeca2a37104309a595d064cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>QuaryDataCollector::QuaryDataCollector</definition>
+        <argsstring>(Reservoir *reservoir, unsigned long realization)</argsstring>
+        <name>QuaryDataCollector</name>
+        <param>
+          <type><ref refid="classReservoir" kindref="compound">Reservoir</ref> *</type>
+          <declname>reservoir</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/QuaryDataCollector.h" line="13" column="1" bodyfile="src/DataCollector/QuaryDataCollector.cpp" bodystart="7" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="168">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="167">
+        <label>ReservoirDataCollector</label>
+        <link refid="classReservoirDataCollector"/>
+        <childnode refid="168" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>QuaryDataCollector</label>
+        <link refid="classQuaryDataCollector"/>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="171">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="170">
+        <label>ReservoirDataCollector</label>
+        <link refid="classReservoirDataCollector"/>
+        <childnode refid="171" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="169">
+        <label>QuaryDataCollector</label>
+        <link refid="classQuaryDataCollector"/>
+        <childnode refid="170" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/DataCollector/QuaryDataCollector.h" line="11" column="1" bodyfile="src/DataCollector/QuaryDataCollector.h" bodystart="11" bodyend="15"/>
+    <listofallmembers>
+      <member refid="classReservoirDataCollector_1a5c2e1355c40e45b409168e98245eef95" prot="public" virt="virtual"><scope>QuaryDataCollector</scope><name>collect_data</name></member>
+      <member refid="classDataCollector_1a3f89b18f4ac0557d7374d49531a004c0" prot="public" virt="non-virtual"><scope>QuaryDataCollector</scope><name>DataCollector</name></member>
+      <member refid="classDataCollector_1a5cb840b6fbcf6afe364eef9114984383" prot="public" virt="non-virtual"><scope>QuaryDataCollector</scope><name>id</name></member>
+      <member refid="classDataCollector_1a3a9a5033592f72ada429aa20056162b9" prot="public" virt="non-virtual"><scope>QuaryDataCollector</scope><name>name</name></member>
+      <member refid="classReservoirDataCollector_1a0b68d7fa4a6d704350340d1ac3e8a1d2" prot="public" virt="virtual"><scope>QuaryDataCollector</scope><name>printCompactString</name></member>
+      <member refid="classReservoirDataCollector_1aa8346433f037bbca41f3c8450f7f88cf" prot="public" virt="virtual"><scope>QuaryDataCollector</scope><name>printCompactStringHeader</name></member>
+      <member refid="classReservoirDataCollector_1a81777b029bf26be403b9f4d67f01588b" prot="public" virt="virtual"><scope>QuaryDataCollector</scope><name>printTabularString</name></member>
+      <member refid="classReservoirDataCollector_1a62e7c7abc34c8154b338dfbd284ed665" prot="public" virt="virtual"><scope>QuaryDataCollector</scope><name>printTabularStringHeaderLine1</name></member>
+      <member refid="classReservoirDataCollector_1ae2f8e808c5960608e510a64c7f00ad1b" prot="public" virt="virtual"><scope>QuaryDataCollector</scope><name>printTabularStringHeaderLine2</name></member>
+      <member refid="classQuaryDataCollector_1af2f534feeca2a37104309a595d064cbd" prot="public" virt="non-virtual"><scope>QuaryDataCollector</scope><name>QuaryDataCollector</name></member>
+      <member refid="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" prot="public" virt="non-virtual"><scope>QuaryDataCollector</scope><name>realization</name></member>
+      <member refid="classReservoirDataCollector_1a7647adce7b2d7a8598ae678a5015dde5" prot="public" virt="non-virtual"><scope>QuaryDataCollector</scope><name>ReservoirDataCollector</name></member>
+      <member refid="classReservoirDataCollector_1aaca132902fa717e71a0b0d5d5078c04c" prot="public" virt="non-virtual"><scope>QuaryDataCollector</scope><name>ReservoirDataCollector</name></member>
+      <member refid="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44" prot="public" virt="non-virtual"><scope>QuaryDataCollector</scope><name>table_width</name></member>
+      <member refid="classDataCollector_1acad1c22d67a8eb3db056ba776a131900" prot="public" virt="non-virtual"><scope>QuaryDataCollector</scope><name>type</name></member>
+      <member refid="classDataCollector_1a9f9ff1817bd0601ba33925c3378ac50e" prot="public" virt="virtual"><scope>QuaryDataCollector</scope><name>~DataCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

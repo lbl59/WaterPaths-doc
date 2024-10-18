@@ -1,0 +1,559 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="WwtpDischargeRule_8h" kind="file" language="C++">
+    <compoundname>WwtpDischargeRule.h</compoundname>
+    <includes refid="ControlRules_8h" local="yes">Base/ControlRules.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="Utility_8h" local="yes">src/SystemComponents/Utility/Utility.h</includedby>
+    <includedby refid="WwtpDischargeRule_8cpp" local="yes">src/Controls/WwtpDischargeRule.cpp</includedby>
+    <incdepgraph>
+      <node id="818">
+        <label>Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="817">
+        <label>src/Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="818" relation="include">
+        </childnode>
+        <childnode refid="819" relation="include">
+        </childnode>
+      </node>
+      <node id="819">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="828">
+        <label>src/Problem/PaperTestProblem.cpp</label>
+        <link refid="PaperTestProblem_8cpp"/>
+      </node>
+      <node id="860">
+        <label>src/DataCollector/TransfersDataCollector.h</label>
+        <link refid="TransfersDataCollector_8h"/>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="861" relation="include">
+        </childnode>
+      </node>
+      <node id="838">
+        <label>src/Controls/Base/MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="822" relation="include">
+        </childnode>
+        <childnode refid="839" relation="include">
+        </childnode>
+        <childnode refid="840" relation="include">
+        </childnode>
+        <childnode refid="863" relation="include">
+        </childnode>
+        <childnode refid="864" relation="include">
+        </childnode>
+        <childnode refid="866" relation="include">
+        </childnode>
+        <childnode refid="870" relation="include">
+        </childnode>
+        <childnode refid="872" relation="include">
+        </childnode>
+        <childnode refid="874" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+      </node>
+      <node id="825">
+        <label>src/ContinuityModels/ContinuityModelRealization.cpp</label>
+        <link refid="ContinuityModelRealization_8cpp"/>
+      </node>
+      <node id="851">
+        <label>src/SystemComponents/Utility/Utility.cpp</label>
+        <link refid="Utility_8cpp"/>
+      </node>
+      <node id="854">
+        <label>src/DroughtMitigationInstruments/Restrictions.h</label>
+        <link refid="Restrictions_8h"/>
+        <childnode refid="840" relation="include">
+        </childnode>
+        <childnode refid="855" relation="include">
+        </childnode>
+        <childnode refid="843" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+      </node>
+      <node id="879">
+        <label>src/Controls/WwtpDischargeRule.cpp</label>
+        <link refid="WwtpDischargeRule_8cpp"/>
+      </node>
+      <node id="822">
+        <label>src/ContinuityModels/Base/ContinuityModel.h</label>
+        <link refid="ContinuityModel_8h"/>
+        <childnode refid="823" relation="include">
+        </childnode>
+        <childnode refid="824" relation="include">
+        </childnode>
+        <childnode refid="836" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+      </node>
+      <node id="853">
+        <label>src/Utils/ObjectivesCalculator.cpp</label>
+        <link refid="ObjectivesCalculator_8cpp"/>
+      </node>
+      <node id="857">
+        <label>src/Utils/ObjectivesCalculator.h</label>
+        <link refid="ObjectivesCalculator_8h"/>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="853" relation="include">
+        </childnode>
+      </node>
+      <node id="874">
+        <label>src/Controls/SeasonalMinEnvFlowControl.h</label>
+        <link refid="SeasonalMinEnvFlowControl_8h"/>
+        <childnode refid="841" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="830" relation="include">
+        </childnode>
+      </node>
+      <node id="877">
+        <label>src/DataCollector/UtilitiesDataCollector.h</label>
+        <link refid="UtilitiesDataCollector_8h"/>
+        <childnode refid="856" relation="include">
+        </childnode>
+        <childnode refid="857" relation="include">
+        </childnode>
+        <childnode refid="878" relation="include">
+        </childnode>
+      </node>
+      <node id="869">
+        <label>src/Controls/StorageMinEnvFlowControl.cpp</label>
+        <link refid="StorageMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="866">
+        <label>src/Controls/StorageMinEnvFlowControl.h</label>
+        <link refid="StorageMinEnvFlowControl_8h"/>
+        <childnode refid="867" relation="include">
+        </childnode>
+        <childnode refid="869" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="830" relation="include">
+        </childnode>
+      </node>
+      <node id="820">
+        <label>src/Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="821" relation="include">
+        </childnode>
+        <childnode refid="879" relation="include">
+        </childnode>
+      </node>
+      <node id="837">
+        <label>src/ContinuityModels/ContinuityModelROF.cpp</label>
+        <link refid="ContinuityModelROF_8cpp"/>
+      </node>
+      <node id="868">
+        <label>src/Controls/Custom/JordanLakeMinEnvFlowControl.cpp</label>
+        <link refid="JordanLakeMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="864">
+        <label>src/Controls/Custom/FallsLakeMinEnvFlowControl.h</label>
+        <link refid="FallsLakeMinEnvFlowControl_8h"/>
+        <childnode refid="865" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="830" relation="include">
+        </childnode>
+      </node>
+      <node id="823">
+        <label>src/ContinuityModels/Base/ContinuityModel.cpp</label>
+        <link refid="ContinuityModel_8cpp"/>
+      </node>
+      <node id="829">
+        <label>src/Problem/Triangle.cpp</label>
+        <link refid="Triangle_8cpp"/>
+      </node>
+      <node id="870">
+        <label>src/Controls/FixedMinEnvFlowControl.h</label>
+        <link refid="FixedMinEnvFlowControl_8h"/>
+        <childnode refid="871" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="830" relation="include">
+        </childnode>
+      </node>
+      <node id="871">
+        <label>src/Controls/FixedMinEnvFlowControl.cpp</label>
+        <link refid="FixedMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="878">
+        <label>src/DataCollector/UtilitiesDataCollector.cpp</label>
+        <link refid="UtilitiesDataCollector_8cpp"/>
+      </node>
+      <node id="856">
+        <label>src/DataCollector/MasterDataCollector.h</label>
+        <link refid="MasterDataCollector_8h"/>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="845" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+      </node>
+      <node id="841">
+        <label>src/Controls/SeasonalMinEnvFlowControl.cpp</label>
+        <link refid="SeasonalMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="826">
+        <label>src/DroughtMitigationInstruments/InsuranceStorageToROF.h</label>
+        <link refid="InsuranceStorageToROF_8h"/>
+        <childnode refid="827" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="830" relation="include">
+        </childnode>
+      </node>
+      <node id="835">
+        <label>src/Simulation/Simulation.cpp</label>
+        <link refid="Simulation_8cpp"/>
+      </node>
+      <node id="839">
+        <label>src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
+        <link refid="DroughtMitigationPolicy_8h"/>
+        <childnode refid="824" relation="include">
+        </childnode>
+        <childnode refid="840" relation="include">
+        </childnode>
+        <childnode refid="854" relation="include">
+        </childnode>
+        <childnode refid="856" relation="include">
+        </childnode>
+        <childnode refid="859" relation="include">
+        </childnode>
+        <childnode refid="862" relation="include">
+        </childnode>
+        <childnode refid="826" relation="include">
+        </childnode>
+      </node>
+      <node id="830">
+        <label>src/Utils/Utils.cpp</label>
+        <link refid="Utils_8cpp"/>
+      </node>
+      <node id="852">
+        <label>src/SystemComponents/WaterSources/Base/WaterSource.cpp</label>
+        <link refid="WaterSource_8cpp"/>
+      </node>
+      <node id="876">
+        <label>src/Controls/Base/MinEnvironFlowControl.cpp</label>
+        <link refid="MinEnvironFlowControl_8cpp"/>
+      </node>
+      <node id="845">
+        <label>src/Problem/Base/Problem.h</label>
+        <link refid="Problem_8h"/>
+        <childnode refid="832" relation="include">
+        </childnode>
+        <childnode refid="834" relation="include">
+        </childnode>
+        <childnode refid="846" relation="include">
+        </childnode>
+      </node>
+      <node id="861">
+        <label>src/DataCollector/TransfersDataCollector.cpp</label>
+        <link refid="TransfersDataCollector_8cpp"/>
+      </node>
+      <node id="858">
+        <label>src/DataCollector/RestrictionsDataCollector.cpp</label>
+        <link refid="RestrictionsDataCollector_8cpp"/>
+      </node>
+      <node id="846">
+        <label>src/Problem/Base/Problem.cpp</label>
+        <link refid="Problem_8cpp"/>
+      </node>
+      <node id="862">
+        <label>src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.cpp</label>
+        <link refid="DroughtMitigationPolicy_8cpp"/>
+      </node>
+      <node id="855">
+        <label>src/DataCollector/RestrictionsDataCollector.h</label>
+        <link refid="RestrictionsDataCollector_8h"/>
+        <childnode refid="856" relation="include">
+        </childnode>
+        <childnode refid="857" relation="include">
+        </childnode>
+        <childnode refid="858" relation="include">
+        </childnode>
+      </node>
+      <node id="821">
+        <label>src/SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="822" relation="include">
+        </childnode>
+        <childnode refid="838" relation="include">
+        </childnode>
+        <childnode refid="839" relation="include">
+        </childnode>
+        <childnode refid="840" relation="include">
+        </childnode>
+        <childnode refid="854" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="877" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+        <childnode refid="851" relation="include">
+        </childnode>
+      </node>
+      <node id="872">
+        <label>src/Controls/InflowMinEnvFlowControl.h</label>
+        <link refid="InflowMinEnvFlowControl_8h"/>
+        <childnode refid="873" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="830" relation="include">
+        </childnode>
+      </node>
+      <node id="844">
+        <label>src/DroughtMitigationInstruments/Transfers.cpp</label>
+        <link refid="Transfers_8cpp"/>
+      </node>
+      <node id="849">
+        <label>src/SystemComponents/Bonds/LevelDebtServiceBond.cpp</label>
+        <link refid="LevelDebtServiceBond_8cpp"/>
+      </node>
+      <node id="843">
+        <label>src/DroughtMitigationInstruments/Restrictions.cpp</label>
+        <link refid="Restrictions_8cpp"/>
+      </node>
+      <node id="850">
+        <label>src/SystemComponents/Utility/InfrastructureManager.cpp</label>
+        <link refid="InfrastructureManager_8cpp"/>
+      </node>
+      <node id="863">
+        <label>src/Controls/Base/MinEnvFlowControl.cpp</label>
+        <link refid="MinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="842">
+        <label>src/DataCollector/MasterDataCollector.cpp</label>
+        <link refid="MasterDataCollector_8cpp"/>
+      </node>
+      <node id="824">
+        <label>src/ContinuityModels/ContinuityModelRealization.h</label>
+        <link refid="ContinuityModelRealization_8h"/>
+        <childnode refid="825" relation="include">
+        </childnode>
+        <childnode refid="826" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+      </node>
+      <node id="859">
+        <label>src/DroughtMitigationInstruments/Transfers.h</label>
+        <link refid="Transfers_8h"/>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="860" relation="include">
+        </childnode>
+        <childnode refid="844" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="830" relation="include">
+        </childnode>
+      </node>
+      <node id="833">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="831">
+        <label>src/Simulation/Simulation.h</label>
+        <link refid="Simulation_8h"/>
+        <childnode refid="832" relation="include">
+        </childnode>
+        <childnode refid="834" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="835" relation="include">
+        </childnode>
+      </node>
+      <node id="873">
+        <label>src/Controls/InflowMinEnvFlowControl.cpp</label>
+        <link refid="InflowMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="865">
+        <label>src/Controls/Custom/FallsLakeMinEnvFlowControl.cpp</label>
+        <link refid="FallsLakeMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="847">
+        <label>src/SystemComponents/Bonds/BalloonPaymentBond.cpp</label>
+        <link refid="BalloonPaymentBond_8cpp"/>
+      </node>
+      <node id="848">
+        <label>src/SystemComponents/Bonds/FloatingInterestBalloonPaymentBond.cpp</label>
+        <link refid="FloatingInterestBalloonPaymentBond_8cpp"/>
+      </node>
+      <node id="875">
+        <label>src/Controls/Base/MinEnvironFlowControl.h</label>
+        <link refid="MinEnvironFlowControl_8h"/>
+        <childnode refid="876" relation="include">
+        </childnode>
+      </node>
+      <node id="867">
+        <label>src/Controls/Custom/JordanLakeMinEnvFlowControl.h</label>
+        <link refid="JordanLakeMinEnvFlowControl_8h"/>
+        <childnode refid="868" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+        <childnode refid="830" relation="include">
+        </childnode>
+      </node>
+      <node id="827">
+        <label>src/DroughtMitigationInstruments/InsuranceStorageToROF.cpp</label>
+        <link refid="InsuranceStorageToROF_8cpp"/>
+      </node>
+      <node id="832">
+        <label>src/Problem/PaperTestProblem.h</label>
+        <link refid="PaperTestProblem_8h"/>
+        <childnode refid="833" relation="include">
+        </childnode>
+        <childnode refid="828" relation="include">
+        </childnode>
+      </node>
+      <node id="834">
+        <label>src/Problem/Triangle.h</label>
+        <link refid="Triangle_8h"/>
+        <childnode refid="833" relation="include">
+        </childnode>
+        <childnode refid="829" relation="include">
+        </childnode>
+      </node>
+      <node id="840">
+        <label>src/Utils/Utils.h</label>
+        <link refid="Utils_8h"/>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="841" relation="include">
+        </childnode>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="827" relation="include">
+        </childnode>
+        <childnode refid="843" relation="include">
+        </childnode>
+        <childnode refid="844" relation="include">
+        </childnode>
+        <childnode refid="845" relation="include">
+        </childnode>
+        <childnode refid="833" relation="include">
+        </childnode>
+        <childnode refid="846" relation="include">
+        </childnode>
+        <childnode refid="835" relation="include">
+        </childnode>
+        <childnode refid="847" relation="include">
+        </childnode>
+        <childnode refid="848" relation="include">
+        </childnode>
+        <childnode refid="849" relation="include">
+        </childnode>
+        <childnode refid="850" relation="include">
+        </childnode>
+        <childnode refid="851" relation="include">
+        </childnode>
+        <childnode refid="852" relation="include">
+        </childnode>
+        <childnode refid="853" relation="include">
+        </childnode>
+        <childnode refid="830" relation="include">
+        </childnode>
+      </node>
+      <node id="836">
+        <label>src/ContinuityModels/ContinuityModelROF.h</label>
+        <link refid="ContinuityModelROF_8h"/>
+        <childnode refid="837" relation="include">
+        </childnode>
+        <childnode refid="826" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classWwtpDischargeRule" prot="public">WwtpDischargeRule</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardoct<sp/>on<sp/>6/26/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_WWTPDISCHARGERULES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_WWTPDISCHARGERULES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ControlRules_8h" kindref="compound">Base/ControlRules.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classWwtpDischargeRule" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classControlRules" kindref="compound">ControlRules</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>source_id_to_vector_index;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="classWwtpDischargeRule_1a5d193e0cbc2eb23e1b86e79fb2eafad3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classWwtpDischargeRule_1a5d193e0cbc2eb23e1b86e79fb2eafad3" kindref="member">year_series_fraction_discharge</ref>;</highlight></codeline>
+<codeline lineno="20" refid="classWwtpDischargeRule_1ac2f77a9fca93eef3fd26ff1d579130be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/><ref refid="classWwtpDischargeRule_1ac2f77a9fca93eef3fd26ff1d579130be" kindref="member">discharge_to_source_ids</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref>(vector&lt;vector&lt;double&gt;&gt;<sp/>year_series_fraction_discharge,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>discharge_to_source_ids);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref>(<ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref><sp/>&amp;wwtp_discharge_rule);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref><sp/>&amp;operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref><sp/>&amp;wwtp_discharge_rule);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_dependent_variable(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>water_source_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_dependent_variable(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>water_source_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_dependent_variable(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>get_dependent_variable(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_WWTPDISCHARGERULES_H</highlight></codeline>
+    </programlisting>
+    <location file="src/Controls/WwtpDischargeRule.h"/>
+  </compounddef>
+</doxygen>

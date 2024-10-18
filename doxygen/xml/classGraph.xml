@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classGraph" kind="class" language="C++" prot="public">
+    <compoundname>Graph</compoundname>
+    <includes refid="Graph_8h" local="no">Graph.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classGraph_1a2b722f7cfa7a21e4cb5fae488b3d4dcc" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Graph::V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="17" column="1" bodyfile="src/Utils/Graph/Graph.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGraph_1a9a7e34b482b020fa136fc8e0fa2d0030" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Graph::n_edges</definition>
+        <argsstring></argsstring>
+        <name>n_edges</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="18" column="1" bodyfile="src/Utils/Graph/Graph.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGraph_1a04ab9c17ad31aa036def8db0f88b035b" prot="protected" static="no" mutable="no">
+        <type>list&lt; int &gt; *</type>
+        <definition>list&lt;int&gt;* Graph::adj</definition>
+        <argsstring></argsstring>
+        <name>adj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="20" column="1" bodyfile="src/Utils/Graph/Graph.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGraph_1a2b9dc8c44ac87d67b061af1bf8dab2fa" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; int &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;int&gt; &gt; Graph::upstream_sources</definition>
+        <argsstring></argsstring>
+        <name>upstream_sources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="21" column="1" bodyfile="src/Utils/Graph/Graph.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGraph_1a1c89a48555f165ef3e80b85ca5655bea" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; int &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;int&gt; &gt; Graph::downstream_sources</definition>
+        <argsstring></argsstring>
+        <name>downstream_sources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="22" column="1" bodyfile="src/Utils/Graph/Graph.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGraph_1ad18af6207537a43b3cf53b56acaf92fd" prot="protected" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; Graph::topological_order</definition>
+        <argsstring></argsstring>
+        <name>topological_order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="23" column="1" bodyfile="src/Utils/Graph/Graph.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGraph_1af903899bcb412f62ec4aa295eef9f45c" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; Graph::continuity_matrix_transpose</definition>
+        <argsstring></argsstring>
+        <name>continuity_matrix_transpose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="24" column="1" bodyfile="src/Utils/Graph/Graph.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classGraph_1a6f175234dc3c87150a53eab5c4e586ef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Graph::addEdgeToEdgesList</definition>
+        <argsstring>(int u, int v)</argsstring>
+        <name>addEdgeToEdgesList</name>
+        <param>
+          <type>int</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add connection (stream) between water sources. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upstream source. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Downstream source. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="26" column="1" bodyfile="src/Utils/Graph/Graph.cpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1a8f154c485f989828d6fb515a28190ac2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt; int &gt; Graph::topologicalSort</definition>
+        <argsstring>()</argsstring>
+        <name>topologicalSort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sort sources from upstream to downstream. <simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="29" column="1" bodyfile="src/Utils/Graph/Graph.cpp" bodystart="70" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1a17fc2fd799b56ac496aa57036f3696d7" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt; int &gt; Graph::findUpstreamSources</definition>
+        <argsstring>(int id) const</argsstring>
+        <name>findUpstreamSources</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get all sources upstream water source &lt;id&gt;. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>vector with id&apos;s of upstream sources. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>If find function does not reach the end of the list while searching for ID is because element ID exists in list. </para>        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="31" column="1" bodyfile="src/Utils/Graph/Graph.cpp" bodystart="138" bodyend="148"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGraph_1af3ff6b295df8bf3bee0bafd7c7d56915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Graph::Graph</definition>
+        <argsstring>(int V)</argsstring>
+        <name>Graph</name>
+        <param>
+          <type>int</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>V</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of water sources (vertices. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="33" column="1" bodyfile="src/Utils/Graph/Graph.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1ae4c72b8ac4d693c49800a4c7e273654f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Graph::Graph</definition>
+        <argsstring>()</argsstring>
+        <name>Graph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="35" column="1" bodyfile="src/Utils/Graph/Graph.cpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1a4d531e9313e31e92b9e816bdb5a9d14f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; int &gt;</type>
+        <definition>const vector&lt; int &gt; Graph::getTopological_order</definition>
+        <argsstring>() const</argsstring>
+        <name>getTopological_order</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="38" column="1" bodyfile="src/Utils/Graph/Graph.cpp" bodystart="159" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1ad8c10df34357b2cd865c81e0c4f0bd8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Graph::addEdge</definition>
+        <argsstring>(int u, int v)</argsstring>
+        <name>addEdge</name>
+        <param>
+          <type>int</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add connection (stream) between water sources. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Upstream source. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Downstream source. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Sort graph based on the edges added to it so far.</para><para>Figure out sources upstream of each vertex added so far. </para>        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="41" column="1" bodyfile="src/Utils/Graph/Graph.cpp" bodystart="47" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1a0d4d0149e7d70bb9e6b7a5cae22062a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; vector&lt; int &gt; &gt; &amp;</type>
+        <definition>const vector&lt; vector&lt; int &gt; &gt; &amp; Graph::getUpstream_sources</definition>
+        <argsstring>() const</argsstring>
+        <name>getUpstream_sources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="43" column="1" bodyfile="src/Utils/Graph/Graph.cpp" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1aa6e27da7010986d54cd2ec79dbbf4abe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>const vector&lt; vector&lt; double &gt; &gt; Graph::getContinuityMatrix</definition>
+        <argsstring>() const</argsstring>
+        <name>getContinuityMatrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a matrix in which rows correspond to vertexes. The first set of columns correspond to pipes and the second set to flows in and out of vertexes. <simplesect kind="return"><para>Continuity <ref refid="classMatrix" kindref="compound">Matrix</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="45" column="1" bodyfile="src/Utils/Graph/Graph.cpp" bodystart="168" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1a902c5b3eacb66d60752525ab23297a95" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Graph::~Graph</definition>
+        <argsstring>()</argsstring>
+        <name>~Graph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="47" column="1" bodyfile="src/Utils/Graph/Graph.cpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1a9bbef60829d62f08e802dd1fbda0e4b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; vector&lt; int &gt; &gt;</type>
+        <definition>const vector&lt; vector&lt; int &gt; &gt; Graph::getDownSources</definition>
+        <argsstring>() const</argsstring>
+        <name>getDownSources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Graph/Graph.h" line="49" column="1" bodyfile="src/Utils/Graph/Graph.cpp" bodystart="150" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Utils/Graph/Graph.h" line="14" column="1" bodyfile="src/Utils/Graph/Graph.h" bodystart="14" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classGraph_1ad8c10df34357b2cd865c81e0c4f0bd8c" prot="public" virt="non-virtual"><scope>Graph</scope><name>addEdge</name></member>
+      <member refid="classGraph_1a6f175234dc3c87150a53eab5c4e586ef" prot="protected" virt="non-virtual"><scope>Graph</scope><name>addEdgeToEdgesList</name></member>
+      <member refid="classGraph_1a04ab9c17ad31aa036def8db0f88b035b" prot="protected" virt="non-virtual"><scope>Graph</scope><name>adj</name></member>
+      <member refid="classGraph_1af903899bcb412f62ec4aa295eef9f45c" prot="protected" virt="non-virtual"><scope>Graph</scope><name>continuity_matrix_transpose</name></member>
+      <member refid="classGraph_1a1c89a48555f165ef3e80b85ca5655bea" prot="protected" virt="non-virtual"><scope>Graph</scope><name>downstream_sources</name></member>
+      <member refid="classGraph_1a17fc2fd799b56ac496aa57036f3696d7" prot="protected" virt="non-virtual"><scope>Graph</scope><name>findUpstreamSources</name></member>
+      <member refid="classGraph_1aa6e27da7010986d54cd2ec79dbbf4abe" prot="public" virt="non-virtual"><scope>Graph</scope><name>getContinuityMatrix</name></member>
+      <member refid="classGraph_1a9bbef60829d62f08e802dd1fbda0e4b7" prot="public" virt="non-virtual"><scope>Graph</scope><name>getDownSources</name></member>
+      <member refid="classGraph_1a4d531e9313e31e92b9e816bdb5a9d14f" prot="public" virt="non-virtual"><scope>Graph</scope><name>getTopological_order</name></member>
+      <member refid="classGraph_1a0d4d0149e7d70bb9e6b7a5cae22062a3" prot="public" virt="non-virtual"><scope>Graph</scope><name>getUpstream_sources</name></member>
+      <member refid="classGraph_1af3ff6b295df8bf3bee0bafd7c7d56915" prot="public" virt="non-virtual"><scope>Graph</scope><name>Graph</name></member>
+      <member refid="classGraph_1ae4c72b8ac4d693c49800a4c7e273654f" prot="public" virt="non-virtual"><scope>Graph</scope><name>Graph</name></member>
+      <member refid="classGraph_1a9a7e34b482b020fa136fc8e0fa2d0030" prot="protected" virt="non-virtual"><scope>Graph</scope><name>n_edges</name></member>
+      <member refid="classGraph_1ad18af6207537a43b3cf53b56acaf92fd" prot="protected" virt="non-virtual"><scope>Graph</scope><name>topological_order</name></member>
+      <member refid="classGraph_1a8f154c485f989828d6fb515a28190ac2" prot="protected" virt="non-virtual"><scope>Graph</scope><name>topologicalSort</name></member>
+      <member refid="classGraph_1a2b9dc8c44ac87d67b061af1bf8dab2fa" prot="protected" virt="non-virtual"><scope>Graph</scope><name>upstream_sources</name></member>
+      <member refid="classGraph_1a2b722f7cfa7a21e4cb5fae488b3d4dcc" prot="protected" virt="non-virtual"><scope>Graph</scope><name>V</name></member>
+      <member refid="classGraph_1a902c5b3eacb66d60752525ab23297a95" prot="public" virt="virtual"><scope>Graph</scope><name>~Graph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

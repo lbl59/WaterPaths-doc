@@ -1,0 +1,73 @@
+\hypertarget{main_8cpp}{}\section{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.\+cpp@{src/main.\+cpp}}
+{\ttfamily \#include \char`\"{}System\+Components/\+Water\+Sources/\+Base/\+Water\+Source.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Utils/\+Q\+P\+Solver/\+Quad\+Prog++.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Utils/\+Solutions.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Problem/\+Paper\+Test\+Problem.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Problem/\+Triangle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Utils/\+Utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sys/stat.\+h$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$getopt.\+h$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$omp.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a53e524e1bfeca8d980ba44566b7e99bc}{print\+\_\+decision\+\_\+vars}} (double $\ast$vars)
+\item 
+void \mbox{\hyperlink{main_8cpp_acf7a8c87863d56fdc4585c495bbde106}{eval}} (double $\ast$vars, double $\ast$objs, double $\ast$consts)
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPaperTestProblem}{Paper\+Test\+Problem}} $\ast$ \mbox{\hyperlink{main_8cpp_a2a0c06f842d927e6a159cb3794aaa566}{problem\+\_\+ptr}}
+\item 
+int \mbox{\hyperlink{main_8cpp_a5c7ba59d434acf5dafb8ec5fd28e9a1e}{failures}} = 0
+\item 
+ofstream \mbox{\hyperlink{main_8cpp_ad90a737468fa7019b3a1f7f235b5cefb}{sol\+\_\+out}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_acf7a8c87863d56fdc4585c495bbde106}\label{main_8cpp_acf7a8c87863d56fdc4585c495bbde106}} 
+\index{main.\+cpp@{main.\+cpp}!eval@{eval}}
+\index{eval@{eval}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{eval()}{eval()}}
+{\footnotesize\ttfamily void eval (\begin{DoxyParamCaption}\item[{double $\ast$}]{vars,  }\item[{double $\ast$}]{objs,  }\item[{double $\ast$}]{consts }\end{DoxyParamCaption})}
+
+for (int i = 0; i $<$ N\+U\+M\+\_\+\+D\+E\+C\+\_\+\+V\+AR; ++i) printf(\char`\"{}\%f,\char`\"{}, vars\mbox{[}i\mbox{]}); //for (int i = 0; i $<$ 5; ++i) printf(\char`\"{}\%f, \char`\"{}, objs\mbox{[}i\mbox{]}); printf(\char`\"{}\textbackslash{}n\char`\"{}); printf(\char`\"{}\textbackslash{}n\char`\"{}); printf(\char`\"{}\textbackslash{}n\char`\"{}); printf(\char`\"{}\textbackslash{}n\char`\"{}); \mbox{\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a53e524e1bfeca8d980ba44566b7e99bc}\label{main_8cpp_a53e524e1bfeca8d980ba44566b7e99bc}} 
+\index{main.\+cpp@{main.\+cpp}!print\+\_\+decision\+\_\+vars@{print\+\_\+decision\+\_\+vars}}
+\index{print\+\_\+decision\+\_\+vars@{print\+\_\+decision\+\_\+vars}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{print\+\_\+decision\+\_\+vars()}{print\_decision\_vars()}}
+{\footnotesize\ttfamily void print\+\_\+decision\+\_\+vars (\begin{DoxyParamCaption}\item[{double $\ast$}]{vars }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_a5c7ba59d434acf5dafb8ec5fd28e9a1e}\label{main_8cpp_a5c7ba59d434acf5dafb8ec5fd28e9a1e}} 
+\index{main.\+cpp@{main.\+cpp}!failures@{failures}}
+\index{failures@{failures}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{failures}{failures}}
+{\footnotesize\ttfamily int failures = 0}
+
+\mbox{\Hypertarget{main_8cpp_a2a0c06f842d927e6a159cb3794aaa566}\label{main_8cpp_a2a0c06f842d927e6a159cb3794aaa566}} 
+\index{main.\+cpp@{main.\+cpp}!problem\+\_\+ptr@{problem\+\_\+ptr}}
+\index{problem\+\_\+ptr@{problem\+\_\+ptr}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{problem\+\_\+ptr}{problem\_ptr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPaperTestProblem}{Paper\+Test\+Problem}}$\ast$ problem\+\_\+ptr}
+
+\mbox{\Hypertarget{main_8cpp_ad90a737468fa7019b3a1f7f235b5cefb}\label{main_8cpp_ad90a737468fa7019b3a1f7f235b5cefb}} 
+\index{main.\+cpp@{main.\+cpp}!sol\+\_\+out@{sol\+\_\+out}}
+\index{sol\+\_\+out@{sol\+\_\+out}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{sol\+\_\+out}{sol\_out}}
+{\footnotesize\ttfamily ofstream sol\+\_\+out}
+

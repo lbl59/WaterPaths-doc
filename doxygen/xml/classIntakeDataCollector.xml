@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classIntakeDataCollector" kind="class" language="C++" prot="public">
+    <compoundname>IntakeDataCollector</compoundname>
+    <basecompoundref refid="classDataCollector" prot="public" virt="non-virtual">DataCollector</basecompoundref>
+    <includes refid="IntakeDataCollector_8h" local="no">IntakeDataCollector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIntakeDataCollector_1a0dfbf640d99394bb82413c9a116db19b" prot="private" static="no" mutable="no">
+        <type><ref refid="classIntake" kindref="compound">Intake</ref> *</type>
+        <definition>Intake* IntakeDataCollector::intake</definition>
+        <argsstring></argsstring>
+        <name>intake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="14" column="1" bodyfile="src/DataCollector/IntakeDataCollector.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIntakeDataCollector_1a5016d2fece2ef545f72b9fa22497c817" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; IntakeDataCollector::total_upstream_sources_inflows</definition>
+        <argsstring></argsstring>
+        <name>total_upstream_sources_inflows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="15" column="1" bodyfile="src/DataCollector/IntakeDataCollector.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIntakeDataCollector_1a7d1d205c15423db421038e54ac0e1f36" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; IntakeDataCollector::demands</definition>
+        <argsstring></argsstring>
+        <name>demands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="16" column="1" bodyfile="src/DataCollector/IntakeDataCollector.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIntakeDataCollector_1a4485bea7a536f9fde233a2cc37200ec6" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; IntakeDataCollector::wastewater_inflows</definition>
+        <argsstring></argsstring>
+        <name>wastewater_inflows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="17" column="1" bodyfile="src/DataCollector/IntakeDataCollector.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIntakeDataCollector_1ae0b0d07123dd9323402ca55e12802ac8" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; IntakeDataCollector::outflows</definition>
+        <argsstring></argsstring>
+        <name>outflows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="18" column="1" bodyfile="src/DataCollector/IntakeDataCollector.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIntakeDataCollector_1aea2dbea83bb83c26df4474da669dd2eb" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; IntakeDataCollector::total_catchments_inflow</definition>
+        <argsstring></argsstring>
+        <name>total_catchments_inflow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="19" column="1" bodyfile="src/DataCollector/IntakeDataCollector.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIntakeDataCollector_1a2ab4a81bec74a370c60c78609627e807" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IntakeDataCollector::IntakeDataCollector</definition>
+        <argsstring>(Intake *intake, unsigned long realization)</argsstring>
+        <name>IntakeDataCollector</name>
+        <param>
+          <type><ref refid="classIntake" kindref="compound">Intake</ref> *</type>
+          <declname>intake</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="22" column="1" bodyfile="src/DataCollector/IntakeDataCollector.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntakeDataCollector_1ada2b88b7a05455cf6f2eebf82d37b3c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string IntakeDataCollector::printTabularString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printTabularString</name>
+        <reimplements refid="classDataCollector_1a397fccabe0223267eea8fc7cac0e59da">printTabularString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="24" column="1" bodyfile="src/DataCollector/IntakeDataCollector.cpp" bodystart="12" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntakeDataCollector_1ac39a40726fd4fe887425b24a10f04034" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string IntakeDataCollector::printCompactString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printCompactString</name>
+        <reimplements refid="classDataCollector_1a2eac264fa5612aed5a830b12de4f4ae3">printCompactString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="26" column="1" bodyfile="src/DataCollector/IntakeDataCollector.cpp" bodystart="30" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntakeDataCollector_1ae17ab7e6c75e77f5981f6a682597bb5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string IntakeDataCollector::printTabularStringHeaderLine1</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine1</name>
+        <reimplements refid="classDataCollector_1a91619cfa9e9b8cefd2f7c20d5718b41e">printTabularStringHeaderLine1</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="28" column="1" bodyfile="src/DataCollector/IntakeDataCollector.cpp" bodystart="43" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntakeDataCollector_1a2855eb8eed71649309bd4d9336f258c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string IntakeDataCollector::printTabularStringHeaderLine2</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine2</name>
+        <reimplements refid="classDataCollector_1af01ea961314be2164f39e6d4cd59e443">printTabularStringHeaderLine2</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="30" column="1" bodyfile="src/DataCollector/IntakeDataCollector.cpp" bodystart="56" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntakeDataCollector_1a42d56dd08e57a7e6e48812a2ab522439" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string IntakeDataCollector::printCompactStringHeader</definition>
+        <argsstring>() override</argsstring>
+        <name>printCompactStringHeader</name>
+        <reimplements refid="classDataCollector_1a98dcb4ec871d9c7fbf7545c64e5ccc67">printCompactStringHeader</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="32" column="1" bodyfile="src/DataCollector/IntakeDataCollector.cpp" bodystart="69" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntakeDataCollector_1aed1610e5419465b35041b05b9f60c212" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void IntakeDataCollector::collect_data</definition>
+        <argsstring>() override</argsstring>
+        <name>collect_data</name>
+        <reimplements refid="classDataCollector_1a01486bf58acbe37b203f97b3b9a79c40">collect_data</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/IntakeDataCollector.h" line="34" column="1" bodyfile="src/DataCollector/IntakeDataCollector.cpp" bodystart="83" bodyend="91"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="115">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="114">
+        <label>IntakeDataCollector</label>
+        <link refid="classIntakeDataCollector"/>
+        <childnode refid="115" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="117">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="116">
+        <label>IntakeDataCollector</label>
+        <link refid="classIntakeDataCollector"/>
+        <childnode refid="117" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/DataCollector/IntakeDataCollector.h" line="12" column="1" bodyfile="src/DataCollector/IntakeDataCollector.h" bodystart="12" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classIntakeDataCollector_1aed1610e5419465b35041b05b9f60c212" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>collect_data</name></member>
+      <member refid="classDataCollector_1a3f89b18f4ac0557d7374d49531a004c0" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>DataCollector</name></member>
+      <member refid="classIntakeDataCollector_1a7d1d205c15423db421038e54ac0e1f36" prot="private" virt="non-virtual"><scope>IntakeDataCollector</scope><name>demands</name></member>
+      <member refid="classDataCollector_1a5cb840b6fbcf6afe364eef9114984383" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>id</name></member>
+      <member refid="classIntakeDataCollector_1a0dfbf640d99394bb82413c9a116db19b" prot="private" virt="non-virtual"><scope>IntakeDataCollector</scope><name>intake</name></member>
+      <member refid="classIntakeDataCollector_1a2ab4a81bec74a370c60c78609627e807" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>IntakeDataCollector</name></member>
+      <member refid="classDataCollector_1a3a9a5033592f72ada429aa20056162b9" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>name</name></member>
+      <member refid="classIntakeDataCollector_1ae0b0d07123dd9323402ca55e12802ac8" prot="private" virt="non-virtual"><scope>IntakeDataCollector</scope><name>outflows</name></member>
+      <member refid="classIntakeDataCollector_1ac39a40726fd4fe887425b24a10f04034" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>printCompactString</name></member>
+      <member refid="classIntakeDataCollector_1a42d56dd08e57a7e6e48812a2ab522439" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>printCompactStringHeader</name></member>
+      <member refid="classIntakeDataCollector_1ada2b88b7a05455cf6f2eebf82d37b3c5" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>printTabularString</name></member>
+      <member refid="classIntakeDataCollector_1ae17ab7e6c75e77f5981f6a682597bb5c" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>printTabularStringHeaderLine1</name></member>
+      <member refid="classIntakeDataCollector_1a2855eb8eed71649309bd4d9336f258c0" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>printTabularStringHeaderLine2</name></member>
+      <member refid="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>realization</name></member>
+      <member refid="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>table_width</name></member>
+      <member refid="classIntakeDataCollector_1aea2dbea83bb83c26df4474da669dd2eb" prot="private" virt="non-virtual"><scope>IntakeDataCollector</scope><name>total_catchments_inflow</name></member>
+      <member refid="classIntakeDataCollector_1a5016d2fece2ef545f72b9fa22497c817" prot="private" virt="non-virtual"><scope>IntakeDataCollector</scope><name>total_upstream_sources_inflows</name></member>
+      <member refid="classDataCollector_1acad1c22d67a8eb3db056ba776a131900" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>type</name></member>
+      <member refid="classIntakeDataCollector_1a4485bea7a536f9fde233a2cc37200ec6" prot="private" virt="non-virtual"><scope>IntakeDataCollector</scope><name>wastewater_inflows</name></member>
+      <member refid="classDataCollector_1a9f9ff1817bd0601ba33925c3378ac50e" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>~DataCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

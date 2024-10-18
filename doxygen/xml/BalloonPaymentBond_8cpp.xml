@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="BalloonPaymentBond_8cpp" kind="file" language="C++">
+    <compoundname>BalloonPaymentBond.cpp</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">algorithm</includes>
+    <includes refid="BalloonPaymentBond_8h" local="yes">BalloonPaymentBond.h</includes>
+    <includes refid="Utils_8h" local="yes">../../Utils/Utils.h</includes>
+    <incdepgraph>
+      <node id="2200">
+        <label>list</label>
+      </node>
+      <node id="2190">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="2179" relation="include">
+        </childnode>
+        <childnode refid="2191" relation="include">
+        </childnode>
+        <childnode refid="2192" relation="include">
+        </childnode>
+      </node>
+      <node id="2192">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="2204">
+        <label>../../Controls/Base/MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="2185" relation="include">
+        </childnode>
+        <childnode refid="2194" relation="include">
+        </childnode>
+      </node>
+      <node id="2205">
+        <label>../DroughtMitigationInstruments/Restrictions.h</label>
+        <link refid="Restrictions_8h"/>
+        <childnode refid="2194" relation="include">
+        </childnode>
+        <childnode refid="2198" relation="include">
+        </childnode>
+      </node>
+      <node id="2188">
+        <label>../SystemComponents/WaterSources/Intake.h</label>
+        <link refid="Intake_8h"/>
+        <childnode refid="2189" relation="include">
+        </childnode>
+      </node>
+      <node id="2176">
+        <label>cmath</label>
+      </node>
+      <node id="2191">
+        <label>stdexcept</label>
+      </node>
+      <node id="2181">
+        <label>../../../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="2182" relation="include">
+        </childnode>
+        <childnode refid="2176" relation="include">
+        </childnode>
+        <childnode refid="2183" relation="include">
+        </childnode>
+        <childnode refid="2179" relation="include">
+        </childnode>
+      </node>
+      <node id="2196">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="2192" relation="include">
+        </childnode>
+        <childnode refid="2179" relation="include">
+        </childnode>
+      </node>
+      <node id="2186">
+        <label>string</label>
+      </node>
+      <node id="2182">
+        <label>map</label>
+      </node>
+      <node id="2197">
+        <label>InfrastructureManager.h</label>
+        <link refid="InfrastructureManager_8h"/>
+        <childnode refid="2179" relation="include">
+        </childnode>
+        <childnode refid="2185" relation="include">
+        </childnode>
+      </node>
+      <node id="2185">
+        <label>../SystemComponents/WaterSources/Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="2186" relation="include">
+        </childnode>
+        <childnode refid="2187" relation="include">
+        </childnode>
+        <childnode refid="2181" relation="include">
+        </childnode>
+        <childnode refid="2180" relation="include">
+        </childnode>
+      </node>
+      <node id="2203">
+        <label>fstream</label>
+      </node>
+      <node id="2198">
+        <label>../DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
+        <link refid="DroughtMitigationPolicy_8h"/>
+        <childnode refid="2194" relation="include">
+        </childnode>
+        <childnode refid="2181" relation="include">
+        </childnode>
+        <childnode refid="2199" relation="include">
+        </childnode>
+        <childnode refid="2201" relation="include">
+        </childnode>
+        <childnode refid="2204" relation="include">
+        </childnode>
+      </node>
+      <node id="2194">
+        <label>../SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="2182" relation="include">
+        </childnode>
+        <childnode refid="2195" relation="include">
+        </childnode>
+        <childnode refid="2189" relation="include">
+        </childnode>
+        <childnode refid="2181" relation="include">
+        </childnode>
+        <childnode refid="2196" relation="include">
+        </childnode>
+        <childnode refid="2197" relation="include">
+        </childnode>
+      </node>
+      <node id="2179">
+        <label>vector</label>
+      </node>
+      <node id="2199">
+        <label>../../Utils/Graph/Graph.h</label>
+        <link refid="Graph_8h"/>
+        <childnode refid="2200" relation="include">
+        </childnode>
+        <childnode refid="2179" relation="include">
+        </childnode>
+        <childnode refid="2181" relation="include">
+        </childnode>
+      </node>
+      <node id="2187">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="2179" relation="include">
+        </childnode>
+        <childnode refid="2181" relation="include">
+        </childnode>
+      </node>
+      <node id="2189">
+        <label>Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="2186" relation="include">
+        </childnode>
+        <childnode refid="2187" relation="include">
+        </childnode>
+        <childnode refid="2185" relation="include">
+        </childnode>
+        <childnode refid="2190" relation="include">
+        </childnode>
+        <childnode refid="2193" relation="include">
+        </childnode>
+      </node>
+      <node id="2202">
+        <label>iostream</label>
+      </node>
+      <node id="2178">
+        <label>BalloonPaymentBond.h</label>
+        <link refid="BalloonPaymentBond_8h"/>
+        <childnode refid="2179" relation="include">
+        </childnode>
+        <childnode refid="2180" relation="include">
+        </childnode>
+      </node>
+      <node id="2175">
+        <label>src/SystemComponents/Bonds/BalloonPaymentBond.cpp</label>
+        <link refid="BalloonPaymentBond_8cpp"/>
+        <childnode refid="2176" relation="include">
+        </childnode>
+        <childnode refid="2177" relation="include">
+        </childnode>
+        <childnode refid="2178" relation="include">
+        </childnode>
+        <childnode refid="2184" relation="include">
+        </childnode>
+      </node>
+      <node id="2193">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="2179" relation="include">
+        </childnode>
+        <childnode refid="2187" relation="include">
+        </childnode>
+      </node>
+      <node id="2177">
+        <label>algorithm</label>
+      </node>
+      <node id="2180">
+        <label>Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="2179" relation="include">
+        </childnode>
+        <childnode refid="2181" relation="include">
+        </childnode>
+      </node>
+      <node id="2183">
+        <label>cstring</label>
+      </node>
+      <node id="2201">
+        <label>../../Utils/Matrices.h</label>
+        <link refid="Matrices_8h"/>
+        <childnode refid="2202" relation="include">
+        </childnode>
+        <childnode refid="2183" relation="include">
+        </childnode>
+        <childnode refid="2203" relation="include">
+        </childnode>
+        <childnode refid="2195" relation="include">
+        </childnode>
+      </node>
+      <node id="2195">
+        <label>memory</label>
+      </node>
+      <node id="2184">
+        <label>../../Utils/Utils.h</label>
+        <link refid="Utils_8h"/>
+        <childnode refid="2185" relation="include">
+        </childnode>
+        <childnode refid="2188" relation="include">
+        </childnode>
+        <childnode refid="2194" relation="include">
+        </childnode>
+        <childnode refid="2198" relation="include">
+        </childnode>
+        <childnode refid="2205" relation="include">
+        </childnode>
+        <childnode refid="2204" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardo<sp/>on<sp/>4/17/18.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="BalloonPaymentBond_8h" kindref="compound">BalloonPaymentBond.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Utils/Utils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="classBalloonPaymentBond_1a03b25124896e67f851a35721c37705fe" kindref="member">BalloonPaymentBond::BalloonPaymentBond</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cost_of_capital,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_payments,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>coupon_rate,<sp/>vector&lt;int&gt;<sp/>pay_on_weeks)<sp/>:</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBond" kindref="compound">Bond</ref>(id,<sp/>cost_of_capital,<sp/>n_payments,<sp/>pay_on_weeks,<sp/>coupon_rate,<sp/><ref refid="namespaceConstants_1a08c9220e91237a5b58d648fb4298833c" kindref="member">BALLOON_PAYMENT</ref>),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>begin_repayment_after_n_years(<ref refid="namespaceConstants_1a79ee092c4ca31cde9669f70d505eeca5" kindref="member">NONE</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><ref refid="classBalloonPaymentBond_1a03b25124896e67f851a35721c37705fe" kindref="member">BalloonPaymentBond::BalloonPaymentBond</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cost_of_capital,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_payments,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>coupon_rate,<sp/>vector&lt;int&gt;<sp/>pay_on_weeks,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>begin_repayment_after_n_years)<sp/>:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBond" kindref="compound">Bond</ref>(id,<sp/>cost_of_capital,<sp/>n_payments,<sp/>pay_on_weeks,<sp/>coupon_rate,<sp/><ref refid="namespaceConstants_1a08c9220e91237a5b58d648fb4298833c" kindref="member">BALLOON_PAYMENT</ref>),</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>begin_repayment_after_n_years(begin_repayment_after_n_years)<sp/>{}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBalloonPaymentBond_1a8648a2ae688f90a3b2e6689711c22b9d" kindref="member">BalloonPaymentBond::getDebtService</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n_payments_made<sp/>&lt;<sp/><ref refid="classBond_1a4a227b6de2eeada118d82ab1633b1db8" kindref="member">n_payments</ref><sp/>-<sp/>1<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>week<sp/>&gt;<sp/><ref refid="classBond_1a30d48d158cbbd9c7b4bfa0012c89590a" kindref="member">week_issued</ref><sp/>+<sp/>begin_repayment_after_n_years<sp/>*<sp/><ref refid="namespaceConstants_1a19e84af3cbc6e1318beb22408c2a1f2f" kindref="member">WEEKS_IN_YEAR</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::find(<ref refid="classBond_1ae8dd46fcbf95c993460ffe4ea1f52739" kindref="member">pay_on_weeks</ref>.begin(),<sp/><ref refid="classBond_1ae8dd46fcbf95c993460ffe4ea1f52739" kindref="member">pay_on_weeks</ref>.end(),<sp/><ref refid="classUtils_1a8318227e82678b727c4de0dda180e64a" kindref="member">Utils::weekOfTheYear</ref>(week))<sp/>!=<sp/><ref refid="classBond_1ae8dd46fcbf95c993460ffe4ea1f52739" kindref="member">pay_on_weeks</ref>.end())<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n_payments_made++;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>interest_payments;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(n_payments_made<sp/>==<sp/><ref refid="classBond_1a4a227b6de2eeada118d82ab1633b1db8" kindref="member">n_payments</ref><sp/>-<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n_payments_made++;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>interest_payments<sp/>+<sp/><ref refid="classBond_1ad98df7d28b398e620286f95ee085439b" kindref="member">cost_of_capital</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classBalloonPaymentBond_1a11e5aecaf542cfbbb2303e98fb0b93bf" kindref="member">BalloonPaymentBond::getNetPresentValueAtIssuance</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>yearly_discount_rate,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>npv_at_first_payment_date<sp/>=<sp/>interest_payments<sp/>*</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1.<sp/>-<sp/>pow(1.<sp/>+<sp/>(yearly_discount_rate<sp/>/<sp/><ref refid="classBond_1ae8dd46fcbf95c993460ffe4ea1f52739" kindref="member">pay_on_weeks</ref>.size()),<sp/>-<ref refid="classBond_1a4a227b6de2eeada118d82ab1633b1db8" kindref="member">n_payments</ref>))<sp/>/</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(yearly_discount_rate<sp/>/<sp/><ref refid="classBond_1ae8dd46fcbf95c993460ffe4ea1f52739" kindref="member">pay_on_weeks</ref>.size());</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>npv_at_first_payment_date<sp/>/<sp/>pow(1.<sp/>+<sp/>yearly_discount_rate,<sp/>begin_repayment_after_n_years);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classBalloonPaymentBond_1af22552acd74b08dbb1d308cc5e45344c" kindref="member">BalloonPaymentBond::issueBond</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>construction_time,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bond_term_multiplier,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bond_interest_rate_multiplier)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBond_1a377db8c18b83c4666e46686bc26adef1" kindref="member">Bond::issueBond</ref>(week,<sp/>0,<sp/>bond_term_multiplier,<sp/>bond_interest_rate_multiplier);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>interest_payments<sp/>=<sp/><ref refid="classBond_1a5f66785534e24caa43d9f730130a6463" kindref="member">coupon_rate</ref><sp/>*<sp/><ref refid="classBond_1ad98df7d28b398e620286f95ee085439b" kindref="member">cost_of_capital</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/SystemComponents/Bonds/BalloonPaymentBond.cpp"/>
+  </compounddef>
+</doxygen>

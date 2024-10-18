@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="SequentialJointTreatmentExpansion_8h" kind="file" language="C++">
+    <compoundname>SequentialJointTreatmentExpansion.h</compoundname>
+    <includes refid="WaterSource_8h" local="yes">Base/WaterSource.h</includes>
+    <includedby refid="ContinuityModel_8cpp" local="yes">src/ContinuityModels/Base/ContinuityModel.cpp</includedby>
+    <includedby refid="PaperTestProblem_8cpp" local="yes">src/Problem/PaperTestProblem.cpp</includedby>
+    <includedby refid="Triangle_8cpp" local="yes">src/Problem/Triangle.cpp</includedby>
+    <includedby refid="InfrastructureManager_8cpp" local="yes">src/SystemComponents/Utility/InfrastructureManager.cpp</includedby>
+    <includedby refid="Utility_8cpp" local="yes">src/SystemComponents/Utility/Utility.cpp</includedby>
+    <includedby refid="SequentialJointTreatmentExpansion_8cpp" local="yes">src/SystemComponents/WaterSources/SequentialJointTreatmentExpansion.cpp</includedby>
+    <includedby refid="Utils_8cpp" local="yes">src/Utils/Utils.cpp</includedby>
+    <incdepgraph>
+      <node id="3180">
+        <label>cmath</label>
+      </node>
+      <node id="3178">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="3179" relation="include">
+        </childnode>
+        <childnode refid="3180" relation="include">
+        </childnode>
+        <childnode refid="3181" relation="include">
+        </childnode>
+        <childnode refid="3177" relation="include">
+        </childnode>
+      </node>
+      <node id="3175">
+        <label>string</label>
+      </node>
+      <node id="3179">
+        <label>map</label>
+      </node>
+      <node id="3174">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="3175" relation="include">
+        </childnode>
+        <childnode refid="3176" relation="include">
+        </childnode>
+        <childnode refid="3178" relation="include">
+        </childnode>
+        <childnode refid="3182" relation="include">
+        </childnode>
+      </node>
+      <node id="3177">
+        <label>vector</label>
+      </node>
+      <node id="3176">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="3177" relation="include">
+        </childnode>
+        <childnode refid="3178" relation="include">
+        </childnode>
+      </node>
+      <node id="3173">
+        <label>src/SystemComponents/WaterSources/SequentialJointTreatmentExpansion.h</label>
+        <link refid="SequentialJointTreatmentExpansion_8h"/>
+        <childnode refid="3174" relation="include">
+        </childnode>
+      </node>
+      <node id="3182">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="3177" relation="include">
+        </childnode>
+        <childnode refid="3178" relation="include">
+        </childnode>
+      </node>
+      <node id="3181">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3185">
+        <label>src/Problem/PaperTestProblem.cpp</label>
+        <link refid="PaperTestProblem_8cpp"/>
+      </node>
+      <node id="3188">
+        <label>src/SystemComponents/Utility/Utility.cpp</label>
+        <link refid="Utility_8cpp"/>
+      </node>
+      <node id="3184">
+        <label>src/ContinuityModels/Base/ContinuityModel.cpp</label>
+        <link refid="ContinuityModel_8cpp"/>
+      </node>
+      <node id="3186">
+        <label>src/Problem/Triangle.cpp</label>
+        <link refid="Triangle_8cpp"/>
+      </node>
+      <node id="3190">
+        <label>src/Utils/Utils.cpp</label>
+        <link refid="Utils_8cpp"/>
+      </node>
+      <node id="3187">
+        <label>src/SystemComponents/Utility/InfrastructureManager.cpp</label>
+        <link refid="InfrastructureManager_8cpp"/>
+      </node>
+      <node id="3189">
+        <label>src/SystemComponents/WaterSources/SequentialJointTreatmentExpansion.cpp</label>
+        <link refid="SequentialJointTreatmentExpansion_8cpp"/>
+      </node>
+      <node id="3183">
+        <label>src/SystemComponents/WaterSources/SequentialJointTreatmentExpansion.h</label>
+        <link refid="SequentialJointTreatmentExpansion_8h"/>
+        <childnode refid="3184" relation="include">
+        </childnode>
+        <childnode refid="3185" relation="include">
+        </childnode>
+        <childnode refid="3186" relation="include">
+        </childnode>
+        <childnode refid="3187" relation="include">
+        </childnode>
+        <childnode refid="3188" relation="include">
+        </childnode>
+        <childnode refid="3189" relation="include">
+        </childnode>
+        <childnode refid="3190" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classSequentialJointTreatmentExpansion" prot="public">SequentialJointTreatmentExpansion</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardoct<sp/>on<sp/>7/18/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_JOINTWATERTREATMENTPLANT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_JOINTWATERTREATMENTPLANT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WaterSource_8h" kindref="compound">Base/WaterSource.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classSequentialJointTreatmentExpansion" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSequentialJointTreatmentExpansion" kindref="compound">SequentialJointTreatmentExpansion</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classWaterSource" kindref="compound">WaterSource</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_treatment_capacity;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;added_treatment_capacities;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18" refid="classSequentialJointTreatmentExpansion_1adeaf6ba2bcfc4c024e332764144e3021" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSequentialJointTreatmentExpansion_1adeaf6ba2bcfc4c024e332764144e3021" kindref="member">expansion_sequence_id</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSequentialJointTreatmentExpansion_1ad3ca28eaaa041be6ebbd0a4593d5c9ab" kindref="member">SequentialJointTreatmentExpansion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSequentialJointTreatmentExpansion_1a43b9e27138606bbbf8e5ef0279232a0a" kindref="member">parent_reservoir_ID</ref>,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSequentialJointTreatmentExpansion_1adeaf6ba2bcfc4c024e332764144e3021" kindref="member">expansion_sequence_id</ref>,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>connected_sources,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;sequential_treatment_capacity,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;Bond<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a413b094e11bdce62f4d82e5bb9e4706e" kindref="member">bonds</ref>,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;construction_time_range,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permitting_period);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSequentialJointTreatmentExpansion_1ad3ca28eaaa041be6ebbd0a4593d5c9ab" kindref="member">SequentialJointTreatmentExpansion</ref>(</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classSequentialJointTreatmentExpansion" kindref="compound">SequentialJointTreatmentExpansion</ref><sp/>&amp;joint_water_treatment_plant);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSequentialJointTreatmentExpansion_1a77d4270fd89d172739fdede5b9e6c1e9" kindref="member">~SequentialJointTreatmentExpansion</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSequentialJointTreatmentExpansion" kindref="compound">SequentialJointTreatmentExpansion</ref><sp/>&amp;<ref refid="classSequentialJointTreatmentExpansion_1a53413658de78fecdb2e0d451a20eb82c" kindref="member">operator=</ref>(</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classSequentialJointTreatmentExpansion" kindref="compound">SequentialJointTreatmentExpansion</ref><sp/>&amp;joint_water_treatment_plant);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classSequentialJointTreatmentExpansion_1a64fdd68fc68f6b1145291575c2116815" kindref="member">applyContinuity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a7a69b2e9b6030f1035e6cf44d2918ee5" kindref="member">upstream_source_inflow</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>wastewater_discharge,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;demand_outflow)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classSequentialJointTreatmentExpansion_1a43b9e27138606bbbf8e5ef0279232a0a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSequentialJointTreatmentExpansion_1a43b9e27138606bbbf8e5ef0279232a0a" kindref="member">parent_reservoir_ID</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classSequentialJointTreatmentExpansion_1a06a2e9479bd639661cd8241e571c5711" kindref="member">implementTreatmentCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_JOINTWATERTREATMENTPLANT_H</highlight></codeline>
+    </programlisting>
+    <location file="src/SystemComponents/WaterSources/SequentialJointTreatmentExpansion.h"/>
+  </compounddef>
+</doxygen>

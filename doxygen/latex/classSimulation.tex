@@ -1,0 +1,95 @@
+\hypertarget{classSimulation}{}\section{Simulation Class Reference}
+\label{classSimulation}\index{Simulation@{Simulation}}
+
+
+{\ttfamily \#include $<$Simulation.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSimulation_ac9b9db9c3de5f9ff33f6ea89e2435c87}{Simulation}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, \mbox{\hyperlink{classGraph}{Graph}} \&water\+\_\+sources\+\_\+graph, const vector$<$ vector$<$ int $>$$>$ \&water\+\_\+sources\+\_\+to\+\_\+utilities, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&drought\+\_\+mitigation\+\_\+policies, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+controls, vector$<$ vector$<$ double $>$$>$ \&utilities\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&policies\+\_\+rdm, const unsigned long total\+\_\+simulation\+\_\+time, vector$<$ unsigned long $>$ \&realizations\+\_\+to\+\_\+run)
+\item 
+\mbox{\hyperlink{classSimulation_aa225c1836ebd788eb0f35c8cd53f0533}{Simulation}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, \mbox{\hyperlink{classGraph}{Graph}} \&water\+\_\+sources\+\_\+graph, const vector$<$ vector$<$ int $>$$>$ \&water\+\_\+sources\+\_\+to\+\_\+utilities, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&drought\+\_\+mitigation\+\_\+policies, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+controls, vector$<$ vector$<$ double $>$$>$ \&utilities\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&policies\+\_\+rdm, const unsigned long total\+\_\+simulation\+\_\+time, vector$<$ unsigned long $>$ \&realizations\+\_\+to\+\_\+run, vector$<$ vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$$>$ \&precomputed\+\_\+rof\+\_\+tables, vector$<$ vector$<$ double $>$$>$ \&table\+\_\+storage\+\_\+shift, string \&rof\+\_\+tables\+\_\+folder)
+\item 
+\mbox{\hyperlink{classSimulation_a68f43435cf8308d5415cdfcdb84e1fac}{Simulation}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, \mbox{\hyperlink{classGraph}{Graph}} \&water\+\_\+sources\+\_\+graph, const vector$<$ vector$<$ int $>$$>$ \&water\+\_\+sources\+\_\+to\+\_\+utilities, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&drought\+\_\+mitigation\+\_\+policies, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+controls, vector$<$ vector$<$ double $>$$>$ \&utilities\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&policies\+\_\+rdm, const unsigned long total\+\_\+simulation\+\_\+time, vector$<$ unsigned long $>$ \&realizations\+\_\+to\+\_\+run, string \&rof\+\_\+tables\+\_\+folder)
+\item 
+\mbox{\hyperlink{classSimulation}{Simulation}} \& \mbox{\hyperlink{classSimulation_aa9ad48555e93d646d68c0df7a87e2356}{operator=}} (const \mbox{\hyperlink{classSimulation}{Simulation}} \&simulation)
+\item 
+virtual \mbox{\hyperlink{classSimulation_a80fad3f57dfaf195a36f7bc49bc88279}{$\sim$\+Simulation}} ()
+\item 
+\mbox{\hyperlink{classMasterDataCollector}{Master\+Data\+Collector}} $\ast$ \mbox{\hyperlink{classSimulation_acfd5f3442b2e6c59eeed6a7b2fabb0f6}{run\+Full\+Simulation}} (unsigned long n\+\_\+threads, double $\ast$vars)
+\item 
+void \mbox{\hyperlink{classSimulation_ac9ff965191f13b1ce044344fd1e5d0ac}{setup\+Simulation}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, \mbox{\hyperlink{classGraph}{Graph}} \&water\+\_\+sources\+\_\+graph, const vector$<$ vector$<$ int $>$$>$ \&water\+\_\+sources\+\_\+to\+\_\+utilities, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&drought\+\_\+mitigation\+\_\+policies, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+controls, vector$<$ vector$<$ double $>$$>$ \&utilities\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&policies\+\_\+rdm, vector$<$ unsigned long $>$ \&realizations\+\_\+to\+\_\+run)
+\item 
+void \mbox{\hyperlink{classSimulation_aa2e2863a0038345c46dd827b97008347}{create\+Continuity\+Models}} (unsigned long realization, \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} $\ast$\&realization\+\_\+model, \mbox{\hyperlink{classContinuityModelROF}{Continuity\+Model\+R\+OF}} $\ast$\&rof\+\_\+model)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSimulation_ac9b9db9c3de5f9ff33f6ea89e2435c87}\label{classSimulation_ac9b9db9c3de5f9ff33f6ea89e2435c87}} 
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{Simulation()}{Simulation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Simulation\+::\+Simulation (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{\mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{policies\+\_\+rdm,  }\item[{const unsigned long}]{total\+\_\+simulation\+\_\+time,  }\item[{vector$<$ unsigned long $>$ \&}]{realizations\+\_\+to\+\_\+run }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSimulation_aa225c1836ebd788eb0f35c8cd53f0533}\label{classSimulation_aa225c1836ebd788eb0f35c8cd53f0533}} 
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{Simulation()}{Simulation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Simulation\+::\+Simulation (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{\mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{policies\+\_\+rdm,  }\item[{const unsigned long}]{total\+\_\+simulation\+\_\+time,  }\item[{vector$<$ unsigned long $>$ \&}]{realizations\+\_\+to\+\_\+run,  }\item[{vector$<$ vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$$>$ \&}]{precomputed\+\_\+rof\+\_\+tables,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{table\+\_\+storage\+\_\+shift,  }\item[{string \&}]{rof\+\_\+tables\+\_\+folder }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSimulation_a68f43435cf8308d5415cdfcdb84e1fac}\label{classSimulation_a68f43435cf8308d5415cdfcdb84e1fac}} 
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{Simulation()}{Simulation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Simulation\+::\+Simulation (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{\mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{policies\+\_\+rdm,  }\item[{const unsigned long}]{total\+\_\+simulation\+\_\+time,  }\item[{vector$<$ unsigned long $>$ \&}]{realizations\+\_\+to\+\_\+run,  }\item[{string \&}]{rof\+\_\+tables\+\_\+folder }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSimulation_a80fad3f57dfaf195a36f7bc49bc88279}\label{classSimulation_a80fad3f57dfaf195a36f7bc49bc88279}} 
+\index{Simulation@{Simulation}!````~Simulation@{$\sim$\+Simulation}}
+\index{````~Simulation@{$\sim$\+Simulation}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{$\sim$\+Simulation()}{~Simulation()}}
+{\footnotesize\ttfamily Simulation\+::$\sim$\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSimulation_aa2e2863a0038345c46dd827b97008347}\label{classSimulation_aa2e2863a0038345c46dd827b97008347}} 
+\index{Simulation@{Simulation}!create\+Continuity\+Models@{create\+Continuity\+Models}}
+\index{create\+Continuity\+Models@{create\+Continuity\+Models}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{create\+Continuity\+Models()}{createContinuityModels()}}
+{\footnotesize\ttfamily void Simulation\+::create\+Continuity\+Models (\begin{DoxyParamCaption}\item[{unsigned long}]{realization,  }\item[{\mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} $\ast$\&}]{realization\+\_\+model,  }\item[{\mbox{\hyperlink{classContinuityModelROF}{Continuity\+Model\+R\+OF}} $\ast$\&}]{rof\+\_\+model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSimulation_aa9ad48555e93d646d68c0df7a87e2356}\label{classSimulation_aa9ad48555e93d646d68c0df7a87e2356}} 
+\index{Simulation@{Simulation}!operator=@{operator=}}
+\index{operator=@{operator=}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSimulation}{Simulation}} \& Simulation\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSimulation}{Simulation}} \&}]{simulation }\end{DoxyParamCaption})}
+
+Assignment constructor 
+\begin{DoxyParams}{Parameters}
+{\em simulation} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000007}{Todo}}]implement assignment constructor. \end{DoxyRefDesc}
+\mbox{\Hypertarget{classSimulation_acfd5f3442b2e6c59eeed6a7b2fabb0f6}\label{classSimulation_acfd5f3442b2e6c59eeed6a7b2fabb0f6}} 
+\index{Simulation@{Simulation}!run\+Full\+Simulation@{run\+Full\+Simulation}}
+\index{run\+Full\+Simulation@{run\+Full\+Simulation}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{run\+Full\+Simulation()}{runFullSimulation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMasterDataCollector}{Master\+Data\+Collector}} $\ast$ Simulation\+::run\+Full\+Simulation (\begin{DoxyParamCaption}\item[{unsigned long}]{n\+\_\+threads,  }\item[{double $\ast$}]{vars }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSimulation_ac9ff965191f13b1ce044344fd1e5d0ac}\label{classSimulation_ac9ff965191f13b1ce044344fd1e5d0ac}} 
+\index{Simulation@{Simulation}!setup\+Simulation@{setup\+Simulation}}
+\index{setup\+Simulation@{setup\+Simulation}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{setup\+Simulation()}{setupSimulation()}}
+{\footnotesize\ttfamily void Simulation\+::setup\+Simulation (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{\mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{policies\+\_\+rdm,  }\item[{vector$<$ unsigned long $>$ \&}]{realizations\+\_\+to\+\_\+run }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Simulation/\mbox{\hyperlink{Simulation_8h}{Simulation.\+h}}\item 
+src/\+Simulation/\mbox{\hyperlink{Simulation_8cpp}{Simulation.\+cpp}}\end{DoxyCompactItemize}

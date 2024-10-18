@@ -1,0 +1,861 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="Utility_8h" kind="file" language="C++">
+    <compoundname>Utility.h</compoundname>
+    <includes local="no">map</includes>
+    <includes local="no">memory</includes>
+    <includes refid="Reservoir_8h" local="yes">../WaterSources/Reservoir.h</includes>
+    <includes refid="Constants_8h" local="yes">../../Utils/Constants.h</includes>
+    <includes refid="WwtpDischargeRule_8h" local="yes">../../Controls/WwtpDischargeRule.h</includes>
+    <includes refid="InfrastructureManager_8h" local="yes">InfrastructureManager.h</includes>
+    <includedby refid="ContinuityModel_8h" local="yes">src/ContinuityModels/Base/ContinuityModel.h</includedby>
+    <includedby refid="MinEnvFlowControl_8h" local="yes">src/Controls/Base/MinEnvFlowControl.h</includedby>
+    <includedby refid="DroughtMitigationPolicy_8h" local="yes">src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</includedby>
+    <includedby refid="Utils_8h" local="yes">src/Utils/Utils.h</includedby>
+    <includedby refid="Restrictions_8h" local="yes">src/DroughtMitigationInstruments/Restrictions.h</includedby>
+    <includedby refid="MinEnvironFlowControl_8h" local="yes">src/Controls/Base/MinEnvironFlowControl.h</includedby>
+    <includedby refid="UtilitiesDataCollector_8h" local="yes">src/DataCollector/UtilitiesDataCollector.h</includedby>
+    <includedby refid="Simulation_8h" local="yes">src/Simulation/Simulation.h</includedby>
+    <includedby refid="Utility_8cpp" local="yes">src/SystemComponents/Utility/Utility.cpp</includedby>
+    <incdepgraph>
+      <node id="2663">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="2657" relation="include">
+        </childnode>
+        <childnode refid="2664" relation="include">
+        </childnode>
+        <childnode refid="2665" relation="include">
+        </childnode>
+      </node>
+      <node id="2665">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="2659">
+        <label>cmath</label>
+      </node>
+      <node id="2664">
+        <label>stdexcept</label>
+      </node>
+      <node id="2658">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="2652" relation="include">
+        </childnode>
+        <childnode refid="2659" relation="include">
+        </childnode>
+        <childnode refid="2660" relation="include">
+        </childnode>
+        <childnode refid="2657" relation="include">
+        </childnode>
+      </node>
+      <node id="2667">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="2665" relation="include">
+        </childnode>
+        <childnode refid="2657" relation="include">
+        </childnode>
+      </node>
+      <node id="2655">
+        <label>string</label>
+      </node>
+      <node id="2652">
+        <label>map</label>
+      </node>
+      <node id="2668">
+        <label>InfrastructureManager.h</label>
+        <link refid="InfrastructureManager_8h"/>
+        <childnode refid="2657" relation="include">
+        </childnode>
+        <childnode refid="2661" relation="include">
+        </childnode>
+      </node>
+      <node id="2661">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="2655" relation="include">
+        </childnode>
+        <childnode refid="2656" relation="include">
+        </childnode>
+        <childnode refid="2658" relation="include">
+        </childnode>
+        <childnode refid="2662" relation="include">
+        </childnode>
+      </node>
+      <node id="2651">
+        <label>src/SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="2652" relation="include">
+        </childnode>
+        <childnode refid="2653" relation="include">
+        </childnode>
+        <childnode refid="2654" relation="include">
+        </childnode>
+        <childnode refid="2658" relation="include">
+        </childnode>
+        <childnode refid="2667" relation="include">
+        </childnode>
+        <childnode refid="2668" relation="include">
+        </childnode>
+      </node>
+      <node id="2657">
+        <label>vector</label>
+      </node>
+      <node id="2656">
+        <label>../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="2657" relation="include">
+        </childnode>
+        <childnode refid="2658" relation="include">
+        </childnode>
+      </node>
+      <node id="2654">
+        <label>../WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="2655" relation="include">
+        </childnode>
+        <childnode refid="2656" relation="include">
+        </childnode>
+        <childnode refid="2661" relation="include">
+        </childnode>
+        <childnode refid="2663" relation="include">
+        </childnode>
+        <childnode refid="2666" relation="include">
+        </childnode>
+      </node>
+      <node id="2666">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="2657" relation="include">
+        </childnode>
+        <childnode refid="2656" relation="include">
+        </childnode>
+      </node>
+      <node id="2662">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="2657" relation="include">
+        </childnode>
+        <childnode refid="2658" relation="include">
+        </childnode>
+      </node>
+      <node id="2660">
+        <label>cstring</label>
+      </node>
+      <node id="2653">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2676">
+        <label>src/Problem/PaperTestProblem.cpp</label>
+        <link refid="PaperTestProblem_8cpp"/>
+      </node>
+      <node id="2708">
+        <label>src/DataCollector/TransfersDataCollector.h</label>
+        <link refid="TransfersDataCollector_8h"/>
+        <childnode refid="2690" relation="include">
+        </childnode>
+        <childnode refid="2709" relation="include">
+        </childnode>
+      </node>
+      <node id="2686">
+        <label>src/Controls/Base/MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="2670" relation="include">
+        </childnode>
+        <childnode refid="2687" relation="include">
+        </childnode>
+        <childnode refid="2688" relation="include">
+        </childnode>
+        <childnode refid="2711" relation="include">
+        </childnode>
+        <childnode refid="2712" relation="include">
+        </childnode>
+        <childnode refid="2714" relation="include">
+        </childnode>
+        <childnode refid="2718" relation="include">
+        </childnode>
+        <childnode refid="2720" relation="include">
+        </childnode>
+        <childnode refid="2722" relation="include">
+        </childnode>
+        <childnode refid="2679" relation="include">
+        </childnode>
+      </node>
+      <node id="2673">
+        <label>src/ContinuityModels/ContinuityModelRealization.cpp</label>
+        <link refid="ContinuityModelRealization_8cpp"/>
+      </node>
+      <node id="2699">
+        <label>src/SystemComponents/Utility/Utility.cpp</label>
+        <link refid="Utility_8cpp"/>
+      </node>
+      <node id="2702">
+        <label>src/DroughtMitigationInstruments/Restrictions.h</label>
+        <link refid="Restrictions_8h"/>
+        <childnode refid="2688" relation="include">
+        </childnode>
+        <childnode refid="2703" relation="include">
+        </childnode>
+        <childnode refid="2691" relation="include">
+        </childnode>
+        <childnode refid="2679" relation="include">
+        </childnode>
+      </node>
+      <node id="2670">
+        <label>src/ContinuityModels/Base/ContinuityModel.h</label>
+        <link refid="ContinuityModel_8h"/>
+        <childnode refid="2671" relation="include">
+        </childnode>
+        <childnode refid="2672" relation="include">
+        </childnode>
+        <childnode refid="2684" relation="include">
+        </childnode>
+        <childnode refid="2679" relation="include">
+        </childnode>
+      </node>
+      <node id="2701">
+        <label>src/Utils/ObjectivesCalculator.cpp</label>
+        <link refid="ObjectivesCalculator_8cpp"/>
+      </node>
+      <node id="2705">
+        <label>src/Utils/ObjectivesCalculator.h</label>
+        <link refid="ObjectivesCalculator_8h"/>
+        <childnode refid="2690" relation="include">
+        </childnode>
+        <childnode refid="2701" relation="include">
+        </childnode>
+      </node>
+      <node id="2722">
+        <label>src/Controls/SeasonalMinEnvFlowControl.h</label>
+        <link refid="SeasonalMinEnvFlowControl_8h"/>
+        <childnode refid="2689" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+        <childnode refid="2678" relation="include">
+        </childnode>
+      </node>
+      <node id="2725">
+        <label>src/DataCollector/UtilitiesDataCollector.h</label>
+        <link refid="UtilitiesDataCollector_8h"/>
+        <childnode refid="2704" relation="include">
+        </childnode>
+        <childnode refid="2705" relation="include">
+        </childnode>
+        <childnode refid="2726" relation="include">
+        </childnode>
+      </node>
+      <node id="2717">
+        <label>src/Controls/StorageMinEnvFlowControl.cpp</label>
+        <link refid="StorageMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="2714">
+        <label>src/Controls/StorageMinEnvFlowControl.h</label>
+        <link refid="StorageMinEnvFlowControl_8h"/>
+        <childnode refid="2715" relation="include">
+        </childnode>
+        <childnode refid="2717" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+        <childnode refid="2678" relation="include">
+        </childnode>
+      </node>
+      <node id="2685">
+        <label>src/ContinuityModels/ContinuityModelROF.cpp</label>
+        <link refid="ContinuityModelROF_8cpp"/>
+      </node>
+      <node id="2716">
+        <label>src/Controls/Custom/JordanLakeMinEnvFlowControl.cpp</label>
+        <link refid="JordanLakeMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="2712">
+        <label>src/Controls/Custom/FallsLakeMinEnvFlowControl.h</label>
+        <link refid="FallsLakeMinEnvFlowControl_8h"/>
+        <childnode refid="2713" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+        <childnode refid="2678" relation="include">
+        </childnode>
+      </node>
+      <node id="2671">
+        <label>src/ContinuityModels/Base/ContinuityModel.cpp</label>
+        <link refid="ContinuityModel_8cpp"/>
+      </node>
+      <node id="2677">
+        <label>src/Problem/Triangle.cpp</label>
+        <link refid="Triangle_8cpp"/>
+      </node>
+      <node id="2718">
+        <label>src/Controls/FixedMinEnvFlowControl.h</label>
+        <link refid="FixedMinEnvFlowControl_8h"/>
+        <childnode refid="2719" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+        <childnode refid="2678" relation="include">
+        </childnode>
+      </node>
+      <node id="2719">
+        <label>src/Controls/FixedMinEnvFlowControl.cpp</label>
+        <link refid="FixedMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="2726">
+        <label>src/DataCollector/UtilitiesDataCollector.cpp</label>
+        <link refid="UtilitiesDataCollector_8cpp"/>
+      </node>
+      <node id="2704">
+        <label>src/DataCollector/MasterDataCollector.h</label>
+        <link refid="MasterDataCollector_8h"/>
+        <childnode refid="2690" relation="include">
+        </childnode>
+        <childnode refid="2693" relation="include">
+        </childnode>
+        <childnode refid="2679" relation="include">
+        </childnode>
+      </node>
+      <node id="2689">
+        <label>src/Controls/SeasonalMinEnvFlowControl.cpp</label>
+        <link refid="SeasonalMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="2674">
+        <label>src/DroughtMitigationInstruments/InsuranceStorageToROF.h</label>
+        <link refid="InsuranceStorageToROF_8h"/>
+        <childnode refid="2675" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+        <childnode refid="2678" relation="include">
+        </childnode>
+      </node>
+      <node id="2683">
+        <label>src/Simulation/Simulation.cpp</label>
+        <link refid="Simulation_8cpp"/>
+      </node>
+      <node id="2687">
+        <label>src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
+        <link refid="DroughtMitigationPolicy_8h"/>
+        <childnode refid="2672" relation="include">
+        </childnode>
+        <childnode refid="2688" relation="include">
+        </childnode>
+        <childnode refid="2702" relation="include">
+        </childnode>
+        <childnode refid="2704" relation="include">
+        </childnode>
+        <childnode refid="2707" relation="include">
+        </childnode>
+        <childnode refid="2710" relation="include">
+        </childnode>
+        <childnode refid="2674" relation="include">
+        </childnode>
+      </node>
+      <node id="2678">
+        <label>src/Utils/Utils.cpp</label>
+        <link refid="Utils_8cpp"/>
+      </node>
+      <node id="2700">
+        <label>src/SystemComponents/WaterSources/Base/WaterSource.cpp</label>
+        <link refid="WaterSource_8cpp"/>
+      </node>
+      <node id="2724">
+        <label>src/Controls/Base/MinEnvironFlowControl.cpp</label>
+        <link refid="MinEnvironFlowControl_8cpp"/>
+      </node>
+      <node id="2693">
+        <label>src/Problem/Base/Problem.h</label>
+        <link refid="Problem_8h"/>
+        <childnode refid="2680" relation="include">
+        </childnode>
+        <childnode refid="2682" relation="include">
+        </childnode>
+        <childnode refid="2694" relation="include">
+        </childnode>
+      </node>
+      <node id="2709">
+        <label>src/DataCollector/TransfersDataCollector.cpp</label>
+        <link refid="TransfersDataCollector_8cpp"/>
+      </node>
+      <node id="2706">
+        <label>src/DataCollector/RestrictionsDataCollector.cpp</label>
+        <link refid="RestrictionsDataCollector_8cpp"/>
+      </node>
+      <node id="2694">
+        <label>src/Problem/Base/Problem.cpp</label>
+        <link refid="Problem_8cpp"/>
+      </node>
+      <node id="2710">
+        <label>src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.cpp</label>
+        <link refid="DroughtMitigationPolicy_8cpp"/>
+      </node>
+      <node id="2703">
+        <label>src/DataCollector/RestrictionsDataCollector.h</label>
+        <link refid="RestrictionsDataCollector_8h"/>
+        <childnode refid="2704" relation="include">
+        </childnode>
+        <childnode refid="2705" relation="include">
+        </childnode>
+        <childnode refid="2706" relation="include">
+        </childnode>
+      </node>
+      <node id="2669">
+        <label>src/SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="2670" relation="include">
+        </childnode>
+        <childnode refid="2686" relation="include">
+        </childnode>
+        <childnode refid="2687" relation="include">
+        </childnode>
+        <childnode refid="2688" relation="include">
+        </childnode>
+        <childnode refid="2702" relation="include">
+        </childnode>
+        <childnode refid="2723" relation="include">
+        </childnode>
+        <childnode refid="2725" relation="include">
+        </childnode>
+        <childnode refid="2679" relation="include">
+        </childnode>
+        <childnode refid="2699" relation="include">
+        </childnode>
+      </node>
+      <node id="2720">
+        <label>src/Controls/InflowMinEnvFlowControl.h</label>
+        <link refid="InflowMinEnvFlowControl_8h"/>
+        <childnode refid="2721" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+        <childnode refid="2678" relation="include">
+        </childnode>
+      </node>
+      <node id="2692">
+        <label>src/DroughtMitigationInstruments/Transfers.cpp</label>
+        <link refid="Transfers_8cpp"/>
+      </node>
+      <node id="2697">
+        <label>src/SystemComponents/Bonds/LevelDebtServiceBond.cpp</label>
+        <link refid="LevelDebtServiceBond_8cpp"/>
+      </node>
+      <node id="2691">
+        <label>src/DroughtMitigationInstruments/Restrictions.cpp</label>
+        <link refid="Restrictions_8cpp"/>
+      </node>
+      <node id="2698">
+        <label>src/SystemComponents/Utility/InfrastructureManager.cpp</label>
+        <link refid="InfrastructureManager_8cpp"/>
+      </node>
+      <node id="2711">
+        <label>src/Controls/Base/MinEnvFlowControl.cpp</label>
+        <link refid="MinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="2690">
+        <label>src/DataCollector/MasterDataCollector.cpp</label>
+        <link refid="MasterDataCollector_8cpp"/>
+      </node>
+      <node id="2672">
+        <label>src/ContinuityModels/ContinuityModelRealization.h</label>
+        <link refid="ContinuityModelRealization_8h"/>
+        <childnode refid="2673" relation="include">
+        </childnode>
+        <childnode refid="2674" relation="include">
+        </childnode>
+        <childnode refid="2679" relation="include">
+        </childnode>
+      </node>
+      <node id="2707">
+        <label>src/DroughtMitigationInstruments/Transfers.h</label>
+        <link refid="Transfers_8h"/>
+        <childnode refid="2690" relation="include">
+        </childnode>
+        <childnode refid="2708" relation="include">
+        </childnode>
+        <childnode refid="2692" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+        <childnode refid="2678" relation="include">
+        </childnode>
+      </node>
+      <node id="2681">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="2679">
+        <label>src/Simulation/Simulation.h</label>
+        <link refid="Simulation_8h"/>
+        <childnode refid="2680" relation="include">
+        </childnode>
+        <childnode refid="2682" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+        <childnode refid="2683" relation="include">
+        </childnode>
+      </node>
+      <node id="2721">
+        <label>src/Controls/InflowMinEnvFlowControl.cpp</label>
+        <link refid="InflowMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="2713">
+        <label>src/Controls/Custom/FallsLakeMinEnvFlowControl.cpp</label>
+        <link refid="FallsLakeMinEnvFlowControl_8cpp"/>
+      </node>
+      <node id="2695">
+        <label>src/SystemComponents/Bonds/BalloonPaymentBond.cpp</label>
+        <link refid="BalloonPaymentBond_8cpp"/>
+      </node>
+      <node id="2696">
+        <label>src/SystemComponents/Bonds/FloatingInterestBalloonPaymentBond.cpp</label>
+        <link refid="FloatingInterestBalloonPaymentBond_8cpp"/>
+      </node>
+      <node id="2723">
+        <label>src/Controls/Base/MinEnvironFlowControl.h</label>
+        <link refid="MinEnvironFlowControl_8h"/>
+        <childnode refid="2724" relation="include">
+        </childnode>
+      </node>
+      <node id="2715">
+        <label>src/Controls/Custom/JordanLakeMinEnvFlowControl.h</label>
+        <link refid="JordanLakeMinEnvFlowControl_8h"/>
+        <childnode refid="2716" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+        <childnode refid="2678" relation="include">
+        </childnode>
+      </node>
+      <node id="2675">
+        <label>src/DroughtMitigationInstruments/InsuranceStorageToROF.cpp</label>
+        <link refid="InsuranceStorageToROF_8cpp"/>
+      </node>
+      <node id="2680">
+        <label>src/Problem/PaperTestProblem.h</label>
+        <link refid="PaperTestProblem_8h"/>
+        <childnode refid="2681" relation="include">
+        </childnode>
+        <childnode refid="2676" relation="include">
+        </childnode>
+      </node>
+      <node id="2682">
+        <label>src/Problem/Triangle.h</label>
+        <link refid="Triangle_8h"/>
+        <childnode refid="2681" relation="include">
+        </childnode>
+        <childnode refid="2677" relation="include">
+        </childnode>
+      </node>
+      <node id="2688">
+        <label>src/Utils/Utils.h</label>
+        <link refid="Utils_8h"/>
+        <childnode refid="2685" relation="include">
+        </childnode>
+        <childnode refid="2689" relation="include">
+        </childnode>
+        <childnode refid="2690" relation="include">
+        </childnode>
+        <childnode refid="2675" relation="include">
+        </childnode>
+        <childnode refid="2691" relation="include">
+        </childnode>
+        <childnode refid="2692" relation="include">
+        </childnode>
+        <childnode refid="2693" relation="include">
+        </childnode>
+        <childnode refid="2681" relation="include">
+        </childnode>
+        <childnode refid="2694" relation="include">
+        </childnode>
+        <childnode refid="2683" relation="include">
+        </childnode>
+        <childnode refid="2695" relation="include">
+        </childnode>
+        <childnode refid="2696" relation="include">
+        </childnode>
+        <childnode refid="2697" relation="include">
+        </childnode>
+        <childnode refid="2698" relation="include">
+        </childnode>
+        <childnode refid="2699" relation="include">
+        </childnode>
+        <childnode refid="2700" relation="include">
+        </childnode>
+        <childnode refid="2701" relation="include">
+        </childnode>
+        <childnode refid="2678" relation="include">
+        </childnode>
+      </node>
+      <node id="2684">
+        <label>src/ContinuityModels/ContinuityModelROF.h</label>
+        <link refid="ContinuityModelROF_8h"/>
+        <childnode refid="2685" relation="include">
+        </childnode>
+        <childnode refid="2674" relation="include">
+        </childnode>
+        <childnode refid="2679" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classUtility" prot="public">Utility</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardo<sp/>on<sp/>1/13/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_UTILITY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_UTILITY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../WaterSources/Reservoir.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Utils/Constants.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Controls/WwtpDischargeRule.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="InfrastructureManager_8h" kindref="compound">InfrastructureManager.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;../Utils/Matrix3D.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classUtility" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classUtility" kindref="compound">Utility</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>weekly_average_volumetric_price;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>priority_draw_water_source;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>non_priority_draw_water_source;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>weekly_peaking_factor;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>short_term_risk_of_failure<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>long_term_risk_of_failure<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_storage_capacity<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_available_volume<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_stored_volume<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_treatment_capacity<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>waste_water_discharge<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gross_revenue<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>unfulfilled_demand<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>net_stream_inflow<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>used_for_realization<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/>water_sources;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref><sp/>wwtp_discharge_rule;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;&amp;<sp/>demands_all_realizations;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_series_realization;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*rdm_factors_realization;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classInfrastructureManager" kindref="compound">InfrastructureManager</ref><sp/>infrastructure_construction_manager;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>fund_contribution<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>demand_multiplier<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>demand_offset<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>restricted_price<sp/>=<sp/><ref refid="namespaceConstants_1a8e8b0a537619c378d03117c5ed1c3ea1" kindref="member">NON_INITIALIZED</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>offset_rate_per_volume<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>contingency_fund<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>drought_mitigation_cost<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>insurance_payout<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>insurance_purchase<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>restricted_demand<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>unrestricted_demand<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_sources<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>infra_discount_rate;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bond_term_multiplier;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bond_interest_rate_multiplier;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_capacity<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>current_debt_payment<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>debt_payment_streams;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>infra_net_present_cost<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Bond<sp/>*&gt;<sp/>issued_bonds;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="66" refid="classUtility_1ad41c4ea5c911c5000452a3371cd65d5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUtility_1ad41c4ea5c911c5000452a3371cd65d5f" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="67" refid="classUtility_1a0548db3746582251082aa430db49dad0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a0548db3746582251082aa430db49dad0" kindref="member">number_of_week_demands</ref>;</highlight></codeline>
+<codeline lineno="68" refid="classUtility_1ad0ce5c179a7f5ceb46d4fcae08dbfb47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classUtility_1ad0ce5c179a7f5ceb46d4fcae08dbfb47" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="69" refid="classUtility_1a7b1a097ec188be8e7175d058b5e6596c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a7b1a097ec188be8e7175d058b5e6596c" kindref="member">percent_contingency_fund_contribution</ref>;</highlight></codeline>
+<codeline lineno="70" refid="classUtility_1a4be9760339ec06e5c932890da8e566b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a4be9760339ec06e5c932890da8e566b3" kindref="member">demand_buffer</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUtility_1adb0e1f43122886122d2437efbc5cd756" kindref="member">Utility</ref>(</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classUtility_1ad0ce5c179a7f5ceb46d4fcae08dbfb47" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;&amp;<sp/>demands_all_realizations,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a0548db3746582251082aa430db49dad0" kindref="member">number_of_week_demands</ref>,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a7b1a097ec188be8e7175d058b5e6596c" kindref="member">percent_contingency_fund_contribution</ref>,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;typesMonthlyDemandFraction,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;typesMonthlyWaterPrice,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref><sp/>wwtp_discharge_rule,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a4be9760339ec06e5c932890da8e566b3" kindref="member">demand_buffer</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUtility_1adb0e1f43122886122d2437efbc5cd756" kindref="member">Utility</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classUtility_1ad0ce5c179a7f5ceb46d4fcae08dbfb47" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>vector&lt;vector&lt;double&gt;&gt;&amp;<sp/>demands_all_realizations,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a0548db3746582251082aa430db49dad0" kindref="member">number_of_week_demands</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a7b1a097ec188be8e7175d058b5e6596c" kindref="member">percent_contingency_fund_contribution</ref>,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;typesMonthlyDemandFraction,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;typesMonthlyWaterPrice,<sp/><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref><sp/>wwtp_discharge_rule,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a4be9760339ec06e5c932890da8e566b3" kindref="member">demand_buffer</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>&amp;rof_infra_construction_order,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>&amp;demand_infra_construction_order,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;infra_construction_triggers,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>infra_discount_rate,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;int&gt;&gt;&amp;<sp/>infra_if_built_remove,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bond_term,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bond_interest_rate);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUtility_1adb0e1f43122886122d2437efbc5cd756" kindref="member">Utility</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classUtility_1ad0ce5c179a7f5ceb46d4fcae08dbfb47" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>vector&lt;vector&lt;double&gt;&gt;&amp;<sp/>demands_all_realizations,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a0548db3746582251082aa430db49dad0" kindref="member">number_of_week_demands</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a7b1a097ec188be8e7175d058b5e6596c" kindref="member">percent_contingency_fund_contribution</ref>,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;typesMonthlyDemandFraction,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;typesMonthlyWaterPrice,<sp/><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref><sp/>wwtp_discharge_rule,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a4be9760339ec06e5c932890da8e566b3" kindref="member">demand_buffer</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>&amp;rof_infra_construction_order,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>&amp;demand_infra_construction_order,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;infra_construction_triggers,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>infra_discount_rate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bond_term,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bond_interest_rate);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUtility_1adb0e1f43122886122d2437efbc5cd756" kindref="member">Utility</ref>(<ref refid="classUtility" kindref="compound">Utility</ref><sp/>&amp;utility);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUtility_1aecfe4b31e39b00555158a2d8288b874a" kindref="member">~Utility</ref>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classUtility" kindref="compound">Utility</ref><sp/>&amp;<ref refid="classUtility_1a9bf6f9126779f4035fccbd35333de575" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUtility" kindref="compound">Utility</ref><sp/>&amp;utility);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUtility_1ae2dad8029e34c5bb073a5ddf4381d278" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUtility" kindref="compound">Utility</ref>*<sp/>other);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a222897e8c338fde0d754df4683fbc89b" kindref="member">operator&gt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classUtility" kindref="compound">Utility</ref>*<sp/>other);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a2156ad82d86ed63a22f932a90062ed29" kindref="member">compById</ref>(<ref refid="classUtility" kindref="compound">Utility</ref><sp/>*a,<sp/><ref refid="classUtility" kindref="compound">Utility</ref><sp/>*b);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a68d5088951f6bdccbb7af18ea8f153f5" kindref="member">setRisk_of_failure</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>risk_of_failure);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1af394fe9f04a371a7cf10ddadba575e85" kindref="member">updateTotalAvailableVolume</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a5feecc73d561de022eb6ba3c657b3dbc" kindref="member">calculateWastewater_releases</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*discharges);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1aebbfd65c13e86cfeda8bdfbcc6712587" kindref="member">addWaterSource</ref>(<ref refid="classWaterSource" kindref="compound">WaterSource</ref><sp/>*water_source);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1ab578bbe9f346692d9251418f20fd2345" kindref="member">splitDemands</ref>(</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;demands,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>apply_demand_buffer<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a0674d7d95f4d6595f7e01817a4d84a98" kindref="member">checkErrorsAddWaterSourceOnline</ref>(<ref refid="classWaterSource" kindref="compound">WaterSource</ref><sp/>*water_source);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1af9ec9c2cb69166db021f03ce9ddf4d8e" kindref="member">resetDroughtMitigationVariables</ref>();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a152ceea2917ea7715e8fbf8aff24390f" kindref="member">issueBond</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>new_infra_triggered,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a0189edb631c9596f094b15afeeb934fd" kindref="member">calculateWeeklyAverageWaterPrices</ref>(</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;typesMonthlyDemandFraction,</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;typesMonthlyWaterPrice);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a0dca2586b9ed761cdab3b0a344daf21c" kindref="member">waterPrice</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a7daa5b948a370eca83bc8c63890f6b19" kindref="member">forceInfrastructureConstruction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/>vector&lt;int&gt;<sp/>new_infra_triggered);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classUtility_1ae93114986578d3d3fbae56f271ac7df6" kindref="member">infrastructureConstructionHandler</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>long_term_rof,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a01ec91140b9d23bf5b03e0fc55bced0d" kindref="member">priceCalculationErrorChecking</ref>(</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;typesMonthlyDemandFraction,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;typesMonthlyWaterPrice);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a16f8269dc5f80c1d079c49f33495f620" kindref="member">getTotal_storage_capacity</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1ab43bfbf7db1b5dc2e554a584b19f9e3c" kindref="member">getRisk_of_failure</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a0e27f2877c780e214c6dda06d03246fe" kindref="member">getStorageToCapacityRatio</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a2903344b317f0949014c687d285b64b6" kindref="member">getGrossRevenue</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1ad562626bc39694622495d2fb2b68ecd4" kindref="member">setDemand_multiplier</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>demand_multiplier);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a6e7f1df1fcde0b14475c7045bdcaf218" kindref="member">setDemand_offset</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>demand_offset,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>offset_rate_per_volume);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a6ab2e5b8aec47bcfed522c98ea1b5f79" kindref="member">getTotal_treatment_capacity</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1ab663efd526505a3d843cae7075cc3b91" kindref="member">updateContingencyFundAndDebtService</ref>(</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>unrestricted_demand,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>demand_multiplier,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>demand_offset,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>unfulfilled_demand,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1ae01127adf3c99415310e77b22bd9f3b5" kindref="member">setWaterSourceOnline</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>source_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a63f5ae95014d9e729a3de51f19540042" kindref="member">updateCurrent_debt_payment</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1ab396bc312d5e5ddc0554138060a8a4d3" kindref="member">getContingency_fund</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1aa5fd345867aa8fb5c49d05110d51ca52" kindref="member">getUnrestrictedDemand</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1ade3427a88355631a3657f752ace874fc" kindref="member">getRestrictedDemand</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a7f642d886a6d1d165e86b2e6a7c51ed4" kindref="member">setRestricted_price</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>restricted_price);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a04a400d8bfb89214632f9afca8c4eef5" kindref="member">getDemand_multiplier</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1aa5fd345867aa8fb5c49d05110d51ca52" kindref="member">getUnrestrictedDemand</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1ab806fee785718cbc82b1963316785448" kindref="member">getInfrastructure_net_present_cost</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1ab0e6984f9bad9d5d2a756f015216f54f" kindref="member">getCurrent_debt_payment</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1af1745fc1364e7a03dc561dd9832b7db4" kindref="member">getCurrent_contingency_fund_contribution</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a27dc0aeabdcb9fdb5a7d388e67e905f8" kindref="member">getDrought_mitigation_cost</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a2eaf70b4492ab8ec0e0420d6b7c3b821" kindref="member">addInsurancePayout</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>payout_value);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1aa770f28c76e84747bbd643f55dbc4dd5" kindref="member">clearWaterSources</ref>();</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a97073e3d7a30275c639484b3158284fa" kindref="member">purchaseInsurance</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>insurance_price);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1af789e394a867f007b681c68af3fb3349" kindref="member">getInsurance_payout</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1aa9a26e9b3b5af555c8278330c9f4a468" kindref="member">getInsurance_purchase</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>&amp;<ref refid="classUtility_1aa67a518c58016090be72fdc7bfaed04f" kindref="member">getRof_infrastructure_construction_order</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a2d41989b4154aed5c2fb99a27183ca34" kindref="member">setRealization</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>r,<sp/>vector&lt;double&gt;&amp;<sp/>rdm_factors);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/><ref refid="classUtility_1aa4ba8f1d43faa9c2aea8a0d17ad2a996" kindref="member">getInfrastructure_built</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a6a89bff2044b4f68714ce9934344e2ad" kindref="member">setNoFinaicalCalculations</ref>();</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a6ac587bf46d7147f9722dc4c89abbb3b" kindref="member">getLong_term_risk_of_failure</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>&amp;<ref refid="classUtility_1a2e9cd381453f7410f0fbb0a193065112" kindref="member">getDemand_infra_construction_order</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classUtility_1a7e1a1362011b8b57d68fb69f17d773ae" kindref="member">calculateWeeklyPeakingFactor</ref>(vector&lt;double&gt;<sp/>*demands);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/>&amp;<ref refid="classUtility_1ab815008a3fab281951892aef1e06407a" kindref="member">getWater_sources</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a68dc298c3078ff450cdc7b6a69422da1" kindref="member">getWaste_water_discharge</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a6128e9ac10cc873773112593b5788d81" kindref="member">getTotal_available_volume</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a0ac180e13fb963a29c2860664c3f352a" kindref="member">resetTotal_storage_capacity</ref>();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a062fd9a622bd9893c142ae56523010dd" kindref="member">getUnfulfilled_demand</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a93d865d309801d2b44687b2e14620386" kindref="member">getNet_stream_inflow</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1a5d932aef9e201e824ac681cd6928613a" kindref="member">getTotal_stored_volume</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classInfrastructureManager" kindref="compound">InfrastructureManager</ref><sp/>&amp;<ref refid="classUtility_1a1586d2f567eb9a08e2630de612ba73a6" kindref="member">getInfrastructure_construction_manager</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classUtility_1acdd0e90d638d4a127a06787fe427ab59" kindref="member">getDemand_offset</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_UTILITY_H</highlight></codeline>
+    </programlisting>
+    <location file="src/SystemComponents/Utility/Utility.h"/>
+  </compounddef>
+</doxygen>

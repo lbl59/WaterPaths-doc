@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classWwtpDischargeRule" kind="class" language="C++" prot="public">
+    <compoundname>WwtpDischargeRule</compoundname>
+    <basecompoundref refid="classControlRules" prot="public" virt="non-virtual">ControlRules</basecompoundref>
+    <includes refid="WwtpDischargeRule_8h" local="no">WwtpDischargeRule.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWwtpDischargeRule_1a99be200d8d3ccf1f95a8d6e84a225df1" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; WwtpDischargeRule::source_id_to_vector_index</definition>
+        <argsstring></argsstring>
+        <name>source_id_to_vector_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/WwtpDischargeRule.h" line="16" column="1" bodyfile="src/Controls/WwtpDischargeRule.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classWwtpDischargeRule_1a5d193e0cbc2eb23e1b86e79fb2eafad3" prot="public" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; WwtpDischargeRule::year_series_fraction_discharge</definition>
+        <argsstring></argsstring>
+        <name>year_series_fraction_discharge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/WwtpDischargeRule.h" line="19" column="1" bodyfile="src/Controls/WwtpDischargeRule.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWwtpDischargeRule_1ac2f77a9fca93eef3fd26ff1d579130be" prot="public" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; WwtpDischargeRule::discharge_to_source_ids</definition>
+        <argsstring></argsstring>
+        <name>discharge_to_source_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/WwtpDischargeRule.h" line="20" column="1" bodyfile="src/Controls/WwtpDischargeRule.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWwtpDischargeRule_1ae904657855c9d983ea0e5995109cd561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WwtpDischargeRule::WwtpDischargeRule</definition>
+        <argsstring>(vector&lt; vector&lt; double &gt;&gt; year_series_fraction_discharge, vector&lt; int &gt; discharge_to_source_ids)</argsstring>
+        <name>WwtpDischargeRule</name>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt;</type>
+          <declname>year_series_fraction_discharge</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt;</type>
+          <declname>discharge_to_source_ids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/WwtpDischargeRule.h" line="22" column="1" bodyfile="src/Controls/WwtpDischargeRule.cpp" bodystart="9" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classWwtpDischargeRule_1ac433e50df1414ba4bbb40022832b43ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WwtpDischargeRule::WwtpDischargeRule</definition>
+        <argsstring>(WwtpDischargeRule &amp;wwtp_discharge_rule)</argsstring>
+        <name>WwtpDischargeRule</name>
+        <param>
+          <type><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref> &amp;</type>
+          <declname>wwtp_discharge_rule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/WwtpDischargeRule.h" line="25" column="1" bodyfile="src/Controls/WwtpDischargeRule.cpp" bodystart="41" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classWwtpDischargeRule_1acde020b347aff843179a318a9d231c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref> &amp;</type>
+        <definition>WwtpDischargeRule &amp; WwtpDischargeRule::operator=</definition>
+        <argsstring>(const WwtpDischargeRule &amp;wwtp_discharge_rule)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref> &amp;</type>
+          <declname>wwtp_discharge_rule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/WwtpDischargeRule.h" line="27" column="1" bodyfile="src/Controls/WwtpDischargeRule.cpp" bodystart="48" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classWwtpDischargeRule_1a4cea07bf746d200c9ca3018405a77a46" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double WwtpDischargeRule::get_dependent_variable</definition>
+        <argsstring>(double water_source_id) override</argsstring>
+        <name>get_dependent_variable</name>
+        <reimplements refid="classControlRules_1a749c604121ebb1df808df9cd957a09f1">get_dependent_variable</reimplements>
+        <param>
+          <type>double</type>
+          <declname>water_source_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/WwtpDischargeRule.h" line="29" column="1" bodyfile="src/Controls/WwtpDischargeRule.cpp" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classWwtpDischargeRule_1a3338c0fc43d656a6730ca72dd5d3e51e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double WwtpDischargeRule::get_dependent_variable</definition>
+        <argsstring>(int water_source_id) override</argsstring>
+        <name>get_dependent_variable</name>
+        <reimplements refid="classControlRules_1a56a42b40bf093237929a9c835dc9b772">get_dependent_variable</reimplements>
+        <param>
+          <type>int</type>
+          <declname>water_source_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/WwtpDischargeRule.h" line="31" column="1" bodyfile="src/Controls/WwtpDischargeRule.cpp" bodystart="81" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classWwtpDischargeRule_1a10eb6f901b6479dadc107e0a7c07e03b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double WwtpDischargeRule::get_dependent_variable</definition>
+        <argsstring>(double x, int week) override</argsstring>
+        <name>get_dependent_variable</name>
+        <reimplements refid="classControlRules_1a4c5a86844c3d6409bfa0ba2b058f82e7">get_dependent_variable</reimplements>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/WwtpDischargeRule.h" line="33" column="1" bodyfile="src/Controls/WwtpDischargeRule.cpp" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classWwtpDischargeRule_1a8eade5d595ec0fdc76769e67c7ffc5f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double WwtpDischargeRule::get_dependent_variable</definition>
+        <argsstring>(int x, int week) override</argsstring>
+        <name>get_dependent_variable</name>
+        <reimplements refid="classControlRules_1a3d4b00d92729c6662473fc25707c0d9b">get_dependent_variable</reimplements>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+          <defname>water_source_id</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the fraction of week&apos;s demand to be discharged as effluent. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>water_source_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of source receiving the effluent. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>fraction of demand to be discharged. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/WwtpDischargeRule.h" line="35" column="1" bodyfile="src/Controls/WwtpDischargeRule.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="260">
+        <label>ControlRules</label>
+        <link refid="classControlRules"/>
+      </node>
+      <node id="259">
+        <label>WwtpDischargeRule</label>
+        <link refid="classWwtpDischargeRule"/>
+        <childnode refid="260" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="262">
+        <label>ControlRules</label>
+        <link refid="classControlRules"/>
+      </node>
+      <node id="261">
+        <label>WwtpDischargeRule</label>
+        <link refid="classWwtpDischargeRule"/>
+        <childnode refid="262" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/Controls/WwtpDischargeRule.h" line="14" column="1" bodyfile="src/Controls/WwtpDischargeRule.h" bodystart="14" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classWwtpDischargeRule_1ac2f77a9fca93eef3fd26ff1d579130be" prot="public" virt="non-virtual"><scope>WwtpDischargeRule</scope><name>discharge_to_source_ids</name></member>
+      <member refid="classWwtpDischargeRule_1a4cea07bf746d200c9ca3018405a77a46" prot="public" virt="virtual"><scope>WwtpDischargeRule</scope><name>get_dependent_variable</name></member>
+      <member refid="classWwtpDischargeRule_1a3338c0fc43d656a6730ca72dd5d3e51e" prot="public" virt="virtual"><scope>WwtpDischargeRule</scope><name>get_dependent_variable</name></member>
+      <member refid="classWwtpDischargeRule_1a10eb6f901b6479dadc107e0a7c07e03b" prot="public" virt="virtual"><scope>WwtpDischargeRule</scope><name>get_dependent_variable</name></member>
+      <member refid="classWwtpDischargeRule_1a8eade5d595ec0fdc76769e67c7ffc5f4" prot="public" virt="virtual"><scope>WwtpDischargeRule</scope><name>get_dependent_variable</name></member>
+      <member refid="classWwtpDischargeRule_1acde020b347aff843179a318a9d231c8f" prot="public" virt="non-virtual"><scope>WwtpDischargeRule</scope><name>operator=</name></member>
+      <member refid="classWwtpDischargeRule_1a99be200d8d3ccf1f95a8d6e84a225df1" prot="private" virt="non-virtual"><scope>WwtpDischargeRule</scope><name>source_id_to_vector_index</name></member>
+      <member refid="classWwtpDischargeRule_1ae904657855c9d983ea0e5995109cd561" prot="public" virt="non-virtual"><scope>WwtpDischargeRule</scope><name>WwtpDischargeRule</name></member>
+      <member refid="classWwtpDischargeRule_1ac433e50df1414ba4bbb40022832b43ff" prot="public" virt="non-virtual"><scope>WwtpDischargeRule</scope><name>WwtpDischargeRule</name></member>
+      <member refid="classWwtpDischargeRule_1a5d193e0cbc2eb23e1b86e79fb2eafad3" prot="public" virt="non-virtual"><scope>WwtpDischargeRule</scope><name>year_series_fraction_discharge</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

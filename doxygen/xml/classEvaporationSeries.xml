@@ -1,0 +1,189 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classEvaporationSeries" kind="class" language="C++" prot="public">
+    <compoundname>EvaporationSeries</compoundname>
+    <basecompoundref refid="classCatchment" prot="public" virt="non-virtual">Catchment</basecompoundref>
+    <includes refid="EvaporationSeries_8h" local="no">EvaporationSeries.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEvaporationSeries_1af0903d8555a148f9bf45f915877120b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EvaporationSeries::EvaporationSeries</definition>
+        <argsstring>(vector&lt; vector&lt; double &gt;&gt; *evaporation_series, int series_length)</argsstring>
+        <name>EvaporationSeries</name>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; *</type>
+          <declname>evaporation_series</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>series_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/EvaporationSeries.h" line="13" column="1" bodyfile="src/Controls/EvaporationSeries.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaporationSeries_1aa8d8cd8bbc0fd5b368b748cb090ad414" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EvaporationSeries::EvaporationSeries</definition>
+        <argsstring>(const EvaporationSeries &amp;evaporation_series)</argsstring>
+        <name>EvaporationSeries</name>
+        <param>
+          <type>const <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
+          <declname>evaporation_series</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>catchment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/EvaporationSeries.h" line="16" column="1" bodyfile="src/Controls/EvaporationSeries.cpp" bodystart="16" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaporationSeries_1ad7eb758ce8774ce87732a86c23d24356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
+        <definition>EvaporationSeries &amp; EvaporationSeries::operator=</definition>
+        <argsstring>(const EvaporationSeries &amp;evaporation_series)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
+          <declname>evaporation_series</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy assignment operator. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>catchment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/EvaporationSeries.h" line="18" column="1" bodyfile="src/Controls/EvaporationSeries.cpp" bodystart="24" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaporationSeries_1a201a00eaaadc9c523d544e0d6a4c50e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EvaporationSeries::~EvaporationSeries</definition>
+        <argsstring>() override</argsstring>
+        <name>~EvaporationSeries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/EvaporationSeries.h" line="20" column="1" bodyfile="src/Controls/EvaporationSeries.cpp" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaporationSeries_1a4d793fbcb73e8fb6c179968130d6fd0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double EvaporationSeries::getEvaporation</definition>
+        <argsstring>(int week)</argsstring>
+        <name>getEvaporation</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/EvaporationSeries.h" line="22" column="1" bodyfile="src/Controls/EvaporationSeries.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaporationSeries_1a4985ac4c81ec111657861e5750b24c0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void EvaporationSeries::setRealization</definition>
+        <argsstring>(unsigned long r, vector&lt; double &gt; &amp;rdm_factors) override</argsstring>
+        <name>setRealization</name>
+        <reimplements refid="classCatchment_1affb9042c5854a76efd864ce87d7d1877">setRealization</reimplements>
+        <param>
+          <type>unsigned long</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>rdm_factors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get time series corresponding to realization index and eliminate reference to comprehensive streamflow data set. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/EvaporationSeries.h" line="24" column="1" bodyfile="src/Controls/EvaporationSeries.cpp" bodystart="41" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="76">
+        <label>Catchment</label>
+        <link refid="classCatchment"/>
+      </node>
+      <node id="75">
+        <label>EvaporationSeries</label>
+        <link refid="classEvaporationSeries"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="78">
+        <label>Catchment</label>
+        <link refid="classCatchment"/>
+      </node>
+      <node id="77">
+        <label>EvaporationSeries</label>
+        <link refid="classEvaporationSeries"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/Controls/EvaporationSeries.h" line="11" column="1" bodyfile="src/Controls/EvaporationSeries.h" bodystart="11" bodyend="25"/>
+    <listofallmembers>
+      <member refid="classCatchment_1aafdee6ee868a8892314672abb119e60f" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>Catchment</name></member>
+      <member refid="classCatchment_1ae311c4b2d857a8b5abc01f5317b04df2" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>Catchment</name></member>
+      <member refid="classCatchment_1a20548a9d03f0d39f297cb15b3c0433ad" prot="protected" virt="non-virtual"><scope>EvaporationSeries</scope><name>delta_week</name></member>
+      <member refid="classEvaporationSeries_1af0903d8555a148f9bf45f915877120b3" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>EvaporationSeries</name></member>
+      <member refid="classEvaporationSeries_1aa8d8cd8bbc0fd5b368b748cb090ad414" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>EvaporationSeries</name></member>
+      <member refid="classEvaporationSeries_1a4d793fbcb73e8fb6c179968130d6fd0a" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>getEvaporation</name></member>
+      <member refid="classCatchment_1af4e8206ffab5c901e5e4cdd6136f73a1" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>getStreamflow</name></member>
+      <member refid="classEvaporationSeries_1ad7eb758ce8774ce87732a86c23d24356" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>operator=</name></member>
+      <member refid="classCatchment_1a66d0f20f34893ea2df589e5cbce31fc4" prot="public" virt="non-virtual" ambiguityscope="Catchment::"><scope>EvaporationSeries</scope><name>operator=</name></member>
+      <member refid="classCatchment_1a472ff6892f90d94b8c4dba53c462dedf" prot="protected" virt="non-virtual"><scope>EvaporationSeries</scope><name>parent</name></member>
+      <member refid="classCatchment_1a2d4994220f63b876348b4ce4892bc6d3" prot="protected" virt="non-virtual"><scope>EvaporationSeries</scope><name>series_length</name></member>
+      <member refid="classEvaporationSeries_1a4985ac4c81ec111657861e5750b24c0e" prot="public" virt="virtual"><scope>EvaporationSeries</scope><name>setRealization</name></member>
+      <member refid="classCatchment_1a579ccda86831f286c19c76354e7125c3" prot="protected" virt="non-virtual"><scope>EvaporationSeries</scope><name>streamflows_all</name></member>
+      <member refid="classCatchment_1aaf04c295ecd6b666fa1439d3d5bc072a" prot="protected" virt="non-virtual"><scope>EvaporationSeries</scope><name>streamflows_realization</name></member>
+      <member refid="classCatchment_1a7c8073fc1dd2e2fa9fa8bfc68ce120bd" prot="public" virt="virtual"><scope>EvaporationSeries</scope><name>~Catchment</name></member>
+      <member refid="classEvaporationSeries_1a201a00eaaadc9c523d544e0d6a4c50e5" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>~EvaporationSeries</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

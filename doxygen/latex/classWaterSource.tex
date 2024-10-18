@@ -1,0 +1,987 @@
+\hypertarget{classWaterSource}{}\section{Water\+Source Class Reference}
+\label{classWaterSource}\index{Water\+Source@{Water\+Source}}
+
+
+{\ttfamily \#include $<$Water\+Source.\+h$>$}
+
+Inheritance diagram for Water\+Source\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.284404cm]{classWaterSource}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWaterSource_a27b9d29d6cbb36d128f740f7ca00f500}{Water\+Source}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, vector$<$ int $>$ connected\+\_\+sources, double treatment\+\_\+capacity, const int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}})
+\item 
+\mbox{\hyperlink{classWaterSource_a7723d343a0b8edff36018ca7acf09f62}{Water\+Source}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, double treatment\+\_\+capacity, vector$<$ int $>$ connected\+\_\+sources, const int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}{allocated\+\_\+treatment\+\_\+fractions}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_a2f6655a80c4847fe039987255d9d998c}{allocated\+\_\+fractions}}, vector$<$ int $>$ $\ast$\mbox{\hyperlink{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}{utilities\+\_\+with\+\_\+allocations}})
+\item 
+\mbox{\hyperlink{classWaterSource_a48641ff06b69505ab298f4f23e759a22}{Water\+Source}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, double treatment\+\_\+capacity, vector$<$ int $>$ connected\+\_\+sources, const int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}, const vector$<$ double $>$ construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond)
+\item 
+\mbox{\hyperlink{classWaterSource_a284e207f074da6f485d41f65ac025cf1}{Water\+Source}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, double treatment\+\_\+capacity, vector$<$ int $>$ connected\+\_\+sources, const int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}, const vector$<$ double $>$ construction\+\_\+time\+\_\+range, double permitting\+\_\+period, vector$<$ \mbox{\hyperlink{classBond}{Bond}} $\ast$$>$ \mbox{\hyperlink{classWaterSource_a413b094e11bdce62f4d82e5bb9e4706e}{bonds}})
+\item 
+\mbox{\hyperlink{classWaterSource_ae8cf84e138983737e044bc1217858021}{Water\+Source}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, double treatment\+\_\+capacity, vector$<$ int $>$ \mbox{\hyperlink{classWaterSource_a49f9da70a5080abe82160b1a0d194e60}{built\+\_\+in\+\_\+sequence}}, const int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}{allocated\+\_\+treatment\+\_\+fractions}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_a2f6655a80c4847fe039987255d9d998c}{allocated\+\_\+fractions}}, vector$<$ int $>$ $\ast$\mbox{\hyperlink{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}{utilities\+\_\+with\+\_\+allocations}}, const vector$<$ double $>$ construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond)
+\item 
+\mbox{\hyperlink{classWaterSource_aaa3aba0a9709cc1432f85f443b033a65}{Water\+Source}} (const \mbox{\hyperlink{classWaterSource}{Water\+Source}} \&water\+\_\+source)
+\item 
+virtual \mbox{\hyperlink{classWaterSource_a48d9be2deccd87e1d1cdcbb4b2df83cf}{$\sim$\+Water\+Source}} ()
+\item 
+\mbox{\hyperlink{classWaterSource}{Water\+Source}} \& \mbox{\hyperlink{classWaterSource_aafdaafb023a35186ae01d213665b5e27}{operator=}} (const \mbox{\hyperlink{classWaterSource}{Water\+Source}} \&water\+\_\+source)
+\item 
+bool \mbox{\hyperlink{classWaterSource_accb044cc78f9a444ca18bf7283b5b596}{operator$<$}} (const \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$other)
+\item 
+bool \mbox{\hyperlink{classWaterSource_a9db800769891e1f49d74a78298f4dac1}{operator$>$}} (const \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$other)
+\item 
+bool \mbox{\hyperlink{classWaterSource_af25e06ec954898f3392cb125d2f2c2ad}{operator==}} (const \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$other)
+\item 
+void \mbox{\hyperlink{classWaterSource_a1137cd86f8d3f8a48ebec54282132993}{continuity\+Water\+Source}} (int week, double \mbox{\hyperlink{classWaterSource_a7a69b2e9b6030f1035e6cf44d2918ee5}{upstream\+\_\+source\+\_\+inflow}}, double \mbox{\hyperlink{classWaterSource_aeb5a2d2d83383a70ca20f3e94635a9c7}{wastewater\+\_\+inflow}}, vector$<$ double $>$ \&demand\+\_\+outflow)
+\item 
+virtual void \mbox{\hyperlink{classWaterSource_a210818957f088da4046597d0f1a1340f}{add\+Treatment\+Capacity}} (const double added\+\_\+treatment\+\_\+capacity, int utility\+\_\+id)
+\item 
+virtual void \mbox{\hyperlink{classWaterSource_ab697c3a0765d445f72533f6a5f139bd9}{remove\+Water}} (int allocation\+\_\+id, double volume)
+\item 
+virtual void \mbox{\hyperlink{classWaterSource_abffedb6e58620b1b1d6f3c4b4480d3a0}{add\+Capacity}} (double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}})
+\item 
+virtual void \mbox{\hyperlink{classWaterSource_ab3396e2915db91a6c82e0f29c7889df4}{set\+Online}} ()
+\item 
+virtual bool \mbox{\hyperlink{classWaterSource_ac3105a8ef5470af2e40e7ed74a9be157}{skip\+Construction}} (int utility\+\_\+id) const
+\item 
+virtual double \mbox{\hyperlink{classWaterSource_a42c687a3be3d88ba38dbea668c8d35cf}{get\+Available\+Allocated\+Volume}} (int utility\+\_\+id)
+\item 
+double \mbox{\hyperlink{classWaterSource_af7607924825ffe293179b09fe1bc466e}{get\+Min\+\_\+environmental\+\_\+outflow}} () const
+\item 
+void \mbox{\hyperlink{classWaterSource_a406246432d29f49189d53207ab1d895a}{set\+Min\+\_\+environmental\+\_\+outflow}} (double \mbox{\hyperlink{classWaterSource_adae67ac96597e4b25332002b88a9a52b}{min\+\_\+environmental\+\_\+outflow}})
+\item 
+double \mbox{\hyperlink{classWaterSource_a8eae3b16fc0f37780c1df827386f656e}{get\+Available\+Volume}} () const
+\item 
+const vector$<$ int $>$ \& \mbox{\hyperlink{classWaterSource_a09b60eb2e318c72a42cd6bdd336a6f67}{get\+Built\+\_\+in\+\_\+sequence}} () const
+\item 
+double \mbox{\hyperlink{classWaterSource_a7678e05e3e73b927c0b47e3041d7415f}{get\+Total\+\_\+outflow}} () const
+\item 
+bool \mbox{\hyperlink{classWaterSource_a130fd661ff31c53115cca23e4e2f210a}{is\+Online}} () const
+\item 
+virtual void \mbox{\hyperlink{classWaterSource_a5f8007eb1ae604cfaa67ebb4c0c46eb1}{set\+Full}} ()
+\item 
+void \mbox{\hyperlink{classWaterSource_ab53d376a425b8db603382ba27b52b1d4}{set\+Outflow\+\_\+previous\+\_\+week}} (double outflow\+\_\+previous\+\_\+week)
+\item 
+virtual double \mbox{\hyperlink{classWaterSource_aa4cbbd1ee0fc5ea9291eb5d8067b3aa0}{get\+Supply\+Capacity}} ()
+\item 
+double \mbox{\hyperlink{classWaterSource_ad7e60efd7395f8d3e674e602226e5ac1}{get\+Upstream\+\_\+source\+\_\+inflow}} () const
+\item 
+double \mbox{\hyperlink{classWaterSource_ac57d6b292490333b5bc14233bce326ce}{get\+Demand}} () const
+\item 
+double \mbox{\hyperlink{classWaterSource_afd2a153ba8f4ecaa9f8fa851d5a1727c}{get\+Upstream\+Catchment\+Inflow}} () const
+\item 
+virtual void \mbox{\hyperlink{classWaterSource_af72660e62fda45b6ae53da5f0afd86db}{set\+Realization}} (unsigned long r, vector$<$ double $>$ \&rdm\+\_\+factors)
+\item 
+virtual double \mbox{\hyperlink{classWaterSource_a44102a0eafdaebd86f0ed8dabb313733}{get\+Allocated\+Capacity}} (int utility\+\_\+id)
+\item 
+virtual double \mbox{\hyperlink{classWaterSource_a1843ada21b8e7500d80a5a7db10621b3}{get\+Allocated\+Fraction}} (int utility\+\_\+id)
+\item 
+double \mbox{\hyperlink{classWaterSource_a00b156a153fc24097e4c8a4e5c46c4e0}{get\+Evaporated\+\_\+volume}} () const
+\item 
+virtual double \mbox{\hyperlink{classWaterSource_ab3ba86d2a3e864e435ba2b88cceea555}{get\+Allocated\+Treatment\+Capacity}} (int utility\+\_\+id) const
+\item 
+double \mbox{\hyperlink{classWaterSource_a6228c9aee407ca2544753dbd2792c5fb}{get\+Total\+\_\+treatment\+\_\+capacity}} (int utility\+\_\+id) const
+\item 
+void \mbox{\hyperlink{classWaterSource_ac834762e016e796968ad286feeca7be6}{set\+Allocations}} (vector$<$ int $>$ $\ast$\mbox{\hyperlink{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}{utilities\+\_\+with\+\_\+allocations}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_a2f6655a80c4847fe039987255d9d998c}{allocated\+\_\+fractions}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}{allocated\+\_\+treatment\+\_\+fractions}})
+\item 
+void \mbox{\hyperlink{classWaterSource_af52f39412f0d761f7e3b3369ffdf90f1}{reset\+Allocations}} (const vector$<$ double $>$ $\ast$new\+\_\+allocated\+\_\+fractions)
+\item 
+void \mbox{\hyperlink{classWaterSource_ae29ed4aa2b9c97c5a41772daf4631f05}{set\+Available\+Allocated\+Volumes}} (vector$<$ double $>$ \mbox{\hyperlink{classWaterSource_a77d3fe9ea445fc987b07debdfb9e2f5b}{available\+\_\+allocated\+\_\+volumes}}, double \mbox{\hyperlink{classWaterSource_a49e1a191152e344e2161e8db166e067a}{available\+\_\+volume}})
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classWaterSource_a1087f5f2458803fd1d37383e303bd25f}{get\+Available\+\_\+allocated\+\_\+volumes}} () const
+\item 
+vector$<$ int $>$ $\ast$ \mbox{\hyperlink{classWaterSource_a7d6beb9fce5be21a3777fee88f045e62}{get\+Utilities\+\_\+with\+\_\+allocations}} () const
+\item 
+double \mbox{\hyperlink{classWaterSource_aee22325e6af0e3c804ddbd9a3505be05}{get\+Wastewater\+\_\+inflow}} () const
+\item 
+double \mbox{\hyperlink{classWaterSource_aa21d3f1c87ced40c2b673d9e43d99176}{get\+Permitting\+\_\+period}} () const
+\item 
+double \mbox{\hyperlink{classWaterSource_af6445a2dd3764907bcb9a37d4647f910}{get\+Available\+Supply\+Volume}} () const
+\item 
+double \mbox{\hyperlink{classWaterSource_a63b1a410b47710db049e2b2e9c3c39a0}{get\+Allocated\+Inflow}} (int utility\+\_\+id) const
+\item 
+virtual double \mbox{\hyperlink{classWaterSource_a71cb8bd481bbce0089aa78dcd1c3309a}{get\+Supply\+Allocated\+Fraction}} (int utility\+\_\+id)
+\item 
+\mbox{\hyperlink{classBond}{Bond}} \& \mbox{\hyperlink{classWaterSource_a22f89ebf1115de192df588a4fd83c671}{get\+Bond}} (int utility\+\_\+id)
+\item 
+void \mbox{\hyperlink{classWaterSource_a47bc2006a1ef6ea4429d56a24319940f}{check\+For\+Input\+Errors\+Construction}} ()
+\item 
+int \mbox{\hyperlink{classWaterSource_aebc6985952d3e69f0d8ae1d0498a1ffe}{random\+Construction\+Time}} (double t0, double tf)
+\item 
+const double \mbox{\hyperlink{classWaterSource_ac1e8880f0aeb56b2728e253d3500ef40}{get\+Construction\+\_\+time}} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classWaterSource_a7a1325107c74bb0ea553dc3547204e01}{compare}} (\mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$lhs, \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$rhs)
+\item 
+static void \mbox{\hyperlink{classWaterSource_a741c60afc9dafaae318ce7c99f4fd327}{set\+Seed}} (int \mbox{\hyperlink{classWaterSource_abaf6cb0ecca08c87428ad516f11f8c2e}{seed}})
+\item 
+static void \mbox{\hyperlink{classWaterSource_a4bd60dafcc0b18f1c7a415f489bb220a}{unset\+Seed}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}
+\item 
+const char $\ast$ \mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}
+\item 
+const int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}
+\item 
+const double \mbox{\hyperlink{classWaterSource_ae059fbe3f911a819bac0202f7f45e8e4}{construction\+\_\+time}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classWaterSource_ac070445379fe706f65b977dade4f3fbc}{apply\+Continuity}} (int week, double \mbox{\hyperlink{classWaterSource_a7a69b2e9b6030f1035e6cf44d2918ee5}{upstream\+\_\+source\+\_\+inflow}}, double \mbox{\hyperlink{classWaterSource_aeb5a2d2d83383a70ca20f3e94635a9c7}{wastewater\+\_\+inflow}}, vector$<$ double $>$ \&demand\+\_\+outflow)=0
+\item 
+void \mbox{\hyperlink{classWaterSource_abeb8ba4b51c2b270baf9162df76d8b58}{bypass}} (int week, double total\+\_\+upstream\+\_\+inflow)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classWaterSource_a49e1a191152e344e2161e8db166e067a}{available\+\_\+volume}} = 0
+\item 
+double \mbox{\hyperlink{classWaterSource_a5e6992931464ed75576326b9f1bd3c4f}{total\+\_\+outflow}} = 0
+\item 
+double \mbox{\hyperlink{classWaterSource_a7a69b2e9b6030f1035e6cf44d2918ee5}{upstream\+\_\+source\+\_\+inflow}} = 0
+\item 
+double \mbox{\hyperlink{classWaterSource_aeb5a2d2d83383a70ca20f3e94635a9c7}{wastewater\+\_\+inflow}} = 0
+\item 
+double \mbox{\hyperlink{classWaterSource_aceb2d77612db7ba71a171848a5e03b4f}{upstream\+\_\+catchment\+\_\+inflow}} = 0
+\item 
+double \mbox{\hyperlink{classWaterSource_a1934917dd35a2508a5102eb5831431b7}{total\+\_\+demand}} = 0
+\item 
+double \mbox{\hyperlink{classWaterSource_a3f04ae75d6235117d391dece2d323890}{policy\+\_\+added\+\_\+demand}} = 0
+\item 
+double \mbox{\hyperlink{classWaterSource_a036d7980e74224fd5f5c6a390e0d5abb}{permitting\+\_\+time}} = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED
+\item 
+vector$<$ \mbox{\hyperlink{classBond}{Bond}} $\ast$ $>$ \mbox{\hyperlink{classWaterSource_a413b094e11bdce62f4d82e5bb9e4706e}{bonds}}
+\item 
+double \mbox{\hyperlink{classWaterSource_a67165e29345b61f36c8d8ccf3f648819}{upstream\+\_\+min\+\_\+env\+\_\+inflow}} = 0
+\item 
+double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}} = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classWaterSource_a49f9da70a5080abe82160b1a0d194e60}{built\+\_\+in\+\_\+sequence}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classWaterSource_a77d3fe9ea445fc987b07debdfb9e2f5b}{available\+\_\+allocated\+\_\+volumes}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classWaterSource_ab94063d51314cfb896010408ae32fa9c}{allocated\+\_\+capacities}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classWaterSource_a87dc0bfb5cf4e2b9a953c7a80058c923}{allocated\+\_\+treatment\+\_\+capacities}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}{allocated\+\_\+treatment\+\_\+fractions}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classWaterSource_a2f6655a80c4847fe039987255d9d998c}{allocated\+\_\+fractions}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classWaterSource_a87535be59994b2602576cdf34dbe04b9}{supply\+\_\+allocated\+\_\+fractions}}
+\item 
+vector$<$ int $>$ $\ast$ \mbox{\hyperlink{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}{utilities\+\_\+with\+\_\+allocations}} = nullptr
+\item 
+int \mbox{\hyperlink{classWaterSource_acef73d9b1675fb6db9ec39347514db6d}{wq\+\_\+pool\+\_\+id}} = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED
+\item 
+double \mbox{\hyperlink{classWaterSource_a4be6864dc196287bdf8329b3aa6ca662}{total\+\_\+allocated\+\_\+fraction}} = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED
+\item 
+bool \mbox{\hyperlink{classWaterSource_aef4e289b47c2360f2e991ea3ee535781}{online}}
+\item 
+vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $>$ \mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}
+\item 
+double \mbox{\hyperlink{classWaterSource_adae67ac96597e4b25332002b88a9a52b}{min\+\_\+environmental\+\_\+outflow}} = 0
+\item 
+double \mbox{\hyperlink{classWaterSource_a6085899c4b4cc40fa80784203e1a9755}{evaporated\+\_\+volume}} = 0
+\item 
+double \mbox{\hyperlink{classWaterSource_a2fdfd5ff7d103e71108cf2a31babaccb}{total\+\_\+treatment\+\_\+capacity}} = 0
+\item 
+int \mbox{\hyperlink{classWaterSource_a83c6dcf19b64533ce4bc3b918ce6cc8e}{highest\+\_\+alloc\+\_\+id}} = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classWaterSource_abaf6cb0ecca08c87428ad516f11f8c2e}{seed}} = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWaterSource_a27b9d29d6cbb36d128f740f7ca00f500}\label{classWaterSource_a27b9d29d6cbb36d128f740f7ca00f500}} 
+\index{Water\+Source@{Water\+Source}!Water\+Source@{Water\+Source}}
+\index{Water\+Source@{Water\+Source}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{Water\+Source()}{WaterSource()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily Water\+Source\+::\+Water\+Source (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{vector$<$ int $>$}]{connected\+\_\+sources,  }\item[{double}]{treatment\+\_\+capacity,  }\item[{const int}]{source\+\_\+type }\end{DoxyParamCaption})}
+
+Constructor for when water source is built and operational. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em id} & \\
+\hline
+{\em min\+\_\+environmental\+\_\+outflow} & \\
+\hline
+{\em catchments} & \\
+\hline
+{\em capacity} & \\
+\hline
+{\em treatment\+\_\+capacity} & \\
+\hline
+{\em source\+\_\+type} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaterSource_a7723d343a0b8edff36018ca7acf09f62}\label{classWaterSource_a7723d343a0b8edff36018ca7acf09f62}} 
+\index{Water\+Source@{Water\+Source}!Water\+Source@{Water\+Source}}
+\index{Water\+Source@{Water\+Source}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{Water\+Source()}{WaterSource()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily Water\+Source\+::\+Water\+Source (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{double}]{treatment\+\_\+capacity,  }\item[{vector$<$ int $>$}]{connected\+\_\+sources,  }\item[{const int}]{source\+\_\+type,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+treatment\+\_\+fractions,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+fractions,  }\item[{vector$<$ int $>$ $\ast$}]{utilities\+\_\+with\+\_\+allocations }\end{DoxyParamCaption})}
+
+Constructor for when water source is built and operational. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em id} & \\
+\hline
+{\em min\+\_\+environmental\+\_\+outflow} & \\
+\hline
+{\em catchments} & \\
+\hline
+{\em capacity} & \\
+\hline
+{\em treatment\+\_\+capacity} & \\
+\hline
+{\em source\+\_\+type} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaterSource_a48641ff06b69505ab298f4f23e759a22}\label{classWaterSource_a48641ff06b69505ab298f4f23e759a22}} 
+\index{Water\+Source@{Water\+Source}!Water\+Source@{Water\+Source}}
+\index{Water\+Source@{Water\+Source}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{Water\+Source()}{WaterSource()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily Water\+Source\+::\+Water\+Source (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{double}]{treatment\+\_\+capacity,  }\item[{vector$<$ int $>$}]{connected\+\_\+sources,  }\item[{const int}]{source\+\_\+type,  }\item[{const vector$<$ double $>$}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond }\end{DoxyParamCaption})}
+
+Constructor for when water source does not exist in the beginning of the simulation. 
+\begin{DoxyParams}{Parameters}
+{\em source\+\_\+name} & \\
+\hline
+{\em id} & \\
+\hline
+{\em min\+\_\+environmental\+\_\+outflow} & \\
+\hline
+{\em catchments} & \\
+\hline
+{\em capacity} & \\
+\hline
+{\em treatment\+\_\+capacity} & \\
+\hline
+{\em source\+\_\+type} & \\
+\hline
+{\em construction\+\_\+rof\+\_\+or\+\_\+demand} & \\
+\hline
+{\em construction\+\_\+time\+\_\+range} & \\
+\hline
+{\em construction\+\_\+cost\+\_\+of\+\_\+capital} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaterSource_a284e207f074da6f485d41f65ac025cf1}\label{classWaterSource_a284e207f074da6f485d41f65ac025cf1}} 
+\index{Water\+Source@{Water\+Source}!Water\+Source@{Water\+Source}}
+\index{Water\+Source@{Water\+Source}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{Water\+Source()}{WaterSource()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily Water\+Source\+::\+Water\+Source (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{double}]{treatment\+\_\+capacity,  }\item[{vector$<$ int $>$}]{connected\+\_\+sources,  }\item[{const int}]{source\+\_\+type,  }\item[{const vector$<$ double $>$}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{vector$<$ \mbox{\hyperlink{classBond}{Bond}} $\ast$$>$}]{bonds }\end{DoxyParamCaption})}
+
+Constructor for when shared water source does not exist in the beginning of the simulation. 
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em id} & \\
+\hline
+{\em catchments} & \\
+\hline
+{\em capacity} & \\
+\hline
+{\em treatment\+\_\+capacity} & \\
+\hline
+{\em connected\+\_\+sources} & \\
+\hline
+{\em source\+\_\+type} & \\
+\hline
+{\em construction\+\_\+time\+\_\+range} & \\
+\hline
+{\em permitting\+\_\+period} & \\
+\hline
+{\em bonds} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaterSource_ae8cf84e138983737e044bc1217858021}\label{classWaterSource_ae8cf84e138983737e044bc1217858021}} 
+\index{Water\+Source@{Water\+Source}!Water\+Source@{Water\+Source}}
+\index{Water\+Source@{Water\+Source}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{Water\+Source()}{WaterSource()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily Water\+Source\+::\+Water\+Source (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{double}]{treatment\+\_\+capacity,  }\item[{vector$<$ int $>$}]{built\+\_\+in\+\_\+sequence,  }\item[{const int}]{source\+\_\+type,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+treatment\+\_\+fractions,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+fractions,  }\item[{vector$<$ int $>$ $\ast$}]{utilities\+\_\+with\+\_\+allocations,  }\item[{const vector$<$ double $>$}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond }\end{DoxyParamCaption})}
+
+Constructor for when water source does not exist in the beginning of the simulation. 
+\begin{DoxyParams}{Parameters}
+{\em source\+\_\+name} & \\
+\hline
+{\em id} & \\
+\hline
+{\em min\+\_\+environmental\+\_\+outflow} & \\
+\hline
+{\em catchments} & \\
+\hline
+{\em capacity} & \\
+\hline
+{\em treatment\+\_\+capacity} & \\
+\hline
+{\em source\+\_\+type} & \\
+\hline
+{\em construction\+\_\+rof\+\_\+or\+\_\+demand} & \\
+\hline
+{\em construction\+\_\+time\+\_\+range} & \\
+\hline
+{\em construction\+\_\+cost\+\_\+of\+\_\+capital} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaterSource_aaa3aba0a9709cc1432f85f443b033a65}\label{classWaterSource_aaa3aba0a9709cc1432f85f443b033a65}} 
+\index{Water\+Source@{Water\+Source}!Water\+Source@{Water\+Source}}
+\index{Water\+Source@{Water\+Source}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{Water\+Source()}{WaterSource()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily Water\+Source\+::\+Water\+Source (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classWaterSource}{Water\+Source}} \&}]{water\+\_\+source }\end{DoxyParamCaption})}
+
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+source} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaterSource_a48d9be2deccd87e1d1cdcbb4b2df83cf}\label{classWaterSource_a48d9be2deccd87e1d1cdcbb4b2df83cf}} 
+\index{Water\+Source@{Water\+Source}!````~Water\+Source@{$\sim$\+Water\+Source}}
+\index{````~Water\+Source@{$\sim$\+Water\+Source}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{$\sim$\+Water\+Source()}{~WaterSource()}}
+{\footnotesize\ttfamily Water\+Source\+::$\sim$\+Water\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWaterSource_abffedb6e58620b1b1d6f3c4b4480d3a0}\label{classWaterSource_abffedb6e58620b1b1d6f3c4b4480d3a0}} 
+\index{Water\+Source@{Water\+Source}!add\+Capacity@{add\+Capacity}}
+\index{add\+Capacity@{add\+Capacity}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{add\+Capacity()}{addCapacity()}}
+{\footnotesize\ttfamily void Water\+Source\+::add\+Capacity (\begin{DoxyParamCaption}\item[{double}]{capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classAllocatedReservoir_ab4cd10b1a9b421309844bcec42899b70}{Allocated\+Reservoir}}.
+
+\mbox{\Hypertarget{classWaterSource_a210818957f088da4046597d0f1a1340f}\label{classWaterSource_a210818957f088da4046597d0f1a1340f}} 
+\index{Water\+Source@{Water\+Source}!add\+Treatment\+Capacity@{add\+Treatment\+Capacity}}
+\index{add\+Treatment\+Capacity@{add\+Treatment\+Capacity}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{add\+Treatment\+Capacity()}{addTreatmentCapacity()}}
+{\footnotesize\ttfamily void Water\+Source\+::add\+Treatment\+Capacity (\begin{DoxyParamCaption}\item[{const double}]{added\+\_\+treatment\+\_\+capacity,  }\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classAllocatedReservoir_ab781bee3253277f1dcfa4c12756d9d6f}{Allocated\+Reservoir}}.
+
+\mbox{\Hypertarget{classWaterSource_ac070445379fe706f65b977dade4f3fbc}\label{classWaterSource_ac070445379fe706f65b977dade4f3fbc}} 
+\index{Water\+Source@{Water\+Source}!apply\+Continuity@{apply\+Continuity}}
+\index{apply\+Continuity@{apply\+Continuity}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{apply\+Continuity()}{applyContinuity()}}
+{\footnotesize\ttfamily virtual void Water\+Source\+::apply\+Continuity (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{double}]{upstream\+\_\+source\+\_\+inflow,  }\item[{double}]{wastewater\+\_\+inflow,  }\item[{vector$<$ double $>$ \&}]{demand\+\_\+outflow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classReservoir_a66929c055193785bc9d47bcdf0bc7445}{Reservoir}}, \mbox{\hyperlink{classAllocatedReservoir_aa5a3683ac3a1e7a778627332c6a7fff7}{Allocated\+Reservoir}}, \mbox{\hyperlink{classQuarry_a6999b854a740ce92baaa610cf5b08bd9}{Quarry}}, \mbox{\hyperlink{classSequentialJointTreatmentExpansion_a64fdd68fc68f6b1145291575c2116815}{Sequential\+Joint\+Treatment\+Expansion}}, \mbox{\hyperlink{classIntake_acd5ab74c4091b286e69ecdcc495d83ce}{Intake}}, \mbox{\hyperlink{classReservoirExpansion_a18614050354dced5cc2747eeda0c2397}{Reservoir\+Expansion}}, \mbox{\hyperlink{classRelocation_af5c795c7b331b86b31c8bfa2ef9b6fe5}{Relocation}}, and \mbox{\hyperlink{classWaterReuse_ab8ffb10c69790047a3a5dda66cfaf3ee}{Water\+Reuse}}.
+
+\mbox{\Hypertarget{classWaterSource_abeb8ba4b51c2b270baf9162df76d8b58}\label{classWaterSource_abeb8ba4b51c2b270baf9162df76d8b58}} 
+\index{Water\+Source@{Water\+Source}!bypass@{bypass}}
+\index{bypass@{bypass}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{bypass()}{bypass()}}
+{\footnotesize\ttfamily void Water\+Source\+::bypass (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{double}]{total\+\_\+upstream\+\_\+inflow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Does not apply continuity to the water source, by instead just treats it as non existing, i.\+e. outflow = inflow + catchment\+\_\+flow 
+\begin{DoxyParams}{Parameters}
+{\em week} & \\
+\hline
+{\em total\+\_\+upstream\+\_\+inflow} & Total inflow released from the upstream water source, excluding water for the catchment between both water sources. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaterSource_a47bc2006a1ef6ea4429d56a24319940f}\label{classWaterSource_a47bc2006a1ef6ea4429d56a24319940f}} 
+\index{Water\+Source@{Water\+Source}!check\+For\+Input\+Errors\+Construction@{check\+For\+Input\+Errors\+Construction}}
+\index{check\+For\+Input\+Errors\+Construction@{check\+For\+Input\+Errors\+Construction}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{check\+For\+Input\+Errors\+Construction()}{checkForInputErrorsConstruction()}}
+{\footnotesize\ttfamily void Water\+Source\+::check\+For\+Input\+Errors\+Construction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWaterSource_a7a1325107c74bb0ea553dc3547204e01}\label{classWaterSource_a7a1325107c74bb0ea553dc3547204e01}} 
+\index{Water\+Source@{Water\+Source}!compare@{compare}}
+\index{compare@{compare}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily bool Water\+Source\+::compare (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$}]{lhs,  }\item[{\mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWaterSource_a1137cd86f8d3f8a48ebec54282132993}\label{classWaterSource_a1137cd86f8d3f8a48ebec54282132993}} 
+\index{Water\+Source@{Water\+Source}!continuity\+Water\+Source@{continuity\+Water\+Source}}
+\index{continuity\+Water\+Source@{continuity\+Water\+Source}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{continuity\+Water\+Source()}{continuityWaterSource()}}
+{\footnotesize\ttfamily void Water\+Source\+::continuity\+Water\+Source (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{double}]{upstream\+\_\+source\+\_\+inflow,  }\item[{double}]{wastewater\+\_\+inflow,  }\item[{vector$<$ double $>$ \&}]{demand\+\_\+outflow }\end{DoxyParamCaption})}
+
+Applies continuity to the water source. 
+\begin{DoxyParams}{Parameters}
+{\em week} & \\
+\hline
+{\em upstream\+\_\+source\+\_\+inflow} & Total inflow released from the upstream water source, excluding water for the catchment between both water sources. \\
+\hline
+{\em demand\+\_\+outflow} & demand from utility. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaterSource_a44102a0eafdaebd86f0ed8dabb313733}\label{classWaterSource_a44102a0eafdaebd86f0ed8dabb313733}} 
+\index{Water\+Source@{Water\+Source}!get\+Allocated\+Capacity@{get\+Allocated\+Capacity}}
+\index{get\+Allocated\+Capacity@{get\+Allocated\+Capacity}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Allocated\+Capacity()}{getAllocatedCapacity()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Allocated\+Capacity (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Most sources will not have different allocations, so by default this function will return the total capacity. If a source is to have multiple allocations, this function must be overriden to make sure it returns the right value. 
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classAllocatedReservoir_a8b9b38494fa23f0bea78134c82644bf1}{Allocated\+Reservoir}}.
+
+\mbox{\Hypertarget{classWaterSource_a1843ada21b8e7500d80a5a7db10621b3}\label{classWaterSource_a1843ada21b8e7500d80a5a7db10621b3}} 
+\index{Water\+Source@{Water\+Source}!get\+Allocated\+Fraction@{get\+Allocated\+Fraction}}
+\index{get\+Allocated\+Fraction@{get\+Allocated\+Fraction}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Allocated\+Fraction()}{getAllocatedFraction()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Allocated\+Fraction (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classAllocatedReservoir_a731381982c9245b0bf24db4082dc74c1}{Allocated\+Reservoir}}.
+
+\mbox{\Hypertarget{classWaterSource_a63b1a410b47710db049e2b2e9c3c39a0}\label{classWaterSource_a63b1a410b47710db049e2b2e9c3c39a0}} 
+\index{Water\+Source@{Water\+Source}!get\+Allocated\+Inflow@{get\+Allocated\+Inflow}}
+\index{get\+Allocated\+Inflow@{get\+Allocated\+Inflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Allocated\+Inflow()}{getAllocatedInflow()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Allocated\+Inflow (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_ab3ba86d2a3e864e435ba2b88cceea555}\label{classWaterSource_ab3ba86d2a3e864e435ba2b88cceea555}} 
+\index{Water\+Source@{Water\+Source}!get\+Allocated\+Treatment\+Capacity@{get\+Allocated\+Treatment\+Capacity}}
+\index{get\+Allocated\+Treatment\+Capacity@{get\+Allocated\+Treatment\+Capacity}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Allocated\+Treatment\+Capacity()}{getAllocatedTreatmentCapacity()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Allocated\+Treatment\+Capacity (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classAllocatedReservoir_aba81b93e1aa1154ce411248903fabde6}{Allocated\+Reservoir}}.
+
+\mbox{\Hypertarget{classWaterSource_a1087f5f2458803fd1d37383e303bd25f}\label{classWaterSource_a1087f5f2458803fd1d37383e303bd25f}} 
+\index{Water\+Source@{Water\+Source}!get\+Available\+\_\+allocated\+\_\+volumes@{get\+Available\+\_\+allocated\+\_\+volumes}}
+\index{get\+Available\+\_\+allocated\+\_\+volumes@{get\+Available\+\_\+allocated\+\_\+volumes}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Available\+\_\+allocated\+\_\+volumes()}{getAvailable\_allocated\_volumes()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Water\+Source\+::get\+Available\+\_\+allocated\+\_\+volumes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_a42c687a3be3d88ba38dbea668c8d35cf}\label{classWaterSource_a42c687a3be3d88ba38dbea668c8d35cf}} 
+\index{Water\+Source@{Water\+Source}!get\+Available\+Allocated\+Volume@{get\+Available\+Allocated\+Volume}}
+\index{get\+Available\+Allocated\+Volume@{get\+Available\+Allocated\+Volume}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Available\+Allocated\+Volume()}{getAvailableAllocatedVolume()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Available\+Allocated\+Volume (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+If creating a new water source that can be allocated to different utilities, this function must be overwritten to\+: return available\+\_\+allocated\+\_\+volumes\mbox{[}utility\+\_\+id\mbox{]}; 
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classAllocatedReservoir_ae161ebfc285aa69cb8b7f4fe20ee7a2e}{Allocated\+Reservoir}}.
+
+\mbox{\Hypertarget{classWaterSource_af6445a2dd3764907bcb9a37d4647f910}\label{classWaterSource_af6445a2dd3764907bcb9a37d4647f910}} 
+\index{Water\+Source@{Water\+Source}!get\+Available\+Supply\+Volume@{get\+Available\+Supply\+Volume}}
+\index{get\+Available\+Supply\+Volume@{get\+Available\+Supply\+Volume}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Available\+Supply\+Volume()}{getAvailableSupplyVolume()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Available\+Supply\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_a8eae3b16fc0f37780c1df827386f656e}\label{classWaterSource_a8eae3b16fc0f37780c1df827386f656e}} 
+\index{Water\+Source@{Water\+Source}!get\+Available\+Volume@{get\+Available\+Volume}}
+\index{get\+Available\+Volume@{get\+Available\+Volume}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Available\+Volume()}{getAvailableVolume()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Available\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_a22f89ebf1115de192df588a4fd83c671}\label{classWaterSource_a22f89ebf1115de192df588a4fd83c671}} 
+\index{Water\+Source@{Water\+Source}!get\+Bond@{get\+Bond}}
+\index{get\+Bond@{get\+Bond}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Bond()}{getBond()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBond}{Bond}} \& Water\+Source\+::get\+Bond (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWaterSource_a09b60eb2e318c72a42cd6bdd336a6f67}\label{classWaterSource_a09b60eb2e318c72a42cd6bdd336a6f67}} 
+\index{Water\+Source@{Water\+Source}!get\+Built\+\_\+in\+\_\+sequence@{get\+Built\+\_\+in\+\_\+sequence}}
+\index{get\+Built\+\_\+in\+\_\+sequence@{get\+Built\+\_\+in\+\_\+sequence}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Built\+\_\+in\+\_\+sequence()}{getBuilt\_in\_sequence()}}
+{\footnotesize\ttfamily const vector$<$ int $>$ \& Water\+Source\+::get\+Built\+\_\+in\+\_\+sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_ac1e8880f0aeb56b2728e253d3500ef40}\label{classWaterSource_ac1e8880f0aeb56b2728e253d3500ef40}} 
+\index{Water\+Source@{Water\+Source}!get\+Construction\+\_\+time@{get\+Construction\+\_\+time}}
+\index{get\+Construction\+\_\+time@{get\+Construction\+\_\+time}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Construction\+\_\+time()}{getConstruction\_time()}}
+{\footnotesize\ttfamily const double Water\+Source\+::get\+Construction\+\_\+time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_ac57d6b292490333b5bc14233bce326ce}\label{classWaterSource_ac57d6b292490333b5bc14233bce326ce}} 
+\index{Water\+Source@{Water\+Source}!get\+Demand@{get\+Demand}}
+\index{get\+Demand@{get\+Demand}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Demand()}{getDemand()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Demand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_a00b156a153fc24097e4c8a4e5c46c4e0}\label{classWaterSource_a00b156a153fc24097e4c8a4e5c46c4e0}} 
+\index{Water\+Source@{Water\+Source}!get\+Evaporated\+\_\+volume@{get\+Evaporated\+\_\+volume}}
+\index{get\+Evaporated\+\_\+volume@{get\+Evaporated\+\_\+volume}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Evaporated\+\_\+volume()}{getEvaporated\_volume()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Evaporated\+\_\+volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_af7607924825ffe293179b09fe1bc466e}\label{classWaterSource_af7607924825ffe293179b09fe1bc466e}} 
+\index{Water\+Source@{Water\+Source}!get\+Min\+\_\+environmental\+\_\+outflow@{get\+Min\+\_\+environmental\+\_\+outflow}}
+\index{get\+Min\+\_\+environmental\+\_\+outflow@{get\+Min\+\_\+environmental\+\_\+outflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Min\+\_\+environmental\+\_\+outflow()}{getMin\_environmental\_outflow()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Min\+\_\+environmental\+\_\+outflow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_aa21d3f1c87ced40c2b673d9e43d99176}\label{classWaterSource_aa21d3f1c87ced40c2b673d9e43d99176}} 
+\index{Water\+Source@{Water\+Source}!get\+Permitting\+\_\+period@{get\+Permitting\+\_\+period}}
+\index{get\+Permitting\+\_\+period@{get\+Permitting\+\_\+period}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Permitting\+\_\+period()}{getPermitting\_period()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Permitting\+\_\+period (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_a71cb8bd481bbce0089aa78dcd1c3309a}\label{classWaterSource_a71cb8bd481bbce0089aa78dcd1c3309a}} 
+\index{Water\+Source@{Water\+Source}!get\+Supply\+Allocated\+Fraction@{get\+Supply\+Allocated\+Fraction}}
+\index{get\+Supply\+Allocated\+Fraction@{get\+Supply\+Allocated\+Fraction}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Supply\+Allocated\+Fraction()}{getSupplyAllocatedFraction()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Supply\+Allocated\+Fraction (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classAllocatedReservoir_a114e9cde6a106b786ca0ed39283cbbed}{Allocated\+Reservoir}}.
+
+\mbox{\Hypertarget{classWaterSource_aa4cbbd1ee0fc5ea9291eb5d8067b3aa0}\label{classWaterSource_aa4cbbd1ee0fc5ea9291eb5d8067b3aa0}} 
+\index{Water\+Source@{Water\+Source}!get\+Supply\+Capacity@{get\+Supply\+Capacity}}
+\index{get\+Supply\+Capacity@{get\+Supply\+Capacity}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Supply\+Capacity()}{getSupplyCapacity()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Supply\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classWaterSource_a7678e05e3e73b927c0b47e3041d7415f}\label{classWaterSource_a7678e05e3e73b927c0b47e3041d7415f}} 
+\index{Water\+Source@{Water\+Source}!get\+Total\+\_\+outflow@{get\+Total\+\_\+outflow}}
+\index{get\+Total\+\_\+outflow@{get\+Total\+\_\+outflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Total\+\_\+outflow()}{getTotal\_outflow()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Total\+\_\+outflow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_a6228c9aee407ca2544753dbd2792c5fb}\label{classWaterSource_a6228c9aee407ca2544753dbd2792c5fb}} 
+\index{Water\+Source@{Water\+Source}!get\+Total\+\_\+treatment\+\_\+capacity@{get\+Total\+\_\+treatment\+\_\+capacity}}
+\index{get\+Total\+\_\+treatment\+\_\+capacity@{get\+Total\+\_\+treatment\+\_\+capacity}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Total\+\_\+treatment\+\_\+capacity()}{getTotal\_treatment\_capacity()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Total\+\_\+treatment\+\_\+capacity (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_ad7e60efd7395f8d3e674e602226e5ac1}\label{classWaterSource_ad7e60efd7395f8d3e674e602226e5ac1}} 
+\index{Water\+Source@{Water\+Source}!get\+Upstream\+\_\+source\+\_\+inflow@{get\+Upstream\+\_\+source\+\_\+inflow}}
+\index{get\+Upstream\+\_\+source\+\_\+inflow@{get\+Upstream\+\_\+source\+\_\+inflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Upstream\+\_\+source\+\_\+inflow()}{getUpstream\_source\_inflow()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Upstream\+\_\+source\+\_\+inflow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_afd2a153ba8f4ecaa9f8fa851d5a1727c}\label{classWaterSource_afd2a153ba8f4ecaa9f8fa851d5a1727c}} 
+\index{Water\+Source@{Water\+Source}!get\+Upstream\+Catchment\+Inflow@{get\+Upstream\+Catchment\+Inflow}}
+\index{get\+Upstream\+Catchment\+Inflow@{get\+Upstream\+Catchment\+Inflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Upstream\+Catchment\+Inflow()}{getUpstreamCatchmentInflow()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Upstream\+Catchment\+Inflow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_a7d6beb9fce5be21a3777fee88f045e62}\label{classWaterSource_a7d6beb9fce5be21a3777fee88f045e62}} 
+\index{Water\+Source@{Water\+Source}!get\+Utilities\+\_\+with\+\_\+allocations@{get\+Utilities\+\_\+with\+\_\+allocations}}
+\index{get\+Utilities\+\_\+with\+\_\+allocations@{get\+Utilities\+\_\+with\+\_\+allocations}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Utilities\+\_\+with\+\_\+allocations()}{getUtilities\_with\_allocations()}}
+{\footnotesize\ttfamily vector$<$ int $>$ $\ast$ Water\+Source\+::get\+Utilities\+\_\+with\+\_\+allocations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_aee22325e6af0e3c804ddbd9a3505be05}\label{classWaterSource_aee22325e6af0e3c804ddbd9a3505be05}} 
+\index{Water\+Source@{Water\+Source}!get\+Wastewater\+\_\+inflow@{get\+Wastewater\+\_\+inflow}}
+\index{get\+Wastewater\+\_\+inflow@{get\+Wastewater\+\_\+inflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{get\+Wastewater\+\_\+inflow()}{getWastewater\_inflow()}}
+{\footnotesize\ttfamily double Water\+Source\+::get\+Wastewater\+\_\+inflow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_a130fd661ff31c53115cca23e4e2f210a}\label{classWaterSource_a130fd661ff31c53115cca23e4e2f210a}} 
+\index{Water\+Source@{Water\+Source}!is\+Online@{is\+Online}}
+\index{is\+Online@{is\+Online}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{is\+Online()}{isOnline()}}
+{\footnotesize\ttfamily bool Water\+Source\+::is\+Online (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classWaterSource_accb044cc78f9a444ca18bf7283b5b596}\label{classWaterSource_accb044cc78f9a444ca18bf7283b5b596}} 
+\index{Water\+Source@{Water\+Source}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Water\+Source\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$}]{other }\end{DoxyParamCaption})}
+
+Sorting by id compare operator. 
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaterSource_aafdaafb023a35186ae01d213665b5e27}\label{classWaterSource_aafdaafb023a35186ae01d213665b5e27}} 
+\index{Water\+Source@{Water\+Source}!operator=@{operator=}}
+\index{operator=@{operator=}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}} \& Water\+Source\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classWaterSource}{Water\+Source}} \&}]{water\+\_\+source }\end{DoxyParamCaption})}
+
+Copy assignment operator. 
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+source} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaterSource_af25e06ec954898f3392cb125d2f2c2ad}\label{classWaterSource_af25e06ec954898f3392cb125d2f2c2ad}} 
+\index{Water\+Source@{Water\+Source}!operator==@{operator==}}
+\index{operator==@{operator==}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Water\+Source\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$}]{other }\end{DoxyParamCaption})}
+
+Sorting by id compare operator. 
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaterSource_a9db800769891e1f49d74a78298f4dac1}\label{classWaterSource_a9db800769891e1f49d74a78298f4dac1}} 
+\index{Water\+Source@{Water\+Source}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Water\+Source\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$}]{other }\end{DoxyParamCaption})}
+
+Sorting by id compare operator. 
+\begin{DoxyParams}{Parameters}
+{\em other} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaterSource_aebc6985952d3e69f0d8ae1d0498a1ffe}\label{classWaterSource_aebc6985952d3e69f0d8ae1d0498a1ffe}} 
+\index{Water\+Source@{Water\+Source}!random\+Construction\+Time@{random\+Construction\+Time}}
+\index{random\+Construction\+Time@{random\+Construction\+Time}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{random\+Construction\+Time()}{randomConstructionTime()}}
+{\footnotesize\ttfamily int Water\+Source\+::random\+Construction\+Time (\begin{DoxyParamCaption}\item[{double}]{t0,  }\item[{double}]{tf }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWaterSource_ab697c3a0765d445f72533f6a5f139bd9}\label{classWaterSource_ab697c3a0765d445f72533f6a5f139bd9}} 
+\index{Water\+Source@{Water\+Source}!remove\+Water@{remove\+Water}}
+\index{remove\+Water@{remove\+Water}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{remove\+Water()}{removeWater()}}
+{\footnotesize\ttfamily void Water\+Source\+::remove\+Water (\begin{DoxyParamCaption}\item[{int}]{allocation\+\_\+id,  }\item[{double}]{volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+If creating a new water source that can be allocated to different utilities, this function must be overwritten to\+: available\+\_\+allocated\+\_\+volumes\mbox{[}allocation\+\_\+id\mbox{]} -\/= volume; available\+\_\+volume -\/= volume; demand += volume; 
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classAllocatedReservoir_a3a9b7ce2e1d42cc373095cfd40ef2ae2}{Allocated\+Reservoir}}.
+
+\mbox{\Hypertarget{classWaterSource_af52f39412f0d761f7e3b3369ffdf90f1}\label{classWaterSource_af52f39412f0d761f7e3b3369ffdf90f1}} 
+\index{Water\+Source@{Water\+Source}!reset\+Allocations@{reset\+Allocations}}
+\index{reset\+Allocations@{reset\+Allocations}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{reset\+Allocations()}{resetAllocations()}}
+{\footnotesize\ttfamily void Water\+Source\+::reset\+Allocations (\begin{DoxyParamCaption}\item[{const vector$<$ double $>$ $\ast$}]{new\+\_\+allocated\+\_\+fractions }\end{DoxyParamCaption})}
+
+Populate vectors. \mbox{\Hypertarget{classWaterSource_ac834762e016e796968ad286feeca7be6}\label{classWaterSource_ac834762e016e796968ad286feeca7be6}} 
+\index{Water\+Source@{Water\+Source}!set\+Allocations@{set\+Allocations}}
+\index{set\+Allocations@{set\+Allocations}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{set\+Allocations()}{setAllocations()}}
+{\footnotesize\ttfamily void Water\+Source\+::set\+Allocations (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ $\ast$}]{utilities\+\_\+with\+\_\+allocations,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+fractions,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+treatment\+\_\+fractions }\end{DoxyParamCaption})}
+
+Initial set up of allocations with full reservoir in the beginning of the simulations. To be used in constructors only. 
+\begin{DoxyParams}{Parameters}
+{\em utilities\+\_\+with\+\_\+allocations} & \\
+\hline
+{\em allocated\+\_\+fractions} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classWaterSource_ae29ed4aa2b9c97c5a41772daf4631f05}\label{classWaterSource_ae29ed4aa2b9c97c5a41772daf4631f05}} 
+\index{Water\+Source@{Water\+Source}!set\+Available\+Allocated\+Volumes@{set\+Available\+Allocated\+Volumes}}
+\index{set\+Available\+Allocated\+Volumes@{set\+Available\+Allocated\+Volumes}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{set\+Available\+Allocated\+Volumes()}{setAvailableAllocatedVolumes()}}
+{\footnotesize\ttfamily void Water\+Source\+::set\+Available\+Allocated\+Volumes (\begin{DoxyParamCaption}\item[{vector$<$ double $>$}]{available\+\_\+allocated\+\_\+volumes,  }\item[{double}]{available\+\_\+volume }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWaterSource_a5f8007eb1ae604cfaa67ebb4c0c46eb1}\label{classWaterSource_a5f8007eb1ae604cfaa67ebb4c0c46eb1}} 
+\index{Water\+Source@{Water\+Source}!set\+Full@{set\+Full}}
+\index{set\+Full@{set\+Full}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{set\+Full()}{setFull()}}
+{\footnotesize\ttfamily void Water\+Source\+::set\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classAllocatedReservoir_aea294cbca1e1630a1307072632d14b05}{Allocated\+Reservoir}}.
+
+\mbox{\Hypertarget{classWaterSource_a406246432d29f49189d53207ab1d895a}\label{classWaterSource_a406246432d29f49189d53207ab1d895a}} 
+\index{Water\+Source@{Water\+Source}!set\+Min\+\_\+environmental\+\_\+outflow@{set\+Min\+\_\+environmental\+\_\+outflow}}
+\index{set\+Min\+\_\+environmental\+\_\+outflow@{set\+Min\+\_\+environmental\+\_\+outflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{set\+Min\+\_\+environmental\+\_\+outflow()}{setMin\_environmental\_outflow()}}
+{\footnotesize\ttfamily void Water\+Source\+::set\+Min\+\_\+environmental\+\_\+outflow (\begin{DoxyParamCaption}\item[{double}]{min\+\_\+environmental\+\_\+outflow }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWaterSource_ab3396e2915db91a6c82e0f29c7889df4}\label{classWaterSource_ab3396e2915db91a6c82e0f29c7889df4}} 
+\index{Water\+Source@{Water\+Source}!set\+Online@{set\+Online}}
+\index{set\+Online@{set\+Online}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{set\+Online()}{setOnline()}}
+{\footnotesize\ttfamily void Water\+Source\+::set\+Online (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classReservoir_ac6f64dd92c401e58095e7b125855041b}{Reservoir}}, \mbox{\hyperlink{classAllocatedReservoir_a739d93f7981f597a3db0a3d613304b8e}{Allocated\+Reservoir}}, and \mbox{\hyperlink{classQuarry_af5fe04fa188d399485b2b4e64381e169}{Quarry}}.
+
+\mbox{\Hypertarget{classWaterSource_ab53d376a425b8db603382ba27b52b1d4}\label{classWaterSource_ab53d376a425b8db603382ba27b52b1d4}} 
+\index{Water\+Source@{Water\+Source}!set\+Outflow\+\_\+previous\+\_\+week@{set\+Outflow\+\_\+previous\+\_\+week}}
+\index{set\+Outflow\+\_\+previous\+\_\+week@{set\+Outflow\+\_\+previous\+\_\+week}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{set\+Outflow\+\_\+previous\+\_\+week()}{setOutflow\_previous\_week()}}
+{\footnotesize\ttfamily void Water\+Source\+::set\+Outflow\+\_\+previous\+\_\+week (\begin{DoxyParamCaption}\item[{double}]{outflow\+\_\+previous\+\_\+week }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWaterSource_af72660e62fda45b6ae53da5f0afd86db}\label{classWaterSource_af72660e62fda45b6ae53da5f0afd86db}} 
+\index{Water\+Source@{Water\+Source}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily void Water\+Source\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{r,  }\item[{vector$<$ double $>$ \&}]{rdm\+\_\+factors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Set inflows, evaporation and rdm values for water source for a given utility r 
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+{\em rdm\+\_\+factors} & table with one realization per row in which the first column is the evaporation multiplier, followed by pairs of values for each source representing permitting time and construction cost. \\
+\hline
+\end{DoxyParams}
+Update total catchment inflow, demand, and available water volume for week 0; ~\newline
+~\newline
+ Set permitting times according to corresponding rdm factors.
+
+Set construction cost overruns according to corresponding rdm factors. 
+
+Reimplemented in \mbox{\hyperlink{classReservoir_ad1bb7aa46397719d09e0b6188b9bc28d}{Reservoir}}, and \mbox{\hyperlink{classIntake_a879c4c780a4d21606e848f57464cf3b6}{Intake}}.
+
+\mbox{\Hypertarget{classWaterSource_a741c60afc9dafaae318ce7c99f4fd327}\label{classWaterSource_a741c60afc9dafaae318ce7c99f4fd327}} 
+\index{Water\+Source@{Water\+Source}!set\+Seed@{set\+Seed}}
+\index{set\+Seed@{set\+Seed}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{set\+Seed()}{setSeed()}}
+{\footnotesize\ttfamily void Water\+Source\+::set\+Seed (\begin{DoxyParamCaption}\item[{int}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classWaterSource_ac3105a8ef5470af2e40e7ed74a9be157}\label{classWaterSource_ac3105a8ef5470af2e40e7ed74a9be157}} 
+\index{Water\+Source@{Water\+Source}!skip\+Construction@{skip\+Construction}}
+\index{skip\+Construction@{skip\+Construction}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{skip\+Construction()}{skipConstruction()}}
+{\footnotesize\ttfamily bool Water\+Source\+::skip\+Construction (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classWaterSource_a4bd60dafcc0b18f1c7a415f489bb220a}\label{classWaterSource_a4bd60dafcc0b18f1c7a415f489bb220a}} 
+\index{Water\+Source@{Water\+Source}!unset\+Seed@{unset\+Seed}}
+\index{unset\+Seed@{unset\+Seed}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{unset\+Seed()}{unsetSeed()}}
+{\footnotesize\ttfamily void Water\+Source\+::unset\+Seed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classWaterSource_ab94063d51314cfb896010408ae32fa9c}\label{classWaterSource_ab94063d51314cfb896010408ae32fa9c}} 
+\index{Water\+Source@{Water\+Source}!allocated\+\_\+capacities@{allocated\+\_\+capacities}}
+\index{allocated\+\_\+capacities@{allocated\+\_\+capacities}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{allocated\+\_\+capacities}{allocated\_capacities}}
+{\footnotesize\ttfamily vector$<$double$>$ Water\+Source\+::allocated\+\_\+capacities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a2f6655a80c4847fe039987255d9d998c}\label{classWaterSource_a2f6655a80c4847fe039987255d9d998c}} 
+\index{Water\+Source@{Water\+Source}!allocated\+\_\+fractions@{allocated\+\_\+fractions}}
+\index{allocated\+\_\+fractions@{allocated\+\_\+fractions}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{allocated\+\_\+fractions}{allocated\_fractions}}
+{\footnotesize\ttfamily vector$<$double$>$ Water\+Source\+::allocated\+\_\+fractions\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a87dc0bfb5cf4e2b9a953c7a80058c923}\label{classWaterSource_a87dc0bfb5cf4e2b9a953c7a80058c923}} 
+\index{Water\+Source@{Water\+Source}!allocated\+\_\+treatment\+\_\+capacities@{allocated\+\_\+treatment\+\_\+capacities}}
+\index{allocated\+\_\+treatment\+\_\+capacities@{allocated\+\_\+treatment\+\_\+capacities}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{allocated\+\_\+treatment\+\_\+capacities}{allocated\_treatment\_capacities}}
+{\footnotesize\ttfamily vector$<$double$>$ Water\+Source\+::allocated\+\_\+treatment\+\_\+capacities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}\label{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}} 
+\index{Water\+Source@{Water\+Source}!allocated\+\_\+treatment\+\_\+fractions@{allocated\+\_\+treatment\+\_\+fractions}}
+\index{allocated\+\_\+treatment\+\_\+fractions@{allocated\+\_\+treatment\+\_\+fractions}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{allocated\+\_\+treatment\+\_\+fractions}{allocated\_treatment\_fractions}}
+{\footnotesize\ttfamily vector$<$double$>$ Water\+Source\+::allocated\+\_\+treatment\+\_\+fractions\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a77d3fe9ea445fc987b07debdfb9e2f5b}\label{classWaterSource_a77d3fe9ea445fc987b07debdfb9e2f5b}} 
+\index{Water\+Source@{Water\+Source}!available\+\_\+allocated\+\_\+volumes@{available\+\_\+allocated\+\_\+volumes}}
+\index{available\+\_\+allocated\+\_\+volumes@{available\+\_\+allocated\+\_\+volumes}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{available\+\_\+allocated\+\_\+volumes}{available\_allocated\_volumes}}
+{\footnotesize\ttfamily vector$<$double$>$ Water\+Source\+::available\+\_\+allocated\+\_\+volumes\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a49e1a191152e344e2161e8db166e067a}\label{classWaterSource_a49e1a191152e344e2161e8db166e067a}} 
+\index{Water\+Source@{Water\+Source}!available\+\_\+volume@{available\+\_\+volume}}
+\index{available\+\_\+volume@{available\+\_\+volume}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{available\+\_\+volume}{available\_volume}}
+{\footnotesize\ttfamily double Water\+Source\+::available\+\_\+volume = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a413b094e11bdce62f4d82e5bb9e4706e}\label{classWaterSource_a413b094e11bdce62f4d82e5bb9e4706e}} 
+\index{Water\+Source@{Water\+Source}!bonds@{bonds}}
+\index{bonds@{bonds}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{bonds}{bonds}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classBond}{Bond}} $\ast$$>$ Water\+Source\+::bonds\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a49f9da70a5080abe82160b1a0d194e60}\label{classWaterSource_a49f9da70a5080abe82160b1a0d194e60}} 
+\index{Water\+Source@{Water\+Source}!built\+\_\+in\+\_\+sequence@{built\+\_\+in\+\_\+sequence}}
+\index{built\+\_\+in\+\_\+sequence@{built\+\_\+in\+\_\+sequence}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{built\+\_\+in\+\_\+sequence}{built\_in\_sequence}}
+{\footnotesize\ttfamily vector$<$int$>$ Water\+Source\+::built\+\_\+in\+\_\+sequence\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a2ec257b415b248214a8bce7fc5267723}\label{classWaterSource_a2ec257b415b248214a8bce7fc5267723}} 
+\index{Water\+Source@{Water\+Source}!capacity@{capacity}}
+\index{capacity@{capacity}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily double Water\+Source\+::capacity = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}\label{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}} 
+\index{Water\+Source@{Water\+Source}!catchments@{catchments}}
+\index{catchments@{catchments}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{catchments}{catchments}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classCatchment}{Catchment}}$>$ Water\+Source\+::catchments\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_ae059fbe3f911a819bac0202f7f45e8e4}\label{classWaterSource_ae059fbe3f911a819bac0202f7f45e8e4}} 
+\index{Water\+Source@{Water\+Source}!construction\+\_\+time@{construction\+\_\+time}}
+\index{construction\+\_\+time@{construction\+\_\+time}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{construction\+\_\+time}{construction\_time}}
+{\footnotesize\ttfamily const double Water\+Source\+::construction\+\_\+time}
+
+\mbox{\Hypertarget{classWaterSource_a6085899c4b4cc40fa80784203e1a9755}\label{classWaterSource_a6085899c4b4cc40fa80784203e1a9755}} 
+\index{Water\+Source@{Water\+Source}!evaporated\+\_\+volume@{evaporated\+\_\+volume}}
+\index{evaporated\+\_\+volume@{evaporated\+\_\+volume}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{evaporated\+\_\+volume}{evaporated\_volume}}
+{\footnotesize\ttfamily double Water\+Source\+::evaporated\+\_\+volume = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a83c6dcf19b64533ce4bc3b918ce6cc8e}\label{classWaterSource_a83c6dcf19b64533ce4bc3b918ce6cc8e}} 
+\index{Water\+Source@{Water\+Source}!highest\+\_\+alloc\+\_\+id@{highest\+\_\+alloc\+\_\+id}}
+\index{highest\+\_\+alloc\+\_\+id@{highest\+\_\+alloc\+\_\+id}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{highest\+\_\+alloc\+\_\+id}{highest\_alloc\_id}}
+{\footnotesize\ttfamily int Water\+Source\+::highest\+\_\+alloc\+\_\+id = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}\label{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}} 
+\index{Water\+Source@{Water\+Source}!id@{id}}
+\index{id@{id}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily const int Water\+Source\+::id}
+
+\mbox{\Hypertarget{classWaterSource_adae67ac96597e4b25332002b88a9a52b}\label{classWaterSource_adae67ac96597e4b25332002b88a9a52b}} 
+\index{Water\+Source@{Water\+Source}!min\+\_\+environmental\+\_\+outflow@{min\+\_\+environmental\+\_\+outflow}}
+\index{min\+\_\+environmental\+\_\+outflow@{min\+\_\+environmental\+\_\+outflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{min\+\_\+environmental\+\_\+outflow}{min\_environmental\_outflow}}
+{\footnotesize\ttfamily double Water\+Source\+::min\+\_\+environmental\+\_\+outflow = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a846ea74c5b453d014f594d41fee8c765}\label{classWaterSource_a846ea74c5b453d014f594d41fee8c765}} 
+\index{Water\+Source@{Water\+Source}!name@{name}}
+\index{name@{name}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily const char$\ast$ Water\+Source\+::name}
+
+\mbox{\Hypertarget{classWaterSource_aef4e289b47c2360f2e991ea3ee535781}\label{classWaterSource_aef4e289b47c2360f2e991ea3ee535781}} 
+\index{Water\+Source@{Water\+Source}!online@{online}}
+\index{online@{online}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{online}{online}}
+{\footnotesize\ttfamily bool Water\+Source\+::online\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a036d7980e74224fd5f5c6a390e0d5abb}\label{classWaterSource_a036d7980e74224fd5f5c6a390e0d5abb}} 
+\index{Water\+Source@{Water\+Source}!permitting\+\_\+time@{permitting\+\_\+time}}
+\index{permitting\+\_\+time@{permitting\+\_\+time}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{permitting\+\_\+time}{permitting\_time}}
+{\footnotesize\ttfamily double Water\+Source\+::permitting\+\_\+time = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a3f04ae75d6235117d391dece2d323890}\label{classWaterSource_a3f04ae75d6235117d391dece2d323890}} 
+\index{Water\+Source@{Water\+Source}!policy\+\_\+added\+\_\+demand@{policy\+\_\+added\+\_\+demand}}
+\index{policy\+\_\+added\+\_\+demand@{policy\+\_\+added\+\_\+demand}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{policy\+\_\+added\+\_\+demand}{policy\_added\_demand}}
+{\footnotesize\ttfamily double Water\+Source\+::policy\+\_\+added\+\_\+demand = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_abaf6cb0ecca08c87428ad516f11f8c2e}\label{classWaterSource_abaf6cb0ecca08c87428ad516f11f8c2e}} 
+\index{Water\+Source@{Water\+Source}!seed@{seed}}
+\index{seed@{seed}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{seed}{seed}}
+{\footnotesize\ttfamily int Water\+Source\+::seed = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}\label{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}} 
+\index{Water\+Source@{Water\+Source}!source\+\_\+type@{source\+\_\+type}}
+\index{source\+\_\+type@{source\+\_\+type}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{source\+\_\+type}{source\_type}}
+{\footnotesize\ttfamily const int Water\+Source\+::source\+\_\+type}
+
+\mbox{\Hypertarget{classWaterSource_a87535be59994b2602576cdf34dbe04b9}\label{classWaterSource_a87535be59994b2602576cdf34dbe04b9}} 
+\index{Water\+Source@{Water\+Source}!supply\+\_\+allocated\+\_\+fractions@{supply\+\_\+allocated\+\_\+fractions}}
+\index{supply\+\_\+allocated\+\_\+fractions@{supply\+\_\+allocated\+\_\+fractions}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{supply\+\_\+allocated\+\_\+fractions}{supply\_allocated\_fractions}}
+{\footnotesize\ttfamily vector$<$double$>$ Water\+Source\+::supply\+\_\+allocated\+\_\+fractions\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a4be6864dc196287bdf8329b3aa6ca662}\label{classWaterSource_a4be6864dc196287bdf8329b3aa6ca662}} 
+\index{Water\+Source@{Water\+Source}!total\+\_\+allocated\+\_\+fraction@{total\+\_\+allocated\+\_\+fraction}}
+\index{total\+\_\+allocated\+\_\+fraction@{total\+\_\+allocated\+\_\+fraction}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{total\+\_\+allocated\+\_\+fraction}{total\_allocated\_fraction}}
+{\footnotesize\ttfamily double Water\+Source\+::total\+\_\+allocated\+\_\+fraction = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a1934917dd35a2508a5102eb5831431b7}\label{classWaterSource_a1934917dd35a2508a5102eb5831431b7}} 
+\index{Water\+Source@{Water\+Source}!total\+\_\+demand@{total\+\_\+demand}}
+\index{total\+\_\+demand@{total\+\_\+demand}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{total\+\_\+demand}{total\_demand}}
+{\footnotesize\ttfamily double Water\+Source\+::total\+\_\+demand = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a5e6992931464ed75576326b9f1bd3c4f}\label{classWaterSource_a5e6992931464ed75576326b9f1bd3c4f}} 
+\index{Water\+Source@{Water\+Source}!total\+\_\+outflow@{total\+\_\+outflow}}
+\index{total\+\_\+outflow@{total\+\_\+outflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{total\+\_\+outflow}{total\_outflow}}
+{\footnotesize\ttfamily double Water\+Source\+::total\+\_\+outflow = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a2fdfd5ff7d103e71108cf2a31babaccb}\label{classWaterSource_a2fdfd5ff7d103e71108cf2a31babaccb}} 
+\index{Water\+Source@{Water\+Source}!total\+\_\+treatment\+\_\+capacity@{total\+\_\+treatment\+\_\+capacity}}
+\index{total\+\_\+treatment\+\_\+capacity@{total\+\_\+treatment\+\_\+capacity}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{total\+\_\+treatment\+\_\+capacity}{total\_treatment\_capacity}}
+{\footnotesize\ttfamily double Water\+Source\+::total\+\_\+treatment\+\_\+capacity = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_aceb2d77612db7ba71a171848a5e03b4f}\label{classWaterSource_aceb2d77612db7ba71a171848a5e03b4f}} 
+\index{Water\+Source@{Water\+Source}!upstream\+\_\+catchment\+\_\+inflow@{upstream\+\_\+catchment\+\_\+inflow}}
+\index{upstream\+\_\+catchment\+\_\+inflow@{upstream\+\_\+catchment\+\_\+inflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{upstream\+\_\+catchment\+\_\+inflow}{upstream\_catchment\_inflow}}
+{\footnotesize\ttfamily double Water\+Source\+::upstream\+\_\+catchment\+\_\+inflow = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a67165e29345b61f36c8d8ccf3f648819}\label{classWaterSource_a67165e29345b61f36c8d8ccf3f648819}} 
+\index{Water\+Source@{Water\+Source}!upstream\+\_\+min\+\_\+env\+\_\+inflow@{upstream\+\_\+min\+\_\+env\+\_\+inflow}}
+\index{upstream\+\_\+min\+\_\+env\+\_\+inflow@{upstream\+\_\+min\+\_\+env\+\_\+inflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{upstream\+\_\+min\+\_\+env\+\_\+inflow}{upstream\_min\_env\_inflow}}
+{\footnotesize\ttfamily double Water\+Source\+::upstream\+\_\+min\+\_\+env\+\_\+inflow = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_a7a69b2e9b6030f1035e6cf44d2918ee5}\label{classWaterSource_a7a69b2e9b6030f1035e6cf44d2918ee5}} 
+\index{Water\+Source@{Water\+Source}!upstream\+\_\+source\+\_\+inflow@{upstream\+\_\+source\+\_\+inflow}}
+\index{upstream\+\_\+source\+\_\+inflow@{upstream\+\_\+source\+\_\+inflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{upstream\+\_\+source\+\_\+inflow}{upstream\_source\_inflow}}
+{\footnotesize\ttfamily double Water\+Source\+::upstream\+\_\+source\+\_\+inflow = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}\label{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}} 
+\index{Water\+Source@{Water\+Source}!utilities\+\_\+with\+\_\+allocations@{utilities\+\_\+with\+\_\+allocations}}
+\index{utilities\+\_\+with\+\_\+allocations@{utilities\+\_\+with\+\_\+allocations}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{utilities\+\_\+with\+\_\+allocations}{utilities\_with\_allocations}}
+{\footnotesize\ttfamily vector$<$int$>$$\ast$ Water\+Source\+::utilities\+\_\+with\+\_\+allocations = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_aeb5a2d2d83383a70ca20f3e94635a9c7}\label{classWaterSource_aeb5a2d2d83383a70ca20f3e94635a9c7}} 
+\index{Water\+Source@{Water\+Source}!wastewater\+\_\+inflow@{wastewater\+\_\+inflow}}
+\index{wastewater\+\_\+inflow@{wastewater\+\_\+inflow}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{wastewater\+\_\+inflow}{wastewater\_inflow}}
+{\footnotesize\ttfamily double Water\+Source\+::wastewater\+\_\+inflow = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classWaterSource_acef73d9b1675fb6db9ec39347514db6d}\label{classWaterSource_acef73d9b1675fb6db9ec39347514db6d}} 
+\index{Water\+Source@{Water\+Source}!wq\+\_\+pool\+\_\+id@{wq\+\_\+pool\+\_\+id}}
+\index{wq\+\_\+pool\+\_\+id@{wq\+\_\+pool\+\_\+id}!Water\+Source@{Water\+Source}}
+\subsubsection{\texorpdfstring{wq\+\_\+pool\+\_\+id}{wq\_pool\_id}}
+{\footnotesize\ttfamily int Water\+Source\+::wq\+\_\+pool\+\_\+id = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+System\+Components/\+Water\+Sources/\+Base/\mbox{\hyperlink{WaterSource_8h}{Water\+Source.\+h}}\item 
+src/\+System\+Components/\+Water\+Sources/\+Base/\mbox{\hyperlink{WaterSource_8cpp}{Water\+Source.\+cpp}}\end{DoxyCompactItemize}

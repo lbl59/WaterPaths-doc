@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="Quarry_8h" kind="file" language="C++">
+    <compoundname>Quarry.h</compoundname>
+    <includes refid="Reservoir_8h" local="yes">Reservoir.h</includes>
+    <includedby refid="MasterDataCollector_8cpp" local="yes">src/DataCollector/MasterDataCollector.cpp</includedby>
+    <includedby refid="PaperTestProblem_8cpp" local="yes">src/Problem/PaperTestProblem.cpp</includedby>
+    <includedby refid="Triangle_8cpp" local="yes">src/Problem/Triangle.cpp</includedby>
+    <includedby refid="Quarry_8cpp" local="yes">src/SystemComponents/WaterSources/Quarry.cpp</includedby>
+    <includedby refid="Utils_8cpp" local="yes">src/Utils/Utils.cpp</includedby>
+    <incdepgraph>
+      <node id="2987">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="2980" relation="include">
+        </childnode>
+        <childnode refid="2988" relation="include">
+        </childnode>
+        <childnode refid="2989" relation="include">
+        </childnode>
+      </node>
+      <node id="2989">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="2976">
+        <label>src/SystemComponents/WaterSources/Quarry.h</label>
+        <link refid="Quarry_8h"/>
+        <childnode refid="2977" relation="include">
+        </childnode>
+      </node>
+      <node id="2983">
+        <label>cmath</label>
+      </node>
+      <node id="2988">
+        <label>stdexcept</label>
+      </node>
+      <node id="2981">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="2982" relation="include">
+        </childnode>
+        <childnode refid="2983" relation="include">
+        </childnode>
+        <childnode refid="2984" relation="include">
+        </childnode>
+        <childnode refid="2980" relation="include">
+        </childnode>
+      </node>
+      <node id="2978">
+        <label>string</label>
+      </node>
+      <node id="2982">
+        <label>map</label>
+      </node>
+      <node id="2985">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="2978" relation="include">
+        </childnode>
+        <childnode refid="2979" relation="include">
+        </childnode>
+        <childnode refid="2981" relation="include">
+        </childnode>
+        <childnode refid="2986" relation="include">
+        </childnode>
+      </node>
+      <node id="2980">
+        <label>vector</label>
+      </node>
+      <node id="2979">
+        <label>../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="2980" relation="include">
+        </childnode>
+        <childnode refid="2981" relation="include">
+        </childnode>
+      </node>
+      <node id="2977">
+        <label>Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="2978" relation="include">
+        </childnode>
+        <childnode refid="2979" relation="include">
+        </childnode>
+        <childnode refid="2985" relation="include">
+        </childnode>
+        <childnode refid="2987" relation="include">
+        </childnode>
+        <childnode refid="2990" relation="include">
+        </childnode>
+      </node>
+      <node id="2990">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="2980" relation="include">
+        </childnode>
+        <childnode refid="2979" relation="include">
+        </childnode>
+      </node>
+      <node id="2986">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="2980" relation="include">
+        </childnode>
+        <childnode refid="2981" relation="include">
+        </childnode>
+      </node>
+      <node id="2984">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2993">
+        <label>src/Problem/PaperTestProblem.cpp</label>
+        <link refid="PaperTestProblem_8cpp"/>
+      </node>
+      <node id="2991">
+        <label>src/SystemComponents/WaterSources/Quarry.h</label>
+        <link refid="Quarry_8h"/>
+        <childnode refid="2992" relation="include">
+        </childnode>
+        <childnode refid="2993" relation="include">
+        </childnode>
+        <childnode refid="2994" relation="include">
+        </childnode>
+        <childnode refid="2995" relation="include">
+        </childnode>
+        <childnode refid="2996" relation="include">
+        </childnode>
+      </node>
+      <node id="2994">
+        <label>src/Problem/Triangle.cpp</label>
+        <link refid="Triangle_8cpp"/>
+      </node>
+      <node id="2995">
+        <label>src/SystemComponents/WaterSources/Quarry.cpp</label>
+        <link refid="Quarry_8cpp"/>
+      </node>
+      <node id="2996">
+        <label>src/Utils/Utils.cpp</label>
+        <link refid="Utils_8cpp"/>
+      </node>
+      <node id="2992">
+        <label>src/DataCollector/MasterDataCollector.cpp</label>
+        <link refid="MasterDataCollector_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classQuarry" prot="public">Quarry</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardoct<sp/>on<sp/>5/3/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_QUARRY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_QUARRY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Reservoir_8h" kindref="compound">Reservoir.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classQuarry" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classQuarry" kindref="compound">Quarry</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classReservoir" kindref="compound">Reservoir</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_diversion<sp/>=<sp/><ref refid="namespaceConstants_1a8e8b0a537619c378d03117c5ed1c3ea1" kindref="member">NON_INITIALIZED</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>diverted_flow<sp/>=<sp/><ref refid="namespaceConstants_1a8e8b0a537619c378d03117c5ed1c3ea1" kindref="member">NON_INITIALIZED</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQuarry_1a126fddda9e5deeb667a6a9dbb0533470" kindref="member">Quarry</ref>(</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref><sp/>&amp;<ref refid="classReservoir_1a2d2d9b302c13703309bb798d24136810" kindref="member">evaporation_series</ref>,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDataSeries" kindref="compound">DataSeries</ref><sp/>*<ref refid="classReservoir_1a46bd5b750963dfa9a57b247fd77ab8ff" kindref="member">storage_area_curve</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_diversion);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQuarry_1a126fddda9e5deeb667a6a9dbb0533470" kindref="member">Quarry</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity,<sp/><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref><sp/>&amp;<ref refid="classReservoir_1a2d2d9b302c13703309bb798d24136810" kindref="member">evaporation_series</ref>,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDataSeries" kindref="compound">DataSeries</ref><sp/>*<ref refid="classReservoir_1a46bd5b750963dfa9a57b247fd77ab8ff" kindref="member">storage_area_curve</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;construction_time_range,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permitting_period,<sp/><ref refid="classBond" kindref="compound">Bond</ref><sp/>&amp;bond,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_diversion);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQuarry_1a126fddda9e5deeb667a6a9dbb0533470" kindref="member">Quarry</ref>(</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref><sp/>&amp;<ref refid="classReservoir_1a2d2d9b302c13703309bb798d24136810" kindref="member">evaporation_series</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>storage_area,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_diversion);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQuarry_1a126fddda9e5deeb667a6a9dbb0533470" kindref="member">Quarry</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity,<sp/><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref><sp/>&amp;<ref refid="classReservoir_1a2d2d9b302c13703309bb798d24136810" kindref="member">evaporation_series</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>storage_area,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;construction_time_range,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permitting_period,<sp/><ref refid="classBond" kindref="compound">Bond</ref><sp/>&amp;bond,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_diversion);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQuarry_1a126fddda9e5deeb667a6a9dbb0533470" kindref="member">Quarry</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQuarry" kindref="compound">Quarry</ref><sp/>&amp;quarry,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_diversion);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQuarry" kindref="compound">Quarry</ref><sp/>&amp;<ref refid="classQuarry_1a17ba847f97bdee305ef75881cbf0ea9d" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classQuarry" kindref="compound">Quarry</ref><sp/>&amp;quarry);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classQuarry_1a6c528c6222e8e5adc134db5cafbe62e3" kindref="member">~Quarry</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classQuarry_1a6999b854a740ce92baaa610cf5b08bd9" kindref="member">applyContinuity</ref>(</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a7a69b2e9b6030f1035e6cf44d2918ee5" kindref="member">upstream_source_inflow</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1aeb5a2d2d83383a70ca20f3e94635a9c7" kindref="member">wastewater_inflow</ref>,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;demand_outflow)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classQuarry_1af5fe04fa188d399485b2b4e64381e169" kindref="member">setOnline</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_QUARRY_H</highlight></codeline>
+    </programlisting>
+    <location file="src/SystemComponents/WaterSources/Quarry.h"/>
+  </compounddef>
+</doxygen>

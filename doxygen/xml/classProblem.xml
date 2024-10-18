@@ -1,0 +1,841 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classProblem" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Problem</compoundname>
+    <derivedcompoundref refid="classPaperTestProblem" prot="public" virt="non-virtual">PaperTestProblem</derivedcompoundref>
+    <derivedcompoundref refid="classTriangle" prot="public" virt="non-virtual">Triangle</derivedcompoundref>
+    <includes refid="Problem_8h" local="no">Problem.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classProblem_1a270a5672643bfe09e52e0f24e1884136" prot="protected" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Problem::n_realizations</definition>
+        <argsstring></argsstring>
+        <name>n_realizations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="32" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1ac7513bb0ecdfa4bbb7d2ada3595d71ec" prot="protected" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Problem::n_weeks</definition>
+        <argsstring></argsstring>
+        <name>n_weeks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="33" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1a7ca15cdcbff926ddca25bdee5984ffe5" prot="protected" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Problem::solution_no</definition>
+        <argsstring></argsstring>
+        <name>solution_no</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="34" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1a3303a162d648e8ae16153b57b5b4054f" prot="protected" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Problem::n_threads</definition>
+        <argsstring></argsstring>
+        <name>n_threads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="35" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1a4ca86ba2f568d232cf0421d39acff113" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Problem::n_utilities</definition>
+        <argsstring></argsstring>
+        <name>n_utilities</name>
+        <initializer>= NON_INITIALIZED</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="36" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1ac58848a0d808cf040c3fb3676b4a236f" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Problem::io_directory</definition>
+        <argsstring></argsstring>
+        <name>io_directory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="37" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1a59444139a907aaf4c6159caed46c8118" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Problem::fname_sufix</definition>
+        <argsstring></argsstring>
+        <name>fname_sufix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="38" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1a1ff3958eef8bfb851a84ce0772104dca" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Problem::evap_inflows_suffix</definition>
+        <argsstring></argsstring>
+        <name>evap_inflows_suffix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="39" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1abc641b49a4defb0dbabafbf3f9dbca6e" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Problem::rof_tables_directory</definition>
+        <argsstring></argsstring>
+        <name>rof_tables_directory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="40" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1af9ed9265d0d2b4918bd468d717429de1" prot="protected" static="no" mutable="no">
+        <type>vector&lt; unsigned long &gt;</type>
+        <definition>vector&lt;unsigned long &gt; Problem::realizations_to_run</definition>
+        <argsstring></argsstring>
+        <name>realizations_to_run</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="42" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1a6cd1db1d587a449985d6514390ba8c96" prot="protected" static="no" mutable="no">
+        <type><ref refid="classMasterDataCollector" kindref="compound">MasterDataCollector</ref> *</type>
+        <definition>MasterDataCollector* Problem::master_data_collector</definition>
+        <argsstring></argsstring>
+        <name>master_data_collector</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="43" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1a72750ee8c8117f5ee9b190a359d6a60d" prot="protected" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; Problem::objectives</definition>
+        <argsstring></argsstring>
+        <name>objectives</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="44" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1a3372a73270ce989f5d2056cace66215b" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Problem::print_output_files</definition>
+        <argsstring></argsstring>
+        <name>print_output_files</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="45" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1a9e780729b6be5229c5bfa1e38c99cfa5" prot="protected" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long Problem::rdm_no</definition>
+        <argsstring></argsstring>
+        <name>rdm_no</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="47" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1ac5a286f34cec786a0ad56c77783a201c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Problem::import_export_rof_tables</definition>
+        <argsstring></argsstring>
+        <name>import_export_rof_tables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="48" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1a27cae146b3409021f6d5936404cd1083" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Problem::table_gen_storage_multiplier</definition>
+        <argsstring></argsstring>
+        <name>table_gen_storage_multiplier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="49" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1aa4f6db22580c8d8a941e83556f4f5208" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; Problem::utilities_rdm</definition>
+        <argsstring></argsstring>
+        <name>utilities_rdm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="50" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1ace43e5306285f0d91a199a4bd5a38922" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; Problem::water_sources_rdm</definition>
+        <argsstring></argsstring>
+        <name>water_sources_rdm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="51" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1a63d49161a5d6d98e26cd218d90a13bae" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; Problem::policies_rdm</definition>
+        <argsstring></argsstring>
+        <name>policies_rdm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="52" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classProblem_1a0a64a8c04964a326879eccccf5437c93" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt; &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;Matrix2D&lt;double&gt; &gt; &gt; Problem::rof_tables</definition>
+        <argsstring></argsstring>
+        <name>rof_tables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="53" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classProblem_1ab9750751c2d4468a3dfe5dd6573b5179" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Problem::checkAndFixInfraExpansionHighLowOrder</definition>
+        <argsstring>(vector&lt; int &gt; *order, vector&lt; double &gt; *trigger, int id_low, int id_high, double capacity_low, double capacity_high)</argsstring>
+        <name>checkAndFixInfraExpansionHighLowOrder</name>
+        <param>
+          <type>vector&lt; int &gt; *</type>
+          <declname>order</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; *</type>
+          <declname>trigger</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id_low</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id_high</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>capacity_low</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>capacity_high</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="55" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="80" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1ac157541eb885c80f2d2f23cc97a6a997" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt; int &gt; Problem::vecInfraRankToVecInt</definition>
+        <argsstring>(vector&lt; infraRank &gt; v)</argsstring>
+        <name>vecInfraRankToVecInt</name>
+        <param>
+          <type>vector&lt; <ref refid="structinfraRank" kindref="compound">infraRank</ref> &gt;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="58" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="71" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classProblem_1a41939e01b382197124fcd9f5e8c7520d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Problem::Problem</definition>
+        <argsstring>(unsigned long n_weeks)</argsstring>
+        <name>Problem</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>n_weeks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="61" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="181" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1a839a525ed01c34d57fff42583003d3e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Problem::~Problem</definition>
+        <argsstring>()</argsstring>
+        <name>~Problem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="63" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="170" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1acd924a80df4422c5199748c714e9405c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Problem::functionEvaluation</definition>
+        <argsstring>(double *vars, double *objs, double *consts)=0</argsstring>
+        <name>functionEvaluation</name>
+        <reimplementedby refid="classPaperTestProblem_1a6db78df74d40f69a750b164caaca75c7">functionEvaluation</reimplementedby>
+        <reimplementedby refid="classTriangle_1a9e95039d098fd61cce1a830b85ed7004">functionEvaluation</reimplementedby>
+        <param>
+          <type>double *</type>
+          <declname>vars</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>objs</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>consts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1a1ea4a3d52209fa3f284a4060fb6fa3ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setN_weeks</definition>
+        <argsstring>(unsigned long n_weeks)</argsstring>
+        <name>setN_weeks</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>n_weeks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="67" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1a855eaf9a98eadfab131d598b51df6d66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setSol_number</definition>
+        <argsstring>(unsigned long sol_number)</argsstring>
+        <name>setSol_number</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>sol_number</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="69" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1a188254a95b04bf4ed67e66262ea342e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setIODirectory</definition>
+        <argsstring>(const string &amp;io_directory)</argsstring>
+        <name>setIODirectory</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>io_directory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="71" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1a55da26d3bd669809b992fff823b8ef9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt; double &gt; &amp; Problem::getObjectives</definition>
+        <argsstring>() const</argsstring>
+        <name>getObjectives</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="73" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1afdbe1eb541cc11071478da57b35e21b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt; double &gt; Problem::calculateAndPrintObjectives</definition>
+        <argsstring>(bool print_files)</argsstring>
+        <name>calculateAndPrintObjectives</name>
+        <param>
+          <type>bool</type>
+          <declname>print_files</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="75" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="12" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1a98115002e741e9220f7aa6bae0cb179c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setRDMOptimization</definition>
+        <argsstring>(vector&lt; vector&lt; double &gt;&gt; &amp;utilities_rdm, vector&lt; vector&lt; double &gt;&gt; &amp;water_sources_rdm, vector&lt; vector&lt; double &gt;&gt; &amp;policies_rdm)</argsstring>
+        <name>setRDMOptimization</name>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>utilities_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>water_sources_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>policies_rdm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="77" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="116" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1abaf4b2698552702ccf709bf07ed76ca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setRDMReevaluation</definition>
+        <argsstring>(unsigned long rdm_no, vector&lt; vector&lt; double &gt;&gt; &amp;utilities_rdm, vector&lt; vector&lt; double &gt;&gt; &amp;water_sources_rdm, vector&lt; vector&lt; double &gt;&gt; &amp;policies_rdm)</argsstring>
+        <name>setRDMReevaluation</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>rdm_no</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>utilities_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>water_sources_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>policies_rdm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="80" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="124" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1ad770920d19d5276fd0e30b835abe21ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setN_threads</definition>
+        <argsstring>(unsigned long n_threads)</argsstring>
+        <name>setN_threads</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>n_threads</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="83" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="141" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1a1f055d5e57392700cab27efdd4577be9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setPrint_output_files</definition>
+        <argsstring>(bool print_output_files)</argsstring>
+        <name>setPrint_output_files</name>
+        <param>
+          <type>bool</type>
+          <declname>print_output_files</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="85" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="149" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1ae5cec2ad575abb95cf7304153c31e410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setN_realizations</definition>
+        <argsstring>(unsigned long n_realizations)</argsstring>
+        <name>setN_realizations</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>n_realizations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="87" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="153" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1afe5ddeb70b303e4971251e92a10f4828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setRealizationsToRun</definition>
+        <argsstring>(vector&lt; unsigned long &gt; &amp;realizations_to_run)</argsstring>
+        <name>setRealizationsToRun</name>
+        <param>
+          <type>vector&lt; unsigned long &gt; &amp;</type>
+          <declname>realizations_to_run</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="89" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1afb5e51664d0f340c393f7583622e99ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setEvap_inflows_suffix</definition>
+        <argsstring>(const string &amp;evap_inflows_suffix)</argsstring>
+        <name>setEvap_inflows_suffix</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>evap_inflows_suffix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="91" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="137" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1ad666ae2c231f49103593a7e03a3b58fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setFname_sufix</definition>
+        <argsstring>(const string &amp;fname_sufix)</argsstring>
+        <name>setFname_sufix</name>
+        <param>
+          <type>const string &amp;</type>
+          <declname>fname_sufix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="93" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="133" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1afce904c6b3bc58d029da4d9077efe4c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMasterDataCollector" kindref="compound">MasterDataCollector</ref> *</type>
+        <definition>MasterDataCollector * Problem::getMaster_data_collector</definition>
+        <argsstring>()</argsstring>
+        <name>getMaster_data_collector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="95" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="166" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1af87d1081eb2a8fa57fa7f2666292fee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::destroyDataCollector</definition>
+        <argsstring>()</argsstring>
+        <name>destroyDataCollector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="97" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="172" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1a77568843acf22f2ecd17a83a1f3f310a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::printTimeSeriesAndPathways</definition>
+        <argsstring>()</argsstring>
+        <name>printTimeSeriesAndPathways</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calculate objective values.</para><para>Print output files. </para>        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="99" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="27" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1aa9debdf28260fd9054f7d6d2ee516f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setRofTables</definition>
+        <argsstring>(unsigned long n_realizations, string rof_tables_directory)</argsstring>
+        <name>setRofTables</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>n_realizations</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>rof_tables_directory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read pre-computed ROF tables. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>folder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Folder containing the ROF tables. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n_realizations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of realizations. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Get number of weeks in tables </para>        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="101" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="191" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1a13b247f6699ebad04cbd5df07e681ba0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::setImport_export_rof_tables</definition>
+        <argsstring>(int import_export_rof_tables, int n_weeks, string rof_tables_directory)</argsstring>
+        <name>setImport_export_rof_tables</name>
+        <param>
+          <type>int</type>
+          <declname>import_export_rof_tables</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_weeks</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>rof_tables_directory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="103" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="278" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="classProblem_1a3604aafc0cf731fc9dfa8589ec8995ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Problem::runBootstrapRealizationThinning</definition>
+        <argsstring>(int standard_solution, int n_sets, int n_bs_samples, int threads, vector&lt; vector&lt; int &gt;&gt; &amp;realizations_to_run)</argsstring>
+        <name>runBootstrapRealizationThinning</name>
+        <param>
+          <type>int</type>
+          <declname>standard_solution</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_sets</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_bs_samples</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>threads</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; int &gt;&gt; &amp;</type>
+          <declname>realizations_to_run</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Problem/Base/Problem.h" line="105" column="1" bodyfile="src/Problem/Base/Problem.cpp" bodystart="295" bodyend="299"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="151">
+        <label>Problem</label>
+        <link refid="classProblem"/>
+      </node>
+      <node id="153">
+        <label>Triangle</label>
+        <link refid="classTriangle"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>PaperTestProblem</label>
+        <link refid="classPaperTestProblem"/>
+        <childnode refid="151" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="154">
+        <label>Problem</label>
+        <link refid="classProblem"/>
+        <childnode refid="155" relation="usage">
+          <edgelabel>master_data_collector</edgelabel>
+        </childnode>
+      </node>
+      <node id="155">
+        <label>MasterDataCollector</label>
+        <link refid="classMasterDataCollector"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/Problem/Base/Problem.h" line="30" column="1" bodyfile="src/Problem/Base/Problem.h" bodystart="30" bodyend="108"/>
+    <listofallmembers>
+      <member refid="classProblem_1afdbe1eb541cc11071478da57b35e21b0" prot="public" virt="non-virtual"><scope>Problem</scope><name>calculateAndPrintObjectives</name></member>
+      <member refid="classProblem_1ab9750751c2d4468a3dfe5dd6573b5179" prot="protected" virt="non-virtual"><scope>Problem</scope><name>checkAndFixInfraExpansionHighLowOrder</name></member>
+      <member refid="classProblem_1af87d1081eb2a8fa57fa7f2666292fee3" prot="public" virt="non-virtual"><scope>Problem</scope><name>destroyDataCollector</name></member>
+      <member refid="classProblem_1a1ff3958eef8bfb851a84ce0772104dca" prot="protected" virt="non-virtual"><scope>Problem</scope><name>evap_inflows_suffix</name></member>
+      <member refid="classProblem_1a59444139a907aaf4c6159caed46c8118" prot="protected" virt="non-virtual"><scope>Problem</scope><name>fname_sufix</name></member>
+      <member refid="classProblem_1acd924a80df4422c5199748c714e9405c" prot="public" virt="pure-virtual"><scope>Problem</scope><name>functionEvaluation</name></member>
+      <member refid="classProblem_1afce904c6b3bc58d029da4d9077efe4c9" prot="public" virt="non-virtual"><scope>Problem</scope><name>getMaster_data_collector</name></member>
+      <member refid="classProblem_1a55da26d3bd669809b992fff823b8ef9b" prot="public" virt="non-virtual"><scope>Problem</scope><name>getObjectives</name></member>
+      <member refid="classProblem_1ac5a286f34cec786a0ad56c77783a201c" prot="protected" virt="non-virtual"><scope>Problem</scope><name>import_export_rof_tables</name></member>
+      <member refid="classProblem_1ac58848a0d808cf040c3fb3676b4a236f" prot="protected" virt="non-virtual"><scope>Problem</scope><name>io_directory</name></member>
+      <member refid="classProblem_1a6cd1db1d587a449985d6514390ba8c96" prot="protected" virt="non-virtual"><scope>Problem</scope><name>master_data_collector</name></member>
+      <member refid="classProblem_1a270a5672643bfe09e52e0f24e1884136" prot="protected" virt="non-virtual"><scope>Problem</scope><name>n_realizations</name></member>
+      <member refid="classProblem_1a3303a162d648e8ae16153b57b5b4054f" prot="protected" virt="non-virtual"><scope>Problem</scope><name>n_threads</name></member>
+      <member refid="classProblem_1a4ca86ba2f568d232cf0421d39acff113" prot="protected" virt="non-virtual"><scope>Problem</scope><name>n_utilities</name></member>
+      <member refid="classProblem_1ac7513bb0ecdfa4bbb7d2ada3595d71ec" prot="protected" virt="non-virtual"><scope>Problem</scope><name>n_weeks</name></member>
+      <member refid="classProblem_1a72750ee8c8117f5ee9b190a359d6a60d" prot="protected" virt="non-virtual"><scope>Problem</scope><name>objectives</name></member>
+      <member refid="classProblem_1a63d49161a5d6d98e26cd218d90a13bae" prot="protected" virt="non-virtual"><scope>Problem</scope><name>policies_rdm</name></member>
+      <member refid="classProblem_1a3372a73270ce989f5d2056cace66215b" prot="protected" virt="non-virtual"><scope>Problem</scope><name>print_output_files</name></member>
+      <member refid="classProblem_1a77568843acf22f2ecd17a83a1f3f310a" prot="public" virt="non-virtual"><scope>Problem</scope><name>printTimeSeriesAndPathways</name></member>
+      <member refid="classProblem_1a41939e01b382197124fcd9f5e8c7520d" prot="public" virt="non-virtual"><scope>Problem</scope><name>Problem</name></member>
+      <member refid="classProblem_1a9e780729b6be5229c5bfa1e38c99cfa5" prot="protected" virt="non-virtual"><scope>Problem</scope><name>rdm_no</name></member>
+      <member refid="classProblem_1af9ed9265d0d2b4918bd468d717429de1" prot="protected" virt="non-virtual"><scope>Problem</scope><name>realizations_to_run</name></member>
+      <member refid="classProblem_1a0a64a8c04964a326879eccccf5437c93" prot="protected" virt="non-virtual"><scope>Problem</scope><name>rof_tables</name></member>
+      <member refid="classProblem_1abc641b49a4defb0dbabafbf3f9dbca6e" prot="protected" virt="non-virtual"><scope>Problem</scope><name>rof_tables_directory</name></member>
+      <member refid="classProblem_1a3604aafc0cf731fc9dfa8589ec8995ce" prot="public" virt="non-virtual"><scope>Problem</scope><name>runBootstrapRealizationThinning</name></member>
+      <member refid="classProblem_1afb5e51664d0f340c393f7583622e99ca" prot="public" virt="non-virtual"><scope>Problem</scope><name>setEvap_inflows_suffix</name></member>
+      <member refid="classProblem_1ad666ae2c231f49103593a7e03a3b58fd" prot="public" virt="non-virtual"><scope>Problem</scope><name>setFname_sufix</name></member>
+      <member refid="classProblem_1a13b247f6699ebad04cbd5df07e681ba0" prot="public" virt="non-virtual"><scope>Problem</scope><name>setImport_export_rof_tables</name></member>
+      <member refid="classProblem_1a188254a95b04bf4ed67e66262ea342e9" prot="public" virt="non-virtual"><scope>Problem</scope><name>setIODirectory</name></member>
+      <member refid="classProblem_1ae5cec2ad575abb95cf7304153c31e410" prot="public" virt="non-virtual"><scope>Problem</scope><name>setN_realizations</name></member>
+      <member refid="classProblem_1ad770920d19d5276fd0e30b835abe21ef" prot="public" virt="non-virtual"><scope>Problem</scope><name>setN_threads</name></member>
+      <member refid="classProblem_1a1ea4a3d52209fa3f284a4060fb6fa3ab" prot="public" virt="non-virtual"><scope>Problem</scope><name>setN_weeks</name></member>
+      <member refid="classProblem_1a1f055d5e57392700cab27efdd4577be9" prot="public" virt="non-virtual"><scope>Problem</scope><name>setPrint_output_files</name></member>
+      <member refid="classProblem_1a98115002e741e9220f7aa6bae0cb179c" prot="public" virt="non-virtual"><scope>Problem</scope><name>setRDMOptimization</name></member>
+      <member refid="classProblem_1abaf4b2698552702ccf709bf07ed76ca3" prot="public" virt="non-virtual"><scope>Problem</scope><name>setRDMReevaluation</name></member>
+      <member refid="classProblem_1afe5ddeb70b303e4971251e92a10f4828" prot="public" virt="non-virtual"><scope>Problem</scope><name>setRealizationsToRun</name></member>
+      <member refid="classProblem_1aa9debdf28260fd9054f7d6d2ee516f94" prot="public" virt="non-virtual"><scope>Problem</scope><name>setRofTables</name></member>
+      <member refid="classProblem_1a855eaf9a98eadfab131d598b51df6d66" prot="public" virt="non-virtual"><scope>Problem</scope><name>setSol_number</name></member>
+      <member refid="classProblem_1a7ca15cdcbff926ddca25bdee5984ffe5" prot="protected" virt="non-virtual"><scope>Problem</scope><name>solution_no</name></member>
+      <member refid="classProblem_1a27cae146b3409021f6d5936404cd1083" prot="protected" virt="non-virtual"><scope>Problem</scope><name>table_gen_storage_multiplier</name></member>
+      <member refid="classProblem_1aa4f6db22580c8d8a941e83556f4f5208" prot="protected" virt="non-virtual"><scope>Problem</scope><name>utilities_rdm</name></member>
+      <member refid="classProblem_1ac157541eb885c80f2d2f23cc97a6a997" prot="protected" virt="non-virtual"><scope>Problem</scope><name>vecInfraRankToVecInt</name></member>
+      <member refid="classProblem_1ace43e5306285f0d91a199a4bd5a38922" prot="protected" virt="non-virtual"><scope>Problem</scope><name>water_sources_rdm</name></member>
+      <member refid="classProblem_1a839a525ed01c34d57fff42583003d3e7" prot="public" virt="virtual"><scope>Problem</scope><name>~Problem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,162 @@
+\hypertarget{classTriangle}{}\section{Triangle Class Reference}
+\label{classTriangle}\index{Triangle@{Triangle}}
+
+
+{\ttfamily \#include $<$Triangle.\+h$>$}
+
+Inheritance diagram for Triangle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTriangle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTriangle_a24833bad242ddc3f671b36678dff5738}{Triangle}} (unsigned long \mbox{\hyperlink{classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec}{n\+\_\+weeks}}, int import\+\_\+export\+\_\+rof\+\_\+table)
+\item 
+\mbox{\hyperlink{classTriangle_a5199760a17454f4dc94c855a57e3a152}{$\sim$\+Triangle}} ()
+\item 
+int \mbox{\hyperlink{classTriangle_a9e95039d098fd61cce1a830b85ed7004}{function\+Evaluation}} (double $\ast$vars, double $\ast$objs, double $\ast$consts) override
+\item 
+int \mbox{\hyperlink{classTriangle_a816ff476231f6bd575c82978706f4b9a}{simulation\+Exception\+Hander}} (const std\+::exception \&e, \mbox{\hyperlink{classSimulation}{Simulation}} $\ast$s, double $\ast$objs, const double $\ast$vars)
+\item 
+void \mbox{\hyperlink{classTriangle_a045e3263a62a8a628fe5645f0323b7e4}{read\+Input\+Data}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTriangle_a24833bad242ddc3f671b36678dff5738}\label{classTriangle_a24833bad242ddc3f671b36678dff5738}} 
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\index{Triangle@{Triangle}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{Triangle()}{Triangle()}}
+{\footnotesize\ttfamily Triangle\+::\+Triangle (\begin{DoxyParamCaption}\item[{unsigned long}]{n\+\_\+weeks,  }\item[{int}]{import\+\_\+export\+\_\+rof\+\_\+table }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTriangle_a5199760a17454f4dc94c855a57e3a152}\label{classTriangle_a5199760a17454f4dc94c855a57e3a152}} 
+\index{Triangle@{Triangle}!````~Triangle@{$\sim$\+Triangle}}
+\index{````~Triangle@{$\sim$\+Triangle}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{$\sim$\+Triangle()}{~Triangle()}}
+{\footnotesize\ttfamily Triangle\+::$\sim$\+Triangle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTriangle_a9e95039d098fd61cce1a830b85ed7004}\label{classTriangle_a9e95039d098fd61cce1a830b85ed7004}} 
+\index{Triangle@{Triangle}!function\+Evaluation@{function\+Evaluation}}
+\index{function\+Evaluation@{function\+Evaluation}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{function\+Evaluation()}{functionEvaluation()}}
+{\footnotesize\ttfamily int Triangle\+::function\+Evaluation (\begin{DoxyParamCaption}\item[{double $\ast$}]{vars,  }\item[{double $\ast$}]{objs,  }\item[{double $\ast$}]{consts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Runs carolina problem. 
+\begin{DoxyParams}{Parameters}
+{\em vars} & \\
+\hline
+{\em n\+\_\+realizations} & \\
+\hline
+{\em n\+\_\+weeks} & \\
+\hline
+{\em sol\+\_\+number} & \\
+\hline
+{\em output\+\_\+directory} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000006}{Todo}}]check for solutions in which a utility does not have an allocation on Jordan Lake (or any generic lake) but still pay for joint treatment infrastructure). \end{DoxyRefDesc}
+get infrastructure construction order based on decision variables
+
+Remove small expansions being built after big expansions that would encompass the smal expansions. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Normalize Jordan Lake Allocations in case they exceed 1.
+
+Normalize West Jordan Lake W\+TP allocations.
+
+All matrices below have dimensions n\+\_\+realizations x nr\+\_\+rdm\+\_\+factors
+
+Read streamflows
+
+In case a vector containing realizations numbers to be calculated is passed, set number of realizations to number of realizations in that vector. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Create catchments and corresponding vectors
+
+Storage vs. area reservoir curves.
+
+Minimum environmental flow rules (controls)
+
+Create reservoirs and corresponding vector
+
+Jordan Lake parameters
+
+Jordan Lake parameters
+
+Bonds West Jordan Lake treatment plant
+
+West Jordan Lake treatment plant
+
+Bonds Cary treatment plant expansion
+
+Cary treatment plant expansion
+
+Water-\/source-\/utility connectivity matrix (each row corresponds to a utility and numbers are water sources I\+Ds. ~\newline
+~\newline
+~\newline
+~\newline
+ Restriction policies
+
+Transfer policy
+
+Creates simulation object depending on use (or lack thereof) R\+OF tables
+
+Calculate objectives and store them in Borg decision variables array. 
+
+Implements \mbox{\hyperlink{classProblem_acd924a80df4422c5199748c714e9405c}{Problem}}.
+
+\mbox{\Hypertarget{classTriangle_a045e3263a62a8a628fe5645f0323b7e4}\label{classTriangle_a045e3263a62a8a628fe5645f0323b7e4}} 
+\index{Triangle@{Triangle}!read\+Input\+Data@{read\+Input\+Data}}
+\index{read\+Input\+Data@{read\+Input\+Data}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{read\+Input\+Data()}{readInputData()}}
+{\footnotesize\ttfamily void Triangle\+::read\+Input\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classTriangle_a816ff476231f6bd575c82978706f4b9a}\label{classTriangle_a816ff476231f6bd575c82978706f4b9a}} 
+\index{Triangle@{Triangle}!simulation\+Exception\+Hander@{simulation\+Exception\+Hander}}
+\index{simulation\+Exception\+Hander@{simulation\+Exception\+Hander}!Triangle@{Triangle}}
+\subsubsection{\texorpdfstring{simulation\+Exception\+Hander()}{simulationExceptionHander()}}
+{\footnotesize\ttfamily int Triangle\+::simulation\+Exception\+Hander (\begin{DoxyParamCaption}\item[{const std\+::exception \&}]{e,  }\item[{\mbox{\hyperlink{classSimulation}{Simulation}} $\ast$}]{s,  }\item[{double $\ast$}]{objs,  }\item[{const double $\ast$}]{vars }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Problem/\mbox{\hyperlink{Triangle_8h}{Triangle.\+h}}\item 
+src/\+Problem/\mbox{\hyperlink{Triangle_8cpp}{Triangle.\+cpp}}\end{DoxyCompactItemize}

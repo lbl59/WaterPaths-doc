@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="AllocatedReservoirDataCollector_8cpp" kind="file" language="C++">
+    <compoundname>AllocatedReservoirDataCollector.cpp</compoundname>
+    <includes local="no">sstream</includes>
+    <includes local="no">iomanip</includes>
+    <includes refid="AllocatedReservoirDataCollector_8h" local="yes">AllocatedReservoirDataCollector.h</includes>
+    <incdepgraph>
+      <node id="880">
+        <label>src/DataCollector/AllocatedReservoirDataCollector.cpp</label>
+        <link refid="AllocatedReservoirDataCollector_8cpp"/>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+      </node>
+      <node id="896">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="897" relation="include">
+        </childnode>
+        <childnode refid="898" relation="include">
+        </childnode>
+      </node>
+      <node id="898">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="882">
+        <label>iomanip</label>
+      </node>
+      <node id="884">
+        <label>ReservoirDataCollector.h</label>
+        <link refid="ReservoirDataCollector_8h"/>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+      </node>
+      <node id="892">
+        <label>cmath</label>
+      </node>
+      <node id="897">
+        <label>stdexcept</label>
+      </node>
+      <node id="890">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="892" relation="include">
+        </childnode>
+        <childnode refid="893" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+      </node>
+      <node id="887">
+        <label>string</label>
+      </node>
+      <node id="891">
+        <label>map</label>
+      </node>
+      <node id="894">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="887" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+        <childnode refid="895" relation="include">
+        </childnode>
+      </node>
+      <node id="883">
+        <label>AllocatedReservoirDataCollector.h</label>
+        <link refid="AllocatedReservoirDataCollector_8h"/>
+        <childnode refid="884" relation="include">
+        </childnode>
+        <childnode refid="900" relation="include">
+        </childnode>
+      </node>
+      <node id="900">
+        <label>../SystemComponents/WaterSources/AllocatedReservoir.h</label>
+        <link refid="AllocatedReservoir_8h"/>
+        <childnode refid="888" relation="include">
+        </childnode>
+      </node>
+      <node id="885">
+        <label>vector</label>
+      </node>
+      <node id="889">
+        <label>../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+      </node>
+      <node id="888">
+        <label>../SystemComponents/WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="887" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+        <childnode refid="894" relation="include">
+        </childnode>
+        <childnode refid="896" relation="include">
+        </childnode>
+        <childnode refid="899" relation="include">
+        </childnode>
+      </node>
+      <node id="881">
+        <label>sstream</label>
+      </node>
+      <node id="886">
+        <label>Base/DataCollector.h</label>
+        <link refid="DataCollector_8h"/>
+        <childnode refid="887" relation="include">
+        </childnode>
+      </node>
+      <node id="899">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="889" relation="include">
+        </childnode>
+      </node>
+      <node id="895">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+      </node>
+      <node id="893">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardoct<sp/>on<sp/>8/26/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="AllocatedReservoirDataCollector_8h" kindref="compound">AllocatedReservoirDataCollector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="classAllocatedReservoirDataCollector_1a512b8604164f43d08f961e0f433678e3" kindref="member">AllocatedReservoirDataCollector::AllocatedReservoirDataCollector</ref>(<ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref><sp/>*allocated_reservoir,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>realization)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classReservoirDataCollector" kindref="compound">ReservoirDataCollector</ref>(allocated_reservoir,<sp/><ref refid="namespaceConstants_1a2769e2f1bc080457c78297402e78c8d1" kindref="member">ALLOCATED_RESERVOIR</ref>,<sp/>(7<sp/>+<sp/>(int)<sp/>allocated_reservoir-&gt;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>getAvailable_allocated_volumes().size())<sp/>*<sp/><ref refid="namespaceConstants_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>,<sp/>realization),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>allocated_reservoir(allocated_reservoir),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utilities_with_allocations</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*allocated_reservoir-&gt;getUtilities_with_allocations())<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoirDataCollector_1ae5a9aa9b2a3cffd8f5ffe983c8fcf6c8" kindref="member">AllocatedReservoirDataCollector::printTabularString</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>output<sp/>=<sp/><ref refid="classReservoirDataCollector_1a81777b029bf26be403b9f4d67f01588b" kindref="member">ReservoirDataCollector::printTabularString</ref>(week);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>out_stream;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>out_stream<sp/>&lt;&lt;<sp/>output;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>u<sp/>:<sp/>utilities_with_allocations)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_stream<sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/>setprecision(<ref refid="namespaceConstants_1a52f7a9d94123775aa42a979c4c97dc71" kindref="member">COLUMN_PRECISION</ref>)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>allocated_stored_volumes[week][u];</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out_stream.str();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoirDataCollector_1a35f8125d428e65c737ff3360ae9bd0cd" kindref="member">AllocatedReservoirDataCollector::printCompactString</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>output<sp/>=<sp/><ref refid="classReservoirDataCollector_1a0b68d7fa4a6d704350340d1ac3e8a1d2" kindref="member">ReservoirDataCollector::printCompactString</ref>(week);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>out_stream;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>out_stream<sp/>&lt;&lt;<sp/>output;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>u<sp/>:<sp/>utilities_with_allocations)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_stream<sp/>&lt;&lt;<sp/>allocated_stored_volumes[week][u]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out_stream.str();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoirDataCollector_1ae82c7a68af1dce9003cccc6da1800e28" kindref="member">AllocatedReservoirDataCollector::printTabularStringHeaderLine1</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>output<sp/>=<sp/><ref refid="classReservoirDataCollector_1a62e7c7abc34c8154b338dfbd284ed665" kindref="member">ReservoirDataCollector::printTabularStringHeaderLine1</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>out_stream;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>out_stream<sp/>&lt;&lt;<sp/>output;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>u<sp/>=<sp/>0;<sp/>u<sp/>&lt;allocated_reservoir-&gt;<ref refid="classWaterSource_1a7d6beb9fce5be21a3777fee88f045e62" kindref="member">getUtilities_with_allocations</ref>()-&gt;size();<sp/>++u)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_stream<sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Stored<sp/>V.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out_stream.str();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoirDataCollector_1a30d8c59205862822f6548472ba62e537" kindref="member">AllocatedReservoirDataCollector::printTabularStringHeaderLine2</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>output<sp/>=<sp/><ref refid="classReservoirDataCollector_1ae2f8e808c5960608e510a64c7f00ad1b" kindref="member">ReservoirDataCollector::printTabularStringHeaderLine2</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>out_stream;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>out_stream<sp/>&lt;&lt;<sp/>output;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>u<sp/>:<sp/>*(allocated_reservoir-&gt;<ref refid="classWaterSource_1a7d6beb9fce5be21a3777fee88f045e62" kindref="member">getUtilities_with_allocations</ref>()))</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_stream<sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Alloc.<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>to_string(u);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out_stream.str();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoirDataCollector_1adbedebdf593bee81447671fb8f6ef2fe" kindref="member">AllocatedReservoirDataCollector::printCompactStringHeader</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>out_stream;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>u<sp/>:<sp/>utilities_with_allocations)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>out_stream<sp/>&lt;&lt;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;alloc_&quot;</highlight><highlight class="normal"><sp/>+<sp/>to_string(u)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classReservoirDataCollector_1aa8346433f037bbca41f3c8450f7f88cf" kindref="member">ReservoirDataCollector::printCompactStringHeader</ref>()<sp/>+<sp/>out_stream.str();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoirDataCollector_1a8ef8451d2cc6eb01b205eee75ab93729" kindref="member">AllocatedReservoirDataCollector::collect_data</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classReservoirDataCollector_1a5c2e1355c40e45b409168e98245eef95" kindref="member">ReservoirDataCollector::collect_data</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>alloc_vol_vector<sp/>=<sp/>allocated_reservoir-&gt;<ref refid="classWaterSource_1a1087f5f2458803fd1d37383e303bd25f" kindref="member">getAvailable_allocated_volumes</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>allocated_stored_volumes.push_back(alloc_vol_vector);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/DataCollector/AllocatedReservoirDataCollector.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classMatrix3D" kind="class" language="C++" prot="public">
+    <compoundname>Matrix3D</compoundname>
+    <includes refid="Matrices_8h" local="no">Matrices.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMatrix3D_1af1e032d3ea19a5fc312866bd401e0f2b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Matrix3D&lt; T &gt;::di_</definition>
+        <argsstring></argsstring>
+        <name>di_</name>
+        <initializer>= NON_INITIALIZED</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="209" column="1" bodyfile="src/Utils/Matrices.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMatrix3D_1a204c91363d19e8dc16bf911dfd72b912" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Matrix3D&lt; T &gt;::dj_</definition>
+        <argsstring></argsstring>
+        <name>dj_</name>
+        <initializer>= NON_INITIALIZED</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="209" column="1" bodyfile="src/Utils/Matrices.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMatrix3D_1a9c5ce04b3a1cb28c7b19cd3b9b3646c6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Matrix3D&lt; T &gt;::dk_</definition>
+        <argsstring></argsstring>
+        <name>dk_</name>
+        <initializer>= NON_INITIALIZED</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="209" column="1" bodyfile="src/Utils/Matrices.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMatrix3D_1a94b477ac7008ab81acd18f2ee4d41d70" prot="private" static="no" mutable="no">
+        <type>unique_ptr&lt; T[]&gt;</type>
+        <definition>unique_ptr&lt;T[]&gt; Matrix3D&lt; T &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="210" column="1" bodyfile="src/Utils/Matrices.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMatrix3D_1a1589c062f12fbbb1f3681f90c20c4b78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix3D&lt; T &gt;::Matrix3D</definition>
+        <argsstring>()</argsstring>
+        <name>Matrix3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="212" column="1" bodyfile="src/Utils/Matrices.h" bodystart="267" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a6c98f06b6f87c600bd9b00f6b253b37e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix3D&lt; T &gt;::Matrix3D</definition>
+        <argsstring>(int di, int dj, int dk)</argsstring>
+        <name>Matrix3D</name>
+        <param>
+          <type>int</type>
+          <declname>di</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="214" column="1" bodyfile="src/Utils/Matrices.h" bodystart="250" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a56e772adacd4ccf54388e6c90e3d1269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; Matrix3D&lt; T &gt;::operator()</definition>
+        <argsstring>(int i, int j, int k)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="216" column="1" bodyfile="src/Utils/Matrices.h" bodystart="306" bodyend="315"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a600c100c8204bbc8f2e4ebefa55cab82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T Matrix3D&lt; T &gt;::operator()</definition>
+        <argsstring>(int di, int dj, int dk) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>di</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="217" column="1" bodyfile="src/Utils/Matrices.h" bodystart="318" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a7fda610223910a2b4dcfea445d2eb6c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix3D&lt; T &gt;::~Matrix3D</definition>
+        <argsstring>()</argsstring>
+        <name>~Matrix3D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="219" column="1" bodyfile="src/Utils/Matrices.h" bodystart="270" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1ae3fc93ef3456a36c92f8cbb7db01c3a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix3D&lt; T &gt;::Matrix3D</definition>
+        <argsstring>(const Matrix3D &amp;m)</argsstring>
+        <name>Matrix3D</name>
+        <param>
+          <type>const <ref refid="classMatrix3D" kindref="compound">Matrix3D</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="220" column="1" bodyfile="src/Utils/Matrices.h" bodystart="259" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a0e84724f089ae3478283ea81d0b866af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMatrix3D" kindref="compound">Matrix3D</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix3D&lt; T &gt; &amp; Matrix3D&lt; T &gt;::operator=</definition>
+        <argsstring>(const Matrix3D&lt; T &gt; &amp;m)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classMatrix3D" kindref="compound">Matrix3D</ref>&lt; T &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="221" column="1" bodyfile="src/Utils/Matrices.h" bodystart="273" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a10b206ad9106931f7aa46a7b4d45c851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMatrix3D" kindref="compound">Matrix3D</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix3D&lt; T &gt; &amp; Matrix3D&lt; T &gt;::operator+=</definition>
+        <argsstring>(const Matrix3D&lt; T &gt; &amp;m)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classMatrix3D" kindref="compound">Matrix3D</ref>&lt; T &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="222" column="1" bodyfile="src/Utils/Matrices.h" bodystart="285" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1ad45bff7f2159a4ba0aa4546635e8a73f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMatrix3D" kindref="compound">Matrix3D</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix3D&lt; T &gt; &amp; Matrix3D&lt; T &gt;::operator/</definition>
+        <argsstring>(const double m)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const double</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="224" column="1" bodyfile="src/Utils/Matrices.h" bodystart="297" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1ac5c77248be46bfef323f0229f6e0a59c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; T &gt;</type>
+        <definition>Matrix2D&lt; T &gt; Matrix3D&lt; T &gt;::get2D</definition>
+        <argsstring>(int ijk, char dim)</argsstring>
+        <name>get2D</name>
+        <param>
+          <type>int</type>
+          <declname>ijk</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="226" column="1" bodyfile="src/Utils/Matrices.h" bodystart="367" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a61afc3a397203f453f60772ebc10758a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix3D&lt; T &gt;::add_to_position</definition>
+        <argsstring>(int i, int j, int k, T *data, int length)</argsstring>
+        <name>add_to_position</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="228" column="1" bodyfile="src/Utils/Matrices.h" bodystart="432" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a46a7b732a44b77f6c09f72c0ae05edef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix3D&lt; T &gt;::setPartialData</definition>
+        <argsstring>(int i, int j, T *data, int length)</argsstring>
+        <name>setPartialData</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="230" column="1" bodyfile="src/Utils/Matrices.h" bodystart="340" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1ac21cf8967053b928f609b98abf1616e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * Matrix3D&lt; T &gt;::getPointerToElement</definition>
+        <argsstring>(int i, int j, int k) const</argsstring>
+        <name>getPointerToElement</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="232" column="1" bodyfile="src/Utils/Matrices.h" bodystart="427" bodyend="429"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1ac67d3ee632ccafaac86dfacdda95dfdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix3D&lt; T &gt;::reset</definition>
+        <argsstring>(T value)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="234" column="1" bodyfile="src/Utils/Matrices.h" bodystart="352" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1abc1d3451a2fb3cce0bec1d1e33097b1e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix3D&lt; T &gt;::print</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>print</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="236" column="1" bodyfile="src/Utils/Matrices.h" bodystart="357" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a056c035f4997b14c2a3e2b8ebee5142c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix3D&lt; T &gt;::setData</definition>
+        <argsstring>(T *data, int length)</argsstring>
+        <name>setData</name>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="238" column="1" bodyfile="src/Utils/Matrices.h" bodystart="330" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1af02576e685de872ba1b75014d9a609c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Matrix3D&lt; T &gt;::get_i</definition>
+        <argsstring>() const</argsstring>
+        <name>get_i</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="240" column="1" bodyfile="src/Utils/Matrices.h" bodystart="412" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a083e3f136a0108aad991e194b078db7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Matrix3D&lt; T &gt;::get_j</definition>
+        <argsstring>() const</argsstring>
+        <name>get_j</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="242" column="1" bodyfile="src/Utils/Matrices.h" bodystart="417" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a35fad9c3c81914e0ef5ed40ceda5d324" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Matrix3D&lt; T &gt;::get_k</definition>
+        <argsstring>() const</argsstring>
+        <name>get_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="244" column="1" bodyfile="src/Utils/Matrices.h" bodystart="422" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a6f1e6328bac16786a4bfad6f107db641" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Matrix3D&lt; T &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/Matrices.h" line="246" column="1" bodyfile="src/Utils/Matrices.h" bodystart="347" bodyend="349"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Utils/Matrices.h" line="207" column="1" bodyfile="src/Utils/Matrices.h" bodystart="207" bodyend="247"/>
+    <listofallmembers>
+      <member refid="classMatrix3D_1a61afc3a397203f453f60772ebc10758a" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>add_to_position</name></member>
+      <member refid="classMatrix3D_1a94b477ac7008ab81acd18f2ee4d41d70" prot="private" virt="non-virtual"><scope>Matrix3D</scope><name>data_</name></member>
+      <member refid="classMatrix3D_1af1e032d3ea19a5fc312866bd401e0f2b" prot="private" virt="non-virtual"><scope>Matrix3D</scope><name>di_</name></member>
+      <member refid="classMatrix3D_1a204c91363d19e8dc16bf911dfd72b912" prot="private" virt="non-virtual"><scope>Matrix3D</scope><name>dj_</name></member>
+      <member refid="classMatrix3D_1a9c5ce04b3a1cb28c7b19cd3b9b3646c6" prot="private" virt="non-virtual"><scope>Matrix3D</scope><name>dk_</name></member>
+      <member refid="classMatrix3D_1a6f1e6328bac16786a4bfad6f107db641" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>empty</name></member>
+      <member refid="classMatrix3D_1ac5c77248be46bfef323f0229f6e0a59c" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>get2D</name></member>
+      <member refid="classMatrix3D_1af02576e685de872ba1b75014d9a609c9" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>get_i</name></member>
+      <member refid="classMatrix3D_1a083e3f136a0108aad991e194b078db7f" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>get_j</name></member>
+      <member refid="classMatrix3D_1a35fad9c3c81914e0ef5ed40ceda5d324" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>get_k</name></member>
+      <member refid="classMatrix3D_1ac21cf8967053b928f609b98abf1616e2" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>getPointerToElement</name></member>
+      <member refid="classMatrix3D_1a1589c062f12fbbb1f3681f90c20c4b78" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>Matrix3D</name></member>
+      <member refid="classMatrix3D_1a6c98f06b6f87c600bd9b00f6b253b37e" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>Matrix3D</name></member>
+      <member refid="classMatrix3D_1ae3fc93ef3456a36c92f8cbb7db01c3a9" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>Matrix3D</name></member>
+      <member refid="classMatrix3D_1a56e772adacd4ccf54388e6c90e3d1269" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>operator()</name></member>
+      <member refid="classMatrix3D_1a600c100c8204bbc8f2e4ebefa55cab82" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>operator()</name></member>
+      <member refid="classMatrix3D_1a10b206ad9106931f7aa46a7b4d45c851" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>operator+=</name></member>
+      <member refid="classMatrix3D_1ad45bff7f2159a4ba0aa4546635e8a73f" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>operator/</name></member>
+      <member refid="classMatrix3D_1a0e84724f089ae3478283ea81d0b866af" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>operator=</name></member>
+      <member refid="classMatrix3D_1abc1d3451a2fb3cce0bec1d1e33097b1e" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>print</name></member>
+      <member refid="classMatrix3D_1ac67d3ee632ccafaac86dfacdda95dfdf" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>reset</name></member>
+      <member refid="classMatrix3D_1a056c035f4997b14c2a3e2b8ebee5142c" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>setData</name></member>
+      <member refid="classMatrix3D_1a46a7b732a44b77f6c09f72c0ae05edef" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>setPartialData</name></member>
+      <member refid="classMatrix3D_1a7fda610223910a2b4dcfea445d2eb6c7" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>~Matrix3D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
