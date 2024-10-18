@@ -957,7 +957,7 @@ int Triangle::functionEvaluation(double *vars, double *objs, double *consts) {
         drought_mitigation_policies.push_back(&in);
 
         /// Creates simulation object depending on use (or lack thereof) ROF tables
-        double start_time = omp_get_wtime();
+        //double start_time = omp_get_wtime();
         if (import_export_rof_tables == EXPORT_ROF_TABLES) {
             s = new Simulation(water_sources,
         	     g,
@@ -1005,7 +1005,7 @@ int Triangle::functionEvaluation(double *vars, double *objs, double *consts) {
             //realization_start = omp_get_wtime();
             this->master_data_collector = s->runFullSimulation(n_threads, nullptr);
         }
-        double end_time = omp_get_wtime();
+        //double end_time = omp_get_wtime();
 //	printf("Function evaluation time: %f s\n", end_time - start_time);
 
         //double realization_end = omp_get_wtime();

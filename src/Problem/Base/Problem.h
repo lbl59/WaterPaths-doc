@@ -27,6 +27,12 @@ struct by_xreal {
     }
 };
 
+/**
+ * @brief The base class for the optimization problem.
+ * 
+ * This class is the base class for the optimization problem. It contains the basic structure for the optimization problem.
+ * 
+ */
 class Problem {
 protected:
     unsigned long n_realizations;

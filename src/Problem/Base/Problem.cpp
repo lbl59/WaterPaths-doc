@@ -9,6 +9,13 @@
 #include "Problem.h"
 #include "../../Utils/Utils.h"
 
+/**
+ * @brief Calculates and prints the objective function values.
+ * 
+ * @memberof Problem
+ * @param print_files  Whether to print output files.
+ * @return vector<double>  The objective values.
+ */
 vector<double> Problem::calculateAndPrintObjectives(bool print_files) {
     if (this->master_data_collector != nullptr) {
         if (print_files) {
@@ -24,6 +31,12 @@ vector<double> Problem::calculateAndPrintObjectives(bool print_files) {
     }
 }
 
+/**
+ * @brief Calculates and prints time series and infrastructure pathways.
+ * 
+ * @memberof Problem
+ * 
+ */
 void Problem::printTimeSeriesAndPathways() {
     /// Calculate objective values.
     if (this->master_data_collector != nullptr) {
@@ -68,6 +81,13 @@ void Problem::printTimeSeriesAndPathways() {
 
 }
 
+/**
+ * @brief Transforsm the vector of infraRank to a vector of integers.
+ * 
+ * @memberof Problem
+ * @param v The vector of infraRank.
+ * @return vector<int> 
+ */
 vector<int> Problem::vecInfraRankToVecInt(vector<infraRank> v) {
     vector<int> sorted;
     for (infraRank ir : v) {
@@ -77,6 +97,19 @@ vector<int> Problem::vecInfraRankToVecInt(vector<infraRank> v) {
     return sorted;
 }
 
+/**
+ * @brief Checks if the order of infrastructure expansion is correct and fixes it if necessary.
+ * 
+ * @memberof Problem
+ * @param order The order of infrastructure expansion.
+ * @param triggers The triggers for infrastructure expansion.
+ * @param id_low The ID of the low order infrastructure.
+ * @param id_high The ID of the high order infrastructure.
+ * @param capacity_low The capacity of the low order infrastructure.
+ * @param capacity_high The capacity of the high order infrastructure.
+ * 
+ * @return double The capacity of the high order infrastructure.
+ */
 double Problem::checkAndFixInfraExpansionHighLowOrder(
         vector<int> *order, vector<double> *triggers, int id_low,
         int id_high, double capacity_low, double capacity_high) {
@@ -100,19 +133,40 @@ double Problem::checkAndFixInfraExpansionHighLowOrder(
     return capacity_high;
 }
 
-
+/**
+ * @brief Sets the number of weeks in the simulation time horizon
+ * @memberof Problem
+ * @param n_weeks 
+ */
 void Problem::setN_weeks(unsigned long n_weeks) {
     Problem::n_weeks = n_weeks;
 }
 
+/**
+ * @brief Sets the solution number.
+ * @memberof Problem
+ * @param sol_number 
+ */
 void Problem::setSol_number(unsigned long sol_number) {
     Problem::solution_no = sol_number;
 }
 
+/**
+ * @brief Sets the input/output directory.
+ * @memberof Problem
+ * @param io_directory 
+ */
 void Problem::setIODirectory(const string &io_directory) {
     this->io_directory = io_directory;
 }
 
+/**
+ * @brief Sets the current optimization DU SOW .
+ * @memberof Problem
+ * @param utilities_rdm DU multipliers associated with the utilities.
+ * @param water_sources_rdm Water sources multipliers associated with the water sources.
+ * @param policies_rdm Policies multipliers associated with the policies.
+ */
 void Problem::setRDMOptimization(vector<vector<double>> &utilities_rdm,
                                  vector<vector<double>> &water_sources_rdm,
                                  vector<vector<double>> &policies_rdm) {
@@ -121,6 +175,14 @@ void Problem::setRDMOptimization(vector<vector<double>> &utilities_rdm,
     this->policies_rdm = policies_rdm;
 }
 
+/**
+ * @brief Sets the current reevaluation DU SOW.
+ * @memberof Problem
+ * @param rdm_no The RDM number.
+ * @param utilities_rdm DU multipliers associated with the utilities.
+ * @param water_sources_rdm Water sources multipliers associated with the water sources.
+ * @param policies_rdm Policies multipliers associated with the policies.
+ */
 void Problem::setRDMReevaluation(unsigned long rdm_no, vector<vector<double>> &utilities_rdm,
                                  vector<vector<double>> &water_sources_rdm,
                                  vector<vector<double>> &policies_rdm) {
@@ -130,26 +192,62 @@ void Problem::setRDMReevaluation(unsigned long rdm_no, vector<vector<double>> &u
     this->policies_rdm = policies_rdm;
 }
 
+/**
+ * @brief Sets the suffix to be added to the inflows and evaporation files.
+ * @memberof Problem  
+ * 
+ * @param fname_sufix 
+ */
 void Problem::setFname_sufix(const string &fname_sufix) {
     Problem::fname_sufix = fname_sufix;
 }
 
+/**
+ * @brief Sets the suffix to be added to the inflows and evaporation files.
+ * @memberof Problem
+ * 
+ * @param evap_inflows_suffix 
+ */
 void Problem::setEvap_inflows_suffix(const string &evap_inflows_suffix) {
     Problem::evap_inflows_suffix = evap_inflows_suffix;
 }
 
+/**
+ * @brief Sets the number of threads to be used in the simulation.
+ * @memberof Problem
+ * 
+ * @param n_threads 
+ */
 void Problem::setN_threads(unsigned long n_threads) {
     Problem::n_threads = n_threads;
 }
 
+/**
+ * @brief Gets the objectives.
+ * @memberof Problem
+ * 
+ * @return const vector<double>& 
+ */
 const vector<double> &Problem::getObjectives() const {
     return objectives;
 }
 
+/**
+ * @brief Sets whether to print output files.
+ * @memberof Problem
+ * 
+ * @param print_output_files 
+ */
 void Problem::setPrint_output_files(bool print_output_files) {
     Problem::print_output_files = print_output_files;
 }
 
+/**
+ * @brief Sets the number of realizations.
+ * @memberof Problem
+ * 
+ * @param n_realizations 
+ */
 void Problem::setN_realizations(unsigned long n_realizations) {
     Problem::n_realizations = n_realizations;
 
@@ -159,16 +257,38 @@ void Problem::setN_realizations(unsigned long n_realizations) {
     }
 }
 
+/**
+ * @brief Sets the realizations to be run.
+ * @memberof Problem
+ * 
+ * @param realizations_to_run 
+ */
 void Problem::setRealizationsToRun(vector<unsigned long> &realizations_to_run) {
     this->realizations_to_run = realizations_to_run;
 }
 
+/**
+ * @brief Gets the master data collector.
+ * @memberof Problem
+ * 
+ * @return MasterDataCollector* 
+ */
 MasterDataCollector *Problem::getMaster_data_collector() {
     return master_data_collector;
 }
 
+/**
+ * @brief Destroys the data collector.
+ * @memberof Problem
+ * 
+ */
 Problem::~Problem() {}
 
+/**
+ * @brief Destroys the data collector.
+ * @memberof Problem
+ * 
+ */
 void Problem::destroyDataCollector() {
     if (master_data_collector != nullptr) {
         delete master_data_collector;
@@ -178,6 +298,12 @@ void Problem::destroyDataCollector() {
     }
 }
 
+/**
+ * @brief Creates a new problem.
+ * @memberof Problem
+ * 
+ * @param n_weeks 
+ */
 Problem::Problem(unsigned long n_weeks) : n_weeks(n_weeks) {
     Reservoir::unsetSeed();
 }
@@ -274,7 +400,14 @@ Problem::setRofTables(unsigned long n_realizations, string rof_tables_directory)
     //printf("Loading tables took %f time.\n", omp_get_wtime() - start_time);
 }
 
-
+/**
+ * @brief Sets the import/export ROF tables.
+ * @memberof Problem
+ * 
+ * @param import_export_rof_tables 
+ * @param n_weeks 
+ * @param rof_tables_directory 
+ */
 void Problem::setImport_export_rof_tables(int import_export_rof_tables, int n_weeks, string rof_tables_directory) {
     if (std::abs(import_export_rof_tables) > 1)
         throw invalid_argument("Import/export ROF tables can be assigned as:\n"
@@ -292,6 +425,16 @@ void Problem::setImport_export_rof_tables(int import_export_rof_tables, int n_we
     }
 }
 
+/**
+ * @brief Runs the bootstrap analysis.
+ * @memberof Problem
+ * 
+ * @param standard_solution 
+ * @param n_sets 
+ * @param n_bs_samples 
+ * @param threads 
+ * @param realizations_to_run 
+ */
 void Problem::runBootstrapRealizationThinning(int standard_solution, int n_sets, int n_bs_samples,
                                               int threads, vector<vector<int>> &realizations_to_run) {
     master_data_collector->setOutputDirectory(io_directory);

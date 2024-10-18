@@ -36,6 +36,14 @@ void print_decision_vars(double *vars) {
     sol_out.flush();
 }
 
+/**
+ * @brief  This function is called by Borg to evaluate the objective functions and constraints.
+ * 
+ * @param vars The decision variables.  
+ * @param objs The objective functions. 
+ * @param consts The constraints.
+ * 
+ */
 void eval(double *vars, double *objs, double *consts) {
     try {
 //        print_decision_vars(vars);
@@ -357,7 +365,7 @@ int main(int argc, char *argv[]) {
 
             problem_ptr->destroyDataCollector();
         } else {
-            double time_0 = omp_get_wtime();
+            //double time_0 = omp_get_wtime();
             ofstream objs_file;
             string file_name = system_io + "output" + BAR + "Objectives" + (rdm_no == -1 ? "" : "_RDM" + to_string(rdm_no)) +
                                "_sols" + to_string(first_solution) + "_to_" + to_string(last_solution) + ".csv";
@@ -381,7 +389,7 @@ int main(int argc, char *argv[]) {
                 objs_file << line << endl;
             }
             objs_file.close();
-            printf("Time to simulate %d solutions: %f s", last_solution - first_solution, omp_get_wtime() - time_0);
+            //printf("Time to simulate %d solutions: %f s", last_solution - first_solution, omp_get_wtime() - time_0);
         }
 
         return 0;
