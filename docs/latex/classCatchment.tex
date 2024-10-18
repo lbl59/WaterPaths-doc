@@ -1,0 +1,157 @@
+\hypertarget{classCatchment}{}\section{Catchment Class Reference}
+\label{classCatchment}\index{Catchment@{Catchment}}
+
+
+{\ttfamily \#include $<$Catchment.\+h$>$}
+
+Inheritance diagram for Catchment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCatchment}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCatchment_aafdee6ee868a8892314672abb119e60f_aafdee6ee868a8892314672abb119e60f}{Catchment}} (vector$<$ vector$<$ double $>$$>$ $\ast$\mbox{\hyperlink{classCatchment_a579ccda86831f286c19c76354e7125c3_a579ccda86831f286c19c76354e7125c3}{streamflows\+\_\+all}}, int \mbox{\hyperlink{classCatchment_a2d4994220f63b876348b4ce4892bc6d3_a2d4994220f63b876348b4ce4892bc6d3}{series\+\_\+length}})
+\item 
+\mbox{\hyperlink{classCatchment_ae311c4b2d857a8b5abc01f5317b04df2_ae311c4b2d857a8b5abc01f5317b04df2}{Catchment}} (const \mbox{\hyperlink{classCatchment}{Catchment}} \&catchment)
+\item 
+virtual \mbox{\hyperlink{classCatchment_a7c8073fc1dd2e2fa9fa8bfc68ce120bd_a7c8073fc1dd2e2fa9fa8bfc68ce120bd}{$\sim$\+Catchment}} ()
+\item 
+\mbox{\hyperlink{classCatchment}{Catchment}} \& \mbox{\hyperlink{classCatchment_a66d0f20f34893ea2df589e5cbce31fc4_a66d0f20f34893ea2df589e5cbce31fc4}{operator=}} (const \mbox{\hyperlink{classCatchment}{Catchment}} \&catchment)
+\item 
+double \mbox{\hyperlink{classCatchment_af4e8206ffab5c901e5e4cdd6136f73a1_af4e8206ffab5c901e5e4cdd6136f73a1}{get\+Streamflow}} (int week)
+\item 
+virtual void \mbox{\hyperlink{classCatchment_affb9042c5854a76efd864ce87d7d1877_affb9042c5854a76efd864ce87d7d1877}{set\+Realization}} (unsigned long r, vector$<$ double $>$ \&rdm\+\_\+factors)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ double $>$ $>$ $\ast$ \mbox{\hyperlink{classCatchment_a579ccda86831f286c19c76354e7125c3_a579ccda86831f286c19c76354e7125c3}{streamflows\+\_\+all}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classCatchment_aaf04c295ecd6b666fa1439d3d5bc072a_aaf04c295ecd6b666fa1439d3d5bc072a}{streamflows\+\_\+realization}}
+\item 
+int \mbox{\hyperlink{classCatchment_a2d4994220f63b876348b4ce4892bc6d3_a2d4994220f63b876348b4ce4892bc6d3}{series\+\_\+length}}
+\item 
+bool \mbox{\hyperlink{classCatchment_a472ff6892f90d94b8c4dba53c462dedf_a472ff6892f90d94b8c4dba53c462dedf}{parent}} = true
+\item 
+int \mbox{\hyperlink{classCatchment_a20548a9d03f0d39f297cb15b3c0433ad_a20548a9d03f0d39f297cb15b3c0433ad}{delta\+\_\+week}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCatchment_aafdee6ee868a8892314672abb119e60f_aafdee6ee868a8892314672abb119e60f}\label{classCatchment_aafdee6ee868a8892314672abb119e60f_aafdee6ee868a8892314672abb119e60f}} 
+\index{Catchment@{Catchment}!Catchment@{Catchment}}
+\index{Catchment@{Catchment}!Catchment@{Catchment}}
+\subsubsection{\texorpdfstring{Catchment()}{Catchment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Catchment\+::\+Catchment (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ double $>$$>$ $\ast$}]{streamflows\+\_\+all,  }\item[{int}]{series\+\_\+length }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classCatchment_ae311c4b2d857a8b5abc01f5317b04df2_ae311c4b2d857a8b5abc01f5317b04df2}\label{classCatchment_ae311c4b2d857a8b5abc01f5317b04df2_ae311c4b2d857a8b5abc01f5317b04df2}} 
+\index{Catchment@{Catchment}!Catchment@{Catchment}}
+\index{Catchment@{Catchment}!Catchment@{Catchment}}
+\subsubsection{\texorpdfstring{Catchment()}{Catchment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Catchment\+::\+Catchment (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCatchment}{Catchment}} \&}]{catchment }\end{DoxyParamCaption})}
+
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+{\em catchment} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCatchment_a7c8073fc1dd2e2fa9fa8bfc68ce120bd_a7c8073fc1dd2e2fa9fa8bfc68ce120bd}\label{classCatchment_a7c8073fc1dd2e2fa9fa8bfc68ce120bd_a7c8073fc1dd2e2fa9fa8bfc68ce120bd}} 
+\index{Catchment@{Catchment}!````~Catchment@{$\sim$\+Catchment}}
+\index{````~Catchment@{$\sim$\+Catchment}!Catchment@{Catchment}}
+\subsubsection{\texorpdfstring{$\sim$\+Catchment()}{~Catchment()}}
+{\footnotesize\ttfamily Catchment\+::$\sim$\+Catchment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classCatchment_af4e8206ffab5c901e5e4cdd6136f73a1_af4e8206ffab5c901e5e4cdd6136f73a1}\label{classCatchment_af4e8206ffab5c901e5e4cdd6136f73a1_af4e8206ffab5c901e5e4cdd6136f73a1}} 
+\index{Catchment@{Catchment}!get\+Streamflow@{get\+Streamflow}}
+\index{get\+Streamflow@{get\+Streamflow}!Catchment@{Catchment}}
+\subsubsection{\texorpdfstring{get\+Streamflow()}{getStreamflow()}}
+{\footnotesize\ttfamily double Catchment\+::get\+Streamflow (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})}
+
+Get streamflow for a given week. This function assures that the number of past inflows used for R\+OF calculations are reserved in the beginning of the time series for R\+OF calculations. 
+\begin{DoxyParams}{Parameters}
+{\em week} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCatchment_a66d0f20f34893ea2df589e5cbce31fc4_a66d0f20f34893ea2df589e5cbce31fc4}\label{classCatchment_a66d0f20f34893ea2df589e5cbce31fc4_a66d0f20f34893ea2df589e5cbce31fc4}} 
+\index{Catchment@{Catchment}!operator=@{operator=}}
+\index{operator=@{operator=}!Catchment@{Catchment}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCatchment}{Catchment}} \& Catchment\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCatchment}{Catchment}} \&}]{catchment }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+Copy assignment operator. 
+\begin{DoxyParams}{Parameters}
+{\em catchment} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCatchment_affb9042c5854a76efd864ce87d7d1877_affb9042c5854a76efd864ce87d7d1877}\label{classCatchment_affb9042c5854a76efd864ce87d7d1877_affb9042c5854a76efd864ce87d7d1877}} 
+\index{Catchment@{Catchment}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Catchment@{Catchment}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily void Catchment\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{r,  }\item[{vector$<$ double $>$ \&}]{rdm\+\_\+factors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get time series corresponding to realization index and eliminate reference to comprehensive streamflow data set. 
+\begin{DoxyParams}{Parameters}
+{\em r} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classEvaporationSeries_a4985ac4c81ec111657861e5750b24c0e_a4985ac4c81ec111657861e5750b24c0e}{Evaporation\+Series}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classCatchment_a20548a9d03f0d39f297cb15b3c0433ad_a20548a9d03f0d39f297cb15b3c0433ad}\label{classCatchment_a20548a9d03f0d39f297cb15b3c0433ad_a20548a9d03f0d39f297cb15b3c0433ad}} 
+\index{Catchment@{Catchment}!delta\+\_\+week@{delta\+\_\+week}}
+\index{delta\+\_\+week@{delta\+\_\+week}!Catchment@{Catchment}}
+\subsubsection{\texorpdfstring{delta\+\_\+week}{delta\_week}}
+{\footnotesize\ttfamily int Catchment\+::delta\+\_\+week\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= (int) std::round(
+            \mbox{\hyperlink{namespaceConstants_a19e84af3cbc6e1318beb22408c2a1f2f_a19e84af3cbc6e1318beb22408c2a1f2f}{Constants::WEEKS\_IN\_YEAR}} * 
+      \mbox{\hyperlink{namespaceConstants_ad6b1922ee031afa4b93176968d060fdf_ad6b1922ee031afa4b93176968d060fdf}{Constants::NUMBER\_REALIZATIONS\_ROF}})
+\end{DoxyCode}
+\mbox{\Hypertarget{classCatchment_a472ff6892f90d94b8c4dba53c462dedf_a472ff6892f90d94b8c4dba53c462dedf}\label{classCatchment_a472ff6892f90d94b8c4dba53c462dedf_a472ff6892f90d94b8c4dba53c462dedf}} 
+\index{Catchment@{Catchment}!parent@{parent}}
+\index{parent@{parent}!Catchment@{Catchment}}
+\subsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily bool Catchment\+::parent = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCatchment_a2d4994220f63b876348b4ce4892bc6d3_a2d4994220f63b876348b4ce4892bc6d3}\label{classCatchment_a2d4994220f63b876348b4ce4892bc6d3_a2d4994220f63b876348b4ce4892bc6d3}} 
+\index{Catchment@{Catchment}!series\+\_\+length@{series\+\_\+length}}
+\index{series\+\_\+length@{series\+\_\+length}!Catchment@{Catchment}}
+\subsubsection{\texorpdfstring{series\+\_\+length}{series\_length}}
+{\footnotesize\ttfamily int Catchment\+::series\+\_\+length\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCatchment_a579ccda86831f286c19c76354e7125c3_a579ccda86831f286c19c76354e7125c3}\label{classCatchment_a579ccda86831f286c19c76354e7125c3_a579ccda86831f286c19c76354e7125c3}} 
+\index{Catchment@{Catchment}!streamflows\+\_\+all@{streamflows\+\_\+all}}
+\index{streamflows\+\_\+all@{streamflows\+\_\+all}!Catchment@{Catchment}}
+\subsubsection{\texorpdfstring{streamflows\+\_\+all}{streamflows\_all}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$$\ast$ Catchment\+::streamflows\+\_\+all\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classCatchment_aaf04c295ecd6b666fa1439d3d5bc072a_aaf04c295ecd6b666fa1439d3d5bc072a}\label{classCatchment_aaf04c295ecd6b666fa1439d3d5bc072a_aaf04c295ecd6b666fa1439d3d5bc072a}} 
+\index{Catchment@{Catchment}!streamflows\+\_\+realization@{streamflows\+\_\+realization}}
+\index{streamflows\+\_\+realization@{streamflows\+\_\+realization}!Catchment@{Catchment}}
+\subsubsection{\texorpdfstring{streamflows\+\_\+realization}{streamflows\_realization}}
+{\footnotesize\ttfamily vector$<$double$>$ Catchment\+::streamflows\+\_\+realization\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+System\+Components/\mbox{\hyperlink{Catchment_8h}{Catchment.\+h}}\item 
+src/\+System\+Components/\mbox{\hyperlink{Catchment_8cpp}{Catchment.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="QuaryDataCollector_8cpp" kind="file" language="C++">
+    <compoundname>QuaryDataCollector.cpp</compoundname>
+    <includes refid="QuaryDataCollector_8h" local="yes">QuaryDataCollector.h</includes>
+    <incdepgraph>
+      <node id="1128">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1129" relation="include">
+        </childnode>
+        <childnode refid="1130" relation="include">
+        </childnode>
+      </node>
+      <node id="1130">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="1116">
+        <label>ReservoirDataCollector.h</label>
+        <link refid="ReservoirDataCollector_8h"/>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+        <childnode refid="1120" relation="include">
+        </childnode>
+      </node>
+      <node id="1124">
+        <label>cmath</label>
+      </node>
+      <node id="1129">
+        <label>stdexcept</label>
+      </node>
+      <node id="1122">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1125" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+      </node>
+      <node id="1119">
+        <label>string</label>
+      </node>
+      <node id="1123">
+        <label>map</label>
+      </node>
+      <node id="1126">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+        <childnode refid="1127" relation="include">
+        </childnode>
+      </node>
+      <node id="1115">
+        <label>QuaryDataCollector.h</label>
+        <link refid="QuaryDataCollector_8h"/>
+        <childnode refid="1116" relation="include">
+        </childnode>
+      </node>
+      <node id="1117">
+        <label>vector</label>
+      </node>
+      <node id="1121">
+        <label>../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+      </node>
+      <node id="1120">
+        <label>../SystemComponents/WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="1119" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+        <childnode refid="1126" relation="include">
+        </childnode>
+        <childnode refid="1128" relation="include">
+        </childnode>
+        <childnode refid="1131" relation="include">
+        </childnode>
+      </node>
+      <node id="1114">
+        <label>src/DataCollector/QuaryDataCollector.cpp</label>
+        <link refid="QuaryDataCollector_8cpp"/>
+        <childnode refid="1115" relation="include">
+        </childnode>
+      </node>
+      <node id="1118">
+        <label>Base/DataCollector.h</label>
+        <link refid="DataCollector_8h"/>
+        <childnode refid="1119" relation="include">
+        </childnode>
+      </node>
+      <node id="1131">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1121" relation="include">
+        </childnode>
+      </node>
+      <node id="1127">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="1117" relation="include">
+        </childnode>
+        <childnode refid="1122" relation="include">
+        </childnode>
+      </node>
+      <node id="1125">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardoct<sp/>on<sp/>8/26/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="QuaryDataCollector_8h" kindref="compound">QuaryDataCollector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="classQuaryDataCollector_af2f534feeca2a37104309a595d064cbd_1af2f534feeca2a37104309a595d064cbd" kindref="member">QuaryDataCollector::QuaryDataCollector</ref>(<ref refid="classReservoir" kindref="compound">Reservoir</ref><sp/>*reservoir,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>realization)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classReservoirDataCollector" kindref="compound">ReservoirDataCollector</ref>(reservoir,<sp/><ref refid="namespaceConstants_ac5f85f1f073e01d6d42ac8b19fc73f1e_1ac5f85f1f073e01d6d42ac8b19fc73f1e" kindref="member">QUARRY</ref>,<sp/>7<sp/>*<sp/><ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>,<sp/>realization)<sp/>{}</highlight></codeline>
+    </programlisting>
+    <location file="src/DataCollector/QuaryDataCollector.cpp"/>
+  </compounddef>
+</doxygen>

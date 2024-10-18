@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="FallsLakeMinEnvFlowControl_8cpp" kind="file" language="C++">
+    <compoundname>FallsLakeMinEnvFlowControl.cpp</compoundname>
+    <includes refid="FallsLakeMinEnvFlowControl_8h" local="yes">FallsLakeMinEnvFlowControl.h</includes>
+    <incdepgraph>
+      <node id="435">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+      </node>
+      <node id="437">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="422">
+        <label>../Base/MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+      </node>
+      <node id="429">
+        <label>cmath</label>
+      </node>
+      <node id="436">
+        <label>stdexcept</label>
+      </node>
+      <node id="427">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+      </node>
+      <node id="439">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>string</label>
+      </node>
+      <node id="421">
+        <label>FallsLakeMinEnvFlowControl.h</label>
+        <link refid="FallsLakeMinEnvFlowControl_8h"/>
+        <childnode refid="422" relation="include">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>map</label>
+      </node>
+      <node id="440">
+        <label>InfrastructureManager.h</label>
+        <link refid="InfrastructureManager_8h"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+      </node>
+      <node id="423">
+        <label>../../SystemComponents/WaterSources/Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>../../SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>vector</label>
+      </node>
+      <node id="425">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>../WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>src/Controls/Custom/FallsLakeMinEnvFlowControl.cpp</label>
+        <link refid="FallsLakeMinEnvFlowControl_8cpp"/>
+        <childnode refid="421" relation="include">
+        </childnode>
+      </node>
+      <node id="438">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+      </node>
+      <node id="431">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+      </node>
+      <node id="430">
+        <label>cstring</label>
+      </node>
+      <node id="433">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bct52<sp/>on<sp/>7/3/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="FallsLakeMinEnvFlowControl_8h" kindref="compound">FallsLakeMinEnvFlowControl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="classFallsLakeMinEnvFlowControl_a9cef248e2fd8a194c92454a79398a6a6_1a9cef248e2fd8a194c92454a79398a6a6" kindref="member">FallsLakeMinEnvFlowControl::FallsLakeMinEnvFlowControl</ref>(</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>water_source_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>neuse_river_intake_id,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>week_interval,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>base_min_env_flows,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>base_gage_flows,<sp/><ref refid="classCatchment" kindref="compound">Catchment</ref><sp/>&amp;crabtree)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref>(water_source_id,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;(1,<sp/>neuse_river_intake_id),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;(),</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceConstants_a9ced0b193590ae665ccefc280837464d_1a9ced0b193590ae665ccefc280837464d" kindref="member">FALLS_CONTROLS</ref>),</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>week_interval(week_interval),</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base_min_env_flows(base_min_env_flows),</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base_min_gage_flows(base_gage_flows),<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>neuse_river_intake_id(neuse_river_intake_id),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crabtree(crabtree)<sp/>{}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="classFallsLakeMinEnvFlowControl_a747aefedd1e590007206ef08145be351_1a747aefedd1e590007206ef08145be351" kindref="member">FallsLakeMinEnvFlowControl::~FallsLakeMinEnvFlowControl</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="classFallsLakeMinEnvFlowControl_a9cef248e2fd8a194c92454a79398a6a6_1a9cef248e2fd8a194c92454a79398a6a6" kindref="member">FallsLakeMinEnvFlowControl::FallsLakeMinEnvFlowControl</ref>(</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classFallsLakeMinEnvFlowControl" kindref="compound">FallsLakeMinEnvFlowControl</ref><sp/>&amp;min_env_control)<sp/>:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref>(min_env_control),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>week_interval(min_env_control.week_interval)<sp/>,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base_min_env_flows(min_env_control.base_min_env_flows),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base_min_gage_flows(min_env_control.base_min_gage_flows),</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>neuse_river_intake_id(min_env_control.neuse_river_intake_id),</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>crabtree(<ref refid="classCatchment" kindref="compound">Catchment</ref>(min_env_control.crabtree))<sp/>{}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classFallsLakeMinEnvFlowControl_a50453b443fb6e5869fcfc9a183f42b2f_1a50453b443fb6e5869fcfc9a183f42b2f" kindref="member">FallsLakeMinEnvFlowControl::getRelease</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>base_release;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>min_gage_flow;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(week<sp/>&lt;<sp/><ref refid="classFallsLakeMinEnvFlowControl_a382dbd49bfc62c5e6ba2a56cfb7682e3_1a382dbd49bfc62c5e6ba2a56cfb7682e3" kindref="member">week_interval</ref>[0]<sp/>&amp;&amp;<sp/>week<sp/>&gt;<sp/><ref refid="classFallsLakeMinEnvFlowControl_a382dbd49bfc62c5e6ba2a56cfb7682e3_1a382dbd49bfc62c5e6ba2a56cfb7682e3" kindref="member">week_interval</ref>[1])<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base_release<sp/>=<sp/><ref refid="classFallsLakeMinEnvFlowControl_a7780ba93a2ea312c6f48ff741f6f8291_1a7780ba93a2ea312c6f48ff741f6f8291" kindref="member">base_min_env_flows</ref>[0];</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min_gage_flow<sp/>=<sp/><ref refid="classFallsLakeMinEnvFlowControl_a0250acb652ec1fd55423cc3702f3f6a0_1a0250acb652ec1fd55423cc3702f3f6a0" kindref="member">base_min_gage_flows</ref>[0];</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base_release<sp/>=<sp/><ref refid="classFallsLakeMinEnvFlowControl_a7780ba93a2ea312c6f48ff741f6f8291_1a7780ba93a2ea312c6f48ff741f6f8291" kindref="member">base_min_env_flows</ref>[1];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min_gage_flow<sp/>=<sp/><ref refid="classFallsLakeMinEnvFlowControl_a0250acb652ec1fd55423cc3702f3f6a0_1a0250acb652ec1fd55423cc3702f3f6a0" kindref="member">base_min_gage_flows</ref>[1];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>neuse_outflow<sp/>=</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMinEnvFlowControl_a36b50d0e6887b956051ae53bf5d2e3a9_1a36b50d0e6887b956051ae53bf5d2e3a9" kindref="member">water_sources</ref>[<ref refid="classFallsLakeMinEnvFlowControl_aa0e54d145d945d9b8c462294187e7fb5_1aa0e54d145d945d9b8c462294187e7fb5" kindref="member">neuse_river_intake_id</ref>]-&gt;getTotal_outflow();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>max(base_release,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min_gage_flow<sp/>-<sp/>max(0.,<sp/>neuse_outflow)<sp/>-</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classFallsLakeMinEnvFlowControl_af12d738a62d604cd01ee48bfc6c73c6d_1af12d738a62d604cd01ee48bfc6c73c6d" kindref="member">crabtree</ref>.<ref refid="classCatchment_af4e8206ffab5c901e5e4cdd6136f73a1_1af4e8206ffab5c901e5e4cdd6136f73a1" kindref="member">getStreamflow</ref>(week));</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFallsLakeMinEnvFlowControl_a6ea8a5e9ff9179066cceb77d896f3f97_1a6ea8a5e9ff9179066cceb77d896f3f97" kindref="member">FallsLakeMinEnvFlowControl::setRealization</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>r,<sp/>vector&lt;double&gt;<sp/>&amp;rdm_factors)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFallsLakeMinEnvFlowControl_af12d738a62d604cd01ee48bfc6c73c6d_1af12d738a62d604cd01ee48bfc6c73c6d" kindref="member">crabtree</ref>.<ref refid="classCatchment_affb9042c5854a76efd864ce87d7d1877_1affb9042c5854a76efd864ce87d7d1877" kindref="member">setRealization</ref>(r,<sp/>rdm_factors);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/Controls/Custom/FallsLakeMinEnvFlowControl.cpp"/>
+  </compounddef>
+</doxygen>

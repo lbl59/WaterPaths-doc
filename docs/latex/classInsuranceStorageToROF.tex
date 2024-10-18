@@ -1,0 +1,206 @@
+\hypertarget{classInsuranceStorageToROF}{}\section{Insurance\+Storage\+To\+R\+OF Class Reference}
+\label{classInsuranceStorageToROF}\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+
+
+{\ttfamily \#include $<$Insurance\+Storage\+To\+R\+O\+F.\+h$>$}
+
+Inheritance diagram for Insurance\+Storage\+To\+R\+OF\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classInsuranceStorageToROF}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInsuranceStorageToROF_a7769ebf2a6c73fa0efc55268712e8157_a7769ebf2a6c73fa0efc55268712e8157}{Insurance\+Storage\+To\+R\+OF}} (const int \mbox{\hyperlink{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b_abf3ed19ed98e0d74dc9ae24094be640b}{id}}, vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, const \mbox{\hyperlink{classGraph}{Graph}} \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&\mbox{\hyperlink{classInsuranceStorageToROF_a78ebe72a40c8023dd79c91d36f5e1596_a78ebe72a40c8023dd79c91d36f5e1596}{drought\+\_\+mitigation\+\_\+policies}}, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}, vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, vector$<$ vector$<$ double $>$$>$ \&policy\+\_\+rdm, vector$<$ double $>$ \&\mbox{\hyperlink{classInsuranceStorageToROF_afcc3f791ff54cb25a0f9c4381be4650e_afcc3f791ff54cb25a0f9c4381be4650e}{rof\+\_\+triggers}}, const double \mbox{\hyperlink{classInsuranceStorageToROF_ab73e7f3e679a16b60878495566a668da_ab73e7f3e679a16b60878495566a668da}{insurance\+\_\+premium}}, const vector$<$ double $>$ \&\mbox{\hyperlink{classInsuranceStorageToROF_af58d0341b58f3039aca3c3cd22c7c2f1_af58d0341b58f3039aca3c3cd22c7c2f1}{fixed\+\_\+payouts}}, unsigned long \mbox{\hyperlink{classInsuranceStorageToROF_accb3ce9db21061862e03f927cc6effbe_accb3ce9db21061862e03f927cc6effbe}{total\+\_\+simulation\+\_\+time}})
+\item 
+\mbox{\hyperlink{classInsuranceStorageToROF_a5229c6bbb6da8268017c71bacec70f67_a5229c6bbb6da8268017c71bacec70f67}{Insurance\+Storage\+To\+R\+OF}} (\mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} \&insurance)
+\item 
+\mbox{\hyperlink{classInsuranceStorageToROF_aba2143897e3ec32d698d25a1aa572a73_aba2143897e3ec32d698d25a1aa572a73}{$\sim$\+Insurance\+Storage\+To\+R\+OF}} () override
+\item 
+void \mbox{\hyperlink{classInsuranceStorageToROF_a2519f93b9db551105d9a7913d0db9540_a2519f93b9db551105d9a7913d0db9540}{price\+Insurance}} (int week)
+\item 
+void \mbox{\hyperlink{classInsuranceStorageToROF_a17aa84e0559793b3c463c468dfda3753_a17aa84e0559793b3c463c468dfda3753}{apply\+Policy}} (int week) override
+\item 
+void \mbox{\hyperlink{classInsuranceStorageToROF_ac7d317a7f189739275960e4f021108d8_ac7d317a7f189739275960e4f021108d8}{add\+System\+Components}} (vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ utilities, vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ water\+\_\+sources, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}) override
+\item 
+void \mbox{\hyperlink{classInsuranceStorageToROF_a6318c3dca8b0c4d568eac494e5ccf712_a6318c3dca8b0c4d568eac494e5ccf712}{set\+Realization}} (unsigned long \mbox{\hyperlink{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7_a7b6c99bf256f6c6b633ebb78282f43c7}{realization\+\_\+id}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, vector$<$ double $>$ \&policy\+\_\+rdm) override
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classInsuranceStorageToROF_a4a50c4b15aba302fe1e928fb0cc66d32_a4a50c4b15aba302fe1e928fb0cc66d32}{calculate\+Short\+Term\+R\+O\+F\+Table}} (int week, const vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const int \&\mbox{\hyperlink{classContinuityModel_a6df6198ebc99a099df08f4b8ce6b52b9_a6df6198ebc99a099df08f4b8ce6b52b9}{n\+\_\+utilities}})
+\item 
+void \mbox{\hyperlink{classInsuranceStorageToROF_a5870934b8b33e1d872eca7b0940398ac_a5870934b8b33e1d872eca7b0940398ac}{update\+Online\+Infrastructure}} (int week) override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classInsuranceStorageToROF_afcc3f791ff54cb25a0f9c4381be4650e_afcc3f791ff54cb25a0f9c4381be4650e}{rof\+\_\+triggers}}
+\item 
+const unsigned long \mbox{\hyperlink{classInsuranceStorageToROF_accb3ce9db21061862e03f927cc6effbe_accb3ce9db21061862e03f927cc6effbe}{total\+\_\+simulation\+\_\+time}}
+\item 
+const double \mbox{\hyperlink{classInsuranceStorageToROF_ab73e7f3e679a16b60878495566a668da_ab73e7f3e679a16b60878495566a668da}{insurance\+\_\+premium}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classInsuranceStorageToROF_a69beb8a95cf8f78845b5cd9c6f4a12ca_a69beb8a95cf8f78845b5cd9c6f4a12ca}{payout\+\_\+multiplier}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classInsuranceStorageToROF_a5c2b3740b69b34fa2baa0a2df914d8a8_a5c2b3740b69b34fa2baa0a2df914d8a8}{insurance\+\_\+price}}
+\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classInsuranceStorageToROF_af58d0341b58f3039aca3c3cd22c7c2f1_af58d0341b58f3039aca3c3cd22c7c2f1}{fixed\+\_\+payouts}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classInsuranceStorageToROF_a7fe48af9dd2f9ce199bbfd422240cf87_a7fe48af9dd2f9ce199bbfd422240cf87}{utilities\+\_\+revenue\+\_\+update}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classInsuranceStorageToROF_a1c2f8acdda360ac7ca4d550f6efa1497_a1c2f8acdda360ac7ca4d550f6efa1497}{utilities\+\_\+revenue\+\_\+last\+\_\+year}}
+\item 
+vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$ $>$ \mbox{\hyperlink{classInsuranceStorageToROF_a78ebe72a40c8023dd79c91d36f5e1596_a78ebe72a40c8023dd79c91d36f5e1596}{drought\+\_\+mitigation\+\_\+policies}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classInsuranceStorageToROF_a7769ebf2a6c73fa0efc55268712e8157_a7769ebf2a6c73fa0efc55268712e8157}\label{classInsuranceStorageToROF_a7769ebf2a6c73fa0efc55268712e8157_a7769ebf2a6c73fa0efc55268712e8157}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{Insurance\+Storage\+To\+R\+O\+F()}{InsuranceStorageToROF()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Insurance\+Storage\+To\+R\+O\+F\+::\+Insurance\+Storage\+To\+R\+OF (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{const \mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{policy\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{rof\+\_\+triggers,  }\item[{const double}]{insurance\+\_\+premium,  }\item[{const vector$<$ double $>$ \&}]{fixed\+\_\+payouts,  }\item[{unsigned long}]{total\+\_\+simulation\+\_\+time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_a5229c6bbb6da8268017c71bacec70f67_a5229c6bbb6da8268017c71bacec70f67}\label{classInsuranceStorageToROF_a5229c6bbb6da8268017c71bacec70f67_a5229c6bbb6da8268017c71bacec70f67}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{Insurance\+Storage\+To\+R\+O\+F()}{InsuranceStorageToROF()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Insurance\+Storage\+To\+R\+O\+F\+::\+Insurance\+Storage\+To\+R\+OF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} \&}]{insurance }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_aba2143897e3ec32d698d25a1aa572a73_aba2143897e3ec32d698d25a1aa572a73}\label{classInsuranceStorageToROF_aba2143897e3ec32d698d25a1aa572a73_aba2143897e3ec32d698d25a1aa572a73}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!````~Insurance\+Storage\+To\+R\+OF@{$\sim$\+Insurance\+Storage\+To\+R\+OF}}
+\index{````~Insurance\+Storage\+To\+R\+OF@{$\sim$\+Insurance\+Storage\+To\+R\+OF}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{$\sim$\+Insurance\+Storage\+To\+R\+O\+F()}{~InsuranceStorageToROF()}}
+{\footnotesize\ttfamily Insurance\+Storage\+To\+R\+O\+F\+::$\sim$\+Insurance\+Storage\+To\+R\+OF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classInsuranceStorageToROF_ac7d317a7f189739275960e4f021108d8_ac7d317a7f189739275960e4f021108d8}\label{classInsuranceStorageToROF_ac7d317a7f189739275960e4f021108d8_ac7d317a7f189739275960e4f021108d8}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!add\+System\+Components@{add\+System\+Components}}
+\index{add\+System\+Components@{add\+System\+Components}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{add\+System\+Components()}{addSystemComponents()}}
+{\footnotesize\ttfamily void Insurance\+Storage\+To\+R\+O\+F\+::add\+System\+Components (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{utilities,  }\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$}]{water\+\_\+sources,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$}]{min\+\_\+env\+\_\+flow\+\_\+controls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a_aaab042a79d781afe8e08753b7012372a}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_a17aa84e0559793b3c463c468dfda3753_a17aa84e0559793b3c463c468dfda3753}\label{classInsuranceStorageToROF_a17aa84e0559793b3c463c468dfda3753_a17aa84e0559793b3c463c468dfda3753}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!apply\+Policy@{apply\+Policy}}
+\index{apply\+Policy@{apply\+Policy}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{apply\+Policy()}{applyPolicy()}}
+{\footnotesize\ttfamily void Insurance\+Storage\+To\+R\+O\+F\+::apply\+Policy (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d_a76c1a85eaf7707306fe173b6437cc31d}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_a4a50c4b15aba302fe1e928fb0cc66d32_a4a50c4b15aba302fe1e928fb0cc66d32}\label{classInsuranceStorageToROF_a4a50c4b15aba302fe1e928fb0cc66d32_a4a50c4b15aba302fe1e928fb0cc66d32}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!calculate\+Short\+Term\+R\+O\+F\+Table@{calculate\+Short\+Term\+R\+O\+F\+Table}}
+\index{calculate\+Short\+Term\+R\+O\+F\+Table@{calculate\+Short\+Term\+R\+O\+F\+Table}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{calculate\+Short\+Term\+R\+O\+F\+Table()}{calculateShortTermROFTable()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Insurance\+Storage\+To\+R\+O\+F\+::calculate\+Short\+Term\+R\+O\+F\+Table (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{const vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const int \&}]{n\+\_\+utilities }\end{DoxyParamCaption})}
+
+Runs one the full rof calculations for realization \mbox{\hyperlink{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7_a7b6c99bf256f6c6b633ebb78282f43c7}{realization\+\_\+id}} for a given week. 
+\begin{DoxyParams}{Parameters}
+{\em week} & for which rof is to be calculated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]This is mostly a copy and paste from \mbox{\hyperlink{ContinuityModelROF_8cpp}{Continuity\+Model\+R\+O\+F.\+cpp}}, so although I\textquotesingle{}m now on a fix this should be done in a better way at some point. \end{DoxyRefDesc}
+\mbox{\Hypertarget{classInsuranceStorageToROF_a2519f93b9db551105d9a7913d0db9540_a2519f93b9db551105d9a7913d0db9540}\label{classInsuranceStorageToROF_a2519f93b9db551105d9a7913d0db9540_a2519f93b9db551105d9a7913d0db9540}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!price\+Insurance@{price\+Insurance}}
+\index{price\+Insurance@{price\+Insurance}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{price\+Insurance()}{priceInsurance()}}
+{\footnotesize\ttfamily void Insurance\+Storage\+To\+R\+O\+F\+::price\+Insurance (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})}
+
+Runs a R\+OF set of 50 year long simulations in order to estimate how likely payouts are expected to occur. The price of the insurance is set as the average sum of payouts across all 50 years times the insurance premium. 
+\begin{DoxyParams}{Parameters}
+{\em week} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInsuranceStorageToROF_a6318c3dca8b0c4d568eac494e5ccf712_a6318c3dca8b0c4d568eac494e5ccf712}\label{classInsuranceStorageToROF_a6318c3dca8b0c4d568eac494e5ccf712_a6318c3dca8b0c4d568eac494e5ccf712}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily void Insurance\+Storage\+To\+R\+O\+F\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{realization\+\_\+id,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{policy\+\_\+rdm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4_a5d2033543cacca1e412eebef5106eab4}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_a5870934b8b33e1d872eca7b0940398ac_a5870934b8b33e1d872eca7b0940398ac}\label{classInsuranceStorageToROF_a5870934b8b33e1d872eca7b0940398ac_a5870934b8b33e1d872eca7b0940398ac}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!update\+Online\+Infrastructure@{update\+Online\+Infrastructure}}
+\index{update\+Online\+Infrastructure@{update\+Online\+Infrastructure}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{update\+Online\+Infrastructure()}{updateOnlineInfrastructure()}}
+{\footnotesize\ttfamily void Insurance\+Storage\+To\+R\+O\+F\+::update\+Online\+Infrastructure (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Checks if new infrastructure became online. 
+
+Reimplemented from \mbox{\hyperlink{classContinuityModelROF_af09f22c4fd69db45d3c8962713801287_af09f22c4fd69db45d3c8962713801287}{Continuity\+Model\+R\+OF}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classInsuranceStorageToROF_a78ebe72a40c8023dd79c91d36f5e1596_a78ebe72a40c8023dd79c91d36f5e1596}\label{classInsuranceStorageToROF_a78ebe72a40c8023dd79c91d36f5e1596_a78ebe72a40c8023dd79c91d36f5e1596}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!drought\+\_\+mitigation\+\_\+policies@{drought\+\_\+mitigation\+\_\+policies}}
+\index{drought\+\_\+mitigation\+\_\+policies@{drought\+\_\+mitigation\+\_\+policies}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{drought\+\_\+mitigation\+\_\+policies}{drought\_mitigation\_policies}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ Insurance\+Storage\+To\+R\+O\+F\+::drought\+\_\+mitigation\+\_\+policies\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_af58d0341b58f3039aca3c3cd22c7c2f1_af58d0341b58f3039aca3c3cd22c7c2f1}\label{classInsuranceStorageToROF_af58d0341b58f3039aca3c3cd22c7c2f1_af58d0341b58f3039aca3c3cd22c7c2f1}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!fixed\+\_\+payouts@{fixed\+\_\+payouts}}
+\index{fixed\+\_\+payouts@{fixed\+\_\+payouts}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{fixed\+\_\+payouts}{fixed\_payouts}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Insurance\+Storage\+To\+R\+O\+F\+::fixed\+\_\+payouts\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_ab73e7f3e679a16b60878495566a668da_ab73e7f3e679a16b60878495566a668da}\label{classInsuranceStorageToROF_ab73e7f3e679a16b60878495566a668da_ab73e7f3e679a16b60878495566a668da}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!insurance\+\_\+premium@{insurance\+\_\+premium}}
+\index{insurance\+\_\+premium@{insurance\+\_\+premium}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{insurance\+\_\+premium}{insurance\_premium}}
+{\footnotesize\ttfamily const double Insurance\+Storage\+To\+R\+O\+F\+::insurance\+\_\+premium\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_a5c2b3740b69b34fa2baa0a2df914d8a8_a5c2b3740b69b34fa2baa0a2df914d8a8}\label{classInsuranceStorageToROF_a5c2b3740b69b34fa2baa0a2df914d8a8_a5c2b3740b69b34fa2baa0a2df914d8a8}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!insurance\+\_\+price@{insurance\+\_\+price}}
+\index{insurance\+\_\+price@{insurance\+\_\+price}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{insurance\+\_\+price}{insurance\_price}}
+{\footnotesize\ttfamily vector$<$double$>$ Insurance\+Storage\+To\+R\+O\+F\+::insurance\+\_\+price\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_a69beb8a95cf8f78845b5cd9c6f4a12ca_a69beb8a95cf8f78845b5cd9c6f4a12ca}\label{classInsuranceStorageToROF_a69beb8a95cf8f78845b5cd9c6f4a12ca_a69beb8a95cf8f78845b5cd9c6f4a12ca}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!payout\+\_\+multiplier@{payout\+\_\+multiplier}}
+\index{payout\+\_\+multiplier@{payout\+\_\+multiplier}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{payout\+\_\+multiplier}{payout\_multiplier}}
+{\footnotesize\ttfamily vector$<$double$>$ Insurance\+Storage\+To\+R\+O\+F\+::payout\+\_\+multiplier\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_afcc3f791ff54cb25a0f9c4381be4650e_afcc3f791ff54cb25a0f9c4381be4650e}\label{classInsuranceStorageToROF_afcc3f791ff54cb25a0f9c4381be4650e_afcc3f791ff54cb25a0f9c4381be4650e}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!rof\+\_\+triggers@{rof\+\_\+triggers}}
+\index{rof\+\_\+triggers@{rof\+\_\+triggers}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{rof\+\_\+triggers}{rof\_triggers}}
+{\footnotesize\ttfamily vector$<$double$>$ Insurance\+Storage\+To\+R\+O\+F\+::rof\+\_\+triggers\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_accb3ce9db21061862e03f927cc6effbe_accb3ce9db21061862e03f927cc6effbe}\label{classInsuranceStorageToROF_accb3ce9db21061862e03f927cc6effbe_accb3ce9db21061862e03f927cc6effbe}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!total\+\_\+simulation\+\_\+time@{total\+\_\+simulation\+\_\+time}}
+\index{total\+\_\+simulation\+\_\+time@{total\+\_\+simulation\+\_\+time}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{total\+\_\+simulation\+\_\+time}{total\_simulation\_time}}
+{\footnotesize\ttfamily const unsigned long Insurance\+Storage\+To\+R\+O\+F\+::total\+\_\+simulation\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_a1c2f8acdda360ac7ca4d550f6efa1497_a1c2f8acdda360ac7ca4d550f6efa1497}\label{classInsuranceStorageToROF_a1c2f8acdda360ac7ca4d550f6efa1497_a1c2f8acdda360ac7ca4d550f6efa1497}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!utilities\+\_\+revenue\+\_\+last\+\_\+year@{utilities\+\_\+revenue\+\_\+last\+\_\+year}}
+\index{utilities\+\_\+revenue\+\_\+last\+\_\+year@{utilities\+\_\+revenue\+\_\+last\+\_\+year}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{utilities\+\_\+revenue\+\_\+last\+\_\+year}{utilities\_revenue\_last\_year}}
+{\footnotesize\ttfamily vector$<$double$>$ Insurance\+Storage\+To\+R\+O\+F\+::utilities\+\_\+revenue\+\_\+last\+\_\+year\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_a7fe48af9dd2f9ce199bbfd422240cf87_a7fe48af9dd2f9ce199bbfd422240cf87}\label{classInsuranceStorageToROF_a7fe48af9dd2f9ce199bbfd422240cf87_a7fe48af9dd2f9ce199bbfd422240cf87}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!utilities\+\_\+revenue\+\_\+update@{utilities\+\_\+revenue\+\_\+update}}
+\index{utilities\+\_\+revenue\+\_\+update@{utilities\+\_\+revenue\+\_\+update}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{utilities\+\_\+revenue\+\_\+update}{utilities\_revenue\_update}}
+{\footnotesize\ttfamily vector$<$double$>$ Insurance\+Storage\+To\+R\+O\+F\+::utilities\+\_\+revenue\+\_\+update\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Drought\+Mitigation\+Instruments/\mbox{\hyperlink{InsuranceStorageToROF_8h}{Insurance\+Storage\+To\+R\+O\+F.\+h}}\item 
+src/\+Drought\+Mitigation\+Instruments/\mbox{\hyperlink{InsuranceStorageToROF_8cpp}{Insurance\+Storage\+To\+R\+O\+F.\+cpp}}\end{DoxyCompactItemize}

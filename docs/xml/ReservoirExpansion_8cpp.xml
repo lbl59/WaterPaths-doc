@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="ReservoirExpansion_8cpp" kind="file" language="C++">
+    <compoundname>ReservoirExpansion.cpp</compoundname>
+    <includes refid="ReservoirExpansion_8h" local="yes">ReservoirExpansion.h</includes>
+    <incdepgraph>
+      <node id="3139">
+        <label>cmath</label>
+      </node>
+      <node id="3137">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="3138" relation="include">
+        </childnode>
+        <childnode refid="3139" relation="include">
+        </childnode>
+        <childnode refid="3140" relation="include">
+        </childnode>
+        <childnode refid="3136" relation="include">
+        </childnode>
+      </node>
+      <node id="3134">
+        <label>string</label>
+      </node>
+      <node id="3138">
+        <label>map</label>
+      </node>
+      <node id="3133">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="3134" relation="include">
+        </childnode>
+        <childnode refid="3135" relation="include">
+        </childnode>
+        <childnode refid="3137" relation="include">
+        </childnode>
+        <childnode refid="3141" relation="include">
+        </childnode>
+      </node>
+      <node id="3132">
+        <label>ReservoirExpansion.h</label>
+        <link refid="ReservoirExpansion_8h"/>
+        <childnode refid="3133" relation="include">
+        </childnode>
+      </node>
+      <node id="3136">
+        <label>vector</label>
+      </node>
+      <node id="3131">
+        <label>src/SystemComponents/WaterSources/ReservoirExpansion.cpp</label>
+        <link refid="ReservoirExpansion_8cpp"/>
+        <childnode refid="3132" relation="include">
+        </childnode>
+      </node>
+      <node id="3135">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="3136" relation="include">
+        </childnode>
+        <childnode refid="3137" relation="include">
+        </childnode>
+      </node>
+      <node id="3141">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="3136" relation="include">
+        </childnode>
+        <childnode refid="3137" relation="include">
+        </childnode>
+      </node>
+      <node id="3140">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardoct<sp/>on<sp/>5/3/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ReservoirExpansion_8h" kindref="compound">ReservoirExpansion.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="classReservoirExpansion_aa742cae4276e97847681dac4f828b5ae_1aa742cae4276e97847681dac4f828b5ae" kindref="member">ReservoirExpansion::ReservoirExpansion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>parent_reservoir_ID,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>capacity,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;construction_time_range,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permitting_period,<sp/><ref refid="classBond" kindref="compound">Bond</ref><sp/>&amp;bond)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classWaterSource" kindref="compound">WaterSource</ref>(name,<sp/>id,<sp/>vector&lt;<ref refid="classCatchment" kindref="compound">Catchment</ref><sp/>*&gt;(),<sp/>capacity,<sp/><ref refid="namespaceConstants_a8e8b0a537619c378d03117c5ed1c3ea1_1a8e8b0a537619c378d03117c5ed1c3ea1" kindref="member">NON_INITIALIZED</ref>,<sp/>vector&lt;int&gt;(),<sp/><ref refid="namespaceConstants_a27567a2a62ed837986156cb424fdc83f_1a27567a2a62ed837986156cb424fdc83f" kindref="member">RESERVOIR_EXPANSION</ref>,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>construction_time_range,<sp/>permitting_period,<sp/>bond),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parent_reservoir_ID(parent_reservoir_ID)<sp/>{}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="classReservoirExpansion_aa742cae4276e97847681dac4f828b5ae_1aa742cae4276e97847681dac4f828b5ae" kindref="member">ReservoirExpansion::ReservoirExpansion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref><sp/>&amp;reservoir_expansion)<sp/>:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWaterSource" kindref="compound">WaterSource</ref>(reservoir_expansion),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>parent_reservoir_ID(reservoir_expansion.parent_reservoir_ID)<sp/>{}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref><sp/>&amp;<ref refid="classReservoirExpansion_af197058813986b16c34ae206c04e14bf_1af197058813986b16c34ae206c04e14bf" kindref="member">ReservoirExpansion::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref><sp/>&amp;reservoir_expansion)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaterSource_aafdaafb023a35186ae01d213665b5e27_1aafdaafb023a35186ae01d213665b5e27" kindref="member">WaterSource::operator=</ref>(reservoir_expansion);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classReservoirExpansion_a18614050354dced5cc2747eeda0c2397_1a18614050354dced5cc2747eeda0c2397" kindref="member">ReservoirExpansion::applyContinuity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>upstream_source_inflow,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>wastewater_discharge,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;demand_outflow)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>logic_error(</highlight><highlight class="stringliteral">&quot;Reservoir<sp/>expansion<sp/>only<sp/>add<sp/>storage<sp/>volume<sp/>to<sp/>the<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;reservoir<sp/>they&apos;re<sp/>assigned<sp/>to.<sp/><sp/>Continuity<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;cannot<sp/>be<sp/>called<sp/>on<sp/>it,<sp/>but<sp/>only<sp/>on<sp/>the<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;reservoir<sp/>it&apos;s<sp/><sp/>assigned<sp/>to<sp/>expand.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/SystemComponents/WaterSources/ReservoirExpansion.cpp"/>
+  </compounddef>
+</doxygen>

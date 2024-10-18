@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="QuadProg_09_09_8h" kind="file" language="C++">
+    <compoundname>QuadProg++.h</compoundname>
+    <includes refid="Array_8h" local="yes">Array.h</includes>
+    <includedby refid="Transfers_8h" local="yes">src/DroughtMitigationInstruments/Transfers.h</includedby>
+    <includedby refid="main_8cpp" local="yes">src/main.cpp</includedby>
+    <includedby refid="QuadProg_09_09_8cpp" local="yes">src/Utils/QPSolver/QuadProg++.cpp</includedby>
+    <incdepgraph>
+      <node id="3623">
+        <label>iomanip</label>
+      </node>
+      <node id="3624">
+        <label>cmath</label>
+      </node>
+      <node id="3621">
+        <label>stdexcept</label>
+      </node>
+      <node id="3625">
+        <label>cstdlib</label>
+      </node>
+      <node id="3622">
+        <label>iostream</label>
+      </node>
+      <node id="3619">
+        <label>Array.h</label>
+        <link refid="Array_8h"/>
+        <childnode refid="3620" relation="include">
+        </childnode>
+        <childnode refid="3621" relation="include">
+        </childnode>
+        <childnode refid="3622" relation="include">
+        </childnode>
+        <childnode refid="3623" relation="include">
+        </childnode>
+        <childnode refid="3624" relation="include">
+        </childnode>
+        <childnode refid="3625" relation="include">
+        </childnode>
+      </node>
+      <node id="3620">
+        <label>set</label>
+      </node>
+      <node id="3618">
+        <label>src/Utils/QPSolver/QuadProg++.h</label>
+        <link refid="QuadProg_09_09_8h"/>
+        <childnode refid="3619" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3632">
+        <label>src/Problem/PaperTestProblem.cpp</label>
+        <link refid="PaperTestProblem_8cpp"/>
+      </node>
+      <node id="3629">
+        <label>src/DataCollector/TransfersDataCollector.h</label>
+        <link refid="TransfersDataCollector_8h"/>
+        <childnode refid="3628" relation="include">
+        </childnode>
+        <childnode refid="3630" relation="include">
+        </childnode>
+      </node>
+      <node id="3633">
+        <label>src/Problem/Triangle.cpp</label>
+        <link refid="Triangle_8cpp"/>
+      </node>
+      <node id="3636">
+        <label>src/Utils/QPSolver/QuadProg++.cpp</label>
+        <link refid="QuadProg_09_09_8cpp"/>
+      </node>
+      <node id="3634">
+        <label>src/Utils/Utils.cpp</label>
+        <link refid="Utils_8cpp"/>
+      </node>
+      <node id="3630">
+        <label>src/DataCollector/TransfersDataCollector.cpp</label>
+        <link refid="TransfersDataCollector_8cpp"/>
+      </node>
+      <node id="3631">
+        <label>src/DroughtMitigationInstruments/Transfers.cpp</label>
+        <link refid="Transfers_8cpp"/>
+      </node>
+      <node id="3628">
+        <label>src/DataCollector/MasterDataCollector.cpp</label>
+        <link refid="MasterDataCollector_8cpp"/>
+      </node>
+      <node id="3627">
+        <label>src/DroughtMitigationInstruments/Transfers.h</label>
+        <link refid="Transfers_8h"/>
+        <childnode refid="3628" relation="include">
+        </childnode>
+        <childnode refid="3629" relation="include">
+        </childnode>
+        <childnode refid="3631" relation="include">
+        </childnode>
+        <childnode refid="3632" relation="include">
+        </childnode>
+        <childnode refid="3633" relation="include">
+        </childnode>
+        <childnode refid="3634" relation="include">
+        </childnode>
+      </node>
+      <node id="3635">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="3626">
+        <label>src/Utils/QPSolver/QuadProg++.h</label>
+        <link refid="QuadProg_09_09_8h"/>
+        <childnode refid="3627" relation="include">
+        </childnode>
+        <childnode refid="3635" relation="include">
+        </childnode>
+        <childnode refid="3636" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="QuadProg_09_09_8h_a4da9671c990051588cdaf629eeab3f9e_1a4da9671c990051588cdaf629eeab3f9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double solve_quadprog</definition>
+        <argsstring>(Matrix&lt; double &gt; &amp;G, Vector&lt; double &gt; &amp;g0, const Matrix&lt; double &gt; &amp;CE, const Vector&lt; double &gt; &amp;ce0, const Matrix&lt; double &gt; &amp;CI, const Vector&lt; double &gt; &amp;ci0, Vector&lt; double &gt; &amp;x)</argsstring>
+        <name>solve_quadprog</name>
+        <param>
+          <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; double &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt; &amp;</type>
+          <declname>g0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; double &gt; &amp;</type>
+          <declname>CE</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt; &amp;</type>
+          <declname>ce0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; double &gt; &amp;</type>
+          <declname>CI</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt; &amp;</type>
+          <declname>ci0</declname>
+        </param>
+        <param>
+          <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/QPSolver/QuadProg++.h" line="67" column="1" bodyfile="src/Utils/QPSolver/QuadProg++.cpp" bodystart="49" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="QuadProg_09_09_8h_a769f3a6ed2afed301b8067d8972c7aba_1a769f3a6ed2afed301b8067d8972c7aba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void solve_quadprog_matlab_syntax</definition>
+        <argsstring>(Matrix&lt; double &gt; &amp;G, Vector&lt; double &gt; &amp;g0, const Matrix&lt; double &gt; &amp;CE, const Vector&lt; double &gt; &amp;ce0, const Matrix&lt; double &gt; &amp;CI, const Vector&lt; double &gt; &amp;ci0, const Vector&lt; double &gt; &amp;lb, const Vector&lt; double &gt; &amp;ub, Vector&lt; double &gt; &amp;x)</argsstring>
+        <name>solve_quadprog_matlab_syntax</name>
+        <param>
+          <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; double &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt; &amp;</type>
+          <declname>g0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; double &gt; &amp;</type>
+          <declname>CE</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt; &amp;</type>
+          <declname>ce0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; double &gt; &amp;</type>
+          <declname>CI</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt; &amp;</type>
+          <declname>ci0</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt; &amp;</type>
+          <declname>lb</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt; &amp;</type>
+          <declname>ub</declname>
+        </param>
+        <param>
+          <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wrapper for Matlab quadprog input format. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CE</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ce0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CI</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ci0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ub</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Transpose CE.</para><para>Reverse signs of ce0 and ci0.</para><para>Expand ci0 to include the bounds.</para><para>Expand CI so to include the bounds.</para><para>Including bounds in expanded_CI and ci_inv</para><para>Transpose expanded_CI </para>        </inbodydescription>
+        <location file="src/Utils/QPSolver/QuadProg++.h" line="72" column="1" bodyfile="src/Utils/QPSolver/QuadProg++.cpp" bodystart="437" bodyend="506"/>
+      </memberdef>
+      <memberdef kind="function" id="QuadProg_09_09_8h_a1fe7d5a5da4e7091b26d67788ba4cce2_1a1fe7d5a5da4e7091b26d67788ba4cce2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_matrix</definition>
+        <argsstring>(char *name, const Matrix&lt; double &gt; &amp;A, int n=-1, int m=-1)</argsstring>
+        <name>print_matrix</name>
+        <param>
+          <type>char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; double &gt; &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/QPSolver/QuadProg++.h" line="79" column="1" bodyfile="src/Utils/QPSolver/QuadProg++.cpp" bodystart="766" bodyend="785"/>
+      </memberdef>
+      <memberdef kind="function" id="QuadProg_09_09_8h_ae36199cd58c17964d81edf504787b9af_1ae36199cd58c17964d81edf504787b9af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_vector</definition>
+        <argsstring>(char *name, const Vector&lt; double &gt; &amp;v, int n=-1)</argsstring>
+        <name>print_vector</name>
+        <param>
+          <type>char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Utils/QPSolver/QuadProg++.h" line="81" column="1" bodyfile="src/Utils/QPSolver/QuadProg++.cpp" bodystart="787" bodyend="801"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>File<sp/>$Id:<sp/>QuadProg++.hh<sp/>232<sp/>2007-06-21<sp/>12:29:00Z<sp/>digasper<sp/>$<sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>The<sp/>quadprog_solve()<sp/>function<sp/>implements<sp/>the<sp/>algorithm<sp/>of<sp/>Goldfarb<sp/>and<sp/>Idnani<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>for<sp/>the<sp/>solution<sp/>of<sp/>a<sp/>(convex)<sp/>Quadratic<sp/>Programming<sp/>problem</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>by<sp/>means<sp/>of<sp/>an<sp/>active-set<sp/>dual<sp/>method.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">The<sp/>problem<sp/>is<sp/>in<sp/>the<sp/>form:</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">min<sp/>0.5<sp/>*<sp/>x<sp/>G<sp/>x<sp/>+<sp/>g0<sp/>x</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">s.t.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>CE^T<sp/>x<sp/>+<sp/>ce0<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>CI^T<sp/>x<sp/>+<sp/>ci0<sp/>&gt;=<sp/>0</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>The<sp/>matrix<sp/>and<sp/>vectors<sp/>dimensions<sp/>are<sp/>as<sp/>follows:</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>G:<sp/>n<sp/>*<sp/>n</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g0:<sp/>n</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CE:<sp/>n<sp/>*<sp/>p</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>ce0:<sp/>p</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>CI:<sp/>n<sp/>*<sp/>m</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/>ci0:<sp/>m</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>x:<sp/>n</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>The<sp/>function<sp/>will<sp/>return<sp/>the<sp/>cost<sp/>of<sp/>the<sp/>solution<sp/>written<sp/>in<sp/>the<sp/>x<sp/>vector<sp/>or</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>std::numeric_limits::infinity()<sp/>if<sp/>the<sp/>problem<sp/>is<sp/>infeasible.<sp/>In<sp/>the<sp/>latter<sp/>case</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>the<sp/>value<sp/>of<sp/>the<sp/>x<sp/>vector<sp/>is<sp/>not<sp/>correct.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>References:<sp/>D.<sp/>Goldfarb,<sp/>A.<sp/>Idnani.<sp/>A<sp/>numerically<sp/>stable<sp/>dual<sp/>method<sp/>for<sp/>solving</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>strictly<sp/>convex<sp/>quadratic<sp/>programs.<sp/>Mathematical<sp/>Programming<sp/>27<sp/>(1983)<sp/>pp.<sp/>1-33.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>Notes:</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/>1.<sp/>pay<sp/>attention<sp/>in<sp/>setting<sp/>up<sp/>the<sp/>vectors<sp/>ce0<sp/>and<sp/>ci0.<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>If<sp/>the<sp/>constraints<sp/>of<sp/>your<sp/>problem<sp/>are<sp/>specified<sp/>in<sp/>the<sp/>form<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>A^T<sp/>x<sp/>=<sp/>b<sp/>and<sp/>C^T<sp/>x<sp/>&gt;=<sp/>d,<sp/>then<sp/>you<sp/>should<sp/>set<sp/>ce0<sp/>=<sp/>-b<sp/>and<sp/>ci0<sp/>=<sp/>-d.</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/>2.<sp/>The<sp/>matrices<sp/>have<sp/>column<sp/>dimension<sp/>equal<sp/>to<sp/>MATRIX_DIM,<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>a<sp/>constant<sp/>set<sp/>to<sp/>20<sp/>in<sp/>this<sp/>file<sp/>(by<sp/>means<sp/>of<sp/>a<sp/>#define<sp/>macro).<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>If<sp/>the<sp/>matrices<sp/>are<sp/>bigger<sp/>than<sp/>20<sp/>x<sp/>20<sp/>the<sp/>limit<sp/>could<sp/>be</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>increased<sp/>by<sp/>means<sp/>of<sp/>a<sp/>-DMATRIX_DIM=n<sp/>on<sp/>the<sp/>compiler<sp/>command<sp/>line.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/>3.<sp/>The<sp/>matrix<sp/>G<sp/>is<sp/>modified<sp/>within<sp/>the<sp/>function<sp/>since<sp/>it<sp/>is<sp/>used<sp/>to<sp/>compute</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>the<sp/>G<sp/>=<sp/>L^T<sp/>L<sp/>cholesky<sp/>factorization<sp/>for<sp/>further<sp/>computations<sp/>inside<sp/>the<sp/>function.<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>If<sp/>you<sp/>need<sp/>the<sp/>original<sp/>matrix<sp/>G<sp/>you<sp/>should<sp/>make<sp/>a<sp/>copy<sp/>of<sp/>it<sp/>and<sp/>pass<sp/>the<sp/>copy</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>to<sp/>the<sp/>function.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>Author:<sp/>Luca<sp/>Di<sp/>Gaspero</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DIEGM<sp/>-<sp/>University<sp/>of<sp/>Udine,<sp/>Italy</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>luca.digaspero@uniud.it</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>http://www.diegm.uniud.it/digaspero/</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>The<sp/>author<sp/>will<sp/>be<sp/>grateful<sp/>if<sp/>the<sp/>researchers<sp/>using<sp/>this<sp/>software<sp/>will</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>acknowledge<sp/>the<sp/>contribution<sp/>of<sp/>this<sp/>function<sp/>in<sp/>their<sp/>research<sp/>papers.</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/>Copyright<sp/>(c)<sp/>2007-2016<sp/>Luca<sp/>Di<sp/>Gaspero</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>This<sp/>software<sp/>may<sp/>be<sp/>modified<sp/>and<sp/>distributed<sp/>under<sp/>the<sp/>terms</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>of<sp/>the<sp/>MIT<sp/>license.<sp/><sp/>See<sp/>the<sp/>LICENSE<sp/>file<sp/>for<sp/>details.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_QUADPROGPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_QUADPROGPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Array_8h" kindref="compound">Array.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="QuadProg_09_09_8h_a4da9671c990051588cdaf629eeab3f9e_1a4da9671c990051588cdaf629eeab3f9e" kindref="member">solve_quadprog</ref>(<ref refid="classMatrix" kindref="compound">Matrix&lt;double&gt;</ref>&amp;<sp/>G,<sp/><ref refid="classVector" kindref="compound">Vector&lt;double&gt;</ref>&amp;<sp/>g0,<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;double&gt;</ref>&amp;<sp/>CE,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classVector" kindref="compound">Vector&lt;double&gt;</ref>&amp;<sp/>ce0,<sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;double&gt;</ref>&amp;<sp/>CI,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classVector" kindref="compound">Vector&lt;double&gt;</ref>&amp;<sp/>ci0,<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVector" kindref="compound">Vector&lt;double&gt;</ref>&amp;<sp/>x);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="QuadProg_09_09_8h_a769f3a6ed2afed301b8067d8972c7aba_1a769f3a6ed2afed301b8067d8972c7aba" kindref="member">solve_quadprog_matlab_syntax</ref>(<ref refid="classMatrix" kindref="compound">Matrix&lt;double&gt;</ref><sp/>&amp;G,<sp/><ref refid="classVector" kindref="compound">Vector&lt;double&gt;</ref><sp/>&amp;g0,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;double&gt;</ref><sp/>&amp;CE,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classVector" kindref="compound">Vector&lt;double&gt;</ref><sp/>&amp;ce0,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;double&gt;</ref><sp/>&amp;CI,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classVector" kindref="compound">Vector&lt;double&gt;</ref><sp/>&amp;ci0,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classVector" kindref="compound">Vector&lt;double&gt;</ref><sp/>&amp;lb,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classVector" kindref="compound">Vector&lt;double&gt;</ref><sp/>&amp;ub,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classVector" kindref="compound">Vector&lt;double&gt;</ref><sp/>&amp;x);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Utility<sp/>functions<sp/>for<sp/>printing<sp/>vectors<sp/>and<sp/>matrices</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="QuadProg_09_09_8h_a1fe7d5a5da4e7091b26d67788ba4cce2_1a1fe7d5a5da4e7091b26d67788ba4cce2" kindref="member">print_matrix</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMatrix" kindref="compound">Matrix&lt;double&gt;</ref><sp/>&amp;A,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>-1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="QuadProg_09_09_8h_ae36199cd58c17964d81edf504787b9af_1ae36199cd58c17964d81edf504787b9af" kindref="member">print_vector</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classVector" kindref="compound">Vector&lt;double&gt;</ref><sp/>&amp;v,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/Utils/QPSolver/QuadProg++.h"/>
+  </compounddef>
+</doxygen>

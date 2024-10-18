@@ -1,0 +1,146 @@
+\hypertarget{classFloatingInterestBalloonPaymentBond}{}\section{Floating\+Interest\+Balloon\+Payment\+Bond Class Reference}
+\label{classFloatingInterestBalloonPaymentBond}\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
+
+
+{\ttfamily \#include $<$Floating\+Interest\+Balloon\+Payment\+Bond.\+h$>$}
+
+Inheritance diagram for Floating\+Interest\+Balloon\+Payment\+Bond\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFloatingInterestBalloonPaymentBond}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_aa42f50447a3dd1bd6959e8c4bd0c2421_aa42f50447a3dd1bd6959e8c4bd0c2421}{Floating\+Interest\+Balloon\+Payment\+Bond}} (const int \mbox{\hyperlink{classBond_a7f75bcafbc16676ad6dbafbf40afae4a_a7f75bcafbc16676ad6dbafbf40afae4a}{id}}, const double \mbox{\hyperlink{classBond_ad98df7d28b398e620286f95ee085439b_ad98df7d28b398e620286f95ee085439b}{cost\+\_\+of\+\_\+capital}}, const double \mbox{\hyperlink{classBond_a4a227b6de2eeada118d82ab1633b1db8_a4a227b6de2eeada118d82ab1633b1db8}{n\+\_\+payments}}, const vector$<$ double $>$ \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a36c73466753c976e513c6763f79f58ad_a36c73466753c976e513c6763f79f58ad}{interest\+\_\+rate\+\_\+series}}, vector$<$ int $>$ \mbox{\hyperlink{classBond_ae8dd46fcbf95c993460ffe4ea1f52739_ae8dd46fcbf95c993460ffe4ea1f52739}{pay\+\_\+on\+\_\+weeks}})
+\item 
+\mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a9732cbf82ecc484237071bb681f7dc63_a9732cbf82ecc484237071bb681f7dc63}{Floating\+Interest\+Balloon\+Payment\+Bond}} (const int \mbox{\hyperlink{classBond_a7f75bcafbc16676ad6dbafbf40afae4a_a7f75bcafbc16676ad6dbafbf40afae4a}{id}}, const double \mbox{\hyperlink{classBond_ad98df7d28b398e620286f95ee085439b_ad98df7d28b398e620286f95ee085439b}{cost\+\_\+of\+\_\+capital}}, double \mbox{\hyperlink{classBond_a4a227b6de2eeada118d82ab1633b1db8_a4a227b6de2eeada118d82ab1633b1db8}{n\+\_\+payments}}, const vector$<$ double $>$ \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a36c73466753c976e513c6763f79f58ad_a36c73466753c976e513c6763f79f58ad}{interest\+\_\+rate\+\_\+series}}, vector$<$ int $>$ \mbox{\hyperlink{classBond_ae8dd46fcbf95c993460ffe4ea1f52739_ae8dd46fcbf95c993460ffe4ea1f52739}{pay\+\_\+on\+\_\+weeks}}, const int starts\+\_\+paying\+\_\+after\+\_\+n\+\_\+years)
+\item 
+double \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a0009a0b12e0ebeb15952561513ddc901_a0009a0b12e0ebeb15952561513ddc901}{get\+Debt\+Service}} (int week) override
+\item 
+double \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a90205e26e09eef1227f8c0671ca4fce2_a90205e26e09eef1227f8c0671ca4fce2}{get\+Net\+Present\+Value\+At\+Issuance}} (double yearly\+\_\+discount\+\_\+rate, int week) const override
+\item 
+void \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a4cf110f320c92f5eca9aed952e0b527a_a4cf110f320c92f5eca9aed952e0b527a}{issue\+Bond}} (int week, int construction\+\_\+time, double bond\+\_\+term\+\_\+multiplier, double bond\+\_\+interest\+\_\+rate\+\_\+multiplier) override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a36c73466753c976e513c6763f79f58ad_a36c73466753c976e513c6763f79f58ad}{interest\+\_\+rate\+\_\+series}}
+\item 
+const int \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a439428fff4f2d4ba5d0b593e5d30687f_a439428fff4f2d4ba5d0b593e5d30687f}{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}}
+\item 
+int \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_afc1a77eb5d799201c7ef5c52ef5df374_afc1a77eb5d799201c7ef5c52ef5df374}{n\+\_\+payments\+\_\+made}} = 0
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFloatingInterestBalloonPaymentBond_aa42f50447a3dd1bd6959e8c4bd0c2421_aa42f50447a3dd1bd6959e8c4bd0c2421}\label{classFloatingInterestBalloonPaymentBond_aa42f50447a3dd1bd6959e8c4bd0c2421_aa42f50447a3dd1bd6959e8c4bd0c2421}} 
+\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
+\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{Floating\+Interest\+Balloon\+Payment\+Bond()}{FloatingInterestBalloonPaymentBond()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Floating\+Interest\+Balloon\+Payment\+Bond\+::\+Floating\+Interest\+Balloon\+Payment\+Bond (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const double}]{cost\+\_\+of\+\_\+capital,  }\item[{const double}]{n\+\_\+payments,  }\item[{const vector$<$ double $>$}]{interest\+\_\+rate\+\_\+series,  }\item[{vector$<$ int $>$}]{pay\+\_\+on\+\_\+weeks }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em cost\+\_\+of\+\_\+capital} & \\
+\hline
+{\em n\+\_\+payments} & \\
+\hline
+{\em interest\+\_\+rate\+\_\+series} & Interest time series beginning from week 0 of simulation. \\
+\hline
+{\em pay\+\_\+on\+\_\+weeks} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFloatingInterestBalloonPaymentBond_a9732cbf82ecc484237071bb681f7dc63_a9732cbf82ecc484237071bb681f7dc63}\label{classFloatingInterestBalloonPaymentBond_a9732cbf82ecc484237071bb681f7dc63_a9732cbf82ecc484237071bb681f7dc63}} 
+\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
+\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{Floating\+Interest\+Balloon\+Payment\+Bond()}{FloatingInterestBalloonPaymentBond()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Floating\+Interest\+Balloon\+Payment\+Bond\+::\+Floating\+Interest\+Balloon\+Payment\+Bond (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const double}]{cost\+\_\+of\+\_\+capital,  }\item[{double}]{n\+\_\+payments,  }\item[{const vector$<$ double $>$}]{interest\+\_\+rate\+\_\+series,  }\item[{vector$<$ int $>$}]{pay\+\_\+on\+\_\+weeks,  }\item[{const int}]{starts\+\_\+paying\+\_\+after\+\_\+n\+\_\+years }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em cost\+\_\+of\+\_\+capital} & \\
+\hline
+{\em n\+\_\+payments} & \\
+\hline
+{\em interest\+\_\+rate\+\_\+series} & Interest time series beginning from week 0 of simulation. \\
+\hline
+{\em pay\+\_\+on\+\_\+weeks} & \\
+\hline
+{\em starts\+\_\+paying\+\_\+after\+\_\+n\+\_\+years} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFloatingInterestBalloonPaymentBond_a0009a0b12e0ebeb15952561513ddc901_a0009a0b12e0ebeb15952561513ddc901}\label{classFloatingInterestBalloonPaymentBond_a0009a0b12e0ebeb15952561513ddc901_a0009a0b12e0ebeb15952561513ddc901}} 
+\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!get\+Debt\+Service@{get\+Debt\+Service}}
+\index{get\+Debt\+Service@{get\+Debt\+Service}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{get\+Debt\+Service()}{getDebtService()}}
+{\footnotesize\ttfamily double Floating\+Interest\+Balloon\+Payment\+Bond\+::get\+Debt\+Service (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Calculates debt service payment for a give week. 
+\begin{DoxyParams}{Parameters}
+{\em week} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+If there are still payments to be made, repayment has begun, and this is a payment week, issue payment. 
+
+Implements \mbox{\hyperlink{classBond_a98d8ecaf4b36319674ebd220598996bc_a98d8ecaf4b36319674ebd220598996bc}{Bond}}.
+
+\mbox{\Hypertarget{classFloatingInterestBalloonPaymentBond_a90205e26e09eef1227f8c0671ca4fce2_a90205e26e09eef1227f8c0671ca4fce2}\label{classFloatingInterestBalloonPaymentBond_a90205e26e09eef1227f8c0671ca4fce2_a90205e26e09eef1227f8c0671ca4fce2}} 
+\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!get\+Net\+Present\+Value\+At\+Issuance@{get\+Net\+Present\+Value\+At\+Issuance}}
+\index{get\+Net\+Present\+Value\+At\+Issuance@{get\+Net\+Present\+Value\+At\+Issuance}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{get\+Net\+Present\+Value\+At\+Issuance()}{getNetPresentValueAtIssuance()}}
+{\footnotesize\ttfamily double Floating\+Interest\+Balloon\+Payment\+Bond\+::get\+Net\+Present\+Value\+At\+Issuance (\begin{DoxyParamCaption}\item[{double}]{yearly\+\_\+discount\+\_\+rate,  }\item[{int}]{week }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classBond_a5997278813deb16aa5d01bbca8ecc7b2_a5997278813deb16aa5d01bbca8ecc7b2}{Bond}}.
+
+\mbox{\Hypertarget{classFloatingInterestBalloonPaymentBond_a4cf110f320c92f5eca9aed952e0b527a_a4cf110f320c92f5eca9aed952e0b527a}\label{classFloatingInterestBalloonPaymentBond_a4cf110f320c92f5eca9aed952e0b527a_a4cf110f320c92f5eca9aed952e0b527a}} 
+\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!issue\+Bond@{issue\+Bond}}
+\index{issue\+Bond@{issue\+Bond}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{issue\+Bond()}{issueBond()}}
+{\footnotesize\ttfamily void Floating\+Interest\+Balloon\+Payment\+Bond\+::issue\+Bond (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{int}]{construction\+\_\+time,  }\item[{double}]{bond\+\_\+term\+\_\+multiplier,  }\item[{double}]{bond\+\_\+interest\+\_\+rate\+\_\+multiplier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Multiply entire interest time time series by R\+DM factor. 
+
+Reimplemented from \mbox{\hyperlink{classBond_a377db8c18b83c4666e46686bc26adef1_a377db8c18b83c4666e46686bc26adef1}{Bond}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classFloatingInterestBalloonPaymentBond_a439428fff4f2d4ba5d0b593e5d30687f_a439428fff4f2d4ba5d0b593e5d30687f}\label{classFloatingInterestBalloonPaymentBond_a439428fff4f2d4ba5d0b593e5d30687f_a439428fff4f2d4ba5d0b593e5d30687f}} 
+\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years@{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}}
+\index{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years@{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}{begin\_repayment\_after\_n\_years}}
+{\footnotesize\ttfamily const int Floating\+Interest\+Balloon\+Payment\+Bond\+::begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classFloatingInterestBalloonPaymentBond_a36c73466753c976e513c6763f79f58ad_a36c73466753c976e513c6763f79f58ad}\label{classFloatingInterestBalloonPaymentBond_a36c73466753c976e513c6763f79f58ad_a36c73466753c976e513c6763f79f58ad}} 
+\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!interest\+\_\+rate\+\_\+series@{interest\+\_\+rate\+\_\+series}}
+\index{interest\+\_\+rate\+\_\+series@{interest\+\_\+rate\+\_\+series}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{interest\+\_\+rate\+\_\+series}{interest\_rate\_series}}
+{\footnotesize\ttfamily vector$<$double$>$ Floating\+Interest\+Balloon\+Payment\+Bond\+::interest\+\_\+rate\+\_\+series\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classFloatingInterestBalloonPaymentBond_afc1a77eb5d799201c7ef5c52ef5df374_afc1a77eb5d799201c7ef5c52ef5df374}\label{classFloatingInterestBalloonPaymentBond_afc1a77eb5d799201c7ef5c52ef5df374_afc1a77eb5d799201c7ef5c52ef5df374}} 
+\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!n\+\_\+payments\+\_\+made@{n\+\_\+payments\+\_\+made}}
+\index{n\+\_\+payments\+\_\+made@{n\+\_\+payments\+\_\+made}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{n\+\_\+payments\+\_\+made}{n\_payments\_made}}
+{\footnotesize\ttfamily int Floating\+Interest\+Balloon\+Payment\+Bond\+::n\+\_\+payments\+\_\+made = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+System\+Components/\+Bonds/\mbox{\hyperlink{FloatingInterestBalloonPaymentBond_8h}{Floating\+Interest\+Balloon\+Payment\+Bond.\+h}}\item 
+src/\+System\+Components/\+Bonds/\mbox{\hyperlink{FloatingInterestBalloonPaymentBond_8cpp}{Floating\+Interest\+Balloon\+Payment\+Bond.\+cpp}}\end{DoxyCompactItemize}

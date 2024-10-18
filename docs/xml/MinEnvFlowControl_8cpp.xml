@@ -1,0 +1,204 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="MinEnvFlowControl_8cpp" kind="file" language="C++">
+    <compoundname>MinEnvFlowControl.cpp</compoundname>
+    <includes refid="MinEnvFlowControl_8h" local="yes">MinEnvFlowControl.h</includes>
+    <incdepgraph>
+      <node id="299">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="286">
+        <label>MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+      </node>
+      <node id="293">
+        <label>cmath</label>
+      </node>
+      <node id="300">
+        <label>stdexcept</label>
+      </node>
+      <node id="291">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>string</label>
+      </node>
+      <node id="292">
+        <label>map</label>
+      </node>
+      <node id="304">
+        <label>InfrastructureManager.h</label>
+        <link refid="InfrastructureManager_8h"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>../../SystemComponents/WaterSources/Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>../../SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>vector</label>
+      </node>
+      <node id="289">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>../WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+      </node>
+      <node id="285">
+        <label>src/Controls/Base/MinEnvFlowControl.cpp</label>
+        <link refid="MinEnvFlowControl_8cpp"/>
+        <childnode refid="286" relation="include">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>cstring</label>
+      </node>
+      <node id="297">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bct52<sp/>on<sp/>6/28/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="MinEnvFlowControl_8h" kindref="compound">MinEnvFlowControl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="classMinEnvFlowControl_a093b292294d85f426c38deb6b7537d81_1a093b292294d85f426c38deb6b7537d81" kindref="member">MinEnvFlowControl::MinEnvFlowControl</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>water_source_id,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>&amp;water_sources_ids,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>&amp;aux_utilities_ids,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>type)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water_sources_ids(water_sources_ids),</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utilities_ids(aux_utilities_ids),</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>water_source_id(water_source_id),</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type(type)<sp/>{}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="classMinEnvFlowControl_a093b292294d85f426c38deb6b7537d81_1a093b292294d85f426c38deb6b7537d81" kindref="member">MinEnvFlowControl::MinEnvFlowControl</ref>(</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref><sp/>&amp;min_env_control)<sp/>:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water_sources(vector&lt;<ref refid="classWaterSource" kindref="compound">WaterSource</ref><sp/>*&gt;()),</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utilities(vector&lt;<ref refid="classUtility" kindref="compound">Utility</ref><sp/>*&gt;()),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water_sources_ids(min_env_control.water_sources_ids),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utilities_ids(min_env_control.utilities_ids),</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water_source_id(min_env_control.water_source_id),</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type(min_env_control.type)<sp/>{}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMinEnvFlowControl_a4f849e1385f68c9d8f2835889f14a71f_1a4f849e1385f68c9d8f2835889f14a71f" kindref="member">MinEnvFlowControl::addComponents</ref>(</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/>water_sources,<sp/>vector&lt;Utility<sp/>*&gt;<sp/>utilities)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;water_sources<sp/>=<sp/>vector&lt;WaterSource<sp/>*&gt;(<ref refid="classMinEnvFlowControl_a36b50d0e6887b956051ae53bf5d2e3a9_1a36b50d0e6887b956051ae53bf5d2e3a9" kindref="member">water_sources</ref>.size());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>:<sp/><ref refid="classMinEnvFlowControl_a775d6408e5c581754ee4240eea68abdc_1a775d6408e5c581754ee4240eea68abdc" kindref="member">water_sources_ids</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;water_sources[i]<sp/>=<sp/><ref refid="classMinEnvFlowControl_a36b50d0e6887b956051ae53bf5d2e3a9_1a36b50d0e6887b956051ae53bf5d2e3a9" kindref="member">water_sources</ref>[i];</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;utilities<sp/>=<sp/>vector&lt;Utility<sp/>*&gt;(<ref refid="classMinEnvFlowControl_a1a0a309138b35e8199c205efb5fb5f80_1a1a0a309138b35e8199c205efb5fb5f80" kindref="member">utilities</ref>.size());</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>:<sp/><ref refid="classMinEnvFlowControl_a5c67ab20c181a1d22e4bf94e398451fc_1a5c67ab20c181a1d22e4bf94e398451fc" kindref="member">utilities_ids</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;utilities[i]<sp/>=<sp/><ref refid="classMinEnvFlowControl_a1a0a309138b35e8199c205efb5fb5f80_1a1a0a309138b35e8199c205efb5fb5f80" kindref="member">utilities</ref>[i];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMinEnvFlowControl_aff9774bd700410f9cd9a04e323f824c8_1aff9774bd700410f9cd9a04e323f824c8" kindref="member">MinEnvFlowControl::setRealization</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>r,<sp/>vector&lt;double&gt;<sp/>&amp;rdm_factors)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><ref refid="classMinEnvFlowControl_a809d1552ea730c607dbc73937eb70a6a_1a809d1552ea730c607dbc73937eb70a6a" kindref="member">MinEnvFlowControl::~MinEnvFlowControl</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+    </programlisting>
+    <location file="src/Controls/Base/MinEnvFlowControl.cpp"/>
+  </compounddef>
+</doxygen>

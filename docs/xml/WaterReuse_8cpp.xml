@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="WaterReuse_8cpp" kind="file" language="C++">
+    <compoundname>WaterReuse.cpp</compoundname>
+    <includes local="no">numeric</includes>
+    <includes refid="WaterReuse_8h" local="yes">WaterReuse.h</includes>
+    <incdepgraph>
+      <node id="3193">
+        <label>WaterReuse.h</label>
+        <link refid="WaterReuse_8h"/>
+        <childnode refid="3194" relation="include">
+        </childnode>
+      </node>
+      <node id="3200">
+        <label>cmath</label>
+      </node>
+      <node id="3192">
+        <label>numeric</label>
+      </node>
+      <node id="3198">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="3199" relation="include">
+        </childnode>
+        <childnode refid="3200" relation="include">
+        </childnode>
+        <childnode refid="3201" relation="include">
+        </childnode>
+        <childnode refid="3197" relation="include">
+        </childnode>
+      </node>
+      <node id="3195">
+        <label>string</label>
+      </node>
+      <node id="3191">
+        <label>src/SystemComponents/WaterSources/WaterReuse.cpp</label>
+        <link refid="WaterReuse_8cpp"/>
+        <childnode refid="3192" relation="include">
+        </childnode>
+        <childnode refid="3193" relation="include">
+        </childnode>
+      </node>
+      <node id="3199">
+        <label>map</label>
+      </node>
+      <node id="3194">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="3195" relation="include">
+        </childnode>
+        <childnode refid="3196" relation="include">
+        </childnode>
+        <childnode refid="3198" relation="include">
+        </childnode>
+        <childnode refid="3202" relation="include">
+        </childnode>
+      </node>
+      <node id="3197">
+        <label>vector</label>
+      </node>
+      <node id="3196">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="3197" relation="include">
+        </childnode>
+        <childnode refid="3198" relation="include">
+        </childnode>
+      </node>
+      <node id="3202">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="3197" relation="include">
+        </childnode>
+        <childnode refid="3198" relation="include">
+        </childnode>
+      </node>
+      <node id="3201">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardoct<sp/>on<sp/>5/3/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;numeric&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WaterReuse_8h" kindref="compound">WaterReuse.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="classWaterReuse_a0493da65856f50fad2bc2d2c087f378f_1a0493da65856f50fad2bc2d2c087f378f" kindref="member">WaterReuse::WaterReuse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>capacity)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classWaterSource" kindref="compound">WaterSource</ref>(name,<sp/>id,<sp/>vector&lt;<ref refid="classCatchment" kindref="compound">Catchment</ref><sp/>*&gt;(),<sp/>capacity,<sp/>vector&lt;int&gt;(),<sp/>capacity,<sp/><ref refid="namespaceConstants_aebb21b9413741e893ea6a79e379e9ec6_1aebb21b9413741e893ea6a79e379e9ec6" kindref="member">WATER_REUSE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaterSource_a49e1a191152e344e2161e8db166e067a_1a49e1a191152e344e2161e8db166e067a" kindref="member">available_volume</ref><sp/>=<sp/><ref refid="classWaterSource_a2ec257b415b248214a8bce7fc5267723_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><ref refid="classWaterReuse_a0493da65856f50fad2bc2d2c087f378f_1a0493da65856f50fad2bc2d2c087f378f" kindref="member">WaterReuse::WaterReuse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>treatment_capacity,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;construction_time_range,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permitting_period,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBond" kindref="compound">Bond</ref><sp/>&amp;bond)<sp/>:<sp/><ref refid="classWaterSource" kindref="compound">WaterSource</ref>(name,<sp/>id,<sp/>vector&lt;<ref refid="classCatchment" kindref="compound">Catchment</ref><sp/>*&gt;(),<sp/><ref refid="namespaceConstants_a79ee092c4ca31cde9669f70d505eeca5_1a79ee092c4ca31cde9669f70d505eeca5" kindref="member">NONE</ref>,<sp/>treatment_capacity,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;(),<sp/><ref refid="namespaceConstants_aebb21b9413741e893ea6a79e379e9ec6_1aebb21b9413741e893ea6a79e379e9ec6" kindref="member">WATER_REUSE</ref>,<sp/>construction_time_range,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>permitting_period,<sp/>bond),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>treated_volume(treatment_capacity)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaterSource_a49e1a191152e344e2161e8db166e067a_1a49e1a191152e344e2161e8db166e067a" kindref="member">available_volume</ref><sp/>=<sp/>treatment_capacity;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="classWaterReuse_a0493da65856f50fad2bc2d2c087f378f_1a0493da65856f50fad2bc2d2c087f378f" kindref="member">WaterReuse::WaterReuse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classWaterReuse" kindref="compound">WaterReuse</ref><sp/>&amp;reuse)<sp/>:<sp/><ref refid="classWaterSource" kindref="compound">WaterSource</ref>(reuse),<sp/>treated_volume(reuse.treated_volume)<sp/>{}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaterReuse_ab8ffb10c69790047a3a5dda66cfaf3ee_1ab8ffb10c69790047a3a5dda66cfaf3ee" kindref="member">WaterReuse::applyContinuity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>upstream_source_inflow,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>wastewater_discharge,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;demand_outflow)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_a1934917dd35a2508a5102eb5831431b7_1a1934917dd35a2508a5102eb5831431b7" kindref="member">total_demand</ref><sp/>=<sp/>std::accumulate(demand_outflow.begin(),</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>demand_outflow.end(),</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0.);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaterReuse_a47ef62349f0092ccdda066905c89111a_1a47ef62349f0092ccdda066905c89111a" kindref="member">treated_volume</ref><sp/>=<sp/>min(<ref refid="classWaterSource_a1934917dd35a2508a5102eb5831431b7_1a1934917dd35a2508a5102eb5831431b7" kindref="member">total_demand</ref>,<sp/><ref refid="classWaterSource_a2fdfd5ff7d103e71108cf2a31babaccb_1a2fdfd5ff7d103e71108cf2a31babaccb" kindref="member">total_treatment_capacity</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><ref refid="classWaterReuse" kindref="compound">WaterReuse</ref><sp/>&amp;<ref refid="classWaterReuse_a8bf201adfc25021511d8844cd056d5bf_1a8bf201adfc25021511d8844cd056d5bf" kindref="member">WaterReuse::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classWaterReuse" kindref="compound">WaterReuse</ref><sp/>&amp;water_reuse)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaterSource_aafdaafb023a35186ae01d213665b5e27_1aafdaafb023a35186ae01d213665b5e27" kindref="member">WaterSource::operator=</ref>(water_reuse);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaterSource_a49e1a191152e344e2161e8db166e067a_1a49e1a191152e344e2161e8db166e067a" kindref="member">available_volume</ref><sp/>=<sp/>water_reuse.<ref refid="classWaterSource_a49e1a191152e344e2161e8db166e067a_1a49e1a191152e344e2161e8db166e067a" kindref="member">available_volume</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterReuse_a78c905f77ca46fbbb2251f9cfa9a04de_1a78c905f77ca46fbbb2251f9cfa9a04de" kindref="member">WaterReuse::getReused_volume</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classWaterReuse_a47ef62349f0092ccdda066905c89111a_1a47ef62349f0092ccdda066905c89111a" kindref="member">treated_volume</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/SystemComponents/WaterSources/WaterReuse.cpp"/>
+  </compounddef>
+</doxygen>

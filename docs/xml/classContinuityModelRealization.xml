@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classContinuityModelRealization" kind="class" language="C++" prot="public">
+    <compoundname>ContinuityModelRealization</compoundname>
+    <basecompoundref refid="classContinuityModel" prot="public" virt="non-virtual">ContinuityModel</basecompoundref>
+    <includes refid="ContinuityModelRealization_8h" local="no">ContinuityModelRealization.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classContinuityModelRealization_a757dcf1de115c674fd5adcb040c5f277_1a757dcf1de115c674fd5adcb040c5f277" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> * &gt;</type>
+        <definition>vector&lt;DroughtMitigationPolicy *&gt; ContinuityModelRealization::drought_mitigation_policies</definition>
+        <argsstring></argsstring>
+        <name>drought_mitigation_policies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelRealization.h" line="14" column="1" bodyfile="src/ContinuityModels/ContinuityModelRealization.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classContinuityModelRealization_a641c096ac73586597b3e21a5d516c923_1a641c096ac73586597b3e21a5d516c923" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ContinuityModelRealization::ContinuityModelRealization</definition>
+        <argsstring>(vector&lt; WaterSource *&gt; &amp;water_sources, const Graph &amp;water_sources_graph, const vector&lt; vector&lt; int &gt;&gt; &amp;water_sources_to_utilities, vector&lt; Utility *&gt; &amp;utilities, const vector&lt; DroughtMitigationPolicy *&gt; &amp;drought_mitigation_policies, vector&lt; MinEnvFlowControl *&gt; &amp;min_env_flow_control, vector&lt; double &gt; &amp;utilities_rdm, vector&lt; double &gt; &amp;water_sources_rdm, vector&lt; double &gt; &amp;policy_rdm, const unsigned int realization_index)</argsstring>
+        <name>ContinuityModelRealization</name>
+        <param>
+          <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt; &amp;</type>
+          <declname>water_sources</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGraph" kindref="compound">Graph</ref> &amp;</type>
+          <declname>water_sources_graph</declname>
+        </param>
+        <param>
+          <type>const vector&lt; vector&lt; int &gt;&gt; &amp;</type>
+          <declname>water_sources_to_utilities</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt; &amp;</type>
+          <declname>utilities</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> *&gt; &amp;</type>
+          <declname>drought_mitigation_policies</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref> *&gt; &amp;</type>
+          <declname>min_env_flow_control</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>utilities_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>water_sources_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>policy_rdm</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>realization_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelRealization.h" line="17" column="1" bodyfile="src/ContinuityModels/ContinuityModelRealization.cpp" bodystart="9" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelRealization_afd53069e2f9ab96210ff153d16f01269_1afd53069e2f9ab96210ff153d16f01269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ContinuityModelRealization::~ContinuityModelRealization</definition>
+        <argsstring>() override</argsstring>
+        <name>~ContinuityModelRealization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelRealization.h" line="29" column="1" bodyfile="src/ContinuityModels/ContinuityModelRealization.cpp" bodystart="33" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelRealization_a2db1784f020ed147335894022e20e457_1a2db1784f020ed147335894022e20e457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelRealization::setShortTermROFs</definition>
+        <argsstring>(const vector&lt; double &gt; &amp;risks_of_failure)</argsstring>
+        <name>setShortTermROFs</name>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>risks_of_failure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelRealization.h" line="31" column="1" bodyfile="src/ContinuityModels/ContinuityModelRealization.cpp" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelRealization_a1841f4ca49c150cf5d790f6d42496575_1a1841f4ca49c150cf5d790f6d42496575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelRealization::applyDroughtMitigationPolicies</definition>
+        <argsstring>(int week)</argsstring>
+        <name>applyDroughtMitigationPolicies</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelRealization.h" line="33" column="1" bodyfile="src/ContinuityModels/ContinuityModelRealization.cpp" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelRealization_acdbf441e416f406afe47afb7f35c11c8_1acdbf441e416f406afe47afb7f35c11c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> * &gt;</type>
+        <definition>const vector&lt; DroughtMitigationPolicy * &gt; ContinuityModelRealization::getDrought_mitigation_policies</definition>
+        <argsstring>() const</argsstring>
+        <name>getDrought_mitigation_policies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelRealization.h" line="35" column="1" bodyfile="src/ContinuityModels/ContinuityModelRealization.cpp" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classContinuityModelRealization_a45cde9269efee4dc94f4905769983c9f_1a45cde9269efee4dc94f4905769983c9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ContinuityModelRealization::setLongTermROFs</definition>
+        <argsstring>(const vector&lt; double &gt; &amp;risks_of_failure, const int week)</argsstring>
+        <name>setLongTermROFs</name>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>risks_of_failure</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ContinuityModels/ContinuityModelRealization.h" line="37" column="1" bodyfile="src/ContinuityModels/ContinuityModelRealization.cpp" bodystart="46" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="43">
+        <label>ContinuityModelRealization</label>
+        <link refid="classContinuityModelRealization"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>ContinuityModel</label>
+        <link refid="classContinuityModel"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="45">
+        <label>ContinuityModelRealization</label>
+        <link refid="classContinuityModelRealization"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>ContinuityModel</label>
+        <link refid="classContinuityModel"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>water_sources_graph</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>Graph</label>
+        <link refid="classGraph"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/ContinuityModels/ContinuityModelRealization.h" line="12" column="1" bodyfile="src/ContinuityModels/ContinuityModelRealization.h" bodystart="12" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classContinuityModelRealization_a1841f4ca49c150cf5d790f6d42496575_1a1841f4ca49c150cf5d790f6d42496575" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>applyDroughtMitigationPolicies</name></member>
+      <member refid="classContinuityModel_adc77a0214d553a961035ce86c93cf9be_1adc77a0214d553a961035ce86c93cf9be" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>continuity_utilities</name></member>
+      <member refid="classContinuityModel_a3980284a9dd08bae4e76398d1b0d6f55_1a3980284a9dd08bae4e76398d1b0d6f55" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>continuity_water_sources</name></member>
+      <member refid="classContinuityModel_acadf595deb924bc08c9b702adf223365_1acadf595deb924bc08c9b702adf223365" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>ContinuityModel</name></member>
+      <member refid="classContinuityModel_a7f46eb1f937b813226ca7fee96e5fd5c_1a7f46eb1f937b813226ca7fee96e5fd5c" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>ContinuityModel</name></member>
+      <member refid="classContinuityModelRealization_a641c096ac73586597b3e21a5d516c923_1a641c096ac73586597b3e21a5d516c923" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>ContinuityModelRealization</name></member>
+      <member refid="classContinuityModel_ad880b6cb48eb24e8b78cc5425d85313b_1ad880b6cb48eb24e8b78cc5425d85313b" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>continuityStep</name></member>
+      <member refid="classContinuityModel_aee4088e422a0d3723dc7895c96c9ebe3_1aee4088e422a0d3723dc7895c96c9ebe3" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>delta_realization_weeks</name></member>
+      <member refid="classContinuityModel_a1994ed4d99e0583eac5c82a4b26d9728_1a1994ed4d99e0583eac5c82a4b26d9728" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>demands</name></member>
+      <member refid="classContinuityModel_af00ea62ac8e2e398591ff608c2a203ef_1af00ea62ac8e2e398591ff608c2a203ef" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>downstream_sources</name></member>
+      <member refid="classContinuityModelRealization_a757dcf1de115c674fd5adcb040c5f277_1a757dcf1de115c674fd5adcb040c5f277" prot="private" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>drought_mitigation_policies</name></member>
+      <member refid="classContinuityModel_a922c1dea6e49d67c87a7fbb34c7bc623_1a922c1dea6e49d67c87a7fbb34c7bc623" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>getContinuity_utilities</name></member>
+      <member refid="classContinuityModel_ae0dec8510ab216accd44097e5a366bd8_1ae0dec8510ab216accd44097e5a366bd8" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>getContinuity_water_sources</name></member>
+      <member refid="classContinuityModelRealization_acdbf441e416f406afe47afb7f35c11c8_1acdbf441e416f406afe47afb7f35c11c8" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>getDrought_mitigation_policies</name></member>
+      <member refid="classContinuityModel_a609fa24135a600af177d1460e0162014_1a609fa24135a600af177d1460e0162014" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>getOnlineDownstreamSources</name></member>
+      <member refid="classContinuityModel_afc991e5c0d144020e49a97751a04b302_1afc991e5c0d144020e49a97751a04b302" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>min_env_flow_controls</name></member>
+      <member refid="classContinuityModel_a3c25a0d17579eb0fdad0b18319441460_1a3c25a0d17579eb0fdad0b18319441460" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>n_sources</name></member>
+      <member refid="classContinuityModel_a6df6198ebc99a099df08f4b8ce6b52b9_1a6df6198ebc99a099df08f4b8ce6b52b9" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>n_utilities</name></member>
+      <member refid="classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7_1a7b6c99bf256f6c6b633ebb78282f43c7" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>realization_id</name></member>
+      <member refid="classContinuityModelRealization_a45cde9269efee4dc94f4905769983c9f_1a45cde9269efee4dc94f4905769983c9f" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>setLongTermROFs</name></member>
+      <member refid="classContinuityModel_a47504c599955b8193ffab3bd0f328144_1a47504c599955b8193ffab3bd0f328144" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>setRealization</name></member>
+      <member refid="classContinuityModelRealization_a2db1784f020ed147335894022e20e457_1a2db1784f020ed147335894022e20e457" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>setShortTermROFs</name></member>
+      <member refid="classContinuityModel_a6605cb6aae0370eb84d2e8bf7d6d651e_1a6605cb6aae0370eb84d2e8bf7d6d651e" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>sources_topological_order</name></member>
+      <member refid="classContinuityModel_a781786effdf14fefcb2201eb33d9e0c7_1a781786effdf14fefcb2201eb33d9e0c7" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>utilities_capacities</name></member>
+      <member refid="classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896_1aa4a00b76da6295d2faa11e3dcaea1896" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>utilities_rdm</name></member>
+      <member refid="classContinuityModel_a5cf4be0afa886eb09a3e143f54c29044_1a5cf4be0afa886eb09a3e143f54c29044" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>utilities_to_water_sources</name></member>
+      <member refid="classContinuityModel_aadc8d46b2d0cc0a5c6b5ccdf0c5c24d4_1aadc8d46b2d0cc0a5c6b5ccdf0c5c24d4" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>water_sources_capacities</name></member>
+      <member refid="classContinuityModel_a563401588c6fa622f03393909a3522db_1a563401588c6fa622f03393909a3522db" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>water_sources_graph</name></member>
+      <member refid="classContinuityModel_a6d80a7e50e022e2cdb5e912d5b3b5cf0_1a6d80a7e50e022e2cdb5e912d5b3b5cf0" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>water_sources_online_to_utilities</name></member>
+      <member refid="classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa_1ab7b8fa93a6f56b328e425e1ead6cfefa" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>water_sources_rdm</name></member>
+      <member refid="classContinuityModel_ae8516bcbbf52650190277fc8b06c1843_1ae8516bcbbf52650190277fc8b06c1843" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>water_sources_to_utilities</name></member>
+      <member refid="classContinuityModel_a6644d91cc76b2ccc57103aa1a2ab0c03_1a6644d91cc76b2ccc57103aa1a2ab0c03" prot="public" virt="virtual"><scope>ContinuityModelRealization</scope><name>~ContinuityModel</name></member>
+      <member refid="classContinuityModelRealization_afd53069e2f9ab96210ff153d16f01269_1afd53069e2f9ab96210ff153d16f01269" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>~ContinuityModelRealization</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

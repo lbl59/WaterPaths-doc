@@ -1,0 +1,162 @@
+\hypertarget{classIntakeDataCollector}{}\section{Intake\+Data\+Collector Class Reference}
+\label{classIntakeDataCollector}\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+
+
+{\ttfamily \#include $<$Intake\+Data\+Collector.\+h$>$}
+
+Inheritance diagram for Intake\+Data\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIntakeDataCollector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIntakeDataCollector_a2ab4a81bec74a370c60c78609627e807_a2ab4a81bec74a370c60c78609627e807}{Intake\+Data\+Collector}} (\mbox{\hyperlink{classIntake}{Intake}} $\ast$\mbox{\hyperlink{classIntakeDataCollector_a0dfbf640d99394bb82413c9a116db19b_a0dfbf640d99394bb82413c9a116db19b}{intake}}, unsigned long \mbox{\hyperlink{classDataCollector_a9ef2887466fe3123aa19ef956a219b96_a9ef2887466fe3123aa19ef956a219b96}{realization}})
+\item 
+string \mbox{\hyperlink{classIntakeDataCollector_ada2b88b7a05455cf6f2eebf82d37b3c5_ada2b88b7a05455cf6f2eebf82d37b3c5}{print\+Tabular\+String}} (int week) override
+\item 
+string \mbox{\hyperlink{classIntakeDataCollector_ac39a40726fd4fe887425b24a10f04034_ac39a40726fd4fe887425b24a10f04034}{print\+Compact\+String}} (int week) override
+\item 
+string \mbox{\hyperlink{classIntakeDataCollector_ae17ab7e6c75e77f5981f6a682597bb5c_ae17ab7e6c75e77f5981f6a682597bb5c}{print\+Tabular\+String\+Header\+Line1}} () override
+\item 
+string \mbox{\hyperlink{classIntakeDataCollector_a2855eb8eed71649309bd4d9336f258c0_a2855eb8eed71649309bd4d9336f258c0}{print\+Tabular\+String\+Header\+Line2}} () override
+\item 
+string \mbox{\hyperlink{classIntakeDataCollector_a42d56dd08e57a7e6e48812a2ab522439_a42d56dd08e57a7e6e48812a2ab522439}{print\+Compact\+String\+Header}} () override
+\item 
+void \mbox{\hyperlink{classIntakeDataCollector_aed1610e5419465b35041b05b9f60c212_aed1610e5419465b35041b05b9f60c212}{collect\+\_\+data}} () override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIntake}{Intake}} $\ast$ \mbox{\hyperlink{classIntakeDataCollector_a0dfbf640d99394bb82413c9a116db19b_a0dfbf640d99394bb82413c9a116db19b}{intake}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classIntakeDataCollector_a5016d2fece2ef545f72b9fa22497c817_a5016d2fece2ef545f72b9fa22497c817}{total\+\_\+upstream\+\_\+sources\+\_\+inflows}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classIntakeDataCollector_a7d1d205c15423db421038e54ac0e1f36_a7d1d205c15423db421038e54ac0e1f36}{demands}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classIntakeDataCollector_a4485bea7a536f9fde233a2cc37200ec6_a4485bea7a536f9fde233a2cc37200ec6}{wastewater\+\_\+inflows}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classIntakeDataCollector_ae0b0d07123dd9323402ca55e12802ac8_ae0b0d07123dd9323402ca55e12802ac8}{outflows}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classIntakeDataCollector_aea2dbea83bb83c26df4474da669dd2eb_aea2dbea83bb83c26df4474da669dd2eb}{total\+\_\+catchments\+\_\+inflow}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIntakeDataCollector_a2ab4a81bec74a370c60c78609627e807_a2ab4a81bec74a370c60c78609627e807}\label{classIntakeDataCollector_a2ab4a81bec74a370c60c78609627e807_a2ab4a81bec74a370c60c78609627e807}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{Intake\+Data\+Collector()}{IntakeDataCollector()}}
+{\footnotesize\ttfamily Intake\+Data\+Collector\+::\+Intake\+Data\+Collector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIntake}{Intake}} $\ast$}]{intake,  }\item[{unsigned long}]{realization }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classIntakeDataCollector_aed1610e5419465b35041b05b9f60c212_aed1610e5419465b35041b05b9f60c212}\label{classIntakeDataCollector_aed1610e5419465b35041b05b9f60c212_aed1610e5419465b35041b05b9f60c212}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!collect\+\_\+data@{collect\+\_\+data}}
+\index{collect\+\_\+data@{collect\+\_\+data}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{collect\+\_\+data()}{collect\_data()}}
+{\footnotesize\ttfamily void Intake\+Data\+Collector\+::collect\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classDataCollector_a01486bf58acbe37b203f97b3b9a79c40_a01486bf58acbe37b203f97b3b9a79c40}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classIntakeDataCollector_ac39a40726fd4fe887425b24a10f04034_ac39a40726fd4fe887425b24a10f04034}\label{classIntakeDataCollector_ac39a40726fd4fe887425b24a10f04034_ac39a40726fd4fe887425b24a10f04034}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!print\+Compact\+String@{print\+Compact\+String}}
+\index{print\+Compact\+String@{print\+Compact\+String}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String()}{printCompactString()}}
+{\footnotesize\ttfamily string Intake\+Data\+Collector\+::print\+Compact\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3_a2eac264fa5612aed5a830b12de4f4ae3}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classIntakeDataCollector_a42d56dd08e57a7e6e48812a2ab522439_a42d56dd08e57a7e6e48812a2ab522439}\label{classIntakeDataCollector_a42d56dd08e57a7e6e48812a2ab522439_a42d56dd08e57a7e6e48812a2ab522439}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!print\+Compact\+String\+Header@{print\+Compact\+String\+Header}}
+\index{print\+Compact\+String\+Header@{print\+Compact\+String\+Header}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String\+Header()}{printCompactStringHeader()}}
+{\footnotesize\ttfamily string Intake\+Data\+Collector\+::print\+Compact\+String\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67_a98dcb4ec871d9c7fbf7545c64e5ccc67}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classIntakeDataCollector_ada2b88b7a05455cf6f2eebf82d37b3c5_ada2b88b7a05455cf6f2eebf82d37b3c5}\label{classIntakeDataCollector_ada2b88b7a05455cf6f2eebf82d37b3c5_ada2b88b7a05455cf6f2eebf82d37b3c5}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!print\+Tabular\+String@{print\+Tabular\+String}}
+\index{print\+Tabular\+String@{print\+Tabular\+String}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String()}{printTabularString()}}
+{\footnotesize\ttfamily string Intake\+Data\+Collector\+::print\+Tabular\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classDataCollector_a397fccabe0223267eea8fc7cac0e59da_a397fccabe0223267eea8fc7cac0e59da}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classIntakeDataCollector_ae17ab7e6c75e77f5981f6a682597bb5c_ae17ab7e6c75e77f5981f6a682597bb5c}\label{classIntakeDataCollector_ae17ab7e6c75e77f5981f6a682597bb5c_ae17ab7e6c75e77f5981f6a682597bb5c}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}}
+\index{print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line1()}{printTabularStringHeaderLine1()}}
+{\footnotesize\ttfamily string Intake\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e_a91619cfa9e9b8cefd2f7c20d5718b41e}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classIntakeDataCollector_a2855eb8eed71649309bd4d9336f258c0_a2855eb8eed71649309bd4d9336f258c0}\label{classIntakeDataCollector_a2855eb8eed71649309bd4d9336f258c0_a2855eb8eed71649309bd4d9336f258c0}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}}
+\index{print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line2()}{printTabularStringHeaderLine2()}}
+{\footnotesize\ttfamily string Intake\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classDataCollector_af01ea961314be2164f39e6d4cd59e443_af01ea961314be2164f39e6d4cd59e443}{Data\+Collector}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classIntakeDataCollector_a7d1d205c15423db421038e54ac0e1f36_a7d1d205c15423db421038e54ac0e1f36}\label{classIntakeDataCollector_a7d1d205c15423db421038e54ac0e1f36_a7d1d205c15423db421038e54ac0e1f36}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!demands@{demands}}
+\index{demands@{demands}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{demands}{demands}}
+{\footnotesize\ttfamily vector$<$double$>$ Intake\+Data\+Collector\+::demands\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classIntakeDataCollector_a0dfbf640d99394bb82413c9a116db19b_a0dfbf640d99394bb82413c9a116db19b}\label{classIntakeDataCollector_a0dfbf640d99394bb82413c9a116db19b_a0dfbf640d99394bb82413c9a116db19b}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!intake@{intake}}
+\index{intake@{intake}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{intake}{intake}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIntake}{Intake}}$\ast$ Intake\+Data\+Collector\+::intake\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classIntakeDataCollector_ae0b0d07123dd9323402ca55e12802ac8_ae0b0d07123dd9323402ca55e12802ac8}\label{classIntakeDataCollector_ae0b0d07123dd9323402ca55e12802ac8_ae0b0d07123dd9323402ca55e12802ac8}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!outflows@{outflows}}
+\index{outflows@{outflows}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{outflows}{outflows}}
+{\footnotesize\ttfamily vector$<$double$>$ Intake\+Data\+Collector\+::outflows\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classIntakeDataCollector_aea2dbea83bb83c26df4474da669dd2eb_aea2dbea83bb83c26df4474da669dd2eb}\label{classIntakeDataCollector_aea2dbea83bb83c26df4474da669dd2eb_aea2dbea83bb83c26df4474da669dd2eb}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!total\+\_\+catchments\+\_\+inflow@{total\+\_\+catchments\+\_\+inflow}}
+\index{total\+\_\+catchments\+\_\+inflow@{total\+\_\+catchments\+\_\+inflow}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{total\+\_\+catchments\+\_\+inflow}{total\_catchments\_inflow}}
+{\footnotesize\ttfamily vector$<$double$>$ Intake\+Data\+Collector\+::total\+\_\+catchments\+\_\+inflow\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classIntakeDataCollector_a5016d2fece2ef545f72b9fa22497c817_a5016d2fece2ef545f72b9fa22497c817}\label{classIntakeDataCollector_a5016d2fece2ef545f72b9fa22497c817_a5016d2fece2ef545f72b9fa22497c817}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!total\+\_\+upstream\+\_\+sources\+\_\+inflows@{total\+\_\+upstream\+\_\+sources\+\_\+inflows}}
+\index{total\+\_\+upstream\+\_\+sources\+\_\+inflows@{total\+\_\+upstream\+\_\+sources\+\_\+inflows}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{total\+\_\+upstream\+\_\+sources\+\_\+inflows}{total\_upstream\_sources\_inflows}}
+{\footnotesize\ttfamily vector$<$double$>$ Intake\+Data\+Collector\+::total\+\_\+upstream\+\_\+sources\+\_\+inflows\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classIntakeDataCollector_a4485bea7a536f9fde233a2cc37200ec6_a4485bea7a536f9fde233a2cc37200ec6}\label{classIntakeDataCollector_a4485bea7a536f9fde233a2cc37200ec6_a4485bea7a536f9fde233a2cc37200ec6}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!wastewater\+\_\+inflows@{wastewater\+\_\+inflows}}
+\index{wastewater\+\_\+inflows@{wastewater\+\_\+inflows}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{wastewater\+\_\+inflows}{wastewater\_inflows}}
+{\footnotesize\ttfamily vector$<$double$>$ Intake\+Data\+Collector\+::wastewater\+\_\+inflows\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Data\+Collector/\mbox{\hyperlink{IntakeDataCollector_8h}{Intake\+Data\+Collector.\+h}}\item 
+src/\+Data\+Collector/\mbox{\hyperlink{IntakeDataCollector_8cpp}{Intake\+Data\+Collector.\+cpp}}\end{DoxyCompactItemize}

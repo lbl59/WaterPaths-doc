@@ -1,0 +1,759 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classMasterDataCollector" kind="class" language="C++" prot="public">
+    <compoundname>MasterDataCollector</compoundname>
+    <includes refid="MasterDataCollector_8h" local="no">MasterDataCollector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMasterDataCollector_af49386aa4a7ab28e11216055aecc596c_1af49386aa4a7ab28e11216055aecc596c" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string MasterDataCollector::output_directory</definition>
+        <argsstring></argsstring>
+        <name>output_directory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="17" column="1" bodyfile="src/DataCollector/MasterDataCollector.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMasterDataCollector_a2c6a150ee1d489a225d2f1c7b654798d_1a2c6a150ee1d489a225d2f1c7b654798d" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long MasterDataCollector::n_realizations</definition>
+        <argsstring></argsstring>
+        <name>n_realizations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="18" column="1" bodyfile="src/DataCollector/MasterDataCollector.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMasterDataCollector_a31899d6d3b2f7106cbacf7c3dd0e46c0_1a31899d6d3b2f7106cbacf7c3dd0e46c0" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; <ref refid="classDataCollector" kindref="compound">DataCollector</ref> * &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;DataCollector *&gt; &gt; MasterDataCollector::water_source_collectors</definition>
+        <argsstring></argsstring>
+        <name>water_source_collectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="20" column="1" bodyfile="src/DataCollector/MasterDataCollector.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMasterDataCollector_a3753307a042d155d3e7d7db095c0be7e_1a3753307a042d155d3e7d7db095c0be7e" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; <ref refid="classDataCollector" kindref="compound">DataCollector</ref> * &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;DataCollector *&gt; &gt; MasterDataCollector::drought_mitigation_policy_collectors</definition>
+        <argsstring></argsstring>
+        <name>drought_mitigation_policy_collectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="21" column="1" bodyfile="src/DataCollector/MasterDataCollector.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMasterDataCollector_a9482c829e7306ea318b237f52a6dbbf0_1a9482c829e7306ea318b237f52a6dbbf0" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; <ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref> * &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;UtilitiesDataCollector *&gt; &gt; MasterDataCollector::utility_collectors</definition>
+        <argsstring></argsstring>
+        <name>utility_collectors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="22" column="1" bodyfile="src/DataCollector/MasterDataCollector.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMasterDataCollector_a4a11d30216e284aa7adc19b730bde2f5_1a4a11d30216e284aa7adc19b730bde2f5" prot="private" static="no" mutable="no">
+        <type>vector&lt; unsigned long &gt;</type>
+        <definition>vector&lt;unsigned long&gt; MasterDataCollector::crashed_realizations</definition>
+        <argsstring></argsstring>
+        <name>crashed_realizations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="23" column="1" bodyfile="src/DataCollector/MasterDataCollector.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMasterDataCollector_a85bcb6c159366dd5fb3f0baeda2f2b2f_1a85bcb6c159366dd5fb3f0baeda2f2b2f" prot="private" static="no" mutable="no">
+        <type>vector&lt; unsigned long &gt;</type>
+        <definition>vector&lt;unsigned long&gt; MasterDataCollector::realizations_ran</definition>
+        <argsstring></argsstring>
+        <name>realizations_ran</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="24" column="1" bodyfile="src/DataCollector/MasterDataCollector.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classMasterDataCollector_a6cdbb4443f1425000f837231d662249e_1a6cdbb4443f1425000f837231d662249e" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int MasterDataCollector::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <initializer>= NON_INITIALIZED</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="26" column="1" bodyfile="src/DataCollector/MasterDataCollector.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMasterDataCollector_acb6f64c053bda26e5cf7e4ec8dacd0cd_1acb6f64c053bda26e5cf7e4ec8dacd0cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MasterDataCollector::MasterDataCollector</definition>
+        <argsstring>(vector&lt; unsigned long &gt; &amp;realizations_to_run)</argsstring>
+        <name>MasterDataCollector</name>
+        <param>
+          <type>vector&lt; unsigned long &gt; &amp;</type>
+          <declname>realizations_to_run</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="32" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_afabd59af08d3ee5dec1a6710a1966e8e_1afabd59af08d3ee5dec1a6710a1966e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int MasterDataCollector::printNETCDFUtilities</definition>
+        <argsstring>(string file_name)</argsstring>
+        <name>printNETCDFUtilities</name>
+        <param>
+          <type>string</type>
+          <declname>file_name</declname>
+          <defname>base_file_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="todo_1_todo000001"><xreftitle>Todo</xreftitle><xrefdescription><para>NetCDF file being saved with hardly any compression. Someone who knows more about NetCDF may be able to improve compression, which would be great given the amount of output that can be generated in one run. </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="35" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="66" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a30c5c81c8c2ccb475ce2ccbb2ae07608_1a30c5c81c8c2ccb475ce2ccbb2ae07608" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt; double &gt; MasterDataCollector::calculatePrintObjectives</definition>
+        <argsstring>(string file_name, bool print)</argsstring>
+        <name>calculatePrintObjectives</name>
+        <param>
+          <type>string</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>print</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="37" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="414" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_aaae6da0368b2050c4576c10298809c14_1aaae6da0368b2050c4576c10298809c14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>MasterDataCollector::~MasterDataCollector</definition>
+        <argsstring>()</argsstring>
+        <name>~MasterDataCollector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="39" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="47" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_aedd180f1f1648164506a0a59216c113f_1aedd180f1f1648164506a0a59216c113f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::printPoliciesOutputCompact</definition>
+        <argsstring>(int week_i, int week_f, string file_name)</argsstring>
+        <name>printPoliciesOutputCompact</name>
+        <param>
+          <type>int</type>
+          <declname>week_i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week_f</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="41" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="164" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_aa4a08525c6757376edba653a17d6ff60_1aa4a08525c6757376edba653a17d6ff60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::printPoliciesOutputTabular</definition>
+        <argsstring>(int week_i, int week_f, string file_name)</argsstring>
+        <name>printPoliciesOutputTabular</name>
+        <param>
+          <type>int</type>
+          <declname>week_i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week_f</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="44" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="194" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a7effc4567580a12567a46dd3f195dbac_1a7effc4567580a12567a46dd3f195dbac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::printUtilitiesOutputCompact</definition>
+        <argsstring>(int week_i, int week_f, string file_name)</argsstring>
+        <name>printUtilitiesOutputCompact</name>
+        <param>
+          <type>int</type>
+          <declname>week_i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week_f</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="46" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="226" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a772bc65951a1170900e89679cc7e0652_1a772bc65951a1170900e89679cc7e0652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::printUtilitesOutputTabular</definition>
+        <argsstring>(int week_i, int week_f, string file_name)</argsstring>
+        <name>printUtilitesOutputTabular</name>
+        <param>
+          <type>int</type>
+          <declname>week_i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week_f</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="48" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="254" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_adbe50e49689078e64a28450087ad0961_1adbe50e49689078e64a28450087ad0961" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::printWaterSourcesOutputCompact</definition>
+        <argsstring>(int week_i, int week_f, string file_name)</argsstring>
+        <name>printWaterSourcesOutputCompact</name>
+        <param>
+          <type>int</type>
+          <declname>week_i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week_f</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="51" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="292" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a77dd707b686d936118cd4e940156754f_1a77dd707b686d936118cd4e940156754f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::printWaterSourcesOutputTabular</definition>
+        <argsstring>(int week_i, int week_f, string file_name)</argsstring>
+        <name>printWaterSourcesOutputTabular</name>
+        <param>
+          <type>int</type>
+          <declname>week_i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week_f</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="54" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="323" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a6ef49bd511d89217e9a5b0626b3499c4_1a6ef49bd511d89217e9a5b0626b3499c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::setOutputDirectory</definition>
+        <argsstring>(string io_directory)</argsstring>
+        <name>setOutputDirectory</name>
+        <param>
+          <type>string</type>
+          <declname>io_directory</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="56" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="645" bodyend="652"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a966681d5219d11d0c6882522cd2ddd20_1a966681d5219d11d0c6882522cd2ddd20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::printPathways</definition>
+        <argsstring>(string file_name)</argsstring>
+        <name>printPathways</name>
+        <param>
+          <type>string</type>
+          <declname>file_name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="58" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="627" bodyend="643"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_aadb319947e62055428b18339d559a0ef_1aadb319947e62055428b18339d559a0ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::addRealization</definition>
+        <argsstring>(vector&lt; WaterSource *&gt; water_sources_realization, vector&lt; DroughtMitigationPolicy *&gt; drought_mitigation_policies_realization, vector&lt; Utility *&gt; utilities_realization, unsigned long r)</argsstring>
+        <name>addRealization</name>
+        <param>
+          <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt;</type>
+          <declname>water_sources_realization</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> *&gt;</type>
+          <declname>drought_mitigation_policies_realization</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt;</type>
+          <declname>utilities_realization</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="60" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="693" bodyend="725"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a5cbae3837d5f32ea3469a55f025692f5_1a5cbae3837d5f32ea3469a55f025692f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::removeRealization</definition>
+        <argsstring>(unsigned long r)</argsstring>
+        <name>removeRealization</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="65" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="727" bodyend="742"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a92683f7c5ec82e45259fe403be285149_1a92683f7c5ec82e45259fe403be285149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::cleanCollectorsOfDeletedRealizations</definition>
+        <argsstring>()</argsstring>
+        <name>cleanCollectorsOfDeletedRealizations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="67" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="750" bodyend="764"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a522fd42f6cf612e32691cf11a807045c_1a522fd42f6cf612e32691cf11a807045c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::collectData</definition>
+        <argsstring>(unsigned long r)</argsstring>
+        <name>collectData</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="69" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="767" bodyend="774"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_acbf0e8a8f30e483e504d756883d45cf0_1acbf0e8a8f30e483e504d756883d45cf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::performBootstrapAnalysis</definition>
+        <argsstring>(int sol_id, int n_sets, int n_samples, int n_threads, vector&lt; vector&lt; int &gt;&gt; bootstrap_samples=vector&lt; vector&lt; int &gt;&gt;())</argsstring>
+        <name>performBootstrapAnalysis</name>
+        <param>
+          <type>int</type>
+          <declname>sol_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_sets</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_samples</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_threads</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; int &gt;&gt;</type>
+          <declname>bootstrap_samples</declname>
+          <defval>vector&lt; vector&lt; int &gt;&gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="71" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="482" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a0b1606181cad15c58918deef52618885_1a0b1606181cad15c58918deef52618885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classDataCollector" kindref="compound">DataCollector</ref> *</type>
+        <definition>DataCollector * MasterDataCollector::createPolicyDataCollector</definition>
+        <argsstring>(DroughtMitigationPolicy *dmp, unsigned long r)</argsstring>
+        <name>createPolicyDataCollector</name>
+        <param>
+          <type><ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> *</type>
+          <declname>dmp</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="74" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="654" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_af14c96886904b8b044484cb0533fc43d_1af14c96886904b8b044484cb0533fc43d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classDataCollector" kindref="compound">DataCollector</ref> *</type>
+        <definition>DataCollector * MasterDataCollector::createWaterSourceDataCollector</definition>
+        <argsstring>(WaterSource *ws, unsigned long r)</argsstring>
+        <name>createWaterSourceDataCollector</name>
+        <param>
+          <type><ref refid="classWaterSource" kindref="compound">WaterSource</ref> *</type>
+          <declname>ws</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="76" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="668" bodyend="691"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_ae8c802f81045c613c065abc9705d0145_1ae8c802f81045c613c065abc9705d0145" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::printUtilityObjectivesToRowOutStream</definition>
+        <argsstring>(vector&lt; UtilitiesDataCollector *&gt; &amp;u, std::ofstream &amp;outStream, vector&lt; double &gt; &amp;objectives)</argsstring>
+        <name>printUtilityObjectivesToRowOutStream</name>
+        <param>
+          <type>vector&lt; <ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref> *&gt; &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>outStream</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>objectives</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Restriction Frequency</para><para>Infrastructure NPC</para><para>Peak Financial Cost</para><para>Worse Case Costs</para><para>Reliability</para><para>Restriction Frequency</para><para>Infrastructure NPC</para><para>Peak Financial Cost</para><para>Worse Case Costs </para>        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="78" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="361" bodyend="412"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a4d87af61c1a0894574a02f944a4f78d6_1a4d87af61c1a0894574a02f944a4f78d6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::readOrCreateBSSamples</definition>
+        <argsstring>(int sol_id, int n_sets, int n_samples, const vector&lt; vector&lt; int &gt;&gt; &amp;bootstrap_samples, vector&lt; vector&lt; int &gt;&gt; &amp;bootstrap_sample_sets) const</argsstring>
+        <name>readOrCreateBSSamples</name>
+        <param>
+          <type>int</type>
+          <declname>sol_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_sets</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_samples</declname>
+        </param>
+        <param>
+          <type>const vector&lt; vector&lt; int &gt;&gt; &amp;</type>
+          <declname>bootstrap_samples</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; int &gt;&gt; &amp;</type>
+          <declname>bootstrap_sample_sets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="81" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="605" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a0832afc87f9da7f7b1a70866e4ee4c6d_1a0832afc87f9da7f7b1a70866e4ee4c6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::printObjsBSSamples</definition>
+        <argsstring>(int sol_id, int n_sets, int n_samples, vector&lt; vector&lt; double &gt;&gt; &amp;objectives)</argsstring>
+        <name>printObjsBSSamples</name>
+        <param>
+          <type>int</type>
+          <declname>sol_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_sets</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_samples</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>objectives</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="84" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="585" bodyend="603"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a03f0a7bdc1502cbe23905dbfc48e6546_1a03f0a7bdc1502cbe23905dbfc48e6546" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::printObjectivesOfAllRealizationsForBSAnalysis</definition>
+        <argsstring>(int sol_id, int n_sets, int n_samples)</argsstring>
+        <name>printObjectivesOfAllRealizationsForBSAnalysis</name>
+        <param>
+          <type>int</type>
+          <declname>sol_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_sets</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_samples</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="86" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="566" bodyend="583"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a458ff4ee13e7cce91aee043b65c7c443_1a458ff4ee13e7cce91aee043b65c7c443" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::printBSSamples</definition>
+        <argsstring>(int sol_id, int n_sets, int n_samples, const vector&lt; vector&lt; int &gt;&gt; &amp;bootstrap_sample_sets) const</argsstring>
+        <name>printBSSamples</name>
+        <param>
+          <type>int</type>
+          <declname>sol_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_sets</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_samples</declname>
+        </param>
+        <param>
+          <type>const vector&lt; vector&lt; int &gt;&gt; &amp;</type>
+          <declname>bootstrap_sample_sets</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="92" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="545" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a640eed0cb3e00679463601adbdd3d1e6_1a640eed0cb3e00679463601adbdd3d1e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::isolateRestrictionDataCollectors</definition>
+        <argsstring>(vector&lt; UtilitiesDataCollector *&gt; &amp;u, vector&lt; RestrictionsDataCollector *&gt; &amp;utility_restrictions) const</argsstring>
+        <name>isolateRestrictionDataCollectors</name>
+        <param>
+          <type>vector&lt; <ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref> *&gt; &amp;</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classRestrictionsDataCollector" kindref="compound">RestrictionsDataCollector</ref> *&gt; &amp;</type>
+          <declname>utility_restrictions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="94" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="472" bodyend="480"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classMasterDataCollector_a87fcddba468aff96d324ef24bd97d2a1_1a87fcddba468aff96d324ef24bd97d2a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::setSeed</definition>
+        <argsstring>(int seed)</argsstring>
+        <name>setSeed</name>
+        <param>
+          <type>int</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="88" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="776" bodyend="778"/>
+      </memberdef>
+      <memberdef kind="function" id="classMasterDataCollector_a0603f209d3d52d48d035c38f003abbb6_1a0603f209d3d52d48d035c38f003abbb6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MasterDataCollector::unsetSeed</definition>
+        <argsstring>()</argsstring>
+        <name>unsetSeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/MasterDataCollector.h" line="90" column="1" bodyfile="src/DataCollector/MasterDataCollector.cpp" bodystart="780" bodyend="782"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/DataCollector/MasterDataCollector.h" line="15" column="1" bodyfile="src/DataCollector/MasterDataCollector.h" bodystart="15" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classMasterDataCollector_aadb319947e62055428b18339d559a0ef_1aadb319947e62055428b18339d559a0ef" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>addRealization</name></member>
+      <member refid="classMasterDataCollector_a30c5c81c8c2ccb475ce2ccbb2ae07608_1a30c5c81c8c2ccb475ce2ccbb2ae07608" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>calculatePrintObjectives</name></member>
+      <member refid="classMasterDataCollector_a92683f7c5ec82e45259fe403be285149_1a92683f7c5ec82e45259fe403be285149" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>cleanCollectorsOfDeletedRealizations</name></member>
+      <member refid="classMasterDataCollector_a522fd42f6cf612e32691cf11a807045c_1a522fd42f6cf612e32691cf11a807045c" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>collectData</name></member>
+      <member refid="classMasterDataCollector_a4a11d30216e284aa7adc19b730bde2f5_1a4a11d30216e284aa7adc19b730bde2f5" prot="private" virt="non-virtual"><scope>MasterDataCollector</scope><name>crashed_realizations</name></member>
+      <member refid="classMasterDataCollector_a0b1606181cad15c58918deef52618885_1a0b1606181cad15c58918deef52618885" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>createPolicyDataCollector</name></member>
+      <member refid="classMasterDataCollector_af14c96886904b8b044484cb0533fc43d_1af14c96886904b8b044484cb0533fc43d" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>createWaterSourceDataCollector</name></member>
+      <member refid="classMasterDataCollector_a3753307a042d155d3e7d7db095c0be7e_1a3753307a042d155d3e7d7db095c0be7e" prot="private" virt="non-virtual"><scope>MasterDataCollector</scope><name>drought_mitigation_policy_collectors</name></member>
+      <member refid="classMasterDataCollector_a640eed0cb3e00679463601adbdd3d1e6_1a640eed0cb3e00679463601adbdd3d1e6" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>isolateRestrictionDataCollectors</name></member>
+      <member refid="classMasterDataCollector_acb6f64c053bda26e5cf7e4ec8dacd0cd_1acb6f64c053bda26e5cf7e4ec8dacd0cd" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>MasterDataCollector</name></member>
+      <member refid="classMasterDataCollector_a2c6a150ee1d489a225d2f1c7b654798d_1a2c6a150ee1d489a225d2f1c7b654798d" prot="private" virt="non-virtual"><scope>MasterDataCollector</scope><name>n_realizations</name></member>
+      <member refid="classMasterDataCollector_af49386aa4a7ab28e11216055aecc596c_1af49386aa4a7ab28e11216055aecc596c" prot="private" virt="non-virtual"><scope>MasterDataCollector</scope><name>output_directory</name></member>
+      <member refid="classMasterDataCollector_acbf0e8a8f30e483e504d756883d45cf0_1acbf0e8a8f30e483e504d756883d45cf0" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>performBootstrapAnalysis</name></member>
+      <member refid="classMasterDataCollector_a458ff4ee13e7cce91aee043b65c7c443_1a458ff4ee13e7cce91aee043b65c7c443" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>printBSSamples</name></member>
+      <member refid="classMasterDataCollector_afabd59af08d3ee5dec1a6710a1966e8e_1afabd59af08d3ee5dec1a6710a1966e8e" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>printNETCDFUtilities</name></member>
+      <member refid="classMasterDataCollector_a03f0a7bdc1502cbe23905dbfc48e6546_1a03f0a7bdc1502cbe23905dbfc48e6546" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>printObjectivesOfAllRealizationsForBSAnalysis</name></member>
+      <member refid="classMasterDataCollector_a0832afc87f9da7f7b1a70866e4ee4c6d_1a0832afc87f9da7f7b1a70866e4ee4c6d" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>printObjsBSSamples</name></member>
+      <member refid="classMasterDataCollector_a966681d5219d11d0c6882522cd2ddd20_1a966681d5219d11d0c6882522cd2ddd20" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>printPathways</name></member>
+      <member refid="classMasterDataCollector_aedd180f1f1648164506a0a59216c113f_1aedd180f1f1648164506a0a59216c113f" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>printPoliciesOutputCompact</name></member>
+      <member refid="classMasterDataCollector_aa4a08525c6757376edba653a17d6ff60_1aa4a08525c6757376edba653a17d6ff60" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>printPoliciesOutputTabular</name></member>
+      <member refid="classMasterDataCollector_a772bc65951a1170900e89679cc7e0652_1a772bc65951a1170900e89679cc7e0652" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>printUtilitesOutputTabular</name></member>
+      <member refid="classMasterDataCollector_a7effc4567580a12567a46dd3f195dbac_1a7effc4567580a12567a46dd3f195dbac" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>printUtilitiesOutputCompact</name></member>
+      <member refid="classMasterDataCollector_ae8c802f81045c613c065abc9705d0145_1ae8c802f81045c613c065abc9705d0145" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>printUtilityObjectivesToRowOutStream</name></member>
+      <member refid="classMasterDataCollector_adbe50e49689078e64a28450087ad0961_1adbe50e49689078e64a28450087ad0961" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>printWaterSourcesOutputCompact</name></member>
+      <member refid="classMasterDataCollector_a77dd707b686d936118cd4e940156754f_1a77dd707b686d936118cd4e940156754f" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>printWaterSourcesOutputTabular</name></member>
+      <member refid="classMasterDataCollector_a4d87af61c1a0894574a02f944a4f78d6_1a4d87af61c1a0894574a02f944a4f78d6" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>readOrCreateBSSamples</name></member>
+      <member refid="classMasterDataCollector_a85bcb6c159366dd5fb3f0baeda2f2b2f_1a85bcb6c159366dd5fb3f0baeda2f2b2f" prot="private" virt="non-virtual"><scope>MasterDataCollector</scope><name>realizations_ran</name></member>
+      <member refid="classMasterDataCollector_a5cbae3837d5f32ea3469a55f025692f5_1a5cbae3837d5f32ea3469a55f025692f5" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>removeRealization</name></member>
+      <member refid="classMasterDataCollector_a6cdbb4443f1425000f837231d662249e_1a6cdbb4443f1425000f837231d662249e" prot="private" virt="non-virtual"><scope>MasterDataCollector</scope><name>seed</name></member>
+      <member refid="classMasterDataCollector_a6ef49bd511d89217e9a5b0626b3499c4_1a6ef49bd511d89217e9a5b0626b3499c4" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>setOutputDirectory</name></member>
+      <member refid="classMasterDataCollector_a87fcddba468aff96d324ef24bd97d2a1_1a87fcddba468aff96d324ef24bd97d2a1" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>setSeed</name></member>
+      <member refid="classMasterDataCollector_a0603f209d3d52d48d035c38f003abbb6_1a0603f209d3d52d48d035c38f003abbb6" prot="public" virt="non-virtual"><scope>MasterDataCollector</scope><name>unsetSeed</name></member>
+      <member refid="classMasterDataCollector_a9482c829e7306ea318b237f52a6dbbf0_1a9482c829e7306ea318b237f52a6dbbf0" prot="private" virt="non-virtual"><scope>MasterDataCollector</scope><name>utility_collectors</name></member>
+      <member refid="classMasterDataCollector_a31899d6d3b2f7106cbacf7c3dd0e46c0_1a31899d6d3b2f7106cbacf7c3dd0e46c0" prot="private" virt="non-virtual"><scope>MasterDataCollector</scope><name>water_source_collectors</name></member>
+      <member refid="classMasterDataCollector_aaae6da0368b2050c4576c10298809c14_1aaae6da0368b2050c4576c10298809c14" prot="public" virt="virtual"><scope>MasterDataCollector</scope><name>~MasterDataCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

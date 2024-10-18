@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="WaterReuseDataCollector_8h" kind="file" language="C++">
+    <compoundname>WaterReuseDataCollector.h</compoundname>
+    <includes refid="DataCollector_8h" local="yes">Base/DataCollector.h</includes>
+    <includes refid="WaterReuse_8h" local="yes">../SystemComponents/WaterSources/WaterReuse.h</includes>
+    <includedby refid="MasterDataCollector_8cpp" local="yes">src/DataCollector/MasterDataCollector.cpp</includedby>
+    <includedby refid="WaterReuseDataCollector_8cpp" local="yes">src/DataCollector/WaterReuseDataCollector.cpp</includedby>
+    <incdepgraph>
+      <node id="1416">
+        <label>src/DataCollector/WaterReuseDataCollector.h</label>
+        <link refid="WaterReuseDataCollector_8h"/>
+        <childnode refid="1417" relation="include">
+        </childnode>
+        <childnode refid="1419" relation="include">
+        </childnode>
+      </node>
+      <node id="1419">
+        <label>../SystemComponents/WaterSources/WaterReuse.h</label>
+        <link refid="WaterReuse_8h"/>
+        <childnode refid="1420" relation="include">
+        </childnode>
+      </node>
+      <node id="1425">
+        <label>cmath</label>
+      </node>
+      <node id="1423">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="1424" relation="include">
+        </childnode>
+        <childnode refid="1425" relation="include">
+        </childnode>
+        <childnode refid="1426" relation="include">
+        </childnode>
+        <childnode refid="1422" relation="include">
+        </childnode>
+      </node>
+      <node id="1418">
+        <label>string</label>
+      </node>
+      <node id="1424">
+        <label>map</label>
+      </node>
+      <node id="1420">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="1418" relation="include">
+        </childnode>
+        <childnode refid="1421" relation="include">
+        </childnode>
+        <childnode refid="1423" relation="include">
+        </childnode>
+        <childnode refid="1427" relation="include">
+        </childnode>
+      </node>
+      <node id="1422">
+        <label>vector</label>
+      </node>
+      <node id="1421">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="1422" relation="include">
+        </childnode>
+        <childnode refid="1423" relation="include">
+        </childnode>
+      </node>
+      <node id="1417">
+        <label>Base/DataCollector.h</label>
+        <link refid="DataCollector_8h"/>
+        <childnode refid="1418" relation="include">
+        </childnode>
+      </node>
+      <node id="1427">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="1422" relation="include">
+        </childnode>
+        <childnode refid="1423" relation="include">
+        </childnode>
+      </node>
+      <node id="1426">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1428">
+        <label>src/DataCollector/WaterReuseDataCollector.h</label>
+        <link refid="WaterReuseDataCollector_8h"/>
+        <childnode refid="1429" relation="include">
+        </childnode>
+        <childnode refid="1430" relation="include">
+        </childnode>
+      </node>
+      <node id="1430">
+        <label>src/DataCollector/WaterReuseDataCollector.cpp</label>
+        <link refid="WaterReuseDataCollector_8cpp"/>
+      </node>
+      <node id="1429">
+        <label>src/DataCollector/MasterDataCollector.cpp</label>
+        <link refid="MasterDataCollector_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classWaterReuseDataCollector" prot="public">WaterReuseDataCollector</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardoct<sp/>on<sp/>8/26/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_WATERREUSEDATACOLLECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_WATERREUSEDATACOLLECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DataCollector_8h" kindref="compound">Base/DataCollector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../SystemComponents/WaterSources/WaterReuse.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classWaterReuseDataCollector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classWaterReuseDataCollector" kindref="compound">WaterReuseDataCollector</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classDataCollector" kindref="compound">DataCollector</ref><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14" refid="classWaterReuseDataCollector_a4ecf7e2de50415ac298104816b17d887_1a4ecf7e2de50415ac298104816b17d887" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaterReuse" kindref="compound">WaterReuse</ref><sp/>*<ref refid="classWaterReuseDataCollector_a4ecf7e2de50415ac298104816b17d887_1a4ecf7e2de50415ac298104816b17d887" kindref="member">water_reuse</ref>;</highlight></codeline>
+<codeline lineno="15" refid="classWaterReuseDataCollector_a9c119c103524f7350d771406a4a8c6a9_1a9c119c103524f7350d771406a4a8c6a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterReuseDataCollector_a9c119c103524f7350d771406a4a8c6a9_1a9c119c103524f7350d771406a4a8c6a9" kindref="member">reused_volume</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaterReuseDataCollector_a0bd64f585d6645023f6cf5a485a89416_1a0bd64f585d6645023f6cf5a485a89416" kindref="member">WaterReuseDataCollector</ref>(<ref refid="classWaterReuse" kindref="compound">WaterReuse</ref><sp/>*<ref refid="classWaterReuseDataCollector_a4ecf7e2de50415ac298104816b17d887_1a4ecf7e2de50415ac298104816b17d887" kindref="member">water_reuse</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classDataCollector_a9ef2887466fe3123aa19ef956a219b96_1a9ef2887466fe3123aa19ef956a219b96" kindref="member">realization</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classWaterReuseDataCollector_af8b637ad080f354dc145f11580834da8_1af8b637ad080f354dc145f11580834da8" kindref="member">printTabularString</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classWaterReuseDataCollector_a6b37aa4b2031cf0a1a1326da2bd64420_1a6b37aa4b2031cf0a1a1326da2bd64420" kindref="member">printCompactString</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classWaterReuseDataCollector_a1065ad3627b913dccb6ecbf0e6acc6e6_1a1065ad3627b913dccb6ecbf0e6acc6e6" kindref="member">printTabularStringHeaderLine1</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classWaterReuseDataCollector_a8cead3771efabeb62dcf069008810f43_1a8cead3771efabeb62dcf069008810f43" kindref="member">printTabularStringHeaderLine2</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classWaterReuseDataCollector_afef08bead3f2c60c2b9c975864456ef1_1afef08bead3f2c60c2b9c975864456ef1" kindref="member">printCompactStringHeader</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classWaterReuseDataCollector_af4d8d437372c06d84ff889a5288cc96e_1af4d8d437372c06d84ff889a5288cc96e" kindref="member">collect_data</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_WATERREUSEDATACOLLECTOR_H</highlight></codeline>
+    </programlisting>
+    <location file="src/DataCollector/WaterReuseDataCollector.h"/>
+  </compounddef>
+</doxygen>

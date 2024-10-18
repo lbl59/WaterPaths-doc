@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classAllocatedReservoirDataCollector" kind="class" language="C++" prot="public">
+    <compoundname>AllocatedReservoirDataCollector</compoundname>
+    <basecompoundref refid="classReservoirDataCollector" prot="public" virt="non-virtual">ReservoirDataCollector</basecompoundref>
+    <includes refid="AllocatedReservoirDataCollector_8h" local="no">AllocatedReservoirDataCollector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAllocatedReservoirDataCollector_a8ba7549c1a0ec6afc6c87e264d2826e3_1a8ba7549c1a0ec6afc6c87e264d2826e3" prot="private" static="no" mutable="no">
+        <type><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref> *</type>
+        <definition>AllocatedReservoir* AllocatedReservoirDataCollector::allocated_reservoir</definition>
+        <argsstring></argsstring>
+        <name>allocated_reservoir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/AllocatedReservoirDataCollector.h" line="13" column="1" bodyfile="src/DataCollector/AllocatedReservoirDataCollector.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedReservoirDataCollector_a2bb0db4f265998a9bbe710a8e97f481b_1a2bb0db4f265998a9bbe710a8e97f481b" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; AllocatedReservoirDataCollector::allocated_stored_volumes</definition>
+        <argsstring></argsstring>
+        <name>allocated_stored_volumes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/AllocatedReservoirDataCollector.h" line="14" column="1" bodyfile="src/DataCollector/AllocatedReservoirDataCollector.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedReservoirDataCollector_ac5b879439204459a7362751139636643_1ac5b879439204459a7362751139636643" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; AllocatedReservoirDataCollector::utilities_with_allocations</definition>
+        <argsstring></argsstring>
+        <name>utilities_with_allocations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/AllocatedReservoirDataCollector.h" line="15" column="1" bodyfile="src/DataCollector/AllocatedReservoirDataCollector.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_a512b8604164f43d08f961e0f433678e3_1a512b8604164f43d08f961e0f433678e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AllocatedReservoirDataCollector::AllocatedReservoirDataCollector</definition>
+        <argsstring>(AllocatedReservoir *allocated_reservoir, unsigned long realization)</argsstring>
+        <name>AllocatedReservoirDataCollector</name>
+        <param>
+          <type><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref> *</type>
+          <declname>allocated_reservoir</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/AllocatedReservoirDataCollector.h" line="18" column="1" bodyfile="src/DataCollector/AllocatedReservoirDataCollector.cpp" bodystart="9" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_ae5a9aa9b2a3cffd8f5ffe983c8fcf6c8_1ae5a9aa9b2a3cffd8f5ffe983c8fcf6c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedReservoirDataCollector::printTabularString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printTabularString</name>
+        <reimplements refid="classDataCollector_a397fccabe0223267eea8fc7cac0e59da_1a397fccabe0223267eea8fc7cac0e59da">printTabularString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/AllocatedReservoirDataCollector.h" line="21" column="1" bodyfile="src/DataCollector/AllocatedReservoirDataCollector.cpp" bodystart="18" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_a35f8125d428e65c737ff3360ae9bd0cd_1a35f8125d428e65c737ff3360ae9bd0cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedReservoirDataCollector::printCompactString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printCompactString</name>
+        <reimplements refid="classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3_1a2eac264fa5612aed5a830b12de4f4ae3">printCompactString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/AllocatedReservoirDataCollector.h" line="23" column="1" bodyfile="src/DataCollector/AllocatedReservoirDataCollector.cpp" bodystart="32" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_ae82c7a68af1dce9003cccc6da1800e28_1ae82c7a68af1dce9003cccc6da1800e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedReservoirDataCollector::printTabularStringHeaderLine1</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine1</name>
+        <reimplements refid="classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e_1a91619cfa9e9b8cefd2f7c20d5718b41e">printTabularStringHeaderLine1</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/AllocatedReservoirDataCollector.h" line="25" column="1" bodyfile="src/DataCollector/AllocatedReservoirDataCollector.cpp" bodystart="45" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_a30d8c59205862822f6548472ba62e537_1a30d8c59205862822f6548472ba62e537" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedReservoirDataCollector::printTabularStringHeaderLine2</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine2</name>
+        <reimplements refid="classDataCollector_af01ea961314be2164f39e6d4cd59e443_1af01ea961314be2164f39e6d4cd59e443">printTabularStringHeaderLine2</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/AllocatedReservoirDataCollector.h" line="27" column="1" bodyfile="src/DataCollector/AllocatedReservoirDataCollector.cpp" bodystart="58" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_adbedebdf593bee81447671fb8f6ef2fe_1adbedebdf593bee81447671fb8f6ef2fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedReservoirDataCollector::printCompactStringHeader</definition>
+        <argsstring>() override</argsstring>
+        <name>printCompactStringHeader</name>
+        <reimplements refid="classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67_1a98dcb4ec871d9c7fbf7545c64e5ccc67">printCompactStringHeader</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/AllocatedReservoirDataCollector.h" line="29" column="1" bodyfile="src/DataCollector/AllocatedReservoirDataCollector.cpp" bodystart="71" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_a8ef8451d2cc6eb01b205eee75ab93729_1a8ef8451d2cc6eb01b205eee75ab93729" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedReservoirDataCollector::collect_data</definition>
+        <argsstring>() override</argsstring>
+        <name>collect_data</name>
+        <reimplements refid="classDataCollector_a01486bf58acbe37b203f97b3b9a79c40_1a01486bf58acbe37b203f97b3b9a79c40">collect_data</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/AllocatedReservoirDataCollector.h" line="31" column="1" bodyfile="src/DataCollector/AllocatedReservoirDataCollector.cpp" bodystart="81" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="11">
+        <label>ReservoirDataCollector</label>
+        <link refid="classReservoirDataCollector"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>AllocatedReservoirDataCollector</label>
+        <link refid="classAllocatedReservoirDataCollector"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="20">
+        <label>DataSeries</label>
+        <link refid="classDataSeries"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>ControlRules</label>
+        <link refid="classControlRules"/>
+      </node>
+      <node id="17">
+        <label>WaterSource</label>
+        <link refid="classWaterSource"/>
+      </node>
+      <node id="19">
+        <label>Catchment</label>
+        <link refid="classCatchment"/>
+      </node>
+      <node id="18">
+        <label>EvaporationSeries</label>
+        <link refid="classEvaporationSeries"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="14">
+        <label>ReservoirDataCollector</label>
+        <link refid="classReservoirDataCollector"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>reservoir</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>AllocatedReservoirDataCollector</label>
+        <link refid="classAllocatedReservoirDataCollector"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>allocated_reservoir</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>Reservoir</label>
+        <link refid="classReservoir"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>evaporation_series</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>storage_area_curve</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>AllocatedReservoir</label>
+        <link refid="classAllocatedReservoir"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/DataCollector/AllocatedReservoirDataCollector.h" line="12" column="1" bodyfile="src/DataCollector/AllocatedReservoirDataCollector.h" bodystart="12" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classAllocatedReservoirDataCollector_a8ba7549c1a0ec6afc6c87e264d2826e3_1a8ba7549c1a0ec6afc6c87e264d2826e3" prot="private" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>allocated_reservoir</name></member>
+      <member refid="classAllocatedReservoirDataCollector_a2bb0db4f265998a9bbe710a8e97f481b_1a2bb0db4f265998a9bbe710a8e97f481b" prot="private" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>allocated_stored_volumes</name></member>
+      <member refid="classAllocatedReservoirDataCollector_a512b8604164f43d08f961e0f433678e3_1a512b8604164f43d08f961e0f433678e3" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>AllocatedReservoirDataCollector</name></member>
+      <member refid="classAllocatedReservoirDataCollector_a8ef8451d2cc6eb01b205eee75ab93729_1a8ef8451d2cc6eb01b205eee75ab93729" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>collect_data</name></member>
+      <member refid="classDataCollector_a3f89b18f4ac0557d7374d49531a004c0_1a3f89b18f4ac0557d7374d49531a004c0" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>DataCollector</name></member>
+      <member refid="classDataCollector_a5cb840b6fbcf6afe364eef9114984383_1a5cb840b6fbcf6afe364eef9114984383" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>id</name></member>
+      <member refid="classDataCollector_a3a9a5033592f72ada429aa20056162b9_1a3a9a5033592f72ada429aa20056162b9" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>name</name></member>
+      <member refid="classAllocatedReservoirDataCollector_a35f8125d428e65c737ff3360ae9bd0cd_1a35f8125d428e65c737ff3360ae9bd0cd" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>printCompactString</name></member>
+      <member refid="classAllocatedReservoirDataCollector_adbedebdf593bee81447671fb8f6ef2fe_1adbedebdf593bee81447671fb8f6ef2fe" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>printCompactStringHeader</name></member>
+      <member refid="classAllocatedReservoirDataCollector_ae5a9aa9b2a3cffd8f5ffe983c8fcf6c8_1ae5a9aa9b2a3cffd8f5ffe983c8fcf6c8" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>printTabularString</name></member>
+      <member refid="classAllocatedReservoirDataCollector_ae82c7a68af1dce9003cccc6da1800e28_1ae82c7a68af1dce9003cccc6da1800e28" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>printTabularStringHeaderLine1</name></member>
+      <member refid="classAllocatedReservoirDataCollector_a30d8c59205862822f6548472ba62e537_1a30d8c59205862822f6548472ba62e537" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>printTabularStringHeaderLine2</name></member>
+      <member refid="classDataCollector_a9ef2887466fe3123aa19ef956a219b96_1a9ef2887466fe3123aa19ef956a219b96" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>realization</name></member>
+      <member refid="classReservoirDataCollector_a7647adce7b2d7a8598ae678a5015dde5_1a7647adce7b2d7a8598ae678a5015dde5" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>ReservoirDataCollector</name></member>
+      <member refid="classReservoirDataCollector_aaca132902fa717e71a0b0d5d5078c04c_1aaca132902fa717e71a0b0d5d5078c04c" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>ReservoirDataCollector</name></member>
+      <member refid="classDataCollector_af46c27a47de92d92dcdae6b26a905a44_1af46c27a47de92d92dcdae6b26a905a44" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>table_width</name></member>
+      <member refid="classDataCollector_acad1c22d67a8eb3db056ba776a131900_1acad1c22d67a8eb3db056ba776a131900" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>type</name></member>
+      <member refid="classAllocatedReservoirDataCollector_ac5b879439204459a7362751139636643_1ac5b879439204459a7362751139636643" prot="private" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>utilities_with_allocations</name></member>
+      <member refid="classDataCollector_a9f9ff1817bd0601ba33925c3378ac50e_1a9f9ff1817bd0601ba33925c3378ac50e" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>~DataCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

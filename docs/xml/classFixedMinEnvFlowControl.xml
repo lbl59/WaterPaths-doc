@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classFixedMinEnvFlowControl" kind="class" language="C++" prot="public">
+    <compoundname>FixedMinEnvFlowControl</compoundname>
+    <basecompoundref refid="classMinEnvFlowControl" prot="public" virt="non-virtual">MinEnvFlowControl</basecompoundref>
+    <includes refid="FixedMinEnvFlowControl_8h" local="no">FixedMinEnvFlowControl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFixedMinEnvFlowControl_a16665ce65b1fe997390eb913926bd229_1a16665ce65b1fe997390eb913926bd229" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double FixedMinEnvFlowControl::release</definition>
+        <argsstring></argsstring>
+        <name>release</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/FixedMinEnvFlowControl.h" line="13" column="1" bodyfile="src/Controls/FixedMinEnvFlowControl.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFixedMinEnvFlowControl_ab03711220b87d6490a4c2ca81fcc89a0_1ab03711220b87d6490a4c2ca81fcc89a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FixedMinEnvFlowControl::FixedMinEnvFlowControl</definition>
+        <argsstring>(int water_source_id, double release)</argsstring>
+        <name>FixedMinEnvFlowControl</name>
+        <param>
+          <type>int</type>
+          <declname>water_source_id</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>release</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/FixedMinEnvFlowControl.h" line="15" column="1" bodyfile="src/Controls/FixedMinEnvFlowControl.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classFixedMinEnvFlowControl_a57795231f747cae4a4b5b4cf9d4d044f_1a57795231f747cae4a4b5b4cf9d4d044f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FixedMinEnvFlowControl::FixedMinEnvFlowControl</definition>
+        <argsstring>(const FixedMinEnvFlowControl &amp;min_env_control)</argsstring>
+        <name>FixedMinEnvFlowControl</name>
+        <param>
+          <type>const <ref refid="classFixedMinEnvFlowControl" kindref="compound">FixedMinEnvFlowControl</ref> &amp;</type>
+          <declname>min_env_control</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/FixedMinEnvFlowControl.h" line="17" column="1" bodyfile="src/Controls/FixedMinEnvFlowControl.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classFixedMinEnvFlowControl_ac63298347dcaccf755ea45d1e2f94bad_1ac63298347dcaccf755ea45d1e2f94bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FixedMinEnvFlowControl::~FixedMinEnvFlowControl</definition>
+        <argsstring>() override</argsstring>
+        <name>~FixedMinEnvFlowControl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/FixedMinEnvFlowControl.h" line="19" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classFixedMinEnvFlowControl_af3ef98eef6a7124738a3b54dcadf757f_1af3ef98eef6a7124738a3b54dcadf757f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double FixedMinEnvFlowControl::getRelease</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>getRelease</name>
+        <reimplements refid="classMinEnvFlowControl_a5de79615852eb0c937dd559a9eb9402d_1a5de79615852eb0c937dd559a9eb9402d">getRelease</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/FixedMinEnvFlowControl.h" line="21" column="1" bodyfile="src/Controls/FixedMinEnvFlowControl.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="92">
+        <label>MinEnvFlowControl</label>
+        <link refid="classMinEnvFlowControl"/>
+      </node>
+      <node id="91">
+        <label>FixedMinEnvFlowControl</label>
+        <link refid="classFixedMinEnvFlowControl"/>
+        <childnode refid="92" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="94">
+        <label>MinEnvFlowControl</label>
+        <link refid="classMinEnvFlowControl"/>
+      </node>
+      <node id="93">
+        <label>FixedMinEnvFlowControl</label>
+        <link refid="classFixedMinEnvFlowControl"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/Controls/FixedMinEnvFlowControl.h" line="11" column="1" bodyfile="src/Controls/FixedMinEnvFlowControl.h" bodystart="11" bodyend="22"/>
+    <listofallmembers>
+      <member refid="classMinEnvFlowControl_a4f849e1385f68c9d8f2835889f14a71f_1a4f849e1385f68c9d8f2835889f14a71f" prot="public" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>addComponents</name></member>
+      <member refid="classMinEnvFlowControl_a99502573f30daf84d9ad7a2f62197b77_1a99502573f30daf84d9ad7a2f62197b77" prot="protected" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>catchments</name></member>
+      <member refid="classFixedMinEnvFlowControl_ab03711220b87d6490a4c2ca81fcc89a0_1ab03711220b87d6490a4c2ca81fcc89a0" prot="public" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>FixedMinEnvFlowControl</name></member>
+      <member refid="classFixedMinEnvFlowControl_a57795231f747cae4a4b5b4cf9d4d044f_1a57795231f747cae4a4b5b4cf9d4d044f" prot="public" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>FixedMinEnvFlowControl</name></member>
+      <member refid="classFixedMinEnvFlowControl_af3ef98eef6a7124738a3b54dcadf757f_1af3ef98eef6a7124738a3b54dcadf757f" prot="public" virt="virtual"><scope>FixedMinEnvFlowControl</scope><name>getRelease</name></member>
+      <member refid="classMinEnvFlowControl_a093b292294d85f426c38deb6b7537d81_1a093b292294d85f426c38deb6b7537d81" prot="public" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>MinEnvFlowControl</name></member>
+      <member refid="classMinEnvFlowControl_a0e12d2b8583a539d200acfc5fac795b6_1a0e12d2b8583a539d200acfc5fac795b6" prot="public" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>MinEnvFlowControl</name></member>
+      <member refid="classFixedMinEnvFlowControl_a16665ce65b1fe997390eb913926bd229_1a16665ce65b1fe997390eb913926bd229" prot="private" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>release</name></member>
+      <member refid="classMinEnvFlowControl_aff9774bd700410f9cd9a04e323f824c8_1aff9774bd700410f9cd9a04e323f824c8" prot="public" virt="virtual"><scope>FixedMinEnvFlowControl</scope><name>setRealization</name></member>
+      <member refid="classMinEnvFlowControl_abc3f168cd1ec36ba59e4b8604dfae8ec_1abc3f168cd1ec36ba59e4b8604dfae8ec" prot="public" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>type</name></member>
+      <member refid="classMinEnvFlowControl_a1a0a309138b35e8199c205efb5fb5f80_1a1a0a309138b35e8199c205efb5fb5f80" prot="protected" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>utilities</name></member>
+      <member refid="classMinEnvFlowControl_a5c67ab20c181a1d22e4bf94e398451fc_1a5c67ab20c181a1d22e4bf94e398451fc" prot="public" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>utilities_ids</name></member>
+      <member refid="classMinEnvFlowControl_aada518a047598f386daec1d0358023aa_1aada518a047598f386daec1d0358023aa" prot="public" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>water_source_id</name></member>
+      <member refid="classMinEnvFlowControl_a36b50d0e6887b956051ae53bf5d2e3a9_1a36b50d0e6887b956051ae53bf5d2e3a9" prot="protected" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>water_sources</name></member>
+      <member refid="classMinEnvFlowControl_a775d6408e5c581754ee4240eea68abdc_1a775d6408e5c581754ee4240eea68abdc" prot="public" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>water_sources_ids</name></member>
+      <member refid="classFixedMinEnvFlowControl_ac63298347dcaccf755ea45d1e2f94bad_1ac63298347dcaccf755ea45d1e2f94bad" prot="public" virt="non-virtual"><scope>FixedMinEnvFlowControl</scope><name>~FixedMinEnvFlowControl</name></member>
+      <member refid="classMinEnvFlowControl_a809d1552ea730c607dbc73937eb70a6a_1a809d1552ea730c607dbc73937eb70a6a" prot="public" virt="virtual"><scope>FixedMinEnvFlowControl</scope><name>~MinEnvFlowControl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

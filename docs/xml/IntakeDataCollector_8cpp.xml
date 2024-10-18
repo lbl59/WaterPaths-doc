@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="IntakeDataCollector_8cpp" kind="file" language="C++">
+    <compoundname>IntakeDataCollector.cpp</compoundname>
+    <includes local="no">iomanip</includes>
+    <includes refid="IntakeDataCollector_8h" local="yes">IntakeDataCollector.h</includes>
+    <incdepgraph>
+      <node id="992">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="985" relation="include">
+        </childnode>
+        <childnode refid="993" relation="include">
+        </childnode>
+        <childnode refid="994" relation="include">
+        </childnode>
+      </node>
+      <node id="994">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="979">
+        <label>iomanip</label>
+      </node>
+      <node id="981">
+        <label>../SystemComponents/WaterSources/Intake.h</label>
+        <link refid="Intake_8h"/>
+        <childnode refid="982" relation="include">
+        </childnode>
+      </node>
+      <node id="988">
+        <label>cmath</label>
+      </node>
+      <node id="993">
+        <label>stdexcept</label>
+      </node>
+      <node id="986">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="987" relation="include">
+        </childnode>
+        <childnode refid="988" relation="include">
+        </childnode>
+        <childnode refid="989" relation="include">
+        </childnode>
+        <childnode refid="985" relation="include">
+        </childnode>
+      </node>
+      <node id="983">
+        <label>string</label>
+      </node>
+      <node id="987">
+        <label>map</label>
+      </node>
+      <node id="990">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="983" relation="include">
+        </childnode>
+        <childnode refid="984" relation="include">
+        </childnode>
+        <childnode refid="986" relation="include">
+        </childnode>
+        <childnode refid="991" relation="include">
+        </childnode>
+      </node>
+      <node id="980">
+        <label>IntakeDataCollector.h</label>
+        <link refid="IntakeDataCollector_8h"/>
+        <childnode refid="981" relation="include">
+        </childnode>
+        <childnode refid="996" relation="include">
+        </childnode>
+      </node>
+      <node id="978">
+        <label>src/DataCollector/IntakeDataCollector.cpp</label>
+        <link refid="IntakeDataCollector_8cpp"/>
+        <childnode refid="979" relation="include">
+        </childnode>
+        <childnode refid="980" relation="include">
+        </childnode>
+      </node>
+      <node id="985">
+        <label>vector</label>
+      </node>
+      <node id="984">
+        <label>../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="985" relation="include">
+        </childnode>
+        <childnode refid="986" relation="include">
+        </childnode>
+      </node>
+      <node id="982">
+        <label>Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="983" relation="include">
+        </childnode>
+        <childnode refid="984" relation="include">
+        </childnode>
+        <childnode refid="990" relation="include">
+        </childnode>
+        <childnode refid="992" relation="include">
+        </childnode>
+        <childnode refid="995" relation="include">
+        </childnode>
+      </node>
+      <node id="996">
+        <label>Base/DataCollector.h</label>
+        <link refid="DataCollector_8h"/>
+        <childnode refid="983" relation="include">
+        </childnode>
+      </node>
+      <node id="995">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="985" relation="include">
+        </childnode>
+        <childnode refid="984" relation="include">
+        </childnode>
+      </node>
+      <node id="991">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="985" relation="include">
+        </childnode>
+        <childnode refid="986" relation="include">
+        </childnode>
+      </node>
+      <node id="989">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardoct<sp/>on<sp/>8/26/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="IntakeDataCollector_8h" kindref="compound">IntakeDataCollector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="classIntakeDataCollector_a2ab4a81bec74a370c60c78609627e807_1a2ab4a81bec74a370c60c78609627e807" kindref="member">IntakeDataCollector::IntakeDataCollector</ref>(<ref refid="classIntake" kindref="compound">Intake</ref><sp/>*intake,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>realization)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="classDataCollector" kindref="compound">DataCollector</ref>(intake-&gt;id,<sp/>intake-&gt;name,<sp/>realization,<sp/><ref refid="namespaceConstants_adb591bf3b5663c16cf71d3cbb044c3b3_1adb591bf3b5663c16cf71d3cbb044c3b3" kindref="member">INTAKE</ref>,<sp/>5<sp/>*<sp/><ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>),<sp/>intake(intake)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classIntakeDataCollector_ada2b88b7a05455cf6f2eebf82d37b3c5_1ada2b88b7a05455cf6f2eebf82d37b3c5" kindref="member">IntakeDataCollector::printTabularString</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>outStream;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>outStream</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(2<sp/>*<sp/><ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/>setprecision(<ref refid="namespaceConstants_a52f7a9d94123775aa42a979c4c97dc71_1a52f7a9d94123775aa42a979c4c97dc71" kindref="member">COLUMN_PRECISION</ref>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classIntakeDataCollector_a7d1d205c15423db421038e54ac0e1f36_1a7d1d205c15423db421038e54ac0e1f36" kindref="member">demands</ref>[week]</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/>setprecision(<ref refid="namespaceConstants_a52f7a9d94123775aa42a979c4c97dc71_1a52f7a9d94123775aa42a979c4c97dc71" kindref="member">COLUMN_PRECISION</ref>)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classIntakeDataCollector_a5016d2fece2ef545f72b9fa22497c817_1a5016d2fece2ef545f72b9fa22497c817" kindref="member">total_upstream_sources_inflows</ref>[week]</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/>setprecision(<ref refid="namespaceConstants_a52f7a9d94123775aa42a979c4c97dc71_1a52f7a9d94123775aa42a979c4c97dc71" kindref="member">COLUMN_PRECISION</ref>)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classIntakeDataCollector_a4485bea7a536f9fde233a2cc37200ec6_1a4485bea7a536f9fde233a2cc37200ec6" kindref="member">wastewater_inflows</ref>[week]</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/>setprecision(<ref refid="namespaceConstants_a52f7a9d94123775aa42a979c4c97dc71_1a52f7a9d94123775aa42a979c4c97dc71" kindref="member">COLUMN_PRECISION</ref>)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classIntakeDataCollector_aea2dbea83bb83c26df4474da669dd2eb_1aea2dbea83bb83c26df4474da669dd2eb" kindref="member">total_catchments_inflow</ref>[week]</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/>setprecision(<ref refid="namespaceConstants_a52f7a9d94123775aa42a979c4c97dc71_1a52f7a9d94123775aa42a979c4c97dc71" kindref="member">COLUMN_PRECISION</ref>)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classIntakeDataCollector_ae0b0d07123dd9323402ca55e12802ac8_1ae0b0d07123dd9323402ca55e12802ac8" kindref="member">outflows</ref>[week];</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outStream.str();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classIntakeDataCollector_ac39a40726fd4fe887425b24a10f04034_1ac39a40726fd4fe887425b24a10f04034" kindref="member">IntakeDataCollector::printCompactString</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>outStream;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>outStream</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classIntakeDataCollector_a7d1d205c15423db421038e54ac0e1f36_1a7d1d205c15423db421038e54ac0e1f36" kindref="member">demands</ref>[week]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classIntakeDataCollector_a5016d2fece2ef545f72b9fa22497c817_1a5016d2fece2ef545f72b9fa22497c817" kindref="member">total_upstream_sources_inflows</ref>[week]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classIntakeDataCollector_a4485bea7a536f9fde233a2cc37200ec6_1a4485bea7a536f9fde233a2cc37200ec6" kindref="member">wastewater_inflows</ref>[week]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classIntakeDataCollector_aea2dbea83bb83c26df4474da669dd2eb_1aea2dbea83bb83c26df4474da669dd2eb" kindref="member">total_catchments_inflow</ref>[week]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="classIntakeDataCollector_ae0b0d07123dd9323402ca55e12802ac8_1ae0b0d07123dd9323402ca55e12802ac8" kindref="member">outflows</ref>[week]<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outStream.str();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classIntakeDataCollector_ae17ab7e6c75e77f5981f6a682597bb5c_1ae17ab7e6c75e77f5981f6a682597bb5c" kindref="member">IntakeDataCollector::printTabularStringHeaderLine1</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>outStream;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>outStream</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(2<sp/>*<sp/><ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Upstream&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Wastewat.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Catchment&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outStream.str();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classIntakeDataCollector_a2855eb8eed71649309bd4d9336f258c0_1a2855eb8eed71649309bd4d9336f258c0" kindref="member">IntakeDataCollector::printTabularStringHeaderLine2</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>outStream;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>outStream</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(2<sp/>*<sp/><ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Demands&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Spillage&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Inflow&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Inflow&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>setw(<ref refid="namespaceConstants_ab7a5abf9228bcce4babf9a84cd66deb1_1ab7a5abf9228bcce4babf9a84cd66deb1" kindref="member">COLUMN_WIDTH</ref>)<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Outflow&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outStream.str();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classIntakeDataCollector_a42d56dd08e57a7e6e48812a2ab522439_1a42d56dd08e57a7e6e48812a2ab522439" kindref="member">IntakeDataCollector::printCompactStringHeader</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>stringstream<sp/>outStream;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>outStream</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;demand&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;up_spill&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ww_inflow&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;catch_inflow&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ds_spill&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;,&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>outStream.str();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntakeDataCollector_aed1610e5419465b35041b05b9f60c212_1aed1610e5419465b35041b05b9f60c212" kindref="member">IntakeDataCollector::collect_data</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntakeDataCollector_a7d1d205c15423db421038e54ac0e1f36_1a7d1d205c15423db421038e54ac0e1f36" kindref="member">demands</ref>.push_back(<ref refid="classIntakeDataCollector_a0dfbf640d99394bb82413c9a116db19b_1a0dfbf640d99394bb82413c9a116db19b" kindref="member">intake</ref>-&gt;<ref refid="classWaterSource_ac57d6b292490333b5bc14233bce326ce_1ac57d6b292490333b5bc14233bce326ce" kindref="member">getDemand</ref>());</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntakeDataCollector_a5016d2fece2ef545f72b9fa22497c817_1a5016d2fece2ef545f72b9fa22497c817" kindref="member">total_upstream_sources_inflows</ref></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.push_back(<ref refid="classIntakeDataCollector_a0dfbf640d99394bb82413c9a116db19b_1a0dfbf640d99394bb82413c9a116db19b" kindref="member">intake</ref>-&gt;<ref refid="classWaterSource_ad7e60efd7395f8d3e674e602226e5ac1_1ad7e60efd7395f8d3e674e602226e5ac1" kindref="member">getUpstream_source_inflow</ref>());</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntakeDataCollector_a4485bea7a536f9fde233a2cc37200ec6_1a4485bea7a536f9fde233a2cc37200ec6" kindref="member">wastewater_inflows</ref>.push_back(<ref refid="classIntakeDataCollector_a0dfbf640d99394bb82413c9a116db19b_1a0dfbf640d99394bb82413c9a116db19b" kindref="member">intake</ref>-&gt;<ref refid="classWaterSource_aee22325e6af0e3c804ddbd9a3505be05_1aee22325e6af0e3c804ddbd9a3505be05" kindref="member">getWastewater_inflow</ref>());</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntakeDataCollector_ae0b0d07123dd9323402ca55e12802ac8_1ae0b0d07123dd9323402ca55e12802ac8" kindref="member">outflows</ref>.push_back(<ref refid="classIntakeDataCollector_a0dfbf640d99394bb82413c9a116db19b_1a0dfbf640d99394bb82413c9a116db19b" kindref="member">intake</ref>-&gt;<ref refid="classWaterSource_a7678e05e3e73b927c0b47e3041d7415f_1a7678e05e3e73b927c0b47e3041d7415f" kindref="member">getTotal_outflow</ref>());</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntakeDataCollector_aea2dbea83bb83c26df4474da669dd2eb_1aea2dbea83bb83c26df4474da669dd2eb" kindref="member">total_catchments_inflow</ref>.push_back(<ref refid="classIntakeDataCollector_a0dfbf640d99394bb82413c9a116db19b_1a0dfbf640d99394bb82413c9a116db19b" kindref="member">intake</ref>-&gt;<ref refid="classWaterSource_afd2a153ba8f4ecaa9f8fa851d5a1727c_1afd2a153ba8f4ecaa9f8fa851d5a1727c" kindref="member">getUpstreamCatchmentInflow</ref>());</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/DataCollector/IntakeDataCollector.cpp"/>
+  </compounddef>
+</doxygen>

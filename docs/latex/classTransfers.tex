@@ -1,0 +1,376 @@
+\hypertarget{classTransfers}{}\section{Transfers Class Reference}
+\label{classTransfers}\index{Transfers@{Transfers}}
+
+
+{\ttfamily \#include $<$Transfers.\+h$>$}
+
+Inheritance diagram for Transfers\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTransfers}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTransfers_a40555bc28e085d0e119a9f039317c79f_a40555bc28e085d0e119a9f039317c79f}{Transfers}} (const int \mbox{\hyperlink{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b_abf3ed19ed98e0d74dc9ae24094be640b}{id}}, const int \mbox{\hyperlink{classTransfers_a4513cfef08bd7e9980d098f8fb7d6a32_a4513cfef08bd7e9980d098f8fb7d6a32}{source\+\_\+utility\+\_\+id}}, int \mbox{\hyperlink{classTransfers_a039a24fe986a718da1ac61bac0e49644_a039a24fe986a718da1ac61bac0e49644}{transfer\+\_\+water\+\_\+source\+\_\+id}}, const double \mbox{\hyperlink{classTransfers_a69a7ec8b065b9c807e2256f205a3d41e_a69a7ec8b065b9c807e2256f205a3d41e}{source\+\_\+treatment\+\_\+buffer}}, const vector$<$ int $>$ \&\mbox{\hyperlink{classTransfers_a55506f9588e0132ffcad1cf0036a83af_a55506f9588e0132ffcad1cf0036a83af}{buyers\+\_\+ids}}, const vector$<$ double $>$ \&pipe\+\_\+transfer\+\_\+capacities, const vector$<$ double $>$ \&\mbox{\hyperlink{classTransfers_a6eab429701a7e1dc857675cc8571589c_a6eab429701a7e1dc857675cc8571589c}{buyers\+\_\+transfer\+\_\+triggers}}, const \mbox{\hyperlink{classGraph}{Graph}} utilities\+\_\+graph, vector$<$ double $>$ conveyance\+\_\+costs, vector$<$ int $>$ pipe\+\_\+owner)
+\item 
+\mbox{\hyperlink{classTransfers_af88f7908692240eec9f3179128c6f343_af88f7908692240eec9f3179128c6f343}{Transfers}} (const \mbox{\hyperlink{classTransfers}{Transfers}} \&transfers)
+\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classTransfers_a6c687c9f767ea915eead1f5db18711a2_a6c687c9f767ea915eead1f5db18711a2}{get\+Allocations}} () const
+\item 
+\mbox{\hyperlink{classTransfers_a5dfeafe7a9b9a446b1ab746b65ef3b4b_a5dfeafe7a9b9a446b1ab746b65ef3b4b}{$\sim$\+Transfers}} ()
+\item 
+void \mbox{\hyperlink{classTransfers_ad9e4e83ff763ac1ba518a19051cd2e69_ad9e4e83ff763ac1ba518a19051cd2e69}{apply\+Policy}} (int week) override
+\item 
+void \mbox{\hyperlink{classTransfers_a3c1930dbeb1273c1c0be93ad5ca57357_a3c1930dbeb1273c1c0be93ad5ca57357}{add\+System\+Components}} (vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ system\+\_\+utilities, vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ water\+\_\+sources, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ min\+\_\+env\+\_\+flow\+\_\+controls) override
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classTransfers_a156baa248ab355c895a0a2f9e5f2742a_a156baa248ab355c895a0a2f9e5f2742a}{solve\+\_\+\+QP}} (vector$<$ double $>$ allocation\+\_\+requests, double available\+\_\+transfer\+\_\+volume, double min\+\_\+transfer\+\_\+volume, int week)
+\item 
+void \mbox{\hyperlink{classTransfers_a75342a7c14b2ff69eb2520de240a1131_a75342a7c14b2ff69eb2520de240a1131}{set\+Realization}} (unsigned long realization\+\_\+id, vector$<$ double $>$ \&utilities\+\_\+rdm, vector$<$ double $>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ double $>$ \&policy\+\_\+rdm) override
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classTransfers_a4513cfef08bd7e9980d098f8fb7d6a32_a4513cfef08bd7e9980d098f8fb7d6a32}{source\+\_\+utility\+\_\+id}}
+\item 
+const double \mbox{\hyperlink{classTransfers_a69a7ec8b065b9c807e2256f205a3d41e_a69a7ec8b065b9c807e2256f205a3d41e}{source\+\_\+treatment\+\_\+buffer}}
+\item 
+double \mbox{\hyperlink{classTransfers_a7715c87efbee763488d6fcc4674f2523_a7715c87efbee763488d6fcc4674f2523}{average\+\_\+pipe\+\_\+capacity}} = 0
+\item 
+int \mbox{\hyperlink{classTransfers_a039a24fe986a718da1ac61bac0e49644_a039a24fe986a718da1ac61bac0e49644}{transfer\+\_\+water\+\_\+source\+\_\+id}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classTransfers_a420b61c6ff119fef48a39a39ae4e0958_a420b61c6ff119fef48a39a39ae4e0958}{util\+\_\+id\+\_\+to\+\_\+vertex\+\_\+id}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classTransfers_a55506f9588e0132ffcad1cf0036a83af_a55506f9588e0132ffcad1cf0036a83af}{buyers\+\_\+ids}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classTransfers_ad956149e16363b5a04fd0a4f6efb3a61_ad956149e16363b5a04fd0a4f6efb3a61}{allocations}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classTransfers_a2989642c0fe0544dd9345d45042933d5_a2989642c0fe0544dd9345d45042933d5}{conveyed\+\_\+volumes}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classTransfers_a6eab429701a7e1dc857675cc8571589c_a6eab429701a7e1dc857675cc8571589c}{buyers\+\_\+transfer\+\_\+triggers}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classTransfers_af4ef4c75d49dfb3aee476c0695ff41d5_af4ef4c75d49dfb3aee476c0695ff41d5}{flow\+\_\+rates\+\_\+and\+\_\+allocations}}
+\item 
+\mbox{\hyperlink{classUtility}{Utility}} $\ast$ \mbox{\hyperlink{classTransfers_a8c84c081f069f6835e9dd12a460d90eb_a8c84c081f069f6835e9dd12a460d90eb}{source\+\_\+utility}} = nullptr
+\item 
+\mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$ \mbox{\hyperlink{classTransfers_a6a23dc463d7a4b07bcb7f3a7472263b2_a6a23dc463d7a4b07bcb7f3a7472263b2}{transfer\+\_\+water\+\_\+source}} = nullptr
+\item 
+\mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \mbox{\hyperlink{classTransfers_aec57a6a75061f18404e30d8e48c45ffd_aec57a6a75061f18404e30d8e48c45ffd}{H}}
+\item 
+\mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \mbox{\hyperlink{classTransfers_a1c2d27eb4e9294e32f04b5e7d929e71f_a1c2d27eb4e9294e32f04b5e7d929e71f}{Aeq}}
+\item 
+\mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \mbox{\hyperlink{classTransfers_a2acc8cfe6a1978d2468be289db636226_a2acc8cfe6a1978d2468be289db636226}{A}}
+\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \mbox{\hyperlink{classTransfers_a77db57256093921b04035c1e38a20060_a77db57256093921b04035c1e38a20060}{f}}
+\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \mbox{\hyperlink{classTransfers_a39d45672a21ce1a45925eceea79b921a_a39d45672a21ce1a45925eceea79b921a}{beq}}
+\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \mbox{\hyperlink{classTransfers_a24e66988fb2e50d151859813fda2e740_a24e66988fb2e50d151859813fda2e740}{b}}
+\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \mbox{\hyperlink{classTransfers_a22f332495395f41b340e370535a6b27a_a22f332495395f41b340e370535a6b27a}{allocations\+\_\+aux}}
+\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \mbox{\hyperlink{classTransfers_a10e5cae64016e52eca5dccc8e01e9791_a10e5cae64016e52eca5dccc8e01e9791}{lb}}
+\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \mbox{\hyperlink{classTransfers_aab0d3f08ed2897d9a74c9970612231d5_aab0d3f08ed2897d9a74c9970612231d5}{ub}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTransfers_a40555bc28e085d0e119a9f039317c79f_a40555bc28e085d0e119a9f039317c79f}\label{classTransfers_a40555bc28e085d0e119a9f039317c79f_a40555bc28e085d0e119a9f039317c79f}} 
+\index{Transfers@{Transfers}!Transfers@{Transfers}}
+\index{Transfers@{Transfers}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{Transfers()}{Transfers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Transfers\+::\+Transfers (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const int}]{source\+\_\+utility\+\_\+id,  }\item[{int}]{transfer\+\_\+water\+\_\+source\+\_\+id,  }\item[{const double}]{source\+\_\+treatment\+\_\+buffer,  }\item[{const vector$<$ int $>$ \&}]{buyers\+\_\+ids,  }\item[{const vector$<$ double $>$ \&}]{pipe\+\_\+transfer\+\_\+capacities,  }\item[{const vector$<$ double $>$ \&}]{buyers\+\_\+transfer\+\_\+triggers,  }\item[{const \mbox{\hyperlink{classGraph}{Graph}}}]{utilities\+\_\+graph,  }\item[{vector$<$ double $>$}]{conveyance\+\_\+costs,  }\item[{vector$<$ int $>$}]{pipe\+\_\+owner }\end{DoxyParamCaption})}
+
+Allocates transfers by trying to minimize the mean square error between the optimal allocations and allocation requests, and between the available amount of water from source and actual conveyed capacity, which is limited by pipe conveyance capacities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & transfer policy ID. \\
+\hline
+{\em source\+\_\+utility\+\_\+id} & ID of source utility. \\
+\hline
+{\em source\+\_\+treatment\+\_\+buffer} & treatment capacity to be left unused in source utility. \\
+\hline
+{\em buyers\+\_\+ids} & \\
+\hline
+{\em pipe\+\_\+transfer\+\_\+capacities} & \\
+\hline
+{\em buyers\+\_\+transfer\+\_\+triggers} & \\
+\hline
+{\em conveyance\+\_\+costs} & amount charged by pipe owning utility to convey water to another utility. \\
+\hline
+{\em pipe\+\_\+owner} & id of utility owning each pipe.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000004}{Todo}}]add the possibility of two or more sources. 
+
+add the possibility of having a pipe belong to a utility not in the transfer agreement. This can be accomplished now by adding utility to transfer agreement and set its risk of failure to 1.\+1 or more. 
+
+calculation and charge of wheeling fees. \end{DoxyRefDesc}
+Map buyer\textquotesingle{}s I\+Ds to vertexes ID starting from 0 for the sake of determining payments. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Create QP matrices and vectors. min f(x) = 1/2 x G x\textquotesingle{} + g0 x\textquotesingle{} s.\+t. C\+E.\+x = ce0 C\+I.\+x $>$= ci0 lb $<$= x $<$= ub ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Create g0 vector of 0\textquotesingle{}s to be filled when policy is applied.
+
+size is number of variables x number of utilities (source + requesting utilities). Continuity matrix\+: +1 for flow entering utility and -\/1 for leaving. ~\newline
+~\newline
+~\newline
+ Create ce0 vector of 0 so that mass balance is enforced on the nodes (utilities). ~\newline
+~\newline
+ Create empty CI and ci0. They\textquotesingle{}ll be re-\/dimensioned in the QP solver.
+
+Fill in pipe capacities part of lower and upper bound vectors. \mbox{\Hypertarget{classTransfers_af88f7908692240eec9f3179128c6f343_af88f7908692240eec9f3179128c6f343}\label{classTransfers_af88f7908692240eec9f3179128c6f343_af88f7908692240eec9f3179128c6f343}} 
+\index{Transfers@{Transfers}!Transfers@{Transfers}}
+\index{Transfers@{Transfers}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{Transfers()}{Transfers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Transfers\+::\+Transfers (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTransfers}{Transfers}} \&}]{transfers }\end{DoxyParamCaption})}
+
+Copy constructor 
+\begin{DoxyParams}{Parameters}
+{\em transfers} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransfers_a5dfeafe7a9b9a446b1ab746b65ef3b4b_a5dfeafe7a9b9a446b1ab746b65ef3b4b}\label{classTransfers_a5dfeafe7a9b9a446b1ab746b65ef3b4b_a5dfeafe7a9b9a446b1ab746b65ef3b4b}} 
+\index{Transfers@{Transfers}!````~Transfers@{$\sim$\+Transfers}}
+\index{````~Transfers@{$\sim$\+Transfers}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{$\sim$\+Transfers()}{~Transfers()}}
+{\footnotesize\ttfamily Transfers\+::$\sim$\+Transfers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransfers_a3c1930dbeb1273c1c0be93ad5ca57357_a3c1930dbeb1273c1c0be93ad5ca57357}\label{classTransfers_a3c1930dbeb1273c1c0be93ad5ca57357_a3c1930dbeb1273c1c0be93ad5ca57357}} 
+\index{Transfers@{Transfers}!add\+System\+Components@{add\+System\+Components}}
+\index{add\+System\+Components@{add\+System\+Components}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{add\+System\+Components()}{addSystemComponents()}}
+{\footnotesize\ttfamily void Transfers\+::add\+System\+Components (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{system\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$}]{water\+\_\+sources,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$}]{min\+\_\+env\+\_\+flow\+\_\+controls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Adds source and buying utility. 
+\begin{DoxyParams}{Parameters}
+{\em system\+\_\+utilities} & \mbox{\hyperlink{classUtility}{Utility}} to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a_aaab042a79d781afe8e08753b7012372a}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classTransfers_ad9e4e83ff763ac1ba518a19051cd2e69_ad9e4e83ff763ac1ba518a19051cd2e69}\label{classTransfers_ad9e4e83ff763ac1ba518a19051cd2e69_ad9e4e83ff763ac1ba518a19051cd2e69}} 
+\index{Transfers@{Transfers}!apply\+Policy@{apply\+Policy}}
+\index{apply\+Policy@{apply\+Policy}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{apply\+Policy()}{applyPolicy()}}
+{\footnotesize\ttfamily void Transfers\+::apply\+Policy (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Get summation of rofs of utilities needing transfers. This is for splitting the available flow rate and for checking weather any transfers will be needed.
+
+Check if transfers will be needed and, if so, perform the transfers.
+
+Total volume available for transfers in source utility.
+
+Minimum volume to be allocated to any utility.
+
+Split up total volume available among the utilities proportionally to their R\+O\+Fs. ~\newline
+~\newline
+ Calculate allocations and flow rates through inter-\/utility connections. ~\newline
+ Mitigate demands. 
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d_a76c1a85eaf7707306fe173b6437cc31d}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classTransfers_a6c687c9f767ea915eead1f5db18711a2_a6c687c9f767ea915eead1f5db18711a2}\label{classTransfers_a6c687c9f767ea915eead1f5db18711a2_a6c687c9f767ea915eead1f5db18711a2}} 
+\index{Transfers@{Transfers}!get\+Allocations@{get\+Allocations}}
+\index{get\+Allocations@{get\+Allocations}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{get\+Allocations()}{getAllocations()}}
+{\footnotesize\ttfamily const vector$<$ double $>$ \& Transfers\+::get\+Allocations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classTransfers_a75342a7c14b2ff69eb2520de240a1131_a75342a7c14b2ff69eb2520de240a1131}\label{classTransfers_a75342a7c14b2ff69eb2520de240a1131_a75342a7c14b2ff69eb2520de240a1131}} 
+\index{Transfers@{Transfers}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily void Transfers\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{realization\+\_\+id,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{policy\+\_\+rdm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4_a5d2033543cacca1e412eebef5106eab4}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classTransfers_a156baa248ab355c895a0a2f9e5f2742a_a156baa248ab355c895a0a2f9e5f2742a}\label{classTransfers_a156baa248ab355c895a0a2f9e5f2742a_a156baa248ab355c895a0a2f9e5f2742a}} 
+\index{Transfers@{Transfers}!solve\+\_\+\+QP@{solve\+\_\+\+QP}}
+\index{solve\+\_\+\+QP@{solve\+\_\+\+QP}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{solve\+\_\+\+Q\+P()}{solve\_QP()}}
+{\footnotesize\ttfamily vector$<$ double $>$ Transfers\+::solve\+\_\+\+QP (\begin{DoxyParamCaption}\item[{vector$<$ double $>$}]{allocation\+\_\+requests,  }\item[{double}]{available\+\_\+transfer\+\_\+volume,  }\item[{double}]{min\+\_\+transfer\+\_\+volume,  }\item[{int}]{week }\end{DoxyParamCaption})}
+
+Solves Quadratic Programming problem to find optimal allocations given transfer requests and constraints in conveyance capacities. 
+\begin{DoxyParams}{Parameters}
+{\em allocation\+\_\+requests} & allocations requested by each utility (0 for utilities not requesting transfers). \\
+\hline
+{\em available\+\_\+transfer\+\_\+volume} & Total volume available for transfer from source utility. \\
+\hline
+{\em min\+\_\+transfer\+\_\+volume} & minimum transfer to be made to each utility. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+Set g0 vector to allocated to 2 $\ast$ target\+\_\+allocation.
+
+Set allocation bounds to 0 if no allocation is requested, and to available transfer volume otherwise. ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ Set upper bound of the last utility (source) to total amount of water available. This allows for a smaller transferred volume, in case pipes cannot convey full amount available, but sets the cap as total amount available. ~\newline
+~\newline
+~\newline
+~\newline
+ Prevent minimum allocation from being more than capacity of pipes connected to utility. If it happens, decrease it to half of the sum of adjacent pipes capacities so that it avoid issues with bottle-\/necks through the network. The factor of 2 can be changed to any number smaller than 1. ~\newline
+~\newline
+~\newline
+ Initialize allocations vector with 0s.
+
+Run quadratic programming solver.
+
+Convert \mbox{\hyperlink{classVector}{Vector}} x into a vector. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classTransfers_a2acc8cfe6a1978d2468be289db636226_a2acc8cfe6a1978d2468be289db636226}\label{classTransfers_a2acc8cfe6a1978d2468be289db636226_a2acc8cfe6a1978d2468be289db636226}} 
+\index{Transfers@{Transfers}!A@{A}}
+\index{A@{A}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{A}{A}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMatrix}{Matrix}}$<$double$>$ Transfers\+::A\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a1c2d27eb4e9294e32f04b5e7d929e71f_a1c2d27eb4e9294e32f04b5e7d929e71f}\label{classTransfers_a1c2d27eb4e9294e32f04b5e7d929e71f_a1c2d27eb4e9294e32f04b5e7d929e71f}} 
+\index{Transfers@{Transfers}!Aeq@{Aeq}}
+\index{Aeq@{Aeq}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{Aeq}{Aeq}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMatrix}{Matrix}}$<$double$>$ Transfers\+::\+Aeq\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_ad956149e16363b5a04fd0a4f6efb3a61_ad956149e16363b5a04fd0a4f6efb3a61}\label{classTransfers_ad956149e16363b5a04fd0a4f6efb3a61_ad956149e16363b5a04fd0a4f6efb3a61}} 
+\index{Transfers@{Transfers}!allocations@{allocations}}
+\index{allocations@{allocations}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{allocations}{allocations}}
+{\footnotesize\ttfamily vector$<$double$>$ Transfers\+::allocations\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a22f332495395f41b340e370535a6b27a_a22f332495395f41b340e370535a6b27a}\label{classTransfers_a22f332495395f41b340e370535a6b27a_a22f332495395f41b340e370535a6b27a}} 
+\index{Transfers@{Transfers}!allocations\+\_\+aux@{allocations\+\_\+aux}}
+\index{allocations\+\_\+aux@{allocations\+\_\+aux}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{allocations\+\_\+aux}{allocations\_aux}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector}{Vector}}$<$double$>$ Transfers\+::allocations\+\_\+aux\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a7715c87efbee763488d6fcc4674f2523_a7715c87efbee763488d6fcc4674f2523}\label{classTransfers_a7715c87efbee763488d6fcc4674f2523_a7715c87efbee763488d6fcc4674f2523}} 
+\index{Transfers@{Transfers}!average\+\_\+pipe\+\_\+capacity@{average\+\_\+pipe\+\_\+capacity}}
+\index{average\+\_\+pipe\+\_\+capacity@{average\+\_\+pipe\+\_\+capacity}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{average\+\_\+pipe\+\_\+capacity}{average\_pipe\_capacity}}
+{\footnotesize\ttfamily double Transfers\+::average\+\_\+pipe\+\_\+capacity = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a24e66988fb2e50d151859813fda2e740_a24e66988fb2e50d151859813fda2e740}\label{classTransfers_a24e66988fb2e50d151859813fda2e740_a24e66988fb2e50d151859813fda2e740}} 
+\index{Transfers@{Transfers}!b@{b}}
+\index{b@{b}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector}{Vector}}$<$double$>$ Transfers\+::b\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a39d45672a21ce1a45925eceea79b921a_a39d45672a21ce1a45925eceea79b921a}\label{classTransfers_a39d45672a21ce1a45925eceea79b921a_a39d45672a21ce1a45925eceea79b921a}} 
+\index{Transfers@{Transfers}!beq@{beq}}
+\index{beq@{beq}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{beq}{beq}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector}{Vector}}$<$double$>$ Transfers\+::beq\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a55506f9588e0132ffcad1cf0036a83af_a55506f9588e0132ffcad1cf0036a83af}\label{classTransfers_a55506f9588e0132ffcad1cf0036a83af_a55506f9588e0132ffcad1cf0036a83af}} 
+\index{Transfers@{Transfers}!buyers\+\_\+ids@{buyers\+\_\+ids}}
+\index{buyers\+\_\+ids@{buyers\+\_\+ids}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{buyers\+\_\+ids}{buyers\_ids}}
+{\footnotesize\ttfamily vector$<$int$>$ Transfers\+::buyers\+\_\+ids\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a6eab429701a7e1dc857675cc8571589c_a6eab429701a7e1dc857675cc8571589c}\label{classTransfers_a6eab429701a7e1dc857675cc8571589c_a6eab429701a7e1dc857675cc8571589c}} 
+\index{Transfers@{Transfers}!buyers\+\_\+transfer\+\_\+triggers@{buyers\+\_\+transfer\+\_\+triggers}}
+\index{buyers\+\_\+transfer\+\_\+triggers@{buyers\+\_\+transfer\+\_\+triggers}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{buyers\+\_\+transfer\+\_\+triggers}{buyers\_transfer\_triggers}}
+{\footnotesize\ttfamily vector$<$double$>$ Transfers\+::buyers\+\_\+transfer\+\_\+triggers\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a2989642c0fe0544dd9345d45042933d5_a2989642c0fe0544dd9345d45042933d5}\label{classTransfers_a2989642c0fe0544dd9345d45042933d5_a2989642c0fe0544dd9345d45042933d5}} 
+\index{Transfers@{Transfers}!conveyed\+\_\+volumes@{conveyed\+\_\+volumes}}
+\index{conveyed\+\_\+volumes@{conveyed\+\_\+volumes}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{conveyed\+\_\+volumes}{conveyed\_volumes}}
+{\footnotesize\ttfamily vector$<$double$>$ Transfers\+::conveyed\+\_\+volumes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a77db57256093921b04035c1e38a20060_a77db57256093921b04035c1e38a20060}\label{classTransfers_a77db57256093921b04035c1e38a20060_a77db57256093921b04035c1e38a20060}} 
+\index{Transfers@{Transfers}!f@{f}}
+\index{f@{f}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector}{Vector}}$<$double$>$ Transfers\+::f\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_af4ef4c75d49dfb3aee476c0695ff41d5_af4ef4c75d49dfb3aee476c0695ff41d5}\label{classTransfers_af4ef4c75d49dfb3aee476c0695ff41d5_af4ef4c75d49dfb3aee476c0695ff41d5}} 
+\index{Transfers@{Transfers}!flow\+\_\+rates\+\_\+and\+\_\+allocations@{flow\+\_\+rates\+\_\+and\+\_\+allocations}}
+\index{flow\+\_\+rates\+\_\+and\+\_\+allocations@{flow\+\_\+rates\+\_\+and\+\_\+allocations}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{flow\+\_\+rates\+\_\+and\+\_\+allocations}{flow\_rates\_and\_allocations}}
+{\footnotesize\ttfamily vector$<$double$>$ Transfers\+::flow\+\_\+rates\+\_\+and\+\_\+allocations\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_aec57a6a75061f18404e30d8e48c45ffd_aec57a6a75061f18404e30d8e48c45ffd}\label{classTransfers_aec57a6a75061f18404e30d8e48c45ffd_aec57a6a75061f18404e30d8e48c45ffd}} 
+\index{Transfers@{Transfers}!H@{H}}
+\index{H@{H}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{H}{H}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMatrix}{Matrix}}$<$double$>$ Transfers\+::H\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a10e5cae64016e52eca5dccc8e01e9791_a10e5cae64016e52eca5dccc8e01e9791}\label{classTransfers_a10e5cae64016e52eca5dccc8e01e9791_a10e5cae64016e52eca5dccc8e01e9791}} 
+\index{Transfers@{Transfers}!lb@{lb}}
+\index{lb@{lb}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{lb}{lb}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector}{Vector}}$<$double$>$ Transfers\+::lb\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a69a7ec8b065b9c807e2256f205a3d41e_a69a7ec8b065b9c807e2256f205a3d41e}\label{classTransfers_a69a7ec8b065b9c807e2256f205a3d41e_a69a7ec8b065b9c807e2256f205a3d41e}} 
+\index{Transfers@{Transfers}!source\+\_\+treatment\+\_\+buffer@{source\+\_\+treatment\+\_\+buffer}}
+\index{source\+\_\+treatment\+\_\+buffer@{source\+\_\+treatment\+\_\+buffer}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{source\+\_\+treatment\+\_\+buffer}{source\_treatment\_buffer}}
+{\footnotesize\ttfamily const double Transfers\+::source\+\_\+treatment\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a8c84c081f069f6835e9dd12a460d90eb_a8c84c081f069f6835e9dd12a460d90eb}\label{classTransfers_a8c84c081f069f6835e9dd12a460d90eb_a8c84c081f069f6835e9dd12a460d90eb}} 
+\index{Transfers@{Transfers}!source\+\_\+utility@{source\+\_\+utility}}
+\index{source\+\_\+utility@{source\+\_\+utility}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{source\+\_\+utility}{source\_utility}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUtility}{Utility}}$\ast$ Transfers\+::source\+\_\+utility = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a4513cfef08bd7e9980d098f8fb7d6a32_a4513cfef08bd7e9980d098f8fb7d6a32}\label{classTransfers_a4513cfef08bd7e9980d098f8fb7d6a32_a4513cfef08bd7e9980d098f8fb7d6a32}} 
+\index{Transfers@{Transfers}!source\+\_\+utility\+\_\+id@{source\+\_\+utility\+\_\+id}}
+\index{source\+\_\+utility\+\_\+id@{source\+\_\+utility\+\_\+id}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{source\+\_\+utility\+\_\+id}{source\_utility\_id}}
+{\footnotesize\ttfamily const int Transfers\+::source\+\_\+utility\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a6a23dc463d7a4b07bcb7f3a7472263b2_a6a23dc463d7a4b07bcb7f3a7472263b2}\label{classTransfers_a6a23dc463d7a4b07bcb7f3a7472263b2_a6a23dc463d7a4b07bcb7f3a7472263b2}} 
+\index{Transfers@{Transfers}!transfer\+\_\+water\+\_\+source@{transfer\+\_\+water\+\_\+source}}
+\index{transfer\+\_\+water\+\_\+source@{transfer\+\_\+water\+\_\+source}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{transfer\+\_\+water\+\_\+source}{transfer\_water\_source}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}$\ast$ Transfers\+::transfer\+\_\+water\+\_\+source = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a039a24fe986a718da1ac61bac0e49644_a039a24fe986a718da1ac61bac0e49644}\label{classTransfers_a039a24fe986a718da1ac61bac0e49644_a039a24fe986a718da1ac61bac0e49644}} 
+\index{Transfers@{Transfers}!transfer\+\_\+water\+\_\+source\+\_\+id@{transfer\+\_\+water\+\_\+source\+\_\+id}}
+\index{transfer\+\_\+water\+\_\+source\+\_\+id@{transfer\+\_\+water\+\_\+source\+\_\+id}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{transfer\+\_\+water\+\_\+source\+\_\+id}{transfer\_water\_source\_id}}
+{\footnotesize\ttfamily int Transfers\+::transfer\+\_\+water\+\_\+source\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_aab0d3f08ed2897d9a74c9970612231d5_aab0d3f08ed2897d9a74c9970612231d5}\label{classTransfers_aab0d3f08ed2897d9a74c9970612231d5_aab0d3f08ed2897d9a74c9970612231d5}} 
+\index{Transfers@{Transfers}!ub@{ub}}
+\index{ub@{ub}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{ub}{ub}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector}{Vector}}$<$double$>$ Transfers\+::ub\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classTransfers_a420b61c6ff119fef48a39a39ae4e0958_a420b61c6ff119fef48a39a39ae4e0958}\label{classTransfers_a420b61c6ff119fef48a39a39ae4e0958_a420b61c6ff119fef48a39a39ae4e0958}} 
+\index{Transfers@{Transfers}!util\+\_\+id\+\_\+to\+\_\+vertex\+\_\+id@{util\+\_\+id\+\_\+to\+\_\+vertex\+\_\+id}}
+\index{util\+\_\+id\+\_\+to\+\_\+vertex\+\_\+id@{util\+\_\+id\+\_\+to\+\_\+vertex\+\_\+id}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{util\+\_\+id\+\_\+to\+\_\+vertex\+\_\+id}{util\_id\_to\_vertex\_id}}
+{\footnotesize\ttfamily vector$<$int$>$ Transfers\+::util\+\_\+id\+\_\+to\+\_\+vertex\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Drought\+Mitigation\+Instruments/\mbox{\hyperlink{Transfers_8h}{Transfers.\+h}}\item 
+src/\+Drought\+Mitigation\+Instruments/\mbox{\hyperlink{Transfers_8cpp}{Transfers.\+cpp}}\end{DoxyCompactItemize}

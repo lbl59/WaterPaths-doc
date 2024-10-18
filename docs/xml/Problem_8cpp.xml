@@ -1,0 +1,602 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="Problem_8cpp" kind="file" language="C++">
+    <compoundname>Problem.cpp</compoundname>
+    <includes local="no">algorithm</includes>
+    <includes local="no">numeric</includes>
+    <includes local="no">random</includes>
+    <includes local="no">set</includes>
+    <includes refid="Problem_8h" local="yes">Problem.h</includes>
+    <includes refid="Utils_8h" local="yes">../../Utils/Utils.h</includes>
+    <incdepgraph>
+      <node id="1830">
+        <label>list</label>
+      </node>
+      <node id="1822">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="1807" relation="include">
+        </childnode>
+        <childnode refid="1823" relation="include">
+        </childnode>
+        <childnode refid="1824" relation="include">
+        </childnode>
+      </node>
+      <node id="1824">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="1834">
+        <label>../../Controls/Base/MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="1820" relation="include">
+        </childnode>
+        <childnode refid="1812" relation="include">
+        </childnode>
+      </node>
+      <node id="1836">
+        <label>../DroughtMitigationInstruments/Restrictions.h</label>
+        <link refid="Restrictions_8h"/>
+        <childnode refid="1812" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+      </node>
+      <node id="1838">
+        <label>../SystemComponents/WaterSources/Intake.h</label>
+        <link refid="Intake_8h"/>
+        <childnode refid="1815" relation="include">
+        </childnode>
+      </node>
+      <node id="1811">
+        <label>UtilitiesDataCollector.h</label>
+        <link refid="UtilitiesDataCollector_8h"/>
+        <childnode refid="1808" relation="include">
+        </childnode>
+        <childnode refid="1812" relation="include">
+        </childnode>
+      </node>
+      <node id="1818">
+        <label>cmath</label>
+      </node>
+      <node id="1823">
+        <label>stdexcept</label>
+      </node>
+      <node id="1803">
+        <label>numeric</label>
+      </node>
+      <node id="1817">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="1813" relation="include">
+        </childnode>
+        <childnode refid="1818" relation="include">
+        </childnode>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1807" relation="include">
+        </childnode>
+      </node>
+      <node id="1826">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="1824" relation="include">
+        </childnode>
+        <childnode refid="1807" relation="include">
+        </childnode>
+      </node>
+      <node id="1809">
+        <label>string</label>
+      </node>
+      <node id="1813">
+        <label>map</label>
+      </node>
+      <node id="1827">
+        <label>InfrastructureManager.h</label>
+        <link refid="InfrastructureManager_8h"/>
+        <childnode refid="1807" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
+        </childnode>
+      </node>
+      <node id="1820">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="1809" relation="include">
+        </childnode>
+        <childnode refid="1816" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+        <childnode refid="1821" relation="include">
+        </childnode>
+      </node>
+      <node id="1833">
+        <label>fstream</label>
+      </node>
+      <node id="1810">
+        <label>../../DataCollector/MasterDataCollector.h</label>
+        <link refid="MasterDataCollector_8h"/>
+        <childnode refid="1807" relation="include">
+        </childnode>
+        <childnode refid="1808" relation="include">
+        </childnode>
+        <childnode refid="1811" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1835" relation="include">
+        </childnode>
+      </node>
+      <node id="1828">
+        <label>../DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
+        <link refid="DroughtMitigationPolicy_8h"/>
+        <childnode refid="1812" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+        <childnode refid="1829" relation="include">
+        </childnode>
+        <childnode refid="1831" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+      </node>
+      <node id="1806">
+        <label>Problem.h</label>
+        <link refid="Problem_8h"/>
+        <childnode refid="1807" relation="include">
+        </childnode>
+        <childnode refid="1808" relation="include">
+        </childnode>
+        <childnode refid="1810" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+        <childnode refid="1815" relation="include">
+        </childnode>
+      </node>
+      <node id="1804">
+        <label>random</label>
+      </node>
+      <node id="1801">
+        <label>src/Problem/Base/Problem.cpp</label>
+        <link refid="Problem_8cpp"/>
+        <childnode refid="1802" relation="include">
+        </childnode>
+        <childnode refid="1803" relation="include">
+        </childnode>
+        <childnode refid="1804" relation="include">
+        </childnode>
+        <childnode refid="1805" relation="include">
+        </childnode>
+        <childnode refid="1806" relation="include">
+        </childnode>
+        <childnode refid="1837" relation="include">
+        </childnode>
+      </node>
+      <node id="1835">
+        <label>RestrictionsDataCollector.h</label>
+        <link refid="RestrictionsDataCollector_8h"/>
+        <childnode refid="1807" relation="include">
+        </childnode>
+        <childnode refid="1808" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+      </node>
+      <node id="1812">
+        <label>../SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="1813" relation="include">
+        </childnode>
+        <childnode refid="1814" relation="include">
+        </childnode>
+        <childnode refid="1815" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+        <childnode refid="1826" relation="include">
+        </childnode>
+        <childnode refid="1827" relation="include">
+        </childnode>
+      </node>
+      <node id="1807">
+        <label>vector</label>
+      </node>
+      <node id="1829">
+        <label>../../Utils/Graph/Graph.h</label>
+        <link refid="Graph_8h"/>
+        <childnode refid="1830" relation="include">
+        </childnode>
+        <childnode refid="1807" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+      </node>
+      <node id="1816">
+        <label>../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="1807" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+      </node>
+      <node id="1815">
+        <label>../WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="1809" relation="include">
+        </childnode>
+        <childnode refid="1816" relation="include">
+        </childnode>
+        <childnode refid="1820" relation="include">
+        </childnode>
+        <childnode refid="1822" relation="include">
+        </childnode>
+        <childnode refid="1825" relation="include">
+        </childnode>
+      </node>
+      <node id="1832">
+        <label>iostream</label>
+      </node>
+      <node id="1808">
+        <label>../../DataCollector/Base/DataCollector.h</label>
+        <link refid="DataCollector_8h"/>
+        <childnode refid="1809" relation="include">
+        </childnode>
+      </node>
+      <node id="1825">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="1807" relation="include">
+        </childnode>
+        <childnode refid="1816" relation="include">
+        </childnode>
+      </node>
+      <node id="1805">
+        <label>set</label>
+      </node>
+      <node id="1802">
+        <label>algorithm</label>
+      </node>
+      <node id="1821">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="1807" relation="include">
+        </childnode>
+        <childnode refid="1817" relation="include">
+        </childnode>
+      </node>
+      <node id="1819">
+        <label>cstring</label>
+      </node>
+      <node id="1831">
+        <label>../../Utils/Matrices.h</label>
+        <link refid="Matrices_8h"/>
+        <childnode refid="1832" relation="include">
+        </childnode>
+        <childnode refid="1819" relation="include">
+        </childnode>
+        <childnode refid="1833" relation="include">
+        </childnode>
+        <childnode refid="1814" relation="include">
+        </childnode>
+      </node>
+      <node id="1814">
+        <label>memory</label>
+      </node>
+      <node id="1837">
+        <label>../../Utils/Utils.h</label>
+        <link refid="Utils_8h"/>
+        <childnode refid="1820" relation="include">
+        </childnode>
+        <childnode refid="1838" relation="include">
+        </childnode>
+        <childnode refid="1812" relation="include">
+        </childnode>
+        <childnode refid="1828" relation="include">
+        </childnode>
+        <childnode refid="1836" relation="include">
+        </childnode>
+        <childnode refid="1834" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>Bernardo<sp/>on<sp/>11/24/2017.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;numeric&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;random&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Problem_8h" kindref="compound">Problem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Utils/Utils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">vector&lt;double&gt;<sp/><ref refid="classProblem_ad4e2da403a38f3ee5d4de19ffdfbd148_1ad4e2da403a38f3ee5d4de19ffdfbd148" kindref="member">Problem::calculateAndPrintObjectives</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>print_files)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(print_files)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref>-&gt;<ref refid="classMasterDataCollector_a6ef49bd511d89217e9a5b0626b3499c4_1a6ef49bd511d89217e9a5b0626b3499c4" kindref="member">setOutputDirectory</ref>(<ref refid="classProblem_ac58848a0d808cf040c3fb3676b4a236f_1ac58848a0d808cf040c3fb3676b4a236f" kindref="member">io_directory</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fo<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Objectives&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProblem_a72750ee8c8117f5ee9b190a359d6a60d_1a72750ee8c8117f5ee9b190a359d6a60d" kindref="member">objectives</ref><sp/>=<sp/>this-&gt;<ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref>-&gt;<ref refid="classMasterDataCollector_a30c5c81c8c2ccb475ce2ccbb2ae07608_1a30c5c81c8c2ccb475ce2ccbb2ae07608" kindref="member">calculatePrintObjectives</ref>(</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fo<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_s&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="classProblem_a7ca15cdcbff926ddca25bdee5984ffe5_1a7ca15cdcbff926ddca25bdee5984ffe5" kindref="member">solution_no</ref>)<sp/>+<sp/><ref refid="classProblem_a59444139a907aaf4c6159caed46c8118_1a59444139a907aaf4c6159caed46c8118" kindref="member">fname_sufix</ref>,<sp/>print_files);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classProblem_a72750ee8c8117f5ee9b190a359d6a60d_1a72750ee8c8117f5ee9b190a359d6a60d" kindref="member">objectives</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProblem_a72750ee8c8117f5ee9b190a359d6a60d_1a72750ee8c8117f5ee9b190a359d6a60d" kindref="member">objectives</ref><sp/>=<sp/>vector&lt;double&gt;(25,<sp/>1e5);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classProblem_a72750ee8c8117f5ee9b190a359d6a60d_1a72750ee8c8117f5ee9b190a359d6a60d" kindref="member">objectives</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a2458fd2abb3ffaacccf4191a737c9383_1a2458fd2abb3ffaacccf4191a737c9383" kindref="member">Problem::printTimeSeriesAndPathways</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;master_data_collector-&gt;setOutputDirectory(io_directory);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fu<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Utilities&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fws<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;WaterSources&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fp<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Policies&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fpw<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Pathways&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//FIXME:PRINT_POLICIES_OUTPUT_TABULAR<sp/>BLOWING<sp/>UP<sp/>MEMORY.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Printing<sp/>Pathways&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref>-&gt;<ref refid="classMasterDataCollector_a6ef49bd511d89217e9a5b0626b3499c4_1a6ef49bd511d89217e9a5b0626b3499c4" kindref="member">setOutputDirectory</ref>(<ref refid="classProblem_ac58848a0d808cf040c3fb3676b4a236f_1ac58848a0d808cf040c3fb3676b4a236f" kindref="member">io_directory</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref>-&gt;<ref refid="classMasterDataCollector_a966681d5219d11d0c6882522cd2ddd20_1a966681d5219d11d0c6882522cd2ddd20" kindref="member">printPathways</ref>(</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fpw<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_s&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="classProblem_a7ca15cdcbff926ddca25bdee5984ffe5_1a7ca15cdcbff926ddca25bdee5984ffe5" kindref="member">solution_no</ref>)<sp/>+<sp/><ref refid="classProblem_a59444139a907aaf4c6159caed46c8118_1a59444139a907aaf4c6159caed46c8118" kindref="member">fname_sufix</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Printing<sp/>time<sp/>series&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref>-&gt;<ref refid="classMasterDataCollector_a7effc4567580a12567a46dd3f195dbac_1a7effc4567580a12567a46dd3f195dbac" kindref="member">printUtilitiesOutputCompact</ref>(</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/><ref refid="classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec_1ac7513bb0ecdfa4bbb7d2ada3595d71ec" kindref="member">n_weeks</ref>,<sp/>fu<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_s&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="classProblem_a7ca15cdcbff926ddca25bdee5984ffe5_1a7ca15cdcbff926ddca25bdee5984ffe5" kindref="member">solution_no</ref>)<sp/>+</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProblem_a59444139a907aaf4c6159caed46c8118_1a59444139a907aaf4c6159caed46c8118" kindref="member">fname_sufix</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref>-&gt;<ref refid="classMasterDataCollector_adbe50e49689078e64a28450087ad0961_1adbe50e49689078e64a28450087ad0961" kindref="member">printWaterSourcesOutputCompact</ref>(</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>n_weeks,<sp/>fws<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_s&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="classProblem_a7ca15cdcbff926ddca25bdee5984ffe5_1a7ca15cdcbff926ddca25bdee5984ffe5" kindref="member">solution_no</ref>)<sp/>+</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProblem_a59444139a907aaf4c6159caed46c8118_1a59444139a907aaf4c6159caed46c8118" kindref="member">fname_sufix</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref>-&gt;<ref refid="classMasterDataCollector_aedd180f1f1648164506a0a59216c113f_1aedd180f1f1648164506a0a59216c113f" kindref="member">printPoliciesOutputCompact</ref>(</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>n_weeks,<sp/>fp<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_s&quot;</highlight><highlight class="normal"><sp/>+<sp/>std::to_string(<ref refid="classProblem_a7ca15cdcbff926ddca25bdee5984ffe5_1a7ca15cdcbff926ddca25bdee5984ffe5" kindref="member">solution_no</ref>)<sp/>+</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProblem_a59444139a907aaf4c6159caed46c8118_1a59444139a907aaf4c6159caed46c8118" kindref="member">fname_sufix</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>data_collector-&gt;printUtilitesOutputTabular(0,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n_weeks,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fu<sp/>+<sp/>&quot;_s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>std::to_string(solution_no));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>data_collector-&gt;printWaterSourcesOutputTabular(0,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n_weeks,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fws<sp/>+<sp/>&quot;_s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>std::to_string(solution_no));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>data_collector-&gt;printPoliciesOutputTabular(0,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n_weeks,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fp<sp/>+<sp/>&quot;_s&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>std::to_string(solution_no));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Trying<sp/>to<sp/>print<sp/>pathways<sp/>but<sp/>data<sp/>collector<sp/>is<sp/>empty.<sp/>Either<sp/>your<sp/>simulation<sp/>crashed<sp/>or<sp/>you<sp/>deleted<sp/>the<sp/>data<sp/>collector<sp/>too<sp/>early.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">vector&lt;int&gt;<sp/><ref refid="classProblem_a526ef2b401f498f6eef3342be3151487_1a526ef2b401f498f6eef3342be3151487" kindref="member">Problem::vecInfraRankToVecInt</ref>(vector&lt;infraRank&gt;<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>sorted;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="structinfraRank" kindref="compound">infraRank</ref><sp/>ir<sp/>:<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sorted.push_back(ir.id);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sorted;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classProblem_ab12ec67ea5734be6c6c2ad46a08dba06_1ab12ec67ea5734be6c6c2ad46a08dba06" kindref="member">Problem::checkAndFixInfraExpansionHighLowOrder</ref>(</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>*order,<sp/>vector&lt;double&gt;<sp/>*triggers,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id_low,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id_high,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>capacity_low,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>capacity_high)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pos_low<sp/>=<sp/><ref refid="QuadProg_09_09_8cpp_ae73d813670287effead12dc193c041b4_1ae73d813670287effead12dc193c041b4" kindref="member">distance</ref>(order-&gt;begin(),</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>find(order-&gt;begin(),</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>order-&gt;end(),</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_low));</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pos_high<sp/>=<sp/><ref refid="QuadProg_09_09_8cpp_ae73d813670287effead12dc193c041b4_1ae73d813670287effead12dc193c041b4" kindref="member">distance</ref>(order-&gt;begin(),</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>find(order-&gt;begin(),</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>order-&gt;end(),</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>id_high));</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pos_high<sp/>&lt;<sp/>pos_low)<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>capacity_high<sp/>+=<sp/>capacity_low;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>order-&gt;erase(order-&gt;begin()<sp/>+<sp/>pos_low);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>triggers-&gt;erase(triggers-&gt;begin()<sp/>+<sp/>pos_low);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>capacity_high;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a3e8e48d55e03e0f23b303d7b931fa654_1a3e8e48d55e03e0f23b303d7b931fa654" kindref="member">Problem::setN_weeks</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>n_weeks)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec_1ac7513bb0ecdfa4bbb7d2ada3595d71ec" kindref="member">Problem::n_weeks</ref><sp/>=<sp/><ref refid="classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec_1ac7513bb0ecdfa4bbb7d2ada3595d71ec" kindref="member">n_weeks</ref>;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a99967aa4531eac73e5a2928a0df0ea86_1a99967aa4531eac73e5a2928a0df0ea86" kindref="member">Problem::setSol_number</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>sol_number)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProblem_a7ca15cdcbff926ddca25bdee5984ffe5_1a7ca15cdcbff926ddca25bdee5984ffe5" kindref="member">Problem::solution_no</ref><sp/>=<sp/>sol_number;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a7be506034ce402e135f1caee5d767ca8_1a7be506034ce402e135f1caee5d767ca8" kindref="member">Problem::setIODirectory</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;io_directory)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;io_directory<sp/>=<sp/><ref refid="classProblem_ac58848a0d808cf040c3fb3676b4a236f_1ac58848a0d808cf040c3fb3676b4a236f" kindref="member">io_directory</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a08d3f34a593cb07851d1c3f3ad9d5160_1a08d3f34a593cb07851d1c3f3ad9d5160" kindref="member">Problem::setRDMOptimization</ref>(vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;utilities_rdm,</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;water_sources_rdm,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;policies_rdm)<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classProblem_aa4f6db22580c8d8a941e83556f4f5208_1aa4f6db22580c8d8a941e83556f4f5208" kindref="member">utilities_rdm</ref><sp/>=<sp/><ref refid="classProblem_aa4f6db22580c8d8a941e83556f4f5208_1aa4f6db22580c8d8a941e83556f4f5208" kindref="member">utilities_rdm</ref>;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classProblem_ace43e5306285f0d91a199a4bd5a38922_1ace43e5306285f0d91a199a4bd5a38922" kindref="member">water_sources_rdm</ref><sp/>=<sp/><ref refid="classProblem_ace43e5306285f0d91a199a4bd5a38922_1ace43e5306285f0d91a199a4bd5a38922" kindref="member">water_sources_rdm</ref>;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classProblem_a63d49161a5d6d98e26cd218d90a13bae_1a63d49161a5d6d98e26cd218d90a13bae" kindref="member">policies_rdm</ref><sp/>=<sp/><ref refid="classProblem_a63d49161a5d6d98e26cd218d90a13bae_1a63d49161a5d6d98e26cd218d90a13bae" kindref="member">policies_rdm</ref>;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_ad12f4546fc341e396ef9d4a6608e6d41_1ad12f4546fc341e396ef9d4a6608e6d41" kindref="member">Problem::setRDMReevaluation</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>rdm_no,<sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;utilities_rdm,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;water_sources_rdm,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;policies_rdm)<sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;rdm_no<sp/>=<sp/><ref refid="classProblem_a9e780729b6be5229c5bfa1e38c99cfa5_1a9e780729b6be5229c5bfa1e38c99cfa5" kindref="member">rdm_no</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classProblem_aa4f6db22580c8d8a941e83556f4f5208_1aa4f6db22580c8d8a941e83556f4f5208" kindref="member">utilities_rdm</ref><sp/>=<sp/><ref refid="classProblem_aa4f6db22580c8d8a941e83556f4f5208_1aa4f6db22580c8d8a941e83556f4f5208" kindref="member">utilities_rdm</ref>;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classProblem_ace43e5306285f0d91a199a4bd5a38922_1ace43e5306285f0d91a199a4bd5a38922" kindref="member">water_sources_rdm</ref><sp/>=<sp/><ref refid="classProblem_ace43e5306285f0d91a199a4bd5a38922_1ace43e5306285f0d91a199a4bd5a38922" kindref="member">water_sources_rdm</ref>;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classProblem_a63d49161a5d6d98e26cd218d90a13bae_1a63d49161a5d6d98e26cd218d90a13bae" kindref="member">policies_rdm</ref><sp/>=<sp/><ref refid="classProblem_a63d49161a5d6d98e26cd218d90a13bae_1a63d49161a5d6d98e26cd218d90a13bae" kindref="member">policies_rdm</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_abc968bcab1302a525cfa5a7f570fc326_1abc968bcab1302a525cfa5a7f570fc326" kindref="member">Problem::setFname_sufix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;fname_sufix)<sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProblem_a59444139a907aaf4c6159caed46c8118_1a59444139a907aaf4c6159caed46c8118" kindref="member">Problem::fname_sufix</ref><sp/>=<sp/><ref refid="classProblem_a59444139a907aaf4c6159caed46c8118_1a59444139a907aaf4c6159caed46c8118" kindref="member">fname_sufix</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_aa841014244a2becdc34717e440c4ce11_1aa841014244a2becdc34717e440c4ce11" kindref="member">Problem::setEvap_inflows_suffix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;evap_inflows_suffix)<sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProblem_a1ff3958eef8bfb851a84ce0772104dca_1a1ff3958eef8bfb851a84ce0772104dca" kindref="member">Problem::evap_inflows_suffix</ref><sp/>=<sp/><ref refid="classProblem_a1ff3958eef8bfb851a84ce0772104dca_1a1ff3958eef8bfb851a84ce0772104dca" kindref="member">evap_inflows_suffix</ref>;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_ac7a563c47c5a2f5217763b23b5357ecd_1ac7a563c47c5a2f5217763b23b5357ecd" kindref="member">Problem::setN_threads</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>n_threads)<sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProblem_a3303a162d648e8ae16153b57b5b4054f_1a3303a162d648e8ae16153b57b5b4054f" kindref="member">Problem::n_threads</ref><sp/>=<sp/><ref refid="classProblem_a3303a162d648e8ae16153b57b5b4054f_1a3303a162d648e8ae16153b57b5b4054f" kindref="member">n_threads</ref>;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;<ref refid="classProblem_aa10a0c69bf0a3d6a303c118c6fdfd5c6_1aa10a0c69bf0a3d6a303c118c6fdfd5c6" kindref="member">Problem::getObjectives</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classProblem_a72750ee8c8117f5ee9b190a359d6a60d_1a72750ee8c8117f5ee9b190a359d6a60d" kindref="member">objectives</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a9e1298432a894cbe8d373bac24edb5cf_1a9e1298432a894cbe8d373bac24edb5cf" kindref="member">Problem::setPrint_output_files</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>print_output_files)<sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProblem_a3372a73270ce989f5d2056cace66215b_1a3372a73270ce989f5d2056cace66215b" kindref="member">Problem::print_output_files</ref><sp/>=<sp/><ref refid="classProblem_a3372a73270ce989f5d2056cace66215b_1a3372a73270ce989f5d2056cace66215b" kindref="member">print_output_files</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_acc30995bc20a6c09e58b7edfec870702_1acc30995bc20a6c09e58b7edfec870702" kindref="member">Problem::setN_realizations</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>n_realizations)<sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProblem_a270a5672643bfe09e52e0f24e1884136_1a270a5672643bfe09e52e0f24e1884136" kindref="member">Problem::n_realizations</ref><sp/>=<sp/><ref refid="classProblem_a270a5672643bfe09e52e0f24e1884136_1a270a5672643bfe09e52e0f24e1884136" kindref="member">n_realizations</ref>;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classProblem_af9ed9265d0d2b4918bd468d717429de1_1af9ed9265d0d2b4918bd468d717429de1" kindref="member">realizations_to_run</ref>.empty())<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProblem_af9ed9265d0d2b4918bd468d717429de1_1af9ed9265d0d2b4918bd468d717429de1" kindref="member">realizations_to_run</ref><sp/>=<sp/>vector&lt;unsigned<sp/>long&gt;(<ref refid="classProblem_a270a5672643bfe09e52e0f24e1884136_1a270a5672643bfe09e52e0f24e1884136" kindref="member">n_realizations</ref>);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iota(begin(<ref refid="classProblem_af9ed9265d0d2b4918bd468d717429de1_1af9ed9265d0d2b4918bd468d717429de1" kindref="member">realizations_to_run</ref>),<sp/>end(<ref refid="classProblem_af9ed9265d0d2b4918bd468d717429de1_1af9ed9265d0d2b4918bd468d717429de1" kindref="member">realizations_to_run</ref>),<sp/>0);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_ad810f0b105a05bcc38aec36f603a090d_1ad810f0b105a05bcc38aec36f603a090d" kindref="member">Problem::setRealizationsToRun</ref>(vector&lt;unsigned<sp/>long&gt;<sp/>&amp;realizations_to_run)<sp/>{</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;realizations_to_run<sp/>=<sp/><ref refid="classProblem_af9ed9265d0d2b4918bd468d717429de1_1af9ed9265d0d2b4918bd468d717429de1" kindref="member">realizations_to_run</ref>;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><ref refid="classMasterDataCollector" kindref="compound">MasterDataCollector</ref><sp/>*<ref refid="classProblem_a9bb7f0f4da14050f4a351e5ddb97c380_1a9bb7f0f4da14050f4a351e5ddb97c380" kindref="member">Problem::getMaster_data_collector</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref>;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><ref refid="classProblem_a3f26d4abc0bb8633f315458b8e1b88b9_1a3f26d4abc0bb8633f315458b8e1b88b9" kindref="member">Problem::~Problem</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a9ab819e9fe003d4bdb05d6f2ccc320b3_1a9ab819e9fe003d4bdb05d6f2ccc320b3" kindref="member">Problem::destroyDataCollector</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref><sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref>;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Tried<sp/>to<sp/>delete<sp/>nullptr<sp/>master<sp/>data<sp/>collector.\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="299"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><ref refid="classProblem_afc35e409dbd47f3c457ccac358afbc2e_1afc35e409dbd47f3c457ccac358afbc2e" kindref="member">Problem::Problem</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>n_weeks)<sp/>:<sp/>n_weeks(n_weeks)<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWaterSource_a4bd60dafcc0b18f1c7a415f489bb220a_1a4bd60dafcc0b18f1c7a415f489bb220a" kindref="member">Reservoir::unsetSeed</ref>();</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><ref refid="classProblem_aa9debdf28260fd9054f7d6d2ee516f94_1aa9debdf28260fd9054f7d6d2ee516f94" kindref="member">Problem::setRofTables</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>n_realizations,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>rof_tables_directory)<sp/>{</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/>set&lt;unsigned<sp/>long&gt;<sp/>s(<sp/><ref refid="classProblem_af9ed9265d0d2b4918bd468d717429de1_1af9ed9265d0d2b4918bd468d717429de1" kindref="member">realizations_to_run</ref>.begin(),<sp/><ref refid="classProblem_af9ed9265d0d2b4918bd468d717429de1_1af9ed9265d0d2b4918bd468d717429de1" kindref="member">realizations_to_run</ref>.end()<sp/>);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;unsigned<sp/>long&gt;<sp/>realizations_to_run_load_tables;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/>realizations_to_run_load_tables.assign(<sp/>s.begin(),<sp/>s.end()<sp/>);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//double<sp/>start_time<sp/>=<sp/>omp_get_wtime();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Loading<sp/>ROF<sp/>tables&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_tiers<sp/>=<sp/><ref refid="namespaceConstants_ae6ed2a07e84e5c0280325e2dffd3ceca_1ae6ed2a07e84e5c0280325e2dffd3ceca" kindref="member">NO_OF_INSURANCE_STORAGE_TIERS</ref><sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>table_data_id<sp/>=<sp/>realizations_to_run_load_tables[0];</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>file_name<sp/>=<sp/><ref refid="classProblem_abc641b49a4defb0dbabafbf3f9dbca6e_1abc641b49a4defb0dbabafbf3f9dbca6e" kindref="member">rof_tables_directory</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;/tables_r&quot;</highlight><highlight class="normal"><sp/>+<sp/>to_string(table_data_id)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_u0&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/>ifstream<sp/>in(file_name,<sp/>ios_base::binary);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!in.good())<sp/>{</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>error_table_file<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Tables<sp/>file<sp/>not<sp/>found:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>file_name;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>invalid_argument(error_table_file.c_str());</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//FIXME:<sp/>FIGURE<sp/>OUT<sp/>NUMBER<sp/>OF<sp/>UTILITIES<sp/>BY<sp/>CHECKING<sp/>IF<sp/>TABLES_R0_U0,<sp/>TABLES_R0_U1,<sp/>AND<sp/>SO<sp/>ON<sp/>EXIST.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>table_file_name[150];</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classProblem_a4ca86ba2f568d232cf0421d39acff113_1a4ca86ba2f568d232cf0421d39acff113" kindref="member">n_utilities</ref><sp/>=<sp/>0;<sp/><ref refid="classProblem_a4ca86ba2f568d232cf0421d39acff113_1a4ca86ba2f568d232cf0421d39acff113" kindref="member">n_utilities</ref><sp/>&lt;<sp/><ref refid="namespaceConstants_a456bb204b432ca85d517cdf525f19f88_1a456bb204b432ca85d517cdf525f19f88" kindref="member">MAX_NUMBER_OF_UTILITIES</ref>;<sp/>++<ref refid="classProblem_a4ca86ba2f568d232cf0421d39acff113_1a4ca86ba2f568d232cf0421d39acff113" kindref="member">n_utilities</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(table_file_name,<sp/></highlight><highlight class="stringliteral">&quot;%s%stables_r%lu_u%d&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProblem_abc641b49a4defb0dbabafbf3f9dbca6e_1abc641b49a4defb0dbabafbf3f9dbca6e" kindref="member">rof_tables_directory</ref>.c_str(),<sp/><ref refid="namespaceConstants_aaec5cbce5156ab790b3ae0563692fd92_1aaec5cbce5156ab790b3ae0563692fd92" kindref="member">BAR</ref>.c_str(),<sp/>table_data_id,<sp/><ref refid="classProblem_a4ca86ba2f568d232cf0421d39acff113_1a4ca86ba2f568d232cf0421d39acff113" kindref="member">n_utilities</ref>);</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ifstream<sp/>f(table_file_name);</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!f.good())<sp/>{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classProblem_a4ca86ba2f568d232cf0421d39acff113_1a4ca86ba2f568d232cf0421d39acff113" kindref="member">n_utilities</ref><sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>error[200];</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(error,<sp/></highlight><highlight class="stringliteral">&quot;Table<sp/>%s<sp/>not<sp/>found.&quot;</highlight><highlight class="normal">,<sp/>table_file_name);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>invalid_argument(error);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>n_weeks_in_table;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>in.read(reinterpret_cast&lt;char<sp/>*&gt;(&amp;n_weeks_in_table),<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>empty<sp/>tables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProblem_a0a64a8c04964a326879eccccf5437c93_1a0a64a8c04964a326879eccccf5437c93" kindref="member">rof_tables</ref><sp/>=<sp/>vector&lt;vector&lt;Matrix2D&lt;double&gt;&gt;&gt;(</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProblem_a270a5672643bfe09e52e0f24e1884136_1a270a5672643bfe09e52e0f24e1884136" kindref="member">n_realizations</ref>,</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;Matrix2D&lt;double&gt;&gt;((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>long)<sp/><ref refid="classProblem_a4ca86ba2f568d232cf0421d39acff113_1a4ca86ba2f568d232cf0421d39acff113" kindref="member">n_utilities</ref>,</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classMatrix2D" kindref="compound">Matrix2D&lt;double&gt;</ref>(n_weeks_in_table<sp/>/<sp/>n_tiers,<sp/>n_tiers)));</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;rof_tables_directory<sp/>=<sp/><ref refid="classProblem_abc641b49a4defb0dbabafbf3f9dbca6e_1abc641b49a4defb0dbabafbf3f9dbca6e" kindref="member">rof_tables_directory</ref>;</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Load<sp/>ROF<sp/>tables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>r<sp/>:<sp/>realizations_to_run_load_tables)<sp/>{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>u<sp/>=<sp/>0;<sp/>u<sp/>&lt;<sp/><ref refid="classProblem_a4ca86ba2f568d232cf0421d39acff113_1a4ca86ba2f568d232cf0421d39acff113" kindref="member">n_utilities</ref>;<sp/>++u)<sp/>{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>file_name<sp/>=<sp/><ref refid="classProblem_abc641b49a4defb0dbabafbf3f9dbca6e_1abc641b49a4defb0dbabafbf3f9dbca6e" kindref="member">rof_tables_directory</ref><sp/>+<sp/><ref refid="namespaceConstants_aaec5cbce5156ab790b3ae0563692fd92_1aaec5cbce5156ab790b3ae0563692fd92" kindref="member">BAR</ref><sp/>+<sp/></highlight><highlight class="stringliteral">&quot;tables_r&quot;</highlight><highlight class="normal"><sp/>+<sp/>to_string(r)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;_u&quot;</highlight><highlight class="normal"><sp/>+<sp/>to_string(u);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ifstream<sp/>in_file(file_name,<sp/>ios_base::binary);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!in.good())<sp/>{</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>error_table_file<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Tables<sp/>file<sp/>not<sp/>found:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>file_name;</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>invalid_argument(error_table_file.c_str());</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>table<sp/>file<sp/>size<sp/>from<sp/>table<sp/>files.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>stringsize;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in_file.read(reinterpret_cast&lt;char<sp/>*&gt;(&amp;stringsize),<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>table<sp/>information<sp/>from<sp/>table<sp/>files.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>data[stringsize];</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in_file.read(reinterpret_cast&lt;char<sp/>*&gt;(&amp;data),</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stringsize<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>tables<sp/>based<sp/>on<sp/>table<sp/>files.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProblem_a0a64a8c04964a326879eccccf5437c93_1a0a64a8c04964a326879eccccf5437c93" kindref="member">rof_tables</ref>[r][u].setData(data,<sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>stringsize);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>stringsize;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>d<sp/>=<sp/>data[i];</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::isnan(d)<sp/>||<sp/>d<sp/>&gt;<sp/>1.01<sp/>||<sp/>d<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>error_m<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;nan<sp/>or<sp/>out<sp/>of<sp/>[0,1]<sp/>rof<sp/>imported<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;tables.<sp/>Realization<sp/>&quot;</highlight><highlight class="normal"><sp/>+</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to_string(r)<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%s&quot;</highlight><highlight class="normal">,<sp/>error_m.c_str());</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>logic_error(error_m.c_str());</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>in_file.close();</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//printf(&quot;Loading<sp/>tables<sp/>took<sp/>%f<sp/>time.\n&quot;,<sp/>omp_get_wtime()<sp/>-<sp/>start_time);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a4af40eab4f22f8754066410f7088b9db_1a4af40eab4f22f8754066410f7088b9db" kindref="member">Problem::setImport_export_rof_tables</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>import_export_rof_tables,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_weeks,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>rof_tables_directory)<sp/>{</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::abs(<ref refid="classProblem_ac5a286f34cec786a0ad56c77783a201c_1ac5a286f34cec786a0ad56c77783a201c" kindref="member">import_export_rof_tables</ref>)<sp/>&gt;<sp/>1)</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>invalid_argument(</highlight><highlight class="stringliteral">&quot;Import/export<sp/>ROF<sp/>tables<sp/>can<sp/>be<sp/>assigned<sp/>as:\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-1<sp/>-<sp/>import<sp/>tables\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;0<sp/>-<sp/>ignore<sp/>tables\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;1<sp/>-<sp/>export<sp/>tables.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;The<sp/>value<sp/>entered<sp/>is<sp/>invalid.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;import_export_rof_tables<sp/>=<sp/><ref refid="classProblem_ac5a286f34cec786a0ad56c77783a201c_1ac5a286f34cec786a0ad56c77783a201c" kindref="member">import_export_rof_tables</ref>;</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;rof_tables_directory<sp/>=<sp/><ref refid="classProblem_abc641b49a4defb0dbabafbf3f9dbca6e_1abc641b49a4defb0dbabafbf3f9dbca6e" kindref="member">rof_tables_directory</ref>;</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classProblem_ac5a286f34cec786a0ad56c77783a201c_1ac5a286f34cec786a0ad56c77783a201c" kindref="member">import_export_rof_tables</ref><sp/>==<sp/><ref refid="namespaceConstants_aa64d03395b183f56f6f79d0701324ad1_1aa64d03395b183f56f6f79d0701324ad1" kindref="member">IMPORT_ROF_TABLES</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classProblem_aa9debdf28260fd9054f7d6d2ee516f94_1aa9debdf28260fd9054f7d6d2ee516f94" kindref="member">setRofTables</ref>(<ref refid="classProblem_a270a5672643bfe09e52e0f24e1884136_1a270a5672643bfe09e52e0f24e1884136" kindref="member">n_realizations</ref>,<sp/><ref refid="classProblem_abc641b49a4defb0dbabafbf3f9dbca6e_1abc641b49a4defb0dbabafbf3f9dbca6e" kindref="member">rof_tables_directory</ref>);</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classUtils_ad22978d5ae586f881920c2c2452436ce_1ad22978d5ae586f881920c2c2452436ce" kindref="member">Utils::createDir</ref>(<ref refid="classProblem_abc641b49a4defb0dbabafbf3f9dbca6e_1abc641b49a4defb0dbabafbf3f9dbca6e" kindref="member">rof_tables_directory</ref>);</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="426"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_aa5a4c047b3bdc97762cb4e5a91ebd5de_1aa5a4c047b3bdc97762cb4e5a91ebd5de" kindref="member">Problem::runBootstrapRealizationThinning</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>standard_solution,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_sets,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_bs_samples,</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>threads,<sp/>vector&lt;vector&lt;int&gt;&gt;<sp/>&amp;realizations_to_run)<sp/>{</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref>-&gt;<ref refid="classMasterDataCollector_a6ef49bd511d89217e9a5b0626b3499c4_1a6ef49bd511d89217e9a5b0626b3499c4" kindref="member">setOutputDirectory</ref>(<ref refid="classProblem_ac58848a0d808cf040c3fb3676b4a236f_1ac58848a0d808cf040c3fb3676b4a236f" kindref="member">io_directory</ref>);</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref>-&gt;<ref refid="classMasterDataCollector_acbf0e8a8f30e483e504d756883d45cf0_1acbf0e8a8f30e483e504d756883d45cf0" kindref="member">performBootstrapAnalysis</ref>(standard_solution,<sp/>n_sets,<sp/>n_bs_samples,<sp/>threads,<sp/><ref refid="classProblem_af9ed9265d0d2b4918bd468d717429de1_1af9ed9265d0d2b4918bd468d717429de1" kindref="member">realizations_to_run</ref>);</highlight></codeline>
+<codeline lineno="442"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/Problem/Base/Problem.cpp"/>
+  </compounddef>
+</doxygen>

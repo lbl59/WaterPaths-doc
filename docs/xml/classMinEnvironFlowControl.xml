@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classMinEnvironFlowControl" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>MinEnvironFlowControl</compoundname>
+    <includes refid="MinEnvironFlowControl_8h" local="no">MinEnvironFlowControl.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMinEnvironFlowControl_ac5be281d802ad1de433bed588bb13cfe_1ac5be281d802ad1de433bed588bb13cfe" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> * &gt;</type>
+        <definition>vector&lt;WaterSource *&gt; MinEnvironFlowControl::water_sources</definition>
+        <argsstring></argsstring>
+        <name>water_sources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/Base/MinEnvironFlowControl.h" line="14" column="1" bodyfile="src/Controls/Base/MinEnvironFlowControl.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMinEnvironFlowControl_a3d55c77bc8ba49b14b20eb494868b3ce_1a3d55c77bc8ba49b14b20eb494868b3ce" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classCatchment" kindref="compound">Catchment</ref> * &gt;</type>
+        <definition>vector&lt;Catchment *&gt; MinEnvironFlowControl::catchments</definition>
+        <argsstring></argsstring>
+        <name>catchments</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/Base/MinEnvironFlowControl.h" line="15" column="1" bodyfile="src/Controls/Base/MinEnvironFlowControl.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMinEnvironFlowControl_a6c43408d05901838fa567c8e23a37009_1a6c43408d05901838fa567c8e23a37009" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt;</type>
+        <definition>vector&lt;Utility* &gt; MinEnvironFlowControl::utilities</definition>
+        <argsstring></argsstring>
+        <name>utilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/Base/MinEnvironFlowControl.h" line="16" column="1" bodyfile="src/Controls/Base/MinEnvironFlowControl.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMinEnvironFlowControl_a1544571a77557853d0cc8189bd29f4b3_1a1544571a77557853d0cc8189bd29f4b3" prot="public" static="no" mutable="no">
+        <type>const vector&lt; int &gt;</type>
+        <definition>const vector&lt;int&gt; MinEnvironFlowControl::water_sources_ids</definition>
+        <argsstring></argsstring>
+        <name>water_sources_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/Base/MinEnvironFlowControl.h" line="19" column="1" bodyfile="src/Controls/Base/MinEnvironFlowControl.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMinEnvironFlowControl_ae5acc488f8a0b8aaf7a85cfc8a25bbf9_1ae5acc488f8a0b8aaf7a85cfc8a25bbf9" prot="public" static="no" mutable="no">
+        <type>const vector&lt; int &gt;</type>
+        <definition>const vector&lt;int&gt; MinEnvironFlowControl::utilities_ids</definition>
+        <argsstring></argsstring>
+        <name>utilities_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/Base/MinEnvironFlowControl.h" line="20" column="1" bodyfile="src/Controls/Base/MinEnvironFlowControl.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMinEnvironFlowControl_a571d4d56086eb752aebb20b2d85fa8e7_1a571d4d56086eb752aebb20b2d85fa8e7" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MinEnvironFlowControl::water_source_id</definition>
+        <argsstring></argsstring>
+        <name>water_source_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/Base/MinEnvironFlowControl.h" line="21" column="1" bodyfile="src/Controls/Base/MinEnvironFlowControl.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMinEnvironFlowControl_a1a10a6b5720c934eef698cd72c9d883c_1a1a10a6b5720c934eef698cd72c9d883c" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MinEnvironFlowControl::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/Base/MinEnvironFlowControl.h" line="22" column="1" bodyfile="src/Controls/Base/MinEnvironFlowControl.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMinEnvironFlowControl_a5b40c3f8da8c63513edb30804bf2ca01_1a5b40c3f8da8c63513edb30804bf2ca01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MinEnvironFlowControl::MinEnvironFlowControl</definition>
+        <argsstring>(int water_source_id, const vector&lt; int &gt; &amp;aux_water_sources_id, const vector&lt; int &gt; &amp;aux_utilities_ids, int type)</argsstring>
+        <name>MinEnvironFlowControl</name>
+        <param>
+          <type>int</type>
+          <declname>water_source_id</declname>
+        </param>
+        <param>
+          <type>const vector&lt; int &gt; &amp;</type>
+          <declname>aux_water_sources_id</declname>
+        </param>
+        <param>
+          <type>const vector&lt; int &gt; &amp;</type>
+          <declname>aux_utilities_ids</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/Base/MinEnvironFlowControl.h" line="24" column="1" bodyfile="src/Controls/Base/MinEnvironFlowControl.cpp" bodystart="7" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classMinEnvironFlowControl_a274fc5217a2a79d9c488d903708f5e68_1a274fc5217a2a79d9c488d903708f5e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MinEnvironFlowControl::MinEnvironFlowControl</definition>
+        <argsstring>(const MinEnvironFlowControl &amp;min_env_control)</argsstring>
+        <name>MinEnvironFlowControl</name>
+        <param>
+          <type>const <ref refid="classMinEnvironFlowControl" kindref="compound">MinEnvironFlowControl</ref> &amp;</type>
+          <declname>min_env_control</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/Base/MinEnvironFlowControl.h" line="28" column="1" bodyfile="src/Controls/Base/MinEnvironFlowControl.cpp" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classMinEnvironFlowControl_ac7357455a533f7e6882cdb1ef303359b_1ac7357455a533f7e6882cdb1ef303359b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double MinEnvironFlowControl::getRelease</definition>
+        <argsstring>(int week)=0</argsstring>
+        <name>getRelease</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/Base/MinEnvironFlowControl.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMinEnvironFlowControl_a9dd9d33661f121dda9704288658ecf7e_1a9dd9d33661f121dda9704288658ecf7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MinEnvironFlowControl::addComponents</definition>
+        <argsstring>(vector&lt; WaterSource *&gt; water_sources, vector&lt; Utility *&gt; utilities)</argsstring>
+        <name>addComponents</name>
+        <param>
+          <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt;</type>
+          <declname>water_sources</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt;</type>
+          <declname>utilities</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/Base/MinEnvironFlowControl.h" line="32" column="1" bodyfile="src/Controls/Base/MinEnvironFlowControl.cpp" bodystart="23" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classMinEnvironFlowControl_a99dd7bb49edc3ae8f919e403ccc92bd9_1a99dd7bb49edc3ae8f919e403ccc92bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MinEnvironFlowControl::setRealization</definition>
+        <argsstring>(unsigned int r, vector&lt; double &gt; &amp;rdm_factors)</argsstring>
+        <name>setRealization</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>rdm_factors</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Controls/Base/MinEnvironFlowControl.h" line="35" column="1" bodyfile="src/Controls/Base/MinEnvironFlowControl.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/Controls/Base/MinEnvironFlowControl.h" line="12" column="1" bodyfile="src/Controls/Base/MinEnvironFlowControl.h" bodystart="12" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classMinEnvironFlowControl_a9dd9d33661f121dda9704288658ecf7e_1a9dd9d33661f121dda9704288658ecf7e" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>addComponents</name></member>
+      <member refid="classMinEnvironFlowControl_a3d55c77bc8ba49b14b20eb494868b3ce_1a3d55c77bc8ba49b14b20eb494868b3ce" prot="protected" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>catchments</name></member>
+      <member refid="classMinEnvironFlowControl_ac7357455a533f7e6882cdb1ef303359b_1ac7357455a533f7e6882cdb1ef303359b" prot="public" virt="pure-virtual"><scope>MinEnvironFlowControl</scope><name>getRelease</name></member>
+      <member refid="classMinEnvironFlowControl_a5b40c3f8da8c63513edb30804bf2ca01_1a5b40c3f8da8c63513edb30804bf2ca01" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>MinEnvironFlowControl</name></member>
+      <member refid="classMinEnvironFlowControl_a274fc5217a2a79d9c488d903708f5e68_1a274fc5217a2a79d9c488d903708f5e68" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>MinEnvironFlowControl</name></member>
+      <member refid="classMinEnvironFlowControl_a99dd7bb49edc3ae8f919e403ccc92bd9_1a99dd7bb49edc3ae8f919e403ccc92bd9" prot="public" virt="virtual"><scope>MinEnvironFlowControl</scope><name>setRealization</name></member>
+      <member refid="classMinEnvironFlowControl_a1a10a6b5720c934eef698cd72c9d883c_1a1a10a6b5720c934eef698cd72c9d883c" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>type</name></member>
+      <member refid="classMinEnvironFlowControl_a6c43408d05901838fa567c8e23a37009_1a6c43408d05901838fa567c8e23a37009" prot="protected" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>utilities</name></member>
+      <member refid="classMinEnvironFlowControl_ae5acc488f8a0b8aaf7a85cfc8a25bbf9_1ae5acc488f8a0b8aaf7a85cfc8a25bbf9" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>utilities_ids</name></member>
+      <member refid="classMinEnvironFlowControl_a571d4d56086eb752aebb20b2d85fa8e7_1a571d4d56086eb752aebb20b2d85fa8e7" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>water_source_id</name></member>
+      <member refid="classMinEnvironFlowControl_ac5be281d802ad1de433bed588bb13cfe_1ac5be281d802ad1de433bed588bb13cfe" prot="protected" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>water_sources</name></member>
+      <member refid="classMinEnvironFlowControl_a1544571a77557853d0cc8189bd29f4b3_1a1544571a77557853d0cc8189bd29f4b3" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>water_sources_ids</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classRestrictionsDataCollector" kind="class" language="C++" prot="public">
+    <compoundname>RestrictionsDataCollector</compoundname>
+    <basecompoundref refid="classDataCollector" prot="public" virt="non-virtual">DataCollector</basecompoundref>
+    <includes refid="RestrictionsDataCollector_8h" local="no">RestrictionsDataCollector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classRestrictionsDataCollector_a09e79e1e24fa4cc698c9dfa6914ee47d_1a09e79e1e24fa4cc698c9dfa6914ee47d" prot="private" static="no" mutable="no">
+        <type><ref refid="classRestrictions" kindref="compound">Restrictions</ref> *</type>
+        <definition>Restrictions* RestrictionsDataCollector::restriction_policy</definition>
+        <argsstring></argsstring>
+        <name>restriction_policy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/RestrictionsDataCollector.h" line="15" column="1" bodyfile="src/DataCollector/RestrictionsDataCollector.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRestrictionsDataCollector_afb6bc7f42a2490e2599c37baebe3995c_1afb6bc7f42a2490e2599c37baebe3995c" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; RestrictionsDataCollector::restriction_multipliers</definition>
+        <argsstring></argsstring>
+        <name>restriction_multipliers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/RestrictionsDataCollector.h" line="16" column="1" bodyfile="src/DataCollector/RestrictionsDataCollector.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRestrictionsDataCollector_a0e700f013442a6df86fe75bcee4c31df_1a0e700f013442a6df86fe75bcee4c31df" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RestrictionsDataCollector::RestrictionsDataCollector</definition>
+        <argsstring>(Restrictions *restriction_policy, unsigned long realization)</argsstring>
+        <name>RestrictionsDataCollector</name>
+        <param>
+          <type><ref refid="classRestrictions" kindref="compound">Restrictions</ref> *</type>
+          <declname>restriction_policy</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/RestrictionsDataCollector.h" line="19" column="1" bodyfile="src/DataCollector/RestrictionsDataCollector.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_a45e5612e70ec98430e31271f68ca407e_1a45e5612e70ec98430e31271f68ca407e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string RestrictionsDataCollector::printTabularString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printTabularString</name>
+        <reimplements refid="classDataCollector_a397fccabe0223267eea8fc7cac0e59da_1a397fccabe0223267eea8fc7cac0e59da">printTabularString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/RestrictionsDataCollector.h" line="21" column="1" bodyfile="src/DataCollector/RestrictionsDataCollector.cpp" bodystart="13" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_ab8b8c30dca6b2e41c1ef5e3ac7e29813_1ab8b8c30dca6b2e41c1ef5e3ac7e29813" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string RestrictionsDataCollector::printCompactString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printCompactString</name>
+        <reimplements refid="classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3_1a2eac264fa5612aed5a830b12de4f4ae3">printCompactString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/RestrictionsDataCollector.h" line="23" column="1" bodyfile="src/DataCollector/RestrictionsDataCollector.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_a2676a6693b254997d223fc1c437258ab_1a2676a6693b254997d223fc1c437258ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string RestrictionsDataCollector::printTabularStringHeaderLine1</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine1</name>
+        <reimplements refid="classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e_1a91619cfa9e9b8cefd2f7c20d5718b41e">printTabularStringHeaderLine1</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/RestrictionsDataCollector.h" line="25" column="1" bodyfile="src/DataCollector/RestrictionsDataCollector.cpp" bodystart="27" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_afb3c49c2c9b152bb2372e2fcc198e1b8_1afb3c49c2c9b152bb2372e2fcc198e1b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string RestrictionsDataCollector::printTabularStringHeaderLine2</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine2</name>
+        <reimplements refid="classDataCollector_af01ea961314be2164f39e6d4cd59e443_1af01ea961314be2164f39e6d4cd59e443">printTabularStringHeaderLine2</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/RestrictionsDataCollector.h" line="27" column="1" bodyfile="src/DataCollector/RestrictionsDataCollector.cpp" bodystart="34" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_ad36ff12a666d72c92893c918715628f6_1ad36ff12a666d72c92893c918715628f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string RestrictionsDataCollector::printCompactStringHeader</definition>
+        <argsstring>() override</argsstring>
+        <name>printCompactStringHeader</name>
+        <reimplements refid="classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67_1a98dcb4ec871d9c7fbf7545c64e5ccc67">printCompactStringHeader</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/RestrictionsDataCollector.h" line="29" column="1" bodyfile="src/DataCollector/RestrictionsDataCollector.cpp" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_a7d8b6433ec25a53ed50577c2cf89912d_1a7d8b6433ec25a53ed50577c2cf89912d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RestrictionsDataCollector::collect_data</definition>
+        <argsstring>() override</argsstring>
+        <name>collect_data</name>
+        <reimplements refid="classDataCollector_a01486bf58acbe37b203f97b3b9a79c40_1a01486bf58acbe37b203f97b3b9a79c40">collect_data</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/RestrictionsDataCollector.h" line="31" column="1" bodyfile="src/DataCollector/RestrictionsDataCollector.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_ac3f378d63c09a7c72d883db64ab610c9_1ac3f378d63c09a7c72d883db64ab610c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt; double &gt; &amp; RestrictionsDataCollector::getRestriction_multipliers</definition>
+        <argsstring>() const</argsstring>
+        <name>getRestriction_multipliers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DataCollector/RestrictionsDataCollector.h" line="33" column="1" bodyfile="src/DataCollector/RestrictionsDataCollector.cpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="224">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="223">
+        <label>RestrictionsDataCollector</label>
+        <link refid="classRestrictionsDataCollector"/>
+        <childnode refid="224" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="227">
+        <label>Restrictions</label>
+        <link refid="classRestrictions"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="225">
+        <label>RestrictionsDataCollector</label>
+        <link refid="classRestrictionsDataCollector"/>
+        <childnode refid="226" relation="public-inheritance">
+        </childnode>
+        <childnode refid="227" relation="usage">
+          <edgelabel>restriction_policy</edgelabel>
+        </childnode>
+      </node>
+      <node id="228">
+        <label>DroughtMitigationPolicy</label>
+        <link refid="classDroughtMitigationPolicy"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/DataCollector/RestrictionsDataCollector.h" line="13" column="1" bodyfile="src/DataCollector/RestrictionsDataCollector.h" bodystart="13" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classRestrictionsDataCollector_a7d8b6433ec25a53ed50577c2cf89912d_1a7d8b6433ec25a53ed50577c2cf89912d" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>collect_data</name></member>
+      <member refid="classDataCollector_a3f89b18f4ac0557d7374d49531a004c0_1a3f89b18f4ac0557d7374d49531a004c0" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>DataCollector</name></member>
+      <member refid="classRestrictionsDataCollector_ac3f378d63c09a7c72d883db64ab610c9_1ac3f378d63c09a7c72d883db64ab610c9" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>getRestriction_multipliers</name></member>
+      <member refid="classDataCollector_a5cb840b6fbcf6afe364eef9114984383_1a5cb840b6fbcf6afe364eef9114984383" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>id</name></member>
+      <member refid="classDataCollector_a3a9a5033592f72ada429aa20056162b9_1a3a9a5033592f72ada429aa20056162b9" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>name</name></member>
+      <member refid="classRestrictionsDataCollector_ab8b8c30dca6b2e41c1ef5e3ac7e29813_1ab8b8c30dca6b2e41c1ef5e3ac7e29813" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>printCompactString</name></member>
+      <member refid="classRestrictionsDataCollector_ad36ff12a666d72c92893c918715628f6_1ad36ff12a666d72c92893c918715628f6" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>printCompactStringHeader</name></member>
+      <member refid="classRestrictionsDataCollector_a45e5612e70ec98430e31271f68ca407e_1a45e5612e70ec98430e31271f68ca407e" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>printTabularString</name></member>
+      <member refid="classRestrictionsDataCollector_a2676a6693b254997d223fc1c437258ab_1a2676a6693b254997d223fc1c437258ab" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>printTabularStringHeaderLine1</name></member>
+      <member refid="classRestrictionsDataCollector_afb3c49c2c9b152bb2372e2fcc198e1b8_1afb3c49c2c9b152bb2372e2fcc198e1b8" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>printTabularStringHeaderLine2</name></member>
+      <member refid="classDataCollector_a9ef2887466fe3123aa19ef956a219b96_1a9ef2887466fe3123aa19ef956a219b96" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>realization</name></member>
+      <member refid="classRestrictionsDataCollector_afb6bc7f42a2490e2599c37baebe3995c_1afb6bc7f42a2490e2599c37baebe3995c" prot="private" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>restriction_multipliers</name></member>
+      <member refid="classRestrictionsDataCollector_a09e79e1e24fa4cc698c9dfa6914ee47d_1a09e79e1e24fa4cc698c9dfa6914ee47d" prot="private" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>restriction_policy</name></member>
+      <member refid="classRestrictionsDataCollector_a0e700f013442a6df86fe75bcee4c31df_1a0e700f013442a6df86fe75bcee4c31df" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>RestrictionsDataCollector</name></member>
+      <member refid="classDataCollector_af46c27a47de92d92dcdae6b26a905a44_1af46c27a47de92d92dcdae6b26a905a44" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>table_width</name></member>
+      <member refid="classDataCollector_acad1c22d67a8eb3db056ba776a131900_1acad1c22d67a8eb3db056ba776a131900" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>type</name></member>
+      <member refid="classDataCollector_a9f9ff1817bd0601ba33925c3378ac50e_1a9f9ff1817bd0601ba33925c3378ac50e" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>~DataCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

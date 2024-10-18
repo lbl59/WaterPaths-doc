@@ -1,0 +1,161 @@
+\hypertarget{classDataCollector}{}\section{Data\+Collector Class Reference}
+\label{classDataCollector}\index{Data\+Collector@{Data\+Collector}}
+
+
+{\ttfamily \#include $<$Data\+Collector.\+h$>$}
+
+Inheritance diagram for Data\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.170732cm]{classDataCollector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataCollector_a3f89b18f4ac0557d7374d49531a004c0_a3f89b18f4ac0557d7374d49531a004c0}{Data\+Collector}} (int \mbox{\hyperlink{classDataCollector_a5cb840b6fbcf6afe364eef9114984383_a5cb840b6fbcf6afe364eef9114984383}{id}}, const char $\ast$\mbox{\hyperlink{classDataCollector_a3a9a5033592f72ada429aa20056162b9_a3a9a5033592f72ada429aa20056162b9}{name}}, unsigned long \mbox{\hyperlink{classDataCollector_a9ef2887466fe3123aa19ef956a219b96_a9ef2887466fe3123aa19ef956a219b96}{realization}}, int \mbox{\hyperlink{classDataCollector_acad1c22d67a8eb3db056ba776a131900_acad1c22d67a8eb3db056ba776a131900}{type}}, int \mbox{\hyperlink{classDataCollector_af46c27a47de92d92dcdae6b26a905a44_af46c27a47de92d92dcdae6b26a905a44}{table\+\_\+width}})
+\item 
+virtual \mbox{\hyperlink{classDataCollector_a9f9ff1817bd0601ba33925c3378ac50e_a9f9ff1817bd0601ba33925c3378ac50e}{$\sim$\+Data\+Collector}} ()
+\item 
+virtual string \mbox{\hyperlink{classDataCollector_a397fccabe0223267eea8fc7cac0e59da_a397fccabe0223267eea8fc7cac0e59da}{print\+Tabular\+String}} (int week)=0
+\item 
+virtual string \mbox{\hyperlink{classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3_a2eac264fa5612aed5a830b12de4f4ae3}{print\+Compact\+String}} (int week)=0
+\item 
+virtual string \mbox{\hyperlink{classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e_a91619cfa9e9b8cefd2f7c20d5718b41e}{print\+Tabular\+String\+Header\+Line1}} ()=0
+\item 
+virtual string \mbox{\hyperlink{classDataCollector_af01ea961314be2164f39e6d4cd59e443_af01ea961314be2164f39e6d4cd59e443}{print\+Tabular\+String\+Header\+Line2}} ()=0
+\item 
+virtual string \mbox{\hyperlink{classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67_a98dcb4ec871d9c7fbf7545c64e5ccc67}{print\+Compact\+String\+Header}} ()=0
+\item 
+virtual void \mbox{\hyperlink{classDataCollector_a01486bf58acbe37b203f97b3b9a79c40_a01486bf58acbe37b203f97b3b9a79c40}{collect\+\_\+data}} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classDataCollector_a5cb840b6fbcf6afe364eef9114984383_a5cb840b6fbcf6afe364eef9114984383}{id}}
+\item 
+const int \mbox{\hyperlink{classDataCollector_acad1c22d67a8eb3db056ba776a131900_acad1c22d67a8eb3db056ba776a131900}{type}}
+\item 
+const int \mbox{\hyperlink{classDataCollector_af46c27a47de92d92dcdae6b26a905a44_af46c27a47de92d92dcdae6b26a905a44}{table\+\_\+width}}
+\item 
+const char $\ast$ \mbox{\hyperlink{classDataCollector_a3a9a5033592f72ada429aa20056162b9_a3a9a5033592f72ada429aa20056162b9}{name}}
+\item 
+unsigned long \mbox{\hyperlink{classDataCollector_a9ef2887466fe3123aa19ef956a219b96_a9ef2887466fe3123aa19ef956a219b96}{realization}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDataCollector_a3f89b18f4ac0557d7374d49531a004c0_a3f89b18f4ac0557d7374d49531a004c0}\label{classDataCollector_a3f89b18f4ac0557d7374d49531a004c0_a3f89b18f4ac0557d7374d49531a004c0}} 
+\index{Data\+Collector@{Data\+Collector}!Data\+Collector@{Data\+Collector}}
+\index{Data\+Collector@{Data\+Collector}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{Data\+Collector()}{DataCollector()}}
+{\footnotesize\ttfamily Data\+Collector\+::\+Data\+Collector (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{const char $\ast$}]{name,  }\item[{unsigned long}]{realization,  }\item[{int}]{type,  }\item[{int}]{table\+\_\+width }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classDataCollector_a9f9ff1817bd0601ba33925c3378ac50e_a9f9ff1817bd0601ba33925c3378ac50e}\label{classDataCollector_a9f9ff1817bd0601ba33925c3378ac50e_a9f9ff1817bd0601ba33925c3378ac50e}} 
+\index{Data\+Collector@{Data\+Collector}!````~Data\+Collector@{$\sim$\+Data\+Collector}}
+\index{````~Data\+Collector@{$\sim$\+Data\+Collector}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{$\sim$\+Data\+Collector()}{~DataCollector()}}
+{\footnotesize\ttfamily Data\+Collector\+::$\sim$\+Data\+Collector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataCollector_a01486bf58acbe37b203f97b3b9a79c40_a01486bf58acbe37b203f97b3b9a79c40}\label{classDataCollector_a01486bf58acbe37b203f97b3b9a79c40_a01486bf58acbe37b203f97b3b9a79c40}} 
+\index{Data\+Collector@{Data\+Collector}!collect\+\_\+data@{collect\+\_\+data}}
+\index{collect\+\_\+data@{collect\+\_\+data}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{collect\+\_\+data()}{collect\_data()}}
+{\footnotesize\ttfamily virtual void Data\+Collector\+::collect\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classUtilitiesDataCollector_ab72c4432d6816beb1f4f4b354fb3023d_ab72c4432d6816beb1f4f4b354fb3023d}{Utilities\+Data\+Collector}}, \mbox{\hyperlink{classReservoirDataCollector_a5c2e1355c40e45b409168e98245eef95_a5c2e1355c40e45b409168e98245eef95}{Reservoir\+Data\+Collector}}, \mbox{\hyperlink{classIntakeDataCollector_aed1610e5419465b35041b05b9f60c212_aed1610e5419465b35041b05b9f60c212}{Intake\+Data\+Collector}}, \mbox{\hyperlink{classTransfersDataCollector_a2f5c4427699aab547ea0d3b74993752b_a2f5c4427699aab547ea0d3b74993752b}{Transfers\+Data\+Collector}}, \mbox{\hyperlink{classAllocatedReservoirDataCollector_a8ef8451d2cc6eb01b205eee75ab93729_a8ef8451d2cc6eb01b205eee75ab93729}{Allocated\+Reservoir\+Data\+Collector}}, \mbox{\hyperlink{classRestrictionsDataCollector_a7d8b6433ec25a53ed50577c2cf89912d_a7d8b6433ec25a53ed50577c2cf89912d}{Restrictions\+Data\+Collector}}, \mbox{\hyperlink{classWaterReuseDataCollector_af4d8d437372c06d84ff889a5288cc96e_af4d8d437372c06d84ff889a5288cc96e}{Water\+Reuse\+Data\+Collector}}, and \mbox{\hyperlink{classEmptyDataCollector_a2993f4e00acd2eff18bed2e39108e89f_a2993f4e00acd2eff18bed2e39108e89f}{Empty\+Data\+Collector}}.
+
+\mbox{\Hypertarget{classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3_a2eac264fa5612aed5a830b12de4f4ae3}\label{classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3_a2eac264fa5612aed5a830b12de4f4ae3}} 
+\index{Data\+Collector@{Data\+Collector}!print\+Compact\+String@{print\+Compact\+String}}
+\index{print\+Compact\+String@{print\+Compact\+String}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String()}{printCompactString()}}
+{\footnotesize\ttfamily virtual string Data\+Collector\+::print\+Compact\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classUtilitiesDataCollector_a57b5f9cd8ddf54154476749ab0977355_a57b5f9cd8ddf54154476749ab0977355}{Utilities\+Data\+Collector}}, \mbox{\hyperlink{classReservoirDataCollector_a0b68d7fa4a6d704350340d1ac3e8a1d2_a0b68d7fa4a6d704350340d1ac3e8a1d2}{Reservoir\+Data\+Collector}}, \mbox{\hyperlink{classIntakeDataCollector_ac39a40726fd4fe887425b24a10f04034_ac39a40726fd4fe887425b24a10f04034}{Intake\+Data\+Collector}}, \mbox{\hyperlink{classTransfersDataCollector_aa5385877143c67a4d300032160239cfe_aa5385877143c67a4d300032160239cfe}{Transfers\+Data\+Collector}}, \mbox{\hyperlink{classAllocatedReservoirDataCollector_a35f8125d428e65c737ff3360ae9bd0cd_a35f8125d428e65c737ff3360ae9bd0cd}{Allocated\+Reservoir\+Data\+Collector}}, \mbox{\hyperlink{classRestrictionsDataCollector_ab8b8c30dca6b2e41c1ef5e3ac7e29813_ab8b8c30dca6b2e41c1ef5e3ac7e29813}{Restrictions\+Data\+Collector}}, \mbox{\hyperlink{classWaterReuseDataCollector_a6b37aa4b2031cf0a1a1326da2bd64420_a6b37aa4b2031cf0a1a1326da2bd64420}{Water\+Reuse\+Data\+Collector}}, and \mbox{\hyperlink{classEmptyDataCollector_ad4a4ebbf610b3939e34442795a392dd5_ad4a4ebbf610b3939e34442795a392dd5}{Empty\+Data\+Collector}}.
+
+\mbox{\Hypertarget{classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67_a98dcb4ec871d9c7fbf7545c64e5ccc67}\label{classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67_a98dcb4ec871d9c7fbf7545c64e5ccc67}} 
+\index{Data\+Collector@{Data\+Collector}!print\+Compact\+String\+Header@{print\+Compact\+String\+Header}}
+\index{print\+Compact\+String\+Header@{print\+Compact\+String\+Header}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String\+Header()}{printCompactStringHeader()}}
+{\footnotesize\ttfamily virtual string Data\+Collector\+::print\+Compact\+String\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classUtilitiesDataCollector_ab3409c407783fd4451f310d2fc177b22_ab3409c407783fd4451f310d2fc177b22}{Utilities\+Data\+Collector}}, \mbox{\hyperlink{classReservoirDataCollector_aa8346433f037bbca41f3c8450f7f88cf_aa8346433f037bbca41f3c8450f7f88cf}{Reservoir\+Data\+Collector}}, \mbox{\hyperlink{classIntakeDataCollector_a42d56dd08e57a7e6e48812a2ab522439_a42d56dd08e57a7e6e48812a2ab522439}{Intake\+Data\+Collector}}, \mbox{\hyperlink{classTransfersDataCollector_a29750b8b76fa82d70d4f472a0e36ceba_a29750b8b76fa82d70d4f472a0e36ceba}{Transfers\+Data\+Collector}}, \mbox{\hyperlink{classAllocatedReservoirDataCollector_adbedebdf593bee81447671fb8f6ef2fe_adbedebdf593bee81447671fb8f6ef2fe}{Allocated\+Reservoir\+Data\+Collector}}, \mbox{\hyperlink{classRestrictionsDataCollector_ad36ff12a666d72c92893c918715628f6_ad36ff12a666d72c92893c918715628f6}{Restrictions\+Data\+Collector}}, \mbox{\hyperlink{classWaterReuseDataCollector_afef08bead3f2c60c2b9c975864456ef1_afef08bead3f2c60c2b9c975864456ef1}{Water\+Reuse\+Data\+Collector}}, and \mbox{\hyperlink{classEmptyDataCollector_a345d478e92af2ab4bcbaeeae3c7a3faa_a345d478e92af2ab4bcbaeeae3c7a3faa}{Empty\+Data\+Collector}}.
+
+\mbox{\Hypertarget{classDataCollector_a397fccabe0223267eea8fc7cac0e59da_a397fccabe0223267eea8fc7cac0e59da}\label{classDataCollector_a397fccabe0223267eea8fc7cac0e59da_a397fccabe0223267eea8fc7cac0e59da}} 
+\index{Data\+Collector@{Data\+Collector}!print\+Tabular\+String@{print\+Tabular\+String}}
+\index{print\+Tabular\+String@{print\+Tabular\+String}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String()}{printTabularString()}}
+{\footnotesize\ttfamily virtual string Data\+Collector\+::print\+Tabular\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classUtilitiesDataCollector_a39e7d28a70a0f71b3f1cc28b19c7e2d9_a39e7d28a70a0f71b3f1cc28b19c7e2d9}{Utilities\+Data\+Collector}}, \mbox{\hyperlink{classReservoirDataCollector_a81777b029bf26be403b9f4d67f01588b_a81777b029bf26be403b9f4d67f01588b}{Reservoir\+Data\+Collector}}, \mbox{\hyperlink{classIntakeDataCollector_ada2b88b7a05455cf6f2eebf82d37b3c5_ada2b88b7a05455cf6f2eebf82d37b3c5}{Intake\+Data\+Collector}}, \mbox{\hyperlink{classTransfersDataCollector_a292b907e5c1000d8b3d868409637b9a6_a292b907e5c1000d8b3d868409637b9a6}{Transfers\+Data\+Collector}}, \mbox{\hyperlink{classAllocatedReservoirDataCollector_ae5a9aa9b2a3cffd8f5ffe983c8fcf6c8_ae5a9aa9b2a3cffd8f5ffe983c8fcf6c8}{Allocated\+Reservoir\+Data\+Collector}}, \mbox{\hyperlink{classRestrictionsDataCollector_a45e5612e70ec98430e31271f68ca407e_a45e5612e70ec98430e31271f68ca407e}{Restrictions\+Data\+Collector}}, \mbox{\hyperlink{classWaterReuseDataCollector_af8b637ad080f354dc145f11580834da8_af8b637ad080f354dc145f11580834da8}{Water\+Reuse\+Data\+Collector}}, and \mbox{\hyperlink{classEmptyDataCollector_a2bb44e454376ed518c4d89cf324b8bd7_a2bb44e454376ed518c4d89cf324b8bd7}{Empty\+Data\+Collector}}.
+
+\mbox{\Hypertarget{classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e_a91619cfa9e9b8cefd2f7c20d5718b41e}\label{classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e_a91619cfa9e9b8cefd2f7c20d5718b41e}} 
+\index{Data\+Collector@{Data\+Collector}!print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}}
+\index{print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line1()}{printTabularStringHeaderLine1()}}
+{\footnotesize\ttfamily virtual string Data\+Collector\+::print\+Tabular\+String\+Header\+Line1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classUtilitiesDataCollector_a796aa9d7637d8ed04dbd949ca2a34088_a796aa9d7637d8ed04dbd949ca2a34088}{Utilities\+Data\+Collector}}, \mbox{\hyperlink{classReservoirDataCollector_a62e7c7abc34c8154b338dfbd284ed665_a62e7c7abc34c8154b338dfbd284ed665}{Reservoir\+Data\+Collector}}, \mbox{\hyperlink{classIntakeDataCollector_ae17ab7e6c75e77f5981f6a682597bb5c_ae17ab7e6c75e77f5981f6a682597bb5c}{Intake\+Data\+Collector}}, \mbox{\hyperlink{classTransfersDataCollector_a7c797fbccf4326b206b29529059dd622_a7c797fbccf4326b206b29529059dd622}{Transfers\+Data\+Collector}}, \mbox{\hyperlink{classAllocatedReservoirDataCollector_ae82c7a68af1dce9003cccc6da1800e28_ae82c7a68af1dce9003cccc6da1800e28}{Allocated\+Reservoir\+Data\+Collector}}, \mbox{\hyperlink{classRestrictionsDataCollector_a2676a6693b254997d223fc1c437258ab_a2676a6693b254997d223fc1c437258ab}{Restrictions\+Data\+Collector}}, \mbox{\hyperlink{classWaterReuseDataCollector_a1065ad3627b913dccb6ecbf0e6acc6e6_a1065ad3627b913dccb6ecbf0e6acc6e6}{Water\+Reuse\+Data\+Collector}}, and \mbox{\hyperlink{classEmptyDataCollector_afa47b48abb2ed59c16f1253e55f93cf2_afa47b48abb2ed59c16f1253e55f93cf2}{Empty\+Data\+Collector}}.
+
+\mbox{\Hypertarget{classDataCollector_af01ea961314be2164f39e6d4cd59e443_af01ea961314be2164f39e6d4cd59e443}\label{classDataCollector_af01ea961314be2164f39e6d4cd59e443_af01ea961314be2164f39e6d4cd59e443}} 
+\index{Data\+Collector@{Data\+Collector}!print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}}
+\index{print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line2()}{printTabularStringHeaderLine2()}}
+{\footnotesize\ttfamily virtual string Data\+Collector\+::print\+Tabular\+String\+Header\+Line2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classUtilitiesDataCollector_ae502a096e8f4fdfdfd481ab2093f9771_ae502a096e8f4fdfdfd481ab2093f9771}{Utilities\+Data\+Collector}}, \mbox{\hyperlink{classReservoirDataCollector_ae2f8e808c5960608e510a64c7f00ad1b_ae2f8e808c5960608e510a64c7f00ad1b}{Reservoir\+Data\+Collector}}, \mbox{\hyperlink{classIntakeDataCollector_a2855eb8eed71649309bd4d9336f258c0_a2855eb8eed71649309bd4d9336f258c0}{Intake\+Data\+Collector}}, \mbox{\hyperlink{classTransfersDataCollector_ade6b896383f079d8973076e6b9a8053a_ade6b896383f079d8973076e6b9a8053a}{Transfers\+Data\+Collector}}, \mbox{\hyperlink{classAllocatedReservoirDataCollector_a30d8c59205862822f6548472ba62e537_a30d8c59205862822f6548472ba62e537}{Allocated\+Reservoir\+Data\+Collector}}, \mbox{\hyperlink{classRestrictionsDataCollector_afb3c49c2c9b152bb2372e2fcc198e1b8_afb3c49c2c9b152bb2372e2fcc198e1b8}{Restrictions\+Data\+Collector}}, \mbox{\hyperlink{classWaterReuseDataCollector_a8cead3771efabeb62dcf069008810f43_a8cead3771efabeb62dcf069008810f43}{Water\+Reuse\+Data\+Collector}}, and \mbox{\hyperlink{classEmptyDataCollector_aa71282121251d344d674223409445be9_aa71282121251d344d674223409445be9}{Empty\+Data\+Collector}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classDataCollector_a5cb840b6fbcf6afe364eef9114984383_a5cb840b6fbcf6afe364eef9114984383}\label{classDataCollector_a5cb840b6fbcf6afe364eef9114984383_a5cb840b6fbcf6afe364eef9114984383}} 
+\index{Data\+Collector@{Data\+Collector}!id@{id}}
+\index{id@{id}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily const int Data\+Collector\+::id}
+
+\mbox{\Hypertarget{classDataCollector_a3a9a5033592f72ada429aa20056162b9_a3a9a5033592f72ada429aa20056162b9}\label{classDataCollector_a3a9a5033592f72ada429aa20056162b9_a3a9a5033592f72ada429aa20056162b9}} 
+\index{Data\+Collector@{Data\+Collector}!name@{name}}
+\index{name@{name}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily const char$\ast$ Data\+Collector\+::name}
+
+\mbox{\Hypertarget{classDataCollector_a9ef2887466fe3123aa19ef956a219b96_a9ef2887466fe3123aa19ef956a219b96}\label{classDataCollector_a9ef2887466fe3123aa19ef956a219b96_a9ef2887466fe3123aa19ef956a219b96}} 
+\index{Data\+Collector@{Data\+Collector}!realization@{realization}}
+\index{realization@{realization}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{realization}{realization}}
+{\footnotesize\ttfamily unsigned long Data\+Collector\+::realization}
+
+\mbox{\Hypertarget{classDataCollector_af46c27a47de92d92dcdae6b26a905a44_af46c27a47de92d92dcdae6b26a905a44}\label{classDataCollector_af46c27a47de92d92dcdae6b26a905a44_af46c27a47de92d92dcdae6b26a905a44}} 
+\index{Data\+Collector@{Data\+Collector}!table\+\_\+width@{table\+\_\+width}}
+\index{table\+\_\+width@{table\+\_\+width}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{table\+\_\+width}{table\_width}}
+{\footnotesize\ttfamily const int Data\+Collector\+::table\+\_\+width}
+
+\mbox{\Hypertarget{classDataCollector_acad1c22d67a8eb3db056ba776a131900_acad1c22d67a8eb3db056ba776a131900}\label{classDataCollector_acad1c22d67a8eb3db056ba776a131900_acad1c22d67a8eb3db056ba776a131900}} 
+\index{Data\+Collector@{Data\+Collector}!type@{type}}
+\index{type@{type}!Data\+Collector@{Data\+Collector}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily const int Data\+Collector\+::type}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Data\+Collector/\+Base/\mbox{\hyperlink{DataCollector_8h}{Data\+Collector.\+h}}\item 
+src/\+Data\+Collector/\+Base/\mbox{\hyperlink{DataCollector_8cpp}{Data\+Collector.\+cpp}}\end{DoxyCompactItemize}

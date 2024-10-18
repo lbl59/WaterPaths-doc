@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classDroughtMitigationPolicy" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>DroughtMitigationPolicy</compoundname>
+    <derivedcompoundref refid="classInsuranceStorageToROF" prot="public" virt="non-virtual">InsuranceStorageToROF</derivedcompoundref>
+    <derivedcompoundref refid="classRestrictions" prot="public" virt="non-virtual">Restrictions</derivedcompoundref>
+    <derivedcompoundref refid="classTransfers" prot="public" virt="non-virtual">Transfers</derivedcompoundref>
+    <includes refid="DroughtMitigationPolicy_8h" local="no">DroughtMitigationPolicy.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDroughtMitigationPolicy_aa7d724adcd8ebcd5641de13b8f08098c_1aa7d724adcd8ebcd5641de13b8f08098c" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt; &gt; *</type>
+        <definition>vector&lt;Matrix2D&lt;double&gt; &gt;* DroughtMitigationPolicy::storage_to_rof_table_</definition>
+        <argsstring></argsstring>
+        <name>storage_to_rof_table_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="16" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classDroughtMitigationPolicy_ad19fbc5a9fdf17ed50c0ba0b99d47eca_1ad19fbc5a9fdf17ed50c0ba0b99d47eca" prot="protected" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; DroughtMitigationPolicy::utilities_ids</definition>
+        <argsstring></argsstring>
+        <name>utilities_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="21" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDroughtMitigationPolicy_af6e5787a58017804d8598effbeeaba8e_1af6e5787a58017804d8598effbeeaba8e" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> * &gt;</type>
+        <definition>vector&lt;Utility *&gt; DroughtMitigationPolicy::realization_utilities</definition>
+        <argsstring></argsstring>
+        <name>realization_utilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="22" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDroughtMitigationPolicy_ae2104e99c421513902ba66d012484c0e_1ae2104e99c421513902ba66d012484c0e" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> * &gt;</type>
+        <definition>vector&lt;WaterSource *&gt; DroughtMitigationPolicy::realization_water_sources</definition>
+        <argsstring></argsstring>
+        <name>realization_water_sources</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="23" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDroughtMitigationPolicy_af583979405bc5d530ee576df8a6e9324_1af583979405bc5d530ee576df8a6e9324" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref> * &gt;</type>
+        <definition>vector&lt;MinEnvFlowControl *&gt; DroughtMitigationPolicy::realization_min_env_flow_controls</definition>
+        <argsstring></argsstring>
+        <name>realization_min_env_flow_controls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="24" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDroughtMitigationPolicy_a4c5a2dc2aa3a1c7550cdb17045e1fef3_1a4c5a2dc2aa3a1c7550cdb17045e1fef3" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt; *</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt;* DroughtMitigationPolicy::rdm_factors_all</definition>
+        <argsstring></argsstring>
+        <name>rdm_factors_all</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="25" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDroughtMitigationPolicy_abef5c917bbc076514fe61bfebbd0e4fc_1abef5c917bbc076514fe61bfebbd0e4fc" prot="protected" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* DroughtMitigationPolicy::rdm_factors_realization</definition>
+        <argsstring></argsstring>
+        <name>rdm_factors_realization</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="26" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDroughtMitigationPolicy_ace2a2425f6608c34a3189c11445978a1_1ace2a2425f6608c34a3189c11445978a1" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DroughtMitigationPolicy::use_imported_tables</definition>
+        <argsstring></argsstring>
+        <name>use_imported_tables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="27" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b_1abf3ed19ed98e0d74dc9ae24094be640b" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int DroughtMitigationPolicy::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="32" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDroughtMitigationPolicy_aaea5016d1462bec889cb8df85aececc6_1aaea5016d1462bec889cb8df85aececc6" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int DroughtMitigationPolicy::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="33" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classDroughtMitigationPolicy_aaf0715876ce33a75c7db92e50523ea0c_1aaf0715876ce33a75c7db92e50523ea0c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DroughtMitigationPolicy::DroughtMitigationPolicy</definition>
+        <argsstring>(const DroughtMitigationPolicy &amp;drought_mitigation_policy)</argsstring>
+        <name>DroughtMitigationPolicy</name>
+        <param>
+          <type>const <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> &amp;</type>
+          <declname>drought_mitigation_policy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="19" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.cpp" bodystart="10" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classDroughtMitigationPolicy_a685ce7eacb01cb262d7e5245a736aa38_1a685ce7eacb01cb262d7e5245a736aa38" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double DroughtMitigationPolicy::getRofFromRealizationTable</definition>
+        <argsstring>(int utility_id, int week, int tier)</argsstring>
+        <name>getRofFromRealizationTable</name>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="29" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDroughtMitigationPolicy_a00cce0117a5bc0c446727e0c0c59a8df_1a00cce0117a5bc0c446727e0c0c59a8df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DroughtMitigationPolicy::DroughtMitigationPolicy</definition>
+        <argsstring>(const int id, const int type)</argsstring>
+        <name>DroughtMitigationPolicy</name>
+        <param>
+          <type>const int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="35" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.cpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d_1a76c1a85eaf7707306fe173b6437cc31d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void DroughtMitigationPolicy::applyPolicy</definition>
+        <argsstring>(int week)=0</argsstring>
+        <name>applyPolicy</name>
+        <reimplementedby refid="classRestrictions_a1ef7559adc034bdddd047ee776b5f9a9_1a1ef7559adc034bdddd047ee776b5f9a9">applyPolicy</reimplementedby>
+        <reimplementedby refid="classInsuranceStorageToROF_a17aa84e0559793b3c463c468dfda3753_1a17aa84e0559793b3c463c468dfda3753">applyPolicy</reimplementedby>
+        <reimplementedby refid="classTransfers_ad9e4e83ff763ac1ba518a19051cd2e69_1ad9e4e83ff763ac1ba518a19051cd2e69">applyPolicy</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a_1aaab042a79d781afe8e08753b7012372a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void DroughtMitigationPolicy::addSystemComponents</definition>
+        <argsstring>(vector&lt; Utility *&gt; utilities, vector&lt; WaterSource *&gt; water_sources, vector&lt; MinEnvFlowControl *&gt; min_env_flow_controls)=0</argsstring>
+        <name>addSystemComponents</name>
+        <reimplementedby refid="classRestrictions_ab0a2b62495d6cdd8d1fedba419c05c37_1ab0a2b62495d6cdd8d1fedba419c05c37">addSystemComponents</reimplementedby>
+        <reimplementedby refid="classInsuranceStorageToROF_ac7d317a7f189739275960e4f021108d8_1ac7d317a7f189739275960e4f021108d8">addSystemComponents</reimplementedby>
+        <reimplementedby refid="classTransfers_a3c1930dbeb1273c1c0be93ad5ca57357_1a3c1930dbeb1273c1c0be93ad5ca57357">addSystemComponents</reimplementedby>
+        <param>
+          <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt;</type>
+          <declname>utilities</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt;</type>
+          <declname>water_sources</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref> *&gt;</type>
+          <declname>min_env_flow_controls</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDroughtMitigationPolicy_aad53e4f995e3fe18b580f39d15daeefc_1aad53e4f995e3fe18b580f39d15daeefc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; int &gt; &amp;</type>
+        <definition>const vector&lt; int &gt; &amp; DroughtMitigationPolicy::getUtilities_ids</definition>
+        <argsstring>() const</argsstring>
+        <name>getUtilities_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="43" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classDroughtMitigationPolicy_a0bf7d0fa94377ae6814e529daf0204c4_1a0bf7d0fa94377ae6814e529daf0204c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DroughtMitigationPolicy::operator&lt;</definition>
+        <argsstring>(const DroughtMitigationPolicy *other)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>const <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="45" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classDroughtMitigationPolicy_a576d3ddb09dc9372898a63c0949d08a6_1a576d3ddb09dc9372898a63c0949d08a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DroughtMitigationPolicy::operator&gt;</definition>
+        <argsstring>(const DroughtMitigationPolicy *other)</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>const <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="47" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classDroughtMitigationPolicy_a91ff1ca816dcb044e1e10a6c2a8e56a0_1a91ff1ca816dcb044e1e10a6c2a8e56a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>DroughtMitigationPolicy::~DroughtMitigationPolicy</definition>
+        <argsstring>()</argsstring>
+        <name>~DroughtMitigationPolicy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="49" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.cpp" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classDroughtMitigationPolicy_a75710a6ab73213223222b3472f9251c0_1a75710a6ab73213223222b3472f9251c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DroughtMitigationPolicy::setStorage_to_rof_table_</definition>
+        <argsstring>(vector&lt; Matrix2D&lt; double &gt;&gt; &amp;storage_to_rof_table_, int use_imported_tables)</argsstring>
+        <name>setStorage_to_rof_table_</name>
+        <param>
+          <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt;&gt; &amp;</type>
+          <declname>storage_to_rof_table_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>use_imported_tables</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="51" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.cpp" bodystart="37" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4_1a5d2033543cacca1e412eebef5106eab4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void DroughtMitigationPolicy::setRealization</definition>
+        <argsstring>(unsigned long realization_id, vector&lt; double &gt; &amp;utilities_rdm, vector&lt; double &gt; &amp;water_sources_rdm, vector&lt; double &gt; &amp;policy_rdm)=0</argsstring>
+        <name>setRealization</name>
+        <reimplementedby refid="classRestrictions_abc17a8a403311933a3bb58fbecd5f5fd_1abc17a8a403311933a3bb58fbecd5f5fd">setRealization</reimplementedby>
+        <reimplementedby refid="classInsuranceStorageToROF_a6318c3dca8b0c4d568eac494e5ccf712_1a6318c3dca8b0c4d568eac494e5ccf712">setRealization</reimplementedby>
+        <reimplementedby refid="classTransfers_a75342a7c14b2ff69eb2520de240a1131_1a75342a7c14b2ff69eb2520de240a1131">setRealization</reimplementedby>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization_id</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>utilities_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>water_sources_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>policy_rdm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="75">
+        <label>Restrictions</label>
+        <link refid="classRestrictions"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>Transfers</label>
+        <link refid="classTransfers"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>InsuranceStorageToROF</label>
+        <link refid="classInsuranceStorageToROF"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>DroughtMitigationPolicy</label>
+        <link refid="classDroughtMitigationPolicy"/>
+      </node>
+    </inheritancegraph>
+    <location file="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" line="14" column="1" bodyfile="src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h" bodystart="14" bodyend="56"/>
+    <listofallmembers>
+      <member refid="classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a_1aaab042a79d781afe8e08753b7012372a" prot="public" virt="pure-virtual"><scope>DroughtMitigationPolicy</scope><name>addSystemComponents</name></member>
+      <member refid="classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d_1a76c1a85eaf7707306fe173b6437cc31d" prot="public" virt="pure-virtual"><scope>DroughtMitigationPolicy</scope><name>applyPolicy</name></member>
+      <member refid="classDroughtMitigationPolicy_aaf0715876ce33a75c7db92e50523ea0c_1aaf0715876ce33a75c7db92e50523ea0c" prot="protected" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>DroughtMitigationPolicy</name></member>
+      <member refid="classDroughtMitigationPolicy_a00cce0117a5bc0c446727e0c0c59a8df_1a00cce0117a5bc0c446727e0c0c59a8df" prot="public" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>DroughtMitigationPolicy</name></member>
+      <member refid="classDroughtMitigationPolicy_a685ce7eacb01cb262d7e5245a736aa38_1a685ce7eacb01cb262d7e5245a736aa38" prot="protected" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>getRofFromRealizationTable</name></member>
+      <member refid="classDroughtMitigationPolicy_aad53e4f995e3fe18b580f39d15daeefc_1aad53e4f995e3fe18b580f39d15daeefc" prot="public" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>getUtilities_ids</name></member>
+      <member refid="classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b_1abf3ed19ed98e0d74dc9ae24094be640b" prot="public" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>id</name></member>
+      <member refid="classDroughtMitigationPolicy_a0bf7d0fa94377ae6814e529daf0204c4_1a0bf7d0fa94377ae6814e529daf0204c4" prot="public" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>operator&lt;</name></member>
+      <member refid="classDroughtMitigationPolicy_a576d3ddb09dc9372898a63c0949d08a6_1a576d3ddb09dc9372898a63c0949d08a6" prot="public" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>operator&gt;</name></member>
+      <member refid="classDroughtMitigationPolicy_a4c5a2dc2aa3a1c7550cdb17045e1fef3_1a4c5a2dc2aa3a1c7550cdb17045e1fef3" prot="protected" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>rdm_factors_all</name></member>
+      <member refid="classDroughtMitigationPolicy_abef5c917bbc076514fe61bfebbd0e4fc_1abef5c917bbc076514fe61bfebbd0e4fc" prot="protected" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>rdm_factors_realization</name></member>
+      <member refid="classDroughtMitigationPolicy_af583979405bc5d530ee576df8a6e9324_1af583979405bc5d530ee576df8a6e9324" prot="protected" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>realization_min_env_flow_controls</name></member>
+      <member refid="classDroughtMitigationPolicy_af6e5787a58017804d8598effbeeaba8e_1af6e5787a58017804d8598effbeeaba8e" prot="protected" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>realization_utilities</name></member>
+      <member refid="classDroughtMitigationPolicy_ae2104e99c421513902ba66d012484c0e_1ae2104e99c421513902ba66d012484c0e" prot="protected" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>realization_water_sources</name></member>
+      <member refid="classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4_1a5d2033543cacca1e412eebef5106eab4" prot="public" virt="pure-virtual"><scope>DroughtMitigationPolicy</scope><name>setRealization</name></member>
+      <member refid="classDroughtMitigationPolicy_a75710a6ab73213223222b3472f9251c0_1a75710a6ab73213223222b3472f9251c0" prot="public" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>setStorage_to_rof_table_</name></member>
+      <member refid="classDroughtMitigationPolicy_aa7d724adcd8ebcd5641de13b8f08098c_1aa7d724adcd8ebcd5641de13b8f08098c" prot="private" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>storage_to_rof_table_</name></member>
+      <member refid="classDroughtMitigationPolicy_aaea5016d1462bec889cb8df85aececc6_1aaea5016d1462bec889cb8df85aececc6" prot="public" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>type</name></member>
+      <member refid="classDroughtMitigationPolicy_ace2a2425f6608c34a3189c11445978a1_1ace2a2425f6608c34a3189c11445978a1" prot="protected" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>use_imported_tables</name></member>
+      <member refid="classDroughtMitigationPolicy_ad19fbc5a9fdf17ed50c0ba0b99d47eca_1ad19fbc5a9fdf17ed50c0ba0b99d47eca" prot="protected" virt="non-virtual"><scope>DroughtMitigationPolicy</scope><name>utilities_ids</name></member>
+      <member refid="classDroughtMitigationPolicy_a91ff1ca816dcb044e1e10a6c2a8e56a0_1a91ff1ca816dcb044e1e10a6c2a8e56a0" prot="public" virt="virtual"><scope>DroughtMitigationPolicy</scope><name>~DroughtMitigationPolicy</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

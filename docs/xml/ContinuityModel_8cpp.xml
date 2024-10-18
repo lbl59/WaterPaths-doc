@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="ContinuityModel_8cpp" kind="file" language="C++">
+    <compoundname>ContinuityModel.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">cstring</includes>
+    <includes local="no">algorithm</includes>
+    <includes refid="ContinuityModel_8h" local="yes">ContinuityModel.h</includes>
+    <includes refid="SequentialJointTreatmentExpansion_8h" local="yes">../../SystemComponents/WaterSources/SequentialJointTreatmentExpansion.h</includes>
+    <incdepgraph>
+      <node id="23">
+        <label>list</label>
+      </node>
+      <node id="16">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="24">
+        <label>../../Controls/Base/MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ContinuityModel.h</label>
+        <link refid="ContinuityModel_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>cmath</label>
+      </node>
+      <node id="17">
+        <label>stdexcept</label>
+      </node>
+      <node id="10">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>string</label>
+      </node>
+      <node id="0">
+        <label>src/ContinuityModels/Base/ContinuityModel.cpp</label>
+        <link refid="ContinuityModel_8cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>map</label>
+      </node>
+      <node id="21">
+        <label>InfrastructureManager.h</label>
+        <link refid="InfrastructureManager_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>../../SystemComponents/WaterSources/Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>../../SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>vector</label>
+      </node>
+      <node id="22">
+        <label>../../Utils/Graph/Graph.h</label>
+        <link refid="Graph_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>../WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>iostream</label>
+      </node>
+      <node id="25">
+        <label>../../SystemComponents/WaterSources/SequentialJointTreatmentExpansion.h</label>
+        <link refid="SequentialJointTreatmentExpansion_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>algorithm</label>
+      </node>
+      <node id="12">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>cstring</label>
+      </node>
+      <node id="14">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardo<sp/>on<sp/>1/12/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ContinuityModel_8h" kindref="compound">ContinuityModel.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../SystemComponents/WaterSources/SequentialJointTreatmentExpansion.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="classContinuityModel_acadf595deb924bc08c9b702adf223365_1acadf595deb924bc08c9b702adf223365" kindref="member">ContinuityModel::ContinuityModel</ref>(vector&lt;WaterSource<sp/>*&gt;<sp/>&amp;water_sources,<sp/>vector&lt;Utility<sp/>*&gt;<sp/>&amp;utilities,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;MinEnvFlowControl<sp/>*&gt;<sp/>&amp;min_env_flow_controls,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGraph" kindref="compound">Graph</ref><sp/>&amp;water_sources_graph,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;int&gt;&gt;<sp/>&amp;water_sources_to_utilities,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;utilities_rdm,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;water_sources_rdm,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>realization_id)<sp/>:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>continuity_water_sources(water_sources),</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>continuity_utilities(utilities),</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>min_env_flow_controls(min_env_flow_controls),</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water_sources_graph(water_sources_graph),</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water_sources_to_utilities(water_sources_to_utilities),</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sources_topological_order(water_sources_graph.getTopological_order()),<sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utilities_rdm(utilities_rdm),</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water_sources_rdm(water_sources_rdm),</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n_utilities((int)<sp/>utilities.size()),</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>n_sources((int)<sp/>water_sources.size()),</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>realization_id(realization_id)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//FIXME:<sp/>THERE<sp/>IS<sp/>A<sp/>STUPID<sp/>MISTAKE<sp/>HERE<sp/>IN<sp/>THE<sp/>SORT<sp/>FUNCTION<sp/>THAT<sp/>IS<sp/>PREVENTING<sp/>IT<sp/>FROM<sp/>WORKING<sp/>UNDER<sp/>WINDOWS<sp/>AND<sp/>LINUX.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::sort(continuity_water_sources.begin(),<sp/>continuity_water_sources.end(),<sp/><ref refid="classWaterSource_a7a1325107c74bb0ea553dc3547204e01_1a7a1325107c74bb0ea553dc3547204e01" kindref="member">WaterSource::compare</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>std::sort(continuity_utilities.begin(),<sp/>continuity_utilities.end(),<sp/><ref refid="classUtility_a2156ad82d86ed63a22f932a90062ed29_1a2156ad82d86ed63a22f932a90062ed29" kindref="member">Utility::compById</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Link<sp/>water<sp/>sources<sp/>to<sp/>utilities<sp/>by<sp/>passing<sp/>pointers<sp/>of<sp/>the<sp/>former<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>latter.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>u<sp/>=<sp/>0;<sp/>u<sp/>&lt;<sp/>utilities.size();<sp/>++u)<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>ws<sp/>=<sp/>0;<sp/>ws<sp/>&lt;<sp/>water_sources_to_utilities[u].size();<sp/>++ws)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ws_id<sp/>=<sp/>water_sources_to_utilities[u][ws];</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ws_id<sp/>&gt;=<sp/>continuity_water_sources.size())<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>error[128];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(error,<sp/></highlight><highlight class="stringliteral">&quot;Water<sp/>source<sp/>%d<sp/>was<sp/>not<sp/>added<sp/>to<sp/>list<sp/>of<sp/>water<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;sources<sp/>passed<sp/>to<sp/>the<sp/>continuity<sp/>model.&quot;</highlight><highlight class="normal">,<sp/>ws_id);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>invalid_argument(error);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classWaterSource" kindref="compound">WaterSource</ref><sp/>*water_source<sp/>=</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>continuity_water_sources.at((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/>ws_id);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;continuity_utilities[u]-&gt;addWaterSource(water_source);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>table<sp/>showing<sp/>which<sp/>utilities<sp/>draw<sp/>water<sp/>from<sp/>each<sp/>water<sp/>source.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>utilities_to_water_sources.assign(water_sources.size(),<sp/>vector&lt;int&gt;(0));</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>water_sources_online_to_utilities.assign(water_sources.size(),<sp/>vector&lt;int&gt;(0));</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>u<sp/>=<sp/>0;<sp/>u<sp/>&lt;<sp/>utilities.size();<sp/>++u)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;ws<sp/>:<sp/>water_sources_to_utilities[u])<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utilities_to_water_sources[ws].push_back(u);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(water_sources[ws]-&gt;isOnline())</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water_sources_online_to_utilities[u].push_back(ws);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>variables<sp/>below<sp/>are<sp/>to<sp/>make<sp/>the<sp/>storage-ROF<sp/>table<sp/>calculation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>faster<sp/>by<sp/>limiting<sp/>the<sp/>storage<sp/>curve<sp/>shifting<sp/>to<sp/>online<sp/>water<sp/>sources.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>water_source<sp/>:<sp/>water_sources)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>online<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>u<sp/>=<sp/>0;<sp/>u<sp/>&lt;<sp/>utilities.size();<sp/>++u)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(water_source-&gt;<ref refid="classWaterSource_a130fd661ff31c53115cca23e4e2f210a_1a130fd661ff31c53115cca23e4e2f210a" kindref="member">isOnline</ref>())</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>online<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(online)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water_sources_capacities.push_back(</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water_source-&gt;<ref refid="classWaterSource_aa4cbbd1ee0fc5ea9291eb5d8067b3aa0_1aa4cbbd1ee0fc5ea9291eb5d8067b3aa0" kindref="member">getSupplyCapacity</ref>());</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>water_sources_capacities.push_back((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)<sp/><ref refid="namespaceConstants_a79ee092c4ca31cde9669f70d505eeca5_1a79ee092c4ca31cde9669f70d505eeca5" kindref="member">NONE</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Populate<sp/>vector<sp/>with<sp/>utilities<sp/>capacities<sp/>and<sp/>check<sp/>if<sp/>all<sp/>utilities</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>have<sp/>storage<sp/>capacity.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classUtility" kindref="compound">Utility</ref><sp/>*u<sp/>:<sp/>continuity_utilities)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>utilities_capacities.push_back(u-&gt;getTotal_storage_capacity());</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(utilities_capacities.back()<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>error[1000];</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sprintf(error,<sp/></highlight><highlight class="stringliteral">&quot;Utility<sp/>%d<sp/>has<sp/>no<sp/>storage<sp/>capacity<sp/>(0<sp/>MGD),<sp/>which<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;would<sp/>lead<sp/>to<sp/>an<sp/>ROF<sp/>value<sp/>of<sp/>0/0.<sp/>WaterPaths<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;currently<sp/>requires<sp/>utilities<sp/>to<sp/>have<sp/>non-zero<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;storage<sp/>capacity\n&quot;</highlight><highlight class="normal">,<sp/>u-&gt;id);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>invalid_argument(error);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Populate<sp/>vector<sp/>indicating<sp/>the<sp/>downstream<sp/>source<sp/>from<sp/>each<sp/>source.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(vector&lt;int&gt;<sp/>ds<sp/>:<sp/>water_sources_graph.<ref refid="classGraph_a9bbef60829d62f08e802dd1fbda0e4b7_1a9bbef60829d62f08e802dd1fbda0e4b7" kindref="member">getDownSources</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ds.empty())<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>downstream_sources.push_back(<ref refid="namespaceConstants_a8e8b0a537619c378d03117c5ed1c3ea1_1a8e8b0a537619c378d03117c5ed1c3ea1" kindref="member">NON_INITIALIZED</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>downstream_sources.push_back(ds[0]);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>reference<sp/>to<sp/>water<sp/>sources<sp/>and<sp/>utilities<sp/>so<sp/>that<sp/>controls<sp/>can</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>access<sp/>their<sp/>info.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref><sp/>*mef<sp/>:<sp/>this-&gt;min_env_flow_controls)<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mef-&gt;addComponents(water_sources,<sp/>utilities);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>realization<sp/>id<sp/>on<sp/>utilities<sp/>and<sp/>water<sp/>sources,<sp/>so<sp/>that<sp/>they<sp/>use<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>right<sp/>streamflow,<sp/>evaporation<sp/>and<sp/>demand<sp/>data.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>setRealization(realization_id,<sp/>utilities_rdm,<sp/>water_sources_rdm);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>demands<sp/>=<sp/>std::vector&lt;vector&lt;double&gt;&gt;(</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>continuity_water_sources.size(),</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;(continuity_utilities.size(),<sp/>0.));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>populate<sp/>array<sp/>delta_realization_weeks<sp/>so<sp/>that<sp/>the<sp/>rounding<sp/>and<sp/>casting<sp/>don&apos;t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>have<sp/>to<sp/>be<sp/>done<sp/>every<sp/>time<sp/>continuityStep<sp/>is<sp/>called,<sp/>avoiding<sp/>a<sp/>bottleneck.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Variable<sp/>delta_realization_weeks[0]<sp/>is<sp/>to<sp/>be<sp/>zero<sp/>representing<sp/>a<sp/>continuity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>step<sp/>for<sp/>a<sp/>non-ROF<sp/>simulation:<sp/>the<sp/>realization<sp/>itself.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>delta_realization_weeks[0]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>0;<sp/>r<sp/>&lt;<sp/><ref refid="namespaceConstants_ad6b1922ee031afa4b93176968d060fdf_1ad6b1922ee031afa4b93176968d060fdf" kindref="member">NUMBER_REALIZATIONS_ROF</ref>;<sp/>++r)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delta_realization_weeks[r<sp/>+<sp/>1]<sp/>=<sp/>(int)<sp/>std::round((r<sp/>+<sp/>1)<sp/>*<sp/><ref refid="namespaceConstants_a19e84af3cbc6e1318beb22408c2a1f2f_1a19e84af3cbc6e1318beb22408c2a1f2f" kindref="member">WEEKS_IN_YEAR</ref>);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><ref refid="classContinuityModel_a6644d91cc76b2ccc57103aa1a2ab0c03_1a6644d91cc76b2ccc57103aa1a2ab0c03" kindref="member">ContinuityModel::~ContinuityModel</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>ws<sp/>:<sp/><ref refid="classContinuityModel_a3980284a9dd08bae4e76398d1b0d6f55_1a3980284a9dd08bae4e76398d1b0d6f55" kindref="member">continuity_water_sources</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>ws;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>u<sp/>:<sp/><ref refid="classContinuityModel_adc77a0214d553a961035ce86c93cf9be_1adc77a0214d553a961035ce86c93cf9be" kindref="member">continuity_utilities</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>u;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>mef<sp/>:<sp/><ref refid="classContinuityModel_afc991e5c0d144020e49a97751a04b302_1afc991e5c0d144020e49a97751a04b302" kindref="member">min_env_flow_controls</ref>){</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>mef;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModel_ad880b6cb48eb24e8b78cc5425d85313b_1ad880b6cb48eb24e8b78cc5425d85313b" kindref="member">ContinuityModel::continuityStep</ref>(</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rof_realization,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>apply_demand_buffer)<sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>upstream_spillage<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">[<ref refid="classContinuityModel_a3c25a0d17579eb0fdad0b18319441460_1a3c25a0d17579eb0fdad0b18319441460" kindref="member">n_sources</ref>];</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>fill_n(upstream_spillage,<sp/><ref refid="classContinuityModel_a3c25a0d17579eb0fdad0b18319441460_1a3c25a0d17579eb0fdad0b18319441460" kindref="member">n_sources</ref>,<sp/>0.);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>wastewater_discharges<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">[<ref refid="classContinuityModel_a3c25a0d17579eb0fdad0b18319441460_1a3c25a0d17579eb0fdad0b18319441460" kindref="member">n_sources</ref>];</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>fill_n(wastewater_discharges,<sp/><ref refid="classContinuityModel_a3c25a0d17579eb0fdad0b18319441460_1a3c25a0d17579eb0fdad0b18319441460" kindref="member">n_sources</ref>,<sp/>0.);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>ROF<sp/>calculations<sp/>use<sp/>previous<sp/>year<sp/>unless<sp/>this<sp/>is<sp/>the<sp/>first<sp/>year<sp/>(to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>simplify<sp/>data<sp/>input,<sp/>since<sp/>the<sp/>first<sp/>year<sp/>of<sp/>the<sp/>simulation<sp/>is<sp/>probably</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>going<sp/>to<sp/>be<sp/>as<sp/>dire<sp/>are<sp/>latter<sp/>years.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week_demand_rof_shift<sp/>=<sp/></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(rof_realization<sp/>!=<sp/><ref refid="namespaceConstants_a8e8b0a537619c378d03117c5ed1c3ea1_1a8e8b0a537619c378d03117c5ed1c3ea1" kindref="member">NON_INITIALIZED</ref><sp/>&amp;&amp;<sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>week<sp/>&gt;<sp/><ref refid="namespaceConstants_aa20160c39be15e5da1535608aaa0647c_1aa20160c39be15e5da1535608aaa0647c" kindref="member">WEEKS_IN_YEAR_ROUND</ref><sp/>?<sp/><ref refid="namespaceConstants_aa20160c39be15e5da1535608aaa0647c_1aa20160c39be15e5da1535608aaa0647c" kindref="member">WEEKS_IN_YEAR_ROUND</ref><sp/>:<sp/><ref refid="namespaceConstants_a79ee092c4ca31cde9669f70d505eeca5_1a79ee092c4ca31cde9669f70d505eeca5" kindref="member">NONE</ref>);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week_demand<sp/>=<sp/>week<sp/>-<sp/>week_demand_rof_shift;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classUtility" kindref="compound">Utility</ref><sp/>*u<sp/>:<sp/><ref refid="classContinuityModel_adc77a0214d553a961035ce86c93cf9be_1adc77a0214d553a961035ce86c93cf9be" kindref="member">continuity_utilities</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u-&gt;calculateWastewater_releases(week_demand,<sp/>wastewater_discharges);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u-&gt;splitDemands(week_demand,<sp/><ref refid="classContinuityModel_a1994ed4d99e0583eac5c82a4b26d9728_1a1994ed4d99e0583eac5c82a4b26d9728" kindref="member">demands</ref>,<sp/>apply_demand_buffer);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref><sp/>*c<sp/>:<sp/><ref refid="classContinuityModel_afc991e5c0d144020e49a97751a04b302_1afc991e5c0d144020e49a97751a04b302" kindref="member">min_env_flow_controls</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classContinuityModel_a3980284a9dd08bae4e76398d1b0d6f55_1a3980284a9dd08bae4e76398d1b0d6f55" kindref="member">continuity_water_sources</ref>[c-&gt;water_source_id]-&gt;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setMin_environmental_outflow(c-&gt;getRelease(week));</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>upstream_sources_ids<sp/>=<sp/><ref refid="classContinuityModel_a563401588c6fa622f03393909a3522db_1a563401588c6fa622f03393909a3522db" kindref="member">water_sources_graph</ref>.<ref refid="classGraph_a0d4d0149e7d70bb9e6b7a5cae22062a3_1a0d4d0149e7d70bb9e6b7a5cae22062a3" kindref="member">getUpstream_sources</ref>();</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>:<sp/><ref refid="classContinuityModel_a6605cb6aae0370eb84d2e8bf7d6d651e_1a6605cb6aae0370eb84d2e8bf7d6d651e" kindref="member">sources_topological_order</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sum<sp/>spillage<sp/>from<sp/>all<sp/>sources<sp/>upstream<sp/>source<sp/>i.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ws<sp/>:<sp/>upstream_sources_ids[i])<sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>upstream_spillage[i]<sp/>+=<sp/><ref refid="classContinuityModel_a3980284a9dd08bae4e76398d1b0d6f55_1a3980284a9dd08bae4e76398d1b0d6f55" kindref="member">continuity_water_sources</ref>.at(</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static_cast&lt;unsigned<sp/>long&gt;(ws))-&gt;getTotal_outflow();</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mass<sp/>balance.<sp/>The<sp/>value<sp/>of<sp/>rof_realization<sp/>for<sp/>a<sp/>a<sp/>non-ROF<sp/>continuity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>step<sp/>is<sp/>-1<sp/>(NON_INITIALIZED),<sp/>so<sp/>adding<sp/>1<sp/>brings<sp/>it<sp/>to<sp/>delta_realization_weeks[0]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>which<sp/>is<sp/>0,<sp/>while<sp/>delta_realization_weeks[1]<sp/>is<sp/>52,<sp/>and<sp/>so<sp/>on.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classContinuityModel_a3980284a9dd08bae4e76398d1b0d6f55_1a3980284a9dd08bae4e76398d1b0d6f55" kindref="member">continuity_water_sources</ref>[i]-&gt;continuityWaterSource(</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>week<sp/>-<sp/><ref refid="classContinuityModel_aee4088e422a0d3723dc7895c96c9ebe3_1aee4088e422a0d3723dc7895c96c9ebe3" kindref="member">delta_realization_weeks</ref>[rof_realization<sp/>+<sp/>1],</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>upstream_spillage[i],<sp/>wastewater_discharges[i],<sp/><ref refid="classContinuityModel_a1994ed4d99e0583eac5c82a4b26d9728_1a1994ed4d99e0583eac5c82a4b26d9728" kindref="member">demands</ref>[i]);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>updates<sp/>combined<sp/>storage<sp/>for<sp/>utilities.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classUtility" kindref="compound">Utility</ref><sp/>*u<sp/>:<sp/><ref refid="classContinuityModel_adc77a0214d553a961035ce86c93cf9be_1adc77a0214d553a961035ce86c93cf9be" kindref="member">continuity_utilities</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u-&gt;updateTotalAvailableVolume();</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>upstream_spillage;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>wastewater_discharges;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModel_a47504c599955b8193ffab3bd0f328144_1a47504c599955b8193ffab3bd0f328144" kindref="member">ContinuityModel::setRealization</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>realization_id,<sp/>vector&lt;double&gt;<sp/>&amp;utilities_rdm,</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;water_sources_rdm)<sp/>{</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7_1a7b6c99bf256f6c6b633ebb78282f43c7" kindref="member">realization_id</ref><sp/>!=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">)<sp/><ref refid="namespaceConstants_a8e8b0a537619c378d03117c5ed1c3ea1_1a8e8b0a537619c378d03117c5ed1c3ea1" kindref="member">NON_INITIALIZED</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classUtility" kindref="compound">Utility</ref><sp/>*u<sp/>:<sp/><ref refid="classContinuityModel_adc77a0214d553a961035ce86c93cf9be_1adc77a0214d553a961035ce86c93cf9be" kindref="member">continuity_utilities</ref>)</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u-&gt;setRealization(<ref refid="classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7_1a7b6c99bf256f6c6b633ebb78282f43c7" kindref="member">realization_id</ref>,<sp/><ref refid="classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896_1aa4a00b76da6295d2faa11e3dcaea1896" kindref="member">utilities_rdm</ref>);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classWaterSource" kindref="compound">WaterSource</ref><sp/>*ws<sp/>:<sp/><ref refid="classContinuityModel_a3980284a9dd08bae4e76398d1b0d6f55_1a3980284a9dd08bae4e76398d1b0d6f55" kindref="member">continuity_water_sources</ref>)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ws-&gt;setRealization(<ref refid="classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7_1a7b6c99bf256f6c6b633ebb78282f43c7" kindref="member">realization_id</ref>,<sp/><ref refid="classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa_1ab7b8fa93a6f56b328e425e1ead6cfefa" kindref="member">water_sources_rdm</ref>);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref><sp/>*mef<sp/>:<sp/><ref refid="classContinuityModel_afc991e5c0d144020e49a97751a04b302_1afc991e5c0d144020e49a97751a04b302" kindref="member">min_env_flow_controls</ref>)</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mef-&gt;setRealization(<ref refid="classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7_1a7b6c99bf256f6c6b633ebb78282f43c7" kindref="member">realization_id</ref>,<sp/><ref refid="classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa_1ab7b8fa93a6f56b328e425e1ead6cfefa" kindref="member">water_sources_rdm</ref>);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="235"><highlight class="comment"><sp/>*<sp/>Get<sp/>list<sp/>of<sp/>next<sp/>online<sp/>downstream<sp/>sources<sp/>for<sp/>each<sp/>source.</highlight></codeline>
+<codeline lineno="236"><highlight class="comment"><sp/>*<sp/>@return<sp/>vector<sp/>with<sp/>downstream<sp/>water<sp/>sources.</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal">vector&lt;int&gt;<sp/><ref refid="classContinuityModel_a609fa24135a600af177d1460e0162014_1a609fa24135a600af177d1460e0162014" kindref="member">ContinuityModel::getOnlineDownstreamSources</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>online_downstream_sources(<ref refid="classContinuityModel_a3c25a0d17579eb0fdad0b18319441460_1a3c25a0d17579eb0fdad0b18319441460" kindref="member">n_sources</ref>,<sp/><ref refid="namespaceConstants_a8e8b0a537619c378d03117c5ed1c3ea1_1a8e8b0a537619c378d03117c5ed1c3ea1" kindref="member">NON_INITIALIZED</ref>);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ws<sp/>:<sp/><ref refid="classContinuityModel_a6605cb6aae0370eb84d2e8bf7d6d651e_1a6605cb6aae0370eb84d2e8bf7d6d651e" kindref="member">sources_topological_order</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>downstream_source_online<sp/>=<sp/>ws;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>downstream_source_online<sp/>=<sp/><ref refid="classContinuityModel_af00ea62ac8e2e398591ff608c2a203ef_1af00ea62ac8e2e398591ff608c2a203ef" kindref="member">downstream_sources</ref>[downstream_source_online];</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(downstream_source_online<sp/>!=<sp/><ref refid="namespaceConstants_a8e8b0a537619c378d03117c5ed1c3ea1_1a8e8b0a537619c378d03117c5ed1c3ea1" kindref="member">NON_INITIALIZED</ref><sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>!<ref refid="classContinuityModel_a3980284a9dd08bae4e76398d1b0d6f55_1a3980284a9dd08bae4e76398d1b0d6f55" kindref="member">continuity_water_sources</ref>[downstream_source_online]-&gt;isOnline()<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classContinuityModel_a3980284a9dd08bae4e76398d1b0d6f55_1a3980284a9dd08bae4e76398d1b0d6f55" kindref="member">continuity_water_sources</ref>[ws]-&gt;getSupplyCapacity()<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>online_downstream_sources[ws]<sp/>=<sp/>downstream_source_online;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>online_downstream_sources;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/>&amp;<ref refid="classContinuityModel_ae0dec8510ab216accd44097e5a366bd8_1ae0dec8510ab216accd44097e5a366bd8" kindref="member">ContinuityModel::getContinuity_water_sources</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classContinuityModel_a3980284a9dd08bae4e76398d1b0d6f55_1a3980284a9dd08bae4e76398d1b0d6f55" kindref="member">continuity_water_sources</ref>;</highlight></codeline>
+<codeline lineno="255"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Utility<sp/>*&gt;<sp/>&amp;<ref refid="classContinuityModel_a922c1dea6e49d67c87a7fbb34c7bc623_1a922c1dea6e49d67c87a7fbb34c7bc623" kindref="member">ContinuityModel::getContinuity_utilities</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classContinuityModel_adc77a0214d553a961035ce86c93cf9be_1adc77a0214d553a961035ce86c93cf9be" kindref="member">continuity_utilities</ref>;</highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/ContinuityModels/Base/ContinuityModel.cpp"/>
+  </compounddef>
+</doxygen>

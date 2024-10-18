@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="Problem_8h" kind="file" language="C++">
+    <compoundname>Problem.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes refid="DataCollector_8h" local="yes">../../DataCollector/Base/DataCollector.h</includes>
+    <includes refid="MasterDataCollector_8h" local="yes">../../DataCollector/MasterDataCollector.h</includes>
+    <includes refid="Utils_8h" local="yes">../../Utils/Utils.h</includes>
+    <includes refid="Reservoir_8h" local="yes">../../SystemComponents/WaterSources/Reservoir.h</includes>
+    <includedby refid="PaperTestProblem_8h" local="yes">src/Problem/PaperTestProblem.h</includedby>
+    <includedby refid="Triangle_8h" local="yes">src/Problem/Triangle.h</includedby>
+    <includedby refid="Problem_8cpp" local="yes">src/Problem/Base/Problem.cpp</includedby>
+    <incdepgraph>
+      <node id="1864">
+        <label>list</label>
+      </node>
+      <node id="1856">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1857" relation="include">
+        </childnode>
+        <childnode refid="1858" relation="include">
+        </childnode>
+      </node>
+      <node id="1858">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="1868">
+        <label>../../Controls/Base/MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="1854" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+      </node>
+      <node id="1870">
+        <label>../DroughtMitigationInstruments/Restrictions.h</label>
+        <link refid="Restrictions_8h"/>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1862" relation="include">
+        </childnode>
+      </node>
+      <node id="1872">
+        <label>../SystemComponents/WaterSources/Intake.h</label>
+        <link refid="Intake_8h"/>
+        <childnode refid="1849" relation="include">
+        </childnode>
+      </node>
+      <node id="1845">
+        <label>UtilitiesDataCollector.h</label>
+        <link refid="UtilitiesDataCollector_8h"/>
+        <childnode refid="1842" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+      </node>
+      <node id="1852">
+        <label>cmath</label>
+      </node>
+      <node id="1857">
+        <label>stdexcept</label>
+      </node>
+      <node id="1851">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1852" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1860">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="1858" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+      </node>
+      <node id="1843">
+        <label>string</label>
+      </node>
+      <node id="1847">
+        <label>map</label>
+      </node>
+      <node id="1861">
+        <label>InfrastructureManager.h</label>
+        <link refid="InfrastructureManager_8h"/>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+      </node>
+      <node id="1854">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="1843" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+        <childnode refid="1855" relation="include">
+        </childnode>
+      </node>
+      <node id="1867">
+        <label>fstream</label>
+      </node>
+      <node id="1844">
+        <label>../../DataCollector/MasterDataCollector.h</label>
+        <link refid="MasterDataCollector_8h"/>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1842" relation="include">
+        </childnode>
+        <childnode refid="1845" relation="include">
+        </childnode>
+        <childnode refid="1862" relation="include">
+        </childnode>
+        <childnode refid="1869" relation="include">
+        </childnode>
+      </node>
+      <node id="1862">
+        <label>../DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
+        <link refid="DroughtMitigationPolicy_8h"/>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+        <childnode refid="1863" relation="include">
+        </childnode>
+        <childnode refid="1865" relation="include">
+        </childnode>
+        <childnode refid="1868" relation="include">
+        </childnode>
+      </node>
+      <node id="1840">
+        <label>src/Problem/Base/Problem.h</label>
+        <link refid="Problem_8h"/>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1842" relation="include">
+        </childnode>
+        <childnode refid="1844" relation="include">
+        </childnode>
+        <childnode refid="1871" relation="include">
+        </childnode>
+        <childnode refid="1849" relation="include">
+        </childnode>
+      </node>
+      <node id="1869">
+        <label>RestrictionsDataCollector.h</label>
+        <link refid="RestrictionsDataCollector_8h"/>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1842" relation="include">
+        </childnode>
+        <childnode refid="1870" relation="include">
+        </childnode>
+      </node>
+      <node id="1846">
+        <label>../SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="1847" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+        <childnode refid="1849" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+        <childnode refid="1860" relation="include">
+        </childnode>
+        <childnode refid="1861" relation="include">
+        </childnode>
+      </node>
+      <node id="1841">
+        <label>vector</label>
+      </node>
+      <node id="1863">
+        <label>../../Utils/Graph/Graph.h</label>
+        <link refid="Graph_8h"/>
+        <childnode refid="1864" relation="include">
+        </childnode>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+      </node>
+      <node id="1850">
+        <label>../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+      </node>
+      <node id="1849">
+        <label>../WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="1843" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+        <childnode refid="1854" relation="include">
+        </childnode>
+        <childnode refid="1856" relation="include">
+        </childnode>
+        <childnode refid="1859" relation="include">
+        </childnode>
+      </node>
+      <node id="1866">
+        <label>iostream</label>
+      </node>
+      <node id="1842">
+        <label>../../DataCollector/Base/DataCollector.h</label>
+        <link refid="DataCollector_8h"/>
+        <childnode refid="1843" relation="include">
+        </childnode>
+      </node>
+      <node id="1859">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1850" relation="include">
+        </childnode>
+      </node>
+      <node id="1855">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="1841" relation="include">
+        </childnode>
+        <childnode refid="1851" relation="include">
+        </childnode>
+      </node>
+      <node id="1853">
+        <label>cstring</label>
+      </node>
+      <node id="1865">
+        <label>../../Utils/Matrices.h</label>
+        <link refid="Matrices_8h"/>
+        <childnode refid="1866" relation="include">
+        </childnode>
+        <childnode refid="1853" relation="include">
+        </childnode>
+        <childnode refid="1867" relation="include">
+        </childnode>
+        <childnode refid="1848" relation="include">
+        </childnode>
+      </node>
+      <node id="1848">
+        <label>memory</label>
+      </node>
+      <node id="1871">
+        <label>../../Utils/Utils.h</label>
+        <link refid="Utils_8h"/>
+        <childnode refid="1854" relation="include">
+        </childnode>
+        <childnode refid="1872" relation="include">
+        </childnode>
+        <childnode refid="1846" relation="include">
+        </childnode>
+        <childnode refid="1862" relation="include">
+        </childnode>
+        <childnode refid="1870" relation="include">
+        </childnode>
+        <childnode refid="1868" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1876">
+        <label>src/Problem/PaperTestProblem.cpp</label>
+        <link refid="PaperTestProblem_8cpp"/>
+      </node>
+      <node id="1878">
+        <label>src/Problem/Triangle.cpp</label>
+        <link refid="Triangle_8cpp"/>
+      </node>
+      <node id="1873">
+        <label>src/Problem/Base/Problem.h</label>
+        <link refid="Problem_8h"/>
+        <childnode refid="1874" relation="include">
+        </childnode>
+        <childnode refid="1877" relation="include">
+        </childnode>
+        <childnode refid="1879" relation="include">
+        </childnode>
+      </node>
+      <node id="1879">
+        <label>src/Problem/Base/Problem.cpp</label>
+        <link refid="Problem_8cpp"/>
+      </node>
+      <node id="1875">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="1874">
+        <label>src/Problem/PaperTestProblem.h</label>
+        <link refid="PaperTestProblem_8h"/>
+        <childnode refid="1875" relation="include">
+        </childnode>
+        <childnode refid="1876" relation="include">
+        </childnode>
+      </node>
+      <node id="1877">
+        <label>src/Problem/Triangle.h</label>
+        <link refid="Triangle_8h"/>
+        <childnode refid="1875" relation="include">
+        </childnode>
+        <childnode refid="1878" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structinfraRank" prot="public">infraRank</innerclass>
+    <innerclass refid="structby__xreal" prot="public">by_xreal</innerclass>
+    <innerclass refid="classProblem" prot="public">Problem</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>Bernardo<sp/>on<sp/>11/24/2017.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_PROBLEM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_PROBLEM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../DataCollector/Base/DataCollector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../DataCollector/MasterDataCollector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Utils/Utils.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../SystemComponents/WaterSources/Reservoir.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="structinfraRank" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structinfraRank" kindref="compound">infraRank</ref><sp/>{</highlight></codeline>
+<codeline lineno="15" refid="structinfraRank_ace3640f7fdc691b68111cf07e0eabaae_1ace3640f7fdc691b68111cf07e0eabaae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structinfraRank_ace3640f7fdc691b68111cf07e0eabaae_1ace3640f7fdc691b68111cf07e0eabaae" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="16" refid="structinfraRank_a1bb966369809456d65bd4e2d4e19d775_1a1bb966369809456d65bd4e2d4e19d775" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structinfraRank_a1bb966369809456d65bd4e2d4e19d775_1a1bb966369809456d65bd4e2d4e19d775" kindref="member">xreal</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="structinfraRank_aa50dcfdcee689bd1484c9ac2b09bc694_1aa50dcfdcee689bd1484c9ac2b09bc694" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structinfraRank_aa50dcfdcee689bd1484c9ac2b09bc694_1aa50dcfdcee689bd1484c9ac2b09bc694" kindref="member">infraRank</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structinfraRank_a1bb966369809456d65bd4e2d4e19d775_1a1bb966369809456d65bd4e2d4e19d775" kindref="member">xreal</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/><ref refid="structinfraRank_ace3640f7fdc691b68111cf07e0eabaae_1ace3640f7fdc691b68111cf07e0eabaae" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;xreal<sp/>=<sp/><ref refid="structinfraRank_a1bb966369809456d65bd4e2d4e19d775_1a1bb966369809456d65bd4e2d4e19d775" kindref="member">xreal</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structby__xreal" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structby__xreal" kindref="compound">by_xreal</ref><sp/>{</highlight></codeline>
+<codeline lineno="25" refid="structby__xreal_a89543fd1eb21d028c20e4cd01a239b71_1a89543fd1eb21d028c20e4cd01a239b71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structby__xreal_a89543fd1eb21d028c20e4cd01a239b71_1a89543fd1eb21d028c20e4cd01a239b71" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structinfraRank" kindref="compound">infraRank</ref><sp/>&amp;ir1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structinfraRank" kindref="compound">infraRank</ref><sp/>&amp;ir2)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ir1.<ref refid="structinfraRank_a1bb966369809456d65bd4e2d4e19d775_1a1bb966369809456d65bd4e2d4e19d775" kindref="member">xreal</ref><sp/>&lt;<sp/>ir2.<ref refid="structinfraRank_a1bb966369809456d65bd4e2d4e19d775_1a1bb966369809456d65bd4e2d4e19d775" kindref="member">xreal</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classProblem" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classProblem" kindref="compound">Problem</ref><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38" refid="classProblem_a270a5672643bfe09e52e0f24e1884136_1a270a5672643bfe09e52e0f24e1884136" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classProblem_a270a5672643bfe09e52e0f24e1884136_1a270a5672643bfe09e52e0f24e1884136" kindref="member">n_realizations</ref>;</highlight></codeline>
+<codeline lineno="39" refid="classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec_1ac7513bb0ecdfa4bbb7d2ada3595d71ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><ref refid="classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec_1ac7513bb0ecdfa4bbb7d2ada3595d71ec" kindref="member">n_weeks</ref>;</highlight></codeline>
+<codeline lineno="40" refid="classProblem_a7ca15cdcbff926ddca25bdee5984ffe5_1a7ca15cdcbff926ddca25bdee5984ffe5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><ref refid="classProblem_a7ca15cdcbff926ddca25bdee5984ffe5_1a7ca15cdcbff926ddca25bdee5984ffe5" kindref="member">solution_no</ref>;</highlight></codeline>
+<codeline lineno="41" refid="classProblem_a3303a162d648e8ae16153b57b5b4054f_1a3303a162d648e8ae16153b57b5b4054f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classProblem_a3303a162d648e8ae16153b57b5b4054f_1a3303a162d648e8ae16153b57b5b4054f" kindref="member">n_threads</ref>;</highlight></codeline>
+<codeline lineno="42" refid="classProblem_a4ca86ba2f568d232cf0421d39acff113_1a4ca86ba2f568d232cf0421d39acff113" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classProblem_a4ca86ba2f568d232cf0421d39acff113_1a4ca86ba2f568d232cf0421d39acff113" kindref="member">n_utilities</ref><sp/>=<sp/><ref refid="namespaceConstants_a8e8b0a537619c378d03117c5ed1c3ea1_1a8e8b0a537619c378d03117c5ed1c3ea1" kindref="member">NON_INITIALIZED</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classProblem_ac58848a0d808cf040c3fb3676b4a236f_1ac58848a0d808cf040c3fb3676b4a236f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classProblem_ac58848a0d808cf040c3fb3676b4a236f_1ac58848a0d808cf040c3fb3676b4a236f" kindref="member">io_directory</ref>;</highlight></codeline>
+<codeline lineno="44" refid="classProblem_a59444139a907aaf4c6159caed46c8118_1a59444139a907aaf4c6159caed46c8118" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classProblem_a59444139a907aaf4c6159caed46c8118_1a59444139a907aaf4c6159caed46c8118" kindref="member">fname_sufix</ref>;</highlight></codeline>
+<codeline lineno="45" refid="classProblem_a1ff3958eef8bfb851a84ce0772104dca_1a1ff3958eef8bfb851a84ce0772104dca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classProblem_a1ff3958eef8bfb851a84ce0772104dca_1a1ff3958eef8bfb851a84ce0772104dca" kindref="member">evap_inflows_suffix</ref>;</highlight></codeline>
+<codeline lineno="46" refid="classProblem_abc641b49a4defb0dbabafbf3f9dbca6e_1abc641b49a4defb0dbabafbf3f9dbca6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classProblem_abc641b49a4defb0dbabafbf3f9dbca6e_1abc641b49a4defb0dbabafbf3f9dbca6e" kindref="member">rof_tables_directory</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classProblem_af9ed9265d0d2b4918bd468d717429de1_1af9ed9265d0d2b4918bd468d717429de1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;unsigned<sp/>long<sp/>&gt;<sp/><ref refid="classProblem_af9ed9265d0d2b4918bd468d717429de1_1af9ed9265d0d2b4918bd468d717429de1" kindref="member">realizations_to_run</ref>;</highlight></codeline>
+<codeline lineno="49" refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMasterDataCollector" kindref="compound">MasterDataCollector</ref>*<sp/><ref refid="classProblem_a6cd1db1d587a449985d6514390ba8c96_1a6cd1db1d587a449985d6514390ba8c96" kindref="member">master_data_collector</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50" refid="classProblem_a72750ee8c8117f5ee9b190a359d6a60d_1a72750ee8c8117f5ee9b190a359d6a60d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classProblem_a72750ee8c8117f5ee9b190a359d6a60d_1a72750ee8c8117f5ee9b190a359d6a60d" kindref="member">objectives</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classProblem_a3372a73270ce989f5d2056cace66215b_1a3372a73270ce989f5d2056cace66215b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classProblem_a3372a73270ce989f5d2056cace66215b_1a3372a73270ce989f5d2056cace66215b" kindref="member">print_output_files</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classProblem_a9e780729b6be5229c5bfa1e38c99cfa5_1a9e780729b6be5229c5bfa1e38c99cfa5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><sp/><ref refid="classProblem_a9e780729b6be5229c5bfa1e38c99cfa5_1a9e780729b6be5229c5bfa1e38c99cfa5" kindref="member">rdm_no</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classProblem_ac5a286f34cec786a0ad56c77783a201c_1ac5a286f34cec786a0ad56c77783a201c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classProblem_ac5a286f34cec786a0ad56c77783a201c_1ac5a286f34cec786a0ad56c77783a201c" kindref="member">import_export_rof_tables</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classProblem_a27cae146b3409021f6d5936404cd1083_1a27cae146b3409021f6d5936404cd1083" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classProblem_a27cae146b3409021f6d5936404cd1083_1a27cae146b3409021f6d5936404cd1083" kindref="member">table_gen_storage_multiplier</ref>;</highlight></codeline>
+<codeline lineno="56" refid="classProblem_aa4f6db22580c8d8a941e83556f4f5208_1aa4f6db22580c8d8a941e83556f4f5208" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classProblem_aa4f6db22580c8d8a941e83556f4f5208_1aa4f6db22580c8d8a941e83556f4f5208" kindref="member">utilities_rdm</ref>;</highlight></codeline>
+<codeline lineno="57" refid="classProblem_ace43e5306285f0d91a199a4bd5a38922_1ace43e5306285f0d91a199a4bd5a38922" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classProblem_ace43e5306285f0d91a199a4bd5a38922_1ace43e5306285f0d91a199a4bd5a38922" kindref="member">water_sources_rdm</ref>;</highlight></codeline>
+<codeline lineno="58" refid="classProblem_a63d49161a5d6d98e26cd218d90a13bae_1a63d49161a5d6d98e26cd218d90a13bae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classProblem_a63d49161a5d6d98e26cd218d90a13bae_1a63d49161a5d6d98e26cd218d90a13bae" kindref="member">policies_rdm</ref>;</highlight></codeline>
+<codeline lineno="59" refid="classProblem_a0a64a8c04964a326879eccccf5437c93_1a0a64a8c04964a326879eccccf5437c93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;Matrix2D&lt;double&gt;&gt;&gt;<sp/><ref refid="classProblem_a0a64a8c04964a326879eccccf5437c93_1a0a64a8c04964a326879eccccf5437c93" kindref="member">rof_tables</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classProblem_ab12ec67ea5734be6c6c2ad46a08dba06_1ab12ec67ea5734be6c6c2ad46a08dba06" kindref="member">checkAndFixInfraExpansionHighLowOrder</ref>(vector&lt;int&gt;<sp/>*order,<sp/>vector&lt;double&gt;<sp/>*trigger,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id_low,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>id_high,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>capacity_low,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>capacity_high);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/><ref refid="classProblem_a526ef2b401f498f6eef3342be3151487_1a526ef2b401f498f6eef3342be3151487" kindref="member">vecInfraRankToVecInt</ref>(vector&lt;infraRank&gt;<sp/>v);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classProblem_afc35e409dbd47f3c457ccac358afbc2e_1afc35e409dbd47f3c457ccac358afbc2e" kindref="member">Problem</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec_1ac7513bb0ecdfa4bbb7d2ada3595d71ec" kindref="member">n_weeks</ref>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classProblem_a3f26d4abc0bb8633f315458b8e1b88b9_1a3f26d4abc0bb8633f315458b8e1b88b9" kindref="member">~Problem</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classProblem_acd924a80df4422c5199748c714e9405c_1acd924a80df4422c5199748c714e9405c" kindref="member">functionEvaluation</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>vars,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>objs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>consts)=0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a3e8e48d55e03e0f23b303d7b931fa654_1a3e8e48d55e03e0f23b303d7b931fa654" kindref="member">setN_weeks</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec_1ac7513bb0ecdfa4bbb7d2ada3595d71ec" kindref="member">n_weeks</ref>);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a99967aa4531eac73e5a2928a0df0ea86_1a99967aa4531eac73e5a2928a0df0ea86" kindref="member">setSol_number</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>sol_number);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a7be506034ce402e135f1caee5d767ca8_1a7be506034ce402e135f1caee5d767ca8" kindref="member">setIODirectory</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<ref refid="classProblem_ac58848a0d808cf040c3fb3676b4a236f_1ac58848a0d808cf040c3fb3676b4a236f" kindref="member">io_directory</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;<ref refid="classProblem_aa10a0c69bf0a3d6a303c118c6fdfd5c6_1aa10a0c69bf0a3d6a303c118c6fdfd5c6" kindref="member">getObjectives</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classProblem_ad4e2da403a38f3ee5d4de19ffdfbd148_1ad4e2da403a38f3ee5d4de19ffdfbd148" kindref="member">calculateAndPrintObjectives</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>print_files);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a08d3f34a593cb07851d1c3f3ad9d5160_1a08d3f34a593cb07851d1c3f3ad9d5160" kindref="member">setRDMOptimization</ref>(vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;<ref refid="classProblem_aa4f6db22580c8d8a941e83556f4f5208_1aa4f6db22580c8d8a941e83556f4f5208" kindref="member">utilities_rdm</ref>,<sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;<ref refid="classProblem_ace43e5306285f0d91a199a4bd5a38922_1ace43e5306285f0d91a199a4bd5a38922" kindref="member">water_sources_rdm</ref>,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;<ref refid="classProblem_a63d49161a5d6d98e26cd218d90a13bae_1a63d49161a5d6d98e26cd218d90a13bae" kindref="member">policies_rdm</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_ad12f4546fc341e396ef9d4a6608e6d41_1ad12f4546fc341e396ef9d4a6608e6d41" kindref="member">setRDMReevaluation</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classProblem_a9e780729b6be5229c5bfa1e38c99cfa5_1a9e780729b6be5229c5bfa1e38c99cfa5" kindref="member">rdm_no</ref>,<sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;<ref refid="classProblem_aa4f6db22580c8d8a941e83556f4f5208_1aa4f6db22580c8d8a941e83556f4f5208" kindref="member">utilities_rdm</ref>,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;<ref refid="classProblem_ace43e5306285f0d91a199a4bd5a38922_1ace43e5306285f0d91a199a4bd5a38922" kindref="member">water_sources_rdm</ref>,<sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;<ref refid="classProblem_a63d49161a5d6d98e26cd218d90a13bae_1a63d49161a5d6d98e26cd218d90a13bae" kindref="member">policies_rdm</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_ac7a563c47c5a2f5217763b23b5357ecd_1ac7a563c47c5a2f5217763b23b5357ecd" kindref="member">setN_threads</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classProblem_a3303a162d648e8ae16153b57b5b4054f_1a3303a162d648e8ae16153b57b5b4054f" kindref="member">n_threads</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a9e1298432a894cbe8d373bac24edb5cf_1a9e1298432a894cbe8d373bac24edb5cf" kindref="member">setPrint_output_files</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classProblem_a3372a73270ce989f5d2056cace66215b_1a3372a73270ce989f5d2056cace66215b" kindref="member">print_output_files</ref>);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_acc30995bc20a6c09e58b7edfec870702_1acc30995bc20a6c09e58b7edfec870702" kindref="member">setN_realizations</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classProblem_a270a5672643bfe09e52e0f24e1884136_1a270a5672643bfe09e52e0f24e1884136" kindref="member">n_realizations</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_ad810f0b105a05bcc38aec36f603a090d_1ad810f0b105a05bcc38aec36f603a090d" kindref="member">setRealizationsToRun</ref>(vector&lt;unsigned<sp/>long&gt;&amp;<sp/><ref refid="classProblem_af9ed9265d0d2b4918bd468d717429de1_1af9ed9265d0d2b4918bd468d717429de1" kindref="member">realizations_to_run</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_aa841014244a2becdc34717e440c4ce11_1aa841014244a2becdc34717e440c4ce11" kindref="member">setEvap_inflows_suffix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<ref refid="classProblem_a1ff3958eef8bfb851a84ce0772104dca_1a1ff3958eef8bfb851a84ce0772104dca" kindref="member">evap_inflows_suffix</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_abc968bcab1302a525cfa5a7f570fc326_1abc968bcab1302a525cfa5a7f570fc326" kindref="member">setFname_sufix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<ref refid="classProblem_a59444139a907aaf4c6159caed46c8118_1a59444139a907aaf4c6159caed46c8118" kindref="member">fname_sufix</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMasterDataCollector" kindref="compound">MasterDataCollector</ref>*<sp/><ref refid="classProblem_a9bb7f0f4da14050f4a351e5ddb97c380_1a9bb7f0f4da14050f4a351e5ddb97c380" kindref="member">getMaster_data_collector</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a9ab819e9fe003d4bdb05d6f2ccc320b3_1a9ab819e9fe003d4bdb05d6f2ccc320b3" kindref="member">destroyDataCollector</ref>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a2458fd2abb3ffaacccf4191a737c9383_1a2458fd2abb3ffaacccf4191a737c9383" kindref="member">printTimeSeriesAndPathways</ref>();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_aa9debdf28260fd9054f7d6d2ee516f94_1aa9debdf28260fd9054f7d6d2ee516f94" kindref="member">setRofTables</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classProblem_a270a5672643bfe09e52e0f24e1884136_1a270a5672643bfe09e52e0f24e1884136" kindref="member">n_realizations</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classProblem_abc641b49a4defb0dbabafbf3f9dbca6e_1abc641b49a4defb0dbabafbf3f9dbca6e" kindref="member">rof_tables_directory</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_a4af40eab4f22f8754066410f7088b9db_1a4af40eab4f22f8754066410f7088b9db" kindref="member">setImport_export_rof_tables</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classProblem_ac5a286f34cec786a0ad56c77783a201c_1ac5a286f34cec786a0ad56c77783a201c" kindref="member">import_export_rof_tables</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec_1ac7513bb0ecdfa4bbb7d2ada3595d71ec" kindref="member">n_weeks</ref>,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classProblem_abc641b49a4defb0dbabafbf3f9dbca6e_1abc641b49a4defb0dbabafbf3f9dbca6e" kindref="member">rof_tables_directory</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classProblem_aa5a4c047b3bdc97762cb4e5a91ebd5de_1aa5a4c047b3bdc97762cb4e5a91ebd5de" kindref="member">runBootstrapRealizationThinning</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>standard_solution,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_sets,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_bs_samples,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>threads,<sp/>vector&lt;vector&lt;int&gt;&gt;<sp/>&amp;<ref refid="classProblem_af9ed9265d0d2b4918bd468d717429de1_1af9ed9265d0d2b4918bd468d717429de1" kindref="member">realizations_to_run</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_PROBLEM_H</highlight></codeline>
+    </programlisting>
+    <location file="src/Problem/Base/Problem.h"/>
+  </compounddef>
+</doxygen>

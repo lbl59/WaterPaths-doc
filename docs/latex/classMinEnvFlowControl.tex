@@ -1,0 +1,148 @@
+\hypertarget{classMinEnvFlowControl}{}\section{Min\+Env\+Flow\+Control Class Reference}
+\label{classMinEnvFlowControl}\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+
+
+{\ttfamily \#include $<$Min\+Env\+Flow\+Control.\+h$>$}
+
+Inheritance diagram for Min\+Env\+Flow\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.942761cm]{classMinEnvFlowControl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMinEnvFlowControl_a093b292294d85f426c38deb6b7537d81_a093b292294d85f426c38deb6b7537d81}{Min\+Env\+Flow\+Control}} (int \mbox{\hyperlink{classMinEnvFlowControl_aada518a047598f386daec1d0358023aa_aada518a047598f386daec1d0358023aa}{water\+\_\+source\+\_\+id}}, const vector$<$ int $>$ \&aux\+\_\+water\+\_\+sources\+\_\+id, const vector$<$ int $>$ \&aux\+\_\+utilities\+\_\+ids, int \mbox{\hyperlink{classMinEnvFlowControl_abc3f168cd1ec36ba59e4b8604dfae8ec_abc3f168cd1ec36ba59e4b8604dfae8ec}{type}})
+\item 
+\mbox{\hyperlink{classMinEnvFlowControl_a0e12d2b8583a539d200acfc5fac795b6_a0e12d2b8583a539d200acfc5fac795b6}{Min\+Env\+Flow\+Control}} (const \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} \&min\+\_\+env\+\_\+control)
+\item 
+virtual \mbox{\hyperlink{classMinEnvFlowControl_a809d1552ea730c607dbc73937eb70a6a_a809d1552ea730c607dbc73937eb70a6a}{$\sim$\+Min\+Env\+Flow\+Control}} ()
+\item 
+virtual double \mbox{\hyperlink{classMinEnvFlowControl_a5de79615852eb0c937dd559a9eb9402d_a5de79615852eb0c937dd559a9eb9402d}{get\+Release}} (int week)=0
+\item 
+void \mbox{\hyperlink{classMinEnvFlowControl_a4f849e1385f68c9d8f2835889f14a71f_a4f849e1385f68c9d8f2835889f14a71f}{add\+Components}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \mbox{\hyperlink{classMinEnvFlowControl_a36b50d0e6887b956051ae53bf5d2e3a9_a36b50d0e6887b956051ae53bf5d2e3a9}{water\+\_\+sources}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \mbox{\hyperlink{classMinEnvFlowControl_a1a0a309138b35e8199c205efb5fb5f80_a1a0a309138b35e8199c205efb5fb5f80}{utilities}})
+\item 
+virtual void \mbox{\hyperlink{classMinEnvFlowControl_aff9774bd700410f9cd9a04e323f824c8_aff9774bd700410f9cd9a04e323f824c8}{set\+Realization}} (unsigned long r, vector$<$ double $>$ \&rdm\+\_\+factors)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const vector$<$ int $>$ \mbox{\hyperlink{classMinEnvFlowControl_a775d6408e5c581754ee4240eea68abdc_a775d6408e5c581754ee4240eea68abdc}{water\+\_\+sources\+\_\+ids}}
+\item 
+const vector$<$ int $>$ \mbox{\hyperlink{classMinEnvFlowControl_a5c67ab20c181a1d22e4bf94e398451fc_a5c67ab20c181a1d22e4bf94e398451fc}{utilities\+\_\+ids}}
+\item 
+const int \mbox{\hyperlink{classMinEnvFlowControl_aada518a047598f386daec1d0358023aa_aada518a047598f386daec1d0358023aa}{water\+\_\+source\+\_\+id}}
+\item 
+const int \mbox{\hyperlink{classMinEnvFlowControl_abc3f168cd1ec36ba59e4b8604dfae8ec_abc3f168cd1ec36ba59e4b8604dfae8ec}{type}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$ $>$ \mbox{\hyperlink{classMinEnvFlowControl_a36b50d0e6887b956051ae53bf5d2e3a9_a36b50d0e6887b956051ae53bf5d2e3a9}{water\+\_\+sources}}
+\item 
+vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$ $>$ \mbox{\hyperlink{classMinEnvFlowControl_a99502573f30daf84d9ad7a2f62197b77_a99502573f30daf84d9ad7a2f62197b77}{catchments}}
+\item 
+vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \mbox{\hyperlink{classMinEnvFlowControl_a1a0a309138b35e8199c205efb5fb5f80_a1a0a309138b35e8199c205efb5fb5f80}{utilities}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMinEnvFlowControl_a093b292294d85f426c38deb6b7537d81_a093b292294d85f426c38deb6b7537d81}\label{classMinEnvFlowControl_a093b292294d85f426c38deb6b7537d81_a093b292294d85f426c38deb6b7537d81}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{Min\+Env\+Flow\+Control()}{MinEnvFlowControl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Min\+Env\+Flow\+Control\+::\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}\item[{int}]{water\+\_\+source\+\_\+id,  }\item[{const vector$<$ int $>$ \&}]{aux\+\_\+water\+\_\+sources\+\_\+id,  }\item[{const vector$<$ int $>$ \&}]{aux\+\_\+utilities\+\_\+ids,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinEnvFlowControl_a0e12d2b8583a539d200acfc5fac795b6_a0e12d2b8583a539d200acfc5fac795b6}\label{classMinEnvFlowControl_a0e12d2b8583a539d200acfc5fac795b6_a0e12d2b8583a539d200acfc5fac795b6}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{Min\+Env\+Flow\+Control()}{MinEnvFlowControl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Min\+Env\+Flow\+Control\+::\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} \&}]{min\+\_\+env\+\_\+control }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinEnvFlowControl_a809d1552ea730c607dbc73937eb70a6a_a809d1552ea730c607dbc73937eb70a6a}\label{classMinEnvFlowControl_a809d1552ea730c607dbc73937eb70a6a_a809d1552ea730c607dbc73937eb70a6a}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!````~Min\+Env\+Flow\+Control@{$\sim$\+Min\+Env\+Flow\+Control}}
+\index{````~Min\+Env\+Flow\+Control@{$\sim$\+Min\+Env\+Flow\+Control}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{$\sim$\+Min\+Env\+Flow\+Control()}{~MinEnvFlowControl()}}
+{\footnotesize\ttfamily Min\+Env\+Flow\+Control\+::$\sim$\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMinEnvFlowControl_a4f849e1385f68c9d8f2835889f14a71f_a4f849e1385f68c9d8f2835889f14a71f}\label{classMinEnvFlowControl_a4f849e1385f68c9d8f2835889f14a71f_a4f849e1385f68c9d8f2835889f14a71f}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!add\+Components@{add\+Components}}
+\index{add\+Components@{add\+Components}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{add\+Components()}{addComponents()}}
+{\footnotesize\ttfamily void Min\+Env\+Flow\+Control\+::add\+Components (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$}]{water\+\_\+sources,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{utilities }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classMinEnvFlowControl_a5de79615852eb0c937dd559a9eb9402d_a5de79615852eb0c937dd559a9eb9402d}\label{classMinEnvFlowControl_a5de79615852eb0c937dd559a9eb9402d_a5de79615852eb0c937dd559a9eb9402d}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!get\+Release@{get\+Release}}
+\index{get\+Release@{get\+Release}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{get\+Release()}{getRelease()}}
+{\footnotesize\ttfamily virtual double Min\+Env\+Flow\+Control\+::get\+Release (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classJordanLakeMinEnvFlowControl_a5c2456c26fa141824c247cd15bf5c57d_a5c2456c26fa141824c247cd15bf5c57d}{Jordan\+Lake\+Min\+Env\+Flow\+Control}}, \mbox{\hyperlink{classFallsLakeMinEnvFlowControl_a50453b443fb6e5869fcfc9a183f42b2f_a50453b443fb6e5869fcfc9a183f42b2f}{Falls\+Lake\+Min\+Env\+Flow\+Control}}, \mbox{\hyperlink{classSeasonalMinEnvFlowControl_a5c5ddcab367812bdd2e23b383449d202_a5c5ddcab367812bdd2e23b383449d202}{Seasonal\+Min\+Env\+Flow\+Control}}, \mbox{\hyperlink{classInflowMinEnvFlowControl_a91bf5813168a995bd4ddf9e0ff553112_a91bf5813168a995bd4ddf9e0ff553112}{Inflow\+Min\+Env\+Flow\+Control}}, \mbox{\hyperlink{classStorageMinEnvFlowControl_ae78055a8be7ad9e119384958ef88e174_ae78055a8be7ad9e119384958ef88e174}{Storage\+Min\+Env\+Flow\+Control}}, and \mbox{\hyperlink{classFixedMinEnvFlowControl_af3ef98eef6a7124738a3b54dcadf757f_af3ef98eef6a7124738a3b54dcadf757f}{Fixed\+Min\+Env\+Flow\+Control}}.
+
+\mbox{\Hypertarget{classMinEnvFlowControl_aff9774bd700410f9cd9a04e323f824c8_aff9774bd700410f9cd9a04e323f824c8}\label{classMinEnvFlowControl_aff9774bd700410f9cd9a04e323f824c8_aff9774bd700410f9cd9a04e323f824c8}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily void Min\+Env\+Flow\+Control\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{r,  }\item[{vector$<$ double $>$ \&}]{rdm\+\_\+factors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classJordanLakeMinEnvFlowControl_aa1e816121060212f3dbeffda90a7baec_aa1e816121060212f3dbeffda90a7baec}{Jordan\+Lake\+Min\+Env\+Flow\+Control}}, and \mbox{\hyperlink{classFallsLakeMinEnvFlowControl_a6ea8a5e9ff9179066cceb77d896f3f97_a6ea8a5e9ff9179066cceb77d896f3f97}{Falls\+Lake\+Min\+Env\+Flow\+Control}}.
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classMinEnvFlowControl_a99502573f30daf84d9ad7a2f62197b77_a99502573f30daf84d9ad7a2f62197b77}\label{classMinEnvFlowControl_a99502573f30daf84d9ad7a2f62197b77_a99502573f30daf84d9ad7a2f62197b77}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!catchments@{catchments}}
+\index{catchments@{catchments}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{catchments}{catchments}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ Min\+Env\+Flow\+Control\+::catchments\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classMinEnvFlowControl_abc3f168cd1ec36ba59e4b8604dfae8ec_abc3f168cd1ec36ba59e4b8604dfae8ec}\label{classMinEnvFlowControl_abc3f168cd1ec36ba59e4b8604dfae8ec_abc3f168cd1ec36ba59e4b8604dfae8ec}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!type@{type}}
+\index{type@{type}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily const int Min\+Env\+Flow\+Control\+::type}
+
+\mbox{\Hypertarget{classMinEnvFlowControl_a1a0a309138b35e8199c205efb5fb5f80_a1a0a309138b35e8199c205efb5fb5f80}\label{classMinEnvFlowControl_a1a0a309138b35e8199c205efb5fb5f80_a1a0a309138b35e8199c205efb5fb5f80}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!utilities@{utilities}}
+\index{utilities@{utilities}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{utilities}{utilities}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classUtility}{Utility}}$\ast$ $>$ Min\+Env\+Flow\+Control\+::utilities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classMinEnvFlowControl_a5c67ab20c181a1d22e4bf94e398451fc_a5c67ab20c181a1d22e4bf94e398451fc}\label{classMinEnvFlowControl_a5c67ab20c181a1d22e4bf94e398451fc_a5c67ab20c181a1d22e4bf94e398451fc}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!utilities\+\_\+ids@{utilities\+\_\+ids}}
+\index{utilities\+\_\+ids@{utilities\+\_\+ids}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{utilities\+\_\+ids}{utilities\_ids}}
+{\footnotesize\ttfamily const vector$<$int$>$ Min\+Env\+Flow\+Control\+::utilities\+\_\+ids}
+
+\mbox{\Hypertarget{classMinEnvFlowControl_aada518a047598f386daec1d0358023aa_aada518a047598f386daec1d0358023aa}\label{classMinEnvFlowControl_aada518a047598f386daec1d0358023aa_aada518a047598f386daec1d0358023aa}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!water\+\_\+source\+\_\+id@{water\+\_\+source\+\_\+id}}
+\index{water\+\_\+source\+\_\+id@{water\+\_\+source\+\_\+id}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{water\+\_\+source\+\_\+id}{water\_source\_id}}
+{\footnotesize\ttfamily const int Min\+Env\+Flow\+Control\+::water\+\_\+source\+\_\+id}
+
+\mbox{\Hypertarget{classMinEnvFlowControl_a36b50d0e6887b956051ae53bf5d2e3a9_a36b50d0e6887b956051ae53bf5d2e3a9}\label{classMinEnvFlowControl_a36b50d0e6887b956051ae53bf5d2e3a9_a36b50d0e6887b956051ae53bf5d2e3a9}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!water\+\_\+sources@{water\+\_\+sources}}
+\index{water\+\_\+sources@{water\+\_\+sources}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{water\+\_\+sources}{water\_sources}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ Min\+Env\+Flow\+Control\+::water\+\_\+sources\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classMinEnvFlowControl_a775d6408e5c581754ee4240eea68abdc_a775d6408e5c581754ee4240eea68abdc}\label{classMinEnvFlowControl_a775d6408e5c581754ee4240eea68abdc_a775d6408e5c581754ee4240eea68abdc}} 
+\index{Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}!water\+\_\+sources\+\_\+ids@{water\+\_\+sources\+\_\+ids}}
+\index{water\+\_\+sources\+\_\+ids@{water\+\_\+sources\+\_\+ids}!Min\+Env\+Flow\+Control@{Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{water\+\_\+sources\+\_\+ids}{water\_sources\_ids}}
+{\footnotesize\ttfamily const vector$<$int$>$ Min\+Env\+Flow\+Control\+::water\+\_\+sources\+\_\+ids}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Controls/\+Base/\mbox{\hyperlink{MinEnvFlowControl_8h}{Min\+Env\+Flow\+Control.\+h}}\item 
+src/\+Controls/\+Base/\mbox{\hyperlink{MinEnvFlowControl_8cpp}{Min\+Env\+Flow\+Control.\+cpp}}\end{DoxyCompactItemize}

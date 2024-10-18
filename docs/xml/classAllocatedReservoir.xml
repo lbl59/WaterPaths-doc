@@ -1,0 +1,868 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classAllocatedReservoir" kind="class" language="C++" prot="public">
+    <compoundname>AllocatedReservoir</compoundname>
+    <basecompoundref refid="classReservoir" prot="public" virt="non-virtual">Reservoir</basecompoundref>
+    <includes refid="AllocatedReservoir_8h" local="no">AllocatedReservoir.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classAllocatedReservoir_af6a1924f60de19b7f77781af0419c39b_1af6a1924f60de19b7f77781af0419c39b" prot="protected" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool AllocatedReservoir::has_water_quality_pool</definition>
+        <argsstring></argsstring>
+        <name>has_water_quality_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="13" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedReservoir_ae34d7123ff096d676609e32ba4b83e47_1ae34d7123ff096d676609e32ba4b83e47" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AllocatedReservoir::continuity_error</definition>
+        <argsstring></argsstring>
+        <name>continuity_error</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="14" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAllocatedReservoir_a0b2d620a1d1fe9a9fe053269f35a9a70_1a0b2d620a1d1fe9a9fe053269f35a9a70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AllocatedReservoir::AllocatedReservoir</definition>
+        <argsstring>(const char *name, const int id, const vector&lt; Catchment *&gt; &amp;catchments, const double capacity, const double max_treatment_capacity, EvaporationSeries &amp;evaporation_series, DataSeries *storage_area_curve, vector&lt; int &gt; *utilities_with_allocations, vector&lt; double &gt; *allocated_fractions, vector&lt; double &gt; *allocated_treatment_fractions)</argsstring>
+        <name>AllocatedReservoir</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classCatchment" kindref="compound">Catchment</ref> *&gt; &amp;</type>
+          <declname>catchments</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>max_treatment_capacity</declname>
+        </param>
+        <param>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
+          <declname>evaporation_series</declname>
+        </param>
+        <param>
+          <type><ref refid="classDataSeries" kindref="compound">DataSeries</ref> *</type>
+          <declname>storage_area_curve</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt; *</type>
+          <declname>utilities_with_allocations</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; *</type>
+          <declname>allocated_fractions</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; *</type>
+          <declname>allocated_treatment_fractions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="17" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="11" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_a22794afc1f06d13fc3099015a2250b0d_1a22794afc1f06d13fc3099015a2250b0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AllocatedReservoir::AllocatedReservoir</definition>
+        <argsstring>(const char *name, const int id, const vector&lt; Catchment *&gt; &amp;catchments, const double capacity, const double max_treatment_capacity, EvaporationSeries &amp;evaporation_series, DataSeries *storage_area_curve, const vector&lt; double &gt; &amp;construction_time_range, double permitting_period, Bond &amp;bond, vector&lt; int &gt; *utilities_with_allocations, vector&lt; double &gt; *allocated_fractions, vector&lt; double &gt; *allocated_treatment_fractions)</argsstring>
+        <name>AllocatedReservoir</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classCatchment" kindref="compound">Catchment</ref> *&gt; &amp;</type>
+          <declname>catchments</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>max_treatment_capacity</declname>
+        </param>
+        <param>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
+          <declname>evaporation_series</declname>
+        </param>
+        <param>
+          <type><ref refid="classDataSeries" kindref="compound">DataSeries</ref> *</type>
+          <declname>storage_area_curve</declname>
+        </param>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>construction_time_range</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>permitting_period</declname>
+        </param>
+        <param>
+          <type><ref refid="classBond" kindref="compound">Bond</ref> &amp;</type>
+          <declname>bond</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt; *</type>
+          <declname>utilities_with_allocations</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; *</type>
+          <declname>allocated_fractions</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; *</type>
+          <declname>allocated_treatment_fractions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="27" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="31" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_a17a60d40d936b1a68459d0bd9578aada_1a17a60d40d936b1a68459d0bd9578aada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AllocatedReservoir::AllocatedReservoir</definition>
+        <argsstring>(const char *name, const int id, const vector&lt; Catchment *&gt; &amp;catchments, const double capacity, const double max_treatment_capacity, EvaporationSeries &amp;evaporation_series, double storage_area, vector&lt; int &gt; *utilities_with_allocations, vector&lt; double &gt; *allocated_fractions, vector&lt; double &gt; *allocated_treatment_fractions)</argsstring>
+        <name>AllocatedReservoir</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classCatchment" kindref="compound">Catchment</ref> *&gt; &amp;</type>
+          <declname>catchments</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>max_treatment_capacity</declname>
+        </param>
+        <param>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
+          <declname>evaporation_series</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>storage_area</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt; *</type>
+          <declname>utilities_with_allocations</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; *</type>
+          <declname>allocated_fractions</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; *</type>
+          <declname>allocated_treatment_fractions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="34" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="44" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_a44ac982717a21a0b24bb3019d07ffe89_1a44ac982717a21a0b24bb3019d07ffe89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AllocatedReservoir::AllocatedReservoir</definition>
+        <argsstring>(const char *name, const int id, const vector&lt; Catchment *&gt; &amp;catchments, const double capacity, const double max_treatment_capacity, EvaporationSeries &amp;evaporation_series, double storage_area, const vector&lt; double &gt; &amp;construction_time_range, double permitting_period, Bond &amp;bond, vector&lt; int &gt; *utilities_with_allocations, vector&lt; double &gt; *allocated_fractions, vector&lt; double &gt; *allocated_treatment_fractions)</argsstring>
+        <name>AllocatedReservoir</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classCatchment" kindref="compound">Catchment</ref> *&gt; &amp;</type>
+          <declname>catchments</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>max_treatment_capacity</declname>
+        </param>
+        <param>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
+          <declname>evaporation_series</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>storage_area</declname>
+        </param>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>construction_time_range</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>permitting_period</declname>
+        </param>
+        <param>
+          <type><ref refid="classBond" kindref="compound">Bond</ref> &amp;</type>
+          <declname>bond</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt; *</type>
+          <declname>utilities_with_allocations</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; *</type>
+          <declname>allocated_fractions</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; *</type>
+          <declname>allocated_treatment_fractions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="43" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="65" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_a83551e53169014906ce7380005efb4f8_1a83551e53169014906ce7380005efb4f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref> &amp;</type>
+        <definition>AllocatedReservoir &amp; AllocatedReservoir::operator=</definition>
+        <argsstring>(const AllocatedReservoir &amp;allocated_reservoir)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref> &amp;</type>
+          <declname>allocated_reservoir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy assignment operator <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allocated_reservoir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="50" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_a59098eb446ada7a23e914543f3c419c0_1a59098eb446ada7a23e914543f3c419c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AllocatedReservoir::AllocatedReservoir</definition>
+        <argsstring>(const AllocatedReservoir &amp;allocated_reservoir)</argsstring>
+        <name>AllocatedReservoir</name>
+        <param>
+          <type>const <ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref> &amp;</type>
+          <declname>allocated_reservoir</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="54" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_a3fc9aaca619a97d338449384e579900c_1a3fc9aaca619a97d338449384e579900c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AllocatedReservoir::~AllocatedReservoir</definition>
+        <argsstring>()</argsstring>
+        <name>~AllocatedReservoir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_aa5a3683ac3a1e7a778627332c6a7fff7_1aa5a3683ac3a1e7a778627332c6a7fff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedReservoir::applyContinuity</definition>
+        <argsstring>(int week, double upstream_source_inflow, double wastewater_inflow, vector&lt; double &gt; &amp;demand_outflow) override</argsstring>
+        <name>applyContinuity</name>
+        <reimplements refid="classWaterSource_ac070445379fe706f65b977dade4f3fbc_1ac070445379fe706f65b977dade4f3fbc">applyContinuity</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>upstream_source_inflow</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>wastewater_inflow</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>demand_outflow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Constrain outflow to what is available on water quality pool.</para><para>Calculate total runoff inflow reaching reservoir from its watershed.</para><para>Calculates water lost through evaporation.</para><para>Calculate new stored volume and outflow based on continuity.</para><para>Check if spillage is needed and, if so, correct stored volume and calculate spillage and set all allocations to full. Otherwise, distributed inflows and outflows among respective allocations. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Water exceeding allocated capacities.</para><para>Volume of water that entered the reservoir and stayed until being used or released. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Split among utilities any allocated volume exceeding a giver utility&apos;s maximum allocated capacity. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Calculate combined excess allocation and combined allocation fraction. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Calculation of amount exceeding all individual allocations</para><para>Redistribute combined excess among utilities based on their allocation fractions. If one is exceeded, roll &quot;second order&quot; excess down to the next utility. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Redistribute excess based on allocations fractions.</para><para>Check if redistribution of excesses didn&apos;t make an allocation exceed its capacity. <linebreak/>
+<linebreak/>
+<linebreak/>
+ If there was too much water added to an allocation, redistribute it. <linebreak/>
+<linebreak/>
+ If there&apos;s still an excess but all allocations are at capacity, release the rest as environmental flows. <linebreak/>
+ Sanity checking from now on. </para>        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="58" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="95" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_aea294cbca1e1630a1307072632d14b05_1aea294cbca1e1630a1307072632d14b05" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedReservoir::setFull</definition>
+        <argsstring>() override</argsstring>
+        <name>setFull</name>
+        <reimplements refid="classWaterSource_a5f8007eb1ae604cfaa67ebb4c0c46eb1_1a5f8007eb1ae604cfaa67ebb4c0c46eb1">setFull</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="62" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="471" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_ae161ebfc285aa69cb8b7f4fe20ee7a2e_1ae161ebfc285aa69cb8b7f4fe20ee7a2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double AllocatedReservoir::getAvailableAllocatedVolume</definition>
+        <argsstring>(int utility_id) override</argsstring>
+        <name>getAvailableAllocatedVolume</name>
+        <reimplements refid="classWaterSource_a42c687a3be3d88ba38dbea668c8d35cf_1a42c687a3be3d88ba38dbea668c8d35cf">getAvailableAllocatedVolume</reimplements>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If creating a new water source that can be allocated to different utilities, this function must be overwritten to: return available_allocated_volumes[utility_id]; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="64" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="456" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_a3a9b7ce2e1d42cc373095cfd40ef2ae2_1a3a9b7ce2e1d42cc373095cfd40ef2ae2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedReservoir::removeWater</definition>
+        <argsstring>(int allocation_id, double volume) override</argsstring>
+        <name>removeWater</name>
+        <reimplements refid="classWaterSource_ab697c3a0765d445f72533f6a5f139bd9_1ab697c3a0765d445f72533f6a5f139bd9">removeWater</reimplements>
+        <param>
+          <type>int</type>
+          <declname>allocation_id</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>If creating a new water source that can be allocated to different utilities, this function must be overwritten to: available_allocated_volumes[allocation_id] -= volume; available_volume -= volume; demand += volume; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="66" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="460" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_a8b9b38494fa23f0bea78134c82644bf1_1a8b9b38494fa23f0bea78134c82644bf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double AllocatedReservoir::getAllocatedCapacity</definition>
+        <argsstring>(int utility_id) override</argsstring>
+        <name>getAllocatedCapacity</name>
+        <reimplements refid="classWaterSource_a44102a0eafdaebd86f0ed8dabb313733_1a44102a0eafdaebd86f0ed8dabb313733">getAllocatedCapacity</reimplements>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Most sources will not have different allocations, so by default this function will return the total capacity. If a source is to have multiple allocations, this function must be overriden to make sure it returns the right value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="68" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="467" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_a731381982c9245b0bf24db4082dc74c1_1a731381982c9245b0bf24db4082dc74c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double AllocatedReservoir::getAllocatedFraction</definition>
+        <argsstring>(int utility_id) override</argsstring>
+        <name>getAllocatedFraction</name>
+        <reimplements refid="classWaterSource_a1843ada21b8e7500d80a5a7db10621b3_1a1843ada21b8e7500d80a5a7db10621b3">getAllocatedFraction</reimplements>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="70" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="477" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_ab4cd10b1a9b421309844bcec42899b70_1ab4cd10b1a9b421309844bcec42899b70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedReservoir::addCapacity</definition>
+        <argsstring>(double capacity) override</argsstring>
+        <name>addCapacity</name>
+        <reimplements refid="classWaterSource_abffedb6e58620b1b1d6f3c4b4480d3a0_1abffedb6e58620b1b1d6f3c4b4480d3a0">addCapacity</reimplements>
+        <param>
+          <type>double</type>
+          <declname>capacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="72" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="335" bodyend="340"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_ab781bee3253277f1dcfa4c12756d9d6f_1ab781bee3253277f1dcfa4c12756d9d6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedReservoir::addTreatmentCapacity</definition>
+        <argsstring>(const double added_plant_treatment_capacity, int utility_id) override</argsstring>
+        <name>addTreatmentCapacity</name>
+        <reimplements refid="classWaterSource_a210818957f088da4046597d0f1a1340f_1a210818957f088da4046597d0f1a1340f">addTreatmentCapacity</reimplements>
+        <param>
+          <type>const double</type>
+          <declname>added_plant_treatment_capacity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Addes treatment capacity to a source. The specification of both the total treatment capacity of the new plant and the fraction of the treatment capacity allocated to a given utility allow for joint treatment plants. To have one utility only building an exclusive plant, the fraction will be 1. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>added_plant_treatment_capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>allocated_fraction_of_total_capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utility_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Add capacity to respective treatment allocation.</para><para>Update treatment allocation fractions based on new allocated amounts and new total treatment capacity. </para>        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="74" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="351" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_aba81b93e1aa1154ce411248903fabde6_1aba81b93e1aa1154ce411248903fabde6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double AllocatedReservoir::getAllocatedTreatmentCapacity</definition>
+        <argsstring>(int utility_id) const override</argsstring>
+        <name>getAllocatedTreatmentCapacity</name>
+        <reimplements refid="classWaterSource_ab3ba86d2a3e864e435ba2b88cceea555_1ab3ba86d2a3e864e435ba2b88cceea555">getAllocatedTreatmentCapacity</reimplements>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="77" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="481" bodyend="486"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_a114e9cde6a106b786ca0ed39283cbbed_1a114e9cde6a106b786ca0ed39283cbbed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double AllocatedReservoir::getSupplyAllocatedFraction</definition>
+        <argsstring>(int utility_id) override</argsstring>
+        <name>getSupplyAllocatedFraction</name>
+        <reimplements refid="classWaterSource_a71cb8bd481bbce0089aa78dcd1c3309a_1a71cb8bd481bbce0089aa78dcd1c3309a">getSupplyAllocatedFraction</reimplements>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="79" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="488" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_a9d025365aa42dfff13a0aac8ea7863fa_1a9d025365aa42dfff13a0aac8ea7863fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AllocatedReservoir::mass_balance_with_wq_pool</definition>
+        <argsstring>(double net_inflow, vector&lt; double &gt; &amp;demand_outflow)</argsstring>
+        <name>mass_balance_with_wq_pool</name>
+        <param>
+          <type>double</type>
+          <declname>net_inflow</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>demand_outflow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Split inflows and evaporation among allocations and subtract demands. <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ Flag the occurrence of an allocation exceeding its capacity</para><para>If allocated volume gets negative for any utility, charge that consumption (basically evaporation) to the water quality pool. Improvements can be made to this, but it may make code significantly slower.</para><para>the water quality pool has no demand but provides the minimum environmental flows. <linebreak/>
+<linebreak/>
+ Flag the occurrence of an allocation exceeding its capacity</para><para>Get water from water quality pool for supply. Check continuity for errors. </para>        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="83" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="366" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_ac719b30d5a83ba19ea722449ce9580e1_1ac719b30d5a83ba19ea722449ce9580e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AllocatedReservoir::mass_balance_without_wq_pool</definition>
+        <argsstring>(double net_inflow, vector&lt; double &gt; &amp;demand_outflow)</argsstring>
+        <name>mass_balance_without_wq_pool</name>
+        <param>
+          <type>double</type>
+          <declname>net_inflow</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>demand_outflow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Split inflows, min environmental outflows and evaporation among allocations and subtract demands. <linebreak/>
+ Flag the occurrence of an allocation exceeding its capacity </para>        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="86" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="424" bodyend="443"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoir_a739d93f7981f597a3db0a3d613304b8e_1a739d93f7981f597a3db0a3d613304b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedReservoir::setOnline</definition>
+        <argsstring>() override</argsstring>
+        <name>setOnline</name>
+        <reimplements refid="classWaterSource_ab3396e2915db91a6c82e0f29c7889df4_1ab3396e2915db91a6c82e0f29c7889df4">setOnline</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>start empty and gradually fill as inflows start coming in.</para><para>set all allocated volumes to zero </para>        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="88" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.cpp" bodystart="445" bodyend="454"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>WaterSource</label>
+        <link refid="classWaterSource"/>
+      </node>
+      <node id="1">
+        <label>Reservoir</label>
+        <link refid="classReservoir"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>AllocatedReservoir</label>
+        <link refid="classAllocatedReservoir"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>DataSeries</label>
+        <link refid="classDataSeries"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>ControlRules</label>
+        <link refid="classControlRules"/>
+      </node>
+      <node id="5">
+        <label>WaterSource</label>
+        <link refid="classWaterSource"/>
+      </node>
+      <node id="7">
+        <label>Catchment</label>
+        <link refid="classCatchment"/>
+      </node>
+      <node id="6">
+        <label>EvaporationSeries</label>
+        <link refid="classEvaporationSeries"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Reservoir</label>
+        <link refid="classReservoir"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>evaporation_series</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>storage_area_curve</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>AllocatedReservoir</label>
+        <link refid="classAllocatedReservoir"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/SystemComponents/WaterSources/AllocatedReservoir.h" line="11" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedReservoir.h" bodystart="11" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classAllocatedReservoir_ab4cd10b1a9b421309844bcec42899b70_1ab4cd10b1a9b421309844bcec42899b70" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>addCapacity</name></member>
+      <member refid="classAllocatedReservoir_ab781bee3253277f1dcfa4c12756d9d6f_1ab781bee3253277f1dcfa4c12756d9d6f" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>addTreatmentCapacity</name></member>
+      <member refid="classWaterSource_ab94063d51314cfb896010408ae32fa9c_1ab94063d51314cfb896010408ae32fa9c" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>allocated_capacities</name></member>
+      <member refid="classWaterSource_a2f6655a80c4847fe039987255d9d998c_1a2f6655a80c4847fe039987255d9d998c" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>allocated_fractions</name></member>
+      <member refid="classWaterSource_a87dc0bfb5cf4e2b9a953c7a80058c923_1a87dc0bfb5cf4e2b9a953c7a80058c923" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>allocated_treatment_capacities</name></member>
+      <member refid="classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140_1aa73fe10cfc6579b2fb79529e1dde5140" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>allocated_treatment_fractions</name></member>
+      <member refid="classAllocatedReservoir_a0b2d620a1d1fe9a9fe053269f35a9a70_1a0b2d620a1d1fe9a9fe053269f35a9a70" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>AllocatedReservoir</name></member>
+      <member refid="classAllocatedReservoir_a22794afc1f06d13fc3099015a2250b0d_1a22794afc1f06d13fc3099015a2250b0d" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>AllocatedReservoir</name></member>
+      <member refid="classAllocatedReservoir_a17a60d40d936b1a68459d0bd9578aada_1a17a60d40d936b1a68459d0bd9578aada" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>AllocatedReservoir</name></member>
+      <member refid="classAllocatedReservoir_a44ac982717a21a0b24bb3019d07ffe89_1a44ac982717a21a0b24bb3019d07ffe89" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>AllocatedReservoir</name></member>
+      <member refid="classAllocatedReservoir_a59098eb446ada7a23e914543f3c419c0_1a59098eb446ada7a23e914543f3c419c0" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>AllocatedReservoir</name></member>
+      <member refid="classAllocatedReservoir_aa5a3683ac3a1e7a778627332c6a7fff7_1aa5a3683ac3a1e7a778627332c6a7fff7" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>applyContinuity</name></member>
+      <member refid="classReservoir_a57ab55e0dde9e29a4ff97de98b09e458_1a57ab55e0dde9e29a4ff97de98b09e458" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>area</name></member>
+      <member refid="classWaterSource_a77d3fe9ea445fc987b07debdfb9e2f5b_1a77d3fe9ea445fc987b07debdfb9e2f5b" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>available_allocated_volumes</name></member>
+      <member refid="classWaterSource_a49e1a191152e344e2161e8db166e067a_1a49e1a191152e344e2161e8db166e067a" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>available_volume</name></member>
+      <member refid="classWaterSource_a413b094e11bdce62f4d82e5bb9e4706e_1a413b094e11bdce62f4d82e5bb9e4706e" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>bonds</name></member>
+      <member refid="classWaterSource_a49f9da70a5080abe82160b1a0d194e60_1a49f9da70a5080abe82160b1a0d194e60" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>built_in_sequence</name></member>
+      <member refid="classWaterSource_abeb8ba4b51c2b270baf9162df76d8b58_1abeb8ba4b51c2b270baf9162df76d8b58" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>bypass</name></member>
+      <member refid="classWaterSource_a2ec257b415b248214a8bce7fc5267723_1a2ec257b415b248214a8bce7fc5267723" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>capacity</name></member>
+      <member refid="classWaterSource_a8c18c34f23f8a06685c1d12f462ed830_1a8c18c34f23f8a06685c1d12f462ed830" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>catchments</name></member>
+      <member refid="classWaterSource_a47bc2006a1ef6ea4429d56a24319940f_1a47bc2006a1ef6ea4429d56a24319940f" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>checkForInputErrorsConstruction</name></member>
+      <member refid="classWaterSource_a7a1325107c74bb0ea553dc3547204e01_1a7a1325107c74bb0ea553dc3547204e01" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>compare</name></member>
+      <member refid="classWaterSource_ae059fbe3f911a819bac0202f7f45e8e4_1ae059fbe3f911a819bac0202f7f45e8e4" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>construction_time</name></member>
+      <member refid="classAllocatedReservoir_ae34d7123ff096d676609e32ba4b83e47_1ae34d7123ff096d676609e32ba4b83e47" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>continuity_error</name></member>
+      <member refid="classWaterSource_a1137cd86f8d3f8a48ebec54282132993_1a1137cd86f8d3f8a48ebec54282132993" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>continuityWaterSource</name></member>
+      <member refid="classWaterSource_a6085899c4b4cc40fa80784203e1a9755_1a6085899c4b4cc40fa80784203e1a9755" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>evaporated_volume</name></member>
+      <member refid="classReservoir_a2d2d9b302c13703309bb798d24136810_1a2d2d9b302c13703309bb798d24136810" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>evaporation_series</name></member>
+      <member refid="classReservoir_ad4b37aef4873071d1766baaccce5b8cf_1ad4b37aef4873071d1766baaccce5b8cf" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>fixed_area</name></member>
+      <member refid="classAllocatedReservoir_a8b9b38494fa23f0bea78134c82644bf1_1a8b9b38494fa23f0bea78134c82644bf1" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>getAllocatedCapacity</name></member>
+      <member refid="classAllocatedReservoir_a731381982c9245b0bf24db4082dc74c1_1a731381982c9245b0bf24db4082dc74c1" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>getAllocatedFraction</name></member>
+      <member refid="classWaterSource_a63b1a410b47710db049e2b2e9c3c39a0_1a63b1a410b47710db049e2b2e9c3c39a0" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getAllocatedInflow</name></member>
+      <member refid="classAllocatedReservoir_aba81b93e1aa1154ce411248903fabde6_1aba81b93e1aa1154ce411248903fabde6" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>getAllocatedTreatmentCapacity</name></member>
+      <member refid="classReservoir_af86ffdaa2842a38b7f59e0360a1004a1_1af86ffdaa2842a38b7f59e0360a1004a1" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getArea</name></member>
+      <member refid="classWaterSource_a1087f5f2458803fd1d37383e303bd25f_1a1087f5f2458803fd1d37383e303bd25f" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getAvailable_allocated_volumes</name></member>
+      <member refid="classAllocatedReservoir_ae161ebfc285aa69cb8b7f4fe20ee7a2e_1ae161ebfc285aa69cb8b7f4fe20ee7a2e" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>getAvailableAllocatedVolume</name></member>
+      <member refid="classWaterSource_af6445a2dd3764907bcb9a37d4647f910_1af6445a2dd3764907bcb9a37d4647f910" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getAvailableSupplyVolume</name></member>
+      <member refid="classWaterSource_a8eae3b16fc0f37780c1df827386f656e_1a8eae3b16fc0f37780c1df827386f656e" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getAvailableVolume</name></member>
+      <member refid="classWaterSource_a22f89ebf1115de192df588a4fd83c671_1a22f89ebf1115de192df588a4fd83c671" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getBond</name></member>
+      <member refid="classWaterSource_a09b60eb2e318c72a42cd6bdd336a6f67_1a09b60eb2e318c72a42cd6bdd336a6f67" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getBuilt_in_sequence</name></member>
+      <member refid="classWaterSource_ac1e8880f0aeb56b2728e253d3500ef40_1ac1e8880f0aeb56b2728e253d3500ef40" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getConstruction_time</name></member>
+      <member refid="classWaterSource_ac57d6b292490333b5bc14233bce326ce_1ac57d6b292490333b5bc14233bce326ce" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getDemand</name></member>
+      <member refid="classWaterSource_a00b156a153fc24097e4c8a4e5c46c4e0_1a00b156a153fc24097e4c8a4e5c46c4e0" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getEvaporated_volume</name></member>
+      <member refid="classWaterSource_af7607924825ffe293179b09fe1bc466e_1af7607924825ffe293179b09fe1bc466e" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getMin_environmental_outflow</name></member>
+      <member refid="classWaterSource_aa21d3f1c87ced40c2b673d9e43d99176_1aa21d3f1c87ced40c2b673d9e43d99176" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getPermitting_period</name></member>
+      <member refid="classAllocatedReservoir_a114e9cde6a106b786ca0ed39283cbbed_1a114e9cde6a106b786ca0ed39283cbbed" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>getSupplyAllocatedFraction</name></member>
+      <member refid="classWaterSource_aa4cbbd1ee0fc5ea9291eb5d8067b3aa0_1aa4cbbd1ee0fc5ea9291eb5d8067b3aa0" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>getSupplyCapacity</name></member>
+      <member refid="classWaterSource_a7678e05e3e73b927c0b47e3041d7415f_1a7678e05e3e73b927c0b47e3041d7415f" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getTotal_outflow</name></member>
+      <member refid="classWaterSource_a6228c9aee407ca2544753dbd2792c5fb_1a6228c9aee407ca2544753dbd2792c5fb" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getTotal_treatment_capacity</name></member>
+      <member refid="classWaterSource_ad7e60efd7395f8d3e674e602226e5ac1_1ad7e60efd7395f8d3e674e602226e5ac1" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getUpstream_source_inflow</name></member>
+      <member refid="classWaterSource_afd2a153ba8f4ecaa9f8fa851d5a1727c_1afd2a153ba8f4ecaa9f8fa851d5a1727c" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getUpstreamCatchmentInflow</name></member>
+      <member refid="classWaterSource_a7d6beb9fce5be21a3777fee88f045e62_1a7d6beb9fce5be21a3777fee88f045e62" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getUtilities_with_allocations</name></member>
+      <member refid="classWaterSource_aee22325e6af0e3c804ddbd9a3505be05_1aee22325e6af0e3c804ddbd9a3505be05" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>getWastewater_inflow</name></member>
+      <member refid="classAllocatedReservoir_af6a1924f60de19b7f77781af0419c39b_1af6a1924f60de19b7f77781af0419c39b" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>has_water_quality_pool</name></member>
+      <member refid="classWaterSource_a83c6dcf19b64533ce4bc3b918ce6cc8e_1a83c6dcf19b64533ce4bc3b918ce6cc8e" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>highest_alloc_id</name></member>
+      <member refid="classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742_1a6eafe5dfefd317877d1244e8a7c6e742" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>id</name></member>
+      <member refid="classWaterSource_a130fd661ff31c53115cca23e4e2f210a_1a130fd661ff31c53115cca23e4e2f210a" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>isOnline</name></member>
+      <member refid="classAllocatedReservoir_a9d025365aa42dfff13a0aac8ea7863fa_1a9d025365aa42dfff13a0aac8ea7863fa" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>mass_balance_with_wq_pool</name></member>
+      <member refid="classAllocatedReservoir_ac719b30d5a83ba19ea722449ce9580e1_1ac719b30d5a83ba19ea722449ce9580e1" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>mass_balance_without_wq_pool</name></member>
+      <member refid="classWaterSource_adae67ac96597e4b25332002b88a9a52b_1adae67ac96597e4b25332002b88a9a52b" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>min_environmental_outflow</name></member>
+      <member refid="classWaterSource_a846ea74c5b453d014f594d41fee8c765_1a846ea74c5b453d014f594d41fee8c765" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>name</name></member>
+      <member refid="classWaterSource_aef4e289b47c2360f2e991ea3ee535781_1aef4e289b47c2360f2e991ea3ee535781" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>online</name></member>
+      <member refid="classWaterSource_accb044cc78f9a444ca18bf7283b5b596_1accb044cc78f9a444ca18bf7283b5b596" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>operator&lt;</name></member>
+      <member refid="classAllocatedReservoir_a83551e53169014906ce7380005efb4f8_1a83551e53169014906ce7380005efb4f8" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>operator=</name></member>
+      <member refid="classReservoir_a0a66480ae98d0cc67ca5c3134f460d3c_1a0a66480ae98d0cc67ca5c3134f460d3c" prot="public" virt="non-virtual" ambiguityscope="Reservoir::"><scope>AllocatedReservoir</scope><name>operator=</name></member>
+      <member refid="classWaterSource_aafdaafb023a35186ae01d213665b5e27_1aafdaafb023a35186ae01d213665b5e27" prot="public" virt="non-virtual" ambiguityscope="WaterSource::"><scope>AllocatedReservoir</scope><name>operator=</name></member>
+      <member refid="classWaterSource_af25e06ec954898f3392cb125d2f2c2ad_1af25e06ec954898f3392cb125d2f2c2ad" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>operator==</name></member>
+      <member refid="classWaterSource_a9db800769891e1f49d74a78298f4dac1_1a9db800769891e1f49d74a78298f4dac1" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>operator&gt;</name></member>
+      <member refid="classWaterSource_a036d7980e74224fd5f5c6a390e0d5abb_1a036d7980e74224fd5f5c6a390e0d5abb" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>permitting_time</name></member>
+      <member refid="classWaterSource_a3f04ae75d6235117d391dece2d323890_1a3f04ae75d6235117d391dece2d323890" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>policy_added_demand</name></member>
+      <member refid="classWaterSource_aebc6985952d3e69f0d8ae1d0498a1ffe_1aebc6985952d3e69f0d8ae1d0498a1ffe" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>randomConstructionTime</name></member>
+      <member refid="classAllocatedReservoir_a3a9b7ce2e1d42cc373095cfd40ef2ae2_1a3a9b7ce2e1d42cc373095cfd40ef2ae2" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>removeWater</name></member>
+      <member refid="classReservoir_ac9803ae5446e4e9a2631ce66817004cf_1ac9803ae5446e4e9a2631ce66817004cf" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>Reservoir</name></member>
+      <member refid="classReservoir_a2e324b75aacc65d90b214ff7f62dfa89_1a2e324b75aacc65d90b214ff7f62dfa89" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>Reservoir</name></member>
+      <member refid="classReservoir_a0a1041fc72df190bbc51d965ede96f49_1a0a1041fc72df190bbc51d965ede96f49" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>Reservoir</name></member>
+      <member refid="classReservoir_a56409325d4554f8ef32a9c3605ece5c8_1a56409325d4554f8ef32a9c3605ece5c8" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>Reservoir</name></member>
+      <member refid="classReservoir_a1a6f078a9565dcb65843d3575bdd4172_1a1a6f078a9565dcb65843d3575bdd4172" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>Reservoir</name></member>
+      <member refid="classReservoir_a617f90b97899699d7e0dd97e7ebb34bc_1a617f90b97899699d7e0dd97e7ebb34bc" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>Reservoir</name></member>
+      <member refid="classReservoir_ac20659043afad4d2df49ce91e08f5dad_1ac20659043afad4d2df49ce91e08f5dad" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>Reservoir</name></member>
+      <member refid="classReservoir_a37ca7ba59d127fee6522c1ad545c9caf_1a37ca7ba59d127fee6522c1ad545c9caf" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>Reservoir</name></member>
+      <member refid="classReservoir_a3fc46303b2846aa23bb52f0b69b9585c_1a3fc46303b2846aa23bb52f0b69b9585c" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>Reservoir</name></member>
+      <member refid="classWaterSource_af52f39412f0d761f7e3b3369ffdf90f1_1af52f39412f0d761f7e3b3369ffdf90f1" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>resetAllocations</name></member>
+      <member refid="classWaterSource_abaf6cb0ecca08c87428ad516f11f8c2e_1abaf6cb0ecca08c87428ad516f11f8c2e" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>seed</name></member>
+      <member refid="classWaterSource_ac834762e016e796968ad286feeca7be6_1ac834762e016e796968ad286feeca7be6" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>setAllocations</name></member>
+      <member refid="classWaterSource_ae29ed4aa2b9c97c5a41772daf4631f05_1ae29ed4aa2b9c97c5a41772daf4631f05" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>setAvailableAllocatedVolumes</name></member>
+      <member refid="classAllocatedReservoir_aea294cbca1e1630a1307072632d14b05_1aea294cbca1e1630a1307072632d14b05" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>setFull</name></member>
+      <member refid="classWaterSource_a406246432d29f49189d53207ab1d895a_1a406246432d29f49189d53207ab1d895a" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>setMin_environmental_outflow</name></member>
+      <member refid="classAllocatedReservoir_a739d93f7981f597a3db0a3d613304b8e_1a739d93f7981f597a3db0a3d613304b8e" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>setOnline</name></member>
+      <member refid="classWaterSource_ab53d376a425b8db603382ba27b52b1d4_1ab53d376a425b8db603382ba27b52b1d4" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>setOutflow_previous_week</name></member>
+      <member refid="classReservoir_ad1bb7aa46397719d09e0b6188b9bc28d_1ad1bb7aa46397719d09e0b6188b9bc28d" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>setRealization</name></member>
+      <member refid="classWaterSource_a741c60afc9dafaae318ce7c99f4fd327_1a741c60afc9dafaae318ce7c99f4fd327" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>setSeed</name></member>
+      <member refid="classWaterSource_ac3105a8ef5470af2e40e7ed74a9be157_1ac3105a8ef5470af2e40e7ed74a9be157" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>skipConstruction</name></member>
+      <member refid="classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b_1afdd12c29fc74ea21dff1f1be9b8c2b7b" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>source_type</name></member>
+      <member refid="classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff_1a46bd5b750963dfa9a57b247fd77ab8ff" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>storage_area_curve</name></member>
+      <member refid="classWaterSource_a87535be59994b2602576cdf34dbe04b9_1a87535be59994b2602576cdf34dbe04b9" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>supply_allocated_fractions</name></member>
+      <member refid="classWaterSource_a4be6864dc196287bdf8329b3aa6ca662_1a4be6864dc196287bdf8329b3aa6ca662" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>total_allocated_fraction</name></member>
+      <member refid="classWaterSource_a1934917dd35a2508a5102eb5831431b7_1a1934917dd35a2508a5102eb5831431b7" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>total_demand</name></member>
+      <member refid="classWaterSource_a5e6992931464ed75576326b9f1bd3c4f_1a5e6992931464ed75576326b9f1bd3c4f" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>total_outflow</name></member>
+      <member refid="classWaterSource_a2fdfd5ff7d103e71108cf2a31babaccb_1a2fdfd5ff7d103e71108cf2a31babaccb" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>total_treatment_capacity</name></member>
+      <member refid="classWaterSource_a4bd60dafcc0b18f1c7a415f489bb220a_1a4bd60dafcc0b18f1c7a415f489bb220a" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>unsetSeed</name></member>
+      <member refid="classWaterSource_aceb2d77612db7ba71a171848a5e03b4f_1aceb2d77612db7ba71a171848a5e03b4f" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>upstream_catchment_inflow</name></member>
+      <member refid="classWaterSource_a67165e29345b61f36c8d8ccf3f648819_1a67165e29345b61f36c8d8ccf3f648819" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>upstream_min_env_inflow</name></member>
+      <member refid="classWaterSource_a7a69b2e9b6030f1035e6cf44d2918ee5_1a7a69b2e9b6030f1035e6cf44d2918ee5" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>upstream_source_inflow</name></member>
+      <member refid="classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace_1ac345583fc2d0f7e1db31ee40244d7ace" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>utilities_with_allocations</name></member>
+      <member refid="classWaterSource_aeb5a2d2d83383a70ca20f3e94635a9c7_1aeb5a2d2d83383a70ca20f3e94635a9c7" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>wastewater_inflow</name></member>
+      <member refid="classWaterSource_a27b9d29d6cbb36d128f740f7ca00f500_1a27b9d29d6cbb36d128f740f7ca00f500" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_a7723d343a0b8edff36018ca7acf09f62_1a7723d343a0b8edff36018ca7acf09f62" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_a48641ff06b69505ab298f4f23e759a22_1a48641ff06b69505ab298f4f23e759a22" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_a284e207f074da6f485d41f65ac025cf1_1a284e207f074da6f485d41f65ac025cf1" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_ae8cf84e138983737e044bc1217858021_1ae8cf84e138983737e044bc1217858021" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_aaa3aba0a9709cc1432f85f443b033a65_1aaa3aba0a9709cc1432f85f443b033a65" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_acef73d9b1675fb6db9ec39347514db6d_1acef73d9b1675fb6db9ec39347514db6d" prot="protected" virt="non-virtual"><scope>AllocatedReservoir</scope><name>wq_pool_id</name></member>
+      <member refid="classAllocatedReservoir_a3fc9aaca619a97d338449384e579900c_1a3fc9aaca619a97d338449384e579900c" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>~AllocatedReservoir</name></member>
+      <member refid="classReservoir_a2f8bfdc73c7470185775a940fb3531de_1a2f8bfdc73c7470185775a940fb3531de" prot="public" virt="non-virtual"><scope>AllocatedReservoir</scope><name>~Reservoir</name></member>
+      <member refid="classWaterSource_a48d9be2deccd87e1d1cdcbb4b2df83cf_1a48d9be2deccd87e1d1cdcbb4b2df83cf" prot="public" virt="virtual"><scope>AllocatedReservoir</scope><name>~WaterSource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

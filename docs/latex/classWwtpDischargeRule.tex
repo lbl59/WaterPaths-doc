@@ -1,0 +1,140 @@
+\hypertarget{classWwtpDischargeRule}{}\section{Wwtp\+Discharge\+Rule Class Reference}
+\label{classWwtpDischargeRule}\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+
+
+{\ttfamily \#include $<$Wwtp\+Discharge\+Rule.\+h$>$}
+
+Inheritance diagram for Wwtp\+Discharge\+Rule\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWwtpDischargeRule}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWwtpDischargeRule_ae904657855c9d983ea0e5995109cd561_ae904657855c9d983ea0e5995109cd561}{Wwtp\+Discharge\+Rule}} (vector$<$ vector$<$ double $>$$>$ \mbox{\hyperlink{classWwtpDischargeRule_a5d193e0cbc2eb23e1b86e79fb2eafad3_a5d193e0cbc2eb23e1b86e79fb2eafad3}{year\+\_\+series\+\_\+fraction\+\_\+discharge}}, vector$<$ int $>$ \mbox{\hyperlink{classWwtpDischargeRule_ac2f77a9fca93eef3fd26ff1d579130be_ac2f77a9fca93eef3fd26ff1d579130be}{discharge\+\_\+to\+\_\+source\+\_\+ids}})
+\item 
+\mbox{\hyperlink{classWwtpDischargeRule_ac433e50df1414ba4bbb40022832b43ff_ac433e50df1414ba4bbb40022832b43ff}{Wwtp\+Discharge\+Rule}} (\mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} \&wwtp\+\_\+discharge\+\_\+rule)
+\item 
+\mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} \& \mbox{\hyperlink{classWwtpDischargeRule_acde020b347aff843179a318a9d231c8f_acde020b347aff843179a318a9d231c8f}{operator=}} (const \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} \&wwtp\+\_\+discharge\+\_\+rule)
+\item 
+double \mbox{\hyperlink{classWwtpDischargeRule_a4cea07bf746d200c9ca3018405a77a46_a4cea07bf746d200c9ca3018405a77a46}{get\+\_\+dependent\+\_\+variable}} (double water\+\_\+source\+\_\+id) override
+\item 
+double \mbox{\hyperlink{classWwtpDischargeRule_a3338c0fc43d656a6730ca72dd5d3e51e_a3338c0fc43d656a6730ca72dd5d3e51e}{get\+\_\+dependent\+\_\+variable}} (int water\+\_\+source\+\_\+id) override
+\item 
+double \mbox{\hyperlink{classWwtpDischargeRule_a10eb6f901b6479dadc107e0a7c07e03b_a10eb6f901b6479dadc107e0a7c07e03b}{get\+\_\+dependent\+\_\+variable}} (double x, int week) override
+\item 
+double \mbox{\hyperlink{classWwtpDischargeRule_a8eade5d595ec0fdc76769e67c7ffc5f4_a8eade5d595ec0fdc76769e67c7ffc5f4}{get\+\_\+dependent\+\_\+variable}} (int x, int week) override
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classWwtpDischargeRule_a5d193e0cbc2eb23e1b86e79fb2eafad3_a5d193e0cbc2eb23e1b86e79fb2eafad3}{year\+\_\+series\+\_\+fraction\+\_\+discharge}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classWwtpDischargeRule_ac2f77a9fca93eef3fd26ff1d579130be_ac2f77a9fca93eef3fd26ff1d579130be}{discharge\+\_\+to\+\_\+source\+\_\+ids}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classWwtpDischargeRule_a99be200d8d3ccf1f95a8d6e84a225df1_a99be200d8d3ccf1f95a8d6e84a225df1}{source\+\_\+id\+\_\+to\+\_\+vector\+\_\+index}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWwtpDischargeRule_ae904657855c9d983ea0e5995109cd561_ae904657855c9d983ea0e5995109cd561}\label{classWwtpDischargeRule_ae904657855c9d983ea0e5995109cd561_ae904657855c9d983ea0e5995109cd561}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{Wwtp\+Discharge\+Rule()}{WwtpDischargeRule()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Wwtp\+Discharge\+Rule\+::\+Wwtp\+Discharge\+Rule (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ double $>$$>$}]{year\+\_\+series\+\_\+fraction\+\_\+discharge,  }\item[{vector$<$ int $>$}]{discharge\+\_\+to\+\_\+source\+\_\+ids }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classWwtpDischargeRule_ac433e50df1414ba4bbb40022832b43ff_ac433e50df1414ba4bbb40022832b43ff}\label{classWwtpDischargeRule_ac433e50df1414ba4bbb40022832b43ff_ac433e50df1414ba4bbb40022832b43ff}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{Wwtp\+Discharge\+Rule()}{WwtpDischargeRule()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Wwtp\+Discharge\+Rule\+::\+Wwtp\+Discharge\+Rule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} \&}]{wwtp\+\_\+discharge\+\_\+rule }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWwtpDischargeRule_a4cea07bf746d200c9ca3018405a77a46_a4cea07bf746d200c9ca3018405a77a46}\label{classWwtpDischargeRule_a4cea07bf746d200c9ca3018405a77a46_a4cea07bf746d200c9ca3018405a77a46}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}}
+\index{get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{get\+\_\+dependent\+\_\+variable()}{get\_dependent\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily double Wwtp\+Discharge\+Rule\+::get\+\_\+dependent\+\_\+variable (\begin{DoxyParamCaption}\item[{double}]{water\+\_\+source\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classControlRules_a749c604121ebb1df808df9cd957a09f1_a749c604121ebb1df808df9cd957a09f1}{Control\+Rules}}.
+
+\mbox{\Hypertarget{classWwtpDischargeRule_a3338c0fc43d656a6730ca72dd5d3e51e_a3338c0fc43d656a6730ca72dd5d3e51e}\label{classWwtpDischargeRule_a3338c0fc43d656a6730ca72dd5d3e51e_a3338c0fc43d656a6730ca72dd5d3e51e}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}}
+\index{get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{get\+\_\+dependent\+\_\+variable()}{get\_dependent\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily double Wwtp\+Discharge\+Rule\+::get\+\_\+dependent\+\_\+variable (\begin{DoxyParamCaption}\item[{int}]{water\+\_\+source\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classControlRules_a56a42b40bf093237929a9c835dc9b772_a56a42b40bf093237929a9c835dc9b772}{Control\+Rules}}.
+
+\mbox{\Hypertarget{classWwtpDischargeRule_a10eb6f901b6479dadc107e0a7c07e03b_a10eb6f901b6479dadc107e0a7c07e03b}\label{classWwtpDischargeRule_a10eb6f901b6479dadc107e0a7c07e03b_a10eb6f901b6479dadc107e0a7c07e03b}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}}
+\index{get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{get\+\_\+dependent\+\_\+variable()}{get\_dependent\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily double Wwtp\+Discharge\+Rule\+::get\+\_\+dependent\+\_\+variable (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classControlRules_a4c5a86844c3d6409bfa0ba2b058f82e7_a4c5a86844c3d6409bfa0ba2b058f82e7}{Control\+Rules}}.
+
+\mbox{\Hypertarget{classWwtpDischargeRule_a8eade5d595ec0fdc76769e67c7ffc5f4_a8eade5d595ec0fdc76769e67c7ffc5f4}\label{classWwtpDischargeRule_a8eade5d595ec0fdc76769e67c7ffc5f4_a8eade5d595ec0fdc76769e67c7ffc5f4}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}}
+\index{get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{get\+\_\+dependent\+\_\+variable()}{get\_dependent\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily double Wwtp\+Discharge\+Rule\+::get\+\_\+dependent\+\_\+variable (\begin{DoxyParamCaption}\item[{int}]{water\+\_\+source\+\_\+id,  }\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the fraction of week\textquotesingle{}s demand to be discharged as effluent. 
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+source\+\_\+id} & ID of source receiving the effluent. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fraction of demand to be discharged. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classControlRules_a3d4b00d92729c6662473fc25707c0d9b_a3d4b00d92729c6662473fc25707c0d9b}{Control\+Rules}}.
+
+\mbox{\Hypertarget{classWwtpDischargeRule_acde020b347aff843179a318a9d231c8f_acde020b347aff843179a318a9d231c8f}\label{classWwtpDischargeRule_acde020b347aff843179a318a9d231c8f_acde020b347aff843179a318a9d231c8f}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!operator=@{operator=}}
+\index{operator=@{operator=}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} \& Wwtp\+Discharge\+Rule\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} \&}]{wwtp\+\_\+discharge\+\_\+rule }\end{DoxyParamCaption})}
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classWwtpDischargeRule_ac2f77a9fca93eef3fd26ff1d579130be_ac2f77a9fca93eef3fd26ff1d579130be}\label{classWwtpDischargeRule_ac2f77a9fca93eef3fd26ff1d579130be_ac2f77a9fca93eef3fd26ff1d579130be}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!discharge\+\_\+to\+\_\+source\+\_\+ids@{discharge\+\_\+to\+\_\+source\+\_\+ids}}
+\index{discharge\+\_\+to\+\_\+source\+\_\+ids@{discharge\+\_\+to\+\_\+source\+\_\+ids}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{discharge\+\_\+to\+\_\+source\+\_\+ids}{discharge\_to\_source\_ids}}
+{\footnotesize\ttfamily vector$<$int$>$ Wwtp\+Discharge\+Rule\+::discharge\+\_\+to\+\_\+source\+\_\+ids}
+
+\mbox{\Hypertarget{classWwtpDischargeRule_a99be200d8d3ccf1f95a8d6e84a225df1_a99be200d8d3ccf1f95a8d6e84a225df1}\label{classWwtpDischargeRule_a99be200d8d3ccf1f95a8d6e84a225df1_a99be200d8d3ccf1f95a8d6e84a225df1}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!source\+\_\+id\+\_\+to\+\_\+vector\+\_\+index@{source\+\_\+id\+\_\+to\+\_\+vector\+\_\+index}}
+\index{source\+\_\+id\+\_\+to\+\_\+vector\+\_\+index@{source\+\_\+id\+\_\+to\+\_\+vector\+\_\+index}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{source\+\_\+id\+\_\+to\+\_\+vector\+\_\+index}{source\_id\_to\_vector\_index}}
+{\footnotesize\ttfamily vector$<$int$>$ Wwtp\+Discharge\+Rule\+::source\+\_\+id\+\_\+to\+\_\+vector\+\_\+index\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classWwtpDischargeRule_a5d193e0cbc2eb23e1b86e79fb2eafad3_a5d193e0cbc2eb23e1b86e79fb2eafad3}\label{classWwtpDischargeRule_a5d193e0cbc2eb23e1b86e79fb2eafad3_a5d193e0cbc2eb23e1b86e79fb2eafad3}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!year\+\_\+series\+\_\+fraction\+\_\+discharge@{year\+\_\+series\+\_\+fraction\+\_\+discharge}}
+\index{year\+\_\+series\+\_\+fraction\+\_\+discharge@{year\+\_\+series\+\_\+fraction\+\_\+discharge}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{year\+\_\+series\+\_\+fraction\+\_\+discharge}{year\_series\_fraction\_discharge}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Wwtp\+Discharge\+Rule\+::year\+\_\+series\+\_\+fraction\+\_\+discharge}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Controls/\mbox{\hyperlink{WwtpDischargeRule_8h}{Wwtp\+Discharge\+Rule.\+h}}\item 
+src/\+Controls/\mbox{\hyperlink{WwtpDischargeRule_8cpp}{Wwtp\+Discharge\+Rule.\+cpp}}\end{DoxyCompactItemize}

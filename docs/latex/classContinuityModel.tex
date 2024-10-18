@@ -1,0 +1,261 @@
+\hypertarget{classContinuityModel}{}\section{Continuity\+Model Class Reference}
+\label{classContinuityModel}\index{Continuity\+Model@{Continuity\+Model}}
+
+
+{\ttfamily \#include $<$Continuity\+Model.\+h$>$}
+
+Inheritance diagram for Continuity\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classContinuityModel}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classContinuityModel_acadf595deb924bc08c9b702adf223365_acadf595deb924bc08c9b702adf223365}{Continuity\+Model}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&\mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}, const \mbox{\hyperlink{classGraph}{Graph}} \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, unsigned long \mbox{\hyperlink{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7_a7b6c99bf256f6c6b633ebb78282f43c7}{realization\+\_\+id}})
+\item 
+\mbox{\hyperlink{classContinuityModel_a7f46eb1f937b813226ca7fee96e5fd5c_a7f46eb1f937b813226ca7fee96e5fd5c}{Continuity\+Model}} (\mbox{\hyperlink{classContinuityModel}{Continuity\+Model}} \&continuity\+\_\+model)
+\item 
+void \mbox{\hyperlink{classContinuityModel_ad880b6cb48eb24e8b78cc5425d85313b_ad880b6cb48eb24e8b78cc5425d85313b}{continuity\+Step}} (int week, int rof\+\_\+realization=-\/1, bool apply\+\_\+demand\+\_\+buffer=false)
+\item 
+virtual \mbox{\hyperlink{classContinuityModel_a6644d91cc76b2ccc57103aa1a2ab0c03_a6644d91cc76b2ccc57103aa1a2ab0c03}{$\sim$\+Continuity\+Model}} ()
+\item 
+void \mbox{\hyperlink{classContinuityModel_a47504c599955b8193ffab3bd0f328144_a47504c599955b8193ffab3bd0f328144}{set\+Realization}} (unsigned long \mbox{\hyperlink{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7_a7b6c99bf256f6c6b633ebb78282f43c7}{realization\+\_\+id}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}})
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classContinuityModel_a609fa24135a600af177d1460e0162014_a609fa24135a600af177d1460e0162014}{get\+Online\+Downstream\+Sources}} ()
+\item 
+const vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$ $>$ \& \mbox{\hyperlink{classContinuityModel_ae0dec8510ab216accd44097e5a366bd8_ae0dec8510ab216accd44097e5a366bd8}{get\+Continuity\+\_\+water\+\_\+sources}} () const
+\item 
+const vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$ $>$ \& \mbox{\hyperlink{classContinuityModel_a922c1dea6e49d67c87a7fbb34c7bc623_a922c1dea6e49d67c87a7fbb34c7bc623}{get\+Continuity\+\_\+utilities}} () const
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned long \mbox{\hyperlink{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7_a7b6c99bf256f6c6b633ebb78282f43c7}{realization\+\_\+id}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$ $>$ \mbox{\hyperlink{classContinuityModel_a3980284a9dd08bae4e76398d1b0d6f55_a3980284a9dd08bae4e76398d1b0d6f55}{continuity\+\_\+water\+\_\+sources}}
+\item 
+vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$ $>$ \mbox{\hyperlink{classContinuityModel_adc77a0214d553a961035ce86c93cf9be_adc77a0214d553a961035ce86c93cf9be}{continuity\+\_\+utilities}}
+\item 
+vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$ $>$ \mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}
+\item 
+\mbox{\hyperlink{classGraph}{Graph}} \mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}
+\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}
+\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classContinuityModel_a6d80a7e50e022e2cdb5e912d5b3b5cf0_a6d80a7e50e022e2cdb5e912d5b3b5cf0}{water\+\_\+sources\+\_\+online\+\_\+to\+\_\+utilities}}
+\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classContinuityModel_a5cf4be0afa886eb09a3e143f54c29044_a5cf4be0afa886eb09a3e143f54c29044}{utilities\+\_\+to\+\_\+water\+\_\+sources}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classContinuityModel_af00ea62ac8e2e398591ff608c2a203ef_af00ea62ac8e2e398591ff608c2a203ef}{downstream\+\_\+sources}}
+\item 
+const vector$<$ int $>$ \mbox{\hyperlink{classContinuityModel_a6605cb6aae0370eb84d2e8bf7d6d651e_a6605cb6aae0370eb84d2e8bf7d6d651e}{sources\+\_\+topological\+\_\+order}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classContinuityModel_aadc8d46b2d0cc0a5c6b5ccdf0c5c24d4_aadc8d46b2d0cc0a5c6b5ccdf0c5c24d4}{water\+\_\+sources\+\_\+capacities}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classContinuityModel_a781786effdf14fefcb2201eb33d9e0c7_a781786effdf14fefcb2201eb33d9e0c7}{utilities\+\_\+capacities}}
+\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classContinuityModel_a1994ed4d99e0583eac5c82a4b26d9728_a1994ed4d99e0583eac5c82a4b26d9728}{demands}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}
+\item 
+const int \mbox{\hyperlink{classContinuityModel_a6df6198ebc99a099df08f4b8ce6b52b9_a6df6198ebc99a099df08f4b8ce6b52b9}{n\+\_\+utilities}}
+\item 
+const int \mbox{\hyperlink{classContinuityModel_a3c25a0d17579eb0fdad0b18319441460_a3c25a0d17579eb0fdad0b18319441460}{n\+\_\+sources}}
+\item 
+int \mbox{\hyperlink{classContinuityModel_aee4088e422a0d3723dc7895c96c9ebe3_aee4088e422a0d3723dc7895c96c9ebe3}{delta\+\_\+realization\+\_\+weeks}} \mbox{[}N\+U\+M\+B\+E\+R\+\_\+\+R\+E\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+S\+\_\+\+R\+OF+1\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classContinuityModel_acadf595deb924bc08c9b702adf223365_acadf595deb924bc08c9b702adf223365}\label{classContinuityModel_acadf595deb924bc08c9b702adf223365_acadf595deb924bc08c9b702adf223365}} 
+\index{Continuity\+Model@{Continuity\+Model}!Continuity\+Model@{Continuity\+Model}}
+\index{Continuity\+Model@{Continuity\+Model}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{Continuity\+Model()}{ContinuityModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Continuity\+Model\+::\+Continuity\+Model (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{const \mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{unsigned long}]{realization\+\_\+id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classContinuityModel_a7f46eb1f937b813226ca7fee96e5fd5c_a7f46eb1f937b813226ca7fee96e5fd5c}\label{classContinuityModel_a7f46eb1f937b813226ca7fee96e5fd5c_a7f46eb1f937b813226ca7fee96e5fd5c}} 
+\index{Continuity\+Model@{Continuity\+Model}!Continuity\+Model@{Continuity\+Model}}
+\index{Continuity\+Model@{Continuity\+Model}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{Continuity\+Model()}{ContinuityModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Continuity\+Model\+::\+Continuity\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classContinuityModel}{Continuity\+Model}} \&}]{continuity\+\_\+model }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classContinuityModel_a6644d91cc76b2ccc57103aa1a2ab0c03_a6644d91cc76b2ccc57103aa1a2ab0c03}\label{classContinuityModel_a6644d91cc76b2ccc57103aa1a2ab0c03_a6644d91cc76b2ccc57103aa1a2ab0c03}} 
+\index{Continuity\+Model@{Continuity\+Model}!````~Continuity\+Model@{$\sim$\+Continuity\+Model}}
+\index{````~Continuity\+Model@{$\sim$\+Continuity\+Model}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{$\sim$\+Continuity\+Model()}{~ContinuityModel()}}
+{\footnotesize\ttfamily Continuity\+Model\+::$\sim$\+Continuity\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Delete water sources
+
+Delete utilities
+
+Delete min env flow controls 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classContinuityModel_ad880b6cb48eb24e8b78cc5425d85313b_ad880b6cb48eb24e8b78cc5425d85313b}\label{classContinuityModel_ad880b6cb48eb24e8b78cc5425d85313b_ad880b6cb48eb24e8b78cc5425d85313b}} 
+\index{Continuity\+Model@{Continuity\+Model}!continuity\+Step@{continuity\+Step}}
+\index{continuity\+Step@{continuity\+Step}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{continuity\+Step()}{continuityStep()}}
+{\footnotesize\ttfamily void Continuity\+Model\+::continuity\+Step (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{int}]{rof\+\_\+realization = {\ttfamily -\/1},  }\item[{bool}]{apply\+\_\+demand\+\_\+buffer = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Calculates continuity for one week time step for streamflows of id\+\_\+rof years before current week. 
+\begin{DoxyParams}{Parameters}
+{\em week} & current week. \\
+\hline
+{\em rof\+\_\+realization} & rof realization id (between 0 and 49 inclusive). \\
+\hline
+\end{DoxyParams}
+Get wastewater discharges based on previous week\textquotesingle{}s demand.
+
+Split weekly demands among each reservoir for each utility. For each water source\+: (1) sums the demands of each drawing utility to come up with the total unrestricted\+\_\+demand for that week for that water source, and (2) sums the flow contributions of upstream reservoirs.
+
+Set minimum environmental flows for water sources based on their individual controls.
+
+For all water sources, performs mass balance to update the available volume. The week here is shifted back according to the rof year realization (0 to 49, inclusive) so that the right flows are gotten from source catchments for each rof year realization. If this is not an rof calculation but an actual simulation instead, rof\+\_\+realization will be equal to -\/1 (see header file) so that there is no week shift.\mbox{\Hypertarget{classContinuityModel_a922c1dea6e49d67c87a7fbb34c7bc623_a922c1dea6e49d67c87a7fbb34c7bc623}\label{classContinuityModel_a922c1dea6e49d67c87a7fbb34c7bc623_a922c1dea6e49d67c87a7fbb34c7bc623}} 
+\index{Continuity\+Model@{Continuity\+Model}!get\+Continuity\+\_\+utilities@{get\+Continuity\+\_\+utilities}}
+\index{get\+Continuity\+\_\+utilities@{get\+Continuity\+\_\+utilities}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{get\+Continuity\+\_\+utilities()}{getContinuity\_utilities()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$ $>$ \& Continuity\+Model\+::get\+Continuity\+\_\+utilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classContinuityModel_ae0dec8510ab216accd44097e5a366bd8_ae0dec8510ab216accd44097e5a366bd8}\label{classContinuityModel_ae0dec8510ab216accd44097e5a366bd8_ae0dec8510ab216accd44097e5a366bd8}} 
+\index{Continuity\+Model@{Continuity\+Model}!get\+Continuity\+\_\+water\+\_\+sources@{get\+Continuity\+\_\+water\+\_\+sources}}
+\index{get\+Continuity\+\_\+water\+\_\+sources@{get\+Continuity\+\_\+water\+\_\+sources}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{get\+Continuity\+\_\+water\+\_\+sources()}{getContinuity\_water\_sources()}}
+{\footnotesize\ttfamily const vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$ $>$ \& Continuity\+Model\+::get\+Continuity\+\_\+water\+\_\+sources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classContinuityModel_a609fa24135a600af177d1460e0162014_a609fa24135a600af177d1460e0162014}\label{classContinuityModel_a609fa24135a600af177d1460e0162014_a609fa24135a600af177d1460e0162014}} 
+\index{Continuity\+Model@{Continuity\+Model}!get\+Online\+Downstream\+Sources@{get\+Online\+Downstream\+Sources}}
+\index{get\+Online\+Downstream\+Sources@{get\+Online\+Downstream\+Sources}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{get\+Online\+Downstream\+Sources()}{getOnlineDownstreamSources()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Continuity\+Model\+::get\+Online\+Downstream\+Sources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classContinuityModel_a47504c599955b8193ffab3bd0f328144_a47504c599955b8193ffab3bd0f328144}\label{classContinuityModel_a47504c599955b8193ffab3bd0f328144_a47504c599955b8193ffab3bd0f328144}} 
+\index{Continuity\+Model@{Continuity\+Model}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily void Continuity\+Model\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{realization\+\_\+id,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm }\end{DoxyParamCaption})}
+
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classContinuityModel_adc77a0214d553a961035ce86c93cf9be_adc77a0214d553a961035ce86c93cf9be}\label{classContinuityModel_adc77a0214d553a961035ce86c93cf9be_adc77a0214d553a961035ce86c93cf9be}} 
+\index{Continuity\+Model@{Continuity\+Model}!continuity\+\_\+utilities@{continuity\+\_\+utilities}}
+\index{continuity\+\_\+utilities@{continuity\+\_\+utilities}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{continuity\+\_\+utilities}{continuity\_utilities}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ Continuity\+Model\+::continuity\+\_\+utilities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_a3980284a9dd08bae4e76398d1b0d6f55_a3980284a9dd08bae4e76398d1b0d6f55}\label{classContinuityModel_a3980284a9dd08bae4e76398d1b0d6f55_a3980284a9dd08bae4e76398d1b0d6f55}} 
+\index{Continuity\+Model@{Continuity\+Model}!continuity\+\_\+water\+\_\+sources@{continuity\+\_\+water\+\_\+sources}}
+\index{continuity\+\_\+water\+\_\+sources@{continuity\+\_\+water\+\_\+sources}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{continuity\+\_\+water\+\_\+sources}{continuity\_water\_sources}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ Continuity\+Model\+::continuity\+\_\+water\+\_\+sources\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_aee4088e422a0d3723dc7895c96c9ebe3_aee4088e422a0d3723dc7895c96c9ebe3}\label{classContinuityModel_aee4088e422a0d3723dc7895c96c9ebe3_aee4088e422a0d3723dc7895c96c9ebe3}} 
+\index{Continuity\+Model@{Continuity\+Model}!delta\+\_\+realization\+\_\+weeks@{delta\+\_\+realization\+\_\+weeks}}
+\index{delta\+\_\+realization\+\_\+weeks@{delta\+\_\+realization\+\_\+weeks}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{delta\+\_\+realization\+\_\+weeks}{delta\_realization\_weeks}}
+{\footnotesize\ttfamily int Continuity\+Model\+::delta\+\_\+realization\+\_\+weeks\mbox{[}N\+U\+M\+B\+E\+R\+\_\+\+R\+E\+A\+L\+I\+Z\+A\+T\+I\+O\+N\+S\+\_\+\+R\+OF+1\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_a1994ed4d99e0583eac5c82a4b26d9728_a1994ed4d99e0583eac5c82a4b26d9728}\label{classContinuityModel_a1994ed4d99e0583eac5c82a4b26d9728_a1994ed4d99e0583eac5c82a4b26d9728}} 
+\index{Continuity\+Model@{Continuity\+Model}!demands@{demands}}
+\index{demands@{demands}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{demands}{demands}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Continuity\+Model\+::demands\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_af00ea62ac8e2e398591ff608c2a203ef_af00ea62ac8e2e398591ff608c2a203ef}\label{classContinuityModel_af00ea62ac8e2e398591ff608c2a203ef_af00ea62ac8e2e398591ff608c2a203ef}} 
+\index{Continuity\+Model@{Continuity\+Model}!downstream\+\_\+sources@{downstream\+\_\+sources}}
+\index{downstream\+\_\+sources@{downstream\+\_\+sources}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{downstream\+\_\+sources}{downstream\_sources}}
+{\footnotesize\ttfamily vector$<$int$>$ Continuity\+Model\+::downstream\+\_\+sources\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_afc991e5c0d144020e49a97751a04b302_afc991e5c0d144020e49a97751a04b302}\label{classContinuityModel_afc991e5c0d144020e49a97751a04b302_afc991e5c0d144020e49a97751a04b302}} 
+\index{Continuity\+Model@{Continuity\+Model}!min\+\_\+env\+\_\+flow\+\_\+controls@{min\+\_\+env\+\_\+flow\+\_\+controls}}
+\index{min\+\_\+env\+\_\+flow\+\_\+controls@{min\+\_\+env\+\_\+flow\+\_\+controls}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{min\+\_\+env\+\_\+flow\+\_\+controls}{min\_env\_flow\_controls}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ Continuity\+Model\+::min\+\_\+env\+\_\+flow\+\_\+controls\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_a3c25a0d17579eb0fdad0b18319441460_a3c25a0d17579eb0fdad0b18319441460}\label{classContinuityModel_a3c25a0d17579eb0fdad0b18319441460_a3c25a0d17579eb0fdad0b18319441460}} 
+\index{Continuity\+Model@{Continuity\+Model}!n\+\_\+sources@{n\+\_\+sources}}
+\index{n\+\_\+sources@{n\+\_\+sources}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{n\+\_\+sources}{n\_sources}}
+{\footnotesize\ttfamily const int Continuity\+Model\+::n\+\_\+sources\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_a6df6198ebc99a099df08f4b8ce6b52b9_a6df6198ebc99a099df08f4b8ce6b52b9}\label{classContinuityModel_a6df6198ebc99a099df08f4b8ce6b52b9_a6df6198ebc99a099df08f4b8ce6b52b9}} 
+\index{Continuity\+Model@{Continuity\+Model}!n\+\_\+utilities@{n\+\_\+utilities}}
+\index{n\+\_\+utilities@{n\+\_\+utilities}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{n\+\_\+utilities}{n\_utilities}}
+{\footnotesize\ttfamily const int Continuity\+Model\+::n\+\_\+utilities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7_a7b6c99bf256f6c6b633ebb78282f43c7}\label{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7_a7b6c99bf256f6c6b633ebb78282f43c7}} 
+\index{Continuity\+Model@{Continuity\+Model}!realization\+\_\+id@{realization\+\_\+id}}
+\index{realization\+\_\+id@{realization\+\_\+id}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{realization\+\_\+id}{realization\_id}}
+{\footnotesize\ttfamily const unsigned long Continuity\+Model\+::realization\+\_\+id}
+
+\mbox{\Hypertarget{classContinuityModel_a6605cb6aae0370eb84d2e8bf7d6d651e_a6605cb6aae0370eb84d2e8bf7d6d651e}\label{classContinuityModel_a6605cb6aae0370eb84d2e8bf7d6d651e_a6605cb6aae0370eb84d2e8bf7d6d651e}} 
+\index{Continuity\+Model@{Continuity\+Model}!sources\+\_\+topological\+\_\+order@{sources\+\_\+topological\+\_\+order}}
+\index{sources\+\_\+topological\+\_\+order@{sources\+\_\+topological\+\_\+order}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{sources\+\_\+topological\+\_\+order}{sources\_topological\_order}}
+{\footnotesize\ttfamily const vector$<$int$>$ Continuity\+Model\+::sources\+\_\+topological\+\_\+order\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_a781786effdf14fefcb2201eb33d9e0c7_a781786effdf14fefcb2201eb33d9e0c7}\label{classContinuityModel_a781786effdf14fefcb2201eb33d9e0c7_a781786effdf14fefcb2201eb33d9e0c7}} 
+\index{Continuity\+Model@{Continuity\+Model}!utilities\+\_\+capacities@{utilities\+\_\+capacities}}
+\index{utilities\+\_\+capacities@{utilities\+\_\+capacities}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{utilities\+\_\+capacities}{utilities\_capacities}}
+{\footnotesize\ttfamily vector$<$double$>$ Continuity\+Model\+::utilities\+\_\+capacities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896_aa4a00b76da6295d2faa11e3dcaea1896}\label{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896_aa4a00b76da6295d2faa11e3dcaea1896}} 
+\index{Continuity\+Model@{Continuity\+Model}!utilities\+\_\+rdm@{utilities\+\_\+rdm}}
+\index{utilities\+\_\+rdm@{utilities\+\_\+rdm}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{utilities\+\_\+rdm}{utilities\_rdm}}
+{\footnotesize\ttfamily vector$<$double$>$ Continuity\+Model\+::utilities\+\_\+rdm\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_a5cf4be0afa886eb09a3e143f54c29044_a5cf4be0afa886eb09a3e143f54c29044}\label{classContinuityModel_a5cf4be0afa886eb09a3e143f54c29044_a5cf4be0afa886eb09a3e143f54c29044}} 
+\index{Continuity\+Model@{Continuity\+Model}!utilities\+\_\+to\+\_\+water\+\_\+sources@{utilities\+\_\+to\+\_\+water\+\_\+sources}}
+\index{utilities\+\_\+to\+\_\+water\+\_\+sources@{utilities\+\_\+to\+\_\+water\+\_\+sources}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{utilities\+\_\+to\+\_\+water\+\_\+sources}{utilities\_to\_water\_sources}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ Continuity\+Model\+::utilities\+\_\+to\+\_\+water\+\_\+sources\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_aadc8d46b2d0cc0a5c6b5ccdf0c5c24d4_aadc8d46b2d0cc0a5c6b5ccdf0c5c24d4}\label{classContinuityModel_aadc8d46b2d0cc0a5c6b5ccdf0c5c24d4_aadc8d46b2d0cc0a5c6b5ccdf0c5c24d4}} 
+\index{Continuity\+Model@{Continuity\+Model}!water\+\_\+sources\+\_\+capacities@{water\+\_\+sources\+\_\+capacities}}
+\index{water\+\_\+sources\+\_\+capacities@{water\+\_\+sources\+\_\+capacities}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{water\+\_\+sources\+\_\+capacities}{water\_sources\_capacities}}
+{\footnotesize\ttfamily vector$<$double$>$ Continuity\+Model\+::water\+\_\+sources\+\_\+capacities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_a563401588c6fa622f03393909a3522db_a563401588c6fa622f03393909a3522db}\label{classContinuityModel_a563401588c6fa622f03393909a3522db_a563401588c6fa622f03393909a3522db}} 
+\index{Continuity\+Model@{Continuity\+Model}!water\+\_\+sources\+\_\+graph@{water\+\_\+sources\+\_\+graph}}
+\index{water\+\_\+sources\+\_\+graph@{water\+\_\+sources\+\_\+graph}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{water\+\_\+sources\+\_\+graph}{water\_sources\_graph}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGraph}{Graph}} Continuity\+Model\+::water\+\_\+sources\+\_\+graph\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_a6d80a7e50e022e2cdb5e912d5b3b5cf0_a6d80a7e50e022e2cdb5e912d5b3b5cf0}\label{classContinuityModel_a6d80a7e50e022e2cdb5e912d5b3b5cf0_a6d80a7e50e022e2cdb5e912d5b3b5cf0}} 
+\index{Continuity\+Model@{Continuity\+Model}!water\+\_\+sources\+\_\+online\+\_\+to\+\_\+utilities@{water\+\_\+sources\+\_\+online\+\_\+to\+\_\+utilities}}
+\index{water\+\_\+sources\+\_\+online\+\_\+to\+\_\+utilities@{water\+\_\+sources\+\_\+online\+\_\+to\+\_\+utilities}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{water\+\_\+sources\+\_\+online\+\_\+to\+\_\+utilities}{water\_sources\_online\_to\_utilities}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ Continuity\+Model\+::water\+\_\+sources\+\_\+online\+\_\+to\+\_\+utilities\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa_ab7b8fa93a6f56b328e425e1ead6cfefa}\label{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa_ab7b8fa93a6f56b328e425e1ead6cfefa}} 
+\index{Continuity\+Model@{Continuity\+Model}!water\+\_\+sources\+\_\+rdm@{water\+\_\+sources\+\_\+rdm}}
+\index{water\+\_\+sources\+\_\+rdm@{water\+\_\+sources\+\_\+rdm}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{water\+\_\+sources\+\_\+rdm}{water\_sources\_rdm}}
+{\footnotesize\ttfamily vector$<$double$>$ Continuity\+Model\+::water\+\_\+sources\+\_\+rdm\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843_ae8516bcbbf52650190277fc8b06c1843}\label{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843_ae8516bcbbf52650190277fc8b06c1843}} 
+\index{Continuity\+Model@{Continuity\+Model}!water\+\_\+sources\+\_\+to\+\_\+utilities@{water\+\_\+sources\+\_\+to\+\_\+utilities}}
+\index{water\+\_\+sources\+\_\+to\+\_\+utilities@{water\+\_\+sources\+\_\+to\+\_\+utilities}!Continuity\+Model@{Continuity\+Model}}
+\subsubsection{\texorpdfstring{water\+\_\+sources\+\_\+to\+\_\+utilities}{water\_sources\_to\_utilities}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ Continuity\+Model\+::water\+\_\+sources\+\_\+to\+\_\+utilities\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Continuity\+Models/\+Base/\mbox{\hyperlink{ContinuityModel_8h}{Continuity\+Model.\+h}}\item 
+src/\+Continuity\+Models/\+Base/\mbox{\hyperlink{ContinuityModel_8cpp}{Continuity\+Model.\+cpp}}\end{DoxyCompactItemize}

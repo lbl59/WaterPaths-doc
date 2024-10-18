@@ -1,0 +1,209 @@
+\hypertarget{classGraph}{}\section{Graph Class Reference}
+\label{classGraph}\index{Graph@{Graph}}
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGraph_af3ff6b295df8bf3bee0bafd7c7d56915_af3ff6b295df8bf3bee0bafd7c7d56915}{Graph}} (int \mbox{\hyperlink{classGraph_a2b722f7cfa7a21e4cb5fae488b3d4dcc_a2b722f7cfa7a21e4cb5fae488b3d4dcc}{V}})
+\item 
+\mbox{\hyperlink{classGraph_ae4c72b8ac4d693c49800a4c7e273654f_ae4c72b8ac4d693c49800a4c7e273654f}{Graph}} ()
+\item 
+const vector$<$ int $>$ \mbox{\hyperlink{classGraph_a4d531e9313e31e92b9e816bdb5a9d14f_a4d531e9313e31e92b9e816bdb5a9d14f}{get\+Topological\+\_\+order}} () const
+\item 
+void \mbox{\hyperlink{classGraph_ad8c10df34357b2cd865c81e0c4f0bd8c_ad8c10df34357b2cd865c81e0c4f0bd8c}{add\+Edge}} (int u, int v)
+\item 
+const vector$<$ vector$<$ int $>$ $>$ \& \mbox{\hyperlink{classGraph_a0d4d0149e7d70bb9e6b7a5cae22062a3_a0d4d0149e7d70bb9e6b7a5cae22062a3}{get\+Upstream\+\_\+sources}} () const
+\item 
+const vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classGraph_aa6e27da7010986d54cd2ec79dbbf4abe_aa6e27da7010986d54cd2ec79dbbf4abe}{get\+Continuity\+Matrix}} () const
+\item 
+virtual \mbox{\hyperlink{classGraph_a902c5b3eacb66d60752525ab23297a95_a902c5b3eacb66d60752525ab23297a95}{$\sim$\+Graph}} ()
+\item 
+const vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classGraph_a9bbef60829d62f08e802dd1fbda0e4b7_a9bbef60829d62f08e802dd1fbda0e4b7}{get\+Down\+Sources}} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGraph_a6f175234dc3c87150a53eab5c4e586ef_a6f175234dc3c87150a53eab5c4e586ef}{add\+Edge\+To\+Edges\+List}} (int u, int v)
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classGraph_a8f154c485f989828d6fb515a28190ac2_a8f154c485f989828d6fb515a28190ac2}{topological\+Sort}} ()
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classGraph_a17fc2fd799b56ac496aa57036f3696d7_a17fc2fd799b56ac496aa57036f3696d7}{find\+Upstream\+Sources}} (int id) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classGraph_a2b722f7cfa7a21e4cb5fae488b3d4dcc_a2b722f7cfa7a21e4cb5fae488b3d4dcc}{V}}
+\item 
+int \mbox{\hyperlink{classGraph_a9a7e34b482b020fa136fc8e0fa2d0030_a9a7e34b482b020fa136fc8e0fa2d0030}{n\+\_\+edges}} = 0
+\item 
+list$<$ int $>$ $\ast$ \mbox{\hyperlink{classGraph_a04ab9c17ad31aa036def8db0f88b035b_a04ab9c17ad31aa036def8db0f88b035b}{adj}}
+\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classGraph_a2b9dc8c44ac87d67b061af1bf8dab2fa_a2b9dc8c44ac87d67b061af1bf8dab2fa}{upstream\+\_\+sources}}
+\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classGraph_a1c89a48555f165ef3e80b85ca5655bea_a1c89a48555f165ef3e80b85ca5655bea}{downstream\+\_\+sources}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classGraph_ad18af6207537a43b3cf53b56acaf92fd_ad18af6207537a43b3cf53b56acaf92fd}{topological\+\_\+order}}
+\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classGraph_af903899bcb412f62ec4aa295eef9f45c_af903899bcb412f62ec4aa295eef9f45c}{continuity\+\_\+matrix\+\_\+transpose}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGraph_af3ff6b295df8bf3bee0bafd7c7d56915_af3ff6b295df8bf3bee0bafd7c7d56915}\label{classGraph_af3ff6b295df8bf3bee0bafd7c7d56915_af3ff6b295df8bf3bee0bafd7c7d56915}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{Graph()}{Graph()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}\item[{int}]{V }\end{DoxyParamCaption})}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em V} & Number of water sources (vertices. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraph_ae4c72b8ac4d693c49800a4c7e273654f_ae4c72b8ac4d693c49800a4c7e273654f}\label{classGraph_ae4c72b8ac4d693c49800a4c7e273654f_ae4c72b8ac4d693c49800a4c7e273654f}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{Graph()}{Graph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classGraph_a902c5b3eacb66d60752525ab23297a95_a902c5b3eacb66d60752525ab23297a95}\label{classGraph_a902c5b3eacb66d60752525ab23297a95_a902c5b3eacb66d60752525ab23297a95}} 
+\index{Graph@{Graph}!````~Graph@{$\sim$\+Graph}}
+\index{````~Graph@{$\sim$\+Graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{$\sim$\+Graph()}{~Graph()}}
+{\footnotesize\ttfamily Graph\+::$\sim$\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGraph_ad8c10df34357b2cd865c81e0c4f0bd8c_ad8c10df34357b2cd865c81e0c4f0bd8c}\label{classGraph_ad8c10df34357b2cd865c81e0c4f0bd8c_ad8c10df34357b2cd865c81e0c4f0bd8c}} 
+\index{Graph@{Graph}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{add\+Edge()}{addEdge()}}
+{\footnotesize\ttfamily void Graph\+::add\+Edge (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{int}]{v }\end{DoxyParamCaption})}
+
+Add connection (stream) between water sources. 
+\begin{DoxyParams}{Parameters}
+{\em u} & Upstream source. \\
+\hline
+{\em v} & Downstream source. \\
+\hline
+\end{DoxyParams}
+Sort graph based on the edges added to it so far.
+
+Figure out sources upstream of each vertex added so far. \mbox{\Hypertarget{classGraph_a6f175234dc3c87150a53eab5c4e586ef_a6f175234dc3c87150a53eab5c4e586ef}\label{classGraph_a6f175234dc3c87150a53eab5c4e586ef_a6f175234dc3c87150a53eab5c4e586ef}} 
+\index{Graph@{Graph}!add\+Edge\+To\+Edges\+List@{add\+Edge\+To\+Edges\+List}}
+\index{add\+Edge\+To\+Edges\+List@{add\+Edge\+To\+Edges\+List}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{add\+Edge\+To\+Edges\+List()}{addEdgeToEdgesList()}}
+{\footnotesize\ttfamily void Graph\+::add\+Edge\+To\+Edges\+List (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{int}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add connection (stream) between water sources. 
+\begin{DoxyParams}{Parameters}
+{\em u} & Upstream source. \\
+\hline
+{\em v} & Downstream source. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraph_a17fc2fd799b56ac496aa57036f3696d7_a17fc2fd799b56ac496aa57036f3696d7}\label{classGraph_a17fc2fd799b56ac496aa57036f3696d7_a17fc2fd799b56ac496aa57036f3696d7}} 
+\index{Graph@{Graph}!find\+Upstream\+Sources@{find\+Upstream\+Sources}}
+\index{find\+Upstream\+Sources@{find\+Upstream\+Sources}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{find\+Upstream\+Sources()}{findUpstreamSources()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Graph\+::find\+Upstream\+Sources (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get all sources upstream water source $<$id$>$. 
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector with id\textquotesingle{}s of upstream sources. 
+\end{DoxyReturn}
+If find function does not reach the end of the list while searching for ID is because element ID exists in list. \mbox{\Hypertarget{classGraph_aa6e27da7010986d54cd2ec79dbbf4abe_aa6e27da7010986d54cd2ec79dbbf4abe}\label{classGraph_aa6e27da7010986d54cd2ec79dbbf4abe_aa6e27da7010986d54cd2ec79dbbf4abe}} 
+\index{Graph@{Graph}!get\+Continuity\+Matrix@{get\+Continuity\+Matrix}}
+\index{get\+Continuity\+Matrix@{get\+Continuity\+Matrix}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+Continuity\+Matrix()}{getContinuityMatrix()}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ double $>$ $>$ Graph\+::get\+Continuity\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a matrix in which rows correspond to vertexes. The first set of columns correspond to pipes and the second set to flows in and out of vertexes. \begin{DoxyReturn}{Returns}
+Continuity \mbox{\hyperlink{classMatrix}{Matrix}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a9bbef60829d62f08e802dd1fbda0e4b7_a9bbef60829d62f08e802dd1fbda0e4b7}\label{classGraph_a9bbef60829d62f08e802dd1fbda0e4b7_a9bbef60829d62f08e802dd1fbda0e4b7}} 
+\index{Graph@{Graph}!get\+Down\+Sources@{get\+Down\+Sources}}
+\index{get\+Down\+Sources@{get\+Down\+Sources}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+Down\+Sources()}{getDownSources()}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ Graph\+::get\+Down\+Sources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classGraph_a4d531e9313e31e92b9e816bdb5a9d14f_a4d531e9313e31e92b9e816bdb5a9d14f}\label{classGraph_a4d531e9313e31e92b9e816bdb5a9d14f_a4d531e9313e31e92b9e816bdb5a9d14f}} 
+\index{Graph@{Graph}!get\+Topological\+\_\+order@{get\+Topological\+\_\+order}}
+\index{get\+Topological\+\_\+order@{get\+Topological\+\_\+order}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+Topological\+\_\+order()}{getTopological\_order()}}
+{\footnotesize\ttfamily const vector$<$ int $>$ Graph\+::get\+Topological\+\_\+order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classGraph_a0d4d0149e7d70bb9e6b7a5cae22062a3_a0d4d0149e7d70bb9e6b7a5cae22062a3}\label{classGraph_a0d4d0149e7d70bb9e6b7a5cae22062a3_a0d4d0149e7d70bb9e6b7a5cae22062a3}} 
+\index{Graph@{Graph}!get\+Upstream\+\_\+sources@{get\+Upstream\+\_\+sources}}
+\index{get\+Upstream\+\_\+sources@{get\+Upstream\+\_\+sources}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+Upstream\+\_\+sources()}{getUpstream\_sources()}}
+{\footnotesize\ttfamily const vector$<$ vector$<$ int $>$ $>$ \& Graph\+::get\+Upstream\+\_\+sources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classGraph_a8f154c485f989828d6fb515a28190ac2_a8f154c485f989828d6fb515a28190ac2}\label{classGraph_a8f154c485f989828d6fb515a28190ac2_a8f154c485f989828d6fb515a28190ac2}} 
+\index{Graph@{Graph}!topological\+Sort@{topological\+Sort}}
+\index{topological\+Sort@{topological\+Sort}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{topological\+Sort()}{topologicalSort()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Graph\+::topological\+Sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sort sources from upstream to downstream. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classGraph_a04ab9c17ad31aa036def8db0f88b035b_a04ab9c17ad31aa036def8db0f88b035b}\label{classGraph_a04ab9c17ad31aa036def8db0f88b035b_a04ab9c17ad31aa036def8db0f88b035b}} 
+\index{Graph@{Graph}!adj@{adj}}
+\index{adj@{adj}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{adj}{adj}}
+{\footnotesize\ttfamily list$<$int$>$$\ast$ Graph\+::adj\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGraph_af903899bcb412f62ec4aa295eef9f45c_af903899bcb412f62ec4aa295eef9f45c}\label{classGraph_af903899bcb412f62ec4aa295eef9f45c_af903899bcb412f62ec4aa295eef9f45c}} 
+\index{Graph@{Graph}!continuity\+\_\+matrix\+\_\+transpose@{continuity\+\_\+matrix\+\_\+transpose}}
+\index{continuity\+\_\+matrix\+\_\+transpose@{continuity\+\_\+matrix\+\_\+transpose}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{continuity\+\_\+matrix\+\_\+transpose}{continuity\_matrix\_transpose}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Graph\+::continuity\+\_\+matrix\+\_\+transpose\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGraph_a1c89a48555f165ef3e80b85ca5655bea_a1c89a48555f165ef3e80b85ca5655bea}\label{classGraph_a1c89a48555f165ef3e80b85ca5655bea_a1c89a48555f165ef3e80b85ca5655bea}} 
+\index{Graph@{Graph}!downstream\+\_\+sources@{downstream\+\_\+sources}}
+\index{downstream\+\_\+sources@{downstream\+\_\+sources}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{downstream\+\_\+sources}{downstream\_sources}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ Graph\+::downstream\+\_\+sources\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGraph_a9a7e34b482b020fa136fc8e0fa2d0030_a9a7e34b482b020fa136fc8e0fa2d0030}\label{classGraph_a9a7e34b482b020fa136fc8e0fa2d0030_a9a7e34b482b020fa136fc8e0fa2d0030}} 
+\index{Graph@{Graph}!n\+\_\+edges@{n\+\_\+edges}}
+\index{n\+\_\+edges@{n\+\_\+edges}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{n\+\_\+edges}{n\_edges}}
+{\footnotesize\ttfamily int Graph\+::n\+\_\+edges = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGraph_ad18af6207537a43b3cf53b56acaf92fd_ad18af6207537a43b3cf53b56acaf92fd}\label{classGraph_ad18af6207537a43b3cf53b56acaf92fd_ad18af6207537a43b3cf53b56acaf92fd}} 
+\index{Graph@{Graph}!topological\+\_\+order@{topological\+\_\+order}}
+\index{topological\+\_\+order@{topological\+\_\+order}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{topological\+\_\+order}{topological\_order}}
+{\footnotesize\ttfamily vector$<$int$>$ Graph\+::topological\+\_\+order\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGraph_a2b9dc8c44ac87d67b061af1bf8dab2fa_a2b9dc8c44ac87d67b061af1bf8dab2fa}\label{classGraph_a2b9dc8c44ac87d67b061af1bf8dab2fa_a2b9dc8c44ac87d67b061af1bf8dab2fa}} 
+\index{Graph@{Graph}!upstream\+\_\+sources@{upstream\+\_\+sources}}
+\index{upstream\+\_\+sources@{upstream\+\_\+sources}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{upstream\+\_\+sources}{upstream\_sources}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ Graph\+::upstream\+\_\+sources\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classGraph_a2b722f7cfa7a21e4cb5fae488b3d4dcc_a2b722f7cfa7a21e4cb5fae488b3d4dcc}\label{classGraph_a2b722f7cfa7a21e4cb5fae488b3d4dcc_a2b722f7cfa7a21e4cb5fae488b3d4dcc}} 
+\index{Graph@{Graph}!V@{V}}
+\index{V@{V}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily int Graph\+::V\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Utils/\+Graph/\mbox{\hyperlink{Graph_8h}{Graph.\+h}}\item 
+src/\+Utils/\+Graph/\mbox{\hyperlink{Graph_8cpp}{Graph.\+cpp}}\end{DoxyCompactItemize}

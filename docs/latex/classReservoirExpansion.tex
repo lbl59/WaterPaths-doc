@@ -1,0 +1,91 @@
+\hypertarget{classReservoirExpansion}{}\section{Reservoir\+Expansion Class Reference}
+\label{classReservoirExpansion}\index{Reservoir\+Expansion@{Reservoir\+Expansion}}
+
+
+{\ttfamily \#include $<$Reservoir\+Expansion.\+h$>$}
+
+Inheritance diagram for Reservoir\+Expansion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classReservoirExpansion}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classReservoirExpansion_aa742cae4276e97847681dac4f828b5ae_aa742cae4276e97847681dac4f828b5ae}{Reservoir\+Expansion}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const unsigned int \mbox{\hyperlink{classReservoirExpansion_a56527196174404cfed20b863df2ab0ba_a56527196174404cfed20b863df2ab0ba}{parent\+\_\+reservoir\+\_\+\+ID}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond)
+\item 
+\mbox{\hyperlink{classReservoirExpansion_abc10a6725f7fb85b7478fb6b0b79bd1e_abc10a6725f7fb85b7478fb6b0b79bd1e}{Reservoir\+Expansion}} (const \mbox{\hyperlink{classReservoirExpansion}{Reservoir\+Expansion}} \&reservoir\+\_\+expansion)
+\item 
+\mbox{\hyperlink{classReservoirExpansion}{Reservoir\+Expansion}} \& \mbox{\hyperlink{classReservoirExpansion_af197058813986b16c34ae206c04e14bf_af197058813986b16c34ae206c04e14bf}{operator=}} (const \mbox{\hyperlink{classReservoirExpansion}{Reservoir\+Expansion}} \&reservoir\+\_\+expansion)
+\item 
+void \mbox{\hyperlink{classReservoirExpansion_a18614050354dced5cc2747eeda0c2397_a18614050354dced5cc2747eeda0c2397}{apply\+Continuity}} (int week, double \mbox{\hyperlink{classWaterSource_a7a69b2e9b6030f1035e6cf44d2918ee5_a7a69b2e9b6030f1035e6cf44d2918ee5}{upstream\+\_\+source\+\_\+inflow}}, double wastewater\+\_\+discharge, vector$<$ double $>$ \&demand\+\_\+outflow) override
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned int \mbox{\hyperlink{classReservoirExpansion_a56527196174404cfed20b863df2ab0ba_a56527196174404cfed20b863df2ab0ba}{parent\+\_\+reservoir\+\_\+\+ID}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classReservoirExpansion_aa742cae4276e97847681dac4f828b5ae_aa742cae4276e97847681dac4f828b5ae}\label{classReservoirExpansion_aa742cae4276e97847681dac4f828b5ae_aa742cae4276e97847681dac4f828b5ae}} 
+\index{Reservoir\+Expansion@{Reservoir\+Expansion}!Reservoir\+Expansion@{Reservoir\+Expansion}}
+\index{Reservoir\+Expansion@{Reservoir\+Expansion}!Reservoir\+Expansion@{Reservoir\+Expansion}}
+\subsubsection{\texorpdfstring{Reservoir\+Expansion()}{ReservoirExpansion()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Reservoir\+Expansion\+::\+Reservoir\+Expansion (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const unsigned int}]{parent\+\_\+reservoir\+\_\+\+ID,  }\item[{const double}]{capacity,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classReservoirExpansion_abc10a6725f7fb85b7478fb6b0b79bd1e_abc10a6725f7fb85b7478fb6b0b79bd1e}\label{classReservoirExpansion_abc10a6725f7fb85b7478fb6b0b79bd1e_abc10a6725f7fb85b7478fb6b0b79bd1e}} 
+\index{Reservoir\+Expansion@{Reservoir\+Expansion}!Reservoir\+Expansion@{Reservoir\+Expansion}}
+\index{Reservoir\+Expansion@{Reservoir\+Expansion}!Reservoir\+Expansion@{Reservoir\+Expansion}}
+\subsubsection{\texorpdfstring{Reservoir\+Expansion()}{ReservoirExpansion()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Reservoir\+Expansion\+::\+Reservoir\+Expansion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classReservoirExpansion}{Reservoir\+Expansion}} \&}]{reservoir\+\_\+expansion }\end{DoxyParamCaption})}
+
+Copy constructor. 
+\begin{DoxyParams}{Parameters}
+{\em reservoir} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classReservoirExpansion_a18614050354dced5cc2747eeda0c2397_a18614050354dced5cc2747eeda0c2397}\label{classReservoirExpansion_a18614050354dced5cc2747eeda0c2397_a18614050354dced5cc2747eeda0c2397}} 
+\index{Reservoir\+Expansion@{Reservoir\+Expansion}!apply\+Continuity@{apply\+Continuity}}
+\index{apply\+Continuity@{apply\+Continuity}!Reservoir\+Expansion@{Reservoir\+Expansion}}
+\subsubsection{\texorpdfstring{apply\+Continuity()}{applyContinuity()}}
+{\footnotesize\ttfamily void Reservoir\+Expansion\+::apply\+Continuity (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{double}]{upstream\+\_\+source\+\_\+inflow,  }\item[{double}]{wastewater\+\_\+discharge,  }\item[{vector$<$ double $>$ \&}]{demand\+\_\+outflow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classWaterSource_ac070445379fe706f65b977dade4f3fbc_ac070445379fe706f65b977dade4f3fbc}{Water\+Source}}.
+
+\mbox{\Hypertarget{classReservoirExpansion_af197058813986b16c34ae206c04e14bf_af197058813986b16c34ae206c04e14bf}\label{classReservoirExpansion_af197058813986b16c34ae206c04e14bf_af197058813986b16c34ae206c04e14bf}} 
+\index{Reservoir\+Expansion@{Reservoir\+Expansion}!operator=@{operator=}}
+\index{operator=@{operator=}!Reservoir\+Expansion@{Reservoir\+Expansion}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classReservoirExpansion}{Reservoir\+Expansion}} \& Reservoir\+Expansion\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classReservoirExpansion}{Reservoir\+Expansion}} \&}]{reservoir\+\_\+expansion }\end{DoxyParamCaption})}
+
+Copy assignment operator 
+\begin{DoxyParams}{Parameters}
+{\em reservoir} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{classReservoirExpansion_a56527196174404cfed20b863df2ab0ba_a56527196174404cfed20b863df2ab0ba}\label{classReservoirExpansion_a56527196174404cfed20b863df2ab0ba_a56527196174404cfed20b863df2ab0ba}} 
+\index{Reservoir\+Expansion@{Reservoir\+Expansion}!parent\+\_\+reservoir\+\_\+\+ID@{parent\+\_\+reservoir\+\_\+\+ID}}
+\index{parent\+\_\+reservoir\+\_\+\+ID@{parent\+\_\+reservoir\+\_\+\+ID}!Reservoir\+Expansion@{Reservoir\+Expansion}}
+\subsubsection{\texorpdfstring{parent\+\_\+reservoir\+\_\+\+ID}{parent\_reservoir\_ID}}
+{\footnotesize\ttfamily const unsigned int Reservoir\+Expansion\+::parent\+\_\+reservoir\+\_\+\+ID}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+System\+Components/\+Water\+Sources/\mbox{\hyperlink{ReservoirExpansion_8h}{Reservoir\+Expansion.\+h}}\item 
+src/\+System\+Components/\+Water\+Sources/\mbox{\hyperlink{ReservoirExpansion_8cpp}{Reservoir\+Expansion.\+cpp}}\end{DoxyCompactItemize}
