@@ -13,31 +13,23 @@ Intake::Intake(
         const double max_treatment_capacity)
         : WaterSource(name, id, catchments, NONE, vector<int>(), max_treatment_capacity, INTAKE) {}
 
-Intake::Intake(const char *name, const int id, const vector<Catchment *> &catchments,
+Intake::Intake(const char *name, const int id, const vector<Catchment *> &catchments, const double raw_water_capacity,
+               const double max_treatment_capacity)
+        : WaterSource(name, id, catchments, raw_water_capacity, vector<int>(), max_treatment_capacity, INTAKE) {}
+
+Intake::Intake(const char *name, const int id, const vector<Catchment *> &catchments, vector<int> connected_sources,
                const double raw_water_main_capacity, const vector<double> construction_time_range,
                double permitting_period, Bond &bond) :
-        WaterSource(name, id, catchments, NONE, raw_water_main_capacity, vector<int>(), INTAKE, construction_time_range,
+        WaterSource(name, id, catchments, NONE, raw_water_main_capacity, connected_sources, INTAKE, construction_time_range,
                     permitting_period, bond) {}
 
-/**
- *
- * @param intake
- */
 Intake::Intake(const Intake &intake) : WaterSource(intake) {}
 
-/**
- *
- * @param intake
- * @return
- */
 Intake &Intake::operator=(const Intake &intake) {
     WaterSource::operator=(intake);
     return *this;
 }
 
-/**
- * Destructor.
- */
 Intake::~Intake() {
     catchments.clear();
 }
@@ -55,7 +47,8 @@ Intake::~Intake() {
  */
 void Intake::applyContinuity(int week, double upstream_source_inflow,
                              double wastewater_inflow, vector<double> &demand) {
-
+    
+    // Calculate total upstream inflow by adding upstream source inflow and wastewater inflow.
     double total_upstream_inflow = upstream_source_inflow +
                                    wastewater_inflow;
 
@@ -64,25 +57,26 @@ void Intake::applyContinuity(int week, double upstream_source_inflow,
         total_demand += demand[i];
     }
 
-    /// Get all upstream catchment inflow.
+    // Get all upstream catchment inflow.
     upstream_catchment_inflow = 0;
-    for (Catchment c : catchments)
+    for (Catchment &c : catchments)
         upstream_catchment_inflow += c.getStreamflow(week);
 
-    /// Water availability for next ime step.
-    double next_upstream_catchment_inflow = 0;
-    for (Catchment c : catchments)
+    // Water availability for next time step.
+    next_upstream_catchment_inflow = 0;
+    for (Catchment &c : catchments)
         next_upstream_catchment_inflow += c.getStreamflow(week + 1);
 
-    /// The available volume for the following week will be next week's gain
-    /// - this week's minimum environmental outflow (assuming next week's
-    /// will be more or less the same and this week's) as long as the intake
-    /// capacity is not exceeded. This should work well for small intakes.
+    // Calculate the available volume for the following week: 
+    //      next week's catchment inflow + total upstream inflows - minimum environmental outflow.
+    // Assumes that next week's env outflow will be approximately the same as this week's env outflow.
+    // This calculation will hold as long as the intake capacity is not exceeded (works well for small intakes)
+    // Also accounts for non-catcheent inflows in case the intake is downstream in the catchment.
     available_volume = min(total_treatment_capacity,
-                           next_upstream_catchment_inflow -
+                           next_upstream_catchment_inflow + total_upstream_inflow -
                            min_environmental_outflow);
 
-    /// Records for the sake of output.
+    // Records for the sake of output.
     this->total_demand = total_demand + policy_added_demand;
     policy_added_demand = 0;
     total_outflow = total_upstream_inflow + upstream_catchment_inflow -
@@ -97,4 +91,10 @@ void Intake::setRealization(unsigned long r, vector<double> &rdm_factors) {
     total_demand = 0;
     available_volume = this->upstream_catchment_inflow -
                        min_environmental_outflow;
+}
+
+double Intake::getPrioritySourcePotentialVolume(int utility_id) const {
+    /// Oct 2019: returns the remaining "storage" capacity after weekly demands have been accounted for
+    return  max(0.0, min(total_treatment_capacity - total_demand - policy_added_demand,
+            next_upstream_catchment_inflow - min_environmental_outflow - total_demand - policy_added_demand));
 }

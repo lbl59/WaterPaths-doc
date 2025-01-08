@@ -1,0 +1,288 @@
+\hypertarget{classIntake}{}\section{Intake Class Reference}
+\label{classIntake}\index{Intake@{Intake}}
+
+
+{\ttfamily \#include $<$Intake.\+h$>$}
+
+Inheritance diagram for Intake\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIntake}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIntake_a02e01801fcaede46e960d497e60eb335}{Intake}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double max\+\_\+treatment\+\_\+capacity)
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classIntake}{Intake}} object with the specified properties. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIntake_ada4924f9507f07853feb5cb411d1c336}{Intake}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double raw\+\_\+water\+\_\+capacity, const double max\+\_\+treatment\+\_\+capacity)
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classIntake}{Intake}} object with the specified properties, including raw water capacity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIntake_a1f6fbdc6fff65337b70b7ca59f061bb4}{Intake}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, vector$<$ int $>$ connected\+\_\+sources, const double raw\+\_\+water\+\_\+main\+\_\+capacity, const vector$<$ double $>$ construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classIntake}{Intake}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIntake_aa81e2e35940482717fa67c33b6acd002}{Intake}} (const \mbox{\hyperlink{classIntake}{Intake}} \&intake)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the \mbox{\hyperlink{classIntake}{Intake}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIntake}{Intake}} \& \mbox{\hyperlink{classIntake_aa4a7adbb8380d091197011d9f1877005}{operator=}} (const \mbox{\hyperlink{classIntake}{Intake}} \&intake)
+\begin{DoxyCompactList}\small\item\em Assignment operator for the \mbox{\hyperlink{classIntake}{Intake}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIntake_abf57ff6edf55f292921fb7838059ad26}{$\sim$\+Intake}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classIntake}{Intake}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIntake_acd5ab74c4091b286e69ecdcc495d83ce}{apply\+Continuity}} (int week, double upstream\+\_\+source\+\_\+min\+\_\+env\+\_\+flow, double \mbox{\hyperlink{classWaterSource_aeb5a2d2d83383a70ca20f3e94635a9c7}{wastewater\+\_\+inflow}}, vector$<$ double $>$ \&demand) override
+\begin{DoxyCompactList}\small\item\em Applies continuity to update the water availability and demand for the \mbox{\hyperlink{classIntake}{Intake}} system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIntake_a879c4c780a4d21606e848f57464cf3b6}{set\+Realization}} (unsigned long r, vector$<$ double $>$ \&rdm\+\_\+factors) override
+\begin{DoxyCompactList}\small\item\em Sets the realization for the \mbox{\hyperlink{classIntake}{Intake}} system based on random factors. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classIntake_a8d1fc6855451f3dff1a2f0efcd5da8ee}{get\+Priority\+Source\+Potential\+Volume}} (int utility\+\_\+id) const override
+\begin{DoxyCompactList}\small\item\em Gets the potential volume available from the priority source. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classIntake_a5d28f8899e9d4d61983ad8fdf7d58373}{next\+\_\+upstream\+\_\+catchment\+\_\+inflow}} = 0
+\begin{DoxyCompactList}\small\item\em The inflow to the intake from the adjacent upstream catchment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIntake_a02e01801fcaede46e960d497e60eb335}\label{classIntake_a02e01801fcaede46e960d497e60eb335}} 
+\index{Intake@{Intake}!Intake@{Intake}}
+\index{Intake@{Intake}!Intake@{Intake}}
+\subsubsection{\texorpdfstring{Intake()}{Intake()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Intake\+::\+Intake (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{classIntake}{Intake}} object with the specified properties. 
+
+This constructor initializes an {\ttfamily \mbox{\hyperlink{classIntake}{Intake}}} object, which represents a water source typically used for the intake of water for treatment. It inherits from the {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} class, setting up the properties of the intake such as name, ID, associated catchments, and maximum treatment capacity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the intake. \\
+\hline
+{\em id} & The unique identifier for the intake. \\
+\hline
+{\em catchments} & A vector of pointers to {\ttfamily \mbox{\hyperlink{classCatchment}{Catchment}}} objects associated with this intake. \\
+\hline
+{\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the intake.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A constructed {\ttfamily \mbox{\hyperlink{classIntake}{Intake}}} object with the provided properties. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIntake_ada4924f9507f07853feb5cb411d1c336}\label{classIntake_ada4924f9507f07853feb5cb411d1c336}} 
+\index{Intake@{Intake}!Intake@{Intake}}
+\index{Intake@{Intake}!Intake@{Intake}}
+\subsubsection{\texorpdfstring{Intake()}{Intake()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Intake\+::\+Intake (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{raw\+\_\+water\+\_\+capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{classIntake}{Intake}} object with the specified properties, including raw water capacity. 
+
+This constructor initializes an {\ttfamily \mbox{\hyperlink{classIntake}{Intake}}} object, which represents a water source typically used for the intake of raw water for treatment. It inherits from the {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} class, setting up the properties of the intake such as name, ID, associated catchments, raw water capacity, and maximum treatment capacity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the intake. \\
+\hline
+{\em id} & The unique identifier for the intake. \\
+\hline
+{\em catchments} & A vector of pointers to {\ttfamily \mbox{\hyperlink{classCatchment}{Catchment}}} objects associated with this intake. \\
+\hline
+{\em raw\+\_\+water\+\_\+capacity} & The raw water intake capacity of the intake. \\
+\hline
+{\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the intake.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A constructed {\ttfamily \mbox{\hyperlink{classIntake}{Intake}}} object with the provided properties. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIntake_a1f6fbdc6fff65337b70b7ca59f061bb4}\label{classIntake_a1f6fbdc6fff65337b70b7ca59f061bb4}} 
+\index{Intake@{Intake}!Intake@{Intake}}
+\index{Intake@{Intake}!Intake@{Intake}}
+\subsubsection{\texorpdfstring{Intake()}{Intake()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Intake\+::\+Intake (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{vector$<$ int $>$}]{connected\+\_\+sources,  }\item[{const double}]{raw\+\_\+water\+\_\+main\+\_\+capacity,  }\item[{const vector$<$ double $>$}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classIntake}{Intake}} class. 
+
+This function initializes the \mbox{\hyperlink{classIntake}{Intake}} class with the details on construction, permitting, and financing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the intake. \\
+\hline
+{\em id} & The ID of the intake. \\
+\hline
+{\em catchments} & A vector of \mbox{\hyperlink{classCatchment}{Catchment}} objects associated with this intake. \\
+\hline
+{\em connected\+\_\+sources} & A vector of integers representing the connected water sources. \\
+\hline
+{\em raw\+\_\+water\+\_\+main\+\_\+capacity} & The capacity for raw water intake. \\
+\hline
+{\em construction\+\_\+time\+\_\+range} & A vector containing the time range for construction. \\
+\hline
+{\em permitting\+\_\+period} & The permitting period for the intake. \\
+\hline
+{\em bond} & The \mbox{\hyperlink{classBond}{Bond}} object associated with the intake.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance of the \mbox{\hyperlink{classIntake}{Intake}} class initialized with the provided values. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIntake_aa81e2e35940482717fa67c33b6acd002}\label{classIntake_aa81e2e35940482717fa67c33b6acd002}} 
+\index{Intake@{Intake}!Intake@{Intake}}
+\index{Intake@{Intake}!Intake@{Intake}}
+\subsubsection{\texorpdfstring{Intake()}{Intake()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Intake\+::\+Intake (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classIntake}{Intake}} \&}]{intake }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the \mbox{\hyperlink{classIntake}{Intake}} class. 
+
+This constructor initializes a new \mbox{\hyperlink{classIntake}{Intake}} object as a copy of an existing \mbox{\hyperlink{classIntake}{Intake}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em intake} & The \mbox{\hyperlink{classIntake}{Intake}} object to copy.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new instance of the \mbox{\hyperlink{classIntake}{Intake}} class that is a copy of the provided \mbox{\hyperlink{classIntake}{Intake}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIntake_abf57ff6edf55f292921fb7838059ad26}\label{classIntake_abf57ff6edf55f292921fb7838059ad26}} 
+\index{Intake@{Intake}!````~Intake@{$\sim$\+Intake}}
+\index{````~Intake@{$\sim$\+Intake}!Intake@{Intake}}
+\subsubsection{\texorpdfstring{$\sim$\+Intake()}{~Intake()}}
+{\footnotesize\ttfamily Intake\+::$\sim$\+Intake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classIntake}{Intake}} class. 
+
+This destructor clears the list of catchments associated with the \mbox{\hyperlink{classIntake}{Intake}} object. This destructor overrides the default destructor for the \mbox{\hyperlink{classWaterSource}{Water\+Source}} class.
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classIntake_acd5ab74c4091b286e69ecdcc495d83ce}\label{classIntake_acd5ab74c4091b286e69ecdcc495d83ce}} 
+\index{Intake@{Intake}!apply\+Continuity@{apply\+Continuity}}
+\index{apply\+Continuity@{apply\+Continuity}!Intake@{Intake}}
+\subsubsection{\texorpdfstring{apply\+Continuity()}{applyContinuity()}}
+{\footnotesize\ttfamily void Intake\+::apply\+Continuity (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{double}]{upstream\+\_\+source\+\_\+min\+\_\+env\+\_\+flow,  }\item[{double}]{wastewater\+\_\+inflow,  }\item[{vector$<$ double $>$ \&}]{demand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Applies continuity to update the water availability and demand for the \mbox{\hyperlink{classIntake}{Intake}} system. 
+
+This function calculates the total upstream inflow, downstream demand, and the water availability for the next time step. It also computes the total outflow based on the given upstream source inflow, wastewater inflow, and demand outflow. This function overrides the apply\+Continuity function in the \mbox{\hyperlink{classWaterSource}{Water\+Source}} class.
+
+F\+I\+X\+ME\+: W\+H\+EN I\+M\+P\+L\+E\+M\+E\+N\+T\+I\+NG R\+E\+S\+E\+R\+V\+O\+IR R\+U\+L\+ES, A\+DD A \char`\"{}\+B\+A\+N\+K\char`\"{} OF W\+A\+T\+ER O\+V\+ER A\+ND U\+N\+D\+E\+R\+U\+SE TO BE A\+D\+D\+E\+D/\+S\+U\+B\+T\+R\+A\+C\+T\+ED F\+R\+OM T\+HE A\+V\+A\+I\+L\+A\+B\+LE V\+O\+L\+U\+ME F\+OR T\+HE N\+E\+XT R\+E\+A\+L\+I\+Z\+A\+T\+I\+ON.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week for which continuity is being applied. \\
+\hline
+{\em upstream\+\_\+source\+\_\+inflow} & The upstream source inflow during the current week. \\
+\hline
+{\em wastewater\+\_\+inflow} & The wastewater inflow during the current week. \\
+\hline
+{\em demand} & The demand for water for each connected utility or system during the current week.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classWaterSource_ac070445379fe706f65b977dade4f3fbc}{Water\+Source}}.
+
+\mbox{\Hypertarget{classIntake_a8d1fc6855451f3dff1a2f0efcd5da8ee}\label{classIntake_a8d1fc6855451f3dff1a2f0efcd5da8ee}} 
+\index{Intake@{Intake}!get\+Priority\+Source\+Potential\+Volume@{get\+Priority\+Source\+Potential\+Volume}}
+\index{get\+Priority\+Source\+Potential\+Volume@{get\+Priority\+Source\+Potential\+Volume}!Intake@{Intake}}
+\subsubsection{\texorpdfstring{get\+Priority\+Source\+Potential\+Volume()}{getPrioritySourcePotentialVolume()}}
+{\footnotesize\ttfamily double Intake\+::get\+Priority\+Source\+Potential\+Volume (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the potential volume available from the priority source. 
+
+This function calculates the remaining \char`\"{}storage\char`\"{} capacity after accounting for weekly demands and environmental flows. The volume is based on the treatment capacity and inflows. This function overrides the get\+Priority\+Source\+Potential\+Volume function in the \mbox{\hyperlink{classWaterSource}{Water\+Source}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+id} & The utility identifier. Currently unused in this method but kept for consistency.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The remaining potential volume available from the priority source. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classWaterSource_a00a432eba75eaae7195338a8514ac853}{Water\+Source}}.
+
+\mbox{\Hypertarget{classIntake_aa4a7adbb8380d091197011d9f1877005}\label{classIntake_aa4a7adbb8380d091197011d9f1877005}} 
+\index{Intake@{Intake}!operator=@{operator=}}
+\index{operator=@{operator=}!Intake@{Intake}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIntake}{Intake}}\& Intake\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classIntake}{Intake}} \&}]{intake }\end{DoxyParamCaption})}
+
+
+
+Assignment operator for the \mbox{\hyperlink{classIntake}{Intake}} class. 
+
+This operator assigns the values of an existing \mbox{\hyperlink{classIntake}{Intake}} object to the current object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em intake} & The \mbox{\hyperlink{classIntake}{Intake}} object to assign from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the current \mbox{\hyperlink{classIntake}{Intake}} object after the assignment. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIntake_a879c4c780a4d21606e848f57464cf3b6}\label{classIntake_a879c4c780a4d21606e848f57464cf3b6}} 
+\index{Intake@{Intake}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Intake@{Intake}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily void Intake\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{r,  }\item[{vector$<$ double $>$ \&}]{rdm\+\_\+factors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the realization for the \mbox{\hyperlink{classIntake}{Intake}} system based on random factors. 
+
+This function updates the total demand and available volume for the \mbox{\hyperlink{classIntake}{Intake}} system based on a new realization and corresponding random factors. Thid function overrides the set\+Realization function in the \mbox{\hyperlink{classWaterSource}{Water\+Source}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The realization index, used to set the state for the given realization. \\
+\hline
+{\em rdm\+\_\+factors} & The random factors that influence the realization.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classWaterSource_a634904c510b16de6d7c057fed6d6e625}{Water\+Source}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classIntake_a5d28f8899e9d4d61983ad8fdf7d58373}\label{classIntake_a5d28f8899e9d4d61983ad8fdf7d58373}} 
+\index{Intake@{Intake}!next\+\_\+upstream\+\_\+catchment\+\_\+inflow@{next\+\_\+upstream\+\_\+catchment\+\_\+inflow}}
+\index{next\+\_\+upstream\+\_\+catchment\+\_\+inflow@{next\+\_\+upstream\+\_\+catchment\+\_\+inflow}!Intake@{Intake}}
+\subsubsection{\texorpdfstring{next\+\_\+upstream\+\_\+catchment\+\_\+inflow}{next\_upstream\_catchment\_inflow}}
+{\footnotesize\ttfamily double Intake\+::next\+\_\+upstream\+\_\+catchment\+\_\+inflow = 0}
+
+
+
+The inflow to the intake from the adjacent upstream catchment. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+System\+Components/\+Water\+Sources/\mbox{\hyperlink{Intake_8h}{Intake.\+h}}\end{DoxyCompactItemize}

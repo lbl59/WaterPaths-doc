@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classAllocatedIntake" kind="class" language="C++" prot="public">
+    <compoundname>AllocatedIntake</compoundname>
+    <basecompoundref refid="classWaterSource" prot="public" virt="non-virtual">WaterSource</basecompoundref>
+    <includes refid="AllocatedIntake_8h" local="no">AllocatedIntake.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classAllocatedIntake_1acf0824f3602cf6e9aa5c4423cb04f078" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double AllocatedIntake::next_upstream_catchment_inflow</definition>
+        <argsstring></argsstring>
+        <name>next_upstream_catchment_inflow</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The inflow from the adjacent upstream catchment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="19" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedIntake.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedIntake_1aab00f81a712fe2ecff1f69d0bb53d92a" prot="public" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; AllocatedIntake::allocated_demands</definition>
+        <argsstring></argsstring>
+        <name>allocated_demands</name>
+        <briefdescription>
+<para>The demands allocated to each utility to be fulfiled by this intake. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="23" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedIntake.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAllocatedIntake_1a06653dc837c927a68ab809234d78f505" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AllocatedIntake::AllocatedIntake</definition>
+        <argsstring>(const char *name, const int id, const vector&lt; Catchment *&gt; &amp;catchments, vector&lt; int &gt; connected_sources, vector&lt; int &gt; &amp;partner_utilities, const double total_raw_water_capacity, vector&lt; double &gt; &amp;raw_water_capacity_allocation_fractions, const double total_treatment_capacity, vector&lt; double &gt; &amp;treatment_capacity_allocation_fractions)</argsstring>
+        <name>AllocatedIntake</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classCatchment" kindref="compound">Catchment</ref> *&gt; &amp;</type>
+          <declname>catchments</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt;</type>
+          <declname>connected_sources</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt; &amp;</type>
+          <declname>partner_utilities</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>total_raw_water_capacity</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>raw_water_capacity_allocation_fractions</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>total_treatment_capacity</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>treatment_capacity_allocation_fractions</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for creating an <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initializes an <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object, which represents a intake that has allocated raw water and treatment capacities, as well as associated utilities and catchments. It initializes various properties by invoking the base class constructor (<computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput>) and setting additional member variables such as <computeroutput>allocated_demands</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the intake. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique identifier for the intake. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>catchments</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of pointers to the catchments associated with this intake. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>connected_sources</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of IDs for the connected sources of the intake. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partner_utilities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of IDs for the partner utilities associated with this intake. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>total_raw_water_capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total raw water capacity of the intake. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>raw_water_capacity_allocation_fractions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of fractions representing the allocation of raw water capacity to different utilities. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>total_treatment_capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total treatment capacity of the intake. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>treatment_capacity_allocation_fractions</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of fractions representing the allocation of treatment capacity to different utilities.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A fully constructed <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntake_1a39f2cd728b88fa1503bbe32a9165f654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AllocatedIntake::AllocatedIntake</definition>
+        <argsstring>(const AllocatedIntake &amp;intake)</argsstring>
+        <name>AllocatedIntake</name>
+        <param>
+          <type>const <ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref> &amp;</type>
+          <declname>intake</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor for creating a new <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object by copying another <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initializes a new <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object by copying the values from an existing <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object. It delegates the initialization of the base class (<computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput>) to the base class copy constructor and copies the <computeroutput>allocated_demands</computeroutput> vector from the intake object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intake</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object to copy from.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object that is a copy of the provided <computeroutput>intake</computeroutput> object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntake_1a86afa1536bf7ee7945f2c567c43ffb6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref> &amp;</type>
+        <definition>AllocatedIntake&amp; AllocatedIntake::operator=</definition>
+        <argsstring>(const AllocatedIntake &amp;intake)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref> &amp;</type>
+          <declname>intake</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator for copying the contents of one <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object to another. </para>        </briefdescription>
+        <detaileddescription>
+<para>This operator allows for the assignment of one <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object to another, copying the values of the base class (<computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput>) and the <computeroutput>allocated_demands</computeroutput> vector from the source object to the target object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intake</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object to assign from.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the target <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object (<computeroutput>*this</computeroutput>). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntake_1ada2f6552b83f4f11611bcd7bcb27fc37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AllocatedIntake::~AllocatedIntake</definition>
+        <argsstring>() override</argsstring>
+        <name>~AllocatedIntake</name>
+        <briefdescription>
+<para>Destructor for the <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> class. </para>        </briefdescription>
+        <detaileddescription>
+<para>This destructor is responsible for cleaning up the resources used by the <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object. It clears the <computeroutput>catchments</computeroutput> vector to free any associated memory when the object is destroyed.</para><para>This destructor overrides the base class destructor (<computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput>) to ensure proper cleanup.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntake_1a92c562dddb4f6434c8ad766c03b2cf5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedIntake::applyContinuity</definition>
+        <argsstring>(int week, double upstream_source_min_env_flow, double wastewater_inflow, vector&lt; double &gt; &amp;demand) override</argsstring>
+        <name>applyContinuity</name>
+        <reimplements refid="classWaterSource_1ac070445379fe706f65b977dade4f3fbc">applyContinuity</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>upstream_source_min_env_flow</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>wastewater_inflow</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>demand</declname>
+        </param>
+        <briefdescription>
+<para>Applies the continuity equation to update water availability, demand, and allocations for the current time step. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function updates various properties related to water inflow, outflow, and demand based on the continuity equation. It computes the total upstream inflows, allocates available volumes to utilities based on their allocations, and updates the outflows and demands for the current week.</para><para>This function overrides the base class method <computeroutput>applyContinuity</computeroutput> to provide specific implementation for <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current week for which the continuity equation is being applied. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upstream_source_min_env_flow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum environmental flow from upstream sources. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wastewater_inflow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The inflow of wastewater. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>demand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A fraction of supply allocated to demands from each utility.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntake_1afc73ae38f23417cfbece54c4c3d4ccc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedIntake::setRealization</definition>
+        <argsstring>(unsigned long r, vector&lt; double &gt; &amp;rdm_factors) override</argsstring>
+        <name>setRealization</name>
+        <reimplements refid="classWaterSource_1a634904c510b16de6d7c057fed6d6e625">setRealization</reimplements>
+        <param>
+          <type>unsigned long</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>rdm_factors</declname>
+        </param>
+        <briefdescription>
+<para>Sets the realization for the <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object and updates water demand and availability. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function sets the realization for the <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object by calling the base class&apos;s <computeroutput>setRealization</computeroutput> method. It then updates the total demand and available volume based on the current upstream catchment inflow and the minimum environmental outflow.</para><para>This function overrides the base class method <computeroutput>setRealization</computeroutput> to provide specific implementation for <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The realization index (e.g., representing a specific scenario or time step). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rdm_factors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of random distribution factors used in the realization process.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntake_1abbea26f2adac6c9f9e3bdcdf1aead55d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double AllocatedIntake::getPrioritySourcePotentialVolume</definition>
+        <argsstring>(int utility_id) const override</argsstring>
+        <name>getPrioritySourcePotentialVolume</name>
+        <reimplements refid="classWaterSource_1a00a432eba75eaae7195338a8514ac853">getPrioritySourcePotentialVolume</reimplements>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the priority source potential volume for a given utility. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function calculates the potential volume of water available to a utility based on its allocated treatment capacity, current demand, environmental requirements, and upstream catchment inflow. The result is the maximum available volume that can be allocated to the utility, considering the constraints set by treatment capacities and environmental flows.</para><para>This function overrides the base class method <computeroutput>getPrioritySourcePotentialVolume</computeroutput> to provide specific implementation for <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the utility for which the priority source potential volume is being calculated.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The calculated priority source potential volume for the specified utility. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntake_1a5efc6423bff0adb8c493d3c9983915ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; AllocatedIntake::getAllocatedDemands</definition>
+        <argsstring>() const</argsstring>
+        <name>getAllocatedDemands</name>
+        <briefdescription>
+<para>Retrieves the allocated demands for all utilities. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns a vector containing the allocated demands for all utilities associated with the <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object. The demands are represented by the <computeroutput>allocated_demands</computeroutput> vector, which is updated based on the current inflows and allocations.</para><para><simplesect kind="return"><para>A vector of <computeroutput>double</computeroutput> representing the allocated demands for each utility. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntake_1a32a52eb269d4de861cc844633eceefb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedIntake::addCapacity</definition>
+        <argsstring>(double capacity, int utility_id)</argsstring>
+        <name>addCapacity</name>
+        <reimplements refid="classWaterSource_1ab869abb3d3dde1875e933482bedc3ae3">addCapacity</reimplements>
+        <param>
+          <type>double</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <briefdescription>
+<para>Adds capacity to the <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object and updates utility allocations. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function adds the specified capacity to both the total capacity of the <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object and the allocated capacity for a specific utility. It also ensures that the allocation fractions for all utilities are updated to reflect the new capacity.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of capacity to add to the <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utility_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the utility for which the capacity is being added.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntake_1ae16939ed474e15b9c68edcbf61696231" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedIntake::addTreatmentCapacity</definition>
+        <argsstring>(const double added_treatment_capacity, int utility_id)</argsstring>
+        <name>addTreatmentCapacity</name>
+        <reimplements refid="classWaterSource_1ac2bc1a09fce3a3201d62a73052b27b0b">addTreatmentCapacity</reimplements>
+        <param>
+          <type>const double</type>
+          <declname>added_treatment_capacity</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <briefdescription>
+<para>Adds treatment capacity to the <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object and updates utility allocations. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function adds the specified treatment capacity to both the total treatment capacity of the <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object and the allocated treatment capacity for a specific utility. It also ensures that the allocation fractions for all utilities are updated to reflect the new treatment capacity.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>added_treatment_capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of treatment capacity to add to the <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utility_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the utility for which the treatment capacity is being added.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntake_1a9c6161b8dd13b6ea70a9dafbb72afc91" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double AllocatedIntake::getAvailableAllocatedVolume</definition>
+        <argsstring>(int utility_id) override</argsstring>
+        <name>getAvailableAllocatedVolume</name>
+        <reimplements refid="classWaterSource_1ad4667296dc6b6dabc36b871529ca2749">getAvailableAllocatedVolume</reimplements>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the available allocated volume for a specific utility. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the available allocated volume for a given utility. The available volume is determined based on the current allocation and environmental conditions. This function overrides the base class method <computeroutput>getAvailableAllocatedVolume</computeroutput> to provide specific implementation for <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the utility for which the available allocated volume is being retrieved.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The available allocated volume for the specified utility. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="184" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> is a subclass of the main <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput> class that represents a raw water intake from upstream catchments with allocations associated to utilities. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by dgorelic on 3/2/2020. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>AllocatedIntake</label>
+        <link refid="classAllocatedIntake"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>WaterSource</label>
+        <link refid="classWaterSource"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AllocatedIntake</label>
+        <link refid="classAllocatedIntake"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>WaterSource</label>
+        <link refid="classWaterSource"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/SystemComponents/WaterSources/AllocatedIntake.h" line="13" column="1" bodyfile="src/SystemComponents/WaterSources/AllocatedIntake.h" bodystart="13" bodyend="185"/>
+    <listofallmembers>
+      <member refid="classAllocatedIntake_1a32a52eb269d4de861cc844633eceefb0" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>addCapacity</name></member>
+      <member refid="classAllocatedIntake_1ae16939ed474e15b9c68edcbf61696231" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>addTreatmentCapacity</name></member>
+      <member refid="classWaterSource_1ab94063d51314cfb896010408ae32fa9c" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>allocated_capacities</name></member>
+      <member refid="classAllocatedIntake_1aab00f81a712fe2ecff1f69d0bb53d92a" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>allocated_demands</name></member>
+      <member refid="classWaterSource_1a2f6655a80c4847fe039987255d9d998c" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>allocated_fractions</name></member>
+      <member refid="classWaterSource_1a87dc0bfb5cf4e2b9a953c7a80058c923" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>allocated_treatment_capacities</name></member>
+      <member refid="classWaterSource_1aa73fe10cfc6579b2fb79529e1dde5140" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>allocated_treatment_fractions</name></member>
+      <member refid="classAllocatedIntake_1a06653dc837c927a68ab809234d78f505" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>AllocatedIntake</name></member>
+      <member refid="classAllocatedIntake_1a39f2cd728b88fa1503bbe32a9165f654" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>AllocatedIntake</name></member>
+      <member refid="classAllocatedIntake_1a92c562dddb4f6434c8ad766c03b2cf5c" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>applyContinuity</name></member>
+      <member refid="classWaterSource_1a77d3fe9ea445fc987b07debdfb9e2f5b" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>available_allocated_volumes</name></member>
+      <member refid="classWaterSource_1a49e1a191152e344e2161e8db166e067a" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>available_volume</name></member>
+      <member refid="classWaterSource_1a413b094e11bdce62f4d82e5bb9e4706e" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>bonds</name></member>
+      <member refid="classWaterSource_1a49f9da70a5080abe82160b1a0d194e60" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>built_in_sequence</name></member>
+      <member refid="classWaterSource_1abeb8ba4b51c2b270baf9162df76d8b58" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>bypass</name></member>
+      <member refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>capacity</name></member>
+      <member refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>catchments</name></member>
+      <member refid="classWaterSource_1a47bc2006a1ef6ea4429d56a24319940f" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>checkForInputErrorsConstruction</name></member>
+      <member refid="classWaterSource_1a25d4ad4251b78267618b2f0ef5a501dc" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>compare</name></member>
+      <member refid="classWaterSource_1ae059fbe3f911a819bac0202f7f45e8e4" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>construction_time</name></member>
+      <member refid="classWaterSource_1a1137cd86f8d3f8a48ebec54282132993" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>continuityWaterSource</name></member>
+      <member refid="classWaterSource_1a6085899c4b4cc40fa80784203e1a9755" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>evaporated_volume</name></member>
+      <member refid="classWaterSource_1add1082429d114b41cb9e3afaa623aeb1" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>getAgreementType</name></member>
+      <member refid="classWaterSource_1ad218f2a603d7ebce268d800e0249a74c" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>getAllocatedCapacity</name></member>
+      <member refid="classAllocatedIntake_1a5efc6423bff0adb8c493d3c9983915ef" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getAllocatedDemands</name></member>
+      <member refid="classWaterSource_1acec9b1fef81a9b73c4517409438452ac" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>getAllocatedFraction</name></member>
+      <member refid="classWaterSource_1a63b1a410b47710db049e2b2e9c3c39a0" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getAllocatedInflow</name></member>
+      <member refid="classWaterSource_1a4b05ca30a659ff351e75c487f31ff847" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getAllocatedSupplyCapacities</name></member>
+      <member refid="classWaterSource_1a48df9ae09a8a7844beb18c35382adba1" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getAllocatedTreatmentCapacities</name></member>
+      <member refid="classWaterSource_1ab98528c4d2e6ecd14cb2c813b1d445c6" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>getAllocatedTreatmentCapacity</name></member>
+      <member refid="classWaterSource_1ad943083d8b3bee60ad8d106bba8a5faa" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>getAllocatedTreatmentFraction</name></member>
+      <member refid="classWaterSource_1a9a87dafd08834147bcf5004bc3907824" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getAvailable_allocated_volumes</name></member>
+      <member refid="classAllocatedIntake_1a9c6161b8dd13b6ea70a9dafbb72afc91" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>getAvailableAllocatedVolume</name></member>
+      <member refid="classWaterSource_1af6445a2dd3764907bcb9a37d4647f910" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getAvailableSupplyVolume</name></member>
+      <member refid="classWaterSource_1acb9e57253157c969fa57fc6e7b35ab68" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>getAvailableVolume</name></member>
+      <member refid="classWaterSource_1acacef71453819480c5438ae5b433e66b" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>getBond</name></member>
+      <member refid="classWaterSource_1a1e28dee97f62fbb9845300fc2768d172" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getBuilt_in_sequence</name></member>
+      <member refid="classWaterSource_1ac1e8880f0aeb56b2728e253d3500ef40" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getConstruction_time</name></member>
+      <member refid="classWaterSource_1ac57d6b292490333b5bc14233bce326ce" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getDemand</name></member>
+      <member refid="classWaterSource_1a00b156a153fc24097e4c8a4e5c46c4e0" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getEvaporated_volume</name></member>
+      <member refid="classWaterSource_1af7607924825ffe293179b09fe1bc466e" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getMin_environmental_outflow</name></member>
+      <member refid="classWaterSource_1a506c77317ae84db0a4d9ea2cd74ddb11" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>getParentWaterSourceID</name></member>
+      <member refid="classWaterSource_1aa21d3f1c87ced40c2b673d9e43d99176" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getPermitting_period</name></member>
+      <member refid="classAllocatedIntake_1abbea26f2adac6c9f9e3bdcdf1aead55d" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>getPrioritySourcePotentialVolume</name></member>
+      <member refid="classWaterSource_1a484bca192a9e3aacaad47db0afb8fbdd" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>getSupplyAllocatedFraction</name></member>
+      <member refid="classWaterSource_1aeefcddb0119d5aab95dab03912a65cad" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>getSupplyCapacity</name></member>
+      <member refid="classWaterSource_1a7678e05e3e73b927c0b47e3041d7415f" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getTotal_outflow</name></member>
+      <member refid="classWaterSource_1a6228c9aee407ca2544753dbd2792c5fb" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getTotal_treatment_capacity</name></member>
+      <member refid="classWaterSource_1ad7e60efd7395f8d3e674e602226e5ac1" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getUpstream_source_inflow</name></member>
+      <member refid="classWaterSource_1afd2a153ba8f4ecaa9f8fa851d5a1727c" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getUpstreamCatchmentInflow</name></member>
+      <member refid="classWaterSource_1a41a9f1fb088f29633c9141687958c16e" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getUtilities_with_allocations</name></member>
+      <member refid="classWaterSource_1aee22325e6af0e3c804ddbd9a3505be05" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getWastewater_inflow</name></member>
+      <member refid="classWaterSource_1a9d85cbca88eefd54fda383237807470d" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>getWaterQualityPoolID</name></member>
+      <member refid="classWaterSource_1a83c6dcf19b64533ce4bc3b918ce6cc8e" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>highest_alloc_id</name></member>
+      <member refid="classWaterSource_1a6eafe5dfefd317877d1244e8a7c6e742" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>id</name></member>
+      <member refid="classWaterSource_1a130fd661ff31c53115cca23e4e2f210a" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>isOnline</name></member>
+      <member refid="classWaterSource_1adae67ac96597e4b25332002b88a9a52b" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>min_environmental_outflow</name></member>
+      <member refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>name</name></member>
+      <member refid="classAllocatedIntake_1acf0824f3602cf6e9aa5c4423cb04f078" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>next_upstream_catchment_inflow</name></member>
+      <member refid="classWaterSource_1aef4e289b47c2360f2e991ea3ee535781" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>online</name></member>
+      <member refid="classWaterSource_1accb044cc78f9a444ca18bf7283b5b596" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>operator&lt;</name></member>
+      <member refid="classAllocatedIntake_1a86afa1536bf7ee7945f2c567c43ffb6b" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>operator=</name></member>
+      <member refid="classWaterSource_1af10a33e286cf44b362984ff8d8053c91" prot="public" virt="non-virtual" ambiguityscope="WaterSource::"><scope>AllocatedIntake</scope><name>operator=</name></member>
+      <member refid="classWaterSource_1af25e06ec954898f3392cb125d2f2c2ad" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>operator==</name></member>
+      <member refid="classWaterSource_1a9db800769891e1f49d74a78298f4dac1" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>operator&gt;</name></member>
+      <member refid="classWaterSource_1a036d7980e74224fd5f5c6a390e0d5abb" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>permitting_time</name></member>
+      <member refid="classWaterSource_1a3f04ae75d6235117d391dece2d323890" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>policy_added_demand</name></member>
+      <member refid="classWaterSource_1aebc6985952d3e69f0d8ae1d0498a1ffe" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>randomConstructionTime</name></member>
+      <member refid="classWaterSource_1a4a4d948033c57feb8523bd7d5828c59b" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>removeWater</name></member>
+      <member refid="classWaterSource_1afe2f6b96383abdb14563db279a261a31" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>resetAllocations</name></member>
+      <member refid="classWaterSource_1adfc85c196cfc262d4b463e87c459eb3f" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>resetTreatmentAllocations</name></member>
+      <member refid="classWaterSource_1abaf6cb0ecca08c87428ad516f11f8c2e" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>seed</name></member>
+      <member refid="classWaterSource_1ac834762e016e796968ad286feeca7be6" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>setAllocations</name></member>
+      <member refid="classWaterSource_1ae29ed4aa2b9c97c5a41772daf4631f05" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>setAvailableAllocatedVolumes</name></member>
+      <member refid="classWaterSource_1a86999f23ec7f4fb518adb88e16f156a7" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>setFull</name></member>
+      <member refid="classWaterSource_1a406246432d29f49189d53207ab1d895a" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>setMin_environmental_outflow</name></member>
+      <member refid="classWaterSource_1aaa55dc6e14ff184380300147b53c56ec" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>setOnline</name></member>
+      <member refid="classWaterSource_1ab53d376a425b8db603382ba27b52b1d4" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>setOutflow_previous_week</name></member>
+      <member refid="classAllocatedIntake_1afc73ae38f23417cfbece54c4c3d4ccc9" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>setRealization</name></member>
+      <member refid="classWaterSource_1a4c8f4c120b9101767b6013a78eb2c5d4" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>setSeed</name></member>
+      <member refid="classWaterSource_1abc7034b8c78e45d7b1fa4bd13b8a3bdd" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>setTreatmentAllocations</name></member>
+      <member refid="classWaterSource_1ad8496aea2d4ff97c8069b61cc984c799" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>skipConstruction</name></member>
+      <member refid="classWaterSource_1afdd12c29fc74ea21dff1f1be9b8c2b7b" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>source_type</name></member>
+      <member refid="classWaterSource_1a87535be59994b2602576cdf34dbe04b9" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>supply_allocated_fractions</name></member>
+      <member refid="classWaterSource_1a4be6864dc196287bdf8329b3aa6ca662" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>total_allocated_fraction</name></member>
+      <member refid="classWaterSource_1a1934917dd35a2508a5102eb5831431b7" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>total_demand</name></member>
+      <member refid="classWaterSource_1a5e6992931464ed75576326b9f1bd3c4f" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>total_outflow</name></member>
+      <member refid="classWaterSource_1a2fdfd5ff7d103e71108cf2a31babaccb" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>total_treatment_capacity</name></member>
+      <member refid="classWaterSource_1a04f94831f4816bb277c5a615eace7779" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>unsetSeed</name></member>
+      <member refid="classWaterSource_1aceb2d77612db7ba71a171848a5e03b4f" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>upstream_catchment_inflow</name></member>
+      <member refid="classWaterSource_1a67165e29345b61f36c8d8ccf3f648819" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>upstream_min_env_inflow</name></member>
+      <member refid="classWaterSource_1a7a69b2e9b6030f1035e6cf44d2918ee5" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>upstream_source_inflow</name></member>
+      <member refid="classWaterSource_1ac345583fc2d0f7e1db31ee40244d7ace" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>utilities_with_allocations</name></member>
+      <member refid="classWaterSource_1aeb5a2d2d83383a70ca20f3e94635a9c7" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>wastewater_inflow</name></member>
+      <member refid="classWaterSource_1a27b9d29d6cbb36d128f740f7ca00f500" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1a7723d343a0b8edff36018ca7acf09f62" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1a48641ff06b69505ab298f4f23e759a22" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1a284e207f074da6f485d41f65ac025cf1" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1ae8cf84e138983737e044bc1217858021" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1af9377254ee532ee30eaed78953336b5f" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1a5d02f9dc15b18572bbfa945aeec4dbb0" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1aaa3aba0a9709cc1432f85f443b033a65" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1acef73d9b1675fb6db9ec39347514db6d" prot="protected" virt="non-virtual"><scope>AllocatedIntake</scope><name>wq_pool_id</name></member>
+      <member refid="classAllocatedIntake_1ada2f6552b83f4f11611bcd7bcb27fc37" prot="public" virt="non-virtual"><scope>AllocatedIntake</scope><name>~AllocatedIntake</name></member>
+      <member refid="classWaterSource_1aa3b9261264152782c3115d2f563f1caf" prot="public" virt="virtual"><scope>AllocatedIntake</scope><name>~WaterSource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

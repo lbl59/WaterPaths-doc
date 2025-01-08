@@ -11,19 +11,10 @@ ReservoirExpansion::ReservoirExpansion(const char *name, const int id, const uns
                       construction_time_range, permitting_period, bond),
           parent_reservoir_ID(parent_reservoir_ID) {}
 
-/**
- * Copy constructor.
- * @param reservoir
- */
 ReservoirExpansion::ReservoirExpansion(const ReservoirExpansion &reservoir_expansion) :
         WaterSource(reservoir_expansion),
         parent_reservoir_ID(reservoir_expansion.parent_reservoir_ID) {}
 
-/**
- * Copy assignment operator
- * @param reservoir
- * @return
- */
 ReservoirExpansion &ReservoirExpansion::operator=(const ReservoirExpansion &reservoir_expansion) {
     WaterSource::operator=(reservoir_expansion);
     return *this;

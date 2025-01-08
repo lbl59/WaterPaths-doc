@@ -53,11 +53,6 @@ Quarry::Quarry(const char *name, const int id, const vector<Catchment *> &catchm
 Quarry::Quarry(const Quarry &quarry, const double max_diversion) :
         Reservoir(quarry), max_diversion(max_diversion) {}
 
-/**
- * Copy assignment operator
- * @param quarry
- * @return
- */
 Quarry &Quarry::operator=(const Quarry &quarry) {
     WaterSource::operator=(quarry);
     max_diversion = quarry.max_diversion;
@@ -104,6 +99,7 @@ void Quarry::applyContinuity(int week, double upstream_source_inflow,
                                total_demand;
     double outflow_new = total_inflow - diverted_flow;
 
+    // Determine the diverted flow based on the maximum diversion rate.
     if (online) {
         if (stored_volume_new > capacity) {
             outflow_new += stored_volume_new - capacity;
@@ -117,9 +113,12 @@ void Quarry::applyContinuity(int week, double upstream_source_inflow,
 
     this->total_demand = total_demand;
     available_volume = max(stored_volume_new, 0.0);
+    // Adjust the outflow if the stored volume exceeds the capacity of the quarry.
     total_outflow = outflow_new + policy_added_demand;
     policy_added_demand = 0.0;
     upstream_catchment_inflow = catchment_inflow;
+
+    // Update the relevant class attributes.
     this->upstream_source_inflow = upstream_source_inflow;
     this->wastewater_inflow = wastewater_inflow;
 }
@@ -127,6 +126,6 @@ void Quarry::applyContinuity(int week, double upstream_source_inflow,
 void Quarry::setOnline() {
     WaterSource::setOnline();
 
-    /// start empty and gradually fill as inflows start coming in.
+    // Start empty and gradually fill as inflows start coming in.
     available_volume = NONE;
 }

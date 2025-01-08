@@ -40,10 +40,6 @@ SequentialJointTreatmentExpansion::SequentialJointTreatmentExpansion(const char 
 
 SequentialJointTreatmentExpansion::~SequentialJointTreatmentExpansion() = default;
 
-/**
- * Copy constructor.
- * @param reservoir
- */
 SequentialJointTreatmentExpansion::SequentialJointTreatmentExpansion(
         const SequentialJointTreatmentExpansion &joint_water_treatment_plant) :
         WaterSource(joint_water_treatment_plant),
@@ -55,11 +51,6 @@ SequentialJointTreatmentExpansion::SequentialJointTreatmentExpansion(
         parent_reservoir_ID(joint_water_treatment_plant.parent_reservoir_ID) {
 }
 
-/**
- * Copy assignment operator
- * @param reservoir
- * @return
- */
 SequentialJointTreatmentExpansion &SequentialJointTreatmentExpansion::operator=(
         const SequentialJointTreatmentExpansion &joint_water_treatment_plant) {
     WaterSource::operator=(joint_water_treatment_plant);

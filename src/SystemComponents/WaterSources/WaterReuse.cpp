@@ -23,22 +23,22 @@ WaterReuse::WaterReuse(const char *name, const int id, const double treatment_ca
 
 WaterReuse::WaterReuse(const WaterReuse &reuse) : WaterSource(reuse), treated_volume(reuse.treated_volume) {}
 
-void WaterReuse::applyContinuity(int week, double upstream_source_inflow,
-                                 double wastewater_discharge,
-                                 vector<double> &demand_outflow) {
-
-    double total_demand = std::accumulate(demand_outflow.begin(),
-                                          demand_outflow.end(),
-                                          0.);
-
-    treated_volume = min(total_demand, total_treatment_capacity);
-}
-
-
 WaterReuse &WaterReuse::operator=(const WaterReuse &water_reuse) {
     WaterSource::operator=(water_reuse);
     available_volume = water_reuse.available_volume;
     return *this;
+}
+
+void WaterReuse::applyContinuity(int week, double upstream_source_inflow,
+                                 double wastewater_discharge,
+                                 vector<double> &demand_outflow) {
+    // Calculate total demand                                
+    double total_demand = std::accumulate(demand_outflow.begin(),
+                                          demand_outflow.end(),
+                                          0.);
+
+    // Take the treated volume as the minimum between the total demand and the total treatment capacity.
+    treated_volume = min(total_demand, total_treatment_capacity);
 }
 
 double WaterReuse::getReused_volume() const {

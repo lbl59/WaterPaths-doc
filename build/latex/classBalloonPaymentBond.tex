@@ -1,0 +1,236 @@
+\hypertarget{classBalloonPaymentBond}{}\section{Balloon\+Payment\+Bond Class Reference}
+\label{classBalloonPaymentBond}\index{Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}}
+
+
+{\ttfamily \#include $<$Balloon\+Payment\+Bond.\+h$>$}
+
+Inheritance diagram for Balloon\+Payment\+Bond\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBalloonPaymentBond}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBalloonPaymentBond_a03b25124896e67f851a35721c37705fe}{Balloon\+Payment\+Bond}} (const int \mbox{\hyperlink{classBond_a7f75bcafbc16676ad6dbafbf40afae4a}{id}}, const double \mbox{\hyperlink{classBond_ad98df7d28b398e620286f95ee085439b}{cost\+\_\+of\+\_\+capital}}, const int \mbox{\hyperlink{classBond_a4a227b6de2eeada118d82ab1633b1db8}{n\+\_\+payments}}, const double \mbox{\hyperlink{classBond_a5f66785534e24caa43d9f730130a6463}{coupon\+\_\+rate}}, vector$<$ int $>$ \mbox{\hyperlink{classBond_ae8dd46fcbf95c993460ffe4ea1f52739}{pay\+\_\+on\+\_\+weeks}})
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classBalloonPaymentBond}{Balloon\+Payment\+Bond}} object with specified attributes. This function initializes a balloon payment bond with the provided parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBalloonPaymentBond_afc8bb53b6642dac9811414b447279e5b}{Balloon\+Payment\+Bond}} (const int \mbox{\hyperlink{classBond_a7f75bcafbc16676ad6dbafbf40afae4a}{id}}, const double \mbox{\hyperlink{classBond_ad98df7d28b398e620286f95ee085439b}{cost\+\_\+of\+\_\+capital}}, const int \mbox{\hyperlink{classBond_a4a227b6de2eeada118d82ab1633b1db8}{n\+\_\+payments}}, const double \mbox{\hyperlink{classBond_a5f66785534e24caa43d9f730130a6463}{coupon\+\_\+rate}}, vector$<$ int $>$ \mbox{\hyperlink{classBond_ae8dd46fcbf95c993460ffe4ea1f52739}{pay\+\_\+on\+\_\+weeks}}, const int \mbox{\hyperlink{classBalloonPaymentBond_a7e1e064643021755eda4873b0c98e434}{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}})
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classBalloonPaymentBond}{Balloon\+Payment\+Bond}} object with specified attributes, including the repayment start time. This function initializes a balloon payment bond with the provided parameters, including the number of payments and repayment start time. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classBalloonPaymentBond_a8648a2ae688f90a3b2e6689711c22b9d}{get\+Debt\+Service}} (int week) override
+\begin{DoxyCompactList}\small\item\em Calculates the debt service for a balloon payment bond at a specific week. This function determines whether a payment is due based on the current week and the bond\textquotesingle{}s payment schedule. It returns the debt service, which includes interest payments for the period and the principal payment for the final period. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classBalloonPaymentBond_ae038863f7a3408c2c8cd503d8e789f2d}{get\+Present\+Value\+Debt\+Service}} (int week, double discount\+\_\+rate) override
+\begin{DoxyCompactList}\small\item\em Calculates the present value of the balloon payment bond\textquotesingle{}s debt service for a specific week. This function computes the present value of the bond\textquotesingle{}s debt service based on the interest payments, the principal payment (if due), and the discount rate. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classBalloonPaymentBond_abbfaae70e003f057ec842d3889138345}{get\+Net\+Present\+Value\+At\+Issuance}} (double yearly\+\_\+discount\+\_\+rate, int week) const override
+\begin{DoxyCompactList}\small\item\em Calculates the net present value (N\+PV) of the balloon payment bond at issuance. This function computes the N\+PV of the bond based on the interest payments and the discount rate. The N\+PV is calculated using the bond\textquotesingle{}s payment schedule, adjusting for the time until repayment begins. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBalloonPaymentBond_af22552acd74b08dbb1d308cc5e45344c}{issue\+Bond}} (int week, int construction\+\_\+time, double bond\+\_\+term\+\_\+multiplier, double bond\+\_\+interest\+\_\+rate\+\_\+multiplier) override
+\begin{DoxyCompactList}\small\item\em Issues the balloon payment bond, initializing the bond parameters and setting the interest payments. This function sets up the bond\textquotesingle{}s issuance details, including adjusting the interest payments based on the bond\textquotesingle{}s parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classBalloonPaymentBond_ac73d3ec9b640614f454d8cc8bd1ebbc3}{interest\+\_\+payments}}
+\begin{DoxyCompactList}\small\item\em Interest payments for each period. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classBalloonPaymentBond_a7e1e064643021755eda4873b0c98e434}{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}}
+\begin{DoxyCompactList}\small\item\em Number of years after which payments to the bond begins. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBalloonPaymentBond_a82255e2f56110503d126fefbbc192d67}{n\+\_\+payments\+\_\+made}} = 0
+\begin{DoxyCompactList}\small\item\em Number of payments made so far. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class that represents a balloon bond that pays interest for a number of years and then pays the face value of the bond plus the last interest payment. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBalloonPaymentBond_a03b25124896e67f851a35721c37705fe}\label{classBalloonPaymentBond_a03b25124896e67f851a35721c37705fe}} 
+\index{Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}!Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}}
+\index{Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}!Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{Balloon\+Payment\+Bond()}{BalloonPaymentBond()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Balloon\+Payment\+Bond\+::\+Balloon\+Payment\+Bond (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const double}]{cost\+\_\+of\+\_\+capital,  }\item[{const int}]{n\+\_\+payments,  }\item[{const double}]{coupon\+\_\+rate,  }\item[{vector$<$ int $>$}]{pay\+\_\+on\+\_\+weeks }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classBalloonPaymentBond}{Balloon\+Payment\+Bond}} object with specified attributes. This function initializes a balloon payment bond with the provided parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier for the bond. \\
+\hline
+{\em cost\+\_\+of\+\_\+capital} & The cost of capital associated with the bond. Must be non-\/negative. \\
+\hline
+{\em n\+\_\+payments} & The total number of payments for the bond. \\
+\hline
+{\em coupon\+\_\+rate} & The fixed coupon rate for the bond. \\
+\hline
+{\em pay\+\_\+on\+\_\+weeks} & A vector specifying the weeks when payments are due.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBalloonPaymentBond_afc8bb53b6642dac9811414b447279e5b}\label{classBalloonPaymentBond_afc8bb53b6642dac9811414b447279e5b}} 
+\index{Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}!Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}}
+\index{Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}!Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{Balloon\+Payment\+Bond()}{BalloonPaymentBond()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Balloon\+Payment\+Bond\+::\+Balloon\+Payment\+Bond (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const double}]{cost\+\_\+of\+\_\+capital,  }\item[{const int}]{n\+\_\+payments,  }\item[{const double}]{coupon\+\_\+rate,  }\item[{vector$<$ int $>$}]{pay\+\_\+on\+\_\+weeks,  }\item[{const int}]{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classBalloonPaymentBond}{Balloon\+Payment\+Bond}} object with specified attributes, including the repayment start time. This function initializes a balloon payment bond with the provided parameters, including the number of payments and repayment start time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier for the bond. \\
+\hline
+{\em cost\+\_\+of\+\_\+capital} & The cost of capital associated with the bond. Must be non-\/negative. \\
+\hline
+{\em n\+\_\+payments} & The total number of payments for the bond. \\
+\hline
+{\em coupon\+\_\+rate} & The fixed coupon rate for the bond. \\
+\hline
+{\em pay\+\_\+on\+\_\+weeks} & A vector specifying the weeks when payments are due. \\
+\hline
+{\em begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years} & The number of years after which repayment should begin. A value of {\ttfamily N\+O\+NE} indicates no specific start time.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBalloonPaymentBond_a8648a2ae688f90a3b2e6689711c22b9d}\label{classBalloonPaymentBond_a8648a2ae688f90a3b2e6689711c22b9d}} 
+\index{Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}!get\+Debt\+Service@{get\+Debt\+Service}}
+\index{get\+Debt\+Service@{get\+Debt\+Service}!Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{get\+Debt\+Service()}{getDebtService()}}
+{\footnotesize\ttfamily double Balloon\+Payment\+Bond\+::get\+Debt\+Service (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the debt service for a balloon payment bond at a specific week. This function determines whether a payment is due based on the current week and the bond\textquotesingle{}s payment schedule. It returns the debt service, which includes interest payments for the period and the principal payment for the final period. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week for which to calculate the debt service.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The debt service for the given week, including interest payments and principal payment if due. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBond_a98d8ecaf4b36319674ebd220598996bc}{Bond}}.
+
+\mbox{\Hypertarget{classBalloonPaymentBond_abbfaae70e003f057ec842d3889138345}\label{classBalloonPaymentBond_abbfaae70e003f057ec842d3889138345}} 
+\index{Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}!get\+Net\+Present\+Value\+At\+Issuance@{get\+Net\+Present\+Value\+At\+Issuance}}
+\index{get\+Net\+Present\+Value\+At\+Issuance@{get\+Net\+Present\+Value\+At\+Issuance}!Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{get\+Net\+Present\+Value\+At\+Issuance()}{getNetPresentValueAtIssuance()}}
+{\footnotesize\ttfamily double Balloon\+Payment\+Bond\+::get\+Net\+Present\+Value\+At\+Issuance (\begin{DoxyParamCaption}\item[{double}]{yearly\+\_\+discount\+\_\+rate,  }\item[{int}]{week }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the net present value (N\+PV) of the balloon payment bond at issuance. This function computes the N\+PV of the bond based on the interest payments and the discount rate. The N\+PV is calculated using the bond\textquotesingle{}s payment schedule, adjusting for the time until repayment begins. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em yearly\+\_\+discount\+\_\+rate} & The annual discount rate used to calculate the present value of future payments. \\
+\hline
+{\em week} & The week of the year to calculate the N\+PV for, typically the week the bond is issued.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The net present value at issuance of the balloon payment bond. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBond_a5997278813deb16aa5d01bbca8ecc7b2}{Bond}}.
+
+\mbox{\Hypertarget{classBalloonPaymentBond_ae038863f7a3408c2c8cd503d8e789f2d}\label{classBalloonPaymentBond_ae038863f7a3408c2c8cd503d8e789f2d}} 
+\index{Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}!get\+Present\+Value\+Debt\+Service@{get\+Present\+Value\+Debt\+Service}}
+\index{get\+Present\+Value\+Debt\+Service@{get\+Present\+Value\+Debt\+Service}!Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{get\+Present\+Value\+Debt\+Service()}{getPresentValueDebtService()}}
+{\footnotesize\ttfamily double Balloon\+Payment\+Bond\+::get\+Present\+Value\+Debt\+Service (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{double}]{discount\+\_\+rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the present value of the balloon payment bond\textquotesingle{}s debt service for a specific week. This function computes the present value of the bond\textquotesingle{}s debt service based on the interest payments, the principal payment (if due), and the discount rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week to calculate the present value of the debt service for. \\
+\hline
+{\em discount\+\_\+rate} & The discount rate used to calculate the present value of the future payments.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The present value of the debt service for the given week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBond_a322d4ab0c0c72824ac4df5df80f14d24}{Bond}}.
+
+\mbox{\Hypertarget{classBalloonPaymentBond_af22552acd74b08dbb1d308cc5e45344c}\label{classBalloonPaymentBond_af22552acd74b08dbb1d308cc5e45344c}} 
+\index{Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}!issue\+Bond@{issue\+Bond}}
+\index{issue\+Bond@{issue\+Bond}!Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{issue\+Bond()}{issueBond()}}
+{\footnotesize\ttfamily void Balloon\+Payment\+Bond\+::issue\+Bond (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{int}]{construction\+\_\+time,  }\item[{double}]{bond\+\_\+term\+\_\+multiplier,  }\item[{double}]{bond\+\_\+interest\+\_\+rate\+\_\+multiplier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Issues the balloon payment bond, initializing the bond parameters and setting the interest payments. This function sets up the bond\textquotesingle{}s issuance details, including adjusting the interest payments based on the bond\textquotesingle{}s parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The week in which the bond is being issued. \\
+\hline
+{\em construction\+\_\+time} & The time it takes to complete the construction associated with the bond, in weeks. \\
+\hline
+{\em bond\+\_\+term\+\_\+multiplier} & A multiplier for adjusting the term length of the bond. \\
+\hline
+{\em bond\+\_\+interest\+\_\+rate\+\_\+multiplier} & A multiplier for adjusting the bond\textquotesingle{}s interest rate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBond_a726edbe3ea7047ebc7246585943763e3}{Bond}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classBalloonPaymentBond_a7e1e064643021755eda4873b0c98e434}\label{classBalloonPaymentBond_a7e1e064643021755eda4873b0c98e434}} 
+\index{Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}!begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years@{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}}
+\index{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years@{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}!Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}{begin\_repayment\_after\_n\_years}}
+{\footnotesize\ttfamily const int Balloon\+Payment\+Bond\+::begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of years after which payments to the bond begins. 
+
+\mbox{\Hypertarget{classBalloonPaymentBond_ac73d3ec9b640614f454d8cc8bd1ebbc3}\label{classBalloonPaymentBond_ac73d3ec9b640614f454d8cc8bd1ebbc3}} 
+\index{Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}!interest\+\_\+payments@{interest\+\_\+payments}}
+\index{interest\+\_\+payments@{interest\+\_\+payments}!Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{interest\+\_\+payments}{interest\_payments}}
+{\footnotesize\ttfamily double Balloon\+Payment\+Bond\+::interest\+\_\+payments\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Interest payments for each period. 
+
+\mbox{\Hypertarget{classBalloonPaymentBond_a82255e2f56110503d126fefbbc192d67}\label{classBalloonPaymentBond_a82255e2f56110503d126fefbbc192d67}} 
+\index{Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}!n\+\_\+payments\+\_\+made@{n\+\_\+payments\+\_\+made}}
+\index{n\+\_\+payments\+\_\+made@{n\+\_\+payments\+\_\+made}!Balloon\+Payment\+Bond@{Balloon\+Payment\+Bond}}
+\subsubsection{\texorpdfstring{n\+\_\+payments\+\_\+made}{n\_payments\_made}}
+{\footnotesize\ttfamily int Balloon\+Payment\+Bond\+::n\+\_\+payments\+\_\+made = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of payments made so far. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+System\+Components/\+Bonds/\mbox{\hyperlink{BalloonPaymentBond_8h}{Balloon\+Payment\+Bond.\+h}}\end{DoxyCompactItemize}

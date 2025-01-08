@@ -1,0 +1,235 @@
+\hypertarget{classContinuityModelRealization}{}\section{Continuity\+Model\+Realization Class Reference}
+\label{classContinuityModelRealization}\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
+
+
+{\ttfamily \#include $<$Continuity\+Model\+Realization.\+h$>$}
+
+Inheritance diagram for Continuity\+Model\+Realization\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classContinuityModelRealization}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classContinuityModelRealization_a641c096ac73586597b3e21a5d516c923}{Continuity\+Model\+Realization}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, const Graph \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ Drought\+Mitigation\+Policy $\ast$$>$ \&\mbox{\hyperlink{classContinuityModelRealization_a757dcf1de115c674fd5adcb040c5f277}{drought\+\_\+mitigation\+\_\+policies}}, vector$<$ Min\+Env\+Flow\+Control $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+control, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, vector$<$ double $>$ \&policy\+\_\+rdm, const unsigned int realization\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classContinuityModelRealization_afd53069e2f9ab96210ff153d16f01269}{$\sim$\+Continuity\+Model\+Realization}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classContinuityModelRealization_ae2c40328beb671fa9b10ecc2921b8375}{set\+Short\+Term\+R\+O\+Fs}} (const vector$<$ vector$<$ double $>$$>$ \&risks\+\_\+of\+\_\+failure)
+\begin{DoxyCompactList}\small\item\em Sets the short-\/term risks of failure (R\+O\+Fs) for utilities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classContinuityModelRealization_a1841f4ca49c150cf5d790f6d42496575}{apply\+Drought\+Mitigation\+Policies}} (int week)
+\begin{DoxyCompactList}\small\item\em Applies drought mitigation policies for the given week. \end{DoxyCompactList}\item 
+const vector$<$ Drought\+Mitigation\+Policy $\ast$ $>$ \mbox{\hyperlink{classContinuityModelRealization_afadb3e7f51ae7a09948ffc73d7eb7f6b}{get\+Drought\+\_\+mitigation\+\_\+policies}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the drought mitigation policies associated with the continuity model realization. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classContinuityModelRealization_aa0168985144d26e1613cf20335affedb}{set\+Long\+Term\+R\+O\+Fs}} (const vector$<$ vector$<$ double $>$$>$ \&risks\+\_\+of\+\_\+failure, const int week)
+\begin{DoxyCompactList}\small\item\em Sets the long-\/term risks of failure (R\+O\+Fs) for utilities and triggers new infrastructure construction if necessary. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classContinuityModelRealization_a5b9405156e8cc21c8781ea15ee46c8fe}{set\+Long\+Term\+R\+O\+F\+Demand\+Projection\+Estimate}} (const vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&rof\+\_\+utilities)
+\begin{DoxyCompactList}\small\item\em Updates the demand projection estimates for utilities based on risk of failure (R\+OF) utilities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classContinuityModelRealization_ab87c140eaf87266ca81636059e948bb7}{update\+Joint\+W\+T\+P\+Treatment\+Allocations}} (int current\+\_\+week)
+\begin{DoxyCompactList}\small\item\em Updates treatment capacity allocations for Joint Water Treatment Plants (W\+T\+Ps) under variable allocation agreements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ Drought\+Mitigation\+Policy $\ast$ $>$ \mbox{\hyperlink{classContinuityModelRealization_a757dcf1de115c674fd5adcb040c5f277}{drought\+\_\+mitigation\+\_\+policies}}
+\begin{DoxyCompactList}\small\item\em A vector of pointers to the drought mitigation policies in the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} class extends the \mbox{\hyperlink{classContinuityModel}{Continuity\+Model}} class to include the implementation of drought mitigation policies and the setting of short-\/term and long-\/term risks of failure.
+
+Created by bernardo on 1/26/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classContinuityModelRealization_a641c096ac73586597b3e21a5d516c923}\label{classContinuityModelRealization_a641c096ac73586597b3e21a5d516c923}} 
+\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
+\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
+\subsubsection{\texorpdfstring{Continuity\+Model\+Realization()}{ContinuityModelRealization()}}
+{\footnotesize\ttfamily Continuity\+Model\+Realization\+::\+Continuity\+Model\+Realization (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{const Graph \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const vector$<$ Drought\+Mitigation\+Policy $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ Min\+Env\+Flow\+Control $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+control,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{policy\+\_\+rdm,  }\item[{const unsigned int}]{realization\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} object. 
+
+This constructor initializes a {\ttfamily \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}}} object, which builds upon the {\ttfamily \mbox{\hyperlink{classContinuityModel}{Continuity\+Model}}} by incorporating drought mitigation policies. It initializes a \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} object by calling the \mbox{\hyperlink{classContinuityModel}{Continuity\+Model}} constructor, adding susytem components to the drought mitigation policies. It also sets the realization for each drought mitigation policy with the provided realization data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+sources} & A vector of {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} pointers representing the water sources involved in the model. \\
+\hline
+{\em water\+\_\+sources\+\_\+graph} & A {\ttfamily Graph} representing the relationships and connections between the water sources. \\
+\hline
+{\em water\+\_\+sources\+\_\+to\+\_\+utilities} & A 2D vector indicating which water sources are connected to which utilities. \\
+\hline
+{\em utilities} & A vector of {\ttfamily \mbox{\hyperlink{classUtility}{Utility}}} pointers representing the utilities that rely on the water sources. \\
+\hline
+{\em drought\+\_\+mitigation\+\_\+policies} & A vector of {\ttfamily Drought\+Mitigation\+Policy} pointers, each representing a policy for managing drought conditions. \\
+\hline
+{\em min\+\_\+env\+\_\+flow\+\_\+control} & A vector of {\ttfamily Min\+Env\+Flow\+Control} pointers used to set minimum environmental flows for water sources. \\
+\hline
+{\em utilities\+\_\+rdm} & A vector containing random demand values for the utilities in the model. \\
+\hline
+{\em water\+\_\+sources\+\_\+rdm} & A vector containing random demand values for the water sources in the model. \\
+\hline
+{\em policy\+\_\+rdm} & A vector containing random demand values for the drought mitigation policies. \\
+\hline
+{\em realization\+\_\+id} & The realization identifier used to associate a specific realization of the model.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A {\ttfamily \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}}} object initialized with the provided components and realization. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classContinuityModelRealization_afd53069e2f9ab96210ff153d16f01269}\label{classContinuityModelRealization_afd53069e2f9ab96210ff153d16f01269}} 
+\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!````~Continuity\+Model\+Realization@{$\sim$\+Continuity\+Model\+Realization}}
+\index{````~Continuity\+Model\+Realization@{$\sim$\+Continuity\+Model\+Realization}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
+\subsubsection{\texorpdfstring{$\sim$\+Continuity\+Model\+Realization()}{~ContinuityModelRealization()}}
+{\footnotesize\ttfamily Continuity\+Model\+Realization\+::$\sim$\+Continuity\+Model\+Realization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} class. 
+
+This function releases the memory allocated for drought mitigation policies. It ensures proper cleanup of resources associated with the {\ttfamily \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}}} object. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classContinuityModelRealization_a1841f4ca49c150cf5d790f6d42496575}\label{classContinuityModelRealization_a1841f4ca49c150cf5d790f6d42496575}} 
+\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!apply\+Drought\+Mitigation\+Policies@{apply\+Drought\+Mitigation\+Policies}}
+\index{apply\+Drought\+Mitigation\+Policies@{apply\+Drought\+Mitigation\+Policies}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
+\subsubsection{\texorpdfstring{apply\+Drought\+Mitigation\+Policies()}{applyDroughtMitigationPolicies()}}
+{\footnotesize\ttfamily void Continuity\+Model\+Realization\+::apply\+Drought\+Mitigation\+Policies (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})}
+
+
+
+Applies drought mitigation policies for the given week. 
+
+This function iterates through all the drought mitigation policies and applies each policy to the system for the specified week.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week for which drought mitigation policies are to be applied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classContinuityModelRealization_afadb3e7f51ae7a09948ffc73d7eb7f6b}\label{classContinuityModelRealization_afadb3e7f51ae7a09948ffc73d7eb7f6b}} 
+\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!get\+Drought\+\_\+mitigation\+\_\+policies@{get\+Drought\+\_\+mitigation\+\_\+policies}}
+\index{get\+Drought\+\_\+mitigation\+\_\+policies@{get\+Drought\+\_\+mitigation\+\_\+policies}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
+\subsubsection{\texorpdfstring{get\+Drought\+\_\+mitigation\+\_\+policies()}{getDrought\_mitigation\_policies()}}
+{\footnotesize\ttfamily const vector$<$Drought\+Mitigation\+Policy $\ast$$>$ Continuity\+Model\+Realization\+::get\+Drought\+\_\+mitigation\+\_\+policies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the drought mitigation policies associated with the continuity model realization. 
+
+This function returns a vector containing pointers to all drought mitigation policies in the system.
+
+\begin{DoxyReturn}{Returns}
+A {\ttfamily vector} of pointers to {\ttfamily Drought\+Mitigation\+Policy} objects associated with the continuity model realization. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classContinuityModelRealization_a5b9405156e8cc21c8781ea15ee46c8fe}\label{classContinuityModelRealization_a5b9405156e8cc21c8781ea15ee46c8fe}} 
+\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!set\+Long\+Term\+R\+O\+F\+Demand\+Projection\+Estimate@{set\+Long\+Term\+R\+O\+F\+Demand\+Projection\+Estimate}}
+\index{set\+Long\+Term\+R\+O\+F\+Demand\+Projection\+Estimate@{set\+Long\+Term\+R\+O\+F\+Demand\+Projection\+Estimate}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
+\subsubsection{\texorpdfstring{set\+Long\+Term\+R\+O\+F\+Demand\+Projection\+Estimate()}{setLongTermROFDemandProjectionEstimate()}}
+{\footnotesize\ttfamily void Continuity\+Model\+Realization\+::set\+Long\+Term\+R\+O\+F\+Demand\+Projection\+Estimate (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{rof\+\_\+utilities }\end{DoxyParamCaption})}
+
+
+
+Updates the demand projection estimates for utilities based on risk of failure (R\+OF) utilities. 
+
+This function synchronizes the current-\/year demand records and future demand estimates of the {\ttfamily continuity\+\_\+utilities} with the corresponding values from the provided {\ttfamily rof\+\_\+utilities}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rof\+\_\+utilities} & A vector of utility pointers containing the risk of failure (R\+OF) utilities with up-\/to-\/date demand projection estimates.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classContinuityModelRealization_aa0168985144d26e1613cf20335affedb}\label{classContinuityModelRealization_aa0168985144d26e1613cf20335affedb}} 
+\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!set\+Long\+Term\+R\+O\+Fs@{set\+Long\+Term\+R\+O\+Fs}}
+\index{set\+Long\+Term\+R\+O\+Fs@{set\+Long\+Term\+R\+O\+Fs}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
+\subsubsection{\texorpdfstring{set\+Long\+Term\+R\+O\+Fs()}{setLongTermROFs()}}
+{\footnotesize\ttfamily void Continuity\+Model\+Realization\+::set\+Long\+Term\+R\+O\+Fs (\begin{DoxyParamCaption}\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{risks\+\_\+of\+\_\+failure,  }\item[{const int}]{week }\end{DoxyParamCaption})}
+
+
+
+Sets the long-\/term risks of failure (R\+O\+Fs) for utilities and triggers new infrastructure construction if necessary. 
+
+This function calculates and updates the long-\/term risks of failure for each utility based on storage and treatment capacities. If the risk exceeds a threshold, it triggers the construction of new infrastructure and ensures consistency across utilities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em risks\+\_\+of\+\_\+failure} & A 2D vector where each row represents a utility and contains two R\+OF values\+:
+\begin{DoxyItemize}
+\item {\ttfamily risks\+\_\+of\+\_\+failure\mbox{[}u\mbox{]}\mbox{[}0\mbox{]}}\+: Storage risk of failure.
+\item {\ttfamily risks\+\_\+of\+\_\+failure\mbox{[}u\mbox{]}\mbox{[}1\mbox{]}}\+: Treatment risk of failure. 
+\end{DoxyItemize}\\
+\hline
+{\em week} & The current simulation week.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classContinuityModelRealization_ae2c40328beb671fa9b10ecc2921b8375}\label{classContinuityModelRealization_ae2c40328beb671fa9b10ecc2921b8375}} 
+\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!set\+Short\+Term\+R\+O\+Fs@{set\+Short\+Term\+R\+O\+Fs}}
+\index{set\+Short\+Term\+R\+O\+Fs@{set\+Short\+Term\+R\+O\+Fs}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
+\subsubsection{\texorpdfstring{set\+Short\+Term\+R\+O\+Fs()}{setShortTermROFs()}}
+{\footnotesize\ttfamily void Continuity\+Model\+Realization\+::set\+Short\+Term\+R\+O\+Fs (\begin{DoxyParamCaption}\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{risks\+\_\+of\+\_\+failure }\end{DoxyParamCaption})}
+
+
+
+Sets the short-\/term risks of failure (R\+O\+Fs) for utilities. 
+
+This function updates the short-\/term R\+O\+Fs for each utility based on the given risks of failure for storage and treatment capacity. The higher of the two risks is used as the overall R\+OF for the utility, and both individual risks are also recorded.
+
+
+\begin{DoxyParams}{Parameters}
+{\em risks\+\_\+of\+\_\+failure} & A 2D vector where each row corresponds to a utility, and each column contains risks of failure for storage and treatment capacity, respectively.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classContinuityModelRealization_ab87c140eaf87266ca81636059e948bb7}\label{classContinuityModelRealization_ab87c140eaf87266ca81636059e948bb7}} 
+\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!update\+Joint\+W\+T\+P\+Treatment\+Allocations@{update\+Joint\+W\+T\+P\+Treatment\+Allocations}}
+\index{update\+Joint\+W\+T\+P\+Treatment\+Allocations@{update\+Joint\+W\+T\+P\+Treatment\+Allocations}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
+\subsubsection{\texorpdfstring{update\+Joint\+W\+T\+P\+Treatment\+Allocations()}{updateJointWTPTreatmentAllocations()}}
+{\footnotesize\ttfamily void Continuity\+Model\+Realization\+::update\+Joint\+W\+T\+P\+Treatment\+Allocations (\begin{DoxyParamCaption}\item[{int}]{current\+\_\+week }\end{DoxyParamCaption})}
+
+
+
+Updates treatment capacity allocations for Joint Water Treatment Plants (W\+T\+Ps) under variable allocation agreements. 
+
+This function recalculates treatment capacity allocations for utilities that share a Joint Water Treatment Plant (W\+TP) with variable allocation agreements, adjusting for demand growth or reduction. Allocations are based on the expected growth of each partner until the plant\textquotesingle{}s capacity is reached.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+week} & The current simulation week, used to determine the current year.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classContinuityModelRealization_a757dcf1de115c674fd5adcb040c5f277}\label{classContinuityModelRealization_a757dcf1de115c674fd5adcb040c5f277}} 
+\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!drought\+\_\+mitigation\+\_\+policies@{drought\+\_\+mitigation\+\_\+policies}}
+\index{drought\+\_\+mitigation\+\_\+policies@{drought\+\_\+mitigation\+\_\+policies}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
+\subsubsection{\texorpdfstring{drought\+\_\+mitigation\+\_\+policies}{drought\_mitigation\_policies}}
+{\footnotesize\ttfamily vector$<$Drought\+Mitigation\+Policy $\ast$$>$ Continuity\+Model\+Realization\+::drought\+\_\+mitigation\+\_\+policies\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A vector of pointers to the drought mitigation policies in the system. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Continuity\+Models/\mbox{\hyperlink{ContinuityModelRealization_8h}{Continuity\+Model\+Realization.\+h}}\end{DoxyCompactItemize}

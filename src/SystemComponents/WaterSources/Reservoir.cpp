@@ -7,16 +7,6 @@
 
 using namespace std;
 
-/**
- * Constructor for when Reservoir is built and operational.
- * @param name
- * @param id
- * @param min_environmental_outflow
- * @param catchments
- * @param capacity
- * @param max_treatment_capacity
- * @param source_type
- */
 Reservoir::Reservoir(
         const char *name, const int id,
         const vector<Catchment *> &catchments, const double capacity,
@@ -34,16 +24,6 @@ Reservoir::Reservoir(
     }
 }
 
-/**
- * Constructor for when Reservoir is built and operational.
- * @param name
- * @param id
- * @param min_environmental_outflow
- * @param catchments
- * @param capacity
- * @param max_treatment_capacity
- * @param source_type
- */
 Reservoir::Reservoir(
         const char *name, const int id,
         const vector<Catchment *> &catchments, const double capacity,
@@ -53,19 +33,6 @@ Reservoir::Reservoir(
         WaterSource(name, id, catchments, capacity, vector<int>(), max_treatment_capacity, source_type),
         area(storage_area), fixed_area(true), evaporation_series(evaporation_series) {}
 
-/**
- * Constructor for when Reservoir does not exist in the beginning of the simulation.
- * @param name
- * @param id
- * @param min_environmental_outflow
- * @param catchments
- * @param capacity
- * @param max_treatment_capacity
- * @param source_type
- * @param construction_rof_or_demand
- * @param construction_time_range
- * @param construction_price
- */
 Reservoir::Reservoir(const char *name, const int id, const vector<Catchment *> &catchments, const double capacity,
                      const double max_treatment_capacity, EvaporationSeries &evaporation_series,
                      DataSeries *storage_area_curve, const vector<double> &construction_time_range,
@@ -82,19 +49,6 @@ Reservoir::Reservoir(const char *name, const int id, const vector<Catchment *> &
     }
 }
 
-/**
- * Constructor for when Reservoir does not exist in the beginning of the simulation.
- * @param name
- * @param id
- * @param min_environmental_outflow
- * @param catchments
- * @param capacity
- * @param max_treatment_capacity
- * @param source_type
- * @param construction_rof_or_demand
- * @param construction_time_range
- * @param construction_price
- */
 Reservoir::Reservoir(const char *name, const int id, const vector<Catchment *> &catchments, const double capacity,
                      const double max_treatment_capacity, EvaporationSeries &evaporation_series,
                      double storage_area, const vector<double> &construction_time_range, double permitting_period,
@@ -104,16 +58,6 @@ Reservoir::Reservoir(const char *name, const int id, const vector<Catchment *> &
         storage_area_curve(nullptr), area(storage_area), fixed_area(true),
         evaporation_series(evaporation_series) {}
 
-/**
- * Constructor for when Reservoir is built and operational.
- * @param name
- * @param id
- * @param min_environmental_outflow
- * @param catchments
- * @param capacity
- * @param max_treatment_capacity
- * @param source_type
- */
 Reservoir::Reservoir(
         const char *name, const int id,
         const vector<Catchment *> &catchments, const double capacity,
@@ -135,16 +79,6 @@ Reservoir::Reservoir(
     }
 }
 
-/**
- * Constructor for when Reservoir is built and operational.
- * @param name
- * @param id
- * @param min_environmental_outflow
- * @param catchments
- * @param capacity
- * @param max_treatment_capacity
- * @param source_type
- */
 Reservoir::Reservoir(
         const char *name, const int id,
         const vector<Catchment *> &catchments, const double capacity,
@@ -190,19 +124,6 @@ Reservoir::Reservoir(const char *name, const int id, const vector<Catchment *> &
     }
 }
 
-/**
- * Constructor for when Reservoir does not exist in the beginning of the simulation.
- * @param name
- * @param id
- * @param min_environmental_outflow
- * @param catchments
- * @param capacity
- * @param max_treatment_capacity
- * @param source_type
- * @param construction_rof_or_demand
- * @param construction_time_range
- * @param construction_price
- */
 Reservoir::Reservoir(const char *name, const int id, const vector<Catchment *> &catchments, const double capacity,
                      const double max_treatment_capacity, EvaporationSeries &evaporation_series,
                      double storage_area, vector<double> *allocated_treatment_fractions,
@@ -215,10 +136,6 @@ Reservoir::Reservoir(const char *name, const int id, const vector<Catchment *> &
         storage_area_curve(nullptr), area(storage_area), fixed_area(true),
         evaporation_series(evaporation_series) {}
 
-/**
- * Copy constructor.
- * @param reservoir
- */
 Reservoir::Reservoir(const Reservoir &reservoir) : WaterSource(reservoir),
                                                    storage_area_curve(reservoir.storage_area_curve),
                                                    area(reservoir.area),
@@ -228,11 +145,6 @@ Reservoir::Reservoir(const Reservoir &reservoir) : WaterSource(reservoir),
     evaporation_series = EvaporationSeries(evaporation_series);
 }
 
-/**
- * Copy assignment operator
- * @param reservoir
- * @return
- */
 Reservoir &Reservoir::operator=(const Reservoir &reservoir) {
     storage_area_curve = reservoir.storage_area_curve;
     evaporation_series = EvaporationSeries(evaporation_series);
@@ -264,13 +176,13 @@ void Reservoir::applyContinuity(int week, double upstream_source_inflow,
         total_demand += demand_outflow[i];
     }
 
-    /// Calculate total runoff inflow reaching reservoir from its watershed.
+    // Calculate total runoff inflow reaching reservoir from its watershed.
     double catchment_inflow = 0;
     for (Catchment &c : catchments) {
         catchment_inflow += c.getStreamflow(week);
     }
 
-    /// Calculates water lost through evaporation.
+    // Calculates water lost through evaporation.
     if (fixed_area)
         evaporated_volume = area * evaporation_series.getEvaporation(week);
     else {
@@ -279,7 +191,7 @@ void Reservoir::applyContinuity(int week, double upstream_source_inflow,
                 evaporation_series.getEvaporation(week);
     }
 
-    /// Calculate new stored volume and outflow based on continuity.
+    // Calculate new stored volume and outflow based on continuity.
     double stored_volume_new = available_volume
                                + total_upstream_inflow + catchment_inflow
                                - total_demand - min_environmental_outflow
@@ -288,8 +200,8 @@ void Reservoir::applyContinuity(int week, double upstream_source_inflow,
     double outflow_new = min_environmental_outflow;
 
 
-    /// Check if spillage is needed and, if so, correct stored volume and
-    /// calculate spillage.
+    // Check if spillage is needed and, if so, correct stored volume and
+    // calculate spillage.
     if (stored_volume_new > capacity) {
         outflow_new += stored_volume_new - capacity;
         stored_volume_new = capacity;
@@ -298,7 +210,7 @@ void Reservoir::applyContinuity(int week, double upstream_source_inflow,
 	    stored_volume_new = 0.;
     }
 
-    /// Update data collection variables.
+    // Update data collection variables.
     this->total_demand = total_demand + policy_added_demand;
     policy_added_demand = 0;
     available_volume = stored_volume_new;
@@ -311,7 +223,7 @@ void Reservoir::applyContinuity(int week, double upstream_source_inflow,
 void Reservoir::setOnline() {
     WaterSource::setOnline();
 
-    /// start empty and gradually fill as inflows start coming in.
+    // Start empty and gradually fill as inflows start coming in.
     available_volume = NONE;
 }
 

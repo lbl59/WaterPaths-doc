@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classCatchment" kind="class" language="C++" prot="public">
+    <compoundname>Catchment</compoundname>
+    <includes refid="Catchment_8h" local="no">Catchment.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCatchment_1a579ccda86831f286c19c76354e7125c3" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt; *</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt;* Catchment::streamflows_all</definition>
+        <argsstring></argsstring>
+        <name>streamflows_all</name>
+        <briefdescription>
+<para>A pointer to a 2D vector containing all combined historical and synthetic streamflow realizations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="20" column="1" bodyfile="src/SystemComponents/Catchment.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCatchment_1aaf04c295ecd6b666fa1439d3d5bc072a" prot="protected" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; Catchment::streamflows_realization</definition>
+        <argsstring></argsstring>
+        <name>streamflows_realization</name>
+        <briefdescription>
+<para>A 1D vector containing the streamflows for a specific realization for the catchment. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="25" column="1" bodyfile="src/SystemComponents/Catchment.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCatchment_1a2d4994220f63b876348b4ce4892bc6d3" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Catchment::series_length</definition>
+        <argsstring></argsstring>
+        <name>series_length</name>
+        <briefdescription>
+<para>An integer representing the length of the streamflow time series. It should be longer than WEEKS_IN_YEAR * NUMBER_REALIZATIONS_ROF. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="31" column="1" bodyfile="src/SystemComponents/Catchment.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCatchment_1a472ff6892f90d94b8c4dba53c462dedf" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Catchment::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+<para>A boolean indicating whether this catchment is a parent catchment or not. Parent catchments are catchments (INSERT DESCRIPTION HERE). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="38" column="1" bodyfile="src/SystemComponents/Catchment.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCatchment_1a20548a9d03f0d39f297cb15b3c0433ad" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Catchment::delta_week</definition>
+        <argsstring></argsstring>
+        <name>delta_week</name>
+        <initializer>= (int) std::round(
+            Constants::WEEKS_IN_YEAR * Constants::NUMBER_REALIZATIONS_ROF)</initializer>
+        <briefdescription>
+<para>An integer indicating the number of weeks to skip in the beginning of the time series to identify the correct week for the start of a given realization. This is the number of weeks of historical data used to calculate the ROFs. Should take on the value of WEEKS_IN_YEAR * NUMBER_REALIZATIONS_ROF. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="49" column="1" bodyfile="src/SystemComponents/Catchment.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCatchment_1aafdee6ee868a8892314672abb119e60f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catchment::Catchment</definition>
+        <argsstring>(vector&lt; vector&lt; double &gt;&gt; *streamflows_all, int series_length)</argsstring>
+        <name>Catchment</name>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; *</type>
+          <declname>streamflows_all</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>series_length</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for a new <ref refid="classCatchment" kindref="compound">Catchment</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>streamflows_all</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A 2D vector containing all combined historical and synthetic streamflow realizations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>series_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An integer representing the length of the streamflow time series. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCatchment_1ae311c4b2d857a8b5abc01f5317b04df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Catchment::Catchment</definition>
+        <argsstring>(const Catchment &amp;catchment)</argsstring>
+        <name>Catchment</name>
+        <param>
+          <type>const <ref refid="classCatchment" kindref="compound">Catchment</ref> &amp;</type>
+          <declname>catchment</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor for a <ref refid="classCatchment" kindref="compound">Catchment</ref> object. This constructor does not copy the parent pointer. Set parent to false to distinguish between a parent <ref refid="classCatchment" kindref="compound">Catchment</ref> and those created as copies. Initializes a new instance of <ref refid="classCatchment" kindref="compound">Catchment</ref> with data copied from the original <ref refid="classCatchment" kindref="compound">Catchment</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>catchment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="classCatchment" kindref="compound">Catchment</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCatchment_1ad12bc6d64d4bd5133ac1086a52e240b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Catchment::~Catchment</definition>
+        <argsstring>()</argsstring>
+        <name>~Catchment</name>
+        <briefdescription>
+<para>Destructor for a <ref refid="classCatchment" kindref="compound">Catchment</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCatchment_1a5abab52eab9c05164f76e46954833989" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classCatchment" kindref="compound">Catchment</ref> &amp;</type>
+        <definition>Catchment&amp; Catchment::operator=</definition>
+        <argsstring>(const Catchment &amp;catchment)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classCatchment" kindref="compound">Catchment</ref> &amp;</type>
+          <declname>catchment</declname>
+        </param>
+        <briefdescription>
+<para>Copy assignment operator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>catchment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCatchment_1af4e8206ffab5c901e5e4cdd6136f73a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Catchment::getStreamflow</definition>
+        <argsstring>(int week)</argsstring>
+        <name>getStreamflow</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Gets streamflow for a given week AFTER the first delta_week weeks used to calculate the ROFs. This function assures that the number of past inflows used for ROF calculations are reserved in the beginning of the time series for ROF calculations. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An integer representing the week of the entire streamflow time series. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A double representing the streamflow for the given week. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classCatchment_1ad76654af47dcd69bcb795c1c152409cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Catchment::setRealization</definition>
+        <argsstring>(unsigned long r, vector&lt; double &gt; &amp;rdm_factors)</argsstring>
+        <name>setRealization</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>rdm_factors</declname>
+        </param>
+        <briefdescription>
+<para>Sets the 1D vector time series corresponding to realization index and eliminate reference to the full 2D comprehensive streamflow data set. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An unsigned long integer representing the realization index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rdm_factors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to a vector of doubles representing the random factors used to generate the streamflow realization (UNUSED). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/Catchment.h" line="102" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/SystemComponents/Catchment.h" line="15" column="1" bodyfile="src/SystemComponents/Catchment.h" bodystart="15" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classCatchment_1aafdee6ee868a8892314672abb119e60f" prot="public" virt="non-virtual"><scope>Catchment</scope><name>Catchment</name></member>
+      <member refid="classCatchment_1ae311c4b2d857a8b5abc01f5317b04df2" prot="public" virt="non-virtual"><scope>Catchment</scope><name>Catchment</name></member>
+      <member refid="classCatchment_1a20548a9d03f0d39f297cb15b3c0433ad" prot="protected" virt="non-virtual"><scope>Catchment</scope><name>delta_week</name></member>
+      <member refid="classCatchment_1af4e8206ffab5c901e5e4cdd6136f73a1" prot="public" virt="non-virtual"><scope>Catchment</scope><name>getStreamflow</name></member>
+      <member refid="classCatchment_1a5abab52eab9c05164f76e46954833989" prot="public" virt="non-virtual"><scope>Catchment</scope><name>operator=</name></member>
+      <member refid="classCatchment_1a472ff6892f90d94b8c4dba53c462dedf" prot="protected" virt="non-virtual"><scope>Catchment</scope><name>parent</name></member>
+      <member refid="classCatchment_1a2d4994220f63b876348b4ce4892bc6d3" prot="protected" virt="non-virtual"><scope>Catchment</scope><name>series_length</name></member>
+      <member refid="classCatchment_1ad76654af47dcd69bcb795c1c152409cc" prot="public" virt="virtual"><scope>Catchment</scope><name>setRealization</name></member>
+      <member refid="classCatchment_1a579ccda86831f286c19c76354e7125c3" prot="protected" virt="non-virtual"><scope>Catchment</scope><name>streamflows_all</name></member>
+      <member refid="classCatchment_1aaf04c295ecd6b666fa1439d3d5bc072a" prot="protected" virt="non-virtual"><scope>Catchment</scope><name>streamflows_realization</name></member>
+      <member refid="classCatchment_1ad12bc6d64d4bd5133ac1086a52e240b3" prot="public" virt="virtual"><scope>Catchment</scope><name>~Catchment</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

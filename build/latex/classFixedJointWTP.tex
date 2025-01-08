@@ -1,0 +1,206 @@
+\hypertarget{classFixedJointWTP}{}\section{Fixed\+Joint\+W\+TP Class Reference}
+\label{classFixedJointWTP}\index{Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}}
+
+
+{\ttfamily \#include $<$Fixed\+Joint\+W\+T\+P.\+h$>$}
+
+Inheritance diagram for Fixed\+Joint\+W\+TP\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classFixedJointWTP}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFixedJointWTP_a4c9f0d469ea60620d3f2441d3c2f3aaf}{Fixed\+Joint\+W\+TP}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const int \mbox{\hyperlink{classJointWTP_aa5830cb4d3013a004b7168f4dbf475eb}{parent\+\_\+reservoir\+\_\+\+ID}}, const int \mbox{\hyperlink{classJointWTP_a0e10a7f7ade04d5f3572f185de1b8653}{expansion\+\_\+sequence\+\_\+id}}, const double \mbox{\hyperlink{classWaterSource_a2fdfd5ff7d103e71108cf2a31babaccb}{total\+\_\+treatment\+\_\+capacity}}, vector$<$ int $>$ connected\+\_\+sources, vector$<$ int $>$ \&agreement\+\_\+utility\+\_\+ids, vector$<$ double $>$ \&fixed\+\_\+treatment\+\_\+capacity\+\_\+allocations, vector$<$ \mbox{\hyperlink{classBond}{Bond}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a413b094e11bdce62f4d82e5bb9e4706e}{bonds}}, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFixedJointWTP_accf60b3a2b9907231a816135772261f8}{Fixed\+Joint\+W\+TP}} (const \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} \&fixed\+\_\+joint\+\_\+water\+\_\+treatment\+\_\+plant)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFixedJointWTP_a9c42b1420843421c045feeb489b07b95}{$\sim$\+Fixed\+Joint\+W\+TP}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} \& \mbox{\hyperlink{classFixedJointWTP_ad8cade8e61f861485b025cb0afe28c1a}{operator=}} (const \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} \&fixed\+\_\+joint\+\_\+water\+\_\+treatment\+\_\+plant)
+\begin{DoxyCompactList}\small\item\em Assignment operator for the \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFixedJointWTP_a68bfbed58c0106d896ef422ae9747d40}{apply\+Continuity}} (int week, double \mbox{\hyperlink{classWaterSource_a7a69b2e9b6030f1035e6cf44d2918ee5}{upstream\+\_\+source\+\_\+inflow}}, double wastewater\+\_\+discharge, vector$<$ double $>$ \&demand\+\_\+outflow) override
+\begin{DoxyCompactList}\small\item\em Applies continuity for the \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} class. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFixedJointWTP_a0874b64a650c002d7230bd95bc4817ef}{implement\+Initial\+Treatment\+Capacity}} (int utility\+\_\+id) override
+\begin{DoxyCompactList}\small\item\em Implements the initial treatment capacity for a specific utility. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ double $>$ $\ast$ \mbox{\hyperlink{classFixedJointWTP_a88a5fadeaada96195a95ab77303bd410}{permanent\+\_\+treatment\+\_\+allocations}}
+\begin{DoxyCompactList}\small\item\em Permanent treatment allocations for utilities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFixedJointWTP_a4c9f0d469ea60620d3f2441d3c2f3aaf}\label{classFixedJointWTP_a4c9f0d469ea60620d3f2441d3c2f3aaf}} 
+\index{Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}!Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}}
+\index{Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}!Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{Fixed\+Joint\+W\+T\+P()}{FixedJointWTP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fixed\+Joint\+W\+T\+P\+::\+Fixed\+Joint\+W\+TP (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const int}]{parent\+\_\+reservoir\+\_\+\+ID,  }\item[{const int}]{expansion\+\_\+sequence\+\_\+id,  }\item[{const double}]{total\+\_\+treatment\+\_\+capacity,  }\item[{vector$<$ int $>$}]{connected\+\_\+sources,  }\item[{vector$<$ int $>$ \&}]{agreement\+\_\+utility\+\_\+ids,  }\item[{vector$<$ double $>$ \&}]{fixed\+\_\+treatment\+\_\+capacity\+\_\+allocations,  }\item[{vector$<$ \mbox{\hyperlink{classBond}{Bond}} $\ast$$>$ \&}]{bonds,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} object. 
+
+This constructor initializes an instance of the {\ttfamily \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}}} class, which represents a fixed allocation water treatment plant with a specified treatment capacity, parent reservoir, and various other parameters. It calls the base class {\ttfamily \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}}} constructor and sets the {\ttfamily permanent\+\_\+treatment\+\_\+allocations} pointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the water treatment plant. \\
+\hline
+{\em id} & The unique identifier for the water treatment plant. \\
+\hline
+{\em parent\+\_\+reservoir\+\_\+\+ID} & The ID of the parent reservoir. \\
+\hline
+{\em expansion\+\_\+sequence\+\_\+id} & The ID representing the expansion sequence of the plant. \\
+\hline
+{\em total\+\_\+treatment\+\_\+capacity} & The total treatment capacity of the water treatment plant. \\
+\hline
+{\em connected\+\_\+sources} & A vector of integers representing the connected water sources to the treatment plant. \\
+\hline
+{\em agreement\+\_\+utility\+\_\+ids} & A vector of integers representing the utility I\+Ds associated with agreements for treatment capacity. \\
+\hline
+{\em fixed\+\_\+treatment\+\_\+capacity\+\_\+allocations} & A vector of doubles representing the fixed treatment capacity allocations for each utility. \\
+\hline
+{\em bonds} & A vector of pointers to {\ttfamily \mbox{\hyperlink{classBond}{Bond}}} objects representing the associated bonds with the treatment plant. \\
+\hline
+{\em construction\+\_\+time\+\_\+range} & A vector of doubles representing the construction time range for the treatment plant. \\
+\hline
+{\em permitting\+\_\+period} & The permitting period for the plant.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A {\ttfamily \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}}} object initialized with the specified parameters. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFixedJointWTP_accf60b3a2b9907231a816135772261f8}\label{classFixedJointWTP_accf60b3a2b9907231a816135772261f8}} 
+\index{Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}!Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}}
+\index{Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}!Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{Fixed\+Joint\+W\+T\+P()}{FixedJointWTP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fixed\+Joint\+W\+T\+P\+::\+Fixed\+Joint\+W\+TP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} \&}]{fixed\+\_\+joint\+\_\+water\+\_\+treatment\+\_\+plant }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} class. 
+
+This constructor creates a new {\ttfamily \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}}} object as a copy of the provided {\ttfamily \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}}} object. It copies all member variables from the given instance, including the {\ttfamily permanent\+\_\+treatment\+\_\+allocations} pointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fixed\+\_\+joint\+\_\+water\+\_\+treatment\+\_\+plant} & The {\ttfamily \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}}} object to copy.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new {\ttfamily \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}}} object that is a copy of the provided object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classFixedJointWTP_a9c42b1420843421c045feeb489b07b95}\label{classFixedJointWTP_a9c42b1420843421c045feeb489b07b95}} 
+\index{Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}!````~Fixed\+Joint\+W\+TP@{$\sim$\+Fixed\+Joint\+W\+TP}}
+\index{````~Fixed\+Joint\+W\+TP@{$\sim$\+Fixed\+Joint\+W\+TP}!Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{$\sim$\+Fixed\+Joint\+W\+T\+P()}{~FixedJointWTP()}}
+{\footnotesize\ttfamily Fixed\+Joint\+W\+T\+P\+::$\sim$\+Fixed\+Joint\+W\+TP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} class. 
+
+This destructor is the default destructor for the {\ttfamily \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}}} class and ensures proper cleanup of resources when an object of this class is destroyed. Since the class does not manage any dynamic memory or resources directly, the destructor simply calls the default destructor of its base class ({\ttfamily \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}}}).
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFixedJointWTP_a68bfbed58c0106d896ef422ae9747d40}\label{classFixedJointWTP_a68bfbed58c0106d896ef422ae9747d40}} 
+\index{Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}!apply\+Continuity@{apply\+Continuity}}
+\index{apply\+Continuity@{apply\+Continuity}!Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{apply\+Continuity()}{applyContinuity()}}
+{\footnotesize\ttfamily void Fixed\+Joint\+W\+T\+P\+::apply\+Continuity (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{double}]{upstream\+\_\+source\+\_\+inflow,  }\item[{double}]{wastewater\+\_\+discharge,  }\item[{vector$<$ double $>$ \&}]{demand\+\_\+outflow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Applies continuity for the \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} class. 
+
+This function calls the base class ({\ttfamily \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}}}) implementation of {\ttfamily apply\+Continuity} to perform the necessary continuity checks and calculations for water treatment. It handles the inflows and outflows, ensuring the consistency of water volumes in the treatment process. This function overrides the virtual method in the base {\ttfamily \mbox{\hyperlink{classReservoir}{Reservoir}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The week for which continuity is being applied. \\
+\hline
+{\em upstream\+\_\+source\+\_\+inflow} & The volume of water inflow from upstream sources. \\
+\hline
+{\em wastewater\+\_\+discharge} & The volume of water from wastewater discharge. \\
+\hline
+{\em demand\+\_\+outflow} & A reference to a vector of water demand outflows for each utility.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classWaterSource_ac070445379fe706f65b977dade4f3fbc}{Water\+Source}}.
+
+\mbox{\Hypertarget{classFixedJointWTP_a0874b64a650c002d7230bd95bc4817ef}\label{classFixedJointWTP_a0874b64a650c002d7230bd95bc4817ef}} 
+\index{Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}!implement\+Initial\+Treatment\+Capacity@{implement\+Initial\+Treatment\+Capacity}}
+\index{implement\+Initial\+Treatment\+Capacity@{implement\+Initial\+Treatment\+Capacity}!Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{implement\+Initial\+Treatment\+Capacity()}{implementInitialTreatmentCapacity()}}
+{\footnotesize\ttfamily double Fixed\+Joint\+W\+T\+P\+::implement\+Initial\+Treatment\+Capacity (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements the initial treatment capacity for a specific utility. 
+
+This function retrieves the initial treatment capacity allocated to a utility from the permanent treatment allocations. It assumes that the indices in the {\ttfamily permanent\+\_\+treatment\+\_\+allocations} vector correspond to the order of utility I\+Ds in the {\ttfamily agreement\+\_\+utility\+\_\+ids} vector. If the indices do not match, the returned value may be incorrect. This function overrides the virtual method in the base {\ttfamily \mbox{\hyperlink{classReservoir}{Reservoir}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+id} & The ID of the utility for which the initial treatment capacity is being retrieved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The initial treatment capacity allocated to the specified utility. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classJointWTP_ae8a2a5c4d5173b43d30fc9c1169574f8}{Joint\+W\+TP}}.
+
+\mbox{\Hypertarget{classFixedJointWTP_ad8cade8e61f861485b025cb0afe28c1a}\label{classFixedJointWTP_ad8cade8e61f861485b025cb0afe28c1a}} 
+\index{Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}!operator=@{operator=}}
+\index{operator=@{operator=}!Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}}\& Fixed\+Joint\+W\+T\+P\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} \&}]{fixed\+\_\+joint\+\_\+water\+\_\+treatment\+\_\+plant }\end{DoxyParamCaption})}
+
+
+
+Assignment operator for the \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}} class. 
+
+This operator allows for assignment of one {\ttfamily \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}}} object to another. It ensures that the base class ({\ttfamily \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}}}) assignment operator is properly invoked and then returns the current object for chained assignments.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fixed\+\_\+joint\+\_\+water\+\_\+treatment\+\_\+plant} & The {\ttfamily \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}}} object to be assigned to the current object.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the current {\ttfamily \mbox{\hyperlink{classFixedJointWTP}{Fixed\+Joint\+W\+TP}}} object after the assignment. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classFixedJointWTP_a88a5fadeaada96195a95ab77303bd410}\label{classFixedJointWTP_a88a5fadeaada96195a95ab77303bd410}} 
+\index{Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}!permanent\+\_\+treatment\+\_\+allocations@{permanent\+\_\+treatment\+\_\+allocations}}
+\index{permanent\+\_\+treatment\+\_\+allocations@{permanent\+\_\+treatment\+\_\+allocations}!Fixed\+Joint\+W\+TP@{Fixed\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{permanent\+\_\+treatment\+\_\+allocations}{permanent\_treatment\_allocations}}
+{\footnotesize\ttfamily vector$<$double$>$$\ast$ Fixed\+Joint\+W\+T\+P\+::permanent\+\_\+treatment\+\_\+allocations\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Permanent treatment allocations for utilities. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+System\+Components/\+Water\+Sources/\mbox{\hyperlink{FixedJointWTP_8h}{Fixed\+Joint\+W\+T\+P.\+h}}\end{DoxyCompactItemize}

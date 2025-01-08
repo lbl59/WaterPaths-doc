@@ -14,10 +14,6 @@ Relocation::Relocation(const char *name, const int id, unsigned long parent_rese
                   (allocated_fractions),
           utilities_with_allocations(utilities_with_allocations) {}
 
-/**
- * Copy constructor.
- * @param reservoir
- */
 Relocation::Relocation(const Relocation &relocation) :
         WaterSource(relocation),
         parent_reservoir_ID(relocation.parent_reservoir_ID),
