@@ -13,7 +13,7 @@ Inheritance diagram for Continuity\+Model\+R\+OF\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classContinuityModelROF_a23bd422349e4e2246bd44b2007564fd1}{Continuity\+Model\+R\+OF}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ water\+\_\+sources, const Graph \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ utilities, vector$<$ Min\+Env\+Flow\+Control $\ast$$>$ \mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, unsigned long total\+\_\+weeks\+\_\+simulation, const int \mbox{\hyperlink{classContinuityModelROF_a384967647c98d9768400de07e2bc7dab}{use\+\_\+precomputed\+\_\+rof\+\_\+tables}}, const unsigned long \mbox{\hyperlink{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7}{realization\+\_\+id}})
+\mbox{\hyperlink{classContinuityModelROF_a23bd422349e4e2246bd44b2007564fd1}{Continuity\+Model\+R\+OF}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ water\+\_\+sources, const Graph \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ utilities, vector$<$ Min\+Env\+Flow\+Control $\ast$$>$ \mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, unsigned long total\+\_\+weeks\+\_\+simulation, const int use\+\_\+precomputed\+\_\+rof\+\_\+tables, const unsigned long \mbox{\hyperlink{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7}{realization\+\_\+id}})
 \begin{DoxyCompactList}\small\item\em Initializes the \mbox{\hyperlink{classContinuityModelROF}{Continuity\+Model\+R\+OF}} object for simulating risks of failure (R\+OF). \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classContinuityModelROF_a4acab850e28a3a41182a19d86a7de709}{$\sim$\+Continuity\+Model\+R\+OF}} ()
 \begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classContinuityModelROF}{Continuity\+Model\+R\+OF}} class. \end{DoxyCompactList}\item 
@@ -45,7 +45,7 @@ void \mbox{\hyperlink{classContinuityModelROF_a10a8a95f3177d305d3881e654f01d65d}
 \begin{DoxyCompactList}\small\item\em Handles exceptions related to R\+OF table extrapolation or errors during R\+OF calculations. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classContinuityModelROF_a0c46d5905f5d0ae2cf0abd0d4653bbc7}{set\+Initial\+Table\+Tier}} (int week, const int \&utilities, vector$<$ Matrix2D$<$ double $>$$>$ \&vector, int \&tier)
 \begin{DoxyCompactList}\small\item\em Sets the initial table tier based on the failure conditions for utilities at a specific week. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classContinuityModelROF_aa2348a2a5dea751462771ef538243e75}{record\+R\+O\+F\+Storage\+Table}} (vector$<$ Matrix2D$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_ab4b11938d295e5e74e9cf58725d36a34}{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization}}, vector$<$ Matrix2D$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_ada25d241caf860255ad00097f5e7adb6}{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}}, const int \&\mbox{\hyperlink{classContinuityModel_a6df6198ebc99a099df08f4b8ce6b52b9}{n\+\_\+utilities}}, int \&week, int \&week\+\_\+of\+\_\+the\+\_\+year)
+void \mbox{\hyperlink{classContinuityModelROF_aa2348a2a5dea751462771ef538243e75}{record\+R\+O\+F\+Storage\+Table}} (vector$<$ Matrix2D$<$ double $>$$>$ \&ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization, vector$<$ Matrix2D$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_ada25d241caf860255ad00097f5e7adb6}{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}}, const int \&\mbox{\hyperlink{classContinuityModel_a6df6198ebc99a099df08f4b8ce6b52b9}{n\+\_\+utilities}}, int \&week, int \&week\+\_\+of\+\_\+the\+\_\+year)
 \begin{DoxyCompactList}\small\item\em Records the risk of failure (R\+OF) storage table data for a given utility and week. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classContinuityModelROF_aa720006d12410fc35b8768eda716c149}{calculate\+Empty\+Volumes}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&\mbox{\hyperlink{classContinuityModelROF_a77048d247b8d1f70fbdd31559b4d3337}{realization\+\_\+water\+\_\+sources}}, double $\ast$to\+\_\+full)
 \begin{DoxyCompactList}\small\item\em Calculates the empty volume for each water source. This information is later used for updating the R\+OF tables. \end{DoxyCompactList}\item 
@@ -84,19 +84,6 @@ vector$<$ double $>$ \mbox{\hyperlink{classContinuityModelROF_acaebccba4f4ed286c
 \begin{DoxyCompactList}\small\item\em A vector of doubles representing the utilities\textquotesingle{} current base storage table shifts. \end{DoxyCompactList}\item 
 vector$<$ double $>$ \mbox{\hyperlink{classContinuityModelROF_a1a274033b741e664268515de8e8eb3bc}{current\+\_\+demand\+\_\+ratio\+\_\+buffer}}
 \begin{DoxyCompactList}\small\item\em A vector of doubles representing the utilities\textquotesingle{} current demand ratio buffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-vector$<$ Matrix2D$<$ double $>$ $>$ \mbox{\hyperlink{classContinuityModelROF_ab4b11938d295e5e74e9cf58725d36a34}{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization}}
-\begin{DoxyCompactList}\small\item\em A vector of {\ttfamily Matrix2D} objects representing the storage-\/to-\/\+R\+OF tables for each utility. \end{DoxyCompactList}\item 
-vector$<$ int $>$ \mbox{\hyperlink{classContinuityModelROF_a7ab0c5f22272833f309183937fa9d0d8}{online\+\_\+downstream\+\_\+sources}}
-\begin{DoxyCompactList}\small\item\em A vector of integers representing the I\+Ds of all online downstream sources. \end{DoxyCompactList}\item 
-bool $\ast$ \mbox{\hyperlink{classContinuityModelROF_ad7ee977c92769377cf6237d2fbf527e3}{storage\+\_\+wout\+\_\+downstream}}
-\begin{DoxyCompactList}\small\item\em A boolean array indicating whether a source has downstream sources. \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{classContinuityModelROF_aefffec319cad3a89db2d4c7335ebf2a2}{n\+\_\+topo\+\_\+sources}}
-\begin{DoxyCompactList}\small\item\em The number of topological sources in the system. \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{classContinuityModelROF_a384967647c98d9768400de07e2bc7dab}{use\+\_\+precomputed\+\_\+rof\+\_\+tables}}
-\begin{DoxyCompactList}\small\item\em A flag indicating whether pre-\/computer R\+OF tables are being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -680,26 +667,6 @@ A vector of doubles representing the utilities\textquotesingle{} current demand 
 
 A vector of doubles representing the utilities\textquotesingle{} current storage table shifts. 
 
-\mbox{\Hypertarget{classContinuityModelROF_aefffec319cad3a89db2d4c7335ebf2a2}\label{classContinuityModelROF_aefffec319cad3a89db2d4c7335ebf2a2}} 
-\index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!n\+\_\+topo\+\_\+sources@{n\+\_\+topo\+\_\+sources}}
-\index{n\+\_\+topo\+\_\+sources@{n\+\_\+topo\+\_\+sources}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
-\subsubsection{\texorpdfstring{n\+\_\+topo\+\_\+sources}{n\_topo\_sources}}
-{\footnotesize\ttfamily const int Continuity\+Model\+R\+O\+F\+::n\+\_\+topo\+\_\+sources\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-The number of topological sources in the system. 
-
-\mbox{\Hypertarget{classContinuityModelROF_a7ab0c5f22272833f309183937fa9d0d8}\label{classContinuityModelROF_a7ab0c5f22272833f309183937fa9d0d8}} 
-\index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!online\+\_\+downstream\+\_\+sources@{online\+\_\+downstream\+\_\+sources}}
-\index{online\+\_\+downstream\+\_\+sources@{online\+\_\+downstream\+\_\+sources}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
-\subsubsection{\texorpdfstring{online\+\_\+downstream\+\_\+sources}{online\_downstream\_sources}}
-{\footnotesize\ttfamily vector$<$int$>$ Continuity\+Model\+R\+O\+F\+::online\+\_\+downstream\+\_\+sources\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A vector of integers representing the I\+Ds of all online downstream sources. 
-
 \mbox{\Hypertarget{classContinuityModelROF_a75c6823d8dd37f274ee91ce158088dc4}\label{classContinuityModelROF_a75c6823d8dd37f274ee91ce158088dc4}} 
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!realization\+\_\+utilities@{realization\+\_\+utilities}}
 \index{realization\+\_\+utilities@{realization\+\_\+utilities}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
@@ -719,16 +686,6 @@ A vector of {\ttfamily \mbox{\hyperlink{classUtility}{Utility}}} pointers repres
 
 
 A vector of {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} pointers representing the water sources in the realization. 
-
-\mbox{\Hypertarget{classContinuityModelROF_ad7ee977c92769377cf6237d2fbf527e3}\label{classContinuityModelROF_ad7ee977c92769377cf6237d2fbf527e3}} 
-\index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!storage\+\_\+wout\+\_\+downstream@{storage\+\_\+wout\+\_\+downstream}}
-\index{storage\+\_\+wout\+\_\+downstream@{storage\+\_\+wout\+\_\+downstream}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
-\subsubsection{\texorpdfstring{storage\+\_\+wout\+\_\+downstream}{storage\_wout\_downstream}}
-{\footnotesize\ttfamily bool$\ast$ Continuity\+Model\+R\+O\+F\+::storage\+\_\+wout\+\_\+downstream\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A boolean array indicating whether a source has downstream sources. 
 
 \mbox{\Hypertarget{classContinuityModelROF_a2bc5728653819a0d54a36ffbb1df44a3}\label{classContinuityModelROF_a2bc5728653819a0d54a36ffbb1df44a3}} 
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!table\+\_\+base\+\_\+storage\+\_\+shift@{table\+\_\+base\+\_\+storage\+\_\+shift}}
@@ -759,26 +716,6 @@ A 2D vector of doubles representing the shifts in storage-\/to-\/\+R\+OF tables 
 
 
 A 2D vector of doubles representing the shifts in treatment demand buffer for each utility. 
-
-\mbox{\Hypertarget{classContinuityModelROF_a384967647c98d9768400de07e2bc7dab}\label{classContinuityModelROF_a384967647c98d9768400de07e2bc7dab}} 
-\index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!use\+\_\+precomputed\+\_\+rof\+\_\+tables@{use\+\_\+precomputed\+\_\+rof\+\_\+tables}}
-\index{use\+\_\+precomputed\+\_\+rof\+\_\+tables@{use\+\_\+precomputed\+\_\+rof\+\_\+tables}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
-\subsubsection{\texorpdfstring{use\+\_\+precomputed\+\_\+rof\+\_\+tables}{use\_precomputed\_rof\_tables}}
-{\footnotesize\ttfamily const int Continuity\+Model\+R\+O\+F\+::use\+\_\+precomputed\+\_\+rof\+\_\+tables\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A flag indicating whether pre-\/computer R\+OF tables are being used. 
-
-\mbox{\Hypertarget{classContinuityModelROF_ab4b11938d295e5e74e9cf58725d36a34}\label{classContinuityModelROF_ab4b11938d295e5e74e9cf58725d36a34}} 
-\index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization@{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization}}
-\index{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization@{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
-\subsubsection{\texorpdfstring{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization}{ut\_storage\_to\_rof\_rof\_realization}}
-{\footnotesize\ttfamily vector$<$Matrix2D$<$double$>$ $>$ Continuity\+Model\+R\+O\+F\+::ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A vector of {\ttfamily Matrix2D} objects representing the storage-\/to-\/\+R\+OF tables for each utility. 
 
 \mbox{\Hypertarget{classContinuityModelROF_ada25d241caf860255ad00097f5e7adb6}\label{classContinuityModelROF_ada25d241caf860255ad00097f5e7adb6}} 
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table@{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}}
@@ -814,4 +751,4 @@ A vector of doubles representing the utilities\textquotesingle{} base storage ca
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/\+Continuity\+Models/\mbox{\hyperlink{ContinuityModelROF_8h}{Continuity\+Model\+R\+O\+F.\+h}}\end{DoxyCompactItemize}
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Continuity\+Models/\mbox{\hyperlink{ContinuityModelROF_8h}{Continuity\+Model\+R\+O\+F.\+h}}\end{DoxyCompactItemize}

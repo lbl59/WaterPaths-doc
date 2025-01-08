@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Problem Module &mdash; WaterPaths 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            WaterPaths
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules.html">Modules</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">WaterPaths</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Problem Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/SystemComponents/Bonds/Base/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="problem-module">
+<h1>Problem Module<a class="headerlink" href="#problem-module" title="Permalink to this heading"></a></h1>
+<p>The <cite>SystemComponents</cite> module contains classes and functions related defining the components of the water system.
+The module is divided into submodules, each of which contains classes and functions related to a specific component
+of the water system. This module also</p>
+<section id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
+<p>Below is the API reference for the <cite>Bonds</cite> submodule. Documentation is automatically extracted from the header files.</p>
+<section id="base-components">
+<h3>Base Components<a class="headerlink" href="#base-components" title="Permalink to this heading"></a></h3>
+<section id="bond-h">
+<h4>Bond.h<a class="headerlink" href="#bond-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv44Bond">
+<span id="_CPPv34Bond"></span><span id="_CPPv24Bond"></span><span id="Bond"></span><span class="target" id="classBond"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Bond</span></span></span><a class="headerlink" href="#_CPPv44Bond" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../../modules.html#Bond_8h"><span class="std std-ref">Bond.h</span></a>&gt;</em></div>
+<p>Subclassed by <a class="reference internal" href="../../../modules.html#classBalloonPaymentBond"><span class="std std-ref">BalloonPaymentBond</span></a>, <a class="reference internal" href="../../../modules.html#classFloatingInterestBalloonPaymentBond"><span class="std std-ref">FloatingInterestBalloonPaymentBond</span></a>, <a class="reference internal" href="../../../modules.html#classLevelDebtServiceBond"><span class="std std-ref">LevelDebtServiceBond</span></a>, <a class="reference internal" href="../../../modules.html#classVariableDebtServiceBond"><span class="std std-ref">VariableDebtServiceBond</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond4BondEKiKdKi6vectorIiEKib">
+<span id="_CPPv3N4Bond4BondEKiKdKi6vectorIiEKib"></span><span id="_CPPv2N4Bond4BondEKiKdKi6vectorIiEKib"></span><span id="Bond::Bond__iC.doubleC.iC.vector:i:.iC.b"></span><span class="target" id="classBond_1ac2ed54d795433c9c6a4236629553fb83"></span><span class="sig-name descname"><span class="n"><span class="pre">Bond</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cost_of_capital</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_payments</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pay_on_weeks</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">type</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">begin_repayment_at_issuance</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Bond4BondEKiKdKi6vectorIiEKib" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref">Bond</span></a> object with specified attributes. This function initializes a bond and validates its cost of capital. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – The unique identifier for the bond. </p></li>
+<li><p><strong>cost_of_capital</strong> – The cost of capital associated with the bond. Must be non-negative. </p></li>
+<li><p><strong>n_payments</strong> – The total number of payments for the bond. </p></li>
+<li><p><strong>pay_on_weeks</strong> – A vector specifying the weeks when payments are due. </p></li>
+<li><p><strong>type</strong> – The type of bond. </p></li>
+<li><p><strong>begin_repayment_at_issuance</strong> – Boolean indicating whether repayment starts immediately upon issuance.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – If <code class="docutils literal notranslate"><span class="pre">cost_of_capital</span></code> is NaN or negative. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond4BondEKiKdKi6vectorIiEKdKib">
+<span id="_CPPv3N4Bond4BondEKiKdKi6vectorIiEKdKib"></span><span id="_CPPv2N4Bond4BondEKiKdKi6vectorIiEKdKib"></span><span id="Bond::Bond__iC.doubleC.iC.vector:i:.doubleC.iC.b"></span><span class="target" id="classBond_1a8758b7ef325a779eeee87eb91947ce58"></span><span class="sig-name descname"><span class="n"><span class="pre">Bond</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cost_of_capital</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_payments</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pay_on_weeks</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">coupon_rate</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">type</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">begin_repayment_at_issuance</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Bond4BondEKiKdKi6vectorIiEKdKib" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref">Bond</span></a> object with specified attributes. This function initializes a bond with a coupon rate and validates its cost of capital. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – The unique identifier for the bond. </p></li>
+<li><p><strong>cost_of_capital</strong> – The cost of capital associated with the bond. Must be non-negative. </p></li>
+<li><p><strong>n_payments</strong> – The total number of payments for the bond. </p></li>
+<li><p><strong>pay_on_weeks</strong> – A vector specifying the weeks when payments are due. </p></li>
+<li><p><strong>coupon_rate</strong> – The fixed interest rate paid to bondholders each year associated with the bond. </p></li>
+<li><p><strong>type</strong> – The type identifier for the bond. </p></li>
+<li><p><strong>begin_repayment_at_issuance</strong> – Boolean indicating whether repayment starts immediately upon issuance.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – If <code class="docutils literal notranslate"><span class="pre">cost_of_capital</span></code> is NaN or negative. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond4BondEv">
+<span id="_CPPv3N4Bond4BondEv"></span><span id="_CPPv2N4Bond4BondEv"></span><span id="Bond::Bond"></span><span class="target" id="classBond_1a5b809c10637a30a2b24ed01609d68711"></span><span class="sig-name descname"><span class="n"><span class="pre">Bond</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Bond4BondEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a default <a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref">Bond</span></a> object with uninitialized values. This function initializes a <a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref">Bond</span></a> object with placeholder values. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4BondD0Ev">
+<span id="_CPPv3N4BondD0Ev"></span><span id="_CPPv2N4BondD0Ev"></span><span id="Bond::~Bond"></span><span class="target" id="classBond_1acd301f8d3b4f29e1f797f98d3a2a0b80"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Bond</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4BondD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destroys the <a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref">Bond</span></a> object. This function cleans up resources used by the <a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref">Bond</span></a> object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond4BondERK4Bond">
+<span id="_CPPv3N4Bond4BondERK4Bond"></span><span id="_CPPv2N4Bond4BondERK4Bond"></span><span id="Bond::Bond__BondCR"></span><span class="target" id="classBond_1acaa8874ed5e81057eeb7dc55fb6b5373"></span><span class="sig-name descname"><span class="n"><span class="pre">Bond</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N4Bond4BondERK4Bond" title="Bond::Bond"><span class="n"><span class="pre">Bond</span></span></a><span class="p"><span class="pre">&amp;</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N4Bond4BondERK4Bond" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond14getDebtServiceEi">
+<span id="_CPPv3N4Bond14getDebtServiceEi"></span><span id="_CPPv2N4Bond14getDebtServiceEi"></span><span id="Bond::getDebtService__i"></span><span class="target" id="classBond_1a98d8ecaf4b36319674ebd220598996bc"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDebtService</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N4Bond14getDebtServiceEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Gets the debt service for the bond. This function is intended to be overridden in derived classes and is not meant to be called directly on the base <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> class. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The week for which to calculate total remaining value of the debt service (accounting for inflation). </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double The debt service for the bond. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond26getPresentValueDebtServiceEid">
+<span id="_CPPv3N4Bond26getPresentValueDebtServiceEid"></span><span id="_CPPv2N4Bond26getPresentValueDebtServiceEid"></span><span id="Bond::getPresentValueDebtService__i.double"></span><span class="target" id="classBond_1a322d4ab0c0c72824ac4df5df80f14d24"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPresentValueDebtService</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">discount_rate</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N4Bond26getPresentValueDebtServiceEid" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Get the Present Value Debt Service object. This function is intended to be overridden in derived classes and is not meant to be called directly on the base <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> class. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The week for which to calculate the present value of debt service. </p></li>
+<li><p><strong>discount_rate</strong> – The discount rate to use in the calculation. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double The present value of the debt service. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond14setDebtServiceEd">
+<span id="_CPPv3N4Bond14setDebtServiceEd"></span><span id="_CPPv2N4Bond14setDebtServiceEd"></span><span id="Bond::setDebtService__double"></span><span class="target" id="classBond_1aff7fc4e1edcf199fb592d22c765b854e"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setDebtService</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">updated_allocated_fraction_of_annual_debt_service</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Bond14setDebtServiceEd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the debt service for the bond. This function is intended to be overridden in derived classes and is not meant to be called directly on the base <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> class. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>updated_allocated_fraction_of_annual_debt_service</strong> – The updated fraction of the annual debt service allocation.</p>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">logic_error</span></span></span> – Always throws an exception when called on the base <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> class. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond16getWaterSourceIDEv">
+<span id="_CPPv3N4Bond16getWaterSourceIDEv"></span><span id="_CPPv2N4Bond16getWaterSourceIDEv"></span><span id="Bond::getWaterSourceID"></span><span class="target" id="classBond_1a8190ab6482e6a9481afca4840147527e"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getWaterSourceID</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Bond16getWaterSourceIDEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the bond’s unique identifier. This function retrieves the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the bond, which serves as its water source ID. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>int The unique identifier (<code class="docutils literal notranslate"><span class="pre">id</span></code>) of the bond. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Bond28getNetPresentValueAtIssuanceEdi">
+<span id="_CPPv3NK4Bond28getNetPresentValueAtIssuanceEdi"></span><span id="_CPPv2NK4Bond28getNetPresentValueAtIssuanceEdi"></span><span id="Bond::getNetPresentValueAtIssuance__double.iC"></span><span class="target" id="classBond_1a5997278813deb16aa5d01bbca8ecc7b2"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getNetPresentValueAtIssuance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">discount_rate</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK4Bond28getNetPresentValueAtIssuanceEdi" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond9issueBondEiidd">
+<span id="_CPPv3N4Bond9issueBondEiidd"></span><span id="_CPPv2N4Bond9issueBondEiidd"></span><span id="Bond::issueBond__i.i.double.double"></span><span class="target" id="classBond_1a726edbe3ea7047ebc7246585943763e3"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">issueBond</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">construction_time</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bond_term_multiplier</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bond_interest_rate_multiplier</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Bond9issueBondEiidd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Issues a bond and adjusts its parameters based on given multipliers. This function sets the repayment start date and modifies bond parameters upon issuance. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../../../modules.html#classBond_1a573de514b0044cec6a76bb63b098b40a"><span class="std std-ref">Bond::setIssued</span></a></p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The week when the bond is issued. </p></li>
+<li><p><strong>construction_time</strong> – The duration of construction in weeks, used to calculate the repayment start date. </p></li>
+<li><p><strong>bond_term_multiplier</strong> – A multiplier to adjust the total number of payments. </p></li>
+<li><p><strong>bond_interest_rate_multiplier</strong> – A multiplier to adjust the bond’s coupon rate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond25setRealizationWaterSourceEmR6vectorIdE">
+<span id="_CPPv3N4Bond25setRealizationWaterSourceEmR6vectorIdE"></span><span id="_CPPv2N4Bond25setRealizationWaterSourceEmR6vectorIdE"></span><span id="Bond::setRealizationWaterSource__unsigned-l.vector:double:R"></span><span class="target" id="classBond_1aadfa02c42f31c590cee31a455bdda0b2"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealizationWaterSource</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">r</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rdm_factors</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Bond25setRealizationWaterSourceEmR6vectorIdE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Adjusts the bond’s cost of capital based on a realization factor. This function modifies the bond’s cost of capital using a random factor. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../../../modules.html#classBond_1a726edbe3ea7047ebc7246585943763e3"><span class="std std-ref">Bond::issueBond</span></a></p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> – An unsigned long integer representing the realization identifier (not used in the function logic). </p></li>
+<li><p><strong>rdm_factors</strong> – A vector of random factors used to adjust the bond’s cost of capital. The first element is used.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">out_of_range</span></span></span> – If <code class="docutils literal notranslate"><span class="pre">rdm_factors</span></code> is empty or does not contain at least one element.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Bond8isIssuedEv">
+<span id="_CPPv3NK4Bond8isIssuedEv"></span><span id="_CPPv2NK4Bond8isIssuedEv"></span><span id="Bond::isIssuedC"></span><span class="target" id="classBond_1a6342f3dd3295771b71ac1fcc3b666a42"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isIssued</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Bond8isIssuedEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Checks if the bond has been issued. This function returns whether the bond has been marked as issued. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool <code class="docutils literal notranslate"><span class="pre">true</span></code> if the bond has been issued; <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond9setIssuedEv">
+<span id="_CPPv3N4Bond9setIssuedEv"></span><span id="_CPPv2N4Bond9setIssuedEv"></span><span id="Bond::setIssued"></span><span class="target" id="classBond_1a573de514b0044cec6a76bb63b098b40a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setIssued</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Bond9setIssuedEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Marks the bond as issued. This function sets the <code class="docutils literal notranslate"><span class="pre">issued</span></code> status of the bond to <code class="docutils literal notranslate"><span class="pre">true</span></code>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond16getCostOfCapitalEv">
+<span id="_CPPv3N4Bond16getCostOfCapitalEv"></span><span id="_CPPv2N4Bond16getCostOfCapitalEv"></span><span id="Bond::getCostOfCapital"></span><span class="target" id="classBond_1aa3773136ec3327a88226859ea950a7b3"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCostOfCapital</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Bond16getCostOfCapitalEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the cost of capital required to issue the bond. This function retrieves the <code class="docutils literal notranslate"><span class="pre">cost_of_capital</span></code> of the bond. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double The cost of capital (<code class="docutils literal notranslate"><span class="pre">cost_of_capital</span></code>) of the bond. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond19adjustCostOfCapitalEd">
+<span id="_CPPv3N4Bond19adjustCostOfCapitalEd"></span><span id="_CPPv2N4Bond19adjustCostOfCapitalEd"></span><span id="Bond::adjustCostOfCapital__double"></span><span class="target" id="classBond_1ad4e613d485dd3f1de25c8faf21faec35"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">adjustCostOfCapital</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">reduction</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Bond19adjustCostOfCapitalEd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Adjusts the bond’s cost of capital by a specified reduction. This function decreases the bond’s <code class="docutils literal notranslate"><span class="pre">cost_of_capital</span></code> by the given reduction value. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>reduction</strong> – The amount by which to reduce the bond’s <code class="docutils literal notranslate"><span class="pre">cost_of_capital</span></code>.</p>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">logic_error</span></span></span> – If the adjusted <code class="docutils literal notranslate"><span class="pre">cost_of_capital</span></code> becomes negative. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond4typeE">
+<span id="_CPPv3N4Bond4typeE"></span><span id="_CPPv2N4Bond4typeE"></span><span id="Bond::type__iC"></span><span class="target" id="classBond_1a48da24878beedd71cbaa990cea860667"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">type</span></span></span><a class="headerlink" href="#_CPPv4N4Bond4typeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The type of bond. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond12pay_on_weeksE">
+<span id="_CPPv3N4Bond12pay_on_weeksE"></span><span id="_CPPv2N4Bond12pay_on_weeksE"></span><span id="Bond::pay_on_weeks__vector:i:C"></span><span class="target" id="classBond_1ae8dd46fcbf95c993460ffe4ea1f52739"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pay_on_weeks</span></span></span><a class="headerlink" href="#_CPPv4N4Bond12pay_on_weeksE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector specifying the weeks when payments are due. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond2idE">
+<span id="_CPPv3N4Bond2idE"></span><span id="_CPPv2N4Bond2idE"></span><span id="Bond::id__iC"></span><span class="target" id="classBond_1a7f75bcafbc16676ad6dbafbf40afae4a"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">id</span></span></span><a class="headerlink" href="#_CPPv4N4Bond2idE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The unique identifier of the bond. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond11week_issuedE">
+<span id="_CPPv3N4Bond11week_issuedE"></span><span id="_CPPv2N4Bond11week_issuedE"></span><span id="Bond::week_issued__i"></span><span class="target" id="classBond_1a30d48d158cbbd9c7b4bfa0012c89590a"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">week_issued</span></span></span><a class="headerlink" href="#_CPPv4N4Bond11week_issuedE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The week the bond was issued. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond15cost_of_capitalE">
+<span id="_CPPv3N4Bond15cost_of_capitalE"></span><span id="_CPPv2N4Bond15cost_of_capitalE"></span><span id="Bond::cost_of_capital__double"></span><span class="target" id="classBond_1ad98df7d28b398e620286f95ee085439b"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">cost_of_capital</span></span></span><a class="headerlink" href="#_CPPv4N4Bond15cost_of_capitalE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The cost of capital for the bond. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond11coupon_rateE">
+<span id="_CPPv3N4Bond11coupon_rateE"></span><span id="_CPPv2N4Bond11coupon_rateE"></span><span id="Bond::coupon_rate__double"></span><span class="target" id="classBond_1a5f66785534e24caa43d9f730130a6463"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">coupon_rate</span></span></span><a class="headerlink" href="#_CPPv4N4Bond11coupon_rateE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The fixed interest rate paid to bondholders each year, as a percentage of the bond’s face value. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond10n_paymentsE">
+<span id="_CPPv3N4Bond10n_paymentsE"></span><span id="_CPPv2N4Bond10n_paymentsE"></span><span id="Bond::n_payments__i"></span><span class="target" id="classBond_1a4a227b6de2eeada118d82ab1633b1db8"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_payments</span></span></span><a class="headerlink" href="#_CPPv4N4Bond10n_paymentsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The number of payments to be made on the bond. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond29begin_repayment_after_n_yearsE">
+<span id="_CPPv3N4Bond29begin_repayment_after_n_yearsE"></span><span id="_CPPv2N4Bond29begin_repayment_after_n_yearsE"></span><span id="Bond::begin_repayment_after_n_years__i"></span><span class="target" id="classBond_1a8d808753f9708e841dfceca72a110737"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">begin_repayment_after_n_years</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">NON_INITIALIZED</span></span><a class="headerlink" href="#_CPPv4N4Bond29begin_repayment_after_n_yearsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The number of years after issuance that the bond will start being repaid. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Bond6issuedE">
+<span id="_CPPv3N4Bond6issuedE"></span><span id="_CPPv2N4Bond6issuedE"></span><span id="Bond::issued__b"></span><span class="target" id="classBond_1adafb5c5d73f072f7139891478a658a10"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">issued</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><a class="headerlink" href="#_CPPv4N4Bond6issuedE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A boolean indicating whether the bond has been issued. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Lillian Lau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

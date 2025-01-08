@@ -13,9 +13,9 @@ Inheritance diagram for Floating\+Interest\+Balloon\+Payment\+Bond\+:\begin{figu
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_aa42f50447a3dd1bd6959e8c4bd0c2421}{Floating\+Interest\+Balloon\+Payment\+Bond}} (const int \mbox{\hyperlink{classBond_a7f75bcafbc16676ad6dbafbf40afae4a}{id}}, const double \mbox{\hyperlink{classBond_ad98df7d28b398e620286f95ee085439b}{cost\+\_\+of\+\_\+capital}}, const double \mbox{\hyperlink{classBond_a4a227b6de2eeada118d82ab1633b1db8}{n\+\_\+payments}}, const vector$<$ double $>$ \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a36c73466753c976e513c6763f79f58ad}{interest\+\_\+rate\+\_\+series}}, vector$<$ int $>$ \mbox{\hyperlink{classBond_ae8dd46fcbf95c993460ffe4ea1f52739}{pay\+\_\+on\+\_\+weeks}})
+\mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_aa42f50447a3dd1bd6959e8c4bd0c2421}{Floating\+Interest\+Balloon\+Payment\+Bond}} (const int \mbox{\hyperlink{classBond_a7f75bcafbc16676ad6dbafbf40afae4a}{id}}, const double \mbox{\hyperlink{classBond_ad98df7d28b398e620286f95ee085439b}{cost\+\_\+of\+\_\+capital}}, const double \mbox{\hyperlink{classBond_a4a227b6de2eeada118d82ab1633b1db8}{n\+\_\+payments}}, const vector$<$ double $>$ interest\+\_\+rate\+\_\+series, vector$<$ int $>$ \mbox{\hyperlink{classBond_ae8dd46fcbf95c993460ffe4ea1f52739}{pay\+\_\+on\+\_\+weeks}})
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond}{Floating\+Interest\+Balloon\+Payment\+Bond}} object with specified attributes. This function initializes a floating interest balloon payment bond with the provided parameters. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a9732cbf82ecc484237071bb681f7dc63}{Floating\+Interest\+Balloon\+Payment\+Bond}} (const int \mbox{\hyperlink{classBond_a7f75bcafbc16676ad6dbafbf40afae4a}{id}}, const double \mbox{\hyperlink{classBond_ad98df7d28b398e620286f95ee085439b}{cost\+\_\+of\+\_\+capital}}, double \mbox{\hyperlink{classBond_a4a227b6de2eeada118d82ab1633b1db8}{n\+\_\+payments}}, const vector$<$ double $>$ \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a36c73466753c976e513c6763f79f58ad}{interest\+\_\+rate\+\_\+series}}, vector$<$ int $>$ \mbox{\hyperlink{classBond_ae8dd46fcbf95c993460ffe4ea1f52739}{pay\+\_\+on\+\_\+weeks}}, const int starts\+\_\+paying\+\_\+after\+\_\+n\+\_\+years)
+\mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a9732cbf82ecc484237071bb681f7dc63}{Floating\+Interest\+Balloon\+Payment\+Bond}} (const int \mbox{\hyperlink{classBond_a7f75bcafbc16676ad6dbafbf40afae4a}{id}}, const double \mbox{\hyperlink{classBond_ad98df7d28b398e620286f95ee085439b}{cost\+\_\+of\+\_\+capital}}, double \mbox{\hyperlink{classBond_a4a227b6de2eeada118d82ab1633b1db8}{n\+\_\+payments}}, const vector$<$ double $>$ interest\+\_\+rate\+\_\+series, vector$<$ int $>$ \mbox{\hyperlink{classBond_ae8dd46fcbf95c993460ffe4ea1f52739}{pay\+\_\+on\+\_\+weeks}}, const int starts\+\_\+paying\+\_\+after\+\_\+n\+\_\+years)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond}{Floating\+Interest\+Balloon\+Payment\+Bond}} object with specified attributes. This function initializes a floating interest balloon payment bond with the provided parameters and sets the start of repayment after a specified number of years. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a0009a0b12e0ebeb15952561513ddc901}{get\+Debt\+Service}} (int week) override
 \begin{DoxyCompactList}\small\item\em Calculates the debt service for the bond at a specified week. This function computes the bond\textquotesingle{}s debt service payment based on the floating interest rate at a specific week. \end{DoxyCompactList}\item 
@@ -25,15 +25,6 @@ double \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a90205e26e09eef1
 \begin{DoxyCompactList}\small\item\em Calculates the net present value (N\+PV) of the bond at the time of issuance. This function computes the N\+PV of the bond based on its cost of capital, the interest rate for the given week, and a yearly discount rate. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a4cf110f320c92f5eca9aed952e0b527a}{issue\+Bond}} (int week, int construction\+\_\+time, double bond\+\_\+term\+\_\+multiplier, double bond\+\_\+interest\+\_\+rate\+\_\+multiplier) override
 \begin{DoxyCompactList}\small\item\em Issues a floating interest balloon payment bond and adjusts its interest rate series. This function issues the bond and multiplies the entire interest rate series by the provided bond interest rate multiplier. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-vector$<$ double $>$ \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a36c73466753c976e513c6763f79f58ad}{interest\+\_\+rate\+\_\+series}}
-\begin{DoxyCompactList}\small\item\em The interest rate time series beginning from week 0 of simulation. \end{DoxyCompactList}\item 
-const int \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_a439428fff4f2d4ba5d0b593e5d30687f}{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}}
-\begin{DoxyCompactList}\small\item\em The time after which bond repayment begins. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classFloatingInterestBalloonPaymentBond_afc1a77eb5d799201c7ef5c52ef5df374}{n\+\_\+payments\+\_\+made}} = 0
-\begin{DoxyCompactList}\small\item\em Number of payments made so far. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -205,39 +196,6 @@ Reimplemented from \mbox{\hyperlink{classBond_a726edbe3ea7047ebc7246585943763e3}
 
 
 
-\subsection{Member Data Documentation}
-\mbox{\Hypertarget{classFloatingInterestBalloonPaymentBond_a439428fff4f2d4ba5d0b593e5d30687f}\label{classFloatingInterestBalloonPaymentBond_a439428fff4f2d4ba5d0b593e5d30687f}} 
-\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years@{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}}
-\index{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years@{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
-\subsubsection{\texorpdfstring{begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years}{begin\_repayment\_after\_n\_years}}
-{\footnotesize\ttfamily const int Floating\+Interest\+Balloon\+Payment\+Bond\+::begin\+\_\+repayment\+\_\+after\+\_\+n\+\_\+years\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-The time after which bond repayment begins. 
-
-\mbox{\Hypertarget{classFloatingInterestBalloonPaymentBond_a36c73466753c976e513c6763f79f58ad}\label{classFloatingInterestBalloonPaymentBond_a36c73466753c976e513c6763f79f58ad}} 
-\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!interest\+\_\+rate\+\_\+series@{interest\+\_\+rate\+\_\+series}}
-\index{interest\+\_\+rate\+\_\+series@{interest\+\_\+rate\+\_\+series}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
-\subsubsection{\texorpdfstring{interest\+\_\+rate\+\_\+series}{interest\_rate\_series}}
-{\footnotesize\ttfamily vector$<$double$>$ Floating\+Interest\+Balloon\+Payment\+Bond\+::interest\+\_\+rate\+\_\+series\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-The interest rate time series beginning from week 0 of simulation. 
-
-\mbox{\Hypertarget{classFloatingInterestBalloonPaymentBond_afc1a77eb5d799201c7ef5c52ef5df374}\label{classFloatingInterestBalloonPaymentBond_afc1a77eb5d799201c7ef5c52ef5df374}} 
-\index{Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}!n\+\_\+payments\+\_\+made@{n\+\_\+payments\+\_\+made}}
-\index{n\+\_\+payments\+\_\+made@{n\+\_\+payments\+\_\+made}!Floating\+Interest\+Balloon\+Payment\+Bond@{Floating\+Interest\+Balloon\+Payment\+Bond}}
-\subsubsection{\texorpdfstring{n\+\_\+payments\+\_\+made}{n\_payments\_made}}
-{\footnotesize\ttfamily int Floating\+Interest\+Balloon\+Payment\+Bond\+::n\+\_\+payments\+\_\+made = 0\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-Number of payments made so far. 
-
-
-
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/\+System\+Components/\+Bonds/\mbox{\hyperlink{FloatingInterestBalloonPaymentBond_8h}{Floating\+Interest\+Balloon\+Payment\+Bond.\+h}}\end{DoxyCompactItemize}
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+System\+Components/\+Bonds/\mbox{\hyperlink{FloatingInterestBalloonPaymentBond_8h}{Floating\+Interest\+Balloon\+Payment\+Bond.\+h}}\end{DoxyCompactItemize}

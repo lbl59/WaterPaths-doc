@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Problem Module &mdash; WaterPaths 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            WaterPaths
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">Modules</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">WaterPaths</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Problem Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/ContinuityModels/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="problem-module">
+<h1>Problem Module<a class="headerlink" href="#problem-module" title="Permalink to this heading"></a></h1>
+<p>The <cite>ContinuityModels</cite> module contains classes and functions related to maintaining and enforcing continuity
+equations within single hydroclimatic realizations and across ROF calculations.</p>
+<section id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Submodules:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Base/index.html">Base Components</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Base/index.html#api-reference">API Reference</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
+<p>Below is the API reference for the <cite>ContinuityModel</cite> module. Documentation is automatically extracted from the header files.</p>
+<section id="base-components">
+<h3>Base Components<a class="headerlink" href="#base-components" title="Permalink to this heading"></a></h3>
+<section id="continuitymodel-h">
+<h4>ContinuityModel.h<a class="headerlink" href="#continuitymodel-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv415ContinuityModel">
+<span id="_CPPv315ContinuityModel"></span><span id="_CPPv215ContinuityModel"></span><span id="ContinuityModel"></span><span class="target" id="classContinuityModel"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ContinuityModel</span></span></span><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../modules.html#ContinuityModel_8h"><span class="std std-ref">ContinuityModel.h</span></a>&gt;</em></div>
+<p>Subclassed by <a class="reference internal" href="../modules.html#classContinuityModelRealization"><span class="std std-ref">ContinuityModelRealization</span></a>, <a class="reference internal" href="../modules.html#classContinuityModelROF"><span class="std std-ref">ContinuityModelROF</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel15ContinuityModelER6vectorIP11WaterSourceER6vectorIP7UtilityER6vectorIP17MinEnvFlowControlERK5GraphRK6vectorI6vectorIiEER6vectorIdER6vectorIdEm">
+<span id="_CPPv3N15ContinuityModel15ContinuityModelER6vectorIP11WaterSourceER6vectorIP7UtilityER6vectorIP17MinEnvFlowControlERK5GraphRK6vectorI6vectorIiEER6vectorIdER6vectorIdEm"></span><span id="_CPPv2N15ContinuityModel15ContinuityModelER6vectorIP11WaterSourceER6vectorIP7UtilityER6vectorIP17MinEnvFlowControlERK5GraphRK6vectorI6vectorIiEER6vectorIdER6vectorIdEm"></span><span id="ContinuityModel::ContinuityModel__vector:WaterSourceP:R.vector:UtilityP:R.vector:MinEnvFlowControlP:R.GraphCR.vector:vector:i::CR.vector:double:R.vector:double:R.unsigned-l"></span><span class="target" id="classContinuityModel_1acadf595deb924bc08c9b702adf223365"></span><span class="sig-name descname"><span class="n"><span class="pre">ContinuityModel</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/index.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/index.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">MinEnvFlowControl</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">min_env_flow_controls</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Graph</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_graph</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_to_utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realization_id</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Constructs a <a class="reference internal" href="../modules.html#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> object to simulate water flow and demand. </p>
+<p>This constructor initializes a continuity model, linking water sources, utilities, and minimum environmental flow controls to simulate water distribution and demand over time. It sets up various internal tables and vectors for faster calculations and ensures proper linking of utilities to water sources. Additionally, it handles initialization for various properties like capacities and realization data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_sources</strong> – A vector of pointers to the water sources in the model. </p></li>
+<li><p><strong>utilities</strong> – A vector of pointers to the utilities in the model. </p></li>
+<li><p><strong>min_env_flow_controls</strong> – A vector of pointers to the minimum environmental flow controls. </p></li>
+<li><p><strong>water_sources_graph</strong> – A graph representing the water sources and their relationships. </p></li>
+<li><p><strong>water_sources_to_utilities</strong> – A matrix mapping each utility to the water sources it uses. </p></li>
+<li><p><strong>utilities_rdm</strong> – A vector of randomization factors for the utilities. </p></li>
+<li><p><strong>water_sources_rdm</strong> – A vector of randomization factors for the water sources. </p></li>
+<li><p><strong>realization_id</strong> – An identifier for the current realization.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">invalid_argument</span></span></span> – If any of the water sources are not correctly linked to utilities, or if utilities lack storage capacity, an exception is thrown. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel15ContinuityModelER15ContinuityModel">
+<span id="_CPPv3N15ContinuityModel15ContinuityModelER15ContinuityModel"></span><span id="_CPPv2N15ContinuityModel15ContinuityModelER15ContinuityModel"></span><span id="ContinuityModel::ContinuityModel__ContinuityModelR"></span><span class="target" id="classContinuityModel_1a7f46eb1f937b813226ca7fee96e5fd5c"></span><span class="sig-name descname"><span class="n"><span class="pre">ContinuityModel</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="Base/index.html#_CPPv4N15ContinuityModel15ContinuityModelER15ContinuityModel" title="ContinuityModel::ContinuityModel"><span class="n"><span class="pre">ContinuityModel</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">continuity_model</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Copy constructor for a new Continuity Model object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>continuity_model</strong> – A reference to the <a class="reference internal" href="../modules.html#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> object to be copied.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A new <a class="reference internal" href="../modules.html#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> object with the same properties as the original. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModelD0Ev">
+<span id="_CPPv3N15ContinuityModelD0Ev"></span><span id="_CPPv2N15ContinuityModelD0Ev"></span><span id="ContinuityModel::~ContinuityModel"></span><span class="target" id="classContinuityModel_1ae901ce342cd6e49c17994e4910873187"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~ContinuityModel</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Destructor for <a class="reference internal" href="../modules.html#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> to clean up dynamically allocated resources. </p>
+<p>This destructor is responsible for deleting all dynamically allocated objects associated with the <a class="reference internal" href="../modules.html#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> instance, including water sources, utilities, and minimum environmental flow controls. It ensures proper cleanup to avoid memory leaks when the model is no longer needed.</p>
+<p>This is a virtual function meant to be overridden by subclasses to ensure proper cleanup of any additional resources they may have allocated. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel14continuityStepEiibb">
+<span id="_CPPv3N15ContinuityModel14continuityStepEiibb"></span><span id="_CPPv2N15ContinuityModel14continuityStepEiibb"></span><span id="ContinuityModel::continuityStep__i.i.b.b"></span><span class="target" id="classContinuityModel_1a7c37fec30b6381ded6150df1b1746953"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">continuityStep</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rof_realization</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="o"><span class="pre">-</span></span><span class="m"><span class="pre">1</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">apply_demand_buffer</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">apply_demand_projection</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Performs a single step of the continuity calculation for water sources and utilities. </p>
+<p>This function performs a mass balance calculation for each water source in the continuity model, updating the available volume and accounting for upstream spillage, wastewater discharges, and demand projections. It also updates the minimum environmental flows and utility storage volumes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The current week of the simulation. </p></li>
+<li><p><strong>rof_realization</strong> – The realization index for the ROF calculation (use <code class="docutils literal notranslate"><span class="pre">NON_INITIALIZED</span></code> for a regular simulation). </p></li>
+<li><p><strong>apply_demand_buffer</strong> – Flag to indicate whether to apply the demand buffer to the simulation. </p></li>
+<li><p><strong>apply_demand_projection</strong> – Flag to indicate whether to apply the demand projection to the simulation.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel14setRealizationEmR6vectorIdER6vectorIdE">
+<span id="_CPPv3N15ContinuityModel14setRealizationEmR6vectorIdER6vectorIdE"></span><span id="_CPPv2N15ContinuityModel14setRealizationEmR6vectorIdER6vectorIdE"></span><span id="ContinuityModel::setRealization__unsigned-l.vector:double:R.vector:double:R"></span><span class="target" id="classContinuityModel_1a47504c599955b8193ffab3bd0f328144"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealization</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realization_id</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Sets the realization ID for utilities, water sources, and minimum environmental flow controls. </p>
+<p>This function assigns a specific realization ID to each utility, water source, and minimum environmental flow control in the continuity model. This ensures that the correct realization data is used for the simulation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>realization_id</strong> – The ID of the realization to be set. </p></li>
+<li><p><strong>utilities_rdm</strong> – A vector containing random demand values for each utility, indexed by utility ID. </p></li>
+<li><p><strong>water_sources_rdm</strong> – A vector containing random demand values for each water source, indexed by source ID.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel26getOnlineDownstreamSourcesEv">
+<span id="_CPPv3N15ContinuityModel26getOnlineDownstreamSourcesEv"></span><span id="_CPPv2N15ContinuityModel26getOnlineDownstreamSourcesEv"></span><span id="ContinuityModel::getOnlineDownstreamSources"></span><span class="target" id="classContinuityModel_1a5682041c22910f1b2a79f30ba56a290d"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getOnlineDownstreamSources</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
+<dd><p>Retrieves a list of online downstream water sources for each water source. </p>
+<p>This function iterates through the water sources in topological order and identifies the first online downstream source for each water source. The result is a vector where each element represents the first online downstream source for the corresponding water source, or <code class="docutils literal notranslate"><span class="pre">NON_INITIALIZED</span></code> if no online downstream source is found.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A vector of integers representing the IDs of the online downstream sources for each water source. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK15ContinuityModel27getContinuity_water_sourcesEv">
+<span id="_CPPv3NK15ContinuityModel27getContinuity_water_sourcesEv"></span><span id="_CPPv2NK15ContinuityModel27getContinuity_water_sourcesEv"></span><span id="ContinuityModel::getContinuity_water_sourcesC"></span><span class="target" id="classContinuityModel_1aa0fbc434152c2ca4fc5e9534fa428de7"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/index.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getContinuity_water_sources</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Retrieves the list of water sources in the continuity model. </p>
+<p>This function returns a constant reference to the vector of water sources that are included in the continuity model. The water sources represent all sources involved in the model’s calculations for continuity.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A constant reference to the vector of <code class="docutils literal notranslate"><a class="reference internal" href="../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> pointers. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK15ContinuityModel23getContinuity_utilitiesEv">
+<span id="_CPPv3NK15ContinuityModel23getContinuity_utilitiesEv"></span><span id="_CPPv2NK15ContinuityModel23getContinuity_utilitiesEv"></span><span id="ContinuityModel::getContinuity_utilitiesC"></span><span class="target" id="classContinuityModel_1ac95d9ee421dee12258643c4b7e5caa5d"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/index.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getContinuity_utilities</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
+<dd><p>Retrieves the list of utilities in the continuity model. </p>
+<p>This function returns a constant reference to the vector of utilities that are included in the continuity model. The utilities represent all entities that rely on the water sources for their operations in the model’s calculations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A constant reference to the vector of <code class="docutils literal notranslate"><a class="reference internal" href="../modules.html#classUtility"><span class="std std-ref"><span class="pre">Utility</span></span></a></code> pointers. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel14realization_idE">
+<span id="_CPPv3N15ContinuityModel14realization_idE"></span><span id="_CPPv2N15ContinuityModel14realization_idE"></span><span id="ContinuityModel::realization_id__unsigned-lC"></span><span class="target" id="classContinuityModel_1a7b6c99bf256f6c6b633ebb78282f43c7"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">realization_id</span></span></span><br /></dt>
+<dd><p>An unsigned long integer representing the realization id. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel24continuity_water_sourcesE">
+<span id="_CPPv3N15ContinuityModel24continuity_water_sourcesE"></span><span id="_CPPv2N15ContinuityModel24continuity_water_sourcesE"></span><span id="ContinuityModel::continuity_water_sources__vector:WaterSourceP:"></span><span class="target" id="classContinuityModel_1a3980284a9dd08bae4e76398d1b0d6f55"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/index.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">continuity_water_sources</span></span></span><br /></dt>
+<dd><p>A vector of <a class="reference internal" href="../modules.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> objects representing the water sources in the system. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel20continuity_utilitiesE">
+<span id="_CPPv3N15ContinuityModel20continuity_utilitiesE"></span><span id="_CPPv2N15ContinuityModel20continuity_utilitiesE"></span><span id="ContinuityModel::continuity_utilities__vector:UtilityP:"></span><span class="target" id="classContinuityModel_1adc77a0214d553a961035ce86c93cf9be"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/index.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">continuity_utilities</span></span></span><br /></dt>
+<dd><p>A vector of <a class="reference internal" href="../modules.html#classUtility"><span class="std std-ref">Utility</span></a> objects representing the utilities in the system. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel21min_env_flow_controlsE">
+<span id="_CPPv3N15ContinuityModel21min_env_flow_controlsE"></span><span id="_CPPv2N15ContinuityModel21min_env_flow_controlsE"></span><span id="ContinuityModel::min_env_flow_controls__vector:MinEnvFlowControlP:"></span><span class="target" id="classContinuityModel_1afc991e5c0d144020e49a97751a04b302"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">MinEnvFlowControl</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_env_flow_controls</span></span></span><br /></dt>
+<dd><p>A vector of MinEnvFlowControl objects representing the minimum environmental flow controls in the system. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel19water_sources_graphE">
+<span id="_CPPv3N15ContinuityModel19water_sources_graphE"></span><span id="_CPPv2N15ContinuityModel19water_sources_graphE"></span><span id="ContinuityModel::water_sources_graph__Graph"></span><span class="target" id="classContinuityModel_1a563401588c6fa622f03393909a3522db"></span><span class="n"><span class="pre">Graph</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_sources_graph</span></span></span><br /></dt>
+<dd><p>A bidirectional Graph object representing the connections between the water sources in the system. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel26water_sources_to_utilitiesE">
+<span id="_CPPv3N15ContinuityModel26water_sources_to_utilitiesE"></span><span id="_CPPv2N15ContinuityModel26water_sources_to_utilitiesE"></span><span id="ContinuityModel::water_sources_to_utilities__vector:vector:i::"></span><span class="target" id="classContinuityModel_1ae8516bcbbf52650190277fc8b06c1843"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_sources_to_utilities</span></span></span><br /></dt>
+<dd><p>A 2D vector of integers representing the water sources supplying each utility, irrespective of their online/offline status. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel33water_sources_online_to_utilitiesE">
+<span id="_CPPv3N15ContinuityModel33water_sources_online_to_utilitiesE"></span><span id="_CPPv2N15ContinuityModel33water_sources_online_to_utilitiesE"></span><span id="ContinuityModel::water_sources_online_to_utilities__vector:vector:i::"></span><span class="target" id="classContinuityModel_1a6d80a7e50e022e2cdb5e912d5b3b5cf0"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_sources_online_to_utilities</span></span></span><br /></dt>
+<dd><p>A 2D vector of integers representing the water sources supplying each utility that are is already built and functional. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel26utilities_to_water_sourcesE">
+<span id="_CPPv3N15ContinuityModel26utilities_to_water_sourcesE"></span><span id="_CPPv2N15ContinuityModel26utilities_to_water_sourcesE"></span><span id="ContinuityModel::utilities_to_water_sources__vector:vector:i::"></span><span class="target" id="classContinuityModel_1a5cf4be0afa886eb09a3e143f54c29044"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utilities_to_water_sources</span></span></span><br /></dt>
+<dd><p>A 2D vector of integers representing the utilities that draw water from each water source. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel18downstream_sourcesE">
+<span id="_CPPv3N15ContinuityModel18downstream_sourcesE"></span><span id="_CPPv2N15ContinuityModel18downstream_sourcesE"></span><span id="ContinuityModel::downstream_sources__vector:i:"></span><span class="target" id="classContinuityModel_1af00ea62ac8e2e398591ff608c2a203ef"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">downstream_sources</span></span></span><br /></dt>
+<dd><p>A vector of integers representing the downstream source of each water source. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel25sources_topological_orderE">
+<span id="_CPPv3N15ContinuityModel25sources_topological_orderE"></span><span id="_CPPv2N15ContinuityModel25sources_topological_orderE"></span><span id="ContinuityModel::sources_topological_order__vector:i:C"></span><span class="target" id="classContinuityModel_1a6605cb6aae0370eb84d2e8bf7d6d651e"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sources_topological_order</span></span></span><br /></dt>
+<dd><p>A vector of integers representing the topological order of each water source. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel24water_sources_capacitiesE">
+<span id="_CPPv3N15ContinuityModel24water_sources_capacitiesE"></span><span id="_CPPv2N15ContinuityModel24water_sources_capacitiesE"></span><span id="ContinuityModel::water_sources_capacities__vector:double:"></span><span class="target" id="classContinuityModel_1aadc8d46b2d0cc0a5c6b5ccdf0c5c24d4"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_sources_capacities</span></span></span><br /></dt>
+<dd><p>A vector of doubles representing the capacities of each water source. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel20utilities_capacitiesE">
+<span id="_CPPv3N15ContinuityModel20utilities_capacitiesE"></span><span id="_CPPv2N15ContinuityModel20utilities_capacitiesE"></span><span id="ContinuityModel::utilities_capacities__vector:double:"></span><span class="target" id="classContinuityModel_1a781786effdf14fefcb2201eb33d9e0c7"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utilities_capacities</span></span></span><br /></dt>
+<dd><p>A vector of doubles representing the capacities of each utility. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel7demandsE">
+<span id="_CPPv3N15ContinuityModel7demandsE"></span><span id="_CPPv2N15ContinuityModel7demandsE"></span><span id="ContinuityModel::demands__vector:vector:double::"></span><span class="target" id="classContinuityModel_1a1994ed4d99e0583eac5c82a4b26d9728"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demands</span></span></span><br /></dt>
+<dd><p>A 2D vector of doubles representing the demand timeseries of each utility. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel13utilities_rdmE">
+<span id="_CPPv3N15ContinuityModel13utilities_rdmE"></span><span id="_CPPv2N15ContinuityModel13utilities_rdmE"></span><span id="ContinuityModel::utilities_rdm__vector:double:"></span><span class="target" id="classContinuityModel_1aa4a00b76da6295d2faa11e3dcaea1896"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utilities_rdm</span></span></span><br /></dt>
+<dd><p>A vector of doubles representing the DU factor multipliers for each utility’s water demands. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel17water_sources_rdmE">
+<span id="_CPPv3N15ContinuityModel17water_sources_rdmE"></span><span id="_CPPv2N15ContinuityModel17water_sources_rdmE"></span><span id="ContinuityModel::water_sources_rdm__vector:double:"></span><span class="target" id="classContinuityModel_1ab7b8fa93a6f56b328e425e1ead6cfefa"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_sources_rdm</span></span></span><br /></dt>
+<dd><p>A vector of doubles representing the DU factor multipliers scaling the construction, permitting, and financing aspects of a water source. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel11n_utilitiesE">
+<span id="_CPPv3N15ContinuityModel11n_utilitiesE"></span><span id="_CPPv2N15ContinuityModel11n_utilitiesE"></span><span id="ContinuityModel::n_utilities__iC"></span><span class="target" id="classContinuityModel_1a6df6198ebc99a099df08f4b8ce6b52b9"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_utilities</span></span></span><br /></dt>
+<dd><p>An integer representing the number of utilities in the system. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel9n_sourcesE">
+<span id="_CPPv3N15ContinuityModel9n_sourcesE"></span><span id="_CPPv2N15ContinuityModel9n_sourcesE"></span><span id="ContinuityModel::n_sources__iC"></span><span class="target" id="classContinuityModel_1a3c25a0d17579eb0fdad0b18319441460"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_sources</span></span></span><br /></dt>
+<dd><p>An integer representing the number of water sources in the system. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel23delta_realization_weeksE">
+<span id="_CPPv3N15ContinuityModel23delta_realization_weeksE"></span><span id="_CPPv2N15ContinuityModel23delta_realization_weeksE"></span><span id="ContinuityModel::delta_realization_weeks__iA"></span><span class="target" id="classContinuityModel_1aee4088e422a0d3723dc7895c96c9ebe3"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">delta_realization_weeks</span></span></span><span class="p"><span class="pre">[</span></span><span class="n"><span class="pre">NUMBER_REALIZATIONS_ROF</span></span><span class="w"> </span><span class="o"><span class="pre">+</span></span><span class="w"> </span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">]</span></span><br /></dt>
+<dd><p>An array of integers representing the number of weeks to be added to the current week to get the actual current week of the realization. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv49Constants">
+<span id="_CPPv39Constants"></span><span id="_CPPv29Constants"></span><span id="Constants"></span><span class="target" id="namespaceConstants"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Constants</span></span></span><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv4St">
+<span id="_CPPv3St"></span><span id="_CPPv2St"></span><span id="std"></span><span class="target" id="namespacestd"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">std</span></span></span><br /></dt>
+<dd></dd></dl>
+
+</section>
+</section>
+<section id="specific-implementations">
+<h3>Specific Implementations<a class="headerlink" href="#specific-implementations" title="Permalink to this heading"></a></h3>
+<section id="continuitymodelrealization-h">
+<h4>ContinuityModelRealization.h<a class="headerlink" href="#continuitymodelrealization-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv426ContinuityModelRealization">
+<span id="_CPPv326ContinuityModelRealization"></span><span id="_CPPv226ContinuityModelRealization"></span><span id="ContinuityModelRealization"></span><span class="target" id="classContinuityModelRealization"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ContinuityModelRealization</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/index.html#_CPPv415ContinuityModel" title="ContinuityModel"><span class="n"><span class="pre">ContinuityModel</span></span></a><a class="headerlink" href="#_CPPv426ContinuityModelRealization" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../modules.html#ContinuityModelRealization_8h"><span class="std std-ref">ContinuityModelRealization.h</span></a>&gt;</em></div>
+<p>The <a class="reference internal" href="../modules.html#classContinuityModelRealization"><span class="std std-ref">ContinuityModelRealization</span></a> class extends the <a class="reference internal" href="../modules.html#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> class to include the implementation of drought mitigation policies and the setting of short-term and long-term risks of failure.</p>
+<p>Created by bernardo on 1/26/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26ContinuityModelRealization26ContinuityModelRealizationER6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEER6vectorIP7UtilityERK6vectorIP23DroughtMitigationPolicyER6vectorIP17MinEnvFlowControlER6vectorIdER6vectorIdER6vectorIdEKj">
+<span id="_CPPv3N26ContinuityModelRealization26ContinuityModelRealizationER6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEER6vectorIP7UtilityERK6vectorIP23DroughtMitigationPolicyER6vectorIP17MinEnvFlowControlER6vectorIdER6vectorIdER6vectorIdEKj"></span><span id="_CPPv2N26ContinuityModelRealization26ContinuityModelRealizationER6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEER6vectorIP7UtilityERK6vectorIP23DroughtMitigationPolicyER6vectorIP17MinEnvFlowControlER6vectorIdER6vectorIdER6vectorIdEKj"></span><span id="ContinuityModelRealization::ContinuityModelRealization__vector:WaterSourceP:R.GraphCR.vector:vector:i::CR.vector:UtilityP:R.vector:DroughtMitigationPolicyP:CR.vector:MinEnvFlowControlP:R.vector:double:R.vector:double:R.vector:double:R.unsigned-iC"></span><span class="target" id="classContinuityModelRealization_1a641c096ac73586597b3e21a5d516c923"></span><span class="sig-name descname"><span class="n"><span class="pre">ContinuityModelRealization</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/index.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Graph</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_graph</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_to_utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/index.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">DroughtMitigationPolicy</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">drought_mitigation_policies</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">MinEnvFlowControl</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">min_env_flow_control</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">policy_rdm</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realization_index</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N26ContinuityModelRealization26ContinuityModelRealizationER6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEER6vectorIP7UtilityERK6vectorIP23DroughtMitigationPolicyER6vectorIP17MinEnvFlowControlER6vectorIdER6vectorIdER6vectorIdEKj" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <a class="reference internal" href="../modules.html#classContinuityModelRealization"><span class="std std-ref">ContinuityModelRealization</span></a> object. </p>
+<p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="../modules.html#classContinuityModelRealization"><span class="std std-ref"><span class="pre">ContinuityModelRealization</span></span></a></code> object, which builds upon the <code class="docutils literal notranslate"><a class="reference internal" href="../modules.html#classContinuityModel"><span class="std std-ref"><span class="pre">ContinuityModel</span></span></a></code> by incorporating drought mitigation policies. It initializes a <a class="reference internal" href="../modules.html#classContinuityModelRealization"><span class="std std-ref">ContinuityModelRealization</span></a> object by calling the <a class="reference internal" href="../modules.html#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> constructor, adding susytem components to the drought mitigation policies. It also sets the realization for each drought mitigation policy with the provided realization data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_sources</strong> – A vector of <code class="docutils literal notranslate"><a class="reference internal" href="../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> pointers representing the water sources involved in the model. </p></li>
+<li><p><strong>water_sources_graph</strong> – A <code class="docutils literal notranslate"><span class="pre">Graph</span></code> representing the relationships and connections between the water sources. </p></li>
+<li><p><strong>water_sources_to_utilities</strong> – A 2D vector indicating which water sources are connected to which utilities. </p></li>
+<li><p><strong>utilities</strong> – A vector of <code class="docutils literal notranslate"><a class="reference internal" href="../modules.html#classUtility"><span class="std std-ref"><span class="pre">Utility</span></span></a></code> pointers representing the utilities that rely on the water sources. </p></li>
+<li><p><strong>drought_mitigation_policies</strong> – A vector of <code class="docutils literal notranslate"><span class="pre">DroughtMitigationPolicy</span></code> pointers, each representing a policy for managing drought conditions. </p></li>
+<li><p><strong>min_env_flow_control</strong> – A vector of <code class="docutils literal notranslate"><span class="pre">MinEnvFlowControl</span></code> pointers used to set minimum environmental flows for water sources. </p></li>
+<li><p><strong>utilities_rdm</strong> – A vector containing random demand values for the utilities in the model. </p></li>
+<li><p><strong>water_sources_rdm</strong> – A vector containing random demand values for the water sources in the model. </p></li>
+<li><p><strong>policy_rdm</strong> – A vector containing random demand values for the drought mitigation policies. </p></li>
+<li><p><strong>realization_id</strong> – The realization identifier used to associate a specific realization of the model.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A <code class="docutils literal notranslate"><a class="reference internal" href="../modules.html#classContinuityModelRealization"><span class="std std-ref"><span class="pre">ContinuityModelRealization</span></span></a></code> object initialized with the provided components and realization. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26ContinuityModelRealizationD0Ev">
+<span id="_CPPv3N26ContinuityModelRealizationD0Ev"></span><span id="_CPPv2N26ContinuityModelRealizationD0Ev"></span><span id="ContinuityModelRealization::~ContinuityModelRealization"></span><span class="target" id="classContinuityModelRealization_1afd53069e2f9ab96210ff153d16f01269"></span><span class="sig-name descname"><span class="n"><span class="pre">~ContinuityModelRealization</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N26ContinuityModelRealizationD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destructor for the <a class="reference internal" href="../modules.html#classContinuityModelRealization"><span class="std std-ref">ContinuityModelRealization</span></a> class. </p>
+<p>This function releases the memory allocated for drought mitigation policies. It ensures proper cleanup of resources associated with the <code class="docutils literal notranslate"><a class="reference internal" href="../modules.html#classContinuityModelRealization"><span class="std std-ref"><span class="pre">ContinuityModelRealization</span></span></a></code> object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26ContinuityModelRealization16setShortTermROFsERK6vectorI6vectorIdEE">
+<span id="_CPPv3N26ContinuityModelRealization16setShortTermROFsERK6vectorI6vectorIdEE"></span><span id="_CPPv2N26ContinuityModelRealization16setShortTermROFsERK6vectorI6vectorIdEE"></span><span id="ContinuityModelRealization::setShortTermROFs__vector:vector:double::CR"></span><span class="target" id="classContinuityModelRealization_1ae2c40328beb671fa9b10ecc2921b8375"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setShortTermROFs</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">risks_of_failure</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N26ContinuityModelRealization16setShortTermROFsERK6vectorI6vectorIdEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the short-term risks of failure (ROFs) for utilities. </p>
+<p>This function updates the short-term ROFs for each utility based on the given risks of failure for storage and treatment capacity. The higher of the two risks is used as the overall ROF for the utility, and both individual risks are also recorded.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>risks_of_failure</strong> – A 2D vector where each row corresponds to a utility, and each column contains risks of failure for storage and treatment capacity, respectively.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26ContinuityModelRealization30applyDroughtMitigationPoliciesEi">
+<span id="_CPPv3N26ContinuityModelRealization30applyDroughtMitigationPoliciesEi"></span><span id="_CPPv2N26ContinuityModelRealization30applyDroughtMitigationPoliciesEi"></span><span id="ContinuityModelRealization::applyDroughtMitigationPolicies__i"></span><span class="target" id="classContinuityModelRealization_1a1841f4ca49c150cf5d790f6d42496575"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">applyDroughtMitigationPolicies</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N26ContinuityModelRealization30applyDroughtMitigationPoliciesEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Applies drought mitigation policies for the given week. </p>
+<p>This function iterates through all the drought mitigation policies and applies each policy to the system for the specified week.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The current week for which drought mitigation policies are to be applied.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK26ContinuityModelRealization30getDrought_mitigation_policiesEv">
+<span id="_CPPv3NK26ContinuityModelRealization30getDrought_mitigation_policiesEv"></span><span id="_CPPv2NK26ContinuityModelRealization30getDrought_mitigation_policiesEv"></span><span id="ContinuityModelRealization::getDrought_mitigation_policiesC"></span><span class="target" id="classContinuityModelRealization_1afadb3e7f51ae7a09948ffc73d7eb7f6b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">DroughtMitigationPolicy</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDrought_mitigation_policies</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK26ContinuityModelRealization30getDrought_mitigation_policiesEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the drought mitigation policies associated with the continuity model realization. </p>
+<p>This function returns a vector containing pointers to all drought mitigation policies in the system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A <code class="docutils literal notranslate"><span class="pre">vector</span></code> of pointers to <code class="docutils literal notranslate"><span class="pre">DroughtMitigationPolicy</span></code> objects associated with the continuity model realization. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26ContinuityModelRealization15setLongTermROFsERK6vectorI6vectorIdEEKi">
+<span id="_CPPv3N26ContinuityModelRealization15setLongTermROFsERK6vectorI6vectorIdEEKi"></span><span id="_CPPv2N26ContinuityModelRealization15setLongTermROFsERK6vectorI6vectorIdEEKi"></span><span id="ContinuityModelRealization::setLongTermROFs__vector:vector:double::CR.iC"></span><span class="target" id="classContinuityModelRealization_1aa0168985144d26e1613cf20335affedb"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setLongTermROFs</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">risks_of_failure</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N26ContinuityModelRealization15setLongTermROFsERK6vectorI6vectorIdEEKi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the long-term risks of failure (ROFs) for utilities and triggers new infrastructure construction if necessary. </p>
+<p>This function calculates and updates the long-term risks of failure for each utility based on storage and treatment capacities. If the risk exceeds a threshold, it triggers the construction of new infrastructure and ensures consistency across utilities.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>risks_of_failure</strong> – A 2D vector where each row represents a utility and contains two ROF values:<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">risks_of_failure[u][0]</span></code>: Storage risk of failure.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">risks_of_failure[u][1]</span></code>: Treatment risk of failure. </p></li>
+</ul>
+</p></li>
+<li><p><strong>week</strong> – The current simulation week.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26ContinuityModelRealization38setLongTermROFDemandProjectionEstimateERK6vectorIP7UtilityE">
+<span id="_CPPv3N26ContinuityModelRealization38setLongTermROFDemandProjectionEstimateERK6vectorIP7UtilityE"></span><span id="_CPPv2N26ContinuityModelRealization38setLongTermROFDemandProjectionEstimateERK6vectorIP7UtilityE"></span><span id="ContinuityModelRealization::setLongTermROFDemandProjectionEstimate__vector:UtilityP:CR"></span><span class="target" id="classContinuityModelRealization_1a5b9405156e8cc21c8781ea15ee46c8fe"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setLongTermROFDemandProjectionEstimate</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/index.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rof_utilities</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N26ContinuityModelRealization38setLongTermROFDemandProjectionEstimateERK6vectorIP7UtilityE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Updates the demand projection estimates for utilities based on risk of failure (ROF) utilities. </p>
+<p>This function synchronizes the current-year demand records and future demand estimates of the <code class="docutils literal notranslate"><span class="pre">continuity_utilities</span></code> with the corresponding values from the provided <code class="docutils literal notranslate"><span class="pre">rof_utilities</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rof_utilities</strong> – A vector of utility pointers containing the risk of failure (ROF) utilities with up-to-date demand projection estimates.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26ContinuityModelRealization34updateJointWTPTreatmentAllocationsEi">
+<span id="_CPPv3N26ContinuityModelRealization34updateJointWTPTreatmentAllocationsEi"></span><span id="_CPPv2N26ContinuityModelRealization34updateJointWTPTreatmentAllocationsEi"></span><span id="ContinuityModelRealization::updateJointWTPTreatmentAllocations__i"></span><span class="target" id="classContinuityModelRealization_1ab87c140eaf87266ca81636059e948bb7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateJointWTPTreatmentAllocations</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">current_week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N26ContinuityModelRealization34updateJointWTPTreatmentAllocationsEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Updates treatment capacity allocations for Joint Water Treatment Plants (WTPs) under variable allocation agreements. </p>
+<p>This function recalculates treatment capacity allocations for utilities that share a Joint Water Treatment Plant (WTP) with variable allocation agreements, adjusting for demand growth or reduction. Allocations are based on the expected growth of each partner until the plant’s capacity is reached.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>current_week</strong> – The current simulation week, used to determine the current year.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26ContinuityModelRealization27drought_mitigation_policiesE">
+<span id="_CPPv3N26ContinuityModelRealization27drought_mitigation_policiesE"></span><span id="_CPPv2N26ContinuityModelRealization27drought_mitigation_policiesE"></span><span id="ContinuityModelRealization::drought_mitigation_policies__vector:DroughtMitigationPolicyP:"></span><span class="target" id="classContinuityModelRealization_1a757dcf1de115c674fd5adcb040c5f277"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">DroughtMitigationPolicy</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drought_mitigation_policies</span></span></span><a class="headerlink" href="#_CPPv4N26ContinuityModelRealization27drought_mitigation_policiesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of pointers to the drought mitigation policies in the system. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="continuitymodelrof-h">
+<h4>ContinuityModelROF.h<a class="headerlink" href="#continuitymodelrof-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv418ContinuityModelROF">
+<span id="_CPPv318ContinuityModelROF"></span><span id="_CPPv218ContinuityModelROF"></span><span id="ContinuityModelROF"></span><span class="target" id="classContinuityModelROF"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ContinuityModelROF</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/index.html#_CPPv415ContinuityModel" title="ContinuityModel"><span class="n"><span class="pre">ContinuityModel</span></span></a><a class="headerlink" href="#_CPPv418ContinuityModelROF" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../modules.html#ContinuityModelROF_8h"><span class="std std-ref">ContinuityModelROF.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF18ContinuityModelROFE6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEE6vectorIP7UtilityE6vectorIP17MinEnvFlowControlER6vectorIdER6vectorIdEmKiKm">
+<span id="_CPPv3N18ContinuityModelROF18ContinuityModelROFE6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEE6vectorIP7UtilityE6vectorIP17MinEnvFlowControlER6vectorIdER6vectorIdEmKiKm"></span><span id="_CPPv2N18ContinuityModelROF18ContinuityModelROFE6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEE6vectorIP7UtilityE6vectorIP17MinEnvFlowControlER6vectorIdER6vectorIdEmKiKm"></span><span id="ContinuityModelROF::ContinuityModelROF__vector:WaterSourceP:.GraphCR.vector:vector:i::CR.vector:UtilityP:.vector:MinEnvFlowControlP:.vector:double:R.vector:double:R.unsigned-l.iC.unsigned-lC"></span><span class="target" id="classContinuityModelROF_1a23bd422349e4e2246bd44b2007564fd1"></span><span class="sig-name descname"><span class="n"><span class="pre">ContinuityModelROF</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/index.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Graph</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_graph</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_to_utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/index.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">MinEnvFlowControl</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_env_flow_controls</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">total_weeks_simulation</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">use_precomputed_rof_tables</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realization_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF18ContinuityModelROFE6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEE6vectorIP7UtilityE6vectorIP17MinEnvFlowControlER6vectorIdER6vectorIdEmKiKm" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Initializes the <a class="reference internal" href="../modules.html#classContinuityModelROF"><span class="std std-ref">ContinuityModelROF</span></a> object for simulating risks of failure (ROF). </p>
+<p>This constructor sets up the <a class="reference internal" href="../modules.html#classContinuityModelROF"><span class="std std-ref">ContinuityModelROF</span></a> by initializing storage structures, updating utilities’ total available volume, and preparing risk-of-failure (ROF) tables or calculations based on pre-computed data.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_sources</strong> – Vector of water source objects used in the model. </p></li>
+<li><p><strong>water_sources_graph</strong> – Graph representing the topological relationships between water sources. </p></li>
+<li><p><strong>water_sources_to_utilities</strong> – Mapping of water sources to utilities. </p></li>
+<li><p><strong>utilities</strong> – Vector of utility objects to manage water demand and allocation. </p></li>
+<li><p><strong>min_env_flow_controls</strong> – Vector of minimum environmental flow controls. </p></li>
+<li><p><strong>utilities_rdm</strong> – Vector of random deviations for utilities. </p></li>
+<li><p><strong>water_sources_rdm</strong> – Vector of random deviations for water sources. </p></li>
+<li><p><strong>total_weeks_simulation</strong> – Total number of weeks for the simulation. </p></li>
+<li><p><strong>use_precomputed_rof_tables</strong> – Indicator for using pre-computed ROF tables (1: use, 0: generate dynamically). </p></li>
+<li><p><strong>realization_id</strong> – Unique identifier for the simulation realization. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROFD0Ev">
+<span id="_CPPv3N18ContinuityModelROFD0Ev"></span><span id="_CPPv2N18ContinuityModelROFD0Ev"></span><span id="ContinuityModelROF::~ContinuityModelROF"></span><span class="target" id="classContinuityModelROF_1a4acab850e28a3a41182a19d86a7de709"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~ContinuityModelROF</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROFD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destructor for the <a class="reference internal" href="../modules.html#classContinuityModelROF"><span class="std std-ref">ContinuityModelROF</span></a> class. </p>
+<p>This function cleans up resources allocated during the lifetime of the <a class="reference internal" href="../modules.html#classContinuityModelROF"><span class="std std-ref">ContinuityModelROF</span></a> object. Specifically, it releases memory associated with dynamically allocated arrays. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF21calculateShortTermROFEii">
+<span id="_CPPv3N18ContinuityModelROF21calculateShortTermROFEii"></span><span id="_CPPv2N18ContinuityModelROF21calculateShortTermROFEii"></span><span id="ContinuityModelROF::calculateShortTermROF__i.i"></span><span class="target" id="classContinuityModelROF_1a0386963b5914aaaa145de60a2ff1f84e"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateShortTermROF</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">import_export_rof_tables</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF21calculateShortTermROFEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function calculates the short-term risk of failure (ROF) for all utilities. </p>
+<p>Depending on whether precomputed ROF tables are imported, the function either performs calculations using the tables or calculates the ROF values directly.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The current week in the simulation for which the short-term ROF is being calculated. </p></li>
+<li><p><strong>import_export_rof_tables</strong> – Indicator for using precomputed ROF tables:<ul>
+<li><p>IMPORT_ROF_TABLES: Use precomputed ROF tables.</p></li>
+<li><p>Any other value: Perform full calculations for ROF.</p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A 2D vector of doubles where each row corresponds to a utility, and columns represent ROF values based on different storage or demand conditions. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF30calculateShortTermROFFullCalcsEi">
+<span id="_CPPv3N18ContinuityModelROF30calculateShortTermROFFullCalcsEi"></span><span id="_CPPv2N18ContinuityModelROF30calculateShortTermROFFullCalcsEi"></span><span id="ContinuityModelROF::calculateShortTermROFFullCalcs__i"></span><span class="target" id="classContinuityModelROF_1a975e7566b4c0db6e3731647b6e76b9c8"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateShortTermROFFullCalcs</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF30calculateShortTermROFFullCalcsEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function performs a full calculation of the short-term risk of failure (ROF) for each utility for the given week. </p>
+<p>The calculation considers both storage and treatment failure risks over a series of realizations. It simulates the system behavior for multiple years, adjusting for failures based on available storage and treatment capacity.</p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../modules.html#classContinuityModelROF_1a28834584763c3aa27a6f0917aa68926f"><span class="std std-ref">updateStorageToROFTable</span></a>, <a class="reference internal" href="../modules.html#classContinuityModelROF_1acd72d71a29cef49c4de3d111378b76c7"><span class="std std-ref">resetUtilitiesAndReservoirs</span></a>, <a class="reference internal" href="../modules.html#classContinuityModelROF_1a06cf47a32d6793b0ee912deccf92fc5b"><span class="std std-ref">updateOnlineInfrastructure</span></a>, <a class="reference internal" href="../modules.html#classContinuityModelROF_1a0c46d5905f5d0ae2cf0abd0d4653bbc7"><span class="std std-ref">setInitialTableTier</span></a>, <a class="reference internal" href="../modules.html#classContinuityModelROF_1aa2348a2a5dea751462771ef538243e75"><span class="std std-ref">recordROFStorageTable</span></a>, <a class="reference internal" href="../modules.html#classContinuityModelROF_1aa720006d12410fc35b8768eda716c149"><span class="std std-ref">calculateEmptyVolumes</span></a></p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The current week of the simulation to calculate the short-term ROF for.</p>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">logic_error</span></span></span> – If NaN values are encountered in the ROF calculations for storage or treatment.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A 2D vector of doubles representing the risk of failure for each utility:<ul class="simple">
+<li><p>The first row corresponds to storage-related ROF.</p></li>
+<li><p>The second row corresponds to treatment-related ROF.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF26calculateShortTermROFTableEi6vectorIP7UtilityE6vectorIdERK6vectorI8Matrix2DIdEE6vectorIdE6vectorIdE6vectorIdE">
+<span id="_CPPv3N18ContinuityModelROF26calculateShortTermROFTableEi6vectorIP7UtilityE6vectorIdERK6vectorI8Matrix2DIdEE6vectorIdE6vectorIdE6vectorIdE"></span><span id="_CPPv2N18ContinuityModelROF26calculateShortTermROFTableEi6vectorIP7UtilityE6vectorIdERK6vectorI8Matrix2DIdEE6vectorIdE6vectorIdE6vectorIdE"></span><span id="ContinuityModelROF::calculateShortTermROFTable__i.vector:UtilityP:.vector:double:.vector:Matrix2D:double::CR.vector:double:.vector:double:.vector:double:"></span><span class="target" id="classContinuityModelROF_1a48b31e060f1d75e31fa591015f4a1c22"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateShortTermROFTable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/index.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">utilities_base_storage_capacity</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Matrix2D</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ut_storage_to_rof_table</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">current_storage_table_shift</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">current_base_storage_table_shift</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">current_demand_ratio_buffer</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF26calculateShortTermROFTableEi6vectorIP7UtilityE6vectorIdERK6vectorI8Matrix2DIdEE6vectorIdE6vectorIdE6vectorIdE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function calculates the short-term risk of failure (ROF) for each utility based on the current storage levels and treatment capacity ratios, using a predefined ROF table. </p>
+<p>The function estimates the risk of failure in both storage and treatment for each utility by comparing the current storage levels against the storage-to-ROF table. It also checks if the demand-to-treatment capacity ratio exceeds a threshold to flag potential treatment failures.</p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../modules.html#classContinuityModelROF_1a06cf47a32d6793b0ee912deccf92fc5b"><span class="std std-ref">updateOnlineInfrastructure</span></a></p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The current week of the simulation for which the short-term ROF should be calculated. </p></li>
+<li><p><strong>utilities</strong> – The list of utilities for which the ROF will be calculated. </p></li>
+<li><p><strong>utilities_base_storage_capacity</strong> – The base storage capacities of each utility. </p></li>
+<li><p><strong>ut_storage_to_rof_table</strong> – The precomputed storage-to-ROF table for each utility. </p></li>
+<li><p><strong>current_storage_table_shift</strong> – The current shift applied to the storage table for each utility. </p></li>
+<li><p><strong>current_base_storage_table_shift</strong> – The current shift applied to the base storage table for each utility. </p></li>
+<li><p><strong>current_demand_ratio_buffer</strong> – The buffer added to the demand-to-treatment capacity ratio to avoid early failure triggers.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A 2D vector of doubles representing the risk of failure for each utility:<ul class="simple">
+<li><p>The first row corresponds to the storage-related ROF.</p></li>
+<li><p>The second row corresponds to the treatment-related ROF.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF20calculateLongTermROFEi">
+<span id="_CPPv3N18ContinuityModelROF20calculateLongTermROFEi"></span><span id="_CPPv2N18ContinuityModelROF20calculateLongTermROFEi"></span><span id="ContinuityModelROF::calculateLongTermROF__i"></span><span class="target" id="classContinuityModelROF_1a0b66880fe153cbd0b85a5b416b98e9a6"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateLongTermROF</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF20calculateLongTermROFEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>This function calculates the long-term risk of failure (ROF) for each utility, considering both storage and treatment capacity, based on projected demand and predefined failure thresholds. </p>
+<p>The function performs a long-term simulation of the utilities’ storage and treatment capacities over a series of realizations and time steps, calculating the risk of failure for each utility based on storage and treatment conditions.</p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../modules.html#classContinuityModelROF_1acd72d71a29cef49c4de3d111378b76c7"><span class="std std-ref">resetUtilitiesAndReservoirs</span></a>, <a class="reference internal" href="../modules.html#classContinuityModelROF_1a06cf47a32d6793b0ee912deccf92fc5b"><span class="std std-ref">updateOnlineInfrastructure</span></a></p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The current week of the simulation for which the long-term ROF should be calculated.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A 2D vector of doubles representing the risk of failure for each utility:<ul class="simple">
+<li><p>The first row corresponds to the storage-related ROF.</p></li>
+<li><p>The second row corresponds to the treatment-related ROF.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF27resetUtilitiesAndReservoirsEi">
+<span id="_CPPv3N18ContinuityModelROF27resetUtilitiesAndReservoirsEi"></span><span id="_CPPv2N18ContinuityModelROF27resetUtilitiesAndReservoirsEi"></span><span id="ContinuityModelROF::resetUtilitiesAndReservoirs__i"></span><span class="target" id="classContinuityModelROF_1acd72d71a29cef49c4de3d111378b76c7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">resetUtilitiesAndReservoirs</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rof_type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF27resetUtilitiesAndReservoirsEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Resets the utilities’ and reservoirs’ storage, last release, and combined storage respectively for the specified risk of failure (ROF) type. </p>
+<p>This function updates the water sources’ available volumes and outflows based on the current ROF type (short-term or long-term). It also updates the total available volume for each utility.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>rof_type</strong> – The type of ROF being simulated. Can be either:<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">SHORT_TERM_ROF</span></code>: For resetting to current storage conditions.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">LONG_TERM_ROF</span></code>: For resetting to full capacity conditions.</p></li>
+</ul>
+</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF30connectRealizationWaterSourcesERK6vectorIP11WaterSourceE">
+<span id="_CPPv3N18ContinuityModelROF30connectRealizationWaterSourcesERK6vectorIP11WaterSourceE"></span><span id="_CPPv2N18ContinuityModelROF30connectRealizationWaterSourcesERK6vectorIP11WaterSourceE"></span><span id="ContinuityModelROF::connectRealizationWaterSources__vector:WaterSourceP:CR"></span><span class="target" id="classContinuityModelROF_1a0c12b5dad97c3783361baad7e53a2634"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">connectRealizationWaterSources</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/index.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">realization_water_sources</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF30connectRealizationWaterSourcesERK6vectorIP11WaterSourceE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Connects this specific realization’s water sources to the model by passing the water sources to the ROF continuity model for the specific realization it calculated ROFs for. </p>
+<p>This function assigns the provided vector of water sources to the realization’s water sources. It updates the internal <code class="docutils literal notranslate"><span class="pre">realization_water_sources</span></code> vector to reflect the current simulation state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>realization_water_sources</strong> – A vector containing the one realization’s water sources to be connected to the model.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF27connectRealizationUtilitiesERK6vectorIP7UtilityE">
+<span id="_CPPv3N18ContinuityModelROF27connectRealizationUtilitiesERK6vectorIP7UtilityE"></span><span id="_CPPv2N18ContinuityModelROF27connectRealizationUtilitiesERK6vectorIP7UtilityE"></span><span id="ContinuityModelROF::connectRealizationUtilities__vector:UtilityP:CR"></span><span class="target" id="classContinuityModelROF_1abc16c650a854b60dfc42ab2d32ef4b0c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">connectRealizationUtilities</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/index.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">realization_utilities</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF27connectRealizationUtilitiesERK6vectorIP7UtilityE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Connects the realization utilities to the model by passing in the locations of the utilities of the realization it calculated ROFs for. </p>
+<p>This function assigns the provided vector of utilities to the realization’s utilities. It updates the internal <code class="docutils literal notranslate"><span class="pre">realization_utilities</span></code> vector to reflect the current simulation state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>realization_utilities</strong> – A vector containing the utilities to be connected to the model.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF26updateOnlineInfrastructureEi">
+<span id="_CPPv3N18ContinuityModelROF26updateOnlineInfrastructureEi"></span><span id="_CPPv2N18ContinuityModelROF26updateOnlineInfrastructureEi"></span><span id="ContinuityModelROF::updateOnlineInfrastructure__i"></span><span class="target" id="classContinuityModelROF_1a06cf47a32d6793b0ee912deccf92fc5b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateOnlineInfrastructure</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF26updateOnlineInfrastructureEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Updates the online infrastructure for water sources and utilities. </p>
+<p>This function checks for any new infrastructure that has become online in the realization model and updates the corresponding infrastructure status in the continuity model (ROF model). It updates water sources’ capacities, utilities’ storage capacities, and their ratios to status-quo capacities. It also updates the list of downstream sources for each source.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The current week number for the simulation.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF23updateStorageToROFTableEdiPKd">
+<span id="_CPPv3N18ContinuityModelROF23updateStorageToROFTableEdiPKd"></span><span id="_CPPv2N18ContinuityModelROF23updateStorageToROFTableEdiPKd"></span><span id="ContinuityModelROF::updateStorageToROFTable__double.i.doubleCP"></span><span class="target" id="classContinuityModelROF_1a28834584763c3aa27a6f0917aa68926f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateStorageToROFTable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">storage_percent_decrement</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week_of_the_year</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">to_full_toposort</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF23updateStorageToROFTableEdiPKd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Updates the approximate storage-to-ROF table based on the available water volumes and failure conditions. </p>
+<p>This function updates the storage-to-ROF table for each week by shifting storage volumes and checking for utility failures at various storage levels. The function reduces storage levels incrementally and records failures for utilities that do not meet the required storage capacity ratio. The process stops once all utilities have failed at a particular storage level.</p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="../modules.html#classContinuityModelROF_1a4f2b25687bcdeb4a88e22397c84789de"><span class="std std-ref">shiftStorages</span></a></p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>storage_percent_decrement</strong> – The percentage decrement to apply to the storage levels. </p></li>
+<li><p><strong>week_of_the_year</strong> – The week of the year to update the table for. </p></li>
+<li><p><strong>to_full</strong> – Array of available water volumes to full storage capacity for each water source.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF13shiftStoragesEPdPKd">
+<span id="_CPPv3N18ContinuityModelROF13shiftStoragesEPdPKd"></span><span id="_CPPv2N18ContinuityModelROF13shiftStoragesEPdPKd"></span><span id="ContinuityModelROF::shiftStorages__doubleP.doubleCP"></span><span class="target" id="classContinuityModelROF_1a4f2b25687bcdeb4a88e22397c84789de"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">shiftStorages</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">available_volumes_shifted</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">delta_storage</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF13shiftStoragesEPdPKd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Shifts storage volumes based on delta values. </p>
+<p>This function adjusts the storage volumes of water sources according to the given delta values. It handles the spillover of water to downstream sources if a source’s storage exceeds its capacity. The function is designed to respect the topological order of sources, ensuring that upstream sources are processed before downstream sources.</p>
+<p>FIXME: MAKE THIS MORE EFFICIENT. THIS METHOD IS THE MOST EXPENSIVE ONE IN THE CODE.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>available_volumes_shifted</strong> – A pointer to an array representing the shifted available volumes for each water source. </p></li>
+<li><p><strong>delta_storage</strong> – A pointer to an array of delta values representing the change in storage for each water source.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF13printROFTableERK6string">
+<span id="_CPPv3N18ContinuityModelROF13printROFTableERK6string"></span><span id="_CPPv2N18ContinuityModelROF13printROFTableERK6string"></span><span id="ContinuityModelROF::printROFTable__stringCR"></span><span class="target" id="classContinuityModelROF_1a1bb8362ce39e694937a787805613e106"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">printROFTable</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">folder</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF13printROFTableERK6string" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Prints the ROF table to CSV files for each utility. </p>
+<p>FIXME: This is where changes from CSV to more efficient file formats should be made.</p>
+<p>This function generates CSV files containing the Risk of Failure (ROF) data for each utility. It iterates over the number of utilities and writes the ROF table data to a separate file for each utility. The files are saved in the specified folder with filenames indicating the realization ID and the utility index.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>folder</strong> – The folder path where the CSV files will be saved.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF21setROFTablesAndShiftsERK6vectorI8Matrix2DIdEERK6vectorI6vectorIdEERK6vectorI6vectorIdEERK6vectorI6vectorIdEE">
+<span id="_CPPv3N18ContinuityModelROF21setROFTablesAndShiftsERK6vectorI8Matrix2DIdEERK6vectorI6vectorIdEERK6vectorI6vectorIdEERK6vectorI6vectorIdEE"></span><span id="_CPPv2N18ContinuityModelROF21setROFTablesAndShiftsERK6vectorI8Matrix2DIdEERK6vectorI6vectorIdEERK6vectorI6vectorIdEERK6vectorI6vectorIdEE"></span><span id="ContinuityModelROF::setROFTablesAndShifts__vector:Matrix2D:double::CR.vector:vector:double::CR.vector:vector:double::CR.vector:vector:double::CR"></span><span class="target" id="classContinuityModelROF_1a83fc5e19e0f92d12d659c3446b90fa13"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setROFTablesAndShifts</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Matrix2D</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">storage_to_rof_table</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">table_storage_shift</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">table_base_storage_shift</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">treatment_demand_buffer_shift</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF21setROFTablesAndShiftsERK6vectorI8Matrix2DIdEERK6vectorI6vectorIdEERK6vectorI6vectorIdEERK6vectorI6vectorIdEE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the ROF tables and shifts for the model. </p>
+<p>This function assigns the provided ROF tables and related shift data to the corresponding member variables in the model. The shift data is used for adjusting the storage and demand conditions during the ROF calculation processes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>storage_to_rof_table</strong> – The 2D matrix of storage-to-ROF data. </p></li>
+<li><p><strong>table_storage_shift</strong> – The shift values for the storage table. </p></li>
+<li><p><strong>table_base_storage_shift</strong> – The shift values for the base storage table. </p></li>
+<li><p><strong>treatment_demand_buffer_shift</strong> – The shift values for the treatment demand buffer.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF24tableROFExceptionHandlerEdii">
+<span id="_CPPv3N18ContinuityModelROF24tableROFExceptionHandlerEdii"></span><span id="_CPPv2N18ContinuityModelROF24tableROFExceptionHandlerEdii"></span><span id="ContinuityModelROF::tableROFExceptionHandler__double.i.i"></span><span class="target" id="classContinuityModelROF_1a10a8a95f3177d305d3881e654f01d65d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">tableROFExceptionHandler</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">m</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">u</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF24tableROFExceptionHandlerEdii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Handles exceptions related to ROF table extrapolation or errors during ROF calculations. </p>
+<p>This function throws an exception if the ROF tables need to be extrapolated due to a utility’s current capacity exceeding the table’s base capacity. If the error is related to table extrapolation, it provides guidance to regenerate tables with adjusted parameters. If the error occurs in a different context, a runtime exception is thrown with the appropriate details.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>m</strong> – The ratio of current storage capacity to the base storage capacity. </p></li>
+<li><p><strong>u</strong> – The index of the utility where the exception occurred. </p></li>
+<li><p><strong>week</strong> – The current week in the simulation where the error occurred.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">logic_error</span></span></span> – If <code class="docutils literal notranslate"><span class="pre">m</span></code> is greater than 1, indicating that the current capacity is greater than the table base capacity. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">runtime_error</span></span></span> – For other exceptions that occur within a specific week for a utility. </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF19setInitialTableTierEiRKiR6vectorI8Matrix2DIdEERi">
+<span id="_CPPv3N18ContinuityModelROF19setInitialTableTierEiRKiR6vectorI8Matrix2DIdEERi"></span><span id="_CPPv2N18ContinuityModelROF19setInitialTableTierEiRKiR6vectorI8Matrix2DIdEERi"></span><span id="ContinuityModelROF::setInitialTableTier__i.iCR.vector:Matrix2D:double::R.iR"></span><span class="target" id="classContinuityModelROF_1a0c46d5905f5d0ae2cf0abd0d4653bbc7"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setInitialTableTier</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities</span></span>, <a class="reference internal" href="#_CPPv4N18ContinuityModelROF19setInitialTableTierEiRKiR6vectorI8Matrix2DIdEERi" title="ContinuityModelROF::setInitialTableTier::vector"><span class="n"><span class="pre">vector</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Matrix2D</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vector</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">tier</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF19setInitialTableTierEiRKiR6vectorI8Matrix2DIdEERi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the initial table tier based on the failure conditions for utilities at a specific week. </p>
+<p>This function determines the initial table tier by checking for failures across utilities and adjusting the tier accordingly. It searches through the storage to ROF table and identifies the first tier where no failures occurred, setting that as the beginning tier for the simulation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The current week in the simulation. </p></li>
+<li><p><strong>n_utilities</strong> – The number of utilities to be considered in the table. </p></li>
+<li><p><strong>ut_storage_to_rof_table</strong> – The table containing storage to ROF data for utilities. </p></li>
+<li><p><strong>beginning_tier</strong> – The tier to be set as the starting point for the calculations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF21recordROFStorageTableER6vectorI8Matrix2DIdEER6vectorI8Matrix2DIdEERKiRiRi">
+<span id="_CPPv3N18ContinuityModelROF21recordROFStorageTableER6vectorI8Matrix2DIdEER6vectorI8Matrix2DIdEERKiRiRi"></span><span id="_CPPv2N18ContinuityModelROF21recordROFStorageTableER6vectorI8Matrix2DIdEER6vectorI8Matrix2DIdEERKiRiRi"></span><span id="ContinuityModelROF::recordROFStorageTable__vector:Matrix2D:double::R.vector:Matrix2D:double::R.iCR.iR.iR"></span><span class="target" id="classContinuityModelROF_1aa2348a2a5dea751462771ef538243e75"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">recordROFStorageTable</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Matrix2D</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ut_storage_to_rof_rof_realization</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Matrix2D</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ut_storage_to_rof_table</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">n_utilities</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">week_of_the_year</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF21recordROFStorageTableER6vectorI8Matrix2DIdEER6vectorI8Matrix2DIdEERKiRiRi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Records the risk of failure (ROF) storage table data for a given utility and week. </p>
+<p>This function updates the <code class="docutils literal notranslate"><span class="pre">ut_storage_to_rof_table</span></code> by adding ROF data for each utility at the specified week. The ROF data is retrieved from the corresponding realization table, averaged over all realizations, and then added to the storage table for that week.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ut_storage_to_rof_rof_realization</strong> – The ROF data for all utilities across multiple realizations. </p></li>
+<li><p><strong>ut_storage_to_rof_table</strong> – The storage to ROF table to which the data is to be added. </p></li>
+<li><p><strong>n_utilities</strong> – The number of utilities being considered. </p></li>
+<li><p><strong>week</strong> – The current week in the simulation. </p></li>
+<li><p><strong>week_of_the_year</strong> – The specific week of the year to record data for.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF21calculateEmptyVolumesER6vectorIP11WaterSourceEPd">
+<span id="_CPPv3N18ContinuityModelROF21calculateEmptyVolumesER6vectorIP11WaterSourceEPd"></span><span id="_CPPv2N18ContinuityModelROF21calculateEmptyVolumesER6vectorIP11WaterSourceEPd"></span><span id="ContinuityModelROF::calculateEmptyVolumes__vector:WaterSourceP:R.doubleP"></span><span class="target" id="classContinuityModelROF_1aa720006d12410fc35b8768eda716c149"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateEmptyVolumes</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/index.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">realization_water_sources</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">to_full</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF21calculateEmptyVolumesER6vectorIP11WaterSourceEPd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the empty volume for each water source. This information is later used for updating the ROF tables. </p>
+<p>This function calculates the empty volume (the volume required to fill a water source to its capacity) for each water source in the <code class="docutils literal notranslate"><span class="pre">realization_water_sources</span></code> list. The calculation is based on the supply capacity and the available volume for each source. If a water source is offline, the empty volume is set to zero.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>realization_water_sources</strong> – A list of water sources to calculate empty volumes for. </p></li>
+<li><p><strong>to_full</strong> – An array where the empty volume for each water source will be stored.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF34updateJointWTPTreatmentAllocationsERK6vectorIP11WaterSourceE">
+<span id="_CPPv3N18ContinuityModelROF34updateJointWTPTreatmentAllocationsERK6vectorIP11WaterSourceE"></span><span id="_CPPv2N18ContinuityModelROF34updateJointWTPTreatmentAllocationsERK6vectorIP11WaterSourceE"></span><span id="ContinuityModelROF::updateJointWTPTreatmentAllocations__vector:WaterSourceP:CR"></span><span class="target" id="classContinuityModelROF_1a082567cc3a16b971632c14b5a603c692"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateJointWTPTreatmentAllocations</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/index.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">non_rof_water_sources</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF34updateJointWTPTreatmentAllocationsERK6vectorIP11WaterSourceE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Updates treatment allocations for joint water treatment plants. </p>
+<p>This function updates the treatment allocations for water sources of type <code class="docutils literal notranslate"><span class="pre">NEW_JOINT_WATER_TREATMENT_PLANT</span></code> in the <code class="docutils literal notranslate"><span class="pre">non_rof_water_sources</span></code> list. It ensures that the treatment allocations are synchronized between the continuity and realization water sources if the source is online.</p>
+<p>FIXME: WHAT IS THE FUNCTIONAL DIFFERENCE BETWEEN WATER_SOURCES VECTORS HERE?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>non_rof_water_sources</strong> – A list of non-ROF water sources whose treatment allocations will be updated.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF33updateUtilityTreatmentAllocationsERK6vectorIP7UtilityE">
+<span id="_CPPv3N18ContinuityModelROF33updateUtilityTreatmentAllocationsERK6vectorIP7UtilityE"></span><span id="_CPPv2N18ContinuityModelROF33updateUtilityTreatmentAllocationsERK6vectorIP7UtilityE"></span><span id="ContinuityModelROF::updateUtilityTreatmentAllocations__vector:UtilityP:CR"></span><span class="target" id="classContinuityModelROF_1a360a69a3811c56e8354a64a598228663"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateUtilityTreatmentAllocations</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/index.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">non_rof_utilities</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF33updateUtilityTreatmentAllocationsERK6vectorIP7UtilityE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Updates treatment capacities for utilities. </p>
+<p>This function updates the treatment capacities for utilities in the <code class="docutils literal notranslate"><span class="pre">non_rof_utilities</span></code> list by synchronizing the treatment capacities between the continuity and realization utilities.</p>
+<p>FIXME: WHAT IS THE FUNCTIONAL DIFFERENCE BETWEEN WATER_SOURCES VECTORS HERE?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>non_rof_utilities</strong> – A list of non-ROF utilities whose treatment capacities will be updated.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF26getUt_storage_to_rof_tableEv">
+<span id="_CPPv3N18ContinuityModelROF26getUt_storage_to_rof_tableEv"></span><span id="_CPPv2N18ContinuityModelROF26getUt_storage_to_rof_tableEv"></span><span id="ContinuityModelROF::getUt_storage_to_rof_table"></span><span class="target" id="classContinuityModelROF_1ad798adad5127a2674c5d4a3e8f24302d"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Matrix2D</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getUt_storage_to_rof_table</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF26getUt_storage_to_rof_tableEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the storage-to-ROF table. </p>
+<p>This function returns a reference to the storage-to-ROF table, which contains the calculated risk of failure (ROF) for each utility at various storage levels.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A reference to the storage-to-ROF table (<code class="docutils literal notranslate"><span class="pre">ut_storage_to_rof_table</span></code>). </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF14beginning_tierE">
+<span id="_CPPv3N18ContinuityModelROF14beginning_tierE"></span><span id="_CPPv2N18ContinuityModelROF14beginning_tierE"></span><span id="ContinuityModelROF::beginning_tier__i"></span><span class="target" id="classContinuityModelROF_1ad0a8c47eca4ca66b58a2636ab907a4f2"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">beginning_tier</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF14beginning_tierE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>An integer representing the beginning tier for ROF table calculation. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF25realization_water_sourcesE">
+<span id="_CPPv3N18ContinuityModelROF25realization_water_sourcesE"></span><span id="_CPPv2N18ContinuityModelROF25realization_water_sourcesE"></span><span id="ContinuityModelROF::realization_water_sources__vector:WaterSourceP:"></span><span class="target" id="classContinuityModelROF_1a77048d247b8d1f70fbdd31559b4d3337"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/index.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">realization_water_sources</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF25realization_water_sourcesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <code class="docutils literal notranslate"><a class="reference internal" href="../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> pointers representing the water sources in the realization. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF21realization_utilitiesE">
+<span id="_CPPv3N18ContinuityModelROF21realization_utilitiesE"></span><span id="_CPPv2N18ContinuityModelROF21realization_utilitiesE"></span><span id="ContinuityModelROF::realization_utilities__vector:UtilityP:"></span><span class="target" id="classContinuityModelROF_1a75c6823d8dd37f274ee91ce158088dc4"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/index.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">realization_utilities</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF21realization_utilitiesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <code class="docutils literal notranslate"><a class="reference internal" href="../modules.html#classUtility"><span class="std std-ref"><span class="pre">Utility</span></span></a></code> pointers representing the utilities in the realization. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF23ut_storage_to_rof_tableE">
+<span id="_CPPv3N18ContinuityModelROF23ut_storage_to_rof_tableE"></span><span id="_CPPv2N18ContinuityModelROF23ut_storage_to_rof_tableE"></span><span id="ContinuityModelROF::ut_storage_to_rof_table__vector:Matrix2D:double::"></span><span class="target" id="classContinuityModelROF_1ada25d241caf860255ad00097f5e7adb6"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Matrix2D</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ut_storage_to_rof_table</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF23ut_storage_to_rof_tableE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <code class="docutils literal notranslate"><span class="pre">Matrix2D</span></code> objects representing the storage-to-ROF tables for each utility. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF19table_storage_shiftE">
+<span id="_CPPv3N18ContinuityModelROF19table_storage_shiftE"></span><span id="_CPPv2N18ContinuityModelROF19table_storage_shiftE"></span><span id="ContinuityModelROF::table_storage_shift__vector:vector:double::"></span><span class="target" id="classContinuityModelROF_1a1a90c8816944aab36f395e89f7b84c06"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">table_storage_shift</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF19table_storage_shiftE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of doubles representing the shifts in storage-to-ROF tables for each utility. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF24table_base_storage_shiftE">
+<span id="_CPPv3N18ContinuityModelROF24table_base_storage_shiftE"></span><span id="_CPPv2N18ContinuityModelROF24table_base_storage_shiftE"></span><span id="ContinuityModelROF::table_base_storage_shift__vector:vector:double::"></span><span class="target" id="classContinuityModelROF_1a2bc5728653819a0d54a36ffbb1df44a3"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">table_base_storage_shift</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF24table_base_storage_shiftE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of doubles representing the shifts in base storage-to-ROF tables for each utility. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF29treatment_demand_buffer_shiftE">
+<span id="_CPPv3N18ContinuityModelROF29treatment_demand_buffer_shiftE"></span><span id="_CPPv2N18ContinuityModelROF29treatment_demand_buffer_shiftE"></span><span id="ContinuityModelROF::treatment_demand_buffer_shift__vector:vector:double::"></span><span class="target" id="classContinuityModelROF_1aedb1313e889617d718d2a93d719cb3f1"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">treatment_demand_buffer_shift</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF29treatment_demand_buffer_shiftE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of doubles representing the shifts in treatment demand buffer for each utility. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF29utility_base_storage_capacityE">
+<span id="_CPPv3N18ContinuityModelROF29utility_base_storage_capacityE"></span><span id="_CPPv2N18ContinuityModelROF29utility_base_storage_capacityE"></span><span id="ContinuityModelROF::utility_base_storage_capacity__vector:double:"></span><span class="target" id="classContinuityModelROF_1a6a429c37f019777325ea4e5b9ad26cae"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utility_base_storage_capacity</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF29utility_base_storage_capacityE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of doubles representing the utilities’ base storage capacities. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF33utility_base_delta_capacity_tableE">
+<span id="_CPPv3N18ContinuityModelROF33utility_base_delta_capacity_tableE"></span><span id="_CPPv2N18ContinuityModelROF33utility_base_delta_capacity_tableE"></span><span id="ContinuityModelROF::utility_base_delta_capacity_table__vector:double:"></span><span class="target" id="classContinuityModelROF_1a017041335a639ba56cc3e26dea07b514"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utility_base_delta_capacity_table</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF33utility_base_delta_capacity_tableE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of doubles representing the utilities’ base delta capacities. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF39current_and_base_storage_capacity_ratioE">
+<span id="_CPPv3N18ContinuityModelROF39current_and_base_storage_capacity_ratioE"></span><span id="_CPPv2N18ContinuityModelROF39current_and_base_storage_capacity_ratioE"></span><span id="ContinuityModelROF::current_and_base_storage_capacity_ratio__vector:double:"></span><span class="target" id="classContinuityModelROF_1adcaf978b52ba016474952a42856ba373"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_and_base_storage_capacity_ratio</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF39current_and_base_storage_capacity_ratioE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of doubles representing the utilities’ current and base storage capacity ratios. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF27current_storage_table_shiftE">
+<span id="_CPPv3N18ContinuityModelROF27current_storage_table_shiftE"></span><span id="_CPPv2N18ContinuityModelROF27current_storage_table_shiftE"></span><span id="ContinuityModelROF::current_storage_table_shift__vector:double:"></span><span class="target" id="classContinuityModelROF_1a443efa8d5a8bcbb1fea1a0bc929c77cd"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_storage_table_shift</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF27current_storage_table_shiftE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of doubles representing the utilities’ current storage table shifts. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF32current_base_storage_table_shiftE">
+<span id="_CPPv3N18ContinuityModelROF32current_base_storage_table_shiftE"></span><span id="_CPPv2N18ContinuityModelROF32current_base_storage_table_shiftE"></span><span id="ContinuityModelROF::current_base_storage_table_shift__vector:double:"></span><span class="target" id="classContinuityModelROF_1acaebccba4f4ed286c5da02d6c2c90605"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_base_storage_table_shift</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF32current_base_storage_table_shiftE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of doubles representing the utilities’ current base storage table shifts. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF27current_demand_ratio_bufferE">
+<span id="_CPPv3N18ContinuityModelROF27current_demand_ratio_bufferE"></span><span id="_CPPv2N18ContinuityModelROF27current_demand_ratio_bufferE"></span><span id="ContinuityModelROF::current_demand_ratio_buffer__vector:double:"></span><span class="target" id="classContinuityModelROF_1a1a274033b741e664268515de8e8eb3bc"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_demand_ratio_buffer</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF27current_demand_ratio_bufferE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of doubles representing the utilities’ current demand ratio buffers. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF33ut_storage_to_rof_rof_realizationE">
+<span id="_CPPv3N18ContinuityModelROF33ut_storage_to_rof_rof_realizationE"></span><span id="_CPPv2N18ContinuityModelROF33ut_storage_to_rof_rof_realizationE"></span><span id="ContinuityModelROF::ut_storage_to_rof_rof_realization__vector:Matrix2D:double::"></span><span class="target" id="classContinuityModelROF_1ab4b11938d295e5e74e9cf58725d36a34"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Matrix2D</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ut_storage_to_rof_rof_realization</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF33ut_storage_to_rof_rof_realizationE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <code class="docutils literal notranslate"><span class="pre">Matrix2D</span></code> objects representing the storage-to-ROF tables for each utility. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF25online_downstream_sourcesE">
+<span id="_CPPv3N18ContinuityModelROF25online_downstream_sourcesE"></span><span id="_CPPv2N18ContinuityModelROF25online_downstream_sourcesE"></span><span id="ContinuityModelROF::online_downstream_sources__vector:i:"></span><span class="target" id="classContinuityModelROF_1a7ab0c5f22272833f309183937fa9d0d8"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">online_downstream_sources</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF25online_downstream_sourcesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of integers representing the IDs of all online downstream sources. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF23storage_wout_downstreamE">
+<span id="_CPPv3N18ContinuityModelROF23storage_wout_downstreamE"></span><span id="_CPPv2N18ContinuityModelROF23storage_wout_downstreamE"></span><span id="ContinuityModelROF::storage_wout_downstream__bP"></span><span class="target" id="classContinuityModelROF_1ad7ee977c92769377cf6237d2fbf527e3"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">storage_wout_downstream</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF23storage_wout_downstreamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A boolean array indicating whether a source has downstream sources. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF14n_topo_sourcesE">
+<span id="_CPPv3N18ContinuityModelROF14n_topo_sourcesE"></span><span id="_CPPv2N18ContinuityModelROF14n_topo_sourcesE"></span><span id="ContinuityModelROF::n_topo_sources__iC"></span><span class="target" id="classContinuityModelROF_1aefffec319cad3a89db2d4c7335ebf2a2"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_topo_sources</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF14n_topo_sourcesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The number of topological sources in the system. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18ContinuityModelROF26use_precomputed_rof_tablesE">
+<span id="_CPPv3N18ContinuityModelROF26use_precomputed_rof_tablesE"></span><span id="_CPPv2N18ContinuityModelROF26use_precomputed_rof_tablesE"></span><span id="ContinuityModelROF::use_precomputed_rof_tables__iC"></span><span class="target" id="classContinuityModelROF_1a384967647c98d9768400de07e2bc7dab"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">use_precomputed_rof_tables</span></span></span><a class="headerlink" href="#_CPPv4N18ContinuityModelROF26use_precomputed_rof_tablesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A flag indicating whether pre-computer ROF tables are being used. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Lillian Lau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

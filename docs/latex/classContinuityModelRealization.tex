@@ -13,7 +13,7 @@ Inheritance diagram for Continuity\+Model\+Realization\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classContinuityModelRealization_a641c096ac73586597b3e21a5d516c923}{Continuity\+Model\+Realization}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, const Graph \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ Drought\+Mitigation\+Policy $\ast$$>$ \&\mbox{\hyperlink{classContinuityModelRealization_a757dcf1de115c674fd5adcb040c5f277}{drought\+\_\+mitigation\+\_\+policies}}, vector$<$ Min\+Env\+Flow\+Control $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+control, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, vector$<$ double $>$ \&policy\+\_\+rdm, const unsigned int realization\+\_\+index)
+\mbox{\hyperlink{classContinuityModelRealization_a641c096ac73586597b3e21a5d516c923}{Continuity\+Model\+Realization}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, const Graph \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ Drought\+Mitigation\+Policy $\ast$$>$ \&drought\+\_\+mitigation\+\_\+policies, vector$<$ Min\+Env\+Flow\+Control $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+control, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, vector$<$ double $>$ \&policy\+\_\+rdm, const unsigned int realization\+\_\+index)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classContinuityModelRealization_afd53069e2f9ab96210ff153d16f01269}{$\sim$\+Continuity\+Model\+Realization}} () override
 \begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} class. \end{DoxyCompactList}\item 
@@ -29,11 +29,6 @@ void \mbox{\hyperlink{classContinuityModelRealization_a5b9405156e8cc21c8781ea15e
 \begin{DoxyCompactList}\small\item\em Updates the demand projection estimates for utilities based on risk of failure (R\+OF) utilities. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classContinuityModelRealization_ab87c140eaf87266ca81636059e948bb7}{update\+Joint\+W\+T\+P\+Treatment\+Allocations}} (int current\+\_\+week)
 \begin{DoxyCompactList}\small\item\em Updates treatment capacity allocations for Joint Water Treatment Plants (W\+T\+Ps) under variable allocation agreements. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-vector$<$ Drought\+Mitigation\+Policy $\ast$ $>$ \mbox{\hyperlink{classContinuityModelRealization_a757dcf1de115c674fd5adcb040c5f277}{drought\+\_\+mitigation\+\_\+policies}}
-\begin{DoxyCompactList}\small\item\em A vector of pointers to the drought mitigation policies in the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -217,19 +212,6 @@ void
 \end{DoxyReturn}
 
 
-\subsection{Member Data Documentation}
-\mbox{\Hypertarget{classContinuityModelRealization_a757dcf1de115c674fd5adcb040c5f277}\label{classContinuityModelRealization_a757dcf1de115c674fd5adcb040c5f277}} 
-\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!drought\+\_\+mitigation\+\_\+policies@{drought\+\_\+mitigation\+\_\+policies}}
-\index{drought\+\_\+mitigation\+\_\+policies@{drought\+\_\+mitigation\+\_\+policies}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
-\subsubsection{\texorpdfstring{drought\+\_\+mitigation\+\_\+policies}{drought\_mitigation\_policies}}
-{\footnotesize\ttfamily vector$<$Drought\+Mitigation\+Policy $\ast$$>$ Continuity\+Model\+Realization\+::drought\+\_\+mitigation\+\_\+policies\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A vector of pointers to the drought mitigation policies in the system. 
-
-
-
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/\+Continuity\+Models/\mbox{\hyperlink{ContinuityModelRealization_8h}{Continuity\+Model\+Realization.\+h}}\end{DoxyCompactItemize}
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Continuity\+Models/\mbox{\hyperlink{ContinuityModelRealization_8h}{Continuity\+Model\+Realization.\+h}}\end{DoxyCompactItemize}

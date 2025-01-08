@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Problem Module &mdash; WaterPaths 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            WaterPaths
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">Modules</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">WaterPaths</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Problem Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/SystemComponents/Bonds/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="problem-module">
+<h1>Problem Module<a class="headerlink" href="#problem-module" title="Permalink to this heading"></a></h1>
+<p>The <cite>SystemComponents</cite> module contains classes and functions related defining the components of the water system.
+The module is divided into submodules, each of which contains classes and functions related to a specific component
+of the water system. This module also</p>
+<section id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Base/index.html">Problem Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Base/index.html#contents">Contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Base/index.html#api-reference">API Reference</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
+<p>Below is the API reference for the <cite>Bonds</cite> submodule. Documentation is automatically extracted from the header files.</p>
+<section id="base-components">
+<h3>Base Components<a class="headerlink" href="#base-components" title="Permalink to this heading"></a></h3>
+<section id="balloonpaymentbond-h">
+<h4>BalloonPaymentBond.h<a class="headerlink" href="#balloonpaymentbond-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv418BalloonPaymentBond">
+<span id="_CPPv318BalloonPaymentBond"></span><span id="_CPPv218BalloonPaymentBond"></span><span id="BalloonPaymentBond"></span><span class="target" id="classBalloonPaymentBond"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BalloonPaymentBond</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/index.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><a class="headerlink" href="#_CPPv418BalloonPaymentBond" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../modules.html#BalloonPaymentBond_8h"><span class="std std-ref">BalloonPaymentBond.h</span></a>&gt;</em></div>
+<p>Class that represents a balloon bond that pays interest for a number of years and then pays the face value of the bond plus the last interest payment. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18BalloonPaymentBond18BalloonPaymentBondEKiKdKiKd6vectorIiE">
+<span id="_CPPv3N18BalloonPaymentBond18BalloonPaymentBondEKiKdKiKd6vectorIiE"></span><span id="_CPPv2N18BalloonPaymentBond18BalloonPaymentBondEKiKdKiKd6vectorIiE"></span><span id="BalloonPaymentBond::BalloonPaymentBond__iC.doubleC.iC.doubleC.vector:i:"></span><span class="target" id="classBalloonPaymentBond_1a03b25124896e67f851a35721c37705fe"></span><span class="sig-name descname"><span class="n"><span class="pre">BalloonPaymentBond</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cost_of_capital</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_payments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">coupon_rate</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pay_on_weeks</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18BalloonPaymentBond18BalloonPaymentBondEKiKdKiKd6vectorIiE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <a class="reference internal" href="../../modules.html#classBalloonPaymentBond"><span class="std std-ref">BalloonPaymentBond</span></a> object with specified attributes. This function initializes a balloon payment bond with the provided parameters. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – The unique identifier for the bond. </p></li>
+<li><p><strong>cost_of_capital</strong> – The cost of capital associated with the bond. Must be non-negative. </p></li>
+<li><p><strong>n_payments</strong> – The total number of payments for the bond. </p></li>
+<li><p><strong>coupon_rate</strong> – The fixed coupon rate for the bond. </p></li>
+<li><p><strong>pay_on_weeks</strong> – A vector specifying the weeks when payments are due.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18BalloonPaymentBond18BalloonPaymentBondEKiKdKiKd6vectorIiEKi">
+<span id="_CPPv3N18BalloonPaymentBond18BalloonPaymentBondEKiKdKiKd6vectorIiEKi"></span><span id="_CPPv2N18BalloonPaymentBond18BalloonPaymentBondEKiKdKiKd6vectorIiEKi"></span><span id="BalloonPaymentBond::BalloonPaymentBond__iC.doubleC.iC.doubleC.vector:i:.iC"></span><span class="target" id="classBalloonPaymentBond_1afc8bb53b6642dac9811414b447279e5b"></span><span class="sig-name descname"><span class="n"><span class="pre">BalloonPaymentBond</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cost_of_capital</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_payments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">coupon_rate</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pay_on_weeks</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">begin_repayment_after_n_years</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N18BalloonPaymentBond18BalloonPaymentBondEKiKdKiKd6vectorIiEKi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <a class="reference internal" href="../../modules.html#classBalloonPaymentBond"><span class="std std-ref">BalloonPaymentBond</span></a> object with specified attributes, including the repayment start time. This function initializes a balloon payment bond with the provided parameters, including the number of payments and repayment start time. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – The unique identifier for the bond. </p></li>
+<li><p><strong>cost_of_capital</strong> – The cost of capital associated with the bond. Must be non-negative. </p></li>
+<li><p><strong>n_payments</strong> – The total number of payments for the bond. </p></li>
+<li><p><strong>coupon_rate</strong> – The fixed coupon rate for the bond. </p></li>
+<li><p><strong>pay_on_weeks</strong> – A vector specifying the weeks when payments are due. </p></li>
+<li><p><strong>begin_repayment_after_n_years</strong> – The number of years after which repayment should begin. A value of <code class="docutils literal notranslate"><span class="pre">NONE</span></code> indicates no specific start time.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18BalloonPaymentBond14getDebtServiceEi">
+<span id="_CPPv3N18BalloonPaymentBond14getDebtServiceEi"></span><span id="_CPPv2N18BalloonPaymentBond14getDebtServiceEi"></span><span id="BalloonPaymentBond::getDebtService__i"></span><span class="target" id="classBalloonPaymentBond_1a8648a2ae688f90a3b2e6689711c22b9d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDebtService</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N18BalloonPaymentBond14getDebtServiceEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the debt service for a balloon payment bond at a specific week. This function determines whether a payment is due based on the current week and the bond’s payment schedule. It returns the debt service, which includes interest payments for the period and the principal payment for the final period. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The current week for which to calculate the debt service.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double The debt service for the given week, including interest payments and principal payment if due. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18BalloonPaymentBond26getPresentValueDebtServiceEid">
+<span id="_CPPv3N18BalloonPaymentBond26getPresentValueDebtServiceEid"></span><span id="_CPPv2N18BalloonPaymentBond26getPresentValueDebtServiceEid"></span><span id="BalloonPaymentBond::getPresentValueDebtService__i.double"></span><span class="target" id="classBalloonPaymentBond_1ae038863f7a3408c2c8cd503d8e789f2d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPresentValueDebtService</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">discount_rate</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N18BalloonPaymentBond26getPresentValueDebtServiceEid" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the present value of the balloon payment bond’s debt service for a specific week. This function computes the present value of the bond’s debt service based on the interest payments, the principal payment (if due), and the discount rate. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The current week to calculate the present value of the debt service for. </p></li>
+<li><p><strong>discount_rate</strong> – The discount rate used to calculate the present value of the future payments.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double The present value of the debt service for the given week. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK18BalloonPaymentBond28getNetPresentValueAtIssuanceEdi">
+<span id="_CPPv3NK18BalloonPaymentBond28getNetPresentValueAtIssuanceEdi"></span><span id="_CPPv2NK18BalloonPaymentBond28getNetPresentValueAtIssuanceEdi"></span><span id="BalloonPaymentBond::getNetPresentValueAtIssuance__double.iC"></span><span class="target" id="classBalloonPaymentBond_1abbfaae70e003f057ec842d3889138345"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getNetPresentValueAtIssuance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">yearly_discount_rate</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK18BalloonPaymentBond28getNetPresentValueAtIssuanceEdi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the net present value (NPV) of the balloon payment bond at issuance. This function computes the NPV of the bond based on the interest payments and the discount rate. The NPV is calculated using the bond’s payment schedule, adjusting for the time until repayment begins. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>yearly_discount_rate</strong> – The annual discount rate used to calculate the present value of future payments. </p></li>
+<li><p><strong>week</strong> – The week of the year to calculate the NPV for, typically the week the bond is issued.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double The net present value at issuance of the balloon payment bond. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N18BalloonPaymentBond9issueBondEiidd">
+<span id="_CPPv3N18BalloonPaymentBond9issueBondEiidd"></span><span id="_CPPv2N18BalloonPaymentBond9issueBondEiidd"></span><span id="BalloonPaymentBond::issueBond__i.i.double.double"></span><span class="target" id="classBalloonPaymentBond_1af22552acd74b08dbb1d308cc5e45344c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">issueBond</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">construction_time</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bond_term_multiplier</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bond_interest_rate_multiplier</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N18BalloonPaymentBond9issueBondEiidd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Issues the balloon payment bond, initializing the bond parameters and setting the interest payments. This function sets up the bond’s issuance details, including adjusting the interest payments based on the bond’s parameters. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The week in which the bond is being issued. </p></li>
+<li><p><strong>construction_time</strong> – The time it takes to complete the construction associated with the bond, in weeks. </p></li>
+<li><p><strong>bond_term_multiplier</strong> – A multiplier for adjusting the term length of the bond. </p></li>
+<li><p><strong>bond_interest_rate_multiplier</strong> – A multiplier for adjusting the bond’s interest rate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18BalloonPaymentBond17interest_paymentsE">
+<span id="_CPPv3N18BalloonPaymentBond17interest_paymentsE"></span><span id="_CPPv2N18BalloonPaymentBond17interest_paymentsE"></span><span id="BalloonPaymentBond::interest_payments__double"></span><span class="target" id="classBalloonPaymentBond_1ac73d3ec9b640614f454d8cc8bd1ebbc3"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">interest_payments</span></span></span><a class="headerlink" href="#_CPPv4N18BalloonPaymentBond17interest_paymentsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Interest payments for each period. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18BalloonPaymentBond29begin_repayment_after_n_yearsE">
+<span id="_CPPv3N18BalloonPaymentBond29begin_repayment_after_n_yearsE"></span><span id="_CPPv2N18BalloonPaymentBond29begin_repayment_after_n_yearsE"></span><span id="BalloonPaymentBond::begin_repayment_after_n_years__iC"></span><span class="target" id="classBalloonPaymentBond_1a7e1e064643021755eda4873b0c98e434"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">begin_repayment_after_n_years</span></span></span><a class="headerlink" href="#_CPPv4N18BalloonPaymentBond29begin_repayment_after_n_yearsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Number of years after which payments to the bond begins. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N18BalloonPaymentBond15n_payments_madeE">
+<span id="_CPPv3N18BalloonPaymentBond15n_payments_madeE"></span><span id="_CPPv2N18BalloonPaymentBond15n_payments_madeE"></span><span id="BalloonPaymentBond::n_payments_made__i"></span><span class="target" id="classBalloonPaymentBond_1a82255e2f56110503d126fefbbc192d67"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_payments_made</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N18BalloonPaymentBond15n_payments_madeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Number of payments made so far. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="floatinginterestballoonpaymentbond-h">
+<h4>FloatingInterestBalloonPaymentBond.h<a class="headerlink" href="#floatinginterestballoonpaymentbond-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv434FloatingInterestBalloonPaymentBond">
+<span id="_CPPv334FloatingInterestBalloonPaymentBond"></span><span id="_CPPv234FloatingInterestBalloonPaymentBond"></span><span id="FloatingInterestBalloonPaymentBond"></span><span class="target" id="classFloatingInterestBalloonPaymentBond"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FloatingInterestBalloonPaymentBond</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/index.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><a class="headerlink" href="#_CPPv434FloatingInterestBalloonPaymentBond" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../modules.html#FloatingInterestBalloonPaymentBond_8h"><span class="std std-ref">FloatingInterestBalloonPaymentBond.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N34FloatingInterestBalloonPaymentBond34FloatingInterestBalloonPaymentBondEKiKdKdK6vectorIdE6vectorIiE">
+<span id="_CPPv3N34FloatingInterestBalloonPaymentBond34FloatingInterestBalloonPaymentBondEKiKdKdK6vectorIdE6vectorIiE"></span><span id="_CPPv2N34FloatingInterestBalloonPaymentBond34FloatingInterestBalloonPaymentBondEKiKdKdK6vectorIdE6vectorIiE"></span><span id="FloatingInterestBalloonPaymentBond::FloatingInterestBalloonPaymentBond__iC.doubleC.doubleC.vector:double:C.vector:i:"></span><span class="target" id="classFloatingInterestBalloonPaymentBond_1aa42f50447a3dd1bd6959e8c4bd0c2421"></span><span class="sig-name descname"><span class="n"><span class="pre">FloatingInterestBalloonPaymentBond</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cost_of_capital</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_payments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interest_rate_series</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pay_on_weeks</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N34FloatingInterestBalloonPaymentBond34FloatingInterestBalloonPaymentBondEKiKdKdK6vectorIdE6vectorIiE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <a class="reference internal" href="../../modules.html#classFloatingInterestBalloonPaymentBond"><span class="std std-ref">FloatingInterestBalloonPaymentBond</span></a> object with specified attributes. This function initializes a floating interest balloon payment bond with the provided parameters. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – The unique identifier for the bond. </p></li>
+<li><p><strong>cost_of_capital</strong> – The cost of capital associated with the bond. Must be non-negative. </p></li>
+<li><p><strong>n_payments</strong> – The total number of payments for the bond. </p></li>
+<li><p><strong>interest_rate_series</strong> – A vector representing the series of interest rates for the bond. </p></li>
+<li><p><strong>pay_on_weeks</strong> – A vector specifying the weeks when payments are due.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N34FloatingInterestBalloonPaymentBond34FloatingInterestBalloonPaymentBondEKiKddK6vectorIdE6vectorIiEKi">
+<span id="_CPPv3N34FloatingInterestBalloonPaymentBond34FloatingInterestBalloonPaymentBondEKiKddK6vectorIdE6vectorIiEKi"></span><span id="_CPPv2N34FloatingInterestBalloonPaymentBond34FloatingInterestBalloonPaymentBondEKiKddK6vectorIdE6vectorIiEKi"></span><span id="FloatingInterestBalloonPaymentBond::FloatingInterestBalloonPaymentBond__iC.doubleC.double.vector:double:C.vector:i:.iC"></span><span class="target" id="classFloatingInterestBalloonPaymentBond_1a9732cbf82ecc484237071bb681f7dc63"></span><span class="sig-name descname"><span class="n"><span class="pre">FloatingInterestBalloonPaymentBond</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cost_of_capital</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_payments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">interest_rate_series</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pay_on_weeks</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">starts_paying_after_n_years</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N34FloatingInterestBalloonPaymentBond34FloatingInterestBalloonPaymentBondEKiKddK6vectorIdE6vectorIiEKi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <a class="reference internal" href="../../modules.html#classFloatingInterestBalloonPaymentBond"><span class="std std-ref">FloatingInterestBalloonPaymentBond</span></a> object with specified attributes. This function initializes a floating interest balloon payment bond with the provided parameters and sets the start of repayment after a specified number of years. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – The unique identifier for the bond. </p></li>
+<li><p><strong>cost_of_capital</strong> – The cost of capital associated with the bond. Must be non-negative. </p></li>
+<li><p><strong>n_payments</strong> – The total number of payments for the bond. </p></li>
+<li><p><strong>interest_rate_series</strong> – A vector representing the series of interest rates for the bond. </p></li>
+<li><p><strong>pay_on_weeks</strong> – A vector specifying the weeks when payments are due. </p></li>
+<li><p><strong>starts_paying_after_n_years</strong> – The number of years after which repayment begins.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N34FloatingInterestBalloonPaymentBond14getDebtServiceEi">
+<span id="_CPPv3N34FloatingInterestBalloonPaymentBond14getDebtServiceEi"></span><span id="_CPPv2N34FloatingInterestBalloonPaymentBond14getDebtServiceEi"></span><span id="FloatingInterestBalloonPaymentBond::getDebtService__i"></span><span class="target" id="classFloatingInterestBalloonPaymentBond_1a0009a0b12e0ebeb15952561513ddc901"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDebtService</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N34FloatingInterestBalloonPaymentBond14getDebtServiceEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the debt service for the bond at a specified week. This function computes the bond’s debt service payment based on the floating interest rate at a specific week. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The current week for which to calculate the debt service.</p>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">out_of_range</span></span></span> – If the interest rate series is shorter than the number of payments made. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>double The debt service amount for the given week, or <code class="docutils literal notranslate"><span class="pre">0.0</span></code> if no payment is due.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N34FloatingInterestBalloonPaymentBond26getPresentValueDebtServiceEid">
+<span id="_CPPv3N34FloatingInterestBalloonPaymentBond26getPresentValueDebtServiceEid"></span><span id="_CPPv2N34FloatingInterestBalloonPaymentBond26getPresentValueDebtServiceEid"></span><span id="FloatingInterestBalloonPaymentBond::getPresentValueDebtService__i.double"></span><span class="target" id="classFloatingInterestBalloonPaymentBond_1a91b2fef92f90049a3ba13bcd27c0eff2"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPresentValueDebtService</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">discount_rate</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N34FloatingInterestBalloonPaymentBond26getPresentValueDebtServiceEid" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the present value of the debt service for the bond at a specific week. This function computes the present value of the debt service based on the bond’s floating interest rate and a discount rate for the given week. </p>
+<p>FIXME: Check calculation for this class. Clarify what a floating interest bond is. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The current week for which to calculate the present value of the debt service. </p></li>
+<li><p><strong>discount_rate</strong> – The discount rate used to calculate the present value of future payments.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">out_of_range</span></span></span> – If the interest rate series is shorter than the number of payments made. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>double The present value of the debt service for the given week, or <code class="docutils literal notranslate"><span class="pre">0.0</span></code> if no payment is due.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK34FloatingInterestBalloonPaymentBond28getNetPresentValueAtIssuanceEdi">
+<span id="_CPPv3NK34FloatingInterestBalloonPaymentBond28getNetPresentValueAtIssuanceEdi"></span><span id="_CPPv2NK34FloatingInterestBalloonPaymentBond28getNetPresentValueAtIssuanceEdi"></span><span id="FloatingInterestBalloonPaymentBond::getNetPresentValueAtIssuance__double.iC"></span><span class="target" id="classFloatingInterestBalloonPaymentBond_1a90205e26e09eef1227f8c0671ca4fce2"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getNetPresentValueAtIssuance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">yearly_discount_rate</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK34FloatingInterestBalloonPaymentBond28getNetPresentValueAtIssuanceEdi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the net present value (NPV) of the bond at the time of issuance. This function computes the NPV of the bond based on its cost of capital, the interest rate for the given week, and a yearly discount rate. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>yearly_discount_rate</strong> – The yearly discount rate used to calculate the present value. </p></li>
+<li><p><strong>week</strong> – The week for which to calculate the NPV.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double The net present value of the bond at the time of issuance. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N34FloatingInterestBalloonPaymentBond9issueBondEiidd">
+<span id="_CPPv3N34FloatingInterestBalloonPaymentBond9issueBondEiidd"></span><span id="_CPPv2N34FloatingInterestBalloonPaymentBond9issueBondEiidd"></span><span id="FloatingInterestBalloonPaymentBond::issueBond__i.i.double.double"></span><span class="target" id="classFloatingInterestBalloonPaymentBond_1a4cf110f320c92f5eca9aed952e0b527a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">issueBond</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">construction_time</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bond_term_multiplier</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bond_interest_rate_multiplier</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N34FloatingInterestBalloonPaymentBond9issueBondEiidd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Issues a floating interest balloon payment bond and adjusts its interest rate series. This function issues the bond and multiplies the entire interest rate series by the provided bond interest rate multiplier. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The week when the bond is issued. </p></li>
+<li><p><strong>construction_time</strong> – The duration of construction in weeks FIXME: not used in this function. </p></li>
+<li><p><strong>bond_term_multiplier</strong> – A multiplier to adjust the total number of payments (<code class="docutils literal notranslate"><span class="pre">n_payments</span></code>). </p></li>
+<li><p><strong>bond_interest_rate_multiplier</strong> – A multiplier to adjust the bond’s interest rate series.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N34FloatingInterestBalloonPaymentBond20interest_rate_seriesE">
+<span id="_CPPv3N34FloatingInterestBalloonPaymentBond20interest_rate_seriesE"></span><span id="_CPPv2N34FloatingInterestBalloonPaymentBond20interest_rate_seriesE"></span><span id="FloatingInterestBalloonPaymentBond::interest_rate_series__vector:double:"></span><span class="target" id="classFloatingInterestBalloonPaymentBond_1a36c73466753c976e513c6763f79f58ad"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">interest_rate_series</span></span></span><a class="headerlink" href="#_CPPv4N34FloatingInterestBalloonPaymentBond20interest_rate_seriesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The interest rate time series beginning from week 0 of simulation. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N34FloatingInterestBalloonPaymentBond29begin_repayment_after_n_yearsE">
+<span id="_CPPv3N34FloatingInterestBalloonPaymentBond29begin_repayment_after_n_yearsE"></span><span id="_CPPv2N34FloatingInterestBalloonPaymentBond29begin_repayment_after_n_yearsE"></span><span id="FloatingInterestBalloonPaymentBond::begin_repayment_after_n_years__iC"></span><span class="target" id="classFloatingInterestBalloonPaymentBond_1a439428fff4f2d4ba5d0b593e5d30687f"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">begin_repayment_after_n_years</span></span></span><a class="headerlink" href="#_CPPv4N34FloatingInterestBalloonPaymentBond29begin_repayment_after_n_yearsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The time after which bond repayment begins. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N34FloatingInterestBalloonPaymentBond15n_payments_madeE">
+<span id="_CPPv3N34FloatingInterestBalloonPaymentBond15n_payments_madeE"></span><span id="_CPPv2N34FloatingInterestBalloonPaymentBond15n_payments_madeE"></span><span id="FloatingInterestBalloonPaymentBond::n_payments_made__i"></span><span class="target" id="classFloatingInterestBalloonPaymentBond_1afc1a77eb5d799201c7ef5c52ef5df374"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_payments_made</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N34FloatingInterestBalloonPaymentBond15n_payments_madeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Number of payments made so far. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="leveldebtservicebond-h">
+<h4>LevelDebtServiceBond.h<a class="headerlink" href="#leveldebtservicebond-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv420LevelDebtServiceBond">
+<span id="_CPPv320LevelDebtServiceBond"></span><span id="_CPPv220LevelDebtServiceBond"></span><span id="LevelDebtServiceBond"></span><span class="target" id="classLevelDebtServiceBond"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">LevelDebtServiceBond</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/index.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><a class="headerlink" href="#_CPPv420LevelDebtServiceBond" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../modules.html#LevelDebtServiceBond_8h"><span class="std std-ref">LevelDebtServiceBond.h</span></a>&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N20LevelDebtServiceBond20LevelDebtServiceBondEKiKdKiKd6vectorIiEb">
+<span id="_CPPv3N20LevelDebtServiceBond20LevelDebtServiceBondEKiKdKiKd6vectorIiEb"></span><span id="_CPPv2N20LevelDebtServiceBond20LevelDebtServiceBondEKiKdKiKd6vectorIiEb"></span><span id="LevelDebtServiceBond::LevelDebtServiceBond__iC.doubleC.iC.doubleC.vector:i:.b"></span><span class="target" id="classLevelDebtServiceBond_1a71af87d057090bd2310a10df03b36fdf"></span><span class="sig-name descname"><span class="n"><span class="pre">LevelDebtServiceBond</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">cost_of_capital</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_payments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">coupon_rate</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pay_on_weeks</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">begin_repayment_at_issuance</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N20LevelDebtServiceBond20LevelDebtServiceBondEKiKdKiKd6vectorIiEb" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <a class="reference internal" href="../../modules.html#classLevelDebtServiceBond"><span class="std std-ref">LevelDebtServiceBond</span></a> object with specified attributes. This function initializes a level debt service bond with the provided parameters. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – The unique identifier for the bond. </p></li>
+<li><p><strong>cost_of_capital</strong> – The cost of capital associated with the bond. Must be non-negative. </p></li>
+<li><p><strong>n_payments</strong> – The total number of payments for the bond. </p></li>
+<li><p><strong>coupon_rate</strong> – The fixed coupon rate for the bond. </p></li>
+<li><p><strong>pay_on_weeks</strong> – A vector specifying the weeks when payments are due. </p></li>
+<li><p><strong>begin_repayment_at_issuance</strong> – Flag indicating whether repayment should begin at issuance.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N20LevelDebtServiceBondD0Ev">
+<span id="_CPPv3N20LevelDebtServiceBondD0Ev"></span><span id="_CPPv2N20LevelDebtServiceBondD0Ev"></span><span id="LevelDebtServiceBond::~LevelDebtServiceBond"></span><span class="target" id="classLevelDebtServiceBond_1a6327829c1f1e6941cc22cea371cf024a"></span><span class="sig-name descname"><span class="n"><span class="pre">~LevelDebtServiceBond</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N20LevelDebtServiceBondD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destructor for the <a class="reference internal" href="../../modules.html#classLevelDebtServiceBond"><span class="std std-ref">LevelDebtServiceBond</span></a> class. This destructor cleans up the resources associated with the <a class="reference internal" href="../../modules.html#classLevelDebtServiceBond"><span class="std std-ref">LevelDebtServiceBond</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>None</strong> – </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N20LevelDebtServiceBond14getDebtServiceEi">
+<span id="_CPPv3N20LevelDebtServiceBond14getDebtServiceEi"></span><span id="_CPPv2N20LevelDebtServiceBond14getDebtServiceEi"></span><span id="LevelDebtServiceBond::getDebtService__i"></span><span class="target" id="classLevelDebtServiceBond_1adcb3bd3c34b0cbb7b013f387ddd8b7f5"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDebtService</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N20LevelDebtServiceBond14getDebtServiceEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the debt service for the bond at a specific week. This function computes the bond’s debt service payment based on a level debt service structure, where payments are the same amount for each period. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The current week for which to calculate the debt service.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double The debt service amount for the given week, or <code class="docutils literal notranslate"><span class="pre">0.0</span></code> if no payment is due. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N20LevelDebtServiceBond26getPresentValueDebtServiceEid">
+<span id="_CPPv3N20LevelDebtServiceBond26getPresentValueDebtServiceEid"></span><span id="_CPPv2N20LevelDebtServiceBond26getPresentValueDebtServiceEid"></span><span id="LevelDebtServiceBond::getPresentValueDebtService__i.double"></span><span class="target" id="classLevelDebtServiceBond_1a37801ecfc13ae1b6e05b4330398a7582"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPresentValueDebtService</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">discount_rate</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N20LevelDebtServiceBond26getPresentValueDebtServiceEid" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the present value of the debt service for the bond at a specific week. This function computes the present value of the debt service payment based on the level debt service structure and a discount rate for the given week. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The current week for which to calculate the present value of the debt service. </p></li>
+<li><p><strong>discount_rate</strong> – The discount rate used to calculate the present value of future payments.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">None</span></span></span> – </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>double The present value of the debt service for the given week, or <code class="docutils literal notranslate"><span class="pre">0.0</span></code> if no payment is due.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK20LevelDebtServiceBond28getNetPresentValueAtIssuanceEdi">
+<span id="_CPPv3NK20LevelDebtServiceBond28getNetPresentValueAtIssuanceEdi"></span><span id="_CPPv2NK20LevelDebtServiceBond28getNetPresentValueAtIssuanceEdi"></span><span id="LevelDebtServiceBond::getNetPresentValueAtIssuance__double.iC"></span><span class="target" id="classLevelDebtServiceBond_1a0f5820c3e76b8b908dbe153a8291d96a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getNetPresentValueAtIssuance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">yearly_discount_rate</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK20LevelDebtServiceBond28getNetPresentValueAtIssuanceEdi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the net present value (NPV) of the bond at the time of issuance. This function computes the NPV of the bond based on its level debt service payments, discount rate, and the number of payments. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>yearly_discount_rate</strong> – The yearly discount rate used to calculate the present value. </p></li>
+<li><p><strong>week</strong> – The week for which to calculate the NPV. This is used to adjust for the time of the first payment.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">None</span></span></span> – </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>double The net present value of the bond at the time of issuance.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N20LevelDebtServiceBond9issueBondEiidd">
+<span id="_CPPv3N20LevelDebtServiceBond9issueBondEiidd"></span><span id="_CPPv2N20LevelDebtServiceBond9issueBondEiidd"></span><span id="LevelDebtServiceBond::issueBond__i.i.double.double"></span><span class="target" id="classLevelDebtServiceBond_1a51a54a1a25be105b168bf86489aee417"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">issueBond</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">construction_time</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bond_term_multiplier</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bond_interest_rate_multiplier</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N20LevelDebtServiceBond9issueBondEiidd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Issues a level debt service bond and calculates the level debt service payment. This function issues the bond and calculates the fixed level debt service payment based on the cost of capital, coupon rate, and number of payments. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The week when the bond is issued. </p></li>
+<li><p><strong>construction_time</strong> – The duration of construction in weeks, used to determine when repayment begins. </p></li>
+<li><p><strong>bond_term_multiplier</strong> – A multiplier to adjust the total number of payments (<code class="docutils literal notranslate"><span class="pre">n_payments</span></code>). </p></li>
+<li><p><strong>bond_interest_rate_multiplier</strong> – A multiplier to adjust the bond’s coupon rate.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20LevelDebtServiceBond26level_debt_service_paymentE">
+<span id="_CPPv3N20LevelDebtServiceBond26level_debt_service_paymentE"></span><span id="_CPPv2N20LevelDebtServiceBond26level_debt_service_paymentE"></span><span id="LevelDebtServiceBond::level_debt_service_payment__double"></span><span class="target" id="classLevelDebtServiceBond_1a2af3b9ff7546bd002f78d07dbf696c64"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">level_debt_service_payment</span></span></span><a class="headerlink" href="#_CPPv4N20LevelDebtServiceBond26level_debt_service_paymentE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The level debt service payment. This amount remains constant over the life of the bond. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N20LevelDebtServiceBond15n_payments_madeE">
+<span id="_CPPv3N20LevelDebtServiceBond15n_payments_madeE"></span><span id="_CPPv2N20LevelDebtServiceBond15n_payments_madeE"></span><span id="LevelDebtServiceBond::n_payments_made__i"></span><span class="target" id="classLevelDebtServiceBond_1ad1b8ba91ef3702a5eecfe3075fed0bc3"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_payments_made</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N20LevelDebtServiceBond15n_payments_madeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Number of payments made so far. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+<section id="variabledebtservicebond-h">
+<h4>VariableDebtServiceBond.h<a class="headerlink" href="#variabledebtservicebond-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv423VariableDebtServiceBond">
+<span id="_CPPv323VariableDebtServiceBond"></span><span id="_CPPv223VariableDebtServiceBond"></span><span id="VariableDebtServiceBond"></span><span class="target" id="classVariableDebtServiceBond"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">VariableDebtServiceBond</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/index.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><a class="headerlink" href="#_CPPv423VariableDebtServiceBond" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;<a class="reference internal" href="../../modules.html#VariableDebtServiceBond_8h"><span class="std std-ref">VariableDebtServiceBond.h</span></a>&gt;</em></div>
+<p>Variable debt service bond class. This (municipal) bond has floating coupon payments that are adjusted at specified intervals. This bond is associated with a specific water source. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23VariableDebtServiceBondD0Ev">
+<span id="_CPPv3N23VariableDebtServiceBondD0Ev"></span><span id="_CPPv2N23VariableDebtServiceBondD0Ev"></span><span id="VariableDebtServiceBond::~VariableDebtServiceBond"></span><span class="target" id="classVariableDebtServiceBond_1a8259b64265dd9701ac5888e0fe0bc565"></span><span class="sig-name descname"><span class="n"><span class="pre">~VariableDebtServiceBond</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N23VariableDebtServiceBondD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destroys the variable debt service bond object. This destructor cleans up resources associated with the variable debt service bond. It is automatically called when an object of the <code class="docutils literal notranslate"><a class="reference internal" href="../../modules.html#classVariableDebtServiceBond"><span class="std std-ref"><span class="pre">VariableDebtServiceBond</span></span></a></code> class goes out of scope or is deleted. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23VariableDebtServiceBond14getDebtServiceEi">
+<span id="_CPPv3N23VariableDebtServiceBond14getDebtServiceEi"></span><span id="_CPPv2N23VariableDebtServiceBond14getDebtServiceEi"></span><span id="VariableDebtServiceBond::getDebtService__i"></span><span class="target" id="classVariableDebtServiceBond_1a575a9a41df38e005ba0a1cff3eb2b921"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDebtService</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N23VariableDebtServiceBond14getDebtServiceEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates and returns the debt service payment for a given week. This function calculates the debt service for the bond, checking if repayments are due and handling any corrections if the calculated debt service value is NaN. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The week number for which the debt service is to be calculated.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double The calculated debt service for the specified week. If no payment is due for the week, returns 0. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23VariableDebtServiceBond26getPresentValueDebtServiceEid">
+<span id="_CPPv3N23VariableDebtServiceBond26getPresentValueDebtServiceEid"></span><span id="_CPPv2N23VariableDebtServiceBond26getPresentValueDebtServiceEid"></span><span id="VariableDebtServiceBond::getPresentValueDebtService__i.double"></span><span class="target" id="classVariableDebtServiceBond_1aa5ad4fcc7c65154105388b332ae98198"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getPresentValueDebtService</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">discount_rate</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N23VariableDebtServiceBond26getPresentValueDebtServiceEid" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the present value of the debt service for a given week. </p>
+<p>This function calculates the present value of the debt service payment for a specific week, taking into account the discount rate. It checks if the bond is in its repayment phase, and if the current week is a designated payment week.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The current week for which the debt service present value is calculated. </p></li>
+<li><p><strong>discount_rate</strong> – The annual discount rate used for present value calculations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double The present value of the debt service for the given week. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK23VariableDebtServiceBond28getNetPresentValueAtIssuanceEdi">
+<span id="_CPPv3NK23VariableDebtServiceBond28getNetPresentValueAtIssuanceEdi"></span><span id="_CPPv2NK23VariableDebtServiceBond28getNetPresentValueAtIssuanceEdi"></span><span id="VariableDebtServiceBond::getNetPresentValueAtIssuance__double.iC"></span><span class="target" id="classVariableDebtServiceBond_1a8cc7ee442d788b91b8c00e6bed07644d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getNetPresentValueAtIssuance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">yearly_discount_rate</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4NK23VariableDebtServiceBond28getNetPresentValueAtIssuanceEdi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the net present value (NPV) at issuance for the variable debt service bond. This calculation is generally not applicable for a variable rate bond and might require an additional calculation at the end of realization. This method is intended as a placeholder. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>yearly_discount_rate</strong> – The annual discount rate used for the NPV calculation. </p></li>
+<li><p><strong>week</strong> – The week number at which the NPV is to be calculated.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double The calculated NPV at issuance. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23VariableDebtServiceBond9issueBondEiidd">
+<span id="_CPPv3N23VariableDebtServiceBond9issueBondEiidd"></span><span id="_CPPv2N23VariableDebtServiceBond9issueBondEiidd"></span><span id="VariableDebtServiceBond::issueBond__i.i.double.double"></span><span class="target" id="classVariableDebtServiceBond_1a7d91921482f01d9bb37dba6e6d085771"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">issueBond</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">construction_time</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bond_term_multiplier</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bond_interest_rate_multiplier</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N23VariableDebtServiceBond9issueBondEiidd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Issues the bond, initializes bond details, and calculates the variable debt service payment. This method calculates the initial variable debt service payment for the bond based on the bond’s cost of capital, debt fraction, coupon rate, and the number of payments. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The week when the bond is issued. </p></li>
+<li><p><strong>construction_time</strong> – The time (in weeks) it takes to complete construction. </p></li>
+<li><p><strong>bond_term_multiplier</strong> – A multiplier that adjusts the term of the bond. </p></li>
+<li><p><strong>bond_interest_rate_multiplier</strong> – A multiplier that adjusts the interest rate of the bond.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23VariableDebtServiceBond14setDebtServiceEd">
+<span id="_CPPv3N23VariableDebtServiceBond14setDebtServiceEd"></span><span id="_CPPv2N23VariableDebtServiceBond14setDebtServiceEd"></span><span id="VariableDebtServiceBond::setDebtService__double"></span><span class="target" id="classVariableDebtServiceBond_1a692563150053b280f6e1ef23fd47c117"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setDebtService</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">updated_allocated_fraction_of_annual_debt_service</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N23VariableDebtServiceBond14setDebtServiceEd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates and updates the variable debt service payment based on the provided allocated fraction of annual debt service. Overrides the virtual base class method. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>updated_allocated_fraction_of_annual_debt_service</strong> – The new fraction of the annual debt service to be allocated to the bond.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23VariableDebtServiceBond16getWaterSourceIDEv">
+<span id="_CPPv3N23VariableDebtServiceBond16getWaterSourceIDEv"></span><span id="_CPPv2N23VariableDebtServiceBond16getWaterSourceIDEv"></span><span id="VariableDebtServiceBond::getWaterSourceID"></span><span class="target" id="classVariableDebtServiceBond_1a3edee29f26e8ac74f9767770c6a951c9"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getWaterSourceID</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N23VariableDebtServiceBond16getWaterSourceIDEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the water source ID associated with the bond. Overrides the virtual base class method. </p>
+<p>This function returns the water source ID that is associated with the bond. The ID can be used to track or link the bond to a specific water source.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int The water source ID associated with the bond. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="classVariableDebtServiceBond_1a9369eb5b081c45a8608630b3eacae979"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">constructor</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="classVariableDebtServiceBond_1a1b43195523e5571e04f2ed558497ab6a"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">water_source_id</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="classVariableDebtServiceBond_1ac011dd32658be19f8dfc72e7d3b1e02c"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">total_unallocated_cost_of_capital</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="classVariableDebtServiceBond_1a23f451bb14e4898aaa585fbeae9667f9"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">initial_fraction_of_allocated_debt</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="classVariableDebtServiceBond_1ab4035559da3d8155d792612e628285ae"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">n_payments</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="classVariableDebtServiceBond_1a4062feaf0e15546bbcf575aa8ec372e0"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">coupon_rate</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="classVariableDebtServiceBond_1a9ba0adce7f7b3f30e14e55837424ff7c"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">vector&lt;</span> <span class="pre">int</span> <span class="pre">&gt;</span> <span class="pre">pay_on_weeks</span></span></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp">
+<span class="target" id="classVariableDebtServiceBond_1a24b333de66efd610ef5d94a673250ff9"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">vector&lt;</span> <span class="pre">int</span> <span class="pre">&gt;</span> <span class="pre">bool</span> <span class="pre">begin_repayment_at_issuance</span>&#160;&#160; <span class="pre">=</span> <span class="pre">false)</span></span></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23VariableDebtServiceBond29variable_debt_service_paymentE">
+<span id="_CPPv3N23VariableDebtServiceBond29variable_debt_service_paymentE"></span><span id="_CPPv2N23VariableDebtServiceBond29variable_debt_service_paymentE"></span><span id="VariableDebtServiceBond::variable_debt_service_payment__double"></span><span class="target" id="classVariableDebtServiceBond_1af8e932fd3253dd365ee31605fc9d5487"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">variable_debt_service_payment</span></span></span><a class="headerlink" href="#_CPPv4N23VariableDebtServiceBond29variable_debt_service_paymentE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The value of variable debt service for this bond. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23VariableDebtServiceBond21initial_debt_fractionE">
+<span id="_CPPv3N23VariableDebtServiceBond21initial_debt_fractionE"></span><span id="_CPPv2N23VariableDebtServiceBond21initial_debt_fractionE"></span><span id="VariableDebtServiceBond::initial_debt_fraction__double"></span><span class="target" id="classVariableDebtServiceBond_1abd86106a72ef0eaaa158aeefcad335b3"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">initial_debt_fraction</span></span></span><a class="headerlink" href="#_CPPv4N23VariableDebtServiceBond21initial_debt_fractionE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The initial fraction of allocated debt. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23VariableDebtServiceBond15water_source_idE">
+<span id="_CPPv3N23VariableDebtServiceBond15water_source_idE"></span><span id="_CPPv2N23VariableDebtServiceBond15water_source_idE"></span><span id="VariableDebtServiceBond::water_source_id__i"></span><span class="target" id="classVariableDebtServiceBond_1aeb29dad91171f6ad6c4a7d8b8dda55cd"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_source_id</span></span></span><a class="headerlink" href="#_CPPv4N23VariableDebtServiceBond15water_source_idE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The ID of the water source associated with this bond. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23VariableDebtServiceBond15n_payments_madeE">
+<span id="_CPPv3N23VariableDebtServiceBond15n_payments_madeE"></span><span id="_CPPv2N23VariableDebtServiceBond15n_payments_madeE"></span><span id="VariableDebtServiceBond::n_payments_made__i"></span><span class="target" id="classVariableDebtServiceBond_1a04fd4837badb2e299e2718fefd9472c5"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_payments_made</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N23VariableDebtServiceBond15n_payments_madeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The number of payments made. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Lillian Lau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

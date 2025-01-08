@@ -12,8 +12,8 @@
     <includes local="yes">../Controls/Base/MinEnvFlowControl.h</includes>
     <includes local="yes">../DataCollector/MasterDataCollector.h</includes>
     <includes local="no">vector</includes>
-    <includedby refid="PaperTestProblem_8h" local="yes">src/Problem/PaperTestProblem.h</includedby>
-    <includedby refid="Triangle_8h" local="yes">src/Problem/Triangle.h</includedby>
+    <includedby refid="PaperTestProblem_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/PaperTestProblem.h</includedby>
+    <includedby refid="Triangle_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Triangle.h</includedby>
     <incdepgraph>
       <node id="190">
         <label>../Controls/Base/MinEnvFlowControl.h</label>
@@ -145,7 +145,7 @@
         <label>../DataCollector/MasterDataCollector.h</label>
       </node>
       <node id="164">
-        <label>src/Simulation/Simulation.h</label>
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h</label>
         <link refid="Simulation_8h"/>
         <childnode refid="165" relation="include">
         </childnode>
@@ -198,7 +198,7 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="192">
-        <label>src/Simulation/Simulation.h</label>
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h</label>
         <link refid="Simulation_8h"/>
         <childnode refid="193" relation="include">
         </childnode>
@@ -206,11 +206,11 @@
         </childnode>
       </node>
       <node id="193">
-        <label>src/Problem/PaperTestProblem.h</label>
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/PaperTestProblem.h</label>
         <link refid="PaperTestProblem_8h"/>
       </node>
       <node id="194">
-        <label>src/Problem/Triangle.h</label>
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Triangle.h</label>
         <link refid="Triangle_8h"/>
       </node>
     </invincdepgraph>
@@ -243,25 +243,25 @@
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22" refid="classSimulation" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSimulation" kindref="compound">Simulation</ref><sp/>{</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="27" refid="classSimulation_1a6c7ad426929c59e061750b6d923aa859" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classSimulation_1a6c7ad426929c59e061750b6d923aa859" kindref="member">total_simulation_time</ref>;</highlight></codeline>
-<codeline lineno="31" refid="classSimulation_1a6753fbf18cf9793b0ea3f4c070836af3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;unsigned<sp/>long&gt;<sp/><ref refid="classSimulation_1a6753fbf18cf9793b0ea3f4c070836af3" kindref="member">realizations_to_run</ref>;</highlight></codeline>
-<codeline lineno="35" refid="classSimulation_1a0989380cd166a60c2ba8bb2a1a9c138c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSimulation_1a0989380cd166a60c2ba8bb2a1a9c138c" kindref="member">import_export_rof_tables</ref>;</highlight></codeline>
-<codeline lineno="39" refid="classSimulation_1ab365c523e28a3af3be06e251b478e2b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classSimulation_1ab365c523e28a3af3be06e251b478e2b0" kindref="member">n_realizations</ref>;</highlight></codeline>
-<codeline lineno="43" refid="classSimulation_1a7cf5edb885d26074e51e183408a3adab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/>&amp;<ref refid="classSimulation_1a7cf5edb885d26074e51e183408a3adab" kindref="member">water_sources</ref>;</highlight></codeline>
-<codeline lineno="47" refid="classSimulation_1a04d4514b77ae98ec66cb8c2d633b2a52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Graph<sp/>&amp;<ref refid="classSimulation_1a04d4514b77ae98ec66cb8c2d633b2a52" kindref="member">water_sources_graph</ref>;</highlight></codeline>
-<codeline lineno="51" refid="classSimulation_1ab2825b5561679583c89a3936ce7dea39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;int&gt;&gt;<sp/>&amp;<ref refid="classSimulation_1ab2825b5561679583c89a3936ce7dea39" kindref="member">water_sources_to_utilities</ref>;</highlight></codeline>
-<codeline lineno="55" refid="classSimulation_1a0de77bedebd4b324d334340b11f5afa6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Utility<sp/>*&gt;<sp/>&amp;<ref refid="classSimulation_1a0de77bedebd4b324d334340b11f5afa6" kindref="member">utilities</ref>;</highlight></codeline>
-<codeline lineno="59" refid="classSimulation_1a23df9c17244a1cde0e32b42829623724" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;DroughtMitigationPolicy<sp/>*&gt;<sp/>&amp;<ref refid="classSimulation_1a23df9c17244a1cde0e32b42829623724" kindref="member">drought_mitigation_policies</ref>;</highlight></codeline>
-<codeline lineno="63" refid="classSimulation_1a91d4cbb85145e9ebb5a9cb5d24dace15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;MinEnvFlowControl<sp/>*&gt;<sp/>&amp;<ref refid="classSimulation_1a91d4cbb85145e9ebb5a9cb5d24dace15" kindref="member">min_env_flow_controls</ref>;</highlight></codeline>
-<codeline lineno="67" refid="classSimulation_1a0e0766513f36e2e95e83b0611c3c078c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;&amp;<sp/><ref refid="classSimulation_1a0e0766513f36e2e95e83b0611c3c078c" kindref="member">utilities_rdm</ref>;</highlight></codeline>
-<codeline lineno="71" refid="classSimulation_1afd35d5f1a11036d7c64668274ba0cc20" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;&amp;<sp/><ref refid="classSimulation_1afd35d5f1a11036d7c64668274ba0cc20" kindref="member">water_sources_rdm</ref>;</highlight></codeline>
-<codeline lineno="75" refid="classSimulation_1a4fd8d11506b6427577c9d8aa43932b2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;&amp;<sp/><ref refid="classSimulation_1a4fd8d11506b6427577c9d8aa43932b2c" kindref="member">policies_rdm</ref>;</highlight></codeline>
-<codeline lineno="79" refid="classSimulation_1a7fc97bea88fee3f551d22042ae813428" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;Matrix2D&lt;double&gt;&gt;&gt;*<sp/><ref refid="classSimulation_1a7fc97bea88fee3f551d22042ae813428" kindref="member">precomputed_rof_tables</ref>;</highlight></codeline>
-<codeline lineno="83" refid="classSimulation_1a024cbe4c66a4329c5f12009434b8bdc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;*<sp/><ref refid="classSimulation_1a024cbe4c66a4329c5f12009434b8bdc2" kindref="member">table_storage_shift</ref>;</highlight></codeline>
-<codeline lineno="87" refid="classSimulation_1ad2d6987ec81948619b26f7b687bb03cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;*<sp/><ref refid="classSimulation_1ad2d6987ec81948619b26f7b687bb03cf" kindref="member">table_base_storage_shift</ref>;</highlight></codeline>
-<codeline lineno="91" refid="classSimulation_1acc283f08e6d30c3221676eccc555cc7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;*<sp/><ref refid="classSimulation_1acc283f08e6d30c3221676eccc555cc7b" kindref="member">treatment_demand_buffer_shift</ref>;</highlight></codeline>
-<codeline lineno="95" refid="classSimulation_1a9c69464c2674176a43d1d48bee9fad50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>MasterDataCollector*<sp/>master_data_collector<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="99" refid="classSimulation_1aca810eb7785417158d897dfdf366e9fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classSimulation_1aca810eb7785417158d897dfdf366e9fa" kindref="member">rof_tables_folder</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>total_simulation_time;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;unsigned<sp/>long&gt;<sp/>realizations_to_run;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>import_export_rof_tables;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>n_realizations;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/>&amp;water_sources;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>Graph<sp/>&amp;water_sources_graph;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;int&gt;&gt;<sp/>&amp;water_sources_to_utilities;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Utility<sp/>*&gt;<sp/>&amp;utilities;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;DroughtMitigationPolicy<sp/>*&gt;<sp/>&amp;drought_mitigation_policies;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;MinEnvFlowControl<sp/>*&gt;<sp/>&amp;min_env_flow_controls;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;&amp;<sp/>utilities_rdm;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;&amp;<sp/>water_sources_rdm;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;&amp;<sp/>policies_rdm;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;Matrix2D&lt;double&gt;&gt;&gt;*<sp/>precomputed_rof_tables;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;*<sp/>table_storage_shift;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;*<sp/>table_base_storage_shift;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;*<sp/>treatment_demand_buffer_shift;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>MasterDataCollector*<sp/>master_data_collector<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>rof_tables_folder;</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setRof_tables_folder(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;rof_tables_folder);</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
@@ -329,6 +329,6 @@
 <codeline lineno="331"><highlight class="normal"></highlight></codeline>
 <codeline lineno="332"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_SIMULATION_H</highlight></codeline>
     </programlisting>
-    <location file="src/Simulation/Simulation.h"/>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h"/>
   </compounddef>
 </doxygen>

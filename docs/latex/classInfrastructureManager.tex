@@ -7,7 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classInfrastructureManager_a2720f467b660e0f63f265e7957ca0139}{Infrastructure\+Manager}} (int \mbox{\hyperlink{classInfrastructureManager_a9c721676ab3c35a247c818bf34fd482e}{id}}, const vector$<$ double $>$ \&\mbox{\hyperlink{classInfrastructureManager_a5b09482bd9fc258a3da82a86b157a2c3}{infra\+\_\+construction\+\_\+triggers}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classInfrastructureManager_a6505122b584011bd852a126616bf442a}{infra\+\_\+if\+\_\+built\+\_\+remove}}, double \mbox{\hyperlink{classInfrastructureManager_a44099d2523ff67773ffb853e2c9871b3}{infra\+\_\+discount\+\_\+rate}}, double \mbox{\hyperlink{classInfrastructureManager_a6c8010bc7c65fac8411431e5c7a8d3e4}{bond\+\_\+term}}, double \mbox{\hyperlink{classInfrastructureManager_ab8ddaa0ed220e29bc296470b7a905a3b}{bond\+\_\+interest\+\_\+rate}}, vector$<$ int $>$ \mbox{\hyperlink{classInfrastructureManager_a21b02e6d9ca7f90cfb289a48cec723cb}{rof\+\_\+infra\+\_\+construction\+\_\+order}}, vector$<$ int $>$ \mbox{\hyperlink{classInfrastructureManager_a9b2adee9527d11de87069901e86b540a}{demand\+\_\+infra\+\_\+construction\+\_\+order}})
+\mbox{\hyperlink{classInfrastructureManager_a2720f467b660e0f63f265e7957ca0139}{Infrastructure\+Manager}} (int id, const vector$<$ double $>$ \&infra\+\_\+construction\+\_\+triggers, const vector$<$ vector$<$ int $>$$>$ \&infra\+\_\+if\+\_\+built\+\_\+remove, double infra\+\_\+discount\+\_\+rate, double bond\+\_\+term, double bond\+\_\+interest\+\_\+rate, vector$<$ int $>$ rof\+\_\+infra\+\_\+construction\+\_\+order, vector$<$ int $>$ demand\+\_\+infra\+\_\+construction\+\_\+order)
 \begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classInfrastructureManager}{Infrastructure\+Manager}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classInfrastructureManager_a435ec4cb56238c6e1d93e37783f3a03a}{Infrastructure\+Manager}} ()
 \begin{DoxyCompactList}\small\item\em Basic constructor a new Infrastructure Manager object. \end{DoxyCompactList}\item 
@@ -15,7 +15,7 @@
 \begin{DoxyCompactList}\small\item\em An assignment operator that copies the values of the infrastructure manager object to another infrastructure manager object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classInfrastructureManager_a9d1fe6a0325a3705dbfabb92afbe9055}{Infrastructure\+Manager}} (\mbox{\hyperlink{classInfrastructureManager}{Infrastructure\+Manager}} \&infrastructure\+\_\+manager)
 \begin{DoxyCompactList}\small\item\em Constructs a new Infrastructure Manager object from an existing Infrastructure Manager object. \end{DoxyCompactList}\item 
-vector$<$ double $>$ \mbox{\hyperlink{classInfrastructureManager_a23888a04e8cb5e2fb7a36b2258d4a259}{rearrange\+Infra\+Rof\+Vector}} (const vector$<$ double $>$ \&\mbox{\hyperlink{classInfrastructureManager_a5b09482bd9fc258a3da82a86b157a2c3}{infra\+\_\+construction\+\_\+triggers}}, const vector$<$ int $>$ \&\mbox{\hyperlink{classInfrastructureManager_a21b02e6d9ca7f90cfb289a48cec723cb}{rof\+\_\+infra\+\_\+construction\+\_\+order}}, const vector$<$ int $>$ \&\mbox{\hyperlink{classInfrastructureManager_a9b2adee9527d11de87069901e86b540a}{demand\+\_\+infra\+\_\+construction\+\_\+order}})
+vector$<$ double $>$ \mbox{\hyperlink{classInfrastructureManager_a23888a04e8cb5e2fb7a36b2258d4a259}{rearrange\+Infra\+Rof\+Vector}} (const vector$<$ double $>$ \&infra\+\_\+construction\+\_\+triggers, const vector$<$ int $>$ \&rof\+\_\+infra\+\_\+construction\+\_\+order, const vector$<$ int $>$ \&demand\+\_\+infra\+\_\+construction\+\_\+order)
 \begin{DoxyCompactList}\small\item\em Rearranges the infrastructure construction trigger vector to match the specified order of construction based on R\+OF and demand. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classInfrastructureManager_a9972a27ff6d08b7c1226d703ac700a94}{set\+Water\+Source\+Online}} (unsigned int source\+\_\+id, int week, double \&total\+\_\+storage\+\_\+capacity, double \&total\+\_\+treatment\+\_\+capacity, double \&total\+\_\+available\+\_\+volume, double \&total\+\_\+stored\+\_\+volume)
 \begin{DoxyCompactList}\small\item\em Identifies the type of water source and sets a water source online and updates related capacities and volumes. \end{DoxyCompactList}\item 
@@ -37,7 +37,7 @@ void \mbox{\hyperlink{classInfrastructureManager_ab66bdc91a6f60c6aea6ce0bf179df9
 \begin{DoxyCompactList}\small\item\em Adds a water source to the utility\textquotesingle{}s online lists and updates the relevant capacity and volume totals. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classInfrastructureManager_a3950df03bc8fd5743aefeca4c3d7bf98}{add\+Water\+Source}} (\mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$water\+\_\+source)
 \begin{DoxyCompactList}\small\item\em Adds a water source to the construction management system. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classInfrastructureManager_a8ff698443fd4f32e28677aa9ef34c2dc}{connect\+Water\+Sources\+Vectors\+To\+Utilitys}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&\mbox{\hyperlink{classInfrastructureManager_a2b8810958d40b9c80d299c6db31715e2}{water\+\_\+sources}}, vector$<$ int $>$ \&\mbox{\hyperlink{classInfrastructureManager_ac8aa84e40d3ef4e4ee7ba6536ca55619}{priority\+\_\+draw\+\_\+water\+\_\+source}}, vector$<$ int $>$ \&\mbox{\hyperlink{classInfrastructureManager_a4034272cf63082614f5519b0909acb3d}{non\+\_\+priority\+\_\+draw\+\_\+water\+\_\+source}})
+void \mbox{\hyperlink{classInfrastructureManager_a8ff698443fd4f32e28677aa9ef34c2dc}{connect\+Water\+Sources\+Vectors\+To\+Utilitys}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, vector$<$ int $>$ \&priority\+\_\+draw\+\_\+water\+\_\+source, vector$<$ int $>$ \&non\+\_\+priority\+\_\+draw\+\_\+water\+\_\+source)
 \begin{DoxyCompactList}\small\item\em Connects the provided water source vectors to the utility. \end{DoxyCompactList}\item 
 const vector$<$ bool $>$ \& \mbox{\hyperlink{classInfrastructureManager_ad598850bb18f5a6fc81a0e2bc7885ef2}{get\+Under\+\_\+construction}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the list of infrastructure construction statuses. \end{DoxyCompactList}\item 
@@ -55,39 +55,6 @@ const vector$<$ int $>$ \& \mbox{\hyperlink{classInfrastructureManager_aac2a99db
 \begin{DoxyCompactList}\small\item\em Retrieves the list of water sources in the demand infrastructure construction order. \end{DoxyCompactList}\item 
 const vector$<$ int $>$ \& \mbox{\hyperlink{classInfrastructureManager_a540f233692981645d52af7f1de087dbf}{get\+Infra\+\_\+built\+\_\+last\+\_\+week}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the list of infrastructure built in the last week. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Private Attributes}
-\begin{DoxyCompactItemize}
-\item 
-int \mbox{\hyperlink{classInfrastructureManager_a9c721676ab3c35a247c818bf34fd482e}{id}}
-\begin{DoxyCompactList}\small\item\em An integer representing the ID of the infrastructure option. \end{DoxyCompactList}\item 
-vector$<$ double $>$ \mbox{\hyperlink{classInfrastructureManager_a5b09482bd9fc258a3da82a86b157a2c3}{infra\+\_\+construction\+\_\+triggers}}
-\begin{DoxyCompactList}\small\item\em A vector of doubles storing the R\+OF trigger values for infrastructure construction. \end{DoxyCompactList}\item 
-vector$<$ int $>$ $\ast$ \mbox{\hyperlink{classInfrastructureManager_ac8aa84e40d3ef4e4ee7ba6536ca55619}{priority\+\_\+draw\+\_\+water\+\_\+source}}
-\begin{DoxyCompactList}\small\item\em A pointer to the vector of integers storing the ID sequence of water sources to be utilized for fulfilling water demand. \end{DoxyCompactList}\item 
-vector$<$ int $>$ $\ast$ \mbox{\hyperlink{classInfrastructureManager_a4034272cf63082614f5519b0909acb3d}{non\+\_\+priority\+\_\+draw\+\_\+water\+\_\+source}}
-\begin{DoxyCompactList}\small\item\em A pointer to the vector of integers storing the I\+Ds for water sources that are not prioritized for water demand fulfillment. Allocation of demand is executed proportionally to the available capacity of these sources. \end{DoxyCompactList}\item 
-vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classInfrastructureManager_a6505122b584011bd852a126616bf442a}{infra\+\_\+if\+\_\+built\+\_\+remove}}
-\begin{DoxyCompactList}\small\item\em A 2D vector of integers storing the I\+Ds of infrastructure options to be removed if a given infrastructure option is built. \end{DoxyCompactList}\item 
-vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$ $>$ $\ast$ \mbox{\hyperlink{classInfrastructureManager_a2b8810958d40b9c80d299c6db31715e2}{water\+\_\+sources}}
-\begin{DoxyCompactList}\small\item\em A pointer to the vector of \mbox{\hyperlink{classWaterSource}{Water\+Source}} pointers storing all water sources that supply water to a specific supply infrastructure. \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{classInfrastructureManager_a44099d2523ff67773ffb853e2c9871b3}{infra\+\_\+discount\+\_\+rate}}
-\begin{DoxyCompactList}\small\item\em A double representing the discount rate for infrastructure construction. \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{classInfrastructureManager_a6c8010bc7c65fac8411431e5c7a8d3e4}{bond\+\_\+term}}
-\begin{DoxyCompactList}\small\item\em A double representing the term of the bond for infrastructure construction. \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{classInfrastructureManager_ab8ddaa0ed220e29bc296470b7a905a3b}{bond\+\_\+interest\+\_\+rate}}
-\begin{DoxyCompactList}\small\item\em A double representing the interest rate for the bond for infrastructure construction. \end{DoxyCompactList}\item 
-vector$<$ int $>$ \mbox{\hyperlink{classInfrastructureManager_a21b02e6d9ca7f90cfb289a48cec723cb}{rof\+\_\+infra\+\_\+construction\+\_\+order}}
-\begin{DoxyCompactList}\small\item\em A vector representing the order of infrastructure projects based on long-\/term R\+O\+Fs. \end{DoxyCompactList}\item 
-vector$<$ int $>$ \mbox{\hyperlink{classInfrastructureManager_a9b2adee9527d11de87069901e86b540a}{demand\+\_\+infra\+\_\+construction\+\_\+order}}
-\begin{DoxyCompactList}\small\item\em A vector representing the order of infrastructure projects based on demand. \end{DoxyCompactList}\item 
-vector$<$ int $>$ \mbox{\hyperlink{classInfrastructureManager_a5203fc0ae8e33885012415c1d0e27399}{infra\+\_\+built\+\_\+last\+\_\+week}}
-\begin{DoxyCompactList}\small\item\em A vector of integers recording the ID, week of completion, and new water supply source (W\+SS) for an infrastructure option (utility\+\_\+id, week, new source id) \end{DoxyCompactList}\item 
-vector$<$ int $>$ \mbox{\hyperlink{classInfrastructureManager_abe5accdeeb4343266335d208d41704ae}{construction\+\_\+end\+\_\+date}}
-\begin{DoxyCompactList}\small\item\em A vector of integers corresponding to the vector of infrastructure options indicating the week in which each infrastructure option\textquotesingle{}s construction was completed. Indexed using the infrastructure ID number. \end{DoxyCompactList}\item 
-vector$<$ bool $>$ \mbox{\hyperlink{classInfrastructureManager_a634ca1b01e1b7fa7c8b5468c9a842a51}{under\+\_\+construction}}
-\begin{DoxyCompactList}\small\item\em A vector of booleans storing whether each infrastructure option is currently under construction. Indexed using the infrastructure ID number. \end{DoxyCompactList}\item 
-double \mbox{\hyperlink{classInfrastructureManager_a959efbe51589414916d96b99bf5559cc}{infra\+\_\+net\+\_\+present\+\_\+cost}} = N\+O\+NE
-\begin{DoxyCompactList}\small\item\em A double representing the net present cost of the infrastructure option. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -661,159 +628,6 @@ This function handles the construction process of a joint water treatment plant 
 \end{DoxySeeAlso}
 
 
-\subsection{Member Data Documentation}
-\mbox{\Hypertarget{classInfrastructureManager_ab8ddaa0ed220e29bc296470b7a905a3b}\label{classInfrastructureManager_ab8ddaa0ed220e29bc296470b7a905a3b}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!bond\+\_\+interest\+\_\+rate@{bond\+\_\+interest\+\_\+rate}}
-\index{bond\+\_\+interest\+\_\+rate@{bond\+\_\+interest\+\_\+rate}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{bond\+\_\+interest\+\_\+rate}{bond\_interest\_rate}}
-{\footnotesize\ttfamily double Infrastructure\+Manager\+::bond\+\_\+interest\+\_\+rate\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A double representing the interest rate for the bond for infrastructure construction. 
-
-\mbox{\Hypertarget{classInfrastructureManager_a6c8010bc7c65fac8411431e5c7a8d3e4}\label{classInfrastructureManager_a6c8010bc7c65fac8411431e5c7a8d3e4}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!bond\+\_\+term@{bond\+\_\+term}}
-\index{bond\+\_\+term@{bond\+\_\+term}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{bond\+\_\+term}{bond\_term}}
-{\footnotesize\ttfamily double Infrastructure\+Manager\+::bond\+\_\+term\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A double representing the term of the bond for infrastructure construction. 
-
-\mbox{\Hypertarget{classInfrastructureManager_abe5accdeeb4343266335d208d41704ae}\label{classInfrastructureManager_abe5accdeeb4343266335d208d41704ae}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!construction\+\_\+end\+\_\+date@{construction\+\_\+end\+\_\+date}}
-\index{construction\+\_\+end\+\_\+date@{construction\+\_\+end\+\_\+date}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{construction\+\_\+end\+\_\+date}{construction\_end\_date}}
-{\footnotesize\ttfamily vector$<$int$>$ Infrastructure\+Manager\+::construction\+\_\+end\+\_\+date\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A vector of integers corresponding to the vector of infrastructure options indicating the week in which each infrastructure option\textquotesingle{}s construction was completed. Indexed using the infrastructure ID number. 
-
-\mbox{\Hypertarget{classInfrastructureManager_a9b2adee9527d11de87069901e86b540a}\label{classInfrastructureManager_a9b2adee9527d11de87069901e86b540a}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!demand\+\_\+infra\+\_\+construction\+\_\+order@{demand\+\_\+infra\+\_\+construction\+\_\+order}}
-\index{demand\+\_\+infra\+\_\+construction\+\_\+order@{demand\+\_\+infra\+\_\+construction\+\_\+order}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{demand\+\_\+infra\+\_\+construction\+\_\+order}{demand\_infra\_construction\_order}}
-{\footnotesize\ttfamily vector$<$int$>$ Infrastructure\+Manager\+::demand\+\_\+infra\+\_\+construction\+\_\+order\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A vector representing the order of infrastructure projects based on demand. 
-
-\mbox{\Hypertarget{classInfrastructureManager_a9c721676ab3c35a247c818bf34fd482e}\label{classInfrastructureManager_a9c721676ab3c35a247c818bf34fd482e}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!id@{id}}
-\index{id@{id}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{id}{id}}
-{\footnotesize\ttfamily int Infrastructure\+Manager\+::id\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-An integer representing the ID of the infrastructure option. 
-
-\mbox{\Hypertarget{classInfrastructureManager_a5203fc0ae8e33885012415c1d0e27399}\label{classInfrastructureManager_a5203fc0ae8e33885012415c1d0e27399}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!infra\+\_\+built\+\_\+last\+\_\+week@{infra\+\_\+built\+\_\+last\+\_\+week}}
-\index{infra\+\_\+built\+\_\+last\+\_\+week@{infra\+\_\+built\+\_\+last\+\_\+week}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{infra\+\_\+built\+\_\+last\+\_\+week}{infra\_built\_last\_week}}
-{\footnotesize\ttfamily vector$<$int$>$ Infrastructure\+Manager\+::infra\+\_\+built\+\_\+last\+\_\+week\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A vector of integers recording the ID, week of completion, and new water supply source (W\+SS) for an infrastructure option (utility\+\_\+id, week, new source id) 
-
-\mbox{\Hypertarget{classInfrastructureManager_a5b09482bd9fc258a3da82a86b157a2c3}\label{classInfrastructureManager_a5b09482bd9fc258a3da82a86b157a2c3}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!infra\+\_\+construction\+\_\+triggers@{infra\+\_\+construction\+\_\+triggers}}
-\index{infra\+\_\+construction\+\_\+triggers@{infra\+\_\+construction\+\_\+triggers}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{infra\+\_\+construction\+\_\+triggers}{infra\_construction\_triggers}}
-{\footnotesize\ttfamily vector$<$double$>$ Infrastructure\+Manager\+::infra\+\_\+construction\+\_\+triggers\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A vector of doubles storing the R\+OF trigger values for infrastructure construction. 
-
-\mbox{\Hypertarget{classInfrastructureManager_a44099d2523ff67773ffb853e2c9871b3}\label{classInfrastructureManager_a44099d2523ff67773ffb853e2c9871b3}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!infra\+\_\+discount\+\_\+rate@{infra\+\_\+discount\+\_\+rate}}
-\index{infra\+\_\+discount\+\_\+rate@{infra\+\_\+discount\+\_\+rate}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{infra\+\_\+discount\+\_\+rate}{infra\_discount\_rate}}
-{\footnotesize\ttfamily double Infrastructure\+Manager\+::infra\+\_\+discount\+\_\+rate\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A double representing the discount rate for infrastructure construction. 
-
-\mbox{\Hypertarget{classInfrastructureManager_a6505122b584011bd852a126616bf442a}\label{classInfrastructureManager_a6505122b584011bd852a126616bf442a}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!infra\+\_\+if\+\_\+built\+\_\+remove@{infra\+\_\+if\+\_\+built\+\_\+remove}}
-\index{infra\+\_\+if\+\_\+built\+\_\+remove@{infra\+\_\+if\+\_\+built\+\_\+remove}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{infra\+\_\+if\+\_\+built\+\_\+remove}{infra\_if\_built\_remove}}
-{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ Infrastructure\+Manager\+::infra\+\_\+if\+\_\+built\+\_\+remove\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A 2D vector of integers storing the I\+Ds of infrastructure options to be removed if a given infrastructure option is built. 
-
-\mbox{\Hypertarget{classInfrastructureManager_a959efbe51589414916d96b99bf5559cc}\label{classInfrastructureManager_a959efbe51589414916d96b99bf5559cc}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!infra\+\_\+net\+\_\+present\+\_\+cost@{infra\+\_\+net\+\_\+present\+\_\+cost}}
-\index{infra\+\_\+net\+\_\+present\+\_\+cost@{infra\+\_\+net\+\_\+present\+\_\+cost}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{infra\+\_\+net\+\_\+present\+\_\+cost}{infra\_net\_present\_cost}}
-{\footnotesize\ttfamily double Infrastructure\+Manager\+::infra\+\_\+net\+\_\+present\+\_\+cost = N\+O\+NE\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A double representing the net present cost of the infrastructure option. 
-
-\mbox{\Hypertarget{classInfrastructureManager_a4034272cf63082614f5519b0909acb3d}\label{classInfrastructureManager_a4034272cf63082614f5519b0909acb3d}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!non\+\_\+priority\+\_\+draw\+\_\+water\+\_\+source@{non\+\_\+priority\+\_\+draw\+\_\+water\+\_\+source}}
-\index{non\+\_\+priority\+\_\+draw\+\_\+water\+\_\+source@{non\+\_\+priority\+\_\+draw\+\_\+water\+\_\+source}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{non\+\_\+priority\+\_\+draw\+\_\+water\+\_\+source}{non\_priority\_draw\_water\_source}}
-{\footnotesize\ttfamily vector$<$int$>$$\ast$ Infrastructure\+Manager\+::non\+\_\+priority\+\_\+draw\+\_\+water\+\_\+source\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A pointer to the vector of integers storing the I\+Ds for water sources that are not prioritized for water demand fulfillment. Allocation of demand is executed proportionally to the available capacity of these sources. 
-
-\mbox{\Hypertarget{classInfrastructureManager_ac8aa84e40d3ef4e4ee7ba6536ca55619}\label{classInfrastructureManager_ac8aa84e40d3ef4e4ee7ba6536ca55619}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!priority\+\_\+draw\+\_\+water\+\_\+source@{priority\+\_\+draw\+\_\+water\+\_\+source}}
-\index{priority\+\_\+draw\+\_\+water\+\_\+source@{priority\+\_\+draw\+\_\+water\+\_\+source}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{priority\+\_\+draw\+\_\+water\+\_\+source}{priority\_draw\_water\_source}}
-{\footnotesize\ttfamily vector$<$int$>$$\ast$ Infrastructure\+Manager\+::priority\+\_\+draw\+\_\+water\+\_\+source\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A pointer to the vector of integers storing the ID sequence of water sources to be utilized for fulfilling water demand. 
-
-\mbox{\Hypertarget{classInfrastructureManager_a21b02e6d9ca7f90cfb289a48cec723cb}\label{classInfrastructureManager_a21b02e6d9ca7f90cfb289a48cec723cb}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!rof\+\_\+infra\+\_\+construction\+\_\+order@{rof\+\_\+infra\+\_\+construction\+\_\+order}}
-\index{rof\+\_\+infra\+\_\+construction\+\_\+order@{rof\+\_\+infra\+\_\+construction\+\_\+order}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{rof\+\_\+infra\+\_\+construction\+\_\+order}{rof\_infra\_construction\_order}}
-{\footnotesize\ttfamily vector$<$int$>$ Infrastructure\+Manager\+::rof\+\_\+infra\+\_\+construction\+\_\+order\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A vector representing the order of infrastructure projects based on long-\/term R\+O\+Fs. 
-
-\mbox{\Hypertarget{classInfrastructureManager_a634ca1b01e1b7fa7c8b5468c9a842a51}\label{classInfrastructureManager_a634ca1b01e1b7fa7c8b5468c9a842a51}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!under\+\_\+construction@{under\+\_\+construction}}
-\index{under\+\_\+construction@{under\+\_\+construction}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{under\+\_\+construction}{under\_construction}}
-{\footnotesize\ttfamily vector$<$bool$>$ Infrastructure\+Manager\+::under\+\_\+construction\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A vector of booleans storing whether each infrastructure option is currently under construction. Indexed using the infrastructure ID number. 
-
-\mbox{\Hypertarget{classInfrastructureManager_a2b8810958d40b9c80d299c6db31715e2}\label{classInfrastructureManager_a2b8810958d40b9c80d299c6db31715e2}} 
-\index{Infrastructure\+Manager@{Infrastructure\+Manager}!water\+\_\+sources@{water\+\_\+sources}}
-\index{water\+\_\+sources@{water\+\_\+sources}!Infrastructure\+Manager@{Infrastructure\+Manager}}
-\subsubsection{\texorpdfstring{water\+\_\+sources}{water\_sources}}
-{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$$\ast$ Infrastructure\+Manager\+::water\+\_\+sources\hspace{0.3cm}{\ttfamily [private]}}
-
-
-
-A pointer to the vector of \mbox{\hyperlink{classWaterSource}{Water\+Source}} pointers storing all water sources that supply water to a specific supply infrastructure. 
-
-
-
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/\+System\+Components/\+Utility/\mbox{\hyperlink{InfrastructureManager_8h}{Infrastructure\+Manager.\+h}}\end{DoxyCompactItemize}
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+System\+Components/\+Utility/\mbox{\hyperlink{InfrastructureManager_8h}{Infrastructure\+Manager.\+h}}\end{DoxyCompactItemize}
