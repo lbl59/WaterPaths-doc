@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="ContinuityModelRealization_8h" kind="file" language="C++">
+    <compoundname>ContinuityModelRealization.h</compoundname>
+    <includes refid="ContinuityModel_8h" local="yes">Base/ContinuityModel.h</includes>
+    <includes local="yes">../DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</includes>
+    <includedby refid="Simulation_8h" local="yes">src/Simulation/Simulation.h</includedby>
+    <incdepgraph>
+      <node id="33">
+        <label>../Utils/Constants.h</label>
+      </node>
+      <node id="46">
+        <label>../../Controls/Base/MinEnvFlowControl.h</label>
+      </node>
+      <node id="47">
+        <label>../DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
+      </node>
+      <node id="45">
+        <label>../../Utils/Graph/Graph.h</label>
+      </node>
+      <node id="27">
+        <label>Base/ContinuityModel.h</label>
+        <link refid="ContinuityModel_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>../../Controls/EvaporationSeries.h</label>
+      </node>
+      <node id="32">
+        <label>stdexcept</label>
+      </node>
+      <node id="29">
+        <label>string</label>
+      </node>
+      <node id="38">
+        <label>map</label>
+      </node>
+      <node id="44">
+        <label>InfrastructureManager.h</label>
+        <link refid="InfrastructureManager_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>../../SystemComponents/WaterSources/Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>../../Utils/DataSeries.h</label>
+      </node>
+      <node id="37">
+        <label>../../SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vector</label>
+      </node>
+      <node id="30">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>../../Utils/Constants.h</label>
+      </node>
+      <node id="40">
+        <label>../WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>src/ContinuityModels/ContinuityModelRealization.h</label>
+        <link refid="ContinuityModelRealization_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>../../../Utils/Constants.h</label>
+      </node>
+      <node id="43">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+      </node>
+      <node id="35">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="48">
+        <label>src/ContinuityModels/ContinuityModelRealization.h</label>
+        <link refid="ContinuityModelRealization_8h"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>src/Simulation/Simulation.h</label>
+        <link refid="Simulation_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>src/Problem/PaperTestProblem.h</label>
+        <link refid="PaperTestProblem_8h"/>
+      </node>
+      <node id="51">
+        <label>src/Problem/Triangle.h</label>
+        <link refid="Triangle_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classContinuityModelRealization" prot="public">ContinuityModelRealization</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_CONTINUITYMODELREALIZATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_CONTINUITYMODELREALIZATION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ContinuityModel_8h" kindref="compound">Base/ContinuityModel.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classContinuityModelRealization" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classContinuityModelRealization" kindref="compound">ContinuityModelRealization</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classContinuityModel" kindref="compound">ContinuityModel</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="classContinuityModelRealization_1a757dcf1de115c674fd5adcb040c5f277" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;DroughtMitigationPolicy<sp/>*&gt;<sp/><ref refid="classContinuityModelRealization_1a757dcf1de115c674fd5adcb040c5f277" kindref="member">drought_mitigation_policies</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classContinuityModelRealization_1a641c096ac73586597b3e21a5d516c923" kindref="member">ContinuityModelRealization</ref>(</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/>&amp;water_sources,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Graph<sp/>&amp;<ref refid="classContinuityModel_1a563401588c6fa622f03393909a3522db" kindref="member">water_sources_graph</ref>,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;int&gt;&gt;<sp/>&amp;<ref refid="classContinuityModel_1ae8516bcbbf52650190277fc8b06c1843" kindref="member">water_sources_to_utilities</ref>,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;Utility<sp/>*&gt;<sp/>&amp;utilities,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;DroughtMitigationPolicy<sp/>*&gt;<sp/>&amp;<ref refid="classContinuityModelRealization_1a757dcf1de115c674fd5adcb040c5f277" kindref="member">drought_mitigation_policies</ref>,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;MinEnvFlowControl<sp/>*&gt;<sp/>&amp;min_env_flow_control,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;&amp;<sp/><ref refid="classContinuityModel_1aa4a00b76da6295d2faa11e3dcaea1896" kindref="member">utilities_rdm</ref>,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;&amp;<sp/><ref refid="classContinuityModel_1ab7b8fa93a6f56b328e425e1ead6cfefa" kindref="member">water_sources_rdm</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;&amp;<sp/>policy_rdm,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>realization_index);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classContinuityModelRealization_1afd53069e2f9ab96210ff153d16f01269" kindref="member">~ContinuityModelRealization</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelRealization_1ae2c40328beb671fa9b10ecc2921b8375" kindref="member">setShortTermROFs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;risks_of_failure);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelRealization_1a1841f4ca49c150cf5d790f6d42496575" kindref="member">applyDroughtMitigationPolicies</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;DroughtMitigationPolicy<sp/>*&gt;<sp/><ref refid="classContinuityModelRealization_1afadb3e7f51ae7a09948ffc73d7eb7f6b" kindref="member">getDrought_mitigation_policies</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelRealization_1aa0168985144d26e1613cf20335affedb" kindref="member">setLongTermROFs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;risks_of_failure,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelRealization_1a5b9405156e8cc21c8781ea15ee46c8fe" kindref="member">setLongTermROFDemandProjectionEstimate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Utility<sp/>*&gt;<sp/>&amp;rof_utilities);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelRealization_1ab87c140eaf87266ca81636059e948bb7" kindref="member">updateJointWTPTreatmentAllocations</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>current_week);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_CONTINUITYMODELREALIZATION_H</highlight></codeline>
+    </programlisting>
+    <location file="src/ContinuityModels/ContinuityModelRealization.h"/>
+  </compounddef>
+</doxygen>

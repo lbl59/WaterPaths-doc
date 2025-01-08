@@ -1,0 +1,585 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classJointWTP" kind="class" language="C++" prot="public">
+    <compoundname>JointWTP</compoundname>
+    <basecompoundref refid="classWaterSource" prot="public" virt="non-virtual">WaterSource</basecompoundref>
+    <derivedcompoundref refid="classFixedJointWTP" prot="public" virt="non-virtual">FixedJointWTP</derivedcompoundref>
+    <derivedcompoundref refid="classVariableJointWTP" prot="public" virt="non-virtual">VariableJointWTP</derivedcompoundref>
+    <includes refid="JointWTP_8h" local="no">JointWTP.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classJointWTP_1a0e10a7f7ade04d5f3572f185de1b8653" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int JointWTP::expansion_sequence_id</definition>
+        <argsstring></argsstring>
+        <name>expansion_sequence_id</name>
+        <briefdescription>
+<para>The low or high expansion ID of the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/JointWTP.h" line="16" column="1" bodyfile="src/SystemComponents/WaterSources/JointWTP.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJointWTP_1aa5830cb4d3013a004b7168f4dbf475eb" prot="public" static="no" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int JointWTP::parent_reservoir_ID</definition>
+        <argsstring></argsstring>
+        <name>parent_reservoir_ID</name>
+        <briefdescription>
+<para>The ID of the parent reservoir. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/JointWTP.h" line="20" column="1" bodyfile="src/SystemComponents/WaterSources/JointWTP.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJointWTP_1ac5663480c912b1b7cfdfb976b4fa3cec" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int JointWTP::joint_agreement_type</definition>
+        <argsstring></argsstring>
+        <name>joint_agreement_type</name>
+        <briefdescription>
+<para>The type of agreement for the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/JointWTP.h" line="24" column="1" bodyfile="src/SystemComponents/WaterSources/JointWTP.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classJointWTP_1a1aeeff203eb631ca3bfcf407ab0bbd4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JointWTP::JointWTP</definition>
+        <argsstring>(const char *name, const int id, const int agreement_type, const int parent_reservoir_ID, const int expansion_sequence_id, const double total_treatment_capacity, vector&lt; int &gt; connected_sources, vector&lt; int &gt; &amp;agreement_utility_ids, vector&lt; double &gt; &amp;agreement_utility_treatment_capacities, vector&lt; Bond *&gt; &amp;bonds, const vector&lt; double &gt; &amp;construction_time_range, double permitting_period)</argsstring>
+        <name>JointWTP</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>agreement_type</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>parent_reservoir_ID</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>expansion_sequence_id</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>total_treatment_capacity</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt;</type>
+          <declname>connected_sources</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt; &amp;</type>
+          <declname>agreement_utility_ids</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>agreement_utility_treatment_capacities</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classBond" kindref="compound">Bond</ref> *&gt; &amp;</type>
+          <declname>bonds</declname>
+        </param>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>construction_time_range</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>permitting_period</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initializes a Joint Water Treatment Plant (WTP) with the given parameters, including the name, ID, agreement type, parent reservoir ID, expansion sequence, treatment capacity, connected sources, and various other settings. It also initializes the associated bonds and construction time range.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique identifier of the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>agreement_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The agreement type for the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> (e.g., shared, private). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent_reservoir_ID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the parent reservoir associated with the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expansion_sequence_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID that defines the sequence of expansion for the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> (low/high). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>total_treatment_capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total treatment capacity of the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>connected_sources</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector containing the IDs of sources connected to the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>agreement_utility_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector containing the IDs of utilities involved in the agreement. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>agreement_utility_treatment_capacities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector containing the treatment capacities allocated to the utilities in the agreement. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bonds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector containing bonds related to the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>construction_time_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector specifying the construction time range for the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>permitting_period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permitting period for the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new instance of the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> class. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/JointWTP.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTP_1a8b3f000183e4e070bcfc9c20f4be9b54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JointWTP::JointWTP</definition>
+        <argsstring>(const JointWTP &amp;joint_water_treatment_plant)</argsstring>
+        <name>JointWTP</name>
+        <param>
+          <type>const <ref refid="classJointWTP" kindref="compound">JointWTP</ref> &amp;</type>
+          <declname>joint_water_treatment_plant</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor for the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor creates a new instance of the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> class by copying the data from an existing <computeroutput>joint_water_treatment_plant</computeroutput> object. It initializes the new instance by copying the base class (<computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput>) data and the specific attributes of the <computeroutput><ref refid="classJointWTP" kindref="compound">JointWTP</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>joint_water_treatment_plant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classJointWTP" kindref="compound">JointWTP</ref> instance to copy from.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new instance of the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> class, with data copied from the given <computeroutput>joint_water_treatment_plant</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/JointWTP.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTP_1aa4abdd96213a3c9d1b286f75eadcef1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JointWTP::~JointWTP</definition>
+        <argsstring>() override</argsstring>
+        <name>~JointWTP</name>
+        <briefdescription>
+<para>Destructor for the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para>This destructor is automatically invoked when an instance of the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> class goes out of scope or is deleted. It performs any necessary cleanup, but in this case, the destructor is defaulted and doesn&apos;t perform any custom actions.</para><para><simplesect kind="return"><para>None </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/JointWTP.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTP_1a00f348852618d93725c6c83bac49bf00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classJointWTP" kindref="compound">JointWTP</ref> &amp;</type>
+        <definition>JointWTP&amp; JointWTP::operator=</definition>
+        <argsstring>(const JointWTP &amp;joint_water_treatment_plant)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classJointWTP" kindref="compound">JointWTP</ref> &amp;</type>
+          <declname>joint_water_treatment_plant</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator for the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para>This operator allows for assignment of one <computeroutput><ref refid="classJointWTP" kindref="compound">JointWTP</ref></computeroutput> object to another.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">joint_water_treatment_plant</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="classJointWTP" kindref="compound">JointWTP</ref></computeroutput> object to be assigned to the current object.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the current <computeroutput><ref refid="classJointWTP" kindref="compound">JointWTP</ref></computeroutput> object after the assignment.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>None.</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/JointWTP.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTP_1a07106b573ea34386621a95d3fbcafd1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JointWTP::applyContinuity</definition>
+        <argsstring>(int week, double upstream_source_inflow, double wastewater_discharge, vector&lt; double &gt; &amp;demand_outflow) override</argsstring>
+        <name>applyContinuity</name>
+        <reimplements refid="classWaterSource_1ac070445379fe706f65b977dade4f3fbc">applyContinuity</reimplements>
+        <reimplementedby refid="classVariableJointWTP_1ab20f14dccd7079f546984d7bf1c00a71">applyContinuity</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>upstream_source_inflow</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>wastewater_discharge</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>demand_outflow</declname>
+        </param>
+        <briefdescription>
+<para>Applies continuity for the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is called to apply the continuity of the water treatment process. However, it is not designed to be called on a <ref refid="classJointWTP" kindref="compound">JointWTP</ref> instance. It throws a <computeroutput>logic_error</computeroutput> to indicate that continuity should be applied only to the associated reservoir being expanded, not the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> itself. This function overrides the <computeroutput>applyContinuity</computeroutput> function in the base class <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current week in the simulation (used for inflow and outflow calculations). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upstream_source_inflow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The volume of water inflow from upstream sources for the given week. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wastewater_discharge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The volume of wastewater being discharged into the system. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>demand_outflow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector representing the water demand outflow for each utility or demand point.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If called on a <ref refid="classJointWTP" kindref="compound">JointWTP</ref> instance, throws an error indicating that continuity should be applied to the reservoir being expanded, not the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/JointWTP.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTP_1ae8a2a5c4d5173b43d30fc9c1169574f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>virtual double JointWTP::implementInitialTreatmentCapacity</definition>
+        <argsstring>(int utility_id)</argsstring>
+        <name>implementInitialTreatmentCapacity</name>
+        <reimplementedby refid="classVariableJointWTP_1ade062353af947456c6a3ed10a93686d4">implementInitialTreatmentCapacity</reimplementedby>
+        <reimplementedby refid="classFixedJointWTP_1a0874b64a650c002d7230bd95bc4817ef">implementInitialTreatmentCapacity</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <briefdescription>
+<para>Implements the initial treatment capacity for the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is intended to be overridden in child classes of <computeroutput><ref refid="classJointWTP" kindref="compound">JointWTP</ref></computeroutput> to define how the initial treatment capacity is implemented. When called on a <computeroutput><ref refid="classJointWTP" kindref="compound">JointWTP</ref></computeroutput> instance, it throws a <computeroutput>logic_error</computeroutput> because treatment capacity should be specified in the derived class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the utility for which the treatment capacity is being implemented.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns 0 as a placeholder, but an exception will be thrown before this value is returned. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If called on a <computeroutput><ref refid="classJointWTP" kindref="compound">JointWTP</ref></computeroutput> instance, throws an error indicating that the function should be overridden in a derived class to handle the implementation of treatment capacity. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/JointWTP.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTP_1a4580529f08f6499def6aae2655484e48" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int JointWTP::getAgreementType</definition>
+        <argsstring>() const override</argsstring>
+        <name>getAgreementType</name>
+        <reimplements refid="classWaterSource_1add1082429d114b41cb9e3afaa623aeb1">getAgreementType</reimplements>
+        <briefdescription>
+<para>Retrieves the agreement type of the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the type of the agreement associated with the <computeroutput><ref refid="classJointWTP" kindref="compound">JointWTP</ref></computeroutput> instance. This function overrides the <computeroutput>getAgreementType</computeroutput> function in the base class <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput>.</para><para><simplesect kind="return"><para>The agreement type as an integer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/JointWTP.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTP_1ae4805e616725c109f23c0513d6ef2711" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int JointWTP::getParentWaterSourceID</definition>
+        <argsstring>() const override</argsstring>
+        <name>getParentWaterSourceID</name>
+        <reimplements refid="classWaterSource_1a506c77317ae84db0a4d9ea2cd74ddb11">getParentWaterSourceID</reimplements>
+        <briefdescription>
+<para>Retrieves the parent reservoir ID associated with the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function returns the ID of the reservoir that the <computeroutput><ref refid="classJointWTP" kindref="compound">JointWTP</ref></computeroutput> is associated with. This function overrides the <computeroutput>getParentWaterSourceID</computeroutput> function in the base class <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput>.</para><para><simplesect kind="return"><para>The parent reservoir ID as an integer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/JointWTP.h" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTP_1a3c661704dec4c92b8c16f28e39ca533e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double JointWTP::getAllocatedTreatmentFraction</definition>
+        <argsstring>(int utility_id) const override</argsstring>
+        <name>getAllocatedTreatmentFraction</name>
+        <reimplements refid="classWaterSource_1ad943083d8b3bee60ad8d106bba8a5faa">getAllocatedTreatmentFraction</reimplements>
+        <param>
+          <type>int</type>
+          <declname>utility_id</declname>
+        </param>
+        <briefdescription>
+<para>Calculates the allocated treatment fraction for a given utility. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function computes the fraction of the total allocated treatment capacity for a specific utility relative to the total fraction allocated across all utilities. This function overrides the <computeroutput>getAllocatedTreatmentFraction</computeroutput> function in the base class <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the utility for which the allocated treatment fraction is requested. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The allocated treatment fraction for the specified utility. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/JointWTP.h" line="157" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="62">
+        <label>JointWTP</label>
+        <link refid="classJointWTP"/>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>VariableJointWTP</label>
+        <link refid="classVariableJointWTP"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>FixedJointWTP</label>
+        <link refid="classFixedJointWTP"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>WaterSource</label>
+        <link refid="classWaterSource"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="66">
+        <label>JointWTP</label>
+        <link refid="classJointWTP"/>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>WaterSource</label>
+        <link refid="classWaterSource"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/SystemComponents/WaterSources/JointWTP.h" line="11" column="1" bodyfile="src/SystemComponents/WaterSources/JointWTP.h" bodystart="11" bodyend="158"/>
+    <listofallmembers>
+      <member refid="classWaterSource_1ab869abb3d3dde1875e933482bedc3ae3" prot="public" virt="virtual"><scope>JointWTP</scope><name>addCapacity</name></member>
+      <member refid="classWaterSource_1ac2bc1a09fce3a3201d62a73052b27b0b" prot="public" virt="virtual"><scope>JointWTP</scope><name>addTreatmentCapacity</name></member>
+      <member refid="classWaterSource_1ab94063d51314cfb896010408ae32fa9c" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>allocated_capacities</name></member>
+      <member refid="classWaterSource_1a2f6655a80c4847fe039987255d9d998c" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>allocated_fractions</name></member>
+      <member refid="classWaterSource_1a87dc0bfb5cf4e2b9a953c7a80058c923" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>allocated_treatment_capacities</name></member>
+      <member refid="classWaterSource_1aa73fe10cfc6579b2fb79529e1dde5140" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>allocated_treatment_fractions</name></member>
+      <member refid="classJointWTP_1a07106b573ea34386621a95d3fbcafd1a" prot="public" virt="virtual"><scope>JointWTP</scope><name>applyContinuity</name></member>
+      <member refid="classWaterSource_1a77d3fe9ea445fc987b07debdfb9e2f5b" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>available_allocated_volumes</name></member>
+      <member refid="classWaterSource_1a49e1a191152e344e2161e8db166e067a" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>available_volume</name></member>
+      <member refid="classWaterSource_1a413b094e11bdce62f4d82e5bb9e4706e" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>bonds</name></member>
+      <member refid="classWaterSource_1a49f9da70a5080abe82160b1a0d194e60" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>built_in_sequence</name></member>
+      <member refid="classWaterSource_1abeb8ba4b51c2b270baf9162df76d8b58" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>bypass</name></member>
+      <member refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>capacity</name></member>
+      <member refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>catchments</name></member>
+      <member refid="classWaterSource_1a47bc2006a1ef6ea4429d56a24319940f" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>checkForInputErrorsConstruction</name></member>
+      <member refid="classWaterSource_1a25d4ad4251b78267618b2f0ef5a501dc" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>compare</name></member>
+      <member refid="classWaterSource_1ae059fbe3f911a819bac0202f7f45e8e4" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>construction_time</name></member>
+      <member refid="classWaterSource_1a1137cd86f8d3f8a48ebec54282132993" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>continuityWaterSource</name></member>
+      <member refid="classWaterSource_1a6085899c4b4cc40fa80784203e1a9755" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>evaporated_volume</name></member>
+      <member refid="classJointWTP_1a0e10a7f7ade04d5f3572f185de1b8653" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>expansion_sequence_id</name></member>
+      <member refid="classJointWTP_1a4580529f08f6499def6aae2655484e48" prot="public" virt="virtual"><scope>JointWTP</scope><name>getAgreementType</name></member>
+      <member refid="classWaterSource_1ad218f2a603d7ebce268d800e0249a74c" prot="public" virt="virtual"><scope>JointWTP</scope><name>getAllocatedCapacity</name></member>
+      <member refid="classWaterSource_1acec9b1fef81a9b73c4517409438452ac" prot="public" virt="virtual"><scope>JointWTP</scope><name>getAllocatedFraction</name></member>
+      <member refid="classWaterSource_1a63b1a410b47710db049e2b2e9c3c39a0" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getAllocatedInflow</name></member>
+      <member refid="classWaterSource_1a4b05ca30a659ff351e75c487f31ff847" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getAllocatedSupplyCapacities</name></member>
+      <member refid="classWaterSource_1a48df9ae09a8a7844beb18c35382adba1" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getAllocatedTreatmentCapacities</name></member>
+      <member refid="classWaterSource_1ab98528c4d2e6ecd14cb2c813b1d445c6" prot="public" virt="virtual"><scope>JointWTP</scope><name>getAllocatedTreatmentCapacity</name></member>
+      <member refid="classJointWTP_1a3c661704dec4c92b8c16f28e39ca533e" prot="public" virt="virtual"><scope>JointWTP</scope><name>getAllocatedTreatmentFraction</name></member>
+      <member refid="classWaterSource_1a9a87dafd08834147bcf5004bc3907824" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getAvailable_allocated_volumes</name></member>
+      <member refid="classWaterSource_1ad4667296dc6b6dabc36b871529ca2749" prot="public" virt="virtual"><scope>JointWTP</scope><name>getAvailableAllocatedVolume</name></member>
+      <member refid="classWaterSource_1af6445a2dd3764907bcb9a37d4647f910" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getAvailableSupplyVolume</name></member>
+      <member refid="classWaterSource_1acb9e57253157c969fa57fc6e7b35ab68" prot="public" virt="virtual"><scope>JointWTP</scope><name>getAvailableVolume</name></member>
+      <member refid="classWaterSource_1acacef71453819480c5438ae5b433e66b" prot="public" virt="virtual"><scope>JointWTP</scope><name>getBond</name></member>
+      <member refid="classWaterSource_1a1e28dee97f62fbb9845300fc2768d172" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getBuilt_in_sequence</name></member>
+      <member refid="classWaterSource_1ac1e8880f0aeb56b2728e253d3500ef40" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getConstruction_time</name></member>
+      <member refid="classWaterSource_1ac57d6b292490333b5bc14233bce326ce" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getDemand</name></member>
+      <member refid="classWaterSource_1a00b156a153fc24097e4c8a4e5c46c4e0" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getEvaporated_volume</name></member>
+      <member refid="classWaterSource_1af7607924825ffe293179b09fe1bc466e" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getMin_environmental_outflow</name></member>
+      <member refid="classJointWTP_1ae4805e616725c109f23c0513d6ef2711" prot="public" virt="virtual"><scope>JointWTP</scope><name>getParentWaterSourceID</name></member>
+      <member refid="classWaterSource_1aa21d3f1c87ced40c2b673d9e43d99176" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getPermitting_period</name></member>
+      <member refid="classWaterSource_1a00a432eba75eaae7195338a8514ac853" prot="public" virt="virtual"><scope>JointWTP</scope><name>getPrioritySourcePotentialVolume</name></member>
+      <member refid="classWaterSource_1a484bca192a9e3aacaad47db0afb8fbdd" prot="public" virt="virtual"><scope>JointWTP</scope><name>getSupplyAllocatedFraction</name></member>
+      <member refid="classWaterSource_1aeefcddb0119d5aab95dab03912a65cad" prot="public" virt="virtual"><scope>JointWTP</scope><name>getSupplyCapacity</name></member>
+      <member refid="classWaterSource_1a7678e05e3e73b927c0b47e3041d7415f" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getTotal_outflow</name></member>
+      <member refid="classWaterSource_1a6228c9aee407ca2544753dbd2792c5fb" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getTotal_treatment_capacity</name></member>
+      <member refid="classWaterSource_1ad7e60efd7395f8d3e674e602226e5ac1" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getUpstream_source_inflow</name></member>
+      <member refid="classWaterSource_1afd2a153ba8f4ecaa9f8fa851d5a1727c" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getUpstreamCatchmentInflow</name></member>
+      <member refid="classWaterSource_1a41a9f1fb088f29633c9141687958c16e" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getUtilities_with_allocations</name></member>
+      <member refid="classWaterSource_1aee22325e6af0e3c804ddbd9a3505be05" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getWastewater_inflow</name></member>
+      <member refid="classWaterSource_1a9d85cbca88eefd54fda383237807470d" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>getWaterQualityPoolID</name></member>
+      <member refid="classWaterSource_1a83c6dcf19b64533ce4bc3b918ce6cc8e" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>highest_alloc_id</name></member>
+      <member refid="classWaterSource_1a6eafe5dfefd317877d1244e8a7c6e742" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>id</name></member>
+      <member refid="classJointWTP_1ae8a2a5c4d5173b43d30fc9c1169574f8" prot="public" virt="virtual"><scope>JointWTP</scope><name>implementInitialTreatmentCapacity</name></member>
+      <member refid="classWaterSource_1a130fd661ff31c53115cca23e4e2f210a" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>isOnline</name></member>
+      <member refid="classJointWTP_1ac5663480c912b1b7cfdfb976b4fa3cec" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>joint_agreement_type</name></member>
+      <member refid="classJointWTP_1a1aeeff203eb631ca3bfcf407ab0bbd4f" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>JointWTP</name></member>
+      <member refid="classJointWTP_1a8b3f000183e4e070bcfc9c20f4be9b54" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>JointWTP</name></member>
+      <member refid="classWaterSource_1adae67ac96597e4b25332002b88a9a52b" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>min_environmental_outflow</name></member>
+      <member refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>name</name></member>
+      <member refid="classWaterSource_1aef4e289b47c2360f2e991ea3ee535781" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>online</name></member>
+      <member refid="classWaterSource_1accb044cc78f9a444ca18bf7283b5b596" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>operator&lt;</name></member>
+      <member refid="classJointWTP_1a00f348852618d93725c6c83bac49bf00" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>operator=</name></member>
+      <member refid="classWaterSource_1af10a33e286cf44b362984ff8d8053c91" prot="public" virt="non-virtual" ambiguityscope="WaterSource::"><scope>JointWTP</scope><name>operator=</name></member>
+      <member refid="classWaterSource_1af25e06ec954898f3392cb125d2f2c2ad" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>operator==</name></member>
+      <member refid="classWaterSource_1a9db800769891e1f49d74a78298f4dac1" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>operator&gt;</name></member>
+      <member refid="classJointWTP_1aa5830cb4d3013a004b7168f4dbf475eb" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>parent_reservoir_ID</name></member>
+      <member refid="classWaterSource_1a036d7980e74224fd5f5c6a390e0d5abb" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>permitting_time</name></member>
+      <member refid="classWaterSource_1a3f04ae75d6235117d391dece2d323890" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>policy_added_demand</name></member>
+      <member refid="classWaterSource_1aebc6985952d3e69f0d8ae1d0498a1ffe" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>randomConstructionTime</name></member>
+      <member refid="classWaterSource_1a4a4d948033c57feb8523bd7d5828c59b" prot="public" virt="virtual"><scope>JointWTP</scope><name>removeWater</name></member>
+      <member refid="classWaterSource_1afe2f6b96383abdb14563db279a261a31" prot="public" virt="virtual"><scope>JointWTP</scope><name>resetAllocations</name></member>
+      <member refid="classWaterSource_1adfc85c196cfc262d4b463e87c459eb3f" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>resetTreatmentAllocations</name></member>
+      <member refid="classWaterSource_1abaf6cb0ecca08c87428ad516f11f8c2e" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>seed</name></member>
+      <member refid="classWaterSource_1ac834762e016e796968ad286feeca7be6" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>setAllocations</name></member>
+      <member refid="classWaterSource_1ae29ed4aa2b9c97c5a41772daf4631f05" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>setAvailableAllocatedVolumes</name></member>
+      <member refid="classWaterSource_1a86999f23ec7f4fb518adb88e16f156a7" prot="public" virt="virtual"><scope>JointWTP</scope><name>setFull</name></member>
+      <member refid="classWaterSource_1a406246432d29f49189d53207ab1d895a" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>setMin_environmental_outflow</name></member>
+      <member refid="classWaterSource_1aaa55dc6e14ff184380300147b53c56ec" prot="public" virt="virtual"><scope>JointWTP</scope><name>setOnline</name></member>
+      <member refid="classWaterSource_1ab53d376a425b8db603382ba27b52b1d4" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>setOutflow_previous_week</name></member>
+      <member refid="classWaterSource_1a634904c510b16de6d7c057fed6d6e625" prot="public" virt="virtual"><scope>JointWTP</scope><name>setRealization</name></member>
+      <member refid="classWaterSource_1a4c8f4c120b9101767b6013a78eb2c5d4" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>setSeed</name></member>
+      <member refid="classWaterSource_1abc7034b8c78e45d7b1fa4bd13b8a3bdd" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>setTreatmentAllocations</name></member>
+      <member refid="classWaterSource_1ad8496aea2d4ff97c8069b61cc984c799" prot="public" virt="virtual"><scope>JointWTP</scope><name>skipConstruction</name></member>
+      <member refid="classWaterSource_1afdd12c29fc74ea21dff1f1be9b8c2b7b" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>source_type</name></member>
+      <member refid="classWaterSource_1a87535be59994b2602576cdf34dbe04b9" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>supply_allocated_fractions</name></member>
+      <member refid="classWaterSource_1a4be6864dc196287bdf8329b3aa6ca662" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>total_allocated_fraction</name></member>
+      <member refid="classWaterSource_1a1934917dd35a2508a5102eb5831431b7" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>total_demand</name></member>
+      <member refid="classWaterSource_1a5e6992931464ed75576326b9f1bd3c4f" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>total_outflow</name></member>
+      <member refid="classWaterSource_1a2fdfd5ff7d103e71108cf2a31babaccb" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>total_treatment_capacity</name></member>
+      <member refid="classWaterSource_1a04f94831f4816bb277c5a615eace7779" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>unsetSeed</name></member>
+      <member refid="classWaterSource_1aceb2d77612db7ba71a171848a5e03b4f" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>upstream_catchment_inflow</name></member>
+      <member refid="classWaterSource_1a67165e29345b61f36c8d8ccf3f648819" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>upstream_min_env_inflow</name></member>
+      <member refid="classWaterSource_1a7a69b2e9b6030f1035e6cf44d2918ee5" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>upstream_source_inflow</name></member>
+      <member refid="classWaterSource_1ac345583fc2d0f7e1db31ee40244d7ace" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>utilities_with_allocations</name></member>
+      <member refid="classWaterSource_1aeb5a2d2d83383a70ca20f3e94635a9c7" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>wastewater_inflow</name></member>
+      <member refid="classWaterSource_1a27b9d29d6cbb36d128f740f7ca00f500" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1a7723d343a0b8edff36018ca7acf09f62" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1a48641ff06b69505ab298f4f23e759a22" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1a284e207f074da6f485d41f65ac025cf1" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1ae8cf84e138983737e044bc1217858021" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1af9377254ee532ee30eaed78953336b5f" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1a5d02f9dc15b18572bbfa945aeec4dbb0" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1aaa3aba0a9709cc1432f85f443b033a65" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1acef73d9b1675fb6db9ec39347514db6d" prot="protected" virt="non-virtual"><scope>JointWTP</scope><name>wq_pool_id</name></member>
+      <member refid="classJointWTP_1aa4abdd96213a3c9d1b286f75eadcef1f" prot="public" virt="non-virtual"><scope>JointWTP</scope><name>~JointWTP</name></member>
+      <member refid="classWaterSource_1aa3b9261264152782c3115d2f563f1caf" prot="public" virt="virtual"><scope>JointWTP</scope><name>~WaterSource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="AllocatedIntake_8h" kind="file" language="C++">
+    <compoundname>AllocatedIntake.h</compoundname>
+    <includes refid="WaterSource_8h" local="yes">Base/WaterSource.h</includes>
+    <incdepgraph>
+      <node id="328">
+        <label>../Utils/Constants.h</label>
+      </node>
+      <node id="327">
+        <label>stdexcept</label>
+      </node>
+      <node id="324">
+        <label>string</label>
+      </node>
+      <node id="323">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>vector</label>
+      </node>
+      <node id="325">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="322">
+        <label>src/SystemComponents/WaterSources/AllocatedIntake.h</label>
+        <link refid="AllocatedIntake_8h"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+      </node>
+      <node id="329">
+        <label>../../../Utils/Constants.h</label>
+      </node>
+      <node id="330">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classAllocatedIntake" prot="public">AllocatedIntake</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_ALLOCATEDINTAKE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_ALLOCATEDINTAKE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WaterSource_8h" kindref="compound">Base/WaterSource.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classAllocatedIntake" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classWaterSource" kindref="compound">WaterSource</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="classAllocatedIntake_1acf0824f3602cf6e9aa5c4423cb04f078" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntake_1acf0824f3602cf6e9aa5c4423cb04f078" kindref="member">next_upstream_catchment_inflow</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23" refid="classAllocatedIntake_1aab00f81a712fe2ecff1f69d0bb53d92a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classAllocatedIntake_1aab00f81a712fe2ecff1f69d0bb53d92a" kindref="member">allocated_demands</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedIntake_1a06653dc837c927a68ab809234d78f505" kindref="member">AllocatedIntake</ref>(</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>connected_sources,<sp/>vector&lt;int&gt;<sp/>&amp;partner_utilities,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_raw_water_capacity,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;raw_water_capacity_allocation_fractions,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2fdfd5ff7d103e71108cf2a31babaccb" kindref="member">total_treatment_capacity</ref>,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;treatment_capacity_allocation_fractions);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedIntake_1a06653dc837c927a68ab809234d78f505" kindref="member">AllocatedIntake</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref><sp/>&amp;intake);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref><sp/>&amp;<ref refid="classAllocatedIntake_1a86afa1536bf7ee7945f2c567c43ffb6b" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref><sp/>&amp;intake);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedIntake_1ada2f6552b83f4f11611bcd7bcb27fc37" kindref="member">~AllocatedIntake</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntake_1a92c562dddb4f6434c8ad766c03b2cf5c" kindref="member">applyContinuity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>upstream_source_min_env_flow,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1aeb5a2d2d83383a70ca20f3e94635a9c7" kindref="member">wastewater_inflow</ref>,<sp/>vector&lt;double&gt;<sp/>&amp;demand)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntake_1afc73ae38f23417cfbece54c4c3d4ccc9" kindref="member">setRealization</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>r,<sp/>vector&lt;double&gt;<sp/>&amp;rdm_factors)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntake_1abbea26f2adac6c9f9e3bdcdf1aead55d" kindref="member">getPrioritySourcePotentialVolume</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classAllocatedIntake_1a5efc6423bff0adb8c493d3c9983915ef" kindref="member">getAllocatedDemands</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntake_1a32a52eb269d4de861cc844633eceefb0" kindref="member">addCapacity</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntake_1ae16939ed474e15b9c68edcbf61696231" kindref="member">addTreatmentCapacity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>added_treatment_capacity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntake_1a9c6161b8dd13b6ea70a9dafbb72afc91" kindref="member">getAvailableAllocatedVolume</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_ALLOCATEDINTAKE_H</highlight></codeline>
+    </programlisting>
+    <location file="src/SystemComponents/WaterSources/AllocatedIntake.h"/>
+  </compounddef>
+</doxygen>

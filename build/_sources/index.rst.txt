@@ -10,10 +10,15 @@ Welcome to WaterPaths's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   ContinuityModels 
+   Problem
+   Simulation
+   SystemComponents
+
 Header Files
 ------------
 
-.. doxygendir:: src
+.. doxygenindex::
    :project: WaterPaths
 
 Indices and tables

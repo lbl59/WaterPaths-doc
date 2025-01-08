@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classReservoirExpansion" kind="class" language="C++" prot="public">
+    <compoundname>ReservoirExpansion</compoundname>
+    <basecompoundref refid="classWaterSource" prot="public" virt="non-virtual">WaterSource</basecompoundref>
+    <includes refid="ReservoirExpansion_8h" local="no">ReservoirExpansion.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classReservoirExpansion_1a56527196174404cfed20b863df2ab0ba" prot="public" static="no" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int ReservoirExpansion::parent_reservoir_ID</definition>
+        <argsstring></argsstring>
+        <name>parent_reservoir_ID</name>
+        <briefdescription>
+<para>The ID of the parent reservoir that is being expanded. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/ReservoirExpansion.h" line="16" column="1" bodyfile="src/SystemComponents/WaterSources/ReservoirExpansion.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classReservoirExpansion_1aa742cae4276e97847681dac4f828b5ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ReservoirExpansion::ReservoirExpansion</definition>
+        <argsstring>(const char *name, const int id, const unsigned int parent_reservoir_ID, const double capacity, const vector&lt; double &gt; &amp;construction_time_range, double permitting_period, Bond &amp;bond)</argsstring>
+        <name>ReservoirExpansion</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>parent_reservoir_ID</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>capacity</declname>
+        </param>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>construction_time_range</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>permitting_period</declname>
+        </param>
+        <param>
+          <type><ref refid="classBond" kindref="compound">Bond</ref> &amp;</type>
+          <declname>bond</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for creating a <ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initializes a <computeroutput><ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref></computeroutput> object with the specified parameters and sets the parent reservoir ID. It also calls the constructor of the base class <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput> to initialize the shared attributes.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the reservoir expansion. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique identifier for the reservoir expansion. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent_reservoir_ID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the parent reservoir. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The capacity of the reservoir expansion. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>construction_time_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time range for construction of the reservoir expansion. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>permitting_period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The permitting period for the reservoir expansion. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bond</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the bond object associated with the reservoir expansion. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/ReservoirExpansion.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classReservoirExpansion_1abc10a6725f7fb85b7478fb6b0b79bd1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ReservoirExpansion::ReservoirExpansion</definition>
+        <argsstring>(const ReservoirExpansion &amp;reservoir_expansion)</argsstring>
+        <name>ReservoirExpansion</name>
+        <param>
+          <type>const <ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref> &amp;</type>
+          <declname>reservoir_expansion</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor for the <ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor creates a copy of an existing <computeroutput><ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref></computeroutput> object by copying the values of its attributes, including calling the copy constructor of the base class <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reservoir_expansion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref></computeroutput> object to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/ReservoirExpansion.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classReservoirExpansion_1a6c9607be0fc7ce624a19bc32fdff9222" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref> &amp;</type>
+        <definition>ReservoirExpansion&amp; ReservoirExpansion::operator=</definition>
+        <argsstring>(const ReservoirExpansion &amp;reservoir_expansion)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref> &amp;</type>
+          <declname>reservoir_expansion</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator for the <ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para>This operator assigns the values of one <computeroutput><ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref></computeroutput> object to another.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reservoir_expansion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <computeroutput><ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref></computeroutput> object to assign from.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the current <computeroutput><ref refid="classReservoirExpansion" kindref="compound">ReservoirExpansion</ref></computeroutput> object after assignment. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/ReservoirExpansion.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classReservoirExpansion_1a18614050354dced5cc2747eeda0c2397" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void ReservoirExpansion::applyContinuity</definition>
+        <argsstring>(int week, double upstream_source_inflow, double wastewater_discharge, vector&lt; double &gt; &amp;demand_outflow) override</argsstring>
+        <name>applyContinuity</name>
+        <reimplements refid="classWaterSource_1ac070445379fe706f65b977dade4f3fbc">applyContinuity</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>upstream_source_inflow</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>wastewater_discharge</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>demand_outflow</declname>
+        </param>
+        <briefdescription>
+<para>Throws an error indicating that continuity cannot be applied to a reservoir expansion. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function throws a <computeroutput>logic_error</computeroutput> because a reservoir expansion only adds storage volume to the reservoir it is assigned to. Continuity calculations should be applied to the reservoir being expanded, not the expansion itself.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The week for which continuity would be applied. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>upstream_source_inflow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The inflow from upstream sources (not used). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wastewater_discharge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The inflow from wastewater discharge (not used). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>demand_outflow</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of demand outflows (not used).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>This function always throws a <computeroutput>logic_error</computeroutput> because continuity cannot be applied to a reservoir expansion. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/SystemComponents/WaterSources/ReservoirExpansion.h" line="74" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="96">
+        <label>ReservoirExpansion</label>
+        <link refid="classReservoirExpansion"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>WaterSource</label>
+        <link refid="classWaterSource"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="98">
+        <label>ReservoirExpansion</label>
+        <link refid="classReservoirExpansion"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>WaterSource</label>
+        <link refid="classWaterSource"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/SystemComponents/WaterSources/ReservoirExpansion.h" line="11" column="1" bodyfile="src/SystemComponents/WaterSources/ReservoirExpansion.h" bodystart="11" bodyend="78"/>
+    <listofallmembers>
+      <member refid="classWaterSource_1ab869abb3d3dde1875e933482bedc3ae3" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>addCapacity</name></member>
+      <member refid="classWaterSource_1ac2bc1a09fce3a3201d62a73052b27b0b" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>addTreatmentCapacity</name></member>
+      <member refid="classWaterSource_1ab94063d51314cfb896010408ae32fa9c" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>allocated_capacities</name></member>
+      <member refid="classWaterSource_1a2f6655a80c4847fe039987255d9d998c" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>allocated_fractions</name></member>
+      <member refid="classWaterSource_1a87dc0bfb5cf4e2b9a953c7a80058c923" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>allocated_treatment_capacities</name></member>
+      <member refid="classWaterSource_1aa73fe10cfc6579b2fb79529e1dde5140" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>allocated_treatment_fractions</name></member>
+      <member refid="classReservoirExpansion_1a18614050354dced5cc2747eeda0c2397" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>applyContinuity</name></member>
+      <member refid="classWaterSource_1a77d3fe9ea445fc987b07debdfb9e2f5b" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>available_allocated_volumes</name></member>
+      <member refid="classWaterSource_1a49e1a191152e344e2161e8db166e067a" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>available_volume</name></member>
+      <member refid="classWaterSource_1a413b094e11bdce62f4d82e5bb9e4706e" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>bonds</name></member>
+      <member refid="classWaterSource_1a49f9da70a5080abe82160b1a0d194e60" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>built_in_sequence</name></member>
+      <member refid="classWaterSource_1abeb8ba4b51c2b270baf9162df76d8b58" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>bypass</name></member>
+      <member refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>capacity</name></member>
+      <member refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>catchments</name></member>
+      <member refid="classWaterSource_1a47bc2006a1ef6ea4429d56a24319940f" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>checkForInputErrorsConstruction</name></member>
+      <member refid="classWaterSource_1a25d4ad4251b78267618b2f0ef5a501dc" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>compare</name></member>
+      <member refid="classWaterSource_1ae059fbe3f911a819bac0202f7f45e8e4" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>construction_time</name></member>
+      <member refid="classWaterSource_1a1137cd86f8d3f8a48ebec54282132993" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>continuityWaterSource</name></member>
+      <member refid="classWaterSource_1a6085899c4b4cc40fa80784203e1a9755" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>evaporated_volume</name></member>
+      <member refid="classWaterSource_1add1082429d114b41cb9e3afaa623aeb1" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>getAgreementType</name></member>
+      <member refid="classWaterSource_1ad218f2a603d7ebce268d800e0249a74c" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>getAllocatedCapacity</name></member>
+      <member refid="classWaterSource_1acec9b1fef81a9b73c4517409438452ac" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>getAllocatedFraction</name></member>
+      <member refid="classWaterSource_1a63b1a410b47710db049e2b2e9c3c39a0" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getAllocatedInflow</name></member>
+      <member refid="classWaterSource_1a4b05ca30a659ff351e75c487f31ff847" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getAllocatedSupplyCapacities</name></member>
+      <member refid="classWaterSource_1a48df9ae09a8a7844beb18c35382adba1" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getAllocatedTreatmentCapacities</name></member>
+      <member refid="classWaterSource_1ab98528c4d2e6ecd14cb2c813b1d445c6" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>getAllocatedTreatmentCapacity</name></member>
+      <member refid="classWaterSource_1ad943083d8b3bee60ad8d106bba8a5faa" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>getAllocatedTreatmentFraction</name></member>
+      <member refid="classWaterSource_1a9a87dafd08834147bcf5004bc3907824" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getAvailable_allocated_volumes</name></member>
+      <member refid="classWaterSource_1ad4667296dc6b6dabc36b871529ca2749" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>getAvailableAllocatedVolume</name></member>
+      <member refid="classWaterSource_1af6445a2dd3764907bcb9a37d4647f910" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getAvailableSupplyVolume</name></member>
+      <member refid="classWaterSource_1acb9e57253157c969fa57fc6e7b35ab68" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>getAvailableVolume</name></member>
+      <member refid="classWaterSource_1acacef71453819480c5438ae5b433e66b" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>getBond</name></member>
+      <member refid="classWaterSource_1a1e28dee97f62fbb9845300fc2768d172" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getBuilt_in_sequence</name></member>
+      <member refid="classWaterSource_1ac1e8880f0aeb56b2728e253d3500ef40" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getConstruction_time</name></member>
+      <member refid="classWaterSource_1ac57d6b292490333b5bc14233bce326ce" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getDemand</name></member>
+      <member refid="classWaterSource_1a00b156a153fc24097e4c8a4e5c46c4e0" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getEvaporated_volume</name></member>
+      <member refid="classWaterSource_1af7607924825ffe293179b09fe1bc466e" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getMin_environmental_outflow</name></member>
+      <member refid="classWaterSource_1a506c77317ae84db0a4d9ea2cd74ddb11" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>getParentWaterSourceID</name></member>
+      <member refid="classWaterSource_1aa21d3f1c87ced40c2b673d9e43d99176" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getPermitting_period</name></member>
+      <member refid="classWaterSource_1a00a432eba75eaae7195338a8514ac853" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>getPrioritySourcePotentialVolume</name></member>
+      <member refid="classWaterSource_1a484bca192a9e3aacaad47db0afb8fbdd" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>getSupplyAllocatedFraction</name></member>
+      <member refid="classWaterSource_1aeefcddb0119d5aab95dab03912a65cad" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>getSupplyCapacity</name></member>
+      <member refid="classWaterSource_1a7678e05e3e73b927c0b47e3041d7415f" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getTotal_outflow</name></member>
+      <member refid="classWaterSource_1a6228c9aee407ca2544753dbd2792c5fb" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getTotal_treatment_capacity</name></member>
+      <member refid="classWaterSource_1ad7e60efd7395f8d3e674e602226e5ac1" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getUpstream_source_inflow</name></member>
+      <member refid="classWaterSource_1afd2a153ba8f4ecaa9f8fa851d5a1727c" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getUpstreamCatchmentInflow</name></member>
+      <member refid="classWaterSource_1a41a9f1fb088f29633c9141687958c16e" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getUtilities_with_allocations</name></member>
+      <member refid="classWaterSource_1aee22325e6af0e3c804ddbd9a3505be05" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getWastewater_inflow</name></member>
+      <member refid="classWaterSource_1a9d85cbca88eefd54fda383237807470d" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>getWaterQualityPoolID</name></member>
+      <member refid="classWaterSource_1a83c6dcf19b64533ce4bc3b918ce6cc8e" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>highest_alloc_id</name></member>
+      <member refid="classWaterSource_1a6eafe5dfefd317877d1244e8a7c6e742" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>id</name></member>
+      <member refid="classWaterSource_1a130fd661ff31c53115cca23e4e2f210a" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>isOnline</name></member>
+      <member refid="classWaterSource_1adae67ac96597e4b25332002b88a9a52b" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>min_environmental_outflow</name></member>
+      <member refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>name</name></member>
+      <member refid="classWaterSource_1aef4e289b47c2360f2e991ea3ee535781" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>online</name></member>
+      <member refid="classWaterSource_1accb044cc78f9a444ca18bf7283b5b596" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>operator&lt;</name></member>
+      <member refid="classReservoirExpansion_1a6c9607be0fc7ce624a19bc32fdff9222" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>operator=</name></member>
+      <member refid="classWaterSource_1af10a33e286cf44b362984ff8d8053c91" prot="public" virt="non-virtual" ambiguityscope="WaterSource::"><scope>ReservoirExpansion</scope><name>operator=</name></member>
+      <member refid="classWaterSource_1af25e06ec954898f3392cb125d2f2c2ad" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>operator==</name></member>
+      <member refid="classWaterSource_1a9db800769891e1f49d74a78298f4dac1" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>operator&gt;</name></member>
+      <member refid="classReservoirExpansion_1a56527196174404cfed20b863df2ab0ba" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>parent_reservoir_ID</name></member>
+      <member refid="classWaterSource_1a036d7980e74224fd5f5c6a390e0d5abb" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>permitting_time</name></member>
+      <member refid="classWaterSource_1a3f04ae75d6235117d391dece2d323890" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>policy_added_demand</name></member>
+      <member refid="classWaterSource_1aebc6985952d3e69f0d8ae1d0498a1ffe" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>randomConstructionTime</name></member>
+      <member refid="classWaterSource_1a4a4d948033c57feb8523bd7d5828c59b" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>removeWater</name></member>
+      <member refid="classReservoirExpansion_1aa742cae4276e97847681dac4f828b5ae" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>ReservoirExpansion</name></member>
+      <member refid="classReservoirExpansion_1abc10a6725f7fb85b7478fb6b0b79bd1e" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>ReservoirExpansion</name></member>
+      <member refid="classWaterSource_1afe2f6b96383abdb14563db279a261a31" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>resetAllocations</name></member>
+      <member refid="classWaterSource_1adfc85c196cfc262d4b463e87c459eb3f" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>resetTreatmentAllocations</name></member>
+      <member refid="classWaterSource_1abaf6cb0ecca08c87428ad516f11f8c2e" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>seed</name></member>
+      <member refid="classWaterSource_1ac834762e016e796968ad286feeca7be6" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>setAllocations</name></member>
+      <member refid="classWaterSource_1ae29ed4aa2b9c97c5a41772daf4631f05" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>setAvailableAllocatedVolumes</name></member>
+      <member refid="classWaterSource_1a86999f23ec7f4fb518adb88e16f156a7" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>setFull</name></member>
+      <member refid="classWaterSource_1a406246432d29f49189d53207ab1d895a" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>setMin_environmental_outflow</name></member>
+      <member refid="classWaterSource_1aaa55dc6e14ff184380300147b53c56ec" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>setOnline</name></member>
+      <member refid="classWaterSource_1ab53d376a425b8db603382ba27b52b1d4" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>setOutflow_previous_week</name></member>
+      <member refid="classWaterSource_1a634904c510b16de6d7c057fed6d6e625" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>setRealization</name></member>
+      <member refid="classWaterSource_1a4c8f4c120b9101767b6013a78eb2c5d4" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>setSeed</name></member>
+      <member refid="classWaterSource_1abc7034b8c78e45d7b1fa4bd13b8a3bdd" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>setTreatmentAllocations</name></member>
+      <member refid="classWaterSource_1ad8496aea2d4ff97c8069b61cc984c799" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>skipConstruction</name></member>
+      <member refid="classWaterSource_1afdd12c29fc74ea21dff1f1be9b8c2b7b" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>source_type</name></member>
+      <member refid="classWaterSource_1a87535be59994b2602576cdf34dbe04b9" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>supply_allocated_fractions</name></member>
+      <member refid="classWaterSource_1a4be6864dc196287bdf8329b3aa6ca662" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>total_allocated_fraction</name></member>
+      <member refid="classWaterSource_1a1934917dd35a2508a5102eb5831431b7" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>total_demand</name></member>
+      <member refid="classWaterSource_1a5e6992931464ed75576326b9f1bd3c4f" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>total_outflow</name></member>
+      <member refid="classWaterSource_1a2fdfd5ff7d103e71108cf2a31babaccb" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>total_treatment_capacity</name></member>
+      <member refid="classWaterSource_1a04f94831f4816bb277c5a615eace7779" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>unsetSeed</name></member>
+      <member refid="classWaterSource_1aceb2d77612db7ba71a171848a5e03b4f" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>upstream_catchment_inflow</name></member>
+      <member refid="classWaterSource_1a67165e29345b61f36c8d8ccf3f648819" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>upstream_min_env_inflow</name></member>
+      <member refid="classWaterSource_1a7a69b2e9b6030f1035e6cf44d2918ee5" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>upstream_source_inflow</name></member>
+      <member refid="classWaterSource_1ac345583fc2d0f7e1db31ee40244d7ace" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>utilities_with_allocations</name></member>
+      <member refid="classWaterSource_1aeb5a2d2d83383a70ca20f3e94635a9c7" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>wastewater_inflow</name></member>
+      <member refid="classWaterSource_1a27b9d29d6cbb36d128f740f7ca00f500" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1a7723d343a0b8edff36018ca7acf09f62" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1a48641ff06b69505ab298f4f23e759a22" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1a284e207f074da6f485d41f65ac025cf1" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1ae8cf84e138983737e044bc1217858021" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1af9377254ee532ee30eaed78953336b5f" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1a5d02f9dc15b18572bbfa945aeec4dbb0" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1aaa3aba0a9709cc1432f85f443b033a65" prot="public" virt="non-virtual"><scope>ReservoirExpansion</scope><name>WaterSource</name></member>
+      <member refid="classWaterSource_1acef73d9b1675fb6db9ec39347514db6d" prot="protected" virt="non-virtual"><scope>ReservoirExpansion</scope><name>wq_pool_id</name></member>
+      <member refid="classWaterSource_1aa3b9261264152782c3115d2f563f1caf" prot="public" virt="virtual"><scope>ReservoirExpansion</scope><name>~WaterSource</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

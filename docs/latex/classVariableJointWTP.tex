@@ -1,0 +1,227 @@
+\hypertarget{classVariableJointWTP}{}\section{Variable\+Joint\+W\+TP Class Reference}
+\label{classVariableJointWTP}\index{Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}}
+
+
+This is a subclass of \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}} that allows for variable allocations of treatment capacity to utilities. The \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}} subclass is in turn a subclass of \mbox{\hyperlink{classWaterSource}{Water\+Source}}.  
+
+
+
+
+{\ttfamily \#include $<$Variable\+Joint\+W\+T\+P.\+h$>$}
+
+Inheritance diagram for Variable\+Joint\+W\+TP\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classVariableJointWTP}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVariableJointWTP_a26fa2204e90fb7e44f17dbd2958a56fc}{Variable\+Joint\+W\+TP}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const int \mbox{\hyperlink{classJointWTP_aa5830cb4d3013a004b7168f4dbf475eb}{parent\+\_\+reservoir\+\_\+\+ID}}, const int \mbox{\hyperlink{classJointWTP_a0e10a7f7ade04d5f3572f185de1b8653}{expansion\+\_\+sequence\+\_\+id}}, const double \mbox{\hyperlink{classWaterSource_a2fdfd5ff7d103e71108cf2a31babaccb}{total\+\_\+treatment\+\_\+capacity}}, vector$<$ int $>$ connected\+\_\+sources, vector$<$ int $>$ \&agreement\+\_\+utility\+\_\+ids, vector$<$ double $>$ \&initial\+\_\+treatment\+\_\+capacity\+\_\+allocations, vector$<$ \mbox{\hyperlink{classBond}{Bond}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a413b094e11bdce62f4d82e5bb9e4706e}{bonds}}, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period)
+\begin{DoxyCompactList}\small\item\em Constructs a {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} object with the specified parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVariableJointWTP_afb1491d02ab8f69966b5dda871dadb34}{Variable\+Joint\+W\+TP}} (const \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}} \&variable\+\_\+joint\+\_\+water\+\_\+treatment\+\_\+plant)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVariableJointWTP_aaa9eccc2b254ebe82769cc90bed5b893}{$\sim$\+Variable\+Joint\+W\+TP}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}} \& \mbox{\hyperlink{classVariableJointWTP_acb9e62cc3198df8df6c7ac87c7f7a4cd}{operator=}} (const \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}} \&variable\+\_\+joint\+\_\+water\+\_\+treatment\+\_\+plant)
+\begin{DoxyCompactList}\small\item\em Assignment operator for copying data for another {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVariableJointWTP_ab20f14dccd7079f546984d7bf1c00a71}{apply\+Continuity}} (int week, double \mbox{\hyperlink{classWaterSource_a7a69b2e9b6030f1035e6cf44d2918ee5}{upstream\+\_\+source\+\_\+inflow}}, double wastewater\+\_\+discharge, vector$<$ double $>$ \&demand\+\_\+outflow) override
+\begin{DoxyCompactList}\small\item\em Applies continuity for the {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} class. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classVariableJointWTP_ade062353af947456c6a3ed10a93686d4}{implement\+Initial\+Treatment\+Capacity}} (int utility\+\_\+id) override
+\begin{DoxyCompactList}\small\item\em Implements the initial treatment capacity for a specific utility. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVariableJointWTP_ab02c6701ad5120e189023b038bae13b7}{reset\+Allocations}} (const vector$<$ double $>$ $\ast$demand\+\_\+ratios) override
+\begin{DoxyCompactList}\small\item\em Resets the treatment allocations based on demand deltas for the utilities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classVariableJointWTP_a0115a36864d92e6e7db8fd6e24a14c0c}{initial\+\_\+treatment\+\_\+allocations}}
+\begin{DoxyCompactList}\small\item\em The initial allocations for the treatment capacity of this \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This is a subclass of \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}} that allows for variable allocations of treatment capacity to utilities. The \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}} subclass is in turn a subclass of \mbox{\hyperlink{classWaterSource}{Water\+Source}}. 
+
+Created by dgorelic on 10/29/2019.
+
+F\+I\+X\+ME\+: Unclear what the purpose of this class is and how it differs from \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVariableJointWTP_a26fa2204e90fb7e44f17dbd2958a56fc}\label{classVariableJointWTP_a26fa2204e90fb7e44f17dbd2958a56fc}} 
+\index{Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}!Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}}
+\index{Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}!Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{Variable\+Joint\+W\+T\+P()}{VariableJointWTP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Variable\+Joint\+W\+T\+P\+::\+Variable\+Joint\+W\+TP (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const int}]{parent\+\_\+reservoir\+\_\+\+ID,  }\item[{const int}]{expansion\+\_\+sequence\+\_\+id,  }\item[{const double}]{total\+\_\+treatment\+\_\+capacity,  }\item[{vector$<$ int $>$}]{connected\+\_\+sources,  }\item[{vector$<$ int $>$ \&}]{agreement\+\_\+utility\+\_\+ids,  }\item[{vector$<$ double $>$ \&}]{initial\+\_\+treatment\+\_\+capacity\+\_\+allocations,  }\item[{vector$<$ \mbox{\hyperlink{classBond}{Bond}} $\ast$$>$ \&}]{bonds,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period }\end{DoxyParamCaption})}
+
+
+
+Constructs a {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} object with the specified parameters. 
+
+This constructor initializes a {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} object, which represents a joint water treatment plant with variable treatment capacity allocations, and associates it with a specific parent reservoir.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the joint water treatment plant. \\
+\hline
+{\em id} & The ID of the joint water treatment plant. \\
+\hline
+{\em parent\+\_\+reservoir\+\_\+\+ID} & The ID of the parent reservoir for the joint water treatment plant. \\
+\hline
+{\em expansion\+\_\+sequence\+\_\+id} & The expansion sequence ID for the joint water treatment plant. \\
+\hline
+{\em total\+\_\+treatment\+\_\+capacity} & The total treatment capacity of the plant. \\
+\hline
+{\em connected\+\_\+sources} & A list of source I\+Ds connected to the plant. \\
+\hline
+{\em agreement\+\_\+utility\+\_\+ids} & A list of utility I\+Ds that have agreements with the plant. \\
+\hline
+{\em initial\+\_\+treatment\+\_\+capacity\+\_\+allocations} & A list of initial treatment capacity allocations for each utility. \\
+\hline
+{\em bonds} & A list of bonds associated with the plant. \\
+\hline
+{\em construction\+\_\+time\+\_\+range} & A vector specifying the time range for construction. \\
+\hline
+{\em permitting\+\_\+period} & The permitting period for the plant. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVariableJointWTP_afb1491d02ab8f69966b5dda871dadb34}\label{classVariableJointWTP_afb1491d02ab8f69966b5dda871dadb34}} 
+\index{Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}!Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}}
+\index{Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}!Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{Variable\+Joint\+W\+T\+P()}{VariableJointWTP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Variable\+Joint\+W\+T\+P\+::\+Variable\+Joint\+W\+TP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}} \&}]{variable\+\_\+joint\+\_\+water\+\_\+treatment\+\_\+plant }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} class. 
+
+This constructor creates a new {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} object as a copy of an existing one, inheriting the properties and treatment capacity allocations from the original plant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em variable\+\_\+joint\+\_\+water\+\_\+treatment\+\_\+plant} & The {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} object to copy from. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVariableJointWTP_aaa9eccc2b254ebe82769cc90bed5b893}\label{classVariableJointWTP_aaa9eccc2b254ebe82769cc90bed5b893}} 
+\index{Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}!````~Variable\+Joint\+W\+TP@{$\sim$\+Variable\+Joint\+W\+TP}}
+\index{````~Variable\+Joint\+W\+TP@{$\sim$\+Variable\+Joint\+W\+TP}!Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{$\sim$\+Variable\+Joint\+W\+T\+P()}{~VariableJointWTP()}}
+{\footnotesize\ttfamily Variable\+Joint\+W\+T\+P\+::$\sim$\+Variable\+Joint\+W\+TP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} class. 
+
+This function cleans up resources used by the \mbox{\hyperlink{classQuarry}{Quarry}} object. Since the class does not dynamically allocate resources directly, the destructor relies on the base class ({\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}}) and standard cleanup mechanisms. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classVariableJointWTP_ab20f14dccd7079f546984d7bf1c00a71}\label{classVariableJointWTP_ab20f14dccd7079f546984d7bf1c00a71}} 
+\index{Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}!apply\+Continuity@{apply\+Continuity}}
+\index{apply\+Continuity@{apply\+Continuity}!Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{apply\+Continuity()}{applyContinuity()}}
+{\footnotesize\ttfamily void Variable\+Joint\+W\+T\+P\+::apply\+Continuity (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{double}]{upstream\+\_\+source\+\_\+inflow,  }\item[{double}]{wastewater\+\_\+discharge,  }\item[{vector$<$ double $>$ \&}]{demand\+\_\+outflow }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Applies continuity for the {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} class. 
+
+This function calls the base class {\ttfamily \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}}}\textquotesingle{}s {\ttfamily apply\+Continuity} method to perform the continuity calculations for the water treatment plant, considering the upstream inflow, wastewater discharge, and demand outflow.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The week for which the continuity is applied. \\
+\hline
+{\em upstream\+\_\+source\+\_\+inflow} & The inflow from the upstream source. \\
+\hline
+{\em wastewater\+\_\+discharge} & The discharge of wastewater into the plant. \\
+\hline
+{\em demand\+\_\+outflow} & A vector containing the demand outflow for each utility. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classJointWTP_a07106b573ea34386621a95d3fbcafd1a}{Joint\+W\+TP}}.
+
+\mbox{\Hypertarget{classVariableJointWTP_ade062353af947456c6a3ed10a93686d4}\label{classVariableJointWTP_ade062353af947456c6a3ed10a93686d4}} 
+\index{Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}!implement\+Initial\+Treatment\+Capacity@{implement\+Initial\+Treatment\+Capacity}}
+\index{implement\+Initial\+Treatment\+Capacity@{implement\+Initial\+Treatment\+Capacity}!Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{implement\+Initial\+Treatment\+Capacity()}{implementInitialTreatmentCapacity()}}
+{\footnotesize\ttfamily double Variable\+Joint\+W\+T\+P\+::implement\+Initial\+Treatment\+Capacity (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements the initial treatment capacity for a specific utility. 
+
+This function returns the treatment capacity allocated to a utility based on the initial treatment allocations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+id} & The ID of the utility for which the treatment capacity is retrieved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The initial treatment capacity allocated to the specified utility. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classJointWTP_ae8a2a5c4d5173b43d30fc9c1169574f8}{Joint\+W\+TP}}.
+
+\mbox{\Hypertarget{classVariableJointWTP_acb9e62cc3198df8df6c7ac87c7f7a4cd}\label{classVariableJointWTP_acb9e62cc3198df8df6c7ac87c7f7a4cd}} 
+\index{Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}!operator=@{operator=}}
+\index{operator=@{operator=}!Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}\& Variable\+Joint\+W\+T\+P\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}} \&}]{variable\+\_\+joint\+\_\+water\+\_\+treatment\+\_\+plant }\end{DoxyParamCaption})}
+
+
+
+Assignment operator for copying data for another {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} object. 
+
+This operator assigns the values from another {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} object to the current object, copying the storage area curve and performing a deep copy of the evaporation series. The base class {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}}\textquotesingle{}s assignment operator is also called to copy its attributes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em variable\+\_\+joint\+\_\+water\+\_\+treatment\+\_\+plant} & The {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} object to copy data from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the current {\ttfamily \mbox{\hyperlink{classVariableJointWTP}{Variable\+Joint\+W\+TP}}} object after assignment. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVariableJointWTP_ab02c6701ad5120e189023b038bae13b7}\label{classVariableJointWTP_ab02c6701ad5120e189023b038bae13b7}} 
+\index{Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}!reset\+Allocations@{reset\+Allocations}}
+\index{reset\+Allocations@{reset\+Allocations}!Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{reset\+Allocations()}{resetAllocations()}}
+{\footnotesize\ttfamily void Variable\+Joint\+W\+T\+P\+::reset\+Allocations (\begin{DoxyParamCaption}\item[{const vector$<$ double $>$ $\ast$}]{demand\+\_\+ratios }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Resets the treatment allocations based on demand deltas for the utilities. 
+
+This function updates the treatment capacity allocations for each utility based on changes in demand. It adjusts the treatment allocations for the current year based on the estimated future demand deltas. If the allocations exceed the total treatment capacity, the fractions and capacities are adjusted accordingly to ensure proper allocation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em demand\+\_\+deltas} & A vector containing the estimated demand changes for each utility. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classWaterSource_afe2f6b96383abdb14563db279a261a31}{Water\+Source}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classVariableJointWTP_a0115a36864d92e6e7db8fd6e24a14c0c}\label{classVariableJointWTP_a0115a36864d92e6e7db8fd6e24a14c0c}} 
+\index{Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}!initial\+\_\+treatment\+\_\+allocations@{initial\+\_\+treatment\+\_\+allocations}}
+\index{initial\+\_\+treatment\+\_\+allocations@{initial\+\_\+treatment\+\_\+allocations}!Variable\+Joint\+W\+TP@{Variable\+Joint\+W\+TP}}
+\subsubsection{\texorpdfstring{initial\+\_\+treatment\+\_\+allocations}{initial\_treatment\_allocations}}
+{\footnotesize\ttfamily vector$<$double$>$ Variable\+Joint\+W\+T\+P\+::initial\+\_\+treatment\+\_\+allocations\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The initial allocations for the treatment capacity of this \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+System\+Components/\+Water\+Sources/\mbox{\hyperlink{VariableJointWTP_8h}{Variable\+Joint\+W\+T\+P.\+h}}\end{DoxyCompactItemize}

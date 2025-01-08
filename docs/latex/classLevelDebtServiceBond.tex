@@ -1,0 +1,223 @@
+\hypertarget{classLevelDebtServiceBond}{}\section{Level\+Debt\+Service\+Bond Class Reference}
+\label{classLevelDebtServiceBond}\index{Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}}
+
+
+{\ttfamily \#include $<$Level\+Debt\+Service\+Bond.\+h$>$}
+
+Inheritance diagram for Level\+Debt\+Service\+Bond\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classLevelDebtServiceBond}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLevelDebtServiceBond_a71af87d057090bd2310a10df03b36fdf}{Level\+Debt\+Service\+Bond}} (const int \mbox{\hyperlink{classBond_a7f75bcafbc16676ad6dbafbf40afae4a}{id}}, const double \mbox{\hyperlink{classBond_ad98df7d28b398e620286f95ee085439b}{cost\+\_\+of\+\_\+capital}}, const int \mbox{\hyperlink{classBond_a4a227b6de2eeada118d82ab1633b1db8}{n\+\_\+payments}}, const double \mbox{\hyperlink{classBond_a5f66785534e24caa43d9f730130a6463}{coupon\+\_\+rate}}, vector$<$ int $>$ \mbox{\hyperlink{classBond_ae8dd46fcbf95c993460ffe4ea1f52739}{pay\+\_\+on\+\_\+weeks}}, bool begin\+\_\+repayment\+\_\+at\+\_\+issuance=false)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classLevelDebtServiceBond}{Level\+Debt\+Service\+Bond}} object with specified attributes. This function initializes a level debt service bond with the provided parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classLevelDebtServiceBond_a6327829c1f1e6941cc22cea371cf024a}{$\sim$\+Level\+Debt\+Service\+Bond}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classLevelDebtServiceBond}{Level\+Debt\+Service\+Bond}} class. This destructor cleans up the resources associated with the \mbox{\hyperlink{classLevelDebtServiceBond}{Level\+Debt\+Service\+Bond}} object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLevelDebtServiceBond_adcb3bd3c34b0cbb7b013f387ddd8b7f5}{get\+Debt\+Service}} (int week) override
+\begin{DoxyCompactList}\small\item\em Calculates the debt service for the bond at a specific week. This function computes the bond\textquotesingle{}s debt service payment based on a level debt service structure, where payments are the same amount for each period. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLevelDebtServiceBond_a37801ecfc13ae1b6e05b4330398a7582}{get\+Present\+Value\+Debt\+Service}} (int week, double discount\+\_\+rate) override
+\begin{DoxyCompactList}\small\item\em Calculates the present value of the debt service for the bond at a specific week. This function computes the present value of the debt service payment based on the level debt service structure and a discount rate for the given week. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classLevelDebtServiceBond_a0f5820c3e76b8b908dbe153a8291d96a}{get\+Net\+Present\+Value\+At\+Issuance}} (double yearly\+\_\+discount\+\_\+rate, int week) const override
+\begin{DoxyCompactList}\small\item\em Calculates the net present value (N\+PV) of the bond at the time of issuance. This function computes the N\+PV of the bond based on its level debt service payments, discount rate, and the number of payments. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLevelDebtServiceBond_a51a54a1a25be105b168bf86489aee417}{issue\+Bond}} (int week, int construction\+\_\+time, double bond\+\_\+term\+\_\+multiplier, double bond\+\_\+interest\+\_\+rate\+\_\+multiplier) override
+\begin{DoxyCompactList}\small\item\em Issues a level debt service bond and calculates the level debt service payment. This function issues the bond and calculates the fixed level debt service payment based on the cost of capital, coupon rate, and number of payments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classLevelDebtServiceBond_a2af3b9ff7546bd002f78d07dbf696c64}{level\+\_\+debt\+\_\+service\+\_\+payment}}
+\begin{DoxyCompactList}\small\item\em The level debt service payment. This amount remains constant over the life of the bond. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLevelDebtServiceBond_ad1b8ba91ef3702a5eecfe3075fed0bc3}{n\+\_\+payments\+\_\+made}} = 0
+\begin{DoxyCompactList}\small\item\em Number of payments made so far. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLevelDebtServiceBond_a71af87d057090bd2310a10df03b36fdf}\label{classLevelDebtServiceBond_a71af87d057090bd2310a10df03b36fdf}} 
+\index{Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}!Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}}
+\index{Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}!Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}}
+\subsubsection{\texorpdfstring{Level\+Debt\+Service\+Bond()}{LevelDebtServiceBond()}}
+{\footnotesize\ttfamily Level\+Debt\+Service\+Bond\+::\+Level\+Debt\+Service\+Bond (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const double}]{cost\+\_\+of\+\_\+capital,  }\item[{const int}]{n\+\_\+payments,  }\item[{const double}]{coupon\+\_\+rate,  }\item[{vector$<$ int $>$}]{pay\+\_\+on\+\_\+weeks,  }\item[{bool}]{begin\+\_\+repayment\+\_\+at\+\_\+issuance = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classLevelDebtServiceBond}{Level\+Debt\+Service\+Bond}} object with specified attributes. This function initializes a level debt service bond with the provided parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier for the bond. \\
+\hline
+{\em cost\+\_\+of\+\_\+capital} & The cost of capital associated with the bond. Must be non-\/negative. \\
+\hline
+{\em n\+\_\+payments} & The total number of payments for the bond. \\
+\hline
+{\em coupon\+\_\+rate} & The fixed coupon rate for the bond. \\
+\hline
+{\em pay\+\_\+on\+\_\+weeks} & A vector specifying the weeks when payments are due. \\
+\hline
+{\em begin\+\_\+repayment\+\_\+at\+\_\+issuance} & Flag indicating whether repayment should begin at issuance.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLevelDebtServiceBond_a6327829c1f1e6941cc22cea371cf024a}\label{classLevelDebtServiceBond_a6327829c1f1e6941cc22cea371cf024a}} 
+\index{Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}!````~Level\+Debt\+Service\+Bond@{$\sim$\+Level\+Debt\+Service\+Bond}}
+\index{````~Level\+Debt\+Service\+Bond@{$\sim$\+Level\+Debt\+Service\+Bond}!Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}}
+\subsubsection{\texorpdfstring{$\sim$\+Level\+Debt\+Service\+Bond()}{~LevelDebtServiceBond()}}
+{\footnotesize\ttfamily Level\+Debt\+Service\+Bond\+::$\sim$\+Level\+Debt\+Service\+Bond (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classLevelDebtServiceBond}{Level\+Debt\+Service\+Bond}} class. This destructor cleans up the resources associated with the \mbox{\hyperlink{classLevelDebtServiceBond}{Level\+Debt\+Service\+Bond}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em None} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classLevelDebtServiceBond_adcb3bd3c34b0cbb7b013f387ddd8b7f5}\label{classLevelDebtServiceBond_adcb3bd3c34b0cbb7b013f387ddd8b7f5}} 
+\index{Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}!get\+Debt\+Service@{get\+Debt\+Service}}
+\index{get\+Debt\+Service@{get\+Debt\+Service}!Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}}
+\subsubsection{\texorpdfstring{get\+Debt\+Service()}{getDebtService()}}
+{\footnotesize\ttfamily double Level\+Debt\+Service\+Bond\+::get\+Debt\+Service (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the debt service for the bond at a specific week. This function computes the bond\textquotesingle{}s debt service payment based on a level debt service structure, where payments are the same amount for each period. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week for which to calculate the debt service.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The debt service amount for the given week, or {\ttfamily 0.\+0} if no payment is due. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBond_a98d8ecaf4b36319674ebd220598996bc}{Bond}}.
+
+\mbox{\Hypertarget{classLevelDebtServiceBond_a0f5820c3e76b8b908dbe153a8291d96a}\label{classLevelDebtServiceBond_a0f5820c3e76b8b908dbe153a8291d96a}} 
+\index{Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}!get\+Net\+Present\+Value\+At\+Issuance@{get\+Net\+Present\+Value\+At\+Issuance}}
+\index{get\+Net\+Present\+Value\+At\+Issuance@{get\+Net\+Present\+Value\+At\+Issuance}!Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}}
+\subsubsection{\texorpdfstring{get\+Net\+Present\+Value\+At\+Issuance()}{getNetPresentValueAtIssuance()}}
+{\footnotesize\ttfamily double Level\+Debt\+Service\+Bond\+::get\+Net\+Present\+Value\+At\+Issuance (\begin{DoxyParamCaption}\item[{double}]{yearly\+\_\+discount\+\_\+rate,  }\item[{int}]{week }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the net present value (N\+PV) of the bond at the time of issuance. This function computes the N\+PV of the bond based on its level debt service payments, discount rate, and the number of payments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em yearly\+\_\+discount\+\_\+rate} & The yearly discount rate used to calculate the present value. \\
+\hline
+{\em week} & The week for which to calculate the N\+PV. This is used to adjust for the time of the first payment.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The net present value of the bond at the time of issuance.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classBond_a5997278813deb16aa5d01bbca8ecc7b2}{Bond}}.
+
+\mbox{\Hypertarget{classLevelDebtServiceBond_a37801ecfc13ae1b6e05b4330398a7582}\label{classLevelDebtServiceBond_a37801ecfc13ae1b6e05b4330398a7582}} 
+\index{Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}!get\+Present\+Value\+Debt\+Service@{get\+Present\+Value\+Debt\+Service}}
+\index{get\+Present\+Value\+Debt\+Service@{get\+Present\+Value\+Debt\+Service}!Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}}
+\subsubsection{\texorpdfstring{get\+Present\+Value\+Debt\+Service()}{getPresentValueDebtService()}}
+{\footnotesize\ttfamily double Level\+Debt\+Service\+Bond\+::get\+Present\+Value\+Debt\+Service (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{double}]{discount\+\_\+rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the present value of the debt service for the bond at a specific week. This function computes the present value of the debt service payment based on the level debt service structure and a discount rate for the given week. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week for which to calculate the present value of the debt service. \\
+\hline
+{\em discount\+\_\+rate} & The discount rate used to calculate the present value of future payments.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The present value of the debt service for the given week, or {\ttfamily 0.\+0} if no payment is due.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classBond_a322d4ab0c0c72824ac4df5df80f14d24}{Bond}}.
+
+\mbox{\Hypertarget{classLevelDebtServiceBond_a51a54a1a25be105b168bf86489aee417}\label{classLevelDebtServiceBond_a51a54a1a25be105b168bf86489aee417}} 
+\index{Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}!issue\+Bond@{issue\+Bond}}
+\index{issue\+Bond@{issue\+Bond}!Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}}
+\subsubsection{\texorpdfstring{issue\+Bond()}{issueBond()}}
+{\footnotesize\ttfamily void Level\+Debt\+Service\+Bond\+::issue\+Bond (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{int}]{construction\+\_\+time,  }\item[{double}]{bond\+\_\+term\+\_\+multiplier,  }\item[{double}]{bond\+\_\+interest\+\_\+rate\+\_\+multiplier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Issues a level debt service bond and calculates the level debt service payment. This function issues the bond and calculates the fixed level debt service payment based on the cost of capital, coupon rate, and number of payments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The week when the bond is issued. \\
+\hline
+{\em construction\+\_\+time} & The duration of construction in weeks, used to determine when repayment begins. \\
+\hline
+{\em bond\+\_\+term\+\_\+multiplier} & A multiplier to adjust the total number of payments ({\ttfamily n\+\_\+payments}). \\
+\hline
+{\em bond\+\_\+interest\+\_\+rate\+\_\+multiplier} & A multiplier to adjust the bond\textquotesingle{}s coupon rate.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBond_a726edbe3ea7047ebc7246585943763e3}{Bond}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classLevelDebtServiceBond_a2af3b9ff7546bd002f78d07dbf696c64}\label{classLevelDebtServiceBond_a2af3b9ff7546bd002f78d07dbf696c64}} 
+\index{Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}!level\+\_\+debt\+\_\+service\+\_\+payment@{level\+\_\+debt\+\_\+service\+\_\+payment}}
+\index{level\+\_\+debt\+\_\+service\+\_\+payment@{level\+\_\+debt\+\_\+service\+\_\+payment}!Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}}
+\subsubsection{\texorpdfstring{level\+\_\+debt\+\_\+service\+\_\+payment}{level\_debt\_service\_payment}}
+{\footnotesize\ttfamily double Level\+Debt\+Service\+Bond\+::level\+\_\+debt\+\_\+service\+\_\+payment\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The level debt service payment. This amount remains constant over the life of the bond. 
+
+\mbox{\Hypertarget{classLevelDebtServiceBond_ad1b8ba91ef3702a5eecfe3075fed0bc3}\label{classLevelDebtServiceBond_ad1b8ba91ef3702a5eecfe3075fed0bc3}} 
+\index{Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}!n\+\_\+payments\+\_\+made@{n\+\_\+payments\+\_\+made}}
+\index{n\+\_\+payments\+\_\+made@{n\+\_\+payments\+\_\+made}!Level\+Debt\+Service\+Bond@{Level\+Debt\+Service\+Bond}}
+\subsubsection{\texorpdfstring{n\+\_\+payments\+\_\+made}{n\_payments\_made}}
+{\footnotesize\ttfamily int Level\+Debt\+Service\+Bond\+::n\+\_\+payments\+\_\+made = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of payments made so far. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+System\+Components/\+Bonds/\mbox{\hyperlink{LevelDebtServiceBond_8h}{Level\+Debt\+Service\+Bond.\+h}}\end{DoxyCompactItemize}

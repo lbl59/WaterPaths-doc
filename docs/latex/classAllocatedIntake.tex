@@ -1,0 +1,359 @@
+\hypertarget{classAllocatedIntake}{}\section{Allocated\+Intake Class Reference}
+\label{classAllocatedIntake}\index{Allocated\+Intake@{Allocated\+Intake}}
+
+
+The {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} is a subclass of the main {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} class that represents a raw water intake from upstream catchments with allocations associated to utilities.  
+
+
+
+
+{\ttfamily \#include $<$Allocated\+Intake.\+h$>$}
+
+Inheritance diagram for Allocated\+Intake\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAllocatedIntake}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAllocatedIntake_a06653dc837c927a68ab809234d78f505}{Allocated\+Intake}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, vector$<$ int $>$ connected\+\_\+sources, vector$<$ int $>$ \&partner\+\_\+utilities, const double total\+\_\+raw\+\_\+water\+\_\+capacity, vector$<$ double $>$ \&raw\+\_\+water\+\_\+capacity\+\_\+allocation\+\_\+fractions, const double \mbox{\hyperlink{classWaterSource_a2fdfd5ff7d103e71108cf2a31babaccb}{total\+\_\+treatment\+\_\+capacity}}, vector$<$ double $>$ \&treatment\+\_\+capacity\+\_\+allocation\+\_\+fractions)
+\begin{DoxyCompactList}\small\item\em Constructor for creating an {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAllocatedIntake_a39f2cd728b88fa1503bbe32a9165f654}{Allocated\+Intake}} (const \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}} \&intake)
+\begin{DoxyCompactList}\small\item\em Copy constructor for creating a new {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object by copying another {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}} \& \mbox{\hyperlink{classAllocatedIntake_a86afa1536bf7ee7945f2c567c43ffb6b}{operator=}} (const \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}} \&intake)
+\begin{DoxyCompactList}\small\item\em Assignment operator for copying the contents of one {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object to another. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAllocatedIntake_ada2f6552b83f4f11611bcd7bcb27fc37}{$\sim$\+Allocated\+Intake}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAllocatedIntake_a92c562dddb4f6434c8ad766c03b2cf5c}{apply\+Continuity}} (int week, double upstream\+\_\+source\+\_\+min\+\_\+env\+\_\+flow, double \mbox{\hyperlink{classWaterSource_aeb5a2d2d83383a70ca20f3e94635a9c7}{wastewater\+\_\+inflow}}, vector$<$ double $>$ \&demand) override
+\begin{DoxyCompactList}\small\item\em Applies the continuity equation to update water availability, demand, and allocations for the current time step. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAllocatedIntake_afc73ae38f23417cfbece54c4c3d4ccc9}{set\+Realization}} (unsigned long r, vector$<$ double $>$ \&rdm\+\_\+factors) override
+\begin{DoxyCompactList}\small\item\em Sets the realization for the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object and updates water demand and availability. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classAllocatedIntake_abbea26f2adac6c9f9e3bdcdf1aead55d}{get\+Priority\+Source\+Potential\+Volume}} (int utility\+\_\+id) const override
+\begin{DoxyCompactList}\small\item\em Calculates the priority source potential volume for a given utility. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \mbox{\hyperlink{classAllocatedIntake_a5efc6423bff0adb8c493d3c9983915ef}{get\+Allocated\+Demands}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the allocated demands for all utilities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAllocatedIntake_a32a52eb269d4de861cc844633eceefb0}{add\+Capacity}} (double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, int utility\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Adds capacity to the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object and updates utility allocations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAllocatedIntake_ae16939ed474e15b9c68edcbf61696231}{add\+Treatment\+Capacity}} (const double added\+\_\+treatment\+\_\+capacity, int utility\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Adds treatment capacity to the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object and updates utility allocations. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classAllocatedIntake_a9c6161b8dd13b6ea70a9dafbb72afc91}{get\+Available\+Allocated\+Volume}} (int utility\+\_\+id) override
+\begin{DoxyCompactList}\small\item\em Retrieves the available allocated volume for a specific utility. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classAllocatedIntake_acf0824f3602cf6e9aa5c4423cb04f078}{next\+\_\+upstream\+\_\+catchment\+\_\+inflow}} = 0
+\begin{DoxyCompactList}\small\item\em The inflow from the adjacent upstream catchment. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \mbox{\hyperlink{classAllocatedIntake_aab00f81a712fe2ecff1f69d0bb53d92a}{allocated\+\_\+demands}}
+\begin{DoxyCompactList}\small\item\em The demands allocated to each utility to be fulfiled by this intake. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} is a subclass of the main {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} class that represents a raw water intake from upstream catchments with allocations associated to utilities. 
+
+Created by dgorelic on 3/2/2020. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAllocatedIntake_a06653dc837c927a68ab809234d78f505}\label{classAllocatedIntake_a06653dc837c927a68ab809234d78f505}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!Allocated\+Intake@{Allocated\+Intake}}
+\index{Allocated\+Intake@{Allocated\+Intake}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{Allocated\+Intake()}{AllocatedIntake()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Allocated\+Intake\+::\+Allocated\+Intake (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{vector$<$ int $>$}]{connected\+\_\+sources,  }\item[{vector$<$ int $>$ \&}]{partner\+\_\+utilities,  }\item[{const double}]{total\+\_\+raw\+\_\+water\+\_\+capacity,  }\item[{vector$<$ double $>$ \&}]{raw\+\_\+water\+\_\+capacity\+\_\+allocation\+\_\+fractions,  }\item[{const double}]{total\+\_\+treatment\+\_\+capacity,  }\item[{vector$<$ double $>$ \&}]{treatment\+\_\+capacity\+\_\+allocation\+\_\+fractions }\end{DoxyParamCaption})}
+
+
+
+Constructor for creating an {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object. 
+
+This constructor initializes an {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object, which represents a intake that has allocated raw water and treatment capacities, as well as associated utilities and catchments. It initializes various properties by invoking the base class constructor ({\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}}) and setting additional member variables such as {\ttfamily allocated\+\_\+demands}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the intake. \\
+\hline
+{\em id} & The unique identifier for the intake. \\
+\hline
+{\em catchments} & A vector of pointers to the catchments associated with this intake. \\
+\hline
+{\em connected\+\_\+sources} & A vector of I\+Ds for the connected sources of the intake. \\
+\hline
+{\em partner\+\_\+utilities} & A vector of I\+Ds for the partner utilities associated with this intake. \\
+\hline
+{\em total\+\_\+raw\+\_\+water\+\_\+capacity} & The total raw water capacity of the intake. \\
+\hline
+{\em raw\+\_\+water\+\_\+capacity\+\_\+allocation\+\_\+fractions} & A vector of fractions representing the allocation of raw water capacity to different utilities. \\
+\hline
+{\em total\+\_\+treatment\+\_\+capacity} & The total treatment capacity of the intake. \\
+\hline
+{\em treatment\+\_\+capacity\+\_\+allocation\+\_\+fractions} & A vector of fractions representing the allocation of treatment capacity to different utilities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A fully constructed {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAllocatedIntake_a39f2cd728b88fa1503bbe32a9165f654}\label{classAllocatedIntake_a39f2cd728b88fa1503bbe32a9165f654}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!Allocated\+Intake@{Allocated\+Intake}}
+\index{Allocated\+Intake@{Allocated\+Intake}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{Allocated\+Intake()}{AllocatedIntake()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Allocated\+Intake\+::\+Allocated\+Intake (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}} \&}]{intake }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for creating a new {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object by copying another {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object. 
+
+This constructor initializes a new {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object by copying the values from an existing {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object. It delegates the initialization of the base class ({\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}}) to the base class copy constructor and copies the {\ttfamily allocated\+\_\+demands} vector from the intake object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em intake} & The {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object to copy from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object that is a copy of the provided {\ttfamily intake} object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAllocatedIntake_ada2f6552b83f4f11611bcd7bcb27fc37}\label{classAllocatedIntake_ada2f6552b83f4f11611bcd7bcb27fc37}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!````~Allocated\+Intake@{$\sim$\+Allocated\+Intake}}
+\index{````~Allocated\+Intake@{$\sim$\+Allocated\+Intake}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{$\sim$\+Allocated\+Intake()}{~AllocatedIntake()}}
+{\footnotesize\ttfamily Allocated\+Intake\+::$\sim$\+Allocated\+Intake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} class. 
+
+This destructor is responsible for cleaning up the resources used by the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object. It clears the {\ttfamily catchments} vector to free any associated memory when the object is destroyed.
+
+This destructor overrides the base class destructor ({\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}}) to ensure proper cleanup.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAllocatedIntake_a32a52eb269d4de861cc844633eceefb0}\label{classAllocatedIntake_a32a52eb269d4de861cc844633eceefb0}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!add\+Capacity@{add\+Capacity}}
+\index{add\+Capacity@{add\+Capacity}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{add\+Capacity()}{addCapacity()}}
+{\footnotesize\ttfamily void Allocated\+Intake\+::add\+Capacity (\begin{DoxyParamCaption}\item[{double}]{capacity,  }\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds capacity to the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object and updates utility allocations. 
+
+This function adds the specified capacity to both the total capacity of the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object and the allocated capacity for a specific utility. It also ensures that the allocation fractions for all utilities are updated to reflect the new capacity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & The amount of capacity to add to the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}}. \\
+\hline
+{\em utility\+\_\+id} & The ID of the utility for which the capacity is being added.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classWaterSource_ab869abb3d3dde1875e933482bedc3ae3}{Water\+Source}}.
+
+\mbox{\Hypertarget{classAllocatedIntake_ae16939ed474e15b9c68edcbf61696231}\label{classAllocatedIntake_ae16939ed474e15b9c68edcbf61696231}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!add\+Treatment\+Capacity@{add\+Treatment\+Capacity}}
+\index{add\+Treatment\+Capacity@{add\+Treatment\+Capacity}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{add\+Treatment\+Capacity()}{addTreatmentCapacity()}}
+{\footnotesize\ttfamily void Allocated\+Intake\+::add\+Treatment\+Capacity (\begin{DoxyParamCaption}\item[{const double}]{added\+\_\+treatment\+\_\+capacity,  }\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds treatment capacity to the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object and updates utility allocations. 
+
+This function adds the specified treatment capacity to both the total treatment capacity of the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object and the allocated treatment capacity for a specific utility. It also ensures that the allocation fractions for all utilities are updated to reflect the new treatment capacity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em added\+\_\+treatment\+\_\+capacity} & The amount of treatment capacity to add to the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}}. \\
+\hline
+{\em utility\+\_\+id} & The ID of the utility for which the treatment capacity is being added.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classWaterSource_ac2bc1a09fce3a3201d62a73052b27b0b}{Water\+Source}}.
+
+\mbox{\Hypertarget{classAllocatedIntake_a92c562dddb4f6434c8ad766c03b2cf5c}\label{classAllocatedIntake_a92c562dddb4f6434c8ad766c03b2cf5c}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!apply\+Continuity@{apply\+Continuity}}
+\index{apply\+Continuity@{apply\+Continuity}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{apply\+Continuity()}{applyContinuity()}}
+{\footnotesize\ttfamily void Allocated\+Intake\+::apply\+Continuity (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{double}]{upstream\+\_\+source\+\_\+min\+\_\+env\+\_\+flow,  }\item[{double}]{wastewater\+\_\+inflow,  }\item[{vector$<$ double $>$ \&}]{demand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Applies the continuity equation to update water availability, demand, and allocations for the current time step. 
+
+This function updates various properties related to water inflow, outflow, and demand based on the continuity equation. It computes the total upstream inflows, allocates available volumes to utilities based on their allocations, and updates the outflows and demands for the current week.
+
+This function overrides the base class method {\ttfamily apply\+Continuity} to provide specific implementation for {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week for which the continuity equation is being applied. \\
+\hline
+{\em upstream\+\_\+source\+\_\+min\+\_\+env\+\_\+flow} & The minimum environmental flow from upstream sources. \\
+\hline
+{\em wastewater\+\_\+inflow} & The inflow of wastewater. \\
+\hline
+{\em demand} & A fraction of supply allocated to demands from each utility.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classWaterSource_ac070445379fe706f65b977dade4f3fbc}{Water\+Source}}.
+
+\mbox{\Hypertarget{classAllocatedIntake_a5efc6423bff0adb8c493d3c9983915ef}\label{classAllocatedIntake_a5efc6423bff0adb8c493d3c9983915ef}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!get\+Allocated\+Demands@{get\+Allocated\+Demands}}
+\index{get\+Allocated\+Demands@{get\+Allocated\+Demands}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{get\+Allocated\+Demands()}{getAllocatedDemands()}}
+{\footnotesize\ttfamily vector$<$double$>$ Allocated\+Intake\+::get\+Allocated\+Demands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the allocated demands for all utilities. 
+
+This function returns a vector containing the allocated demands for all utilities associated with the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object. The demands are represented by the {\ttfamily allocated\+\_\+demands} vector, which is updated based on the current inflows and allocations.
+
+\begin{DoxyReturn}{Returns}
+A vector of {\ttfamily double} representing the allocated demands for each utility. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAllocatedIntake_a9c6161b8dd13b6ea70a9dafbb72afc91}\label{classAllocatedIntake_a9c6161b8dd13b6ea70a9dafbb72afc91}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!get\+Available\+Allocated\+Volume@{get\+Available\+Allocated\+Volume}}
+\index{get\+Available\+Allocated\+Volume@{get\+Available\+Allocated\+Volume}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{get\+Available\+Allocated\+Volume()}{getAvailableAllocatedVolume()}}
+{\footnotesize\ttfamily double Allocated\+Intake\+::get\+Available\+Allocated\+Volume (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the available allocated volume for a specific utility. 
+
+This function returns the available allocated volume for a given utility. The available volume is determined based on the current allocation and environmental conditions. This function overrides the base class method {\ttfamily get\+Available\+Allocated\+Volume} to provide specific implementation for {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+id} & The ID of the utility for which the available allocated volume is being retrieved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The available allocated volume for the specified utility. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classWaterSource_ad4667296dc6b6dabc36b871529ca2749}{Water\+Source}}.
+
+\mbox{\Hypertarget{classAllocatedIntake_abbea26f2adac6c9f9e3bdcdf1aead55d}\label{classAllocatedIntake_abbea26f2adac6c9f9e3bdcdf1aead55d}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!get\+Priority\+Source\+Potential\+Volume@{get\+Priority\+Source\+Potential\+Volume}}
+\index{get\+Priority\+Source\+Potential\+Volume@{get\+Priority\+Source\+Potential\+Volume}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{get\+Priority\+Source\+Potential\+Volume()}{getPrioritySourcePotentialVolume()}}
+{\footnotesize\ttfamily double Allocated\+Intake\+::get\+Priority\+Source\+Potential\+Volume (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the priority source potential volume for a given utility. 
+
+This function calculates the potential volume of water available to a utility based on its allocated treatment capacity, current demand, environmental requirements, and upstream catchment inflow. The result is the maximum available volume that can be allocated to the utility, considering the constraints set by treatment capacities and environmental flows.
+
+This function overrides the base class method {\ttfamily get\+Priority\+Source\+Potential\+Volume} to provide specific implementation for {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+id} & The ID of the utility for which the priority source potential volume is being calculated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated priority source potential volume for the specified utility. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classWaterSource_a00a432eba75eaae7195338a8514ac853}{Water\+Source}}.
+
+\mbox{\Hypertarget{classAllocatedIntake_a86afa1536bf7ee7945f2c567c43ffb6b}\label{classAllocatedIntake_a86afa1536bf7ee7945f2c567c43ffb6b}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!operator=@{operator=}}
+\index{operator=@{operator=}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}\& Allocated\+Intake\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}} \&}]{intake }\end{DoxyParamCaption})}
+
+
+
+Assignment operator for copying the contents of one {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object to another. 
+
+This operator allows for the assignment of one {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object to another, copying the values of the base class ({\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}}) and the {\ttfamily allocated\+\_\+demands} vector from the source object to the target object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em intake} & The {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object to assign from.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the target {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object ({\ttfamily $\ast$this}). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classAllocatedIntake_afc73ae38f23417cfbece54c4c3d4ccc9}\label{classAllocatedIntake_afc73ae38f23417cfbece54c4c3d4ccc9}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily void Allocated\+Intake\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{r,  }\item[{vector$<$ double $>$ \&}]{rdm\+\_\+factors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the realization for the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object and updates water demand and availability. 
+
+This function sets the realization for the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object by calling the base class\textquotesingle{}s {\ttfamily set\+Realization} method. It then updates the total demand and available volume based on the current upstream catchment inflow and the minimum environmental outflow.
+
+This function overrides the base class method {\ttfamily set\+Realization} to provide specific implementation for {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & The realization index (e.\+g., representing a specific scenario or time step). \\
+\hline
+{\em rdm\+\_\+factors} & A vector of random distribution factors used in the realization process.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classWaterSource_a634904c510b16de6d7c057fed6d6e625}{Water\+Source}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classAllocatedIntake_aab00f81a712fe2ecff1f69d0bb53d92a}\label{classAllocatedIntake_aab00f81a712fe2ecff1f69d0bb53d92a}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!allocated\+\_\+demands@{allocated\+\_\+demands}}
+\index{allocated\+\_\+demands@{allocated\+\_\+demands}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{allocated\+\_\+demands}{allocated\_demands}}
+{\footnotesize\ttfamily vector$<$double$>$ Allocated\+Intake\+::allocated\+\_\+demands}
+
+
+
+The demands allocated to each utility to be fulfiled by this intake. 
+
+\mbox{\Hypertarget{classAllocatedIntake_acf0824f3602cf6e9aa5c4423cb04f078}\label{classAllocatedIntake_acf0824f3602cf6e9aa5c4423cb04f078}} 
+\index{Allocated\+Intake@{Allocated\+Intake}!next\+\_\+upstream\+\_\+catchment\+\_\+inflow@{next\+\_\+upstream\+\_\+catchment\+\_\+inflow}}
+\index{next\+\_\+upstream\+\_\+catchment\+\_\+inflow@{next\+\_\+upstream\+\_\+catchment\+\_\+inflow}!Allocated\+Intake@{Allocated\+Intake}}
+\subsubsection{\texorpdfstring{next\+\_\+upstream\+\_\+catchment\+\_\+inflow}{next\_upstream\_catchment\_inflow}}
+{\footnotesize\ttfamily double Allocated\+Intake\+::next\+\_\+upstream\+\_\+catchment\+\_\+inflow = 0}
+
+
+
+The inflow from the adjacent upstream catchment. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+System\+Components/\+Water\+Sources/\mbox{\hyperlink{AllocatedIntake_8h}{Allocated\+Intake.\+h}}\end{DoxyCompactItemize}
