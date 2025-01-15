@@ -1,6 +1,10 @@
-//
-// Created by bernardoct on 7/9/17.
-//
+/**
+ * @class AllocatedReservoir
+ * @brief The `AllocatedReservoir` is a subclass of the `Reservoir` class, which in turn is a subclass of the main `WaterSource` class.
+ * It represents a reservoir with allocations associated to utilities.
+ * 
+ * Created by bernardoct on 7/9/17.
+ */
 
 #ifndef TRIANGLEMODEL_ALLOCATEDRESERVOIR_H
 #define TRIANGLEMODEL_ALLOCATEDRESERVOIR_H

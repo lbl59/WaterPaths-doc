@@ -1,6 +1,10 @@
-//
-// Created by dgorelic on 10/28/2019.
-//
+/**
+ * @class FixedJointWTP
+ * @brief The `FixedJointWTP` is a subclass of the `JointWTP` class, which in turn is a subclass of the main `WaterSource` class.
+ * This subclass represents the Joint WTP with fixed treatment capacity allocations to utilities.
+ * 
+ * Created by dgorelic on 10/28/2019.
+ */
 
 #ifndef TRIANGLEMODEL_FIXEDJOINTWTP_H
 #define TRIANGLEMODEL_FIXEDJOINTWTP_H

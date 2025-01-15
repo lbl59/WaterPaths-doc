@@ -1,10 +1,14 @@
-//
-// Created by bernardo on 1/26/17.
-//
+/**
+ * @class ContinuityModelROF
+ * 
+ * @brief The `ContinuityModelROF` subclass extends the `ContinuityModel` class to include the implementation long- and short-term
+ * ROF calculations for utilities.
+ * 
+ * Created by bernardo on 1/26/17.
+ */
 
 #ifndef TRIANGLEMODEL_CONTINUITYMODELROF_H
 #define TRIANGLEMODEL_CONTINUITYMODELROF_H
-
 
 #include "Base/ContinuityModel.h"
 #include "../Utils/Matrices.h"

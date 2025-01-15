@@ -1,6 +1,12 @@
-//
-// Created by bernardo on 4/17/18.
-//
+/**
+ * @class BalloonPaymentBond
+ * 
+ * @brief The `BalloonPaymentBond` class is a subclass of the main `Bond` class. 
+ * This class that represents a balloon bond that pays interest for a number of years and then pays the face value of the bond plus
+ * the last interest payment.
+ * 
+ * Created by bernardo on 4/17/18.
+ */
 
 #ifndef TRIANGLEMODEL_BALLOONPAYMENTBOND_H
 #define TRIANGLEMODEL_BALLOONPAYMENTBOND_H
@@ -9,10 +15,6 @@
 
 
 #include "Base/Bond.h"
-/**
- * Class that represents a balloon bond that pays interest for a number of years and then pays the face value of the bond plus
- * the last interest payment.
- */
 
 class BalloonPaymentBond : public Bond {
 private:

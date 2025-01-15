@@ -1,6 +1,9 @@
-//
-// Created by bernardo on 4/12/18.
-//
+/**
+ * @class Bond
+ * 
+ * @brief The `Bond` class represents a financial instrument that allows the issuer to borrow money from investors.
+ * Created by bernardo on 4/12/18.
+ */
 
 #ifndef TRIANGLEMODEL_BONDFINANCING_H
 #define TRIANGLEMODEL_BONDFINANCING_H

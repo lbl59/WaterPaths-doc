@@ -1,7 +1,10 @@
-//
-// Created by bernardoct on 5/3/17.
-//
-
+/**
+ * @class Quarry
+ * @brief The `Quarry` is a subclass of the `Reservoir` class, which in turn is a subclass of the main `WaterSource` class.
+ * It represents a quarry reservoir that diverts water from upstream catchments.
+ * 
+ * Created by bernardoct on 5/3/17.
+ */
 #ifndef TRIANGLEMODEL_QUARRY_H
 #define TRIANGLEMODEL_QUARRY_H
 

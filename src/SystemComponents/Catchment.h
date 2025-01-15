@@ -1,7 +1,10 @@
-//
-// Created by bernardo on 1/13/17.
-//
-
+/**
+ * @class Catchment
+ * @brief This class defines a catchment object.
+ * 
+ * Created by bernardo on 1/13/17.
+ * 
+ */
 #ifndef TRIANGLEMODEL_CATCHMENT_H
 #define TRIANGLEMODEL_CATCHMENT_H
 

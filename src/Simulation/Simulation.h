@@ -1,6 +1,10 @@
-//
-// Created by bernardo on 1/25/17.
-//
+/**
+ * @class Simulation
+ * @brief The `Simulation` class represents the main simulation object that implements the simulation process.
+ * 
+ * Created by bernardo on 1/25/17.
+ * 
+ */
 
 #ifndef TRIANGLEMODEL_SIMULATION_H
 #define TRIANGLEMODEL_SIMULATION_H

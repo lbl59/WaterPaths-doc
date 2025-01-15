@@ -1,4 +1,5 @@
 /**
+ * @class AllocatedIntake
  * @brief The `AllocatedIntake` is a subclass of the main `WaterSource` class that represents a raw water intake from upstream catchments with allocations associated to utilities.
  * 
  * Created by dgorelic on 3/2/2020.

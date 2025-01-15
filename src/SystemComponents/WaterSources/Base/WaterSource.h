@@ -1,7 +1,9 @@
-//
-// Created by bernardo on 1/22/17.
-//
-
+/**
+ * @class WaterSource
+ * @brief This class defines the main `WaterSource` object that provides basic representation of a general water source for a utility.
+ * 
+ * Created by bernardo on 1/22/17.
+ */
 #ifndef TRIANGLEMODEL_WATERSOURCE_H
 #define TRIANGLEMODEL_WATERSOURCE_H
 

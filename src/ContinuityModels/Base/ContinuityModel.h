@@ -1,6 +1,10 @@
-//
-// Created by bernardo on 1/12/17.
-//
+/**
+ * @brief @class ContinuityModel
+ * 
+ * @brief The main `ContinuityModel` class for the Triangle Model that enforces continuity in the water distribution system.
+ * 
+ * Created by bernardo on 1/12/17.
+ */
 
 #ifndef TRIANGLEMODEL_CONTINUITYMODEL_H
 #define TRIANGLEMODEL_CONTINUITYMODEL_H

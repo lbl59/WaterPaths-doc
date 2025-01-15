@@ -1,12 +1,13 @@
-//
-// Created by dgorelic on 11/4/2019.
-//
-
 /**
- * Variable debt service bond class. This (municipal) bond has floating coupon payments that are
- * adjusted at specified intervals. 
- * This bond is associated with a specific water source.
+ * @class VariableDebtServiceBond
+ * 
+ * @brief The `VariableDebtServiceBond` class is a subclass of the main `Bond` class. 
+ * This class represents a bond (typically a municipal bond) where the floating coupon payments are 
+ * adjusted at specified intervals. This bond is associated with a specific water source.
+ * 
+ * Created by dgorelic on 11/4/2019.
  */
+
 #ifndef TRIANGLEMODEL_VARIABLEDEBTSERVICEBOND_H
 #define TRIANGLEMODEL_VARIABLEDEBTSERVICEBOND_H
 

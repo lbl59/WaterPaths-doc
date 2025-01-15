@@ -1,6 +1,7 @@
 /**
- * @brief This is a subclass of JointWTP that allows for variable allocations of treatment capacity to utilities. 
- * The JointWTP subclass is in turn a subclass of WaterSource.
+ * @class VariableJointWTP
+ * @brief The `VariableJointWTP` class is a subclass of JointWTP, which in turn is a subclass of the main `WaterSource` class.
+ * It allows for variable allocations of treatment capacity to utilities. 
  * 
  * Created by dgorelic on 10/29/2019.
  * 

@@ -1,7 +1,9 @@
-//
-// Created by dgorelic on 10/28/2019.
-//
-
+/**
+ * @class JointWTP
+ * @brief The `JointWTP` is a subclass of the main `WaterSource` class. This subclass represents the joint Jordan Lake Water Treatment Plant.
+ * 
+ * Created by dgorelic on 10/28/2019.
+ */
 #ifndef TRIANGLEMODEL_JOINTWTP_H
 #define TRIANGLEMODEL_JOINTWTP_H
 

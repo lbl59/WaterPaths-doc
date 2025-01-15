@@ -1,6 +1,13 @@
-//
-// Created by bernardo on 4/17/18.
-//
+/**
+ * @class FloatingInterestBalloonPaymentBond
+ * 
+ * @brief The `FloatingInterestBalloonPaymentBond` class is a subclass of the main `Bond` class. 
+ * This class that represents a floating interest balloon payment bond that pays interest at a variable, 
+ * market-benchmarked rate for a number of years and then pays the face value of the bond plus
+ * the last interest payment.
+ * 
+ * Created by bernardo on 4/17/18.
+ */
 
 #ifndef TRIANGLEMODEL_FLOATINGINTERESTBOND_H
 #define TRIANGLEMODEL_FLOATINGINTERESTBOND_H

@@ -1,7 +1,9 @@
-//
-// Created by dgorelic on 7/8/2019.
-//
-
+/**
+ * @class IntakeExpansion
+ * @brief The `IntakeExpansion` is a subclass of the main `WaterSource` class that represents a pipeline scheduled for expansion.
+ * 
+ * Created by dgorelic on 7/8/2019.
+ */
 #ifndef TRIANGLEMODEL_INTAKEEXPANSION_H
 #define TRIANGLEMODEL_INTAKEEXPANSION_H
 

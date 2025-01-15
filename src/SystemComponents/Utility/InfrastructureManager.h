@@ -1,7 +1,10 @@
-//
-// Created by Bernardo on 4/4/2018.
-//
 
+/**
+ * @class InfrastructureManager
+ * @brief The `InfrastructureManager` class manages the construction, sequencing, and financial aspects of infrastructure projects.
+ * 
+ * Created by Bernardo on 4/4/2018.
+ */
 #ifndef TRIANGLEMODEL_INFRASTRUCTUREMANAGER_H
 #define TRIANGLEMODEL_INFRASTRUCTUREMANAGER_H
 

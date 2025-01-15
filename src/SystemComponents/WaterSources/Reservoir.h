@@ -1,7 +1,9 @@
-//
-// Created by bernardo on 1/12/17.
-//
-
+/**
+ * @class Reservoir
+ * @brief The `Reservoir` class is a subclass of the main `WaterSource` class. It represents a general reservoir object with a fixed or variable storage area curve.
+ * 
+ * Created by bernardoct on 1/12/17.
+ */
 #ifndef TRIANGLEMODEL_RESERVOIR_H
 #define TRIANGLEMODEL_RESERVOIR_H
 

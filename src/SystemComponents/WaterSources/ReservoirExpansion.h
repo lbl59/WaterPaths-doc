@@ -1,7 +1,9 @@
-//
-// Created by bernardoct on 5/3/17.
-//
-
+/**
+ * @class ReservoirExpansion
+ * @brief The `ReservoirExpansion` class is a subclass of the main `WaterSource` class. It represents a general reservoir object scheduled for expansion.
+ * 
+ * Created by bernardoct on 5/3/17.
+ */
 #ifndef TRIANGLEMODEL_RESERVOIREXPANSION_H
 #define TRIANGLEMODEL_RESERVOIREXPANSION_H
 

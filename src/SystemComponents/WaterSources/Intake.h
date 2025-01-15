@@ -1,7 +1,9 @@
-//
-// Created by bernardo on 2/10/17.
-//
-
+/**
+ * @class Intake
+ * @brief The `Intake` is a subclass of the main `WaterSource` class that represents a pipeline that draws water from a surface water source.
+ * 
+ * Created by bernardo on 2/10/17.
+ */
 #ifndef TRIANGLEMODEL_INTAKE_H
 #define TRIANGLEMODEL_INTAKE_H
 

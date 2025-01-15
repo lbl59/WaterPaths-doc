@@ -1,10 +1,12 @@
-//
-// Created by bernardoct on 7/18/17.
-//
+/**
+ * @class SequentialJointTreatmentExpansion
+ * @brief The `SequentialJointTreatmentExpansion` class is a subclass of the main `WaterSource` class. It represents the Joint WTP with a scheduled expansion sequence.
+ * 
+ * Created by bernardoct on 7/18/17.
+ */
 
 #ifndef TRIANGLEMODEL_JOINTWATERTREATMENTPLANT_H
 #define TRIANGLEMODEL_JOINTWATERTREATMENTPLANT_H
-
 
 #include "Base/WaterSource.h"
 

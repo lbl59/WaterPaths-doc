@@ -1,7 +1,9 @@
-//
-// Created by bernardoct on 5/3/17.
-//
-
+/**
+ * @class WaterReuse
+ * @brief The `WaterReuse` class is a subclass of the main `WaterSource` class. It represents the a water reuse project as a potential new water source.
+ * 
+ * Created by bernardoct on 5/3/17.
+ */
 #ifndef TRIANGLEMODEL_WATERREUSE_H
 #define TRIANGLEMODEL_WATERREUSE_H
 

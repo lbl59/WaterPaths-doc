@@ -1,5 +1,7 @@
 /**
- * The ContinuityModelRealization class extends the ContinuityModel class to include the implementation of drought
+ * @class ContinuityModelRealization
+ * 
+ * @brief The `ContinuityModelRealization` subclass extends the `ContinuityModel` class to include the implementation of drought
  * mitigation policies and the setting of short-term and long-term risks of failure.
  * 
  * Created by bernardo on 1/26/17.
@@ -7,7 +9,6 @@
 
 #ifndef TRIANGLEMODEL_CONTINUITYMODELREALIZATION_H
 #define TRIANGLEMODEL_CONTINUITYMODELREALIZATION_H
-
 
 #include "Base/ContinuityModel.h"
 #include "../DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h"

@@ -1,7 +1,9 @@
-//
-// Created by bernardo on 1/13/17.
-//
-
+/**
+ * @class Utility
+ * @brief The `Utility` class manages the water supply, demand, financial, and ROF aspects of a utility. It also handles all its connected water sources.
+ * 
+ * Created by Bernardo on 1/13/17.
+ */
 #ifndef TRIANGLEMODEL_UTILITY_H
 #define TRIANGLEMODEL_UTILITY_H
 #include <map>

@@ -1,13 +1,12 @@
-//
-// Created by bernardoct on 7/25/17.
-//
-
 /**
- * @brief This subclass of WaterSource represents a relocation (reallocation) of water between utilities. 
+ * @class Relocation
+ * @brief This subclass of `WaterSource` represents a relocation (reallocation) of water between utilities. 
  * This subclass does not have any water directly routed through it. Continuity equations therefore do not apply to it. 
  * It can only change allocated fractions in the reservoir/water source it is assigned to.
  * 
  * FIXME: Change name of class to reallocation.
+ * 
+ * Created by bernardoct on 7/25/17.
  */
 #ifndef TRIANGLEMODEL_RESERVOIRRELLOCATION_H
 #define TRIANGLEMODEL_RESERVOIRRELLOCATION_H

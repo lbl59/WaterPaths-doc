@@ -1,7 +1,10 @@
-//
-// Created by Bernardo on 11/23/2017.
-//
-
+/**
+ * @class Triangle
+ * @brief The `Triangle` class is a subclass of the main `Problem` class. This class represents the six-utility North Carolina Research Triangle water
+ * management and planning problem.
+ * 
+ * Created by Bernardo on 11/23/2017.
+ */
 #ifndef TRIANGLEMODEL_TRIANGLE_H
 #define TRIANGLEMODEL_TRIANGLE_H
 

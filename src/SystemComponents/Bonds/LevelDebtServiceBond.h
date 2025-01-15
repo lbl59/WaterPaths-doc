@@ -1,6 +1,11 @@
-//
-// Created by bernardo on 4/12/18.
-//
+/**
+ * @class LevelDebtServiceBond
+ * 
+ * @brief The `LevelDebtServiceBond` class is a subclass of the main `Bond` class. 
+ * This class represents a bond where the total amount of interest paid each year remains relatively constant.
+ * 
+ * Created by bernardo on 4/12/18.
+ */
 
 #ifndef TRIANGLEMODEL_LEVELDEBTSERVICEBOND_H
 #define TRIANGLEMODEL_LEVELDEBTSERVICEBOND_H

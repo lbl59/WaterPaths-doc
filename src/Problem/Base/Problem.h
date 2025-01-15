@@ -2,6 +2,13 @@
 // Created by Bernardo on 11/24/2017.
 //
 
+/**
+ * @class Problem
+ * @brief The `Problem` class represents the basic structure of a water management and planning problem.
+ * 
+ * Created by Bernardo on 11/24/2017.
+ */
+
 #ifndef TRIANGLEMODEL_PROBLEM_H
 #define TRIANGLEMODEL_PROBLEM_H
 
