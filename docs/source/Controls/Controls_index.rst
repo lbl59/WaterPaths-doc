@@ -12,4 +12,4 @@ Contents
 
    Base implementation <Base/Controls_base>
    Custom Implementation <Custom/Controls_custom>
-   Submodules API <Controls_submodules>
+   Submodules <Controls_submodules>

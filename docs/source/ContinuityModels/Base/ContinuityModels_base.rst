@@ -1,17 +1,16 @@
-Base Components
-===============
-
-The base components define foundational functionality of the `ContinuityModel` class for maintaining continuity.
+ContinuityModel Module
+======================
 
 API Reference
 -------------
 
-ContinuityModel Class
-^^^^^^^^^^^^^
+The base components define foundational functionality of the `ContinuityModel` class for maintaining continuity.
+
+Base Components
+^^^^^^^^^^^^^^^^
 
 ContinuityModel.h
 ~~~~~~~~~~~~~~~~~
 
 .. doxygenfile:: ContinuityModels/Base/ContinuityModel.h
    :project: WaterPaths
-   
