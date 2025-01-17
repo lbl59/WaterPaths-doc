@@ -1,4 +1,4 @@
-Problem Module
+SystemComponents Module
 ==============
 
 The `SystemComponents` module contains classes and functions related defining the components of the water system. 

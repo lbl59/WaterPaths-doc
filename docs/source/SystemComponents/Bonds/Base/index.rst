@@ -1,9 +1,9 @@
-Problem Module
+Bonds Module
 ==============
 
-The `SystemComponents` module contains classes and functions related defining the components of the water system. 
+The `Bonds` module contains classes and functions related defining the financing mechanisms of the water system. 
 The module is divided into submodules, each of which contains classes and functions related to a specific component 
-of the water system. This module also
+of the water system.
 
 Contents
 --------

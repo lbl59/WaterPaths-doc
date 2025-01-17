@@ -1,4 +1,4 @@
-Problem Module
+ContinuityModels Module
 ==============
 
 The `ContinuityModels` module contains classes and functions related to maintaining and enforcing continuity 

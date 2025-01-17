@@ -1,12 +1,12 @@
 Base Components
 ===============
 
-The base components define foundational functionality for maintaining continuity.
+The base components define foundational functionality of the `ContinuityModel` class for maintaining continuity.
 
 API Reference
 -------------
 
-Problem Class
+ContinuityModel Class
 ^^^^^^^^^^^^^
 
 ContinuityModel.h
