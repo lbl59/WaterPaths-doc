@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Problem Module &mdash; WaterPaths 1 documentation</title>
+  <title>WaterSources Module &mdash; WaterPaths 1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
 
@@ -21,7 +20,8 @@
         <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" /> 
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="prev" title="SystemComponents Module" href="../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,8 +44,30 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../modules.html">Modules</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../ContinuityModels/index.html">ContinuityModels Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../ContinuityModels/Base/index.html">Base Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Problem/index.html">Problem Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Problem/Base/index.html">Base Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Simulation/index.html">Simulation Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">SystemComponents Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Bonds/index.html">Bonds Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Bonds/Base/index.html">Bonds Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Utility/index.html">Utility Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">SystemComponents Module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">WaterSources Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#api-reference">API Reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#base-components">Base Components</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#watersource-h">WaterSource.h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -62,7 +84,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Problem Module</li>
+          <li class="breadcrumb-item"><a href="../../index.html">SystemComponents Module</a></li>
+          <li class="breadcrumb-item"><a href="../index.html">SystemComponents Module</a></li>
+      <li class="breadcrumb-item active">WaterSources Module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../../_sources/SystemComponents/WaterSources/Base/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -72,49 +96,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="problem-module">
-<h1>Problem Module<a class="headerlink" href="#problem-module" title="Permalink to this heading"></a></h1>
-<p>The <cite>SystemComponents</cite> module contains classes and functions related defining the components of the water system.
+  <div class="section" id="watersources-module">
+<h1>WaterSources Module<a class="headerlink" href="#watersources-module" title="Permalink to this heading"></a></h1>
+<p>The <cite>WaterSources</cite> module contains classes and functions related defining all water sources of the water system.
 The module is divided into submodules, each of which contains classes and functions related to a specific component
-of the water system. This module also</p>
-<section id="contents">
+of the water system.</p>
+<div class="section" id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 </div>
-</section>
-<section id="api-reference">
+</div>
+<div class="section" id="api-reference">
 <h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
 <p>Below is the API reference for the <cite>WaterSources</cite> submodule. Documentation is automatically extracted from the header files.</p>
-<section id="base-components">
+<div class="section" id="base-components">
 <h3>Base Components<a class="headerlink" href="#base-components" title="Permalink to this heading"></a></h3>
-<section id="watersource-h">
+<div class="section" id="watersource-h">
 <h4>WaterSource.h<a class="headerlink" href="#watersource-h" title="Permalink to this heading"></a></h4>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv411WaterSource">
 <span id="_CPPv311WaterSource"></span><span id="_CPPv211WaterSource"></span><span id="WaterSource"></span><span class="target" id="classWaterSource"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WaterSource</span></span></span><a class="headerlink" href="#_CPPv411WaterSource" title="Permalink to this definition"></a><br /></dt>
 <dd><div class="docutils container">
-<em>#include &lt;<a class="reference internal" href="../../../modules.html#WaterSource_8h"><span class="std std-ref">WaterSource.h</span></a>&gt;</em></div>
-<p>Subclassed by <a class="reference internal" href="../../../modules.html#classAllocatedIntake"><span class="std std-ref">AllocatedIntake</span></a>, <a class="reference internal" href="../../../modules.html#classAllocatedIntakeExpansion"><span class="std std-ref">AllocatedIntakeExpansion</span></a>, <a class="reference internal" href="../../../modules.html#classIntake"><span class="std std-ref">Intake</span></a>, <a class="reference internal" href="../../../modules.html#classIntakeExpansion"><span class="std std-ref">IntakeExpansion</span></a>, <a class="reference internal" href="../../../modules.html#classJointWTP"><span class="std std-ref">JointWTP</span></a>, <a class="reference internal" href="../../../modules.html#classRelocation"><span class="std std-ref">Relocation</span></a>, <a class="reference internal" href="../../../modules.html#classReservoir"><span class="std std-ref">Reservoir</span></a>, <a class="reference internal" href="../../../modules.html#classReservoirExpansion"><span class="std std-ref">ReservoirExpansion</span></a>, <a class="reference internal" href="../../../modules.html#classSequentialJointTreatmentExpansion"><span class="std std-ref">SequentialJointTreatmentExpansion</span></a>, <a class="reference internal" href="../../../modules.html#classWaterReuse"><span class="std std-ref">WaterReuse</span></a></p>
+<em>#include &lt;WaterSource.h&gt;</em></div>
+<p>Subclassed by <a class="reference internal" href="../index.html#classAllocatedIntake"><span class="std std-ref">AllocatedIntake</span></a>, <a class="reference internal" href="../index.html#classAllocatedIntakeExpansion"><span class="std std-ref">AllocatedIntakeExpansion</span></a>, <a class="reference internal" href="../index.html#classIntake"><span class="std std-ref">Intake</span></a>, <a class="reference internal" href="../index.html#classIntakeExpansion"><span class="std std-ref">IntakeExpansion</span></a>, <a class="reference internal" href="../index.html#classJointWTP"><span class="std std-ref">JointWTP</span></a>, <a class="reference internal" href="../index.html#classRelocation"><span class="std std-ref">Relocation</span></a>, <a class="reference internal" href="../index.html#classReservoir"><span class="std std-ref">Reservoir</span></a>, <a class="reference internal" href="../index.html#classReservoirExpansion"><span class="std std-ref">ReservoirExpansion</span></a>, <a class="reference internal" href="../index.html#classSequentialJointTreatmentExpansion"><span class="std std-ref">SequentialJointTreatmentExpansion</span></a>, <a class="reference internal" href="../index.html#classWaterReuse"><span class="std std-ref">WaterReuse</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKd6vectorIiEdKi">
 <span id="_CPPv3N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKd6vectorIiEdKi"></span><span id="_CPPv2N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKd6vectorIiEdKi"></span><span id="WaterSource::WaterSource__cCP.iC.vector:CatchmentP:CR.doubleC.vector:i:.double.iC"></span><span class="target" id="classWaterSource_1a27b9d29d6cbb36d128f740f7ca00f500"></span><span class="sig-name descname"><span class="n"><span class="pre">WaterSource</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../index.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catchments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">capacity</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">connected_sources</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">treatment_capacity</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKd6vectorIiEdKi" title="Permalink to this definition"></a><br /></dt>
-<dd><p>This constructor initializes a basic <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with the given parameters. Used when the water source is built and operational. </p>
+<dd><p>This constructor initializes a basic <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with the given parameters. Used when the water source is built and operational. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> – The name of the water source. </p></li>
 <li><p><strong>id</strong> – The unique identifier for the water source. </p></li>
-<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects supplying this water source. </p></li>
+<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../index.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects supplying this water source. </p></li>
 <li><p><strong>capacity</strong> – The total storage capacity of the water source. </p></li>
 <li><p><strong>connected_sources</strong> – A vector of IDs representing sources connected to this water source. </p></li>
 <li><p><strong>treatment_capacity</strong> – The total treatment capacity of the water source. </p></li>
 <li><p><strong>source_type</strong> – The type of water source (e.g., reservoir, river, etc.).</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object. </p>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object. </p>
 </dd>
 </dl>
 </dd></dl>
@@ -122,13 +146,13 @@ of the water system. This module also</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiP6vectorIdEP6vectorIdEP6vectorIiE">
 <span id="_CPPv3N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiP6vectorIdEP6vectorIdEP6vectorIiE"></span><span id="_CPPv2N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiP6vectorIdEP6vectorIdEP6vectorIiE"></span><span id="WaterSource::WaterSource__cCP.iC.vector:CatchmentP:CR.doubleC.double.vector:i:.iC.vector:double:P.vector:double:P.vector:i:P"></span><span class="target" id="classWaterSource_1a7723d343a0b8edff36018ca7acf09f62"></span><span class="sig-name descname"><span class="n"><span class="pre">WaterSource</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../index.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catchments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">capacity</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">treatment_capacity</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">connected_sources</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_type</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">allocated_treatment_fractions</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">allocated_fractions</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">utilities_with_allocations</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiP6vectorIdEP6vectorIdEP6vectorIiE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with pre-set allocation fractions and connected source details. Used when a water source is built and operational. </p>
+<dd><p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with pre-set allocation fractions and connected source details. Used when a water source is built and operational. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> – The name of the water source. </p></li>
 <li><p><strong>id</strong> – The unique identifier for the water source. </p></li>
-<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects associated with this water source. </p></li>
+<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../index.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects associated with this water source. </p></li>
 <li><p><strong>capacity</strong> – The total storage capacity of the water source (in cubic meters). </p></li>
 <li><p><strong>treatment_capacity</strong> – The total treatment capacity of the water source (in cubic meters per week). </p></li>
 <li><p><strong>connected_sources</strong> – A vector of IDs representing sources connected to this water source. </p></li>
@@ -138,11 +162,11 @@ of the water system. This module also</p>
 <li><p><strong>utilities_with_allocations</strong> – A pointer to a vector of IDs for utilities allocated to this water source.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dt class="field-even">Throws</dt>
 <dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">runtime_error</span></span></span> – if any issues arise in setting allocations (handled by <code class="docutils literal notranslate"><span class="pre">setAllocations</span></code>). </p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -150,27 +174,27 @@ of the water system. This module also</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiK6vectorIdEdR4Bond">
 <span id="_CPPv3N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiK6vectorIdEdR4Bond"></span><span id="_CPPv2N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiK6vectorIdEdR4Bond"></span><span id="WaterSource::WaterSource__cCP.iC.vector:CatchmentP:CR.doubleC.double.vector:i:.iC.vector:double:C.double.BondR"></span><span class="target" id="classWaterSource_1a48641ff06b69505ab298f4f23e759a22"></span><span class="sig-name descname"><span class="n"><span class="pre">WaterSource</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../index.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catchments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">capacity</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">treatment_capacity</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">connected_sources</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_type</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">construction_time_range</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">permitting_period</span></span>, <a class="reference internal" href="../../Bonds/Base/index.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">bond</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiK6vectorIdEdR4Bond" title="Permalink to this definition"></a><br /></dt>
-<dd><p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with the provided parameters, including construction and permitting details. Used when the water source does not exist in the beginning of the simulation for water sources financed by only one bond. </p>
+<dd><p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with the provided parameters, including construction and permitting details. Used when the water source does not exist in the beginning of the simulation for water sources financed by only one bond. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> – The name of the water source. </p></li>
 <li><p><strong>id</strong> – The unique identifier for the water source. </p></li>
-<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects associated with this water source. </p></li>
+<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../index.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects associated with this water source. </p></li>
 <li><p><strong>capacity</strong> – The total storage capacity of the water source. </p></li>
 <li><p><strong>treatment_capacity</strong> – The total treatment capacity of the water source. </p></li>
 <li><p><strong>connected_sources</strong> – A vector of IDs representing sources connected to this water source. </p></li>
 <li><p><strong>source_type</strong> – The type of water source (e.g., reservoir, river, etc.). </p></li>
 <li><p><strong>construction_time_range</strong> – A vector containing the minimum and maximum construction time range. </p></li>
 <li><p><strong>permitting_period</strong> – The permitting time required for the water source. </p></li>
-<li><p><strong>bond</strong> – A reference to a <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> object associated with financing this water source.</p></li>
+<li><p><strong>bond</strong> – A reference to a <code class="docutils literal notranslate"><a class="reference internal" href="../../Bonds/Base/index.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> object associated with financing this water source.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dt class="field-even">Throws</dt>
 <dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if permitting or construction time is NaN or negative (checked by <code class="docutils literal notranslate"><span class="pre">checkForInputErrorsConstruction</span></code>). </p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -178,27 +202,27 @@ of the water system. This module also</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiK6vectorIdEd6vectorIP4BondE">
 <span id="_CPPv3N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiK6vectorIdEd6vectorIP4BondE"></span><span id="_CPPv2N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiK6vectorIdEd6vectorIP4BondE"></span><span id="WaterSource::WaterSource__cCP.iC.vector:CatchmentP:CR.doubleC.double.vector:i:.iC.vector:double:C.double.vector:BondP:"></span><span class="target" id="classWaterSource_1a284e207f074da6f485d41f65ac025cf1"></span><span class="sig-name descname"><span class="n"><span class="pre">WaterSource</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../index.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catchments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">capacity</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">treatment_capacity</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">connected_sources</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_type</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">construction_time_range</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">permitting_period</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../Bonds/Base/index.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bonds</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiK6vectorIdEd6vectorIP4BondE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with comprehensive parameters, including multiple bonds, construction, and permitting details. Used when the water source does not exist in the beginning of the simulation for water sources financed by a series of bonds (shared water source). </p>
+<dd><p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with comprehensive parameters, including multiple bonds, construction, and permitting details. Used when the water source does not exist in the beginning of the simulation for water sources financed by a series of bonds (shared water source). </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> – The name of the water source. </p></li>
 <li><p><strong>id</strong> – The unique identifier for the water source. </p></li>
-<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects associated with this water source. </p></li>
+<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../index.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects associated with this water source. </p></li>
 <li><p><strong>capacity</strong> – The total storage capacity of the water source. </p></li>
 <li><p><strong>treatment_capacity</strong> – The total treatment capacity of the water source. </p></li>
 <li><p><strong>connected_sources</strong> – A vector of IDs representing sources connected to this water source. </p></li>
 <li><p><strong>source_type</strong> – The type of water source (e.g., reservoir, river, etc.). </p></li>
 <li><p><strong>construction_time_range</strong> – A vector containing the minimum and maximum construction time range. </p></li>
 <li><p><strong>permitting_period</strong> – The permitting time required for the water source. </p></li>
-<li><p><strong>bonds</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> objects associated with financing this water source.</p></li>
+<li><p><strong>bonds</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../Bonds/Base/index.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> objects associated with financing this water source.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dt class="field-even">Throws</dt>
 <dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if permitting or construction time is NaN or negative (checked by <code class="docutils literal notranslate"><span class="pre">checkForInputErrorsConstruction</span></code>). </p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -206,13 +230,13 @@ of the water system. This module also</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiP6vectorIdEP6vectorIdEP6vectorIiEK6vectorIdEdR4Bond">
 <span id="_CPPv3N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiP6vectorIdEP6vectorIdEP6vectorIiEK6vectorIdEdR4Bond"></span><span id="_CPPv2N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiP6vectorIdEP6vectorIdEP6vectorIiEK6vectorIdEdR4Bond"></span><span id="WaterSource::WaterSource__cCP.iC.vector:CatchmentP:CR.doubleC.double.vector:i:.iC.vector:double:P.vector:double:P.vector:i:P.vector:double:C.double.BondR"></span><span class="target" id="classWaterSource_1ae8cf84e138983737e044bc1217858021"></span><span class="sig-name descname"><span class="n"><span class="pre">WaterSource</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../index.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catchments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">capacity</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">treatment_capacity</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">built_in_sequence</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_type</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">allocated_treatment_fractions</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">allocated_fractions</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">utilities_with_allocations</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">construction_time_range</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">permitting_period</span></span>, <a class="reference internal" href="../../Bonds/Base/index.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">bond</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEKiP6vectorIdEP6vectorIdEP6vectorIiEK6vectorIdEdR4Bond" title="Permalink to this definition"></a><br /></dt>
-<dd><p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with detailed allocation settings, construction time, and bond financing. Used when a non-shared water source with multiple stages does not exist in the beginning of the simulation but has a built-in sequence of stages (i.e. low/high). </p>
+<dd><p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with detailed allocation settings, construction time, and bond financing. Used when a non-shared water source with multiple stages does not exist in the beginning of the simulation but has a built-in sequence of stages (i.e. low/high). </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> – The name of the water source. </p></li>
 <li><p><strong>id</strong> – The unique identifier for the water source. </p></li>
-<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects associated with this water source. </p></li>
+<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../index.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects associated with this water source. </p></li>
 <li><p><strong>capacity</strong> – The total storage capacity of the water source (in cubic meters). </p></li>
 <li><p><strong>treatment_capacity</strong> – The total treatment capacity of the water source (in cubic meters per week). </p></li>
 <li><p><strong>built_in_sequence</strong> – A vector of IDs representing the construction sequence for this water source. </p></li>
@@ -222,14 +246,14 @@ of the water system. This module also</p>
 <li><p><strong>utilities_with_allocations</strong> – A pointer to a vector of IDs for utilities allocated to this water source. </p></li>
 <li><p><strong>construction_time_range</strong> – A vector containing the minimum and maximum construction time range (in years). </p></li>
 <li><p><strong>permitting_period</strong> – The permitting time required for the water source (in years). </p></li>
-<li><p><strong>bond</strong> – A reference to a <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> object representing financing details for this water source.</p></li>
+<li><p><strong>bond</strong> – A reference to a <code class="docutils literal notranslate"><a class="reference internal" href="../../Bonds/Base/index.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> object representing financing details for this water source.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dt class="field-even">Throws</dt>
 <dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if permitting or construction time is NaN or negative (checked by <code class="docutils literal notranslate"><span class="pre">checkForInputErrorsConstruction</span></code>). </p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -237,13 +261,13 @@ of the water system. This module also</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEP6vectorIiEP6vectorIdEKiK6vectorIdEd6vectorIP4BondE">
 <span id="_CPPv3N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEP6vectorIiEP6vectorIdEKiK6vectorIdEd6vectorIP4BondE"></span><span id="_CPPv2N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEP6vectorIiEP6vectorIdEKiK6vectorIdEd6vectorIP4BondE"></span><span id="WaterSource::WaterSource__cCP.iC.vector:CatchmentP:CR.doubleC.double.vector:i:.vector:i:P.vector:double:P.iC.vector:double:C.double.vector:BondP:"></span><span class="target" id="classWaterSource_1af9377254ee532ee30eaed78953336b5f"></span><span class="sig-name descname"><span class="n"><span class="pre">WaterSource</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../index.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catchments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">capacity</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">treatment_capacity</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">connected_sources</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">utilities_with_allocations</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">utility_treatment_allocations</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_type</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">construction_time_range</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">permitting_period</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../Bonds/Base/index.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bonds</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEP6vectorIiEP6vectorIdEKiK6vectorIdEd6vectorIP4BondE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with parameters for utility allocations, water quality, and bond financing. Used when a shared water source does not exist in the beginning of the simulation and is of class <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classJointWTP"><span class="std std-ref"><span class="pre">JointWTP</span></span></a></code> (uses only <code class="docutils literal notranslate"><span class="pre">utility_treatment_allocations</span></code>). </p>
+<dd><p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with parameters for utility allocations, water quality, and bond financing. Used when a shared water source does not exist in the beginning of the simulation and is of class <code class="docutils literal notranslate"><a class="reference internal" href="../index.html#classJointWTP"><span class="std std-ref"><span class="pre">JointWTP</span></span></a></code> (uses only <code class="docutils literal notranslate"><span class="pre">utility_treatment_allocations</span></code>). </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> – The name of the water source. </p></li>
 <li><p><strong>id</strong> – The unique identifier for the water source. </p></li>
-<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects associated with this water source. </p></li>
+<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../index.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects associated with this water source. </p></li>
 <li><p><strong>capacity</strong> – The total storage capacity of the water source. </p></li>
 <li><p><strong>treatment_capacity</strong> – The total treatment capacity of the water source. </p></li>
 <li><p><strong>connected_sources</strong> – A vector of IDs representing sources connected to this water source. </p></li>
@@ -252,14 +276,14 @@ of the water system. This module also</p>
 <li><p><strong>source_type</strong> – The type of water source (e.g., reservoir, river, etc.). </p></li>
 <li><p><strong>construction_time_range</strong> – A vector containing the minimum and maximum construction time range. </p></li>
 <li><p><strong>permitting_period</strong> – The permitting time required for the water source. </p></li>
-<li><p><strong>bonds</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> objects associated with financing this water source.</p></li>
+<li><p><strong>bonds</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../Bonds/Base/index.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> objects associated with financing this water source.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dt class="field-even">Throws</dt>
 <dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if permitting or construction time is NaN or negative (checked by <code class="docutils literal notranslate"><span class="pre">checkForInputErrorsConstruction</span></code>). </p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -267,13 +291,13 @@ of the water system. This module also</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEP6vectorIiEP6vectorIdEP6vectorIdEKiK6vectorIdEd6vectorIP4BondE">
 <span id="_CPPv3N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEP6vectorIiEP6vectorIdEP6vectorIdEKiK6vectorIdEd6vectorIP4BondE"></span><span id="_CPPv2N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEP6vectorIiEP6vectorIdEP6vectorIdEKiK6vectorIdEd6vectorIP4BondE"></span><span id="WaterSource::WaterSource__cCP.iC.vector:CatchmentP:CR.doubleC.double.vector:i:.vector:i:P.vector:double:P.vector:double:P.iC.vector:double:C.double.vector:BondP:"></span><span class="target" id="classWaterSource_1a5d02f9dc15b18572bbfa945aeec4dbb0"></span><span class="sig-name descname"><span class="n"><span class="pre">WaterSource</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../index.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catchments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">capacity</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">treatment_capacity</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">connected_sources</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">utilities_with_allocations</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">utility_supply_allocations</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">utility_treatment_allocations</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_type</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">construction_time_range</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">permitting_period</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../Bonds/Base/index.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bonds</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource11WaterSourceEPKcKiRK6vectorIP9CatchmentEKdd6vectorIiEP6vectorIiEP6vectorIdEP6vectorIdEKiK6vectorIdEd6vectorIP4BondE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with comprehensive parameters, including utility supply and treatment allocations, water quality management, and bond financing. Used when a shared water source does not exist in the beginning of the simulation and is of class <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classAllocatedIntake"><span class="std std-ref"><span class="pre">AllocatedIntake</span></span></a></code> or <code class="docutils literal notranslate"><span class="pre">Expansion</span></code> (uses <code class="docutils literal notranslate"><span class="pre">utility_supply_allocations</span></code> and <code class="docutils literal notranslate"><span class="pre">utility_treatment_allocations</span></code>). </p>
+<dd><p>This constructor initializes a <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with comprehensive parameters, including utility supply and treatment allocations, water quality management, and bond financing. Used when a shared water source does not exist in the beginning of the simulation and is of class <code class="docutils literal notranslate"><a class="reference internal" href="../index.html#classAllocatedIntake"><span class="std std-ref"><span class="pre">AllocatedIntake</span></span></a></code> or <code class="docutils literal notranslate"><span class="pre">Expansion</span></code> (uses <code class="docutils literal notranslate"><span class="pre">utility_supply_allocations</span></code> and <code class="docutils literal notranslate"><span class="pre">utility_treatment_allocations</span></code>). </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>name</strong> – The name of the water source. </p></li>
 <li><p><strong>id</strong> – The unique identifier for the water source. </p></li>
-<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects associated with this water source. </p></li>
+<li><p><strong>catchments</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../index.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> objects associated with this water source. </p></li>
 <li><p><strong>capacity</strong> – The total storage capacity of the water source. </p></li>
 <li><p><strong>treatment_capacity</strong> – The total treatment capacity of the water source. </p></li>
 <li><p><strong>connected_sources</strong> – A vector of IDs representing sources connected to this water source. </p></li>
@@ -283,14 +307,14 @@ of the water system. This module also</p>
 <li><p><strong>source_type</strong> – The type of water source (e.g., reservoir, river, etc.). </p></li>
 <li><p><strong>construction_time_range</strong> – A vector containing the minimum and maximum construction time range. </p></li>
 <li><p><strong>permitting_period</strong> – The permitting time required for the water source . </p></li>
-<li><p><strong>bonds</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> objects associated with financing this water source.</p></li>
+<li><p><strong>bonds</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../Bonds/Base/index.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> objects associated with financing this water source.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dt class="field-even">Throws</dt>
 <dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if permitting or construction time is NaN or negative (checked by <code class="docutils literal notranslate"><span class="pre">checkForInputErrorsConstruction</span></code>). </p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -299,13 +323,13 @@ of the water system. This module also</p>
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSource11WaterSourceERK11WaterSource">
 <span id="_CPPv3N11WaterSource11WaterSourceERK11WaterSource"></span><span id="_CPPv2N11WaterSource11WaterSourceERK11WaterSource"></span><span id="WaterSource::WaterSource__WaterSourceCR"></span><span class="target" id="classWaterSource_1aaa3aba0a9709cc1432f85f443b033a65"></span><span class="sig-name descname"><span class="n"><span class="pre">WaterSource</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N11WaterSource11WaterSourceERK11WaterSource" title="WaterSource::WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_source</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource11WaterSourceERK11WaterSource" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Copy constructor. </p>
-<p>This constructor creates a copy of an existing <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
+<p>This constructor creates a copy of an existing <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>water_source</strong> – The <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to be copied.</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>water_source</strong> – The <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to be copied.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object that is a copy of the provided <code class="docutils literal notranslate"><span class="pre">water_source</span></code>. </p>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A new <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object that is a copy of the provided <code class="docutils literal notranslate"><span class="pre">water_source</span></code>. </p>
 </dd>
 </dl>
 </dd></dl>
@@ -313,13 +337,13 @@ of the water system. This module also</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSourceD0Ev">
 <span id="_CPPv3N11WaterSourceD0Ev"></span><span id="_CPPv2N11WaterSourceD0Ev"></span><span id="WaterSource::~WaterSource"></span><span class="target" id="classWaterSource_1aa3b9261264152782c3115d2f563f1caf"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~WaterSource</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSourceD0Ev" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Destructor for the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> class. </p>
-<p>This destructor cleans up dynamically allocated memory for the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> objects associated with the water source.</p>
+<dd><p>Destructor for the <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> class. </p>
+<p>This destructor cleans up dynamically allocated memory for the <code class="docutils literal notranslate"><a class="reference internal" href="../../Bonds/Base/index.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> objects associated with the water source.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>None</strong> – </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -328,14 +352,14 @@ of the water system. This module also</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSourceaSERK11WaterSource">
 <span id="_CPPv3N11WaterSourceaSERK11WaterSource"></span><span id="_CPPv2N11WaterSourceaSERK11WaterSource"></span><span id="WaterSource::assign-operator__WaterSourceCR"></span><span class="target" id="classWaterSource_1af10a33e286cf44b362984ff8d8053c91"></span><a class="reference internal" href="#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_source</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSourceaSERK11WaterSource" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Assignment operator for the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> class. </p>
-<p>This operator assigns the values of one <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to another, making a deep copy of the relevant data.</p>
+<dd><p>Assignment operator for the <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> class. </p>
+<p>This operator assigns the values of one <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to another, making a deep copy of the relevant data.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>water_source</strong> – The <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object whose data is being assigned.</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>water_source</strong> – The <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object whose data is being assigned.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A reference to the current <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object after the assignment. </p>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A reference to the current <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object after the assignment. </p>
 </dd>
 </dl>
 </dd></dl>
@@ -343,14 +367,14 @@ of the water system. This module also</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSourceltEPK11WaterSource">
 <span id="_CPPv3N11WaterSourceltEPK11WaterSource"></span><span id="_CPPv2N11WaterSourceltEPK11WaterSource"></span><span id="WaterSource::lt-operator__WaterSourceCP"></span><span class="target" id="classWaterSource_1accb044cc78f9a444ca18bf7283b5b596"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&lt;</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSourceltEPK11WaterSource" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Less-than operator for comparing two <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> objects by their <code class="docutils literal notranslate"><span class="pre">id</span></code>. </p>
-<p>This operator compares the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with that of another <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to determine their relative order.</p>
+<dd><p>Less-than operator for comparing two <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> objects by their <code class="docutils literal notranslate"><span class="pre">id</span></code>. </p>
+<p>This operator compares the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with that of another <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to determine their relative order.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>other</strong> – A pointer to the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to be compared with the current object.</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – A pointer to the <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to be compared with the current object.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object is less than the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the <code class="docutils literal notranslate"><span class="pre">other</span></code> object, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise. </p>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object is less than the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the <code class="docutils literal notranslate"><span class="pre">other</span></code> object, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise. </p>
 </dd>
 </dl>
 </dd></dl>
@@ -358,14 +382,14 @@ of the water system. This module also</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSourcegtEPK11WaterSource">
 <span id="_CPPv3N11WaterSourcegtEPK11WaterSource"></span><span id="_CPPv2N11WaterSourcegtEPK11WaterSource"></span><span id="WaterSource::gt-operator__WaterSourceCP"></span><span class="target" id="classWaterSource_1a9db800769891e1f49d74a78298f4dac1"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&gt;</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSourcegtEPK11WaterSource" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Greater-than operator for comparing two <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> objects by their <code class="docutils literal notranslate"><span class="pre">id</span></code>. </p>
-<p>This operator compares the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with that of another <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to determine their relative order.</p>
+<dd><p>Greater-than operator for comparing two <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> objects by their <code class="docutils literal notranslate"><span class="pre">id</span></code>. </p>
+<p>This operator compares the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object with that of another <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to determine their relative order.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>other</strong> – A pointer to the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to be compared with the current object.</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – A pointer to the <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to be compared with the current object.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object is greater than the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the <code class="docutils literal notranslate"><span class="pre">other</span></code> object, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise. </p>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object is greater than the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the <code class="docutils literal notranslate"><span class="pre">other</span></code> object, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise. </p>
 </dd>
 </dl>
 </dd></dl>
@@ -373,14 +397,14 @@ of the water system. This module also</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSourceeqEPK11WaterSource">
 <span id="_CPPv3N11WaterSourceeqEPK11WaterSource"></span><span id="_CPPv2N11WaterSourceeqEPK11WaterSource"></span><span id="WaterSource::eq-operator__WaterSourceCP"></span><span class="target" id="classWaterSource_1af25e06ec954898f3392cb125d2f2c2ad"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">==</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSourceeqEPK11WaterSource" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Equality operator for comparing two <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> objects by their <code class="docutils literal notranslate"><span class="pre">id</span></code>. </p>
-<p>This operator checks if the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object is equal to the <code class="docutils literal notranslate"><span class="pre">id</span></code> of another <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
+<dd><p>Equality operator for comparing two <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> objects by their <code class="docutils literal notranslate"><span class="pre">id</span></code>. </p>
+<p>This operator checks if the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object is equal to the <code class="docutils literal notranslate"><span class="pre">id</span></code> of another <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>other</strong> – A pointer to the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to be compared with the current object.</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – A pointer to the <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to be compared with the current object.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object is equal to the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the <code class="docutils literal notranslate"><span class="pre">other</span></code> object, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise. </p>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the current <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object is equal to the <code class="docutils literal notranslate"><span class="pre">id</span></code> of the <code class="docutils literal notranslate"><span class="pre">other</span></code> object, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise. </p>
 </dd>
 </dl>
 </dd></dl>
@@ -391,7 +415,7 @@ of the water system. This module also</p>
 <dd><p>Manages the continuity of a water source by either applying continuity or bypassing it. </p>
 <p>This function checks if the water source is online and, depending on the status, either applies continuity or bypasses the process.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>week</strong> – The current week of the simulation or process. </p></li>
 <li><p><strong>upstream_source_inflow</strong> – The inflow of water from the upstream source. </p></li>
@@ -399,7 +423,7 @@ of the water system. This module also</p>
 <li><p><strong>demand_outflow</strong> – A reference to a vector that will store the demand outflow values.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -411,13 +435,13 @@ of the water system. This module also</p>
 <dd><p>Adds treatment capacity to the water source. </p>
 <p>This function increases the total treatment capacity of the water source by a specified amount. This is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>added_treatment_capacity</strong> – The additional treatment capacity to be added to the water source. </p></li>
 <li><p><strong>utility_id</strong> – The ID of the utility requesting the capacity addition (UNUSED).</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -429,13 +453,13 @@ of the water system. This module also</p>
 <dd><p>Removes water from the water source and updates demand. </p>
 <p>This function decreases the available volume of water in the source by the specified volume and increases the total demand and policy-added demand accordingly. This is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>allocation_id</strong> – The ID of the allocation from which the water is being removed (UNUSED). </p></li>
 <li><p><strong>volume</strong> – The volume of water to be removed from the water source.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -447,13 +471,13 @@ of the water system. This module also</p>
 <dd><p>Adds capacity to the water source. </p>
 <p>This function increases the capacity of the water source by a specified amount. This is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>capacity</strong> – The additional capacity to be added to the water source. </p></li>
 <li><p><strong>utility_id</strong> – The ID of the utility requesting the capacity addition (UNUSED).</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -466,7 +490,7 @@ of the water system. This module also</p>
 <p>This is a virtual function that can be overridden by subclasses.</p>
 <p>This function changes the status of the water source to online, enabling its operations.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>void </p>
 </dd>
 </dl>
@@ -478,10 +502,10 @@ of the water system. This module also</p>
 <dd><p>Determines whether the construction of the water source should be skipped. </p>
 <p>This function always returns <code class="docutils literal notranslate"><span class="pre">false</span></code>, indicating that the construction of the water source cannot be skipped. This is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>utility_id</strong> – The ID of the utility requesting to skip construction (UNUSED).</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">false</span></code>, indicating that the construction cannot be skipped. </p>
 </dd>
 </dl>
@@ -493,10 +517,10 @@ of the water system. This module also</p>
 <dd><p>Retrieves the available allocated volume for a specific utility. </p>
 <p>This function returns the available allocated volume for the given utility ID. In its current implementation, it returns the total available volume, as the functionality to allocate volumes to different utilities has not been implemented. This is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>utility_id</strong> – The ID of the utility for which the available allocated volume is being requested (UNUSED).</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The available allocated volume for the specified utility. In the current implementation, this is equivalent to the total available volume. </p>
 </dd>
 </dl>
@@ -509,7 +533,7 @@ of the water system. This module also</p>
 <p>This is a virtual function that can be overridden by subclasses.</p>
 <p>This function returns the current available volume of the water source, which represents the amount of water that is currently available for allocation or usage.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The available volume of the water source. </p>
 </dd>
 </dl>
@@ -522,7 +546,7 @@ of the water system. This module also</p>
 <p>This is a virtual function that can be overridden by subclasses.</p>
 <p>This function sets the available volume of the water source to its full capacity, indicating that the source is completely filled and no further volume can be added until some is used or allocated.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>void </p>
 </dd>
 </dl>
@@ -535,7 +559,7 @@ of the water system. This module also</p>
 <p>This is a virtual function that can be overridden by subclasses.</p>
 <p>This function calculates and returns the available supply capacity of the water source, taking into account any allocations to the water quality pool (if initialized). If the water quality pool is not initialized, it returns the total capacity of the water source.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The available supply capacity of the water source. </p>
 </dd>
 </dl>
@@ -547,7 +571,7 @@ of the water system. This module also</p>
 <dd><p>Retrieves the minimum environmental outflow for the water source. </p>
 <p>This function returns the minimum environmental outflow, which is a threshold value representing the minimum amount of water that must be released from the water source to maintain environmental standards.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The minimum environmental outflow of the water source. </p>
 </dd>
 </dl>
@@ -559,10 +583,10 @@ of the water system. This module also</p>
 <dd><p>Sets the minimum environmental outflow for the water source. </p>
 <p>This function sets the minimum environmental outflow, which represents the minimum amount of water that must be released from the water source to maintain ecological standards.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>min_environmental_outflow</strong> – The value to set for the minimum environmental outflow.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -574,7 +598,7 @@ of the water system. This module also</p>
 <dd><p>Gets the sequence (vector) of water sources to be built consecutively. </p>
 <p>This function returns a reference to the vector containing the built-in sequence, which represents the order in which sources or utilities are connected or initialized in the system.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>A constant reference to the vector containing the built-in sequence. </p>
 </dd>
 </dl>
@@ -586,7 +610,7 @@ of the water system. This module also</p>
 <dd><p>Retrieves the total outflow from the water source. </p>
 <p>This function returns the total outflow from the water source, which represents the sum of all the water leaving the source, including outflows to utilities and environmental requirements.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The total outflow from the water source. </p>
 </dd>
 </dl>
@@ -598,7 +622,7 @@ of the water system. This module also</p>
 <dd><p>Checks if the water source is online. </p>
 <p>This function returns a boolean indicating whether the water source is online and operational.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the water source is online, <code class="docutils literal notranslate"><span class="pre">false</span></code> otherwise. </p>
 </dd>
 </dl>
@@ -610,10 +634,10 @@ of the water system. This module also</p>
 <dd><p>Sets the total outflow for the previous week. </p>
 <p>This function updates the total outflow of the water source to the value provided for the previous week. This is used to track and record outflows from the water source on a weekly basis.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>outflow_previous_week</strong> – The outflow value for the previous week to set.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -625,7 +649,7 @@ of the water system. This module also</p>
 <dd><p>Retrieves the upstream source inflow. </p>
 <p>This function returns the current upstream inflow to the water source, which is the volume of water entering the source from upstream sources. This value is crucial for determining the availability of water for further allocation and usage.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The upstream source inflow in cubic units (e.g., cubic meters). </p>
 </dd>
 </dl>
@@ -637,7 +661,7 @@ of the water system. This module also</p>
 <dd><p>Retrieves the total demand for the water source. </p>
 <p>This function returns the total demand placed on the water source, which is the total volume of water required by various users or systems connected to the source.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The total demand from all utilities sharing the water source. </p>
 </dd>
 </dl>
@@ -649,7 +673,7 @@ of the water system. This module also</p>
 <dd><p>Retrieves the upstream catchment inflow. </p>
 <p>This function returns the current inflow to the water source from upstream catchments. It represents the volume of water entering the source from the catchment areas upstream of the water source.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The upstream catchment inflow in cubic units (e.g., cubic meters). </p>
 </dd>
 </dl>
@@ -661,13 +685,13 @@ of the water system. This module also</p>
 <dd><p>Sets the timeseries corresponding to the realization of the water source based on random factors. </p>
 <p>This function updates the water source’s properties, including catchment inflow, permitting time, and construction cost overruns based on the given realization index (<code class="docutils literal notranslate"><span class="pre">r</span></code>) and randomization factors (<code class="docutils literal notranslate"><span class="pre">rdm_factors</span></code>). The function applies the random factors to the catchments, permitting time, and bonds associated with the water source. This function is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>r</strong> – The realization index, which is used to apply different realizations of the water source. </p></li>
 <li><p><strong>rdm_factors</strong> – A vector of DU factors, where each entry corresponds to a specific property of the water source.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -679,10 +703,10 @@ of the water system. This module also</p>
 <dd><p>Retrieves the allocated capacity of the water source. </p>
 <p>This function returns the total capacity of the water source, which can be allocated to a utility. The function does not currently account for any specific allocation per utility, returning the full capacity. This function is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>utility_id</strong> – The ID of the utility requesting the allocated capacity. (Currently not used in the function.)</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The total capacity of the water source, represented as a double. </p>
 </dd>
 </dl>
@@ -694,10 +718,10 @@ of the water system. This module also</p>
 <dd><p>Retrieves the allocated fraction of the water source for a specific utility. </p>
 <p>This function returns the fraction of the water source’s capacity allocated to a utility. In its current implementation, the function returns a fixed value of 1.0, indicating full allocation to the utility. This function is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>utility_id</strong> – The ID of the utility requesting the allocated fraction. (Currently not used in the function.)</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The fraction of the total water source capacity allocated to the utility, represented as a double (always 1.0). </p>
 </dd>
 </dl>
@@ -709,7 +733,7 @@ of the water system. This module also</p>
 <dd><p>Retrieves the total evaporated volume of the water source. </p>
 <p>This function returns the total volume of water that has evaporated from the water source. The value represents the accumulated evaporated volume for the water source over time.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The total evaporated volume, represented as a double. </p>
 </dd>
 </dl>
@@ -721,10 +745,10 @@ of the water system. This module also</p>
 <dd><p>Retrieves the allocated treatment capacity of the water source. </p>
 <p>This function returns the total treatment capacity allocated to the water source. The value represents the total treatment capacity available for use by the water source. This function is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>utility_id</strong> – The utility identifier for which the treatment capacity is requested (UNUSED).</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The allocated treatment capacity, represented as a double. </p>
 </dd>
 </dl>
@@ -736,10 +760,10 @@ of the water system. This module also</p>
 <dd><p>Retrieves the total treatment capacity of the water source. </p>
 <p>This function returns the total treatment capacity allocated to the water source. The value represents the overall treatment capacity available for use by the water source.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>utility_id</strong> – The utility identifier for which the total treatment capacity is requested.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The total treatment capacity, represented as a double. </p>
 </dd>
 </dl>
@@ -752,14 +776,14 @@ of the water system. This module also</p>
 <p>This function takes in vectors of utilities, allocated fractions, and treatment fractions, and sets the allocation for the water source. It validates that the fractions sum up to 1.0, assigns the appropriate values to the allocation vectors, and checks that no treatment capacity is allocated to the water quality pool.</p>
 <p>Initial set up of allocations with full reservoir in the beginning of the simulations. To be used in constructors only.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>utilities_with_allocations</strong> – A pointer to a vector of utility IDs that have allocations to the water source. </p></li>
 <li><p><strong>allocated_fractions</strong> – A pointer to a vector of fractions of the water source’s total capacity allocated for each utility. </p></li>
 <li><p><strong>allocated_treatment_fractions</strong> – A pointer to a vector of fractions of the water source’s treatment capacity allocated for each utility.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dt class="field-even">Throws</dt>
 <dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">invalid_argument</span></span></span> – if any of the following conditions are not met:<ul class="simple">
 <li><p>The size of <code class="docutils literal notranslate"><span class="pre">utilities_with_allocations</span></code> does not match the size of <code class="docutils literal notranslate"><span class="pre">allocated_fractions</span></code>.</p></li>
 <li><p>The sum of <code class="docutils literal notranslate"><span class="pre">allocated_fractions</span></code> is less than or greater than 1.0.</p></li>
@@ -768,7 +792,7 @@ of the water system. This module also</p>
 </ul>
 </p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>void</p>
 </dd>
 </dl>
@@ -780,10 +804,10 @@ of the water system. This module also</p>
 <dd><p>Resets the allocations for utilities in the water source. </p>
 <p>This function resets the allocation fractions and recalculates the corresponding capacities and available volumes for each utility. The water quality pool allocation is handled by the <code class="docutils literal notranslate"><span class="pre">wq_pool_id</span></code>. The updated allocation fractions are applied to the existing allocation data. This is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>new_allocated_fractions</strong> – A pointer to a vector of new allocation fractions for each utility.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -795,13 +819,13 @@ of the water system. This module also</p>
 <dd><p>Sets the available allocated volumes to each utility and available volume from the water source. </p>
 <p>This function updates the available allocated volumes for each utility and the total available volume for the water source. If <code class="docutils literal notranslate"><span class="pre">utilities_with_allocations</span></code> is not null, the allocated volumes will be updated accordingly.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>available_allocated_volumes</strong> – A vector containing the available allocated volumes for each utility. </p></li>
 <li><p><strong>available_volume</strong> – The total available volume of the water source.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -813,7 +837,7 @@ of the water system. This module also</p>
 <dd><p>Returns the available allocated volumes for the water source. </p>
 <p>This function retrieves the available allocated volumes for each utility that has an allocation in the water source.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>A vector of available allocated volumes for each utility. </p>
 </dd>
 </dl>
@@ -825,10 +849,10 @@ of the water system. This module also</p>
 <dd><p>Returns the IDs of the utilities with allocations for the water source. </p>
 <p>This function retrieves the list of utilities that have allocations in the water source.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>None</strong> – </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>A pointer to a vector of utility IDs that have allocations in the water source. </p>
 </dd>
 </dl>
@@ -840,7 +864,7 @@ of the water system. This module also</p>
 <dd><p>Returns the wastewater inflow to the water source. </p>
 <p>This function retrieves the amount of wastewater inflow currently associated with the water source.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The wastewater inflow as a double value. </p>
 </dd>
 </dl>
@@ -852,7 +876,7 @@ of the water system. This module also</p>
 <dd><p>Returns the permitting period of the water source. </p>
 <p>This function retrieves the permitting period for the water source, which defines the time required for permitting operations to be completed for the water source.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The permitting period as a double value. </p>
 </dd>
 </dl>
@@ -864,7 +888,7 @@ of the water system. This module also</p>
 <dd><p>Returns the available supply volume of the water source. </p>
 <p>This function calculates the available supply volume by subtracting the allocated volumes for the water quality pool from the total available volume, if the water quality pool is initialized. If the water quality pool is not initialized, it simply returns the total available volume.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The available supply volume as a double value. </p>
 </dd>
 </dl>
@@ -876,10 +900,10 @@ of the water system. This module also</p>
 <dd><p>This function returns the allocated inflow for a given utility. </p>
 <p>This function checks if the water quality pool ID is initialized. If it is not, it returns the upstream catchment inflow. If it is initialized, the function returns the fraction of inflow from the upstream catchment and allocates it to the specified utility.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>utility_id</strong> – The ID of the utility for which the allocated inflow is being calculated.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The allocated inflow for the specified utility. </p>
 </dd>
 </dl>
@@ -891,10 +915,10 @@ of the water system. This module also</p>
 <dd><p>This function returns the supply allocated fraction for a given utility. </p>
 <p>This function currently returns a constant value of <code class="docutils literal notranslate"><span class="pre">1.0</span></code> for any given utility ID, indicating that the entire supply is allocated to the utility. This is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>utility_id</strong> – The ID of the utility for which the supply allocated fraction is being calculated (UNSUED).</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The supply allocated fraction (always 1.0). </p>
 </dd>
 </dl>
@@ -906,10 +930,10 @@ of the water system. This module also</p>
 <dd><p>This function returns the bond associated with a given utility ID. </p>
 <p>This function checks the size of the <code class="docutils literal notranslate"><span class="pre">bonds</span></code> collection. If the collection contains only one bond, it returns the first bond. Otherwise, it returns the bond corresponding to the specified <code class="docutils literal notranslate"><span class="pre">utility_id</span></code>. This is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>utility_id</strong> – The ID of the utility for which the bond is being retrieved.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The bond associated with the specified utility ID. </p>
 </dd>
 </dl>
@@ -920,10 +944,10 @@ of the water system. This module also</p>
 <span id="_CPPv3N11WaterSource31checkForInputErrorsConstructionEv"></span><span id="_CPPv2N11WaterSource31checkForInputErrorsConstructionEv"></span><span id="WaterSource::checkForInputErrorsConstruction"></span><span class="target" id="classWaterSource_1a47bc2006a1ef6ea4429d56a24319940f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkForInputErrorsConstruction</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource31checkForInputErrorsConstructionEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function checks for input errors related to the permitting and construction times for a water source. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dt class="field-odd">Throws</dt>
 <dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if the permitting time or construction time is invalid (NaN or negative). </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Void</p>
 </dd>
 </dl>
@@ -935,13 +959,13 @@ of the water system. This module also</p>
 <dd><p>This function generates a random construction time between the specified time bounds, converted to weeks. </p>
 <p>This function uses a random number generator to produce a random value within the range <code class="docutils literal notranslate"><span class="pre">[t0,</span> <span class="pre">tf]</span></code> (in years). The result is then scaled by the constant <code class="docutils literal notranslate"><span class="pre">WEEKS_IN_YEAR</span></code> to convert it into weeks. The function also incorporates a seeded random number generator based on either the <code class="docutils literal notranslate"><span class="pre">id</span></code> and <code class="docutils literal notranslate"><span class="pre">seed</span></code> or a fresh random device if <code class="docutils literal notranslate"><span class="pre">seed</span></code> is not properly initialized.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>t0</strong> – The lower bound of the construction time range (in years). </p></li>
 <li><p><strong>tf</strong> – The upper bound of the construction time range (in years).</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The random construction time (in weeks). </p>
 </dd>
 </dl>
@@ -953,7 +977,7 @@ of the water system. This module also</p>
 <dd><p>This function returns the construction time of the water source. </p>
 <p>This function simply returns the value of the <code class="docutils literal notranslate"><span class="pre">construction_time</span></code> member, which represents the total time required for construction, typically measured in weeks.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The construction time (in weeks). </p>
 </dd>
 </dl>
@@ -965,10 +989,10 @@ of the water system. This module also</p>
 <dd><p>This function returns the potential volume of the priority source for a given utility. </p>
 <p>This function currently returns a constant value of <code class="docutils literal notranslate"><span class="pre">0.0</span></code>, indicating that the priority source has no potential volume. This is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>utility_id</strong> – The ID of the utility for which the priority source potential volume is being retrieved (UNUSED).</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The potential volume of the priority source (always 0.0). </p>
 </dd>
 </dl>
@@ -978,12 +1002,12 @@ of the water system. This module also</p>
 <dt class="sig sig-object cpp" id="_CPPv4NK11WaterSource16getAgreementTypeEv">
 <span id="_CPPv3NK11WaterSource16getAgreementTypeEv"></span><span id="_CPPv2NK11WaterSource16getAgreementTypeEv"></span><span id="WaterSource::getAgreementTypeC"></span><span class="target" id="classWaterSource_1add1082429d114b41cb9e3afaa623aeb1"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getAgreementType</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK11WaterSource16getAgreementTypeEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function retrieves the agreement type of the water source. </p>
-<p>This function is designed to be called only by the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classJointWTP"><span class="std std-ref"><span class="pre">JointWTP</span></span></a></code> class or its child classes. If called from any other context, it throws a <code class="docutils literal notranslate"><span class="pre">logic_error</span></code> indicating that the agreement type cannot be accessed. The function will return a default error code (<code class="docutils literal notranslate"><span class="pre">9999</span></code>) after throwing the exception. This is a virtual function that can be overridden by subclasses.</p>
+<p>This function is designed to be called only by the <code class="docutils literal notranslate"><a class="reference internal" href="../index.html#classJointWTP"><span class="std std-ref"><span class="pre">JointWTP</span></span></a></code> class or its child classes. If called from any other context, it throws a <code class="docutils literal notranslate"><span class="pre">logic_error</span></code> indicating that the agreement type cannot be accessed. The function will return a default error code (<code class="docutils literal notranslate"><span class="pre">9999</span></code>) after throwing the exception. This is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Throws<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">logic_error</span></span></span> – If called outside the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classJointWTP"><span class="std std-ref"><span class="pre">JointWTP</span></span></a></code> class or its child classes. </p>
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">logic_error</span></span></span> – If called outside the <code class="docutils literal notranslate"><a class="reference internal" href="../index.html#classJointWTP"><span class="std std-ref"><span class="pre">JointWTP</span></span></a></code> class or its child classes. </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The agreement type (always returns <code class="docutils literal notranslate"><span class="pre">9999</span></code> after throwing an error).</p>
 </dd>
 </dl>
@@ -993,12 +1017,12 @@ of the water system. This module also</p>
 <dt class="sig sig-object cpp" id="_CPPv4NK11WaterSource22getParentWaterSourceIDEv">
 <span id="_CPPv3NK11WaterSource22getParentWaterSourceIDEv"></span><span id="_CPPv2NK11WaterSource22getParentWaterSourceIDEv"></span><span id="WaterSource::getParentWaterSourceIDC"></span><span class="target" id="classWaterSource_1a506c77317ae84db0a4d9ea2cd74ddb11"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getParentWaterSourceID</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK11WaterSource22getParentWaterSourceIDEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function retrieves the parent water source ID. </p>
-<p>This function is intended to be called only through an override in the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classJointWTP"><span class="std std-ref"><span class="pre">JointWTP</span></span></a></code> class. If called from any other context, it throws a <code class="docutils literal notranslate"><span class="pre">logic_error</span></code> indicating that the parent water source ID should only be accessed through the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classJointWTP"><span class="std std-ref"><span class="pre">JointWTP</span></span></a></code> class or its child classes. The function will return a default error code (<code class="docutils literal notranslate"><span class="pre">-999</span></code>) after throwing the exception. This is a virtual function that can be overridden by subclasses.</p>
+<p>This function is intended to be called only through an override in the <code class="docutils literal notranslate"><a class="reference internal" href="../index.html#classJointWTP"><span class="std std-ref"><span class="pre">JointWTP</span></span></a></code> class. If called from any other context, it throws a <code class="docutils literal notranslate"><span class="pre">logic_error</span></code> indicating that the parent water source ID should only be accessed through the <code class="docutils literal notranslate"><a class="reference internal" href="../index.html#classJointWTP"><span class="std std-ref"><span class="pre">JointWTP</span></span></a></code> class or its child classes. The function will return a default error code (<code class="docutils literal notranslate"><span class="pre">-999</span></code>) after throwing the exception. This is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Throws<span class="colon">:</span></dt>
-<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">logic_error</span></span></span> – If called outside the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classJointWTP"><span class="std std-ref"><span class="pre">JointWTP</span></span></a></code> class or its child classes. </p>
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">logic_error</span></span></span> – If called outside the <code class="docutils literal notranslate"><a class="reference internal" href="../index.html#classJointWTP"><span class="std std-ref"><span class="pre">JointWTP</span></span></a></code> class or its child classes. </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The parent water source ID (always returns <code class="docutils literal notranslate"><span class="pre">-999</span></code> after throwing an error).</p>
 </dd>
 </dl>
@@ -1010,13 +1034,13 @@ of the water system. This module also</p>
 <dd><p>This function resets the treatment allocations for each utility based on the provided current and new treatment allocations. </p>
 <p>This function calculates the change in treatment capacities for each utility and updates the <code class="docutils literal notranslate"><span class="pre">allocated_treatment_capacities</span></code> accordingly. It also ensures that there are no negative capacities and adjusts for any over-allocation by normalizing the treatment fractions to ensure that the total treatment capacity is not exceeded.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>current_treatment_allocations</strong> – A vector of current treatment allocations for each utility. </p></li>
 <li><p><strong>new_treatment_allocations</strong> – A vector of new treatment allocations for each utility.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -1028,7 +1052,7 @@ of the water system. This module also</p>
 <dd><p>This function returns the vector of allocated treatment capacities to relevant utilities. </p>
 <p>This function provides access to the <code class="docutils literal notranslate"><span class="pre">allocated_treatment_capacities</span></code> member, which contains the treatment capacities allocated to each utility. The returned vector holds the allocated capacities for all utilities that have allocations.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>A vector containing the allocated treatment capacities for each utility. </p>
 </dd>
 </dl>
@@ -1040,10 +1064,10 @@ of the water system. This module also</p>
 <dd><p>This function sets the treatment allocations for each utility based on the provided treatment capacity allocations. </p>
 <p>This function updates the <code class="docutils literal notranslate"><span class="pre">allocated_treatment_capacities</span></code> member with the provided treatment capacity allocations for each utility. It then calculates the treatment fractions for each utility based on the updated treatment capacities and the total treatment capacity. Note: Over-allocation checks are not performed in this function, as they are handled elsewhere.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>treatment_capacity_allocations</strong> – A vector of treatment capacity allocations for each utility.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -1055,10 +1079,10 @@ of the water system. This module also</p>
 <dd><p>This function returns the allocated treatment fraction for a given utility. </p>
 <p>This function currently returns a constant value of <code class="docutils literal notranslate"><span class="pre">1.0</span></code>, indicating that the treatment fraction for any utility is set to 100%. This is a virtual function that can be overridden by subclasses.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>utility_id</strong> – The ID of the utility for which the treatment fraction is being retrieved (UNUSED).</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The allocated treatment fraction (always 1.0). </p>
 </dd>
 </dl>
@@ -1070,10 +1094,10 @@ of the water system. This module also</p>
 <dd><p>This function returns the water quality pool ID. </p>
 <p>This function provides access to the <code class="docutils literal notranslate"><span class="pre">wq_pool_id</span></code> member, which represents the identifier of the water quality pool associated with the water source.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>void</strong> – </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The water quality pool ID. </p>
 </dd>
 </dl>
@@ -1085,7 +1109,7 @@ of the water system. This module also</p>
 <dd><p>This function returns the vector of allocated supply capacities. </p>
 <p>This function provides access to the <code class="docutils literal notranslate"><span class="pre">allocated_capacities</span></code> member, which contains the supply capacities allocated to each utility. The returned vector holds the allocated supply capacities for all utilities that have allocations.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>A vector containing the allocated supply capacities for each utility. </p>
 </dd>
 </dl>
@@ -1125,15 +1149,15 @@ of the water system. This module also</p>
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSource7compareEP11WaterSourceP11WaterSource">
 <span id="_CPPv3N11WaterSource7compareEP11WaterSourceP11WaterSource"></span><span id="_CPPv2N11WaterSource7compareEP11WaterSourceP11WaterSource"></span><span id="WaterSource::compare__WaterSourceP.WaterSourceP"></span><span class="target" id="classWaterSource_1a25d4ad4251b78267618b2f0ef5a501dc"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">compare</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">lhs</span></span>, <a class="reference internal" href="#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">rhs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource7compareEP11WaterSourceP11WaterSource" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Compares two water sources based on their ID. </p>
-<p>This function compares two instances of <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> based on their <code class="docutils literal notranslate"><span class="pre">id</span></code> attribute. It returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the ID of the left-hand side water source (<code class="docutils literal notranslate"><span class="pre">lhs</span></code>) is less than that of the right-hand side (<code class="docutils literal notranslate"><span class="pre">rhs</span></code>). This can be useful for sorting or organizing water sources by their ID.</p>
+<p>This function compares two instances of <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> based on their <code class="docutils literal notranslate"><span class="pre">id</span></code> attribute. It returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if the ID of the left-hand side water source (<code class="docutils literal notranslate"><span class="pre">lhs</span></code>) is less than that of the right-hand side (<code class="docutils literal notranslate"><span class="pre">rhs</span></code>). This can be useful for sorting or organizing water sources by their ID.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>lhs</strong> – Pointer to the first <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object. </p></li>
-<li><p><strong>rhs</strong> – Pointer to the second <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p></li>
+<li><p><strong>lhs</strong> – Pointer to the first <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object. </p></li>
+<li><p><strong>rhs</strong> – Pointer to the second <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if <code class="docutils literal notranslate"><span class="pre">lhs-&gt;id</span></code> is less than <code class="docutils literal notranslate"><span class="pre">rhs-&gt;id</span></code>, otherwise <code class="docutils literal notranslate"><span class="pre">false</span></code>. </p>
 </dd>
 </dl>
@@ -1143,12 +1167,12 @@ of the water system. This module also</p>
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSource7setSeedEi">
 <span id="_CPPv3N11WaterSource7setSeedEi"></span><span id="_CPPv2N11WaterSource7setSeedEi"></span><span id="WaterSource::setSeed__i"></span><span class="target" id="classWaterSource_1a4c8f4c120b9101767b6013a78eb2c5d4"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setSeed</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">seed</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource7setSeedEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function sets the seed value for the random number generator. </p>
-<p>This function assigns the provided seed value to the <code class="docutils literal notranslate"><span class="pre">seed</span></code> member of the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> class. This seed is used to initialize the random number generator for operations that require randomness, such as generating random construction times.</p>
+<p>This function assigns the provided seed value to the <code class="docutils literal notranslate"><span class="pre">seed</span></code> member of the <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> class. This seed is used to initialize the random number generator for operations that require randomness, such as generating random construction times.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>seed</strong> – The value to set for the random number generator seed.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -1158,12 +1182,12 @@ of the water system. This module also</p>
 <dt class="sig sig-object cpp" id="_CPPv4N11WaterSource9unsetSeedEv">
 <span id="_CPPv3N11WaterSource9unsetSeedEv"></span><span id="_CPPv2N11WaterSource9unsetSeedEv"></span><span id="WaterSource::unsetSeed"></span><span class="target" id="classWaterSource_1a04f94831f4816bb277c5a615eace7779"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">unsetSeed</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource9unsetSeedEv" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function unsets the seed value for the random number generator. </p>
-<p>This function resets the <code class="docutils literal notranslate"><span class="pre">seed</span></code> member of the <code class="docutils literal notranslate"><a class="reference internal" href="../../../modules.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> class to a non-initialized state, effectively unsetting the seed. This means that any subsequent use of the random number generator will rely on a fresh random device or an unseeded state.</p>
+<p>This function resets the <code class="docutils literal notranslate"><span class="pre">seed</span></code> member of the <code class="docutils literal notranslate"><a class="reference internal" href="#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> class to a non-initialized state, effectively unsetting the seed. This means that any subsequent use of the random number generator will rely on a fresh random device or an unseeded state.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>void</strong> – </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -1177,7 +1201,7 @@ of the water system. This module also</p>
 <span id="_CPPv3N11WaterSource15applyContinuityEiddR6vectorIdE"></span><span id="_CPPv2N11WaterSource15applyContinuityEiddR6vectorIdE"></span><span id="WaterSource::applyContinuity__i.double.double.vector:double:R"></span><span class="target" id="classWaterSource_1ac070445379fe706f65b977dade4f3fbc"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">applyContinuity</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">upstream_source_inflow</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">wastewater_inflow</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">demand_outflow</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N11WaterSource15applyContinuityEiddR6vectorIdE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function handles the continuity calculations for a water source, ensuring proper inflow and outflow. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>week</strong> – The current week of the simulation. </p></li>
 <li><p><strong>upstream_source_inflow</strong> – The inflow from upstream water sources. </p></li>
@@ -1185,7 +1209,7 @@ of the water system. This module also</p>
 <li><p><strong>demand_outflow</strong> – A reference to a vector representing the water demand outflows to each utility.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -1196,13 +1220,13 @@ of the water system. This module also</p>
 <span id="_CPPv3N11WaterSource6bypassEid"></span><span id="_CPPv2N11WaterSource6bypassEid"></span><span id="WaterSource::bypass__i.double"></span><span class="target" id="classWaterSource_1abeb8ba4b51c2b270baf9162df76d8b58"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bypass</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">total_upstream_inflow</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N11WaterSource6bypassEid" title="Permalink to this definition"></a><br /></dt>
 <dd><p>This function bypasses continuity calculations, routing all inflows downstream without adjustments. Does not apply continuity to the water source, by instead just treats it as non existing, i.e. outflow = inflow + catchment_flow. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>week</strong> – The current week of the simulation. </p></li>
 <li><p><strong>total_upstream_inflow</strong> – The total inflow from upstream sources excluding water for the catchment between both water sources.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>void </p>
 </dd>
 </dl>
@@ -1385,15 +1409,17 @@ of the water system. This module also</p>
 </div>
 </dd></dl>
 
-</section>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
+</div>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="SystemComponents Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 

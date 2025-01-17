@@ -1,0 +1,261 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SystemComponents Module &mdash; WaterPaths 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=bbec6902"></script>
+      <script src="../_static/documentation_options.js?v=404a92a0"></script>
+      <script src="../_static/doctools.js?v=4184ea2e"></script>
+      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            WaterPaths
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">SystemComponents Module</a><ul>
+<li><a class="reference internal" href="#contents">Contents</a></li>
+<li><a class="reference internal" href="#api-reference">API Reference</a><ul>
+<li><a class="reference internal" href="#base-components">Base Components</a><ul>
+<li><a class="reference internal" href="#catchment-h">Catchment.h</a><ul>
+<li><a class="reference internal" href="#_CPPv49Catchment"><code class="docutils literal notranslate"><span class="pre">Catchment</span></code></a><ul>
+<li><a class="reference internal" href="#_CPPv4N9Catchment9CatchmentEP6vectorI6vectorIdEEi"><code class="docutils literal notranslate"><span class="pre">Catchment::Catchment()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9Catchment9CatchmentERK9Catchment"><code class="docutils literal notranslate"><span class="pre">Catchment::Catchment()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9CatchmentD0Ev"><code class="docutils literal notranslate"><span class="pre">Catchment::~Catchment()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9CatchmentaSERK9Catchment"><code class="docutils literal notranslate"><span class="pre">Catchment::operator=()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9Catchment13getStreamflowEi"><code class="docutils literal notranslate"><span class="pre">Catchment::getStreamflow()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9Catchment14setRealizationEmR6vectorIdE"><code class="docutils literal notranslate"><span class="pre">Catchment::setRealization()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9Catchment15streamflows_allE"><code class="docutils literal notranslate"><span class="pre">Catchment::streamflows_all</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9Catchment23streamflows_realizationE"><code class="docutils literal notranslate"><span class="pre">Catchment::streamflows_realization</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9Catchment13series_lengthE"><code class="docutils literal notranslate"><span class="pre">Catchment::series_length</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9Catchment6parentE"><code class="docutils literal notranslate"><span class="pre">Catchment::parent</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9Catchment10delta_weekE"><code class="docutils literal notranslate"><span class="pre">Catchment::delta_week</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">WaterPaths</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">SystemComponents Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/SystemComponents/SystemComponents.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="systemcomponents-module">
+<h1>SystemComponents Module<a class="headerlink" href="#systemcomponents-module" title="Link to this heading"></a></h1>
+<p>The <cite>SystemComponents</cite> module contains classes and functions related defining the components of the water system.
+The module is divided into submodules, each of which contains classes and functions related to a specific component
+of the water system. This module also</p>
+<section id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading"></a></h2>
+<p>Below is the API reference for the <cite>SystemComponents</cite> module. Documentation is automatically extracted from the header files.</p>
+<section id="base-components">
+<h3>Base Components<a class="headerlink" href="#base-components" title="Link to this heading"></a></h3>
+<section id="catchment-h">
+<h4>Catchment.h<a class="headerlink" href="#catchment-h" title="Link to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv49Catchment">
+<span id="_CPPv39Catchment"></span><span id="_CPPv29Catchment"></span><span id="Catchment"></span><span class="target" id="classCatchment"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Catchment</span></span></span><a class="headerlink" href="#_CPPv49Catchment" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Catchment.h&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Catchment9CatchmentEP6vectorI6vectorIdEEi">
+<span id="_CPPv3N9Catchment9CatchmentEP6vectorI6vectorIdEEi"></span><span id="_CPPv2N9Catchment9CatchmentEP6vectorI6vectorIdEEi"></span><span id="Catchment::Catchment__vector:vector:double::P.i"></span><span class="target" id="classCatchment_1aafdee6ee868a8892314672abb119e60f"></span><span class="sig-name descname"><span class="n"><span class="pre">Catchment</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">streamflows_all</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">series_length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Catchment9CatchmentEP6vectorI6vectorIdEEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructor for a new <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>streamflows_all</strong> – A 2D vector containing all combined historical and synthetic streamflow realizations. </p></li>
+<li><p><strong>series_length</strong> – An integer representing the length of the streamflow time series. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Catchment9CatchmentERK9Catchment">
+<span id="_CPPv3N9Catchment9CatchmentERK9Catchment"></span><span id="_CPPv2N9Catchment9CatchmentERK9Catchment"></span><span id="Catchment::Catchment__CatchmentCR"></span><span class="target" id="classCatchment_1ae311c4b2d857a8b5abc01f5317b04df2"></span><span class="sig-name descname"><span class="n"><span class="pre">Catchment</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N9Catchment9CatchmentERK9Catchment" title="Catchment::Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catchment</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Catchment9CatchmentERK9Catchment" title="Link to this definition"></a><br /></dt>
+<dd><p>Copy constructor for a <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> object. This constructor does not copy the parent pointer. Set parent to false to distinguish between a parent <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> and those created as copies. Initializes a new instance of <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> with data copied from the original <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>catchment</strong> – A <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> object. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9CatchmentD0Ev">
+<span id="_CPPv3N9CatchmentD0Ev"></span><span id="_CPPv2N9CatchmentD0Ev"></span><span id="Catchment::~Catchment"></span><span class="target" id="classCatchment_1ad12bc6d64d4bd5133ac1086a52e240b3"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Catchment</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9CatchmentD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destructor for a <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9CatchmentaSERK9Catchment">
+<span id="_CPPv3N9CatchmentaSERK9Catchment"></span><span id="_CPPv2N9CatchmentaSERK9Catchment"></span><span id="Catchment::assign-operator__CatchmentCR"></span><span class="target" id="classCatchment_1a5abab52eab9c05164f76e46954833989"></span><a class="reference internal" href="#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catchment</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9CatchmentaSERK9Catchment" title="Link to this definition"></a><br /></dt>
+<dd><p>Copy assignment operator. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>catchment</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Catchment13getStreamflowEi">
+<span id="_CPPv3N9Catchment13getStreamflowEi"></span><span id="_CPPv2N9Catchment13getStreamflowEi"></span><span id="Catchment::getStreamflow__i"></span><span class="target" id="classCatchment_1af4e8206ffab5c901e5e4cdd6136f73a1"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getStreamflow</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Catchment13getStreamflowEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets streamflow for a given week AFTER the first delta_week weeks used to calculate the ROFs. This function assures that the number of past inflows used for ROF calculations are reserved in the beginning of the time series for ROF calculations. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – An integer representing the week of the entire streamflow time series. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A double representing the streamflow for the given week. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Catchment14setRealizationEmR6vectorIdE">
+<span id="_CPPv3N9Catchment14setRealizationEmR6vectorIdE"></span><span id="_CPPv2N9Catchment14setRealizationEmR6vectorIdE"></span><span id="Catchment::setRealization__unsigned-l.vector:double:R"></span><span class="target" id="classCatchment_1ad76654af47dcd69bcb795c1c152409cc"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealization</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">r</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rdm_factors</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Catchment14setRealizationEmR6vectorIdE" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the 1D vector time series corresponding to realization index and eliminate reference to the full 2D comprehensive streamflow data set. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> – An unsigned long integer representing the realization index. </p></li>
+<li><p><strong>rdm_factors</strong> – A reference to a vector of doubles representing the random factors used to generate the streamflow realization (UNUSED). </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Catchment15streamflows_allE">
+<span id="_CPPv3N9Catchment15streamflows_allE"></span><span id="_CPPv2N9Catchment15streamflows_allE"></span><span id="Catchment::streamflows_all__vector:vector:double::P"></span><span class="target" id="classCatchment_1a579ccda86831f286c19c76354e7125c3"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_all</span></span></span><a class="headerlink" href="#_CPPv4N9Catchment15streamflows_allE" title="Link to this definition"></a><br /></dt>
+<dd><p>A pointer to a 2D vector containing all combined historical and synthetic streamflow realizations. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Catchment23streamflows_realizationE">
+<span id="_CPPv3N9Catchment23streamflows_realizationE"></span><span id="_CPPv2N9Catchment23streamflows_realizationE"></span><span id="Catchment::streamflows_realization__vector:double:"></span><span class="target" id="classCatchment_1aaf04c295ecd6b666fa1439d3d5bc072a"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_realization</span></span></span><a class="headerlink" href="#_CPPv4N9Catchment23streamflows_realizationE" title="Link to this definition"></a><br /></dt>
+<dd><p>A 1D vector containing the streamflows for a specific realization for the catchment. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Catchment13series_lengthE">
+<span id="_CPPv3N9Catchment13series_lengthE"></span><span id="_CPPv2N9Catchment13series_lengthE"></span><span id="Catchment::series_length__i"></span><span class="target" id="classCatchment_1a2d4994220f63b876348b4ce4892bc6d3"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">series_length</span></span></span><a class="headerlink" href="#_CPPv4N9Catchment13series_lengthE" title="Link to this definition"></a><br /></dt>
+<dd><p>An integer representing the length of the streamflow time series. It should be longer than WEEKS_IN_YEAR * NUMBER_REALIZATIONS_ROF. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Catchment6parentE">
+<span id="_CPPv3N9Catchment6parentE"></span><span id="_CPPv2N9Catchment6parentE"></span><span id="Catchment::parent__b"></span><span class="target" id="classCatchment_1a472ff6892f90d94b8c4dba53c462dedf"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">parent</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N9Catchment6parentE" title="Link to this definition"></a><br /></dt>
+<dd><p>A boolean indicating whether this catchment is a parent catchment or not. Parent catchments are catchments (INSERT DESCRIPTION HERE). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Catchment10delta_weekE">
+<span id="_CPPv3N9Catchment10delta_weekE"></span><span id="_CPPv2N9Catchment10delta_weekE"></span><span id="Catchment::delta_week__i"></span><span class="target" id="classCatchment_1a20548a9d03f0d39f297cb15b3c0433ad"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">delta_week</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">)</span></span><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">round</span></span><span class="p"><span class="pre">(</span></span><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv49Constants" title="Constants"><span class="n"><span class="pre">Constants</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">WEEKS_IN_YEAR</span></span><span class="w"> </span><span class="o"><span class="pre">*</span></span><span class="w"> </span><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv49Constants" title="Constants"><span class="n"><span class="pre">Constants</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">NUMBER_REALIZATIONS_ROF</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#_CPPv4N9Catchment10delta_weekE" title="Link to this definition"></a><br /></dt>
+<dd><p>An integer indicating the number of weeks to skip in the beginning of the time series to identify the correct week for the start of a given realization. This is the number of weeks of historical data used to calculate the ROFs. Should take on the value of WEEKS_IN_YEAR * NUMBER_REALIZATIONS_ROF. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Lillian Lau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

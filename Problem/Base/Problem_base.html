@@ -1,0 +1,719 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Base Components &mdash; WaterPaths 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=bbec6902"></script>
+      <script src="../../_static/documentation_options.js?v=404a92a0"></script>
+      <script src="../../_static/doctools.js?v=4184ea2e"></script>
+      <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            WaterPaths
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Base Components</a><ul>
+<li><a class="reference internal" href="#api-reference">API Reference</a><ul>
+<li><a class="reference internal" href="#problem-class">Problem Class</a><ul>
+<li><a class="reference internal" href="#problem-h">Problem.h</a><ul>
+<li><a class="reference internal" href="#_CPPv49infraRank"><code class="docutils literal notranslate"><span class="pre">infraRank</span></code></a><ul>
+<li><a class="reference internal" href="#_CPPv4N9infraRank9infraRankEid"><code class="docutils literal notranslate"><span class="pre">infraRank::infraRank()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9infraRank2idE"><code class="docutils literal notranslate"><span class="pre">infraRank::id</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N9infraRank5xrealE"><code class="docutils literal notranslate"><span class="pre">infraRank::xreal</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#_CPPv48by_xreal"><code class="docutils literal notranslate"><span class="pre">by_xreal</span></code></a><ul>
+<li><a class="reference internal" href="#_CPPv4N8by_xrealclERK9infraRankRK9infraRank"><code class="docutils literal notranslate"><span class="pre">by_xreal::operator()()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#_CPPv47Problem"><code class="docutils literal notranslate"><span class="pre">Problem</span></code></a><ul>
+<li><a class="reference internal" href="#_CPPv4N7Problem7ProblemEm"><code class="docutils literal notranslate"><span class="pre">Problem::Problem()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7ProblemD0Ev"><code class="docutils literal notranslate"><span class="pre">Problem::~Problem()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem18functionEvaluationEPdPdPd"><code class="docutils literal notranslate"><span class="pre">Problem::functionEvaluation()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem10setN_weeksEm"><code class="docutils literal notranslate"><span class="pre">Problem::setN_weeks()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem13setSol_numberEm"><code class="docutils literal notranslate"><span class="pre">Problem::setSol_number()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem14setIODirectoryERK6string"><code class="docutils literal notranslate"><span class="pre">Problem::setIODirectory()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem21setOutputSubDirectoryERK6string"><code class="docutils literal notranslate"><span class="pre">Problem::setOutputSubDirectory()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4NK7Problem13getObjectivesEv"><code class="docutils literal notranslate"><span class="pre">Problem::getObjectives()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem27calculateAndPrintObjectivesEb"><code class="docutils literal notranslate"><span class="pre">Problem::calculateAndPrintObjectives()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem18setRDMOptimizationER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE"><code class="docutils literal notranslate"><span class="pre">Problem::setRDMOptimization()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem18setRDMReevaluationEiR6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE"><code class="docutils literal notranslate"><span class="pre">Problem::setRDMReevaluation()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem12setN_threadsEm"><code class="docutils literal notranslate"><span class="pre">Problem::setN_threads()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem21setPrint_output_filesEb"><code class="docutils literal notranslate"><span class="pre">Problem::setPrint_output_files()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem17setN_realizationsEm"><code class="docutils literal notranslate"><span class="pre">Problem::setN_realizations()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem20setRealizationsToRunER6vectorImE"><code class="docutils literal notranslate"><span class="pre">Problem::setRealizationsToRun()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem22setEvap_inflows_suffixERK6string"><code class="docutils literal notranslate"><span class="pre">Problem::setEvap_inflows_suffix()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem14setFname_sufixERK6string"><code class="docutils literal notranslate"><span class="pre">Problem::setFname_sufix()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem24getMaster_data_collectorEv"><code class="docutils literal notranslate"><span class="pre">Problem::getMaster_data_collector()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem20destroyDataCollectorEv"><code class="docutils literal notranslate"><span class="pre">Problem::destroyDataCollector()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem26printTimeSeriesAndPathwaysEb"><code class="docutils literal notranslate"><span class="pre">Problem::printTimeSeriesAndPathways()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem12setRofTablesEm6string"><code class="docutils literal notranslate"><span class="pre">Problem::setRofTables()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem27setImport_export_rof_tablesEi6string"><code class="docutils literal notranslate"><span class="pre">Problem::setImport_export_rof_tables()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem31runBootstrapRealizationThinningEiiiiR6vectorI6vectorIiEE"><code class="docutils literal notranslate"><span class="pre">Problem::runBootstrapRealizationThinning()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem14setFormulationEm"><code class="docutils literal notranslate"><span class="pre">Problem::setFormulation()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem21setDemand_path_suffixERK6string"><code class="docutils literal notranslate"><span class="pre">Problem::setDemand_path_suffix()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem24setDemand_path_subfolderERK6string"><code class="docutils literal notranslate"><span class="pre">Problem::setDemand_path_subfolder()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem37checkAndFixInfraExpansionHighLowOrderEP6vectorIiEP6vectorIdEiidd"><code class="docutils literal notranslate"><span class="pre">Problem::checkAndFixInfraExpansionHighLowOrder()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE"><code class="docutils literal notranslate"><span class="pre">Problem::vecInfraRankToVecInt()</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem14n_realizationsE"><code class="docutils literal notranslate"><span class="pre">Problem::n_realizations</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem7n_weeksE"><code class="docutils literal notranslate"><span class="pre">Problem::n_weeks</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem11solution_noE"><code class="docutils literal notranslate"><span class="pre">Problem::solution_no</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem9n_threadsE"><code class="docutils literal notranslate"><span class="pre">Problem::n_threads</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem11n_utilitiesE"><code class="docutils literal notranslate"><span class="pre">Problem::n_utilities</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem12io_directoryE"><code class="docutils literal notranslate"><span class="pre">Problem::io_directory</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem20output_sub_directoryE"><code class="docutils literal notranslate"><span class="pre">Problem::output_sub_directory</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem11fname_sufixE"><code class="docutils literal notranslate"><span class="pre">Problem::fname_sufix</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem19evap_inflows_suffixE"><code class="docutils literal notranslate"><span class="pre">Problem::evap_inflows_suffix</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem18demand_path_suffixE"><code class="docutils literal notranslate"><span class="pre">Problem::demand_path_suffix</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem21demand_path_subfolderE"><code class="docutils literal notranslate"><span class="pre">Problem::demand_path_subfolder</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem20rof_tables_directoryE"><code class="docutils literal notranslate"><span class="pre">Problem::rof_tables_directory</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem19realizations_to_runE"><code class="docutils literal notranslate"><span class="pre">Problem::realizations_to_run</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem21master_data_collectorE"><code class="docutils literal notranslate"><span class="pre">Problem::master_data_collector</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem10objectivesE"><code class="docutils literal notranslate"><span class="pre">Problem::objectives</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem18print_output_filesE"><code class="docutils literal notranslate"><span class="pre">Problem::print_output_files</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem6rdm_noE"><code class="docutils literal notranslate"><span class="pre">Problem::rdm_no</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem24import_export_rof_tablesE"><code class="docutils literal notranslate"><span class="pre">Problem::import_export_rof_tables</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem28table_gen_storage_multiplierE"><code class="docutils literal notranslate"><span class="pre">Problem::table_gen_storage_multiplier</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem13utilities_rdmE"><code class="docutils literal notranslate"><span class="pre">Problem::utilities_rdm</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem17water_sources_rdmE"><code class="docutils literal notranslate"><span class="pre">Problem::water_sources_rdm</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem12policies_rdmE"><code class="docutils literal notranslate"><span class="pre">Problem::policies_rdm</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem10rof_tablesE"><code class="docutils literal notranslate"><span class="pre">Problem::rof_tables</span></code></a></li>
+<li><a class="reference internal" href="#_CPPv4N7Problem11formulationE"><code class="docutils literal notranslate"><span class="pre">Problem::formulation</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">WaterPaths</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Base Components</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Problem/Base/Problem_base.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="base-components">
+<h1>Base Components<a class="headerlink" href="#base-components" title="Link to this heading"></a></h1>
+<p>The base components define foundational functionality of the <cite>Problem</cite> class for problem-solving.</p>
+<section id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading"></a></h2>
+<section id="problem-class">
+<h3>Problem Class<a class="headerlink" href="#problem-class" title="Link to this heading"></a></h3>
+<section id="problem-h">
+<h4>Problem.h<a class="headerlink" href="#problem-h" title="Link to this heading"></a></h4>
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv49infraRank">
+<span id="_CPPv39infraRank"></span><span id="_CPPv29infraRank"></span><span id="infraRank"></span><span class="target" id="structinfraRank"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">infraRank</span></span></span><a class="headerlink" href="#_CPPv49infraRank" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Problem.h&gt;</em></div>
+<p>A struct that calls the <a class="reference internal" href="../Problem.html#structinfraRank"><span class="std std-ref">infraRank</span></a> function to store the ID and realization of an infrastructure. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9infraRank9infraRankEid">
+<span id="_CPPv3N9infraRank9infraRankEid"></span><span id="_CPPv2N9infraRank9infraRankEid"></span><span id="infraRank::infraRank__i.double"></span><span class="target" id="structinfraRank_1aa50dcfdcee689bd1484c9ac2b09bc694"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">infraRank</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">xreal</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9infraRank9infraRankEid" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9infraRank2idE">
+<span id="_CPPv3N9infraRank2idE"></span><span id="_CPPv2N9infraRank2idE"></span><span id="infraRank::id__i"></span><span class="target" id="structinfraRank_1ace3640f7fdc691b68111cf07e0eabaae"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">id</span></span></span><a class="headerlink" href="#_CPPv4N9infraRank2idE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9infraRank5xrealE">
+<span id="_CPPv3N9infraRank5xrealE"></span><span id="_CPPv2N9infraRank5xrealE"></span><span id="infraRank::xreal__double"></span><span class="target" id="structinfraRank_1a1bb966369809456d65bd4e2d4e19d775"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">xreal</span></span></span><a class="headerlink" href="#_CPPv4N9infraRank5xrealE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp struct">
+<dt class="sig sig-object cpp" id="_CPPv48by_xreal">
+<span id="_CPPv38by_xreal"></span><span id="_CPPv28by_xreal"></span><span id="by_xreal"></span><span class="target" id="structby__xreal"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">by_xreal</span></span></span><a class="headerlink" href="#_CPPv48by_xreal" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Problem.h&gt;</em></div>
+<p>A struct that intializes a boolean operator to compare the <a class="reference internal" href="../Problem.html#structinfraRank"><span class="std std-ref">infraRank</span></a> of two infrastructure objects. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8by_xrealclERK9infraRankRK9infraRank">
+<span id="_CPPv3N8by_xrealclERK9infraRankRK9infraRank"></span><span id="_CPPv2N8by_xrealclERK9infraRankRK9infraRank"></span><span id="by_xreal::call-operator__infraRankCR.infraRankCR"></span><span class="target" id="structby__xreal_1a89543fd1eb21d028c20e4cd01a239b71"></span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv49infraRank" title="infraRank"><span class="n"><span class="pre">infraRank</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ir1</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv49infraRank" title="infraRank"><span class="n"><span class="pre">infraRank</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">ir2</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8by_xrealclERK9infraRankRK9infraRank" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv47Problem">
+<span id="_CPPv37Problem"></span><span id="_CPPv27Problem"></span><span id="Problem"></span><span class="target" id="classProblem"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Problem</span></span></span><a class="headerlink" href="#_CPPv47Problem" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Problem.h&gt;</em></div>
+<p>Subclassed by <a class="reference internal" href="../Problem.html#classPaperTestProblem"><span class="std std-ref">PaperTestProblem</span></a>, <a class="reference internal" href="../Problem.html#classTriangle"><span class="std std-ref">Triangle</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem7ProblemEm">
+<span id="_CPPv3N7Problem7ProblemEm"></span><span id="_CPPv2N7Problem7ProblemEm"></span><span id="Problem::Problem__unsigned-l"></span><span class="target" id="classProblem_1a41939e01b382197124fcd9f5e8c7520d"></span><span class="sig-name descname"><span class="n"><span class="pre">Problem</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_weeks</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem7ProblemEm" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructs a new <a class="reference internal" href="../Problem.html#classProblem"><span class="std std-ref">Problem</span></a> object. Unset the seed for the random number generator for the reservoir objects. NOTE: Unclear what this does; need to see if can delete. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>n_weeks</strong> – The number of weeks to simulate. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7ProblemD0Ev">
+<span id="_CPPv3N7ProblemD0Ev"></span><span id="_CPPv2N7ProblemD0Ev"></span><span id="Problem::~Problem"></span><span class="target" id="classProblem_1af175051c1f08660690573aa0021e4106"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Problem</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7ProblemD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destructor for the <a class="reference internal" href="../Problem.html#classProblem"><span class="std std-ref">Problem</span></a> object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem18functionEvaluationEPdPdPd">
+<span id="_CPPv3N7Problem18functionEvaluationEPdPdPd"></span><span id="_CPPv2N7Problem18functionEvaluationEPdPdPd"></span><span id="Problem::functionEvaluation__doubleP.doubleP.doubleP"></span><span class="target" id="classProblem_1acd924a80df4422c5199748c714e9405c"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">functionEvaluation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">vars</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">objs</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">consts</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N7Problem18functionEvaluationEPdPdPd" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem10setN_weeksEm">
+<span id="_CPPv3N7Problem10setN_weeksEm"></span><span id="_CPPv2N7Problem10setN_weeksEm"></span><span id="Problem::setN_weeks__unsigned-l"></span><span class="target" id="classProblem_1a1ea4a3d52209fa3f284a4060fb6fa3ab"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setN_weeks</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_weeks</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem10setN_weeksEm" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the number of weeks over which to simulate the problem. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>n_weeks</strong> – An integer indicating the number of simulation weeks. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem13setSol_numberEm">
+<span id="_CPPv3N7Problem13setSol_numberEm"></span><span id="_CPPv2N7Problem13setSol_numberEm"></span><span id="Problem::setSol_number__unsigned-l"></span><span class="target" id="classProblem_1a855eaf9a98eadfab131d598b51df6d66"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setSol_number</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">sol_number</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem13setSol_numberEm" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the row of the decision variables of the solution (the solution number) to simulate. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>sol_number</strong> – An unsigned long integer indicating the row of the decision variables to simulate. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem14setIODirectoryERK6string">
+<span id="_CPPv3N7Problem14setIODirectoryERK6string"></span><span id="_CPPv2N7Problem14setIODirectoryERK6string"></span><span id="Problem::setIODirectory__stringCR"></span><span class="target" id="classProblem_1a188254a95b04bf4ed67e66262ea342e9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setIODirectory</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">io_directory</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem14setIODirectoryERK6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the input/output directory for the problem. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>io_directory</strong> – A const reference to the string containing the input/output directory for the problem. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem21setOutputSubDirectoryERK6string">
+<span id="_CPPv3N7Problem21setOutputSubDirectoryERK6string"></span><span id="_CPPv2N7Problem21setOutputSubDirectoryERK6string"></span><span id="Problem::setOutputSubDirectory__stringCR"></span><span class="target" id="classProblem_1a5b0d5309406eb36a594836e5004e3be6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setOutputSubDirectory</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">output_sub_directory_path</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem21setOutputSubDirectoryERK6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Set the output subdirectory path for the problem. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>output_sub_directory_path</strong> – A string containing the output subdirectory path. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK7Problem13getObjectivesEv">
+<span id="_CPPv3NK7Problem13getObjectivesEv"></span><span id="_CPPv2NK7Problem13getObjectivesEv"></span><span id="Problem::getObjectivesC"></span><span class="target" id="classProblem_1a64ffd22f18e26eba34013c81dc106212"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getObjectives</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK7Problem13getObjectivesEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the values of all the objectives for the current solution. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>const vector&lt;double&gt;&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem27calculateAndPrintObjectivesEb">
+<span id="_CPPv3N7Problem27calculateAndPrintObjectivesEb"></span><span id="_CPPv2N7Problem27calculateAndPrintObjectivesEb"></span><span id="Problem::calculateAndPrintObjectives__b"></span><span class="target" id="classProblem_1a195a32a960235513064a089c2472b44f"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateAndPrintObjectives</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">print_files</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem27calculateAndPrintObjectivesEb" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculates the objectives for the current solution. Prints them to a file if indicated as such. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>print_files</strong> – Boolean flag to indicate if the output files should be printed. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>vector&lt;double&gt; The calculated objectives for each utility. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem18setRDMOptimizationER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE">
+<span id="_CPPv3N7Problem18setRDMOptimizationER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE"></span><span id="_CPPv2N7Problem18setRDMOptimizationER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE"></span><span id="Problem::setRDMOptimization__vector:vector:double::R.vector:vector:double::R.vector:vector:double::R"></span><span class="target" id="classProblem_1a98115002e741e9220f7aa6bae0cb179c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRDMOptimization</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">policies_rdm</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem18setRDMOptimizationER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the 2D vectors of deeply uncertain factors for the problem optimization. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utilities_rdm</strong> – The reference to a 2D vector of DU factors for the short, middle, long-term and overall demand growth rate multipliers applied across all utilities //FIX: RENAME TO BETTER INDICATE RELATION TO DEMAND. </p></li>
+<li><p><strong>water_sources_rdm</strong> – The reference to a 2D vector of DU factors that scale the permitting and construction time of new water sources and the corresponding evaporation rate multipliers. </p></li>
+<li><p><strong>policies_rdm</strong> – The reference to a 2D vector of DU factors that scale the effectiveness of water use restriction policies. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem18setRDMReevaluationEiR6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE">
+<span id="_CPPv3N7Problem18setRDMReevaluationEiR6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE"></span><span id="_CPPv2N7Problem18setRDMReevaluationEiR6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE"></span><span id="Problem::setRDMReevaluation__i.vector:vector:double::R.vector:vector:double::R.vector:vector:double::R"></span><span class="target" id="classProblem_1ac4d39cf1e998e07b46b4a25fe9a1bb45"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRDMReevaluation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rdm_no</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">policies_rdm</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem18setRDMReevaluationEiR6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the 2D vectors of deeply uncertain factors for the problem reevaluation. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rdm_no</strong> – An integer indicating the DU SOW index. </p></li>
+<li><p><strong>utilities_rdm</strong> – The reference to a 2D vector of DU factors for the short, middle, long-term and overall demand growth rate multipliers applied across all utilities </p></li>
+<li><p><strong>water_sources_rdm</strong> – The reference to a 2D vector of DU factors that scale the permitting and construction time of new water sources and the corresponding evaporation rate multipliers. </p></li>
+<li><p><strong>policies_rdm</strong> – The reference to a 2D vector of DU factors that scale the effectiveness of water use restriction policies. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem12setN_threadsEm">
+<span id="_CPPv3N7Problem12setN_threadsEm"></span><span id="_CPPv2N7Problem12setN_threadsEm"></span><span id="Problem::setN_threads__unsigned-l"></span><span class="target" id="classProblem_1ad770920d19d5276fd0e30b835abe21ef"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setN_threads</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_threads</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem12setN_threadsEm" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the number of threads to use in the problem optimization. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>n_threads</strong> – An unsigned long integer indicating the number of threads to use. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem21setPrint_output_filesEb">
+<span id="_CPPv3N7Problem21setPrint_output_filesEb"></span><span id="_CPPv2N7Problem21setPrint_output_filesEb"></span><span id="Problem::setPrint_output_files__b"></span><span class="target" id="classProblem_1a1f055d5e57392700cab27efdd4577be9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPrint_output_files</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">print_output_files</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem21setPrint_output_filesEb" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the condition whether or not the print the problem optimization output files. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>print_output_files</strong> – A boolean flag indicating whether or not to print the output files. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem17setN_realizationsEm">
+<span id="_CPPv3N7Problem17setN_realizationsEm"></span><span id="_CPPv2N7Problem17setN_realizationsEm"></span><span id="Problem::setN_realizations__unsigned-l"></span><span class="target" id="classProblem_1ae5cec2ad575abb95cf7304153c31e410"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setN_realizations</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_realizations</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem17setN_realizationsEm" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the number of total realizations available. If the vector of realizations is empty, initialize and assign a vector unsigned long integers with length of n_realizations filled with zero values. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>n_realizations</strong> – An unsigned long integer indicating the number of realizations to run. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem20setRealizationsToRunER6vectorImE">
+<span id="_CPPv3N7Problem20setRealizationsToRunER6vectorImE"></span><span id="_CPPv2N7Problem20setRealizationsToRunER6vectorImE"></span><span id="Problem::setRealizationsToRun__vector:unsigned-l:R"></span><span class="target" id="classProblem_1afe5ddeb70b303e4971251e92a10f4828"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealizationsToRun</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">realizations_to_run</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem20setRealizationsToRunER6vectorImE" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets and limits the number of realizations to be. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>realizations_to_run</strong> – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem22setEvap_inflows_suffixERK6string">
+<span id="_CPPv3N7Problem22setEvap_inflows_suffixERK6string"></span><span id="_CPPv2N7Problem22setEvap_inflows_suffixERK6string"></span><span id="Problem::setEvap_inflows_suffix__stringCR"></span><span class="target" id="classProblem_1afb5e51664d0f340c393f7583622e99ca"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setEvap_inflows_suffix</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">evap_inflows_suffix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem22setEvap_inflows_suffixERK6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the filename suffix for the evaporation and inflow files unique to the problem. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>evap_inflows_suffix</strong> – A const string reference to the evaporation and inflow files suffix. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem14setFname_sufixERK6string">
+<span id="_CPPv3N7Problem14setFname_sufixERK6string"></span><span id="_CPPv2N7Problem14setFname_sufixERK6string"></span><span id="Problem::setFname_sufix__stringCR"></span><span class="target" id="classProblem_1ad666ae2c231f49103593a7e03a3b58fd"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setFname_sufix</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fname_sufix</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem14setFname_sufixERK6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the output filename suffix unique to the problem. FIXME: Need to correct function name to fname_suffix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fname_sufix</strong> – A const string reference to the filename suffix. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem24getMaster_data_collectorEv">
+<span id="_CPPv3N7Problem24getMaster_data_collectorEv"></span><span id="_CPPv2N7Problem24getMaster_data_collectorEv"></span><span id="Problem::getMaster_data_collector"></span><span class="target" id="classProblem_1acf10e6a4a54da1aabea1fa8611e598dc"></span><span class="n"><span class="pre">MasterDataCollector</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getMaster_data_collector</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem24getMaster_data_collectorEv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem20destroyDataCollectorEv">
+<span id="_CPPv3N7Problem20destroyDataCollectorEv"></span><span id="_CPPv2N7Problem20destroyDataCollectorEv"></span><span id="Problem::destroyDataCollector"></span><span class="target" id="classProblem_1af87d1081eb2a8fa57fa7f2666292fee3"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">destroyDataCollector</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem20destroyDataCollectorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>If the master_data_collector object is not null, delete it. Then assign it to a nullptr. FIXME: better to rename “deleteDataCollector”? </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem26printTimeSeriesAndPathwaysEb">
+<span id="_CPPv3N7Problem26printTimeSeriesAndPathwaysEb"></span><span id="_CPPv2N7Problem26printTimeSeriesAndPathwaysEb"></span><span id="Problem::printTimeSeriesAndPathways__b"></span><span class="target" id="classProblem_1a9085e0730845262a8a7b9dc26f5f84a1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">printTimeSeriesAndPathways</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">plot_time_series</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem26printTimeSeriesAndPathwaysEb" title="Link to this definition"></a><br /></dt>
+<dd><p>Prints the timeseries of infrastructure pathways to output folder. Prints utilities, water sources, and policies’ time series if indicated as such. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>plot_time_series</strong> – Boolean indicator to print the time series of utilities, water sources, and policies. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem12setRofTablesEm6string">
+<span id="_CPPv3N7Problem12setRofTablesEm6string"></span><span id="_CPPv2N7Problem12setRofTablesEm6string"></span><span id="Problem::setRofTables__unsigned-l.string"></span><span class="target" id="classProblem_1aa9debdf28260fd9054f7d6d2ee516f94"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRofTables</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_realizations</span></span>, <span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rof_tables_directory</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem12setRofTablesEm6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Read and load pre-computed ROF tables. Also prints the time taken to load the tables. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_realizations</strong> – An integer indicating the number of realizations. </p></li>
+<li><p><strong>rof_tables_directory</strong> – A string containing the directory path for the ROF tables. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem27setImport_export_rof_tablesEi6string">
+<span id="_CPPv3N7Problem27setImport_export_rof_tablesEi6string"></span><span id="_CPPv2N7Problem27setImport_export_rof_tablesEi6string"></span><span id="Problem::setImport_export_rof_tables__i.string"></span><span class="target" id="classProblem_1abd1e1e82b44c6ce5f7dc22e0534a6cac"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setImport_export_rof_tables</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">import_export_rof_tables</span></span>, <span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rof_tables_directory</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem27setImport_export_rof_tablesEi6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Takes the -C flag from main.cpp to indicate the ROF table import/export/ignore option. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>import_export_rof_tables</strong> – An integer indicating the ROF table import/export/ignore option. -1: Import tables, 0: Ignore tables, 1: Export tables. Throws error “The value entered is invalid” if the input is not -1, 0, or 1. If import_export_rof_tables is set to IMPORT_ROF_TABLES (-1), assign the ROF tables directory to rof_tables_directory. For all other values, create an ROF tables directory with name rof_tables_directory. </p></li>
+<li><p><strong>rof_tables_directory</strong> – A string containing the directory path for the ROF tables. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem31runBootstrapRealizationThinningEiiiiR6vectorI6vectorIiEE">
+<span id="_CPPv3N7Problem31runBootstrapRealizationThinningEiiiiR6vectorI6vectorIiEE"></span><span id="_CPPv2N7Problem31runBootstrapRealizationThinningEiiiiR6vectorI6vectorIiEE"></span><span id="Problem::runBootstrapRealizationThinning__i.i.i.i.vector:vector:i::R"></span><span class="target" id="classProblem_1a3604aafc0cf731fc9dfa8589ec8995ce"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">runBootstrapRealizationThinning</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">standard_solution</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_sets</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_bs_samples</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">threads</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">realizations_to_run</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem31runBootstrapRealizationThinningEiiiiR6vectorI6vectorIiEE" title="Link to this definition"></a><br /></dt>
+<dd><p>Initializes the output directory of the master data collector and performs bootstrap analysis. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>standard_solution</strong> – An integer indicating the index of the standard solution. </p></li>
+<li><p><strong>n_sets</strong> – An integer indicating the number of sets to run. </p></li>
+<li><p><strong>n_bs_samples</strong> – An integer indicating the number of bootstrap samples to run. </p></li>
+<li><p><strong>threads</strong> – An integer indicating the number of threads to use. </p></li>
+<li><p><strong>realizations_to_run</strong> – A reference to the 2D vector of integers containing data for the realizations to run. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem14setFormulationEm">
+<span id="_CPPv3N7Problem14setFormulationEm"></span><span id="_CPPv2N7Problem14setFormulationEm"></span><span id="Problem::setFormulation__unsigned-l"></span><span class="target" id="classProblem_1aeb825305f6bdf0df0cadcf0bb7da458f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setFormulation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">triangle_formulation</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem14setFormulationEm" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the version number of the problem formulation to use. Formulation 0: Fixed and variable JLWTP options are all considered and independently ordered. Formulation 1: Only fixed JLWTP options are considered and indepedently ordered. Formulation 2: Only variable JLWTP options are considered and indepedently ordered. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>triangle_formulation</strong> – An unsigned long integer indicating the formulation number. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem21setDemand_path_suffixERK6string">
+<span id="_CPPv3N7Problem21setDemand_path_suffixERK6string"></span><span id="_CPPv2N7Problem21setDemand_path_suffixERK6string"></span><span id="Problem::setDemand_path_suffix__stringCR"></span><span class="target" id="classProblem_1a442f72921a52a1087c67723a801c8a44"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setDemand_path_suffix</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dem_suf</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem21setDemand_path_suffixERK6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the filename suffix for the demand files unique to the problem. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dem_suf</strong> – A const string reference to the demand files suffix. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem24setDemand_path_subfolderERK6string">
+<span id="_CPPv3N7Problem24setDemand_path_subfolderERK6string"></span><span id="_CPPv2N7Problem24setDemand_path_subfolderERK6string"></span><span id="Problem::setDemand_path_subfolder__stringCR"></span><span class="target" id="classProblem_1a16f7de201ec1a9a2072c85819e7dde3c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setDemand_path_subfolder</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dem_subfolder</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem24setDemand_path_subfolderERK6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the subfolder path to the demand files. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dem_subfolder</strong> – A const string reference to the subfolder containing the demand files. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem37checkAndFixInfraExpansionHighLowOrderEP6vectorIiEP6vectorIdEiidd">
+<span id="_CPPv3N7Problem37checkAndFixInfraExpansionHighLowOrderEP6vectorIiEP6vectorIdEiidd"></span><span id="_CPPv2N7Problem37checkAndFixInfraExpansionHighLowOrderEP6vectorIiEP6vectorIdEiidd"></span><span id="Problem::checkAndFixInfraExpansionHighLowOrder__vector:i:P.vector:double:P.i.i.double.double"></span><span class="target" id="classProblem_1ab9750751c2d4468a3dfe5dd6573b5179"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkAndFixInfraExpansionHighLowOrder</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">order</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trigger</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id_low</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id_high</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">capacity_low</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">capacity_high</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem37checkAndFixInfraExpansionHighLowOrderEP6vectorIiEP6vectorIdEiidd" title="Link to this definition"></a><br /></dt>
+<dd><p>Prioritizes or merges infrastructure low and high expansions. If the high-expansion version is prioritized (appears earlier in the list), both the capacities of the low and high expansions are combined. The lower-priority item is removed from all lists. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>order</strong> – A pointer to a vector&lt;int&gt; object containing the construction order of <a class="reference internal" href="../Problem.html#structinfraRank"><span class="std std-ref">infraRank</span></a> objects. </p></li>
+<li><p><strong>triggers</strong> – A pointer to a vector&lt;double&gt; object containing the triggers that result in the construction of each corresponding <a class="reference internal" href="../Problem.html#structinfraRank"><span class="std std-ref">infraRank</span></a> vector object. </p></li>
+<li><p><strong>id_low</strong> – The ID of the low-expansion infrastructure. </p></li>
+<li><p><strong>id_high</strong> – The ID of the high-expansion infrastructure. </p></li>
+<li><p><strong>capacity_low</strong> – The capacity of the low-expansion infrastructure. </p></li>
+<li><p><strong>capacity_high</strong> – The capacity of the high-expansion infrastructure.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double The combined capacity of the low and high expansions if the high-expansion infrastructure is prioritized. Otherwise, return the original capacity of the high-expansion infrastructure. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE">
+<span id="_CPPv3N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE"></span><span id="_CPPv2N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE"></span><span id="Problem::vecInfraRankToVecInt__vector:infraRank:"></span><span class="target" id="classProblem_1ab1d415f85e69eda15916cd3a708c508d"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">vecInfraRankToVecInt</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv49infraRank" title="infraRank"><span class="n"><span class="pre">infraRank</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE" title="Link to this definition"></a><br /></dt>
+<dd><p>Converts the vector of <a class="reference internal" href="../Problem.html#structinfraRank"><span class="std std-ref">infraRank</span></a> objects to a vector of integers. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>v</strong> – A vector of <a class="reference internal" href="../Problem.html#structinfraRank"><span class="std std-ref">infraRank</span></a> objects. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>vector&lt;int&gt; A vector of integers denoting each infrastructure’s rank (from earliest to last built) after optimization. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem14n_realizationsE">
+<span id="_CPPv3N7Problem14n_realizationsE"></span><span id="_CPPv2N7Problem14n_realizationsE"></span><span id="Problem::n_realizations__unsigned-l"></span><span class="target" id="classProblem_1a270a5672643bfe09e52e0f24e1884136"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_realizations</span></span></span><a class="headerlink" href="#_CPPv4N7Problem14n_realizationsE" title="Link to this definition"></a><br /></dt>
+<dd><p>An unsigned long integer indicating the number of realizations to simulate. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem7n_weeksE">
+<span id="_CPPv3N7Problem7n_weeksE"></span><span id="_CPPv2N7Problem7n_weeksE"></span><span id="Problem::n_weeks__unsigned-l"></span><span class="target" id="classProblem_1ac7513bb0ecdfa4bbb7d2ada3595d71ec"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_weeks</span></span></span><a class="headerlink" href="#_CPPv4N7Problem7n_weeksE" title="Link to this definition"></a><br /></dt>
+<dd><p>An unsigned long integer indicating the number of weeks to simulate. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem11solution_noE">
+<span id="_CPPv3N7Problem11solution_noE"></span><span id="_CPPv2N7Problem11solution_noE"></span><span id="Problem::solution_no__unsigned-l"></span><span class="target" id="classProblem_1a7ca15cdcbff926ddca25bdee5984ffe5"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">solution_no</span></span></span><a class="headerlink" href="#_CPPv4N7Problem11solution_noE" title="Link to this definition"></a><br /></dt>
+<dd><p>An unsigned long integer indicating the row of the decision variables to simulate. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem9n_threadsE">
+<span id="_CPPv3N7Problem9n_threadsE"></span><span id="_CPPv2N7Problem9n_threadsE"></span><span id="Problem::n_threads__unsigned-l"></span><span class="target" id="classProblem_1a3303a162d648e8ae16153b57b5b4054f"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_threads</span></span></span><a class="headerlink" href="#_CPPv4N7Problem9n_threadsE" title="Link to this definition"></a><br /></dt>
+<dd><p>An unsigned long integer indicating the number of threads to use in the optimization. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem11n_utilitiesE">
+<span id="_CPPv3N7Problem11n_utilitiesE"></span><span id="_CPPv2N7Problem11n_utilitiesE"></span><span id="Problem::n_utilities__i"></span><span class="target" id="classProblem_1a4ca86ba2f568d232cf0421d39acff113"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_utilities</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">NON_INITIALIZED</span></span><a class="headerlink" href="#_CPPv4N7Problem11n_utilitiesE" title="Link to this definition"></a><br /></dt>
+<dd><p>An integer indicating the number of utilities in the problem. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem12io_directoryE">
+<span id="_CPPv3N7Problem12io_directoryE"></span><span id="_CPPv2N7Problem12io_directoryE"></span><span id="Problem::io_directory__string"></span><span class="target" id="classProblem_1ac58848a0d808cf040c3fb3676b4a236f"></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">io_directory</span></span></span><a class="headerlink" href="#_CPPv4N7Problem12io_directoryE" title="Link to this definition"></a><br /></dt>
+<dd><p>A string containing the input/output directory for the problem. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem20output_sub_directoryE">
+<span id="_CPPv3N7Problem20output_sub_directoryE"></span><span id="_CPPv2N7Problem20output_sub_directoryE"></span><span id="Problem::output_sub_directory__string"></span><span class="target" id="classProblem_1a43fa7720db839a1db318f4745997ae2d"></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">output_sub_directory</span></span></span><a class="headerlink" href="#_CPPv4N7Problem20output_sub_directoryE" title="Link to this definition"></a><br /></dt>
+<dd><p>A string containing the output subdirectory path for the problem. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem11fname_sufixE">
+<span id="_CPPv3N7Problem11fname_sufixE"></span><span id="_CPPv2N7Problem11fname_sufixE"></span><span id="Problem::fname_sufix__string"></span><span class="target" id="classProblem_1a59444139a907aaf4c6159caed46c8118"></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fname_sufix</span></span></span><a class="headerlink" href="#_CPPv4N7Problem11fname_sufixE" title="Link to this definition"></a><br /></dt>
+<dd><p>A string containing the output filename suffix unique to the problem. FIXME: Need to correct variable name to fname_suffix. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem19evap_inflows_suffixE">
+<span id="_CPPv3N7Problem19evap_inflows_suffixE"></span><span id="_CPPv2N7Problem19evap_inflows_suffixE"></span><span id="Problem::evap_inflows_suffix__string"></span><span class="target" id="classProblem_1a1ff3958eef8bfb851a84ce0772104dca"></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_inflows_suffix</span></span></span><a class="headerlink" href="#_CPPv4N7Problem19evap_inflows_suffixE" title="Link to this definition"></a><br /></dt>
+<dd><p>A string containing the filename suffix for the evaporation and inflow files unique to the problem. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem18demand_path_suffixE">
+<span id="_CPPv3N7Problem18demand_path_suffixE"></span><span id="_CPPv2N7Problem18demand_path_suffixE"></span><span id="Problem::demand_path_suffix__string"></span><span class="target" id="classProblem_1af9e30ddbb2f59e28f0970cf46932cd6d"></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_path_suffix</span></span></span><a class="headerlink" href="#_CPPv4N7Problem18demand_path_suffixE" title="Link to this definition"></a><br /></dt>
+<dd><p>A string containing the filename suffix for the demand files unique to the problem. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem21demand_path_subfolderE">
+<span id="_CPPv3N7Problem21demand_path_subfolderE"></span><span id="_CPPv2N7Problem21demand_path_subfolderE"></span><span id="Problem::demand_path_subfolder__string"></span><span class="target" id="classProblem_1a42888c08816db8b32b355decf102d67a"></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_path_subfolder</span></span></span><a class="headerlink" href="#_CPPv4N7Problem21demand_path_subfolderE" title="Link to this definition"></a><br /></dt>
+<dd><p>A srting containing the filename for the demand files subfolder. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem20rof_tables_directoryE">
+<span id="_CPPv3N7Problem20rof_tables_directoryE"></span><span id="_CPPv2N7Problem20rof_tables_directoryE"></span><span id="Problem::rof_tables_directory__string"></span><span class="target" id="classProblem_1abc641b49a4defb0dbabafbf3f9dbca6e"></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rof_tables_directory</span></span></span><a class="headerlink" href="#_CPPv4N7Problem20rof_tables_directoryE" title="Link to this definition"></a><br /></dt>
+<dd><p>A string containing the directory to the ROF tables. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem19realizations_to_runE">
+<span id="_CPPv3N7Problem19realizations_to_runE"></span><span id="_CPPv2N7Problem19realizations_to_runE"></span><span id="Problem::realizations_to_run__vector:unsigned-l:"></span><span class="target" id="classProblem_1af9ed9265d0d2b4918bd468d717429de1"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">realizations_to_run</span></span></span><a class="headerlink" href="#_CPPv4N7Problem19realizations_to_runE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of unsigned long integers containing the indices realizations to run. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem21master_data_collectorE">
+<span id="_CPPv3N7Problem21master_data_collectorE"></span><span id="_CPPv2N7Problem21master_data_collectorE"></span><span id="Problem::master_data_collector__MasterDataCollectorP"></span><span class="target" id="classProblem_1a6cd1db1d587a449985d6514390ba8c96"></span><span class="n"><span class="pre">MasterDataCollector</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">master_data_collector</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N7Problem21master_data_collectorE" title="Link to this definition"></a><br /></dt>
+<dd><p>A pointer to the MasterDataCollector object. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem10objectivesE">
+<span id="_CPPv3N7Problem10objectivesE"></span><span id="_CPPv2N7Problem10objectivesE"></span><span id="Problem::objectives__vector:double:"></span><span class="target" id="classProblem_1a72750ee8c8117f5ee9b190a359d6a60d"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">objectives</span></span></span><a class="headerlink" href="#_CPPv4N7Problem10objectivesE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of doubles containing the objective values for the problem. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem18print_output_filesE">
+<span id="_CPPv3N7Problem18print_output_filesE"></span><span id="_CPPv2N7Problem18print_output_filesE"></span><span id="Problem::print_output_files__b"></span><span class="target" id="classProblem_1a3372a73270ce989f5d2056cace66215b"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">print_output_files</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N7Problem18print_output_filesE" title="Link to this definition"></a><br /></dt>
+<dd><p>A boolean flag indicating whether or not to print the output files. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem6rdm_noE">
+<span id="_CPPv3N7Problem6rdm_noE"></span><span id="_CPPv2N7Problem6rdm_noE"></span><span id="Problem::rdm_no__i"></span><span class="target" id="classProblem_1a8e1d46a8dca514e4973b00a038480fc2"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rdm_no</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">NON_INITIALIZED</span></span><a class="headerlink" href="#_CPPv4N7Problem6rdm_noE" title="Link to this definition"></a><br /></dt>
+<dd><p>An integer indicating the DU SOW index. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem24import_export_rof_tablesE">
+<span id="_CPPv3N7Problem24import_export_rof_tablesE"></span><span id="_CPPv2N7Problem24import_export_rof_tablesE"></span><span id="Problem::import_export_rof_tables__i"></span><span class="target" id="classProblem_1ac5a286f34cec786a0ad56c77783a201c"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">import_export_rof_tables</span></span></span><a class="headerlink" href="#_CPPv4N7Problem24import_export_rof_tablesE" title="Link to this definition"></a><br /></dt>
+<dd><p>An integer indicating the ROF table import/export/ignore option. -1: Import tables, 0: Ignore tables, 1: Export tables. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem28table_gen_storage_multiplierE">
+<span id="_CPPv3N7Problem28table_gen_storage_multiplierE"></span><span id="_CPPv2N7Problem28table_gen_storage_multiplierE"></span><span id="Problem::table_gen_storage_multiplier__double"></span><span class="target" id="classProblem_1a27cae146b3409021f6d5936404cd1083"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">table_gen_storage_multiplier</span></span></span><a class="headerlink" href="#_CPPv4N7Problem28table_gen_storage_multiplierE" title="Link to this definition"></a><br /></dt>
+<dd><p>A double indicating the multiplier for the table generation storage. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem13utilities_rdmE">
+<span id="_CPPv3N7Problem13utilities_rdmE"></span><span id="_CPPv2N7Problem13utilities_rdmE"></span><span id="Problem::utilities_rdm__vector:vector:double::"></span><span class="target" id="classProblem_1aa4f6db22580c8d8a941e83556f4f5208"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utilities_rdm</span></span></span><a class="headerlink" href="#_CPPv4N7Problem13utilities_rdmE" title="Link to this definition"></a><br /></dt>
+<dd><p>A 2D vector of doubles storing the DU multipliers for all utilities’ demand growth rates. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem17water_sources_rdmE">
+<span id="_CPPv3N7Problem17water_sources_rdmE"></span><span id="_CPPv2N7Problem17water_sources_rdmE"></span><span id="Problem::water_sources_rdm__vector:vector:double::"></span><span class="target" id="classProblem_1ace43e5306285f0d91a199a4bd5a38922"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_sources_rdm</span></span></span><a class="headerlink" href="#_CPPv4N7Problem17water_sources_rdmE" title="Link to this definition"></a><br /></dt>
+<dd><p>A 2D vector of doubles storing the DU multipliers for all water sources’ permitting and construction times. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem12policies_rdmE">
+<span id="_CPPv3N7Problem12policies_rdmE"></span><span id="_CPPv2N7Problem12policies_rdmE"></span><span id="Problem::policies_rdm__vector:vector:double::"></span><span class="target" id="classProblem_1a63d49161a5d6d98e26cd218d90a13bae"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">policies_rdm</span></span></span><a class="headerlink" href="#_CPPv4N7Problem12policies_rdmE" title="Link to this definition"></a><br /></dt>
+<dd><p>A 2D vector of doubles storing the DU multipliers for all utilities’ water restriction policy effectiveness. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem10rof_tablesE">
+<span id="_CPPv3N7Problem10rof_tablesE"></span><span id="_CPPv2N7Problem10rof_tablesE"></span><span id="Problem::rof_tables__vector:vector:Matrix2D:double:::"></span><span class="target" id="classProblem_1a0a64a8c04964a326879eccccf5437c93"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">Matrix2D</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rof_tables</span></span></span><a class="headerlink" href="#_CPPv4N7Problem10rof_tablesE" title="Link to this definition"></a><br /></dt>
+<dd><p>A 2D vector of matrices storing the ROF tables for all utilities across all realizations. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N7Problem11formulationE">
+<span id="_CPPv3N7Problem11formulationE"></span><span id="_CPPv2N7Problem11formulationE"></span><span id="Problem::formulation__unsigned-l"></span><span class="target" id="classProblem_1a3c013ea45ae840c261341bf31eaec87b"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">formulation</span></span></span><a class="headerlink" href="#_CPPv4N7Problem11formulationE" title="Link to this definition"></a><br /></dt>
+<dd><p>An unsigned long flag indicating which problem formulation to run. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Lillian Lau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
