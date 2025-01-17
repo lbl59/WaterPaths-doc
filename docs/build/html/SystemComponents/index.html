@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Problem Module &mdash; WaterPaths 1 documentation</title>
+  <title>SystemComponents Module &mdash; WaterPaths 1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
@@ -22,8 +21,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Problem Module" href="Bonds/index.html" />
-    <link rel="prev" title="Problem Module" href="../Simulation/index.html" /> 
+    <link rel="next" title="Bonds Module" href="Bonds/index.html" />
+    <link rel="prev" title="Simulation Module" href="../Simulation/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,18 +46,18 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../ContinuityModels/index.html">Problem Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContinuityModels/index.html">ContinuityModels Module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ContinuityModels/Base/index.html">Base Components</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Problem/index.html">Problem Module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Problem/Base/index.html">Base Components</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Simulation/index.html">Problem Module</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Problem Module</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../Simulation/index.html">Simulation Module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SystemComponents Module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Bonds/index.html">Problem Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Bonds/Base/index.html">Problem Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Utility/index.html">Problem Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="WaterSources/index.html">Problem Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="WaterSources/Base/index.html">Problem Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Bonds/index.html">Bonds Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Bonds/Base/index.html">Bonds Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Utility/index.html">Utility Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WaterSources/index.html">SystemComponents Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WaterSources/Base/index.html">WaterSources Module</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#api-reference">API Reference</a><ul>
@@ -70,11 +69,11 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Bonds/index.html">Problem Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Bonds/Base/index.html">Problem Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Utility/index.html">Problem Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="WaterSources/index.html">Problem Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="WaterSources/Base/index.html">Problem Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bonds/index.html">Bonds Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Bonds/Base/index.html">Bonds Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utility/index.html">Utility Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WaterSources/index.html">SystemComponents Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="WaterSources/Base/index.html">WaterSources Module</a></li>
 </ul>
 
         </div>
@@ -91,7 +90,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Problem Module</li>
+      <li class="breadcrumb-item active">SystemComponents Module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/SystemComponents/index.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -101,18 +100,18 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="problem-module">
-<h1>Problem Module<a class="headerlink" href="#problem-module" title="Permalink to this heading"></a></h1>
+  <div class="section" id="systemcomponents-module">
+<h1>SystemComponents Module<a class="headerlink" href="#systemcomponents-module" title="Permalink to this heading"></a></h1>
 <p>The <cite>SystemComponents</cite> module contains classes and functions related defining the components of the water system.
 The module is divided into submodules, each of which contains classes and functions related to a specific component
 of the water system. This module also</p>
-<section id="contents">
+<div class="section" id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Bonds/index.html">Problem Module</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="Bonds/index.html">Bonds Module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Bonds/index.html#contents">Contents</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Bonds/Base/index.html">Problem Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Bonds/Base/index.html">Bonds Module</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Bonds/index.html#api-reference">API Reference</a><ul>
@@ -121,7 +120,7 @@ of the water system. This module also</p>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Bonds/Base/index.html">Problem Module</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="Bonds/Base/index.html">Bonds Module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Bonds/Base/index.html#contents">Contents</a><ul class="simple">
 </ul>
 </li>
@@ -131,7 +130,7 @@ of the water system. This module also</p>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Utility/index.html">Problem Module</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="Utility/index.html">Utility Module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Utility/index.html#contents">Contents</a><ul class="simple">
 </ul>
 </li>
@@ -141,9 +140,9 @@ of the water system. This module also</p>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="WaterSources/index.html">Problem Module</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="WaterSources/index.html">SystemComponents Module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="WaterSources/index.html#contents">Contents</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="WaterSources/Base/index.html">Problem Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="WaterSources/Base/index.html">WaterSources Module</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="WaterSources/index.html#api-reference">API Reference</a><ul>
@@ -152,7 +151,7 @@ of the water system. This module also</p>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="WaterSources/Base/index.html">Problem Module</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="WaterSources/Base/index.html">WaterSources Module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="WaterSources/Base/index.html#contents">Contents</a><ul class="simple">
 </ul>
 </li>
@@ -164,13 +163,13 @@ of the water system. This module also</p>
 </li>
 </ul>
 </div>
-</section>
-<section id="api-reference">
+</div>
+<div class="section" id="api-reference">
 <h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
 <p>Below is the API reference for the <cite>SystemComponents</cite> module. Documentation is automatically extracted from the header files.</p>
-<section id="base-components">
+<div class="section" id="base-components">
 <h3>Base Components<a class="headerlink" href="#base-components" title="Permalink to this heading"></a></h3>
-<section id="catchment-h">
+<div class="section" id="catchment-h">
 <h4>Catchment.h<a class="headerlink" href="#catchment-h" title="Permalink to this heading"></a></h4>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv49Catchment">
@@ -184,7 +183,7 @@ of the water system. This module also</p>
 <span id="_CPPv3N9Catchment9CatchmentEP6vectorI6vectorIdEEi"></span><span id="_CPPv2N9Catchment9CatchmentEP6vectorI6vectorIdEEi"></span><span id="Catchment::Catchment__vector:vector:double::P.i"></span><span class="target" id="classCatchment_1aafdee6ee868a8892314672abb119e60f"></span><span class="sig-name descname"><span class="n"><span class="pre">Catchment</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">streamflows_all</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">series_length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Catchment9CatchmentEP6vectorI6vectorIdEEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Constructor for a new <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> object. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>streamflows_all</strong> – A 2D vector containing all combined historical and synthetic streamflow realizations. </p></li>
 <li><p><strong>series_length</strong> – An integer representing the length of the streamflow time series. </p></li>
@@ -198,7 +197,7 @@ of the water system. This module also</p>
 <span id="_CPPv3N9Catchment9CatchmentERK9Catchment"></span><span id="_CPPv2N9Catchment9CatchmentERK9Catchment"></span><span id="Catchment::Catchment__CatchmentCR"></span><span class="target" id="classCatchment_1ae311c4b2d857a8b5abc01f5317b04df2"></span><span class="sig-name descname"><span class="n"><span class="pre">Catchment</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N9Catchment9CatchmentERK9Catchment" title="Catchment::Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catchment</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Catchment9CatchmentERK9Catchment" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Copy constructor for a <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> object. This constructor does not copy the parent pointer. Set parent to false to distinguish between a parent <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> and those created as copies. Initializes a new instance of <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> with data copied from the original <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> object. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>catchment</strong> – A <a class="reference internal" href="#classCatchment"><span class="std std-ref">Catchment</span></a> object. </p>
 </dd>
 </dl>
@@ -215,7 +214,7 @@ of the water system. This module also</p>
 <span id="_CPPv3N9CatchmentaSERK9Catchment"></span><span id="_CPPv2N9CatchmentaSERK9Catchment"></span><span id="Catchment::assign-operator__CatchmentCR"></span><span class="target" id="classCatchment_1a5abab52eab9c05164f76e46954833989"></span><a class="reference internal" href="#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">catchment</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9CatchmentaSERK9Catchment" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Copy assignment operator. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>catchment</strong> – </p>
 </dd>
 </dl>
@@ -226,10 +225,10 @@ of the water system. This module also</p>
 <span id="_CPPv3N9Catchment13getStreamflowEi"></span><span id="_CPPv2N9Catchment13getStreamflowEi"></span><span id="Catchment::getStreamflow__i"></span><span class="target" id="classCatchment_1af4e8206ffab5c901e5e4cdd6136f73a1"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getStreamflow</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Catchment13getStreamflowEi" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Gets streamflow for a given week AFTER the first delta_week weeks used to calculate the ROFs. This function assures that the number of past inflows used for ROF calculations are reserved in the beginning of the time series for ROF calculations. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>week</strong> – An integer representing the week of the entire streamflow time series. </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>A double representing the streamflow for the given week. </p>
 </dd>
 </dl>
@@ -240,7 +239,7 @@ of the water system. This module also</p>
 <span id="_CPPv3N9Catchment14setRealizationEmR6vectorIdE"></span><span id="_CPPv2N9Catchment14setRealizationEmR6vectorIdE"></span><span id="Catchment::setRealization__unsigned-l.vector:double:R"></span><span class="target" id="classCatchment_1ad76654af47dcd69bcb795c1c152409cc"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealization</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">r</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rdm_factors</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Catchment14setRealizationEmR6vectorIdE" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Sets the 1D vector time series corresponding to realization index and eliminate reference to the full 2D comprehensive streamflow data set. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>r</strong> – An unsigned long integer representing the realization index. </p></li>
 <li><p><strong>rdm_factors</strong> – A reference to a vector of doubles representing the random factors used to generate the streamflow realization (UNUSED). </p></li>
@@ -285,17 +284,17 @@ of the water system. This module also</p>
 </div>
 </dd></dl>
 
-</section>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
+</div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../Simulation/index.html" class="btn btn-neutral float-left" title="Problem Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Bonds/index.html" class="btn btn-neutral float-right" title="Problem Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../Simulation/index.html" class="btn btn-neutral float-left" title="Simulation Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Bonds/index.html" class="btn btn-neutral float-right" title="Bonds Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

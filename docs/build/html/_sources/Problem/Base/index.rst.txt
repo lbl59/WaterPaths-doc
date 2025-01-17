@@ -1,7 +1,7 @@
 Base Components
 ===============
 
-The base components define foundational functionality for problem-solving.
+The base components define foundational functionality of the `Problem` class for problem-solving.
 
 API Reference
 -------------

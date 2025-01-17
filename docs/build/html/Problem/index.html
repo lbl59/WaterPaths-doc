@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Problem Module &mdash; WaterPaths 1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
@@ -21,7 +20,9 @@
         <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Base Components" href="Base/index.html" />
+    <link rel="prev" title="Base Components" href="../ContinuityModels/Base/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,8 +45,36 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../modules.html">Modules</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ContinuityModels/index.html">ContinuityModels Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ContinuityModels/Base/index.html">Base Components</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Problem Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Base/index.html">Base Components</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#api-reference">API Reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#base-components">Base Components</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#problem-h">Problem.h</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#specific-problems">Specific Problems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#papertestproblem-h">PaperTestProblem.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#triangle-h">Triangle.h</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Base/index.html">Base Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Simulation/index.html">Simulation Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SystemComponents/index.html">SystemComponents Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SystemComponents/Bonds/index.html">Bonds Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SystemComponents/Bonds/Base/index.html">Bonds Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SystemComponents/Utility/index.html">Utility Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SystemComponents/WaterSources/index.html">SystemComponents Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SystemComponents/WaterSources/Base/index.html">WaterSources Module</a></li>
 </ul>
 
         </div>
@@ -72,11 +101,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="problem-module">
+  <div class="section" id="problem-module">
 <h1>Problem Module<a class="headerlink" href="#problem-module" title="Permalink to this heading"></a></h1>
 <p>The <cite>Problem</cite> module contains classes and functions related to problem definitions. This module includes both base components and
 its Sedento Valley and Research Triangle implementations.</p>
-<section id="contents">
+<div class="section" id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this heading"></a></h2>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Submodules:</span></p>
@@ -87,20 +116,20 @@ its Sedento Valley and Research Triangle implementations.</p>
 </li>
 </ul>
 </div>
-</section>
-<section id="api-reference">
+</div>
+<div class="section" id="api-reference">
 <h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
 <p>Below is the API reference for the <cite>Problem</cite> module. Documentation is automatically extracted from the header files.</p>
-<section id="base-components">
+<div class="section" id="base-components">
 <h3>Base Components<a class="headerlink" href="#base-components" title="Permalink to this heading"></a></h3>
-<section id="problem-h">
+<div class="section" id="problem-h">
 <h4>Problem.h<a class="headerlink" href="#problem-h" title="Permalink to this heading"></a></h4>
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv49infraRank">
 <span id="_CPPv39infraRank"></span><span id="_CPPv29infraRank"></span><span id="infraRank"></span><span class="target" id="structinfraRank"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">infraRank</span></span></span><br /></dt>
 <dd><div class="docutils container">
-<em>#include &lt;<a class="reference internal" href="../modules.html#Problem_8h"><span class="std std-ref">Problem.h</span></a>&gt;</em></div>
-<p>A struct that calls the <a class="reference internal" href="../modules.html#structinfraRank"><span class="std std-ref">infraRank</span></a> function to store the ID and realization of an infrastructure. </p>
+<em>#include &lt;Problem.h&gt;</em></div>
+<p>A struct that calls the <a class="reference internal" href="#structinfraRank"><span class="std std-ref">infraRank</span></a> function to store the ID and realization of an infrastructure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
@@ -128,8 +157,8 @@ its Sedento Valley and Research Triangle implementations.</p>
 <dt class="sig sig-object cpp" id="_CPPv48by_xreal">
 <span id="_CPPv38by_xreal"></span><span id="_CPPv28by_xreal"></span><span id="by_xreal"></span><span class="target" id="structby__xreal"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">by_xreal</span></span></span><br /></dt>
 <dd><div class="docutils container">
-<em>#include &lt;<a class="reference internal" href="../modules.html#Problem_8h"><span class="std std-ref">Problem.h</span></a>&gt;</em></div>
-<p>A struct that intializes a boolean operator to compare the <a class="reference internal" href="../modules.html#structinfraRank"><span class="std std-ref">infraRank</span></a> of two infrastructure objects. </p>
+<em>#include &lt;Problem.h&gt;</em></div>
+<p>A struct that intializes a boolean operator to compare the <a class="reference internal" href="#structinfraRank"><span class="std std-ref">infraRank</span></a> of two infrastructure objects. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
@@ -144,16 +173,16 @@ its Sedento Valley and Research Triangle implementations.</p>
 <dt class="sig sig-object cpp" id="_CPPv47Problem">
 <span id="_CPPv37Problem"></span><span id="_CPPv27Problem"></span><span id="Problem"></span><span class="target" id="classProblem"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Problem</span></span></span><br /></dt>
 <dd><div class="docutils container">
-<em>#include &lt;<a class="reference internal" href="../modules.html#Problem_8h"><span class="std std-ref">Problem.h</span></a>&gt;</em></div>
-<p>Subclassed by <a class="reference internal" href="../modules.html#classPaperTestProblem"><span class="std std-ref">PaperTestProblem</span></a>, <a class="reference internal" href="../modules.html#classTriangle"><span class="std std-ref">Triangle</span></a></p>
+<em>#include &lt;Problem.h&gt;</em></div>
+<p>Subclassed by <a class="reference internal" href="#classPaperTestProblem"><span class="std std-ref">PaperTestProblem</span></a>, <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N7Problem7ProblemEm">
 <span id="_CPPv3N7Problem7ProblemEm"></span><span id="_CPPv2N7Problem7ProblemEm"></span><span id="Problem::Problem__unsigned-l"></span><span class="target" id="classProblem_1a41939e01b382197124fcd9f5e8c7520d"></span><span class="sig-name descname"><span class="n"><span class="pre">Problem</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_weeks</span></span><span class="sig-paren">)</span><br /></dt>
-<dd><p>Constructs a new <a class="reference internal" href="../modules.html#classProblem"><span class="std std-ref">Problem</span></a> object. Unset the seed for the random number generator for the reservoir objects. NOTE: Unclear what this does; need to see if can delete. </p>
+<dd><p>Constructs a new <a class="reference internal" href="#classProblem"><span class="std std-ref">Problem</span></a> object. Unset the seed for the random number generator for the reservoir objects. NOTE: Unclear what this does; need to see if can delete. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>n_weeks</strong> – The number of weeks to simulate. </p>
 </dd>
 </dl>
@@ -162,7 +191,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N7ProblemD0Ev">
 <span id="_CPPv3N7ProblemD0Ev"></span><span id="_CPPv2N7ProblemD0Ev"></span><span id="Problem::~Problem"></span><span class="target" id="classProblem_1af175051c1f08660690573aa0021e4106"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Problem</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><br /></dt>
-<dd><p>Destructor for the <a class="reference internal" href="../modules.html#classProblem"><span class="std std-ref">Problem</span></a> object. </p>
+<dd><p>Destructor for the <a class="reference internal" href="#classProblem"><span class="std std-ref">Problem</span></a> object. </p>
 </dd></dl>
 
 <dl class="cpp function">
@@ -175,7 +204,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem10setN_weeksEm"></span><span id="_CPPv2N7Problem10setN_weeksEm"></span><span id="Problem::setN_weeks__unsigned-l"></span><span class="target" id="classProblem_1a1ea4a3d52209fa3f284a4060fb6fa3ab"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setN_weeks</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_weeks</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the number of weeks over which to simulate the problem. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>n_weeks</strong> – An integer indicating the number of simulation weeks. </p>
 </dd>
 </dl>
@@ -186,7 +215,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem13setSol_numberEm"></span><span id="_CPPv2N7Problem13setSol_numberEm"></span><span id="Problem::setSol_number__unsigned-l"></span><span class="target" id="classProblem_1a855eaf9a98eadfab131d598b51df6d66"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setSol_number</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">sol_number</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the row of the decision variables of the solution (the solution number) to simulate. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>sol_number</strong> – An unsigned long integer indicating the row of the decision variables to simulate. </p>
 </dd>
 </dl>
@@ -197,7 +226,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem14setIODirectoryERK6string"></span><span id="_CPPv2N7Problem14setIODirectoryERK6string"></span><span id="Problem::setIODirectory__stringCR"></span><span class="target" id="classProblem_1a188254a95b04bf4ed67e66262ea342e9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setIODirectory</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">io_directory</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the input/output directory for the problem. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>io_directory</strong> – A const reference to the string containing the input/output directory for the problem. </p>
 </dd>
 </dl>
@@ -208,7 +237,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem21setOutputSubDirectoryERK6string"></span><span id="_CPPv2N7Problem21setOutputSubDirectoryERK6string"></span><span id="Problem::setOutputSubDirectory__stringCR"></span><span class="target" id="classProblem_1a5b0d5309406eb36a594836e5004e3be6"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setOutputSubDirectory</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">output_sub_directory_path</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Set the output subdirectory path for the problem. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>output_sub_directory_path</strong> – A string containing the output subdirectory path. </p>
 </dd>
 </dl>
@@ -219,7 +248,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3NK7Problem13getObjectivesEv"></span><span id="_CPPv2NK7Problem13getObjectivesEv"></span><span id="Problem::getObjectivesC"></span><span class="target" id="classProblem_1a64ffd22f18e26eba34013c81dc106212"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getObjectives</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><br /></dt>
 <dd><p>Gets the values of all the objectives for the current solution. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>const vector&lt;double&gt;&amp; </p>
 </dd>
 </dl>
@@ -230,10 +259,10 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem27calculateAndPrintObjectivesEb"></span><span id="_CPPv2N7Problem27calculateAndPrintObjectivesEb"></span><span id="Problem::calculateAndPrintObjectives__b"></span><span class="target" id="classProblem_1a195a32a960235513064a089c2472b44f"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateAndPrintObjectives</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">print_files</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Calculates the objectives for the current solution. Prints them to a file if indicated as such. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>print_files</strong> – Boolean flag to indicate if the output files should be printed. </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>vector&lt;double&gt; The calculated objectives for each utility. </p>
 </dd>
 </dl>
@@ -244,7 +273,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem18setRDMOptimizationER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE"></span><span id="_CPPv2N7Problem18setRDMOptimizationER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE"></span><span id="Problem::setRDMOptimization__vector:vector:double::R.vector:vector:double::R.vector:vector:double::R"></span><span class="target" id="classProblem_1a98115002e741e9220f7aa6bae0cb179c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRDMOptimization</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">policies_rdm</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the 2D vectors of deeply uncertain factors for the problem optimization. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>utilities_rdm</strong> – The reference to a 2D vector of DU factors for the short, middle, long-term and overall demand growth rate multipliers applied across all utilities //FIX: RENAME TO BETTER INDICATE RELATION TO DEMAND. </p></li>
 <li><p><strong>water_sources_rdm</strong> – The reference to a 2D vector of DU factors that scale the permitting and construction time of new water sources and the corresponding evaporation rate multipliers. </p></li>
@@ -259,7 +288,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem18setRDMReevaluationEiR6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE"></span><span id="_CPPv2N7Problem18setRDMReevaluationEiR6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE"></span><span id="Problem::setRDMReevaluation__i.vector:vector:double::R.vector:vector:double::R.vector:vector:double::R"></span><span class="target" id="classProblem_1ac4d39cf1e998e07b46b4a25fe9a1bb45"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRDMReevaluation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rdm_no</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">policies_rdm</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the 2D vectors of deeply uncertain factors for the problem reevaluation. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>rdm_no</strong> – An integer indicating the DU SOW index. </p></li>
 <li><p><strong>utilities_rdm</strong> – The reference to a 2D vector of DU factors for the short, middle, long-term and overall demand growth rate multipliers applied across all utilities </p></li>
@@ -275,7 +304,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem12setN_threadsEm"></span><span id="_CPPv2N7Problem12setN_threadsEm"></span><span id="Problem::setN_threads__unsigned-l"></span><span class="target" id="classProblem_1ad770920d19d5276fd0e30b835abe21ef"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setN_threads</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_threads</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the number of threads to use in the problem optimization. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>n_threads</strong> – An unsigned long integer indicating the number of threads to use. </p>
 </dd>
 </dl>
@@ -286,7 +315,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem21setPrint_output_filesEb"></span><span id="_CPPv2N7Problem21setPrint_output_filesEb"></span><span id="Problem::setPrint_output_files__b"></span><span class="target" id="classProblem_1a1f055d5e57392700cab27efdd4577be9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPrint_output_files</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">print_output_files</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the condition whether or not the print the problem optimization output files. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>print_output_files</strong> – A boolean flag indicating whether or not to print the output files. </p>
 </dd>
 </dl>
@@ -297,7 +326,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem17setN_realizationsEm"></span><span id="_CPPv2N7Problem17setN_realizationsEm"></span><span id="Problem::setN_realizations__unsigned-l"></span><span class="target" id="classProblem_1ae5cec2ad575abb95cf7304153c31e410"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setN_realizations</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_realizations</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the number of total realizations available. If the vector of realizations is empty, initialize and assign a vector unsigned long integers with length of n_realizations filled with zero values. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>n_realizations</strong> – An unsigned long integer indicating the number of realizations to run. </p>
 </dd>
 </dl>
@@ -308,7 +337,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem20setRealizationsToRunER6vectorImE"></span><span id="_CPPv2N7Problem20setRealizationsToRunER6vectorImE"></span><span id="Problem::setRealizationsToRun__vector:unsigned-l:R"></span><span class="target" id="classProblem_1afe5ddeb70b303e4971251e92a10f4828"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealizationsToRun</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">realizations_to_run</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets and limits the number of realizations to be. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>realizations_to_run</strong> – </p>
 </dd>
 </dl>
@@ -319,7 +348,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem22setEvap_inflows_suffixERK6string"></span><span id="_CPPv2N7Problem22setEvap_inflows_suffixERK6string"></span><span id="Problem::setEvap_inflows_suffix__stringCR"></span><span class="target" id="classProblem_1afb5e51664d0f340c393f7583622e99ca"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setEvap_inflows_suffix</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">evap_inflows_suffix</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the filename suffix for the evaporation and inflow files unique to the problem. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>evap_inflows_suffix</strong> – A const string reference to the evaporation and inflow files suffix. </p>
 </dd>
 </dl>
@@ -330,7 +359,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem14setFname_sufixERK6string"></span><span id="_CPPv2N7Problem14setFname_sufixERK6string"></span><span id="Problem::setFname_sufix__stringCR"></span><span class="target" id="classProblem_1ad666ae2c231f49103593a7e03a3b58fd"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setFname_sufix</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fname_sufix</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the output filename suffix unique to the problem. FIXME: Need to correct function name to fname_suffix. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>fname_sufix</strong> – A const string reference to the filename suffix. </p>
 </dd>
 </dl>
@@ -352,7 +381,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem26printTimeSeriesAndPathwaysEb"></span><span id="_CPPv2N7Problem26printTimeSeriesAndPathwaysEb"></span><span id="Problem::printTimeSeriesAndPathways__b"></span><span class="target" id="classProblem_1a9085e0730845262a8a7b9dc26f5f84a1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">printTimeSeriesAndPathways</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">plot_time_series</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Prints the timeseries of infrastructure pathways to output folder. Prints utilities, water sources, and policies’ time series if indicated as such. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>plot_time_series</strong> – Boolean indicator to print the time series of utilities, water sources, and policies. </p>
 </dd>
 </dl>
@@ -363,7 +392,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem12setRofTablesEm6string"></span><span id="_CPPv2N7Problem12setRofTablesEm6string"></span><span id="Problem::setRofTables__unsigned-l.string"></span><span class="target" id="classProblem_1aa9debdf28260fd9054f7d6d2ee516f94"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRofTables</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_realizations</span></span>, <span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rof_tables_directory</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Read and load pre-computed ROF tables. Also prints the time taken to load the tables. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n_realizations</strong> – An integer indicating the number of realizations. </p></li>
 <li><p><strong>rof_tables_directory</strong> – A string containing the directory path for the ROF tables. </p></li>
@@ -377,7 +406,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem27setImport_export_rof_tablesEi6string"></span><span id="_CPPv2N7Problem27setImport_export_rof_tablesEi6string"></span><span id="Problem::setImport_export_rof_tables__i.string"></span><span class="target" id="classProblem_1abd1e1e82b44c6ce5f7dc22e0534a6cac"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setImport_export_rof_tables</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">import_export_rof_tables</span></span>, <span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rof_tables_directory</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Takes the -C flag from main.cpp to indicate the ROF table import/export/ignore option. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>import_export_rof_tables</strong> – An integer indicating the ROF table import/export/ignore option. -1: Import tables, 0: Ignore tables, 1: Export tables. Throws error “The value entered is invalid” if the input is not -1, 0, or 1. If import_export_rof_tables is set to IMPORT_ROF_TABLES (-1), assign the ROF tables directory to rof_tables_directory. For all other values, create an ROF tables directory with name rof_tables_directory. </p></li>
 <li><p><strong>rof_tables_directory</strong> – A string containing the directory path for the ROF tables. </p></li>
@@ -391,7 +420,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem31runBootstrapRealizationThinningEiiiiR6vectorI6vectorIiEE"></span><span id="_CPPv2N7Problem31runBootstrapRealizationThinningEiiiiR6vectorI6vectorIiEE"></span><span id="Problem::runBootstrapRealizationThinning__i.i.i.i.vector:vector:i::R"></span><span class="target" id="classProblem_1a3604aafc0cf731fc9dfa8589ec8995ce"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">runBootstrapRealizationThinning</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">standard_solution</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_sets</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_bs_samples</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">threads</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">realizations_to_run</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Initializes the output directory of the master data collector and performs bootstrap analysis. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>standard_solution</strong> – An integer indicating the index of the standard solution. </p></li>
 <li><p><strong>n_sets</strong> – An integer indicating the number of sets to run. </p></li>
@@ -408,7 +437,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem14setFormulationEm"></span><span id="_CPPv2N7Problem14setFormulationEm"></span><span id="Problem::setFormulation__unsigned-l"></span><span class="target" id="classProblem_1aeb825305f6bdf0df0cadcf0bb7da458f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setFormulation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">triangle_formulation</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the version number of the problem formulation to use. Formulation 0: Fixed and variable JLWTP options are all considered and independently ordered. Formulation 1: Only fixed JLWTP options are considered and indepedently ordered. Formulation 2: Only variable JLWTP options are considered and indepedently ordered. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>triangle_formulation</strong> – An unsigned long integer indicating the formulation number. </p>
 </dd>
 </dl>
@@ -419,7 +448,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem21setDemand_path_suffixERK6string"></span><span id="_CPPv2N7Problem21setDemand_path_suffixERK6string"></span><span id="Problem::setDemand_path_suffix__stringCR"></span><span class="target" id="classProblem_1a442f72921a52a1087c67723a801c8a44"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setDemand_path_suffix</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dem_suf</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the filename suffix for the demand files unique to the problem. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>dem_suf</strong> – A const string reference to the demand files suffix. </p>
 </dd>
 </dl>
@@ -430,7 +459,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem24setDemand_path_subfolderERK6string"></span><span id="_CPPv2N7Problem24setDemand_path_subfolderERK6string"></span><span id="Problem::setDemand_path_subfolder__stringCR"></span><span class="target" id="classProblem_1a16f7de201ec1a9a2072c85819e7dde3c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setDemand_path_subfolder</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">dem_subfolder</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Sets the subfolder path to the demand files. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>dem_subfolder</strong> – A const string reference to the subfolder containing the demand files. </p>
 </dd>
 </dl>
@@ -444,17 +473,17 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N7Problem37checkAndFixInfraExpansionHighLowOrderEP6vectorIiEP6vectorIdEiidd"></span><span id="_CPPv2N7Problem37checkAndFixInfraExpansionHighLowOrderEP6vectorIiEP6vectorIdEiidd"></span><span id="Problem::checkAndFixInfraExpansionHighLowOrder__vector:i:P.vector:double:P.i.i.double.double"></span><span class="target" id="classProblem_1ab9750751c2d4468a3dfe5dd6573b5179"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkAndFixInfraExpansionHighLowOrder</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">order</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">trigger</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id_low</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id_high</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">capacity_low</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">capacity_high</span></span><span class="sig-paren">)</span><br /></dt>
 <dd><p>Prioritizes or merges infrastructure low and high expansions. If the high-expansion version is prioritized (appears earlier in the list), both the capacities of the low and high expansions are combined. The lower-priority item is removed from all lists. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>order</strong> – A pointer to a vector&lt;int&gt; object containing the construction order of <a class="reference internal" href="../modules.html#structinfraRank"><span class="std std-ref">infraRank</span></a> objects. </p></li>
-<li><p><strong>triggers</strong> – A pointer to a vector&lt;double&gt; object containing the triggers that result in the construction of each corresponding <a class="reference internal" href="../modules.html#structinfraRank"><span class="std std-ref">infraRank</span></a> vector object. </p></li>
+<li><p><strong>order</strong> – A pointer to a vector&lt;int&gt; object containing the construction order of <a class="reference internal" href="#structinfraRank"><span class="std std-ref">infraRank</span></a> objects. </p></li>
+<li><p><strong>triggers</strong> – A pointer to a vector&lt;double&gt; object containing the triggers that result in the construction of each corresponding <a class="reference internal" href="#structinfraRank"><span class="std std-ref">infraRank</span></a> vector object. </p></li>
 <li><p><strong>id_low</strong> – The ID of the low-expansion infrastructure. </p></li>
 <li><p><strong>id_high</strong> – The ID of the high-expansion infrastructure. </p></li>
 <li><p><strong>capacity_low</strong> – The capacity of the low-expansion infrastructure. </p></li>
 <li><p><strong>capacity_high</strong> – The capacity of the high-expansion infrastructure.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>double The combined capacity of the low and high expansions if the high-expansion infrastructure is prioritized. Otherwise, return the original capacity of the high-expansion infrastructure. </p>
 </dd>
 </dl>
@@ -463,12 +492,12 @@ its Sedento Valley and Research Triangle implementations.</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE">
 <span id="_CPPv3N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE"></span><span id="_CPPv2N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE"></span><span id="Problem::vecInfraRankToVecInt__vector:infraRank:"></span><span class="target" id="classProblem_1ab1d415f85e69eda15916cd3a708c508d"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">vecInfraRankToVecInt</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="Base/index.html#_CPPv49infraRank" title="infraRank"><span class="n"><span class="pre">infraRank</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v</span></span><span class="sig-paren">)</span><br /></dt>
-<dd><p>Converts the vector of <a class="reference internal" href="../modules.html#structinfraRank"><span class="std std-ref">infraRank</span></a> objects to a vector of integers. </p>
+<dd><p>Converts the vector of <a class="reference internal" href="#structinfraRank"><span class="std std-ref">infraRank</span></a> objects to a vector of integers. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>v</strong> – A vector of <a class="reference internal" href="../modules.html#structinfraRank"><span class="std std-ref">infraRank</span></a> objects. </p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>v</strong> – A vector of <a class="reference internal" href="#structinfraRank"><span class="std std-ref">infraRank</span></a> objects. </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>vector&lt;int&gt; A vector of integers denoting each infrastructure’s rank (from earliest to last built) after optimization. </p>
 </dd>
 </dl>
@@ -624,17 +653,17 @@ its Sedento Valley and Research Triangle implementations.</p>
 </div>
 </dd></dl>
 
-</section>
-</section>
-<section id="specific-problems">
+</div>
+</div>
+<div class="section" id="specific-problems">
 <h3>Specific Problems<a class="headerlink" href="#specific-problems" title="Permalink to this heading"></a></h3>
-<section id="papertestproblem-h">
+<div class="section" id="papertestproblem-h">
 <h4>PaperTestProblem.h<a class="headerlink" href="#papertestproblem-h" title="Permalink to this heading"></a></h4>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv416PaperTestProblem">
 <span id="_CPPv316PaperTestProblem"></span><span id="_CPPv216PaperTestProblem"></span><span id="PaperTestProblem"></span><span class="target" id="classPaperTestProblem"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PaperTestProblem</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/index.html#_CPPv47Problem" title="Problem"><span class="n"><span class="pre">Problem</span></span></a><a class="headerlink" href="#_CPPv416PaperTestProblem" title="Permalink to this definition"></a><br /></dt>
 <dd><div class="docutils container">
-<em>#include &lt;<a class="reference internal" href="../modules.html#PaperTestProblem_8h"><span class="std std-ref">PaperTestProblem.h</span></a>&gt;</em></div>
+<em>#include &lt;PaperTestProblem.h&gt;</em></div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
@@ -808,22 +837,22 @@ its Sedento Valley and Research Triangle implementations.</p>
 </div>
 </dd></dl>
 
-</section>
-<section id="triangle-h">
+</div>
+<div class="section" id="triangle-h">
 <h4>Triangle.h<a class="headerlink" href="#triangle-h" title="Permalink to this heading"></a></h4>
 <dl class="cpp class">
 <dt class="sig sig-object cpp" id="_CPPv48Triangle">
 <span id="_CPPv38Triangle"></span><span id="_CPPv28Triangle"></span><span id="Triangle"></span><span class="target" id="classTriangle"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Triangle</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/index.html#_CPPv47Problem" title="Problem"><span class="n"><span class="pre">Problem</span></span></a><a class="headerlink" href="#_CPPv48Triangle" title="Permalink to this definition"></a><br /></dt>
 <dd><div class="docutils container">
-<em>#include &lt;<a class="reference internal" href="../modules.html#Triangle_8h"><span class="std std-ref">Triangle.h</span></a>&gt;</em></div>
+<em>#include &lt;Triangle.h&gt;</em></div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N8Triangle8TriangleEmi">
 <span id="_CPPv3N8Triangle8TriangleEmi"></span><span id="_CPPv2N8Triangle8TriangleEmi"></span><span id="Triangle::Triangle__unsigned-l.i"></span><span class="target" id="classTriangle_1a24833bad242ddc3f671b36678dff5738"></span><span class="sig-name descname"><span class="n"><span class="pre">Triangle</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_weeks</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">import_export_rof_table</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Triangle8TriangleEmi" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Constructor for a new <a class="reference internal" href="../modules.html#classTriangle"><span class="std std-ref">Triangle</span></a> object. </p>
+<dd><p>Constructor for a new <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a> object. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>n_weeks</strong> – An integer representing the number of weeks in the simulation. </p></li>
 <li><p><strong>import_export_rof_table</strong> – An integer indicating the ROF table import/export/ignore mode. </p></li>
@@ -835,22 +864,22 @@ its Sedento Valley and Research Triangle implementations.</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N8TriangleD0Ev">
 <span id="_CPPv3N8TriangleD0Ev"></span><span id="_CPPv2N8TriangleD0Ev"></span><span id="Triangle::~Triangle"></span><span class="target" id="classTriangle_1a5199760a17454f4dc94c855a57e3a152"></span><span class="sig-name descname"><span class="n"><span class="pre">~Triangle</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TriangleD0Ev" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Destructor for the <a class="reference internal" href="../modules.html#classTriangle"><span class="std std-ref">Triangle</span></a> object. </p>
+<dd><p>Destructor for the <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a> object. </p>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N8Triangle18functionEvaluationEPdPdPd">
 <span id="_CPPv3N8Triangle18functionEvaluationEPdPdPd"></span><span id="_CPPv2N8Triangle18functionEvaluationEPdPdPd"></span><span id="Triangle::functionEvaluation__doubleP.doubleP.doubleP"></span><span class="target" id="classTriangle_1a9e95039d098fd61cce1a830b85ed7004"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">functionEvaluation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">vars</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">objs</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">consts</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N8Triangle18functionEvaluationEPdPdPd" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Runs the North Carolina Research <a class="reference internal" href="../modules.html#classTriangle"><span class="std std-ref">Triangle</span></a> (6-utility) problem. </p>
+<dd><p>Runs the North Carolina Research <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a> (6-utility) problem. </p>
 <p><dl>
 <dt class="sig sig-object cpp">
-<a class="reference internal" href="../modules.html#todo_1_todo000001"><span class="std std-ref"><span class="pre">Todo:</span></span></a></dt>
+<em><span class="pre">Todo:</span></em></dt>
 <dd><p>check for solutions in which a utility does not have an allocation on Jordan Lake (or any generic lake) but still pay for joint treatment infrastructure). </p>
 </dd></dl>
 
 </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>vars</strong> – A pointer to a double containing the number of variables in the problem. </p></li>
 <li><p><strong>objs</strong> – A pointer to the double containing the number of objectives in the problem. </p></li>
@@ -865,7 +894,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <span id="_CPPv3N8Triangle25simulationExceptionHanderERKNSt9exceptionEP10SimulationPdPKd"></span><span id="_CPPv2N8Triangle25simulationExceptionHanderERKNSt9exceptionEP10SimulationPdPKd"></span><span id="Triangle::simulationExceptionHander__std::exceptionCR.SimulationP.doubleP.doubleCP"></span><span class="target" id="classTriangle_1a816ff476231f6bd575c82978706f4b9a"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">simulationExceptionHander</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ContinuityModels/Base/index.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">exception</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">e</span></span>, <a class="reference internal" href="../Simulation/index.html#_CPPv410Simulation" title="Simulation"><span class="n"><span class="pre">Simulation</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">s</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">objs</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">vars</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Triangle25simulationExceptionHanderERKNSt9exceptionEP10SimulationPdPKd" title="Permalink to this definition"></a><br /></dt>
 <dd><p>Handles exceptions that occur during the simulation by printing the rank of the error-causing thread’s decision variables to a file and printing the exception message to the console. </p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>e</strong> – An exception object </p></li>
 <li><p><strong>s</strong> – A pointer to the simulation object </p></li>
@@ -873,7 +902,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <li><p><strong>vars</strong> – A pointer to the decision variables array</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>int </p>
 </dd>
 </dl>
@@ -882,7 +911,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N8Triangle13readInputDataEv">
 <span id="_CPPv3N8Triangle13readInputDataEv"></span><span id="_CPPv2N8Triangle13readInputDataEv"></span><span id="Triangle::readInputData"></span><span class="target" id="classTriangle_1a045e3263a62a8a628fe5645f0323b7e4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readInputData</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Triangle13readInputDataEv" title="Permalink to this definition"></a><br /></dt>
-<dd><p>Reads in all input inflow, evaporation, and demand data for the <a class="reference internal" href="../modules.html#classTriangle"><span class="std std-ref">Triangle</span></a> problem. </p>
+<dd><p>Reads in all input inflow, evaporation, and demand data for the <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a> problem. </p>
 </dd></dl>
 
 </div>
@@ -891,7 +920,7 @@ its Sedento Valley and Research Triangle implementations.</p>
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Triangle11n_utilitiesE">
 <span id="_CPPv3N8Triangle11n_utilitiesE"></span><span id="_CPPv2N8Triangle11n_utilitiesE"></span><span id="Triangle::n_utilities__iC"></span><span class="target" id="classTriangle_1a27fd697e6e14227b71a617ddbcec9653"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_utilities</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">4</span></span><a class="headerlink" href="#_CPPv4N8Triangle11n_utilitiesE" title="Permalink to this definition"></a><br /></dt>
-<dd><p>An integer indicating the default number utilities in the <a class="reference internal" href="../modules.html#classTriangle"><span class="std std-ref">Triangle</span></a> problem. </p>
+<dd><p>An integer indicating the default number utilities in the <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a> problem. </p>
 </dd></dl>
 
 <dl class="cpp var">
@@ -1167,15 +1196,18 @@ its Sedento Valley and Research Triangle implementations.</p>
 </div>
 </dd></dl>
 
-</section>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
+</div>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../ContinuityModels/Base/index.html" class="btn btn-neutral float-left" title="Base Components" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Base/index.html" class="btn btn-neutral float-right" title="Base Components" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
