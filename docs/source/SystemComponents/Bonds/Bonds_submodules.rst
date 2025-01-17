@@ -1,24 +1,14 @@
 Bonds Module
-==============
+=============
 
-The `Bonds` module contains classes and functions related defining the different financing mechanisms of the water system. 
-The module is divided into submodules, each of which contains classes and functions related to a specific component 
-of the water system.
+The `Bonds` submodule contains classes and functions related defining the different financing mechanisms of the water system. It is a submodule of the `SystemComponents <SystemComponents_index>`_ module.
 
-Contents
---------
-
-.. toctree::
-   :maxdepth: 2
-
-   Base/index
-   
 API Reference
 -------------
 
 Below is the API reference for the `Bonds` submodule. Documentation is automatically extracted from the header files.
 
-Base Components
+Submodule Components
 ^^^^^^^^^^^^^^^
 
 BalloonPaymentBond.h
