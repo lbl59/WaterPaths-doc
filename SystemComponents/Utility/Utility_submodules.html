@@ -19,7 +19,7 @@
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="SystemComponents Module" href="../WaterSources/WaterSources_index.html" />
+    <link rel="next" title="WaterSources Module" href="../WaterSources/WaterSources_index.html" />
     <link rel="prev" title="Utility Module" href="Utility_index.html" /> 
 </head>
 
@@ -62,6 +62,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../Utils/Utils_index.html">Utils</a></li>
 </ul>
 
         </div>
@@ -243,7 +244,7 @@
 <p>This function manages the expansion of a water treatment plant by adding treatment capacity to the associated water source. It also ensures the source is appropriately categorized as either a priority or non-priority source and updates the priority and non-priority lists accordingly.</p>
 <p><div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../WaterSources/WaterSources_index.html#classSequentialJointTreatmentExpansion"><span class="std std-ref">SequentialJointTreatmentExpansion</span></a></p>
+<p><a class="reference internal" href="../WaterSources/WaterSources_submodules.html#classSequentialJointTreatmentExpansion"><span class="std std-ref">SequentialJointTreatmentExpansion</span></a></p>
 </div>
 </p>
 <dl class="field-list simple">
@@ -263,18 +264,18 @@
 <dt class="sig sig-object cpp" id="_CPPv4N21InfrastructureManager37reservoirExpansionConstructionHandlerEj">
 <span id="_CPPv3N21InfrastructureManager37reservoirExpansionConstructionHandlerEj"></span><span id="_CPPv2N21InfrastructureManager37reservoirExpansionConstructionHandlerEj"></span><span id="InfrastructureManager::reservoirExpansionConstructionHandler__unsigned-i"></span><span class="target" id="classInfrastructureManager_1ad4dc157110b29560cd47501ba67bcba3"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reservoirExpansionConstructionHandler</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21InfrastructureManager37reservoirExpansionConstructionHandlerEj" title="Link to this definition"></a><br /></dt>
 <dd><p>Handles the construction of a reservoir expansion by adding capacity to its parent reservoir. </p>
-<p>This function manages the logic for integrating a reservoir expansion into the system. It dynamically casts the specified water source to a <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/WaterSources_index.html#classReservoirExpansion"><span class="std std-ref"><span class="pre">ReservoirExpansion</span></span></a></code> type, adds its allocated capacity to the associated parent reservoir, and marks the reservoir expansion as online.</p>
+<p>This function manages the logic for integrating a reservoir expansion into the system. It dynamically casts the specified water source to a <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/WaterSources_submodules.html#classReservoirExpansion"><span class="std std-ref"><span class="pre">ReservoirExpansion</span></span></a></code> type, adds its allocated capacity to the associated parent reservoir, and marks the reservoir expansion as online.</p>
 <p><div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../WaterSources/WaterSources_index.html#classReservoirExpansion"><span class="std std-ref">ReservoirExpansion</span></a></p>
+<p><a class="reference internal" href="../WaterSources/WaterSources_submodules.html#classReservoirExpansion"><span class="std std-ref">ReservoirExpansion</span></a></p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#classWaterSource_1ab869abb3d3dde1875e933482bedc3ae3"><span class="std std-ref">WaterSource::addCapacity</span></a></p>
+<p><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#classWaterSource_1ab869abb3d3dde1875e933482bedc3ae3"><span class="std std-ref">WaterSource::addCapacity</span></a></p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#classWaterSource_1aaa55dc6e14ff184380300147b53c56ec"><span class="std std-ref">WaterSource::setOnline</span></a></p>
+<p><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#classWaterSource_1aaa55dc6e14ff184380300147b53c56ec"><span class="std std-ref">WaterSource::setOnline</span></a></p>
 </div>
 </p>
 <dl class="field-list simple">
@@ -282,7 +283,7 @@
 <dd class="field-odd"><p><strong>source_id</strong> – The unique identifier of the reservoir expansion source.</p>
 </dd>
 <dt class="field-even">Throws<span class="colon">:</span></dt>
-<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">bad_cast</span></span></span> – If the specified <code class="docutils literal notranslate"><span class="pre">source_id</span></code> does not correspond to a <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/WaterSources_index.html#classReservoirExpansion"><span class="std std-ref"><span class="pre">ReservoirExpansion</span></span></a></code> type.</p>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">bad_cast</span></span></span> – If the specified <code class="docutils literal notranslate"><span class="pre">source_id</span></code> does not correspond to a <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/WaterSources_submodules.html#classReservoirExpansion"><span class="std std-ref"><span class="pre">ReservoirExpansion</span></span></a></code> type.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -294,15 +295,15 @@
 <p>This function manages the process of relocating a water source by adjusting the allocation fractions for its parent reservoir and marking the relocation source as online.</p>
 <p><div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../WaterSources/WaterSources_index.html#classRelocation"><span class="std std-ref">Relocation</span></a></p>
+<p><a class="reference internal" href="../WaterSources/WaterSources_submodules.html#classRelocation"><span class="std std-ref">Relocation</span></a></p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#classWaterSource_1afe2f6b96383abdb14563db279a261a31"><span class="std std-ref">WaterSource::resetAllocations</span></a></p>
+<p><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#classWaterSource_1afe2f6b96383abdb14563db279a261a31"><span class="std std-ref">WaterSource::resetAllocations</span></a></p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#classWaterSource_1aaa55dc6e14ff184380300147b53c56ec"><span class="std std-ref">WaterSource::setOnline</span></a></p>
+<p><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#classWaterSource_1aaa55dc6e14ff184380300147b53c56ec"><span class="std std-ref">WaterSource::setOnline</span></a></p>
 </div>
 </p>
 <dl class="field-list simple">
@@ -310,7 +311,7 @@
 <dd class="field-odd"><p><strong>source_id</strong> – The unique identifier of the relocation source to be processed.</p>
 </dd>
 <dt class="field-even">Throws<span class="colon">:</span></dt>
-<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">bad_cast</span></span></span> – If the specified <code class="docutils literal notranslate"><span class="pre">source_id</span></code> does not correspond to a <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/WaterSources_index.html#classRelocation"><span class="std std-ref"><span class="pre">Relocation</span></span></a></code> type.</p>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">bad_cast</span></span></span> – If the specified <code class="docutils literal notranslate"><span class="pre">source_id</span></code> does not correspond to a <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/WaterSources_submodules.html#classRelocation"><span class="std std-ref"><span class="pre">Relocation</span></span></a></code> type.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -423,25 +424,25 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N21InfrastructureManager14addWaterSourceEP11WaterSource">
-<span id="_CPPv3N21InfrastructureManager14addWaterSourceEP11WaterSource"></span><span id="_CPPv2N21InfrastructureManager14addWaterSourceEP11WaterSource"></span><span id="InfrastructureManager::addWaterSource__WaterSourceP"></span><span class="target" id="classInfrastructureManager_1a3950df03bc8fd5743aefeca4c3d7bf98"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addWaterSource</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">water_source</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21InfrastructureManager14addWaterSourceEP11WaterSource" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N21InfrastructureManager14addWaterSourceEP11WaterSource"></span><span id="_CPPv2N21InfrastructureManager14addWaterSourceEP11WaterSource"></span><span id="InfrastructureManager::addWaterSource__WaterSourceP"></span><span class="target" id="classInfrastructureManager_1a3950df03bc8fd5743aefeca4c3d7bf98"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addWaterSource</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">water_source</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21InfrastructureManager14addWaterSourceEP11WaterSource" title="Link to this definition"></a><br /></dt>
 <dd><p>Adds a water source to the construction management system. </p>
 <p>This function checks if the ID of the water source exceeds the current size of the <code class="docutils literal notranslate"><span class="pre">under_construction</span></code> list. If so, it resizes the <code class="docutils literal notranslate"><span class="pre">under_construction</span></code> and <code class="docutils literal notranslate"><span class="pre">construction_end_date</span></code> vectors to accommodate the new water source.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>water_source</strong> – A pointer to the <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to be added to the system. </p>
+<dd class="field-odd"><p><strong>water_source</strong> – A pointer to the <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> object to be added to the system. </p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N21InfrastructureManager36connectWaterSourcesVectorsToUtilitysER6vectorIP11WaterSourceER6vectorIiER6vectorIiE">
-<span id="_CPPv3N21InfrastructureManager36connectWaterSourcesVectorsToUtilitysER6vectorIP11WaterSourceER6vectorIiER6vectorIiE"></span><span id="_CPPv2N21InfrastructureManager36connectWaterSourcesVectorsToUtilitysER6vectorIP11WaterSourceER6vectorIiER6vectorIiE"></span><span id="InfrastructureManager::connectWaterSourcesVectorsToUtilitys__vector:WaterSourceP:R.vector:i:R.vector:i:R"></span><span class="target" id="classInfrastructureManager_1a8ff698443fd4f32e28677aa9ef34c2dc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">connectWaterSourcesVectorsToUtilitys</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">priority_draw_water_source</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">non_priority_draw_water_source</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21InfrastructureManager36connectWaterSourcesVectorsToUtilitysER6vectorIP11WaterSourceER6vectorIiER6vectorIiE" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N21InfrastructureManager36connectWaterSourcesVectorsToUtilitysER6vectorIP11WaterSourceER6vectorIiER6vectorIiE"></span><span id="_CPPv2N21InfrastructureManager36connectWaterSourcesVectorsToUtilitysER6vectorIP11WaterSourceER6vectorIiER6vectorIiE"></span><span id="InfrastructureManager::connectWaterSourcesVectorsToUtilitys__vector:WaterSourceP:R.vector:i:R.vector:i:R"></span><span class="target" id="classInfrastructureManager_1a8ff698443fd4f32e28677aa9ef34c2dc"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">connectWaterSourcesVectorsToUtilitys</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">priority_draw_water_source</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">non_priority_draw_water_source</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21InfrastructureManager36connectWaterSourcesVectorsToUtilitysER6vectorIP11WaterSourceER6vectorIiER6vectorIiE" title="Link to this definition"></a><br /></dt>
 <dd><p>Connects the provided water source vectors to the utility. </p>
 <p>This function establishes references to the provided vectors of water sources, priority draw water sources, and non-priority draw water sources. These references are stored in the utility class for later use. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>water_sources</strong> – A reference to the vector of <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> objects. </p></li>
+<li><p><strong>water_sources</strong> – A reference to the vector of <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> objects. </p></li>
 <li><p><strong>priority_draw_water_source</strong> – A reference to the vector containing the IDs of priority water sources. </p></li>
 <li><p><strong>non_priority_draw_water_source</strong> – A reference to the vector containing the IDs of non-priority water sources. </p></li>
 </ul>
@@ -466,7 +467,7 @@
 <span id="_CPPv3N21InfrastructureManager34intakeExpansionConstructionHandlerEj"></span><span id="_CPPv2N21InfrastructureManager34intakeExpansionConstructionHandlerEj"></span><span id="InfrastructureManager::intakeExpansionConstructionHandler__unsigned-i"></span><span class="target" id="classInfrastructureManager_1aed62e86a9737e385c821d44ea70922e9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">intakeExpansionConstructionHandler</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21InfrastructureManager34intakeExpansionConstructionHandlerEj" title="Link to this definition"></a><br /></dt>
 <dd><p>Handles the construction of an intake expansion. </p>
 <p>This function processes the construction of an intake expansion. It updates the parent intake’s capacity and treatment capacity based on the values from the intake expansion and sets the intake expansion as online.</p>
-<p>FIXME: [July 2019]:There may be an issue here if this were to be used for an allocated source where it mattered what utility ID was associated with the increase in treatment capacity but this addTreatmentCapacity function is not overrode within the <a class="reference internal" href="../WaterSources/WaterSources_index.html#classIntake"><span class="std std-ref">Intake</span></a> or <a class="reference internal" href="../WaterSources/WaterSources_index.html#classIntakeExpansion"><span class="std std-ref">IntakeExpansion</span></a> class so it should be fine</p>
+<p>FIXME: [July 2019]:There may be an issue here if this were to be used for an allocated source where it mattered what utility ID was associated with the increase in treatment capacity but this addTreatmentCapacity function is not overrode within the <a class="reference internal" href="../WaterSources/WaterSources_submodules.html#classIntake"><span class="std std-ref">Intake</span></a> or <a class="reference internal" href="../WaterSources/WaterSources_submodules.html#classIntakeExpansion"><span class="std std-ref">IntakeExpansion</span></a> class so it should be fine</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>source_id</strong> – The ID of the intake expansion water source. </p>
@@ -611,8 +612,8 @@
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N21InfrastructureManager13water_sourcesE">
-<span id="_CPPv3N21InfrastructureManager13water_sourcesE"></span><span id="_CPPv2N21InfrastructureManager13water_sourcesE"></span><span id="InfrastructureManager::water_sources__vector:WaterSourceP:P"></span><span class="target" id="classInfrastructureManager_1a2b8810958d40b9c80d299c6db31715e2"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">water_sources</span></span></span><a class="headerlink" href="#_CPPv4N21InfrastructureManager13water_sourcesE" title="Link to this definition"></a><br /></dt>
-<dd><p>A pointer to the vector of <a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> pointers storing all water sources that supply water to a specific supply infrastructure. </p>
+<span id="_CPPv3N21InfrastructureManager13water_sourcesE"></span><span id="_CPPv2N21InfrastructureManager13water_sourcesE"></span><span id="InfrastructureManager::water_sources__vector:WaterSourceP:P"></span><span class="target" id="classInfrastructureManager_1a2b8810958d40b9c80d299c6db31715e2"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">water_sources</span></span></span><a class="headerlink" href="#_CPPv4N21InfrastructureManager13water_sourcesE" title="Link to this definition"></a><br /></dt>
+<dd><p>A pointer to the vector of <a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> pointers storing all water sources that supply water to a specific supply infrastructure. </p>
 </dd></dl>
 
 <dl class="cpp var">
@@ -959,7 +960,7 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N7Utility14addWaterSourceEP11WaterSource">
-<span id="_CPPv3N7Utility14addWaterSourceEP11WaterSource"></span><span id="_CPPv2N7Utility14addWaterSourceEP11WaterSource"></span><span id="Utility::addWaterSource__WaterSourceP"></span><span class="target" id="classUtility_1aebbfd65c13e86cfeda8bdfbcc6712587"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addWaterSource</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">water_source</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Utility14addWaterSourceEP11WaterSource" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N7Utility14addWaterSourceEP11WaterSource"></span><span id="_CPPv2N7Utility14addWaterSourceEP11WaterSource"></span><span id="Utility::addWaterSource__WaterSourceP"></span><span class="target" id="classUtility_1aebbfd65c13e86cfeda8bdfbcc6712587"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addWaterSource</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">water_source</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Utility14addWaterSourceEP11WaterSource" title="Link to this definition"></a><br /></dt>
 <dd><p>Connect a water source to the utility. </p>
 <p>This function adds a new water source to the utility’s water sources list and updates the infrastructure construction manager accordingly. It also makes the water source online if certain conditions are met, such as having allocated treatment capacity or being an intake.</p>
 <p>This function performs checks to ensure that the water source is correctly added to the utility’s system, resizing the water_sources vector if necessary to accommodate the new source. It then updates the water source’s status in the infrastructure construction manager and adjusts the utility’s total capacity metrics.</p>
@@ -973,12 +974,12 @@
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a></p>
+<p><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a></p>
 </div>
 </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>water_source</strong> – Pointer to the <a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> object to be added.</p>
+<dd class="field-odd"><p><strong>water_source</strong> – Pointer to the <a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> object to be added.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1006,7 +1007,7 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N7Utility31checkErrorsAddWaterSourceOnlineEP11WaterSource">
-<span id="_CPPv3N7Utility31checkErrorsAddWaterSourceOnlineEP11WaterSource"></span><span id="_CPPv2N7Utility31checkErrorsAddWaterSourceOnlineEP11WaterSource"></span><span id="Utility::checkErrorsAddWaterSourceOnline__WaterSourceP"></span><span class="target" id="classUtility_1a0674d7d95f4d6595f7e01817a4d84a98"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkErrorsAddWaterSourceOnline</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">water_source</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Utility31checkErrorsAddWaterSourceOnlineEP11WaterSource" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N7Utility31checkErrorsAddWaterSourceOnlineEP11WaterSource"></span><span id="_CPPv2N7Utility31checkErrorsAddWaterSourceOnlineEP11WaterSource"></span><span id="Utility::checkErrorsAddWaterSourceOnline__WaterSourceP"></span><span class="target" id="classUtility_1a0674d7d95f4d6595f7e01817a4d84a98"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">checkErrorsAddWaterSourceOnline</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">water_source</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Utility31checkErrorsAddWaterSourceOnlineEP11WaterSource" title="Link to this definition"></a><br /></dt>
 <dd><p>Checks for errors when adding a water source to the utility. </p>
 <p>This function verifies if a water source with the same ID already exists in the utility’s water source list. If a duplicate is found, it throws an invalid_argument exception. It helps ensure that each water source added to the utility has a unique ID. </p>
 <dl class="field-list simple">
@@ -1745,7 +1746,7 @@
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4NK7Utility16getWater_sourcesEv">
-<span id="_CPPv3NK7Utility16getWater_sourcesEv"></span><span id="_CPPv2NK7Utility16getWater_sourcesEv"></span><span id="Utility::getWater_sourcesC"></span><span class="target" id="classUtility_1af68f63148aa901e781b939c8aa3699af"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getWater_sources</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK7Utility16getWater_sourcesEv" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3NK7Utility16getWater_sourcesEv"></span><span id="_CPPv2NK7Utility16getWater_sourcesEv"></span><span id="Utility::getWater_sourcesC"></span><span class="target" id="classUtility_1af68f63148aa901e781b939c8aa3699af"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getWater_sources</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK7Utility16getWater_sourcesEv" title="Link to this definition"></a><br /></dt>
 <dd><p>Returns the list of water sources associated with the utility. </p>
 <p>This function provides access to the collection of water sources that are currently associated with the utility. The list is returned as a constant reference to ensure that the original list is not modified.</p>
 <dl class="field-list simple">
@@ -2380,7 +2381,7 @@
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N7Utility13water_sourcesE">
-<span id="_CPPv3N7Utility13water_sourcesE"></span><span id="_CPPv2N7Utility13water_sourcesE"></span><span id="Utility::water_sources__vector:WaterSourceP:"></span><span class="target" id="classUtility_1a86ff2c92fc7f1b6bdca4bc84fdb535db"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../WaterSources/Base/SystemComponents_WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_sources</span></span></span><a class="headerlink" href="#_CPPv4N7Utility13water_sourcesE" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N7Utility13water_sourcesE"></span><span id="_CPPv2N7Utility13water_sourcesE"></span><span id="Utility::water_sources__vector:WaterSourceP:"></span><span class="target" id="classUtility_1a86ff2c92fc7f1b6bdca4bc84fdb535db"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_sources</span></span></span><a class="headerlink" href="#_CPPv4N7Utility13water_sourcesE" title="Link to this definition"></a><br /></dt>
 <dd><p>A vector of water sources available to the utility. </p>
 </dd></dl>
 
@@ -2707,7 +2708,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="Utility_index.html" class="btn btn-neutral float-left" title="Utility Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../WaterSources/WaterSources_index.html" class="btn btn-neutral float-right" title="SystemComponents Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../WaterSources/WaterSources_index.html" class="btn btn-neutral float-right" title="WaterSources Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
