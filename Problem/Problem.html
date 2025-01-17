@@ -18,7 +18,9 @@
       <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Simulation Module" href="../Simulation/Simulation.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="../DroughtMitigationInstruments/DroughtMitigationInstruments.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,187 +42,31 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Problem Module</a><ul>
-<li><a class="reference internal" href="#contents">Contents</a></li>
-<li><a class="reference internal" href="#api-reference">API Reference</a><ul>
-<li><a class="reference internal" href="#base-components">Base Components</a><ul>
-<li><a class="reference internal" href="#problem-h">Problem.h</a><ul>
-<li><a class="reference internal" href="#_CPPv49infraRank"><code class="docutils literal notranslate"><span class="pre">infraRank</span></code></a><ul>
-<li><a class="reference internal" href="#_CPPv4N9infraRank9infraRankEid"><code class="docutils literal notranslate"><span class="pre">infraRank::infraRank()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N9infraRank2idE"><code class="docutils literal notranslate"><span class="pre">infraRank::id</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N9infraRank5xrealE"><code class="docutils literal notranslate"><span class="pre">infraRank::xreal</span></code></a></li>
+              <p class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ContinuityModels/ContinuityModels.html">Continuity Models</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Problem Implementations</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a><ul class="simple">
 </ul>
 </li>
-<li><a class="reference internal" href="#_CPPv48by_xreal"><code class="docutils literal notranslate"><span class="pre">by_xreal</span></code></a><ul>
-<li><a class="reference internal" href="#_CPPv4N8by_xrealclERK9infraRankRK9infraRank"><code class="docutils literal notranslate"><span class="pre">by_xreal::operator()()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-reference">API Reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#base-components">Base Components</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#problem-h">Problem.h</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#_CPPv47Problem"><code class="docutils literal notranslate"><span class="pre">Problem</span></code></a><ul>
-<li><a class="reference internal" href="#_CPPv4N7Problem7ProblemEm"><code class="docutils literal notranslate"><span class="pre">Problem::Problem()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7ProblemD0Ev"><code class="docutils literal notranslate"><span class="pre">Problem::~Problem()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem18functionEvaluationEPdPdPd"><code class="docutils literal notranslate"><span class="pre">Problem::functionEvaluation()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem10setN_weeksEm"><code class="docutils literal notranslate"><span class="pre">Problem::setN_weeks()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem13setSol_numberEm"><code class="docutils literal notranslate"><span class="pre">Problem::setSol_number()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem14setIODirectoryERK6string"><code class="docutils literal notranslate"><span class="pre">Problem::setIODirectory()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem21setOutputSubDirectoryERK6string"><code class="docutils literal notranslate"><span class="pre">Problem::setOutputSubDirectory()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4NK7Problem13getObjectivesEv"><code class="docutils literal notranslate"><span class="pre">Problem::getObjectives()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem27calculateAndPrintObjectivesEb"><code class="docutils literal notranslate"><span class="pre">Problem::calculateAndPrintObjectives()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem18setRDMOptimizationER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE"><code class="docutils literal notranslate"><span class="pre">Problem::setRDMOptimization()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem18setRDMReevaluationEiR6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEE"><code class="docutils literal notranslate"><span class="pre">Problem::setRDMReevaluation()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem12setN_threadsEm"><code class="docutils literal notranslate"><span class="pre">Problem::setN_threads()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem21setPrint_output_filesEb"><code class="docutils literal notranslate"><span class="pre">Problem::setPrint_output_files()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem17setN_realizationsEm"><code class="docutils literal notranslate"><span class="pre">Problem::setN_realizations()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem20setRealizationsToRunER6vectorImE"><code class="docutils literal notranslate"><span class="pre">Problem::setRealizationsToRun()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem22setEvap_inflows_suffixERK6string"><code class="docutils literal notranslate"><span class="pre">Problem::setEvap_inflows_suffix()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem14setFname_sufixERK6string"><code class="docutils literal notranslate"><span class="pre">Problem::setFname_sufix()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem24getMaster_data_collectorEv"><code class="docutils literal notranslate"><span class="pre">Problem::getMaster_data_collector()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem20destroyDataCollectorEv"><code class="docutils literal notranslate"><span class="pre">Problem::destroyDataCollector()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem26printTimeSeriesAndPathwaysEb"><code class="docutils literal notranslate"><span class="pre">Problem::printTimeSeriesAndPathways()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem12setRofTablesEm6string"><code class="docutils literal notranslate"><span class="pre">Problem::setRofTables()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem27setImport_export_rof_tablesEi6string"><code class="docutils literal notranslate"><span class="pre">Problem::setImport_export_rof_tables()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem31runBootstrapRealizationThinningEiiiiR6vectorI6vectorIiEE"><code class="docutils literal notranslate"><span class="pre">Problem::runBootstrapRealizationThinning()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem14setFormulationEm"><code class="docutils literal notranslate"><span class="pre">Problem::setFormulation()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem21setDemand_path_suffixERK6string"><code class="docutils literal notranslate"><span class="pre">Problem::setDemand_path_suffix()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem24setDemand_path_subfolderERK6string"><code class="docutils literal notranslate"><span class="pre">Problem::setDemand_path_subfolder()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem37checkAndFixInfraExpansionHighLowOrderEP6vectorIiEP6vectorIdEiidd"><code class="docutils literal notranslate"><span class="pre">Problem::checkAndFixInfraExpansionHighLowOrder()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE"><code class="docutils literal notranslate"><span class="pre">Problem::vecInfraRankToVecInt()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem14n_realizationsE"><code class="docutils literal notranslate"><span class="pre">Problem::n_realizations</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem7n_weeksE"><code class="docutils literal notranslate"><span class="pre">Problem::n_weeks</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem11solution_noE"><code class="docutils literal notranslate"><span class="pre">Problem::solution_no</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem9n_threadsE"><code class="docutils literal notranslate"><span class="pre">Problem::n_threads</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem11n_utilitiesE"><code class="docutils literal notranslate"><span class="pre">Problem::n_utilities</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem12io_directoryE"><code class="docutils literal notranslate"><span class="pre">Problem::io_directory</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem20output_sub_directoryE"><code class="docutils literal notranslate"><span class="pre">Problem::output_sub_directory</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem11fname_sufixE"><code class="docutils literal notranslate"><span class="pre">Problem::fname_sufix</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem19evap_inflows_suffixE"><code class="docutils literal notranslate"><span class="pre">Problem::evap_inflows_suffix</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem18demand_path_suffixE"><code class="docutils literal notranslate"><span class="pre">Problem::demand_path_suffix</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem21demand_path_subfolderE"><code class="docutils literal notranslate"><span class="pre">Problem::demand_path_subfolder</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem20rof_tables_directoryE"><code class="docutils literal notranslate"><span class="pre">Problem::rof_tables_directory</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem19realizations_to_runE"><code class="docutils literal notranslate"><span class="pre">Problem::realizations_to_run</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem21master_data_collectorE"><code class="docutils literal notranslate"><span class="pre">Problem::master_data_collector</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem10objectivesE"><code class="docutils literal notranslate"><span class="pre">Problem::objectives</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem18print_output_filesE"><code class="docutils literal notranslate"><span class="pre">Problem::print_output_files</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem6rdm_noE"><code class="docutils literal notranslate"><span class="pre">Problem::rdm_no</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem24import_export_rof_tablesE"><code class="docutils literal notranslate"><span class="pre">Problem::import_export_rof_tables</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem28table_gen_storage_multiplierE"><code class="docutils literal notranslate"><span class="pre">Problem::table_gen_storage_multiplier</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem13utilities_rdmE"><code class="docutils literal notranslate"><span class="pre">Problem::utilities_rdm</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem17water_sources_rdmE"><code class="docutils literal notranslate"><span class="pre">Problem::water_sources_rdm</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem12policies_rdmE"><code class="docutils literal notranslate"><span class="pre">Problem::policies_rdm</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem10rof_tablesE"><code class="docutils literal notranslate"><span class="pre">Problem::rof_tables</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N7Problem11formulationE"><code class="docutils literal notranslate"><span class="pre">Problem::formulation</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#specific-problems">Specific Problems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#papertestproblem-h">PaperTestProblem.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#triangle-h">Triangle.h</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a class="reference internal" href="#specific-problems">Specific Problems</a><ul>
-<li><a class="reference internal" href="#papertestproblem-h">PaperTestProblem.h</a><ul>
-<li><a class="reference internal" href="#_CPPv416PaperTestProblem"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem</span></code></a><ul>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem16PaperTestProblemEmi"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::PaperTestProblem()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblemD0Ev"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::~PaperTestProblem()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem18functionEvaluationEPdPdPd"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::functionEvaluation()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem13readInputDataEv"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::readInputData()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem11n_utilitiesE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::n_utilities</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem18streamflows_durhamE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::streamflows_durham</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem19streamflows_claytonE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::streamflows_clayton</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem16streamflows_flatE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::streamflows_flat</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem15streamflows_llrE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::streamflows_llr</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem17streamflows_swiftE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::streamflows_swift</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem17streamflows_philsE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::streamflows_phils</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem16streamflows_caneE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::streamflows_cane</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem18streamflows_morganE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::streamflows_morgan</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem20streamflows_crabtreeE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::streamflows_crabtree</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem15streamflows_hawE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::streamflows_haw</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem22streamflows_lillingtonE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::streamflows_lillington</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem11evap_durhamE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::evap_durham</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem15evap_falls_lakeE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::evap_falls_lake</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem10evap_owasaE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::evap_owasa</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem17evap_little_riverE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::evap_little_river</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem19evap_wheeler_bensonE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::evap_wheeler_benson</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem16evap_jordan_lakeE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::evap_jordan_lake</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem16demand_watertownE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::demand_watertown</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem15demand_dryvilleE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::demand_dryville</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem16demand_fallslandE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::demand_fallsland</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem39demand_to_wastewater_fraction_fallslandE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::demand_to_wastewater_fraction_fallsland</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem38demand_to_wastewater_fraction_dryvilleE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::demand_to_wastewater_fraction_dryville</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem31watertownDemandClassesFractionsE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::watertownDemandClassesFractions</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem30dryvilleDemandClassesFractionsE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::dryvilleDemandClassesFractions</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem31fallslandDemandClassesFractionsE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::fallslandDemandClassesFractions</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem31watertownUserClassesWaterPricesE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::watertownUserClassesWaterPrices</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem30dryvilleUserClassesWaterPricesE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::dryvilleUserClassesWaterPrices</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N16PaperTestProblem31fallslandUserClassesWaterPricesE"><code class="docutils literal notranslate"><span class="pre">PaperTestProblem::fallslandUserClassesWaterPrices</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Simulation/Simulation.html">Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SystemComponents/SystemComponents.html">System Components</a></li>
 </ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#triangle-h">Triangle.h</a><ul>
-<li><a class="reference internal" href="#_CPPv48Triangle"><code class="docutils literal notranslate"><span class="pre">Triangle</span></code></a><ul>
-<li><a class="reference internal" href="#_CPPv4N8Triangle8TriangleEmi"><code class="docutils literal notranslate"><span class="pre">Triangle::Triangle()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8TriangleD0Ev"><code class="docutils literal notranslate"><span class="pre">Triangle::~Triangle()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle18functionEvaluationEPdPdPd"><code class="docutils literal notranslate"><span class="pre">Triangle::functionEvaluation()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle25simulationExceptionHanderERKNSt9exceptionEP10SimulationPdPKd"><code class="docutils literal notranslate"><span class="pre">Triangle::simulationExceptionHander()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle13readInputDataEv"><code class="docutils literal notranslate"><span class="pre">Triangle::readInputData()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle11n_utilitiesE"><code class="docutils literal notranslate"><span class="pre">Triangle::n_utilities</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle18streamflows_durhamE"><code class="docutils literal notranslate"><span class="pre">Triangle::streamflows_durham</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle16streamflows_flatE"><code class="docutils literal notranslate"><span class="pre">Triangle::streamflows_flat</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle17streamflows_swiftE"><code class="docutils literal notranslate"><span class="pre">Triangle::streamflows_swift</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle15streamflows_llrE"><code class="docutils literal notranslate"><span class="pre">Triangle::streamflows_llr</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle20streamflows_crabtreeE"><code class="docutils literal notranslate"><span class="pre">Triangle::streamflows_crabtree</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle17streamflows_philsE"><code class="docutils literal notranslate"><span class="pre">Triangle::streamflows_phils</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle16streamflows_caneE"><code class="docutils literal notranslate"><span class="pre">Triangle::streamflows_cane</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle18streamflows_morganE"><code class="docutils literal notranslate"><span class="pre">Triangle::streamflows_morgan</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle15streamflows_hawE"><code class="docutils literal notranslate"><span class="pre">Triangle::streamflows_haw</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle19streamflows_claytonE"><code class="docutils literal notranslate"><span class="pre">Triangle::streamflows_clayton</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle22streamflows_lillingtonE"><code class="docutils literal notranslate"><span class="pre">Triangle::streamflows_lillington</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle11demand_caryE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_cary</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle13demand_durhamE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_durham</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle14demand_raleighE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_raleigh</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle12demand_owasaE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_owasa</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle16demand_pittsboroE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_pittsboro</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle14demand_chathamE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_chatham</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle22demand_projection_caryE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_projection_cary</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle24demand_projection_durhamE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_projection_durham</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle25demand_projection_raleighE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_projection_raleigh</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle23demand_projection_owasaE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_projection_owasa</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle27demand_projection_pittsboroE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_projection_pittsboro</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle25demand_projection_chathamE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_projection_chatham</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle11evap_durhamE"><code class="docutils literal notranslate"><span class="pre">Triangle::evap_durham</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle15evap_falls_lakeE"><code class="docutils literal notranslate"><span class="pre">Triangle::evap_falls_lake</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle10evap_owasaE"><code class="docutils literal notranslate"><span class="pre">Triangle::evap_owasa</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle17evap_little_riverE"><code class="docutils literal notranslate"><span class="pre">Triangle::evap_little_river</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle19evap_wheeler_bensonE"><code class="docutils literal notranslate"><span class="pre">Triangle::evap_wheeler_benson</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle16evap_jordan_lakeE"><code class="docutils literal notranslate"><span class="pre">Triangle::evap_jordan_lake</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle43demand_to_wastewater_fraction_owasa_raleighE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_to_wastewater_fraction_owasa_raleigh</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle36demand_to_wastewater_fraction_durhamE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_to_wastewater_fraction_durham</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle37demand_to_wastewater_fraction_chathamE"><code class="docutils literal notranslate"><span class="pre">Triangle::demand_to_wastewater_fraction_chatham</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle26caryDemandClassesFractionsE"><code class="docutils literal notranslate"><span class="pre">Triangle::caryDemandClassesFractions</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle28durhamDemandClassesFractionsE"><code class="docutils literal notranslate"><span class="pre">Triangle::durhamDemandClassesFractions</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle29raleighDemandClassesFractionsE"><code class="docutils literal notranslate"><span class="pre">Triangle::raleighDemandClassesFractions</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle27owasaDemandClassesFractionsE"><code class="docutils literal notranslate"><span class="pre">Triangle::owasaDemandClassesFractions</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle31pittsboroDemandClassesFractionsE"><code class="docutils literal notranslate"><span class="pre">Triangle::pittsboroDemandClassesFractions</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle29chathamDemandClassesFractionsE"><code class="docutils literal notranslate"><span class="pre">Triangle::chathamDemandClassesFractions</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle26caryUserClassesWaterPricesE"><code class="docutils literal notranslate"><span class="pre">Triangle::caryUserClassesWaterPrices</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle28durhamUserClassesWaterPricesE"><code class="docutils literal notranslate"><span class="pre">Triangle::durhamUserClassesWaterPrices</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle29raleighUserClassesWaterPricesE"><code class="docutils literal notranslate"><span class="pre">Triangle::raleighUserClassesWaterPrices</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle27owasaUserClassesWaterPricesE"><code class="docutils literal notranslate"><span class="pre">Triangle::owasaUserClassesWaterPrices</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle31pittsboroUserClassesWaterPricesE"><code class="docutils literal notranslate"><span class="pre">Triangle::pittsboroUserClassesWaterPrices</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle29chathamUserClassesWaterPricesE"><code class="docutils literal notranslate"><span class="pre">Triangle::chathamUserClassesWaterPrices</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N8Triangle20owasaPriceSurchargesE"><code class="docutils literal notranslate"><span class="pre">Triangle::owasaPriceSurcharges</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
+
         </div>
       </div>
     </nav>
@@ -1341,7 +1187,10 @@ its Sedento Valley and Research Triangle implementations.</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../DroughtMitigationInstruments/DroughtMitigationInstruments.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Simulation/Simulation.html" class="btn btn-neutral float-right" title="Simulation Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

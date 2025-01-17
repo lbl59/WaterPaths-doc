@@ -18,7 +18,9 @@
       <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="../Controls/Controls.html" />
+    <link rel="prev" title="Welcome to the official WaterPaths documentation!" href="../index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -40,117 +42,31 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">ContinuityModels Module</a><ul>
-<li><a class="reference internal" href="#contents">Contents</a></li>
-<li><a class="reference internal" href="#api-reference">API Reference</a><ul>
-<li><a class="reference internal" href="#base-components">Base Components</a><ul>
-<li><a class="reference internal" href="#continuitymodel-h">ContinuityModel.h</a><ul>
-<li><a class="reference internal" href="#_CPPv415ContinuityModel"><code class="docutils literal notranslate"><span class="pre">ContinuityModel</span></code></a><ul>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel15ContinuityModelER6vectorIP11WaterSourceER6vectorIP7UtilityER6vectorIP17MinEnvFlowControlERK5GraphRK6vectorI6vectorIiEER6vectorIdER6vectorIdEm"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::ContinuityModel()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel15ContinuityModelER15ContinuityModel"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::ContinuityModel()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModelD0Ev"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::~ContinuityModel()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel14continuityStepEiibb"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::continuityStep()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel14setRealizationEmR6vectorIdER6vectorIdE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::setRealization()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel26getOnlineDownstreamSourcesEv"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::getOnlineDownstreamSources()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4NK15ContinuityModel27getContinuity_water_sourcesEv"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::getContinuity_water_sources()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4NK15ContinuityModel23getContinuity_utilitiesEv"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::getContinuity_utilities()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel14realization_idE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::realization_id</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel24continuity_water_sourcesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::continuity_water_sources</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel20continuity_utilitiesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::continuity_utilities</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel21min_env_flow_controlsE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::min_env_flow_controls</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel19water_sources_graphE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::water_sources_graph</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel26water_sources_to_utilitiesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::water_sources_to_utilities</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel33water_sources_online_to_utilitiesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::water_sources_online_to_utilities</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel26utilities_to_water_sourcesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::utilities_to_water_sources</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel18downstream_sourcesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::downstream_sources</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel25sources_topological_orderE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::sources_topological_order</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel24water_sources_capacitiesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::water_sources_capacities</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel20utilities_capacitiesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::utilities_capacities</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel7demandsE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::demands</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel13utilities_rdmE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::utilities_rdm</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel17water_sources_rdmE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::water_sources_rdm</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel11n_utilitiesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::n_utilities</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel9n_sourcesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::n_sources</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N15ContinuityModel23delta_realization_weeksE"><code class="docutils literal notranslate"><span class="pre">ContinuityModel::delta_realization_weeks</span></code></a></li>
+              <p class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Continuity Models</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a><ul class="simple">
 </ul>
 </li>
-<li><a class="reference internal" href="#_CPPv49Constants"><code class="docutils literal notranslate"><span class="pre">Constants</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4St"><code class="docutils literal notranslate"><span class="pre">std</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-reference">API Reference</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#base-components">Base Components</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#continuitymodel-h">ContinuityModel.h</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a class="reference internal" href="#specific-implementations">Specific Implementations</a><ul>
-<li><a class="reference internal" href="#continuitymodelrealization-h">ContinuityModelRealization.h</a><ul>
-<li><a class="reference internal" href="#_CPPv426ContinuityModelRealization"><code class="docutils literal notranslate"><span class="pre">ContinuityModelRealization</span></code></a><ul>
-<li><a class="reference internal" href="#_CPPv4N26ContinuityModelRealization26ContinuityModelRealizationER6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEER6vectorIP7UtilityERK6vectorIP23DroughtMitigationPolicyER6vectorIP17MinEnvFlowControlER6vectorIdER6vectorIdER6vectorIdEKj"><code class="docutils literal notranslate"><span class="pre">ContinuityModelRealization::ContinuityModelRealization()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N26ContinuityModelRealizationD0Ev"><code class="docutils literal notranslate"><span class="pre">ContinuityModelRealization::~ContinuityModelRealization()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N26ContinuityModelRealization16setShortTermROFsERK6vectorI6vectorIdEE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelRealization::setShortTermROFs()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N26ContinuityModelRealization30applyDroughtMitigationPoliciesEi"><code class="docutils literal notranslate"><span class="pre">ContinuityModelRealization::applyDroughtMitigationPolicies()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4NK26ContinuityModelRealization30getDrought_mitigation_policiesEv"><code class="docutils literal notranslate"><span class="pre">ContinuityModelRealization::getDrought_mitigation_policies()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N26ContinuityModelRealization15setLongTermROFsERK6vectorI6vectorIdEEKi"><code class="docutils literal notranslate"><span class="pre">ContinuityModelRealization::setLongTermROFs()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N26ContinuityModelRealization38setLongTermROFDemandProjectionEstimateERK6vectorIP7UtilityE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelRealization::setLongTermROFDemandProjectionEstimate()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N26ContinuityModelRealization34updateJointWTPTreatmentAllocationsEi"><code class="docutils literal notranslate"><span class="pre">ContinuityModelRealization::updateJointWTPTreatmentAllocations()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N26ContinuityModelRealization27drought_mitigation_policiesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelRealization::drought_mitigation_policies</span></code></a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a class="reference internal" href="#continuitymodelrof-h">ContinuityModelROF.h</a><ul>
-<li><a class="reference internal" href="#_CPPv418ContinuityModelROF"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF</span></code></a><ul>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF18ContinuityModelROFE6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEE6vectorIP7UtilityE6vectorIP17MinEnvFlowControlER6vectorIdER6vectorIdEmKiKm"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::ContinuityModelROF()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROFD0Ev"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::~ContinuityModelROF()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF21calculateShortTermROFEii"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::calculateShortTermROF()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF30calculateShortTermROFFullCalcsEi"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::calculateShortTermROFFullCalcs()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF26calculateShortTermROFTableEi6vectorIP7UtilityE6vectorIdERK6vectorI8Matrix2DIdEE6vectorIdE6vectorIdE6vectorIdE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::calculateShortTermROFTable()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF20calculateLongTermROFEi"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::calculateLongTermROF()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF27resetUtilitiesAndReservoirsEi"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::resetUtilitiesAndReservoirs()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF30connectRealizationWaterSourcesERK6vectorIP11WaterSourceE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::connectRealizationWaterSources()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF27connectRealizationUtilitiesERK6vectorIP7UtilityE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::connectRealizationUtilities()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF26updateOnlineInfrastructureEi"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::updateOnlineInfrastructure()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF23updateStorageToROFTableEdiPKd"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::updateStorageToROFTable()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF13shiftStoragesEPdPKd"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::shiftStorages()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF13printROFTableERK6string"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::printROFTable()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF21setROFTablesAndShiftsERK6vectorI8Matrix2DIdEERK6vectorI6vectorIdEERK6vectorI6vectorIdEERK6vectorI6vectorIdEE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::setROFTablesAndShifts()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF24tableROFExceptionHandlerEdii"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::tableROFExceptionHandler()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF19setInitialTableTierEiRKiR6vectorI8Matrix2DIdEERi"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::setInitialTableTier()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF21recordROFStorageTableER6vectorI8Matrix2DIdEER6vectorI8Matrix2DIdEERKiRiRi"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::recordROFStorageTable()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF21calculateEmptyVolumesER6vectorIP11WaterSourceEPd"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::calculateEmptyVolumes()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF34updateJointWTPTreatmentAllocationsERK6vectorIP11WaterSourceE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::updateJointWTPTreatmentAllocations()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF33updateUtilityTreatmentAllocationsERK6vectorIP7UtilityE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::updateUtilityTreatmentAllocations()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF26getUt_storage_to_rof_tableEv"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::getUt_storage_to_rof_table()</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF14beginning_tierE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::beginning_tier</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF25realization_water_sourcesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::realization_water_sources</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF21realization_utilitiesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::realization_utilities</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF23ut_storage_to_rof_tableE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::ut_storage_to_rof_table</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF19table_storage_shiftE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::table_storage_shift</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF24table_base_storage_shiftE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::table_base_storage_shift</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF29treatment_demand_buffer_shiftE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::treatment_demand_buffer_shift</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF29utility_base_storage_capacityE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::utility_base_storage_capacity</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF33utility_base_delta_capacity_tableE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::utility_base_delta_capacity_table</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF39current_and_base_storage_capacity_ratioE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::current_and_base_storage_capacity_ratio</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF27current_storage_table_shiftE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::current_storage_table_shift</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF32current_base_storage_table_shiftE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::current_base_storage_table_shift</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF27current_demand_ratio_bufferE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::current_demand_ratio_buffer</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF33ut_storage_to_rof_rof_realizationE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::ut_storage_to_rof_rof_realization</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF25online_downstream_sourcesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::online_downstream_sources</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF23storage_wout_downstreamE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::storage_wout_downstream</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF14n_topo_sourcesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::n_topo_sources</span></code></a></li>
-<li><a class="reference internal" href="#_CPPv4N18ContinuityModelROF26use_precomputed_rof_tablesE"><code class="docutils literal notranslate"><span class="pre">ContinuityModelROF::use_precomputed_rof_tables</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#specific-implementations">Specific Implementations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#continuitymodelrealization-h">ContinuityModelRealization.h</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#continuitymodelrof-h">ContinuityModelROF.h</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../Problem/Problem.html">Problem Implementations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Simulation/Simulation.html">Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SystemComponents/SystemComponents.html">System Components</a></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
+
         </div>
       </div>
     </nav>
@@ -1145,7 +1061,10 @@ equations within single hydroclimatic realizations and across ROF calculations.<
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to the official WaterPaths documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Controls/Controls.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
