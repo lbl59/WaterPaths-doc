@@ -19,9 +19,9 @@ WaterPaths can be installed by following the instructions in the `GitHub Reposit
    :maxdepth: 2
    :caption: Modules
 
-   Continuity Models <ContinuityModels/ContinuityModels>
+   Continuity Models <ContinuityModels/ContinuityModels_index>
    Controls <Controls/Controls_index>
-   Data Collector <DataCollector/DataCollector>
+   Data Collector <DataCollector/DataCollector_index>
    Drought Mitigation Instruments <DroughtMitigationInstruments/DroughtMitigationInstruments>
    Problem Implementations <Problem/Problem>
    Simulation <Simulation/Simulation>

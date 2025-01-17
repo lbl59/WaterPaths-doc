@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Base Components &mdash; WaterPaths 1 documentation</title>
+  <title>ContinuityModel Module &mdash; WaterPaths 1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
 
@@ -18,7 +18,9 @@
       <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="ContinuityModels Module" href="../ContinuityModels_submodules.html" />
+    <link rel="prev" title="ContinuityModels Module" href="../ContinuityModels_index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,9 +43,20 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Modules</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../ContinuityModels.html">Continuity Models</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../ContinuityModels_index.html">Continuity Models</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../ContinuityModels_index.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Base implementation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api-reference">API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../ContinuityModels_submodules.html">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../Controls/Controls_index.html">Controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DataCollector/DataCollector_index.html">Data Collector</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Problem/Problem.html">Problem Implementations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Simulation/Simulation.html">Simulation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../SystemComponents/SystemComponents.html">System Components</a></li>
@@ -63,7 +76,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Base Components</li>
+          <li class="breadcrumb-item"><a href="../ContinuityModels_index.html">ContinuityModels Module</a></li>
+      <li class="breadcrumb-item active">ContinuityModel Module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/ContinuityModels/Base/ContinuityModels_base.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -73,13 +87,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="base-components">
-<h1>Base Components<a class="headerlink" href="#base-components" title="Link to this heading"></a></h1>
-<p>The base components define foundational functionality of the <cite>ContinuityModel</cite> class for maintaining continuity.</p>
+  <section id="continuitymodel-module">
+<h1>ContinuityModel Module<a class="headerlink" href="#continuitymodel-module" title="Link to this heading"></a></h1>
 <section id="api-reference">
 <h2>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading"></a></h2>
-<section id="continuitymodel-class">
-<h3>ContinuityModel Class<a class="headerlink" href="#continuitymodel-class" title="Link to this heading"></a></h3>
+<p>The base components define foundational functionality of the <cite>ContinuityModel</cite> class for maintaining continuity.</p>
+<section id="base-components">
+<h3>Base Components<a class="headerlink" href="#base-components" title="Link to this heading"></a></h3>
 <section id="continuitymodel-h">
 <h4>ContinuityModel.h<a class="headerlink" href="#continuitymodel-h" title="Link to this heading"></a></h4>
 <dl class="cpp class">
@@ -87,13 +101,13 @@
 <span id="_CPPv315ContinuityModel"></span><span id="_CPPv215ContinuityModel"></span><span id="ContinuityModel"></span><span class="target" id="classContinuityModel"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ContinuityModel</span></span></span><a class="headerlink" href="#_CPPv415ContinuityModel" title="Link to this definition"></a><br /></dt>
 <dd><div class="docutils container">
 <em>#include &lt;ContinuityModel.h&gt;</em></div>
-<p>Subclassed by <a class="reference internal" href="../ContinuityModels.html#classContinuityModelRealization"><span class="std std-ref">ContinuityModelRealization</span></a>, <a class="reference internal" href="../ContinuityModels.html#classContinuityModelROF"><span class="std std-ref">ContinuityModelROF</span></a></p>
+<p>Subclassed by <a class="reference internal" href="../ContinuityModels_submodules.html#classContinuityModelRealization"><span class="std std-ref">ContinuityModelRealization</span></a>, <a class="reference internal" href="../ContinuityModels_submodules.html#classContinuityModelROF"><span class="std std-ref">ContinuityModelROF</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModel15ContinuityModelER6vectorIP11WaterSourceER6vectorIP7UtilityER6vectorIP17MinEnvFlowControlERK5GraphRK6vectorI6vectorIiEER6vectorIdER6vectorIdEm">
 <span id="_CPPv3N15ContinuityModel15ContinuityModelER6vectorIP11WaterSourceER6vectorIP7UtilityER6vectorIP17MinEnvFlowControlERK5GraphRK6vectorI6vectorIiEER6vectorIdER6vectorIdEm"></span><span id="_CPPv2N15ContinuityModel15ContinuityModelER6vectorIP11WaterSourceER6vectorIP7UtilityER6vectorIP17MinEnvFlowControlERK5GraphRK6vectorI6vectorIiEER6vectorIdER6vectorIdEm"></span><span id="ContinuityModel::ContinuityModel__vector:WaterSourceP:R.vector:UtilityP:R.vector:MinEnvFlowControlP:R.GraphCR.vector:vector:i::CR.vector:double:R.vector:double:R.unsigned-l"></span><span class="target" id="classContinuityModel_1acadf595deb924bc08c9b702adf223365"></span><span class="sig-name descname"><span class="n"><span class="pre">ContinuityModel</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/WaterSources/Base/SystemComponents_WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/Utility/SystemComponents_Utility.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">MinEnvFlowControl</span></span><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">min_env_flow_controls</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">Graph</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_graph</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_to_utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realization_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15ContinuityModel15ContinuityModelER6vectorIP11WaterSourceER6vectorIP7UtilityER6vectorIP17MinEnvFlowControlERK5GraphRK6vectorI6vectorIiEER6vectorIdER6vectorIdEm" title="Link to this definition"></a><br /></dt>
-<dd><p>Constructs a <a class="reference internal" href="../ContinuityModels.html#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> object to simulate water flow and demand. </p>
+<dd><p>Constructs a <a class="reference internal" href="#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> object to simulate water flow and demand. </p>
 <p>This constructor initializes a continuity model, linking water sources, utilities, and minimum environmental flow controls to simulate water distribution and demand over time. It sets up various internal tables and vectors for faster calculations and ensures proper linking of utilities to water sources. Additionally, it handles initialization for various properties like capacities and realization data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -120,10 +134,10 @@
 <dd><p>Copy constructor for a new Continuity Model object. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>continuity_model</strong> – A reference to the <a class="reference internal" href="../ContinuityModels.html#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> object to be copied.</p>
+<dd class="field-odd"><p><strong>continuity_model</strong> – A reference to the <a class="reference internal" href="#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> object to be copied.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>A new <a class="reference internal" href="../ContinuityModels.html#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> object with the same properties as the original. </p>
+<dd class="field-even"><p>A new <a class="reference internal" href="#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> object with the same properties as the original. </p>
 </dd>
 </dl>
 </dd></dl>
@@ -131,8 +145,8 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N15ContinuityModelD0Ev">
 <span id="_CPPv3N15ContinuityModelD0Ev"></span><span id="_CPPv2N15ContinuityModelD0Ev"></span><span id="ContinuityModel::~ContinuityModel"></span><span class="target" id="classContinuityModel_1ae901ce342cd6e49c17994e4910873187"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~ContinuityModel</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N15ContinuityModelD0Ev" title="Link to this definition"></a><br /></dt>
-<dd><p>Destructor for <a class="reference internal" href="../ContinuityModels.html#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> to clean up dynamically allocated resources. </p>
-<p>This destructor is responsible for deleting all dynamically allocated objects associated with the <a class="reference internal" href="../ContinuityModels.html#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> instance, including water sources, utilities, and minimum environmental flow controls. It ensures proper cleanup to avoid memory leaks when the model is no longer needed.</p>
+<dd><p>Destructor for <a class="reference internal" href="#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> to clean up dynamically allocated resources. </p>
+<p>This destructor is responsible for deleting all dynamically allocated objects associated with the <a class="reference internal" href="#classContinuityModel"><span class="std std-ref">ContinuityModel</span></a> instance, including water sources, utilities, and minimum environmental flow controls. It ensures proper cleanup to avoid memory leaks when the model is no longer needed.</p>
 <p>This is a virtual function meant to be overridden by subclasses to ensure proper cleanup of any additional resources they may have allocated. </p>
 </dd></dl>
 
@@ -346,7 +360,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../ContinuityModels_index.html" class="btn btn-neutral float-left" title="ContinuityModels Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../ContinuityModels_submodules.html" class="btn btn-neutral float-right" title="ContinuityModels Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
