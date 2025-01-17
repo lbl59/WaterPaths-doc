@@ -23,10 +23,10 @@ WaterPaths can be installed by following the instructions in the `GitHub Reposit
    Controls <Controls/Controls_index>
    Data Collector <DataCollector/DataCollector_index>
    Drought Mitigation Instruments <DroughtMitigationInstruments/DroughtMitigationInstruments>
-   Problem Implementations <Problem/Problem>
-   Simulation <Simulation/Simulation>
-   System Components <SystemComponents/SystemComponents>
-   Utils <Utils/Utils>
+   Problem Implementations <Problem/Problem_index>
+   Simulation <Simulation/Simulation_index>
+   System Components <SystemComponents/SystemComponents_index>
+   Utils <Utils/Utils_index>
 
 Indices and tables
 ==================

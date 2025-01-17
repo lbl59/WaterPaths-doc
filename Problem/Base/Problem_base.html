@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Base Components &mdash; WaterPaths 1 documentation</title>
+  <title>Problem Module &mdash; WaterPaths 1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=92fd9be5" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
 
@@ -18,7 +18,9 @@
       <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Problem Module" href="../Problem_submodules.html" />
+    <link rel="prev" title="Problem Module" href="../Problem_index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,13 +43,23 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Modules</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../ContinuityModels/ContinuityModels_index.html">Continuity Models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Controls/Controls_index.html">Controls</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../DataCollector/DataCollector_index.html">Data Collector</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../Problem.html">Problem Implementations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Simulation/Simulation.html">Simulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../SystemComponents/SystemComponents.html">System Components</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Problem_index.html">Problem Implementations</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../Problem_index.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Base implementation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api-reference">API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Problem_submodules.html">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Simulation/Simulation_index.html">Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SystemComponents/SystemComponents_index.html">System Components</a></li>
 </ul>
 
         </div>
@@ -64,7 +76,8 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Base Components</li>
+          <li class="breadcrumb-item"><a href="../Problem_index.html">Problem Module</a></li>
+      <li class="breadcrumb-item active">Problem Module</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../../_sources/Problem/Base/Problem_base.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -74,13 +87,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="base-components">
-<h1>Base Components<a class="headerlink" href="#base-components" title="Link to this heading"></a></h1>
-<p>The base components define foundational functionality of the <cite>Problem</cite> class for problem-solving.</p>
+  <section id="problem-module">
+<h1>Problem Module<a class="headerlink" href="#problem-module" title="Link to this heading"></a></h1>
 <section id="api-reference">
 <h2>API Reference<a class="headerlink" href="#api-reference" title="Link to this heading"></a></h2>
-<section id="problem-class">
-<h3>Problem Class<a class="headerlink" href="#problem-class" title="Link to this heading"></a></h3>
+<p>The base components define foundational functionality of the <cite>Problem</cite> class for maintaining continuity.</p>
+<section id="base-components">
+<h3>Base Components<a class="headerlink" href="#base-components" title="Link to this heading"></a></h3>
 <section id="problem-h">
 <h4>Problem.h<a class="headerlink" href="#problem-h" title="Link to this heading"></a></h4>
 <dl class="cpp struct">
@@ -88,7 +101,7 @@
 <span id="_CPPv39infraRank"></span><span id="_CPPv29infraRank"></span><span id="infraRank"></span><span class="target" id="structinfraRank"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">infraRank</span></span></span><a class="headerlink" href="#_CPPv49infraRank" title="Link to this definition"></a><br /></dt>
 <dd><div class="docutils container">
 <em>#include &lt;Problem.h&gt;</em></div>
-<p>A struct that calls the <a class="reference internal" href="../Problem.html#structinfraRank"><span class="std std-ref">infraRank</span></a> function to store the ID and realization of an infrastructure. </p>
+<p>A struct that calls the <a class="reference internal" href="#structinfraRank"><span class="std std-ref">infraRank</span></a> function to store the ID and realization of an infrastructure. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
@@ -117,7 +130,7 @@
 <span id="_CPPv38by_xreal"></span><span id="_CPPv28by_xreal"></span><span id="by_xreal"></span><span class="target" id="structby__xreal"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">by_xreal</span></span></span><a class="headerlink" href="#_CPPv48by_xreal" title="Link to this definition"></a><br /></dt>
 <dd><div class="docutils container">
 <em>#include &lt;Problem.h&gt;</em></div>
-<p>A struct that intializes a boolean operator to compare the <a class="reference internal" href="../Problem.html#structinfraRank"><span class="std std-ref">infraRank</span></a> of two infrastructure objects. </p>
+<p>A struct that intializes a boolean operator to compare the <a class="reference internal" href="#structinfraRank"><span class="std std-ref">infraRank</span></a> of two infrastructure objects. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
@@ -133,13 +146,13 @@
 <span id="_CPPv37Problem"></span><span id="_CPPv27Problem"></span><span id="Problem"></span><span class="target" id="classProblem"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Problem</span></span></span><a class="headerlink" href="#_CPPv47Problem" title="Link to this definition"></a><br /></dt>
 <dd><div class="docutils container">
 <em>#include &lt;Problem.h&gt;</em></div>
-<p>Subclassed by <a class="reference internal" href="../Problem.html#classPaperTestProblem"><span class="std std-ref">PaperTestProblem</span></a>, <a class="reference internal" href="../Problem.html#classTriangle"><span class="std std-ref">Triangle</span></a></p>
+<p>Subclassed by <a class="reference internal" href="../Problem_submodules.html#classPaperTestProblem"><span class="std std-ref">PaperTestProblem</span></a>, <a class="reference internal" href="../Problem_submodules.html#classTriangle"><span class="std std-ref">Triangle</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N7Problem7ProblemEm">
 <span id="_CPPv3N7Problem7ProblemEm"></span><span id="_CPPv2N7Problem7ProblemEm"></span><span id="Problem::Problem__unsigned-l"></span><span class="target" id="classProblem_1a41939e01b382197124fcd9f5e8c7520d"></span><span class="sig-name descname"><span class="n"><span class="pre">Problem</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_weeks</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem7ProblemEm" title="Link to this definition"></a><br /></dt>
-<dd><p>Constructs a new <a class="reference internal" href="../Problem.html#classProblem"><span class="std std-ref">Problem</span></a> object. Unset the seed for the random number generator for the reservoir objects. NOTE: Unclear what this does; need to see if can delete. </p>
+<dd><p>Constructs a new <a class="reference internal" href="#classProblem"><span class="std std-ref">Problem</span></a> object. Unset the seed for the random number generator for the reservoir objects. NOTE: Unclear what this does; need to see if can delete. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>n_weeks</strong> – The number of weeks to simulate. </p>
@@ -150,7 +163,7 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N7ProblemD0Ev">
 <span id="_CPPv3N7ProblemD0Ev"></span><span id="_CPPv2N7ProblemD0Ev"></span><span id="Problem::~Problem"></span><span class="target" id="classProblem_1af175051c1f08660690573aa0021e4106"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Problem</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7ProblemD0Ev" title="Link to this definition"></a><br /></dt>
-<dd><p>Destructor for the <a class="reference internal" href="../Problem.html#classProblem"><span class="std std-ref">Problem</span></a> object. </p>
+<dd><p>Destructor for the <a class="reference internal" href="#classProblem"><span class="std std-ref">Problem</span></a> object. </p>
 </dd></dl>
 
 <dl class="cpp function">
@@ -434,8 +447,8 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>order</strong> – A pointer to a vector&lt;int&gt; object containing the construction order of <a class="reference internal" href="../Problem.html#structinfraRank"><span class="std std-ref">infraRank</span></a> objects. </p></li>
-<li><p><strong>triggers</strong> – A pointer to a vector&lt;double&gt; object containing the triggers that result in the construction of each corresponding <a class="reference internal" href="../Problem.html#structinfraRank"><span class="std std-ref">infraRank</span></a> vector object. </p></li>
+<li><p><strong>order</strong> – A pointer to a vector&lt;int&gt; object containing the construction order of <a class="reference internal" href="#structinfraRank"><span class="std std-ref">infraRank</span></a> objects. </p></li>
+<li><p><strong>triggers</strong> – A pointer to a vector&lt;double&gt; object containing the triggers that result in the construction of each corresponding <a class="reference internal" href="#structinfraRank"><span class="std std-ref">infraRank</span></a> vector object. </p></li>
 <li><p><strong>id_low</strong> – The ID of the low-expansion infrastructure. </p></li>
 <li><p><strong>id_high</strong> – The ID of the high-expansion infrastructure. </p></li>
 <li><p><strong>capacity_low</strong> – The capacity of the low-expansion infrastructure. </p></li>
@@ -451,10 +464,10 @@
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE">
 <span id="_CPPv3N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE"></span><span id="_CPPv2N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE"></span><span id="Problem::vecInfraRankToVecInt__vector:infraRank:"></span><span class="target" id="classProblem_1ab1d415f85e69eda15916cd3a708c508d"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">vecInfraRankToVecInt</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv49infraRank" title="infraRank"><span class="n"><span class="pre">infraRank</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Problem20vecInfraRankToVecIntE6vectorI9infraRankE" title="Link to this definition"></a><br /></dt>
-<dd><p>Converts the vector of <a class="reference internal" href="../Problem.html#structinfraRank"><span class="std std-ref">infraRank</span></a> objects to a vector of integers. </p>
+<dd><p>Converts the vector of <a class="reference internal" href="#structinfraRank"><span class="std std-ref">infraRank</span></a> objects to a vector of integers. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>v</strong> – A vector of <a class="reference internal" href="../Problem.html#structinfraRank"><span class="std std-ref">infraRank</span></a> objects. </p>
+<dd class="field-odd"><p><strong>v</strong> – A vector of <a class="reference internal" href="#structinfraRank"><span class="std std-ref">infraRank</span></a> objects. </p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>vector&lt;int&gt; A vector of integers denoting each infrastructure’s rank (from earliest to last built) after optimization. </p>
@@ -620,7 +633,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Problem_index.html" class="btn btn-neutral float-left" title="Problem Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Problem_submodules.html" class="btn btn-neutral float-right" title="Problem Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

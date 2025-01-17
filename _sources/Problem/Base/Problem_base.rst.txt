@@ -1,17 +1,16 @@
-Base Components
+Problem Module
 ===============
-
-The base components define foundational functionality of the `Problem` class for problem-solving.
 
 API Reference
 -------------
 
-Problem Class
-^^^^^^^^^^^^^
+The base components define foundational functionality of the `Problem` class for maintaining continuity.
+
+Base Components
+^^^^^^^^^^^^^^^^
 
 Problem.h
-~~~~~~~~~
+~~~~~~~~~~~
 
 .. doxygenfile:: Problem/Base/Problem.h
    :project: WaterPaths
-   

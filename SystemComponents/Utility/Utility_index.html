@@ -18,7 +18,9 @@
       <script src="../../_static/sphinx_highlight.js?v=4825356b"></script>
     <script src="../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
-    <link rel="search" title="Search" href="../../search.html" /> 
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="SystemComponents Module" href="../WaterSources/WaterSources_index.html" />
+    <link rel="prev" title="Bonds Module" href="../Bonds/Bonds_submodules.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -41,13 +43,26 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Modules</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../ContinuityModels/ContinuityModels_index.html">Continuity Models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Controls/Controls_index.html">Controls</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../DataCollector/DataCollector_index.html">Data Collector</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Problem/Problem.html">Problem Implementations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Simulation/Simulation.html">Simulation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../SystemComponents.html">System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Problem/Problem_index.html">Problem Implementations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Simulation/Simulation_index.html">Simulation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../SystemComponents_index.html">System Components</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../SystemComponents_index.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Bonds/Bonds_index.html">Bonds</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Utilities</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#contents">Contents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#api-reference">API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../WaterSources/WaterSources_index.html">Water Sources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../SystemComponents_catchment.html">Catchments</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -64,9 +79,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../SystemComponents_index.html">SystemComponents Module</a></li>
       <li class="breadcrumb-item active">Utility Module</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../../_sources/SystemComponents/Utility/SystemComponents_Utility.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/SystemComponents/Utility/Utility_index.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -234,7 +250,7 @@ of the water system.</p>
 <p>This function manages the expansion of a water treatment plant by adding treatment capacity to the associated water source. It also ensures the source is appropriately categorized as either a priority or non-priority source and updates the priority and non-priority lists accordingly.</p>
 <p><div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../WaterSources/SystemComponents_WaterSources.html#classSequentialJointTreatmentExpansion"><span class="std std-ref">SequentialJointTreatmentExpansion</span></a></p>
+<p><a class="reference internal" href="../WaterSources/WaterSources_index.html#classSequentialJointTreatmentExpansion"><span class="std std-ref">SequentialJointTreatmentExpansion</span></a></p>
 </div>
 </p>
 <dl class="field-list simple">
@@ -254,10 +270,10 @@ of the water system.</p>
 <dt class="sig sig-object cpp" id="_CPPv4N21InfrastructureManager37reservoirExpansionConstructionHandlerEj">
 <span id="_CPPv3N21InfrastructureManager37reservoirExpansionConstructionHandlerEj"></span><span id="_CPPv2N21InfrastructureManager37reservoirExpansionConstructionHandlerEj"></span><span id="InfrastructureManager::reservoirExpansionConstructionHandler__unsigned-i"></span><span class="target" id="classInfrastructureManager_1ad4dc157110b29560cd47501ba67bcba3"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reservoirExpansionConstructionHandler</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21InfrastructureManager37reservoirExpansionConstructionHandlerEj" title="Link to this definition"></a><br /></dt>
 <dd><p>Handles the construction of a reservoir expansion by adding capacity to its parent reservoir. </p>
-<p>This function manages the logic for integrating a reservoir expansion into the system. It dynamically casts the specified water source to a <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/SystemComponents_WaterSources.html#classReservoirExpansion"><span class="std std-ref"><span class="pre">ReservoirExpansion</span></span></a></code> type, adds its allocated capacity to the associated parent reservoir, and marks the reservoir expansion as online.</p>
+<p>This function manages the logic for integrating a reservoir expansion into the system. It dynamically casts the specified water source to a <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/WaterSources_index.html#classReservoirExpansion"><span class="std std-ref"><span class="pre">ReservoirExpansion</span></span></a></code> type, adds its allocated capacity to the associated parent reservoir, and marks the reservoir expansion as online.</p>
 <p><div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../WaterSources/SystemComponents_WaterSources.html#classReservoirExpansion"><span class="std std-ref">ReservoirExpansion</span></a></p>
+<p><a class="reference internal" href="../WaterSources/WaterSources_index.html#classReservoirExpansion"><span class="std std-ref">ReservoirExpansion</span></a></p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
@@ -273,7 +289,7 @@ of the water system.</p>
 <dd class="field-odd"><p><strong>source_id</strong> – The unique identifier of the reservoir expansion source.</p>
 </dd>
 <dt class="field-even">Throws<span class="colon">:</span></dt>
-<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">bad_cast</span></span></span> – If the specified <code class="docutils literal notranslate"><span class="pre">source_id</span></code> does not correspond to a <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/SystemComponents_WaterSources.html#classReservoirExpansion"><span class="std std-ref"><span class="pre">ReservoirExpansion</span></span></a></code> type.</p>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">bad_cast</span></span></span> – If the specified <code class="docutils literal notranslate"><span class="pre">source_id</span></code> does not correspond to a <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/WaterSources_index.html#classReservoirExpansion"><span class="std std-ref"><span class="pre">ReservoirExpansion</span></span></a></code> type.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -285,7 +301,7 @@ of the water system.</p>
 <p>This function manages the process of relocating a water source by adjusting the allocation fractions for its parent reservoir and marking the relocation source as online.</p>
 <p><div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../WaterSources/SystemComponents_WaterSources.html#classRelocation"><span class="std std-ref">Relocation</span></a></p>
+<p><a class="reference internal" href="../WaterSources/WaterSources_index.html#classRelocation"><span class="std std-ref">Relocation</span></a></p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
@@ -301,7 +317,7 @@ of the water system.</p>
 <dd class="field-odd"><p><strong>source_id</strong> – The unique identifier of the relocation source to be processed.</p>
 </dd>
 <dt class="field-even">Throws<span class="colon">:</span></dt>
-<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">bad_cast</span></span></span> – If the specified <code class="docutils literal notranslate"><span class="pre">source_id</span></code> does not correspond to a <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/SystemComponents_WaterSources.html#classRelocation"><span class="std std-ref"><span class="pre">Relocation</span></span></a></code> type.</p>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">bad_cast</span></span></span> – If the specified <code class="docutils literal notranslate"><span class="pre">source_id</span></code> does not correspond to a <code class="docutils literal notranslate"><a class="reference internal" href="../WaterSources/WaterSources_index.html#classRelocation"><span class="std std-ref"><span class="pre">Relocation</span></span></a></code> type.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -457,7 +473,7 @@ of the water system.</p>
 <span id="_CPPv3N21InfrastructureManager34intakeExpansionConstructionHandlerEj"></span><span id="_CPPv2N21InfrastructureManager34intakeExpansionConstructionHandlerEj"></span><span id="InfrastructureManager::intakeExpansionConstructionHandler__unsigned-i"></span><span class="target" id="classInfrastructureManager_1aed62e86a9737e385c821d44ea70922e9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">intakeExpansionConstructionHandler</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21InfrastructureManager34intakeExpansionConstructionHandlerEj" title="Link to this definition"></a><br /></dt>
 <dd><p>Handles the construction of an intake expansion. </p>
 <p>This function processes the construction of an intake expansion. It updates the parent intake’s capacity and treatment capacity based on the values from the intake expansion and sets the intake expansion as online.</p>
-<p>FIXME: [July 2019]:There may be an issue here if this were to be used for an allocated source where it mattered what utility ID was associated with the increase in treatment capacity but this addTreatmentCapacity function is not overrode within the <a class="reference internal" href="../WaterSources/SystemComponents_WaterSources.html#classIntake"><span class="std std-ref">Intake</span></a> or <a class="reference internal" href="../WaterSources/SystemComponents_WaterSources.html#classIntakeExpansion"><span class="std std-ref">IntakeExpansion</span></a> class so it should be fine</p>
+<p>FIXME: [July 2019]:There may be an issue here if this were to be used for an allocated source where it mattered what utility ID was associated with the increase in treatment capacity but this addTreatmentCapacity function is not overrode within the <a class="reference internal" href="../WaterSources/WaterSources_index.html#classIntake"><span class="std std-ref">Intake</span></a> or <a class="reference internal" href="../WaterSources/WaterSources_index.html#classIntakeExpansion"><span class="std std-ref">IntakeExpansion</span></a> class so it should be fine</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>source_id</strong> – The ID of the intake expansion water source. </p>
@@ -1032,7 +1048,7 @@ of the water system.</p>
 <p>This function issues a bond for a newly triggered infrastructure and adds it to the list of issued bonds if it hasn’t been issued already. It calculates the net present value (NPV) of the bond at the time of issuance and updates the infrastructure net present cost.</p>
 <p><div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../Bonds/Base/SystemComponents_Bonds_base.html#classBond_1a726edbe3ea7047ebc7246585943763e3"><span class="std std-ref">Bond::issueBond</span></a>, <a class="reference internal" href="../Bonds/Base/SystemComponents_Bonds_base.html#classBond_1a5997278813deb16aa5d01bbca8ecc7b2"><span class="std std-ref">Bond::getNetPresentValueAtIssuance</span></a></p>
+<p><a class="reference internal" href="../Bonds/Base/Bonds_base.html#classBond_1a726edbe3ea7047ebc7246585943763e3"><span class="std std-ref">Bond::issueBond</span></a>, <a class="reference internal" href="../Bonds/Base/Bonds_base.html#classBond_1a5997278813deb16aa5d01bbca8ecc7b2"><span class="std std-ref">Bond::getNetPresentValueAtIssuance</span></a></p>
 </div>
 </p>
 <dl class="field-list simple">
@@ -1394,11 +1410,11 @@ of the water system.</p>
 <p>This function calculates the current debt payment that the utility owes based on the bonds it has issued. It checks if any bonds are variable debt service bonds (associated with variable joint water treatment projects), and adjusts the debt service accordingly. It also sums up the debt service for all issued bonds and returns the total debt payment for the given week.</p>
 <p><div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../Bonds/Base/SystemComponents_Bonds_base.html#classBond_1aff7fc4e1edcf199fb592d22c765b854e"><span class="std std-ref">Bond::setDebtService</span></a></p>
+<p><a class="reference internal" href="../Bonds/Base/Bonds_base.html#classBond_1aff7fc4e1edcf199fb592d22c765b854e"><span class="std std-ref">Bond::setDebtService</span></a></p>
 </div>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../Bonds/Base/SystemComponents_Bonds_base.html#classBond_1a98d8ecaf4b36319674ebd220598996bc"><span class="std std-ref">Bond::getDebtService</span></a></p>
+<p><a class="reference internal" href="../Bonds/Base/Bonds_base.html#classBond_1a98d8ecaf4b36319674ebd220598996bc"><span class="std std-ref">Bond::getDebtService</span></a></p>
 </div>
 </p>
 <dl class="field-list simple">
@@ -2047,7 +2063,7 @@ of the water system.</p>
 <p>This function calculates the total present value of the debt payments to be made in a week for each bond issued by the utility (if that’s the first week of the year), considering any changes in debt service allocation over the course of the repayment. It sums the present value of debt payments for all bonds and returns the total amount.</p>
 <p><div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p><a class="reference internal" href="../Bonds/Base/SystemComponents_Bonds_base.html#classBond_1a322d4ab0c0c72824ac4df5df80f14d24"><span class="std std-ref">Bond::getPresentValueDebtService()</span></a></p>
+<p><a class="reference internal" href="../Bonds/Base/Bonds_base.html#classBond_1a322d4ab0c0c72824ac4df5df80f14d24"><span class="std std-ref">Bond::getPresentValueDebtService()</span></a></p>
 </div>
 </p>
 <dl class="field-list simple">
@@ -2615,7 +2631,7 @@ of the water system.</p>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N7Utility12issued_bondsE">
-<span id="_CPPv3N7Utility12issued_bondsE"></span><span id="_CPPv2N7Utility12issued_bondsE"></span><span id="Utility::issued_bonds__vector:BondP:"></span><span class="target" id="classUtility_1ae100f50a95593230b2571bb746364186"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../Bonds/Base/SystemComponents_Bonds_base.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">issued_bonds</span></span></span><a class="headerlink" href="#_CPPv4N7Utility12issued_bondsE" title="Link to this definition"></a><br /></dt>
+<span id="_CPPv3N7Utility12issued_bondsE"></span><span id="_CPPv2N7Utility12issued_bondsE"></span><span id="Utility::issued_bonds__vector:BondP:"></span><span class="target" id="classUtility_1ae100f50a95593230b2571bb746364186"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../Bonds/Base/Bonds_base.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">issued_bonds</span></span></span><a class="headerlink" href="#_CPPv4N7Utility12issued_bondsE" title="Link to this definition"></a><br /></dt>
 <dd><p>A vector of bonds that have been issued by the utility. </p>
 </dd></dl>
 
@@ -2696,7 +2712,10 @@ of the water system.</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Bonds/Bonds_submodules.html" class="btn btn-neutral float-left" title="Bonds Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../WaterSources/WaterSources_index.html" class="btn btn-neutral float-right" title="SystemComponents Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
