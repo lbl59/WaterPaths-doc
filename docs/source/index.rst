@@ -16,7 +16,7 @@ Install
 WaterPaths can be installed by following the instructions in the `GitHub Repository <https://github.com/bernardoct/WaterPaths>`_ that contains the original implementation of the code (Trindade et al, 2020).
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Modules
 
    Continuity Models <ContinuityModels/ContinuityModels_index>
