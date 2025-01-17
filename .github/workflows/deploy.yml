@@ -6,6 +6,7 @@ on:
       - main  # Trigger on changes to the main branch
 
 jobs:
+  # Checkout code
   deploy:
     runs-on: ubuntu-latest
 
@@ -18,17 +19,21 @@ jobs:
       with:
         python-version: '3.x'
 
+    # Install dependencies
     - name: Install dependencies
       run: |
         pip install sphinx
         pip install breathe  
         pip install sphinx_rtd_theme
 
+    # Build documentation in Sphinx
     - name: Build documentation
       run: sphinx-build -b html docs/source docs/build/html
-
+    
+    # Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: docs/build/html
+        publish_branch: gh-pages
