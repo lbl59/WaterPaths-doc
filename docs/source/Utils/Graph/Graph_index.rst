@@ -8,6 +8,6 @@ Graph Components
 
 Graph.h
 ~~~~~~~
-.. doxygenfile:: Utils/Graph/Graph.h
+.. doxygenfile:: Utils/Graphs/Graph.h
    :project: WaterPaths
    
