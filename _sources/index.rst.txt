@@ -6,9 +6,7 @@
 Welcome to the official WaterPaths documentation!
 =================================================
 
-.. note::
-
-   **WARNING**
+.. warning::
 
    This site is a work in progress. If you see any mistakes or would like to request any additional material, please submit a new `Issue on GitHub <https://github.com/lbl59/WaterPaths-doc/issues>`_.
 
@@ -16,10 +14,10 @@ Welcome to the official WaterPaths documentation!
    **WaterPaths** is a C++ package for the optimization of multi-actor water distribution systems under deep uncertainty. It is a utility planning and management tool built to facilitate the identification of regionally-robust
    water supply planning and management policy pathways. To view its associated publication, please see `Trindade et al, 2020 <https://www.sciencedirect.com/science/article/pii/S1364815220301511>`_.
 
-Install
-=======
+Install and Run
+================
 
-Further details on WaterPaths can be found at the original `GitHub Repository <https://github.com/bernardoct/WaterPaths>`_ (Trindade et al, 2020).
+To install and run WaterPaths, clone the `GitHub Repository <https://github.com/bernardoct/WaterPaths>`_ (Trindade et al, 2020). Follow the directions in the README to run a simple WaterPaths simulation.
 
 Modules
 =======

@@ -98,45 +98,1301 @@
 <h3>Submodule Components<a class="headerlink" href="#submodule-components" title="Link to this heading"></a></h3>
 <section id="constants-h">
 <h4>Constants.h<a class="headerlink" href="#constants-h" title="Link to this heading"></a></h4>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfile: Cannot find file “Utils/Constants.h </p>
-</div>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv49Constants">
+<span id="_CPPv39Constants"></span><span id="_CPPv29Constants"></span><span id="Constants"></span><span class="target" id="namespaceConstants"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Constants</span></span></span><a class="headerlink" href="#_CPPv49Constants" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
 </section>
 <section id="dataseries-h">
 <h4>DataSeries.h<a class="headerlink" href="#dataseries-h" title="Link to this heading"></a></h4>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfile: Cannot find file “Utils/DataSeries.h </p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv410DataSeries">
+<span id="_CPPv310DataSeries"></span><span id="_CPPv210DataSeries"></span><span id="DataSeries"></span><span class="target" id="classDataSeries"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DataSeries</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="../Controls/Base/Controls_base.html#_CPPv412ControlRules" title="ControlRules"><span class="n"><span class="pre">ControlRules</span></span></a><a class="headerlink" href="#_CPPv410DataSeries" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;DataSeries.h&gt;</em></div>
+<p>The <a class="reference internal" href="#classDataSeries"><span class="std std-ref">DataSeries</span></a> subclass that extends the <a class="reference internal" href="../Controls/Base/Controls_base.html#classControlRules"><span class="std std-ref">ControlRules</span></a> class by providing detailed representation for a series of data points. </p>
+<p>Created by bernardoct on 6/21/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10DataSeries10DataSeriesEP6vectorIdEP6vectorIdE">
+<span id="_CPPv3N10DataSeries10DataSeriesEP6vectorIdEP6vectorIdE"></span><span id="_CPPv2N10DataSeries10DataSeriesEP6vectorIdEP6vectorIdE"></span><span id="DataSeries::DataSeries__vector:double:P.vector:double:P"></span><span class="target" id="classDataSeries_1a8af4ff388a574c8b836c2880492a8423"></span><span class="sig-name descname"><span class="n"><span class="pre">DataSeries</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">series_x</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">series_y</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N10DataSeries10DataSeriesEP6vectorIdEP6vectorIdE" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructs a <code class="docutils literal notranslate"><a class="reference internal" href="#classDataSeries"><span class="std std-ref"><span class="pre">DataSeries</span></span></a></code> object by initializing it with x and y data series. Ensures that the lengths of the independent (<code class="docutils literal notranslate"><span class="pre">x</span></code>) and dependent (<code class="docutils literal notranslate"><span class="pre">y</span></code>) series match. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>series_x</strong> – Pointer to a <code class="docutils literal notranslate"><span class="pre">vector&lt;double&gt;</span></code> representing the x-values (independent variable). </p></li>
+<li><p><strong>series_y</strong> – Pointer to a <code class="docutils literal notranslate"><span class="pre">vector&lt;double&gt;</span></code> representing the y-values (dependent variable). </p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if the lengths of <code class="docutils literal notranslate"><span class="pre">series_x</span></code> and <code class="docutils literal notranslate"><span class="pre">series_y</span></code> are not equal. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK10DataSeries11getSeries_xEv">
+<span id="_CPPv3NK10DataSeries11getSeries_xEv"></span><span id="_CPPv2NK10DataSeries11getSeries_xEv"></span><span id="DataSeries::getSeries_xC"></span><span class="target" id="classDataSeries_1a8bc2554fe0708acf648adc9546a005e1"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getSeries_x</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK10DataSeries11getSeries_xEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Retrieves a constant reference to the x-values (independent variable) of the data series. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A constant reference to the <code class="docutils literal notranslate"><span class="pre">vector&lt;double&gt;</span></code> containing the x-values. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10DataSeries22get_dependent_variableEd">
+<span id="_CPPv3N10DataSeries22get_dependent_variableEd"></span><span id="_CPPv2N10DataSeries22get_dependent_variableEd"></span><span id="DataSeries::get_dependent_variable__double"></span><span class="target" id="classDataSeries_1a3cb684ebcbdd6d9969996f306bed8b53"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dependent_variable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N10DataSeries22get_dependent_variableEd" title="Link to this definition"></a><br /></dt>
+<dd><p>Retrieves the dependent variable (<code class="docutils literal notranslate"><span class="pre">y</span></code>) corresponding to a given independent variable (<code class="docutils literal notranslate"><span class="pre">x</span></code>) using interpolation. If the data series contains only one point, it returns that single point. </p>
+<p>This function overrides the <code class="docutils literal notranslate"><span class="pre">get_dependent_variable</span></code> method from the <code class="docutils literal notranslate"><a class="reference internal" href="../Controls/Base/Controls_base.html#classControlRules"><span class="std std-ref"><span class="pre">ControlRules</span></span></a></code> class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> – The value of the independent variable (<code class="docutils literal notranslate"><span class="pre">x</span></code>) for which the dependent variable (<code class="docutils literal notranslate"><span class="pre">y</span></code>) is to be calculated.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>double </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The interpolated or directly matched value of the dependent variable (<code class="docutils literal notranslate"><span class="pre">y</span></code>). </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10DataSeries22get_dependent_variableEi">
+<span id="_CPPv3N10DataSeries22get_dependent_variableEi"></span><span id="_CPPv2N10DataSeries22get_dependent_variableEi"></span><span id="DataSeries::get_dependent_variable__i"></span><span class="target" id="classDataSeries_1a57c3737304a489a3ae9cae5910fc5337"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dependent_variable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N10DataSeries22get_dependent_variableEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Throws an exception if called with an integer argument. This function prevents misuse by disallowing calls with an integer <code class="docutils literal notranslate"><span class="pre">x</span></code> for <code class="docutils literal notranslate"><span class="pre">get_dependent_variable</span></code>. </p>
+<p>This function overrides the <code class="docutils literal notranslate"><span class="pre">get_dependent_variable</span></code> method from the <code class="docutils literal notranslate"><a class="reference internal" href="../Controls/Base/Controls_base.html#classControlRules"><span class="std std-ref"><span class="pre">ControlRules</span></span></a></code> class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x</strong> – An integer value that is not supported as input for this function.</p>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – Always thrown, with a message indicating that integers are not allowed. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>double </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10DataSeries6lengthE">
+<span id="_CPPv3N10DataSeries6lengthE"></span><span id="_CPPv2N10DataSeries6lengthE"></span><span id="DataSeries::length__unsigned-lC"></span><span class="target" id="classDataSeries_1ad4a99b265519d2f57b787c03f2cf2f83"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">length</span></span></span><a class="headerlink" href="#_CPPv4N10DataSeries6lengthE" title="Link to this definition"></a><br /></dt>
+<dd><p>The length of the <a class="reference internal" href="#classDataSeries"><span class="std std-ref">DataSeries</span></a>. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10DataSeries22get_dependent_variableEdi">
+<span id="_CPPv3N10DataSeries22get_dependent_variableEdi"></span><span id="_CPPv2N10DataSeries22get_dependent_variableEdi"></span><span id="DataSeries::get_dependent_variable__double.i"></span><span class="target" id="classDataSeries_1a1242b9fdbdbb4e91a0e8b9e2383085d8"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dependent_variable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N10DataSeries22get_dependent_variableEdi" title="Link to this definition"></a><br /></dt>
+<dd><p>Throws an exception if called with an double <code class="docutils literal notranslate"><span class="pre">x</span></code> argument and integer <code class="docutils literal notranslate"><span class="pre">week</span></code> argument. This function prevents misuse by disallowing calls with an double <code class="docutils literal notranslate"><span class="pre">x</span></code> or integer <code class="docutils literal notranslate"><span class="pre">week</span></code>. </p>
+<p>This function overrides the <code class="docutils literal notranslate"><span class="pre">get_dependent_variable</span></code> method from the <code class="docutils literal notranslate"><a class="reference internal" href="../Controls/Base/Controls_base.html#classControlRules"><span class="std std-ref"><span class="pre">ControlRules</span></span></a></code> class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – A double value that is not supported as input for this function. </p></li>
+<li><p><strong>week</strong> – An integer value that is not supported as input for this function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – Always thrown, with a message indicating that two parameters are not allowed. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>double </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N10DataSeries22get_dependent_variableEii">
+<span id="_CPPv3N10DataSeries22get_dependent_variableEii"></span><span id="_CPPv2N10DataSeries22get_dependent_variableEii"></span><span id="DataSeries::get_dependent_variable__i.i"></span><span class="target" id="classDataSeries_1a16a0aab69c764944dbb4a55b7432f37b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dependent_variable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N10DataSeries22get_dependent_variableEii" title="Link to this definition"></a><br /></dt>
+<dd><p>Throws an exception if called with an integer <code class="docutils literal notranslate"><span class="pre">x</span></code> argument and integer <code class="docutils literal notranslate"><span class="pre">week</span></code> argument. This function prevents misuse by disallowing calls with an integer <code class="docutils literal notranslate"><span class="pre">x</span></code> or integer <code class="docutils literal notranslate"><span class="pre">week</span></code>. </p>
+<p>This function overrides the <code class="docutils literal notranslate"><span class="pre">get_dependent_variable</span></code> method from the <code class="docutils literal notranslate"><a class="reference internal" href="../Controls/Base/Controls_base.html#classControlRules"><span class="std std-ref"><span class="pre">ControlRules</span></span></a></code> class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – An integer value that is not supported as input for this function. </p></li>
+<li><p><strong>week</strong> – An integer value that is not supported as input for this function.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – Always thrown, with a message indicating that two parameters are not allowed. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>double </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10DataSeries8series_xE">
+<span id="_CPPv3N10DataSeries8series_xE"></span><span id="_CPPv2N10DataSeries8series_xE"></span><span id="DataSeries::series_x__vector:double:P"></span><span class="target" id="classDataSeries_1ac49042cab004e46a8183cc10183fbfcd"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">series_x</span></span></span><a class="headerlink" href="#_CPPv4N10DataSeries8series_xE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of independent x-variable values. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N10DataSeries8series_yE">
+<span id="_CPPv3N10DataSeries8series_yE"></span><span id="_CPPv2N10DataSeries8series_yE"></span><span id="DataSeries::series_y__vector:double:P"></span><span class="target" id="classDataSeries_1a4a8cff07f177a4787904ed1cd746bf23"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">series_y</span></span></span><a class="headerlink" href="#_CPPv4N10DataSeries8series_yE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of dependent y-variable values. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 <section id="matrices-h">
 <h4>Matrices.h<a class="headerlink" href="#matrices-h" title="Link to this heading"></a></h4>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfile: Cannot find file “Utils/Matrices.h </p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I0E8Matrix2D">
+<span id="_CPPv3I0E8Matrix2D"></span><span id="_CPPv2I0E8Matrix2D"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classMatrix2D"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Matrix2D</span></span></span><a class="headerlink" href="#_CPPv4I0E8Matrix2D" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Matrices.h&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D8Matrix2DEv">
+<span id="_CPPv3N8Matrix2D8Matrix2DEv"></span><span id="_CPPv2N8Matrix2D8Matrix2DEv"></span><span id="Matrix2D::Matrix2D"></span><span class="target" id="classMatrix2D_1a950bb2aa76c86e057d91f430d5a27b57"></span><span class="sig-name descname"><span class="n"><span class="pre">Matrix2D</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2D8Matrix2DEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Default constructor for a new <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 2 D&lt; T&gt;:: <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 2 D object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D8Matrix2DEii">
+<span id="_CPPv3N8Matrix2D8Matrix2DEii"></span><span id="_CPPv2N8Matrix2D8Matrix2DEii"></span><span id="Matrix2D::Matrix2D__i.i"></span><span class="target" id="classMatrix2D_1ac93acc71341e612cf8b23d4308c561f8"></span><span class="sig-name descname"><span class="n"><span class="pre">Matrix2D</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">di</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dj</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2D8Matrix2DEii" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 2 D&lt; T&gt;:: <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 2 D object with specified dimensions. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>di</strong> – The number of rows in the matrix. </p></li>
+<li><p><strong>dj</strong> – The number of columns in the matrix.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">length_error</span></span></span> – If either di or dj are 0. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2DclEii">
+<span id="_CPPv3N8Matrix2DclEii"></span><span id="_CPPv2N8Matrix2DclEii"></span><span id="Matrix2D::call-operator__i.i"></span><span class="target" id="classMatrix2D_1abcb61863666c4e17352c9fd2fc0a254a"></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2DclEii" title="Link to this definition"></a><br /></dt>
+<dd><p>a subscript operator that returns a reference to the element at position (i, j) in the matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>i</strong> – The row index. </p></li>
+<li><p><strong>j</strong> – The column index. </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">length_error</span></span></span> – If the indices are out of bounds. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>T&amp;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8Matrix2DclEii">
+<span id="_CPPv3NK8Matrix2DclEii"></span><span id="_CPPv2NK8Matrix2DclEii"></span><span id="Matrix2D::call-operator__i.iC"></span><span class="target" id="classMatrix2D_1a1a14d98d090d0d1cbda97a8fa797f1c5"></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8Matrix2DclEii" title="Link to this definition"></a><br /></dt>
+<dd><p>a subscript operator that returns a reference to the element at position (i, j) in the matrix without changing the original matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>i</strong> – The row index. </p></li>
+<li><p><strong>j</strong> – The column index. </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">length_error</span></span></span> – If the indices are out of bounds. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>T&amp;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2DD0Ev">
+<span id="_CPPv3N8Matrix2DD0Ev"></span><span id="_CPPv2N8Matrix2DD0Ev"></span><span id="Matrix2D::~Matrix2D"></span><span class="target" id="classMatrix2D_1a6b86d001220161af2136ba49fd8b26b9"></span><span class="sig-name descname"><span class="n"><span class="pre">~Matrix2D</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2DD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destructor for a <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 2 D&lt; T&gt;:: <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 2 D object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D8Matrix2DERK8Matrix2D">
+<span id="_CPPv3N8Matrix2D8Matrix2DERK8Matrix2D"></span><span id="_CPPv2N8Matrix2D8Matrix2DERK8Matrix2D"></span><span id="Matrix2D::Matrix2D__Matrix2DCR"></span><span class="target" id="classMatrix2D_1aa1d3642d7cea07adac1a7bd83586d292"></span><span class="sig-name descname"><span class="n"><span class="pre">Matrix2D</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8Matrix2D8Matrix2DERK8Matrix2D" title="Matrix2D::Matrix2D"><span class="n"><span class="pre">Matrix2D</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">m</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2D8Matrix2DERK8Matrix2D" title="Link to this definition"></a><br /></dt>
+<dd><p>Copy constructor for a new <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 2 D&lt; T&gt;:: <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 2 D object by copying another matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>m</strong> – The matrix to be copied.</p>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">length_error</span></span></span> – If either di or dj of the original matrix are 0. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2DaSERK8Matrix2DI1TE">
+<span id="_CPPv3N8Matrix2DaSERK8Matrix2DI1TE"></span><span id="_CPPv2N8Matrix2DaSERK8Matrix2DI1TE"></span><span id="Matrix2D::assign-operator__Matrix2D:T:CR"></span><span class="target" id="classMatrix2D_1a17597829237784fa6089a23b7accb631"></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D"><span class="n"><span class="pre">Matrix2D</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D"><span class="n"><span class="pre">Matrix2D</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">m</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2DaSERK8Matrix2DI1TE" title="Link to this definition"></a><br /></dt>
+<dd><p>Assignment operator for a <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 2 D&lt; T&gt;:: <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 2 D object. This operator copies the data from another matrix to this matrix, assigning the values in the original matrix to this matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>m</strong> – The matrix to be copied. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Matrix2D&lt;T&gt;&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2DpLERK8Matrix2DI1TE">
+<span id="_CPPv3N8Matrix2DpLERK8Matrix2DI1TE"></span><span id="_CPPv2N8Matrix2DpLERK8Matrix2DI1TE"></span><span id="Matrix2D::add-assign-operator__Matrix2D:T:CR"></span><span class="target" id="classMatrix2D_1a05b92232d9a5e7b76c4d4c1508ae2e12"></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D"><span class="n"><span class="pre">Matrix2D</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">+=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D"><span class="n"><span class="pre">Matrix2D</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">m</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2DpLERK8Matrix2DI1TE" title="Link to this definition"></a><br /></dt>
+<dd><p>In-place addition operator that adds each element in the matrix to the corresponding element in another matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix.</p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>m</strong> – The matrix to be added to the current matrix. </p>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">length_error</span></span></span> – If the dimensions of the two matrices are different. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Matrix2D&lt;T&gt;&amp;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2DdvEKd">
+<span id="_CPPv3N8Matrix2DdvEKd"></span><span id="_CPPv2N8Matrix2DdvEKd"></span><span id="Matrix2D::div-operator__doubleC"></span><span class="target" id="classMatrix2D_1a48122f2fa79bf511d0c4e143dcdb0cf0"></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D"><span class="n"><span class="pre">Matrix2D</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">/</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">m</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2DdvEKd" title="Link to this definition"></a><br /></dt>
+<dd><p>Division operator that divides each element in the matrix by a scalar. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>n</strong> – The constant used to divide each element in the matrix. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Matrix2D&lt;T&gt;&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D5resetE1T">
+<span id="_CPPv3N8Matrix2D5resetE1T"></span><span id="_CPPv2N8Matrix2D5resetE1T"></span><span id="Matrix2D::reset__T"></span><span class="target" id="classMatrix2D_1a1a646829a2e9d166e0e47439de633b95"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reset</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2D5resetE1T" title="Link to this definition"></a><br /></dt>
+<dd><p>Set all elements in the matrix to a specific value. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>value</strong> – The value to which all elements in the matrix will be set.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8Matrix2D5printEi">
+<span id="_CPPv3NK8Matrix2D5printEi"></span><span id="_CPPv2NK8Matrix2D5printEi"></span><span id="Matrix2D::print__iC"></span><span class="target" id="classMatrix2D_1a27ccf42f23c568b2397b744ec32a41d1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">print</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8Matrix2D5printEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Print the i-th row of the matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>i</strong> – The row index.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D5get_iEv">
+<span id="_CPPv3N8Matrix2D5get_iEv"></span><span id="_CPPv2N8Matrix2D5get_iEv"></span><span id="Matrix2D::get_i"></span><span class="target" id="classMatrix2D_1a9d44e60eef0274c20ed9bd1f597c89eb"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_i</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2D5get_iEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the number of rows in the matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D5get_jEv">
+<span id="_CPPv3N8Matrix2D5get_jEv"></span><span id="_CPPv2N8Matrix2D5get_jEv"></span><span id="Matrix2D::get_j"></span><span class="target" id="classMatrix2D_1a30918dfce713408a9b3188bea33dbb57"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_j</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2D5get_jEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the number of columns in the matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D5emptyEv">
+<span id="_CPPv3N8Matrix2D5emptyEv"></span><span id="_CPPv2N8Matrix2D5emptyEv"></span><span id="Matrix2D::empty"></span><span class="target" id="classMatrix2D_1a5fd8ff857d4554c8fed6ca1ca2f1e87d"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">empty</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2D5emptyEv" title="Link to this definition"></a><br /></dt>
+<dd><p>A flag to indicate if the matrix has been initialized. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the matrix has not been initialized, false otherwise. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D14setPartialDataEiP1Tm">
+<span id="_CPPv3N8Matrix2D14setPartialDataEiP1Tm"></span><span id="_CPPv2N8Matrix2D14setPartialDataEiP1Tm"></span><span id="Matrix2D::setPartialData__i.TP.unsigned-l"></span><span class="target" id="classMatrix2D_1a2a0f91e493892f9c56e98d1e20dcd465"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPartialData</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">data</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2D14setPartialDataEiP1Tm" title="Link to this definition"></a><br /></dt>
+<dd><p>Set a portion of the matrix to specific values provided by the data. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>i</strong> – The row index where the data will be set. </p></li>
+<li><p><strong>data</strong> – The data to be set. </p></li>
+<li><p><strong>length</strong> – The length of the data.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">length_error</span></span></span> – If the indices are out of bounds. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D7setDataEP1Ti">
+<span id="_CPPv3N8Matrix2D7setDataEP1Ti"></span><span id="_CPPv2N8Matrix2D7setDataEP1Ti"></span><span id="Matrix2D::setData__TP.i"></span><span class="target" id="classMatrix2D_1a28515c515652637734a22a3440e80258"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setData</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">data</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2D7setDataEP1Ti" title="Link to this definition"></a><br /></dt>
+<dd><p>Set all elements in the matrix to specific values provided by the data. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>value</strong> – The value to which all elements in the matrix will be set.</p>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">throw_with_nested</span></span></span> – If the size of the data does not match the size of the matrix. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8Matrix2D19getPointerToElementEii">
+<span id="_CPPv3NK8Matrix2D19getPointerToElementEii"></span><span id="_CPPv2NK8Matrix2D19getPointerToElementEii"></span><span id="Matrix2D::getPointerToElement__i.iC"></span><span class="target" id="classMatrix2D_1ac3d6fbe385374e65ce00a34be5a7d323"></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getPointerToElement</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8Matrix2D19getPointerToElementEii" title="Link to this definition"></a><br /></dt>
+<dd><p>Get the memory address of the element at position (i, j) in the matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>i</strong> – The row index. </p></li>
+<li><p><strong>j</strong> – The column index. </p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>T* </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D15add_to_positionEiiP1Ti">
+<span id="_CPPv3N8Matrix2D15add_to_positionEiiP1Ti"></span><span id="_CPPv2N8Matrix2D15add_to_positionEiiP1Ti"></span><span id="Matrix2D::add_to_position__i.i.TP.i"></span><span class="target" id="classMatrix2D_1a2bd34bc1808af36aa3dce5af143ce304"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add_to_position</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span>, <a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">data</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix2D15add_to_positionEiiP1Ti" title="Link to this definition"></a><br /></dt>
+<dd><p>Adds a sequence of values to a specified position in a 2D matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>i</strong> – The row index. </p></li>
+<li><p><strong>j</strong> – The column index. </p></li>
+<li><p><strong>data</strong> – A pointer to the array of values to be added. </p></li>
+<li><p><strong>length</strong> – The length of the data array. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8Matrix2D10get_vectorEv">
+<span id="_CPPv3NK8Matrix2D10get_vectorEv"></span><span id="_CPPv2NK8Matrix2D10get_vectorEv"></span><span id="Matrix2D::get_vectorC"></span><span class="target" id="classMatrix2D_1a2cd319270ca890e47dad636b9af34a11"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_vector</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8Matrix2D10get_vectorEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Converts the 2D matrix into a nested vector. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 2D matrix. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>const vector&lt;vector&lt;T&gt;&gt; </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D3di_E">
+<span id="_CPPv3N8Matrix2D3di_E"></span><span id="_CPPv2N8Matrix2D3di_E"></span><span id="Matrix2D::di___i"></span><span class="target" id="classMatrix2D_1ad9c316f4e27753ab30164f90f9dfaee9"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">di_</span></span></span><a class="headerlink" href="#_CPPv4N8Matrix2D3di_E" title="Link to this definition"></a><br /></dt>
+<dd><p>The number of rows in the matrix. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D3dj_E">
+<span id="_CPPv3N8Matrix2D3dj_E"></span><span id="_CPPv2N8Matrix2D3dj_E"></span><span id="Matrix2D::dj___i"></span><span class="target" id="classMatrix2D_1a69fb005b681e8740654e28616560a780"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dj_</span></span></span><a class="headerlink" href="#_CPPv4N8Matrix2D3dj_E" title="Link to this definition"></a><br /></dt>
+<dd><p>The number of columns in the matrix. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D5data_E">
+<span id="_CPPv3N8Matrix2D5data_E"></span><span id="_CPPv2N8Matrix2D5data_E"></span><span id="Matrix2D::data___unique_ptr:TA:"></span><span class="target" id="classMatrix2D_1af6db5a4e311ea727f52f16a7fb15a055"></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">data_</span></span></span><a class="headerlink" href="#_CPPv4N8Matrix2D5data_E" title="Link to this definition"></a><br /></dt>
+<dd><p>The data of the matrix. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix2D15not_initializedE">
+<span id="_CPPv3N8Matrix2D15not_initializedE"></span><span id="_CPPv2N8Matrix2D15not_initializedE"></span><span id="Matrix2D::not_initialized__b"></span><span class="target" id="classMatrix2D_1a4138aec11153780128a8d93a3ef06576"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">not_initialized</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">true</span></span><a class="headerlink" href="#_CPPv4N8Matrix2D15not_initializedE" title="Link to this definition"></a><br /></dt>
+<dd><p>A flag to indicate if the matrix has been initialized. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv4I0E8Matrix3D">
+<span id="_CPPv3I0E8Matrix3D"></span><span id="_CPPv2I0E8Matrix3D"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">&gt;</span></span><br /><span class="target" id="classMatrix3D"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Matrix3D</span></span></span><a class="headerlink" href="#_CPPv4I0E8Matrix3D" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Matrices.h&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3D8Matrix3DEv">
+<span id="_CPPv3N8Matrix3D8Matrix3DEv"></span><span id="_CPPv2N8Matrix3D8Matrix3DEv"></span><span id="Matrix3D::Matrix3D"></span><span class="target" id="classMatrix3D_1a1589c062f12fbbb1f3681f90c20c4b78"></span><span class="sig-name descname"><span class="n"><span class="pre">Matrix3D</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3D8Matrix3DEv" title="Link to this definition"></a><br /></dt>
+<dd><p>A default constructor for a new <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 3D&lt; T&gt;:: <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 3D object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3D8Matrix3DEiii">
+<span id="_CPPv3N8Matrix3D8Matrix3DEiii"></span><span id="_CPPv2N8Matrix3D8Matrix3DEiii"></span><span id="Matrix3D::Matrix3D__i.i.i"></span><span class="target" id="classMatrix3D_1a6c98f06b6f87c600bd9b00f6b253b37e"></span><span class="sig-name descname"><span class="n"><span class="pre">Matrix3D</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">di</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dj</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dk</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3D8Matrix3DEiii" title="Link to this definition"></a><br /></dt>
+<dd><p>Construct a new <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 3D&lt; T&gt;:: <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 3D object with specified dimensions. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>di</strong> – The number of rows in the matrix. </p></li>
+<li><p><strong>dj</strong> – The number of columns in the matrix. </p></li>
+<li><p><strong>dk</strong> – The number of slices in the matrix.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">length_error</span></span></span> – If either di, dj, or dk are 0. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3DclEiii">
+<span id="_CPPv3N8Matrix3DclEiii"></span><span id="_CPPv2N8Matrix3DclEiii"></span><span id="Matrix3D::call-operator__i.i.i"></span><span class="target" id="classMatrix3D_1a56e772adacd4ccf54388e6c90e3d1269"></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3DclEiii" title="Link to this definition"></a><br /></dt>
+<dd><p>A subscript operator that returns a reference to the element at position (i, j, k) in the matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>i</strong> – the row index. </p></li>
+<li><p><strong>j</strong> – The column index. </p></li>
+<li><p><strong>k</strong> – The slice index.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">length_error</span></span></span> – If the indices are out of bounds. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>T&amp;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8Matrix3DclEiii">
+<span id="_CPPv3NK8Matrix3DclEiii"></span><span id="_CPPv2NK8Matrix3DclEiii"></span><span id="Matrix3D::call-operator__i.i.iC"></span><span class="target" id="classMatrix3D_1a600c100c8204bbc8f2e4ebefa55cab82"></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">()</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">di</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dj</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dk</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8Matrix3DclEiii" title="Link to this definition"></a><br /></dt>
+<dd><p>A subscript operator that returns a reference to the element at position (i, j, k) in the matrix without changing the original matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>i</strong> – the row index. </p></li>
+<li><p><strong>j</strong> – The column index. </p></li>
+<li><p><strong>k</strong> – The slice index.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">length_error</span></span></span> – If the indices are out of bounds. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>T</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3DD0Ev">
+<span id="_CPPv3N8Matrix3DD0Ev"></span><span id="_CPPv2N8Matrix3DD0Ev"></span><span id="Matrix3D::~Matrix3D"></span><span class="target" id="classMatrix3D_1a7fda610223910a2b4dcfea445d2eb6c7"></span><span class="sig-name descname"><span class="n"><span class="pre">~Matrix3D</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3DD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroy the <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 3D&lt; T&gt;:: <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 3D object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3D8Matrix3DERK8Matrix3D">
+<span id="_CPPv3N8Matrix3D8Matrix3DERK8Matrix3D"></span><span id="_CPPv2N8Matrix3D8Matrix3DERK8Matrix3D"></span><span id="Matrix3D::Matrix3D__Matrix3DCR"></span><span class="target" id="classMatrix3D_1ae3fc93ef3456a36c92f8cbb7db01c3a9"></span><span class="sig-name descname"><span class="n"><span class="pre">Matrix3D</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N8Matrix3D8Matrix3DERK8Matrix3D" title="Matrix3D::Matrix3D"><span class="n"><span class="pre">Matrix3D</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">m</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3D8Matrix3DERK8Matrix3D" title="Link to this definition"></a><br /></dt>
+<dd><p>Copy constructor for a new <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 3D&lt; T&gt;:: <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 3D object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>m</strong> – The <a class="reference internal" href="#classMatrix3D"><span class="std std-ref">Matrix3D</span></a> object to be copied.</p>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">length_error</span></span></span> – If either di, dj, or dk of the original matrix are 0. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3DaSERK8Matrix3DI1TE">
+<span id="_CPPv3N8Matrix3DaSERK8Matrix3DI1TE"></span><span id="_CPPv2N8Matrix3DaSERK8Matrix3DI1TE"></span><span id="Matrix3D::assign-operator__Matrix3D:T:CR"></span><span class="target" id="classMatrix3D_1a0e84724f089ae3478283ea81d0b866af"></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D"><span class="n"><span class="pre">Matrix3D</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D"><span class="n"><span class="pre">Matrix3D</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">m</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3DaSERK8Matrix3DI1TE" title="Link to this definition"></a><br /></dt>
+<dd><p>Assignment operator for a <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 3D&lt; T&gt;:: <a class="reference internal" href="QPSolver/QPSolver_index.html#classMatrix"><span class="std std-ref">Matrix</span></a> 3D object. This operator copies the data from another matrix to this matrix, assigning the values in the original matrix to this matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>m</strong> – The matrix to be copied.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Matrix3D&lt;T&gt;&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3DpLERK8Matrix3DI1TE">
+<span id="_CPPv3N8Matrix3DpLERK8Matrix3DI1TE"></span><span id="_CPPv2N8Matrix3DpLERK8Matrix3DI1TE"></span><span id="Matrix3D::add-assign-operator__Matrix3D:T:CR"></span><span class="target" id="classMatrix3D_1a10b206ad9106931f7aa46a7b4d45c851"></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D"><span class="n"><span class="pre">Matrix3D</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">+=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D"><span class="n"><span class="pre">Matrix3D</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">m</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3DpLERK8Matrix3DI1TE" title="Link to this definition"></a><br /></dt>
+<dd><p>In-place addition operator that adds each element in the matrix to the corresponding element in another matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>m</strong> – The matrix to be added to the current matrix.</p>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">length_error</span></span></span> – If the dimensions of the two matrices are different. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Matrix3D&lt;T&gt;&amp;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3DdvEKd">
+<span id="_CPPv3N8Matrix3DdvEKd"></span><span id="_CPPv2N8Matrix3DdvEKd"></span><span id="Matrix3D::div-operator__doubleC"></span><span class="target" id="classMatrix3D_1ad45bff7f2159a4ba0aa4546635e8a73f"></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D"><span class="n"><span class="pre">Matrix3D</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">/</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">m</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3DdvEKd" title="Link to this definition"></a><br /></dt>
+<dd><p>Division operator that divides each element in the matrix by a scalar. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>n</strong> – The constant used to divide each element in the matrix.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Matrix3D&lt;T&gt;&amp; </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3D5get2DEic">
+<span id="_CPPv3N8Matrix3D5get2DEic"></span><span id="_CPPv2N8Matrix3D5get2DEic"></span><span id="Matrix3D::get2D__i.c"></span><span class="target" id="classMatrix3D_1ac5c77248be46bfef323f0229f6e0a59c"></span><a class="reference internal" href="#_CPPv4I0E8Matrix2D" title="Matrix2D"><span class="n"><span class="pre">Matrix2D</span></span></a><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get2D</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">ijk</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">dim</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3D5get2DEic" title="Link to this definition"></a><br /></dt>
+<dd><p>Extract a 2D slice from the 3D matrix along the specified dimension. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#classMatrix3D_1a056c035f4997b14c2a3e2b8ebee5142c"><span class="std std-ref">setData</span></a></p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ijk</strong> – The index along the selected dimension from which the slice is taken. </p></li>
+<li><p><strong>dim</strong> – The dimension along which the slice is extracted (‘i’, ‘j’, or ‘k’).</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Matrix2D&lt;T&gt;</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3D15add_to_positionEiiiP1Ti">
+<span id="_CPPv3N8Matrix3D15add_to_positionEiiiP1Ti"></span><span id="_CPPv2N8Matrix3D15add_to_positionEiiiP1Ti"></span><span id="Matrix3D::add_to_position__i.i.i.TP.i"></span><span class="target" id="classMatrix3D_1a61afc3a397203f453f60772ebc10758a"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">add_to_position</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span>, <a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">data</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3D15add_to_positionEiiiP1Ti" title="Link to this definition"></a><br /></dt>
+<dd><p>Adds a sequence of values to a specified position in a 3D matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>i</strong> – The row index. </p></li>
+<li><p><strong>j</strong> – The column index. </p></li>
+<li><p><strong>k</strong> – The slice index. </p></li>
+<li><p><strong>data</strong> – A pointer to the array of values to be added. </p></li>
+<li><p><strong>length</strong> – The number of elements in the <code class="docutils literal notranslate"><span class="pre">data</span></code> array.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3D14setPartialDataEiiP1Ti">
+<span id="_CPPv3N8Matrix3D14setPartialDataEiiP1Ti"></span><span id="_CPPv2N8Matrix3D14setPartialDataEiiP1Ti"></span><span id="Matrix3D::setPartialData__i.i.TP.i"></span><span class="target" id="classMatrix3D_1a46a7b732a44b77f6c09f72c0ae05edef"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setPartialData</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span>, <a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">data</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3D14setPartialDataEiiP1Ti" title="Link to this definition"></a><br /></dt>
+<dd><p>Set a subset of data at a specific position in the matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>i</strong> – The row index where the data will be set. </p></li>
+<li><p><strong>data</strong> – The data to be set. </p></li>
+<li><p><strong>length</strong> – The length of the data.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">length_error</span></span></span> – If the indices are out of bounds. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8Matrix3D19getPointerToElementEiii">
+<span id="_CPPv3NK8Matrix3D19getPointerToElementEiii"></span><span id="_CPPv2NK8Matrix3D19getPointerToElementEiii"></span><span id="Matrix3D::getPointerToElement__i.i.iC"></span><span class="target" id="classMatrix3D_1ac21cf8967053b928f609b98abf1616e2"></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">getPointerToElement</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">j</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">k</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8Matrix3D19getPointerToElementEiii" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the memory adddress of the element at position (i, j, k) in the matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>i</strong> – The row index. </p></li>
+<li><p><strong>j</strong> – The column index. </p></li>
+<li><p><strong>k</strong> – The slice index.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>T* </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3D5resetE1T">
+<span id="_CPPv3N8Matrix3D5resetE1T"></span><span id="_CPPv2N8Matrix3D5resetE1T"></span><span id="Matrix3D::reset__T"></span><span class="target" id="classMatrix3D_1ac67d3ee632ccafaac86dfacdda95dfdf"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">reset</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">value</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3D5resetE1T" title="Link to this definition"></a><br /></dt>
+<dd><p>Resets all elements in the matrix to a specific value. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>value</strong> – The value to which all elements in the matrix will be set.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8Matrix3D5printEi">
+<span id="_CPPv3NK8Matrix3D5printEi"></span><span id="_CPPv2NK8Matrix3D5printEi"></span><span id="Matrix3D::print__iC"></span><span class="target" id="classMatrix3D_1abc1d3451a2fb3cce0bec1d1e33097b1e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">print</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">i</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8Matrix3D5printEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Print the contents of the i-th slice of the matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>i</strong> – The row index.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3D7setDataEP1Ti">
+<span id="_CPPv3N8Matrix3D7setDataEP1Ti"></span><span id="_CPPv2N8Matrix3D7setDataEP1Ti"></span><span id="Matrix3D::setData__TP.i"></span><span class="target" id="classMatrix3D_1a056c035f4997b14c2a3e2b8ebee5142c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setData</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">data</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Matrix3D7setDataEP1Ti" title="Link to this definition"></a><br /></dt>
+<dd><p>Set all elements in the matrix to specific values provided by the data. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Parameters<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>value</strong> – The value to which all elements in the matrix will be set.</p>
+</dd>
+<dt class="field-odd">Throws<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><span class="n">throw_with_nested</span></span></span> – If the size of the data does not match the size of the matrix. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8Matrix3D5get_iEv">
+<span id="_CPPv3NK8Matrix3D5get_iEv"></span><span id="_CPPv2NK8Matrix3D5get_iEv"></span><span id="Matrix3D::get_iC"></span><span class="target" id="classMatrix3D_1af02576e685de872ba1b75014d9a609c9"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_i</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8Matrix3D5get_iEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the number of slices in the matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8Matrix3D5get_jEv">
+<span id="_CPPv3NK8Matrix3D5get_jEv"></span><span id="_CPPv2NK8Matrix3D5get_jEv"></span><span id="Matrix3D::get_jC"></span><span class="target" id="classMatrix3D_1a083e3f136a0108aad991e194b078db7f"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_j</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8Matrix3D5get_jEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the number of rows in the matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8Matrix3D5get_kEv">
+<span id="_CPPv3NK8Matrix3D5get_kEv"></span><span id="_CPPv2NK8Matrix3D5get_kEv"></span><span id="Matrix3D::get_kC"></span><span class="target" id="classMatrix3D_1a35fad9c3c81914e0ef5ed40ceda5d324"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_k</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8Matrix3D5get_kEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Gets the number of columns in the matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK8Matrix3D5emptyEv">
+<span id="_CPPv3NK8Matrix3D5emptyEv"></span><span id="_CPPv2NK8Matrix3D5emptyEv"></span><span id="Matrix3D::emptyC"></span><span class="target" id="classMatrix3D_1a6f1e6328bac16786a4bfad6f107db641"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">empty</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK8Matrix3D5emptyEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Check if the matrix has been initialized. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Template Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>T</strong> – The datatype stored in the 3D matrix. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the matrix has not been initialized, false otherwise. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3D3di_E">
+<span id="_CPPv3N8Matrix3D3di_E"></span><span id="_CPPv2N8Matrix3D3di_E"></span><span id="Matrix3D::di___i"></span><span class="target" id="classMatrix3D_1af1e032d3ea19a5fc312866bd401e0f2b"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">di_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">NON_INITIALIZED</span></span><a class="headerlink" href="#_CPPv4N8Matrix3D3di_E" title="Link to this definition"></a><br /></dt>
+<dd><p>The number of rows in the matrix. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3D3dj_E">
+<span id="_CPPv3N8Matrix3D3dj_E"></span><span id="_CPPv2N8Matrix3D3dj_E"></span><span id="Matrix3D::dj___i"></span><span class="target" id="classMatrix3D_1a204c91363d19e8dc16bf911dfd72b912"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dj_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">NON_INITIALIZED</span></span><a class="headerlink" href="#_CPPv4N8Matrix3D3dj_E" title="Link to this definition"></a><br /></dt>
+<dd><p>The number of columns in the matrix. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3D3dk_E">
+<span id="_CPPv3N8Matrix3D3dk_E"></span><span id="_CPPv2N8Matrix3D3dk_E"></span><span id="Matrix3D::dk___i"></span><span class="target" id="classMatrix3D_1a9c5ce04b3a1cb28c7b19cd3b9b3646c6"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dk_</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">NON_INITIALIZED</span></span><a class="headerlink" href="#_CPPv4N8Matrix3D3dk_E" title="Link to this definition"></a><br /></dt>
+<dd><p>The number of slices in the matrix. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Matrix3D5data_E">
+<span id="_CPPv3N8Matrix3D5data_E"></span><span id="_CPPv2N8Matrix3D5data_E"></span><span id="Matrix3D::data___unique_ptr:TA:"></span><span class="target" id="classMatrix3D_1a94b477ac7008ab81acd18f2ee4d41d70"></span><span class="n"><span class="pre">unique_ptr</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="#_CPPv4I0E8Matrix3D" title="Matrix3D::T"><span class="n"><span class="pre">T</span></span></a><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">data_</span></span></span><a class="headerlink" href="#_CPPv4N8Matrix3D5data_E" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 <section id="objectivescalculator-h">
 <h4>ObjectivesCalculator.h<a class="headerlink" href="#objectivescalculator-h" title="Link to this heading"></a></h4>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfile: Cannot find file “Utils/ObjectivesCalculator.h </p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv420ObjectivesCalculator">
+<span id="_CPPv320ObjectivesCalculator"></span><span id="_CPPv220ObjectivesCalculator"></span><span id="ObjectivesCalculator"></span><span class="target" id="classObjectivesCalculator"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ObjectivesCalculator</span></span></span><a class="headerlink" href="#_CPPv420ObjectivesCalculator" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;ObjectivesCalculator.h&gt;</em></div>
+<p>The <a class="reference internal" href="#classObjectivesCalculator"><span class="std std-ref">ObjectivesCalculator</span></a> class calculates the objectives of the model based on the data collected during the simulation. </p>
+<p>Created by bernardoct on 8/25/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N20ObjectivesCalculator29calculateReliabilityObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE">
+<span id="_CPPv3N20ObjectivesCalculator29calculateReliabilityObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE"></span><span id="_CPPv2N20ObjectivesCalculator29calculateReliabilityObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE"></span><span id="ObjectivesCalculator::calculateReliabilityObjective__vector:UtilitiesDataCollectorP:CR.vector:unsigned-l:"></span><span class="target" id="classObjectivesCalculator_1a4f34e541d573cc2e0690cfcdd8460c16"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateReliabilityObjective</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#_CPPv422UtilitiesDataCollector" title="UtilitiesDataCollector"><span class="n"><span class="pre">UtilitiesDataCollector</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utility_collector</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realizations</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">)</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N20ObjectivesCalculator29calculateReliabilityObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculates the reliability objective based on storage capacity ratios. The reliability objective is defined as 1 minus the maximum annual failure ratio across realizations. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utility_collector</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of <code class="docutils literal notranslate"><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#classUtilitiesDataCollector"><span class="std std-ref"><span class="pre">UtilitiesDataCollector</span></span></a></code> pointers containing utility data for all realizations. </p></li>
+<li><p><strong>realizations</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of realization indices to be evaluated. If empty, evaluates all realizations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">logic_error</span></span></span> – if the objective value is infinite. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The calculated reliability objective as a double.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N20ObjectivesCalculator38calculateRestrictionFrequencyObjectiveERK6vectorIP25RestrictionsDataCollectorE6vectorImE">
+<span id="_CPPv3N20ObjectivesCalculator38calculateRestrictionFrequencyObjectiveERK6vectorIP25RestrictionsDataCollectorE6vectorImE"></span><span id="_CPPv2N20ObjectivesCalculator38calculateRestrictionFrequencyObjectiveERK6vectorIP25RestrictionsDataCollectorE6vectorImE"></span><span id="ObjectivesCalculator::calculateRestrictionFrequencyObjective__vector:RestrictionsDataCollectorP:CR.vector:unsigned-l:"></span><span class="target" id="classObjectivesCalculator_1ab01034697c3e9876fd06bff0c880b5ca"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateRestrictionFrequencyObjective</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#_CPPv425RestrictionsDataCollector" title="RestrictionsDataCollector"><span class="n"><span class="pre">RestrictionsDataCollector</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">restriction_data</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realizations</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">)</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N20ObjectivesCalculator38calculateRestrictionFrequencyObjectiveERK6vectorIP25RestrictionsDataCollectorE6vectorImE" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculates the restriction frequency objective. The restriction frequency objective measures the average ratio of years with restrictions to total years across all realizations. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>restriction_data</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of <code class="docutils literal notranslate"><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#classRestrictionsDataCollector"><span class="std std-ref"><span class="pre">RestrictionsDataCollector</span></span></a></code> pointers containing restriction data for all realizations. </p></li>
+<li><p><strong>realizations</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of realization indices to be evaluated. If empty, evaluates all realizations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">logic_error</span></span></span> – if the objective value is infinite. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The calculated restriction frequency objective as a double.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N20ObjectivesCalculator46calculateNetPresentCostInfrastructureObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE">
+<span id="_CPPv3N20ObjectivesCalculator46calculateNetPresentCostInfrastructureObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE"></span><span id="_CPPv2N20ObjectivesCalculator46calculateNetPresentCostInfrastructureObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE"></span><span id="ObjectivesCalculator::calculateNetPresentCostInfrastructureObjective__vector:UtilitiesDataCollectorP:CR.vector:unsigned-l:"></span><span class="target" id="classObjectivesCalculator_1ac0860168c763c1957be518ba1a019812"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateNetPresentCostInfrastructureObjective</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#_CPPv422UtilitiesDataCollector" title="UtilitiesDataCollector"><span class="n"><span class="pre">UtilitiesDataCollector</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utility_data</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realizations</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">)</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N20ObjectivesCalculator46calculateNetPresentCostInfrastructureObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculates the net present cost (NPC) of infrastructure. This objective averages the total NPC across all realizations. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utility_data</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of <code class="docutils literal notranslate"><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#classUtilitiesDataCollector"><span class="std std-ref"><span class="pre">UtilitiesDataCollector</span></span></a></code> pointers containing utility data for all realizations. </p></li>
+<li><p><strong>realizations</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of realization indices to be evaluated. If empty, evaluates all realizations. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The average NPC as a double. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N20ObjectivesCalculator36calculatePeakFinancialCostsObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE">
+<span id="_CPPv3N20ObjectivesCalculator36calculatePeakFinancialCostsObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE"></span><span id="_CPPv2N20ObjectivesCalculator36calculatePeakFinancialCostsObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE"></span><span id="ObjectivesCalculator::calculatePeakFinancialCostsObjective__vector:UtilitiesDataCollectorP:CR.vector:unsigned-l:"></span><span class="target" id="classObjectivesCalculator_1a3de288911848c40150918d04879bdacb"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculatePeakFinancialCostsObjective</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#_CPPv422UtilitiesDataCollector" title="UtilitiesDataCollector"><span class="n"><span class="pre">UtilitiesDataCollector</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utility_data</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realizations</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">)</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N20ObjectivesCalculator36calculatePeakFinancialCostsObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculates the peak financial costs objective. This objective is based on the maximum annual financial cost ratio across all realizations. It will also print a statement if the total financial cost is absurdly high (&gt;10^10). </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utility_data</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of <code class="docutils literal notranslate"><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#classUtilitiesDataCollector"><span class="std std-ref"><span class="pre">UtilitiesDataCollector</span></span></a></code> pointers containing utility data for all realizations. </p></li>
+<li><p><strong>realizations</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of realization indices to be evaluated. If empty, evaluates all realizations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">logic_error</span></span></span> – if the objective value is infinite. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The average peak financial cost as a double.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N20ObjectivesCalculator32calculateWorseCaseCostsObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE">
+<span id="_CPPv3N20ObjectivesCalculator32calculateWorseCaseCostsObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE"></span><span id="_CPPv2N20ObjectivesCalculator32calculateWorseCaseCostsObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE"></span><span id="ObjectivesCalculator::calculateWorseCaseCostsObjective__vector:UtilitiesDataCollectorP:CR.vector:unsigned-l:"></span><span class="target" id="classObjectivesCalculator_1aaa5a9bb621c4346e106809f58afe1bd1"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateWorseCaseCostsObjective</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#_CPPv422UtilitiesDataCollector" title="UtilitiesDataCollector"><span class="n"><span class="pre">UtilitiesDataCollector</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utility_data</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realizations</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">)</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N20ObjectivesCalculator32calculateWorseCaseCostsObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculates the worst-case financial costs objective. The worst-case cost is defined as the financial cost at the specified worst-case percentile across all realizations. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utility_data</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of <code class="docutils literal notranslate"><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#classUtilitiesDataCollector"><span class="std std-ref"><span class="pre">UtilitiesDataCollector</span></span></a></code> pointers containing utility data for all realizations. </p></li>
+<li><p><strong>realizations</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of realization indices to be evaluated. If empty, evaluates all realizations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">logic_error</span></span></span> – if the objective value is infinite. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The worst-case financial cost as a double.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N20ObjectivesCalculator31calculateUnitTotalCostObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE">
+<span id="_CPPv3N20ObjectivesCalculator31calculateUnitTotalCostObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE"></span><span id="_CPPv2N20ObjectivesCalculator31calculateUnitTotalCostObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE"></span><span id="ObjectivesCalculator::calculateUnitTotalCostObjective__vector:UtilitiesDataCollectorP:CR.vector:unsigned-l:"></span><span class="target" id="classObjectivesCalculator_1a90547ef235596c39aa1bfe556d98b9f6"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateUnitTotalCostObjective</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#_CPPv422UtilitiesDataCollector" title="UtilitiesDataCollector"><span class="n"><span class="pre">UtilitiesDataCollector</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utility_data</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realizations</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">)</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N20ObjectivesCalculator31calculateUnitTotalCostObjectiveERK6vectorIP22UtilitiesDataCollectorE6vectorImE" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculates the unit total cost objective. This objective is based on the ratio of infrastructure cost to total water demand, normalized by the first-year demand. The unit cost output is in $mil/MGD that should be converted to $/kGal for comparison with other objectives. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utility_data</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of <code class="docutils literal notranslate"><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#classUtilitiesDataCollector"><span class="std std-ref"><span class="pre">UtilitiesDataCollector</span></span></a></code> pointers containing utility data for all realizations. </p></li>
+<li><p><strong>realizations</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of realization indices to be evaluated. If empty, evaluates all realizations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The average unit total cost as a double. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N20ObjectivesCalculator68calculateNetPresentCostInfrastructureObjectiveForVariableDebtServiceERK6vectorIP22UtilitiesDataCollectorE6vectorImE">
+<span id="_CPPv3N20ObjectivesCalculator68calculateNetPresentCostInfrastructureObjectiveForVariableDebtServiceERK6vectorIP22UtilitiesDataCollectorE6vectorImE"></span><span id="_CPPv2N20ObjectivesCalculator68calculateNetPresentCostInfrastructureObjectiveForVariableDebtServiceERK6vectorIP22UtilitiesDataCollectorE6vectorImE"></span><span id="ObjectivesCalculator::calculateNetPresentCostInfrastructureObjectiveForVariableDebtService__vector:UtilitiesDataCollectorP:CR.vector:unsigned-l:"></span><span class="target" id="classObjectivesCalculator_1aaf6480a2839ed67c9d5dd52d79e2954d"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateNetPresentCostInfrastructureObjectiveForVariableDebtService</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#_CPPv422UtilitiesDataCollector" title="UtilitiesDataCollector"><span class="n"><span class="pre">UtilitiesDataCollector</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utility_data</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realizations</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">)</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N20ObjectivesCalculator68calculateNetPresentCostInfrastructureObjectiveForVariableDebtServiceERK6vectorIP22UtilitiesDataCollectorE6vectorImE" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculates the net present cost (NPC) for variable debt service. This objective averages the total NPC for variable debt service across all realizations. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utility_data</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of <code class="docutils literal notranslate"><a class="reference internal" href="../DataCollector/DataCollector_submodules.html#classUtilitiesDataCollector"><span class="std std-ref"><span class="pre">UtilitiesDataCollector</span></span></a></code> pointers containing utility data for all realizations. </p></li>
+<li><p><strong>realizations</strong> – <a class="reference internal" href="QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of realization indices to be evaluated. If empty, evaluates all realizations. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The average NPC for variable debt service as a double. </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 <section id="solutions-h">
 <h4>Solutions.h<a class="headerlink" href="#solutions-h" title="Link to this heading"></a></h4>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfile: Cannot find file “Utils/Solutions.h </p>
-</div>
+<dl class="cpp type">
+<dt class="sig sig-object cpp" id="_CPPv49Solutions">
+<span id="_CPPv39Solutions"></span><span id="_CPPv29Solutions"></span><span id="Solutions"></span><span class="target" id="namespaceSolutions"></span><span class="k"><span class="pre">namespace</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Solutions</span></span></span><a class="headerlink" href="#_CPPv49Solutions" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
 </section>
 <section id="utils-h">
 <h4>Utils.h<a class="headerlink" href="#utils-h" title="Link to this heading"></a></h4>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfile: Cannot find file “Utils/Utils.h </p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv45Utils">
+<span id="_CPPv35Utils"></span><span id="_CPPv25Utils"></span><span id="Utils"></span><span class="target" id="classUtils"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Utils</span></span></span><a class="headerlink" href="#_CPPv45Utils" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Utils.h&gt;</em></div>
+<p>The <a class="reference internal" href="#classUtils"><span class="std std-ref">Utils</span></a> class defines a set of utility functions that are used throughout the model. </p>
+<p>Created by bernardo on 1/13/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Utils14parse2DCsvFileE12basic_stringIc11char_traitsIcE9allocatorIcEEm6vectorImE">
+<span id="_CPPv3N5Utils14parse2DCsvFileE12basic_stringIc11char_traitsIcE9allocatorIcEEm6vectorImE"></span><span id="_CPPv2N5Utils14parse2DCsvFileE12basic_stringIc11char_traitsIcE9allocatorIcEEm6vectorImE"></span><span id="Utils::parse2DCsvFile__basic_string:c.char_traits:c:.allocator:c::.unsigned-l.vector:unsigned-l:"></span><span class="target" id="classUtils_1a70b9475aafa3277b7d177a74752263bf"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">parse2DCsvFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">basic_string</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">char</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">char_traits</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">char</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">allocator</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">char</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">file_name</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_lines</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10000000</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rows_to_read</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Utils14parse2DCsvFileE12basic_stringIc11char_traitsIcE9allocatorIcEEm6vectorImE" title="Link to this definition"></a><br /></dt>
+<dd><p>Reads a CSV file into a 2D vector of doubles. This function parses the contents of a CSV file and returns it as a 2D vector, optionally reading a limited number of lines or specific rows. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_name</strong> – The full path of the input CSV file. </p></li>
+<li><p><strong>max_lines</strong> – The maximum number of lines to read from the file. </p></li>
+<li><p><strong>rows_to_read</strong> – Optional; a vector of row indices to read from the file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if the file is not found or appears to be space-separated. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A vector of vectors containing the parsed data as doubles.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Utils14parse1DCsvFileE12basic_stringIc11char_traitsIcE9allocatorIcEEm6vectorImE">
+<span id="_CPPv3N5Utils14parse1DCsvFileE12basic_stringIc11char_traitsIcE9allocatorIcEEm6vectorImE"></span><span id="_CPPv2N5Utils14parse1DCsvFileE12basic_stringIc11char_traitsIcE9allocatorIcEEm6vectorImE"></span><span id="Utils::parse1DCsvFile__basic_string:c.char_traits:c:.allocator:c::.unsigned-l.vector:unsigned-l:"></span><span class="target" id="classUtils_1a42fdb9455286213b32abf5f111c21fd4"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">parse1DCsvFile</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">basic_string</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">char</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">char_traits</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">char</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">allocator</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">char</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">file_name</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max_lines</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">10000000</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rows_to_read</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">)</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Utils14parse1DCsvFileE12basic_stringIc11char_traitsIcE9allocatorIcEEm6vectorImE" title="Link to this definition"></a><br /></dt>
+<dd><p>Reads a CSV file into a 1D vector of doubles. Parses a CSV file and extracts its data into a 1D vector with optional row filtering. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_name</strong> – The full path of the input CSV file. </p></li>
+<li><p><strong>max_lines</strong> – The maximum number of lines to read from the file. </p></li>
+<li><p><strong>rows_to_read</strong> – Optional; a vector of row indices to read from the file.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if the file cannot be read. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A vector containing the parsed data as doubles.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Utils21copyWaterSourceVectorE6vectorIP11WaterSourceE">
+<span id="_CPPv3N5Utils21copyWaterSourceVectorE6vectorIP11WaterSourceE"></span><span id="_CPPv2N5Utils21copyWaterSourceVectorE6vectorIP11WaterSourceE"></span><span id="Utils::copyWaterSourceVector__vector:WaterSourceP:"></span><span class="target" id="classUtils_1af50f672b3a5c4790386d943e04e960f9"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">copyWaterSourceVector</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_sources_original</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Utils21copyWaterSourceVectorE6vectorIP11WaterSourceE" title="Link to this definition"></a><br /></dt>
+<dd><p>Creates a copy of a vector of <code class="docutils literal notranslate"><a class="reference internal" href="../SystemComponents/WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> objects. This function deep copies water source objects based on their derived types. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>water_sources_original</strong> – The original vector of <code class="docutils literal notranslate"><a class="reference internal" href="../SystemComponents/WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> pointers.</p>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if a water source type is not implemented. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new vector containing deep copies of the input water sources.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Utils17copyUtilityVectorE6vectorIP7UtilityEb">
+<span id="_CPPv3N5Utils17copyUtilityVectorE6vectorIP7UtilityEb"></span><span id="_CPPv2N5Utils17copyUtilityVectorE6vectorIP7UtilityEb"></span><span id="Utils::copyUtilityVector__vector:UtilityP:.b"></span><span class="target" id="classUtils_1aa640115dcdbe7309c058063c1f0cf943"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">copyUtilityVector</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">utility_original</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">clear_water_sources</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Utils17copyUtilityVectorE6vectorIP7UtilityEb" title="Link to this definition"></a><br /></dt>
+<dd><p>Creates a copy of a vector of <code class="docutils literal notranslate"><a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#classUtility"><span class="std std-ref"><span class="pre">Utility</span></span></a></code> objects. Optionally clears water sources in the copied utilities. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utility_original</strong> – The original vector of <code class="docutils literal notranslate"><a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#classUtility"><span class="std std-ref"><span class="pre">Utility</span></span></a></code> pointers. </p></li>
+<li><p><strong>clear_water_sources</strong> – Whether to clear water sources in the copied utilities.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A new vector containing deep copies of the input utilities. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Utils33copyDroughtMitigationPolicyVectorE6vectorIP23DroughtMitigationPolicyE">
+<span id="_CPPv3N5Utils33copyDroughtMitigationPolicyVectorE6vectorIP23DroughtMitigationPolicyE"></span><span id="_CPPv2N5Utils33copyDroughtMitigationPolicyVectorE6vectorIP23DroughtMitigationPolicyE"></span><span id="Utils::copyDroughtMitigationPolicyVector__vector:DroughtMitigationPolicyP:"></span><span class="target" id="classUtils_1ab291735d88ca704e9317edf259b6a5ab"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../DroughtMitigationInstruments/Base/DroughtMitigationInstruments_base.html#_CPPv423DroughtMitigationPolicy" title="DroughtMitigationPolicy"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">copyDroughtMitigationPolicyVector</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../DroughtMitigationInstruments/Base/DroughtMitigationInstruments_base.html#_CPPv423DroughtMitigationPolicy" title="DroughtMitigationPolicy"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">drought_mitigation_policy_original</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Utils33copyDroughtMitigationPolicyVectorE6vectorIP23DroughtMitigationPolicyE" title="Link to this definition"></a><br /></dt>
+<dd><p>Creates a copy of a vector of <code class="docutils literal notranslate"><a class="reference internal" href="../DroughtMitigationInstruments/Base/DroughtMitigationInstruments_base.html#classDroughtMitigationPolicy"><span class="std std-ref"><span class="pre">DroughtMitigationPolicy</span></span></a></code> objects. This function duplicates drought mitigation policies based on their derived types. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>drought_mitigation_policy_original</strong> – The original vector of <code class="docutils literal notranslate"><a class="reference internal" href="../DroughtMitigationInstruments/Base/DroughtMitigationInstruments_base.html#classDroughtMitigationPolicy"><span class="std std-ref"><span class="pre">DroughtMitigationPolicy</span></span></a></code> pointers.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A new vector containing deep copies of the input policies. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Utils27copyMinEnvFlowControlVectorE6vectorIP17MinEnvFlowControlE">
+<span id="_CPPv3N5Utils27copyMinEnvFlowControlVectorE6vectorIP17MinEnvFlowControlE"></span><span id="_CPPv2N5Utils27copyMinEnvFlowControlVectorE6vectorIP17MinEnvFlowControlE"></span><span id="Utils::copyMinEnvFlowControlVector__vector:MinEnvFlowControlP:"></span><span class="target" id="classUtils_1a16d5d6b3ada64b5f018478e972b66b2a"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../Controls/Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">copyMinEnvFlowControlVector</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../Controls/Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_env_flow_controls_original</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Utils27copyMinEnvFlowControlVectorE6vectorIP17MinEnvFlowControlE" title="Link to this definition"></a><br /></dt>
+<dd><p>Creates a copy of a vector of <code class="docutils literal notranslate"><a class="reference internal" href="../Controls/Base/Controls_base.html#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> objects. This function duplicates a vector of environmental flow controls based on their specific derived types. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>min_env_flow_controls_original</strong> – The original vector of <code class="docutils literal notranslate"><a class="reference internal" href="../Controls/Base/Controls_base.html#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> pointers.</p>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if a control type is not implemented. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new vector containing deep copies of the input objects.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Utils20isFirstWeekOfTheYearEi">
+<span id="_CPPv3N5Utils20isFirstWeekOfTheYearEi"></span><span id="_CPPv2N5Utils20isFirstWeekOfTheYearEi"></span><span id="Utils::isFirstWeekOfTheYear__i"></span><span class="target" id="classUtils_1a3e4c6e935243165c89f059c5fedf2945"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isFirstWeekOfTheYear</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Utils20isFirstWeekOfTheYearEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Determines if a given week corresponds to the first week of the year. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The week number to check. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the given week is the first week of the year; otherwise, false. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Utils13weekOfTheYearEi">
+<span id="_CPPv3N5Utils13weekOfTheYearEi"></span><span id="_CPPv2N5Utils13weekOfTheYearEi"></span><span id="Utils::weekOfTheYear__i"></span><span class="target" id="classUtils_1a510a7b15687fc6bd6b1c1742d7d7e9fd"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">weekOfTheYear</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Utils13weekOfTheYearEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Returns the week of the year for a given week index. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The week number to process. </p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The corresponding week of the year. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Utils19removeIntFromVectorER6vectorIiEi">
+<span id="_CPPv3N5Utils19removeIntFromVectorER6vectorIiEi"></span><span id="_CPPv2N5Utils19removeIntFromVectorER6vectorIiEi"></span><span id="Utils::removeIntFromVector__vector:i:R.i"></span><span class="target" id="classUtils_1a6022da71d614027a1da3a996531df85e"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">removeIntFromVector</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">vec</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">el</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Utils19removeIntFromVectorER6vectorIiEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Deletes a specified element from an integer vector. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vec</strong> – The vector from which to remove the element. </p></li>
+<li><p><strong>el</strong> – The integer value to be removed.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Utils15print_exceptionERK9exceptioni">
+<span id="_CPPv3N5Utils15print_exceptionERK9exceptioni"></span><span id="_CPPv2N5Utils15print_exceptionERK9exceptioni"></span><span id="Utils::print_exception__exceptionCR.i"></span><span class="target" id="classUtils_1a25184c319ab70a93b056d516e0aafd8e"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">print_exception</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">exception</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">e</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">level</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Utils15print_exceptionERK9exceptioni" title="Link to this definition"></a><br /></dt>
+<dd><p>Prints details of an exception with nesting levels. Recursively prints exception messages and nested exceptions. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>e</strong> – The exception to be printed. </p></li>
+<li><p><strong>level</strong> – The current nesting level for formatting purposes.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Utils9copyBondsE6vectorIP4BondE">
+<span id="_CPPv3N5Utils9copyBondsE6vectorIP4BondE"></span><span id="_CPPv2N5Utils9copyBondsE6vectorIP4BondE"></span><span id="Utils::copyBonds__vector:BondP:"></span><span class="target" id="classUtils_1af59616433568dbc50e28290524f40faa"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Bonds/Base/Bonds_base.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">copyBonds</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Bonds/Base/Bonds_base.html#_CPPv44Bond" title="Bond"><span class="n"><span class="pre">Bond</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">bonds_original</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Utils9copyBondsE6vectorIP4BondE" title="Link to this definition"></a><br /></dt>
+<dd><p>Creates a copy of a vector of <code class="docutils literal notranslate"><a class="reference internal" href="../SystemComponents/Bonds/Base/Bonds_base.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> objects. This function deep copies bond objects based on their derived types. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bonds_original</strong> – The original vector of <code class="docutils literal notranslate"><a class="reference internal" href="../SystemComponents/Bonds/Base/Bonds_base.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> pointers.</p>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if a bond type is not implemented. </p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A new vector containing deep copies of the input bonds.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Utils9createDirE6string">
+<span id="_CPPv3N5Utils9createDirE6string"></span><span id="_CPPv2N5Utils9createDirE6string"></span><span id="Utils::createDir__string"></span><span class="target" id="classUtils_1a383900ac38ca9c17e58d8ff2156ac100"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">createDir</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">directory</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Utils9createDirE6string" title="Link to this definition"></a><br /></dt>
+<dd><p>Creates a directory at the specified path. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>directory</strong> – The path of the directory to create.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+</dd></dl>
+
 </section>
 </section>
 </section>

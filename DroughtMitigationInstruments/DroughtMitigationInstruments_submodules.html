@@ -84,24 +84,672 @@
 <h3>Submodule Components<a class="headerlink" href="#submodule-components" title="Link to this heading"></a></h3>
 <section id="insurancestoragetorof-h">
 <h4>InsuranceStorageToROF.h<a class="headerlink" href="#insurancestoragetorof-h" title="Link to this heading"></a></h4>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfile: Cannot find file “DroughtMitigationInstruments/InsuranceStorageToROF.h </p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv421InsuranceStorageToROF">
+<span id="_CPPv321InsuranceStorageToROF"></span><span id="_CPPv221InsuranceStorageToROF"></span><span id="InsuranceStorageToROF"></span><span class="target" id="classInsuranceStorageToROF"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InsuranceStorageToROF</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/DroughtMitigationInstruments_base.html#_CPPv423DroughtMitigationPolicy" title="DroughtMitigationPolicy"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="../ContinuityModels/ContinuityModels_submodules.html#_CPPv418ContinuityModelROF" title="ContinuityModelROF"><span class="n"><span class="pre">ContinuityModelROF</span></span></a><a class="headerlink" href="#_CPPv421InsuranceStorageToROF" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;InsuranceStorageToROF.h&gt;</em></div>
+<p>The <code class="docutils literal notranslate"><a class="reference internal" href="#classInsuranceStorageToROF"><span class="std std-ref"><span class="pre">InsuranceStorageToROF</span></span></a></code> class is a subclass of the <code class="docutils literal notranslate"><a class="reference internal" href="Base/DroughtMitigationInstruments_base.html#classDroughtMitigationPolicy"><span class="std std-ref"><span class="pre">DroughtMitigationPolicy</span></span></a></code> and <code class="docutils literal notranslate"><a class="reference internal" href="../ContinuityModels/ContinuityModels_submodules.html#classContinuityModelROF"><span class="std std-ref"><span class="pre">ContinuityModelROF</span></span></a></code> classes that implements drought insurance policies based on storage-to-ROF triggers. </p>
+<p>The <code class="docutils literal notranslate"><a class="reference internal" href="#classInsuranceStorageToROF"><span class="std std-ref"><span class="pre">InsuranceStorageToROF</span></span></a></code> class is a subclass of the <code class="docutils literal notranslate"><a class="reference internal" href="Base/DroughtMitigationInstruments_base.html#classDroughtMitigationPolicy"><span class="std std-ref"><span class="pre">DroughtMitigationPolicy</span></span></a></code> class that implements water use restrictions based on risk of failure (ROF) triggers.</p>
+<p>Created by bernardoct on 5/1/17.</p>
+<p>Created by bernardo on 2/3/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF21InsuranceStorageToROFEKiR6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEER6vectorIP7UtilityER6vectorIP23DroughtMitigationPolicyE6vectorIP17MinEnvFlowControlER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorIdEKdRK6vectorIdEm">
+<span id="_CPPv3N21InsuranceStorageToROF21InsuranceStorageToROFEKiR6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEER6vectorIP7UtilityER6vectorIP23DroughtMitigationPolicyE6vectorIP17MinEnvFlowControlER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorIdEKdRK6vectorIdEm"></span><span id="_CPPv2N21InsuranceStorageToROF21InsuranceStorageToROFEKiR6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEER6vectorIP7UtilityER6vectorIP23DroughtMitigationPolicyE6vectorIP17MinEnvFlowControlER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorIdEKdRK6vectorIdEm"></span><span id="InsuranceStorageToROF::InsuranceStorageToROF__iC.vector:WaterSourceP:R.GraphCR.vector:vector:i::CR.vector:UtilityP:R.vector:DroughtMitigationPolicyP:R.vector:MinEnvFlowControlP:.vector:vector:double::R.vector:vector:double::R.vector:vector:double::R.vector:double:R.doubleC.vector:double:CR.unsigned-l"></span><span class="target" id="classInsuranceStorageToROF_1a7769ebf2a6c73fa0efc55268712e8157"></span><span class="sig-name descname"><span class="n"><span class="pre">InsuranceStorageToROF</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../Utils/Graph/Graph_index.html#_CPPv45Graph" title="Graph"><span class="n"><span class="pre">Graph</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_graph</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_to_utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="Base/DroughtMitigationInstruments_base.html#_CPPv423DroughtMitigationPolicy" title="DroughtMitigationPolicy"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">drought_mitigation_policies</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../Controls/Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_env_flow_controls</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">policy_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rof_triggers</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">insurance_premium</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">fixed_payouts</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">total_simulation_time</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF21InsuranceStorageToROFEKiR6vectorIP11WaterSourceERK5GraphRK6vectorI6vectorIiEER6vectorIP7UtilityER6vectorIP23DroughtMitigationPolicyE6vectorIP17MinEnvFlowControlER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorI6vectorIdEER6vectorIdEKdRK6vectorIdEm" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructs an <a class="reference internal" href="#classInsuranceStorageToROF"><span class="std std-ref">InsuranceStorageToROF</span></a> object for drought insurance policies based on storage-to-ROF triggers. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – Insurance policy ID. </p></li>
+<li><p><strong>water_sources</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of water sources used in the model. </p></li>
+<li><p><strong>water_sources_graph</strong> – <a class="reference internal" href="../Utils/Graph/Graph_index.html#classGraph"><span class="std std-ref">Graph</span></a> of connections between water sources. </p></li>
+<li><p><strong>water_sources_to_utilities</strong> – Mapping between water sources and utilities. </p></li>
+<li><p><strong>utilities</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of utilities involved in the policy. </p></li>
+<li><p><strong>drought_mitigation_policies</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of drought mitigation policies. </p></li>
+<li><p><strong>min_env_flow_controls</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of minimum environmental flow controls. </p></li>
+<li><p><strong>utilities_rdm</strong> – Random decision matrix for utilities. </p></li>
+<li><p><strong>water_sources_rdm</strong> – Random decision matrix for water sources. </p></li>
+<li><p><strong>policy_rdm</strong> – Random decision matrix for policies. </p></li>
+<li><p><strong>rof_triggers</strong> – Risk-of-failure triggers for insurance payouts. </p></li>
+<li><p><strong>insurance_premium</strong> – Premium multiplier for insurance pricing. </p></li>
+<li><p><strong>fixed_payouts</strong> – Fixed payouts for each utility in case of an insurance trigger. </p></li>
+<li><p><strong>total_simulation_time</strong> – Total simulation duration in weeks. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF21InsuranceStorageToROFER21InsuranceStorageToROF">
+<span id="_CPPv3N21InsuranceStorageToROF21InsuranceStorageToROFER21InsuranceStorageToROF"></span><span id="_CPPv2N21InsuranceStorageToROF21InsuranceStorageToROFER21InsuranceStorageToROF"></span><span id="InsuranceStorageToROF::InsuranceStorageToROF__InsuranceStorageToROFR"></span><span class="target" id="classInsuranceStorageToROF_1a5229c6bbb6da8268017c71bacec70f67"></span><span class="sig-name descname"><span class="n"><span class="pre">InsuranceStorageToROF</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N21InsuranceStorageToROF21InsuranceStorageToROFER21InsuranceStorageToROF" title="InsuranceStorageToROF::InsuranceStorageToROF"><span class="n"><span class="pre">InsuranceStorageToROF</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">insurance</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF21InsuranceStorageToROFER21InsuranceStorageToROF" title="Link to this definition"></a><br /></dt>
+<dd><p>Creates a copy of an existing <a class="reference internal" href="#classInsuranceStorageToROF"><span class="std std-ref">InsuranceStorageToROF</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>insurance</strong> – The <a class="reference internal" href="#classInsuranceStorageToROF"><span class="std std-ref">InsuranceStorageToROF</span></a> object to copy. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROFD0Ev">
+<span id="_CPPv3N21InsuranceStorageToROFD0Ev"></span><span id="_CPPv2N21InsuranceStorageToROFD0Ev"></span><span id="InsuranceStorageToROF::~InsuranceStorageToROF"></span><span class="target" id="classInsuranceStorageToROF_1aba2143897e3ec32d698d25a1aa572a73"></span><span class="sig-name descname"><span class="n"><span class="pre">~InsuranceStorageToROF</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROFD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroys the <a class="reference internal" href="#classInsuranceStorageToROF"><span class="std std-ref">InsuranceStorageToROF</span></a> object and releases resources. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF14priceInsuranceEi">
+<span id="_CPPv3N21InsuranceStorageToROF14priceInsuranceEi"></span><span id="_CPPv2N21InsuranceStorageToROF14priceInsuranceEi"></span><span id="InsuranceStorageToROF::priceInsurance__i"></span><span class="target" id="classInsuranceStorageToROF_1a2519f93b9db551105d9a7913d0db9540"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">priceInsurance</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF14priceInsuranceEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculates the insurance price based on payout probabilities. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The current week number.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF11applyPolicyEi">
+<span id="_CPPv3N21InsuranceStorageToROF11applyPolicyEi"></span><span id="_CPPv2N21InsuranceStorageToROF11applyPolicyEi"></span><span id="InsuranceStorageToROF::applyPolicy__i"></span><span class="target" id="classInsuranceStorageToROF_1a17aa84e0559793b3c463c468dfda3753"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">applyPolicy</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF11applyPolicyEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Applies the insurance policy for a given week. </p>
+<p>This function runs an ROF calculation of 50 year long simulations to estimate the likelihood that payouts will occur. The price of the insurance is set as (average sum of payouts across all 50 years * insurance premium).</p>
+<p>This function overrides the pure virtual function applyPolicy in <a class="reference internal" href="Base/DroughtMitigationInstruments_base.html#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The current week.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE">
+<span id="_CPPv3N21InsuranceStorageToROF19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE"></span><span id="_CPPv2N21InsuranceStorageToROF19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE"></span><span id="InsuranceStorageToROF::addSystemComponents__vector:UtilityP:.vector:WaterSourceP:.vector:MinEnvFlowControlP:"></span><span class="target" id="classInsuranceStorageToROF_1ac7d317a7f189739275960e4f021108d8"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addSystemComponents</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../Controls/Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_env_flow_controls</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE" title="Link to this definition"></a><br /></dt>
+<dd><p>Adds <a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#classUtility"><span class="std std-ref">Utility</span></a> and <a class="reference internal" href="../SystemComponents/WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> objects to the <a class="reference internal" href="#classInsuranceStorageToROF"><span class="std std-ref">InsuranceStorageToROF</span></a> policy. </p>
+<p>This function overrides the pure virtual function addSystemComponents in <a class="reference internal" href="Base/DroughtMitigationInstruments_base.html#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utilities</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of system utilities. </p></li>
+<li><p><strong>water_sources</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of water sources. </p></li>
+<li><p><strong>min_env_flow_controls</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of minimum environmental flow controls.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE">
+<span id="_CPPv3N21InsuranceStorageToROF14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE"></span><span id="_CPPv2N21InsuranceStorageToROF14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE"></span><span id="InsuranceStorageToROF::setRealization__unsigned-l.vector:double:R.vector:double:R.vector:double:R"></span><span class="target" id="classInsuranceStorageToROF_1a6318c3dca8b0c4d568eac494e5ccf712"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealization</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realization_id</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">policy_rdm</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the realization parameters for the <a class="reference internal" href="#classInsuranceStorageToROF"><span class="std std-ref">InsuranceStorageToROF</span></a> policy. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>realization_id</strong> – ID of the realization. </p></li>
+<li><p><strong>utilities_rdm</strong> – DU factor multipliers for utilities’ demand growth rates. </p></li>
+<li><p><strong>water_sources_rdm</strong> – DU factor multipliers for water sources financing, construction, and permitting times. </p></li>
+<li><p><strong>policy_rdm</strong> – DU factor multipliers for utilities’ drought mitigation policies effectiveness.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF26calculateShortTermROFTableEiRK6vectorIP7UtilityERKi">
+<span id="_CPPv3N21InsuranceStorageToROF26calculateShortTermROFTableEiRK6vectorIP7UtilityERKi"></span><span id="_CPPv2N21InsuranceStorageToROF26calculateShortTermROFTableEiRK6vectorIP7UtilityERKi"></span><span id="InsuranceStorageToROF::calculateShortTermROFTable__i.vector:UtilityP:CR.iCR"></span><span class="target" id="classInsuranceStorageToROF_1a0a79476bd868966a79ea03e0abdbfde2"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateShortTermROFTable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">n_utilities</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF26calculateShortTermROFTableEiRK6vectorIP7UtilityERKi" title="Link to this definition"></a><br /></dt>
+<dd><p>Runs a short-term ROF calculation for a given week. </p>
+<p>FIXME: Needs to be extended from the original function from ContinuityModelROF.cpp.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>week</strong> – The current week for which ROFs should be calculated. </p></li>
+<li><p><strong>utilities</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of utilities for the ROF calculation. </p></li>
+<li><p><strong>n_utilities</strong> – Number of utilities involved.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A vector of calculated ROF values for each utility. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF26updateOnlineInfrastructureEi">
+<span id="_CPPv3N21InsuranceStorageToROF26updateOnlineInfrastructureEi"></span><span id="_CPPv2N21InsuranceStorageToROF26updateOnlineInfrastructureEi"></span><span id="InsuranceStorageToROF::updateOnlineInfrastructure__i"></span><span class="target" id="classInsuranceStorageToROF_1a5870934b8b33e1d872eca7b0940398ac"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">updateOnlineInfrastructure</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF26updateOnlineInfrastructureEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Updates the online infrastructure for the current week. </p>
+<p>This function overrides the pure virtual function updateOnlineInfrastructure in <a class="reference internal" href="Base/DroughtMitigationInstruments_base.html#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The current week number.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF12rof_triggersE">
+<span id="_CPPv3N21InsuranceStorageToROF12rof_triggersE"></span><span id="_CPPv2N21InsuranceStorageToROF12rof_triggersE"></span><span id="InsuranceStorageToROF::rof_triggers__vector:double:"></span><span class="target" id="classInsuranceStorageToROF_1afcc3f791ff54cb25a0f9c4381be4650e"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rof_triggers</span></span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF12rof_triggersE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of triggers for insurance payouts based on storage-to-ROF triggers. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF21total_simulation_timeE">
+<span id="_CPPv3N21InsuranceStorageToROF21total_simulation_timeE"></span><span id="_CPPv2N21InsuranceStorageToROF21total_simulation_timeE"></span><span id="InsuranceStorageToROF::total_simulation_time__unsigned-lC"></span><span class="target" id="classInsuranceStorageToROF_1accb3ce9db21061862e03f927cc6effbe"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">total_simulation_time</span></span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF21total_simulation_timeE" title="Link to this definition"></a><br /></dt>
+<dd><p>Total simulation duration in weeks. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF17insurance_premiumE">
+<span id="_CPPv3N21InsuranceStorageToROF17insurance_premiumE"></span><span id="_CPPv2N21InsuranceStorageToROF17insurance_premiumE"></span><span id="InsuranceStorageToROF::insurance_premium__doubleC"></span><span class="target" id="classInsuranceStorageToROF_1ab73e7f3e679a16b60878495566a668da"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">insurance_premium</span></span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF17insurance_premiumE" title="Link to this definition"></a><br /></dt>
+<dd><p>The percentage of revenue that is used to pay for insurance. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF17payout_multiplierE">
+<span id="_CPPv3N21InsuranceStorageToROF17payout_multiplierE"></span><span id="_CPPv2N21InsuranceStorageToROF17payout_multiplierE"></span><span id="InsuranceStorageToROF::payout_multiplier__vector:double:"></span><span class="target" id="classInsuranceStorageToROF_1a69beb8a95cf8f78845b5cd9c6f4a12ca"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">payout_multiplier</span></span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF17payout_multiplierE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of payout multiplier to adjust for partially paid insurance price due to insufficient contingency fund. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF15insurance_priceE">
+<span id="_CPPv3N21InsuranceStorageToROF15insurance_priceE"></span><span id="_CPPv2N21InsuranceStorageToROF15insurance_priceE"></span><span id="InsuranceStorageToROF::insurance_price__vector:double:"></span><span class="target" id="classInsuranceStorageToROF_1a5c2b3740b69b34fa2baa0a2df914d8a8"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">insurance_price</span></span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF15insurance_priceE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of insurance prices for each utility as a function of fixed_payouts,revenue, and insurance premiums. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF13fixed_payoutsE">
+<span id="_CPPv3N21InsuranceStorageToROF13fixed_payoutsE"></span><span id="_CPPv2N21InsuranceStorageToROF13fixed_payoutsE"></span><span id="InsuranceStorageToROF::fixed_payouts__vector:double:CR"></span><span class="target" id="classInsuranceStorageToROF_1af58d0341b58f3039aca3c3cd22c7c2f1"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">fixed_payouts</span></span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF13fixed_payoutsE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of fixed payouts for each utility in case of an insurance trigger. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF24utilities_revenue_updateE">
+<span id="_CPPv3N21InsuranceStorageToROF24utilities_revenue_updateE"></span><span id="_CPPv2N21InsuranceStorageToROF24utilities_revenue_updateE"></span><span id="InsuranceStorageToROF::utilities_revenue_update__vector:double:"></span><span class="target" id="classInsuranceStorageToROF_1a7fe48af9dd2f9ce199bbfd422240cf87"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utilities_revenue_update</span></span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF24utilities_revenue_updateE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector for the updated (current year) revenues for each utility. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF27utilities_revenue_last_yearE">
+<span id="_CPPv3N21InsuranceStorageToROF27utilities_revenue_last_yearE"></span><span id="_CPPv2N21InsuranceStorageToROF27utilities_revenue_last_yearE"></span><span id="InsuranceStorageToROF::utilities_revenue_last_year__vector:double:"></span><span class="target" id="classInsuranceStorageToROF_1a1c2f8acdda360ac7ca4d550f6efa1497"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utilities_revenue_last_year</span></span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF27utilities_revenue_last_yearE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector for the prior year’s revenues for each utility. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21InsuranceStorageToROF27drought_mitigation_policiesE">
+<span id="_CPPv3N21InsuranceStorageToROF27drought_mitigation_policiesE"></span><span id="_CPPv2N21InsuranceStorageToROF27drought_mitigation_policiesE"></span><span id="InsuranceStorageToROF::drought_mitigation_policies__vector:DroughtMitigationPolicyP:"></span><span class="target" id="classInsuranceStorageToROF_1a78ebe72a40c8023dd79c91d36f5e1596"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="Base/DroughtMitigationInstruments_base.html#_CPPv423DroughtMitigationPolicy" title="DroughtMitigationPolicy"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">drought_mitigation_policies</span></span></span><a class="headerlink" href="#_CPPv4N21InsuranceStorageToROF27drought_mitigation_policiesE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of drought mitigation policies. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 <section id="restrictions-h">
 <h4>Restrictions.h<a class="headerlink" href="#restrictions-h" title="Link to this heading"></a></h4>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfile: Cannot find file “DroughtMitigationInstruments/Restrictions.h </p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv412Restrictions">
+<span id="_CPPv312Restrictions"></span><span id="_CPPv212Restrictions"></span><span id="Restrictions"></span><span class="target" id="classRestrictions"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Restrictions</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/DroughtMitigationInstruments_base.html#_CPPv423DroughtMitigationPolicy" title="DroughtMitigationPolicy"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></a><a class="headerlink" href="#_CPPv412Restrictions" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Restrictions.h&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12Restrictions12RestrictionsEKiRK6vectorIdERK6vectorIdE">
+<span id="_CPPv3N12Restrictions12RestrictionsEKiRK6vectorIdERK6vectorIdE"></span><span id="_CPPv2N12Restrictions12RestrictionsEKiRK6vectorIdERK6vectorIdE"></span><span id="Restrictions::Restrictions__iC.vector:double:CR.vector:double:CR"></span><span class="target" id="classRestrictions_1aec6f37bfaec7d6e22e82945289fd9acc"></span><span class="sig-name descname"><span class="n"><span class="pre">Restrictions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">stage_multipliers</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">stage_triggers</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12Restrictions12RestrictionsEKiRK6vectorIdERK6vectorIdE" title="Link to this definition"></a><br /></dt>
+<dd><p>DU factor multipliers that scale the volume of demand successfully restricted using water use restrictions at a variety of stages (tiers). </p>
+<p>This initializes the restriction stages and associated triggers.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – Restriction policy ID. </p></li>
+<li><p><strong>stage_multipliers</strong> – Multipliers for water usage demand based on restriction stages. </p></li>
+<li><p><strong>stage_triggers</strong> – A vector of ROF thresholds after which different water use restriction stages are triggered. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12Restrictions12RestrictionsEKiRK6vectorIdERK6vectorIdEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEE">
+<span id="_CPPv3N12Restrictions12RestrictionsEKiRK6vectorIdERK6vectorIdEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEE"></span><span id="_CPPv2N12Restrictions12RestrictionsEKiRK6vectorIdERK6vectorIdEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEE"></span><span id="Restrictions::Restrictions__iC.vector:double:CR.vector:double:CR.vector:vector:double::CP.vector:vector:double::CP.vector:vector:double::CP"></span><span class="target" id="classRestrictions_1a78083b572f1368bb863d40d7da807077"></span><span class="sig-name descname"><span class="n"><span class="pre">Restrictions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">stage_multipliers</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">stage_triggers</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">typesMonthlyDemandFraction</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">typesMonthlyWaterPrice</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">priceMultipliers</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12Restrictions12RestrictionsEKiRK6vectorIdERK6vectorIdEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEE" title="Link to this definition"></a><br /></dt>
+<dd><p>DU factor multipliers that scale the volume of demand successfully restricted using water use restrictions at a variety of stages (tiers). This constructor has additional parameters for pricing water during water restrictions. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – Restriction policy ID. </p></li>
+<li><p><strong>stage_multipliers</strong> – Multipliers for water usage demand based on restriction stages. </p></li>
+<li><p><strong>stage_triggers</strong> – A vector of ROF thresholds after which different water use restriction stages are triggered. </p></li>
+<li><p><strong>typesMonthlyDemandFraction</strong> – Monthly water demand fractions by consumer type. </p></li>
+<li><p><strong>typesMonthlyWaterPrice</strong> – Monthly water prices by consumer type. </p></li>
+<li><p><strong>priceMultipliers</strong> – Price multipliers for each restriction stage. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12Restrictions12RestrictionsERK12Restrictions">
+<span id="_CPPv3N12Restrictions12RestrictionsERK12Restrictions"></span><span id="_CPPv2N12Restrictions12RestrictionsERK12Restrictions"></span><span id="Restrictions::Restrictions__RestrictionsCR"></span><span class="target" id="classRestrictions_1aa8653b70ff7eedb4e8fc1b21ebf2ead9"></span><span class="sig-name descname"><span class="n"><span class="pre">Restrictions</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N12Restrictions12RestrictionsERK12Restrictions" title="Restrictions::Restrictions"><span class="n"><span class="pre">Restrictions</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">reservoir</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12Restrictions12RestrictionsERK12Restrictions" title="Link to this definition"></a><br /></dt>
+<dd><p>Creates a copy of an existing <a class="reference internal" href="#classRestrictions"><span class="std std-ref">Restrictions</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>restrictions</strong> – The <a class="reference internal" href="#classRestrictions"><span class="std std-ref">Restrictions</span></a> object to be copied. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12RestrictionsD0Ev">
+<span id="_CPPv3N12RestrictionsD0Ev"></span><span id="_CPPv2N12RestrictionsD0Ev"></span><span id="Restrictions::~Restrictions"></span><span class="target" id="classRestrictions_1a54c8a857a2beed78d34a46c36951b004"></span><span class="sig-name descname"><span class="n"><span class="pre">~Restrictions</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12RestrictionsD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroy the <a class="reference internal" href="#classRestrictions"><span class="std std-ref">Restrictions</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12Restrictions11applyPolicyEi">
+<span id="_CPPv3N12Restrictions11applyPolicyEi"></span><span id="_CPPv2N12Restrictions11applyPolicyEi"></span><span id="Restrictions::applyPolicy__i"></span><span class="target" id="classRestrictions_1a1ef7559adc034bdddd047ee776b5f9a9"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">applyPolicy</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N12Restrictions11applyPolicyEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Applies the restriction policy for a given week based on the utility’s risk of failure. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The current week number.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12Restrictions19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE">
+<span id="_CPPv3N12Restrictions19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE"></span><span id="_CPPv2N12Restrictions19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE"></span><span id="Restrictions::addSystemComponents__vector:UtilityP:.vector:WaterSourceP:.vector:MinEnvFlowControlP:"></span><span class="target" id="classRestrictions_1ab0a2b62495d6cdd8d1fedba419c05c37"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addSystemComponents</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">systems_utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../Controls/Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_env_flow_controls</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N12Restrictions19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE" title="Link to this definition"></a><br /></dt>
+<dd><p>Links utilities to the <a class="reference internal" href="#classRestrictions"><span class="std std-ref">Restrictions</span></a> policy based on the policy ID. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>systems_utilities</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of system <a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#classUtility"><span class="std std-ref">Utility</span></a> objects. </p></li>
+<li><p><strong>water_sources</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of water sources (not used in this implementation). </p></li>
+<li><p><strong>min_env_flow_controls</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of minimum environmental flow controls (not used in this implementation).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">logic_error</span></span></span> – if the policy already has an assigned utility. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if no matching utility is found for the policy ID. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK12Restrictions21getCurrent_multiplierEv">
+<span id="_CPPv3NK12Restrictions21getCurrent_multiplierEv"></span><span id="_CPPv2NK12Restrictions21getCurrent_multiplierEv"></span><span id="Restrictions::getCurrent_multiplierC"></span><span class="target" id="classRestrictions_1a4282debfe00607f87f59a08ec1844d40"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getCurrent_multiplier</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK12Restrictions21getCurrent_multiplierEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Retrieves the current demand multiplier based on the active restriction stage. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The current demand multiplier. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12Restrictions33calculateWeeklyAverageWaterPricesEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEE">
+<span id="_CPPv3N12Restrictions33calculateWeeklyAverageWaterPricesEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEE"></span><span id="_CPPv2N12Restrictions33calculateWeeklyAverageWaterPricesEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEE"></span><span id="Restrictions::calculateWeeklyAverageWaterPrices__vector:vector:double::CP.vector:vector:double::CP.vector:vector:double::CP"></span><span class="target" id="classRestrictions_1a5155dcecc8b995c1793fa400f1533959"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">calculateWeeklyAverageWaterPrices</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">typesMonthlyDemandFraction</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">typesMonthlyWaterPrice</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">priceMultipliers</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N12Restrictions33calculateWeeklyAverageWaterPricesEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEEPK6vectorI6vectorIdEE" title="Link to this definition"></a><br /></dt>
+<dd><p>Calculates the average weekly water prices for each restriction stage and consumer type across each month. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>typesMonthlyDemandFraction</strong> – Monthly water demand fractions by consumer type. </p></li>
+<li><p><strong>typesMonthlyWaterPrice</strong> – Monthly water prices by consumer type. </p></li>
+<li><p><strong>priceMultipliers</strong> – Price multipliers for each restriction stage.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12Restrictions14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE">
+<span id="_CPPv3N12Restrictions14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE"></span><span id="_CPPv2N12Restrictions14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE"></span><span id="Restrictions::setRealization__unsigned-l.vector:double:R.vector:double:R.vector:double:R"></span><span class="target" id="classRestrictions_1abc17a8a403311933a3bb58fbecd5f5fd"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealization</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realization_id</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">policy_rdm</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N12Restrictions14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE" title="Link to this definition"></a><br /></dt>
+<dd><p>Updates the restriction multipliers based on the policy random decision matrix. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>realization_id</strong> – Realization ID for the current simulation. </p></li>
+<li><p><strong>utilities_rdm</strong> – Random decision matrix for utilities (not used in this implementation). </p></li>
+<li><p><strong>water_sources_rdm</strong> – Random decision matrix for water sources (not used in this implementation). </p></li>
+<li><p><strong>policy_rdm</strong> – Random decision matrix for policies. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12Restrictions17stage_multipliersE">
+<span id="_CPPv3N12Restrictions17stage_multipliersE"></span><span id="_CPPv2N12Restrictions17stage_multipliersE"></span><span id="Restrictions::stage_multipliers__vector:double:"></span><span class="target" id="classRestrictions_1ae05c6899c05a7ffe39c4ceb7cdcd3daf"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stage_multipliers</span></span></span><a class="headerlink" href="#_CPPv4N12Restrictions17stage_multipliersE" title="Link to this definition"></a><br /></dt>
+<dd><p>DU factor multipliers that scale the volume of demand successfully restricted using water use restrictions at a variety of stages (tiers). </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12Restrictions14stage_triggersE">
+<span id="_CPPv3N12Restrictions14stage_triggersE"></span><span id="_CPPv2N12Restrictions14stage_triggersE"></span><span id="Restrictions::stage_triggers__vector:double:C"></span><span class="target" id="classRestrictions_1a1c519068b4ab14737f726817f1edf9d0"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">stage_triggers</span></span></span><a class="headerlink" href="#_CPPv4N12Restrictions14stage_triggersE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of ROF thresholds after which different water use restriction stages are triggered. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12Restrictions18current_multiplierE">
+<span id="_CPPv3N12Restrictions18current_multiplierE"></span><span id="_CPPv2N12Restrictions18current_multiplierE"></span><span id="Restrictions::current_multiplier__double"></span><span class="target" id="classRestrictions_1aa640571d6082e54187bc1472c6114f69"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">current_multiplier</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12Restrictions18current_multiplierE" title="Link to this definition"></a><br /></dt>
+<dd><p>Current multiplier to be applied to demand. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N12Restrictions42restricted_weekly_average_volumetric_priceE">
+<span id="_CPPv3N12Restrictions42restricted_weekly_average_volumetric_priceE"></span><span id="_CPPv2N12Restrictions42restricted_weekly_average_volumetric_priceE"></span><span id="Restrictions::restricted_weekly_average_volumetric_price__vector:vector:double::"></span><span class="target" id="classRestrictions_1a987355e7c1e8e614faccb8aa06523563"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">restricted_weekly_average_volumetric_price</span></span></span><a class="headerlink" href="#_CPPv4N12Restrictions42restricted_weekly_average_volumetric_priceE" title="Link to this definition"></a><br /></dt>
+<dd><p>A 2D vector of weekly average volumetric price of water for each restriction stage. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 <section id="transfers-h">
 <h4>Transfers.h<a class="headerlink" href="#transfers-h" title="Link to this heading"></a></h4>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>doxygenfile: Cannot find file “DroughtMitigationInstruments/Transfers.h </p>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv49Transfers">
+<span id="_CPPv39Transfers"></span><span id="_CPPv29Transfers"></span><span id="Transfers"></span><span class="target" id="classTransfers"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Transfers</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/DroughtMitigationInstruments_base.html#_CPPv423DroughtMitigationPolicy" title="DroughtMitigationPolicy"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></a><a class="headerlink" href="#_CPPv49Transfers" title="Link to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Transfers.h&gt;</em></div>
+<p>The <code class="docutils literal notranslate"><a class="reference internal" href="#classTransfers"><span class="std std-ref"><span class="pre">Transfers</span></span></a></code> class is a subclass of the <code class="docutils literal notranslate"><a class="reference internal" href="Base/DroughtMitigationInstruments_base.html#classDroughtMitigationPolicy"><span class="std std-ref"><span class="pre">DroughtMitigationPolicy</span></span></a></code> class that implements treated water transfers based on risk of failure (ROF) triggers. </p>
+<p>Created by bernardo on 2/21/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers9TransfersEKiKiiKdRK6vectorIiERK6vectorIdERK6vectorIdEKdK5Graph6vectorIdE6vectorIiE">
+<span id="_CPPv3N9Transfers9TransfersEKiKiiKdRK6vectorIiERK6vectorIdERK6vectorIdEKdK5Graph6vectorIdE6vectorIiE"></span><span id="_CPPv2N9Transfers9TransfersEKiKiiKdRK6vectorIiERK6vectorIdERK6vectorIdEKdK5Graph6vectorIdE6vectorIiE"></span><span id="Transfers::Transfers__iC.iC.i.doubleC.vector:i:CR.vector:double:CR.vector:double:CR.doubleC.GraphC.vector:double:.vector:i:"></span><span class="target" id="classTransfers_1ae6abf817349382b66abc9cc3f45193a1"></span><span class="sig-name descname"><span class="n"><span class="pre">Transfers</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_utility_id</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">transfer_water_source_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">source_treatment_buffer</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">buyers_ids</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">pipe_transfer_capacities</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">buyers_transfer_triggers</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">seller_transfer_trigger</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../Utils/Graph/Graph_index.html#_CPPv45Graph" title="Graph"><span class="n"><span class="pre">Graph</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">utilities_graph</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">conveyance_costs</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pipe_owner</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Transfers9TransfersEKiKiiKdRK6vectorIiERK6vectorIdERK6vectorIdEKdK5Graph6vectorIdE6vectorIiE" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructs a <a class="reference internal" href="#classTransfers"><span class="std std-ref">Transfers</span></a> object to manage water transfer allocations among utilities. This function initializes all data structures and ensures input validity. </p>
+<p>This constructor allocates transfers by trying to minimize the mean square error between the optimal allocations and allocation requests, and between the available amount of water from source and actual conveyed capacity, which is limited by pipe conveyance capacities.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – Transfer policy ID. </p></li>
+<li><p><strong>source_utility_id</strong> – The ID of the utility selling water to other utilities to fulfil transfer requests. </p></li>
+<li><p><strong>transfer_water_source_id</strong> – The ID of the water source from which the source utility will be transferring water. </p></li>
+<li><p><strong>source_treatment_buffer</strong> – Treatment capacity to be left unused in source utility. </p></li>
+<li><p><strong>buyers_ids</strong> – IDs of the buyer utilities. </p></li>
+<li><p><strong>pipe_transfer_capacities</strong> – Capacities of transfer pipes. </p></li>
+<li><p><strong>buyers_transfer_triggers</strong> – A vector of each buyer’s ROF threshold after which they will request a water transfer. </p></li>
+<li><p><strong>seller_transfer_trigger</strong> – The short-term ROF threshold above which the seller will not fulfil transfer requests. </p></li>
+<li><p><strong>utilities_graph</strong> – A <a class="reference internal" href="../Utils/Graph/Graph_index.html#classGraph"><span class="std std-ref">Graph</span></a> object representing utilities and their connections. </p></li>
+<li><p><strong>conveyance_costs</strong> – Amount charged by pipe owning utility to convey water to another utility. </p></li>
+<li><p><strong>pipe_owner</strong> – IDs of utilities owning each pipe.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if the source utility is also listed as a buyer. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers9TransfersERK9Transfers">
+<span id="_CPPv3N9Transfers9TransfersERK9Transfers"></span><span id="_CPPv2N9Transfers9TransfersERK9Transfers"></span><span id="Transfers::Transfers__TransfersCR"></span><span class="target" id="classTransfers_1af88f7908692240eec9f3179128c6f343"></span><span class="sig-name descname"><span class="n"><span class="pre">Transfers</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N9Transfers9TransfersERK9Transfers" title="Transfers::Transfers"><span class="n"><span class="pre">Transfers</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">transfers</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Transfers9TransfersERK9Transfers" title="Link to this definition"></a><br /></dt>
+<dd><p>Creates a copy of an existing <a class="reference internal" href="#classTransfers"><span class="std std-ref">Transfers</span></a> object. This function duplicates all properties and settings of the given <a class="reference internal" href="#classTransfers"><span class="std std-ref">Transfers</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>transfers</strong> – The <a class="reference internal" href="#classTransfers"><span class="std std-ref">Transfers</span></a> object to be copied. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9TransfersD0Ev">
+<span id="_CPPv3N9TransfersD0Ev"></span><span id="_CPPv2N9TransfersD0Ev"></span><span id="Transfers::~Transfers"></span><span class="target" id="classTransfers_1a5dfeafe7a9b9a446b1ab746b65ef3b4b"></span><span class="sig-name descname"><span class="n"><span class="pre">~Transfers</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9TransfersD0Ev" title="Link to this definition"></a><br /></dt>
+<dd><p>Destroys the <a class="reference internal" href="#classTransfers"><span class="std std-ref">Transfers</span></a> object, releasing allocated resources. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK9Transfers14getAllocationsEv">
+<span id="_CPPv3NK9Transfers14getAllocationsEv"></span><span id="_CPPv2NK9Transfers14getAllocationsEv"></span><span id="Transfers::getAllocationsC"></span><span class="target" id="classTransfers_1abb5bd2978727424dc524c401dca0cbaf"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getAllocations</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK9Transfers14getAllocationsEv" title="Link to this definition"></a><br /></dt>
+<dd><p>Retrieves the current water allocations. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A constant reference to the vector of allocations. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers11applyPolicyEi">
+<span id="_CPPv3N9Transfers11applyPolicyEi"></span><span id="_CPPv2N9Transfers11applyPolicyEi"></span><span id="Transfers::applyPolicy__i"></span><span class="target" id="classTransfers_1ad9e4e83ff763ac1ba518a19051cd2e69"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">applyPolicy</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N9Transfers11applyPolicyEi" title="Link to this definition"></a><br /></dt>
+<dd><p>Applies the water transfer policy for a given week. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>week</strong> – The current week to solve.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE">
+<span id="_CPPv3N9Transfers19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE"></span><span id="_CPPv2N9Transfers19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE"></span><span id="Transfers::addSystemComponents__vector:UtilityP:.vector:WaterSourceP:.vector:MinEnvFlowControlP:"></span><span class="target" id="classTransfers_1a3c1930dbeb1273c1c0be93ad5ca57357"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addSystemComponents</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">system_utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../Controls/Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_env_flow_controls</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N9Transfers19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE" title="Link to this definition"></a><br /></dt>
+<dd><p>Adds water sources, as well as buying and purchasing utilities to the <a class="reference internal" href="#classTransfers"><span class="std std-ref">Transfers</span></a> policy for initialization. FIXME: RIGHT NOW TRANSFERS CAN ONLY HAVE ONE SOURCE. THIS NEEDS TO BE EXPANDED. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#classTransfers_1a06f965588350cc854f3bf3d619416fdc"><span class="std std-ref">solve_QP</span></a></p>
 </div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>system_utilities</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of pointers to the system utilities. </p></li>
+<li><p><strong>water_sources</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of pointers to water sources. </p></li>
+<li><p><strong>min_env_flow_controls</strong> – <a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#classVector"><span class="std std-ref">Vector</span></a> of minimum environmental flow controls.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws<span class="colon">:</span></dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – if utilities or water sources are already assigned.</p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers8solve_QPE6vectorIdEddi">
+<span id="_CPPv3N9Transfers8solve_QPE6vectorIdEddi"></span><span id="_CPPv2N9Transfers8solve_QPE6vectorIdEddi"></span><span id="Transfers::solve_QP__vector:double:.double.double.i"></span><span class="target" id="classTransfers_1a06f965588350cc854f3bf3d619416fdc"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">solve_QP</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">allocation_requests</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">available_transfer_volume</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_transfer_volume</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Transfers8solve_QPE6vectorIdEddi" title="Link to this definition"></a><br /></dt>
+<dd><p>Solves the Quadratic Programming (QP) problem to find optimal allocations given transfer requests and constraints in conveyance capacities. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>allocation_requests</strong> – Allocation requests by each utility (0 for utilities not requesting transfers). </p></li>
+<li><p><strong>available_transfer_volume</strong> – Total volume available for transfers from source utilities. </p></li>
+<li><p><strong>min_transfer_volume</strong> – Minimum transfer volume to each utility. </p></li>
+<li><p><strong>week</strong> – The current week to solve.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A vector of flow rates and allocations computed by the QP solver. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE">
+<span id="_CPPv3N9Transfers14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE"></span><span id="_CPPv2N9Transfers14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE"></span><span id="Transfers::setRealization__unsigned-l.vector:double:R.vector:double:R.vector:double:R"></span><span class="target" id="classTransfers_1a75342a7c14b2ff69eb2520de240a1131"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealization</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realization_id</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">policy_rdm</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N9Transfers14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE" title="Link to this definition"></a><br /></dt>
+<dd><p>Sets the realization parameters for the current <a class="reference internal" href="#classTransfers"><span class="std std-ref">Transfers</span></a> policy. </p>
+<p>This function overrides the base class function in <a class="reference internal" href="Base/DroughtMitigationInstruments_base.html#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>realization_id</strong> – ID of the realization. </p></li>
+<li><p><strong>utilities_rdm</strong> – Random decision matrix for utilities. </p></li>
+<li><p><strong>water_sources_rdm</strong> – Random decision matrix for water sources. </p></li>
+<li><p><strong>policy_rdm</strong> – Random decision matrix for the policy. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers17source_utility_idE">
+<span id="_CPPv3N9Transfers17source_utility_idE"></span><span id="_CPPv2N9Transfers17source_utility_idE"></span><span id="Transfers::source_utility_id__iC"></span><span class="target" id="classTransfers_1a4513cfef08bd7e9980d098f8fb7d6a32"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">source_utility_id</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers17source_utility_idE" title="Link to this definition"></a><br /></dt>
+<dd><p>The ID of the utility selling water to other utilities to fulfil transfer requests. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers23source_treatment_bufferE">
+<span id="_CPPv3N9Transfers23source_treatment_bufferE"></span><span id="_CPPv2N9Transfers23source_treatment_bufferE"></span><span id="Transfers::source_treatment_buffer__doubleC"></span><span class="target" id="classTransfers_1a69a7ec8b065b9c807e2256f205a3d41e"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">source_treatment_buffer</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers23source_treatment_bufferE" title="Link to this definition"></a><br /></dt>
+<dd><p>Treatment capacity to be left unused in source utility. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers21average_pipe_capacityE">
+<span id="_CPPv3N9Transfers21average_pipe_capacityE"></span><span id="_CPPv2N9Transfers21average_pipe_capacityE"></span><span id="Transfers::average_pipe_capacity__double"></span><span class="target" id="classTransfers_1a7715c87efbee763488d6fcc4674f2523"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">average_pipe_capacity</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N9Transfers21average_pipe_capacityE" title="Link to this definition"></a><br /></dt>
+<dd><p>The average pipe capacity that limits the volume of transfers that can be conveyed through the network. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers24transfer_water_source_idE">
+<span id="_CPPv3N9Transfers24transfer_water_source_idE"></span><span id="_CPPv2N9Transfers24transfer_water_source_idE"></span><span id="Transfers::transfer_water_source_id__i"></span><span class="target" id="classTransfers_1a039a24fe986a718da1ac61bac0e49644"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">transfer_water_source_id</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers24transfer_water_source_idE" title="Link to this definition"></a><br /></dt>
+<dd><p>The ID of the water source from which the source utility will be transferring water. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers20util_id_to_vertex_idE">
+<span id="_CPPv3N9Transfers20util_id_to_vertex_idE"></span><span id="_CPPv2N9Transfers20util_id_to_vertex_idE"></span><span id="Transfers::util_id_to_vertex_id__vector:i:"></span><span class="target" id="classTransfers_1a420b61c6ff119fef48a39a39ae4e0958"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">util_id_to_vertex_id</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers20util_id_to_vertex_idE" title="Link to this definition"></a><br /></dt>
+<dd><p>The vector mapping the ID of each utility to their topological vertex in the water transfer network. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers10buyers_idsE">
+<span id="_CPPv3N9Transfers10buyers_idsE"></span><span id="_CPPv2N9Transfers10buyers_idsE"></span><span id="Transfers::buyers_ids__vector:i:"></span><span class="target" id="classTransfers_1a55506f9588e0132ffcad1cf0036a83af"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">buyers_ids</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers10buyers_idsE" title="Link to this definition"></a><br /></dt>
+<dd><p>The IDs of the utilities purchasing water transfers from <code class="docutils literal notranslate"><span class="pre">source_utility_id</span></code>. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers11allocationsE">
+<span id="_CPPv3N9Transfers11allocationsE"></span><span id="_CPPv2N9Transfers11allocationsE"></span><span id="Transfers::allocations__vector:double:"></span><span class="target" id="classTransfers_1ad956149e16363b5a04fd0a4f6efb3a61"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">allocations</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers11allocationsE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of each utility’s water allocations. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers16conveyed_volumesE">
+<span id="_CPPv3N9Transfers16conveyed_volumesE"></span><span id="_CPPv2N9Transfers16conveyed_volumesE"></span><span id="Transfers::conveyed_volumes__vector:double:"></span><span class="target" id="classTransfers_1a2989642c0fe0544dd9345d45042933d5"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">conveyed_volumes</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers16conveyed_volumesE" title="Link to this definition"></a><br /></dt>
+<dd><p>The volume of water conveyed through a pipe during a water transfer. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers24buyers_transfer_triggersE">
+<span id="_CPPv3N9Transfers24buyers_transfer_triggersE"></span><span id="_CPPv2N9Transfers24buyers_transfer_triggersE"></span><span id="Transfers::buyers_transfer_triggers__vector:double:"></span><span class="target" id="classTransfers_1a6eab429701a7e1dc857675cc8571589c"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">buyers_transfer_triggers</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers24buyers_transfer_triggersE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of each buyer’s ROF threshold after which they will request a water transfer. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers23seller_transfer_triggerE">
+<span id="_CPPv3N9Transfers23seller_transfer_triggerE"></span><span id="_CPPv2N9Transfers23seller_transfer_triggerE"></span><span id="Transfers::seller_transfer_trigger__double"></span><span class="target" id="classTransfers_1ae3d752b6821c1a92801494304cef47e0"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">seller_transfer_trigger</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers23seller_transfer_triggerE" title="Link to this definition"></a><br /></dt>
+<dd><p>The short-term ROF threshold above which the seller will not fulfil transfer requests. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers26flow_rates_and_allocationsE">
+<span id="_CPPv3N9Transfers26flow_rates_and_allocationsE"></span><span id="_CPPv2N9Transfers26flow_rates_and_allocationsE"></span><span id="Transfers::flow_rates_and_allocations__vector:double:"></span><span class="target" id="classTransfers_1af4ef4c75d49dfb3aee476c0695ff41d5"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">flow_rates_and_allocations</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers26flow_rates_and_allocationsE" title="Link to this definition"></a><br /></dt>
+<dd><p>A vector of flow rates and allocations for each pipe and utility. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers14source_utilityE">
+<span id="_CPPv3N9Transfers14source_utilityE"></span><span id="_CPPv2N9Transfers14source_utilityE"></span><span id="Transfers::source_utility__UtilityP"></span><span class="target" id="classTransfers_1a8c84c081f069f6835e9dd12a460d90eb"></span><a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">source_utility</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N9Transfers14source_utilityE" title="Link to this definition"></a><br /></dt>
+<dd><p>A pointer to the source <a class="reference internal" href="../SystemComponents/Utility/Utility_submodules.html#classUtility"><span class="std std-ref">Utility</span></a> object. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers21transfer_water_sourceE">
+<span id="_CPPv3N9Transfers21transfer_water_sourceE"></span><span id="_CPPv2N9Transfers21transfer_water_sourceE"></span><span id="Transfers::transfer_water_source__WaterSourceP"></span><span class="target" id="classTransfers_1a6a23dc463d7a4b07bcb7f3a7472263b2"></span><a class="reference internal" href="../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">transfer_water_source</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">nullptr</span></span><a class="headerlink" href="#_CPPv4N9Transfers21transfer_water_sourceE" title="Link to this definition"></a><br /></dt>
+<dd><p>A pointer to the source <a class="reference internal" href="../SystemComponents/WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> object. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers1HE">
+<span id="_CPPv3N9Transfers1HE"></span><span id="_CPPv2N9Transfers1HE"></span><span id="Transfers::H__Matrix:double:"></span><span class="target" id="classTransfers_1aec57a6a75061f18404e30d8e48c45ffd"></span><a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#_CPPv4I0E6Matrix" title="Matrix"><span class="n"><span class="pre">Matrix</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">H</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers1HE" title="Link to this definition"></a><br /></dt>
+<dd><p>The quadratic programming matrices and vectors. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers3AeqE">
+<span id="_CPPv3N9Transfers3AeqE"></span><span id="_CPPv2N9Transfers3AeqE"></span><span id="Transfers::Aeq__Matrix:double:"></span><span class="target" id="classTransfers_1a1c2d27eb4e9294e32f04b5e7d929e71f"></span><a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#_CPPv4I0E6Matrix" title="Matrix"><span class="n"><span class="pre">Matrix</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Aeq</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers3AeqE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers1AE">
+<span id="_CPPv3N9Transfers1AE"></span><span id="_CPPv2N9Transfers1AE"></span><span id="Transfers::A__Matrix:double:"></span><span class="target" id="classTransfers_1a2acc8cfe6a1978d2468be289db636226"></span><a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#_CPPv4I0E6Matrix" title="Matrix"><span class="n"><span class="pre">Matrix</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">A</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers1AE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers1fE">
+<span id="_CPPv3N9Transfers1fE"></span><span id="_CPPv2N9Transfers1fE"></span><span id="Transfers::f__Vector:double:"></span><span class="target" id="classTransfers_1a77db57256093921b04035c1e38a20060"></span><a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#_CPPv4I0E6Vector" title="Vector"><span class="n"><span class="pre">Vector</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">f</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers1fE" title="Link to this definition"></a><br /></dt>
+<dd><p>The quadratic programming vectors. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers3beqE">
+<span id="_CPPv3N9Transfers3beqE"></span><span id="_CPPv2N9Transfers3beqE"></span><span id="Transfers::beq__Vector:double:"></span><span class="target" id="classTransfers_1a39d45672a21ce1a45925eceea79b921a"></span><a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#_CPPv4I0E6Vector" title="Vector"><span class="n"><span class="pre">Vector</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">beq</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers3beqE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers1bE">
+<span id="_CPPv3N9Transfers1bE"></span><span id="_CPPv2N9Transfers1bE"></span><span id="Transfers::b__Vector:double:"></span><span class="target" id="classTransfers_1a24e66988fb2e50d151859813fda2e740"></span><a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#_CPPv4I0E6Vector" title="Vector"><span class="n"><span class="pre">Vector</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">b</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers1bE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers15allocations_auxE">
+<span id="_CPPv3N9Transfers15allocations_auxE"></span><span id="_CPPv2N9Transfers15allocations_auxE"></span><span id="Transfers::allocations_aux__Vector:double:"></span><span class="target" id="classTransfers_1a22f332495395f41b340e370535a6b27a"></span><a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#_CPPv4I0E6Vector" title="Vector"><span class="n"><span class="pre">Vector</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">allocations_aux</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers15allocations_auxE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers2lbE">
+<span id="_CPPv3N9Transfers2lbE"></span><span id="_CPPv2N9Transfers2lbE"></span><span id="Transfers::lb__Vector:double:"></span><span class="target" id="classTransfers_1a10e5cae64016e52eca5dccc8e01e9791"></span><a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#_CPPv4I0E6Vector" title="Vector"><span class="n"><span class="pre">Vector</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lb</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers2lbE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N9Transfers2ubE">
+<span id="_CPPv3N9Transfers2ubE"></span><span id="_CPPv2N9Transfers2ubE"></span><span id="Transfers::ub__Vector:double:"></span><span class="target" id="classTransfers_1aab0d3f08ed2897d9a74c9970612231d5"></span><a class="reference internal" href="../Utils/QPSolver/QPSolver_index.html#_CPPv4I0E6Vector" title="Vector"><span class="n"><span class="pre">Vector</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ub</span></span></span><a class="headerlink" href="#_CPPv4N9Transfers2ubE" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
 </section>
 </section>
 </section>
