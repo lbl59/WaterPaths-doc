@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classDataSeries" kind="class" language="C++" prot="public">
+    <compoundname>DataSeries</compoundname>
+    <basecompoundref refid="classControlRules" prot="public" virt="non-virtual">ControlRules</basecompoundref>
+    <includes refid="DataSeries_8h" local="no">DataSeries.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDataSeries_1ac49042cab004e46a8183cc10183fbfcd" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt; *</type>
+        <definition>vector&lt;double&gt;* DataSeries::series_x</definition>
+        <argsstring></argsstring>
+        <name>series_x</name>
+        <briefdescription>
+<para>A vector of independent x-variable values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" line="21" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataSeries_1a4a8cff07f177a4787904ed1cd746bf23" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt; *</type>
+        <definition>vector&lt;double&gt;* DataSeries::series_y</definition>
+        <argsstring></argsstring>
+        <name>series_y</name>
+        <briefdescription>
+<para>A vector of dependent y-variable values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" line="25" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classDataSeries_1ad4a99b265519d2f57b787c03f2cf2f83" prot="public" static="no" mutable="no">
+        <type>const unsigned long</type>
+        <definition>const unsigned long DataSeries::length</definition>
+        <argsstring></argsstring>
+        <name>length</name>
+        <briefdescription>
+<para>The length of the <ref refid="classDataSeries" kindref="compound">DataSeries</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" line="31" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDataSeries_1a8af4ff388a574c8b836c2880492a8423" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataSeries::DataSeries</definition>
+        <argsstring>(vector&lt; double &gt; *series_x, vector&lt; double &gt; *series_y)</argsstring>
+        <name>DataSeries</name>
+        <param>
+          <type>vector&lt; double &gt; *</type>
+          <declname>series_x</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; *</type>
+          <declname>series_y</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <computeroutput><ref refid="classDataSeries" kindref="compound">DataSeries</ref></computeroutput> object by initializing it with x and y data series. Ensures that the lengths of the independent (<computeroutput>x</computeroutput>) and dependent (<computeroutput>y</computeroutput>) series match. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>series_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a <computeroutput>vector&lt;double&gt;</computeroutput> representing the x-values (independent variable). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>series_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a <computeroutput>vector&lt;double&gt;</computeroutput> representing the y-values (dependent variable). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the lengths of <computeroutput>series_x</computeroutput> and <computeroutput>series_y</computeroutput> are not equal. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataSeries_1a8bc2554fe0708acf648adc9546a005e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; DataSeries::getSeries_x</definition>
+        <argsstring>() const</argsstring>
+        <name>getSeries_x</name>
+        <briefdescription>
+<para>Retrieves a constant reference to the x-values (independent variable) of the data series. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to the <computeroutput>vector&lt;double&gt;</computeroutput> containing the x-values. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataSeries_1a3cb684ebcbdd6d9969996f306bed8b53" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double DataSeries::get_dependent_variable</definition>
+        <argsstring>(double x) override</argsstring>
+        <name>get_dependent_variable</name>
+        <reimplements refid="classControlRules_1a749c604121ebb1df808df9cd957a09f1">get_dependent_variable</reimplements>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the dependent variable (<computeroutput>y</computeroutput>) corresponding to a given independent variable (<computeroutput>x</computeroutput>) using interpolation. If the data series contains only one point, it returns that single point. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>get_dependent_variable</computeroutput> method from the <computeroutput><ref refid="classControlRules" kindref="compound">ControlRules</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the independent variable (<computeroutput>x</computeroutput>) for which the dependent variable (<computeroutput>y</computeroutput>) is to be calculated.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para></simplesect>
+<simplesect kind="return"><para>The interpolated or directly matched value of the dependent variable (<computeroutput>y</computeroutput>). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataSeries_1a57c3737304a489a3ae9cae5910fc5337" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double DataSeries::get_dependent_variable</definition>
+        <argsstring>(int x) override</argsstring>
+        <name>get_dependent_variable</name>
+        <reimplements refid="classControlRules_1a56a42b40bf093237929a9c835dc9b772">get_dependent_variable</reimplements>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Throws an exception if called with an integer argument. This function prevents misuse by disallowing calls with an integer <computeroutput>x</computeroutput> for <computeroutput>get_dependent_variable</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>get_dependent_variable</computeroutput> method from the <computeroutput><ref refid="classControlRules" kindref="compound">ControlRules</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An integer value that is not supported as input for this function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Always thrown, with a message indicating that integers are not allowed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" line="74" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classDataSeries_1a1242b9fdbdbb4e91a0e8b9e2383085d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double DataSeries::get_dependent_variable</definition>
+        <argsstring>(double x, int week) override</argsstring>
+        <name>get_dependent_variable</name>
+        <reimplements refid="classControlRules_1a4c5a86844c3d6409bfa0ba2b058f82e7">get_dependent_variable</reimplements>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Throws an exception if called with an double <computeroutput>x</computeroutput> argument and integer <computeroutput>week</computeroutput> argument. This function prevents misuse by disallowing calls with an double <computeroutput>x</computeroutput> or integer <computeroutput>week</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>get_dependent_variable</computeroutput> method from the <computeroutput><ref refid="classControlRules" kindref="compound">ControlRules</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A double value that is not supported as input for this function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An integer value that is not supported as input for this function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Always thrown, with a message indicating that two parameters are not allowed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataSeries_1a16a0aab69c764944dbb4a55b7432f37b" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double DataSeries::get_dependent_variable</definition>
+        <argsstring>(int x, int week) override</argsstring>
+        <name>get_dependent_variable</name>
+        <reimplements refid="classControlRules_1a3d4b00d92729c6662473fc25707c0d9b">get_dependent_variable</reimplements>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Throws an exception if called with an integer <computeroutput>x</computeroutput> argument and integer <computeroutput>week</computeroutput> argument. This function prevents misuse by disallowing calls with an integer <computeroutput>x</computeroutput> or integer <computeroutput>week</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>get_dependent_variable</computeroutput> method from the <computeroutput><ref refid="classControlRules" kindref="compound">ControlRules</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An integer value that is not supported as input for this function. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An integer value that is not supported as input for this function.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Always thrown, with a message indicating that two parameters are not allowed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" line="103" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classDataSeries" kindref="compound">DataSeries</ref> subclass that extends the <ref refid="classControlRules" kindref="compound">ControlRules</ref> class by providing detailed representation for a series of data points. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by bernardoct on 6/21/17. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="81">
+        <label>DataSeries</label>
+        <link refid="classDataSeries"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>ControlRules</label>
+        <link refid="classControlRules"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="83">
+        <label>DataSeries</label>
+        <link refid="classDataSeries"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>ControlRules</label>
+        <link refid="classControlRules"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" line="16" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/DataSeries.h" bodystart="16" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classDataSeries_1a8af4ff388a574c8b836c2880492a8423" prot="public" virt="non-virtual"><scope>DataSeries</scope><name>DataSeries</name></member>
+      <member refid="classDataSeries_1a3cb684ebcbdd6d9969996f306bed8b53" prot="public" virt="virtual"><scope>DataSeries</scope><name>get_dependent_variable</name></member>
+      <member refid="classDataSeries_1a57c3737304a489a3ae9cae5910fc5337" prot="public" virt="virtual"><scope>DataSeries</scope><name>get_dependent_variable</name></member>
+      <member refid="classDataSeries_1a1242b9fdbdbb4e91a0e8b9e2383085d8" prot="private" virt="virtual"><scope>DataSeries</scope><name>get_dependent_variable</name></member>
+      <member refid="classDataSeries_1a16a0aab69c764944dbb4a55b7432f37b" prot="private" virt="virtual"><scope>DataSeries</scope><name>get_dependent_variable</name></member>
+      <member refid="classDataSeries_1a8bc2554fe0708acf648adc9546a005e1" prot="public" virt="non-virtual"><scope>DataSeries</scope><name>getSeries_x</name></member>
+      <member refid="classDataSeries_1ad4a99b265519d2f57b787c03f2cf2f83" prot="public" virt="non-virtual"><scope>DataSeries</scope><name>length</name></member>
+      <member refid="classDataSeries_1ac49042cab004e46a8183cc10183fbfcd" prot="private" virt="non-virtual"><scope>DataSeries</scope><name>series_x</name></member>
+      <member refid="classDataSeries_1a4a8cff07f177a4787904ed1cd746bf23" prot="private" virt="non-virtual"><scope>DataSeries</scope><name>series_y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

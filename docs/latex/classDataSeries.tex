@@ -1,0 +1,152 @@
+\hypertarget{classDataSeries}{}\section{Data\+Series Class Reference}
+\label{classDataSeries}\index{Data\+Series@{Data\+Series}}
+
+
+The \mbox{\hyperlink{classDataSeries}{Data\+Series}} subclass that extends the \mbox{\hyperlink{classControlRules}{Control\+Rules}} class by providing detailed representation for a series of data points.  
+
+
+
+
+{\ttfamily \#include $<$Data\+Series.\+h$>$}
+
+Inheritance diagram for Data\+Series\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDataSeries}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDataSeries_a8af4ff388a574c8b836c2880492a8423}{Data\+Series}} (vector$<$ double $>$ $\ast$series\+\_\+x, vector$<$ double $>$ $\ast$series\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Constructs a {\ttfamily \mbox{\hyperlink{classDataSeries}{Data\+Series}}} object by initializing it with x and y data series. Ensures that the lengths of the independent ({\ttfamily x}) and dependent ({\ttfamily y}) series match. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classDataSeries_a8bc2554fe0708acf648adc9546a005e1}{get\+Series\+\_\+x}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves a constant reference to the x-\/values (independent variable) of the data series. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDataSeries_a3cb684ebcbdd6d9969996f306bed8b53}{get\+\_\+dependent\+\_\+variable}} (double x) override
+\begin{DoxyCompactList}\small\item\em Retrieves the dependent variable ({\ttfamily y}) corresponding to a given independent variable ({\ttfamily x}) using interpolation. If the data series contains only one point, it returns that single point. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDataSeries_a57c3737304a489a3ae9cae5910fc5337}{get\+\_\+dependent\+\_\+variable}} (int x) override
+\begin{DoxyCompactList}\small\item\em Throws an exception if called with an integer argument. This function prevents misuse by disallowing calls with an integer {\ttfamily x} for {\ttfamily get\+\_\+dependent\+\_\+variable}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned long \mbox{\hyperlink{classDataSeries_ad4a99b265519d2f57b787c03f2cf2f83}{length}}
+\begin{DoxyCompactList}\small\item\em The length of the \mbox{\hyperlink{classDataSeries}{Data\+Series}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classDataSeries}{Data\+Series}} subclass that extends the \mbox{\hyperlink{classControlRules}{Control\+Rules}} class by providing detailed representation for a series of data points. 
+
+Created by bernardoct on 6/21/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDataSeries_a8af4ff388a574c8b836c2880492a8423}\label{classDataSeries_a8af4ff388a574c8b836c2880492a8423}} 
+\index{Data\+Series@{Data\+Series}!Data\+Series@{Data\+Series}}
+\index{Data\+Series@{Data\+Series}!Data\+Series@{Data\+Series}}
+\subsubsection{\texorpdfstring{Data\+Series()}{DataSeries()}}
+{\footnotesize\ttfamily Data\+Series\+::\+Data\+Series (\begin{DoxyParamCaption}\item[{vector$<$ double $>$ $\ast$}]{series\+\_\+x,  }\item[{vector$<$ double $>$ $\ast$}]{series\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Constructs a {\ttfamily \mbox{\hyperlink{classDataSeries}{Data\+Series}}} object by initializing it with x and y data series. Ensures that the lengths of the independent ({\ttfamily x}) and dependent ({\ttfamily y}) series match. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em series\+\_\+x} & Pointer to a {\ttfamily vector$<$double$>$} representing the x-\/values (independent variable). \\
+\hline
+{\em series\+\_\+y} & Pointer to a {\ttfamily vector$<$double$>$} representing the y-\/values (dependent variable). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if the lengths of {\ttfamily series\+\_\+x} and {\ttfamily series\+\_\+y} are not equal. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDataSeries_a3cb684ebcbdd6d9969996f306bed8b53}\label{classDataSeries_a3cb684ebcbdd6d9969996f306bed8b53}} 
+\index{Data\+Series@{Data\+Series}!get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}}
+\index{get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}!Data\+Series@{Data\+Series}}
+\subsubsection{\texorpdfstring{get\+\_\+dependent\+\_\+variable()}{get\_dependent\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Data\+Series\+::get\+\_\+dependent\+\_\+variable (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the dependent variable ({\ttfamily y}) corresponding to a given independent variable ({\ttfamily x}) using interpolation. If the data series contains only one point, it returns that single point. 
+
+This function overrides the {\ttfamily get\+\_\+dependent\+\_\+variable} method from the {\ttfamily \mbox{\hyperlink{classControlRules}{Control\+Rules}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The value of the independent variable ({\ttfamily x}) for which the dependent variable ({\ttfamily y}) is to be calculated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+
+The interpolated or directly matched value of the dependent variable ({\ttfamily y}). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classControlRules}{Control\+Rules}}.
+
+\mbox{\Hypertarget{classDataSeries_a57c3737304a489a3ae9cae5910fc5337}\label{classDataSeries_a57c3737304a489a3ae9cae5910fc5337}} 
+\index{Data\+Series@{Data\+Series}!get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}}
+\index{get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}!Data\+Series@{Data\+Series}}
+\subsubsection{\texorpdfstring{get\+\_\+dependent\+\_\+variable()}{get\_dependent\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Data\+Series\+::get\+\_\+dependent\+\_\+variable (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Throws an exception if called with an integer argument. This function prevents misuse by disallowing calls with an integer {\ttfamily x} for {\ttfamily get\+\_\+dependent\+\_\+variable}. 
+
+This function overrides the {\ttfamily get\+\_\+dependent\+\_\+variable} method from the {\ttfamily \mbox{\hyperlink{classControlRules}{Control\+Rules}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & An integer value that is not supported as input for this function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Always thrown, with a message indicating that integers are not allowed. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classControlRules}{Control\+Rules}}.
+
+\mbox{\Hypertarget{classDataSeries_a8bc2554fe0708acf648adc9546a005e1}\label{classDataSeries_a8bc2554fe0708acf648adc9546a005e1}} 
+\index{Data\+Series@{Data\+Series}!get\+Series\+\_\+x@{get\+Series\+\_\+x}}
+\index{get\+Series\+\_\+x@{get\+Series\+\_\+x}!Data\+Series@{Data\+Series}}
+\subsubsection{\texorpdfstring{get\+Series\+\_\+x()}{getSeries\_x()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Data\+Series\+::get\+Series\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves a constant reference to the x-\/values (independent variable) of the data series. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to the {\ttfamily vector$<$double$>$} containing the x-\/values. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classDataSeries_ad4a99b265519d2f57b787c03f2cf2f83}\label{classDataSeries_ad4a99b265519d2f57b787c03f2cf2f83}} 
+\index{Data\+Series@{Data\+Series}!length@{length}}
+\index{length@{length}!Data\+Series@{Data\+Series}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily const unsigned long Data\+Series\+::length}
+
+
+
+The length of the \mbox{\hyperlink{classDataSeries}{Data\+Series}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Utils/\mbox{\hyperlink{DataSeries_8h}{Data\+Series.\+h}}\end{DoxyCompactItemize}

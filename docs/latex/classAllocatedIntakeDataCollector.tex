@@ -1,0 +1,261 @@
+\hypertarget{classAllocatedIntakeDataCollector}{}\section{Allocated\+Intake\+Data\+Collector Class Reference}
+\label{classAllocatedIntakeDataCollector}\index{Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}}
+
+
+The {\ttfamily \mbox{\hyperlink{classAllocatedIntakeDataCollector}{Allocated\+Intake\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of allocated intake objects.  
+
+
+
+
+{\ttfamily \#include $<$Allocated\+Intake\+Data\+Collector.\+h$>$}
+
+Inheritance diagram for Allocated\+Intake\+Data\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAllocatedIntakeDataCollector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAllocatedIntakeDataCollector_a9b8eb277ad491771e9c2634c6fd3e11c}{Allocated\+Intake\+Data\+Collector}} (\mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}} $\ast$intake, unsigned long \mbox{\hyperlink{classDataCollector_a9ef2887466fe3123aa19ef956a219b96}{realization}})
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classAllocatedIntakeDataCollector}{Allocated\+Intake\+Data\+Collector}} class. This function initializes an \mbox{\hyperlink{classAllocatedIntakeDataCollector}{Allocated\+Intake\+Data\+Collector}} object with the specified intake and realization. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAllocatedIntakeDataCollector_a8568c28b643b9a9199e2b91ae5ebbe83}{print\+Tabular\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a tabular string representation of data for a specific week. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAllocatedIntakeDataCollector_aeadb39cfe7fc84264e3bb83ed26b0621}{print\+Compact\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a compact, comma-\/separated string representation of data for a specific week. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAllocatedIntakeDataCollector_ab4149a988e728ce54f89058f8f18dd18}{print\+Tabular\+String\+Header\+Line1}} () override
+\begin{DoxyCompactList}\small\item\em Generates the first header line for a tabular string representation. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAllocatedIntakeDataCollector_aeee44be0f105fb0d5feac72f4c80f7ff}{print\+Tabular\+String\+Header\+Line2}} () override
+\begin{DoxyCompactList}\small\item\em Generates the second header line for a tabular string representation. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classAllocatedIntakeDataCollector_a995c69f6e2fe615786b2b26fd349c6cb}{print\+Compact\+String\+Header}} () override
+\begin{DoxyCompactList}\small\item\em Generates a compact, comma-\/separated header string for the compact data representation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAllocatedIntakeDataCollector_a06906344679fed5e3d24352e98107537}{collect\+\_\+data}} () override
+\begin{DoxyCompactList}\small\item\em Collects and stores data from the associated \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classAllocatedIntakeDataCollector}{Allocated\+Intake\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of allocated intake objects. 
+
+Created by dgorelic on 3/2/2020. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAllocatedIntakeDataCollector_a9b8eb277ad491771e9c2634c6fd3e11c}\label{classAllocatedIntakeDataCollector_a9b8eb277ad491771e9c2634c6fd3e11c}} 
+\index{Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}!Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}}
+\index{Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}!Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{Allocated\+Intake\+Data\+Collector()}{AllocatedIntakeDataCollector()}}
+{\footnotesize\ttfamily Allocated\+Intake\+Data\+Collector\+::\+Allocated\+Intake\+Data\+Collector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}} $\ast$}]{intake,  }\item[{unsigned long}]{realization }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classAllocatedIntakeDataCollector}{Allocated\+Intake\+Data\+Collector}} class. This function initializes an \mbox{\hyperlink{classAllocatedIntakeDataCollector}{Allocated\+Intake\+Data\+Collector}} object with the specified intake and realization. 
+
+This constructor initializes the \mbox{\hyperlink{classAllocatedIntakeDataCollector}{Allocated\+Intake\+Data\+Collector}} object by calling the base \mbox{\hyperlink{classDataCollector}{Data\+Collector}} constructor with specific parameters derived from the intake. It also initializes the {\ttfamily utilities\+\_\+with\+\_\+allocations} member using data from the {\ttfamily \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em intake} & A pointer to the \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}} object associated with this data collector. \\
+\hline
+{\em realization} & The realization number associated with the data collection.\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classDataCollector}{Data\+Collector}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAllocatedIntakeDataCollector_a06906344679fed5e3d24352e98107537}\label{classAllocatedIntakeDataCollector_a06906344679fed5e3d24352e98107537}} 
+\index{Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}!collect\+\_\+data@{collect\+\_\+data}}
+\index{collect\+\_\+data@{collect\+\_\+data}!Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{collect\+\_\+data()}{collect\_data()}}
+{\footnotesize\ttfamily void Allocated\+Intake\+Data\+Collector\+::collect\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Collects and stores data from the associated \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}} object. 
+
+This function retrieves data from the \mbox{\hyperlink{classAllocatedIntake}{Allocated\+Intake}} object and appends it to the corresponding member variables. The collected data includes\+:
+\begin{DoxyItemize}
+\item Current demand.
+\item Total inflow from upstream sources.
+\item Inflow from wastewater sources.
+\item Total inflow from upstream catchments.
+\item Total outflow.
+\item Allocated supply capacities for utilities with allocations.
+\item Allocated demands for utilities with allocations.
+\end{DoxyItemize}
+
+This function overrides the base class {\ttfamily collect\+\_\+data} function.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a01486bf58acbe37b203f97b3b9a79c40}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classAllocatedIntakeDataCollector_aeadb39cfe7fc84264e3bb83ed26b0621}\label{classAllocatedIntakeDataCollector_aeadb39cfe7fc84264e3bb83ed26b0621}} 
+\index{Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}!print\+Compact\+String@{print\+Compact\+String}}
+\index{print\+Compact\+String@{print\+Compact\+String}!Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String()}{printCompactString()}}
+{\footnotesize\ttfamily string Allocated\+Intake\+Data\+Collector\+::print\+Compact\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a compact, comma-\/separated string representation of data for a specific week. 
+
+This function creates a compact string that represents the weekly data for demands, inflows, outflows, and allocations. The data is structured as a comma-\/separated list and includes\+:
+\begin{DoxyItemize}
+\item Demand for the week.
+\item Total upstream source inflows.
+\item Wastewater inflows.
+\item Total inflows from catchments.
+\item Outflows.
+\item Allocated supply capacities and demands for utilities with allocations.
+\end{DoxyItemize}
+
+This function overrides the base class {\ttfamily print\+Compact\+String} function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The week number for which the data should be printed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the compact data for the specified week, with values separated by commas.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & If the {\ttfamily week} parameter is out of bounds for any of the accessed data arrays. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classAllocatedIntakeDataCollector_a995c69f6e2fe615786b2b26fd349c6cb}\label{classAllocatedIntakeDataCollector_a995c69f6e2fe615786b2b26fd349c6cb}} 
+\index{Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}!print\+Compact\+String\+Header@{print\+Compact\+String\+Header}}
+\index{print\+Compact\+String\+Header@{print\+Compact\+String\+Header}!Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String\+Header()}{printCompactStringHeader()}}
+{\footnotesize\ttfamily string Allocated\+Intake\+Data\+Collector\+::print\+Compact\+String\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a compact, comma-\/separated header string for the compact data representation. 
+
+This function creates a compact header string for the data, where each column is prefixed by the {\ttfamily id} of the \mbox{\hyperlink{classAllocatedIntakeDataCollector}{Allocated\+Intake\+Data\+Collector}} object. The header includes\+:
+\begin{DoxyItemize}
+\item Demand.
+\item Upstream spillage.
+\item Wastewater inflow.
+\item \mbox{\hyperlink{classCatchment}{Catchment}} inflow.
+\item Downstream spillage.
+\item Allocated supply capacities and demands for utilities with allocations, each uniquely identified with the utility ID.
+\end{DoxyItemize}
+
+This function overrides the base class {\ttfamily print\+Compact\+String\+Header} function.
+
+\begin{DoxyReturn}{Returns}
+A string containing the header for the compact data, with column identifiers separated by commas. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classAllocatedIntakeDataCollector_a8568c28b643b9a9199e2b91ae5ebbe83}\label{classAllocatedIntakeDataCollector_a8568c28b643b9a9199e2b91ae5ebbe83}} 
+\index{Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}!print\+Tabular\+String@{print\+Tabular\+String}}
+\index{print\+Tabular\+String@{print\+Tabular\+String}!Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String()}{printTabularString()}}
+{\footnotesize\ttfamily string Allocated\+Intake\+Data\+Collector\+::print\+Tabular\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a tabular string representation of data for a specific week. 
+
+This function creates a formatted string that represents the weekly data for demands, inflows, outflows, and allocations. The data is formatted into a tabular structure with fixed column widths and precision. It includes\+:
+\begin{DoxyItemize}
+\item Demand for the week.
+\item Total upstream source inflows.
+\item Wastewater inflows.
+\item Total inflows from catchments.
+\item Outflows.
+\item Allocated supply capacities and demands for utilities with allocations.
+\end{DoxyItemize}
+
+This function overrides the base class {\ttfamily print\+Tabular\+String} function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The week number for which the data should be printed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the tabular data for the specified week.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & If the {\ttfamily week} parameter is out of bounds for any of the accessed data arrays. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a397fccabe0223267eea8fc7cac0e59da}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classAllocatedIntakeDataCollector_ab4149a988e728ce54f89058f8f18dd18}\label{classAllocatedIntakeDataCollector_ab4149a988e728ce54f89058f8f18dd18}} 
+\index{Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}!print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}}
+\index{print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}!Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line1()}{printTabularStringHeaderLine1()}}
+{\footnotesize\ttfamily string Allocated\+Intake\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the first header line for a tabular string representation. 
+
+This function creates a formatted header line for tabular data representation. The header includes\+:
+\begin{DoxyItemize}
+\item Blank space for alignment.
+\item Column headers for upstream inflows, wastewater inflows, and catchment inflows.
+\item Identifiers for utilities with allocations, listed twice for supply capacities and demands.
+\end{DoxyItemize}
+
+This function overrides the base class {\ttfamily print\+Tabular\+String\+Header\+Line1} function.
+
+\begin{DoxyReturn}{Returns}
+A string containing the first header line of the tabular data. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classAllocatedIntakeDataCollector_aeee44be0f105fb0d5feac72f4c80f7ff}\label{classAllocatedIntakeDataCollector_aeee44be0f105fb0d5feac72f4c80f7ff}} 
+\index{Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}!print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}}
+\index{print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}!Allocated\+Intake\+Data\+Collector@{Allocated\+Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line2()}{printTabularStringHeaderLine2()}}
+{\footnotesize\ttfamily string Allocated\+Intake\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the second header line for a tabular string representation. 
+
+This function creates a formatted second header line for tabular data representation. The header includes\+:
+\begin{DoxyItemize}
+\item Column labels for demands, spillage, inflows (upstream, wastewater, and catchment), and outflows.
+\item Labels for allocated supply capacities and demands for utilities with allocations.
+\end{DoxyItemize}
+
+This function overrides the base class {\ttfamily print\+Tabular\+String\+Header\+Line2} function.
+
+\begin{DoxyReturn}{Returns}
+A string containing the second header line of the tabular data. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_af01ea961314be2164f39e6d4cd59e443}{Data\+Collector}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Data\+Collector/\mbox{\hyperlink{AllocatedIntakeDataCollector_8h}{Allocated\+Intake\+Data\+Collector.\+h}}\end{DoxyCompactItemize}

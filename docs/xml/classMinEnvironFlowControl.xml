@@ -1,0 +1,306 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classMinEnvironFlowControl" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>MinEnvironFlowControl</compoundname>
+    <includes refid="MinEnvironFlowControl_8h" local="no">MinEnvironFlowControl.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMinEnvironFlowControl_1ac5be281d802ad1de433bed588bb13cfe" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> * &gt;</type>
+        <definition>vector&lt;WaterSource *&gt; MinEnvironFlowControl::water_sources</definition>
+        <argsstring></argsstring>
+        <name>water_sources</name>
+        <briefdescription>
+<para>A vector of <ref refid="classWaterSource" kindref="compound">WaterSource</ref> objects that require minimum environment flow control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="20" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMinEnvironFlowControl_1a3d55c77bc8ba49b14b20eb494868b3ce" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classCatchment" kindref="compound">Catchment</ref> * &gt;</type>
+        <definition>vector&lt;Catchment *&gt; MinEnvironFlowControl::catchments</definition>
+        <argsstring></argsstring>
+        <name>catchments</name>
+        <briefdescription>
+<para>A vector of <ref refid="classCatchment" kindref="compound">Catchment</ref> objects that enable minimum environment flow control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="24" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMinEnvironFlowControl_1a6c43408d05901838fa567c8e23a37009" prot="protected" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt;</type>
+        <definition>vector&lt;Utility* &gt; MinEnvironFlowControl::utilities</definition>
+        <argsstring></argsstring>
+        <name>utilities</name>
+        <briefdescription>
+<para>A vector of <ref refid="classUtility" kindref="compound">Utility</ref> objects that enable minimum environment flow control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="28" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classMinEnvironFlowControl_1a1544571a77557853d0cc8189bd29f4b3" prot="public" static="no" mutable="no">
+        <type>const vector&lt; int &gt;</type>
+        <definition>const vector&lt;int&gt; MinEnvironFlowControl::water_sources_ids</definition>
+        <argsstring></argsstring>
+        <name>water_sources_ids</name>
+        <briefdescription>
+<para>A vector of <ref refid="classWaterSource" kindref="compound">WaterSource</ref> IDs that require minimum environment flow control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="34" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMinEnvironFlowControl_1ae5acc488f8a0b8aaf7a85cfc8a25bbf9" prot="public" static="no" mutable="no">
+        <type>const vector&lt; int &gt;</type>
+        <definition>const vector&lt;int&gt; MinEnvironFlowControl::utilities_ids</definition>
+        <argsstring></argsstring>
+        <name>utilities_ids</name>
+        <briefdescription>
+<para>A vector of <ref refid="classUtility" kindref="compound">Utility</ref> IDs that enable minimum environment flow control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="38" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMinEnvironFlowControl_1a571d4d56086eb752aebb20b2d85fa8e7" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MinEnvironFlowControl::water_source_id</definition>
+        <argsstring></argsstring>
+        <name>water_source_id</name>
+        <briefdescription>
+<para>The ID of the <ref refid="classWaterSource" kindref="compound">WaterSource</ref> object that requires minimum environment flow control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="42" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMinEnvironFlowControl_1a1a10a6b5720c934eef698cd72c9d883c" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int MinEnvironFlowControl::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>The type of minimum environment flow control. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="46" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMinEnvironFlowControl_1a5b40c3f8da8c63513edb30804bf2ca01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MinEnvironFlowControl::MinEnvironFlowControl</definition>
+        <argsstring>(int water_source_id, const vector&lt; int &gt; &amp;aux_water_sources_id, const vector&lt; int &gt; &amp;aux_utilities_ids, int type)</argsstring>
+        <name>MinEnvironFlowControl</name>
+        <param>
+          <type>int</type>
+          <declname>water_source_id</declname>
+        </param>
+        <param>
+          <type>const vector&lt; int &gt; &amp;</type>
+          <declname>aux_water_sources_id</declname>
+        </param>
+        <param>
+          <type>const vector&lt; int &gt; &amp;</type>
+          <declname>aux_utilities_ids</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <computeroutput><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref></computeroutput> object for managing minimum environmental flow controls on specified water sources. Initializes the object with associated water source and utility IDs and a control type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>water_source_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the ID of the primary water source under environmental flow control. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>water_sources_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to a vector of integers containing the IDs of additional water sources affected by the control. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aux_utilities_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to a vector of integers containing the IDs of auxiliary utilities associated with the control. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the type of environmental flow control. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMinEnvironFlowControl_1a274fc5217a2a79d9c488d903708f5e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MinEnvironFlowControl::MinEnvironFlowControl</definition>
+        <argsstring>(const MinEnvironFlowControl &amp;min_env_control)</argsstring>
+        <name>MinEnvironFlowControl</name>
+        <param>
+          <type>const <ref refid="classMinEnvironFlowControl" kindref="compound">MinEnvironFlowControl</ref> &amp;</type>
+          <declname>min_env_control</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor for a <computeroutput><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref></computeroutput> object. This function copies the attributes from an existing <computeroutput><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref></computeroutput> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_env_control</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the <computeroutput><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref></computeroutput> object to be copied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMinEnvironFlowControl_1ac7357455a533f7e6882cdb1ef303359b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double MinEnvironFlowControl::getRelease</definition>
+        <argsstring>(int week)=0</argsstring>
+        <name>getRelease</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Get the Release object. This function is a pure virtual function that must be implemented by derived classes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The week for which the release is requested.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMinEnvironFlowControl_1a9dd9d33661f121dda9704288658ecf7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MinEnvironFlowControl::addComponents</definition>
+        <argsstring>(vector&lt; WaterSource *&gt; water_sources, vector&lt; Utility *&gt; utilities)</argsstring>
+        <name>addComponents</name>
+        <param>
+          <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt;</type>
+          <declname>water_sources</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt;</type>
+          <declname>utilities</declname>
+        </param>
+        <briefdescription>
+<para>Associates water sources and utilities with the <computeroutput><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref></computeroutput> object based on their IDs. The associations are established by mapping the provided vectors of water sources and utilities to the corresponding IDs. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>water_sources</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of pointers to <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput> objects representing all available water sources. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utilities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of pointers to <computeroutput><ref refid="classUtility" kindref="compound">Utility</ref></computeroutput> objects representing all available utilities.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classMinEnvironFlowControl_1ae8ba384400c2d4302cefb9ca6eaec3a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>virtual void MinEnvironFlowControl::setRealization</definition>
+        <argsstring>(unsigned int r, vector&lt; double &gt; &amp;rdm_factors)</argsstring>
+        <name>setRealization</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>rdm_factors</declname>
+        </param>
+        <briefdescription>
+<para>Sets the realization for the <computeroutput><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref></computeroutput> object. This function is a pure virtual function that must be implemented by derived classes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unsigned long integer representing the realization ID. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rdm_factors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to a vector of doubles containing the RDM factors to be applied.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="99" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" line="15" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvironFlowControl.h" bodystart="15" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classMinEnvironFlowControl_1a9dd9d33661f121dda9704288658ecf7e" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>addComponents</name></member>
+      <member refid="classMinEnvironFlowControl_1a3d55c77bc8ba49b14b20eb494868b3ce" prot="protected" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>catchments</name></member>
+      <member refid="classMinEnvironFlowControl_1ac7357455a533f7e6882cdb1ef303359b" prot="public" virt="pure-virtual"><scope>MinEnvironFlowControl</scope><name>getRelease</name></member>
+      <member refid="classMinEnvironFlowControl_1a5b40c3f8da8c63513edb30804bf2ca01" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>MinEnvironFlowControl</name></member>
+      <member refid="classMinEnvironFlowControl_1a274fc5217a2a79d9c488d903708f5e68" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>MinEnvironFlowControl</name></member>
+      <member refid="classMinEnvironFlowControl_1ae8ba384400c2d4302cefb9ca6eaec3a8" prot="public" virt="virtual"><scope>MinEnvironFlowControl</scope><name>setRealization</name></member>
+      <member refid="classMinEnvironFlowControl_1a1a10a6b5720c934eef698cd72c9d883c" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>type</name></member>
+      <member refid="classMinEnvironFlowControl_1a6c43408d05901838fa567c8e23a37009" prot="protected" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>utilities</name></member>
+      <member refid="classMinEnvironFlowControl_1ae5acc488f8a0b8aaf7a85cfc8a25bbf9" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>utilities_ids</name></member>
+      <member refid="classMinEnvironFlowControl_1a571d4d56086eb752aebb20b2d85fa8e7" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>water_source_id</name></member>
+      <member refid="classMinEnvironFlowControl_1ac5be281d802ad1de433bed588bb13cfe" prot="protected" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>water_sources</name></member>
+      <member refid="classMinEnvironFlowControl_1a1544571a77557853d0cc8189bd29f4b3" prot="public" virt="non-virtual"><scope>MinEnvironFlowControl</scope><name>water_sources_ids</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

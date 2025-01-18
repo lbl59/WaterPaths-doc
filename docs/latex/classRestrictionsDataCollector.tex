@@ -1,0 +1,207 @@
+\hypertarget{classRestrictionsDataCollector}{}\section{Restrictions\+Data\+Collector Class Reference}
+\label{classRestrictionsDataCollector}\index{Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}}
+
+
+The {\ttfamily \mbox{\hyperlink{classRestrictionsDataCollector}{Restrictions\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of water use restrictions.  
+
+
+
+
+{\ttfamily \#include $<$Restrictions\+Data\+Collector.\+h$>$}
+
+Inheritance diagram for Restrictions\+Data\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRestrictionsDataCollector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRestrictionsDataCollector_a0e700f013442a6df86fe75bcee4c31df}{Restrictions\+Data\+Collector}} (\mbox{\hyperlink{classRestrictions}{Restrictions}} $\ast$restriction\+\_\+policy, unsigned long \mbox{\hyperlink{classDataCollector_a9ef2887466fe3123aa19ef956a219b96}{realization}})
+\begin{DoxyCompactList}\small\item\em Constructs a {\ttfamily \mbox{\hyperlink{classRestrictionsDataCollector}{Restrictions\+Data\+Collector}}} object to collect data related to a specific restriction policy. Initializes the base {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} with relevant identifiers and type information. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classRestrictionsDataCollector_a45e5612e70ec98430e31271f68ca407e}{print\+Tabular\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a tabular string representation of water restriction multipliers. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classRestrictionsDataCollector_ab8b8c30dca6b2e41c1ef5e3ac7e29813}{print\+Compact\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a compact, comma-\/delimited string representation of restriction multipliers for a specified week. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classRestrictionsDataCollector_a2676a6693b254997d223fc1c437258ab}{print\+Tabular\+String\+Header\+Line1}} () override
+\begin{DoxyCompactList}\small\item\em Generates the first header line for the tabular representation of restriction multipliers. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classRestrictionsDataCollector_afb3c49c2c9b152bb2372e2fcc198e1b8}{print\+Tabular\+String\+Header\+Line2}} () override
+\begin{DoxyCompactList}\small\item\em Generates the second header line for the tabular representation of restriction multipliers. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classRestrictionsDataCollector_ad36ff12a666d72c92893c918715628f6}{print\+Compact\+String\+Header}} () override
+\begin{DoxyCompactList}\small\item\em Generates a compact, comma-\/delimited string header for the water restriction multipliers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRestrictionsDataCollector_a7d8b6433ec25a53ed50577c2cf89912d}{collect\+\_\+data}} () override
+\begin{DoxyCompactList}\small\item\em Collects the current restriction multiplier from the associated restriction policy. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classRestrictionsDataCollector_a576be619485a838e9496fea66181cd06}{get\+Restriction\+\_\+multipliers}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of collected restriction multipliers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classRestrictionsDataCollector}{Restrictions\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of water use restrictions. 
+
+Created by bernardoct on 8/25/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRestrictionsDataCollector_a0e700f013442a6df86fe75bcee4c31df}\label{classRestrictionsDataCollector_a0e700f013442a6df86fe75bcee4c31df}} 
+\index{Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}!Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}}
+\index{Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}!Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}}
+\subsubsection{\texorpdfstring{Restrictions\+Data\+Collector()}{RestrictionsDataCollector()}}
+{\footnotesize\ttfamily Restrictions\+Data\+Collector\+::\+Restrictions\+Data\+Collector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classRestrictions}{Restrictions}} $\ast$}]{restriction\+\_\+policy,  }\item[{unsigned long}]{realization }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a {\ttfamily \mbox{\hyperlink{classRestrictionsDataCollector}{Restrictions\+Data\+Collector}}} object to collect data related to a specific restriction policy. Initializes the base {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} with relevant identifiers and type information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em restriction\+\_\+policy} & A pointer to the {\ttfamily \mbox{\hyperlink{classRestrictions}{Restrictions}}} object representing the restriction policy. \\
+\hline
+{\em realization} & The realization index associated with the restriction policy. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRestrictionsDataCollector_a7d8b6433ec25a53ed50577c2cf89912d}\label{classRestrictionsDataCollector_a7d8b6433ec25a53ed50577c2cf89912d}} 
+\index{Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}!collect\+\_\+data@{collect\+\_\+data}}
+\index{collect\+\_\+data@{collect\+\_\+data}!Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}}
+\subsubsection{\texorpdfstring{collect\+\_\+data()}{collect\_data()}}
+{\footnotesize\ttfamily void Restrictions\+Data\+Collector\+::collect\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Collects the current restriction multiplier from the associated restriction policy. 
+
+This function overrides the {\ttfamily collect\+\_\+data} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a01486bf58acbe37b203f97b3b9a79c40}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classRestrictionsDataCollector_a576be619485a838e9496fea66181cd06}\label{classRestrictionsDataCollector_a576be619485a838e9496fea66181cd06}} 
+\index{Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}!get\+Restriction\+\_\+multipliers@{get\+Restriction\+\_\+multipliers}}
+\index{get\+Restriction\+\_\+multipliers@{get\+Restriction\+\_\+multipliers}!Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Restriction\+\_\+multipliers()}{getRestriction\_multipliers()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Restrictions\+Data\+Collector\+::get\+Restriction\+\_\+multipliers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of collected restriction multipliers. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to the {\ttfamily vector$<$double$>$} containing the collected restriction multipliers. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRestrictionsDataCollector_ab8b8c30dca6b2e41c1ef5e3ac7e29813}\label{classRestrictionsDataCollector_ab8b8c30dca6b2e41c1ef5e3ac7e29813}} 
+\index{Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}!print\+Compact\+String@{print\+Compact\+String}}
+\index{print\+Compact\+String@{print\+Compact\+String}!Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String()}{printCompactString()}}
+{\footnotesize\ttfamily string Restrictions\+Data\+Collector\+::print\+Compact\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a compact, comma-\/delimited string representation of restriction multipliers for a specified week. 
+
+This function overrides the {\ttfamily print\+Compact\+String} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the compact data is generated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the compact representation of the demand offsets for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classRestrictionsDataCollector_ad36ff12a666d72c92893c918715628f6}\label{classRestrictionsDataCollector_ad36ff12a666d72c92893c918715628f6}} 
+\index{Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}!print\+Compact\+String\+Header@{print\+Compact\+String\+Header}}
+\index{print\+Compact\+String\+Header@{print\+Compact\+String\+Header}!Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String\+Header()}{printCompactStringHeader()}}
+{\footnotesize\ttfamily string Restrictions\+Data\+Collector\+::print\+Compact\+String\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a compact, comma-\/delimited string header for the water restriction multipliers. 
+
+This function overrides the {\ttfamily print\+Compact\+String\+Header} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the compact header representation for the water restriction multipliers. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classRestrictionsDataCollector_a45e5612e70ec98430e31271f68ca407e}\label{classRestrictionsDataCollector_a45e5612e70ec98430e31271f68ca407e}} 
+\index{Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}!print\+Tabular\+String@{print\+Tabular\+String}}
+\index{print\+Tabular\+String@{print\+Tabular\+String}!Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String()}{printTabularString()}}
+{\footnotesize\ttfamily string Restrictions\+Data\+Collector\+::print\+Tabular\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a tabular string representation of water restriction multipliers. 
+
+This function overrides the {\ttfamily print\+Tabular\+String} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the tabular data is generated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the tabular representation of the demand offsets for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a397fccabe0223267eea8fc7cac0e59da}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classRestrictionsDataCollector_a2676a6693b254997d223fc1c437258ab}\label{classRestrictionsDataCollector_a2676a6693b254997d223fc1c437258ab}} 
+\index{Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}!print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}}
+\index{print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}!Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line1()}{printTabularStringHeaderLine1()}}
+{\footnotesize\ttfamily string Restrictions\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the first header line for the tabular representation of restriction multipliers. 
+
+This function overrides the {\ttfamily print\+Tabular\+String\+Header\+Line1} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the first header line for the tabular representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classRestrictionsDataCollector_afb3c49c2c9b152bb2372e2fcc198e1b8}\label{classRestrictionsDataCollector_afb3c49c2c9b152bb2372e2fcc198e1b8}} 
+\index{Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}!print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}}
+\index{print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}!Restrictions\+Data\+Collector@{Restrictions\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line2()}{printTabularStringHeaderLine2()}}
+{\footnotesize\ttfamily string Restrictions\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the second header line for the tabular representation of restriction multipliers. 
+
+This function overrides the {\ttfamily print\+Tabular\+String\+Header\+Line2} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the second header line for the tabular representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_af01ea961314be2164f39e6d4cd59e443}{Data\+Collector}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Data\+Collector/\mbox{\hyperlink{RestrictionsDataCollector_8h}{Restrictions\+Data\+Collector.\+h}}\end{DoxyCompactItemize}

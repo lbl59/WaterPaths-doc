@@ -1,0 +1,889 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classUtilitiesDataCollector" kind="class" language="C++" prot="public">
+    <compoundname>UtilitiesDataCollector</compoundname>
+    <basecompoundref refid="classDataCollector" prot="public" virt="non-virtual">DataCollector</basecompoundref>
+    <includes refid="UtilitiesDataCollector_8h" local="no">UtilitiesDataCollector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a48de294ec73e9d95c31d08316ca6620a" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::st_rof</definition>
+        <argsstring></argsstring>
+        <name>st_rof</name>
+        <briefdescription>
+<para>A vector of weekly short-term ROFs for a utility taken as the max between the storage and treatment short-term ROFs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="21" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a2189076dc2e7c0ec6afb9169008d73a3" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::st_stor_rof</definition>
+        <argsstring></argsstring>
+        <name>st_stor_rof</name>
+        <briefdescription>
+<para>A vector of weekly short-term storage ROFs for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="25" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a95798f6b8cb9e6d2c5b359c8ccfb1a32" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::st_trmt_rof</definition>
+        <argsstring></argsstring>
+        <name>st_trmt_rof</name>
+        <briefdescription>
+<para>A vector of weekly short-term treatment ROFs for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="29" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1ae573a427a96761529f3c33cafb2ae523" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::lt_rof</definition>
+        <argsstring></argsstring>
+        <name>lt_rof</name>
+        <briefdescription>
+<para>A vector of weekly long-term ROFs for a utility taken as the max between the storage and treatment long-term ROFs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="33" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a0ef14ef110831718c762c3558920c06c" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::lt_stor_rof</definition>
+        <argsstring></argsstring>
+        <name>lt_stor_rof</name>
+        <briefdescription>
+<para>A vector of weekly long-term storage ROFs for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="37" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1aa93d11b5e25070e6b72028c01dd3b28c" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::lt_trmt_rof</definition>
+        <argsstring></argsstring>
+        <name>lt_trmt_rof</name>
+        <briefdescription>
+<para>A vector of weekly long-term treatment ROFs for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="41" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1ac5187dc598703630287ae17712f01b55" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::combined_storage</definition>
+        <argsstring></argsstring>
+        <name>combined_storage</name>
+        <briefdescription>
+<para>A vector of weekly combined storage for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="45" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1adf6e8ba0fd80e4b2493916e15b7e369d" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::unrestricted_demand</definition>
+        <argsstring></argsstring>
+        <name>unrestricted_demand</name>
+        <briefdescription>
+<para>A vector of weekly unrestricted demand for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="49" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1aa51e92337421be6412fb44b9ef0ea8d3" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::restricted_demand</definition>
+        <argsstring></argsstring>
+        <name>restricted_demand</name>
+        <briefdescription>
+<para>A vector of weekly restricted demand for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="53" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1af7a33a0752ac627955ab1898aa008639" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::contingency_fund_size</definition>
+        <argsstring></argsstring>
+        <name>contingency_fund_size</name>
+        <briefdescription>
+<para>A vector of weekly cumulative contingency fund sizes for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="57" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1ad107d45de75ad920142a6645f2657e5c" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::gross_revenues</definition>
+        <argsstring></argsstring>
+        <name>gross_revenues</name>
+        <briefdescription>
+<para>A vector of weekly gross revenues for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="61" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1acf362c8f36ed94e85a7750111ee95275" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::contingency_fund_contribution</definition>
+        <argsstring></argsstring>
+        <name>contingency_fund_contribution</name>
+        <briefdescription>
+<para>A vector of weekly contingency fund contributions for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="65" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a04de6814b69ac521ac1533e4d7f5d6de" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::debt_service_payments</definition>
+        <argsstring></argsstring>
+        <name>debt_service_payments</name>
+        <briefdescription>
+<para>A vector of weekly debt service payments for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="69" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a7695eba96cf7a78740ca482bc0333055" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::present_valued_debt_service_payments</definition>
+        <argsstring></argsstring>
+        <name>present_valued_debt_service_payments</name>
+        <briefdescription>
+<para>A vector of weekly present-valued debt service payments for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="73" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a39b6a91decb12ef993f96a858d904afc" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::insurance_contract_cost</definition>
+        <argsstring></argsstring>
+        <name>insurance_contract_cost</name>
+        <briefdescription>
+<para>A vector of weekly insurance contract costs for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="77" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a0686118f05245bcef7c14f751dfc3534" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::insurance_payout</definition>
+        <argsstring></argsstring>
+        <name>insurance_payout</name>
+        <briefdescription>
+<para>A vector of weekly insurance payouts received by a utility from the insurance company. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="81" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a8c6cbd05a930533e32f1ee374380d24b" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::drought_mitigation_cost</definition>
+        <argsstring></argsstring>
+        <name>drought_mitigation_cost</name>
+        <briefdescription>
+<para>A vector of weekly drought mitigation costs for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="85" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1ad288dee20ff2e20caaa1e6a67ad815ae" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::capacity</definition>
+        <argsstring></argsstring>
+        <name>capacity</name>
+        <briefdescription>
+<para>A vector of weekly net present infrastructure costs for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="89" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1ac86eb33899a451037dd27f3330378df2" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::net_present_infrastructure_cost</definition>
+        <argsstring></argsstring>
+        <name>net_present_infrastructure_cost</name>
+        <briefdescription>
+<para>A vector of weekly net present infrastructure costs for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="93" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1ad329c0652d880f257f1ee73fbf2ee632" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::waste_water_discharge</definition>
+        <argsstring></argsstring>
+        <name>waste_water_discharge</name>
+        <briefdescription>
+<para>A vector of weekly waste water discharge for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="97" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a8af280724d0a10ea6fafbc426c04266a" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::unfulfilled_demand</definition>
+        <argsstring></argsstring>
+        <name>unfulfilled_demand</name>
+        <briefdescription>
+<para>A vector of weekly unfulfilled demand for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="101" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1ab42e458d9475733cd2fa89353b7567f2" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::net_stream_inflow</definition>
+        <argsstring></argsstring>
+        <name>net_stream_inflow</name>
+        <briefdescription>
+<para>A vector of weekly net stream inflow for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="105" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a0b3587a8ce9176a8e73152c957ba9322" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::total_treatment_capacity</definition>
+        <argsstring></argsstring>
+        <name>total_treatment_capacity</name>
+        <briefdescription>
+<para>A vector of weekly total treatment capacity for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="109" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1ae8662a9e4a483cdb117c47e04bee0f79" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::final_stored_volume</definition>
+        <argsstring></argsstring>
+        <name>final_stored_volume</name>
+        <briefdescription>
+<para>A vector of weekly final stored volume for a utility across all its water sources. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="113" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a4799cdeea1483bbbb2507f0843aba40b" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::recorded_annual_demand</definition>
+        <argsstring></argsstring>
+        <name>recorded_annual_demand</name>
+        <briefdescription>
+<para>A vector of weekly recorded annual demand for a utility. This value stays constant for all weeks within the same year. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="118" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a9979294482388e8fe221e63c27eb7917" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; UtilitiesDataCollector::projected_demand_estimate</definition>
+        <argsstring></argsstring>
+        <name>projected_demand_estimate</name>
+        <briefdescription>
+<para>A vector of annual projected demand estimates for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="122" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a8f3c2305f751b65af66b202a6050eab2" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; int &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;int&gt; &gt; UtilitiesDataCollector::pathways</definition>
+        <argsstring></argsstring>
+        <name>pathways</name>
+        <briefdescription>
+<para>A 2D vector of infrastructure pathways for a utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="126" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUtilitiesDataCollector_1a215beae386004a66b72e40c3f07a7455" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>const Utility* UtilitiesDataCollector::utility</definition>
+        <argsstring></argsstring>
+        <name>utility</name>
+        <briefdescription>
+<para>A pointer to the utility object that this data collector is collecting data for. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="130" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a7aee55a1cbd0fcdca59339a9e78ed08b" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>UtilitiesDataCollector::UtilitiesDataCollector</definition>
+        <argsstring>(const Utility *utility, unsigned long realization)</argsstring>
+        <name>UtilitiesDataCollector</name>
+        <param>
+          <type>const <ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+          <declname>utility</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput> for managing and collecting data related to a specific utility. Initializes the data collector with utility-specific attributes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <computeroutput><ref refid="classUtility" kindref="compound">Utility</ref></computeroutput> object for which the data collector is being created. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realization</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unsigned long integer representing the realization ID. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a805182c7f423290135a5c92844cdbb4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref> &amp;</type>
+        <definition>UtilitiesDataCollector&amp; UtilitiesDataCollector::operator=</definition>
+        <argsstring>(const UtilitiesDataCollector &amp;utility_data_collector)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref> &amp;</type>
+          <declname>utility_data_collector</declname>
+        </param>
+        <briefdescription>
+<para>Overloads the assignment operator for the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput> class, allowing assignment of one data collector to another. This operator performs a deep copy of the data collector&apos;s attributes. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does not have an implementation in the .cpp file.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_data_collector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A constant reference to the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput> object to be assigned.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the updated <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput> object after the assignment. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a39e7d28a70a0f71b3f1cc28b19c7e2d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string UtilitiesDataCollector::printTabularString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printTabularString</name>
+        <reimplements refid="classDataCollector_1a397fccabe0223267eea8fc7cac0e59da">printTabularString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Generates a tabular string representation of utility data for a specified week. This includes data such as combined storage, capacity, net inflow, ROFs, demand, insurance, contingency funds, debt service payments, and revenues. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>printTabularString</computeroutput> function in the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the tabular data is generated.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the tabular representation of the utility data for the specified week. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a57b5f9cd8ddf54154476749ab0977355" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string UtilitiesDataCollector::printCompactString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printCompactString</name>
+        <reimplements refid="classDataCollector_1a2eac264fa5612aed5a830b12de4f4ae3">printCompactString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Generates a compact, comma-delimited representation of utility data for a specified week. This includes data such as combined storage, capacity, net inflow, ROFs, demand, insurance, contingency funds, debt service payments, and revenues. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>printCompactString</computeroutput> function in the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the tabular data is generated.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the compact representation of the utility data for the specified week. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a796aa9d7637d8ed04dbd949ca2a34088" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string UtilitiesDataCollector::printTabularStringHeaderLine1</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine1</name>
+        <reimplements refid="classDataCollector_1a91619cfa9e9b8cefd2f7c20d5718b41e">printTabularStringHeaderLine1</reimplements>
+        <briefdescription>
+<para>Generates the first header line for the tabular representation of utility data. This header provides general column titles for data such as combined storage, capacity, net inflow, ROFs, demand, insurance, contingency funds, debt service payments, and revenues. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>printTabularStringHeaderLine1</computeroutput> function in the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><simplesect kind="return"><para>A string containing the first header line for the tabular representation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1ae502a096e8f4fdfdfd481ab2093f9771" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string UtilitiesDataCollector::printTabularStringHeaderLine2</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine2</name>
+        <reimplements refid="classDataCollector_1af01ea961314be2164f39e6d4cd59e443">printTabularStringHeaderLine2</reimplements>
+        <briefdescription>
+<para>Generates the second header line for the tabular representation of utility data. This header provides general column titles for data such as combined storage, capacity, net inflow, ROFs, demand, insurance, contingency funds, debt service payments, and revenues. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>printTabularStringHeaderLine2</computeroutput> function in the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><simplesect kind="return"><para>A string containing the first header line for the tabular representation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1ab3409c407783fd4451f310d2fc177b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string UtilitiesDataCollector::printCompactStringHeader</definition>
+        <argsstring>() override</argsstring>
+        <name>printCompactStringHeader</name>
+        <reimplements refid="classDataCollector_1a98dcb4ec871d9c7fbf7545c64e5ccc67">printCompactStringHeader</reimplements>
+        <briefdescription>
+<para>Generates the header line for the compact, comma-delimited representation of utility data. This header provides general column titles for data such as combined storage, capacity, net inflow, ROFs, demand, insurance, contingency funds, debt service payments, and revenues. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>printCompactStringHeader</computeroutput> function in the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><simplesect kind="return"><para>A string containing the header line for the compact, comma-delimited representation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="211" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1ab72c4432d6816beb1f4f4b354fb3023d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void UtilitiesDataCollector::collect_data</definition>
+        <argsstring>() override</argsstring>
+        <name>collect_data</name>
+        <reimplements refid="classDataCollector_1a01486bf58acbe37b203f97b3b9a79c40">collect_data</reimplements>
+        <briefdescription>
+<para>Collects data for the utility and appends it to the respective data vectors. This includes combined storage, capacity, net inflow, ROFs, demand, insurance, contingency funds, debt service payments, revenues, and infrastructure net present costs. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>collect_data</computeroutput> function in the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="223" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a9d1478c486b9be64fa452b34258e8b03" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getCombined_storage</definition>
+        <argsstring>() const</argsstring>
+        <name>getCombined_storage</name>
+        <briefdescription>
+<para>Retrieves the vector of combined storage data collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the combined storage data for the utility. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="230" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a48369552a48650ea015b3ff18da5175f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getCapacity</definition>
+        <argsstring>() const</argsstring>
+        <name>getCapacity</name>
+        <briefdescription>
+<para>Retrieves the vector of storage capacity data collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the storage capacity data for the utility. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1adb6e9b219255d8bb1fb323d6e5582e5c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getGross_revenues</definition>
+        <argsstring>() const</argsstring>
+        <name>getGross_revenues</name>
+        <briefdescription>
+<para>Retrieves the vector of gross revenue data collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the gross revenue data for the utility. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a9cb52112e6175775842474e80a37023d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getContingency_fund_contribution</definition>
+        <argsstring>() const</argsstring>
+        <name>getContingency_fund_contribution</name>
+        <briefdescription>
+<para>Retrieves the vector of contingency fund contribution data collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the contingency fund contribution data for the utility. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a13635135acfe49ec8eb0b587af41c9f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getDebt_service_payments</definition>
+        <argsstring>() const</argsstring>
+        <name>getDebt_service_payments</name>
+        <briefdescription>
+<para>Retrieves the vector of weekly debt service payments collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the weekly debt service payments made by the utility. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a96d4541f68916996c0ac74d7d4ad6474" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getInsurance_contract_cost</definition>
+        <argsstring>() const</argsstring>
+        <name>getInsurance_contract_cost</name>
+        <briefdescription>
+<para>Retrieves the vector of weekly insurance contract costs paid by the utility collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the weekly insurance contract costs paid by the utility. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a911a0651222ac1d8185eef001fdb2ea8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getDrought_mitigation_cost</definition>
+        <argsstring>() const</argsstring>
+        <name>getDrought_mitigation_cost</name>
+        <briefdescription>
+<para>Retrieves the vector of drought mitigation costs paid by the utility collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the contingency fund contribution data for the utility. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a2fa923f7d2df2a31a20294279572aeb6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getContingency_fund_size</definition>
+        <argsstring>() const</argsstring>
+        <name>getContingency_fund_size</name>
+        <briefdescription>
+<para>Retrieves the vector of a utility&apos;s net contingency fund sizes as it changes across all weeks collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the contingency fund size data for the utility. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="279" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a0e09af9bbb446c502c0d10be477dcf00" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; vector&lt; int &gt; &gt; &amp;</type>
+        <definition>const vector&lt;vector&lt;int&gt; &gt;&amp; UtilitiesDataCollector::getPathways</definition>
+        <argsstring>() const</argsstring>
+        <name>getPathways</name>
+        <briefdescription>
+<para>Retrieves the 2D vector of infrastructure pathways (infrastructure IDs and their associated realizations) build by the utility. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a 2D vector of integers a utility&apos;s infrastructure pathways. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="286" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a90a0dbf95c1eaf8325c3703764408f84" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getNet_present_infrastructure_cost</definition>
+        <argsstring>() const</argsstring>
+        <name>getNet_present_infrastructure_cost</name>
+        <briefdescription>
+<para>Retrieves the vector of a utility&apos;s weekly net infrastructure net present cost collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the utility&apos;s infrastructure net present cost. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="293" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1aa9bc5b8d31c3a0bec03906cded8c0cf4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getSt_rof</definition>
+        <argsstring>() const</argsstring>
+        <name>getSt_rof</name>
+        <briefdescription>
+<para>Retrieves the vector of a utility&apos;s weekly short-term ROF collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the utility&apos;s short-term ROF. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="300" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1af7463f468d5aaa3a13bc610660323648" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getLt_rof</definition>
+        <argsstring>() const</argsstring>
+        <name>getLt_rof</name>
+        <briefdescription>
+<para>Retrieves the vector of a utility&apos;s weekly long-term ROF collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the utility&apos;s long-term ROF. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="307" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a78421c65929a05cd1312006bca24e658" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getRestricted_demand</definition>
+        <argsstring>() const</argsstring>
+        <name>getRestricted_demand</name>
+        <briefdescription>
+<para>Retrieves the vector of a utility&apos;s weekly volumetric restricted demand collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the utility&apos;s weekly restricted demand. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="314" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a11319f69ba0cf1c932502e8c35d7f741" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getUnrestricted_demand</definition>
+        <argsstring>() const</argsstring>
+        <name>getUnrestricted_demand</name>
+        <briefdescription>
+<para>Retrieves the vector of a utility&apos;s weekly volumetric unrestricted demand collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the utility&apos;s weekly unrestricted demand. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="321" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1a04b4760bce9c615d450d84cc27126ef7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getRecorded_annual_demand</definition>
+        <argsstring>() const</argsstring>
+        <name>getRecorded_annual_demand</name>
+        <briefdescription>
+<para>Retrieves the vector of a utility&apos;s recorded (historical) annual demand collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the utility&apos;s weekly restricted demand. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="328" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1afdfabc1bf2b9b2f8639744afeaa76e11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; UtilitiesDataCollector::getPresent_value_debt_service_payments</definition>
+        <argsstring>() const</argsstring>
+        <name>getPresent_value_debt_service_payments</name>
+        <briefdescription>
+<para>Retrieves the vector of the present value of a utility&apos;s weekly debt service payments collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to a vector of doubles containing the utility&apos;s weekly restricted demand. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="335" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtilitiesDataCollector_1af01392bbfae02a1fd9ee65b3c97a73a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void UtilitiesDataCollector::checkForNans</definition>
+        <argsstring>() const</argsstring>
+        <name>checkForNans</name>
+        <briefdescription>
+<para>Checks for <computeroutput>NaN</computeroutput> values in the most recent data entries collected by the <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput>. Throws a runtime error if any <computeroutput>NaN</computeroutput> value is detected. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If a <computeroutput>NaN</computeroutput> value is detected in any of the data fields for the utility. Additionally, logs a warning if the net present infrastructure cost exceeds an absurdly high threshold. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="346" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput> class is a subclass of the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class that implements the data collection of <ref refid="classUtility" kindref="compound">Utility</ref> objects. It is the main subclass that results in the Utilities&apos; output CSV files. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by bernardoct on 8/25/17. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="277">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="276">
+        <label>UtilitiesDataCollector</label>
+        <link refid="classUtilitiesDataCollector"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="279">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="278">
+        <label>UtilitiesDataCollector</label>
+        <link refid="classUtilitiesDataCollector"/>
+        <childnode refid="279" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" line="16" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/UtilitiesDataCollector.h" bodystart="16" bodyend="347"/>
+    <listofallmembers>
+      <member refid="classUtilitiesDataCollector_1ad288dee20ff2e20caaa1e6a67ad815ae" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>capacity</name></member>
+      <member refid="classUtilitiesDataCollector_1af01392bbfae02a1fd9ee65b3c97a73a3" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>checkForNans</name></member>
+      <member refid="classUtilitiesDataCollector_1ab72c4432d6816beb1f4f4b354fb3023d" prot="public" virt="virtual"><scope>UtilitiesDataCollector</scope><name>collect_data</name></member>
+      <member refid="classUtilitiesDataCollector_1ac5187dc598703630287ae17712f01b55" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>combined_storage</name></member>
+      <member refid="classUtilitiesDataCollector_1acf362c8f36ed94e85a7750111ee95275" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>contingency_fund_contribution</name></member>
+      <member refid="classUtilitiesDataCollector_1af7a33a0752ac627955ab1898aa008639" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>contingency_fund_size</name></member>
+      <member refid="classDataCollector_1a3f89b18f4ac0557d7374d49531a004c0" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>DataCollector</name></member>
+      <member refid="classUtilitiesDataCollector_1a04de6814b69ac521ac1533e4d7f5d6de" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>debt_service_payments</name></member>
+      <member refid="classUtilitiesDataCollector_1a8c6cbd05a930533e32f1ee374380d24b" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>drought_mitigation_cost</name></member>
+      <member refid="classUtilitiesDataCollector_1ae8662a9e4a483cdb117c47e04bee0f79" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>final_stored_volume</name></member>
+      <member refid="classUtilitiesDataCollector_1a48369552a48650ea015b3ff18da5175f" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getCapacity</name></member>
+      <member refid="classUtilitiesDataCollector_1a9d1478c486b9be64fa452b34258e8b03" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getCombined_storage</name></member>
+      <member refid="classUtilitiesDataCollector_1a9cb52112e6175775842474e80a37023d" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getContingency_fund_contribution</name></member>
+      <member refid="classUtilitiesDataCollector_1a2fa923f7d2df2a31a20294279572aeb6" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getContingency_fund_size</name></member>
+      <member refid="classUtilitiesDataCollector_1a13635135acfe49ec8eb0b587af41c9f1" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getDebt_service_payments</name></member>
+      <member refid="classUtilitiesDataCollector_1a911a0651222ac1d8185eef001fdb2ea8" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getDrought_mitigation_cost</name></member>
+      <member refid="classUtilitiesDataCollector_1adb6e9b219255d8bb1fb323d6e5582e5c" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getGross_revenues</name></member>
+      <member refid="classUtilitiesDataCollector_1a96d4541f68916996c0ac74d7d4ad6474" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getInsurance_contract_cost</name></member>
+      <member refid="classUtilitiesDataCollector_1af7463f468d5aaa3a13bc610660323648" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getLt_rof</name></member>
+      <member refid="classUtilitiesDataCollector_1a90a0dbf95c1eaf8325c3703764408f84" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getNet_present_infrastructure_cost</name></member>
+      <member refid="classUtilitiesDataCollector_1a0e09af9bbb446c502c0d10be477dcf00" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getPathways</name></member>
+      <member refid="classUtilitiesDataCollector_1afdfabc1bf2b9b2f8639744afeaa76e11" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getPresent_value_debt_service_payments</name></member>
+      <member refid="classUtilitiesDataCollector_1a04b4760bce9c615d450d84cc27126ef7" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getRecorded_annual_demand</name></member>
+      <member refid="classUtilitiesDataCollector_1a78421c65929a05cd1312006bca24e658" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getRestricted_demand</name></member>
+      <member refid="classUtilitiesDataCollector_1aa9bc5b8d31c3a0bec03906cded8c0cf4" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getSt_rof</name></member>
+      <member refid="classUtilitiesDataCollector_1a11319f69ba0cf1c932502e8c35d7f741" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>getUnrestricted_demand</name></member>
+      <member refid="classUtilitiesDataCollector_1ad107d45de75ad920142a6645f2657e5c" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>gross_revenues</name></member>
+      <member refid="classDataCollector_1a5cb840b6fbcf6afe364eef9114984383" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>id</name></member>
+      <member refid="classUtilitiesDataCollector_1a39b6a91decb12ef993f96a858d904afc" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>insurance_contract_cost</name></member>
+      <member refid="classUtilitiesDataCollector_1a0686118f05245bcef7c14f751dfc3534" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>insurance_payout</name></member>
+      <member refid="classUtilitiesDataCollector_1ae573a427a96761529f3c33cafb2ae523" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>lt_rof</name></member>
+      <member refid="classUtilitiesDataCollector_1a0ef14ef110831718c762c3558920c06c" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>lt_stor_rof</name></member>
+      <member refid="classUtilitiesDataCollector_1aa93d11b5e25070e6b72028c01dd3b28c" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>lt_trmt_rof</name></member>
+      <member refid="classDataCollector_1a3a9a5033592f72ada429aa20056162b9" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>name</name></member>
+      <member refid="classUtilitiesDataCollector_1ac86eb33899a451037dd27f3330378df2" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>net_present_infrastructure_cost</name></member>
+      <member refid="classUtilitiesDataCollector_1ab42e458d9475733cd2fa89353b7567f2" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>net_stream_inflow</name></member>
+      <member refid="classUtilitiesDataCollector_1a805182c7f423290135a5c92844cdbb4a" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>operator=</name></member>
+      <member refid="classUtilitiesDataCollector_1a8f3c2305f751b65af66b202a6050eab2" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>pathways</name></member>
+      <member refid="classUtilitiesDataCollector_1a7695eba96cf7a78740ca482bc0333055" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>present_valued_debt_service_payments</name></member>
+      <member refid="classUtilitiesDataCollector_1a57b5f9cd8ddf54154476749ab0977355" prot="public" virt="virtual"><scope>UtilitiesDataCollector</scope><name>printCompactString</name></member>
+      <member refid="classUtilitiesDataCollector_1ab3409c407783fd4451f310d2fc177b22" prot="public" virt="virtual"><scope>UtilitiesDataCollector</scope><name>printCompactStringHeader</name></member>
+      <member refid="classUtilitiesDataCollector_1a39e7d28a70a0f71b3f1cc28b19c7e2d9" prot="public" virt="virtual"><scope>UtilitiesDataCollector</scope><name>printTabularString</name></member>
+      <member refid="classUtilitiesDataCollector_1a796aa9d7637d8ed04dbd949ca2a34088" prot="public" virt="virtual"><scope>UtilitiesDataCollector</scope><name>printTabularStringHeaderLine1</name></member>
+      <member refid="classUtilitiesDataCollector_1ae502a096e8f4fdfdfd481ab2093f9771" prot="public" virt="virtual"><scope>UtilitiesDataCollector</scope><name>printTabularStringHeaderLine2</name></member>
+      <member refid="classUtilitiesDataCollector_1a9979294482388e8fe221e63c27eb7917" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>projected_demand_estimate</name></member>
+      <member refid="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>realization</name></member>
+      <member refid="classUtilitiesDataCollector_1a4799cdeea1483bbbb2507f0843aba40b" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>recorded_annual_demand</name></member>
+      <member refid="classUtilitiesDataCollector_1aa51e92337421be6412fb44b9ef0ea8d3" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>restricted_demand</name></member>
+      <member refid="classUtilitiesDataCollector_1a48de294ec73e9d95c31d08316ca6620a" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>st_rof</name></member>
+      <member refid="classUtilitiesDataCollector_1a2189076dc2e7c0ec6afb9169008d73a3" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>st_stor_rof</name></member>
+      <member refid="classUtilitiesDataCollector_1a95798f6b8cb9e6d2c5b359c8ccfb1a32" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>st_trmt_rof</name></member>
+      <member refid="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>table_width</name></member>
+      <member refid="classUtilitiesDataCollector_1a0b3587a8ce9176a8e73152c957ba9322" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>total_treatment_capacity</name></member>
+      <member refid="classDataCollector_1acad1c22d67a8eb3db056ba776a131900" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>type</name></member>
+      <member refid="classUtilitiesDataCollector_1a8af280724d0a10ea6fafbc426c04266a" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>unfulfilled_demand</name></member>
+      <member refid="classUtilitiesDataCollector_1adf6e8ba0fd80e4b2493916e15b7e369d" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>unrestricted_demand</name></member>
+      <member refid="classUtilitiesDataCollector_1a7aee55a1cbd0fcdca59339a9e78ed08b" prot="public" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>UtilitiesDataCollector</name></member>
+      <member refid="classUtilitiesDataCollector_1a215beae386004a66b72e40c3f07a7455" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>utility</name></member>
+      <member refid="classUtilitiesDataCollector_1ad329c0652d880f257f1ee73fbf2ee632" prot="private" virt="non-virtual"><scope>UtilitiesDataCollector</scope><name>waste_water_discharge</name></member>
+      <member refid="classDataCollector_1ab6e826d46e651419309efe1e635d6e14" prot="public" virt="virtual"><scope>UtilitiesDataCollector</scope><name>~DataCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

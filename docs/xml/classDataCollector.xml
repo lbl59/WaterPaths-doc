@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classDataCollector" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>DataCollector</compoundname>
+    <derivedcompoundref refid="classAllocatedIntakeDataCollector" prot="public" virt="non-virtual">AllocatedIntakeDataCollector</derivedcompoundref>
+    <derivedcompoundref refid="classEmptyDataCollector" prot="public" virt="non-virtual">EmptyDataCollector</derivedcompoundref>
+    <derivedcompoundref refid="classIntakeDataCollector" prot="public" virt="non-virtual">IntakeDataCollector</derivedcompoundref>
+    <derivedcompoundref refid="classJointWTPDataCollector" prot="public" virt="non-virtual">JointWTPDataCollector</derivedcompoundref>
+    <derivedcompoundref refid="classReservoirDataCollector" prot="public" virt="non-virtual">ReservoirDataCollector</derivedcompoundref>
+    <derivedcompoundref refid="classRestrictionsDataCollector" prot="public" virt="non-virtual">RestrictionsDataCollector</derivedcompoundref>
+    <derivedcompoundref refid="classTransfersDataCollector" prot="public" virt="non-virtual">TransfersDataCollector</derivedcompoundref>
+    <derivedcompoundref refid="classUtilitiesDataCollector" prot="public" virt="non-virtual">UtilitiesDataCollector</derivedcompoundref>
+    <derivedcompoundref refid="classWaterReuseDataCollector" prot="public" virt="non-virtual">WaterReuseDataCollector</derivedcompoundref>
+    <includes refid="DataCollector_8h" local="no">DataCollector.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classDataCollector_1a5cb840b6fbcf6afe364eef9114984383" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int DataCollector::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+<para>The unique ID of the data collector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="19" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataCollector_1acad1c22d67a8eb3db056ba776a131900" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int DataCollector::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>The type of data collector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="23" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int DataCollector::table_width</definition>
+        <argsstring></argsstring>
+        <name>table_width</name>
+        <briefdescription>
+<para>The width of the table to print the data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="27" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataCollector_1a3a9a5033592f72ada429aa20056162b9" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* DataCollector::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>The name of the data collector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="31" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long DataCollector::realization</definition>
+        <argsstring></argsstring>
+        <name>realization</name>
+        <briefdescription>
+<para>The realization number associated with the data collector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="35" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDataCollector_1a3f89b18f4ac0557d7374d49531a004c0" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DataCollector::DataCollector</definition>
+        <argsstring>(int id, const char *name, unsigned long realization, int type, int table_width)</argsstring>
+        <name>DataCollector</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>table_width</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class. This function initializes a <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object with the specified attributes. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor is marked as explicit to avoid implicit conversions from integer to <ref refid="classDataCollector" kindref="compound">DataCollector</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique identifier for the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object as a constant character pointer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realization</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The realization number associated with the <ref refid="classDataCollector" kindref="compound">DataCollector</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table_width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the data table. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataCollector_1ab6e826d46e651419309efe1e635d6e14" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual DataCollector::~DataCollector</definition>
+        <argsstring>()</argsstring>
+        <name>~DataCollector</name>
+        <briefdescription>
+<para>Destructor for the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function cleans up resources used by the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataCollector_1a397fccabe0223267eea8fc7cac0e59da" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string DataCollector::printTabularString</definition>
+        <argsstring>(int week)=0</argsstring>
+        <name>printTabularString</name>
+        <reimplementedby refid="classEmptyDataCollector_1a2bb44e454376ed518c4d89cf324b8bd7">printTabularString</reimplementedby>
+        <reimplementedby refid="classWaterReuseDataCollector_1af8b637ad080f354dc145f11580834da8">printTabularString</reimplementedby>
+        <reimplementedby refid="classRestrictionsDataCollector_1a45e5612e70ec98430e31271f68ca407e">printTabularString</reimplementedby>
+        <reimplementedby refid="classTransfersDataCollector_1a292b907e5c1000d8b3d868409637b9a6">printTabularString</reimplementedby>
+        <reimplementedby refid="classJointWTPDataCollector_1a9159c0e5c58ceb8b9bf86f01b53ecdef">printTabularString</reimplementedby>
+        <reimplementedby refid="classAllocatedReservoirDataCollector_1ae5a9aa9b2a3cffd8f5ffe983c8fcf6c8">printTabularString</reimplementedby>
+        <reimplementedby refid="classIntakeDataCollector_1ada2b88b7a05455cf6f2eebf82d37b3c5">printTabularString</reimplementedby>
+        <reimplementedby refid="classAllocatedIntakeDataCollector_1a8568c28b643b9a9199e2b91ae5ebbe83">printTabularString</reimplementedby>
+        <reimplementedby refid="classReservoirDataCollector_1a81777b029bf26be403b9f4d67f01588b">printTabularString</reimplementedby>
+        <reimplementedby refid="classUtilitiesDataCollector_1a39e7d28a70a0f71b3f1cc28b19c7e2d9">printTabularString</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Prints the data collected by the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object in a tabular format. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does not have an implementation in the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class and must be implemented by derived classes.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The week number to print the data for. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the data collected by the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object in a tabular format. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataCollector_1a2eac264fa5612aed5a830b12de4f4ae3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string DataCollector::printCompactString</definition>
+        <argsstring>(int week)=0</argsstring>
+        <name>printCompactString</name>
+        <reimplementedby refid="classEmptyDataCollector_1ad4a4ebbf610b3939e34442795a392dd5">printCompactString</reimplementedby>
+        <reimplementedby refid="classWaterReuseDataCollector_1a6b37aa4b2031cf0a1a1326da2bd64420">printCompactString</reimplementedby>
+        <reimplementedby refid="classRestrictionsDataCollector_1ab8b8c30dca6b2e41c1ef5e3ac7e29813">printCompactString</reimplementedby>
+        <reimplementedby refid="classTransfersDataCollector_1aa5385877143c67a4d300032160239cfe">printCompactString</reimplementedby>
+        <reimplementedby refid="classJointWTPDataCollector_1aadb9fb969b265c72555bb5a7d3ed945d">printCompactString</reimplementedby>
+        <reimplementedby refid="classAllocatedReservoirDataCollector_1a35f8125d428e65c737ff3360ae9bd0cd">printCompactString</reimplementedby>
+        <reimplementedby refid="classIntakeDataCollector_1ac39a40726fd4fe887425b24a10f04034">printCompactString</reimplementedby>
+        <reimplementedby refid="classReservoirDataCollector_1a0b68d7fa4a6d704350340d1ac3e8a1d2">printCompactString</reimplementedby>
+        <reimplementedby refid="classAllocatedIntakeDataCollector_1aeadb39cfe7fc84264e3bb83ed26b0621">printCompactString</reimplementedby>
+        <reimplementedby refid="classUtilitiesDataCollector_1a57b5f9cd8ddf54154476749ab0977355">printCompactString</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Prints the data collected by the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object in a compact format. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does not have an implementation in the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class and must be implemented by derived classes.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The week number to print the data for. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the data collected by the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object in a compact format. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataCollector_1a91619cfa9e9b8cefd2f7c20d5718b41e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string DataCollector::printTabularStringHeaderLine1</definition>
+        <argsstring>()=0</argsstring>
+        <name>printTabularStringHeaderLine1</name>
+        <reimplementedby refid="classEmptyDataCollector_1afa47b48abb2ed59c16f1253e55f93cf2">printTabularStringHeaderLine1</reimplementedby>
+        <reimplementedby refid="classRestrictionsDataCollector_1a2676a6693b254997d223fc1c437258ab">printTabularStringHeaderLine1</reimplementedby>
+        <reimplementedby refid="classWaterReuseDataCollector_1a1065ad3627b913dccb6ecbf0e6acc6e6">printTabularStringHeaderLine1</reimplementedby>
+        <reimplementedby refid="classTransfersDataCollector_1a7c797fbccf4326b206b29529059dd622">printTabularStringHeaderLine1</reimplementedby>
+        <reimplementedby refid="classJointWTPDataCollector_1a6b9ba2992f4a9c3a900ad675b8301d07">printTabularStringHeaderLine1</reimplementedby>
+        <reimplementedby refid="classAllocatedReservoirDataCollector_1ae82c7a68af1dce9003cccc6da1800e28">printTabularStringHeaderLine1</reimplementedby>
+        <reimplementedby refid="classIntakeDataCollector_1ae17ab7e6c75e77f5981f6a682597bb5c">printTabularStringHeaderLine1</reimplementedby>
+        <reimplementedby refid="classReservoirDataCollector_1a62e7c7abc34c8154b338dfbd284ed665">printTabularStringHeaderLine1</reimplementedby>
+        <reimplementedby refid="classAllocatedIntakeDataCollector_1ab4149a988e728ce54f89058f8f18dd18">printTabularStringHeaderLine1</reimplementedby>
+        <reimplementedby refid="classUtilitiesDataCollector_1a796aa9d7637d8ed04dbd949ca2a34088">printTabularStringHeaderLine1</reimplementedby>
+        <briefdescription>
+<para>Prints the header for the tabular data collected by the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does not have an implementation in the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class and must be implemented by derived classes.</para><para><simplesect kind="return"><para>A string containing the header for the tabular data collected by the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataCollector_1af01ea961314be2164f39e6d4cd59e443" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string DataCollector::printTabularStringHeaderLine2</definition>
+        <argsstring>()=0</argsstring>
+        <name>printTabularStringHeaderLine2</name>
+        <reimplementedby refid="classEmptyDataCollector_1aa71282121251d344d674223409445be9">printTabularStringHeaderLine2</reimplementedby>
+        <reimplementedby refid="classRestrictionsDataCollector_1afb3c49c2c9b152bb2372e2fcc198e1b8">printTabularStringHeaderLine2</reimplementedby>
+        <reimplementedby refid="classWaterReuseDataCollector_1a8cead3771efabeb62dcf069008810f43">printTabularStringHeaderLine2</reimplementedby>
+        <reimplementedby refid="classTransfersDataCollector_1ade6b896383f079d8973076e6b9a8053a">printTabularStringHeaderLine2</reimplementedby>
+        <reimplementedby refid="classJointWTPDataCollector_1ab5828bc2dec423f812b5591ea42e9972">printTabularStringHeaderLine2</reimplementedby>
+        <reimplementedby refid="classAllocatedReservoirDataCollector_1a30d8c59205862822f6548472ba62e537">printTabularStringHeaderLine2</reimplementedby>
+        <reimplementedby refid="classIntakeDataCollector_1a2855eb8eed71649309bd4d9336f258c0">printTabularStringHeaderLine2</reimplementedby>
+        <reimplementedby refid="classReservoirDataCollector_1ae2f8e808c5960608e510a64c7f00ad1b">printTabularStringHeaderLine2</reimplementedby>
+        <reimplementedby refid="classAllocatedIntakeDataCollector_1aeee44be0f105fb0d5feac72f4c80f7ff">printTabularStringHeaderLine2</reimplementedby>
+        <reimplementedby refid="classUtilitiesDataCollector_1ae502a096e8f4fdfdfd481ab2093f9771">printTabularStringHeaderLine2</reimplementedby>
+        <briefdescription>
+<para>Prints the second line of the header for the tabular data collected by the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does not have an implementation in the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class and must be implemented by derived classes.</para><para><simplesect kind="return"><para>A string containing the second line of the header for the tabular data collected by the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataCollector_1a98dcb4ec871d9c7fbf7545c64e5ccc67" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>string</type>
+        <definition>virtual string DataCollector::printCompactStringHeader</definition>
+        <argsstring>()=0</argsstring>
+        <name>printCompactStringHeader</name>
+        <reimplementedby refid="classEmptyDataCollector_1a345d478e92af2ab4bcbaeeae3c7a3faa">printCompactStringHeader</reimplementedby>
+        <reimplementedby refid="classRestrictionsDataCollector_1ad36ff12a666d72c92893c918715628f6">printCompactStringHeader</reimplementedby>
+        <reimplementedby refid="classWaterReuseDataCollector_1afef08bead3f2c60c2b9c975864456ef1">printCompactStringHeader</reimplementedby>
+        <reimplementedby refid="classTransfersDataCollector_1a29750b8b76fa82d70d4f472a0e36ceba">printCompactStringHeader</reimplementedby>
+        <reimplementedby refid="classJointWTPDataCollector_1a42bacc8ab8cc78e38715966c8dbe8de9">printCompactStringHeader</reimplementedby>
+        <reimplementedby refid="classAllocatedReservoirDataCollector_1adbedebdf593bee81447671fb8f6ef2fe">printCompactStringHeader</reimplementedby>
+        <reimplementedby refid="classIntakeDataCollector_1a42d56dd08e57a7e6e48812a2ab522439">printCompactStringHeader</reimplementedby>
+        <reimplementedby refid="classReservoirDataCollector_1aa8346433f037bbca41f3c8450f7f88cf">printCompactStringHeader</reimplementedby>
+        <reimplementedby refid="classAllocatedIntakeDataCollector_1a995c69f6e2fe615786b2b26fd349c6cb">printCompactStringHeader</reimplementedby>
+        <reimplementedby refid="classUtilitiesDataCollector_1ab3409c407783fd4451f310d2fc177b22">printCompactStringHeader</reimplementedby>
+        <briefdescription>
+<para>Prints the header for the compact data collected by the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does not have an implementation in the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class and must be implemented by derived classes.</para><para><simplesect kind="return"><para>A string containing the header for the compact data collected by the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classDataCollector_1a01486bf58acbe37b203f97b3b9a79c40" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void DataCollector::collect_data</definition>
+        <argsstring>()=0</argsstring>
+        <name>collect_data</name>
+        <reimplementedby refid="classEmptyDataCollector_1a2993f4e00acd2eff18bed2e39108e89f">collect_data</reimplementedby>
+        <reimplementedby refid="classWaterReuseDataCollector_1af4d8d437372c06d84ff889a5288cc96e">collect_data</reimplementedby>
+        <reimplementedby refid="classRestrictionsDataCollector_1a7d8b6433ec25a53ed50577c2cf89912d">collect_data</reimplementedby>
+        <reimplementedby refid="classTransfersDataCollector_1a2f5c4427699aab547ea0d3b74993752b">collect_data</reimplementedby>
+        <reimplementedby refid="classJointWTPDataCollector_1a64383431902c18f1d90a33fbcc211658">collect_data</reimplementedby>
+        <reimplementedby refid="classAllocatedReservoirDataCollector_1a8ef8451d2cc6eb01b205eee75ab93729">collect_data</reimplementedby>
+        <reimplementedby refid="classIntakeDataCollector_1aed1610e5419465b35041b05b9f60c212">collect_data</reimplementedby>
+        <reimplementedby refid="classReservoirDataCollector_1a5c2e1355c40e45b409168e98245eef95">collect_data</reimplementedby>
+        <reimplementedby refid="classAllocatedIntakeDataCollector_1a06906344679fed5e3d24352e98107537">collect_data</reimplementedby>
+        <reimplementedby refid="classUtilitiesDataCollector_1ab72c4432d6816beb1f4f4b354fb3023d">collect_data</reimplementedby>
+        <briefdescription>
+<para>Collects the data for the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function does not have an implementation in the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class and must be implemented by derived classes.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="111" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class is an abstract class that defines the interface for collecting data in the <ref refid="classTriangle" kindref="compound">Triangle</ref> Model. Created by bernardoct on 8/25/17. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="69">
+        <label>AllocatedIntakeDataCollector</label>
+        <link refid="classAllocatedIntakeDataCollector"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="73">
+        <label>ReservoirDataCollector</label>
+        <link refid="classReservoirDataCollector"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>AllocatedReservoirDataCollector</label>
+        <link refid="classAllocatedReservoirDataCollector"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>IntakeDataCollector</label>
+        <link refid="classIntakeDataCollector"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>QuaryDataCollector</label>
+        <link refid="classQuaryDataCollector"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>UtilitiesDataCollector</label>
+        <link refid="classUtilitiesDataCollector"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>EmptyDataCollector</label>
+        <link refid="classEmptyDataCollector"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>WaterReuseDataCollector</label>
+        <link refid="classWaterReuseDataCollector"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>RestrictionsDataCollector</label>
+        <link refid="classRestrictionsDataCollector"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>TransfersDataCollector</label>
+        <link refid="classTransfersDataCollector"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>JointWTPDataCollector</label>
+        <link refid="classJointWTPDataCollector"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" line="14" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base/DataCollector.h" bodystart="14" bodyend="112"/>
+    <listofallmembers>
+      <member refid="classDataCollector_1a01486bf58acbe37b203f97b3b9a79c40" prot="public" virt="pure-virtual"><scope>DataCollector</scope><name>collect_data</name></member>
+      <member refid="classDataCollector_1a3f89b18f4ac0557d7374d49531a004c0" prot="public" virt="non-virtual"><scope>DataCollector</scope><name>DataCollector</name></member>
+      <member refid="classDataCollector_1a5cb840b6fbcf6afe364eef9114984383" prot="public" virt="non-virtual"><scope>DataCollector</scope><name>id</name></member>
+      <member refid="classDataCollector_1a3a9a5033592f72ada429aa20056162b9" prot="public" virt="non-virtual"><scope>DataCollector</scope><name>name</name></member>
+      <member refid="classDataCollector_1a2eac264fa5612aed5a830b12de4f4ae3" prot="public" virt="pure-virtual"><scope>DataCollector</scope><name>printCompactString</name></member>
+      <member refid="classDataCollector_1a98dcb4ec871d9c7fbf7545c64e5ccc67" prot="public" virt="pure-virtual"><scope>DataCollector</scope><name>printCompactStringHeader</name></member>
+      <member refid="classDataCollector_1a397fccabe0223267eea8fc7cac0e59da" prot="public" virt="pure-virtual"><scope>DataCollector</scope><name>printTabularString</name></member>
+      <member refid="classDataCollector_1a91619cfa9e9b8cefd2f7c20d5718b41e" prot="public" virt="pure-virtual"><scope>DataCollector</scope><name>printTabularStringHeaderLine1</name></member>
+      <member refid="classDataCollector_1af01ea961314be2164f39e6d4cd59e443" prot="public" virt="pure-virtual"><scope>DataCollector</scope><name>printTabularStringHeaderLine2</name></member>
+      <member refid="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" prot="public" virt="non-virtual"><scope>DataCollector</scope><name>realization</name></member>
+      <member refid="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44" prot="public" virt="non-virtual"><scope>DataCollector</scope><name>table_width</name></member>
+      <member refid="classDataCollector_1acad1c22d67a8eb3db056ba776a131900" prot="public" virt="non-virtual"><scope>DataCollector</scope><name>type</name></member>
+      <member refid="classDataCollector_1ab6e826d46e651419309efe1e635d6e14" prot="public" virt="virtual"><scope>DataCollector</scope><name>~DataCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

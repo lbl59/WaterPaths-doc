@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classJointWTPDataCollector" kind="class" language="C++" prot="public">
+    <compoundname>JointWTPDataCollector</compoundname>
+    <basecompoundref refid="classDataCollector" prot="public" virt="non-virtual">DataCollector</basecompoundref>
+    <includes refid="JointWTPDataCollector_8h" local="no">JointWTPDataCollector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classJointWTPDataCollector_1a3048d1f2c2a94a01868ed997f4adb97a" prot="private" static="no" mutable="no">
+        <type><ref refid="classJointWTP" kindref="compound">JointWTP</ref> *</type>
+        <definition>JointWTP* JointWTPDataCollector::joint_wtp</definition>
+        <argsstring></argsstring>
+        <name>joint_wtp</name>
+        <briefdescription>
+<para>The <ref refid="classJointWTP" kindref="compound">JointWTP</ref> object that this data collector is collecting data for. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" line="19" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJointWTPDataCollector_1a766eb0d0fff3195035ba6f47582ff979" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; JointWTPDataCollector::utilities_with_allocations</definition>
+        <argsstring></argsstring>
+        <name>utilities_with_allocations</name>
+        <briefdescription>
+<para>The IDs of the utilities that have allocations at the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" line="23" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classJointWTPDataCollector_1aed1c5878f8e4a7d202d75e1a942c4262" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; JointWTPDataCollector::partner_allocated_treatment_capacities</definition>
+        <argsstring></argsstring>
+        <name>partner_allocated_treatment_capacities</name>
+        <briefdescription>
+<para>The allocated treatment capacities for each utility at the <ref refid="classJointWTP" kindref="compound">JointWTP</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" line="27" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classJointWTPDataCollector_1adcff7bd94e8f81a848b073d3a17c29ee" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>JointWTPDataCollector::JointWTPDataCollector</definition>
+        <argsstring>(JointWTP *joint_wtp, unsigned long realization)</argsstring>
+        <name>JointWTPDataCollector</name>
+        <param>
+          <type><ref refid="classJointWTP" kindref="compound">JointWTP</ref> *</type>
+          <declname>joint_wtp</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classJointWTPDataCollector" kindref="compound">JointWTPDataCollector</ref> for managing and collecting data from a Joint Water Treatment Plant (WTP). This function initializes the data collector with specific attributes for a Joint WTP. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>joint_wtp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="classJointWTP" kindref="compound">JointWTP</ref> object that this collector will manage. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realization</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unsigned long integer representing the realization (scenario or simulation ID). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTPDataCollector_1a9159c0e5c58ceb8b9bf86f01b53ecdef" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string JointWTPDataCollector::printTabularString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printTabularString</name>
+        <reimplements refid="classDataCollector_1a397fccabe0223267eea8fc7cac0e59da">printTabularString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Generates a tabular string representation of the Joint WTP data for a given week. This includes allocated treatment capacities for each utility partner with a treatment allocation to the Joint WTP, formatted in columns. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <ref refid="classDataCollector_1a397fccabe0223267eea8fc7cac0e59da" kindref="member">DataCollector::printTabularString()</ref> function.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the tabular data is being generated.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the tabular representation of the allocated treatment capacities for the specified week. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTPDataCollector_1aadb9fb969b265c72555bb5a7d3ed945d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string JointWTPDataCollector::printCompactString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printCompactString</name>
+        <reimplements refid="classDataCollector_1a2eac264fa5612aed5a830b12de4f4ae3">printCompactString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Generates a comma, delimited compact string representation of the Joint WTP data for a given week. This includes allocated treatment capacities for each utility partner with a treatment allocation to the Joint WTP. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <ref refid="classDataCollector_1a2eac264fa5612aed5a830b12de4f4ae3" kindref="member">DataCollector::printCompactString()</ref> function.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the compact data is being generated.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the compact representation of the allocated treatment capacities for the specified week. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTPDataCollector_1a6b9ba2992f4a9c3a900ad675b8301d07" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string JointWTPDataCollector::printTabularStringHeaderLine1</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine1</name>
+        <reimplements refid="classDataCollector_1a91619cfa9e9b8cefd2f7c20d5718b41e">printTabularStringHeaderLine1</reimplements>
+        <briefdescription>
+<para>Generates the first header line for a tabular representation of Joint WTP data. This line includes column headers for treatment capacities of utility partners. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <ref refid="classDataCollector_1a91619cfa9e9b8cefd2f7c20d5718b41e" kindref="member">DataCollector::printTabularStringHeaderLine1()</ref> function.</para><para><simplesect kind="return"><para>A string containing the first header line for the tabular representation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTPDataCollector_1ab5828bc2dec423f812b5591ea42e9972" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string JointWTPDataCollector::printTabularStringHeaderLine2</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine2</name>
+        <reimplements refid="classDataCollector_1af01ea961314be2164f39e6d4cd59e443">printTabularStringHeaderLine2</reimplements>
+        <briefdescription>
+<para>Generates the second header line for a tabular representation of Joint WTP data. This line includes column headers for treatment allocations of utility partners. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <ref refid="classDataCollector_1af01ea961314be2164f39e6d4cd59e443" kindref="member">DataCollector::printTabularStringHeaderLine2()</ref> function.</para><para><simplesect kind="return"><para>A string containing the first header line for the tabular representation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTPDataCollector_1a42bacc8ab8cc78e38715966c8dbe8de9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string JointWTPDataCollector::printCompactStringHeader</definition>
+        <argsstring>() override</argsstring>
+        <name>printCompactStringHeader</name>
+        <reimplements refid="classDataCollector_1a98dcb4ec871d9c7fbf7545c64e5ccc67">printCompactStringHeader</reimplements>
+        <briefdescription>
+<para>Generates a compact string header, in a comma-delimited format, for the Joint WTP data. This header includes column identifiers for allocated treatment capacities of utility partners. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <ref refid="classDataCollector_1a98dcb4ec871d9c7fbf7545c64e5ccc67" kindref="member">DataCollector::printCompactStringHeader()</ref> function.</para><para><simplesect kind="return"><para>A string containing the compact header representation for the Joint WTP data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classJointWTPDataCollector_1a64383431902c18f1d90a33fbcc211658" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void JointWTPDataCollector::collect_data</definition>
+        <argsstring>() override</argsstring>
+        <name>collect_data</name>
+        <reimplements refid="classDataCollector_1a01486bf58acbe37b203f97b3b9a79c40">collect_data</reimplements>
+        <briefdescription>
+<para>Collects data for the Joint WTP, specifically the allocated treatment capacities for utility partners. This function stores the treatment capacity data for the current week. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <ref refid="classDataCollector_1a01486bf58acbe37b203f97b3b9a79c40" kindref="member">DataCollector::collect_data()</ref> function.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" line="103" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <computeroutput><ref refid="classJointWTPDataCollector" kindref="compound">JointWTPDataCollector</ref></computeroutput> class is a subclass of the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class that implements the data collection of joint WTP objects. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by dgorelic on 11/4/2019. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="154">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="153">
+        <label>JointWTPDataCollector</label>
+        <link refid="classJointWTPDataCollector"/>
+        <childnode refid="154" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="156">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="155">
+        <label>JointWTPDataCollector</label>
+        <link refid="classJointWTPDataCollector"/>
+        <childnode refid="156" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" line="15" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/JointWTPDataCollector.h" bodystart="15" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classJointWTPDataCollector_1a64383431902c18f1d90a33fbcc211658" prot="public" virt="virtual"><scope>JointWTPDataCollector</scope><name>collect_data</name></member>
+      <member refid="classDataCollector_1a3f89b18f4ac0557d7374d49531a004c0" prot="public" virt="non-virtual"><scope>JointWTPDataCollector</scope><name>DataCollector</name></member>
+      <member refid="classDataCollector_1a5cb840b6fbcf6afe364eef9114984383" prot="public" virt="non-virtual"><scope>JointWTPDataCollector</scope><name>id</name></member>
+      <member refid="classJointWTPDataCollector_1a3048d1f2c2a94a01868ed997f4adb97a" prot="private" virt="non-virtual"><scope>JointWTPDataCollector</scope><name>joint_wtp</name></member>
+      <member refid="classJointWTPDataCollector_1adcff7bd94e8f81a848b073d3a17c29ee" prot="public" virt="non-virtual"><scope>JointWTPDataCollector</scope><name>JointWTPDataCollector</name></member>
+      <member refid="classDataCollector_1a3a9a5033592f72ada429aa20056162b9" prot="public" virt="non-virtual"><scope>JointWTPDataCollector</scope><name>name</name></member>
+      <member refid="classJointWTPDataCollector_1aed1c5878f8e4a7d202d75e1a942c4262" prot="private" virt="non-virtual"><scope>JointWTPDataCollector</scope><name>partner_allocated_treatment_capacities</name></member>
+      <member refid="classJointWTPDataCollector_1aadb9fb969b265c72555bb5a7d3ed945d" prot="public" virt="virtual"><scope>JointWTPDataCollector</scope><name>printCompactString</name></member>
+      <member refid="classJointWTPDataCollector_1a42bacc8ab8cc78e38715966c8dbe8de9" prot="public" virt="virtual"><scope>JointWTPDataCollector</scope><name>printCompactStringHeader</name></member>
+      <member refid="classJointWTPDataCollector_1a9159c0e5c58ceb8b9bf86f01b53ecdef" prot="public" virt="virtual"><scope>JointWTPDataCollector</scope><name>printTabularString</name></member>
+      <member refid="classJointWTPDataCollector_1a6b9ba2992f4a9c3a900ad675b8301d07" prot="public" virt="virtual"><scope>JointWTPDataCollector</scope><name>printTabularStringHeaderLine1</name></member>
+      <member refid="classJointWTPDataCollector_1ab5828bc2dec423f812b5591ea42e9972" prot="public" virt="virtual"><scope>JointWTPDataCollector</scope><name>printTabularStringHeaderLine2</name></member>
+      <member refid="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" prot="public" virt="non-virtual"><scope>JointWTPDataCollector</scope><name>realization</name></member>
+      <member refid="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44" prot="public" virt="non-virtual"><scope>JointWTPDataCollector</scope><name>table_width</name></member>
+      <member refid="classDataCollector_1acad1c22d67a8eb3db056ba776a131900" prot="public" virt="non-virtual"><scope>JointWTPDataCollector</scope><name>type</name></member>
+      <member refid="classJointWTPDataCollector_1a766eb0d0fff3195035ba6f47582ff979" prot="private" virt="non-virtual"><scope>JointWTPDataCollector</scope><name>utilities_with_allocations</name></member>
+      <member refid="classDataCollector_1ab6e826d46e651419309efe1e635d6e14" prot="public" virt="virtual"><scope>JointWTPDataCollector</scope><name>~DataCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

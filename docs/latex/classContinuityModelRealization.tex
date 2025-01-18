@@ -2,6 +2,11 @@
 \label{classContinuityModelRealization}\index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
 
 
+The {\ttfamily \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}}} subclass extends the {\ttfamily \mbox{\hyperlink{classContinuityModel}{Continuity\+Model}}} class to include the implementation of drought mitigation policies and the setting of short-\/term and long-\/term risks of failure.  
+
+
+
+
 {\ttfamily \#include $<$Continuity\+Model\+Realization.\+h$>$}
 
 Inheritance diagram for Continuity\+Model\+Realization\+:\begin{figure}[H]
@@ -13,7 +18,7 @@ Inheritance diagram for Continuity\+Model\+Realization\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classContinuityModelRealization_a641c096ac73586597b3e21a5d516c923}{Continuity\+Model\+Realization}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, const Graph \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ Drought\+Mitigation\+Policy $\ast$$>$ \&drought\+\_\+mitigation\+\_\+policies, vector$<$ Min\+Env\+Flow\+Control $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+control, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, vector$<$ double $>$ \&policy\+\_\+rdm, const unsigned int realization\+\_\+index)
+\mbox{\hyperlink{classContinuityModelRealization_a641c096ac73586597b3e21a5d516c923}{Continuity\+Model\+Realization}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, const \mbox{\hyperlink{classGraph}{Graph}} \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&drought\+\_\+mitigation\+\_\+policies, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+control, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, vector$<$ double $>$ \&policy\+\_\+rdm, const unsigned int realization\+\_\+index)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classContinuityModelRealization_afd53069e2f9ab96210ff153d16f01269}{$\sim$\+Continuity\+Model\+Realization}} () override
 \begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} class. \end{DoxyCompactList}\item 
@@ -21,7 +26,7 @@ void \mbox{\hyperlink{classContinuityModelRealization_ae2c40328beb671fa9b10ecc29
 \begin{DoxyCompactList}\small\item\em Sets the short-\/term risks of failure (R\+O\+Fs) for utilities. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classContinuityModelRealization_a1841f4ca49c150cf5d790f6d42496575}{apply\+Drought\+Mitigation\+Policies}} (int week)
 \begin{DoxyCompactList}\small\item\em Applies drought mitigation policies for the given week. \end{DoxyCompactList}\item 
-const vector$<$ Drought\+Mitigation\+Policy $\ast$ $>$ \mbox{\hyperlink{classContinuityModelRealization_afadb3e7f51ae7a09948ffc73d7eb7f6b}{get\+Drought\+\_\+mitigation\+\_\+policies}} () const
+const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$ $>$ \mbox{\hyperlink{classContinuityModelRealization_afadb3e7f51ae7a09948ffc73d7eb7f6b}{get\+Drought\+\_\+mitigation\+\_\+policies}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the drought mitigation policies associated with the continuity model realization. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classContinuityModelRealization_aa0168985144d26e1613cf20335affedb}{set\+Long\+Term\+R\+O\+Fs}} (const vector$<$ vector$<$ double $>$$>$ \&risks\+\_\+of\+\_\+failure, const int week)
 \begin{DoxyCompactList}\small\item\em Sets the long-\/term risks of failure (R\+O\+Fs) for utilities and triggers new infrastructure construction if necessary. \end{DoxyCompactList}\item 
@@ -33,7 +38,7 @@ void \mbox{\hyperlink{classContinuityModelRealization_ab87c140eaf87266ca81636059
 
 
 \subsection{Detailed Description}
-The \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}} class extends the \mbox{\hyperlink{classContinuityModel}{Continuity\+Model}} class to include the implementation of drought mitigation policies and the setting of short-\/term and long-\/term risks of failure.
+The {\ttfamily \mbox{\hyperlink{classContinuityModelRealization}{Continuity\+Model\+Realization}}} subclass extends the {\ttfamily \mbox{\hyperlink{classContinuityModel}{Continuity\+Model}}} class to include the implementation of drought mitigation policies and the setting of short-\/term and long-\/term risks of failure. 
 
 Created by bernardo on 1/26/17. 
 
@@ -42,7 +47,7 @@ Created by bernardo on 1/26/17.
 \index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
 \index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
 \subsubsection{\texorpdfstring{Continuity\+Model\+Realization()}{ContinuityModelRealization()}}
-{\footnotesize\ttfamily Continuity\+Model\+Realization\+::\+Continuity\+Model\+Realization (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{const Graph \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const vector$<$ Drought\+Mitigation\+Policy $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ Min\+Env\+Flow\+Control $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+control,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{policy\+\_\+rdm,  }\item[{const unsigned int}]{realization\+\_\+index }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Continuity\+Model\+Realization\+::\+Continuity\+Model\+Realization (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{const \mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+control,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{policy\+\_\+rdm,  }\item[{const unsigned int}]{realization\+\_\+index }\end{DoxyParamCaption})}
 
 
 
@@ -54,15 +59,15 @@ This constructor initializes a {\ttfamily \mbox{\hyperlink{classContinuityModelR
 \begin{DoxyParams}{Parameters}
 {\em water\+\_\+sources} & A vector of {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} pointers representing the water sources involved in the model. \\
 \hline
-{\em water\+\_\+sources\+\_\+graph} & A {\ttfamily Graph} representing the relationships and connections between the water sources. \\
+{\em water\+\_\+sources\+\_\+graph} & A {\ttfamily \mbox{\hyperlink{classGraph}{Graph}}} representing the relationships and connections between the water sources. \\
 \hline
 {\em water\+\_\+sources\+\_\+to\+\_\+utilities} & A 2D vector indicating which water sources are connected to which utilities. \\
 \hline
 {\em utilities} & A vector of {\ttfamily \mbox{\hyperlink{classUtility}{Utility}}} pointers representing the utilities that rely on the water sources. \\
 \hline
-{\em drought\+\_\+mitigation\+\_\+policies} & A vector of {\ttfamily Drought\+Mitigation\+Policy} pointers, each representing a policy for managing drought conditions. \\
+{\em drought\+\_\+mitigation\+\_\+policies} & A vector of {\ttfamily \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}} pointers, each representing a policy for managing drought conditions. \\
 \hline
-{\em min\+\_\+env\+\_\+flow\+\_\+control} & A vector of {\ttfamily Min\+Env\+Flow\+Control} pointers used to set minimum environmental flows for water sources. \\
+{\em min\+\_\+env\+\_\+flow\+\_\+control} & A vector of {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} pointers used to set minimum environmental flows for water sources. \\
 \hline
 {\em utilities\+\_\+rdm} & A vector containing random demand values for the utilities in the model. \\
 \hline
@@ -113,7 +118,7 @@ void
 \index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!get\+Drought\+\_\+mitigation\+\_\+policies@{get\+Drought\+\_\+mitigation\+\_\+policies}}
 \index{get\+Drought\+\_\+mitigation\+\_\+policies@{get\+Drought\+\_\+mitigation\+\_\+policies}!Continuity\+Model\+Realization@{Continuity\+Model\+Realization}}
 \subsubsection{\texorpdfstring{get\+Drought\+\_\+mitigation\+\_\+policies()}{getDrought\_mitigation\_policies()}}
-{\footnotesize\ttfamily const vector$<$Drought\+Mitigation\+Policy $\ast$$>$ Continuity\+Model\+Realization\+::get\+Drought\+\_\+mitigation\+\_\+policies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily const vector$<$\mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ Continuity\+Model\+Realization\+::get\+Drought\+\_\+mitigation\+\_\+policies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
@@ -122,7 +127,7 @@ Retrieves the drought mitigation policies associated with the continuity model r
 This function returns a vector containing pointers to all drought mitigation policies in the system.
 
 \begin{DoxyReturn}{Returns}
-A {\ttfamily vector} of pointers to {\ttfamily Drought\+Mitigation\+Policy} objects associated with the continuity model realization. 
+A {\ttfamily vector} of pointers to {\ttfamily \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}} objects associated with the continuity model realization. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classContinuityModelRealization_a5b9405156e8cc21c8781ea15ee46c8fe}\label{classContinuityModelRealization_a5b9405156e8cc21c8781ea15ee46c8fe}} 
 \index{Continuity\+Model\+Realization@{Continuity\+Model\+Realization}!set\+Long\+Term\+R\+O\+F\+Demand\+Projection\+Estimate@{set\+Long\+Term\+R\+O\+F\+Demand\+Projection\+Estimate}}

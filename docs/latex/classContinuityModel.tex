@@ -2,18 +2,23 @@
 \label{classContinuityModel}\index{Continuity\+Model@{Continuity\+Model}}
 
 
+The main {\ttfamily \mbox{\hyperlink{classContinuityModel}{Continuity\+Model}}} class for the \mbox{\hyperlink{classTriangle}{Triangle}} Model that enforces continuity in the water distribution system.  
+
+
+
+
 {\ttfamily \#include $<$Continuity\+Model.\+h$>$}
 
 Inheritance diagram for Continuity\+Model\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classContinuityModel}
+\includegraphics[height=3.000000cm]{classContinuityModel}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classContinuityModel_acadf595deb924bc08c9b702adf223365}{Continuity\+Model}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, vector$<$ Min\+Env\+Flow\+Control $\ast$$>$ \&\mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}, const Graph \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, unsigned long \mbox{\hyperlink{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7}{realization\+\_\+id}})
+\mbox{\hyperlink{classContinuityModel_acadf595deb924bc08c9b702adf223365}{Continuity\+Model}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&\mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}, const \mbox{\hyperlink{classGraph}{Graph}} \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, unsigned long \mbox{\hyperlink{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7}{realization\+\_\+id}})
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classContinuityModel}{Continuity\+Model}} object to simulate water flow and demand. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classContinuityModel_a7f46eb1f937b813226ca7fee96e5fd5c}{Continuity\+Model}} (\mbox{\hyperlink{classContinuityModel}{Continuity\+Model}} \&continuity\+\_\+model)
 \begin{DoxyCompactList}\small\item\em Copy constructor for a new Continuity Model object. \end{DoxyCompactList}\item 
@@ -41,10 +46,10 @@ vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$ $>$ \mbox{\h
 \begin{DoxyCompactList}\small\item\em A vector of \mbox{\hyperlink{classWaterSource}{Water\+Source}} objects representing the water sources in the system. \end{DoxyCompactList}\item 
 vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$ $>$ \mbox{\hyperlink{classContinuityModel_adc77a0214d553a961035ce86c93cf9be}{continuity\+\_\+utilities}}
 \begin{DoxyCompactList}\small\item\em A vector of \mbox{\hyperlink{classUtility}{Utility}} objects representing the utilities in the system. \end{DoxyCompactList}\item 
-vector$<$ Min\+Env\+Flow\+Control $\ast$ $>$ \mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}
-\begin{DoxyCompactList}\small\item\em A vector of Min\+Env\+Flow\+Control objects representing the minimum environmental flow controls in the system. \end{DoxyCompactList}\item 
-Graph \mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}
-\begin{DoxyCompactList}\small\item\em A bidirectional Graph object representing the connections between the water sources in the system. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$ $>$ \mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}
+\begin{DoxyCompactList}\small\item\em A vector of \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} objects representing the minimum environmental flow controls in the system. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGraph}{Graph}} \mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}
+\begin{DoxyCompactList}\small\item\em A bidirectional \mbox{\hyperlink{classGraph}{Graph}} object representing the connections between the water sources in the system. \end{DoxyCompactList}\item 
 vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}
 \begin{DoxyCompactList}\small\item\em A 2D vector of integers representing the water sources supplying each utility, irrespective of their online/offline status. \end{DoxyCompactList}\item 
 vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classContinuityModel_a6d80a7e50e022e2cdb5e912d5b3b5cf0}{water\+\_\+sources\+\_\+online\+\_\+to\+\_\+utilities}}
@@ -73,12 +78,17 @@ int \mbox{\hyperlink{classContinuityModel_aee4088e422a0d3723dc7895c96c9ebe3}{del
 \begin{DoxyCompactList}\small\item\em An array of integers representing the number of weeks to be added to the current week to get the actual current week of the realization. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+The main {\ttfamily \mbox{\hyperlink{classContinuityModel}{Continuity\+Model}}} class for the \mbox{\hyperlink{classTriangle}{Triangle}} Model that enforces continuity in the water distribution system. 
+
+Created by bernardo on 1/12/17. 
+
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classContinuityModel_acadf595deb924bc08c9b702adf223365}\label{classContinuityModel_acadf595deb924bc08c9b702adf223365}} 
 \index{Continuity\+Model@{Continuity\+Model}!Continuity\+Model@{Continuity\+Model}}
 \index{Continuity\+Model@{Continuity\+Model}!Continuity\+Model@{Continuity\+Model}}
 \subsubsection{\texorpdfstring{Continuity\+Model()}{ContinuityModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily Continuity\+Model\+::\+Continuity\+Model (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{vector$<$ Min\+Env\+Flow\+Control $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{const Graph \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{unsigned long}]{realization\+\_\+id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Continuity\+Model\+::\+Continuity\+Model (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{const \mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{unsigned long}]{realization\+\_\+id }\end{DoxyParamCaption})}
 
 
 
@@ -295,11 +305,11 @@ A vector of integers representing the downstream source of each water source.
 \index{Continuity\+Model@{Continuity\+Model}!min\+\_\+env\+\_\+flow\+\_\+controls@{min\+\_\+env\+\_\+flow\+\_\+controls}}
 \index{min\+\_\+env\+\_\+flow\+\_\+controls@{min\+\_\+env\+\_\+flow\+\_\+controls}!Continuity\+Model@{Continuity\+Model}}
 \subsubsection{\texorpdfstring{min\+\_\+env\+\_\+flow\+\_\+controls}{min\_env\_flow\_controls}}
-{\footnotesize\ttfamily vector$<$Min\+Env\+Flow\+Control $\ast$$>$ Continuity\+Model\+::min\+\_\+env\+\_\+flow\+\_\+controls\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ Continuity\+Model\+::min\+\_\+env\+\_\+flow\+\_\+controls\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
-A vector of Min\+Env\+Flow\+Control objects representing the minimum environmental flow controls in the system. 
+A vector of \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} objects representing the minimum environmental flow controls in the system. 
 
 \mbox{\Hypertarget{classContinuityModel_a3c25a0d17579eb0fdad0b18319441460}\label{classContinuityModel_a3c25a0d17579eb0fdad0b18319441460}} 
 \index{Continuity\+Model@{Continuity\+Model}!n\+\_\+sources@{n\+\_\+sources}}
@@ -385,11 +395,11 @@ A vector of doubles representing the capacities of each water source.
 \index{Continuity\+Model@{Continuity\+Model}!water\+\_\+sources\+\_\+graph@{water\+\_\+sources\+\_\+graph}}
 \index{water\+\_\+sources\+\_\+graph@{water\+\_\+sources\+\_\+graph}!Continuity\+Model@{Continuity\+Model}}
 \subsubsection{\texorpdfstring{water\+\_\+sources\+\_\+graph}{water\_sources\_graph}}
-{\footnotesize\ttfamily Graph Continuity\+Model\+::water\+\_\+sources\+\_\+graph\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGraph}{Graph}} Continuity\+Model\+::water\+\_\+sources\+\_\+graph\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
-A bidirectional Graph object representing the connections between the water sources in the system. 
+A bidirectional \mbox{\hyperlink{classGraph}{Graph}} object representing the connections between the water sources in the system. 
 
 \mbox{\Hypertarget{classContinuityModel_a6d80a7e50e022e2cdb5e912d5b3b5cf0}\label{classContinuityModel_a6d80a7e50e022e2cdb5e912d5b3b5cf0}} 
 \index{Continuity\+Model@{Continuity\+Model}!water\+\_\+sources\+\_\+online\+\_\+to\+\_\+utilities@{water\+\_\+sources\+\_\+online\+\_\+to\+\_\+utilities}}

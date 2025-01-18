@@ -1,0 +1,245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="Graph_8h" kind="file" language="C++">
+    <compoundname>Graph.h</compoundname>
+    <includes local="no">list</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">stdexcept</includes>
+    <includes refid="Constants_8h" local="yes">../Constants.h</includes>
+    <includedby refid="ContinuityModel_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/Base/ContinuityModel.h</includedby>
+    <includedby refid="DroughtMitigationPolicy_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</includedby>
+    <includedby refid="Transfers_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h</includedby>
+    <incdepgraph>
+      <node id="1590">
+        <label>list</label>
+      </node>
+      <node id="1595">
+        <label>cmath</label>
+      </node>
+      <node id="1592">
+        <label>stdexcept</label>
+      </node>
+      <node id="1593">
+        <label>../Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="1594" relation="include">
+        </childnode>
+        <childnode refid="1595" relation="include">
+        </childnode>
+        <childnode refid="1596" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1597" relation="include">
+        </childnode>
+      </node>
+      <node id="1597">
+        <label>string</label>
+      </node>
+      <node id="1594">
+        <label>map</label>
+      </node>
+      <node id="1591">
+        <label>vector</label>
+      </node>
+      <node id="1589">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h</label>
+        <link refid="Graph_8h"/>
+        <childnode refid="1590" relation="include">
+        </childnode>
+        <childnode refid="1591" relation="include">
+        </childnode>
+        <childnode refid="1592" relation="include">
+        </childnode>
+        <childnode refid="1593" relation="include">
+        </childnode>
+      </node>
+      <node id="1596">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1614">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/TransfersDataCollector.h</label>
+        <link refid="TransfersDataCollector_8h"/>
+      </node>
+      <node id="1609">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Restrictions.h</label>
+        <link refid="Restrictions_8h"/>
+        <childnode refid="1610" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+      <node id="1599">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/Base/ContinuityModel.h</label>
+        <link refid="ContinuityModel_8h"/>
+        <childnode refid="1600" relation="include">
+        </childnode>
+        <childnode refid="1605" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+      <node id="1611">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/ObjectivesCalculator.h</label>
+        <link refid="ObjectivesCalculator_8h"/>
+      </node>
+      <node id="1607">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/MasterDataCollector.h</label>
+        <link refid="MasterDataCollector_8h"/>
+        <childnode refid="1608" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+      <node id="1601">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/InsuranceStorageToROF.h</label>
+        <link refid="InsuranceStorageToROF_8h"/>
+      </node>
+      <node id="1606">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
+        <link refid="DroughtMitigationPolicy_8h"/>
+        <childnode refid="1600" relation="include">
+        </childnode>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1609" relation="include">
+        </childnode>
+        <childnode refid="1613" relation="include">
+        </childnode>
+        <childnode refid="1601" relation="include">
+        </childnode>
+        <childnode refid="1612" relation="include">
+        </childnode>
+      </node>
+      <node id="1608">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Base/Problem.h</label>
+        <link refid="Problem_8h"/>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1604" relation="include">
+        </childnode>
+      </node>
+      <node id="1610">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h</label>
+        <link refid="RestrictionsDataCollector_8h"/>
+        <childnode refid="1607" relation="include">
+        </childnode>
+        <childnode refid="1611" relation="include">
+        </childnode>
+      </node>
+      <node id="1598">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h</label>
+        <link refid="Graph_8h"/>
+        <childnode refid="1599" relation="include">
+        </childnode>
+        <childnode refid="1606" relation="include">
+        </childnode>
+        <childnode refid="1613" relation="include">
+        </childnode>
+      </node>
+      <node id="1600">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h</label>
+        <link refid="ContinuityModelRealization_8h"/>
+        <childnode refid="1601" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+      <node id="1613">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h</label>
+        <link refid="Transfers_8h"/>
+        <childnode refid="1614" relation="include">
+        </childnode>
+      </node>
+      <node id="1602">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h</label>
+        <link refid="Simulation_8h"/>
+        <childnode refid="1603" relation="include">
+        </childnode>
+        <childnode refid="1604" relation="include">
+        </childnode>
+      </node>
+      <node id="1603">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/PaperTestProblem.h</label>
+        <link refid="PaperTestProblem_8h"/>
+      </node>
+      <node id="1604">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Triangle.h</label>
+        <link refid="Triangle_8h"/>
+      </node>
+      <node id="1612">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h</label>
+        <link refid="Utils_8h"/>
+        <childnode refid="1608" relation="include">
+        </childnode>
+      </node>
+      <node id="1605">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h</label>
+        <link refid="ContinuityModelROF_8h"/>
+        <childnode refid="1601" relation="include">
+        </childnode>
+        <childnode refid="1602" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGraph" prot="public">Graph</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_GRAPH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_GRAPH_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;list&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdexcept&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Constants.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classGraph" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGraph" kindref="compound">Graph</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="classGraph_1a2b722f7cfa7a21e4cb5fae488b3d4dcc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGraph_1a2b722f7cfa7a21e4cb5fae488b3d4dcc" kindref="member">V</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="classGraph_1a9a7e34b482b020fa136fc8e0fa2d0030" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_edges<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31" refid="classGraph_1a04ab9c17ad31aa036def8db0f88b035b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>list&lt;int&gt;<sp/>*<ref refid="classGraph_1a04ab9c17ad31aa036def8db0f88b035b" kindref="member">adj</ref>;</highlight></codeline>
+<codeline lineno="35" refid="classGraph_1a2b9dc8c44ac87d67b061af1bf8dab2fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;int&gt;&gt;<sp/><ref refid="classGraph_1a2b9dc8c44ac87d67b061af1bf8dab2fa" kindref="member">upstream_sources</ref>;</highlight></codeline>
+<codeline lineno="39" refid="classGraph_1a1c89a48555f165ef3e80b85ca5655bea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;int&gt;&gt;<sp/><ref refid="classGraph_1a1c89a48555f165ef3e80b85ca5655bea" kindref="member">downstream_sources</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classGraph_1ad18af6207537a43b3cf53b56acaf92fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/><ref refid="classGraph_1ad18af6207537a43b3cf53b56acaf92fd" kindref="member">topological_order</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classGraph_1af903899bcb412f62ec4aa295eef9f45c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classGraph_1af903899bcb412f62ec4aa295eef9f45c" kindref="member">continuity_matrix_transpose</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addEdgeToEdgesList(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>u,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>topologicalSort();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>findUpstreamSources(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)</highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGraph" kindref="compound">Graph</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>V);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGraph" kindref="compound">Graph</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>getTopological_order()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addEdge(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>u,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;int&gt;&gt;<sp/>&amp;getUpstream_sources()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>getContinuityMatrix()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="classGraph" kindref="compound">Graph</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;int&gt;&gt;<sp/>getDownSources()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_GRAPH_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h"/>
+  </compounddef>
+</doxygen>

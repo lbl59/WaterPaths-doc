@@ -6,7 +6,7 @@
     <includes refid="ContinuityModelRealization_8h" local="no">ContinuityModelRealization.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classContinuityModelRealization_1a757dcf1de115c674fd5adcb040c5f277" prot="private" static="no" mutable="no">
-        <type>vector&lt; DroughtMitigationPolicy * &gt;</type>
+        <type>vector&lt; <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> * &gt;</type>
         <definition>vector&lt;DroughtMitigationPolicy *&gt; ContinuityModelRealization::drought_mitigation_policies</definition>
         <argsstring></argsstring>
         <name>drought_mitigation_policies</name>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="20" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" bodystart="20" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="21" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -30,7 +30,7 @@
           <declname>water_sources</declname>
         </param>
         <param>
-          <type>const Graph &amp;</type>
+          <type>const <ref refid="classGraph" kindref="compound">Graph</ref> &amp;</type>
           <declname>water_sources_graph</declname>
         </param>
         <param>
@@ -42,11 +42,11 @@
           <declname>utilities</declname>
         </param>
         <param>
-          <type>const vector&lt; DroughtMitigationPolicy *&gt; &amp;</type>
+          <type>const vector&lt; <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> *&gt; &amp;</type>
           <declname>drought_mitigation_policies</declname>
         </param>
         <param>
-          <type>vector&lt; MinEnvFlowControl *&gt; &amp;</type>
+          <type>vector&lt; <ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref> *&gt; &amp;</type>
           <declname>min_env_flow_control</declname>
         </param>
         <param>
@@ -80,7 +80,7 @@
 <parametername>water_sources_graph</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A <computeroutput>Graph</computeroutput> representing the relationships and connections between the water sources. </para></parameterdescription>
+<para>A <computeroutput><ref refid="classGraph" kindref="compound">Graph</ref></computeroutput> representing the relationships and connections between the water sources. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -101,14 +101,14 @@
 <parametername>drought_mitigation_policies</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A vector of <computeroutput>DroughtMitigationPolicy</computeroutput> pointers, each representing a policy for managing drought conditions. </para></parameterdescription>
+<para>A vector of <computeroutput><ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref></computeroutput> pointers, each representing a policy for managing drought conditions. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>min_env_flow_control</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A vector of <computeroutput>MinEnvFlowControl</computeroutput> pointers used to set minimum environmental flows for water sources. </para></parameterdescription>
+<para>A vector of <computeroutput><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref></computeroutput> pointers used to set minimum environmental flows for water sources. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -143,7 +143,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="44" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="45" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelRealization_1afd53069e2f9ab96210ff153d16f01269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -156,7 +156,7 @@
 <para>This function releases the memory allocated for drought mitigation policies. It ensures proper cleanup of resources associated with the <computeroutput><ref refid="classContinuityModelRealization" kindref="compound">ContinuityModelRealization</ref></computeroutput> object. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="62" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="63" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelRealization_1ae2c40328beb671fa9b10ecc2921b8375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -182,7 +182,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="78" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="79" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelRealization_1a1841f4ca49c150cf5d790f6d42496575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -208,21 +208,21 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="90" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="91" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelRealization_1afadb3e7f51ae7a09948ffc73d7eb7f6b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>const vector&lt; DroughtMitigationPolicy * &gt;</type>
+        <type>const vector&lt; <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> * &gt;</type>
         <definition>const vector&lt;DroughtMitigationPolicy *&gt; ContinuityModelRealization::getDrought_mitigation_policies</definition>
         <argsstring>() const</argsstring>
         <name>getDrought_mitigation_policies</name>
         <briefdescription>
 <para>Retrieves the drought mitigation policies associated with the continuity model realization. </para>        </briefdescription>
         <detaileddescription>
-<para>This function returns a vector containing pointers to all drought mitigation policies in the system.</para><para><simplesect kind="return"><para>A <computeroutput>vector</computeroutput> of pointers to <computeroutput>DroughtMitigationPolicy</computeroutput> objects associated with the continuity model realization. </para></simplesect>
+<para>This function returns a vector containing pointers to all drought mitigation policies in the system.</para><para><simplesect kind="return"><para>A <computeroutput>vector</computeroutput> of pointers to <computeroutput><ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref></computeroutput> objects associated with the continuity model realization. </para></simplesect>
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="101" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="102" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelRealization_1aa0168985144d26e1613cf20335affedb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -261,7 +261,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="117" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="118" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelRealization_1a5b9405156e8cc21c8781ea15ee46c8fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -287,7 +287,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="130" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="131" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelRealization_1ab87c140eaf87266ca81636059e948bb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -313,38 +313,45 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="143" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="144" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>The <computeroutput><ref refid="classContinuityModelRealization" kindref="compound">ContinuityModelRealization</ref></computeroutput> subclass extends the <computeroutput><ref refid="classContinuityModel" kindref="compound">ContinuityModel</ref></computeroutput> class to include the implementation of drought mitigation policies and the setting of short-term and long-term risks of failure. </para>    </briefdescription>
     <detaileddescription>
-<para>The <ref refid="classContinuityModelRealization" kindref="compound">ContinuityModelRealization</ref> class extends the <ref refid="classContinuityModel" kindref="compound">ContinuityModel</ref> class to include the implementation of drought mitigation policies and the setting of short-term and long-term risks of failure.</para><para>Created by bernardo on 1/26/17. </para>    </detaileddescription>
+<para>Created by bernardo on 1/26/17. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="32">
+      <node id="53">
         <label>ContinuityModelRealization</label>
         <link refid="classContinuityModelRealization"/>
-        <childnode refid="33" relation="public-inheritance">
+        <childnode refid="54" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="33">
+      <node id="54">
         <label>ContinuityModel</label>
         <link refid="classContinuityModel"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="34">
+      <node id="55">
         <label>ContinuityModelRealization</label>
         <link refid="classContinuityModelRealization"/>
-        <childnode refid="35" relation="public-inheritance">
+        <childnode refid="56" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="35">
+      <node id="56">
         <label>ContinuityModel</label>
         <link refid="classContinuityModel"/>
+        <childnode refid="57" relation="usage">
+          <edgelabel>water_sources_graph</edgelabel>
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Graph</label>
+        <link refid="classGraph"/>
       </node>
     </collaborationgraph>
-    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="15" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" bodystart="15" bodyend="144"/>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" line="16" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h" bodystart="16" bodyend="145"/>
     <listofallmembers>
       <member refid="classContinuityModelRealization_1a1841f4ca49c150cf5d790f6d42496575" prot="public" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>applyDroughtMitigationPolicies</name></member>
       <member refid="classContinuityModel_1adc77a0214d553a961035ce86c93cf9be" prot="protected" virt="non-virtual"><scope>ContinuityModelRealization</scope><name>continuity_utilities</name></member>

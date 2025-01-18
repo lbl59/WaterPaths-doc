@@ -1,0 +1,217 @@
+\hypertarget{classMinEnvironFlowControl}{}\section{Min\+Environ\+Flow\+Control Class Reference}
+\label{classMinEnvironFlowControl}\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+
+
+{\ttfamily \#include $<$Min\+Environ\+Flow\+Control.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMinEnvironFlowControl_a5b40c3f8da8c63513edb30804bf2ca01}{Min\+Environ\+Flow\+Control}} (int \mbox{\hyperlink{classMinEnvironFlowControl_a571d4d56086eb752aebb20b2d85fa8e7}{water\+\_\+source\+\_\+id}}, const vector$<$ int $>$ \&aux\+\_\+water\+\_\+sources\+\_\+id, const vector$<$ int $>$ \&aux\+\_\+utilities\+\_\+ids, int \mbox{\hyperlink{classMinEnvironFlowControl_a1a10a6b5720c934eef698cd72c9d883c}{type}})
+\begin{DoxyCompactList}\small\item\em Constructs a {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} object for managing minimum environmental flow controls on specified water sources. Initializes the object with associated water source and utility I\+Ds and a control type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMinEnvironFlowControl_a274fc5217a2a79d9c488d903708f5e68}{Min\+Environ\+Flow\+Control}} (const \mbox{\hyperlink{classMinEnvironFlowControl}{Min\+Environ\+Flow\+Control}} \&min\+\_\+env\+\_\+control)
+\begin{DoxyCompactList}\small\item\em Copy constructor for a {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} object. This function copies the attributes from an existing {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} object. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classMinEnvironFlowControl_ac7357455a533f7e6882cdb1ef303359b}{get\+Release}} (int week)=0
+\begin{DoxyCompactList}\small\item\em Get the Release object. This function is a pure virtual function that must be implemented by derived classes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMinEnvironFlowControl_a9dd9d33661f121dda9704288658ecf7e}{add\+Components}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \mbox{\hyperlink{classMinEnvironFlowControl_ac5be281d802ad1de433bed588bb13cfe}{water\+\_\+sources}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \mbox{\hyperlink{classMinEnvironFlowControl_a6c43408d05901838fa567c8e23a37009}{utilities}})
+\begin{DoxyCompactList}\small\item\em Associates water sources and utilities with the {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} object based on their I\+Ds. The associations are established by mapping the provided vectors of water sources and utilities to the corresponding I\+Ds. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classMinEnvironFlowControl_ae8ba384400c2d4302cefb9ca6eaec3a8}{set\+Realization}} (unsigned int r, vector$<$ double $>$ \&rdm\+\_\+factors)
+\begin{DoxyCompactList}\small\item\em Sets the realization for the {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} object. This function is a pure virtual function that must be implemented by derived classes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const vector$<$ int $>$ \mbox{\hyperlink{classMinEnvironFlowControl_a1544571a77557853d0cc8189bd29f4b3}{water\+\_\+sources\+\_\+ids}}
+\begin{DoxyCompactList}\small\item\em A vector of \mbox{\hyperlink{classWaterSource}{Water\+Source}} I\+Ds that require minimum environment flow control. \end{DoxyCompactList}\item 
+const vector$<$ int $>$ \mbox{\hyperlink{classMinEnvironFlowControl_ae5acc488f8a0b8aaf7a85cfc8a25bbf9}{utilities\+\_\+ids}}
+\begin{DoxyCompactList}\small\item\em A vector of \mbox{\hyperlink{classUtility}{Utility}} I\+Ds that enable minimum environment flow control. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classMinEnvironFlowControl_a571d4d56086eb752aebb20b2d85fa8e7}{water\+\_\+source\+\_\+id}}
+\begin{DoxyCompactList}\small\item\em The ID of the \mbox{\hyperlink{classWaterSource}{Water\+Source}} object that requires minimum environment flow control. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classMinEnvironFlowControl_a1a10a6b5720c934eef698cd72c9d883c}{type}}
+\begin{DoxyCompactList}\small\item\em The type of minimum environment flow control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$ $>$ \mbox{\hyperlink{classMinEnvironFlowControl_ac5be281d802ad1de433bed588bb13cfe}{water\+\_\+sources}}
+\begin{DoxyCompactList}\small\item\em A vector of \mbox{\hyperlink{classWaterSource}{Water\+Source}} objects that require minimum environment flow control. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$ $>$ \mbox{\hyperlink{classMinEnvironFlowControl_a3d55c77bc8ba49b14b20eb494868b3ce}{catchments}}
+\begin{DoxyCompactList}\small\item\em A vector of \mbox{\hyperlink{classCatchment}{Catchment}} objects that enable minimum environment flow control. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \mbox{\hyperlink{classMinEnvironFlowControl_a6c43408d05901838fa567c8e23a37009}{utilities}}
+\begin{DoxyCompactList}\small\item\em A vector of \mbox{\hyperlink{classUtility}{Utility}} objects that enable minimum environment flow control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMinEnvironFlowControl_a5b40c3f8da8c63513edb30804bf2ca01}\label{classMinEnvironFlowControl_a5b40c3f8da8c63513edb30804bf2ca01}} 
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\subsubsection{\texorpdfstring{Min\+Environ\+Flow\+Control()}{MinEnvironFlowControl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Min\+Environ\+Flow\+Control\+::\+Min\+Environ\+Flow\+Control (\begin{DoxyParamCaption}\item[{int}]{water\+\_\+source\+\_\+id,  }\item[{const vector$<$ int $>$ \&}]{aux\+\_\+water\+\_\+sources\+\_\+id,  }\item[{const vector$<$ int $>$ \&}]{aux\+\_\+utilities\+\_\+ids,  }\item[{int}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructs a {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} object for managing minimum environmental flow controls on specified water sources. Initializes the object with associated water source and utility I\+Ds and a control type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+source\+\_\+id} & Integer representing the ID of the primary water source under environmental flow control. \\
+\hline
+{\em water\+\_\+sources\+\_\+ids} & Reference to a vector of integers containing the I\+Ds of additional water sources affected by the control. \\
+\hline
+{\em aux\+\_\+utilities\+\_\+ids} & Reference to a vector of integers containing the I\+Ds of auxiliary utilities associated with the control. \\
+\hline
+{\em type} & Integer representing the type of environmental flow control. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classMinEnvironFlowControl_a274fc5217a2a79d9c488d903708f5e68}\label{classMinEnvironFlowControl_a274fc5217a2a79d9c488d903708f5e68}} 
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\subsubsection{\texorpdfstring{Min\+Environ\+Flow\+Control()}{MinEnvironFlowControl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Min\+Environ\+Flow\+Control\+::\+Min\+Environ\+Flow\+Control (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMinEnvironFlowControl}{Min\+Environ\+Flow\+Control}} \&}]{min\+\_\+env\+\_\+control }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for a {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} object. This function copies the attributes from an existing {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+\_\+env\+\_\+control} & Reference to the {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} object to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMinEnvironFlowControl_a9dd9d33661f121dda9704288658ecf7e}\label{classMinEnvironFlowControl_a9dd9d33661f121dda9704288658ecf7e}} 
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!add\+Components@{add\+Components}}
+\index{add\+Components@{add\+Components}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\subsubsection{\texorpdfstring{add\+Components()}{addComponents()}}
+{\footnotesize\ttfamily void Min\+Environ\+Flow\+Control\+::add\+Components (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$}]{water\+\_\+sources,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{utilities }\end{DoxyParamCaption})}
+
+
+
+Associates water sources and utilities with the {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} object based on their I\+Ds. The associations are established by mapping the provided vectors of water sources and utilities to the corresponding I\+Ds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+sources} & A vector of pointers to {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} objects representing all available water sources. \\
+\hline
+{\em utilities} & A vector of pointers to {\ttfamily \mbox{\hyperlink{classUtility}{Utility}}} objects representing all available utilities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMinEnvironFlowControl_ac7357455a533f7e6882cdb1ef303359b}\label{classMinEnvironFlowControl_ac7357455a533f7e6882cdb1ef303359b}} 
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!get\+Release@{get\+Release}}
+\index{get\+Release@{get\+Release}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\subsubsection{\texorpdfstring{get\+Release()}{getRelease()}}
+{\footnotesize\ttfamily virtual double Min\+Environ\+Flow\+Control\+::get\+Release (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Release object. This function is a pure virtual function that must be implemented by derived classes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The week for which the release is requested.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMinEnvironFlowControl_ae8ba384400c2d4302cefb9ca6eaec3a8}\label{classMinEnvironFlowControl_ae8ba384400c2d4302cefb9ca6eaec3a8}} 
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily virtual void Min\+Environ\+Flow\+Control\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned int}]{r,  }\item[{vector$<$ double $>$ \&}]{rdm\+\_\+factors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the realization for the {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} object. This function is a pure virtual function that must be implemented by derived classes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Unsigned long integer representing the realization ID. \\
+\hline
+{\em rdm\+\_\+factors} & Reference to a vector of doubles containing the R\+DM factors to be applied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classMinEnvironFlowControl_a3d55c77bc8ba49b14b20eb494868b3ce}\label{classMinEnvironFlowControl_a3d55c77bc8ba49b14b20eb494868b3ce}} 
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!catchments@{catchments}}
+\index{catchments@{catchments}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\subsubsection{\texorpdfstring{catchments}{catchments}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ Min\+Environ\+Flow\+Control\+::catchments\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A vector of \mbox{\hyperlink{classCatchment}{Catchment}} objects that enable minimum environment flow control. 
+
+\mbox{\Hypertarget{classMinEnvironFlowControl_a1a10a6b5720c934eef698cd72c9d883c}\label{classMinEnvironFlowControl_a1a10a6b5720c934eef698cd72c9d883c}} 
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!type@{type}}
+\index{type@{type}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily const int Min\+Environ\+Flow\+Control\+::type}
+
+
+
+The type of minimum environment flow control. 
+
+\mbox{\Hypertarget{classMinEnvironFlowControl_a6c43408d05901838fa567c8e23a37009}\label{classMinEnvironFlowControl_a6c43408d05901838fa567c8e23a37009}} 
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!utilities@{utilities}}
+\index{utilities@{utilities}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\subsubsection{\texorpdfstring{utilities}{utilities}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classUtility}{Utility}}$\ast$ $>$ Min\+Environ\+Flow\+Control\+::utilities\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A vector of \mbox{\hyperlink{classUtility}{Utility}} objects that enable minimum environment flow control. 
+
+\mbox{\Hypertarget{classMinEnvironFlowControl_ae5acc488f8a0b8aaf7a85cfc8a25bbf9}\label{classMinEnvironFlowControl_ae5acc488f8a0b8aaf7a85cfc8a25bbf9}} 
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!utilities\+\_\+ids@{utilities\+\_\+ids}}
+\index{utilities\+\_\+ids@{utilities\+\_\+ids}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\subsubsection{\texorpdfstring{utilities\+\_\+ids}{utilities\_ids}}
+{\footnotesize\ttfamily const vector$<$int$>$ Min\+Environ\+Flow\+Control\+::utilities\+\_\+ids}
+
+
+
+A vector of \mbox{\hyperlink{classUtility}{Utility}} I\+Ds that enable minimum environment flow control. 
+
+\mbox{\Hypertarget{classMinEnvironFlowControl_a571d4d56086eb752aebb20b2d85fa8e7}\label{classMinEnvironFlowControl_a571d4d56086eb752aebb20b2d85fa8e7}} 
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!water\+\_\+source\+\_\+id@{water\+\_\+source\+\_\+id}}
+\index{water\+\_\+source\+\_\+id@{water\+\_\+source\+\_\+id}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\subsubsection{\texorpdfstring{water\+\_\+source\+\_\+id}{water\_source\_id}}
+{\footnotesize\ttfamily const int Min\+Environ\+Flow\+Control\+::water\+\_\+source\+\_\+id}
+
+
+
+The ID of the \mbox{\hyperlink{classWaterSource}{Water\+Source}} object that requires minimum environment flow control. 
+
+\mbox{\Hypertarget{classMinEnvironFlowControl_ac5be281d802ad1de433bed588bb13cfe}\label{classMinEnvironFlowControl_ac5be281d802ad1de433bed588bb13cfe}} 
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!water\+\_\+sources@{water\+\_\+sources}}
+\index{water\+\_\+sources@{water\+\_\+sources}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\subsubsection{\texorpdfstring{water\+\_\+sources}{water\_sources}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ Min\+Environ\+Flow\+Control\+::water\+\_\+sources\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A vector of \mbox{\hyperlink{classWaterSource}{Water\+Source}} objects that require minimum environment flow control. 
+
+\mbox{\Hypertarget{classMinEnvironFlowControl_a1544571a77557853d0cc8189bd29f4b3}\label{classMinEnvironFlowControl_a1544571a77557853d0cc8189bd29f4b3}} 
+\index{Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}!water\+\_\+sources\+\_\+ids@{water\+\_\+sources\+\_\+ids}}
+\index{water\+\_\+sources\+\_\+ids@{water\+\_\+sources\+\_\+ids}!Min\+Environ\+Flow\+Control@{Min\+Environ\+Flow\+Control}}
+\subsubsection{\texorpdfstring{water\+\_\+sources\+\_\+ids}{water\_sources\_ids}}
+{\footnotesize\ttfamily const vector$<$int$>$ Min\+Environ\+Flow\+Control\+::water\+\_\+sources\+\_\+ids}
+
+
+
+A vector of \mbox{\hyperlink{classWaterSource}{Water\+Source}} I\+Ds that require minimum environment flow control. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Controls/\+Base/\mbox{\hyperlink{MinEnvironFlowControl_8h}{Min\+Environ\+Flow\+Control.\+h}}\end{DoxyCompactItemize}

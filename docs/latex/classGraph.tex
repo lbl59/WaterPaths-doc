@@ -1,0 +1,311 @@
+\hypertarget{classGraph}{}\section{Graph Class Reference}
+\label{classGraph}\index{Graph@{Graph}}
+
+
+A C++ program to print topological sorting of a graph using indegrees.  
+
+
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGraph_af3ff6b295df8bf3bee0bafd7c7d56915}{Graph}} (int \mbox{\hyperlink{classGraph_a2b722f7cfa7a21e4cb5fae488b3d4dcc}{V}})
+\begin{DoxyCompactList}\small\item\em Constructs a graph with a specified number of vertices. This constructor initializes the graph\textquotesingle{}s adjacency list and downstream sources structure. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGraph_ae4c72b8ac4d693c49800a4c7e273654f}{Graph}} ()
+\begin{DoxyCompactList}\small\item\em Base constructor for a new \mbox{\hyperlink{classGraph}{Graph}} object. \end{DoxyCompactList}\item 
+const vector$<$ int $>$ \mbox{\hyperlink{classGraph_a838b34813d6d5ddcfc9e452b357d98bd}{get\+Topological\+\_\+order}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the topological order of the graph. This function returns the precomputed topological order of the water sources (vertices) in the graph. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGraph_ad8c10df34357b2cd865c81e0c4f0bd8c}{add\+Edge}} (int u, int v)
+\begin{DoxyCompactList}\small\item\em Adds a directed edge (stream/pipes) to the graph and updates related structures. This function adds an connection from vertex {\ttfamily u} to vertex {\ttfamily v}, recalculates the topological order, updates upstream sources for all vertices, and adjusts the continuity matrix transpose. \end{DoxyCompactList}\item 
+const vector$<$ vector$<$ int $>$ $>$ \& \mbox{\hyperlink{classGraph_a1ae92c80c49d220aff1e04f653db1e9e}{get\+Upstream\+\_\+sources}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the upstream sources of each water source (vertex) in the graph. \end{DoxyCompactList}\item 
+const vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classGraph_adeb6eb873f20aef3e2b611a322deb647}{get\+Continuity\+Matrix}} () const
+\begin{DoxyCompactList}\small\item\em Constructs and returns the continuity matrix of the graph. This function returns a matrix in which rows correspond to vertexes. The first set of columns correspond to pipes/streams and the second set to flows in and out of vertexes. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classGraph_a1621cd1ffcf6a135cbc7e039c305627b}{$\sim$\+Graph}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classGraph}{Graph}} object. \end{DoxyCompactList}\item 
+const vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classGraph_aa41b35e6be8f6c4d555c7e9c1822809e}{get\+Down\+Sources}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the downstream sources of each water source (vertex) in the graph. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGraph_a6f175234dc3c87150a53eab5c4e586ef}{add\+Edge\+To\+Edges\+List}} (int u, int v)
+\begin{DoxyCompactList}\small\item\em Adds a directed edge (a stream) to the graph\textquotesingle{}s adjacency list and updates edge-\/related data structures. This function adds an edge from vertex {\ttfamily u} to vertex {\ttfamily v} in the adjacency list, updates the list of downstream sources for vertex {\ttfamily u}, and increments the total edge count. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classGraph_a915f9d58884a00083bb6e5a256141fae}{topological\+Sort}} ()
+\begin{DoxyCompactList}\small\item\em Performs a topological sort on the directed graph to sout sources from upstream to downstream.. This function computes a topological ordering of the vertices in the graph using Kahn\textquotesingle{}s algorithm. It detects cycles and returns an empty ordering if the graph contains a cycle. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classGraph_a95b0b6a7689c519d38e820cc3f86fc70}{find\+Upstream\+Sources}} (int id) const
+\begin{DoxyCompactList}\small\item\em Finds the upstream sources for a given vertex. This function identifies all vertices in the graph that have a directed edge leading to the specified vertex {\ttfamily id}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classGraph_a2b722f7cfa7a21e4cb5fae488b3d4dcc}{V}}
+\begin{DoxyCompactList}\small\item\em The number of water sources represented as vertices of the \mbox{\hyperlink{classGraph}{Graph}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classGraph_a9a7e34b482b020fa136fc8e0fa2d0030}{n\+\_\+edges}} = 0
+\begin{DoxyCompactList}\small\item\em The number of streams (edges) in the \mbox{\hyperlink{classGraph}{Graph}}. \end{DoxyCompactList}\item 
+list$<$ int $>$ $\ast$ \mbox{\hyperlink{classGraph_a04ab9c17ad31aa036def8db0f88b035b}{adj}}
+\begin{DoxyCompactList}\small\item\em A pointer to an array containing adjacency lists. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classGraph_a2b9dc8c44ac87d67b061af1bf8dab2fa}{upstream\+\_\+sources}}
+\begin{DoxyCompactList}\small\item\em A 2D vector containing the list of upstream sources for each vertex. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{classGraph_a1c89a48555f165ef3e80b85ca5655bea}{downstream\+\_\+sources}}
+\begin{DoxyCompactList}\small\item\em A 2D vector containing the list of downstream sources for each vertex. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classGraph_ad18af6207537a43b3cf53b56acaf92fd}{topological\+\_\+order}}
+\begin{DoxyCompactList}\small\item\em A vector containing the I\+Ds of the water sources (vertices) in topological order. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classGraph_af903899bcb412f62ec4aa295eef9f45c}{continuity\+\_\+matrix\+\_\+transpose}}
+\begin{DoxyCompactList}\small\item\em A 2D vector containing the continuity matrix of the \mbox{\hyperlink{classGraph}{Graph}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A C++ program to print topological sorting of a graph using indegrees. 
+
+Created by bernardo on 2/2/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGraph_af3ff6b295df8bf3bee0bafd7c7d56915}\label{classGraph_af3ff6b295df8bf3bee0bafd7c7d56915}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{Graph()}{Graph()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}\item[{int}]{V }\end{DoxyParamCaption})}
+
+
+
+Constructs a graph with a specified number of vertices. This constructor initializes the graph\textquotesingle{}s adjacency list and downstream sources structure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V} & The number of vertices in the graph. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGraph_ae4c72b8ac4d693c49800a4c7e273654f}\label{classGraph_ae4c72b8ac4d693c49800a4c7e273654f}} 
+\index{Graph@{Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{Graph()}{Graph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Graph\+::\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Base constructor for a new \mbox{\hyperlink{classGraph}{Graph}} object. 
+
+\mbox{\Hypertarget{classGraph_a1621cd1ffcf6a135cbc7e039c305627b}\label{classGraph_a1621cd1ffcf6a135cbc7e039c305627b}} 
+\index{Graph@{Graph}!````~Graph@{$\sim$\+Graph}}
+\index{````~Graph@{$\sim$\+Graph}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{$\sim$\+Graph()}{~Graph()}}
+{\footnotesize\ttfamily virtual Graph\+::$\sim$\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{classGraph}{Graph}} object. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGraph_ad8c10df34357b2cd865c81e0c4f0bd8c}\label{classGraph_ad8c10df34357b2cd865c81e0c4f0bd8c}} 
+\index{Graph@{Graph}!add\+Edge@{add\+Edge}}
+\index{add\+Edge@{add\+Edge}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{add\+Edge()}{addEdge()}}
+{\footnotesize\ttfamily void Graph\+::add\+Edge (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{int}]{v }\end{DoxyParamCaption})}
+
+
+
+Adds a directed edge (stream/pipes) to the graph and updates related structures. This function adds an connection from vertex {\ttfamily u} to vertex {\ttfamily v}, recalculates the topological order, updates upstream sources for all vertices, and adjusts the continuity matrix transpose. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & The source vertex of the edge. \\
+\hline
+{\em v} & The destination vertex of the edge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classGraph_a6f175234dc3c87150a53eab5c4e586ef}{add\+Edge\+To\+Edges\+List}}, \mbox{\hyperlink{classGraph_a915f9d58884a00083bb6e5a256141fae}{topological\+Sort}}, \mbox{\hyperlink{classGraph_a95b0b6a7689c519d38e820cc3f86fc70}{find\+Upstream\+Sources}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classGraph_a6f175234dc3c87150a53eab5c4e586ef}\label{classGraph_a6f175234dc3c87150a53eab5c4e586ef}} 
+\index{Graph@{Graph}!add\+Edge\+To\+Edges\+List@{add\+Edge\+To\+Edges\+List}}
+\index{add\+Edge\+To\+Edges\+List@{add\+Edge\+To\+Edges\+List}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{add\+Edge\+To\+Edges\+List()}{addEdgeToEdgesList()}}
+{\footnotesize\ttfamily void Graph\+::add\+Edge\+To\+Edges\+List (\begin{DoxyParamCaption}\item[{int}]{u,  }\item[{int}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Adds a directed edge (a stream) to the graph\textquotesingle{}s adjacency list and updates edge-\/related data structures. This function adds an edge from vertex {\ttfamily u} to vertex {\ttfamily v} in the adjacency list, updates the list of downstream sources for vertex {\ttfamily u}, and increments the total edge count. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & The source vertex (water source) of the edge. \\
+\hline
+{\em v} & The destination (water source) vertex of the edge.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a95b0b6a7689c519d38e820cc3f86fc70}\label{classGraph_a95b0b6a7689c519d38e820cc3f86fc70}} 
+\index{Graph@{Graph}!find\+Upstream\+Sources@{find\+Upstream\+Sources}}
+\index{find\+Upstream\+Sources@{find\+Upstream\+Sources}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{find\+Upstream\+Sources()}{findUpstreamSources()}}
+{\footnotesize\ttfamily vector$<$int$>$ Graph\+::find\+Upstream\+Sources (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Finds the upstream sources for a given vertex. This function identifies all vertices in the graph that have a directed edge leading to the specified vertex {\ttfamily id}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The vertex for which upstream sources are to be found.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector containing all upstream source vertices for the given vertex {\ttfamily id}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_adeb6eb873f20aef3e2b611a322deb647}\label{classGraph_adeb6eb873f20aef3e2b611a322deb647}} 
+\index{Graph@{Graph}!get\+Continuity\+Matrix@{get\+Continuity\+Matrix}}
+\index{get\+Continuity\+Matrix@{get\+Continuity\+Matrix}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+Continuity\+Matrix()}{getContinuityMatrix()}}
+{\footnotesize\ttfamily const vector$<$vector$<$double$>$ $>$ Graph\+::get\+Continuity\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Constructs and returns the continuity matrix of the graph. This function returns a matrix in which rows correspond to vertexes. The first set of columns correspond to pipes/streams and the second set to flows in and out of vertexes. 
+
+\begin{DoxyReturn}{Returns}
+A 2D vector representing the continuity matrix of the graph.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & If the number of edges and sources is inconsistent with the graph structure. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classGraph_aa41b35e6be8f6c4d555c7e9c1822809e}\label{classGraph_aa41b35e6be8f6c4d555c7e9c1822809e}} 
+\index{Graph@{Graph}!get\+Down\+Sources@{get\+Down\+Sources}}
+\index{get\+Down\+Sources@{get\+Down\+Sources}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+Down\+Sources()}{getDownSources()}}
+{\footnotesize\ttfamily const vector$<$vector$<$int$>$ $>$ Graph\+::get\+Down\+Sources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the downstream sources of each water source (vertex) in the graph. 
+
+\begin{DoxyReturn}{Returns}
+A constant 2D vector containing the I\+Ds of each vertex mapped to their respective downstream sources. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a838b34813d6d5ddcfc9e452b357d98bd}\label{classGraph_a838b34813d6d5ddcfc9e452b357d98bd}} 
+\index{Graph@{Graph}!get\+Topological\+\_\+order@{get\+Topological\+\_\+order}}
+\index{get\+Topological\+\_\+order@{get\+Topological\+\_\+order}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+Topological\+\_\+order()}{getTopological\_order()}}
+{\footnotesize\ttfamily const vector$<$int$>$ Graph\+::get\+Topological\+\_\+order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the topological order of the graph. This function returns the precomputed topological order of the water sources (vertices) in the graph. 
+
+\begin{DoxyReturn}{Returns}
+A constant vector containing the topological order of the vertices. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a1ae92c80c49d220aff1e04f653db1e9e}\label{classGraph_a1ae92c80c49d220aff1e04f653db1e9e}} 
+\index{Graph@{Graph}!get\+Upstream\+\_\+sources@{get\+Upstream\+\_\+sources}}
+\index{get\+Upstream\+\_\+sources@{get\+Upstream\+\_\+sources}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{get\+Upstream\+\_\+sources()}{getUpstream\_sources()}}
+{\footnotesize\ttfamily const vector$<$vector$<$int$>$ $>$\& Graph\+::get\+Upstream\+\_\+sources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the upstream sources of each water source (vertex) in the graph. 
+
+\begin{DoxyReturn}{Returns}
+A constant 2D vector containing the I\+Ds of each vertex mapped to their respective upstream sources. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGraph_a915f9d58884a00083bb6e5a256141fae}\label{classGraph_a915f9d58884a00083bb6e5a256141fae}} 
+\index{Graph@{Graph}!topological\+Sort@{topological\+Sort}}
+\index{topological\+Sort@{topological\+Sort}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{topological\+Sort()}{topologicalSort()}}
+{\footnotesize\ttfamily vector$<$int$>$ Graph\+::topological\+Sort (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Performs a topological sort on the directed graph to sout sources from upstream to downstream.. This function computes a topological ordering of the vertices in the graph using Kahn\textquotesingle{}s algorithm. It detects cycles and returns an empty ordering if the graph contains a cycle. 
+
+\begin{DoxyReturn}{Returns}
+A vector containing the topological order of the vertices. If the graph contains a cycle, the returned vector may be incomplete, and a message is printed to indicate the cycle detection. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classGraph_a04ab9c17ad31aa036def8db0f88b035b}\label{classGraph_a04ab9c17ad31aa036def8db0f88b035b}} 
+\index{Graph@{Graph}!adj@{adj}}
+\index{adj@{adj}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{adj}{adj}}
+{\footnotesize\ttfamily list$<$int$>$$\ast$ Graph\+::adj\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A pointer to an array containing adjacency lists. 
+
+\mbox{\Hypertarget{classGraph_af903899bcb412f62ec4aa295eef9f45c}\label{classGraph_af903899bcb412f62ec4aa295eef9f45c}} 
+\index{Graph@{Graph}!continuity\+\_\+matrix\+\_\+transpose@{continuity\+\_\+matrix\+\_\+transpose}}
+\index{continuity\+\_\+matrix\+\_\+transpose@{continuity\+\_\+matrix\+\_\+transpose}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{continuity\+\_\+matrix\+\_\+transpose}{continuity\_matrix\_transpose}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Graph\+::continuity\+\_\+matrix\+\_\+transpose\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A 2D vector containing the continuity matrix of the \mbox{\hyperlink{classGraph}{Graph}}. 
+
+\mbox{\Hypertarget{classGraph_a1c89a48555f165ef3e80b85ca5655bea}\label{classGraph_a1c89a48555f165ef3e80b85ca5655bea}} 
+\index{Graph@{Graph}!downstream\+\_\+sources@{downstream\+\_\+sources}}
+\index{downstream\+\_\+sources@{downstream\+\_\+sources}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{downstream\+\_\+sources}{downstream\_sources}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ Graph\+::downstream\+\_\+sources\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A 2D vector containing the list of downstream sources for each vertex. 
+
+\mbox{\Hypertarget{classGraph_a9a7e34b482b020fa136fc8e0fa2d0030}\label{classGraph_a9a7e34b482b020fa136fc8e0fa2d0030}} 
+\index{Graph@{Graph}!n\+\_\+edges@{n\+\_\+edges}}
+\index{n\+\_\+edges@{n\+\_\+edges}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{n\+\_\+edges}{n\_edges}}
+{\footnotesize\ttfamily int Graph\+::n\+\_\+edges = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The number of streams (edges) in the \mbox{\hyperlink{classGraph}{Graph}}. 
+
+\mbox{\Hypertarget{classGraph_ad18af6207537a43b3cf53b56acaf92fd}\label{classGraph_ad18af6207537a43b3cf53b56acaf92fd}} 
+\index{Graph@{Graph}!topological\+\_\+order@{topological\+\_\+order}}
+\index{topological\+\_\+order@{topological\+\_\+order}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{topological\+\_\+order}{topological\_order}}
+{\footnotesize\ttfamily vector$<$int$>$ Graph\+::topological\+\_\+order\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A vector containing the I\+Ds of the water sources (vertices) in topological order. 
+
+\mbox{\Hypertarget{classGraph_a2b9dc8c44ac87d67b061af1bf8dab2fa}\label{classGraph_a2b9dc8c44ac87d67b061af1bf8dab2fa}} 
+\index{Graph@{Graph}!upstream\+\_\+sources@{upstream\+\_\+sources}}
+\index{upstream\+\_\+sources@{upstream\+\_\+sources}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{upstream\+\_\+sources}{upstream\_sources}}
+{\footnotesize\ttfamily vector$<$vector$<$int$>$ $>$ Graph\+::upstream\+\_\+sources\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A 2D vector containing the list of upstream sources for each vertex. 
+
+\mbox{\Hypertarget{classGraph_a2b722f7cfa7a21e4cb5fae488b3d4dcc}\label{classGraph_a2b722f7cfa7a21e4cb5fae488b3d4dcc}} 
+\index{Graph@{Graph}!V@{V}}
+\index{V@{V}!Graph@{Graph}}
+\subsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily int Graph\+::V\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The number of water sources represented as vertices of the \mbox{\hyperlink{classGraph}{Graph}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Utils/\+Graph/\mbox{\hyperlink{Graph_8h}{Graph.\+h}}\end{DoxyCompactItemize}

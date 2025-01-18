@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classObjectivesCalculator" kind="class" language="C++" prot="public">
+    <compoundname>ObjectivesCalculator</compoundname>
+    <includes refid="ObjectivesCalculator_8h" local="no">ObjectivesCalculator.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classObjectivesCalculator_1a4f34e541d573cc2e0690cfcdd8460c16" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double ObjectivesCalculator::calculateReliabilityObjective</definition>
+        <argsstring>(const vector&lt; UtilitiesDataCollector *&gt; &amp;utility_collector, vector&lt; unsigned long &gt; realizations=vector&lt; unsigned long &gt;(0))</argsstring>
+        <name>calculateReliabilityObjective</name>
+        <param>
+          <type>const vector&lt; <ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref> *&gt; &amp;</type>
+          <declname>utility_collector</declname>
+        </param>
+        <param>
+          <type>vector&lt; unsigned long &gt;</type>
+          <declname>realizations</declname>
+          <defval>vector&lt; unsigned long &gt;(0)</defval>
+        </param>
+        <briefdescription>
+<para>Calculates the reliability objective based on storage capacity ratios. The reliability objective is defined as 1 minus the maximum annual failure ratio across realizations. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_collector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput> pointers containing utility data for all realizations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realizations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of realization indices to be evaluated. If empty, evaluates all realizations.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The calculated reliability objective as a double.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the objective value is infinite. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/ObjectivesCalculator.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classObjectivesCalculator_1ab01034697c3e9876fd06bff0c880b5ca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double ObjectivesCalculator::calculateRestrictionFrequencyObjective</definition>
+        <argsstring>(const vector&lt; RestrictionsDataCollector *&gt; &amp;restriction_data, vector&lt; unsigned long &gt; realizations=vector&lt; unsigned long &gt;(0))</argsstring>
+        <name>calculateRestrictionFrequencyObjective</name>
+        <param>
+          <type>const vector&lt; <ref refid="classRestrictionsDataCollector" kindref="compound">RestrictionsDataCollector</ref> *&gt; &amp;</type>
+          <declname>restriction_data</declname>
+        </param>
+        <param>
+          <type>vector&lt; unsigned long &gt;</type>
+          <declname>realizations</declname>
+          <defval>vector&lt; unsigned long &gt;(0)</defval>
+        </param>
+        <briefdescription>
+<para>Calculates the restriction frequency objective. The restriction frequency objective measures the average ratio of years with restrictions to total years across all realizations. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>restriction_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of <computeroutput><ref refid="classRestrictionsDataCollector" kindref="compound">RestrictionsDataCollector</ref></computeroutput> pointers containing restriction data for all realizations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realizations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of realization indices to be evaluated. If empty, evaluates all realizations.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The calculated restriction frequency objective as a double.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the objective value is infinite. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/ObjectivesCalculator.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classObjectivesCalculator_1ac0860168c763c1957be518ba1a019812" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double ObjectivesCalculator::calculateNetPresentCostInfrastructureObjective</definition>
+        <argsstring>(const vector&lt; UtilitiesDataCollector *&gt; &amp;utility_data, vector&lt; unsigned long &gt; realizations=vector&lt; unsigned long &gt;(0))</argsstring>
+        <name>calculateNetPresentCostInfrastructureObjective</name>
+        <param>
+          <type>const vector&lt; <ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref> *&gt; &amp;</type>
+          <declname>utility_data</declname>
+        </param>
+        <param>
+          <type>vector&lt; unsigned long &gt;</type>
+          <declname>realizations</declname>
+          <defval>vector&lt; unsigned long &gt;(0)</defval>
+        </param>
+        <briefdescription>
+<para>Calculates the net present cost (NPC) of infrastructure. This objective averages the total NPC across all realizations. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput> pointers containing utility data for all realizations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realizations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of realization indices to be evaluated. If empty, evaluates all realizations. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The average NPC as a double. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/ObjectivesCalculator.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classObjectivesCalculator_1a3de288911848c40150918d04879bdacb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double ObjectivesCalculator::calculatePeakFinancialCostsObjective</definition>
+        <argsstring>(const vector&lt; UtilitiesDataCollector *&gt; &amp;utility_data, vector&lt; unsigned long &gt; realizations=vector&lt; unsigned long &gt;(0))</argsstring>
+        <name>calculatePeakFinancialCostsObjective</name>
+        <param>
+          <type>const vector&lt; <ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref> *&gt; &amp;</type>
+          <declname>utility_data</declname>
+        </param>
+        <param>
+          <type>vector&lt; unsigned long &gt;</type>
+          <declname>realizations</declname>
+          <defval>vector&lt; unsigned long &gt;(0)</defval>
+        </param>
+        <briefdescription>
+<para>Calculates the peak financial costs objective. This objective is based on the maximum annual financial cost ratio across all realizations. It will also print a statement if the total financial cost is absurdly high (&gt;10^10). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput> pointers containing utility data for all realizations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realizations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of realization indices to be evaluated. If empty, evaluates all realizations.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The average peak financial cost as a double.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the objective value is infinite. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/ObjectivesCalculator.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classObjectivesCalculator_1aaa5a9bb621c4346e106809f58afe1bd1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double ObjectivesCalculator::calculateWorseCaseCostsObjective</definition>
+        <argsstring>(const vector&lt; UtilitiesDataCollector *&gt; &amp;utility_data, vector&lt; unsigned long &gt; realizations=vector&lt; unsigned long &gt;(0))</argsstring>
+        <name>calculateWorseCaseCostsObjective</name>
+        <param>
+          <type>const vector&lt; <ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref> *&gt; &amp;</type>
+          <declname>utility_data</declname>
+        </param>
+        <param>
+          <type>vector&lt; unsigned long &gt;</type>
+          <declname>realizations</declname>
+          <defval>vector&lt; unsigned long &gt;(0)</defval>
+        </param>
+        <briefdescription>
+<para>Calculates the worst-case financial costs objective. The worst-case cost is defined as the financial cost at the specified worst-case percentile across all realizations. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput> pointers containing utility data for all realizations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realizations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of realization indices to be evaluated. If empty, evaluates all realizations.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The worst-case financial cost as a double.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the objective value is infinite. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/ObjectivesCalculator.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classObjectivesCalculator_1a90547ef235596c39aa1bfe556d98b9f6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double ObjectivesCalculator::calculateUnitTotalCostObjective</definition>
+        <argsstring>(const vector&lt; UtilitiesDataCollector *&gt; &amp;utility_data, vector&lt; unsigned long &gt; realizations=vector&lt; unsigned long &gt;(0))</argsstring>
+        <name>calculateUnitTotalCostObjective</name>
+        <param>
+          <type>const vector&lt; <ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref> *&gt; &amp;</type>
+          <declname>utility_data</declname>
+        </param>
+        <param>
+          <type>vector&lt; unsigned long &gt;</type>
+          <declname>realizations</declname>
+          <defval>vector&lt; unsigned long &gt;(0)</defval>
+        </param>
+        <briefdescription>
+<para>Calculates the unit total cost objective. This objective is based on the ratio of infrastructure cost to total water demand, normalized by the first-year demand. The unit cost output is in $mil/MGD that should be converted to $/kGal for comparison with other objectives. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput> pointers containing utility data for all realizations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realizations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of realization indices to be evaluated. If empty, evaluates all realizations.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The average unit total cost as a double. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/ObjectivesCalculator.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classObjectivesCalculator_1aaf6480a2839ed67c9d5dd52d79e2954d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>static double ObjectivesCalculator::calculateNetPresentCostInfrastructureObjectiveForVariableDebtService</definition>
+        <argsstring>(const vector&lt; UtilitiesDataCollector *&gt; &amp;utility_data, vector&lt; unsigned long &gt; realizations=vector&lt; unsigned long &gt;(0))</argsstring>
+        <name>calculateNetPresentCostInfrastructureObjectiveForVariableDebtService</name>
+        <param>
+          <type>const vector&lt; <ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref> *&gt; &amp;</type>
+          <declname>utility_data</declname>
+        </param>
+        <param>
+          <type>vector&lt; unsigned long &gt;</type>
+          <declname>realizations</declname>
+          <defval>vector&lt; unsigned long &gt;(0)</defval>
+        </param>
+        <briefdescription>
+<para>Calculates the net present cost (NPC) for variable debt service. This objective averages the total NPC for variable debt service across all realizations. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of <computeroutput><ref refid="classUtilitiesDataCollector" kindref="compound">UtilitiesDataCollector</ref></computeroutput> pointers containing utility data for all realizations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realizations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of realization indices to be evaluated. If empty, evaluates all realizations. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The average NPC for variable debt service as a double. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/ObjectivesCalculator.h" line="112" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classObjectivesCalculator" kindref="compound">ObjectivesCalculator</ref> class calculates the objectives of the model based on the data collected during the simulation. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by bernardoct on 8/25/17. </para>    </detaileddescription>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/ObjectivesCalculator.h" line="14" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/ObjectivesCalculator.h" bodystart="14" bodyend="115"/>
+    <listofallmembers>
+      <member refid="classObjectivesCalculator_1ac0860168c763c1957be518ba1a019812" prot="public" virt="non-virtual"><scope>ObjectivesCalculator</scope><name>calculateNetPresentCostInfrastructureObjective</name></member>
+      <member refid="classObjectivesCalculator_1aaf6480a2839ed67c9d5dd52d79e2954d" prot="public" virt="non-virtual"><scope>ObjectivesCalculator</scope><name>calculateNetPresentCostInfrastructureObjectiveForVariableDebtService</name></member>
+      <member refid="classObjectivesCalculator_1a3de288911848c40150918d04879bdacb" prot="public" virt="non-virtual"><scope>ObjectivesCalculator</scope><name>calculatePeakFinancialCostsObjective</name></member>
+      <member refid="classObjectivesCalculator_1a4f34e541d573cc2e0690cfcdd8460c16" prot="public" virt="non-virtual"><scope>ObjectivesCalculator</scope><name>calculateReliabilityObjective</name></member>
+      <member refid="classObjectivesCalculator_1ab01034697c3e9876fd06bff0c880b5ca" prot="public" virt="non-virtual"><scope>ObjectivesCalculator</scope><name>calculateRestrictionFrequencyObjective</name></member>
+      <member refid="classObjectivesCalculator_1a90547ef235596c39aa1bfe556d98b9f6" prot="public" virt="non-virtual"><scope>ObjectivesCalculator</scope><name>calculateUnitTotalCostObjective</name></member>
+      <member refid="classObjectivesCalculator_1aaa5a9bb621c4346e106809f58afe1bd1" prot="public" virt="non-virtual"><scope>ObjectivesCalculator</scope><name>calculateWorseCaseCostsObjective</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

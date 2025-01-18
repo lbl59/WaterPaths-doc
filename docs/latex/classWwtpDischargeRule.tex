@@ -1,0 +1,243 @@
+\hypertarget{classWwtpDischargeRule}{}\section{Wwtp\+Discharge\+Rule Class Reference}
+\label{classWwtpDischargeRule}\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+
+
+This class is a subclass of the main {\ttfamily \mbox{\hyperlink{classControlRules}{Control\+Rules}}} class and represents the discharge rules for a wastewater treatment plant (W\+W\+TP).  
+
+
+
+
+{\ttfamily \#include $<$Wwtp\+Discharge\+Rule.\+h$>$}
+
+Inheritance diagram for Wwtp\+Discharge\+Rule\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWwtpDischargeRule}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWwtpDischargeRule_ae904657855c9d983ea0e5995109cd561}{Wwtp\+Discharge\+Rule}} (vector$<$ vector$<$ double $>$$>$ \mbox{\hyperlink{classWwtpDischargeRule_a5d193e0cbc2eb23e1b86e79fb2eafad3}{year\+\_\+series\+\_\+fraction\+\_\+discharge}}, vector$<$ int $>$ \mbox{\hyperlink{classWwtpDischargeRule_ac2f77a9fca93eef3fd26ff1d579130be}{discharge\+\_\+to\+\_\+source\+\_\+ids}})
+\begin{DoxyCompactList}\small\item\em Constructs a {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}} object to manage discharge rules for a wastewater treatment plant (W\+W\+TP). Initializes the object with time-\/series discharge fractions and the associated discharge source I\+Ds. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWwtpDischargeRule_ac433e50df1414ba4bbb40022832b43ff}{Wwtp\+Discharge\+Rule}} (\mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} \&wwtp\+\_\+discharge\+\_\+rule)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}} class. Creates a new {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}} object by copying the attributes from an existing one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} \& \mbox{\hyperlink{classWwtpDischargeRule_a59b2b1f56607106a237011f16a3915c3}{operator=}} (const \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} \&wwtp\+\_\+discharge\+\_\+rule)
+\begin{DoxyCompactList}\small\item\em Overloads the assignment operator for the {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}} class, allowing one object to be assigned the attributes of another. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classWwtpDischargeRule_a4cea07bf746d200c9ca3018405a77a46}{get\+\_\+dependent\+\_\+variable}} (double water\+\_\+source\+\_\+id) override
+\begin{DoxyCompactList}\small\item\em Throws an exception because this overload of {\ttfamily get\+\_\+dependent\+\_\+variable} is not valid for {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}}. This function serves to catch the potential error where the user misses the {\ttfamily week} parameter. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classWwtpDischargeRule_a3338c0fc43d656a6730ca72dd5d3e51e}{get\+\_\+dependent\+\_\+variable}} (int water\+\_\+source\+\_\+id) override
+\begin{DoxyCompactList}\small\item\em Retrieves the fraction of the week\textquotesingle{}s demand to be discharged as effluent for a specified water source and week. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classWwtpDischargeRule_a10eb6f901b6479dadc107e0a7c07e03b}{get\+\_\+dependent\+\_\+variable}} (double x, int week) override
+\begin{DoxyCompactList}\small\item\em Throws an exception because this overload of {\ttfamily get\+\_\+dependent\+\_\+variable} is not valid for {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}}. This function serves to catch the potential error where the user attempts to call {\ttfamily get\+\_\+dependent\+\_\+variable} with a double parameter. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classWwtpDischargeRule_a8eade5d595ec0fdc76769e67c7ffc5f4}{get\+\_\+dependent\+\_\+variable}} (int x, int week) override
+\begin{DoxyCompactList}\small\item\em Retrieves the fraction of the week\textquotesingle{}s demand to be discharged as effluent for a specified water source and week. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classWwtpDischargeRule_a5d193e0cbc2eb23e1b86e79fb2eafad3}{year\+\_\+series\+\_\+fraction\+\_\+discharge}}
+\begin{DoxyCompactList}\small\item\em A 2D vector of doubles containing the fraction of the week\textquotesingle{}s demand to be discharged as effluent. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classWwtpDischargeRule_ac2f77a9fca93eef3fd26ff1d579130be}{discharge\+\_\+to\+\_\+source\+\_\+ids}}
+\begin{DoxyCompactList}\small\item\em A vector of integers containing the I\+Ds of the sources receiving the effluent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is a subclass of the main {\ttfamily \mbox{\hyperlink{classControlRules}{Control\+Rules}}} class and represents the discharge rules for a wastewater treatment plant (W\+W\+TP). 
+
+Created by bernardoct on 6/26/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWwtpDischargeRule_ae904657855c9d983ea0e5995109cd561}\label{classWwtpDischargeRule_ae904657855c9d983ea0e5995109cd561}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{Wwtp\+Discharge\+Rule()}{WwtpDischargeRule()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Wwtp\+Discharge\+Rule\+::\+Wwtp\+Discharge\+Rule (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ double $>$$>$}]{year\+\_\+series\+\_\+fraction\+\_\+discharge,  }\item[{vector$<$ int $>$}]{discharge\+\_\+to\+\_\+source\+\_\+ids }\end{DoxyParamCaption})}
+
+
+
+Constructs a {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}} object to manage discharge rules for a wastewater treatment plant (W\+W\+TP). Initializes the object with time-\/series discharge fractions and the associated discharge source I\+Ds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year\+\_\+series\+\_\+fraction\+\_\+discharge} & A vector of vectors, where each inner vector contains discharge fractions for each week of the year. Each vector must have exactly 53 elements (to account for years with an extra week). \\
+\hline
+{\em discharge\+\_\+to\+\_\+source\+\_\+ids} & A vector of integers representing the I\+Ds of the discharge sources.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & If any time series does not have exactly 53 elements. \\
+\hline
+{\em std\+::invalid\+\_\+argument} & If the number of discharge time series does not match the number of discharge source I\+Ds. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classWwtpDischargeRule_ac433e50df1414ba4bbb40022832b43ff}\label{classWwtpDischargeRule_ac433e50df1414ba4bbb40022832b43ff}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{Wwtp\+Discharge\+Rule()}{WwtpDischargeRule()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Wwtp\+Discharge\+Rule\+::\+Wwtp\+Discharge\+Rule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} \&}]{wwtp\+\_\+discharge\+\_\+rule }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}} class. Creates a new {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}} object by copying the attributes from an existing one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wwtp\+\_\+discharge\+\_\+rule} & Reference to the {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}} object to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWwtpDischargeRule_a4cea07bf746d200c9ca3018405a77a46}\label{classWwtpDischargeRule_a4cea07bf746d200c9ca3018405a77a46}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}}
+\index{get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{get\+\_\+dependent\+\_\+variable()}{get\_dependent\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily double Wwtp\+Discharge\+Rule\+::get\+\_\+dependent\+\_\+variable (\begin{DoxyParamCaption}\item[{double}]{water\+\_\+source\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Throws an exception because this overload of {\ttfamily get\+\_\+dependent\+\_\+variable} is not valid for {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}}. This function serves to catch the potential error where the user misses the {\ttfamily week} parameter. 
+
+This function overrides the {\ttfamily get\+\_\+dependent\+\_\+variable} method in the {\ttfamily \mbox{\hyperlink{classControlRules}{Control\+Rules}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+source\+\_\+id} & Double placeholder parameter (not used in this implementation).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Always throws an exception with a message indicating that this overload is invalid. The valid method requires a both water source ID (int) and a week number (int) as arguments. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classControlRules}{Control\+Rules}}.
+
+\mbox{\Hypertarget{classWwtpDischargeRule_a3338c0fc43d656a6730ca72dd5d3e51e}\label{classWwtpDischargeRule_a3338c0fc43d656a6730ca72dd5d3e51e}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}}
+\index{get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{get\+\_\+dependent\+\_\+variable()}{get\_dependent\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily double Wwtp\+Discharge\+Rule\+::get\+\_\+dependent\+\_\+variable (\begin{DoxyParamCaption}\item[{int}]{water\+\_\+source\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the fraction of the week\textquotesingle{}s demand to be discharged as effluent for a specified water source and week. 
+
+This function overrides the {\ttfamily get\+\_\+dependent\+\_\+variable} method in the {\ttfamily \mbox{\hyperlink{classControlRules}{Control\+Rules}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+source\+\_\+id} & Integer representing the ID of the water source for which the discharge fraction is requested. \\
+\hline
+{\em week} & Integer representing the week for which the discharge fraction is requested.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double representing the fraction of the week\textquotesingle{}s demand to be discharged as effluent. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classControlRules}{Control\+Rules}}.
+
+\mbox{\Hypertarget{classWwtpDischargeRule_a10eb6f901b6479dadc107e0a7c07e03b}\label{classWwtpDischargeRule_a10eb6f901b6479dadc107e0a7c07e03b}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}}
+\index{get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{get\+\_\+dependent\+\_\+variable()}{get\_dependent\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily double Wwtp\+Discharge\+Rule\+::get\+\_\+dependent\+\_\+variable (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Throws an exception because this overload of {\ttfamily get\+\_\+dependent\+\_\+variable} is not valid for {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}}. This function serves to catch the potential error where the user attempts to call {\ttfamily get\+\_\+dependent\+\_\+variable} with a double parameter. 
+
+This function overrides the {\ttfamily get\+\_\+dependent\+\_\+variable} method in the {\ttfamily \mbox{\hyperlink{classControlRules}{Control\+Rules}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Double placeholder parameter (not used in this implementation). \\
+\hline
+{\em week} & Integer representing the week for which the discharge fraction is requested.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & Always throws an exception with a message indicating that this overload is invalid. The valid method requires a water source ID (int) and a week number (int) as arguments. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classControlRules}{Control\+Rules}}.
+
+\mbox{\Hypertarget{classWwtpDischargeRule_a8eade5d595ec0fdc76769e67c7ffc5f4}\label{classWwtpDischargeRule_a8eade5d595ec0fdc76769e67c7ffc5f4}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}}
+\index{get\+\_\+dependent\+\_\+variable@{get\+\_\+dependent\+\_\+variable}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{get\+\_\+dependent\+\_\+variable()}{get\_dependent\_variable()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily double Wwtp\+Discharge\+Rule\+::get\+\_\+dependent\+\_\+variable (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the fraction of the week\textquotesingle{}s demand to be discharged as effluent for a specified water source and week. 
+
+This function overrides the {\ttfamily get\+\_\+dependent\+\_\+variable} method in the {\ttfamily \mbox{\hyperlink{classControlRules}{Control\+Rules}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+source\+\_\+id} & Integer representing the ID of the water source for which the discharge fraction is requested. \\
+\hline
+{\em week} & Integer representing the week for which the discharge fraction is requested.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double representing the fraction of the week\textquotesingle{}s demand to be discharged as effluent. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classControlRules}{Control\+Rules}}.
+
+\mbox{\Hypertarget{classWwtpDischargeRule_a59b2b1f56607106a237011f16a3915c3}\label{classWwtpDischargeRule_a59b2b1f56607106a237011f16a3915c3}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!operator=@{operator=}}
+\index{operator=@{operator=}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}\& Wwtp\+Discharge\+Rule\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} \&}]{wwtp\+\_\+discharge\+\_\+rule }\end{DoxyParamCaption})}
+
+
+
+Overloads the assignment operator for the {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}} class, allowing one object to be assigned the attributes of another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wwtp\+\_\+discharge\+\_\+rule} & Reference to the {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}} object to be assigned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated {\ttfamily \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}} object after assignment. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classWwtpDischargeRule_ac2f77a9fca93eef3fd26ff1d579130be}\label{classWwtpDischargeRule_ac2f77a9fca93eef3fd26ff1d579130be}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!discharge\+\_\+to\+\_\+source\+\_\+ids@{discharge\+\_\+to\+\_\+source\+\_\+ids}}
+\index{discharge\+\_\+to\+\_\+source\+\_\+ids@{discharge\+\_\+to\+\_\+source\+\_\+ids}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{discharge\+\_\+to\+\_\+source\+\_\+ids}{discharge\_to\_source\_ids}}
+{\footnotesize\ttfamily vector$<$int$>$ Wwtp\+Discharge\+Rule\+::discharge\+\_\+to\+\_\+source\+\_\+ids}
+
+
+
+A vector of integers containing the I\+Ds of the sources receiving the effluent. 
+
+\mbox{\Hypertarget{classWwtpDischargeRule_a5d193e0cbc2eb23e1b86e79fb2eafad3}\label{classWwtpDischargeRule_a5d193e0cbc2eb23e1b86e79fb2eafad3}} 
+\index{Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}!year\+\_\+series\+\_\+fraction\+\_\+discharge@{year\+\_\+series\+\_\+fraction\+\_\+discharge}}
+\index{year\+\_\+series\+\_\+fraction\+\_\+discharge@{year\+\_\+series\+\_\+fraction\+\_\+discharge}!Wwtp\+Discharge\+Rule@{Wwtp\+Discharge\+Rule}}
+\subsubsection{\texorpdfstring{year\+\_\+series\+\_\+fraction\+\_\+discharge}{year\_series\_fraction\_discharge}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Wwtp\+Discharge\+Rule\+::year\+\_\+series\+\_\+fraction\+\_\+discharge}
+
+
+
+A 2D vector of doubles containing the fraction of the week\textquotesingle{}s demand to be discharged as effluent. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Controls/\mbox{\hyperlink{WwtpDischargeRule_8h}{Wwtp\+Discharge\+Rule.\+h}}\end{DoxyCompactItemize}

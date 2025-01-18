@@ -15,6 +15,24 @@
     <member refid="classAllocatedIntake_1ae16939ed474e15b9c68edcbf61696231" kind="function"><name>addTreatmentCapacity</name></member>
     <member refid="classAllocatedIntake_1a9c6161b8dd13b6ea70a9dafbb72afc91" kind="function"><name>getAvailableAllocatedVolume</name></member>
   </compound>
+  <compound refid="classAllocatedIntakeDataCollector" kind="class"><name>AllocatedIntakeDataCollector</name>
+    <member refid="classAllocatedIntakeDataCollector_1ae7406f5b291a637a0b62106f5f6d1bb3" kind="variable"><name>intake</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1afb5681f32cf5fbb2cfaa2becd9433610" kind="variable"><name>total_upstream_sources_inflows</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1ac2b3cd049fcf3539f210069c59480d2b" kind="variable"><name>demands</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1af5e747e4ae075e1af242a110e3e6488d" kind="variable"><name>wastewater_inflows</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1abb98d57d7cef8034a11227fd24c4e516" kind="variable"><name>outflows</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1abc8d7162b5de222169201d691148d440" kind="variable"><name>total_catchments_inflow</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1ad2b440dd61446f9ae087fdf37e470953" kind="variable"><name>allocated_demands</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1a42d528d79e3d236f5b0dbe1a2f747781" kind="variable"><name>allocated_supply_capacity</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1adbff67af63c60b3ee354c73ac76b4b4b" kind="variable"><name>utilities_with_allocations</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1a9b8eb277ad491771e9c2634c6fd3e11c" kind="function"><name>AllocatedIntakeDataCollector</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1a8568c28b643b9a9199e2b91ae5ebbe83" kind="function"><name>printTabularString</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1aeadb39cfe7fc84264e3bb83ed26b0621" kind="function"><name>printCompactString</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1ab4149a988e728ce54f89058f8f18dd18" kind="function"><name>printTabularStringHeaderLine1</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1aeee44be0f105fb0d5feac72f4c80f7ff" kind="function"><name>printTabularStringHeaderLine2</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1a995c69f6e2fe615786b2b26fd349c6cb" kind="function"><name>printCompactStringHeader</name></member>
+    <member refid="classAllocatedIntakeDataCollector_1a06906344679fed5e3d24352e98107537" kind="function"><name>collect_data</name></member>
+  </compound>
   <compound refid="classAllocatedIntakeExpansion" kind="class"><name>AllocatedIntakeExpansion</name>
     <member refid="classAllocatedIntakeExpansion_1a725ce7276ef9158da9fa7e2b1e217b14" kind="variable"><name>parent_intake_ID</name></member>
     <member refid="classAllocatedIntakeExpansion_1ad788b8373f3e8c9eb2a910c370e91f7c" kind="variable"><name>supply_capacity_added</name></member>
@@ -50,6 +68,20 @@
     <member refid="classAllocatedReservoir_1a9d025365aa42dfff13a0aac8ea7863fa" kind="function"><name>mass_balance_with_wq_pool</name></member>
     <member refid="classAllocatedReservoir_1ac719b30d5a83ba19ea722449ce9580e1" kind="function"><name>mass_balance_without_wq_pool</name></member>
     <member refid="classAllocatedReservoir_1a739d93f7981f597a3db0a3d613304b8e" kind="function"><name>setOnline</name></member>
+  </compound>
+  <compound refid="classAllocatedReservoirDataCollector" kind="class"><name>AllocatedReservoirDataCollector</name>
+    <member refid="classAllocatedReservoirDataCollector_1a8ba7549c1a0ec6afc6c87e264d2826e3" kind="variable"><name>allocated_reservoir</name></member>
+    <member refid="classAllocatedReservoirDataCollector_1a2bb0db4f265998a9bbe710a8e97f481b" kind="variable"><name>allocated_stored_volumes</name></member>
+    <member refid="classAllocatedReservoirDataCollector_1ac5b879439204459a7362751139636643" kind="variable"><name>utilities_with_allocations</name></member>
+    <member refid="classAllocatedReservoirDataCollector_1a512b8604164f43d08f961e0f433678e3" kind="function"><name>AllocatedReservoirDataCollector</name></member>
+    <member refid="classAllocatedReservoirDataCollector_1ae5a9aa9b2a3cffd8f5ffe983c8fcf6c8" kind="function"><name>printTabularString</name></member>
+    <member refid="classAllocatedReservoirDataCollector_1a35f8125d428e65c737ff3360ae9bd0cd" kind="function"><name>printCompactString</name></member>
+    <member refid="classAllocatedReservoirDataCollector_1ae82c7a68af1dce9003cccc6da1800e28" kind="function"><name>printTabularStringHeaderLine1</name></member>
+    <member refid="classAllocatedReservoirDataCollector_1a30d8c59205862822f6548472ba62e537" kind="function"><name>printTabularStringHeaderLine2</name></member>
+    <member refid="classAllocatedReservoirDataCollector_1adbedebdf593bee81447671fb8f6ef2fe" kind="function"><name>printCompactStringHeader</name></member>
+    <member refid="classAllocatedReservoirDataCollector_1a8ef8451d2cc6eb01b205eee75ab93729" kind="function"><name>collect_data</name></member>
+  </compound>
+  <compound refid="classArray" kind="class"><name>Array</name>
   </compound>
   <compound refid="classBalloonPaymentBond" kind="class"><name>BalloonPaymentBond</name>
     <member refid="classBalloonPaymentBond_1ac73d3ec9b640614f454d8cc8bd1ebbc3" kind="variable"><name>interest_payments</name></member>
@@ -104,6 +136,94 @@
     <member refid="classCatchment_1a5abab52eab9c05164f76e46954833989" kind="function"><name>operator=</name></member>
     <member refid="classCatchment_1af4e8206ffab5c901e5e4cdd6136f73a1" kind="function"><name>getStreamflow</name></member>
     <member refid="classCatchment_1ad76654af47dcd69bcb795c1c152409cc" kind="function"><name>setRealization</name></member>
+  </compound>
+  <compound refid="classConstants" kind="class"><name>Constants</name>
+    <member refid="classConstants_1aaec5cbce5156ab790b3ae0563692fd92" kind="variable"><name>BAR</name></member>
+    <member refid="classConstants_1aba68b8131899cf13623e86c9d409ba91" kind="variable"><name>DEFAULT_SYS_IO_DIR</name></member>
+    <member refid="classConstants_1a1e8f5e39c26fb06762a071611c7e432f" kind="variable"><name>NUM_OBJECTIVES</name></member>
+    <member refid="classConstants_1aa7919506e218b884dc934282a86594c1" kind="variable"><name>NUM_DEC_VAR</name></member>
+    <member refid="classConstants_1a236b0a1c5920895bf4bdf11191bf414d" kind="variable"><name>DEFAULT_DATA_DIR</name></member>
+    <member refid="classConstants_1ad340f8cb6d76396687295b5fc306e058" kind="variable"><name>DEFAULT_OUTPUT_DIR</name></member>
+    <member refid="classConstants_1a377a23d7faa55e3e687bd0b844c3d3e1" kind="variable"><name>DEFAULT_ROF_TABLES_DIR</name></member>
+    <member refid="classConstants_1a47e5f6358264d56dc9a22f4c62c68295" kind="variable"><name>DEFAULT_RDM_TSERIES_DIR</name></member>
+    <member refid="classConstants_1aa0186cda755aa12c57aedc70baba06e3" kind="variable"><name>TRANSFER_PEAKING_FACTOR</name></member>
+    <member refid="classConstants_1ada485574f11df42b67a01018139b95f8" kind="variable"><name>DEMAND_PEAKING_FACTOR</name></member>
+    <member refid="classConstants_1a19e84af3cbc6e1318beb22408c2a1f2f" kind="variable"><name>WEEKS_IN_YEAR</name></member>
+    <member refid="classConstants_1aa20160c39be15e5da1535608aaa0647c" kind="variable"><name>WEEKS_IN_YEAR_ROUND</name></member>
+    <member refid="classConstants_1aced78823f6427b8251297408fa8e6555" kind="variable"><name>NUMBER_OF_MONTHS</name></member>
+    <member refid="classConstants_1a74ad24a642858cc193c678329422e5ad" kind="variable"><name>WEEKS_IN_MONTH</name></member>
+    <member refid="classConstants_1a0317a1ca51d926d052cf05cdc9084c69" kind="variable"><name>WEEKS_ROF_SHORT_TERM</name></member>
+    <member refid="classConstants_1a9c3126b36f6a31b4c94e2a75f99a64c2" kind="variable"><name>WEEKS_ROF_LONG_TERM</name></member>
+    <member refid="classConstants_1ab10a2c333b2bada353b0eb77cdf98480" kind="variable"><name>SHORT_TERM_ROF</name></member>
+    <member refid="classConstants_1a24006f6443ebe1696dc264eafd778b02" kind="variable"><name>LONG_TERM_ROF</name></member>
+    <member refid="classConstants_1a81043bd68881023e5ad54e3bc1e5366f" kind="variable"><name>NUMBER_REALIZATIONS_INSURANCE_PRICING</name></member>
+    <member refid="classConstants_1ad6b1922ee031afa4b93176968d060fdf" kind="variable"><name>NUMBER_REALIZATIONS_ROF</name></member>
+    <member refid="classConstants_1ae054475fbe2eafea2a6417bddf4d07c9" kind="variable"><name>TREATMENT_CAPACITY_VS_VOLUME_SMALL_WTP</name></member>
+    <member refid="classConstants_1a878f191b27592c59c7d708412dee03af" kind="variable"><name>ILLIMITED_TREATMENT_CAPACITY</name></member>
+    <member refid="classConstants_1a70548c8633a7d66b6bae5178050ed0bb" kind="variable"><name>STORAGE_CAPACITY_RATIO_FAIL</name></member>
+    <member refid="classConstants_1a46c9ebb6c42fca2994f2caf1db259896" kind="variable"><name>TREATMENT_CAPACITY_RATIO_FAIL</name></member>
+    <member refid="classConstants_1a2cc0fab82afeeae81786ee3a0ce6ffd5" kind="variable"><name>NOT_ALLOCATED</name></member>
+    <member refid="classConstants_1a456bb204b432ca85d517cdf525f19f88" kind="variable"><name>MAX_NUMBER_OF_UTILITIES</name></member>
+    <member refid="classConstants_1a17512938d5dc372ac321263e35d4022e" kind="variable"><name>MAX_FRACTION_CF_TO_BUY_INSURANCE</name></member>
+    <member refid="classConstants_1a6d0d721f1c6d8807ddeb8b80eb165108" kind="variable"><name>APPLY_DEMAND_BUFFER</name></member>
+    <member refid="classConstants_1a5e07359a710816068fb67cda81726a3c" kind="variable"><name>APPLY_DEMAND_PROJECTION</name></member>
+    <member refid="classConstants_1a3c15db7c12db84d9262829a66f2a2279" kind="variable"><name>REPROJECT_DEMAND</name></member>
+    <member refid="classConstants_1a3b7155d857b5a095dffb26857b4fcef7" kind="variable"><name>LOOK_AHEAD_YEARS_FOR_DEMAND_PROJECTION</name></member>
+    <member refid="classConstants_1acf92dd535e2adb0204c63e83e63cc139" kind="variable"><name>LOOK_BACK_YEARS_FOR_DEMAND_REPROJECTION</name></member>
+    <member refid="classConstants_1ae0245d63696298b7ba5690950d7b5e87" kind="variable"><name>FREQUENCY_OF_DEMAND_REPROJECTION_YEARS</name></member>
+    <member refid="classConstants_1af15fd076d56c8c4fb25b7bd681e725d4" kind="variable"><name>PROPORTION_OF_UTILITY_CAPACITY_FLOOR</name></member>
+    <member refid="classConstants_1aac97910086c63a180ccdc3f8db62e34b" kind="variable"><name>INITIAL_MASSIVE_VALUE</name></member>
+    <member refid="classConstants_1a0c69d51d8e08085d471b00c76429814d" kind="variable"><name>USE_PRE_CALCULATED_ROF_TABLES</name></member>
+    <member refid="classConstants_1a192db63969de3947979b65b4b85f3c40" kind="variable"><name>DO_NOT_USE_PRE_CALCULATED_ROF_TABLES</name></member>
+    <member refid="classConstants_1a499714392cf1a633678cc58ebd2868fd" kind="variable"><name>EXPORT_ROF_TABLES</name></member>
+    <member refid="classConstants_1a8237ceba4a3f169b0a547b6a6d794955" kind="variable"><name>DO_NOT_EXPORT_OR_IMPORT_ROF_TABLES</name></member>
+    <member refid="classConstants_1aa64d03395b183f56f6f79d0701324ad1" kind="variable"><name>IMPORT_ROF_TABLES</name></member>
+    <member refid="classConstants_1a057a0def6be60913ea568f5aa9d05ef2" kind="variable"><name>BASE_STORAGE_CAPACITY_MULTIPLIER</name></member>
+    <member refid="classConstants_1a478993fe9b060f100867f2645bdc0baa" kind="variable"><name>ONLINE</name></member>
+    <member refid="classConstants_1a1e15aca4aeb3be807e35675fc09af563" kind="variable"><name>OFFLINE</name></member>
+    <member refid="classConstants_1ad5c946a1cf9d445d7753d3f30a39bf6e" kind="variable"><name>FAILURE</name></member>
+    <member refid="classConstants_1a0595423b130c1645b173272f50338ed9" kind="variable"><name>NON_FAILURE</name></member>
+    <member refid="classConstants_1a79ee092c4ca31cde9669f70d505eeca5" kind="variable"><name>NONE</name></member>
+    <member refid="classConstants_1a8e8b0a537619c378d03117c5ed1c3ea1" kind="variable"><name>NON_INITIALIZED</name></member>
+    <member refid="classConstants_1a5ea4764afe0d01f0a38edfd66e806710" kind="variable"><name>UTILITY</name></member>
+    <member refid="classConstants_1adb591bf3b5663c16cf71d3cbb044c3b3" kind="variable"><name>INTAKE</name></member>
+    <member refid="classConstants_1ac4de198cacb903f882cdc87818316bfb" kind="variable"><name>ALLOCATED_INTAKE</name></member>
+    <member refid="classConstants_1abb277ef800bc58d200c401e8bd00ac72" kind="variable"><name>INTAKE_EXPANSION</name></member>
+    <member refid="classConstants_1acc418f3316f985bab98c8e43b8be851c" kind="variable"><name>ALLOCATED_INTAKE_EXPANSION</name></member>
+    <member refid="classConstants_1aebb21b9413741e893ea6a79e379e9ec6" kind="variable"><name>WATER_REUSE</name></member>
+    <member refid="classConstants_1a127d57d404f178c91f8ed88823e24088" kind="variable"><name>RESERVOIR</name></member>
+    <member refid="classConstants_1ac5f85f1f073e01d6d42ac8b19fc73f1e" kind="variable"><name>QUARRY</name></member>
+    <member refid="classConstants_1a2769e2f1bc080457c78297402e78c8d1" kind="variable"><name>ALLOCATED_RESERVOIR</name></member>
+    <member refid="classConstants_1a6166f1b56ea9e9bfd63ac77cb99da31a" kind="variable"><name>NEW_WATER_TREATMENT_PLANT</name></member>
+    <member refid="classConstants_1a03285d30f40e59235e2a22e03373adc0" kind="variable"><name>NEW_JOINT_WATER_TREATMENT_PLANT</name></member>
+    <member refid="classConstants_1a303fe9105056b05e2ee7b7612949aca9" kind="variable"><name>NEW_JOINT_WATER_TREATMENT_PLANT_FIXED_ALLOCATIONS</name></member>
+    <member refid="classConstants_1a5e1282af581acbba5686b4179bb22bce" kind="variable"><name>NEW_JOINT_WATER_TREATMENT_PLANT_VARIABLE_ALLOCATIONS</name></member>
+    <member refid="classConstants_1ab321801ef588e5083ec368d310871523" kind="variable"><name>SOURCE_RELOCATION</name></member>
+    <member refid="classConstants_1a27567a2a62ed837986156cb424fdc83f" kind="variable"><name>RESERVOIR_EXPANSION</name></member>
+    <member refid="classConstants_1a02748ff742cda86e055625ce8ca43133" kind="variable"><name>TRANSFERS</name></member>
+    <member refid="classConstants_1a15c13d76b55f85fae5635ec62063c0d9" kind="variable"><name>RESTRICTIONS</name></member>
+    <member refid="classConstants_1a459317d221226a86ebf5b00a4f87eaa7" kind="variable"><name>INSURANCE_STORAGE_ROF</name></member>
+    <member refid="classConstants_1a0dbf27e9d760dfcdbde4c841e74bbf78" kind="variable"><name>SUPPLY_INSTRUMENT_LIM</name></member>
+    <member refid="classConstants_1a4f863f4b075dd82d9c79710fa7437734" kind="variable"><name>FINANCIAL_INSTRUMENT_LIM</name></member>
+    <member refid="classConstants_1ad8ac2a802acc9bbd547c676255692ff3" kind="variable"><name>FIXED_FLOW_CONTROLS</name></member>
+    <member refid="classConstants_1af73061aaa392892f65f5070d7a979895" kind="variable"><name>INFLOW_CONTROLS</name></member>
+    <member refid="classConstants_1a8e78b56c12f7896c4b1f225503172634" kind="variable"><name>SEASONAL_CONTROLS</name></member>
+    <member refid="classConstants_1ae986af9edd51d442ce78589435ddbf0b" kind="variable"><name>STORAGE_CONTROLS</name></member>
+    <member refid="classConstants_1ae35241b436f7a539f367f08b0f9fa9f1" kind="variable"><name>JORDAN_CONTROLS</name></member>
+    <member refid="classConstants_1a9ced0b193590ae665ccefc280837464d" kind="variable"><name>FALLS_CONTROLS</name></member>
+    <member refid="classConstants_1a4b19c9668b1dd7c3cf77b16029fe3cac" kind="variable"><name>LEVEL_DEBT_SERVICE</name></member>
+    <member refid="classConstants_1a08c9220e91237a5b58d648fb4298833c" kind="variable"><name>BALLOON_PAYMENT</name></member>
+    <member refid="classConstants_1aaa7f6235ee94070b06f049654312a63e" kind="variable"><name>FLOATING_INTEREST</name></member>
+    <member refid="classConstants_1a690e2cbce0018eae1ccf94bd8e5bebdd" kind="variable"><name>VARIABLE_INTEREST</name></member>
+    <member refid="classConstants_1a603925d07357a01d9531549e46b2936c" kind="variable"><name>BEGIN_REPAYMENT_AT_ISSUANCE</name></member>
+    <member refid="classConstants_1ab7a5abf9228bcce4babf9a84cd66deb1" kind="variable"><name>COLUMN_WIDTH</name></member>
+    <member refid="classConstants_1a52f7a9d94123775aa42a979c4c97dc71" kind="variable"><name>COLUMN_PRECISION</name></member>
+    <member refid="classConstants_1af0f5a11d2e7941b6c85ea1b8034d3996" kind="variable"><name>WORSE_CASE_COST_PERCENTILE</name></member>
+    <member refid="classConstants_1a5d8074ae29c79331d667f61728233a5b" kind="variable"><name>UNIT_COST_PERCENTILE</name></member>
+    <member refid="classConstants_1a40ab8dd088d886af9b5795c6b9db22ca" kind="variable"><name>INSURANCE_SHIFT_STORAGE_CURVES_THRESHOLD</name></member>
+    <member refid="classConstants_1ae6ed2a07e84e5c0280325e2dffd3ceca" kind="variable"><name>NO_OF_INSURANCE_STORAGE_TIERS</name></member>
+    <member refid="classConstants_1a35b1f837d5193288c3de6cb4d72f113c" kind="variable"><name>WATER_QUALITY_ALLOCATION</name></member>
+    <member refid="classConstants_1a2042beaed161d07b9d5cfaa2e8b958f3" kind="variable"><name>WEEK_OF_YEAR</name></member>
   </compound>
   <compound refid="classContinuityModel" kind="class"><name>ContinuityModel</name>
     <member refid="classContinuityModel_1a3980284a9dd08bae4e76398d1b0d6f55" kind="variable"><name>continuity_water_sources</name></member>
@@ -185,6 +305,90 @@
     <member refid="classContinuityModelROF_1a360a69a3811c56e8354a64a598228663" kind="function"><name>updateUtilityTreatmentAllocations</name></member>
     <member refid="classContinuityModelROF_1ad798adad5127a2674c5d4a3e8f24302d" kind="function"><name>getUt_storage_to_rof_table</name></member>
   </compound>
+  <compound refid="classControlRules" kind="class"><name>ControlRules</name>
+    <member refid="classControlRules_1a749c604121ebb1df808df9cd957a09f1" kind="function"><name>get_dependent_variable</name></member>
+    <member refid="classControlRules_1a56a42b40bf093237929a9c835dc9b772" kind="function"><name>get_dependent_variable</name></member>
+    <member refid="classControlRules_1a4c5a86844c3d6409bfa0ba2b058f82e7" kind="function"><name>get_dependent_variable</name></member>
+    <member refid="classControlRules_1a3d4b00d92729c6662473fc25707c0d9b" kind="function"><name>get_dependent_variable</name></member>
+  </compound>
+  <compound refid="classDataCollector" kind="class"><name>DataCollector</name>
+    <member refid="classDataCollector_1a5cb840b6fbcf6afe364eef9114984383" kind="variable"><name>id</name></member>
+    <member refid="classDataCollector_1acad1c22d67a8eb3db056ba776a131900" kind="variable"><name>type</name></member>
+    <member refid="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44" kind="variable"><name>table_width</name></member>
+    <member refid="classDataCollector_1a3a9a5033592f72ada429aa20056162b9" kind="variable"><name>name</name></member>
+    <member refid="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" kind="variable"><name>realization</name></member>
+    <member refid="classDataCollector_1a3f89b18f4ac0557d7374d49531a004c0" kind="function"><name>DataCollector</name></member>
+    <member refid="classDataCollector_1ab6e826d46e651419309efe1e635d6e14" kind="function"><name>~DataCollector</name></member>
+    <member refid="classDataCollector_1a397fccabe0223267eea8fc7cac0e59da" kind="function"><name>printTabularString</name></member>
+    <member refid="classDataCollector_1a2eac264fa5612aed5a830b12de4f4ae3" kind="function"><name>printCompactString</name></member>
+    <member refid="classDataCollector_1a91619cfa9e9b8cefd2f7c20d5718b41e" kind="function"><name>printTabularStringHeaderLine1</name></member>
+    <member refid="classDataCollector_1af01ea961314be2164f39e6d4cd59e443" kind="function"><name>printTabularStringHeaderLine2</name></member>
+    <member refid="classDataCollector_1a98dcb4ec871d9c7fbf7545c64e5ccc67" kind="function"><name>printCompactStringHeader</name></member>
+    <member refid="classDataCollector_1a01486bf58acbe37b203f97b3b9a79c40" kind="function"><name>collect_data</name></member>
+  </compound>
+  <compound refid="classDataSeries" kind="class"><name>DataSeries</name>
+    <member refid="classDataSeries_1ac49042cab004e46a8183cc10183fbfcd" kind="variable"><name>series_x</name></member>
+    <member refid="classDataSeries_1a4a8cff07f177a4787904ed1cd746bf23" kind="variable"><name>series_y</name></member>
+    <member refid="classDataSeries_1ad4a99b265519d2f57b787c03f2cf2f83" kind="variable"><name>length</name></member>
+    <member refid="classDataSeries_1a8af4ff388a574c8b836c2880492a8423" kind="function"><name>DataSeries</name></member>
+    <member refid="classDataSeries_1a8bc2554fe0708acf648adc9546a005e1" kind="function"><name>getSeries_x</name></member>
+    <member refid="classDataSeries_1a3cb684ebcbdd6d9969996f306bed8b53" kind="function"><name>get_dependent_variable</name></member>
+    <member refid="classDataSeries_1a57c3737304a489a3ae9cae5910fc5337" kind="function"><name>get_dependent_variable</name></member>
+    <member refid="classDataSeries_1a1242b9fdbdbb4e91a0e8b9e2383085d8" kind="function"><name>get_dependent_variable</name></member>
+    <member refid="classDataSeries_1a16a0aab69c764944dbb4a55b7432f37b" kind="function"><name>get_dependent_variable</name></member>
+  </compound>
+  <compound refid="classDroughtMitigationPolicy" kind="class"><name>DroughtMitigationPolicy</name>
+    <member refid="classDroughtMitigationPolicy_1aa7d724adcd8ebcd5641de13b8f08098c" kind="variable"><name>storage_to_rof_table_</name></member>
+    <member refid="classDroughtMitigationPolicy_1ad19fbc5a9fdf17ed50c0ba0b99d47eca" kind="variable"><name>utilities_ids</name></member>
+    <member refid="classDroughtMitigationPolicy_1af6e5787a58017804d8598effbeeaba8e" kind="variable"><name>realization_utilities</name></member>
+    <member refid="classDroughtMitigationPolicy_1ae2104e99c421513902ba66d012484c0e" kind="variable"><name>realization_water_sources</name></member>
+    <member refid="classDroughtMitigationPolicy_1af583979405bc5d530ee576df8a6e9324" kind="variable"><name>realization_min_env_flow_controls</name></member>
+    <member refid="classDroughtMitigationPolicy_1a4c5a2dc2aa3a1c7550cdb17045e1fef3" kind="variable"><name>rdm_factors_all</name></member>
+    <member refid="classDroughtMitigationPolicy_1abef5c917bbc076514fe61bfebbd0e4fc" kind="variable"><name>rdm_factors_realization</name></member>
+    <member refid="classDroughtMitigationPolicy_1ace2a2425f6608c34a3189c11445978a1" kind="variable"><name>use_imported_tables</name></member>
+    <member refid="classDroughtMitigationPolicy_1abf3ed19ed98e0d74dc9ae24094be640b" kind="variable"><name>id</name></member>
+    <member refid="classDroughtMitigationPolicy_1aaea5016d1462bec889cb8df85aececc6" kind="variable"><name>type</name></member>
+    <member refid="classDroughtMitigationPolicy_1aaf0715876ce33a75c7db92e50523ea0c" kind="function"><name>DroughtMitigationPolicy</name></member>
+    <member refid="classDroughtMitigationPolicy_1a685ce7eacb01cb262d7e5245a736aa38" kind="function"><name>getRofFromRealizationTable</name></member>
+    <member refid="classDroughtMitigationPolicy_1a00cce0117a5bc0c446727e0c0c59a8df" kind="function"><name>DroughtMitigationPolicy</name></member>
+    <member refid="classDroughtMitigationPolicy_1a76c1a85eaf7707306fe173b6437cc31d" kind="function"><name>applyPolicy</name></member>
+    <member refid="classDroughtMitigationPolicy_1aaab042a79d781afe8e08753b7012372a" kind="function"><name>addSystemComponents</name></member>
+    <member refid="classDroughtMitigationPolicy_1a4c3940352b0092e6a4f673f72693d239" kind="function"><name>getUtilities_ids</name></member>
+    <member refid="classDroughtMitigationPolicy_1a0bf7d0fa94377ae6814e529daf0204c4" kind="function"><name>operator&lt;</name></member>
+    <member refid="classDroughtMitigationPolicy_1a576d3ddb09dc9372898a63c0949d08a6" kind="function"><name>operator&gt;</name></member>
+    <member refid="classDroughtMitigationPolicy_1a9419c433241f36cbf018a5bbe3059d5a" kind="function"><name>~DroughtMitigationPolicy</name></member>
+    <member refid="classDroughtMitigationPolicy_1a75710a6ab73213223222b3472f9251c0" kind="function"><name>setStorage_to_rof_table_</name></member>
+    <member refid="classDroughtMitigationPolicy_1a5d2033543cacca1e412eebef5106eab4" kind="function"><name>setRealization</name></member>
+  </compound>
+  <compound refid="classEmptyDataCollector" kind="class"><name>EmptyDataCollector</name>
+    <member refid="classEmptyDataCollector_1ae6ec59ac659f009c76525f00c5319524" kind="function"><name>EmptyDataCollector</name></member>
+    <member refid="classEmptyDataCollector_1a2bb44e454376ed518c4d89cf324b8bd7" kind="function"><name>printTabularString</name></member>
+    <member refid="classEmptyDataCollector_1ad4a4ebbf610b3939e34442795a392dd5" kind="function"><name>printCompactString</name></member>
+    <member refid="classEmptyDataCollector_1afa47b48abb2ed59c16f1253e55f93cf2" kind="function"><name>printTabularStringHeaderLine1</name></member>
+    <member refid="classEmptyDataCollector_1aa71282121251d344d674223409445be9" kind="function"><name>printTabularStringHeaderLine2</name></member>
+    <member refid="classEmptyDataCollector_1a345d478e92af2ab4bcbaeeae3c7a3faa" kind="function"><name>printCompactStringHeader</name></member>
+    <member refid="classEmptyDataCollector_1a2993f4e00acd2eff18bed2e39108e89f" kind="function"><name>collect_data</name></member>
+  </compound>
+  <compound refid="classEvaporationSeries" kind="class"><name>EvaporationSeries</name>
+    <member refid="classEvaporationSeries_1af0903d8555a148f9bf45f915877120b3" kind="function"><name>EvaporationSeries</name></member>
+    <member refid="classEvaporationSeries_1aa8d8cd8bbc0fd5b368b748cb090ad414" kind="function"><name>EvaporationSeries</name></member>
+    <member refid="classEvaporationSeries_1ae9f1fc3bb0bf32db12dcc531c6af2e6b" kind="function"><name>operator=</name></member>
+    <member refid="classEvaporationSeries_1a201a00eaaadc9c523d544e0d6a4c50e5" kind="function"><name>~EvaporationSeries</name></member>
+    <member refid="classEvaporationSeries_1a4d793fbcb73e8fb6c179968130d6fd0a" kind="function"><name>getEvaporation</name></member>
+    <member refid="classEvaporationSeries_1a4985ac4c81ec111657861e5750b24c0e" kind="function"><name>setRealization</name></member>
+  </compound>
+  <compound refid="classFallsLakeMinEnvFlowControl" kind="class"><name>FallsLakeMinEnvFlowControl</name>
+    <member refid="classFallsLakeMinEnvFlowControl_1a382dbd49bfc62c5e6ba2a56cfb7682e3" kind="variable"><name>week_interval</name></member>
+    <member refid="classFallsLakeMinEnvFlowControl_1a7780ba93a2ea312c6f48ff741f6f8291" kind="variable"><name>base_min_env_flows</name></member>
+    <member refid="classFallsLakeMinEnvFlowControl_1a0250acb652ec1fd55423cc3702f3f6a0" kind="variable"><name>base_min_gage_flows</name></member>
+    <member refid="classFallsLakeMinEnvFlowControl_1aa0e54d145d945d9b8c462294187e7fb5" kind="variable"><name>neuse_river_intake_id</name></member>
+    <member refid="classFallsLakeMinEnvFlowControl_1af12d738a62d604cd01ee48bfc6c73c6d" kind="variable"><name>crabtree</name></member>
+    <member refid="classFallsLakeMinEnvFlowControl_1a9cef248e2fd8a194c92454a79398a6a6" kind="function"><name>FallsLakeMinEnvFlowControl</name></member>
+    <member refid="classFallsLakeMinEnvFlowControl_1a0ac46bcd8bea2e6e56824b5398129418" kind="function"><name>FallsLakeMinEnvFlowControl</name></member>
+    <member refid="classFallsLakeMinEnvFlowControl_1a50453b443fb6e5869fcfc9a183f42b2f" kind="function"><name>getRelease</name></member>
+    <member refid="classFallsLakeMinEnvFlowControl_1a6ea8a5e9ff9179066cceb77d896f3f97" kind="function"><name>setRealization</name></member>
+    <member refid="classFallsLakeMinEnvFlowControl_1a747aefedd1e590007206ef08145be351" kind="function"><name>~FallsLakeMinEnvFlowControl</name></member>
+  </compound>
   <compound refid="classFixedJointWTP" kind="class"><name>FixedJointWTP</name>
     <member refid="classFixedJointWTP_1a88a5fadeaada96195a95ab77303bd410" kind="variable"><name>permanent_treatment_allocations</name></member>
     <member refid="classFixedJointWTP_1a4c9f0d469ea60620d3f2441d3c2f3aaf" kind="function"><name>FixedJointWTP</name></member>
@@ -193,6 +397,13 @@
     <member refid="classFixedJointWTP_1ad8cade8e61f861485b025cb0afe28c1a" kind="function"><name>operator=</name></member>
     <member refid="classFixedJointWTP_1a68bfbed58c0106d896ef422ae9747d40" kind="function"><name>applyContinuity</name></member>
     <member refid="classFixedJointWTP_1a0874b64a650c002d7230bd95bc4817ef" kind="function"><name>implementInitialTreatmentCapacity</name></member>
+  </compound>
+  <compound refid="classFixedMinEnvFlowControl" kind="class"><name>FixedMinEnvFlowControl</name>
+    <member refid="classFixedMinEnvFlowControl_1a16665ce65b1fe997390eb913926bd229" kind="variable"><name>release</name></member>
+    <member refid="classFixedMinEnvFlowControl_1ab03711220b87d6490a4c2ca81fcc89a0" kind="function"><name>FixedMinEnvFlowControl</name></member>
+    <member refid="classFixedMinEnvFlowControl_1a57795231f747cae4a4b5b4cf9d4d044f" kind="function"><name>FixedMinEnvFlowControl</name></member>
+    <member refid="classFixedMinEnvFlowControl_1ac63298347dcaccf755ea45d1e2f94bad" kind="function"><name>~FixedMinEnvFlowControl</name></member>
+    <member refid="classFixedMinEnvFlowControl_1af3ef98eef6a7124738a3b54dcadf757f" kind="function"><name>getRelease</name></member>
   </compound>
   <compound refid="classFloatingInterestBalloonPaymentBond" kind="class"><name>FloatingInterestBalloonPaymentBond</name>
     <member refid="classFloatingInterestBalloonPaymentBond_1a36c73466753c976e513c6763f79f58ad" kind="variable"><name>interest_rate_series</name></member>
@@ -204,6 +415,34 @@
     <member refid="classFloatingInterestBalloonPaymentBond_1a91b2fef92f90049a3ba13bcd27c0eff2" kind="function"><name>getPresentValueDebtService</name></member>
     <member refid="classFloatingInterestBalloonPaymentBond_1a90205e26e09eef1227f8c0671ca4fce2" kind="function"><name>getNetPresentValueAtIssuance</name></member>
     <member refid="classFloatingInterestBalloonPaymentBond_1a4cf110f320c92f5eca9aed952e0b527a" kind="function"><name>issueBond</name></member>
+  </compound>
+  <compound refid="classGraph" kind="class"><name>Graph</name>
+    <member refid="classGraph_1a2b722f7cfa7a21e4cb5fae488b3d4dcc" kind="variable"><name>V</name></member>
+    <member refid="classGraph_1a9a7e34b482b020fa136fc8e0fa2d0030" kind="variable"><name>n_edges</name></member>
+    <member refid="classGraph_1a04ab9c17ad31aa036def8db0f88b035b" kind="variable"><name>adj</name></member>
+    <member refid="classGraph_1a2b9dc8c44ac87d67b061af1bf8dab2fa" kind="variable"><name>upstream_sources</name></member>
+    <member refid="classGraph_1a1c89a48555f165ef3e80b85ca5655bea" kind="variable"><name>downstream_sources</name></member>
+    <member refid="classGraph_1ad18af6207537a43b3cf53b56acaf92fd" kind="variable"><name>topological_order</name></member>
+    <member refid="classGraph_1af903899bcb412f62ec4aa295eef9f45c" kind="variable"><name>continuity_matrix_transpose</name></member>
+    <member refid="classGraph_1a6f175234dc3c87150a53eab5c4e586ef" kind="function"><name>addEdgeToEdgesList</name></member>
+    <member refid="classGraph_1a915f9d58884a00083bb6e5a256141fae" kind="function"><name>topologicalSort</name></member>
+    <member refid="classGraph_1a95b0b6a7689c519d38e820cc3f86fc70" kind="function"><name>findUpstreamSources</name></member>
+    <member refid="classGraph_1af3ff6b295df8bf3bee0bafd7c7d56915" kind="function"><name>Graph</name></member>
+    <member refid="classGraph_1ae4c72b8ac4d693c49800a4c7e273654f" kind="function"><name>Graph</name></member>
+    <member refid="classGraph_1a838b34813d6d5ddcfc9e452b357d98bd" kind="function"><name>getTopological_order</name></member>
+    <member refid="classGraph_1ad8c10df34357b2cd865c81e0c4f0bd8c" kind="function"><name>addEdge</name></member>
+    <member refid="classGraph_1a1ae92c80c49d220aff1e04f653db1e9e" kind="function"><name>getUpstream_sources</name></member>
+    <member refid="classGraph_1adeb6eb873f20aef3e2b611a322deb647" kind="function"><name>getContinuityMatrix</name></member>
+    <member refid="classGraph_1a1621cd1ffcf6a135cbc7e039c305627b" kind="function"><name>~Graph</name></member>
+    <member refid="classGraph_1aa41b35e6be8f6c4d555c7e9c1822809e" kind="function"><name>getDownSources</name></member>
+  </compound>
+  <compound refid="classInflowMinEnvFlowControl" kind="class"><name>InflowMinEnvFlowControl</name>
+    <member refid="classInflowMinEnvFlowControl_1a669660259afa9313c77094dec815a52f" kind="variable"><name>inflows</name></member>
+    <member refid="classInflowMinEnvFlowControl_1a2f82b53516516be63eb169d377df1f55" kind="variable"><name>releases</name></member>
+    <member refid="classInflowMinEnvFlowControl_1a91bf5813168a995bd4ddf9e0ff553112" kind="function"><name>getRelease</name></member>
+    <member refid="classInflowMinEnvFlowControl_1aff6c04aaa6e206b29b072aea6fb38367" kind="function"><name>InflowMinEnvFlowControl</name></member>
+    <member refid="classInflowMinEnvFlowControl_1a6736e6aa07a27e314789e07a9ab30cad" kind="function"><name>InflowMinEnvFlowControl</name></member>
+    <member refid="classInflowMinEnvFlowControl_1af96a86078cd257309ed55f0cd9ed032e" kind="function"><name>~InflowMinEnvFlowControl</name></member>
   </compound>
   <compound refid="structinfraRank" kind="struct"><name>infraRank</name>
     <member refid="structinfraRank_1ace3640f7fdc691b68111cf07e0eabaae" kind="variable"><name>id</name></member>
@@ -251,6 +490,26 @@
     <member refid="classInfrastructureManager_1aac2a99dbffe7f784f09de907ad384d8b" kind="function"><name>getDemand_infra_construction_order</name></member>
     <member refid="classInfrastructureManager_1a540f233692981645d52af7f1de087dbf" kind="function"><name>getInfra_built_last_week</name></member>
   </compound>
+  <compound refid="classInsuranceStorageToROF" kind="class"><name>InsuranceStorageToROF</name>
+    <member refid="classInsuranceStorageToROF_1afcc3f791ff54cb25a0f9c4381be4650e" kind="variable"><name>rof_triggers</name></member>
+    <member refid="classInsuranceStorageToROF_1accb3ce9db21061862e03f927cc6effbe" kind="variable"><name>total_simulation_time</name></member>
+    <member refid="classInsuranceStorageToROF_1ab73e7f3e679a16b60878495566a668da" kind="variable"><name>insurance_premium</name></member>
+    <member refid="classInsuranceStorageToROF_1a69beb8a95cf8f78845b5cd9c6f4a12ca" kind="variable"><name>payout_multiplier</name></member>
+    <member refid="classInsuranceStorageToROF_1a5c2b3740b69b34fa2baa0a2df914d8a8" kind="variable"><name>insurance_price</name></member>
+    <member refid="classInsuranceStorageToROF_1af58d0341b58f3039aca3c3cd22c7c2f1" kind="variable"><name>fixed_payouts</name></member>
+    <member refid="classInsuranceStorageToROF_1a7fe48af9dd2f9ce199bbfd422240cf87" kind="variable"><name>utilities_revenue_update</name></member>
+    <member refid="classInsuranceStorageToROF_1a1c2f8acdda360ac7ca4d550f6efa1497" kind="variable"><name>utilities_revenue_last_year</name></member>
+    <member refid="classInsuranceStorageToROF_1a78ebe72a40c8023dd79c91d36f5e1596" kind="variable"><name>drought_mitigation_policies</name></member>
+    <member refid="classInsuranceStorageToROF_1a7769ebf2a6c73fa0efc55268712e8157" kind="function"><name>InsuranceStorageToROF</name></member>
+    <member refid="classInsuranceStorageToROF_1a5229c6bbb6da8268017c71bacec70f67" kind="function"><name>InsuranceStorageToROF</name></member>
+    <member refid="classInsuranceStorageToROF_1aba2143897e3ec32d698d25a1aa572a73" kind="function"><name>~InsuranceStorageToROF</name></member>
+    <member refid="classInsuranceStorageToROF_1a2519f93b9db551105d9a7913d0db9540" kind="function"><name>priceInsurance</name></member>
+    <member refid="classInsuranceStorageToROF_1a17aa84e0559793b3c463c468dfda3753" kind="function"><name>applyPolicy</name></member>
+    <member refid="classInsuranceStorageToROF_1ac7d317a7f189739275960e4f021108d8" kind="function"><name>addSystemComponents</name></member>
+    <member refid="classInsuranceStorageToROF_1a6318c3dca8b0c4d568eac494e5ccf712" kind="function"><name>setRealization</name></member>
+    <member refid="classInsuranceStorageToROF_1a0a79476bd868966a79ea03e0abdbfde2" kind="function"><name>calculateShortTermROFTable</name></member>
+    <member refid="classInsuranceStorageToROF_1a5870934b8b33e1d872eca7b0940398ac" kind="function"><name>updateOnlineInfrastructure</name></member>
+  </compound>
   <compound refid="classIntake" kind="class"><name>Intake</name>
     <member refid="classIntake_1a5d28f8899e9d4d61983ad8fdf7d58373" kind="variable"><name>next_upstream_catchment_inflow</name></member>
     <member refid="classIntake_1a02e01801fcaede46e960d497e60eb335" kind="function"><name>Intake</name></member>
@@ -262,6 +521,21 @@
     <member refid="classIntake_1acd5ab74c4091b286e69ecdcc495d83ce" kind="function"><name>applyContinuity</name></member>
     <member refid="classIntake_1a879c4c780a4d21606e848f57464cf3b6" kind="function"><name>setRealization</name></member>
     <member refid="classIntake_1a8d1fc6855451f3dff1a2f0efcd5da8ee" kind="function"><name>getPrioritySourcePotentialVolume</name></member>
+  </compound>
+  <compound refid="classIntakeDataCollector" kind="class"><name>IntakeDataCollector</name>
+    <member refid="classIntakeDataCollector_1a0dfbf640d99394bb82413c9a116db19b" kind="variable"><name>intake</name></member>
+    <member refid="classIntakeDataCollector_1a5016d2fece2ef545f72b9fa22497c817" kind="variable"><name>total_upstream_sources_inflows</name></member>
+    <member refid="classIntakeDataCollector_1a7d1d205c15423db421038e54ac0e1f36" kind="variable"><name>demands</name></member>
+    <member refid="classIntakeDataCollector_1a4485bea7a536f9fde233a2cc37200ec6" kind="variable"><name>wastewater_inflows</name></member>
+    <member refid="classIntakeDataCollector_1ae0b0d07123dd9323402ca55e12802ac8" kind="variable"><name>outflows</name></member>
+    <member refid="classIntakeDataCollector_1aea2dbea83bb83c26df4474da669dd2eb" kind="variable"><name>total_catchments_inflow</name></member>
+    <member refid="classIntakeDataCollector_1a2ab4a81bec74a370c60c78609627e807" kind="function"><name>IntakeDataCollector</name></member>
+    <member refid="classIntakeDataCollector_1ada2b88b7a05455cf6f2eebf82d37b3c5" kind="function"><name>printTabularString</name></member>
+    <member refid="classIntakeDataCollector_1ac39a40726fd4fe887425b24a10f04034" kind="function"><name>printCompactString</name></member>
+    <member refid="classIntakeDataCollector_1ae17ab7e6c75e77f5981f6a682597bb5c" kind="function"><name>printTabularStringHeaderLine1</name></member>
+    <member refid="classIntakeDataCollector_1a2855eb8eed71649309bd4d9336f258c0" kind="function"><name>printTabularStringHeaderLine2</name></member>
+    <member refid="classIntakeDataCollector_1a42d56dd08e57a7e6e48812a2ab522439" kind="function"><name>printCompactStringHeader</name></member>
+    <member refid="classIntakeDataCollector_1aed1610e5419465b35041b05b9f60c212" kind="function"><name>collect_data</name></member>
   </compound>
   <compound refid="classIntakeExpansion" kind="class"><name>IntakeExpansion</name>
     <member refid="classIntakeExpansion_1a93569405968a66226046e730e691615c" kind="variable"><name>parent_intake_ID</name></member>
@@ -284,6 +558,35 @@
     <member refid="classJointWTP_1ae4805e616725c109f23c0513d6ef2711" kind="function"><name>getParentWaterSourceID</name></member>
     <member refid="classJointWTP_1a3c661704dec4c92b8c16f28e39ca533e" kind="function"><name>getAllocatedTreatmentFraction</name></member>
   </compound>
+  <compound refid="classJointWTPDataCollector" kind="class"><name>JointWTPDataCollector</name>
+    <member refid="classJointWTPDataCollector_1a3048d1f2c2a94a01868ed997f4adb97a" kind="variable"><name>joint_wtp</name></member>
+    <member refid="classJointWTPDataCollector_1a766eb0d0fff3195035ba6f47582ff979" kind="variable"><name>utilities_with_allocations</name></member>
+    <member refid="classJointWTPDataCollector_1aed1c5878f8e4a7d202d75e1a942c4262" kind="variable"><name>partner_allocated_treatment_capacities</name></member>
+    <member refid="classJointWTPDataCollector_1adcff7bd94e8f81a848b073d3a17c29ee" kind="function"><name>JointWTPDataCollector</name></member>
+    <member refid="classJointWTPDataCollector_1a9159c0e5c58ceb8b9bf86f01b53ecdef" kind="function"><name>printTabularString</name></member>
+    <member refid="classJointWTPDataCollector_1aadb9fb969b265c72555bb5a7d3ed945d" kind="function"><name>printCompactString</name></member>
+    <member refid="classJointWTPDataCollector_1a6b9ba2992f4a9c3a900ad675b8301d07" kind="function"><name>printTabularStringHeaderLine1</name></member>
+    <member refid="classJointWTPDataCollector_1ab5828bc2dec423f812b5591ea42e9972" kind="function"><name>printTabularStringHeaderLine2</name></member>
+    <member refid="classJointWTPDataCollector_1a42bacc8ab8cc78e38715966c8dbe8de9" kind="function"><name>printCompactStringHeader</name></member>
+    <member refid="classJointWTPDataCollector_1a64383431902c18f1d90a33fbcc211658" kind="function"><name>collect_data</name></member>
+  </compound>
+  <compound refid="classJordanLakeMinEnvFlowControl" kind="class"><name>JordanLakeMinEnvFlowControl</name>
+    <member refid="classJordanLakeMinEnvFlowControl_1a7f219e0a63dd4171df6ce7954f32904f" kind="variable"><name>lillington_gage_catchment</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1ad093178e42f3ceb287d22a961c47f186" kind="variable"><name>rel02</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1ada2755ec609acff7761acf707daf798c" kind="variable"><name>rel04</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1ad1dd5a5959f7f43f966a53002dec1f2b" kind="variable"><name>rel06_up</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1a3defdfb0e3c8bb9f222b086cb93b7852" kind="variable"><name>min_rel_llt06</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1a3cf68a0987b00668e3b8e582830f05db" kind="variable"><name>min_rel_llt08</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1ad6367768fdfff0af0d347ae2ca7e1821" kind="variable"><name>min_rel_llt08_up</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1a671f40efb6f6d3ada453d5d261fc7ebc" kind="variable"><name>quality_capacity</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1a028ed65d1a68c0462334d949ccf19ce2" kind="variable"><name>supply_capacity</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1ac8e2b846b66115c2db3bc4ea3ed44297" kind="function"><name>JordanLakeMinEnvFlowControl</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1a44dfb259a9b61886b9acfcb3bec96c0f" kind="function"><name>JordanLakeMinEnvFlowControl</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1a1ac6bbacecf928296ff5f86ddbf0d973" kind="function"><name>operator=</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1a5c2456c26fa141824c247cd15bf5c57d" kind="function"><name>getRelease</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1aa1e816121060212f3dbeffda90a7baec" kind="function"><name>setRealization</name></member>
+    <member refid="classJordanLakeMinEnvFlowControl_1a97c9cefc5e56d0bee8075a7c1616143e" kind="function"><name>~JordanLakeMinEnvFlowControl</name></member>
+  </compound>
   <compound refid="classLevelDebtServiceBond" kind="class"><name>LevelDebtServiceBond</name>
     <member refid="classLevelDebtServiceBond_1a2af3b9ff7546bd002f78d07dbf696c64" kind="variable"><name>level_debt_service_payment</name></member>
     <member refid="classLevelDebtServiceBond_1ad1b8ba91ef3702a5eecfe3075fed0bc3" kind="variable"><name>n_payments_made</name></member>
@@ -293,6 +596,170 @@
     <member refid="classLevelDebtServiceBond_1a37801ecfc13ae1b6e05b4330398a7582" kind="function"><name>getPresentValueDebtService</name></member>
     <member refid="classLevelDebtServiceBond_1a0f5820c3e76b8b908dbe153a8291d96a" kind="function"><name>getNetPresentValueAtIssuance</name></member>
     <member refid="classLevelDebtServiceBond_1a51a54a1a25be105b168bf86489aee417" kind="function"><name>issueBond</name></member>
+  </compound>
+  <compound refid="classMasterDataCollector" kind="class"><name>MasterDataCollector</name>
+    <member refid="classMasterDataCollector_1af49386aa4a7ab28e11216055aecc596c" kind="variable"><name>output_directory</name></member>
+    <member refid="classMasterDataCollector_1a2c6a150ee1d489a225d2f1c7b654798d" kind="variable"><name>n_realizations</name></member>
+    <member refid="classMasterDataCollector_1a31899d6d3b2f7106cbacf7c3dd0e46c0" kind="variable"><name>water_source_collectors</name></member>
+    <member refid="classMasterDataCollector_1a3753307a042d155d3e7d7db095c0be7e" kind="variable"><name>drought_mitigation_policy_collectors</name></member>
+    <member refid="classMasterDataCollector_1a9482c829e7306ea318b237f52a6dbbf0" kind="variable"><name>utility_collectors</name></member>
+    <member refid="classMasterDataCollector_1a4a11d30216e284aa7adc19b730bde2f5" kind="variable"><name>crashed_realizations</name></member>
+    <member refid="classMasterDataCollector_1a85bcb6c159366dd5fb3f0baeda2f2b2f" kind="variable"><name>realizations_ran</name></member>
+    <member refid="classMasterDataCollector_1a399c4717366a7381c32cf26762a69172" kind="variable"><name>realizations_created</name></member>
+    <member refid="classMasterDataCollector_1a6cdbb4443f1425000f837231d662249e" kind="variable"><name>seed</name></member>
+    <member refid="classMasterDataCollector_1acb6f64c053bda26e5cf7e4ec8dacd0cd" kind="function"><name>MasterDataCollector</name></member>
+    <member refid="classMasterDataCollector_1aedeef15ddcd660886261d8759db37029" kind="function"><name>~MasterDataCollector</name></member>
+    <member refid="classMasterDataCollector_1a87dd0c5e19af4baee55b3adfeabe1d01" kind="function"><name>printNETCDFUtilities</name></member>
+    <member refid="classMasterDataCollector_1a5cba2aca9ba3426293ca3b194a846c86" kind="function"><name>calculatePrintObjectives</name></member>
+    <member refid="classMasterDataCollector_1aedd180f1f1648164506a0a59216c113f" kind="function"><name>printPoliciesOutputCompact</name></member>
+    <member refid="classMasterDataCollector_1aa4a08525c6757376edba653a17d6ff60" kind="function"><name>printPoliciesOutputTabular</name></member>
+    <member refid="classMasterDataCollector_1a7effc4567580a12567a46dd3f195dbac" kind="function"><name>printUtilitiesOutputCompact</name></member>
+    <member refid="classMasterDataCollector_1a772bc65951a1170900e89679cc7e0652" kind="function"><name>printUtilitesOutputTabular</name></member>
+    <member refid="classMasterDataCollector_1adbe50e49689078e64a28450087ad0961" kind="function"><name>printWaterSourcesOutputCompact</name></member>
+    <member refid="classMasterDataCollector_1a77dd707b686d936118cd4e940156754f" kind="function"><name>printWaterSourcesOutputTabular</name></member>
+    <member refid="classMasterDataCollector_1af597731750248576d43ffc187e48e2a8" kind="function"><name>setOutputDirectory</name></member>
+    <member refid="classMasterDataCollector_1a966681d5219d11d0c6882522cd2ddd20" kind="function"><name>printPathways</name></member>
+    <member refid="classMasterDataCollector_1aadb319947e62055428b18339d559a0ef" kind="function"><name>addRealization</name></member>
+    <member refid="classMasterDataCollector_1a5cbae3837d5f32ea3469a55f025692f5" kind="function"><name>removeRealization</name></member>
+    <member refid="classMasterDataCollector_1a92683f7c5ec82e45259fe403be285149" kind="function"><name>cleanCollectorsOfDeletedRealizations</name></member>
+    <member refid="classMasterDataCollector_1a522fd42f6cf612e32691cf11a807045c" kind="function"><name>collectData</name></member>
+    <member refid="classMasterDataCollector_1acbf0e8a8f30e483e504d756883d45cf0" kind="function"><name>performBootstrapAnalysis</name></member>
+    <member refid="classMasterDataCollector_1af455c9c6b2de48520c4b1df6c81ebf19" kind="function"><name>createPolicyDataCollector</name></member>
+    <member refid="classMasterDataCollector_1a63dd98378c394b7c00508b44221d34aa" kind="function"><name>createWaterSourceDataCollector</name></member>
+    <member refid="classMasterDataCollector_1ae8c802f81045c613c065abc9705d0145" kind="function"><name>printUtilityObjectivesToRowOutStream</name></member>
+    <member refid="classMasterDataCollector_1a4d87af61c1a0894574a02f944a4f78d6" kind="function"><name>readOrCreateBSSamples</name></member>
+    <member refid="classMasterDataCollector_1a0832afc87f9da7f7b1a70866e4ee4c6d" kind="function"><name>printObjsBSSamples</name></member>
+    <member refid="classMasterDataCollector_1a03f0a7bdc1502cbe23905dbfc48e6546" kind="function"><name>printObjectivesOfAllRealizationsForBSAnalysis</name></member>
+    <member refid="classMasterDataCollector_1a458ff4ee13e7cce91aee043b65c7c443" kind="function"><name>printBSSamples</name></member>
+    <member refid="classMasterDataCollector_1a640eed0cb3e00679463601adbdd3d1e6" kind="function"><name>isolateRestrictionDataCollectors</name></member>
+    <member refid="classMasterDataCollector_1afa654d3fbf2e86692d3ccedf891265b1" kind="function"><name>getRealizations_created</name></member>
+    <member refid="classMasterDataCollector_1a822c758d5e729fdd70d93b8c88b138e4" kind="function"><name>setSeed</name></member>
+    <member refid="classMasterDataCollector_1ade426952ec26ca85a724075f617e6454" kind="function"><name>unsetSeed</name></member>
+  </compound>
+  <compound refid="classMatrices" kind="class"><name>Matrices</name>
+  </compound>
+  <compound refid="classMatrix" kind="class"><name>Matrix</name>
+    <member refid="classMatrix_1afe2ef09343ff36b98618d696e7b232e3" kind="variable"><name>n</name></member>
+    <member refid="classMatrix_1a0a922a1712cf7e9afb32fd8fff6809df" kind="variable"><name>m</name></member>
+    <member refid="classMatrix_1a0914658ee459304d3dbcc26806038019" kind="variable"><name>v</name></member>
+    <member refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" kind="function"><name>Matrix</name></member>
+    <member refid="classMatrix_1ac8061527f81abb94e19b1ac6fd4af63a" kind="function"><name>Matrix</name></member>
+    <member refid="classMatrix_1a697e01f8d46c2059d0420d5b420efb91" kind="function"><name>Matrix</name></member>
+    <member refid="classMatrix_1a991881e660607b10ff4fbf705006108d" kind="function"><name>Matrix</name></member>
+    <member refid="classMatrix_1ab2f0cdfc1e7aac9ddd46a1c6b6a3f2f9" kind="function"><name>Matrix</name></member>
+    <member refid="classMatrix_1a33a507863c86bbc82e650054f1cc13b6" kind="function"><name>Matrix</name></member>
+    <member refid="classMatrix_1a6a46705243036bfeee78fe2c84c54340" kind="function"><name>Matrix</name></member>
+    <member refid="classMatrix_1a91aa704de674203e96aece9e1955ccd3" kind="function"><name>~Matrix</name></member>
+    <member refid="classMatrix_1a771eff354da6c0008228dc19cde4142a" kind="function"><name>operator[]</name></member>
+    <member refid="classMatrix_1af58cf6372d17f7abf5396d32f3ef5cd7" kind="function"><name>operator[]</name></member>
+    <member refid="classMatrix_1a8d10454cfe9427269b54a754262004b8" kind="function"><name>resize</name></member>
+    <member refid="classMatrix_1ae866a1b312aa040b587b40c5f54b6a54" kind="function"><name>resize</name></member>
+    <member refid="classMatrix_1a7dded77c0f4c424c98858b5f94c13c16" kind="function"><name>extractRow</name></member>
+    <member refid="classMatrix_1a4361c4478b01f7df1173e5b64eccd127" kind="function"><name>extractColumn</name></member>
+    <member refid="classMatrix_1ad025820349fa69f73f2da395af627741" kind="function"><name>nrows</name></member>
+    <member refid="classMatrix_1aa62107f075998f969b39fcb1bef20c44" kind="function"><name>ncols</name></member>
+    <member refid="classMatrix_1a01990eb2552555d37c83272125be68e6" kind="function"><name>operator=</name></member>
+    <member refid="classMatrix_1a603960a94121d9b35509199de88d1a92" kind="function"><name>operator=</name></member>
+    <member refid="classMatrix_1a36fdb87d0aa1b906eda9fa1cf81a1477" kind="function"><name>operator+=</name></member>
+    <member refid="classMatrix_1a50e2998bc90012d77efc0ff39d089336" kind="function"><name>operator-=</name></member>
+    <member refid="classMatrix_1af6a95588910fa9c53feaae71fe88df81" kind="function"><name>operator*=</name></member>
+    <member refid="classMatrix_1aab1b305350c7547ee31f0eeb92fc8c4a" kind="function"><name>operator/=</name></member>
+    <member refid="classMatrix_1acf14abe2000a4a41dae10db14b5d039c" kind="function"><name>operator^=</name></member>
+    <member refid="classMatrix_1a5aeaf1a90547b2288646d57143d5518c" kind="function"><name>operator+=</name></member>
+    <member refid="classMatrix_1a8776d41fcbbc1fc08425492576cf6786" kind="function"><name>operator-=</name></member>
+    <member refid="classMatrix_1a9ac358ade86c1b442aa75852b2dd663a" kind="function"><name>operator*=</name></member>
+    <member refid="classMatrix_1ada3039797826038262e03da2ee3a8697" kind="function"><name>operator/=</name></member>
+    <member refid="classMatrix_1af35faeb39342bf42c4470cf10630e32f" kind="function"><name>operator^=</name></member>
+    <member refid="classMatrix_1a8d390e8b2581c65774f58a0a3b716dcb" kind="function"><name>operator Vector&lt; T &gt;</name></member>
+  </compound>
+  <compound refid="classMatrix2D" kind="class"><name>Matrix2D</name>
+    <member refid="classMatrix2D_1ad9c316f4e27753ab30164f90f9dfaee9" kind="variable"><name>di_</name></member>
+    <member refid="classMatrix2D_1a69fb005b681e8740654e28616560a780" kind="variable"><name>dj_</name></member>
+    <member refid="classMatrix2D_1af6db5a4e311ea727f52f16a7fb15a055" kind="variable"><name>data_</name></member>
+    <member refid="classMatrix2D_1a4138aec11153780128a8d93a3ef06576" kind="variable"><name>not_initialized</name></member>
+    <member refid="classMatrix2D_1a950bb2aa76c86e057d91f430d5a27b57" kind="function"><name>Matrix2D</name></member>
+    <member refid="classMatrix2D_1ac93acc71341e612cf8b23d4308c561f8" kind="function"><name>Matrix2D</name></member>
+    <member refid="classMatrix2D_1abcb61863666c4e17352c9fd2fc0a254a" kind="function"><name>operator()</name></member>
+    <member refid="classMatrix2D_1a1a14d98d090d0d1cbda97a8fa797f1c5" kind="function"><name>operator()</name></member>
+    <member refid="classMatrix2D_1a6b86d001220161af2136ba49fd8b26b9" kind="function"><name>~Matrix2D</name></member>
+    <member refid="classMatrix2D_1aa1d3642d7cea07adac1a7bd83586d292" kind="function"><name>Matrix2D</name></member>
+    <member refid="classMatrix2D_1a17597829237784fa6089a23b7accb631" kind="function"><name>operator=</name></member>
+    <member refid="classMatrix2D_1a05b92232d9a5e7b76c4d4c1508ae2e12" kind="function"><name>operator+=</name></member>
+    <member refid="classMatrix2D_1a48122f2fa79bf511d0c4e143dcdb0cf0" kind="function"><name>operator/</name></member>
+    <member refid="classMatrix2D_1a1a646829a2e9d166e0e47439de633b95" kind="function"><name>reset</name></member>
+    <member refid="classMatrix2D_1a27ccf42f23c568b2397b744ec32a41d1" kind="function"><name>print</name></member>
+    <member refid="classMatrix2D_1a9d44e60eef0274c20ed9bd1f597c89eb" kind="function"><name>get_i</name></member>
+    <member refid="classMatrix2D_1a30918dfce713408a9b3188bea33dbb57" kind="function"><name>get_j</name></member>
+    <member refid="classMatrix2D_1a5fd8ff857d4554c8fed6ca1ca2f1e87d" kind="function"><name>empty</name></member>
+    <member refid="classMatrix2D_1a2a0f91e493892f9c56e98d1e20dcd465" kind="function"><name>setPartialData</name></member>
+    <member refid="classMatrix2D_1a28515c515652637734a22a3440e80258" kind="function"><name>setData</name></member>
+    <member refid="classMatrix2D_1ac3d6fbe385374e65ce00a34be5a7d323" kind="function"><name>getPointerToElement</name></member>
+    <member refid="classMatrix2D_1a2bd34bc1808af36aa3dce5af143ce304" kind="function"><name>add_to_position</name></member>
+    <member refid="classMatrix2D_1a2cd319270ca890e47dad636b9af34a11" kind="function"><name>get_vector</name></member>
+  </compound>
+  <compound refid="classMatrix3D" kind="class"><name>Matrix3D</name>
+    <member refid="classMatrix3D_1af1e032d3ea19a5fc312866bd401e0f2b" kind="variable"><name>di_</name></member>
+    <member refid="classMatrix3D_1a204c91363d19e8dc16bf911dfd72b912" kind="variable"><name>dj_</name></member>
+    <member refid="classMatrix3D_1a9c5ce04b3a1cb28c7b19cd3b9b3646c6" kind="variable"><name>dk_</name></member>
+    <member refid="classMatrix3D_1a94b477ac7008ab81acd18f2ee4d41d70" kind="variable"><name>data_</name></member>
+    <member refid="classMatrix3D_1a1589c062f12fbbb1f3681f90c20c4b78" kind="function"><name>Matrix3D</name></member>
+    <member refid="classMatrix3D_1a6c98f06b6f87c600bd9b00f6b253b37e" kind="function"><name>Matrix3D</name></member>
+    <member refid="classMatrix3D_1a56e772adacd4ccf54388e6c90e3d1269" kind="function"><name>operator()</name></member>
+    <member refid="classMatrix3D_1a600c100c8204bbc8f2e4ebefa55cab82" kind="function"><name>operator()</name></member>
+    <member refid="classMatrix3D_1a7fda610223910a2b4dcfea445d2eb6c7" kind="function"><name>~Matrix3D</name></member>
+    <member refid="classMatrix3D_1ae3fc93ef3456a36c92f8cbb7db01c3a9" kind="function"><name>Matrix3D</name></member>
+    <member refid="classMatrix3D_1a0e84724f089ae3478283ea81d0b866af" kind="function"><name>operator=</name></member>
+    <member refid="classMatrix3D_1a10b206ad9106931f7aa46a7b4d45c851" kind="function"><name>operator+=</name></member>
+    <member refid="classMatrix3D_1ad45bff7f2159a4ba0aa4546635e8a73f" kind="function"><name>operator/</name></member>
+    <member refid="classMatrix3D_1ac5c77248be46bfef323f0229f6e0a59c" kind="function"><name>get2D</name></member>
+    <member refid="classMatrix3D_1a61afc3a397203f453f60772ebc10758a" kind="function"><name>add_to_position</name></member>
+    <member refid="classMatrix3D_1a46a7b732a44b77f6c09f72c0ae05edef" kind="function"><name>setPartialData</name></member>
+    <member refid="classMatrix3D_1ac21cf8967053b928f609b98abf1616e2" kind="function"><name>getPointerToElement</name></member>
+    <member refid="classMatrix3D_1ac67d3ee632ccafaac86dfacdda95dfdf" kind="function"><name>reset</name></member>
+    <member refid="classMatrix3D_1abc1d3451a2fb3cce0bec1d1e33097b1e" kind="function"><name>print</name></member>
+    <member refid="classMatrix3D_1a056c035f4997b14c2a3e2b8ebee5142c" kind="function"><name>setData</name></member>
+    <member refid="classMatrix3D_1af02576e685de872ba1b75014d9a609c9" kind="function"><name>get_i</name></member>
+    <member refid="classMatrix3D_1a083e3f136a0108aad991e194b078db7f" kind="function"><name>get_j</name></member>
+    <member refid="classMatrix3D_1a35fad9c3c81914e0ef5ed40ceda5d324" kind="function"><name>get_k</name></member>
+    <member refid="classMatrix3D_1a6f1e6328bac16786a4bfad6f107db641" kind="function"><name>empty</name></member>
+  </compound>
+  <compound refid="classMinEnvFlowControl" kind="class"><name>MinEnvFlowControl</name>
+    <member refid="classMinEnvFlowControl_1a36b50d0e6887b956051ae53bf5d2e3a9" kind="variable"><name>water_sources</name></member>
+    <member refid="classMinEnvFlowControl_1a99502573f30daf84d9ad7a2f62197b77" kind="variable"><name>catchments</name></member>
+    <member refid="classMinEnvFlowControl_1a1a0a309138b35e8199c205efb5fb5f80" kind="variable"><name>utilities</name></member>
+    <member refid="classMinEnvFlowControl_1a775d6408e5c581754ee4240eea68abdc" kind="variable"><name>water_sources_ids</name></member>
+    <member refid="classMinEnvFlowControl_1a5c67ab20c181a1d22e4bf94e398451fc" kind="variable"><name>utilities_ids</name></member>
+    <member refid="classMinEnvFlowControl_1aada518a047598f386daec1d0358023aa" kind="variable"><name>water_source_id</name></member>
+    <member refid="classMinEnvFlowControl_1abc3f168cd1ec36ba59e4b8604dfae8ec" kind="variable"><name>type</name></member>
+    <member refid="classMinEnvFlowControl_1a093b292294d85f426c38deb6b7537d81" kind="function"><name>MinEnvFlowControl</name></member>
+    <member refid="classMinEnvFlowControl_1a0e12d2b8583a539d200acfc5fac795b6" kind="function"><name>MinEnvFlowControl</name></member>
+    <member refid="classMinEnvFlowControl_1a3a5f44703a5a0cdeb48c948af397137d" kind="function"><name>~MinEnvFlowControl</name></member>
+    <member refid="classMinEnvFlowControl_1a5de79615852eb0c937dd559a9eb9402d" kind="function"><name>getRelease</name></member>
+    <member refid="classMinEnvFlowControl_1a4f849e1385f68c9d8f2835889f14a71f" kind="function"><name>addComponents</name></member>
+    <member refid="classMinEnvFlowControl_1a630550c31f5c4e1a368289cbd5ab98ee" kind="function"><name>setRealization</name></member>
+  </compound>
+  <compound refid="classMinEnvironFlowControl" kind="class"><name>MinEnvironFlowControl</name>
+    <member refid="classMinEnvironFlowControl_1ac5be281d802ad1de433bed588bb13cfe" kind="variable"><name>water_sources</name></member>
+    <member refid="classMinEnvironFlowControl_1a3d55c77bc8ba49b14b20eb494868b3ce" kind="variable"><name>catchments</name></member>
+    <member refid="classMinEnvironFlowControl_1a6c43408d05901838fa567c8e23a37009" kind="variable"><name>utilities</name></member>
+    <member refid="classMinEnvironFlowControl_1a1544571a77557853d0cc8189bd29f4b3" kind="variable"><name>water_sources_ids</name></member>
+    <member refid="classMinEnvironFlowControl_1ae5acc488f8a0b8aaf7a85cfc8a25bbf9" kind="variable"><name>utilities_ids</name></member>
+    <member refid="classMinEnvironFlowControl_1a571d4d56086eb752aebb20b2d85fa8e7" kind="variable"><name>water_source_id</name></member>
+    <member refid="classMinEnvironFlowControl_1a1a10a6b5720c934eef698cd72c9d883c" kind="variable"><name>type</name></member>
+    <member refid="classMinEnvironFlowControl_1a5b40c3f8da8c63513edb30804bf2ca01" kind="function"><name>MinEnvironFlowControl</name></member>
+    <member refid="classMinEnvironFlowControl_1a274fc5217a2a79d9c488d903708f5e68" kind="function"><name>MinEnvironFlowControl</name></member>
+    <member refid="classMinEnvironFlowControl_1ac7357455a533f7e6882cdb1ef303359b" kind="function"><name>getRelease</name></member>
+    <member refid="classMinEnvironFlowControl_1a9dd9d33661f121dda9704288658ecf7e" kind="function"><name>addComponents</name></member>
+    <member refid="classMinEnvironFlowControl_1ae8ba384400c2d4302cefb9ca6eaec3a8" kind="function"><name>setRealization</name></member>
+  </compound>
+  <compound refid="classObjectivesCalculator" kind="class"><name>ObjectivesCalculator</name>
+    <member refid="classObjectivesCalculator_1a4f34e541d573cc2e0690cfcdd8460c16" kind="function"><name>calculateReliabilityObjective</name></member>
+    <member refid="classObjectivesCalculator_1ab01034697c3e9876fd06bff0c880b5ca" kind="function"><name>calculateRestrictionFrequencyObjective</name></member>
+    <member refid="classObjectivesCalculator_1ac0860168c763c1957be518ba1a019812" kind="function"><name>calculateNetPresentCostInfrastructureObjective</name></member>
+    <member refid="classObjectivesCalculator_1a3de288911848c40150918d04879bdacb" kind="function"><name>calculatePeakFinancialCostsObjective</name></member>
+    <member refid="classObjectivesCalculator_1aaa5a9bb621c4346e106809f58afe1bd1" kind="function"><name>calculateWorseCaseCostsObjective</name></member>
+    <member refid="classObjectivesCalculator_1a90547ef235596c39aa1bfe556d98b9f6" kind="function"><name>calculateUnitTotalCostObjective</name></member>
+    <member refid="classObjectivesCalculator_1aaf6480a2839ed67c9d5dd52d79e2954d" kind="function"><name>calculateNetPresentCostInfrastructureObjectiveForVariableDebtService</name></member>
   </compound>
   <compound refid="classPaperTestProblem" kind="class"><name>PaperTestProblem</name>
     <member refid="classPaperTestProblem_1af4990348248cc169eb2137003dbe2e00" kind="variable"><name>n_utilities</name></member>
@@ -383,6 +850,8 @@
     <member refid="classProblem_1a442f72921a52a1087c67723a801c8a44" kind="function"><name>setDemand_path_suffix</name></member>
     <member refid="classProblem_1a16f7de201ec1a9a2072c85819e7dde3c" kind="function"><name>setDemand_path_subfolder</name></member>
   </compound>
+  <compound refid="classQuadProg" kind="class"><name>QuadProg</name>
+  </compound>
   <compound refid="classQuarry" kind="class"><name>Quarry</name>
     <member refid="classQuarry_1a5cb60f94475d5991a795cb9117e0b83f" kind="variable"><name>max_diversion</name></member>
     <member refid="classQuarry_1ac2fe4ae274f23b1cc932655c5fb6263d" kind="variable"><name>diverted_flow</name></member>
@@ -395,6 +864,9 @@
     <member refid="classQuarry_1a6c528c6222e8e5adc134db5cafbe62e3" kind="function"><name>~Quarry</name></member>
     <member refid="classQuarry_1a6999b854a740ce92baaa610cf5b08bd9" kind="function"><name>applyContinuity</name></member>
     <member refid="classQuarry_1af5fe04fa188d399485b2b4e64381e169" kind="function"><name>setOnline</name></member>
+  </compound>
+  <compound refid="classQuaryDataCollector" kind="class"><name>QuaryDataCollector</name>
+    <member refid="classQuaryDataCollector_1af2f534feeca2a37104309a595d064cbd" kind="function"><name>QuaryDataCollector</name></member>
   </compound>
   <compound refid="classRelocation" kind="class"><name>Relocation</name>
     <member refid="classRelocation_1a61282254064f00641aaec667a7eb0652" kind="variable"><name>parent_reservoir_ID</name></member>
@@ -426,12 +898,67 @@
     <member refid="classReservoir_1ad1bb7aa46397719d09e0b6188b9bc28d" kind="function"><name>setRealization</name></member>
     <member refid="classReservoir_1af86ffdaa2842a38b7f59e0360a1004a1" kind="function"><name>getArea</name></member>
   </compound>
+  <compound refid="classReservoirDataCollector" kind="class"><name>ReservoirDataCollector</name>
+    <member refid="classReservoirDataCollector_1a188c8509a43e7f28362407f7508fde27" kind="variable"><name>reservoir</name></member>
+    <member refid="classReservoirDataCollector_1a6bf4ac702379a120800291cb72c040c5" kind="variable"><name>stored_volume</name></member>
+    <member refid="classReservoirDataCollector_1aa0d360efd8e64299b4effe3aab2ab8cc" kind="variable"><name>total_upstream_sources_inflows</name></member>
+    <member refid="classReservoirDataCollector_1ad923772e45d3ac1151d6cf444fc4bf60" kind="variable"><name>wastewater_inflows</name></member>
+    <member refid="classReservoirDataCollector_1a2d603aa989995e0a2c6231dac81039c5" kind="variable"><name>demands</name></member>
+    <member refid="classReservoirDataCollector_1ae7599c36bb35ceec8906c1d9e48dc05c" kind="variable"><name>outflows</name></member>
+    <member refid="classReservoirDataCollector_1a612fd61c495e4962660b96d1299ef775" kind="variable"><name>total_catchments_inflow</name></member>
+    <member refid="classReservoirDataCollector_1a7dd3a3878cec28c4b3f00b22d9aabacc" kind="variable"><name>evaporated_volume</name></member>
+    <member refid="classReservoirDataCollector_1a45ffc0c08506a47f127fa1e8453baa25" kind="variable"><name>area</name></member>
+    <member refid="classReservoirDataCollector_1a7a2e049d0cbccf72a2150976ff4cf30b" kind="variable"><name>fixed_area</name></member>
+    <member refid="classReservoirDataCollector_1a0c65783631bb0254022e6bcf912600e2" kind="variable"><name>fixed_area_value</name></member>
+    <member refid="classReservoirDataCollector_1a7647adce7b2d7a8598ae678a5015dde5" kind="function"><name>ReservoirDataCollector</name></member>
+    <member refid="classReservoirDataCollector_1aaca132902fa717e71a0b0d5d5078c04c" kind="function"><name>ReservoirDataCollector</name></member>
+    <member refid="classReservoirDataCollector_1a81777b029bf26be403b9f4d67f01588b" kind="function"><name>printTabularString</name></member>
+    <member refid="classReservoirDataCollector_1a0b68d7fa4a6d704350340d1ac3e8a1d2" kind="function"><name>printCompactString</name></member>
+    <member refid="classReservoirDataCollector_1a62e7c7abc34c8154b338dfbd284ed665" kind="function"><name>printTabularStringHeaderLine1</name></member>
+    <member refid="classReservoirDataCollector_1ae2f8e808c5960608e510a64c7f00ad1b" kind="function"><name>printTabularStringHeaderLine2</name></member>
+    <member refid="classReservoirDataCollector_1aa8346433f037bbca41f3c8450f7f88cf" kind="function"><name>printCompactStringHeader</name></member>
+    <member refid="classReservoirDataCollector_1a5c2e1355c40e45b409168e98245eef95" kind="function"><name>collect_data</name></member>
+  </compound>
   <compound refid="classReservoirExpansion" kind="class"><name>ReservoirExpansion</name>
     <member refid="classReservoirExpansion_1a56527196174404cfed20b863df2ab0ba" kind="variable"><name>parent_reservoir_ID</name></member>
     <member refid="classReservoirExpansion_1aa742cae4276e97847681dac4f828b5ae" kind="function"><name>ReservoirExpansion</name></member>
     <member refid="classReservoirExpansion_1abc10a6725f7fb85b7478fb6b0b79bd1e" kind="function"><name>ReservoirExpansion</name></member>
     <member refid="classReservoirExpansion_1a6c9607be0fc7ce624a19bc32fdff9222" kind="function"><name>operator=</name></member>
     <member refid="classReservoirExpansion_1a18614050354dced5cc2747eeda0c2397" kind="function"><name>applyContinuity</name></member>
+  </compound>
+  <compound refid="classRestrictions" kind="class"><name>Restrictions</name>
+    <member refid="classRestrictions_1ae05c6899c05a7ffe39c4ceb7cdcd3daf" kind="variable"><name>stage_multipliers</name></member>
+    <member refid="classRestrictions_1a1c519068b4ab14737f726817f1edf9d0" kind="variable"><name>stage_triggers</name></member>
+    <member refid="classRestrictions_1aa640571d6082e54187bc1472c6114f69" kind="variable"><name>current_multiplier</name></member>
+    <member refid="classRestrictions_1a987355e7c1e8e614faccb8aa06523563" kind="variable"><name>restricted_weekly_average_volumetric_price</name></member>
+    <member refid="classRestrictions_1aec6f37bfaec7d6e22e82945289fd9acc" kind="function"><name>Restrictions</name></member>
+    <member refid="classRestrictions_1a78083b572f1368bb863d40d7da807077" kind="function"><name>Restrictions</name></member>
+    <member refid="classRestrictions_1aa8653b70ff7eedb4e8fc1b21ebf2ead9" kind="function"><name>Restrictions</name></member>
+    <member refid="classRestrictions_1a54c8a857a2beed78d34a46c36951b004" kind="function"><name>~Restrictions</name></member>
+    <member refid="classRestrictions_1a1ef7559adc034bdddd047ee776b5f9a9" kind="function"><name>applyPolicy</name></member>
+    <member refid="classRestrictions_1ab0a2b62495d6cdd8d1fedba419c05c37" kind="function"><name>addSystemComponents</name></member>
+    <member refid="classRestrictions_1a4282debfe00607f87f59a08ec1844d40" kind="function"><name>getCurrent_multiplier</name></member>
+    <member refid="classRestrictions_1a5155dcecc8b995c1793fa400f1533959" kind="function"><name>calculateWeeklyAverageWaterPrices</name></member>
+    <member refid="classRestrictions_1abc17a8a403311933a3bb58fbecd5f5fd" kind="function"><name>setRealization</name></member>
+  </compound>
+  <compound refid="classRestrictionsDataCollector" kind="class"><name>RestrictionsDataCollector</name>
+    <member refid="classRestrictionsDataCollector_1a09e79e1e24fa4cc698c9dfa6914ee47d" kind="variable"><name>restriction_policy</name></member>
+    <member refid="classRestrictionsDataCollector_1afb6bc7f42a2490e2599c37baebe3995c" kind="variable"><name>restriction_multipliers</name></member>
+    <member refid="classRestrictionsDataCollector_1a0e700f013442a6df86fe75bcee4c31df" kind="function"><name>RestrictionsDataCollector</name></member>
+    <member refid="classRestrictionsDataCollector_1a45e5612e70ec98430e31271f68ca407e" kind="function"><name>printTabularString</name></member>
+    <member refid="classRestrictionsDataCollector_1ab8b8c30dca6b2e41c1ef5e3ac7e29813" kind="function"><name>printCompactString</name></member>
+    <member refid="classRestrictionsDataCollector_1a2676a6693b254997d223fc1c437258ab" kind="function"><name>printTabularStringHeaderLine1</name></member>
+    <member refid="classRestrictionsDataCollector_1afb3c49c2c9b152bb2372e2fcc198e1b8" kind="function"><name>printTabularStringHeaderLine2</name></member>
+    <member refid="classRestrictionsDataCollector_1ad36ff12a666d72c92893c918715628f6" kind="function"><name>printCompactStringHeader</name></member>
+    <member refid="classRestrictionsDataCollector_1a7d8b6433ec25a53ed50577c2cf89912d" kind="function"><name>collect_data</name></member>
+    <member refid="classRestrictionsDataCollector_1a576be619485a838e9496fea66181cd06" kind="function"><name>getRestriction_multipliers</name></member>
+  </compound>
+  <compound refid="classSeasonalMinEnvFlowControl" kind="class"><name>SeasonalMinEnvFlowControl</name>
+    <member refid="classSeasonalMinEnvFlowControl_1adea056def640b4e799b8549383838317" kind="variable"><name>week_thresholds</name></member>
+    <member refid="classSeasonalMinEnvFlowControl_1aa9225667157707da3230276d0de890ba" kind="variable"><name>min_env_flows</name></member>
+    <member refid="classSeasonalMinEnvFlowControl_1a02ea55181dd200190a6b792e57f30193" kind="function"><name>SeasonalMinEnvFlowControl</name></member>
+    <member refid="classSeasonalMinEnvFlowControl_1ad0eeb570fc096a92b788b5c4a48bcec4" kind="function"><name>SeasonalMinEnvFlowControl</name></member>
+    <member refid="classSeasonalMinEnvFlowControl_1a5c5ddcab367812bdd2e23b383449d202" kind="function"><name>getRelease</name></member>
   </compound>
   <compound refid="classSequentialJointTreatmentExpansion" kind="class"><name>SequentialJointTreatmentExpansion</name>
     <member refid="classSequentialJointTreatmentExpansion_1a35db39c86948882acbc30fe970f55d52" kind="variable"><name>total_treatment_capacity</name></member>
@@ -475,6 +1002,61 @@
     <member refid="classSimulation_1ac9ff965191f13b1ce044344fd1e5d0ac" kind="function"><name>setupSimulation</name></member>
     <member refid="classSimulation_1aa2e2863a0038345c46dd827b97008347" kind="function"><name>createContinuityModels</name></member>
     <member refid="classSimulation_1a3279f9efae2c262b54ad4d16c631033c" kind="function"><name>printProgress</name></member>
+  </compound>
+  <compound refid="classSolutions" kind="class"><name>Solutions</name>
+    <member refid="classSolutions_1a719624b0ddd892bf180206d9d4338cd2" kind="variable"><name>solutions_16</name></member>
+    <member refid="classSolutions_1a1d52637d01c7e17fcc05a918375a7728" kind="variable"><name>solutions_all</name></member>
+  </compound>
+  <compound refid="classStorageMinEnvFlowControl" kind="class"><name>StorageMinEnvFlowControl</name>
+    <member refid="classStorageMinEnvFlowControl_1af68170e5f561f1bfc2062f9e6ec8dd6d" kind="variable"><name>storages</name></member>
+    <member refid="classStorageMinEnvFlowControl_1af187563525a0b5b437d27134bff34646" kind="variable"><name>releases</name></member>
+    <member refid="classStorageMinEnvFlowControl_1ae78055a8be7ad9e119384958ef88e174" kind="function"><name>getRelease</name></member>
+    <member refid="classStorageMinEnvFlowControl_1aba965c28890bf5abb1230dd6d8879f18" kind="function"><name>StorageMinEnvFlowControl</name></member>
+    <member refid="classStorageMinEnvFlowControl_1a2279f6d44b8ba69830a29654ddee8d3a" kind="function"><name>StorageMinEnvFlowControl</name></member>
+  </compound>
+  <compound refid="classTransfers" kind="class"><name>Transfers</name>
+    <member refid="classTransfers_1a4513cfef08bd7e9980d098f8fb7d6a32" kind="variable"><name>source_utility_id</name></member>
+    <member refid="classTransfers_1a69a7ec8b065b9c807e2256f205a3d41e" kind="variable"><name>source_treatment_buffer</name></member>
+    <member refid="classTransfers_1a7715c87efbee763488d6fcc4674f2523" kind="variable"><name>average_pipe_capacity</name></member>
+    <member refid="classTransfers_1a039a24fe986a718da1ac61bac0e49644" kind="variable"><name>transfer_water_source_id</name></member>
+    <member refid="classTransfers_1a420b61c6ff119fef48a39a39ae4e0958" kind="variable"><name>util_id_to_vertex_id</name></member>
+    <member refid="classTransfers_1a55506f9588e0132ffcad1cf0036a83af" kind="variable"><name>buyers_ids</name></member>
+    <member refid="classTransfers_1ad956149e16363b5a04fd0a4f6efb3a61" kind="variable"><name>allocations</name></member>
+    <member refid="classTransfers_1a2989642c0fe0544dd9345d45042933d5" kind="variable"><name>conveyed_volumes</name></member>
+    <member refid="classTransfers_1a6eab429701a7e1dc857675cc8571589c" kind="variable"><name>buyers_transfer_triggers</name></member>
+    <member refid="classTransfers_1ae3d752b6821c1a92801494304cef47e0" kind="variable"><name>seller_transfer_trigger</name></member>
+    <member refid="classTransfers_1af4ef4c75d49dfb3aee476c0695ff41d5" kind="variable"><name>flow_rates_and_allocations</name></member>
+    <member refid="classTransfers_1a8c84c081f069f6835e9dd12a460d90eb" kind="variable"><name>source_utility</name></member>
+    <member refid="classTransfers_1a6a23dc463d7a4b07bcb7f3a7472263b2" kind="variable"><name>transfer_water_source</name></member>
+    <member refid="classTransfers_1aec57a6a75061f18404e30d8e48c45ffd" kind="variable"><name>H</name></member>
+    <member refid="classTransfers_1a1c2d27eb4e9294e32f04b5e7d929e71f" kind="variable"><name>Aeq</name></member>
+    <member refid="classTransfers_1a2acc8cfe6a1978d2468be289db636226" kind="variable"><name>A</name></member>
+    <member refid="classTransfers_1a77db57256093921b04035c1e38a20060" kind="variable"><name>f</name></member>
+    <member refid="classTransfers_1a39d45672a21ce1a45925eceea79b921a" kind="variable"><name>beq</name></member>
+    <member refid="classTransfers_1a24e66988fb2e50d151859813fda2e740" kind="variable"><name>b</name></member>
+    <member refid="classTransfers_1a22f332495395f41b340e370535a6b27a" kind="variable"><name>allocations_aux</name></member>
+    <member refid="classTransfers_1a10e5cae64016e52eca5dccc8e01e9791" kind="variable"><name>lb</name></member>
+    <member refid="classTransfers_1aab0d3f08ed2897d9a74c9970612231d5" kind="variable"><name>ub</name></member>
+    <member refid="classTransfers_1ae6abf817349382b66abc9cc3f45193a1" kind="function"><name>Transfers</name></member>
+    <member refid="classTransfers_1af88f7908692240eec9f3179128c6f343" kind="function"><name>Transfers</name></member>
+    <member refid="classTransfers_1a5dfeafe7a9b9a446b1ab746b65ef3b4b" kind="function"><name>~Transfers</name></member>
+    <member refid="classTransfers_1abb5bd2978727424dc524c401dca0cbaf" kind="function"><name>getAllocations</name></member>
+    <member refid="classTransfers_1ad9e4e83ff763ac1ba518a19051cd2e69" kind="function"><name>applyPolicy</name></member>
+    <member refid="classTransfers_1a3c1930dbeb1273c1c0be93ad5ca57357" kind="function"><name>addSystemComponents</name></member>
+    <member refid="classTransfers_1a06f965588350cc854f3bf3d619416fdc" kind="function"><name>solve_QP</name></member>
+    <member refid="classTransfers_1a75342a7c14b2ff69eb2520de240a1131" kind="function"><name>setRealization</name></member>
+  </compound>
+  <compound refid="classTransfersDataCollector" kind="class"><name>TransfersDataCollector</name>
+    <member refid="classTransfersDataCollector_1ad2cee6c51c12613ac4f1bcd5e93188c6" kind="variable"><name>utilities_ids</name></member>
+    <member refid="classTransfersDataCollector_1a9afe6069737f07aee23674c5f3073e3d" kind="variable"><name>demand_offsets</name></member>
+    <member refid="classTransfersDataCollector_1a9288415ca755018fe2293e7d5913738d" kind="variable"><name>transfer_policy</name></member>
+    <member refid="classTransfersDataCollector_1a757289856b49a212a16b6263bfab8b7d" kind="function"><name>TransfersDataCollector</name></member>
+    <member refid="classTransfersDataCollector_1a292b907e5c1000d8b3d868409637b9a6" kind="function"><name>printTabularString</name></member>
+    <member refid="classTransfersDataCollector_1aa5385877143c67a4d300032160239cfe" kind="function"><name>printCompactString</name></member>
+    <member refid="classTransfersDataCollector_1a7c797fbccf4326b206b29529059dd622" kind="function"><name>printTabularStringHeaderLine1</name></member>
+    <member refid="classTransfersDataCollector_1ade6b896383f079d8973076e6b9a8053a" kind="function"><name>printTabularStringHeaderLine2</name></member>
+    <member refid="classTransfersDataCollector_1a29750b8b76fa82d70d4f472a0e36ceba" kind="function"><name>printCompactStringHeader</name></member>
+    <member refid="classTransfersDataCollector_1a2f5c4427699aab547ea0d3b74993752b" kind="function"><name>collect_data</name></member>
   </compound>
   <compound refid="classTriangle" kind="class"><name>Triangle</name>
     <member refid="classTriangle_1a27fd697e6e14227b71a617ddbcec9653" kind="variable"><name>n_utilities</name></member>
@@ -528,6 +1110,61 @@
     <member refid="classTriangle_1a9e95039d098fd61cce1a830b85ed7004" kind="function"><name>functionEvaluation</name></member>
     <member refid="classTriangle_1a816ff476231f6bd575c82978706f4b9a" kind="function"><name>simulationExceptionHander</name></member>
     <member refid="classTriangle_1a045e3263a62a8a628fe5645f0323b7e4" kind="function"><name>readInputData</name></member>
+  </compound>
+  <compound refid="classUtilitiesDataCollector" kind="class"><name>UtilitiesDataCollector</name>
+    <member refid="classUtilitiesDataCollector_1a48de294ec73e9d95c31d08316ca6620a" kind="variable"><name>st_rof</name></member>
+    <member refid="classUtilitiesDataCollector_1a2189076dc2e7c0ec6afb9169008d73a3" kind="variable"><name>st_stor_rof</name></member>
+    <member refid="classUtilitiesDataCollector_1a95798f6b8cb9e6d2c5b359c8ccfb1a32" kind="variable"><name>st_trmt_rof</name></member>
+    <member refid="classUtilitiesDataCollector_1ae573a427a96761529f3c33cafb2ae523" kind="variable"><name>lt_rof</name></member>
+    <member refid="classUtilitiesDataCollector_1a0ef14ef110831718c762c3558920c06c" kind="variable"><name>lt_stor_rof</name></member>
+    <member refid="classUtilitiesDataCollector_1aa93d11b5e25070e6b72028c01dd3b28c" kind="variable"><name>lt_trmt_rof</name></member>
+    <member refid="classUtilitiesDataCollector_1ac5187dc598703630287ae17712f01b55" kind="variable"><name>combined_storage</name></member>
+    <member refid="classUtilitiesDataCollector_1adf6e8ba0fd80e4b2493916e15b7e369d" kind="variable"><name>unrestricted_demand</name></member>
+    <member refid="classUtilitiesDataCollector_1aa51e92337421be6412fb44b9ef0ea8d3" kind="variable"><name>restricted_demand</name></member>
+    <member refid="classUtilitiesDataCollector_1af7a33a0752ac627955ab1898aa008639" kind="variable"><name>contingency_fund_size</name></member>
+    <member refid="classUtilitiesDataCollector_1ad107d45de75ad920142a6645f2657e5c" kind="variable"><name>gross_revenues</name></member>
+    <member refid="classUtilitiesDataCollector_1acf362c8f36ed94e85a7750111ee95275" kind="variable"><name>contingency_fund_contribution</name></member>
+    <member refid="classUtilitiesDataCollector_1a04de6814b69ac521ac1533e4d7f5d6de" kind="variable"><name>debt_service_payments</name></member>
+    <member refid="classUtilitiesDataCollector_1a7695eba96cf7a78740ca482bc0333055" kind="variable"><name>present_valued_debt_service_payments</name></member>
+    <member refid="classUtilitiesDataCollector_1a39b6a91decb12ef993f96a858d904afc" kind="variable"><name>insurance_contract_cost</name></member>
+    <member refid="classUtilitiesDataCollector_1a0686118f05245bcef7c14f751dfc3534" kind="variable"><name>insurance_payout</name></member>
+    <member refid="classUtilitiesDataCollector_1a8c6cbd05a930533e32f1ee374380d24b" kind="variable"><name>drought_mitigation_cost</name></member>
+    <member refid="classUtilitiesDataCollector_1ad288dee20ff2e20caaa1e6a67ad815ae" kind="variable"><name>capacity</name></member>
+    <member refid="classUtilitiesDataCollector_1ac86eb33899a451037dd27f3330378df2" kind="variable"><name>net_present_infrastructure_cost</name></member>
+    <member refid="classUtilitiesDataCollector_1ad329c0652d880f257f1ee73fbf2ee632" kind="variable"><name>waste_water_discharge</name></member>
+    <member refid="classUtilitiesDataCollector_1a8af280724d0a10ea6fafbc426c04266a" kind="variable"><name>unfulfilled_demand</name></member>
+    <member refid="classUtilitiesDataCollector_1ab42e458d9475733cd2fa89353b7567f2" kind="variable"><name>net_stream_inflow</name></member>
+    <member refid="classUtilitiesDataCollector_1a0b3587a8ce9176a8e73152c957ba9322" kind="variable"><name>total_treatment_capacity</name></member>
+    <member refid="classUtilitiesDataCollector_1ae8662a9e4a483cdb117c47e04bee0f79" kind="variable"><name>final_stored_volume</name></member>
+    <member refid="classUtilitiesDataCollector_1a4799cdeea1483bbbb2507f0843aba40b" kind="variable"><name>recorded_annual_demand</name></member>
+    <member refid="classUtilitiesDataCollector_1a9979294482388e8fe221e63c27eb7917" kind="variable"><name>projected_demand_estimate</name></member>
+    <member refid="classUtilitiesDataCollector_1a8f3c2305f751b65af66b202a6050eab2" kind="variable"><name>pathways</name></member>
+    <member refid="classUtilitiesDataCollector_1a215beae386004a66b72e40c3f07a7455" kind="variable"><name>utility</name></member>
+    <member refid="classUtilitiesDataCollector_1a7aee55a1cbd0fcdca59339a9e78ed08b" kind="function"><name>UtilitiesDataCollector</name></member>
+    <member refid="classUtilitiesDataCollector_1a805182c7f423290135a5c92844cdbb4a" kind="function"><name>operator=</name></member>
+    <member refid="classUtilitiesDataCollector_1a39e7d28a70a0f71b3f1cc28b19c7e2d9" kind="function"><name>printTabularString</name></member>
+    <member refid="classUtilitiesDataCollector_1a57b5f9cd8ddf54154476749ab0977355" kind="function"><name>printCompactString</name></member>
+    <member refid="classUtilitiesDataCollector_1a796aa9d7637d8ed04dbd949ca2a34088" kind="function"><name>printTabularStringHeaderLine1</name></member>
+    <member refid="classUtilitiesDataCollector_1ae502a096e8f4fdfdfd481ab2093f9771" kind="function"><name>printTabularStringHeaderLine2</name></member>
+    <member refid="classUtilitiesDataCollector_1ab3409c407783fd4451f310d2fc177b22" kind="function"><name>printCompactStringHeader</name></member>
+    <member refid="classUtilitiesDataCollector_1ab72c4432d6816beb1f4f4b354fb3023d" kind="function"><name>collect_data</name></member>
+    <member refid="classUtilitiesDataCollector_1a9d1478c486b9be64fa452b34258e8b03" kind="function"><name>getCombined_storage</name></member>
+    <member refid="classUtilitiesDataCollector_1a48369552a48650ea015b3ff18da5175f" kind="function"><name>getCapacity</name></member>
+    <member refid="classUtilitiesDataCollector_1adb6e9b219255d8bb1fb323d6e5582e5c" kind="function"><name>getGross_revenues</name></member>
+    <member refid="classUtilitiesDataCollector_1a9cb52112e6175775842474e80a37023d" kind="function"><name>getContingency_fund_contribution</name></member>
+    <member refid="classUtilitiesDataCollector_1a13635135acfe49ec8eb0b587af41c9f1" kind="function"><name>getDebt_service_payments</name></member>
+    <member refid="classUtilitiesDataCollector_1a96d4541f68916996c0ac74d7d4ad6474" kind="function"><name>getInsurance_contract_cost</name></member>
+    <member refid="classUtilitiesDataCollector_1a911a0651222ac1d8185eef001fdb2ea8" kind="function"><name>getDrought_mitigation_cost</name></member>
+    <member refid="classUtilitiesDataCollector_1a2fa923f7d2df2a31a20294279572aeb6" kind="function"><name>getContingency_fund_size</name></member>
+    <member refid="classUtilitiesDataCollector_1a0e09af9bbb446c502c0d10be477dcf00" kind="function"><name>getPathways</name></member>
+    <member refid="classUtilitiesDataCollector_1a90a0dbf95c1eaf8325c3703764408f84" kind="function"><name>getNet_present_infrastructure_cost</name></member>
+    <member refid="classUtilitiesDataCollector_1aa9bc5b8d31c3a0bec03906cded8c0cf4" kind="function"><name>getSt_rof</name></member>
+    <member refid="classUtilitiesDataCollector_1af7463f468d5aaa3a13bc610660323648" kind="function"><name>getLt_rof</name></member>
+    <member refid="classUtilitiesDataCollector_1a78421c65929a05cd1312006bca24e658" kind="function"><name>getRestricted_demand</name></member>
+    <member refid="classUtilitiesDataCollector_1a11319f69ba0cf1c932502e8c35d7f741" kind="function"><name>getUnrestricted_demand</name></member>
+    <member refid="classUtilitiesDataCollector_1a04b4760bce9c615d450d84cc27126ef7" kind="function"><name>getRecorded_annual_demand</name></member>
+    <member refid="classUtilitiesDataCollector_1afdfabc1bf2b9b2f8639744afeaa76e11" kind="function"><name>getPresent_value_debt_service_payments</name></member>
+    <member refid="classUtilitiesDataCollector_1af01392bbfae02a1fd9ee65b3c97a73a3" kind="function"><name>checkForNans</name></member>
   </compound>
   <compound refid="classUtility" kind="class"><name>Utility</name>
     <member refid="classUtility_1acb779ceddbc1820c8bec7b2f87886d7c" kind="variable"><name>weekly_average_volumetric_price</name></member>
@@ -673,6 +1310,20 @@
     <member refid="classUtility_1affbfd106c7b5cdf6703d01d6ad838fde" kind="function"><name>getSinusoidalFactor</name></member>
     <member refid="classUtility_1a360c97e7dd372f3ff57f94314743e53d" kind="function"><name>compById</name></member>
   </compound>
+  <compound refid="classUtils" kind="class"><name>Utils</name>
+    <member refid="classUtils_1a70b9475aafa3277b7d177a74752263bf" kind="function"><name>parse2DCsvFile</name></member>
+    <member refid="classUtils_1a42fdb9455286213b32abf5f111c21fd4" kind="function"><name>parse1DCsvFile</name></member>
+    <member refid="classUtils_1af50f672b3a5c4790386d943e04e960f9" kind="function"><name>copyWaterSourceVector</name></member>
+    <member refid="classUtils_1aa640115dcdbe7309c058063c1f0cf943" kind="function"><name>copyUtilityVector</name></member>
+    <member refid="classUtils_1ab291735d88ca704e9317edf259b6a5ab" kind="function"><name>copyDroughtMitigationPolicyVector</name></member>
+    <member refid="classUtils_1a16d5d6b3ada64b5f018478e972b66b2a" kind="function"><name>copyMinEnvFlowControlVector</name></member>
+    <member refid="classUtils_1a3e4c6e935243165c89f059c5fedf2945" kind="function"><name>isFirstWeekOfTheYear</name></member>
+    <member refid="classUtils_1a510a7b15687fc6bd6b1c1742d7d7e9fd" kind="function"><name>weekOfTheYear</name></member>
+    <member refid="classUtils_1a6022da71d614027a1da3a996531df85e" kind="function"><name>removeIntFromVector</name></member>
+    <member refid="classUtils_1a25184c319ab70a93b056d516e0aafd8e" kind="function"><name>print_exception</name></member>
+    <member refid="classUtils_1af59616433568dbc50e28290524f40faa" kind="function"><name>copyBonds</name></member>
+    <member refid="classUtils_1a383900ac38ca9c17e58d8ff2156ac100" kind="function"><name>createDir</name></member>
+  </compound>
   <compound refid="classVariableDebtServiceBond" kind="class"><name>VariableDebtServiceBond</name>
     <member refid="classVariableDebtServiceBond_1af8e932fd3253dd365ee31605fc9d5487" kind="variable"><name>variable_debt_service_payment</name></member>
     <member refid="classVariableDebtServiceBond_1abd86106a72ef0eaaa158aeefcad335b3" kind="variable"><name>initial_debt_fraction</name></member>
@@ -704,6 +1355,33 @@
     <member refid="classVariableJointWTP_1ade062353af947456c6a3ed10a93686d4" kind="function"><name>implementInitialTreatmentCapacity</name></member>
     <member refid="classVariableJointWTP_1ab02c6701ad5120e189023b038bae13b7" kind="function"><name>resetAllocations</name></member>
   </compound>
+  <compound refid="classVector" kind="class"><name>Vector</name>
+    <member refid="classVector_1adab11fd27ce9e960aa8612937e453786" kind="variable"><name>n</name></member>
+    <member refid="classVector_1ab72db1fed2b2310123729b1fd76d3446" kind="variable"><name>v</name></member>
+    <member refid="classVector_1a39d6069675db4ecfc1ab81d440da759a" kind="function"><name>Vector</name></member>
+    <member refid="classVector_1a8575836acd6e8c9a2297b5ba6d14008c" kind="function"><name>Vector</name></member>
+    <member refid="classVector_1aa2bc8aac00503574bac8302652ef7ba0" kind="function"><name>Vector</name></member>
+    <member refid="classVector_1a62f06e9931e61437a5a5783eca0a9550" kind="function"><name>Vector</name></member>
+    <member refid="classVector_1ac71d98c4ac152523a76bbadcd3a83a5a" kind="function"><name>Vector</name></member>
+    <member refid="classVector_1afd524fac19e6d3d69db5198ffe2952b0" kind="function"><name>~Vector</name></member>
+    <member refid="classVector_1aa07a0c8ca467e2ce190afc26054cf422" kind="function"><name>operator[]</name></member>
+    <member refid="classVector_1a36cc881f0270de628bec7a80bbdab741" kind="function"><name>operator[]</name></member>
+    <member refid="classVector_1a5214a382564aedc712b609416aa3b7b1" kind="function"><name>size</name></member>
+    <member refid="classVector_1ae751d4bf4c403e4578a9df1202e93f56" kind="function"><name>resize</name></member>
+    <member refid="classVector_1a1ff5ed0bca47854450eb78024c6f52ff" kind="function"><name>resize</name></member>
+    <member refid="classVector_1aa44e8e04a723f2c0bd9382a3bfa46e7c" kind="function"><name>operator=</name></member>
+    <member refid="classVector_1a6bbf5f187006ef2567fdcebd37ebfa97" kind="function"><name>operator=</name></member>
+    <member refid="classVector_1a0cdad8a65e9dd1ef60afaf32aa547f9e" kind="function"><name>operator+=</name></member>
+    <member refid="classVector_1ab5ed11e19503bbc0ee10c7a8d1ee2978" kind="function"><name>operator-=</name></member>
+    <member refid="classVector_1a3b3e94a4ee6601a8c3ceaed790c2d965" kind="function"><name>operator*=</name></member>
+    <member refid="classVector_1adbf519ce5d68eb131947137e30596dc1" kind="function"><name>operator/=</name></member>
+    <member refid="classVector_1acd4d558272832a19d614468400ca605d" kind="function"><name>operator^=</name></member>
+    <member refid="classVector_1a5650df0775f0677f76259cd3f474dded" kind="function"><name>operator+=</name></member>
+    <member refid="classVector_1a7581aba7a67b45ff1b2848d37e00cfa1" kind="function"><name>operator-=</name></member>
+    <member refid="classVector_1a02e9c5296c7ddb1a2047a8c80d93e0d5" kind="function"><name>operator*=</name></member>
+    <member refid="classVector_1a358eca4649d02b3bbab359484eb93140" kind="function"><name>operator/=</name></member>
+    <member refid="classVector_1a6767000b5cbf4999aa301eb24a7b74fc" kind="function"><name>operator^=</name></member>
+  </compound>
   <compound refid="classWaterReuse" kind="class"><name>WaterReuse</name>
     <member refid="classWaterReuse_1a47ef62349f0092ccdda066905c89111a" kind="variable"><name>treated_volume</name></member>
     <member refid="classWaterReuse_1a0493da65856f50fad2bc2d2c087f378f" kind="function"><name>WaterReuse</name></member>
@@ -712,6 +1390,17 @@
     <member refid="classWaterReuse_1ab0a905840bfc092d9bf9f69e94262948" kind="function"><name>operator=</name></member>
     <member refid="classWaterReuse_1ab8ffb10c69790047a3a5dda66cfaf3ee" kind="function"><name>applyContinuity</name></member>
     <member refid="classWaterReuse_1a78c905f77ca46fbbb2251f9cfa9a04de" kind="function"><name>getReused_volume</name></member>
+  </compound>
+  <compound refid="classWaterReuseDataCollector" kind="class"><name>WaterReuseDataCollector</name>
+    <member refid="classWaterReuseDataCollector_1a4ecf7e2de50415ac298104816b17d887" kind="variable"><name>water_reuse</name></member>
+    <member refid="classWaterReuseDataCollector_1a9c119c103524f7350d771406a4a8c6a9" kind="variable"><name>reused_volume</name></member>
+    <member refid="classWaterReuseDataCollector_1a0bd64f585d6645023f6cf5a485a89416" kind="function"><name>WaterReuseDataCollector</name></member>
+    <member refid="classWaterReuseDataCollector_1af8b637ad080f354dc145f11580834da8" kind="function"><name>printTabularString</name></member>
+    <member refid="classWaterReuseDataCollector_1a6b37aa4b2031cf0a1a1326da2bd64420" kind="function"><name>printCompactString</name></member>
+    <member refid="classWaterReuseDataCollector_1a1065ad3627b913dccb6ecbf0e6acc6e6" kind="function"><name>printTabularStringHeaderLine1</name></member>
+    <member refid="classWaterReuseDataCollector_1a8cead3771efabeb62dcf069008810f43" kind="function"><name>printTabularStringHeaderLine2</name></member>
+    <member refid="classWaterReuseDataCollector_1afef08bead3f2c60c2b9c975864456ef1" kind="function"><name>printCompactStringHeader</name></member>
+    <member refid="classWaterReuseDataCollector_1af4d8d437372c06d84ff889a5288cc96e" kind="function"><name>collect_data</name></member>
   </compound>
   <compound refid="classWaterSource" kind="class"><name>WaterSource</name>
     <member refid="classWaterSource_1a49e1a191152e344e2161e8db166e067a" kind="variable"><name>available_volume</name></member>
@@ -813,7 +1502,21 @@
     <member refid="classWaterSource_1a4c8f4c120b9101767b6013a78eb2c5d4" kind="function"><name>setSeed</name></member>
     <member refid="classWaterSource_1a04f94831f4816bb277c5a615eace7779" kind="function"><name>unsetSeed</name></member>
   </compound>
+  <compound refid="classWwtpDischargeRule" kind="class"><name>WwtpDischargeRule</name>
+    <member refid="classWwtpDischargeRule_1a99be200d8d3ccf1f95a8d6e84a225df1" kind="variable"><name>source_id_to_vector_index</name></member>
+    <member refid="classWwtpDischargeRule_1a5d193e0cbc2eb23e1b86e79fb2eafad3" kind="variable"><name>year_series_fraction_discharge</name></member>
+    <member refid="classWwtpDischargeRule_1ac2f77a9fca93eef3fd26ff1d579130be" kind="variable"><name>discharge_to_source_ids</name></member>
+    <member refid="classWwtpDischargeRule_1ae904657855c9d983ea0e5995109cd561" kind="function"><name>WwtpDischargeRule</name></member>
+    <member refid="classWwtpDischargeRule_1ac433e50df1414ba4bbb40022832b43ff" kind="function"><name>WwtpDischargeRule</name></member>
+    <member refid="classWwtpDischargeRule_1a59b2b1f56607106a237011f16a3915c3" kind="function"><name>operator=</name></member>
+    <member refid="classWwtpDischargeRule_1a4cea07bf746d200c9ca3018405a77a46" kind="function"><name>get_dependent_variable</name></member>
+    <member refid="classWwtpDischargeRule_1a3338c0fc43d656a6730ca72dd5d3e51e" kind="function"><name>get_dependent_variable</name></member>
+    <member refid="classWwtpDischargeRule_1a10eb6f901b6479dadc107e0a7c07e03b" kind="function"><name>get_dependent_variable</name></member>
+    <member refid="classWwtpDischargeRule_1a8eade5d595ec0fdc76769e67c7ffc5f4" kind="function"><name>get_dependent_variable</name></member>
+  </compound>
   <compound refid="namespaceConstants" kind="namespace"><name>Constants</name>
+  </compound>
+  <compound refid="namespaceSolutions" kind="namespace"><name>Solutions</name>
   </compound>
   <compound refid="namespacestd" kind="namespace"><name>std</name>
   </compound>
@@ -822,6 +1525,62 @@
   <compound refid="ContinuityModelRealization_8h" kind="file"><name>ContinuityModelRealization.h</name>
   </compound>
   <compound refid="ContinuityModelROF_8h" kind="file"><name>ContinuityModelROF.h</name>
+  </compound>
+  <compound refid="ControlRules_8h" kind="file"><name>ControlRules.h</name>
+  </compound>
+  <compound refid="MinEnvFlowControl_8h" kind="file"><name>MinEnvFlowControl.h</name>
+  </compound>
+  <compound refid="MinEnvironFlowControl_8h" kind="file"><name>MinEnvironFlowControl.h</name>
+  </compound>
+  <compound refid="FallsLakeMinEnvFlowControl_8h" kind="file"><name>FallsLakeMinEnvFlowControl.h</name>
+  </compound>
+  <compound refid="JordanLakeMinEnvFlowControl_8h" kind="file"><name>JordanLakeMinEnvFlowControl.h</name>
+  </compound>
+  <compound refid="EvaporationSeries_8h" kind="file"><name>EvaporationSeries.h</name>
+  </compound>
+  <compound refid="FixedMinEnvFlowControl_8h" kind="file"><name>FixedMinEnvFlowControl.h</name>
+  </compound>
+  <compound refid="InflowMinEnvFlowControl_8h" kind="file"><name>InflowMinEnvFlowControl.h</name>
+  </compound>
+  <compound refid="SeasonalMinEnvFlowControl_8h" kind="file"><name>SeasonalMinEnvFlowControl.h</name>
+  </compound>
+  <compound refid="StorageMinEnvFlowControl_8h" kind="file"><name>StorageMinEnvFlowControl.h</name>
+  </compound>
+  <compound refid="WwtpDischargeRule_8h" kind="file"><name>WwtpDischargeRule.h</name>
+  </compound>
+  <compound refid="AllocatedIntakeDataCollector_8h" kind="file"><name>AllocatedIntakeDataCollector.h</name>
+  </compound>
+  <compound refid="AllocatedReservoirDataCollector_8h" kind="file"><name>AllocatedReservoirDataCollector.h</name>
+  </compound>
+  <compound refid="DataCollector_8h" kind="file"><name>DataCollector.h</name>
+  </compound>
+  <compound refid="EmptyDataCollector_8h" kind="file"><name>EmptyDataCollector.h</name>
+  </compound>
+  <compound refid="IntakeDataCollector_8h" kind="file"><name>IntakeDataCollector.h</name>
+  </compound>
+  <compound refid="JointWTPDataCollector_8h" kind="file"><name>JointWTPDataCollector.h</name>
+  </compound>
+  <compound refid="MasterDataCollector_8h" kind="file"><name>MasterDataCollector.h</name>
+  </compound>
+  <compound refid="QuaryDataCollector_8h" kind="file"><name>QuaryDataCollector.h</name>
+  </compound>
+  <compound refid="ReservoirDataCollector_8h" kind="file"><name>ReservoirDataCollector.h</name>
+  </compound>
+  <compound refid="RestrictionsDataCollector_8h" kind="file"><name>RestrictionsDataCollector.h</name>
+  </compound>
+  <compound refid="TransfersDataCollector_8h" kind="file"><name>TransfersDataCollector.h</name>
+  </compound>
+  <compound refid="UtilitiesDataCollector_8h" kind="file"><name>UtilitiesDataCollector.h</name>
+  </compound>
+  <compound refid="WaterReuseDataCollector_8h" kind="file"><name>WaterReuseDataCollector.h</name>
+  </compound>
+  <compound refid="DroughtMitigationPolicy_8h" kind="file"><name>DroughtMitigationPolicy.h</name>
+  </compound>
+  <compound refid="InsuranceStorageToROF_8h" kind="file"><name>InsuranceStorageToROF.h</name>
+  </compound>
+  <compound refid="Restrictions_8h" kind="file"><name>Restrictions.h</name>
+  </compound>
+  <compound refid="Transfers_8h" kind="file"><name>Transfers.h</name>
   </compound>
   <compound refid="Problem_8h" kind="file"><name>Problem.h</name>
   </compound>
@@ -877,21 +1636,114 @@
   </compound>
   <compound refid="WaterReuse_8h" kind="file"><name>WaterReuse.h</name>
   </compound>
+  <compound refid="Constants_8h" kind="file"><name>Constants.h</name>
+  </compound>
+  <compound refid="DataSeries_8h" kind="file"><name>DataSeries.h</name>
+  </compound>
+  <compound refid="Graph_8h" kind="file"><name>Graph.h</name>
+  </compound>
+  <compound refid="Matrices_8h" kind="file"><name>Matrices.h</name>
+  </compound>
+  <compound refid="ObjectivesCalculator_8h" kind="file"><name>ObjectivesCalculator.h</name>
+  </compound>
+  <compound refid="Array_8h" kind="file"><name>Array.h</name>
+    <member refid="Array_8h_1afb4b79601b9f07458ff37d2c507b3e6d" kind="enum"><name>MType</name></member>
+    <member refid="Array_8h_1afb4b79601b9f07458ff37d2c507b3e6da3ff81339cfc723dd10714c38227f6565" kind="enumvalue"><name>DIAG</name></member>
+    <member refid="Array_8h_1a262f62b4b8429f3f777233b7876f44b7" kind="function"><name>operator+</name></member>
+    <member refid="Array_8h_1a850b5ba6d4d87044704a379c43f45c2b" kind="function"><name>operator+</name></member>
+    <member refid="Array_8h_1a60ac90c59b116cdbc51952477b27b453" kind="function"><name>operator+</name></member>
+    <member refid="Array_8h_1a7966e6f6eb314d402eb61557ff43c5dd" kind="function"><name>operator+</name></member>
+    <member refid="Array_8h_1a143e90bb2264e74f81eecb80ade1a645" kind="function"><name>operator-</name></member>
+    <member refid="Array_8h_1aafca45bb1d5bc4be0e34bf4c4a3838fe" kind="function"><name>operator-</name></member>
+    <member refid="Array_8h_1ac25dd8510bf572cad2d2d832068f0a43" kind="function"><name>operator-</name></member>
+    <member refid="Array_8h_1a425190ee3ff58bd6765030b2b2a97fdd" kind="function"><name>operator-</name></member>
+    <member refid="Array_8h_1af94e125db41e41bd7517c3a00959d220" kind="function"><name>operator*</name></member>
+    <member refid="Array_8h_1a71c9cb02179797f943daa215dd5efb3b" kind="function"><name>operator*</name></member>
+    <member refid="Array_8h_1a2afafa9f85c1906807545bae50b65ead" kind="function"><name>operator*</name></member>
+    <member refid="Array_8h_1adffa4a57396bebb545b936f72fe331d8" kind="function"><name>operator/</name></member>
+    <member refid="Array_8h_1a4752cac4c52a136fd8666a5fa8e23a46" kind="function"><name>operator/</name></member>
+    <member refid="Array_8h_1ab6f6407843908effe421c1a2e702e82c" kind="function"><name>operator/</name></member>
+    <member refid="Array_8h_1a537898981d06fd40b46820a1ffbc6139" kind="function"><name>operator^</name></member>
+    <member refid="Array_8h_1a46118c39d13ad3c15b79d307a05a3f71" kind="function"><name>operator^</name></member>
+    <member refid="Array_8h_1a6d67f93789a801e51ff3f42fb9ba38ef" kind="function"><name>operator^</name></member>
+    <member refid="Array_8h_1abc545aefaf1a114f9a1e9be1cbca56b1" kind="function"><name>operator==</name></member>
+    <member refid="Array_8h_1a229a4ae027391da1465b72389b9d7c98" kind="function"><name>operator!=</name></member>
+    <member refid="Array_8h_1afbb7c8fffb4f583539e5f2a7485a418b" kind="function"><name>operator&lt;</name></member>
+    <member refid="Array_8h_1a03439924f6d78282309cd471474447b8" kind="function"><name>operator&lt;=</name></member>
+    <member refid="Array_8h_1adaff5a3e5567581b03f0d957d9df32d0" kind="function"><name>operator&gt;</name></member>
+    <member refid="Array_8h_1aacf6e422ee1de6818902efb51b858666" kind="function"><name>operator&gt;=</name></member>
+    <member refid="Array_8h_1afbee8685eba8033e340917640a7909d8" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="Array_8h_1a5c27cb7e40c60f7addda5657b30bef12" kind="function"><name>operator&gt;&gt;</name></member>
+    <member refid="Array_8h_1a24594c7611d1c84c486d5fc4b6090544" kind="function"><name>partition</name></member>
+    <member refid="Array_8h_1ae259edfd7588e7360be1a3167ccb0703" kind="function"><name>quicksort</name></member>
+    <member refid="Array_8h_1a5d6f8d1df5bda944fc999be057fad3fa" kind="function"><name>operator+</name></member>
+    <member refid="Array_8h_1a4f6d133c44cfe929cfe42da7e25d0401" kind="function"><name>operator+</name></member>
+    <member refid="Array_8h_1a4bc2f1c7633e358ae3e6327919d43775" kind="function"><name>operator+</name></member>
+    <member refid="Array_8h_1a51155f5c3e7888ec4ecca86683e2213e" kind="function"><name>operator+</name></member>
+    <member refid="Array_8h_1a5ea5fdedc7d96d9903ccc4f0faeeee2c" kind="function"><name>operator-</name></member>
+    <member refid="Array_8h_1aa78222464540567c953e9159b18a0937" kind="function"><name>operator-</name></member>
+    <member refid="Array_8h_1a1d54c9ba487355f209c8f3772fe5efa3" kind="function"><name>operator-</name></member>
+    <member refid="Array_8h_1a474d431c343b6135b8792155b2d17ccf" kind="function"><name>operator-</name></member>
+    <member refid="Array_8h_1a2a1a9c3359803e4424202c5613aa0175" kind="function"><name>operator*</name></member>
+    <member refid="Array_8h_1adba1e3d2906334837b3db9487f0c6f81" kind="function"><name>operator*</name></member>
+    <member refid="Array_8h_1a1f54dbc0286c03ecf53e0b57da20bc50" kind="function"><name>operator*</name></member>
+    <member refid="Array_8h_1af63c24d7f69b40f60c11923dee888485" kind="function"><name>operator/</name></member>
+    <member refid="Array_8h_1accfaca1f359e749e2d5e97e16149f6b4" kind="function"><name>operator/</name></member>
+    <member refid="Array_8h_1acba172beb67a71527854aa5f53d6b944" kind="function"><name>operator/</name></member>
+    <member refid="Array_8h_1a72f923665b58e6fd11ca0c72a3f33a7a" kind="function"><name>operator^</name></member>
+    <member refid="Array_8h_1abdc785c5b6f39b24e96263372a712d27" kind="function"><name>operator==</name></member>
+    <member refid="Array_8h_1adbc697ee3661da2384333560cf75b5c7" kind="function"><name>operator!=</name></member>
+    <member refid="Array_8h_1a2317d4101ee5164b72e47e21ca850856" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="Array_8h_1aa2248e50c4fb5557a106c131be7d78fb" kind="function"><name>operator&gt;&gt;</name></member>
+    <member refid="Array_8h_1a182b5b431d17bd072b8384e4ad728cf3" kind="function"><name>t</name></member>
+    <member refid="Array_8h_1aa084bb6daf54f2e07404b4d57ae93a84" kind="function"><name>cholesky_solve</name></member>
+    <member refid="Array_8h_1a65353077663b26a0ff659cffa003c9a3" kind="function"><name>forward_elimination</name></member>
+    <member refid="Array_8h_1a633527c0da498b956b74e4513c000fc9" kind="function"><name>backward_elimination</name></member>
+    <member refid="Array_8h_1ae6764fc5f9711f913507f36ea0fb7a2f" kind="function"><name>cholesky_solve</name></member>
+  </compound>
+  <compound refid="QuadProg_09_09_8h" kind="file"><name>QuadProg++.h</name>
+    <member refid="QuadProg_09_09_8h_1a4da9671c990051588cdaf629eeab3f9e" kind="function"><name>solve_quadprog</name></member>
+    <member refid="QuadProg_09_09_8h_1a769f3a6ed2afed301b8067d8972c7aba" kind="function"><name>solve_quadprog_matlab_syntax</name></member>
+    <member refid="QuadProg_09_09_8h_1a1fe7d5a5da4e7091b26d67788ba4cce2" kind="function"><name>print_matrix</name></member>
+    <member refid="QuadProg_09_09_8h_1ae36199cd58c17964d81edf504787b9af" kind="function"><name>print_vector</name></member>
+  </compound>
+  <compound refid="Solutions_8h" kind="file"><name>Solutions.h</name>
+  </compound>
+  <compound refid="Utils_8h" kind="file"><name>Utils.h</name>
+  </compound>
   <compound refid="todo" kind="page"><name>todo</name>
   </compound>
   <compound refid="dir_4ea8b1372c353376472eda311eff25bb" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/Base</name>
   </compound>
-  <compound refid="dir_0d5121ce9cbcaaaa4f9b96cfd0665673" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Base</name>
+  <compound refid="dir_ae06e56cbed10a5c34354159c6152398" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base</name>
+  </compound>
+  <compound refid="dir_442bb0222bb8116d79fcb34b2e7affb4" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/Base</name>
   </compound>
   <compound refid="dir_5b09efdc154ff51f07184a66ebbd9de0" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Bonds/Base</name>
   </compound>
   <compound refid="dir_7dd0702b070d63aa43b5549b7d802a40" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Base</name>
   </compound>
+  <compound refid="dir_94e788c12fac1a8a18300597bed43154" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Base</name>
+  </compound>
+  <compound refid="dir_0d5121ce9cbcaaaa4f9b96cfd0665673" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Base</name>
+  </compound>
   <compound refid="dir_d0072d2d062df67ecdeba41b951191c9" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Bonds</name>
   </compound>
   <compound refid="dir_a7fff7827e64adf5980ed88b3d888efe" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels</name>
   </compound>
+  <compound refid="dir_00ea2a5550464bf32f448b3dc22902e9" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls</name>
+  </compound>
+  <compound refid="dir_8b214129e58e54c8b8ea4d351b1e4ab7" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Custom</name>
+  </compound>
+  <compound refid="dir_f1babffa8f25f26cb57e887cd25ce73e" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector</name>
+  </compound>
+  <compound refid="dir_3d7c014ca572e77dbc82e4f904bcd27b" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments</name>
+  </compound>
+  <compound refid="dir_2c163c4ce1e8907debc7a3d233701709" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph</name>
+  </compound>
   <compound refid="dir_49cc6817093df1463ad9037c5c5c7d6e" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem</name>
+  </compound>
+  <compound refid="dir_525b753c240939c7a72b081d4e5de657" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver</name>
   </compound>
   <compound refid="dir_c487c1b7f672be8b2885393524f3e6ab" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation</name>
   </compound>
@@ -900,6 +1752,8 @@
   <compound refid="dir_10f0c5f54a55cfcbdcfb77a9909db406" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents</name>
   </compound>
   <compound refid="dir_e92627f521993f27916352ed85b3f05a" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility</name>
+  </compound>
+  <compound refid="dir_a7363e98f9e0bdd87618633653859815" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils</name>
   </compound>
   <compound refid="dir_d60018e406f3a6435925c991eed23738" kind="dir"><name>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources</name>
   </compound>

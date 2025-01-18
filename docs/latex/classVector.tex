@@ -1,0 +1,584 @@
+\hypertarget{classVector}{}\section{Vector$<$ T $>$ Class Template Reference}
+\label{classVector}\index{Vector$<$ T $>$@{Vector$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Array.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVector_a39d6069675db4ecfc1ab81d440da759a}{Vector}} ()
+\begin{DoxyCompactList}\small\item\em Base constructor for a new Vector$<$ T$>$\+:\+: \mbox{\hyperlink{classVector}{Vector}} object with data type {\ttfamily T} with size 0 and no data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector_a8575836acd6e8c9a2297b5ba6d14008c}{Vector}} (const unsigned int n)
+\begin{DoxyCompactList}\small\item\em Construct a new Vector$<$ T$>$\+:\+: \mbox{\hyperlink{classVector}{Vector}} object with size {\ttfamily n} and no data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector_aa2bc8aac00503574bac8302652ef7ba0}{Vector}} (const T \&a, const unsigned int n)
+\begin{DoxyCompactList}\small\item\em Construct a new Vector$<$ T$>$\+:\+: \mbox{\hyperlink{classVector}{Vector}} object with size {\ttfamily n} and initialize all elements to the constant value {\ttfamily a}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector_a62f06e9931e61437a5a5783eca0a9550}{Vector}} (const T $\ast$a, const unsigned int n)
+\begin{DoxyCompactList}\small\item\em Construct a new Vector$<$ T$>$\+:\+: \mbox{\hyperlink{classVector}{Vector}} object with size {\ttfamily n} and initialize all elements to the constant value {\ttfamily a}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector_ac71d98c4ac152523a76bbadcd3a83a5a}{Vector}} (const \mbox{\hyperlink{classVector}{Vector}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Construct a new Vector$<$ T$>$\+:\+: \mbox{\hyperlink{classVector}{Vector}} object by copying the vector {\ttfamily rhs}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector_afd524fac19e6d3d69db5198ffe2952b0}{$\sim$\+Vector}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Vector$<$ T$>$\+:\+: \mbox{\hyperlink{classVector}{Vector}} object. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{classVector_aa07a0c8ca467e2ce190afc26054cf422}{operator\mbox{[}$\,$\mbox{]}}} (const unsigned int \&i)
+\begin{DoxyCompactList}\small\item\em A subscripting operator to access the {\ttfamily i}-\/th element of the vector. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{classVector_a36cc881f0270de628bec7a80bbdab741}{operator\mbox{[}$\,$\mbox{]}}} (const unsigned int \&i) const
+\begin{DoxyCompactList}\small\item\em A subscripting operator to access the {\ttfamily i}-\/th element of the vector without changing the vector itself. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classVector_a5214a382564aedc712b609416aa3b7b1}{size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the size of the vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVector_ae751d4bf4c403e4578a9df1202e93f56}{resize}} (const unsigned int n)
+\begin{DoxyCompactList}\small\item\em Resize the vector to size {\ttfamily n}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVector_a1ff5ed0bca47854450eb78024c6f52ff}{resize}} (const T \&a, const unsigned int n)
+\begin{DoxyCompactList}\small\item\em Resize the vector to size {\ttfamily n} and initialize all elements to the constant value {\ttfamily a}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector_aa44e8e04a723f2c0bd9382a3bfa46e7c}{operator=}} (const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Assignment operator that assigns the current vector to the vector {\ttfamily rhs}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector_a6bbf5f187006ef2567fdcebd37ebfa97}{operator=}} (const T \&a)
+\begin{DoxyCompactList}\small\item\em Assignment operator that assigns the constant value {\ttfamily a} to every element of the vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector_a0cdad8a65e9dd1ef60afaf32aa547f9e}{operator+=}} (const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Operator that performs an in-\/place addition of each element in the vector {\ttfamily rhs} to each element in the current vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector_ab5ed11e19503bbc0ee10c7a8d1ee2978}{operator-\/=}} (const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Operator that performs an in-\/place subtraction of each element in vector {\ttfamily rhs} from each element in the current vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector_a3b3e94a4ee6601a8c3ceaed790c2d965}{operator$\ast$=}} (const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Operator that multiplies each element in vector {\ttfamily rhs} with each element in the current vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector_adbf519ce5d68eb131947137e30596dc1}{operator/=}} (const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Operator that divides each element in vector {\ttfamily rhs} with each element in the current vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector_acd4d558272832a19d614468400ca605d}{operator$^\wedge$=}} (const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Operator that performs an in-\/place raising of each element in the vector to the power each element in {\ttfamily rhs}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector_a5650df0775f0677f76259cd3f474dded}{operator+=}} (const T \&a)
+\begin{DoxyCompactList}\small\item\em Operator that performs an in-\/place addition of a constant value {\ttfamily a} to each element in the vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector_a7581aba7a67b45ff1b2848d37e00cfa1}{operator-\/=}} (const T \&a)
+\begin{DoxyCompactList}\small\item\em Operator that performs an in-\/place subtraction of a constant value {\ttfamily a} from each element in the vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector_a02e9c5296c7ddb1a2047a8c80d93e0d5}{operator$\ast$=}} (const T \&a)
+\begin{DoxyCompactList}\small\item\em Operator that multiplies each element in the vector with the constant value {\ttfamily a}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector_a358eca4649d02b3bbab359484eb93140}{operator/=}} (const T \&a)
+\begin{DoxyCompactList}\small\item\em Operator that divides each element in the vector with the constant value {\ttfamily a}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector_a6767000b5cbf4999aa301eb24a7b74fc}{operator$^\wedge$=}} (const T \&a)
+\begin{DoxyCompactList}\small\item\em Operator that performs an in-\/place raising of each element in the vector to the power of the constant value {\ttfamily a}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVector_a39d6069675db4ecfc1ab81d440da759a}\label{classVector_a39d6069675db4ecfc1ab81d440da759a}} 
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::\mbox{\hyperlink{classVector}{Vector}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Base constructor for a new Vector$<$ T$>$\+:\+: \mbox{\hyperlink{classVector}{Vector}} object with data type {\ttfamily T} with size 0 and no data. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classVector_a8575836acd6e8c9a2297b5ba6d14008c}\label{classVector_a8575836acd6e8c9a2297b5ba6d14008c}} 
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::\mbox{\hyperlink{classVector}{Vector}} (\begin{DoxyParamCaption}\item[{const unsigned int}]{n }\end{DoxyParamCaption})}
+
+
+
+Construct a new Vector$<$ T$>$\+:\+: \mbox{\hyperlink{classVector}{Vector}} object with size {\ttfamily n} and no data. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The size of the vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVector_aa2bc8aac00503574bac8302652ef7ba0}\label{classVector_aa2bc8aac00503574bac8302652ef7ba0}} 
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::\mbox{\hyperlink{classVector}{Vector}} (\begin{DoxyParamCaption}\item[{const T \&}]{a,  }\item[{const unsigned int}]{n }\end{DoxyParamCaption})}
+
+
+
+Construct a new Vector$<$ T$>$\+:\+: \mbox{\hyperlink{classVector}{Vector}} object with size {\ttfamily n} and initialize all elements to the constant value {\ttfamily a}. 
+
+This template takes a reference to the constant value {\ttfamily a} and initializes all elements to this value.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The constant value to initialize all elements to. \\
+\hline
+{\em n} & The size of the vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVector_a62f06e9931e61437a5a5783eca0a9550}\label{classVector_a62f06e9931e61437a5a5783eca0a9550}} 
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::\mbox{\hyperlink{classVector}{Vector}} (\begin{DoxyParamCaption}\item[{const T $\ast$}]{a,  }\item[{const unsigned int}]{n }\end{DoxyParamCaption})}
+
+
+
+Construct a new Vector$<$ T$>$\+:\+: \mbox{\hyperlink{classVector}{Vector}} object with size {\ttfamily n} and initialize all elements to the constant value {\ttfamily a}. 
+
+This template takes a pointer to the constant value {\ttfamily a}. It first dereferences the pointer to get the value of {\ttfamily a} and then increments the pointer to get the next value. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The array to initialize the vector to. \\
+\hline
+{\em n} & The size of the vector. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVector_ac71d98c4ac152523a76bbadcd3a83a5a}\label{classVector_ac71d98c4ac152523a76bbadcd3a83a5a}} 
+\index{Vector@{Vector}!Vector@{Vector}}
+\index{Vector@{Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{Vector()}{Vector()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::\mbox{\hyperlink{classVector}{Vector}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Construct a new Vector$<$ T$>$\+:\+: \mbox{\hyperlink{classVector}{Vector}} object by copying the vector {\ttfamily rhs}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The vector to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVector_afd524fac19e6d3d69db5198ffe2952b0}\label{classVector_afd524fac19e6d3d69db5198ffe2952b0}} 
+\index{Vector@{Vector}!````~Vector@{$\sim$\+Vector}}
+\index{````~Vector@{$\sim$\+Vector}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{$\sim$\+Vector()}{~Vector()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classVector}{Vector}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the Vector$<$ T$>$\+:\+: \mbox{\hyperlink{classVector}{Vector}} object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classVector_a3b3e94a4ee6601a8c3ceaed790c2d965}\label{classVector_a3b3e94a4ee6601a8c3ceaed790c2d965}} 
+\index{Vector@{Vector}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that multiplies each element in vector {\ttfamily rhs} with each element in the current vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The vector to multiply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector$<$\+T$>$\&
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & if the vectors are of different sizes. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classVector_a02e9c5296c7ddb1a2047a8c80d93e0d5}\label{classVector_a02e9c5296c7ddb1a2047a8c80d93e0d5}} 
+\index{Vector@{Vector}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const T \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that multiplies each element in the vector with the constant value {\ttfamily a}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The constant value to multiply. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector$<$\+T$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector_a0cdad8a65e9dd1ef60afaf32aa547f9e}\label{classVector_a0cdad8a65e9dd1ef60afaf32aa547f9e}} 
+\index{Vector@{Vector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that performs an in-\/place addition of each element in the vector {\ttfamily rhs} to each element in the current vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The vector to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector$<$\+T$>$\&
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & if the vectors are of different sizes. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classVector_a5650df0775f0677f76259cd3f474dded}\label{classVector_a5650df0775f0677f76259cd3f474dded}} 
+\index{Vector@{Vector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const T \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that performs an in-\/place addition of a constant value {\ttfamily a} to each element in the vector. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The constant value to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector$<$\+T$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector_ab5ed11e19503bbc0ee10c7a8d1ee2978}\label{classVector_ab5ed11e19503bbc0ee10c7a8d1ee2978}} 
+\index{Vector@{Vector}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that performs an in-\/place subtraction of each element in vector {\ttfamily rhs} from each element in the current vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The vector to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector$<$\+T$>$\&
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & if the vectors are of different sizes. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classVector_a7581aba7a67b45ff1b2848d37e00cfa1}\label{classVector_a7581aba7a67b45ff1b2848d37e00cfa1}} 
+\index{Vector@{Vector}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const T \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that performs an in-\/place subtraction of a constant value {\ttfamily a} from each element in the vector. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The constant value to subtract. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector$<$\+T$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector_adbf519ce5d68eb131947137e30596dc1}\label{classVector_adbf519ce5d68eb131947137e30596dc1}} 
+\index{Vector@{Vector}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator/= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that divides each element in vector {\ttfamily rhs} with each element in the current vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The vector to divide. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector$<$\+T$>$\&
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & if the vectors are of different sizes. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classVector_a358eca4649d02b3bbab359484eb93140}\label{classVector_a358eca4649d02b3bbab359484eb93140}} 
+\index{Vector@{Vector}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator/= (\begin{DoxyParamCaption}\item[{const T \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that divides each element in the vector with the constant value {\ttfamily a}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The constant value to divide. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector$<$\+T$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector_aa44e8e04a723f2c0bd9382a3bfa46e7c}\label{classVector_aa44e8e04a723f2c0bd9382a3bfa46e7c}} 
+\index{Vector@{Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator that assigns the current vector to the vector {\ttfamily rhs}. 
+
+Postcondition\+: normal assignment via copying has been performed. If vector and rhs were different sizes, vector has been resized to match the size of {\ttfamily rhs}.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The vector to assign to. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector$<$\+T$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector_a6bbf5f187006ef2567fdcebd37ebfa97}\label{classVector_a6bbf5f187006ef2567fdcebd37ebfa97}} 
+\index{Vector@{Vector}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const T \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator that assigns the constant value {\ttfamily a} to every element of the vector. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The constant value to assign to every element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector$<$\+T$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector_aa07a0c8ca467e2ce190afc26054cf422}\label{classVector_aa07a0c8ca467e2ce190afc26054cf422}} 
+\index{Vector@{Vector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const unsigned int \&}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A subscripting operator to access the {\ttfamily i}-\/th element of the vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the element to access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\& A reference to the {\ttfamily i}-\/th element. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector_a36cc881f0270de628bec7a80bbdab741}\label{classVector_a36cc881f0270de628bec7a80bbdab741}} 
+\index{Vector@{Vector}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const unsigned int \&}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A subscripting operator to access the {\ttfamily i}-\/th element of the vector without changing the vector itself. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The index of the element to access. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\& A reference to the {\ttfamily i}-\/th element. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector_acd4d558272832a19d614468400ca605d}\label{classVector_acd4d558272832a19d614468400ca605d}} 
+\index{Vector@{Vector}!operator$^\wedge$=@{operator$^\wedge$=}}
+\index{operator$^\wedge$=@{operator$^\wedge$=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator$^\wedge$=()}{operator^=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator$^\wedge$= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that performs an in-\/place raising of each element in the vector to the power each element in {\ttfamily rhs}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & The vector to raise to the power of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector$<$\+T$>$\&
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & if the vectors are of different sizes. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classVector_a6767000b5cbf4999aa301eb24a7b74fc}\label{classVector_a6767000b5cbf4999aa301eb24a7b74fc}} 
+\index{Vector@{Vector}!operator$^\wedge$=@{operator$^\wedge$=}}
+\index{operator$^\wedge$=@{operator$^\wedge$=}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{operator$^\wedge$=()}{operator^=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+\mbox{\hyperlink{classVector}{Vector}}$<$ T $>$ \& \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::operator$^\wedge$= (\begin{DoxyParamCaption}\item[{const T \&}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Operator that performs an in-\/place raising of each element in the vector to the power of the constant value {\ttfamily a}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The constant value to raise to the power of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector$<$\+T$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVector_ae751d4bf4c403e4578a9df1202e93f56}\label{classVector_ae751d4bf4c403e4578a9df1202e93f56}} 
+\index{Vector@{Vector}!resize@{resize}}
+\index{resize@{resize}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{resize()}{resize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::resize (\begin{DoxyParamCaption}\item[{const unsigned int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resize the vector to size {\ttfamily n}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The size to resize the vector to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVector_a1ff5ed0bca47854450eb78024c6f52ff}\label{classVector_a1ff5ed0bca47854450eb78024c6f52ff}} 
+\index{Vector@{Vector}!resize@{resize}}
+\index{resize@{resize}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{resize()}{resize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T$>$ \\
+void \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::resize (\begin{DoxyParamCaption}\item[{const T \&}]{a,  }\item[{const unsigned int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Resize the vector to size {\ttfamily n} and initialize all elements to the constant value {\ttfamily a}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The constant value to initialize all elements to. \\
+\hline
+{\em n} & The size to resize the vector to. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVector_a5214a382564aedc712b609416aa3b7b1}\label{classVector_a5214a382564aedc712b609416aa3b7b1}} 
+\index{Vector@{Vector}!size@{size}}
+\index{size@{size}!Vector@{Vector}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+unsigned int \mbox{\hyperlink{classVector}{Vector}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the size of the vector. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of the elements stored in the matrix and vectors. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+unsigned int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Utils/\+Q\+P\+Solver/\mbox{\hyperlink{Array_8h}{Array.\+h}}\end{DoxyCompactItemize}

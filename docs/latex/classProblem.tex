@@ -2,6 +2,11 @@
 \label{classProblem}\index{Problem@{Problem}}
 
 
+The {\ttfamily \mbox{\hyperlink{classProblem}{Problem}}} class represents the basic structure of a water management and planning problem.  
+
+
+
+
 {\ttfamily \#include $<$Problem.\+h$>$}
 
 Inheritance diagram for Problem\+:\begin{figure}[H]
@@ -47,7 +52,7 @@ void \mbox{\hyperlink{classProblem_afb5e51664d0f340c393f7583622e99ca}{set\+Evap\
 \begin{DoxyCompactList}\small\item\em Sets the filename suffix for the evaporation and inflow files unique to the problem. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classProblem_ad666ae2c231f49103593a7e03a3b58fd}{set\+Fname\+\_\+sufix}} (const string \&\mbox{\hyperlink{classProblem_a59444139a907aaf4c6159caed46c8118}{fname\+\_\+sufix}})
 \begin{DoxyCompactList}\small\item\em Sets the output filename suffix unique to the problem. F\+I\+X\+ME\+: Need to correct function name to fname\+\_\+suffix. \end{DoxyCompactList}\item 
-Master\+Data\+Collector $\ast$ \mbox{\hyperlink{classProblem_acf10e6a4a54da1aabea1fa8611e598dc}{get\+Master\+\_\+data\+\_\+collector}} ()
+\mbox{\hyperlink{classMasterDataCollector}{Master\+Data\+Collector}} $\ast$ \mbox{\hyperlink{classProblem_acf10e6a4a54da1aabea1fa8611e598dc}{get\+Master\+\_\+data\+\_\+collector}} ()
 \item 
 void \mbox{\hyperlink{classProblem_af87d1081eb2a8fa57fa7f2666292fee3}{destroy\+Data\+Collector}} ()
 \begin{DoxyCompactList}\small\item\em If the master\+\_\+data\+\_\+collector object is not null, delete it. Then assign it to a nullptr. F\+I\+X\+ME\+: better to rename \char`\"{}delete\+Data\+Collector\char`\"{}? \end{DoxyCompactList}\item 
@@ -101,8 +106,8 @@ string \mbox{\hyperlink{classProblem_abc641b49a4defb0dbabafbf3f9dbca6e}{rof\+\_\
 \begin{DoxyCompactList}\small\item\em A string containing the directory to the R\+OF tables. \end{DoxyCompactList}\item 
 vector$<$ unsigned long $>$ \mbox{\hyperlink{classProblem_af9ed9265d0d2b4918bd468d717429de1}{realizations\+\_\+to\+\_\+run}}
 \begin{DoxyCompactList}\small\item\em A vector of unsigned long integers containing the indices realizations to run. \end{DoxyCompactList}\item 
-Master\+Data\+Collector $\ast$ \mbox{\hyperlink{classProblem_a6cd1db1d587a449985d6514390ba8c96}{master\+\_\+data\+\_\+collector}} = nullptr
-\begin{DoxyCompactList}\small\item\em A pointer to the Master\+Data\+Collector object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMasterDataCollector}{Master\+Data\+Collector}} $\ast$ \mbox{\hyperlink{classProblem_a6cd1db1d587a449985d6514390ba8c96}{master\+\_\+data\+\_\+collector}} = nullptr
+\begin{DoxyCompactList}\small\item\em A pointer to the \mbox{\hyperlink{classMasterDataCollector}{Master\+Data\+Collector}} object. \end{DoxyCompactList}\item 
 vector$<$ double $>$ \mbox{\hyperlink{classProblem_a72750ee8c8117f5ee9b190a359d6a60d}{objectives}}
 \begin{DoxyCompactList}\small\item\em A vector of doubles containing the objective values for the problem. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classProblem_a3372a73270ce989f5d2056cace66215b}{print\+\_\+output\+\_\+files}} = true
@@ -119,11 +124,16 @@ vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classProblem_ace43e5306285f0
 \begin{DoxyCompactList}\small\item\em A 2D vector of doubles storing the DU multipliers for all water sources\textquotesingle{} permitting and construction times. \end{DoxyCompactList}\item 
 vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classProblem_a63d49161a5d6d98e26cd218d90a13bae}{policies\+\_\+rdm}}
 \begin{DoxyCompactList}\small\item\em A 2D vector of doubles storing the DU multipliers for all utilities\textquotesingle{} water restriction policy effectiveness. \end{DoxyCompactList}\item 
-vector$<$ vector$<$ Matrix2D$<$ double $>$ $>$ $>$ \mbox{\hyperlink{classProblem_a0a64a8c04964a326879eccccf5437c93}{rof\+\_\+tables}}
+vector$<$ vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$ $>$ $>$ \mbox{\hyperlink{classProblem_a0a64a8c04964a326879eccccf5437c93}{rof\+\_\+tables}}
 \begin{DoxyCompactList}\small\item\em A 2D vector of matrices storing the R\+OF tables for all utilities across all realizations. \end{DoxyCompactList}\item 
 unsigned long \mbox{\hyperlink{classProblem_a3c013ea45ae840c261341bf31eaec87b}{formulation}}
 \begin{DoxyCompactList}\small\item\em An unsigned long flag indicating which problem formulation to run. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classProblem}{Problem}}} class represents the basic structure of a water management and planning problem. 
+
+Created by Bernardo on 11/24/2017. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classProblem_a41939e01b382197124fcd9f5e8c7520d}\label{classProblem_a41939e01b382197124fcd9f5e8c7520d}} 
@@ -224,7 +234,7 @@ Implemented in \mbox{\hyperlink{classTriangle_a9e95039d098fd61cce1a830b85ed7004}
 \index{Problem@{Problem}!get\+Master\+\_\+data\+\_\+collector@{get\+Master\+\_\+data\+\_\+collector}}
 \index{get\+Master\+\_\+data\+\_\+collector@{get\+Master\+\_\+data\+\_\+collector}!Problem@{Problem}}
 \subsubsection{\texorpdfstring{get\+Master\+\_\+data\+\_\+collector()}{getMaster\_data\_collector()}}
-{\footnotesize\ttfamily Master\+Data\+Collector$\ast$ Problem\+::get\+Master\+\_\+data\+\_\+collector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMasterDataCollector}{Master\+Data\+Collector}}$\ast$ Problem\+::get\+Master\+\_\+data\+\_\+collector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{classProblem_a64ffd22f18e26eba34013c81dc106212}\label{classProblem_a64ffd22f18e26eba34013c81dc106212}} 
 \index{Problem@{Problem}!get\+Objectives@{get\+Objectives}}
@@ -641,11 +651,11 @@ A string containing the input/output directory for the problem.
 \index{Problem@{Problem}!master\+\_\+data\+\_\+collector@{master\+\_\+data\+\_\+collector}}
 \index{master\+\_\+data\+\_\+collector@{master\+\_\+data\+\_\+collector}!Problem@{Problem}}
 \subsubsection{\texorpdfstring{master\+\_\+data\+\_\+collector}{master\_data\_collector}}
-{\footnotesize\ttfamily Master\+Data\+Collector$\ast$ Problem\+::master\+\_\+data\+\_\+collector = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMasterDataCollector}{Master\+Data\+Collector}}$\ast$ Problem\+::master\+\_\+data\+\_\+collector = nullptr\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
-A pointer to the Master\+Data\+Collector object. 
+A pointer to the \mbox{\hyperlink{classMasterDataCollector}{Master\+Data\+Collector}} object. 
 
 \mbox{\Hypertarget{classProblem_a270a5672643bfe09e52e0f24e1884136}\label{classProblem_a270a5672643bfe09e52e0f24e1884136}} 
 \index{Problem@{Problem}!n\+\_\+realizations@{n\+\_\+realizations}}
@@ -751,7 +761,7 @@ A vector of unsigned long integers containing the indices realizations to run.
 \index{Problem@{Problem}!rof\+\_\+tables@{rof\+\_\+tables}}
 \index{rof\+\_\+tables@{rof\+\_\+tables}!Problem@{Problem}}
 \subsubsection{\texorpdfstring{rof\+\_\+tables}{rof\_tables}}
-{\footnotesize\ttfamily vector$<$vector$<$Matrix2D$<$double$>$ $>$ $>$ Problem\+::rof\+\_\+tables\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily vector$<$vector$<$\mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$double$>$ $>$ $>$ Problem\+::rof\+\_\+tables\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 

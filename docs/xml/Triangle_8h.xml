@@ -5,215 +5,344 @@
     <includes refid="Problem_8h" local="yes">Base/Problem.h</includes>
     <includes refid="Simulation_8h" local="yes">../Simulation/Simulation.h</includes>
     <incdepgraph>
-      <node id="161">
-        <label>../Controls/Base/MinEnvFlowControl.h</label>
+      <node id="904">
+        <label>list</label>
       </node>
-      <node id="140">
-        <label>../Utils/Constants.h</label>
+      <node id="897">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="898" relation="include">
+        </childnode>
       </node>
-      <node id="156">
+      <node id="898">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="908">
         <label>../../Controls/Base/MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="895" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
       </node>
-      <node id="160">
-        <label>../Utils/Matrices.h</label>
+      <node id="910">
+        <label>../DroughtMitigationInstruments/Restrictions.h</label>
+        <link refid="Restrictions_8h"/>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="902" relation="include">
+        </childnode>
       </node>
-      <node id="135">
-        <label>../../Utils/Utils.h</label>
+      <node id="912">
+        <label>../SystemComponents/WaterSources/Intake.h</label>
+        <link refid="Intake_8h"/>
+        <childnode refid="889" relation="include">
+        </childnode>
       </node>
-      <node id="158">
-        <label>../DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
-      </node>
-      <node id="155">
-        <label>../../Utils/Graph/Graph.h</label>
-      </node>
-      <node id="154">
+      <node id="914">
         <label>../ContinuityModels/Base/ContinuityModel.h</label>
         <link refid="ContinuityModel_8h"/>
-        <childnode refid="141" relation="include">
+        <childnode refid="895" relation="include">
         </childnode>
-        <childnode refid="150" relation="include">
+        <childnode refid="892" relation="include">
         </childnode>
-        <childnode refid="147" relation="include">
+        <childnode refid="886" relation="include">
         </childnode>
-        <childnode refid="155" relation="include">
+        <childnode refid="903" relation="include">
         </childnode>
-        <childnode refid="156" relation="include">
+        <childnode refid="908" relation="include">
         </childnode>
-        <childnode refid="132" relation="include">
+        <childnode refid="881" relation="include">
         </childnode>
       </node>
-      <node id="145">
-        <label>../../Controls/EvaporationSeries.h</label>
+      <node id="885">
+        <label>UtilitiesDataCollector.h</label>
+        <link refid="UtilitiesDataCollector_8h"/>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
       </node>
-      <node id="139">
+      <node id="893">
+        <label>cmath</label>
+      </node>
+      <node id="891">
         <label>stdexcept</label>
       </node>
-      <node id="153">
-        <label>../DroughtMitigationInstruments/Restrictions.h</label>
+      <node id="892">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="887" relation="include">
+        </childnode>
+        <childnode refid="893" relation="include">
+        </childnode>
+        <childnode refid="894" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
       </node>
-      <node id="137">
+      <node id="900">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="898" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="883" relation="include">
+        </childnode>
+      </node>
+      <node id="883">
         <label>string</label>
       </node>
-      <node id="148">
+      <node id="887">
         <label>map</label>
       </node>
-      <node id="152">
+      <node id="901">
         <label>InfrastructureManager.h</label>
         <link refid="InfrastructureManager_8h"/>
-        <childnode refid="132" relation="include">
+        <childnode refid="881" relation="include">
         </childnode>
-        <childnode refid="141" relation="include">
+        <childnode refid="895" relation="include">
         </childnode>
       </node>
-      <node id="133">
-        <label>../../DataCollector/Base/DataCollector.h</label>
-      </node>
-      <node id="141">
+      <node id="895">
         <label>Base/WaterSource.h</label>
         <link refid="WaterSource_8h"/>
-        <childnode refid="137" relation="include">
+        <childnode refid="883" relation="include">
         </childnode>
-        <childnode refid="138" relation="include">
+        <childnode refid="890" relation="include">
         </childnode>
-        <childnode refid="142" relation="include">
+        <childnode refid="892" relation="include">
         </childnode>
-        <childnode refid="143" relation="include">
+        <childnode refid="896" relation="include">
         </childnode>
       </node>
-      <node id="144">
-        <label>../../Utils/DataSeries.h</label>
+      <node id="907">
+        <label>fstream</label>
       </node>
-      <node id="131">
+      <node id="884">
+        <label>../../DataCollector/MasterDataCollector.h</label>
+        <link refid="MasterDataCollector_8h"/>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="885" relation="include">
+        </childnode>
+        <childnode refid="902" relation="include">
+        </childnode>
+        <childnode refid="909" relation="include">
+        </childnode>
+      </node>
+      <node id="902">
+        <label>../DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
+        <link refid="DroughtMitigationPolicy_8h"/>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="892" relation="include">
+        </childnode>
+        <childnode refid="903" relation="include">
+        </childnode>
+        <childnode refid="905" relation="include">
+        </childnode>
+        <childnode refid="908" relation="include">
+        </childnode>
+      </node>
+      <node id="880">
         <label>Base/Problem.h</label>
         <link refid="Problem_8h"/>
-        <childnode refid="132" relation="include">
+        <childnode refid="881" relation="include">
         </childnode>
-        <childnode refid="133" relation="include">
+        <childnode refid="882" relation="include">
         </childnode>
-        <childnode refid="134" relation="include">
+        <childnode refid="884" relation="include">
         </childnode>
-        <childnode refid="135" relation="include">
+        <childnode refid="911" relation="include">
         </childnode>
-        <childnode refid="136" relation="include">
+        <childnode refid="889" relation="include">
         </childnode>
       </node>
-      <node id="147">
+      <node id="909">
+        <label>RestrictionsDataCollector.h</label>
+        <link refid="RestrictionsDataCollector_8h"/>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="882" relation="include">
+        </childnode>
+        <childnode refid="910" relation="include">
+        </childnode>
+      </node>
+      <node id="886">
         <label>../SystemComponents/Utility/Utility.h</label>
         <link refid="Utility_8h"/>
-        <childnode refid="148" relation="include">
+        <childnode refid="887" relation="include">
         </childnode>
-        <childnode refid="149" relation="include">
+        <childnode refid="888" relation="include">
         </childnode>
-        <childnode refid="136" relation="include">
+        <childnode refid="889" relation="include">
         </childnode>
-        <childnode refid="150" relation="include">
+        <childnode refid="892" relation="include">
         </childnode>
-        <childnode refid="151" relation="include">
+        <childnode refid="900" relation="include">
         </childnode>
-        <childnode refid="152" relation="include">
+        <childnode refid="901" relation="include">
         </childnode>
       </node>
-      <node id="132">
+      <node id="881">
         <label>vector</label>
       </node>
-      <node id="138">
+      <node id="903">
+        <label>../../Utils/Graph/Graph.h</label>
+        <link refid="Graph_8h"/>
+        <childnode refid="904" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="891" relation="include">
+        </childnode>
+        <childnode refid="892" relation="include">
+        </childnode>
+      </node>
+      <node id="890">
         <label>../Catchment.h</label>
         <link refid="Catchment_8h"/>
-        <childnode refid="132" relation="include">
+        <childnode refid="881" relation="include">
         </childnode>
-        <childnode refid="139" relation="include">
+        <childnode refid="891" relation="include">
         </childnode>
-        <childnode refid="140" relation="include">
+        <childnode refid="892" relation="include">
         </childnode>
       </node>
-      <node id="150">
-        <label>../../Utils/Constants.h</label>
-      </node>
-      <node id="136">
-        <label>../../SystemComponents/WaterSources/Reservoir.h</label>
+      <node id="889">
+        <label>../WaterSources/Reservoir.h</label>
         <link refid="Reservoir_8h"/>
-        <childnode refid="137" relation="include">
+        <childnode refid="883" relation="include">
         </childnode>
-        <childnode refid="138" relation="include">
+        <childnode refid="890" relation="include">
         </childnode>
-        <childnode refid="141" relation="include">
+        <childnode refid="895" relation="include">
         </childnode>
-        <childnode refid="144" relation="include">
+        <childnode refid="897" relation="include">
         </childnode>
-        <childnode refid="145" relation="include">
+        <childnode refid="899" relation="include">
         </childnode>
       </node>
-      <node id="157">
+      <node id="915">
         <label>../ContinuityModels/ContinuityModelRealization.h</label>
         <link refid="ContinuityModelRealization_8h"/>
-        <childnode refid="154" relation="include">
+        <childnode refid="914" relation="include">
         </childnode>
-        <childnode refid="158" relation="include">
+        <childnode refid="902" relation="include">
         </childnode>
       </node>
-      <node id="162">
-        <label>../DataCollector/MasterDataCollector.h</label>
-      </node>
-      <node id="146">
+      <node id="913">
         <label>../Simulation/Simulation.h</label>
         <link refid="Simulation_8h"/>
-        <childnode refid="140" relation="include">
+        <childnode refid="892" relation="include">
         </childnode>
-        <childnode refid="141" relation="include">
+        <childnode refid="895" relation="include">
         </childnode>
-        <childnode refid="147" relation="include">
+        <childnode refid="886" relation="include">
         </childnode>
-        <childnode refid="153" relation="include">
+        <childnode refid="910" relation="include">
         </childnode>
-        <childnode refid="154" relation="include">
+        <childnode refid="914" relation="include">
         </childnode>
-        <childnode refid="157" relation="include">
+        <childnode refid="915" relation="include">
         </childnode>
-        <childnode refid="159" relation="include">
+        <childnode refid="916" relation="include">
         </childnode>
-        <childnode refid="161" relation="include">
+        <childnode refid="908" relation="include">
         </childnode>
-        <childnode refid="162" relation="include">
+        <childnode refid="884" relation="include">
         </childnode>
-        <childnode refid="132" relation="include">
+        <childnode refid="881" relation="include">
         </childnode>
       </node>
-      <node id="142">
-        <label>../../../Utils/Constants.h</label>
+      <node id="906">
+        <label>iostream</label>
       </node>
-      <node id="151">
-        <label>../../Controls/WwtpDischargeRule.h</label>
+      <node id="882">
+        <label>../../DataCollector/Base/DataCollector.h</label>
+        <link refid="DataCollector_8h"/>
+        <childnode refid="883" relation="include">
+        </childnode>
       </node>
-      <node id="143">
+      <node id="899">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="890" relation="include">
+        </childnode>
+      </node>
+      <node id="896">
         <label>../../Bonds/Base/Bond.h</label>
         <link refid="Bond_8h"/>
-        <childnode refid="132" relation="include">
+        <childnode refid="881" relation="include">
         </childnode>
-        <childnode refid="139" relation="include">
+        <childnode refid="891" relation="include">
         </childnode>
-        <childnode refid="142" relation="include">
+        <childnode refid="892" relation="include">
         </childnode>
       </node>
-      <node id="130">
+      <node id="894">
+        <label>cstring</label>
+      </node>
+      <node id="905">
+        <label>../../Utils/Matrices.h</label>
+        <link refid="Matrices_8h"/>
+        <childnode refid="906" relation="include">
+        </childnode>
+        <childnode refid="894" relation="include">
+        </childnode>
+        <childnode refid="907" relation="include">
+        </childnode>
+        <childnode refid="888" relation="include">
+        </childnode>
+      </node>
+      <node id="879">
         <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Triangle.h</label>
         <link refid="Triangle_8h"/>
-        <childnode refid="131" relation="include">
+        <childnode refid="880" relation="include">
         </childnode>
-        <childnode refid="146" relation="include">
+        <childnode refid="913" relation="include">
         </childnode>
       </node>
-      <node id="149">
+      <node id="888">
         <label>memory</label>
       </node>
-      <node id="134">
-        <label>../../DataCollector/MasterDataCollector.h</label>
+      <node id="911">
+        <label>../../Utils/Utils.h</label>
+        <link refid="Utils_8h"/>
+        <childnode refid="895" relation="include">
+        </childnode>
+        <childnode refid="912" relation="include">
+        </childnode>
+        <childnode refid="886" relation="include">
+        </childnode>
+        <childnode refid="902" relation="include">
+        </childnode>
+        <childnode refid="910" relation="include">
+        </childnode>
+        <childnode refid="908" relation="include">
+        </childnode>
       </node>
-      <node id="159">
+      <node id="916">
         <label>../ContinuityModels/ContinuityModelROF.h</label>
         <link refid="ContinuityModelROF_8h"/>
-        <childnode refid="154" relation="include">
+        <childnode refid="914" relation="include">
         </childnode>
-        <childnode refid="160" relation="include">
+        <childnode refid="905" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -223,98 +352,95 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>Bernardo<sp/>on<sp/>11/23/2017.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_TRIANGLE_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_TRIANGLE_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PARALLEL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Borg/borgmm.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Problem_8h" kindref="compound">Base/Problem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Simulation/Simulation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16" refid="classTriangle" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTriangle" kindref="compound">Triangle</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classProblem" kindref="compound">Problem</ref><sp/>{</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_utilities<sp/>=<sp/>4;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_durham;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_flat;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_swift;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_llr;</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_crabtree;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_phils;</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_cane;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_morgan;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_haw;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_clayton;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_lillington;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_cary;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_durham;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_raleigh;</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_owasa;</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_pittsboro;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_chatham;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_cary;</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_durham;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_raleigh;</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_owasa;</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_pittsboro;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_chatham;</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_durham;</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_falls_lake;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_owasa;</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_little_river;</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_wheeler_benson;</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_jordan_lake;</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_to_wastewater_fraction_owasa_raleigh;</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_to_wastewater_fraction_durham;</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_to_wastewater_fraction_chatham;</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>caryDemandClassesFractions;</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>durhamDemandClassesFractions;</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>raleighDemandClassesFractions;</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>owasaDemandClassesFractions;</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>pittsboroDemandClassesFractions;</highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>chathamDemandClassesFractions;</highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>caryUserClassesWaterPrices;</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>durhamUserClassesWaterPrices;</highlight></codeline>
-<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>raleighUserClassesWaterPrices;</highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>owasaUserClassesWaterPrices;</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>pittsboroUserClassesWaterPrices;</highlight></codeline>
-<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>chathamUserClassesWaterPrices;</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"></highlight></codeline>
-<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>owasaPriceSurcharges;</highlight></codeline>
-<codeline lineno="211"><highlight class="normal"></highlight></codeline>
-<codeline lineno="212"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTriangle" kindref="compound">Triangle</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>n_weeks,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>import_export_rof_table);</highlight></codeline>
-<codeline lineno="220"><highlight class="normal"></highlight></codeline>
-<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classTriangle" kindref="compound">Triangle</ref>();</highlight></codeline>
-<codeline lineno="226"><highlight class="normal"></highlight></codeline>
-<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PARALLEL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setProblemDefinition(BORG_Problem<sp/>&amp;problem);</highlight></codeline>
-<codeline lineno="229"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="230"><highlight class="normal"></highlight></codeline>
-<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>functionEvaluation(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*vars,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*objs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*consts)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="243"><highlight class="normal"></highlight></codeline>
-<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>simulationExceptionHander(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::exception<sp/>&amp;e,<sp/><ref refid="classSimulation" kindref="compound">Simulation</ref><sp/>*s,</highlight></codeline>
-<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*objs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*vars);</highlight></codeline>
-<codeline lineno="257"><highlight class="normal"></highlight></codeline>
-<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>readInputData();</highlight></codeline>
-<codeline lineno="263"><highlight class="normal"></highlight></codeline>
-<codeline lineno="264"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_TRIANGLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_TRIANGLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PARALLEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Borg/borgmm.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Problem_8h" kindref="compound">Base/Problem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Simulation/Simulation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classTriangle" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classTriangle" kindref="compound">Triangle</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classProblem" kindref="compound">Problem</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_utilities<sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_durham;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_flat;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_swift;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_llr;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_crabtree;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_phils;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_cane;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_morgan;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_haw;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_clayton;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_lillington;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_cary;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_durham;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_raleigh;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_owasa;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_pittsboro;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_chatham;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_cary;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_durham;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_raleigh;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_owasa;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_pittsboro;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_chatham;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_durham;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_falls_lake;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_owasa;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_little_river;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_wheeler_benson;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_jordan_lake;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_to_wastewater_fraction_owasa_raleigh;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_to_wastewater_fraction_durham;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_to_wastewater_fraction_chatham;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>caryDemandClassesFractions;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>durhamDemandClassesFractions;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>raleighDemandClassesFractions;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>owasaDemandClassesFractions;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>pittsboroDemandClassesFractions;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>chathamDemandClassesFractions;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>caryUserClassesWaterPrices;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>durhamUserClassesWaterPrices;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>raleighUserClassesWaterPrices;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>owasaUserClassesWaterPrices;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>pittsboroUserClassesWaterPrices;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>chathamUserClassesWaterPrices;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>owasaPriceSurcharges;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classTriangle" kindref="compound">Triangle</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>n_weeks,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>import_export_rof_table);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classTriangle" kindref="compound">Triangle</ref>();</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PARALLEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setProblemDefinition(BORG_Problem<sp/>&amp;problem);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>functionEvaluation(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*vars,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*objs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*consts)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>simulationExceptionHander(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::exception<sp/>&amp;e,<sp/><ref refid="classSimulation" kindref="compound">Simulation</ref><sp/>*s,</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*objs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*vars);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>readInputData();</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"></highlight></codeline>
-<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_TRIANGLE_H</highlight></codeline>
+<codeline lineno="267"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_TRIANGLE_H</highlight></codeline>
     </programlisting>
     <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Triangle.h"/>
   </compounddef>

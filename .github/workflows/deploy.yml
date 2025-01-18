@@ -28,7 +28,6 @@ jobs:
 
     # Build documentation in Sphinx
     - name: Build documentation
-      run: doxygen docs/Doxyfile
       run: sphinx-build -b html docs/source docs/build/html
     
     # Deploy to GitHub Pages

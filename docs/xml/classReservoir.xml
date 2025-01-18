@@ -8,17 +8,17 @@
     <includes refid="Reservoir_8h" local="no">Reservoir.h</includes>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classReservoir_1a46bd5b750963dfa9a57b247fd77ab8ff" prot="protected" static="no" mutable="no">
-        <type>DataSeries *</type>
+        <type><ref refid="classDataSeries" kindref="compound">DataSeries</ref> *</type>
         <definition>DataSeries* Reservoir::storage_area_curve</definition>
         <argsstring></argsstring>
         <name>storage_area_curve</name>
         <briefdescription>
-<para>The DataSeries object representing the storage area curve of the reservoir. </para>        </briefdescription>
+<para>The <ref refid="classDataSeries" kindref="compound">DataSeries</ref> object representing the storage area curve of the reservoir. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="22" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" bodystart="22" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="24" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classReservoir_1a57ab55e0dde9e29a4ff97de98b09e458" prot="protected" static="no" mutable="no">
         <type>double</type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="26" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" bodystart="26" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="28" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -47,20 +47,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="32" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="34" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classReservoir_1a2d2d9b302c13703309bb798d24136810" prot="public" static="no" mutable="no">
-        <type>EvaporationSeries</type>
+        <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref></type>
         <definition>EvaporationSeries Reservoir::evaporation_series</definition>
         <argsstring></argsstring>
         <name>evaporation_series</name>
         <briefdescription>
-<para>The EvaporationSeries object representing the evaporation series of the reservoir. </para>        </briefdescription>
+<para>The <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object representing the evaporation series of the reservoir. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="36" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" bodystart="36" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="38" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -90,11 +90,11 @@
           <declname>max_treatment_capacity</declname>
         </param>
         <param>
-          <type>EvaporationSeries &amp;</type>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
           <declname>evaporation_series</declname>
         </param>
         <param>
-          <type>DataSeries *</type>
+          <type><ref refid="classDataSeries" kindref="compound">DataSeries</ref> *</type>
           <declname>storage_area_curve</declname>
         </param>
         <param>
@@ -145,14 +145,14 @@
 <parametername>evaporation_series</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to an EvaporationSeries object containing evaporation data for the reservoir. </para></parameterdescription>
+<para>A reference to an <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object containing evaporation data for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>storage_area_curve</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A pointer to a DataSeries object representing the storage area curve for the reservoir. </para></parameterdescription>
+<para>A pointer to a <ref refid="classDataSeries" kindref="compound">DataSeries</ref> object representing the storage area curve for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -173,7 +173,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="60" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="62" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1a2e324b75aacc65d90b214ff7f62dfa89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -201,11 +201,11 @@
           <declname>max_treatment_capacity</declname>
         </param>
         <param>
-          <type>EvaporationSeries &amp;</type>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
           <declname>evaporation_series</declname>
         </param>
         <param>
-          <type>DataSeries *</type>
+          <type><ref refid="classDataSeries" kindref="compound">DataSeries</ref> *</type>
           <declname>storage_area_curve</declname>
         </param>
         <param>
@@ -268,14 +268,14 @@
 <parametername>evaporation_series</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to an EvaporationSeries object containing evaporation data for the reservoir. </para></parameterdescription>
+<para>A reference to an <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object containing evaporation data for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>storage_area_curve</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A pointer to a DataSeries object representing the storage area curve for the reservoir. </para></parameterdescription>
+<para>A pointer to a <ref refid="classDataSeries" kindref="compound">DataSeries</ref> object representing the storage area curve for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -317,7 +317,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="99" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="101" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1a0a1041fc72df190bbc51d965ede96f49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -345,7 +345,7 @@
           <declname>max_treatment_capacity</declname>
         </param>
         <param>
-          <type>EvaporationSeries &amp;</type>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
           <declname>evaporation_series</declname>
         </param>
         <param>
@@ -400,7 +400,7 @@
 <parametername>evaporation_series</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to an EvaporationSeries object containing evaporation data for the reservoir. </para></parameterdescription>
+<para>A reference to an <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object containing evaporation data for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -420,7 +420,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="122" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="124" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1a56409325d4554f8ef32a9c3605ece5c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -448,7 +448,7 @@
           <declname>max_treatment_capacity</declname>
         </param>
         <param>
-          <type>EvaporationSeries &amp;</type>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
           <declname>evaporation_series</declname>
         </param>
         <param>
@@ -515,14 +515,14 @@
 <parametername>evaporation_series</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to an EvaporationSeries object containing evaporation data for the reservoir. </para></parameterdescription>
+<para>A reference to an <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object containing evaporation data for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>storage_area_curve</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A pointer to a DataSeries object representing the storage area curve for the reservoir. </para></parameterdescription>
+<para>A pointer to a <ref refid="classDataSeries" kindref="compound">DataSeries</ref> object representing the storage area curve for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -564,7 +564,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="161" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="163" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1a1a6f078a9565dcb65843d3575bdd4172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -592,11 +592,11 @@
           <declname>max_treatment_capacity</declname>
         </param>
         <param>
-          <type>EvaporationSeries &amp;</type>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
           <declname>evaporation_series</declname>
         </param>
         <param>
-          <type>DataSeries *</type>
+          <type><ref refid="classDataSeries" kindref="compound">DataSeries</ref> *</type>
           <declname>storage_area_curve</declname>
         </param>
         <param>
@@ -659,14 +659,14 @@
 <parametername>evaporation_series</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to an EvaporationSeries object containing evaporation data for the reservoir. </para></parameterdescription>
+<para>A reference to an <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object containing evaporation data for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>storage_area_curve</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A pointer to a DataSeries object representing the storage area curve for the reservoir. </para></parameterdescription>
+<para>A pointer to a <ref refid="classDataSeries" kindref="compound">DataSeries</ref> object representing the storage area curve for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -708,7 +708,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="193" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="195" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1a617f90b97899699d7e0dd97e7ebb34bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -736,7 +736,7 @@
           <declname>max_treatment_capacity</declname>
         </param>
         <param>
-          <type>EvaporationSeries &amp;</type>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
           <declname>evaporation_series</declname>
         </param>
         <param>
@@ -803,7 +803,7 @@
 <parametername>evaporation_series</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to an EvaporationSeries object containing evaporation data for the reservoir. </para></parameterdescription>
+<para>A reference to an <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object containing evaporation data for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -844,7 +844,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="227" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="229" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1ac20659043afad4d2df49ce91e08f5dad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -872,11 +872,11 @@
           <declname>max_treatment_capacity</declname>
         </param>
         <param>
-          <type>EvaporationSeries &amp;</type>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
           <declname>evaporation_series</declname>
         </param>
         <param>
-          <type>DataSeries *</type>
+          <type><ref refid="classDataSeries" kindref="compound">DataSeries</ref> *</type>
           <declname>storage_area_curve</declname>
         </param>
         <param>
@@ -951,14 +951,14 @@
 <parametername>evaporation_series</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to an EvaporationSeries object containing evaporation data for the reservoir. </para></parameterdescription>
+<para>A reference to an <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object containing evaporation data for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>storage_area_curve</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A pointer to a DataSeries object representing the storage area curve for the reservoir. </para></parameterdescription>
+<para>A pointer to a <ref refid="classDataSeries" kindref="compound">DataSeries</ref> object representing the storage area curve for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -1021,7 +1021,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="271" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="273" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1a37ca7ba59d127fee6522c1ad545c9caf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1049,7 +1049,7 @@
           <declname>max_treatment_capacity</declname>
         </param>
         <param>
-          <type>EvaporationSeries &amp;</type>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
           <declname>evaporation_series</declname>
         </param>
         <param>
@@ -1128,7 +1128,7 @@
 <parametername>evaporation_series</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to an EvaporationSeries object containing evaporation data for the reservoir. </para></parameterdescription>
+<para>A reference to an <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object containing evaporation data for the reservoir. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -1198,7 +1198,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="310" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="312" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1a3fc46303b2846aa23bb52f0b69b9585c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1210,7 +1210,7 @@
           <declname>reservoir</declname>
         </param>
         <briefdescription>
-<para>Copy constructor for creating a copy of an existing <ref refid="classReservoir" kindref="compound">Reservoir</ref> object. A new <computeroutput>EvaporationSeries</computeroutput> is created to ensure deep copying of the evaporation data. </para>        </briefdescription>
+<para>Copy constructor for creating a copy of an existing <ref refid="classReservoir" kindref="compound">Reservoir</ref> object. A new <computeroutput><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref></computeroutput> is created to ensure deep copying of the evaporation data. </para>        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1223,7 +1223,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="324" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="326" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1a8b43209f25276f279986d87b5a77c4f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classReservoir" kindref="compound">Reservoir</ref> &amp;</type>
@@ -1249,7 +1249,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="337" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="339" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1a2f8bfdc73c7470185775a940fb3531de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1262,7 +1262,7 @@
 <para>This destructor is the default destructor for the <computeroutput><ref refid="classReservoir" kindref="compound">Reservoir</ref></computeroutput> class and overrides the corresponding function in the base class. It ensures proper cleanup of any dynamically allocated resources when a <computeroutput><ref refid="classReservoir" kindref="compound">Reservoir</ref></computeroutput> object is destroyed. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="346" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="348" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1a66929c055193785bc9d47bcdf0bc7445" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1321,7 +1321,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="363" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="365" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1ac6f64dd92c401e58095e7b125855041b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1335,7 +1335,7 @@
 <para>This function sets the reservoir to an online state, where it begins accepting inflows. It also sets the <computeroutput>available_volume</computeroutput> to <computeroutput>NONE</computeroutput>, indicating that the reservoir starts empty and will gradually fill as inflows start coming in.</para><para>This function overrides the <computeroutput>setOnline</computeroutput> function in the base class <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput>. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="376" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="378" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1ad1bb7aa46397719d09e0b6188b9bc28d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -1372,7 +1372,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="390" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="392" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classReservoir_1af86ffdaa2842a38b7f59e0360a1004a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1386,50 +1386,76 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="400" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="402" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>The <computeroutput><ref refid="classReservoir" kindref="compound">Reservoir</ref></computeroutput> class is a subclass of the main <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput> class. It represents a general reservoir object with a fixed or variable storage area curve. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>Created by bernardoct on 1/12/17. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="93">
+      <node id="222">
         <label>Quarry</label>
         <link refid="classQuarry"/>
-        <childnode refid="90" relation="public-inheritance">
+        <childnode refid="219" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="91">
+      <node id="220">
         <label>WaterSource</label>
         <link refid="classWaterSource"/>
       </node>
-      <node id="90">
+      <node id="219">
         <label>Reservoir</label>
         <link refid="classReservoir"/>
-        <childnode refid="91" relation="public-inheritance">
+        <childnode refid="220" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="92">
+      <node id="221">
         <label>AllocatedReservoir</label>
         <link refid="classAllocatedReservoir"/>
-        <childnode refid="90" relation="public-inheritance">
+        <childnode refid="219" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="95">
+      <node id="227">
+        <label>DataSeries</label>
+        <link refid="classDataSeries"/>
+        <childnode refid="228" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>ControlRules</label>
+        <link refid="classControlRules"/>
+      </node>
+      <node id="224">
         <label>WaterSource</label>
         <link refid="classWaterSource"/>
       </node>
-      <node id="94">
+      <node id="226">
+        <label>Catchment</label>
+        <link refid="classCatchment"/>
+      </node>
+      <node id="225">
+        <label>EvaporationSeries</label>
+        <link refid="classEvaporationSeries"/>
+        <childnode refid="226" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="223">
         <label>Reservoir</label>
         <link refid="classReservoir"/>
-        <childnode refid="95" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
+        </childnode>
+        <childnode refid="225" relation="usage">
+          <edgelabel>evaporation_series</edgelabel>
+        </childnode>
+        <childnode refid="227" relation="usage">
+          <edgelabel>storage_area_curve</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="17" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" bodystart="17" bodyend="401"/>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" line="19" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Reservoir.h" bodystart="19" bodyend="403"/>
     <listofallmembers>
       <member refid="classWaterSource_1ab869abb3d3dde1875e933482bedc3ae3" prot="public" virt="virtual"><scope>Reservoir</scope><name>addCapacity</name></member>
       <member refid="classWaterSource_1ac2bc1a09fce3a3201d62a73052b27b0b" prot="public" virt="virtual"><scope>Reservoir</scope><name>addTreatmentCapacity</name></member>

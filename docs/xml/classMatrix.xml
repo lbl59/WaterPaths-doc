@@ -1,0 +1,1193 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classMatrix" kind="class" language="C++" prot="public">
+    <compoundname>Matrix</compoundname>
+    <includes refid="Array_8h" local="no">Array.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMatrix_1afe2ef09343ff36b98618d696e7b232e3" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Matrix&lt; T &gt;::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+<para>The number of rows of the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1015" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1015" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMatrix_1a0a922a1712cf7e9afb32fd8fff6809df" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Matrix&lt; T &gt;::m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <briefdescription>
+<para>The number of columns of the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1019" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1019" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMatrix_1a0914658ee459304d3dbcc26806038019" prot="private" static="no" mutable="no">
+        <type>T **</type>
+        <definition>T** Matrix&lt; T &gt;::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <briefdescription>
+<para>The pointer to the memory address where the matrix data is stored. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1023" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1023" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>()</argsstring>
+        <name>Matrix</name>
+        <briefdescription>
+<para>The default constructor for a new <ref refid="classMatrix" kindref="compound">Matrix</ref> object. This constructor initializes the matrix to have 0 rows and 0 columns. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="976" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1031" bodyend="1033"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1ac8061527f81abb94e19b1ac6fd4af63a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>(const unsigned int n, const unsigned int m)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type>const unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Matrix&lt; T&gt;:: <ref refid="classMatrix" kindref="compound">Matrix</ref> object with <computeroutput>n</computeroutput> rows and <computeroutput>m</computeroutput> columns. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows in the matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns in the matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="977" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1043" bodyend="1051"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a697e01f8d46c2059d0420d5b420efb91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>(const T &amp;a, const unsigned int n, const unsigned int m)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Matrix&lt; T&gt;:: <ref refid="classMatrix" kindref="compound">Matrix</ref> object with <computeroutput>n</computeroutput> rows and <computeroutput>m</computeroutput> columns and initialize all elements to the constant value <computeroutput>a</computeroutput>. This constructor initializes all elements in the matrix to a reference to the constant value <computeroutput>a</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the constant value to initialize all elements in the matrix to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows in the matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns in the matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="978" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1063" bodyend="1074"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a991881e660607b10ff4fbf705006108d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>(MType t, const T &amp;a, const T &amp;o, const unsigned int n, const unsigned int m)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type><ref refid="Array_8h_1afb4b79601b9f07458ff37d2c507b3e6d" kindref="member">MType</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a diagonal matrix of specified dimensions and initializes its elements based on the matrix type. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor supports creating a diagonal matrix with a constant value <computeroutput>a</computeroutput> on the diagonal and <computeroutput>o</computeroutput> as the off-diagonal elements.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. The type of elements stored in the matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the matrix to create (e.g., DIAG for a diagonal matrix). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to initialize the diagonal elements (if applicable). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to initialize the off-diagonal elements (if applicable). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows in the matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns in the matrix.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the specified matrix type is not supported. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="979" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1116" bodyend="1140"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1ab2f0cdfc1e7aac9ddd46a1c6b6a3f2f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>(MType t, const Vector&lt; T &gt; &amp;v, const T &amp;o, const unsigned int n, const unsigned int m)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type><ref refid="Array_8h_1afb4b79601b9f07458ff37d2c507b3e6d" kindref="member">MType</ref></type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classVector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>v</declname>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a diagonal matrix of specified dimensions and initializes its elements based on the matrix type. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor supports creating a diagonal matrix with the input vector <computeroutput>a</computeroutput>&apos;s elements on the diagonal and a pre-specified value <computeroutput>o</computeroutput> as the off-diagonal elements.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. The type of elements stored in the matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the matrix to create (e.g., DIAG for a diagonal matrix). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector used to initialize the diagonal elements (if applicable). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>o</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to initialize the off-diagonal elements (if applicable). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows in the matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns in the matrix.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the specified matrix type is not supported. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="980" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1159" bodyend="1180"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a33a507863c86bbc82e650054f1cc13b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>(const T *a, const unsigned int n, const unsigned int m)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type>const T *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new Matrix&lt; T&gt;:: <ref refid="classMatrix" kindref="compound">Matrix</ref> object with <computeroutput>n</computeroutput> rows and <computeroutput>m</computeroutput> columns and initialize all elements to the constant value <computeroutput>a</computeroutput>. This constructor initializes all elements in the matrix to a pointer to the constant value <computeroutput>a</computeroutput>. It first dereferences the pointer <computeroutput>a</computeroutput> and then assigns the value to each element in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the constant value to initialize all elements in the matrix to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows in the matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns in the matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="981" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1087" bodyend="1098"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a6a46705243036bfeee78fe2c84c54340" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::Matrix</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;rhs)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a new matrix as a deep copy of an existing matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para>This copy constructor duplicates the dimensions and contents of the provided matrix into a new matrix instance.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. The type of elements stored in the matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="982" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1191" bodyend="1202"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a91aa704de674203e96aece9e1955ccd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::~Matrix</definition>
+        <argsstring>()</argsstring>
+        <name>~Matrix</name>
+        <briefdescription>
+<para>Destroys the matrix object and frees the memory allocated for the matrix data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="983" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1208" bodyend="1214"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a771eff354da6c0008228dc19cde4142a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T* Matrix&lt; T &gt;::operator[]</definition>
+        <argsstring>(const unsigned int &amp;i)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const unsigned int &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="985" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="985" bodyend="985"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1af58cf6372d17f7abf5396d32f3ef5cd7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T *</type>
+        <definition>const T* Matrix&lt; T &gt;::operator[]</definition>
+        <argsstring>(const unsigned int &amp;i) const</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>const unsigned int &amp;</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="986" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="986" bodyend="986"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a8d10454cfe9427269b54a754262004b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::resize</definition>
+        <argsstring>(const unsigned int n, const unsigned int m)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>const unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Resizes the matrix to have <computeroutput>n</computeroutput> rows and <computeroutput>m</computeroutput> columns. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows of the resized matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns of the resized matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="988" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1265" bodyend="1280"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1ae866a1b312aa040b587b40c5f54b6a54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix&lt; T &gt;::resize</definition>
+        <argsstring>(const T &amp;a, const unsigned int n, const unsigned int m)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const unsigned int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Resizes the matrix to have <computeroutput>n</computeroutput> rows and <computeroutput>m</computeroutput> columns. Sets all elements to the constant value <computeroutput>a</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The constant value to set all elements in the matrix to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows of the resized matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns of the resized matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="989" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1291" bodyend="1298"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a7dded77c0f4c424c98858b5f94c13c16" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt; T &gt; Matrix&lt; T &gt;::extractRow</definition>
+        <argsstring>(const unsigned int i) const</argsstring>
+        <name>extractRow</name>
+        <param>
+          <type>const unsigned int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Extracts a specific row from the matrix as a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The row index to extract. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector&lt;T&gt;</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the row index is out of bounds. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="991" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1310" bodyend="1317"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a4361c4478b01f7df1173e5b64eccd127" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt; T &gt; Matrix&lt; T &gt;::extractColumn</definition>
+        <argsstring>(const unsigned int j) const</argsstring>
+        <name>extractColumn</name>
+        <param>
+          <type>const unsigned int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para>Extracts a specific column from the matrix as a vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The column index to extract. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector&lt;T&gt;</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the column index is out of bounds. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="992" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1329" bodyend="1340"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1ad025820349fa69f73f2da395af627741" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Matrix&lt; T &gt;::nrows</definition>
+        <argsstring>() const</argsstring>
+        <name>nrows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="995" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="995" bodyend="995"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1aa62107f075998f969b39fcb1bef20c44" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int Matrix&lt; T &gt;::ncols</definition>
+        <argsstring>() const</argsstring>
+        <name>ncols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="996" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="996" bodyend="996"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a01990eb2552555d37c83272125be68e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator=</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator that copies the contents of the right-hand side matrix <computeroutput>rhs</computeroutput> into the current matrix. If matrix and rhs were different sizes, matrix has been resized to match the size of <computeroutput>rhs</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para>Postcondition: normal assignment via copying has been performed;</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right-hand side matrix to copy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;T&gt;&amp; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="998" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1227" bodyend="1238"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a603960a94121d9b35509199de88d1a92" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator=</definition>
+        <argsstring>(const T &amp;a)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator that assigns the constant value <computeroutput>a</computeroutput> to each element in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The constant value to assign to each element in the matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;T&gt;&amp; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="999" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1248" bodyend="1255"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a36fdb87d0aa1b906eda9fa1cf81a1477" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator+=</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Operator that performs an in-place addition of two matrices with the same dimensions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right-hand sided matrix to add. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;T&gt;&amp;</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the matrices are of different sizes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1000" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1426" bodyend="1435"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a50e2998bc90012d77efc0ff39d089336" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator-=</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Operator that performs an in-place subtraction of two matrices with the same dimensions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right-hand sided matrix to subtract. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;T&gt;&amp;</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the matrices are of different sizes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1001" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1538" bodyend="1547"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1af6a95588910fa9c53feaae71fe88df81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator*=</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Operator that performs an in-place multiplication of each element of two matrices with the same dimensions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right-hand sided matrix to multiply. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;T&gt;&amp;</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the matrices are of different sizes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1002" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1637" bodyend="1646"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1aab1b305350c7547ee31f0eeb92fc8c4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator/=</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Operator that performs an in-place division of each element of two matrices with the same dimensions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right-hand sided matrix to divide. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;T&gt;&amp;</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the matrices are of different sizes. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1003" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1736" bodyend="1745"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1acf14abe2000a4a41dae10db14b5d039c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator^=</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;rhs)</argsstring>
+        <name>operator^=</name>
+        <param>
+          <type>const <ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Operator that raises each element of the matrix to the power of each element in <computeroutput>rhs</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The right-hand sided matrix to raise to the power of. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;T&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1004" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1791" bodyend="1800"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a5aeaf1a90547b2288646d57143d5518c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator+=</definition>
+        <argsstring>(const T &amp;a)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Operator that performs an in-place addition of a constant value <computeroutput>a</computeroutput> to each element in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The constant value to add. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;T&gt;&amp; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1005" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1445" bodyend="1452"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a8776d41fcbbc1fc08425492576cf6786" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator-=</definition>
+        <argsstring>(const T &amp;a)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Operator that performs an in-place subtraction of a constant value <computeroutput>a</computeroutput> from each element in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The constant value to subtract. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;T&gt;&amp; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1006" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1557" bodyend="1564"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a9ac358ade86c1b442aa75852b2dd663a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator*=</definition>
+        <argsstring>(const T &amp;a)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Operator that performs an in-place multiplication of each element of the matrix by a constant value <computeroutput>a</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The constant value to multiply. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;T&gt;&amp; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1007" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1656" bodyend="1663"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1ada3039797826038262e03da2ee3a8697" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator/=</definition>
+        <argsstring>(const T &amp;a)</argsstring>
+        <name>operator/=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Operator that performs an in-place division of each element of the matrix by a constant value <computeroutput>a</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The constant value to divide. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;T&gt;&amp; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1008" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1755" bodyend="1762"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1af35faeb39342bf42c4470cf10630e32f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; Matrix&lt; T &gt;::operator^=</definition>
+        <argsstring>(const T &amp;a)</argsstring>
+        <name>operator^=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+<para>Operator that performs an in-place operation to raise each element of the matrix to the power of a constant value <computeroutput>a</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The constant value to raise each element to the power of. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix&lt;T&gt;&amp; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1009" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1810" bodyend="1817"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix_1a8d390e8b2581c65774f58a0a3b716dcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Matrix&lt; T &gt;::operator Vector&lt; T &gt;</definition>
+        <argsstring>()</argsstring>
+        <name>operator Vector&lt; T &gt;</name>
+        <briefdescription>
+<para>Converts a matrix to a vector if it has a single row or column. </para>        </briefdescription>
+        <detaileddescription>
+<para>This operator allows a matrix to be cast to a vector by extracting its single row or column.</para><para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the elements stored in the matrix and vectors. The type of elements stored in the matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Vector&lt;T&gt; The extracted row or column as a vector.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::logic_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the matrix has more than one row and more than one column. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="1010" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="1830" bodyend="1838"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" line="973" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/QPSolver/Array.h" bodystart="972" bodyend="1024"/>
+    <listofallmembers>
+      <member refid="classMatrix_1a4361c4478b01f7df1173e5b64eccd127" prot="public" virt="non-virtual"><scope>Matrix</scope><name>extractColumn</name></member>
+      <member refid="classMatrix_1a7dded77c0f4c424c98858b5f94c13c16" prot="public" virt="non-virtual"><scope>Matrix</scope><name>extractRow</name></member>
+      <member refid="classMatrix_1a0a922a1712cf7e9afb32fd8fff6809df" prot="private" virt="non-virtual"><scope>Matrix</scope><name>m</name></member>
+      <member refid="classMatrix_1a9d567e3a121b1be0c3f9c461cab524fe" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1ac8061527f81abb94e19b1ac6fd4af63a" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1a697e01f8d46c2059d0420d5b420efb91" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1a991881e660607b10ff4fbf705006108d" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1ab2f0cdfc1e7aac9ddd46a1c6b6a3f2f9" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1a33a507863c86bbc82e650054f1cc13b6" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1a6a46705243036bfeee78fe2c84c54340" prot="public" virt="non-virtual"><scope>Matrix</scope><name>Matrix</name></member>
+      <member refid="classMatrix_1afe2ef09343ff36b98618d696e7b232e3" prot="private" virt="non-virtual"><scope>Matrix</scope><name>n</name></member>
+      <member refid="classMatrix_1aa62107f075998f969b39fcb1bef20c44" prot="public" virt="non-virtual"><scope>Matrix</scope><name>ncols</name></member>
+      <member refid="classMatrix_1ad025820349fa69f73f2da395af627741" prot="public" virt="non-virtual"><scope>Matrix</scope><name>nrows</name></member>
+      <member refid="classMatrix_1a8d390e8b2581c65774f58a0a3b716dcb" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator Vector&lt; T &gt;</name></member>
+      <member refid="classMatrix_1af6a95588910fa9c53feaae71fe88df81" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator*=</name></member>
+      <member refid="classMatrix_1a9ac358ade86c1b442aa75852b2dd663a" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator*=</name></member>
+      <member refid="classMatrix_1a36fdb87d0aa1b906eda9fa1cf81a1477" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator+=</name></member>
+      <member refid="classMatrix_1a5aeaf1a90547b2288646d57143d5518c" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator+=</name></member>
+      <member refid="classMatrix_1a50e2998bc90012d77efc0ff39d089336" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator-=</name></member>
+      <member refid="classMatrix_1a8776d41fcbbc1fc08425492576cf6786" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator-=</name></member>
+      <member refid="classMatrix_1aab1b305350c7547ee31f0eeb92fc8c4a" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator/=</name></member>
+      <member refid="classMatrix_1ada3039797826038262e03da2ee3a8697" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator/=</name></member>
+      <member refid="classMatrix_1a01990eb2552555d37c83272125be68e6" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator=</name></member>
+      <member refid="classMatrix_1a603960a94121d9b35509199de88d1a92" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator=</name></member>
+      <member refid="classMatrix_1a771eff354da6c0008228dc19cde4142a" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator[]</name></member>
+      <member refid="classMatrix_1af58cf6372d17f7abf5396d32f3ef5cd7" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator[]</name></member>
+      <member refid="classMatrix_1acf14abe2000a4a41dae10db14b5d039c" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator^=</name></member>
+      <member refid="classMatrix_1af35faeb39342bf42c4470cf10630e32f" prot="public" virt="non-virtual"><scope>Matrix</scope><name>operator^=</name></member>
+      <member refid="classMatrix_1a8d10454cfe9427269b54a754262004b8" prot="public" virt="non-virtual"><scope>Matrix</scope><name>resize</name></member>
+      <member refid="classMatrix_1ae866a1b312aa040b587b40c5f54b6a54" prot="public" virt="non-virtual"><scope>Matrix</scope><name>resize</name></member>
+      <member refid="classMatrix_1a0914658ee459304d3dbcc26806038019" prot="private" virt="non-virtual"><scope>Matrix</scope><name>v</name></member>
+      <member refid="classMatrix_1a91aa704de674203e96aece9e1955ccd3" prot="public" virt="non-virtual"><scope>Matrix</scope><name>~Matrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

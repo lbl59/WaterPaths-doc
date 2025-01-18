@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classUtils" kind="class" language="C++" prot="public">
+    <compoundname>Utils</compoundname>
+    <includes refid="Utils_8h" local="no">Utils.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classUtils_1a70b9475aafa3277b7d177a74752263bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>static vector&lt;vector&lt;double&gt; &gt; Utils::parse2DCsvFile</definition>
+        <argsstring>(basic_string&lt; char, char_traits&lt; char &gt;, allocator&lt; char &gt;&gt; file_name, unsigned long max_lines=10000000, vector&lt; unsigned long &gt; rows_to_read=vector&lt; unsigned long &gt;())</argsstring>
+        <name>parse2DCsvFile</name>
+        <param>
+          <type>basic_string&lt; char, char_traits&lt; char &gt;, allocator&lt; char &gt;&gt;</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>max_lines</declname>
+          <defval>10000000</defval>
+        </param>
+        <param>
+          <type>vector&lt; unsigned long &gt;</type>
+          <declname>rows_to_read</declname>
+          <defval>vector&lt; unsigned long &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Reads a CSV file into a 2D vector of doubles. This function parses the contents of a CSV file and returns it as a 2D vector, optionally reading a limited number of lines or specific rows. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The full path of the input CSV file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of lines to read from the file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rows_to_read</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional; a vector of row indices to read from the file.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector of vectors containing the parsed data as doubles.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the file is not found or appears to be space-separated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1a42fdb9455286213b32abf5f111c21fd4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; double &gt;</type>
+        <definition>static vector&lt;double&gt; Utils::parse1DCsvFile</definition>
+        <argsstring>(basic_string&lt; char, char_traits&lt; char &gt;, allocator&lt; char &gt;&gt; file_name, unsigned long max_lines=10000000, vector&lt; unsigned long &gt; rows_to_read=vector&lt; unsigned long &gt;())</argsstring>
+        <name>parse1DCsvFile</name>
+        <param>
+          <type>basic_string&lt; char, char_traits&lt; char &gt;, allocator&lt; char &gt;&gt;</type>
+          <declname>file_name</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>max_lines</declname>
+          <defval>10000000</defval>
+        </param>
+        <param>
+          <type>vector&lt; unsigned long &gt;</type>
+          <declname>rows_to_read</declname>
+          <defval>vector&lt; unsigned long &gt;()</defval>
+        </param>
+        <briefdescription>
+<para>Reads a CSV file into a 1D vector of doubles. Parses a CSV file and extracts its data into a 1D vector with optional row filtering. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The full path of the input CSV file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_lines</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum number of lines to read from the file. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rows_to_read</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional; a vector of row indices to read from the file.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector containing the parsed data as doubles.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the file cannot be read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1af50f672b3a5c4790386d943e04e960f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> * &gt;</type>
+        <definition>static vector&lt;WaterSource *&gt; Utils::copyWaterSourceVector</definition>
+        <argsstring>(vector&lt; WaterSource *&gt; water_sources_original)</argsstring>
+        <name>copyWaterSourceVector</name>
+        <param>
+          <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt;</type>
+          <declname>water_sources_original</declname>
+        </param>
+        <briefdescription>
+<para>Creates a copy of a vector of <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput> objects. This function deep copies water source objects based on their derived types. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>water_sources_original</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original vector of <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput> pointers.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new vector containing deep copies of the input water sources.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if a water source type is not implemented. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1aa640115dcdbe7309c058063c1f0cf943" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> * &gt;</type>
+        <definition>static vector&lt;Utility *&gt; Utils::copyUtilityVector</definition>
+        <argsstring>(vector&lt; Utility *&gt; utility_original, bool clear_water_sources=false)</argsstring>
+        <name>copyUtilityVector</name>
+        <param>
+          <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt;</type>
+          <declname>utility_original</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear_water_sources</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Creates a copy of a vector of <computeroutput><ref refid="classUtility" kindref="compound">Utility</ref></computeroutput> objects. Optionally clears water sources in the copied utilities. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>utility_original</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original vector of <computeroutput><ref refid="classUtility" kindref="compound">Utility</ref></computeroutput> pointers. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clear_water_sources</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to clear water sources in the copied utilities.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new vector containing deep copies of the input utilities. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1ab291735d88ca704e9317edf259b6a5ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> * &gt;</type>
+        <definition>static vector&lt;DroughtMitigationPolicy *&gt; Utils::copyDroughtMitigationPolicyVector</definition>
+        <argsstring>(vector&lt; DroughtMitigationPolicy *&gt; drought_mitigation_policy_original)</argsstring>
+        <name>copyDroughtMitigationPolicyVector</name>
+        <param>
+          <type>vector&lt; <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> *&gt;</type>
+          <declname>drought_mitigation_policy_original</declname>
+        </param>
+        <briefdescription>
+<para>Creates a copy of a vector of <computeroutput><ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref></computeroutput> objects. This function duplicates drought mitigation policies based on their derived types. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>drought_mitigation_policy_original</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original vector of <computeroutput><ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref></computeroutput> pointers.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new vector containing deep copies of the input policies. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1a16d5d6b3ada64b5f018478e972b66b2a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref> * &gt;</type>
+        <definition>static vector&lt;MinEnvFlowControl *&gt; Utils::copyMinEnvFlowControlVector</definition>
+        <argsstring>(vector&lt; MinEnvFlowControl *&gt; min_env_flow_controls_original)</argsstring>
+        <name>copyMinEnvFlowControlVector</name>
+        <param>
+          <type>vector&lt; <ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref> *&gt;</type>
+          <declname>min_env_flow_controls_original</declname>
+        </param>
+        <briefdescription>
+<para>Creates a copy of a vector of <computeroutput><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref></computeroutput> objects. This function duplicates a vector of environmental flow controls based on their specific derived types. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_env_flow_controls_original</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original vector of <computeroutput><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref></computeroutput> pointers.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new vector containing deep copies of the input objects.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if a control type is not implemented. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1a3e4c6e935243165c89f059c5fedf2945" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool Utils::isFirstWeekOfTheYear</definition>
+        <argsstring>(int week)</argsstring>
+        <name>isFirstWeekOfTheYear</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Determines if a given week corresponds to the first week of the year. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The week number to check. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the given week is the first week of the year; otherwise, false. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1a510a7b15687fc6bd6b1c1742d7d7e9fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Utils::weekOfTheYear</definition>
+        <argsstring>(int week)</argsstring>
+        <name>weekOfTheYear</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Returns the week of the year for a given week index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The week number to process. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The corresponding week of the year. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1a6022da71d614027a1da3a996531df85e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Utils::removeIntFromVector</definition>
+        <argsstring>(vector&lt; int &gt; &amp;vec, int el)</argsstring>
+        <name>removeIntFromVector</name>
+        <param>
+          <type>vector&lt; int &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>el</declname>
+        </param>
+        <briefdescription>
+<para>Deletes a specified element from an integer vector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vector from which to remove the element. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>el</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer value to be removed.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1a25184c319ab70a93b056d516e0aafd8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Utils::print_exception</definition>
+        <argsstring>(const exception &amp;e, int level=0)</argsstring>
+        <name>print_exception</name>
+        <param>
+          <type>const exception &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Prints details of an exception with nesting levels. Recursively prints exception messages and nested exceptions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The exception to be printed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current nesting level for formatting purposes.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1af59616433568dbc50e28290524f40faa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; <ref refid="classBond" kindref="compound">Bond</ref> * &gt;</type>
+        <definition>static vector&lt;Bond *&gt; Utils::copyBonds</definition>
+        <argsstring>(vector&lt; Bond *&gt; bonds_original)</argsstring>
+        <name>copyBonds</name>
+        <param>
+          <type>vector&lt; <ref refid="classBond" kindref="compound">Bond</ref> *&gt;</type>
+          <declname>bonds_original</declname>
+        </param>
+        <briefdescription>
+<para>Creates a copy of a vector of <computeroutput><ref refid="classBond" kindref="compound">Bond</ref></computeroutput> objects. This function deep copies bond objects based on their derived types. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bonds_original</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The original vector of <computeroutput><ref refid="classBond" kindref="compound">Bond</ref></computeroutput> pointers.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new vector containing deep copies of the input bonds.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if a bond type is not implemented. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classUtils_1a383900ac38ca9c17e58d8ff2156ac100" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Utils::createDir</definition>
+        <argsstring>(string directory)</argsstring>
+        <name>createDir</name>
+        <param>
+          <type>string</type>
+          <declname>directory</declname>
+        </param>
+        <briefdescription>
+<para>Creates a directory at the specified path. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>directory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path of the directory to create.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="155" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <ref refid="classUtils" kindref="compound">Utils</ref> class defines a set of utility functions that are used throughout the model. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by bernardo on 1/13/17. </para>    </detaileddescription>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" line="18" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h" bodystart="18" bodyend="156"/>
+    <listofallmembers>
+      <member refid="classUtils_1af59616433568dbc50e28290524f40faa" prot="public" virt="non-virtual"><scope>Utils</scope><name>copyBonds</name></member>
+      <member refid="classUtils_1ab291735d88ca704e9317edf259b6a5ab" prot="public" virt="non-virtual"><scope>Utils</scope><name>copyDroughtMitigationPolicyVector</name></member>
+      <member refid="classUtils_1a16d5d6b3ada64b5f018478e972b66b2a" prot="public" virt="non-virtual"><scope>Utils</scope><name>copyMinEnvFlowControlVector</name></member>
+      <member refid="classUtils_1aa640115dcdbe7309c058063c1f0cf943" prot="public" virt="non-virtual"><scope>Utils</scope><name>copyUtilityVector</name></member>
+      <member refid="classUtils_1af50f672b3a5c4790386d943e04e960f9" prot="public" virt="non-virtual"><scope>Utils</scope><name>copyWaterSourceVector</name></member>
+      <member refid="classUtils_1a383900ac38ca9c17e58d8ff2156ac100" prot="public" virt="non-virtual"><scope>Utils</scope><name>createDir</name></member>
+      <member refid="classUtils_1a3e4c6e935243165c89f059c5fedf2945" prot="public" virt="non-virtual"><scope>Utils</scope><name>isFirstWeekOfTheYear</name></member>
+      <member refid="classUtils_1a42fdb9455286213b32abf5f111c21fd4" prot="public" virt="non-virtual"><scope>Utils</scope><name>parse1DCsvFile</name></member>
+      <member refid="classUtils_1a70b9475aafa3277b7d177a74752263bf" prot="public" virt="non-virtual"><scope>Utils</scope><name>parse2DCsvFile</name></member>
+      <member refid="classUtils_1a25184c319ab70a93b056d516e0aafd8e" prot="public" virt="non-virtual"><scope>Utils</scope><name>print_exception</name></member>
+      <member refid="classUtils_1a6022da71d614027a1da3a996531df85e" prot="public" virt="non-virtual"><scope>Utils</scope><name>removeIntFromVector</name></member>
+      <member refid="classUtils_1a510a7b15687fc6bd6b1c1742d7d7e9fd" prot="public" virt="non-virtual"><scope>Utils</scope><name>weekOfTheYear</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

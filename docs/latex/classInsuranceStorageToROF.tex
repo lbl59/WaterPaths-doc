@@ -1,0 +1,273 @@
+\hypertarget{classInsuranceStorageToROF}{}\section{Insurance\+Storage\+To\+R\+OF Class Reference}
+\label{classInsuranceStorageToROF}\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+
+
+The {\ttfamily \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}} and {\ttfamily \mbox{\hyperlink{classContinuityModelROF}{Continuity\+Model\+R\+OF}}} classes that implements drought insurance policies based on storage-\/to-\/\+R\+OF triggers.  
+
+
+
+
+{\ttfamily \#include $<$Insurance\+Storage\+To\+R\+O\+F.\+h$>$}
+
+Inheritance diagram for Insurance\+Storage\+To\+R\+OF\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classInsuranceStorageToROF}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInsuranceStorageToROF_a7769ebf2a6c73fa0efc55268712e8157}{Insurance\+Storage\+To\+R\+OF}} (const int \mbox{\hyperlink{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}{id}}, vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, const \mbox{\hyperlink{classGraph}{Graph}} \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&drought\+\_\+mitigation\+\_\+policies, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}, vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, vector$<$ vector$<$ double $>$$>$ \&policy\+\_\+rdm, vector$<$ double $>$ \&rof\+\_\+triggers, const double insurance\+\_\+premium, const vector$<$ double $>$ \&fixed\+\_\+payouts, unsigned long total\+\_\+simulation\+\_\+time)
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} object for drought insurance policies based on storage-\/to-\/\+R\+OF triggers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInsuranceStorageToROF_a5229c6bbb6da8268017c71bacec70f67}{Insurance\+Storage\+To\+R\+OF}} (\mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} \&insurance)
+\begin{DoxyCompactList}\small\item\em Creates a copy of an existing \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInsuranceStorageToROF_aba2143897e3ec32d698d25a1aa572a73}{$\sim$\+Insurance\+Storage\+To\+R\+OF}} () override
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} object and releases resources. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInsuranceStorageToROF_a2519f93b9db551105d9a7913d0db9540}{price\+Insurance}} (int week)
+\begin{DoxyCompactList}\small\item\em Calculates the insurance price based on payout probabilities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInsuranceStorageToROF_a17aa84e0559793b3c463c468dfda3753}{apply\+Policy}} (int week) override
+\begin{DoxyCompactList}\small\item\em Applies the insurance policy for a given week. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInsuranceStorageToROF_ac7d317a7f189739275960e4f021108d8}{add\+System\+Components}} (vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ utilities, vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ water\+\_\+sources, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}) override
+\begin{DoxyCompactList}\small\item\em Adds \mbox{\hyperlink{classUtility}{Utility}} and \mbox{\hyperlink{classWaterSource}{Water\+Source}} objects to the \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} policy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInsuranceStorageToROF_a6318c3dca8b0c4d568eac494e5ccf712}{set\+Realization}} (unsigned long \mbox{\hyperlink{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7}{realization\+\_\+id}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, vector$<$ double $>$ \&policy\+\_\+rdm) override
+\begin{DoxyCompactList}\small\item\em Sets the realization parameters for the \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} policy. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \mbox{\hyperlink{classInsuranceStorageToROF_a0a79476bd868966a79ea03e0abdbfde2}{calculate\+Short\+Term\+R\+O\+F\+Table}} (int week, const vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const int \&\mbox{\hyperlink{classContinuityModel_a6df6198ebc99a099df08f4b8ce6b52b9}{n\+\_\+utilities}})
+\begin{DoxyCompactList}\small\item\em Runs a short-\/term R\+OF calculation for a given week. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classInsuranceStorageToROF_a5870934b8b33e1d872eca7b0940398ac}{update\+Online\+Infrastructure}} (int week) override
+\begin{DoxyCompactList}\small\item\em Updates the online infrastructure for the current week. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}} and {\ttfamily \mbox{\hyperlink{classContinuityModelROF}{Continuity\+Model\+R\+OF}}} classes that implements drought insurance policies based on storage-\/to-\/\+R\+OF triggers. 
+
+The {\ttfamily \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}} class that implements water use restrictions based on risk of failure (R\+OF) triggers.
+
+Created by bernardoct on 5/1/17.
+
+Created by bernardo on 2/3/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classInsuranceStorageToROF_a7769ebf2a6c73fa0efc55268712e8157}\label{classInsuranceStorageToROF_a7769ebf2a6c73fa0efc55268712e8157}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{Insurance\+Storage\+To\+R\+O\+F()}{InsuranceStorageToROF()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Insurance\+Storage\+To\+R\+O\+F\+::\+Insurance\+Storage\+To\+R\+OF (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{const \mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{policy\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{rof\+\_\+triggers,  }\item[{const double}]{insurance\+\_\+premium,  }\item[{const vector$<$ double $>$ \&}]{fixed\+\_\+payouts,  }\item[{unsigned long}]{total\+\_\+simulation\+\_\+time }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} object for drought insurance policies based on storage-\/to-\/\+R\+OF triggers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Insurance policy ID. \\
+\hline
+{\em water\+\_\+sources} & \mbox{\hyperlink{classVector}{Vector}} of water sources used in the model. \\
+\hline
+{\em water\+\_\+sources\+\_\+graph} & \mbox{\hyperlink{classGraph}{Graph}} of connections between water sources. \\
+\hline
+{\em water\+\_\+sources\+\_\+to\+\_\+utilities} & Mapping between water sources and utilities. \\
+\hline
+{\em utilities} & \mbox{\hyperlink{classVector}{Vector}} of utilities involved in the policy. \\
+\hline
+{\em drought\+\_\+mitigation\+\_\+policies} & \mbox{\hyperlink{classVector}{Vector}} of drought mitigation policies. \\
+\hline
+{\em min\+\_\+env\+\_\+flow\+\_\+controls} & \mbox{\hyperlink{classVector}{Vector}} of minimum environmental flow controls. \\
+\hline
+{\em utilities\+\_\+rdm} & Random decision matrix for utilities. \\
+\hline
+{\em water\+\_\+sources\+\_\+rdm} & Random decision matrix for water sources. \\
+\hline
+{\em policy\+\_\+rdm} & Random decision matrix for policies. \\
+\hline
+{\em rof\+\_\+triggers} & Risk-\/of-\/failure triggers for insurance payouts. \\
+\hline
+{\em insurance\+\_\+premium} & Premium multiplier for insurance pricing. \\
+\hline
+{\em fixed\+\_\+payouts} & Fixed payouts for each utility in case of an insurance trigger. \\
+\hline
+{\em total\+\_\+simulation\+\_\+time} & Total simulation duration in weeks. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInsuranceStorageToROF_a5229c6bbb6da8268017c71bacec70f67}\label{classInsuranceStorageToROF_a5229c6bbb6da8268017c71bacec70f67}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{Insurance\+Storage\+To\+R\+O\+F()}{InsuranceStorageToROF()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Insurance\+Storage\+To\+R\+O\+F\+::\+Insurance\+Storage\+To\+R\+OF (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} \&}]{insurance }\end{DoxyParamCaption})}
+
+
+
+Creates a copy of an existing \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em insurance} & The \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} object to copy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInsuranceStorageToROF_aba2143897e3ec32d698d25a1aa572a73}\label{classInsuranceStorageToROF_aba2143897e3ec32d698d25a1aa572a73}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!````~Insurance\+Storage\+To\+R\+OF@{$\sim$\+Insurance\+Storage\+To\+R\+OF}}
+\index{````~Insurance\+Storage\+To\+R\+OF@{$\sim$\+Insurance\+Storage\+To\+R\+OF}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{$\sim$\+Insurance\+Storage\+To\+R\+O\+F()}{~InsuranceStorageToROF()}}
+{\footnotesize\ttfamily Insurance\+Storage\+To\+R\+O\+F\+::$\sim$\+Insurance\+Storage\+To\+R\+OF (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destroys the \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} object and releases resources. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classInsuranceStorageToROF_ac7d317a7f189739275960e4f021108d8}\label{classInsuranceStorageToROF_ac7d317a7f189739275960e4f021108d8}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!add\+System\+Components@{add\+System\+Components}}
+\index{add\+System\+Components@{add\+System\+Components}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{add\+System\+Components()}{addSystemComponents()}}
+{\footnotesize\ttfamily void Insurance\+Storage\+To\+R\+O\+F\+::add\+System\+Components (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{utilities,  }\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$}]{water\+\_\+sources,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$}]{min\+\_\+env\+\_\+flow\+\_\+controls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adds \mbox{\hyperlink{classUtility}{Utility}} and \mbox{\hyperlink{classWaterSource}{Water\+Source}} objects to the \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} policy. 
+
+This function overrides the pure virtual function add\+System\+Components in \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em utilities} & \mbox{\hyperlink{classVector}{Vector}} of system utilities. \\
+\hline
+{\em water\+\_\+sources} & \mbox{\hyperlink{classVector}{Vector}} of water sources. \\
+\hline
+{\em min\+\_\+env\+\_\+flow\+\_\+controls} & \mbox{\hyperlink{classVector}{Vector}} of minimum environmental flow controls.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_a17aa84e0559793b3c463c468dfda3753}\label{classInsuranceStorageToROF_a17aa84e0559793b3c463c468dfda3753}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!apply\+Policy@{apply\+Policy}}
+\index{apply\+Policy@{apply\+Policy}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{apply\+Policy()}{applyPolicy()}}
+{\footnotesize\ttfamily void Insurance\+Storage\+To\+R\+O\+F\+::apply\+Policy (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Applies the insurance policy for a given week. 
+
+This function runs an R\+OF calculation of 50 year long simulations to estimate the likelihood that payouts will occur. The price of the insurance is set as (average sum of payouts across all 50 years $\ast$ insurance premium).
+
+This function overrides the pure virtual function apply\+Policy in \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_a0a79476bd868966a79ea03e0abdbfde2}\label{classInsuranceStorageToROF_a0a79476bd868966a79ea03e0abdbfde2}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!calculate\+Short\+Term\+R\+O\+F\+Table@{calculate\+Short\+Term\+R\+O\+F\+Table}}
+\index{calculate\+Short\+Term\+R\+O\+F\+Table@{calculate\+Short\+Term\+R\+O\+F\+Table}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{calculate\+Short\+Term\+R\+O\+F\+Table()}{calculateShortTermROFTable()}}
+{\footnotesize\ttfamily vector$<$double$>$ Insurance\+Storage\+To\+R\+O\+F\+::calculate\+Short\+Term\+R\+O\+F\+Table (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{const vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const int \&}]{n\+\_\+utilities }\end{DoxyParamCaption})}
+
+
+
+Runs a short-\/term R\+OF calculation for a given week. 
+
+F\+I\+X\+ME\+: Needs to be extended from the original function from Continuity\+Model\+R\+O\+F.\+cpp.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week for which R\+O\+Fs should be calculated. \\
+\hline
+{\em utilities} & \mbox{\hyperlink{classVector}{Vector}} of utilities for the R\+OF calculation. \\
+\hline
+{\em n\+\_\+utilities} & Number of utilities involved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of calculated R\+OF values for each utility. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInsuranceStorageToROF_a2519f93b9db551105d9a7913d0db9540}\label{classInsuranceStorageToROF_a2519f93b9db551105d9a7913d0db9540}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!price\+Insurance@{price\+Insurance}}
+\index{price\+Insurance@{price\+Insurance}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{price\+Insurance()}{priceInsurance()}}
+{\footnotesize\ttfamily void Insurance\+Storage\+To\+R\+O\+F\+::price\+Insurance (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})}
+
+
+
+Calculates the insurance price based on payout probabilities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classInsuranceStorageToROF_a6318c3dca8b0c4d568eac494e5ccf712}\label{classInsuranceStorageToROF_a6318c3dca8b0c4d568eac494e5ccf712}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily void Insurance\+Storage\+To\+R\+O\+F\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{realization\+\_\+id,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{policy\+\_\+rdm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the realization parameters for the \mbox{\hyperlink{classInsuranceStorageToROF}{Insurance\+Storage\+To\+R\+OF}} policy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em realization\+\_\+id} & ID of the realization. \\
+\hline
+{\em utilities\+\_\+rdm} & DU factor multipliers for utilities\textquotesingle{} demand growth rates. \\
+\hline
+{\em water\+\_\+sources\+\_\+rdm} & DU factor multipliers for water sources financing, construction, and permitting times. \\
+\hline
+{\em policy\+\_\+rdm} & DU factor multipliers for utilities\textquotesingle{} drought mitigation policies effectiveness.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classInsuranceStorageToROF_a5870934b8b33e1d872eca7b0940398ac}\label{classInsuranceStorageToROF_a5870934b8b33e1d872eca7b0940398ac}} 
+\index{Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}!update\+Online\+Infrastructure@{update\+Online\+Infrastructure}}
+\index{update\+Online\+Infrastructure@{update\+Online\+Infrastructure}!Insurance\+Storage\+To\+R\+OF@{Insurance\+Storage\+To\+R\+OF}}
+\subsubsection{\texorpdfstring{update\+Online\+Infrastructure()}{updateOnlineInfrastructure()}}
+{\footnotesize\ttfamily void Insurance\+Storage\+To\+R\+O\+F\+::update\+Online\+Infrastructure (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the online infrastructure for the current week. 
+
+This function overrides the pure virtual function update\+Online\+Infrastructure in \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classContinuityModelROF_a06cf47a32d6793b0ee912deccf92fc5b}{Continuity\+Model\+R\+OF}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Drought\+Mitigation\+Instruments/\mbox{\hyperlink{InsuranceStorageToROF_8h}{Insurance\+Storage\+To\+R\+O\+F.\+h}}\end{DoxyCompactItemize}

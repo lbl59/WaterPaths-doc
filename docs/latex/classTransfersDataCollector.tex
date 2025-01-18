@@ -1,0 +1,192 @@
+\hypertarget{classTransfersDataCollector}{}\section{Transfers\+Data\+Collector Class Reference}
+\label{classTransfersDataCollector}\index{Transfers\+Data\+Collector@{Transfers\+Data\+Collector}}
+
+
+The {\ttfamily \mbox{\hyperlink{classTransfersDataCollector}{Transfers\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of treated water transfers.  
+
+
+
+
+{\ttfamily \#include $<$Transfers\+Data\+Collector.\+h$>$}
+
+Inheritance diagram for Transfers\+Data\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTransfersDataCollector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTransfersDataCollector_a757289856b49a212a16b6263bfab8b7d}{Transfers\+Data\+Collector}} (\mbox{\hyperlink{classTransfers}{Transfers}} $\ast$transfer\+\_\+policy, unsigned long \mbox{\hyperlink{classDataCollector_a9ef2887466fe3123aa19ef956a219b96}{realization}})
+\begin{DoxyCompactList}\small\item\em Constructs a {\ttfamily \mbox{\hyperlink{classTransfersDataCollector}{Transfers\+Data\+Collector}}} for managing and collecting data related to a transfer policy. Initializes the data collector with the policy\textquotesingle{}s attributes and associated utilities. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTransfersDataCollector_a292b907e5c1000d8b3d868409637b9a6}{print\+Tabular\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a tabular string representation of demand offsets for a specified week. This representation includes the demand offset values for all utilities involved in the transfer policy. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTransfersDataCollector_aa5385877143c67a4d300032160239cfe}{print\+Compact\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a compact, comma-\/delimited string representation of demand offsets for a specified week. This representation includes the demand offset values for all utilities involved in the transfer policy, separated by commas. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTransfersDataCollector_a7c797fbccf4326b206b29529059dd622}{print\+Tabular\+String\+Header\+Line1}} () override
+\begin{DoxyCompactList}\small\item\em Generates the first header line for the tabular representation of transfer allocation data. This line includes repeated column headers for the transfer demand offsets for each utility involved in the transfer policy. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTransfersDataCollector_ade6b896383f079d8973076e6b9a8053a}{print\+Tabular\+String\+Header\+Line2}} () override
+\begin{DoxyCompactList}\small\item\em Generates the second header line for the tabular representation of transfer allocation data. This line includes repeated column headers for the transfer demand offsets for each utility involved in the transfer policy. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classTransfersDataCollector_a29750b8b76fa82d70d4f472a0e36ceba}{print\+Compact\+String\+Header}} () override
+\begin{DoxyCompactList}\small\item\em Generates a compact, comma-\/delimited string header for the transfer data. This header includes identifiers for the transfer demand offsets for each utility involved in the transfer policy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransfersDataCollector_a2f5c4427699aab547ea0d3b74993752b}{collect\+\_\+data}} () override
+\begin{DoxyCompactList}\small\item\em Collects the demand offset data for the current week from the transfer policy and appends it to the {\ttfamily demand\+\_\+offsets} vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classTransfersDataCollector}{Transfers\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of treated water transfers. 
+
+Created by bernardoct on 8/25/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTransfersDataCollector_a757289856b49a212a16b6263bfab8b7d}\label{classTransfersDataCollector_a757289856b49a212a16b6263bfab8b7d}} 
+\index{Transfers\+Data\+Collector@{Transfers\+Data\+Collector}!Transfers\+Data\+Collector@{Transfers\+Data\+Collector}}
+\index{Transfers\+Data\+Collector@{Transfers\+Data\+Collector}!Transfers\+Data\+Collector@{Transfers\+Data\+Collector}}
+\subsubsection{\texorpdfstring{Transfers\+Data\+Collector()}{TransfersDataCollector()}}
+{\footnotesize\ttfamily Transfers\+Data\+Collector\+::\+Transfers\+Data\+Collector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTransfers}{Transfers}} $\ast$}]{transfer\+\_\+policy,  }\item[{unsigned long}]{realization }\end{DoxyParamCaption})}
+
+
+
+Constructs a {\ttfamily \mbox{\hyperlink{classTransfersDataCollector}{Transfers\+Data\+Collector}}} for managing and collecting data related to a transfer policy. Initializes the data collector with the policy\textquotesingle{}s attributes and associated utilities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transfer\+\_\+policy} & Pointer to the {\ttfamily \mbox{\hyperlink{classTransfers}{Transfers}}} object representing the transfer policy. \\
+\hline
+{\em realization} & Unsigned long integer representing the realization ID. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransfersDataCollector_a2f5c4427699aab547ea0d3b74993752b}\label{classTransfersDataCollector_a2f5c4427699aab547ea0d3b74993752b}} 
+\index{Transfers\+Data\+Collector@{Transfers\+Data\+Collector}!collect\+\_\+data@{collect\+\_\+data}}
+\index{collect\+\_\+data@{collect\+\_\+data}!Transfers\+Data\+Collector@{Transfers\+Data\+Collector}}
+\subsubsection{\texorpdfstring{collect\+\_\+data()}{collect\_data()}}
+{\footnotesize\ttfamily void Transfers\+Data\+Collector\+::collect\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Collects the demand offset data for the current week from the transfer policy and appends it to the {\ttfamily demand\+\_\+offsets} vector. 
+
+This function overrides the {\ttfamily collect\+\_\+data} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a01486bf58acbe37b203f97b3b9a79c40}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classTransfersDataCollector_aa5385877143c67a4d300032160239cfe}\label{classTransfersDataCollector_aa5385877143c67a4d300032160239cfe}} 
+\index{Transfers\+Data\+Collector@{Transfers\+Data\+Collector}!print\+Compact\+String@{print\+Compact\+String}}
+\index{print\+Compact\+String@{print\+Compact\+String}!Transfers\+Data\+Collector@{Transfers\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String()}{printCompactString()}}
+{\footnotesize\ttfamily string Transfers\+Data\+Collector\+::print\+Compact\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a compact, comma-\/delimited string representation of demand offsets for a specified week. This representation includes the demand offset values for all utilities involved in the transfer policy, separated by commas. 
+
+This function overrides the {\ttfamily print\+Compact\+String} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the compact data is generated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the compact representation of the demand offsets for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classTransfersDataCollector_a29750b8b76fa82d70d4f472a0e36ceba}\label{classTransfersDataCollector_a29750b8b76fa82d70d4f472a0e36ceba}} 
+\index{Transfers\+Data\+Collector@{Transfers\+Data\+Collector}!print\+Compact\+String\+Header@{print\+Compact\+String\+Header}}
+\index{print\+Compact\+String\+Header@{print\+Compact\+String\+Header}!Transfers\+Data\+Collector@{Transfers\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String\+Header()}{printCompactStringHeader()}}
+{\footnotesize\ttfamily string Transfers\+Data\+Collector\+::print\+Compact\+String\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a compact, comma-\/delimited string header for the transfer data. This header includes identifiers for the transfer demand offsets for each utility involved in the transfer policy. 
+
+This function overrides the {\ttfamily print\+Compact\+String\+Header} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the compact header representation for the transfer data. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classTransfersDataCollector_a292b907e5c1000d8b3d868409637b9a6}\label{classTransfersDataCollector_a292b907e5c1000d8b3d868409637b9a6}} 
+\index{Transfers\+Data\+Collector@{Transfers\+Data\+Collector}!print\+Tabular\+String@{print\+Tabular\+String}}
+\index{print\+Tabular\+String@{print\+Tabular\+String}!Transfers\+Data\+Collector@{Transfers\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String()}{printTabularString()}}
+{\footnotesize\ttfamily string Transfers\+Data\+Collector\+::print\+Tabular\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a tabular string representation of demand offsets for a specified week. This representation includes the demand offset values for all utilities involved in the transfer policy. 
+
+This function overrides the {\ttfamily print\+Tabular\+String} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the tabular data is generated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the tabular representation of the demand offsets for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a397fccabe0223267eea8fc7cac0e59da}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classTransfersDataCollector_a7c797fbccf4326b206b29529059dd622}\label{classTransfersDataCollector_a7c797fbccf4326b206b29529059dd622}} 
+\index{Transfers\+Data\+Collector@{Transfers\+Data\+Collector}!print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}}
+\index{print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}!Transfers\+Data\+Collector@{Transfers\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line1()}{printTabularStringHeaderLine1()}}
+{\footnotesize\ttfamily string Transfers\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the first header line for the tabular representation of transfer allocation data. This line includes repeated column headers for the transfer demand offsets for each utility involved in the transfer policy. 
+
+This function overrides the {\ttfamily print\+Tabular\+String\+Header\+Line1} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the first header line for the tabular representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classTransfersDataCollector_ade6b896383f079d8973076e6b9a8053a}\label{classTransfersDataCollector_ade6b896383f079d8973076e6b9a8053a}} 
+\index{Transfers\+Data\+Collector@{Transfers\+Data\+Collector}!print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}}
+\index{print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}!Transfers\+Data\+Collector@{Transfers\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line2()}{printTabularStringHeaderLine2()}}
+{\footnotesize\ttfamily string Transfers\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the second header line for the tabular representation of transfer allocation data. This line includes repeated column headers for the transfer demand offsets for each utility involved in the transfer policy. 
+
+This function overrides the {\ttfamily print\+Tabular\+String\+Header\+Line2} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the first header line for the tabular representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_af01ea961314be2164f39e6d4cd59e443}{Data\+Collector}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Data\+Collector/\mbox{\hyperlink{TransfersDataCollector_8h}{Transfers\+Data\+Collector.\+h}}\end{DoxyCompactItemize}

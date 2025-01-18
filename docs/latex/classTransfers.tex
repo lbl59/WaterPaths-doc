@@ -1,0 +1,240 @@
+\hypertarget{classTransfers}{}\section{Transfers Class Reference}
+\label{classTransfers}\index{Transfers@{Transfers}}
+
+
+The {\ttfamily \mbox{\hyperlink{classTransfers}{Transfers}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}} class that implements treated water transfers based on risk of failure (R\+OF) triggers.  
+
+
+
+
+{\ttfamily \#include $<$Transfers.\+h$>$}
+
+Inheritance diagram for Transfers\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classTransfers}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTransfers_ae6abf817349382b66abc9cc3f45193a1}{Transfers}} (const int \mbox{\hyperlink{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}{id}}, const int source\+\_\+utility\+\_\+id, int transfer\+\_\+water\+\_\+source\+\_\+id, const double source\+\_\+treatment\+\_\+buffer, const vector$<$ int $>$ \&buyers\+\_\+ids, const vector$<$ double $>$ \&pipe\+\_\+transfer\+\_\+capacities, const vector$<$ double $>$ \&buyers\+\_\+transfer\+\_\+triggers, const double seller\+\_\+transfer\+\_\+trigger, const \mbox{\hyperlink{classGraph}{Graph}} utilities\+\_\+graph, vector$<$ double $>$ conveyance\+\_\+costs, vector$<$ int $>$ pipe\+\_\+owner)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classTransfers}{Transfers}} object to manage water transfer allocations among utilities. This function initializes all data structures and ensures input validity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransfers_af88f7908692240eec9f3179128c6f343}{Transfers}} (const \mbox{\hyperlink{classTransfers}{Transfers}} \&transfers)
+\begin{DoxyCompactList}\small\item\em Creates a copy of an existing \mbox{\hyperlink{classTransfers}{Transfers}} object. This function duplicates all properties and settings of the given \mbox{\hyperlink{classTransfers}{Transfers}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTransfers_a5dfeafe7a9b9a446b1ab746b65ef3b4b}{$\sim$\+Transfers}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classTransfers}{Transfers}} object, releasing allocated resources. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classTransfers_abb5bd2978727424dc524c401dca0cbaf}{get\+Allocations}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the current water allocations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransfers_ad9e4e83ff763ac1ba518a19051cd2e69}{apply\+Policy}} (int week) override
+\begin{DoxyCompactList}\small\item\em Applies the water transfer policy for a given week. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransfers_a3c1930dbeb1273c1c0be93ad5ca57357}{add\+System\+Components}} (vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ system\+\_\+utilities, vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ water\+\_\+sources, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ min\+\_\+env\+\_\+flow\+\_\+controls) override
+\begin{DoxyCompactList}\small\item\em Adds water sources, as well as buying and purchasing utilities to the \mbox{\hyperlink{classTransfers}{Transfers}} policy for initialization. F\+I\+X\+ME\+: R\+I\+G\+HT N\+OW T\+R\+A\+N\+S\+F\+E\+RS C\+AN O\+N\+LY H\+A\+VE O\+NE S\+O\+U\+R\+CE. T\+H\+IS N\+E\+E\+DS TO BE E\+X\+P\+A\+N\+D\+ED. \end{DoxyCompactList}\item 
+vector$<$ double $>$ \mbox{\hyperlink{classTransfers_a06f965588350cc854f3bf3d619416fdc}{solve\+\_\+\+QP}} (vector$<$ double $>$ allocation\+\_\+requests, double available\+\_\+transfer\+\_\+volume, double min\+\_\+transfer\+\_\+volume, int week)
+\begin{DoxyCompactList}\small\item\em Solves the Quadratic Programming (QP) problem to find optimal allocations given transfer requests and constraints in conveyance capacities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTransfers_a75342a7c14b2ff69eb2520de240a1131}{set\+Realization}} (unsigned long realization\+\_\+id, vector$<$ double $>$ \&utilities\+\_\+rdm, vector$<$ double $>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ double $>$ \&policy\+\_\+rdm) override
+\begin{DoxyCompactList}\small\item\em Sets the realization parameters for the current \mbox{\hyperlink{classTransfers}{Transfers}} policy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classTransfers}{Transfers}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}} class that implements treated water transfers based on risk of failure (R\+OF) triggers. 
+
+Created by bernardo on 2/21/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTransfers_ae6abf817349382b66abc9cc3f45193a1}\label{classTransfers_ae6abf817349382b66abc9cc3f45193a1}} 
+\index{Transfers@{Transfers}!Transfers@{Transfers}}
+\index{Transfers@{Transfers}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{Transfers()}{Transfers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Transfers\+::\+Transfers (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const int}]{source\+\_\+utility\+\_\+id,  }\item[{int}]{transfer\+\_\+water\+\_\+source\+\_\+id,  }\item[{const double}]{source\+\_\+treatment\+\_\+buffer,  }\item[{const vector$<$ int $>$ \&}]{buyers\+\_\+ids,  }\item[{const vector$<$ double $>$ \&}]{pipe\+\_\+transfer\+\_\+capacities,  }\item[{const vector$<$ double $>$ \&}]{buyers\+\_\+transfer\+\_\+triggers,  }\item[{const double}]{seller\+\_\+transfer\+\_\+trigger,  }\item[{const \mbox{\hyperlink{classGraph}{Graph}}}]{utilities\+\_\+graph,  }\item[{vector$<$ double $>$}]{conveyance\+\_\+costs,  }\item[{vector$<$ int $>$}]{pipe\+\_\+owner }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classTransfers}{Transfers}} object to manage water transfer allocations among utilities. This function initializes all data structures and ensures input validity. 
+
+This constructor allocates transfers by trying to minimize the mean square error between the optimal allocations and allocation requests, and between the available amount of water from source and actual conveyed capacity, which is limited by pipe conveyance capacities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Transfer policy ID. \\
+\hline
+{\em source\+\_\+utility\+\_\+id} & The ID of the utility selling water to other utilities to fulfil transfer requests. \\
+\hline
+{\em transfer\+\_\+water\+\_\+source\+\_\+id} & The ID of the water source from which the source utility will be transferring water. \\
+\hline
+{\em source\+\_\+treatment\+\_\+buffer} & Treatment capacity to be left unused in source utility. \\
+\hline
+{\em buyers\+\_\+ids} & I\+Ds of the buyer utilities. \\
+\hline
+{\em pipe\+\_\+transfer\+\_\+capacities} & Capacities of transfer pipes. \\
+\hline
+{\em buyers\+\_\+transfer\+\_\+triggers} & A vector of each buyer\textquotesingle{}s R\+OF threshold after which they will request a water transfer. \\
+\hline
+{\em seller\+\_\+transfer\+\_\+trigger} & The short-\/term R\+OF threshold above which the seller will not fulfil transfer requests. \\
+\hline
+{\em utilities\+\_\+graph} & A \mbox{\hyperlink{classGraph}{Graph}} object representing utilities and their connections. \\
+\hline
+{\em conveyance\+\_\+costs} & Amount charged by pipe owning utility to convey water to another utility. \\
+\hline
+{\em pipe\+\_\+owner} & I\+Ds of utilities owning each pipe.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if the source utility is also listed as a buyer. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classTransfers_af88f7908692240eec9f3179128c6f343}\label{classTransfers_af88f7908692240eec9f3179128c6f343}} 
+\index{Transfers@{Transfers}!Transfers@{Transfers}}
+\index{Transfers@{Transfers}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{Transfers()}{Transfers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Transfers\+::\+Transfers (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTransfers}{Transfers}} \&}]{transfers }\end{DoxyParamCaption})}
+
+
+
+Creates a copy of an existing \mbox{\hyperlink{classTransfers}{Transfers}} object. This function duplicates all properties and settings of the given \mbox{\hyperlink{classTransfers}{Transfers}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transfers} & The \mbox{\hyperlink{classTransfers}{Transfers}} object to be copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTransfers_a5dfeafe7a9b9a446b1ab746b65ef3b4b}\label{classTransfers_a5dfeafe7a9b9a446b1ab746b65ef3b4b}} 
+\index{Transfers@{Transfers}!````~Transfers@{$\sim$\+Transfers}}
+\index{````~Transfers@{$\sim$\+Transfers}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{$\sim$\+Transfers()}{~Transfers()}}
+{\footnotesize\ttfamily Transfers\+::$\sim$\+Transfers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroys the \mbox{\hyperlink{classTransfers}{Transfers}} object, releasing allocated resources. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransfers_a3c1930dbeb1273c1c0be93ad5ca57357}\label{classTransfers_a3c1930dbeb1273c1c0be93ad5ca57357}} 
+\index{Transfers@{Transfers}!add\+System\+Components@{add\+System\+Components}}
+\index{add\+System\+Components@{add\+System\+Components}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{add\+System\+Components()}{addSystemComponents()}}
+{\footnotesize\ttfamily void Transfers\+::add\+System\+Components (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{system\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$}]{water\+\_\+sources,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$}]{min\+\_\+env\+\_\+flow\+\_\+controls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adds water sources, as well as buying and purchasing utilities to the \mbox{\hyperlink{classTransfers}{Transfers}} policy for initialization. F\+I\+X\+ME\+: R\+I\+G\+HT N\+OW T\+R\+A\+N\+S\+F\+E\+RS C\+AN O\+N\+LY H\+A\+VE O\+NE S\+O\+U\+R\+CE. T\+H\+IS N\+E\+E\+DS TO BE E\+X\+P\+A\+N\+D\+ED. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system\+\_\+utilities} & \mbox{\hyperlink{classVector}{Vector}} of pointers to the system utilities. \\
+\hline
+{\em water\+\_\+sources} & \mbox{\hyperlink{classVector}{Vector}} of pointers to water sources. \\
+\hline
+{\em min\+\_\+env\+\_\+flow\+\_\+controls} & \mbox{\hyperlink{classVector}{Vector}} of minimum environmental flow controls.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if utilities or water sources are already assigned.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classTransfers_a06f965588350cc854f3bf3d619416fdc}{solve\+\_\+\+QP}} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classTransfers_ad9e4e83ff763ac1ba518a19051cd2e69}\label{classTransfers_ad9e4e83ff763ac1ba518a19051cd2e69}} 
+\index{Transfers@{Transfers}!apply\+Policy@{apply\+Policy}}
+\index{apply\+Policy@{apply\+Policy}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{apply\+Policy()}{applyPolicy()}}
+{\footnotesize\ttfamily void Transfers\+::apply\+Policy (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Applies the water transfer policy for a given week. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week to solve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classTransfers_abb5bd2978727424dc524c401dca0cbaf}\label{classTransfers_abb5bd2978727424dc524c401dca0cbaf}} 
+\index{Transfers@{Transfers}!get\+Allocations@{get\+Allocations}}
+\index{get\+Allocations@{get\+Allocations}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{get\+Allocations()}{getAllocations()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Transfers\+::get\+Allocations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the current water allocations. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to the vector of allocations. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTransfers_a75342a7c14b2ff69eb2520de240a1131}\label{classTransfers_a75342a7c14b2ff69eb2520de240a1131}} 
+\index{Transfers@{Transfers}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily void Transfers\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{realization\+\_\+id,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{policy\+\_\+rdm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the realization parameters for the current \mbox{\hyperlink{classTransfers}{Transfers}} policy. 
+
+This function overrides the base class function in \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em realization\+\_\+id} & ID of the realization. \\
+\hline
+{\em utilities\+\_\+rdm} & Random decision matrix for utilities. \\
+\hline
+{\em water\+\_\+sources\+\_\+rdm} & Random decision matrix for water sources. \\
+\hline
+{\em policy\+\_\+rdm} & Random decision matrix for the policy. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classTransfers_a06f965588350cc854f3bf3d619416fdc}\label{classTransfers_a06f965588350cc854f3bf3d619416fdc}} 
+\index{Transfers@{Transfers}!solve\+\_\+\+QP@{solve\+\_\+\+QP}}
+\index{solve\+\_\+\+QP@{solve\+\_\+\+QP}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{solve\+\_\+\+Q\+P()}{solve\_QP()}}
+{\footnotesize\ttfamily vector$<$double$>$ Transfers\+::solve\+\_\+\+QP (\begin{DoxyParamCaption}\item[{vector$<$ double $>$}]{allocation\+\_\+requests,  }\item[{double}]{available\+\_\+transfer\+\_\+volume,  }\item[{double}]{min\+\_\+transfer\+\_\+volume,  }\item[{int}]{week }\end{DoxyParamCaption})}
+
+
+
+Solves the Quadratic Programming (QP) problem to find optimal allocations given transfer requests and constraints in conveyance capacities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em allocation\+\_\+requests} & Allocation requests by each utility (0 for utilities not requesting transfers). \\
+\hline
+{\em available\+\_\+transfer\+\_\+volume} & Total volume available for transfers from source utilities. \\
+\hline
+{\em min\+\_\+transfer\+\_\+volume} & Minimum transfer volume to each utility. \\
+\hline
+{\em week} & The current week to solve.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of flow rates and allocations computed by the QP solver. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Drought\+Mitigation\+Instruments/\mbox{\hyperlink{Transfers_8h}{Transfers.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="MinEnvFlowControl_8h" kind="file" language="C++">
+    <compoundname>MinEnvFlowControl.h</compoundname>
+    <includes refid="WaterSource_8h" local="yes">../../SystemComponents/WaterSources/Base/WaterSource.h</includes>
+    <includes refid="Utility_8h" local="yes">../../SystemComponents/Utility/Utility.h</includes>
+    <includedby refid="ContinuityModel_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/Base/ContinuityModel.h</includedby>
+    <includedby refid="DroughtMitigationPolicy_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</includedby>
+    <includedby refid="FallsLakeMinEnvFlowControl_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Custom/FallsLakeMinEnvFlowControl.h</includedby>
+    <includedby refid="StorageMinEnvFlowControl_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/StorageMinEnvFlowControl.h</includedby>
+    <includedby refid="FixedMinEnvFlowControl_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/FixedMinEnvFlowControl.h</includedby>
+    <includedby refid="InflowMinEnvFlowControl_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/InflowMinEnvFlowControl.h</includedby>
+    <includedby refid="SeasonalMinEnvFlowControl_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/SeasonalMinEnvFlowControl.h</includedby>
+    <includedby refid="Utils_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h</includedby>
+    <includedby refid="Simulation_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h</includedby>
+    <incdepgraph>
+      <node id="144">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="130">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>cmath</label>
+      </node>
+      <node id="135">
+        <label>stdexcept</label>
+      </node>
+      <node id="136">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>string</label>
+      </node>
+      <node id="137">
+        <label>map</label>
+      </node>
+      <node id="148">
+        <label>InfrastructureManager.h</label>
+        <link refid="InfrastructureManager_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>../../SystemComponents/WaterSources/Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>../../SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>vector</label>
+      </node>
+      <node id="133">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>../WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+      <node id="140">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>cstring</label>
+      </node>
+      <node id="142">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="165">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/TransfersDataCollector.h</label>
+        <link refid="TransfersDataCollector_8h"/>
+      </node>
+      <node id="149">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
+        <childnode refid="167" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
+        </childnode>
+        <childnode refid="170" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Restrictions.h</label>
+        <link refid="Restrictions_8h"/>
+        <childnode refid="161" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/Base/ContinuityModel.h</label>
+        <link refid="ContinuityModel_8h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/ObjectivesCalculator.h</label>
+        <link refid="ObjectivesCalculator_8h"/>
+      </node>
+      <node id="171">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/SeasonalMinEnvFlowControl.h</label>
+        <link refid="SeasonalMinEnvFlowControl_8h"/>
+      </node>
+      <node id="167">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/StorageMinEnvFlowControl.h</label>
+        <link refid="StorageMinEnvFlowControl_8h"/>
+        <childnode refid="168" relation="include">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Custom/FallsLakeMinEnvFlowControl.h</label>
+        <link refid="FallsLakeMinEnvFlowControl_8h"/>
+      </node>
+      <node id="169">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/FixedMinEnvFlowControl.h</label>
+        <link refid="FixedMinEnvFlowControl_8h"/>
+      </node>
+      <node id="158">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/MasterDataCollector.h</label>
+        <link refid="MasterDataCollector_8h"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/InsuranceStorageToROF.h</label>
+        <link refid="InsuranceStorageToROF_8h"/>
+      </node>
+      <node id="157">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
+        <link refid="DroughtMitigationPolicy_8h"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="163" relation="include">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Base/Problem.h</label>
+        <link refid="Problem_8h"/>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h</label>
+        <link refid="RestrictionsDataCollector_8h"/>
+        <childnode refid="158" relation="include">
+        </childnode>
+        <childnode refid="162" relation="include">
+        </childnode>
+      </node>
+      <node id="170">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/InflowMinEnvFlowControl.h</label>
+        <link refid="InflowMinEnvFlowControl_8h"/>
+      </node>
+      <node id="151">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h</label>
+        <link refid="ContinuityModelRealization_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h</label>
+        <link refid="Transfers_8h"/>
+        <childnode refid="165" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h</label>
+        <link refid="Simulation_8h"/>
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+      </node>
+      <node id="168">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Custom/JordanLakeMinEnvFlowControl.h</label>
+        <link refid="JordanLakeMinEnvFlowControl_8h"/>
+      </node>
+      <node id="154">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/PaperTestProblem.h</label>
+        <link refid="PaperTestProblem_8h"/>
+      </node>
+      <node id="155">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Triangle.h</label>
+        <link refid="Triangle_8h"/>
+      </node>
+      <node id="163">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h</label>
+        <link refid="Utils_8h"/>
+        <childnode refid="159" relation="include">
+        </childnode>
+      </node>
+      <node id="156">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h</label>
+        <link refid="ContinuityModelROF_8h"/>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMinEnvFlowControl" prot="public">MinEnvFlowControl</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_MINENVIRONFLOWCONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_MINENVIRONFLOWCONTROL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../SystemComponents/WaterSources/Base/WaterSource.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../SystemComponents/Utility/Utility.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classMinEnvFlowControl" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21" refid="classMinEnvFlowControl_1a36b50d0e6887b956051ae53bf5d2e3a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/><ref refid="classMinEnvFlowControl_1a36b50d0e6887b956051ae53bf5d2e3a9" kindref="member">water_sources</ref>;</highlight></codeline>
+<codeline lineno="25" refid="classMinEnvFlowControl_1a99502573f30daf84d9ad7a2f62197b77" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Catchment<sp/>*&gt;<sp/><ref refid="classMinEnvFlowControl_1a99502573f30daf84d9ad7a2f62197b77" kindref="member">catchments</ref>;</highlight></codeline>
+<codeline lineno="29" refid="classMinEnvFlowControl_1a1a0a309138b35e8199c205efb5fb5f80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Utility*<sp/>&gt;<sp/><ref refid="classMinEnvFlowControl_1a1a0a309138b35e8199c205efb5fb5f80" kindref="member">utilities</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35" refid="classMinEnvFlowControl_1a775d6408e5c581754ee4240eea68abdc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/><ref refid="classMinEnvFlowControl_1a775d6408e5c581754ee4240eea68abdc" kindref="member">water_sources_ids</ref>;</highlight></codeline>
+<codeline lineno="39" refid="classMinEnvFlowControl_1a5c67ab20c181a1d22e4bf94e398451fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/><ref refid="classMinEnvFlowControl_1a5c67ab20c181a1d22e4bf94e398451fc" kindref="member">utilities_ids</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classMinEnvFlowControl_1aada518a047598f386daec1d0358023aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMinEnvFlowControl_1aada518a047598f386daec1d0358023aa" kindref="member">water_source_id</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classMinEnvFlowControl_1abc3f168cd1ec36ba59e4b8604dfae8ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMinEnvFlowControl_1abc3f168cd1ec36ba59e4b8604dfae8ec" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMinEnvFlowControl_1a093b292294d85f426c38deb6b7537d81" kindref="member">MinEnvFlowControl</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMinEnvFlowControl_1aada518a047598f386daec1d0358023aa" kindref="member">water_source_id</ref>,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>&amp;aux_water_sources_id,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>&amp;aux_utilities_ids,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMinEnvFlowControl_1abc3f168cd1ec36ba59e4b8604dfae8ec" kindref="member">type</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMinEnvFlowControl_1a093b292294d85f426c38deb6b7537d81" kindref="member">MinEnvFlowControl</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref><sp/>&amp;min_env_control);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classMinEnvFlowControl_1a3a5f44703a5a0cdeb48c948af397137d" kindref="member">~MinEnvFlowControl</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classMinEnvFlowControl_1a5de79615852eb0c937dd559a9eb9402d" kindref="member">getRelease</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMinEnvFlowControl_1a4f849e1385f68c9d8f2835889f14a71f" kindref="member">addComponents</ref>(</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/><ref refid="classMinEnvFlowControl_1a36b50d0e6887b956051ae53bf5d2e3a9" kindref="member">water_sources</ref>,<sp/>vector&lt;Utility<sp/>*&gt;<sp/><ref refid="classMinEnvFlowControl_1a1a0a309138b35e8199c205efb5fb5f80" kindref="member">utilities</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMinEnvFlowControl_1a630550c31f5c4e1a368289cbd5ab98ee" kindref="member">setRealization</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>r,<sp/>vector&lt;double&gt;<sp/>&amp;rdm_factors);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_MINENVIRONFLOWCONTROL_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/Base/MinEnvFlowControl.h"/>
+  </compounddef>
+</doxygen>

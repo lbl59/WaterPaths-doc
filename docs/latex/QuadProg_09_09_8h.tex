@@ -1,0 +1,140 @@
+\hypertarget{QuadProg_09_09_8h}{}\section{/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Utils/\+Q\+P\+Solver/\+Quad\+Prog++.h File Reference}
+\label{QuadProg_09_09_8h}\index{/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Utils/\+Q\+P\+Solver/\+Quad\+Prog++.\+h@{/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Utils/\+Q\+P\+Solver/\+Quad\+Prog++.\+h}}
+{\ttfamily \#include \char`\"{}Array.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{QuadProg_09_09_8h_a4da9671c990051588cdaf629eeab3f9e}{solve\+\_\+quadprog}} (\mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&G, \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&g0, const \mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&CE, const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&ce0, const \mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&CI, const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&ci0, \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&x)
+\begin{DoxyCompactList}\small\item\em Solves a quadratic programming problem using the Goldfarb-\/\+Idnani method. This function solves the quadratic programming problem\+: \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{QuadProg_09_09_8h_a769f3a6ed2afed301b8067d8972c7aba}{solve\+\_\+quadprog\+\_\+matlab\+\_\+syntax}} (\mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&G, \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&g0, const \mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&CE, const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&ce0, const \mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&CI, const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&ci0, const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&lb, const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&ub, \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&x)
+\begin{DoxyCompactList}\small\item\em Solves a quadratic programming problem using M\+A\+T\+L\+A\+B-\/style input format. This function provides a wrapper for {\ttfamily solve\+\_\+quadprog} with M\+A\+T\+L\+A\+B-\/style input, including lower and upper bounds on the solution. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{QuadProg_09_09_8h_a1fe7d5a5da4e7091b26d67788ba4cce2}{print\+\_\+matrix}} (char $\ast$name, const \mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&A, int n=-\/1, int m=-\/1)
+\begin{DoxyCompactList}\small\item\em Prints the contents of a matrix to the console in a formatted style. This function formats and prints a matrix along with its name, for debugging or informational purposes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{QuadProg_09_09_8h_ae36199cd58c17964d81edf504787b9af}{print\+\_\+vector}} (char $\ast$name, const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&v, int n=-\/1)
+\begin{DoxyCompactList}\small\item\em Prints the contents of a vector to the console in a formatted style. This function formats and prints a vector along with its name, for debugging or informational purposes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{QuadProg_09_09_8h_a1fe7d5a5da4e7091b26d67788ba4cce2}\label{QuadProg_09_09_8h_a1fe7d5a5da4e7091b26d67788ba4cce2}} 
+\index{Quad\+Prog++.\+h@{Quad\+Prog++.\+h}!print\+\_\+matrix@{print\+\_\+matrix}}
+\index{print\+\_\+matrix@{print\+\_\+matrix}!Quad\+Prog++.\+h@{Quad\+Prog++.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+matrix()}{print\_matrix()}}
+{\footnotesize\ttfamily void print\+\_\+matrix (\begin{DoxyParamCaption}\item[{char $\ast$}]{name,  }\item[{const \mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&}]{A,  }\item[{int}]{n = {\ttfamily -\/1},  }\item[{int}]{m = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Prints the contents of a matrix to the console in a formatted style. This function formats and prints a matrix along with its name, for debugging or informational purposes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the matrix to display as a label. \\
+\hline
+{\em A} & The matrix to be printed. \\
+\hline
+{\em n} & The number of rows to print. If -\/1, all rows are printed. \\
+\hline
+{\em m} & The number of columns to print. If -\/1, all columns are printed.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em None} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{QuadProg_09_09_8h_ae36199cd58c17964d81edf504787b9af}\label{QuadProg_09_09_8h_ae36199cd58c17964d81edf504787b9af}} 
+\index{Quad\+Prog++.\+h@{Quad\+Prog++.\+h}!print\+\_\+vector@{print\+\_\+vector}}
+\index{print\+\_\+vector@{print\+\_\+vector}!Quad\+Prog++.\+h@{Quad\+Prog++.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+vector()}{print\_vector()}}
+{\footnotesize\ttfamily void print\+\_\+vector (\begin{DoxyParamCaption}\item[{char $\ast$}]{name,  }\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&}]{v,  }\item[{int}]{n = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+
+
+Prints the contents of a vector to the console in a formatted style. This function formats and prints a vector along with its name, for debugging or informational purposes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the vector to display as a label. \\
+\hline
+{\em v} & The vector to be printed. \\
+\hline
+{\em n} & The number of elements to print. If -\/1, all elements are printed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{QuadProg_09_09_8h_a4da9671c990051588cdaf629eeab3f9e}\label{QuadProg_09_09_8h_a4da9671c990051588cdaf629eeab3f9e}} 
+\index{Quad\+Prog++.\+h@{Quad\+Prog++.\+h}!solve\+\_\+quadprog@{solve\+\_\+quadprog}}
+\index{solve\+\_\+quadprog@{solve\+\_\+quadprog}!Quad\+Prog++.\+h@{Quad\+Prog++.\+h}}
+\subsubsection{\texorpdfstring{solve\+\_\+quadprog()}{solve\_quadprog()}}
+{\footnotesize\ttfamily double solve\+\_\+quadprog (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&}]{G,  }\item[{\mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&}]{g0,  }\item[{const \mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&}]{CE,  }\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&}]{ce0,  }\item[{const \mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&}]{CI,  }\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&}]{ci0,  }\item[{\mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Solves a quadratic programming problem using the Goldfarb-\/\+Idnani method. This function solves the quadratic programming problem\+: 
+
+Minimize\+: 0.\+5 $\ast$ x$^\wedge$T $\ast$ G $\ast$ x + g0$^\wedge$T $\ast$ x Subject to\+: C\+E$^\wedge$T $\ast$ x + ce0 = 0 C\+I$^\wedge$T $\ast$ x + ci0 $>$= 0
+
+
+\begin{DoxyParams}{Parameters}
+{\em G} & The symmetric positive-\/definite matrix for the quadratic term. \\
+\hline
+{\em g0} & The vector for the linear term in the objective function. \\
+\hline
+{\em CE} & The matrix for equality constraints. \\
+\hline
+{\em ce0} & The vector for equality constraints. \\
+\hline
+{\em CI} & The matrix for inequality constraints. \\
+\hline
+{\em ci0} & The vector for inequality constraints. \\
+\hline
+{\em x} & The vector to store the solution of the optimization problem.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The minimum value of the quadratic objective function.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & If the dimensions of input matrices and vectors are inconsistent. \\
+\hline
+{\em std\+::runtime\+\_\+error} & If the equality constraints are linearly dependent. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{QuadProg_09_09_8h_a769f3a6ed2afed301b8067d8972c7aba}\label{QuadProg_09_09_8h_a769f3a6ed2afed301b8067d8972c7aba}} 
+\index{Quad\+Prog++.\+h@{Quad\+Prog++.\+h}!solve\+\_\+quadprog\+\_\+matlab\+\_\+syntax@{solve\+\_\+quadprog\+\_\+matlab\+\_\+syntax}}
+\index{solve\+\_\+quadprog\+\_\+matlab\+\_\+syntax@{solve\+\_\+quadprog\+\_\+matlab\+\_\+syntax}!Quad\+Prog++.\+h@{Quad\+Prog++.\+h}}
+\subsubsection{\texorpdfstring{solve\+\_\+quadprog\+\_\+matlab\+\_\+syntax()}{solve\_quadprog\_matlab\_syntax()}}
+{\footnotesize\ttfamily void solve\+\_\+quadprog\+\_\+matlab\+\_\+syntax (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&}]{G,  }\item[{\mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&}]{g0,  }\item[{const \mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&}]{CE,  }\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&}]{ce0,  }\item[{const \mbox{\hyperlink{classMatrix}{Matrix}}$<$ double $>$ \&}]{CI,  }\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&}]{ci0,  }\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&}]{lb,  }\item[{const \mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&}]{ub,  }\item[{\mbox{\hyperlink{classVector}{Vector}}$<$ double $>$ \&}]{x }\end{DoxyParamCaption})}
+
+
+
+Solves a quadratic programming problem using M\+A\+T\+L\+A\+B-\/style input format. This function provides a wrapper for {\ttfamily solve\+\_\+quadprog} with M\+A\+T\+L\+A\+B-\/style input, including lower and upper bounds on the solution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em G} & The symmetric positive-\/definite matrix for the quadratic term. \\
+\hline
+{\em g0} & The vector for the linear term in the objective function. \\
+\hline
+{\em CE} & The matrix for equality constraints. \\
+\hline
+{\em ce0} & The vector for equality constraints. \\
+\hline
+{\em CI} & The matrix for inequality constraints. \\
+\hline
+{\em ci0} & The vector for inequality constraints. \\
+\hline
+{\em lb} & The vector for lower bounds. \\
+\hline
+{\em ub} & The vector for upper bounds. \\
+\hline
+{\em x} & The vector to store the solution of the optimization problem.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & If input dimensions are inconsistent.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{QuadProg_09_09_8h_a4da9671c990051588cdaf629eeab3f9e}{solve\+\_\+quadprog}} 
+\end{DoxySeeAlso}

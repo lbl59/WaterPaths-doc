@@ -1,0 +1,231 @@
+\hypertarget{classRestrictions}{}\section{Restrictions Class Reference}
+\label{classRestrictions}\index{Restrictions@{Restrictions}}
+
+
+{\ttfamily \#include $<$Restrictions.\+h$>$}
+
+Inheritance diagram for Restrictions\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classRestrictions}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRestrictions_aec6f37bfaec7d6e22e82945289fd9acc}{Restrictions}} (const int \mbox{\hyperlink{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}{id}}, const vector$<$ double $>$ \&stage\+\_\+multipliers, const vector$<$ double $>$ \&stage\+\_\+triggers)
+\begin{DoxyCompactList}\small\item\em DU factor multipliers that scale the volume of demand successfully restricted using water use restrictions at a variety of stages (tiers). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRestrictions_a78083b572f1368bb863d40d7da807077}{Restrictions}} (const int \mbox{\hyperlink{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}{id}}, const vector$<$ double $>$ \&stage\+\_\+multipliers, const vector$<$ double $>$ \&stage\+\_\+triggers, const vector$<$ vector$<$ double $>$$>$ $\ast$types\+Monthly\+Demand\+Fraction, const vector$<$ vector$<$ double $>$$>$ $\ast$types\+Monthly\+Water\+Price, const vector$<$ vector$<$ double $>$$>$ $\ast$price\+Multipliers)
+\begin{DoxyCompactList}\small\item\em DU factor multipliers that scale the volume of demand successfully restricted using water use restrictions at a variety of stages (tiers). This constructor has additional parameters for pricing water during water restrictions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRestrictions_aa8653b70ff7eedb4e8fc1b21ebf2ead9}{Restrictions}} (const \mbox{\hyperlink{classRestrictions}{Restrictions}} \&reservoir)
+\begin{DoxyCompactList}\small\item\em Creates a copy of an existing \mbox{\hyperlink{classRestrictions}{Restrictions}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRestrictions_a54c8a857a2beed78d34a46c36951b004}{$\sim$\+Restrictions}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classRestrictions}{Restrictions}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRestrictions_a1ef7559adc034bdddd047ee776b5f9a9}{apply\+Policy}} (int week) override
+\begin{DoxyCompactList}\small\item\em Applies the restriction policy for a given week based on the utility\textquotesingle{}s risk of failure. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRestrictions_ab0a2b62495d6cdd8d1fedba419c05c37}{add\+System\+Components}} (vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ systems\+\_\+utilities, vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ water\+\_\+sources, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ min\+\_\+env\+\_\+flow\+\_\+controls) override
+\begin{DoxyCompactList}\small\item\em Links utilities to the \mbox{\hyperlink{classRestrictions}{Restrictions}} policy based on the policy ID. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classRestrictions_a4282debfe00607f87f59a08ec1844d40}{get\+Current\+\_\+multiplier}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the current demand multiplier based on the active restriction stage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRestrictions_a5155dcecc8b995c1793fa400f1533959}{calculate\+Weekly\+Average\+Water\+Prices}} (const vector$<$ vector$<$ double $>$$>$ $\ast$types\+Monthly\+Demand\+Fraction, const vector$<$ vector$<$ double $>$$>$ $\ast$types\+Monthly\+Water\+Price, const vector$<$ vector$<$ double $>$$>$ $\ast$price\+Multipliers)
+\begin{DoxyCompactList}\small\item\em Calculates the average weekly water prices for each restriction stage and consumer type across each month. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRestrictions_abc17a8a403311933a3bb58fbecd5f5fd}{set\+Realization}} (unsigned long realization\+\_\+id, vector$<$ double $>$ \&utilities\+\_\+rdm, vector$<$ double $>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ double $>$ \&policy\+\_\+rdm) override
+\begin{DoxyCompactList}\small\item\em Updates the restriction multipliers based on the policy random decision matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRestrictions_aec6f37bfaec7d6e22e82945289fd9acc}\label{classRestrictions_aec6f37bfaec7d6e22e82945289fd9acc}} 
+\index{Restrictions@{Restrictions}!Restrictions@{Restrictions}}
+\index{Restrictions@{Restrictions}!Restrictions@{Restrictions}}
+\subsubsection{\texorpdfstring{Restrictions()}{Restrictions()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Restrictions\+::\+Restrictions (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const vector$<$ double $>$ \&}]{stage\+\_\+multipliers,  }\item[{const vector$<$ double $>$ \&}]{stage\+\_\+triggers }\end{DoxyParamCaption})}
+
+
+
+DU factor multipliers that scale the volume of demand successfully restricted using water use restrictions at a variety of stages (tiers). 
+
+This initializes the restriction stages and associated triggers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Restriction policy ID. \\
+\hline
+{\em stage\+\_\+multipliers} & Multipliers for water usage demand based on restriction stages. \\
+\hline
+{\em stage\+\_\+triggers} & A vector of R\+OF thresholds after which different water use restriction stages are triggered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRestrictions_a78083b572f1368bb863d40d7da807077}\label{classRestrictions_a78083b572f1368bb863d40d7da807077}} 
+\index{Restrictions@{Restrictions}!Restrictions@{Restrictions}}
+\index{Restrictions@{Restrictions}!Restrictions@{Restrictions}}
+\subsubsection{\texorpdfstring{Restrictions()}{Restrictions()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Restrictions\+::\+Restrictions (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const vector$<$ double $>$ \&}]{stage\+\_\+multipliers,  }\item[{const vector$<$ double $>$ \&}]{stage\+\_\+triggers,  }\item[{const vector$<$ vector$<$ double $>$$>$ $\ast$}]{types\+Monthly\+Demand\+Fraction,  }\item[{const vector$<$ vector$<$ double $>$$>$ $\ast$}]{types\+Monthly\+Water\+Price,  }\item[{const vector$<$ vector$<$ double $>$$>$ $\ast$}]{price\+Multipliers }\end{DoxyParamCaption})}
+
+
+
+DU factor multipliers that scale the volume of demand successfully restricted using water use restrictions at a variety of stages (tiers). This constructor has additional parameters for pricing water during water restrictions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Restriction policy ID. \\
+\hline
+{\em stage\+\_\+multipliers} & Multipliers for water usage demand based on restriction stages. \\
+\hline
+{\em stage\+\_\+triggers} & A vector of R\+OF thresholds after which different water use restriction stages are triggered. \\
+\hline
+{\em types\+Monthly\+Demand\+Fraction} & Monthly water demand fractions by consumer type. \\
+\hline
+{\em types\+Monthly\+Water\+Price} & Monthly water prices by consumer type. \\
+\hline
+{\em price\+Multipliers} & Price multipliers for each restriction stage. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRestrictions_aa8653b70ff7eedb4e8fc1b21ebf2ead9}\label{classRestrictions_aa8653b70ff7eedb4e8fc1b21ebf2ead9}} 
+\index{Restrictions@{Restrictions}!Restrictions@{Restrictions}}
+\index{Restrictions@{Restrictions}!Restrictions@{Restrictions}}
+\subsubsection{\texorpdfstring{Restrictions()}{Restrictions()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Restrictions\+::\+Restrictions (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRestrictions}{Restrictions}} \&}]{reservoir }\end{DoxyParamCaption})}
+
+
+
+Creates a copy of an existing \mbox{\hyperlink{classRestrictions}{Restrictions}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em restrictions} & The \mbox{\hyperlink{classRestrictions}{Restrictions}} object to be copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classRestrictions_a54c8a857a2beed78d34a46c36951b004}\label{classRestrictions_a54c8a857a2beed78d34a46c36951b004}} 
+\index{Restrictions@{Restrictions}!````~Restrictions@{$\sim$\+Restrictions}}
+\index{````~Restrictions@{$\sim$\+Restrictions}!Restrictions@{Restrictions}}
+\subsubsection{\texorpdfstring{$\sim$\+Restrictions()}{~Restrictions()}}
+{\footnotesize\ttfamily Restrictions\+::$\sim$\+Restrictions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classRestrictions}{Restrictions}} object. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classRestrictions_ab0a2b62495d6cdd8d1fedba419c05c37}\label{classRestrictions_ab0a2b62495d6cdd8d1fedba419c05c37}} 
+\index{Restrictions@{Restrictions}!add\+System\+Components@{add\+System\+Components}}
+\index{add\+System\+Components@{add\+System\+Components}!Restrictions@{Restrictions}}
+\subsubsection{\texorpdfstring{add\+System\+Components()}{addSystemComponents()}}
+{\footnotesize\ttfamily void Restrictions\+::add\+System\+Components (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{systems\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$}]{water\+\_\+sources,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$}]{min\+\_\+env\+\_\+flow\+\_\+controls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Links utilities to the \mbox{\hyperlink{classRestrictions}{Restrictions}} policy based on the policy ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em systems\+\_\+utilities} & \mbox{\hyperlink{classVector}{Vector}} of system \mbox{\hyperlink{classUtility}{Utility}} objects. \\
+\hline
+{\em water\+\_\+sources} & \mbox{\hyperlink{classVector}{Vector}} of water sources (not used in this implementation). \\
+\hline
+{\em min\+\_\+env\+\_\+flow\+\_\+controls} & \mbox{\hyperlink{classVector}{Vector}} of minimum environmental flow controls (not used in this implementation).\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & if the policy already has an assigned utility. \\
+\hline
+{\em std\+::invalid\+\_\+argument} & if no matching utility is found for the policy ID. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classRestrictions_a1ef7559adc034bdddd047ee776b5f9a9}\label{classRestrictions_a1ef7559adc034bdddd047ee776b5f9a9}} 
+\index{Restrictions@{Restrictions}!apply\+Policy@{apply\+Policy}}
+\index{apply\+Policy@{apply\+Policy}!Restrictions@{Restrictions}}
+\subsubsection{\texorpdfstring{apply\+Policy()}{applyPolicy()}}
+{\footnotesize\ttfamily void Restrictions\+::apply\+Policy (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Applies the restriction policy for a given week based on the utility\textquotesingle{}s risk of failure. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The current week number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d}{Drought\+Mitigation\+Policy}}.
+
+\mbox{\Hypertarget{classRestrictions_a5155dcecc8b995c1793fa400f1533959}\label{classRestrictions_a5155dcecc8b995c1793fa400f1533959}} 
+\index{Restrictions@{Restrictions}!calculate\+Weekly\+Average\+Water\+Prices@{calculate\+Weekly\+Average\+Water\+Prices}}
+\index{calculate\+Weekly\+Average\+Water\+Prices@{calculate\+Weekly\+Average\+Water\+Prices}!Restrictions@{Restrictions}}
+\subsubsection{\texorpdfstring{calculate\+Weekly\+Average\+Water\+Prices()}{calculateWeeklyAverageWaterPrices()}}
+{\footnotesize\ttfamily void Restrictions\+::calculate\+Weekly\+Average\+Water\+Prices (\begin{DoxyParamCaption}\item[{const vector$<$ vector$<$ double $>$$>$ $\ast$}]{types\+Monthly\+Demand\+Fraction,  }\item[{const vector$<$ vector$<$ double $>$$>$ $\ast$}]{types\+Monthly\+Water\+Price,  }\item[{const vector$<$ vector$<$ double $>$$>$ $\ast$}]{price\+Multipliers }\end{DoxyParamCaption})}
+
+
+
+Calculates the average weekly water prices for each restriction stage and consumer type across each month. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em types\+Monthly\+Demand\+Fraction} & Monthly water demand fractions by consumer type. \\
+\hline
+{\em types\+Monthly\+Water\+Price} & Monthly water prices by consumer type. \\
+\hline
+{\em price\+Multipliers} & Price multipliers for each restriction stage.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRestrictions_a4282debfe00607f87f59a08ec1844d40}\label{classRestrictions_a4282debfe00607f87f59a08ec1844d40}} 
+\index{Restrictions@{Restrictions}!get\+Current\+\_\+multiplier@{get\+Current\+\_\+multiplier}}
+\index{get\+Current\+\_\+multiplier@{get\+Current\+\_\+multiplier}!Restrictions@{Restrictions}}
+\subsubsection{\texorpdfstring{get\+Current\+\_\+multiplier()}{getCurrent\_multiplier()}}
+{\footnotesize\ttfamily double Restrictions\+::get\+Current\+\_\+multiplier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the current demand multiplier based on the active restriction stage. 
+
+\begin{DoxyReturn}{Returns}
+The current demand multiplier. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRestrictions_abc17a8a403311933a3bb58fbecd5f5fd}\label{classRestrictions_abc17a8a403311933a3bb58fbecd5f5fd}} 
+\index{Restrictions@{Restrictions}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Restrictions@{Restrictions}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily void Restrictions\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{realization\+\_\+id,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{policy\+\_\+rdm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the restriction multipliers based on the policy random decision matrix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em realization\+\_\+id} & Realization ID for the current simulation. \\
+\hline
+{\em utilities\+\_\+rdm} & Random decision matrix for utilities (not used in this implementation). \\
+\hline
+{\em water\+\_\+sources\+\_\+rdm} & Random decision matrix for water sources (not used in this implementation). \\
+\hline
+{\em policy\+\_\+rdm} & Random decision matrix for policies. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4}{Drought\+Mitigation\+Policy}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Drought\+Mitigation\+Instruments/\mbox{\hyperlink{Restrictions_8h}{Restrictions.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,347 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classWwtpDischargeRule" kind="class" language="C++" prot="public">
+    <compoundname>WwtpDischargeRule</compoundname>
+    <basecompoundref refid="classControlRules" prot="public" virt="non-virtual">ControlRules</basecompoundref>
+    <includes refid="WwtpDischargeRule_8h" local="no">WwtpDischargeRule.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classWwtpDischargeRule_1a99be200d8d3ccf1f95a8d6e84a225df1" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; WwtpDischargeRule::source_id_to_vector_index</definition>
+        <argsstring></argsstring>
+        <name>source_id_to_vector_index</name>
+        <briefdescription>
+<para>A vector of IDs mapping the source IDs to the corresponding index in the <computeroutput>discharge_to_source_ids</computeroutput> vector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" line="23" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classWwtpDischargeRule_1a5d193e0cbc2eb23e1b86e79fb2eafad3" prot="public" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; WwtpDischargeRule::year_series_fraction_discharge</definition>
+        <argsstring></argsstring>
+        <name>year_series_fraction_discharge</name>
+        <briefdescription>
+<para>A 2D vector of doubles containing the fraction of the week&apos;s demand to be discharged as effluent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" line="29" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classWwtpDischargeRule_1ac2f77a9fca93eef3fd26ff1d579130be" prot="public" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; WwtpDischargeRule::discharge_to_source_ids</definition>
+        <argsstring></argsstring>
+        <name>discharge_to_source_ids</name>
+        <briefdescription>
+<para>A vector of integers containing the IDs of the sources receiving the effluent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" line="33" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classWwtpDischargeRule_1ae904657855c9d983ea0e5995109cd561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WwtpDischargeRule::WwtpDischargeRule</definition>
+        <argsstring>(vector&lt; vector&lt; double &gt;&gt; year_series_fraction_discharge, vector&lt; int &gt; discharge_to_source_ids)</argsstring>
+        <name>WwtpDischargeRule</name>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt;</type>
+          <declname>year_series_fraction_discharge</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt;</type>
+          <declname>discharge_to_source_ids</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <computeroutput><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref></computeroutput> object to manage discharge rules for a wastewater treatment plant (WWTP). Initializes the object with time-series discharge fractions and the associated discharge source IDs. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>year_series_fraction_discharge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of vectors, where each inner vector contains discharge fractions for each week of the year. Each vector must have exactly 53 elements (to account for years with an extra week). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>discharge_to_source_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of integers representing the IDs of the discharge sources.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If any time series does not have exactly 53 elements. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the number of discharge time series does not match the number of discharge source IDs. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWwtpDischargeRule_1ac433e50df1414ba4bbb40022832b43ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>WwtpDischargeRule::WwtpDischargeRule</definition>
+        <argsstring>(WwtpDischargeRule &amp;wwtp_discharge_rule)</argsstring>
+        <name>WwtpDischargeRule</name>
+        <param>
+          <type><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref> &amp;</type>
+          <declname>wwtp_discharge_rule</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor for the <computeroutput><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref></computeroutput> class. Creates a new <computeroutput><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref></computeroutput> object by copying the attributes from an existing one. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wwtp_discharge_rule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the <computeroutput><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref></computeroutput> object to be copied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWwtpDischargeRule_1a59b2b1f56607106a237011f16a3915c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref> &amp;</type>
+        <definition>WwtpDischargeRule&amp; WwtpDischargeRule::operator=</definition>
+        <argsstring>(const WwtpDischargeRule &amp;wwtp_discharge_rule)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref> &amp;</type>
+          <declname>wwtp_discharge_rule</declname>
+        </param>
+        <briefdescription>
+<para>Overloads the assignment operator for the <computeroutput><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref></computeroutput> class, allowing one object to be assigned the attributes of another. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>wwtp_discharge_rule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the <computeroutput><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref></computeroutput> object to be assigned.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the updated <computeroutput><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref></computeroutput> object after assignment. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWwtpDischargeRule_1a4cea07bf746d200c9ca3018405a77a46" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double WwtpDischargeRule::get_dependent_variable</definition>
+        <argsstring>(double water_source_id) override</argsstring>
+        <name>get_dependent_variable</name>
+        <reimplements refid="classControlRules_1a749c604121ebb1df808df9cd957a09f1">get_dependent_variable</reimplements>
+        <param>
+          <type>double</type>
+          <declname>water_source_id</declname>
+        </param>
+        <briefdescription>
+<para>Throws an exception because this overload of <computeroutput>get_dependent_variable</computeroutput> is not valid for <computeroutput><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref></computeroutput>. This function serves to catch the potential error where the user misses the <computeroutput>week</computeroutput> parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>get_dependent_variable</computeroutput> method in the <computeroutput><ref refid="classControlRules" kindref="compound">ControlRules</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>water_source_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Double placeholder parameter (not used in this implementation).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Always throws an exception with a message indicating that this overload is invalid. The valid method requires a both water source ID (int) and a week number (int) as arguments. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWwtpDischargeRule_1a3338c0fc43d656a6730ca72dd5d3e51e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double WwtpDischargeRule::get_dependent_variable</definition>
+        <argsstring>(int water_source_id) override</argsstring>
+        <name>get_dependent_variable</name>
+        <reimplements refid="classControlRules_1a56a42b40bf093237929a9c835dc9b772">get_dependent_variable</reimplements>
+        <param>
+          <type>int</type>
+          <declname>water_source_id</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the fraction of the week&apos;s demand to be discharged as effluent for a specified water source and week. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>get_dependent_variable</computeroutput> method in the <computeroutput><ref refid="classControlRules" kindref="compound">ControlRules</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>water_source_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the ID of the water source for which the discharge fraction is requested. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the discharge fraction is requested.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A double representing the fraction of the week&apos;s demand to be discharged as effluent. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWwtpDischargeRule_1a10eb6f901b6479dadc107e0a7c07e03b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double WwtpDischargeRule::get_dependent_variable</definition>
+        <argsstring>(double x, int week) override</argsstring>
+        <name>get_dependent_variable</name>
+        <reimplements refid="classControlRules_1a4c5a86844c3d6409bfa0ba2b058f82e7">get_dependent_variable</reimplements>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Throws an exception because this overload of <computeroutput>get_dependent_variable</computeroutput> is not valid for <computeroutput><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref></computeroutput>. This function serves to catch the potential error where the user attempts to call <computeroutput>get_dependent_variable</computeroutput> with a double parameter. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>get_dependent_variable</computeroutput> method in the <computeroutput><ref refid="classControlRules" kindref="compound">ControlRules</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Double placeholder parameter (not used in this implementation). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the discharge fraction is requested.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Always throws an exception with a message indicating that this overload is invalid. The valid method requires a water source ID (int) and a week number (int) as arguments. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classWwtpDischargeRule_1a8eade5d595ec0fdc76769e67c7ffc5f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double WwtpDischargeRule::get_dependent_variable</definition>
+        <argsstring>(int x, int week) override</argsstring>
+        <name>get_dependent_variable</name>
+        <reimplements refid="classControlRules_1a3d4b00d92729c6662473fc25707c0d9b">get_dependent_variable</reimplements>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the fraction of the week&apos;s demand to be discharged as effluent for a specified water source and week. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>get_dependent_variable</computeroutput> method in the <computeroutput><ref refid="classControlRules" kindref="compound">ControlRules</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>water_source_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the ID of the water source for which the discharge fraction is requested. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the discharge fraction is requested.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A double representing the fraction of the week&apos;s demand to be discharged as effluent. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" line="115" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is a subclass of the main <computeroutput><ref refid="classControlRules" kindref="compound">ControlRules</ref></computeroutput> class and represents the discharge rules for a wastewater treatment plant (WWTP). </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by bernardoct on 6/26/17. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="321">
+        <label>ControlRules</label>
+        <link refid="classControlRules"/>
+      </node>
+      <node id="320">
+        <label>WwtpDischargeRule</label>
+        <link refid="classWwtpDischargeRule"/>
+        <childnode refid="321" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="323">
+        <label>ControlRules</label>
+        <link refid="classControlRules"/>
+      </node>
+      <node id="322">
+        <label>WwtpDischargeRule</label>
+        <link refid="classWwtpDischargeRule"/>
+        <childnode refid="323" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" line="18" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/WwtpDischargeRule.h" bodystart="18" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classWwtpDischargeRule_1ac2f77a9fca93eef3fd26ff1d579130be" prot="public" virt="non-virtual"><scope>WwtpDischargeRule</scope><name>discharge_to_source_ids</name></member>
+      <member refid="classWwtpDischargeRule_1a4cea07bf746d200c9ca3018405a77a46" prot="public" virt="virtual"><scope>WwtpDischargeRule</scope><name>get_dependent_variable</name></member>
+      <member refid="classWwtpDischargeRule_1a3338c0fc43d656a6730ca72dd5d3e51e" prot="public" virt="virtual"><scope>WwtpDischargeRule</scope><name>get_dependent_variable</name></member>
+      <member refid="classWwtpDischargeRule_1a10eb6f901b6479dadc107e0a7c07e03b" prot="public" virt="virtual"><scope>WwtpDischargeRule</scope><name>get_dependent_variable</name></member>
+      <member refid="classWwtpDischargeRule_1a8eade5d595ec0fdc76769e67c7ffc5f4" prot="public" virt="virtual"><scope>WwtpDischargeRule</scope><name>get_dependent_variable</name></member>
+      <member refid="classWwtpDischargeRule_1a59b2b1f56607106a237011f16a3915c3" prot="public" virt="non-virtual"><scope>WwtpDischargeRule</scope><name>operator=</name></member>
+      <member refid="classWwtpDischargeRule_1a99be200d8d3ccf1f95a8d6e84a225df1" prot="private" virt="non-virtual"><scope>WwtpDischargeRule</scope><name>source_id_to_vector_index</name></member>
+      <member refid="classWwtpDischargeRule_1ae904657855c9d983ea0e5995109cd561" prot="public" virt="non-virtual"><scope>WwtpDischargeRule</scope><name>WwtpDischargeRule</name></member>
+      <member refid="classWwtpDischargeRule_1ac433e50df1414ba4bbb40022832b43ff" prot="public" virt="non-virtual"><scope>WwtpDischargeRule</scope><name>WwtpDischargeRule</name></member>
+      <member refid="classWwtpDischargeRule_1a5d193e0cbc2eb23e1b86e79fb2eafad3" prot="public" virt="non-virtual"><scope>WwtpDischargeRule</scope><name>year_series_fraction_discharge</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

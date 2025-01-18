@@ -1,0 +1,154 @@
+\hypertarget{classEvaporationSeries}{}\section{Evaporation\+Series Class Reference}
+\label{classEvaporationSeries}\index{Evaporation\+Series@{Evaporation\+Series}}
+
+
+This class is a subclass of the main {\ttfamily \mbox{\hyperlink{classCatchment}{Catchment}}} class and represents a series of evaporation data over time.  
+
+
+
+
+{\ttfamily \#include $<$Evaporation\+Series.\+h$>$}
+
+Inheritance diagram for Evaporation\+Series\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classEvaporationSeries}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEvaporationSeries_af0903d8555a148f9bf45f915877120b3}{Evaporation\+Series}} (vector$<$ vector$<$ double $>$$>$ $\ast$evaporation\+\_\+series, int \mbox{\hyperlink{classCatchment_a2d4994220f63b876348b4ce4892bc6d3}{series\+\_\+length}})
+\begin{DoxyCompactList}\small\item\em Constructs an {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} object for managing and storing evaporation data over time. Initializes the series with a pointer to evaporation data and its length. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEvaporationSeries_aa8d8cd8bbc0fd5b368b748cb090ad414}{Evaporation\+Series}} (const \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&evaporation\+\_\+series)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} class. Creates a new {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} object by copying an existing one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \& \mbox{\hyperlink{classEvaporationSeries_ae9f1fc3bb0bf32db12dcc531c6af2e6b}{operator=}} (const \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&evaporation\+\_\+series)
+\begin{DoxyCompactList}\small\item\em Overloads the assignment operator for the {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} class, allowing one object to be assigned the attributes of another. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEvaporationSeries_a201a00eaaadc9c523d544e0d6a4c50e5}{$\sim$\+Evaporation\+Series}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} class. Cleans up resources associated with the object. Since no dynamic allocation is explicitly used, the destructor is empty. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classEvaporationSeries_a4d793fbcb73e8fb6c179968130d6fd0a}{get\+Evaporation}} (int week)
+\begin{DoxyCompactList}\small\item\em Retrieves the evaporation value for a specified week. This is a wrapper for the base class {\ttfamily \mbox{\hyperlink{classCatchment_af4e8206ffab5c901e5e4cdd6136f73a1}{Catchment\+::get\+Streamflow}}} function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEvaporationSeries_a4985ac4c81ec111657861e5750b24c0e}{set\+Realization}} (unsigned long r, vector$<$ double $>$ \&rdm\+\_\+factors) override
+\begin{DoxyCompactList}\small\item\em Sets the realization for the {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} object and scales the evaporation values based on its corresponding DU factors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is a subclass of the main {\ttfamily \mbox{\hyperlink{classCatchment}{Catchment}}} class and represents a series of evaporation data over time. 
+
+Created by bernardoct on 6/22/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEvaporationSeries_af0903d8555a148f9bf45f915877120b3}\label{classEvaporationSeries_af0903d8555a148f9bf45f915877120b3}} 
+\index{Evaporation\+Series@{Evaporation\+Series}!Evaporation\+Series@{Evaporation\+Series}}
+\index{Evaporation\+Series@{Evaporation\+Series}!Evaporation\+Series@{Evaporation\+Series}}
+\subsubsection{\texorpdfstring{Evaporation\+Series()}{EvaporationSeries()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Evaporation\+Series\+::\+Evaporation\+Series (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ double $>$$>$ $\ast$}]{evaporation\+\_\+series,  }\item[{int}]{series\+\_\+length }\end{DoxyParamCaption})}
+
+
+
+Constructs an {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} object for managing and storing evaporation data over time. Initializes the series with a pointer to evaporation data and its length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evaporation\+\_\+series} & Pointer to a vector of vectors containing the evaporation data series. \\
+\hline
+{\em series\+\_\+length} & Integer representing the length of the evaporation data series. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEvaporationSeries_aa8d8cd8bbc0fd5b368b748cb090ad414}\label{classEvaporationSeries_aa8d8cd8bbc0fd5b368b748cb090ad414}} 
+\index{Evaporation\+Series@{Evaporation\+Series}!Evaporation\+Series@{Evaporation\+Series}}
+\index{Evaporation\+Series@{Evaporation\+Series}!Evaporation\+Series@{Evaporation\+Series}}
+\subsubsection{\texorpdfstring{Evaporation\+Series()}{EvaporationSeries()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Evaporation\+Series\+::\+Evaporation\+Series (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} class. Creates a new {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} object by copying an existing one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evaporation\+\_\+series} & Reference to the {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} object to be copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEvaporationSeries_a201a00eaaadc9c523d544e0d6a4c50e5}\label{classEvaporationSeries_a201a00eaaadc9c523d544e0d6a4c50e5}} 
+\index{Evaporation\+Series@{Evaporation\+Series}!````~Evaporation\+Series@{$\sim$\+Evaporation\+Series}}
+\index{````~Evaporation\+Series@{$\sim$\+Evaporation\+Series}!Evaporation\+Series@{Evaporation\+Series}}
+\subsubsection{\texorpdfstring{$\sim$\+Evaporation\+Series()}{~EvaporationSeries()}}
+{\footnotesize\ttfamily Evaporation\+Series\+::$\sim$\+Evaporation\+Series (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} class. Cleans up resources associated with the object. Since no dynamic allocation is explicitly used, the destructor is empty. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEvaporationSeries_a4d793fbcb73e8fb6c179968130d6fd0a}\label{classEvaporationSeries_a4d793fbcb73e8fb6c179968130d6fd0a}} 
+\index{Evaporation\+Series@{Evaporation\+Series}!get\+Evaporation@{get\+Evaporation}}
+\index{get\+Evaporation@{get\+Evaporation}!Evaporation\+Series@{Evaporation\+Series}}
+\subsubsection{\texorpdfstring{get\+Evaporation()}{getEvaporation()}}
+{\footnotesize\ttfamily double Evaporation\+Series\+::get\+Evaporation (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})}
+
+
+
+Retrieves the evaporation value for a specified week. This is a wrapper for the base class {\ttfamily \mbox{\hyperlink{classCatchment_af4e8206ffab5c901e5e4cdd6136f73a1}{Catchment\+::get\+Streamflow}}} function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the evaporation value is requested.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double representing the evaporation value for the specified week. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvaporationSeries_ae9f1fc3bb0bf32db12dcc531c6af2e6b}\label{classEvaporationSeries_ae9f1fc3bb0bf32db12dcc531c6af2e6b}} 
+\index{Evaporation\+Series@{Evaporation\+Series}!operator=@{operator=}}
+\index{operator=@{operator=}!Evaporation\+Series@{Evaporation\+Series}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}\& Evaporation\+Series\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series }\end{DoxyParamCaption})}
+
+
+
+Overloads the assignment operator for the {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} class, allowing one object to be assigned the attributes of another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em evaporation\+\_\+series} & Reference to the {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} object to be assigned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} object after assignment. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEvaporationSeries_a4985ac4c81ec111657861e5750b24c0e}\label{classEvaporationSeries_a4985ac4c81ec111657861e5750b24c0e}} 
+\index{Evaporation\+Series@{Evaporation\+Series}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Evaporation\+Series@{Evaporation\+Series}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily void Evaporation\+Series\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{r,  }\item[{vector$<$ double $>$ \&}]{rdm\+\_\+factors }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the realization for the {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} object and scales the evaporation values based on its corresponding DU factors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & Unsigned long integer representing the realization ID. \\
+\hline
+{\em rdm\+\_\+factors} & Reference to a vector of doubles containing Random Decision-\/\+Making (R\+DM) factors to modify evaporation values.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classCatchment_ad76654af47dcd69bcb795c1c152409cc}{Catchment}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Controls/\mbox{\hyperlink{EvaporationSeries_8h}{Evaporation\+Series.\+h}}\end{DoxyCompactItemize}

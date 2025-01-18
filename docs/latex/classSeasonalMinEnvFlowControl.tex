@@ -1,0 +1,108 @@
+\hypertarget{classSeasonalMinEnvFlowControl}{}\section{Seasonal\+Min\+Env\+Flow\+Control Class Reference}
+\label{classSeasonalMinEnvFlowControl}\index{Seasonal\+Min\+Env\+Flow\+Control@{Seasonal\+Min\+Env\+Flow\+Control}}
+
+
+This class is a subclass of the main {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} class and represents water sources with seasonal minimum environmental flow control.  
+
+
+
+
+{\ttfamily \#include $<$Seasonal\+Min\+Env\+Flow\+Control.\+h$>$}
+
+Inheritance diagram for Seasonal\+Min\+Env\+Flow\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classSeasonalMinEnvFlowControl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSeasonalMinEnvFlowControl_a02ea55181dd200190a6b792e57f30193}{Seasonal\+Min\+Env\+Flow\+Control}} (int \mbox{\hyperlink{classMinEnvFlowControl_aada518a047598f386daec1d0358023aa}{water\+\_\+source\+\_\+id}}, const vector$<$ int $>$ \&week\+\_\+thresholds, const vector$<$ double $>$ \&min\+\_\+env\+\_\+flows)
+\begin{DoxyCompactList}\small\item\em Constructs a {\ttfamily \mbox{\hyperlink{classSeasonalMinEnvFlowControl}{Seasonal\+Min\+Env\+Flow\+Control}}} object for managing seasonal minimum environmental flow controls. Initializes the control with a specified water source ID, seasonal week thresholds, and corresponding minimum flow rates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSeasonalMinEnvFlowControl_ad0eeb570fc096a92b788b5c4a48bcec4}{Seasonal\+Min\+Env\+Flow\+Control}} (const \mbox{\hyperlink{classSeasonalMinEnvFlowControl}{Seasonal\+Min\+Env\+Flow\+Control}} \&min\+\_\+env\+\_\+control)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the {\ttfamily \mbox{\hyperlink{classSeasonalMinEnvFlowControl}{Seasonal\+Min\+Env\+Flow\+Control}}} class. Creates a new {\ttfamily \mbox{\hyperlink{classSeasonalMinEnvFlowControl}{Seasonal\+Min\+Env\+Flow\+Control}}} object by copying the attributes from an existing one. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSeasonalMinEnvFlowControl_a5c5ddcab367812bdd2e23b383449d202}{get\+Release}} (int week) override
+\begin{DoxyCompactList}\small\item\em Calculates the release amount for a specified week based on seasonal week thresholds and corresponding flow rates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is a subclass of the main {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} class and represents water sources with seasonal minimum environmental flow control. 
+
+Created by bernardoct on 6/28/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSeasonalMinEnvFlowControl_a02ea55181dd200190a6b792e57f30193}\label{classSeasonalMinEnvFlowControl_a02ea55181dd200190a6b792e57f30193}} 
+\index{Seasonal\+Min\+Env\+Flow\+Control@{Seasonal\+Min\+Env\+Flow\+Control}!Seasonal\+Min\+Env\+Flow\+Control@{Seasonal\+Min\+Env\+Flow\+Control}}
+\index{Seasonal\+Min\+Env\+Flow\+Control@{Seasonal\+Min\+Env\+Flow\+Control}!Seasonal\+Min\+Env\+Flow\+Control@{Seasonal\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{Seasonal\+Min\+Env\+Flow\+Control()}{SeasonalMinEnvFlowControl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Seasonal\+Min\+Env\+Flow\+Control\+::\+Seasonal\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}\item[{int}]{water\+\_\+source\+\_\+id,  }\item[{const vector$<$ int $>$ \&}]{week\+\_\+thresholds,  }\item[{const vector$<$ double $>$ \&}]{min\+\_\+env\+\_\+flows }\end{DoxyParamCaption})}
+
+
+
+Constructs a {\ttfamily \mbox{\hyperlink{classSeasonalMinEnvFlowControl}{Seasonal\+Min\+Env\+Flow\+Control}}} object for managing seasonal minimum environmental flow controls. Initializes the control with a specified water source ID, seasonal week thresholds, and corresponding minimum flow rates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+source\+\_\+id} & Integer representing the ID of the water source under environmental flow control. \\
+\hline
+{\em week\+\_\+thresholds} & Reference to a vector of integers specifying the week intervals that define seasonal periods. \\
+\hline
+{\em min\+\_\+env\+\_\+flows} & Reference to a vector of doubles specifying the minimum flow rates for each seasonal period.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & If the size of {\ttfamily week\+\_\+thresholds} is not one more than the size of {\ttfamily min\+\_\+env\+\_\+flows}. \\
+\hline
+{\em std\+::invalid\+\_\+argument} & If the first threshold is not 0 or the last threshold is not 53 (for years with 53 weeks). \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classSeasonalMinEnvFlowControl_ad0eeb570fc096a92b788b5c4a48bcec4}\label{classSeasonalMinEnvFlowControl_ad0eeb570fc096a92b788b5c4a48bcec4}} 
+\index{Seasonal\+Min\+Env\+Flow\+Control@{Seasonal\+Min\+Env\+Flow\+Control}!Seasonal\+Min\+Env\+Flow\+Control@{Seasonal\+Min\+Env\+Flow\+Control}}
+\index{Seasonal\+Min\+Env\+Flow\+Control@{Seasonal\+Min\+Env\+Flow\+Control}!Seasonal\+Min\+Env\+Flow\+Control@{Seasonal\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{Seasonal\+Min\+Env\+Flow\+Control()}{SeasonalMinEnvFlowControl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Seasonal\+Min\+Env\+Flow\+Control\+::\+Seasonal\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSeasonalMinEnvFlowControl}{Seasonal\+Min\+Env\+Flow\+Control}} \&}]{min\+\_\+env\+\_\+control }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the {\ttfamily \mbox{\hyperlink{classSeasonalMinEnvFlowControl}{Seasonal\+Min\+Env\+Flow\+Control}}} class. Creates a new {\ttfamily \mbox{\hyperlink{classSeasonalMinEnvFlowControl}{Seasonal\+Min\+Env\+Flow\+Control}}} object by copying the attributes from an existing one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+\_\+env\+\_\+control} & Reference to the {\ttfamily \mbox{\hyperlink{classSeasonalMinEnvFlowControl}{Seasonal\+Min\+Env\+Flow\+Control}}} object to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSeasonalMinEnvFlowControl_a5c5ddcab367812bdd2e23b383449d202}\label{classSeasonalMinEnvFlowControl_a5c5ddcab367812bdd2e23b383449d202}} 
+\index{Seasonal\+Min\+Env\+Flow\+Control@{Seasonal\+Min\+Env\+Flow\+Control}!get\+Release@{get\+Release}}
+\index{get\+Release@{get\+Release}!Seasonal\+Min\+Env\+Flow\+Control@{Seasonal\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{get\+Release()}{getRelease()}}
+{\footnotesize\ttfamily double Seasonal\+Min\+Env\+Flow\+Control\+::get\+Release (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the release amount for a specified week based on seasonal week thresholds and corresponding flow rates. 
+
+This function overrides the {\ttfamily get\+Release} function in the {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the release amount is calculated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double representing the calculated release amount for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMinEnvFlowControl_a5de79615852eb0c937dd559a9eb9402d}{Min\+Env\+Flow\+Control}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Controls/\mbox{\hyperlink{SeasonalMinEnvFlowControl_8h}{Seasonal\+Min\+Env\+Flow\+Control.\+h}}\end{DoxyCompactItemize}

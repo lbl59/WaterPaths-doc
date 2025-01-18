@@ -4,58 +4,75 @@
     <compoundname>AllocatedIntakeExpansion.h</compoundname>
     <includes refid="WaterSource_8h" local="yes">Base/WaterSource.h</includes>
     <incdepgraph>
-      <node id="338">
-        <label>../Utils/Constants.h</label>
+      <node id="1219">
+        <label>cmath</label>
       </node>
-      <node id="337">
+      <node id="1216">
         <label>stdexcept</label>
       </node>
-      <node id="334">
+      <node id="1217">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="1218" relation="include">
+        </childnode>
+        <childnode refid="1219" relation="include">
+        </childnode>
+        <childnode refid="1220" relation="include">
+        </childnode>
+        <childnode refid="1215" relation="include">
+        </childnode>
+        <childnode refid="1213" relation="include">
+        </childnode>
+      </node>
+      <node id="1213">
         <label>string</label>
       </node>
-      <node id="333">
+      <node id="1218">
+        <label>map</label>
+      </node>
+      <node id="1212">
         <label>Base/WaterSource.h</label>
         <link refid="WaterSource_8h"/>
-        <childnode refid="334" relation="include">
+        <childnode refid="1213" relation="include">
         </childnode>
-        <childnode refid="335" relation="include">
+        <childnode refid="1214" relation="include">
         </childnode>
-        <childnode refid="339" relation="include">
+        <childnode refid="1217" relation="include">
         </childnode>
-        <childnode refid="340" relation="include">
+        <childnode refid="1221" relation="include">
         </childnode>
       </node>
-      <node id="336">
+      <node id="1215">
         <label>vector</label>
       </node>
-      <node id="335">
+      <node id="1214">
         <label>../../Catchment.h</label>
         <link refid="Catchment_8h"/>
-        <childnode refid="336" relation="include">
+        <childnode refid="1215" relation="include">
         </childnode>
-        <childnode refid="337" relation="include">
+        <childnode refid="1216" relation="include">
         </childnode>
-        <childnode refid="338" relation="include">
+        <childnode refid="1217" relation="include">
         </childnode>
       </node>
-      <node id="332">
+      <node id="1211">
         <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/AllocatedIntakeExpansion.h</label>
         <link refid="AllocatedIntakeExpansion_8h"/>
-        <childnode refid="333" relation="include">
+        <childnode refid="1212" relation="include">
         </childnode>
       </node>
-      <node id="339">
-        <label>../../../Utils/Constants.h</label>
-      </node>
-      <node id="340">
+      <node id="1221">
         <label>../../Bonds/Base/Bond.h</label>
         <link refid="Bond_8h"/>
-        <childnode refid="336" relation="include">
+        <childnode refid="1215" relation="include">
         </childnode>
-        <childnode refid="337" relation="include">
+        <childnode refid="1216" relation="include">
         </childnode>
-        <childnode refid="339" relation="include">
+        <childnode refid="1217" relation="include">
         </childnode>
+      </node>
+      <node id="1220">
+        <label>cstring</label>
       </node>
     </incdepgraph>
     <innerclass refid="classAllocatedIntakeExpansion" prot="public">AllocatedIntakeExpansion</innerclass>
@@ -65,45 +82,45 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
-<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_ALLOCATEDINTAKEEXPANSION_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_ALLOCATEDINTAKEEXPANSION_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_ALLOCATEDINTAKEEXPANSION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_ALLOCATEDINTAKEEXPANSION_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WaterSource_8h" kindref="compound">Base/WaterSource.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13" refid="classAllocatedIntakeExpansion" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAllocatedIntakeExpansion" kindref="compound">AllocatedIntakeExpansion</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classWaterSource" kindref="compound">WaterSource</ref><sp/>{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="19" refid="classAllocatedIntakeExpansion_1a725ce7276ef9158da9fa7e2b1e217b14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion_1a725ce7276ef9158da9fa7e2b1e217b14" kindref="member">parent_intake_ID</ref>;</highlight></codeline>
-<codeline lineno="23" refid="classAllocatedIntakeExpansion_1ad788b8373f3e8c9eb2a910c370e91f7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/><ref refid="classAllocatedIntakeExpansion_1ad788b8373f3e8c9eb2a910c370e91f7c" kindref="member">supply_capacity_added</ref>;</highlight></codeline>
-<codeline lineno="27" refid="classAllocatedIntakeExpansion_1a22f6d50982db1cf862e81672612abdb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/><ref refid="classAllocatedIntakeExpansion_1a22f6d50982db1cf862e81672612abdb9" kindref="member">treatment_capacity_added</ref>;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedIntakeExpansion_1a4ed3330e33441d67d3b0c8bbb243d6c2" kindref="member">AllocatedIntakeExpansion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion_1a725ce7276ef9158da9fa7e2b1e217b14" kindref="member">parent_intake_ID</ref>,</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_supply_capacity_added,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_treatment_capacity_added,</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>&amp;partner_utility_ids,</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;supply_capacity_allocations_added,</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;treatment_capacity_allocations_added,</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;construction_time_range,<sp/>vector&lt;int&gt;<sp/>connected_sources,</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permitting_period,<sp/>vector&lt;Bond<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a413b094e11bdce62f4d82e5bb9e4706e" kindref="member">bonds</ref>);</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedIntakeExpansion_1a4ed3330e33441d67d3b0c8bbb243d6c2" kindref="member">AllocatedIntakeExpansion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion" kindref="compound">AllocatedIntakeExpansion</ref><sp/>&amp;intake_expansion);</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedIntakeExpansion" kindref="compound">AllocatedIntakeExpansion</ref><sp/>&amp;<ref refid="classAllocatedIntakeExpansion_1a3c695346b66343278a51c3df50866acb" kindref="member">operator=</ref>(</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion" kindref="compound">AllocatedIntakeExpansion</ref><sp/>&amp;intake_expansion);</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion_1a67185ec779549c32b289666663232bc4" kindref="member">applyContinuity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a7a69b2e9b6030f1035e6cf44d2918ee5" kindref="member">upstream_source_inflow</ref>,</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>wastewater_discharge,</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;demand_outflow)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion_1a6cd2dabeb1dc1e0417082c032620ce51" kindref="member">getAllocatedCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion_1a20fb863c5e0bce30c10d1791b037a57a" kindref="member">getAllocatedTreatmentCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBond" kindref="compound">Bond</ref><sp/>&amp;<ref refid="classAllocatedIntakeExpansion_1a3091edd0793cf2bd4e01fc178ae72ffb" kindref="member">getBond</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="146"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="WaterSource_8h" kindref="compound">Base/WaterSource.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classAllocatedIntakeExpansion" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAllocatedIntakeExpansion" kindref="compound">AllocatedIntakeExpansion</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classWaterSource" kindref="compound">WaterSource</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="classAllocatedIntakeExpansion_1a725ce7276ef9158da9fa7e2b1e217b14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion_1a725ce7276ef9158da9fa7e2b1e217b14" kindref="member">parent_intake_ID</ref>;</highlight></codeline>
+<codeline lineno="24" refid="classAllocatedIntakeExpansion_1ad788b8373f3e8c9eb2a910c370e91f7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/><ref refid="classAllocatedIntakeExpansion_1ad788b8373f3e8c9eb2a910c370e91f7c" kindref="member">supply_capacity_added</ref>;</highlight></codeline>
+<codeline lineno="28" refid="classAllocatedIntakeExpansion_1a22f6d50982db1cf862e81672612abdb9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/><ref refid="classAllocatedIntakeExpansion_1a22f6d50982db1cf862e81672612abdb9" kindref="member">treatment_capacity_added</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedIntakeExpansion_1a4ed3330e33441d67d3b0c8bbb243d6c2" kindref="member">AllocatedIntakeExpansion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion_1a725ce7276ef9158da9fa7e2b1e217b14" kindref="member">parent_intake_ID</ref>,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_supply_capacity_added,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>total_treatment_capacity_added,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>&amp;partner_utility_ids,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;supply_capacity_allocations_added,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;treatment_capacity_allocations_added,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;construction_time_range,<sp/>vector&lt;int&gt;<sp/>connected_sources,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permitting_period,<sp/>vector&lt;Bond<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a413b094e11bdce62f4d82e5bb9e4706e" kindref="member">bonds</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedIntakeExpansion_1a4ed3330e33441d67d3b0c8bbb243d6c2" kindref="member">AllocatedIntakeExpansion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion" kindref="compound">AllocatedIntakeExpansion</ref><sp/>&amp;intake_expansion);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedIntakeExpansion" kindref="compound">AllocatedIntakeExpansion</ref><sp/>&amp;<ref refid="classAllocatedIntakeExpansion_1a3c695346b66343278a51c3df50866acb" kindref="member">operator=</ref>(</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion" kindref="compound">AllocatedIntakeExpansion</ref><sp/>&amp;intake_expansion);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion_1a67185ec779549c32b289666663232bc4" kindref="member">applyContinuity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a7a69b2e9b6030f1035e6cf44d2918ee5" kindref="member">upstream_source_inflow</ref>,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>wastewater_discharge,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;demand_outflow)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion_1a6cd2dabeb1dc1e0417082c032620ce51" kindref="member">getAllocatedCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedIntakeExpansion_1a20fb863c5e0bce30c10d1791b037a57a" kindref="member">getAllocatedTreatmentCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBond" kindref="compound">Bond</ref><sp/>&amp;<ref refid="classAllocatedIntakeExpansion_1a3091edd0793cf2bd4e01fc178ae72ffb" kindref="member">getBond</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_ALLOCATEDINTAKEEXPANSION_H</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_ALLOCATEDINTAKEEXPANSION_H</highlight></codeline>
     </programlisting>
     <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/AllocatedIntakeExpansion.h"/>
   </compounddef>

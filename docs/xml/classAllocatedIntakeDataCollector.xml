@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classAllocatedIntakeDataCollector" kind="class" language="C++" prot="public">
+    <compoundname>AllocatedIntakeDataCollector</compoundname>
+    <basecompoundref refid="classDataCollector" prot="public" virt="non-virtual">DataCollector</basecompoundref>
+    <includes refid="AllocatedIntakeDataCollector_8h" local="no">AllocatedIntakeDataCollector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAllocatedIntakeDataCollector_1ae7406f5b291a637a0b62106f5f6d1bb3" prot="private" static="no" mutable="no">
+        <type><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref> *</type>
+        <definition>AllocatedIntake* AllocatedIntakeDataCollector::intake</definition>
+        <argsstring></argsstring>
+        <name>intake</name>
+        <briefdescription>
+<para>The <ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref> object from which data will be collected. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="18" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedIntakeDataCollector_1afb5681f32cf5fbb2cfaa2becd9433610" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; AllocatedIntakeDataCollector::total_upstream_sources_inflows</definition>
+        <argsstring></argsstring>
+        <name>total_upstream_sources_inflows</name>
+        <briefdescription>
+<para>The timeseries of total inflow from upstream sources. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="22" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedIntakeDataCollector_1ac2b3cd049fcf3539f210069c59480d2b" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; AllocatedIntakeDataCollector::demands</definition>
+        <argsstring></argsstring>
+        <name>demands</name>
+        <briefdescription>
+<para>The timeseries of demands. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="26" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedIntakeDataCollector_1af5e747e4ae075e1af242a110e3e6488d" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; AllocatedIntakeDataCollector::wastewater_inflows</definition>
+        <argsstring></argsstring>
+        <name>wastewater_inflows</name>
+        <briefdescription>
+<para>The timeseries of inflow from wastewater sources. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="30" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedIntakeDataCollector_1abb98d57d7cef8034a11227fd24c4e516" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; AllocatedIntakeDataCollector::outflows</definition>
+        <argsstring></argsstring>
+        <name>outflows</name>
+        <briefdescription>
+<para>The timeseries of total outflows from each intake. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="34" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedIntakeDataCollector_1abc8d7162b5de222169201d691148d440" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; AllocatedIntakeDataCollector::total_catchments_inflow</definition>
+        <argsstring></argsstring>
+        <name>total_catchments_inflow</name>
+        <briefdescription>
+<para>The timeseries of total inflow from catchments. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="38" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedIntakeDataCollector_1ad2b440dd61446f9ae087fdf37e470953" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; AllocatedIntakeDataCollector::allocated_demands</definition>
+        <argsstring></argsstring>
+        <name>allocated_demands</name>
+        <briefdescription>
+<para>A 2D vector of across demands from all sources allocated to each utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="42" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedIntakeDataCollector_1a42d528d79e3d236f5b0dbe1a2f747781" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; AllocatedIntakeDataCollector::allocated_supply_capacity</definition>
+        <argsstring></argsstring>
+        <name>allocated_supply_capacity</name>
+        <briefdescription>
+<para>A 2D vector of supply capacities across all sources allocated to each utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="46" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedIntakeDataCollector_1adbff67af63c60b3ee354c73ac76b4b4b" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; AllocatedIntakeDataCollector::utilities_with_allocations</definition>
+        <argsstring></argsstring>
+        <name>utilities_with_allocations</name>
+        <briefdescription>
+<para>A IDs of utilities with allocations to the intake. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="50" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAllocatedIntakeDataCollector_1a9b8eb277ad491771e9c2634c6fd3e11c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AllocatedIntakeDataCollector::AllocatedIntakeDataCollector</definition>
+        <argsstring>(AllocatedIntake *intake, unsigned long realization)</argsstring>
+        <name>AllocatedIntakeDataCollector</name>
+        <param>
+          <type><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref> *</type>
+          <declname>intake</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classAllocatedIntakeDataCollector" kindref="compound">AllocatedIntakeDataCollector</ref> class. This function initializes an <ref refid="classAllocatedIntakeDataCollector" kindref="compound">AllocatedIntakeDataCollector</ref> object with the specified intake and realization. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initializes the <ref refid="classAllocatedIntakeDataCollector" kindref="compound">AllocatedIntakeDataCollector</ref> object by calling the base <ref refid="classDataCollector" kindref="compound">DataCollector</ref> constructor with specific parameters derived from the intake. It also initializes the <computeroutput>utilities_with_allocations</computeroutput> member using data from the <computeroutput><ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref></computeroutput> object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intake</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the <ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref> object associated with this data collector. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realization</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The realization number associated with the data collection.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classDataCollector" kindref="compound">DataCollector</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntakeDataCollector_1a8568c28b643b9a9199e2b91ae5ebbe83" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedIntakeDataCollector::printTabularString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printTabularString</name>
+        <reimplements refid="classDataCollector_1a397fccabe0223267eea8fc7cac0e59da">printTabularString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Generates a tabular string representation of data for a specific week. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function creates a formatted string that represents the weekly data for demands, inflows, outflows, and allocations. The data is formatted into a tabular structure with fixed column widths and precision. It includes:<itemizedlist>
+<listitem><para>Demand for the week.</para></listitem><listitem><para>Total upstream source inflows.</para></listitem><listitem><para>Wastewater inflows.</para></listitem><listitem><para>Total inflows from catchments.</para></listitem><listitem><para>Outflows.</para></listitem><listitem><para>Allocated supply capacities and demands for utilities with allocations.</para></listitem></itemizedlist>
+</para><para>This function overrides the base class <computeroutput>printTabularString</computeroutput> function.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The week number for which the data should be printed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the tabular data for the specified week.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::out_of_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the <computeroutput>week</computeroutput> parameter is out of bounds for any of the accessed data arrays. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntakeDataCollector_1aeadb39cfe7fc84264e3bb83ed26b0621" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedIntakeDataCollector::printCompactString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printCompactString</name>
+        <reimplements refid="classDataCollector_1a2eac264fa5612aed5a830b12de4f4ae3">printCompactString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Generates a compact, comma-separated string representation of data for a specific week. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function creates a compact string that represents the weekly data for demands, inflows, outflows, and allocations. The data is structured as a comma-separated list and includes:<itemizedlist>
+<listitem><para>Demand for the week.</para></listitem><listitem><para>Total upstream source inflows.</para></listitem><listitem><para>Wastewater inflows.</para></listitem><listitem><para>Total inflows from catchments.</para></listitem><listitem><para>Outflows.</para></listitem><listitem><para>Allocated supply capacities and demands for utilities with allocations.</para></listitem></itemizedlist>
+</para><para>This function overrides the base class <computeroutput>printCompactString</computeroutput> function.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The week number for which the data should be printed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the compact data for the specified week, with values separated by commas.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::out_of_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the <computeroutput>week</computeroutput> parameter is out of bounds for any of the accessed data arrays. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntakeDataCollector_1ab4149a988e728ce54f89058f8f18dd18" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedIntakeDataCollector::printTabularStringHeaderLine1</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine1</name>
+        <reimplements refid="classDataCollector_1a91619cfa9e9b8cefd2f7c20d5718b41e">printTabularStringHeaderLine1</reimplements>
+        <briefdescription>
+<para>Generates the first header line for a tabular string representation. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function creates a formatted header line for tabular data representation. The header includes:<itemizedlist>
+<listitem><para>Blank space for alignment.</para></listitem><listitem><para>Column headers for upstream inflows, wastewater inflows, and catchment inflows.</para></listitem><listitem><para>Identifiers for utilities with allocations, listed twice for supply capacities and demands.</para></listitem></itemizedlist>
+</para><para>This function overrides the base class <computeroutput>printTabularStringHeaderLine1</computeroutput> function.</para><para><simplesect kind="return"><para>A string containing the first header line of the tabular data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntakeDataCollector_1aeee44be0f105fb0d5feac72f4c80f7ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedIntakeDataCollector::printTabularStringHeaderLine2</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine2</name>
+        <reimplements refid="classDataCollector_1af01ea961314be2164f39e6d4cd59e443">printTabularStringHeaderLine2</reimplements>
+        <briefdescription>
+<para>Generates the second header line for a tabular string representation. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function creates a formatted second header line for tabular data representation. The header includes:<itemizedlist>
+<listitem><para>Column labels for demands, spillage, inflows (upstream, wastewater, and catchment), and outflows.</para></listitem><listitem><para>Labels for allocated supply capacities and demands for utilities with allocations.</para></listitem></itemizedlist>
+</para><para>This function overrides the base class <computeroutput>printTabularStringHeaderLine2</computeroutput> function.</para><para><simplesect kind="return"><para>A string containing the second header line of the tabular data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntakeDataCollector_1a995c69f6e2fe615786b2b26fd349c6cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedIntakeDataCollector::printCompactStringHeader</definition>
+        <argsstring>() override</argsstring>
+        <name>printCompactStringHeader</name>
+        <reimplements refid="classDataCollector_1a98dcb4ec871d9c7fbf7545c64e5ccc67">printCompactStringHeader</reimplements>
+        <briefdescription>
+<para>Generates a compact, comma-separated header string for the compact data representation. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function creates a compact header string for the data, where each column is prefixed by the <computeroutput>id</computeroutput> of the <ref refid="classAllocatedIntakeDataCollector" kindref="compound">AllocatedIntakeDataCollector</ref> object. The header includes:<itemizedlist>
+<listitem><para>Demand.</para></listitem><listitem><para>Upstream spillage.</para></listitem><listitem><para>Wastewater inflow.</para></listitem><listitem><para><ref refid="classCatchment" kindref="compound">Catchment</ref> inflow.</para></listitem><listitem><para>Downstream spillage.</para></listitem><listitem><para>Allocated supply capacities and demands for utilities with allocations, each uniquely identified with the utility ID.</para></listitem></itemizedlist>
+</para><para>This function overrides the base class <computeroutput>printCompactStringHeader</computeroutput> function.</para><para><simplesect kind="return"><para>A string containing the header for the compact data, with column identifiers separated by commas. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedIntakeDataCollector_1a06906344679fed5e3d24352e98107537" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedIntakeDataCollector::collect_data</definition>
+        <argsstring>() override</argsstring>
+        <name>collect_data</name>
+        <reimplements refid="classDataCollector_1a01486bf58acbe37b203f97b3b9a79c40">collect_data</reimplements>
+        <briefdescription>
+<para>Collects and stores data from the associated <ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function retrieves data from the <ref refid="classAllocatedIntake" kindref="compound">AllocatedIntake</ref> object and appends it to the corresponding member variables. The collected data includes:<itemizedlist>
+<listitem><para>Current demand.</para></listitem><listitem><para>Total inflow from upstream sources.</para></listitem><listitem><para>Inflow from wastewater sources.</para></listitem><listitem><para>Total inflow from upstream catchments.</para></listitem><listitem><para>Total outflow.</para></listitem><listitem><para>Allocated supply capacities for utilities with allocations.</para></listitem><listitem><para>Allocated demands for utilities with allocations.</para></listitem></itemizedlist>
+</para><para>This function overrides the base class <computeroutput>collect_data</computeroutput> function.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="172" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <computeroutput><ref refid="classAllocatedIntakeDataCollector" kindref="compound">AllocatedIntakeDataCollector</ref></computeroutput> class is a subclass of the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class that implements the data collection of allocated intake objects. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by dgorelic on 3/2/2020. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AllocatedIntakeDataCollector</label>
+        <link refid="classAllocatedIntakeDataCollector"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>AllocatedIntakeDataCollector</label>
+        <link refid="classAllocatedIntakeDataCollector"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" line="14" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedIntakeDataCollector.h" bodystart="14" bodyend="173"/>
+    <listofallmembers>
+      <member refid="classAllocatedIntakeDataCollector_1ad2b440dd61446f9ae087fdf37e470953" prot="private" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>allocated_demands</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1a42d528d79e3d236f5b0dbe1a2f747781" prot="private" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>allocated_supply_capacity</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1a9b8eb277ad491771e9c2634c6fd3e11c" prot="public" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>AllocatedIntakeDataCollector</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1a06906344679fed5e3d24352e98107537" prot="public" virt="virtual"><scope>AllocatedIntakeDataCollector</scope><name>collect_data</name></member>
+      <member refid="classDataCollector_1a3f89b18f4ac0557d7374d49531a004c0" prot="public" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>DataCollector</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1ac2b3cd049fcf3539f210069c59480d2b" prot="private" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>demands</name></member>
+      <member refid="classDataCollector_1a5cb840b6fbcf6afe364eef9114984383" prot="public" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>id</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1ae7406f5b291a637a0b62106f5f6d1bb3" prot="private" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>intake</name></member>
+      <member refid="classDataCollector_1a3a9a5033592f72ada429aa20056162b9" prot="public" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>name</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1abb98d57d7cef8034a11227fd24c4e516" prot="private" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>outflows</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1aeadb39cfe7fc84264e3bb83ed26b0621" prot="public" virt="virtual"><scope>AllocatedIntakeDataCollector</scope><name>printCompactString</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1a995c69f6e2fe615786b2b26fd349c6cb" prot="public" virt="virtual"><scope>AllocatedIntakeDataCollector</scope><name>printCompactStringHeader</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1a8568c28b643b9a9199e2b91ae5ebbe83" prot="public" virt="virtual"><scope>AllocatedIntakeDataCollector</scope><name>printTabularString</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1ab4149a988e728ce54f89058f8f18dd18" prot="public" virt="virtual"><scope>AllocatedIntakeDataCollector</scope><name>printTabularStringHeaderLine1</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1aeee44be0f105fb0d5feac72f4c80f7ff" prot="public" virt="virtual"><scope>AllocatedIntakeDataCollector</scope><name>printTabularStringHeaderLine2</name></member>
+      <member refid="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" prot="public" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>realization</name></member>
+      <member refid="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44" prot="public" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>table_width</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1abc8d7162b5de222169201d691148d440" prot="private" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>total_catchments_inflow</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1afb5681f32cf5fbb2cfaa2becd9433610" prot="private" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>total_upstream_sources_inflows</name></member>
+      <member refid="classDataCollector_1acad1c22d67a8eb3db056ba776a131900" prot="public" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>type</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1adbff67af63c60b3ee354c73ac76b4b4b" prot="private" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>utilities_with_allocations</name></member>
+      <member refid="classAllocatedIntakeDataCollector_1af5e747e4ae075e1af242a110e3e6488d" prot="private" virt="non-virtual"><scope>AllocatedIntakeDataCollector</scope><name>wastewater_inflows</name></member>
+      <member refid="classDataCollector_1ab6e826d46e651419309efe1e635d6e14" prot="public" virt="virtual"><scope>AllocatedIntakeDataCollector</scope><name>~DataCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -3,20 +3,21 @@
   <compounddef id="classContinuityModelROF" kind="class" language="C++" prot="public">
     <compoundname>ContinuityModelROF</compoundname>
     <basecompoundref refid="classContinuityModel" prot="public" virt="non-virtual">ContinuityModel</basecompoundref>
+    <derivedcompoundref refid="classInsuranceStorageToROF" prot="public" virt="non-virtual">InsuranceStorageToROF</derivedcompoundref>
     <includes refid="ContinuityModelROF_8h" local="no">ContinuityModelROF.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classContinuityModelROF_1ab4b11938d295e5e74e9cf58725d36a34" prot="private" static="no" mutable="no">
-        <type>vector&lt; Matrix2D&lt; double &gt; &gt;</type>
+        <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt; &gt;</type>
         <definition>vector&lt;Matrix2D&lt;double&gt; &gt; ContinuityModelROF::ut_storage_to_rof_rof_realization</definition>
         <argsstring></argsstring>
         <name>ut_storage_to_rof_rof_realization</name>
         <briefdescription>
-<para>A vector of <computeroutput>Matrix2D</computeroutput> objects representing the storage-to-ROF tables for each utility. </para>        </briefdescription>
+<para>A vector of <computeroutput><ref refid="classMatrix2D" kindref="compound">Matrix2D</ref></computeroutput> objects representing the storage-to-ROF tables for each utility. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="20" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="20" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="24" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1a7ab0c5f22272833f309183937fa9d0d8" prot="private" static="no" mutable="no">
         <type>vector&lt; int &gt;</type>
@@ -29,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="24" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="24" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="28" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1ad7ee977c92769377cf6237d2fbf527e3" prot="private" static="no" mutable="no">
         <type>bool *</type>
@@ -42,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="28" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="28" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="32" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1aefffec319cad3a89db2d4c7335ebf2a2" prot="private" static="no" mutable="no">
         <type>const int</type>
@@ -55,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="32" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="36" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1a384967647c98d9768400de07e2bc7dab" prot="private" static="no" mutable="no">
         <type>const int</type>
@@ -68,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="36" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="36" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="40" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -84,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="42" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="42" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="46" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1a77048d247b8d1f70fbdd31559b4d3337" prot="protected" static="no" mutable="no">
         <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> * &gt;</type>
@@ -97,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="46" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="46" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="50" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1a75c6823d8dd37f274ee91ce158088dc4" prot="protected" static="no" mutable="no">
         <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> * &gt;</type>
@@ -110,20 +111,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="50" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="50" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="54" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1ada25d241caf860255ad00097f5e7adb6" prot="protected" static="no" mutable="no">
-        <type>vector&lt; Matrix2D&lt; double &gt; &gt;</type>
+        <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt; &gt;</type>
         <definition>vector&lt;Matrix2D&lt;double&gt; &gt; ContinuityModelROF::ut_storage_to_rof_table</definition>
         <argsstring></argsstring>
         <name>ut_storage_to_rof_table</name>
         <briefdescription>
-<para>A vector of <computeroutput>Matrix2D</computeroutput> objects representing the storage-to-ROF tables for each utility. </para>        </briefdescription>
+<para>A vector of <computeroutput><ref refid="classMatrix2D" kindref="compound">Matrix2D</ref></computeroutput> objects representing the storage-to-ROF tables for each utility. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="54" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="54" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="58" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1a1a90c8816944aab36f395e89f7b84c06" prot="protected" static="no" mutable="no">
         <type>vector&lt; vector&lt; double &gt; &gt;</type>
@@ -136,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="58" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="58" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="62" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1a2bc5728653819a0d54a36ffbb1df44a3" prot="protected" static="no" mutable="no">
         <type>vector&lt; vector&lt; double &gt; &gt;</type>
@@ -149,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="62" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="62" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="66" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1aedb1313e889617d718d2a93d719cb3f1" prot="protected" static="no" mutable="no">
         <type>vector&lt; vector&lt; double &gt; &gt;</type>
@@ -162,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="66" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="66" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="70" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1a6a429c37f019777325ea4e5b9ad26cae" prot="protected" static="no" mutable="no">
         <type>vector&lt; double &gt;</type>
@@ -175,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="70" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="70" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="74" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1a017041335a639ba56cc3e26dea07b514" prot="protected" static="no" mutable="no">
         <type>vector&lt; double &gt;</type>
@@ -188,7 +189,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="74" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="74" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="78" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1adcaf978b52ba016474952a42856ba373" prot="protected" static="no" mutable="no">
         <type>vector&lt; double &gt;</type>
@@ -201,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="78" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="78" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="82" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1a443efa8d5a8bcbb1fea1a0bc929c77cd" prot="protected" static="no" mutable="no">
         <type>vector&lt; double &gt;</type>
@@ -214,7 +215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="82" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="82" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="86" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="86" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1acaebccba4f4ed286c5da02d6c2c90605" prot="protected" static="no" mutable="no">
         <type>vector&lt; double &gt;</type>
@@ -227,7 +228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="86" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="86" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="90" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classContinuityModelROF_1a1a274033b741e664268515de8e8eb3bc" prot="protected" static="no" mutable="no">
         <type>vector&lt; double &gt;</type>
@@ -240,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="90" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="90" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="94" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="94" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -254,7 +255,7 @@
           <declname>water_sources</declname>
         </param>
         <param>
-          <type>const Graph &amp;</type>
+          <type>const <ref refid="classGraph" kindref="compound">Graph</ref> &amp;</type>
           <declname>water_sources_graph</declname>
         </param>
         <param>
@@ -266,7 +267,7 @@
           <declname>utilities</declname>
         </param>
         <param>
-          <type>vector&lt; MinEnvFlowControl *&gt;</type>
+          <type>vector&lt; <ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref> *&gt;</type>
           <declname>min_env_flow_controls</declname>
         </param>
         <param>
@@ -297,14 +298,14 @@
 <parametername>water_sources</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Vector of water source objects used in the model. </para></parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of water source objects used in the model. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>water_sources_graph</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Graph representing the topological relationships between water sources. </para></parameterdescription>
+<para><ref refid="classGraph" kindref="compound">Graph</ref> representing the topological relationships between water sources. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -318,28 +319,28 @@
 <parametername>utilities</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Vector of utility objects to manage water demand and allocation. </para></parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of utility objects to manage water demand and allocation. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>min_env_flow_controls</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Vector of minimum environmental flow controls. </para></parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of minimum environmental flow controls. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>utilities_rdm</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Vector of random deviations for utilities. </para></parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of random deviations for utilities. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>water_sources_rdm</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Vector of random deviations for water sources. </para></parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of random deviations for water sources. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -366,7 +367,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="110" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="114" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a4acab850e28a3a41182a19d86a7de709" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -379,7 +380,7 @@
 <para>This function cleans up resources allocated during the lifetime of the <ref refid="classContinuityModelROF" kindref="compound">ContinuityModelROF</ref> object. Specifically, it releases memory associated with dynamically allocated arrays. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="122" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="126" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a0386963b5914aaaa145de60a2ff1f84e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>vector&lt; vector&lt; double &gt; &gt;</type>
@@ -418,7 +419,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="138" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="142" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a975e7566b4c0db6e3731647b6e76b9c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>vector&lt; vector&lt; double &gt; &gt;</type>
@@ -455,7 +456,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="158" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="162" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a48b31e060f1d75e31fa591015f4a1c22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>vector&lt; vector&lt; double &gt; &gt;</type>
@@ -475,7 +476,7 @@
           <declname>utilities_base_storage_capacity</declname>
         </param>
         <param>
-          <type>const vector&lt; Matrix2D&lt; double &gt;&gt; &amp;</type>
+          <type>const vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt;&gt; &amp;</type>
           <declname>ut_storage_to_rof_table</declname>
         </param>
         <param>
@@ -550,7 +551,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="182" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="186" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a0b66880fe153cbd0b85a5b416b98e9a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>vector&lt; vector&lt; double &gt; &gt;</type>
@@ -579,7 +580,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="205" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="209" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1acd72d71a29cef49c4de3d111378b76c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -607,7 +608,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="220" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="224" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a0c12b5dad97c3783361baad7e53a2634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -633,7 +634,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="233" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="237" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1abc16c650a854b60dfc42ab2d32ef4b0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -659,13 +660,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="246" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="250" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a06cf47a32d6793b0ee912deccf92fc5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
         <definition>virtual void ContinuityModelROF::updateOnlineInfrastructure</definition>
         <argsstring>(int week)</argsstring>
         <name>updateOnlineInfrastructure</name>
+        <reimplementedby refid="classInsuranceStorageToROF_1a5870934b8b33e1d872eca7b0940398ac">updateOnlineInfrastructure</reimplementedby>
         <param>
           <type>int</type>
           <declname>week</declname>
@@ -685,7 +687,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="261" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="265" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a28834584763c3aa27a6f0917aa68926f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -726,7 +728,7 @@
 <parametername>to_full</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Array of available water volumes to full storage capacity for each water source.</para></parameterdescription>
+<para><ref refid="classArray" kindref="compound">Array</ref> of available water volumes to full storage capacity for each water source.</para></parameterdescription>
 </parameteritem>
 </parameterlist>
 <simplesect kind="return"><para>None</para></simplesect>
@@ -734,7 +736,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="279" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="283" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a4f2b25687bcdeb4a88e22397c84789de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -771,7 +773,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="302" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="306" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a1bb8362ce39e694937a787805613e106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -797,7 +799,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="319" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="323" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a83fc5e19e0f92d12d659c3446b90fa13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -805,7 +807,7 @@
         <argsstring>(const vector&lt; Matrix2D&lt; double &gt;&gt; &amp;storage_to_rof_table, const vector&lt; vector&lt; double &gt;&gt; &amp;table_storage_shift, const vector&lt; vector&lt; double &gt;&gt; &amp;table_base_storage_shift, const vector&lt; vector&lt; double &gt;&gt; &amp;treatment_demand_buffer_shift)</argsstring>
         <name>setROFTablesAndShifts</name>
         <param>
-          <type>const vector&lt; Matrix2D&lt; double &gt;&gt; &amp;</type>
+          <type>const vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt;&gt; &amp;</type>
           <declname>storage_to_rof_table</declname>
         </param>
         <param>
@@ -856,7 +858,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="336" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="340" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a10a8a95f3177d305d3881e654f01d65d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -919,7 +921,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="359" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="363" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a0c46d5905f5d0ae2cf0abd0d4653bbc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -935,7 +937,7 @@
           <declname>utilities</declname>
         </param>
         <param>
-          <type>vector&lt; Matrix2D&lt; double &gt;&gt; &amp;</type>
+          <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt;&gt; &amp;</type>
           <declname>vector</declname>
         </param>
         <param>
@@ -978,7 +980,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="375" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="379" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1aa2348a2a5dea751462771ef538243e75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -986,11 +988,11 @@
         <argsstring>(vector&lt; Matrix2D&lt; double &gt;&gt; &amp;ut_storage_to_rof_rof_realization, vector&lt; Matrix2D&lt; double &gt;&gt; &amp;ut_storage_to_rof_table, const int &amp;n_utilities, int &amp;week, int &amp;week_of_the_year)</argsstring>
         <name>recordROFStorageTable</name>
         <param>
-          <type>vector&lt; Matrix2D&lt; double &gt;&gt; &amp;</type>
+          <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt;&gt; &amp;</type>
           <declname>ut_storage_to_rof_rof_realization</declname>
         </param>
         <param>
-          <type>vector&lt; Matrix2D&lt; double &gt;&gt; &amp;</type>
+          <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt;&gt; &amp;</type>
           <declname>ut_storage_to_rof_table</declname>
         </param>
         <param>
@@ -1048,7 +1050,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="392" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="396" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1aa720006d12410fc35b8768eda716c149" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1085,7 +1087,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="408" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="412" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a082567cc3a16b971632c14b5a603c692" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1111,7 +1113,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="423" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="427" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1a360a69a3811c56e8354a64a598228663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1137,10 +1139,10 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="437" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="441" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classContinuityModelROF_1ad798adad5127a2674c5d4a3e8f24302d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>vector&lt; Matrix2D&lt; double &gt; &gt; &amp;</type>
+        <type>vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt; &gt; &amp;</type>
         <definition>vector&lt;Matrix2D&lt;double&gt; &gt;&amp; ContinuityModelROF::getUt_storage_to_rof_table</definition>
         <argsstring>()</argsstring>
         <name>getUt_storage_to_rof_table</name>
@@ -1159,38 +1161,51 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="449" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="453" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>The <computeroutput><ref refid="classContinuityModelROF" kindref="compound">ContinuityModelROF</ref></computeroutput> subclass extends the <computeroutput><ref refid="classContinuityModel" kindref="compound">ContinuityModel</ref></computeroutput> class to include the implementation long- and short-term ROF calculations for utilities. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>Created by bernardo on 1/26/17. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="37">
+      <node id="60">
+        <label>InsuranceStorageToROF</label>
+        <link refid="classInsuranceStorageToROF"/>
+        <childnode refid="58" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="59">
         <label>ContinuityModel</label>
         <link refid="classContinuityModel"/>
       </node>
-      <node id="36">
+      <node id="58">
         <label>ContinuityModelROF</label>
         <link refid="classContinuityModelROF"/>
-        <childnode refid="37" relation="public-inheritance">
+        <childnode refid="59" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="39">
+      <node id="62">
         <label>ContinuityModel</label>
         <link refid="classContinuityModel"/>
+        <childnode refid="63" relation="usage">
+          <edgelabel>water_sources_graph</edgelabel>
+        </childnode>
       </node>
-      <node id="38">
+      <node id="63">
+        <label>Graph</label>
+        <link refid="classGraph"/>
+      </node>
+      <node id="61">
         <label>ContinuityModelROF</label>
         <link refid="classContinuityModelROF"/>
-        <childnode refid="39" relation="public-inheritance">
+        <childnode refid="62" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="13" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="13" bodyend="450"/>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" line="17" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h" bodystart="17" bodyend="454"/>
     <listofallmembers>
       <member refid="classContinuityModelROF_1ad0a8c47eca4ca66b58a2636ab907a4f2" prot="protected" virt="non-virtual"><scope>ContinuityModelROF</scope><name>beginning_tier</name></member>
       <member refid="classContinuityModelROF_1aa720006d12410fc35b8768eda716c149" prot="public" virt="non-virtual"><scope>ContinuityModelROF</scope><name>calculateEmptyVolumes</name></member>

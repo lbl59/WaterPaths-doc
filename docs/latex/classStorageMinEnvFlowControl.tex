@@ -1,0 +1,109 @@
+\hypertarget{classStorageMinEnvFlowControl}{}\section{Storage\+Min\+Env\+Flow\+Control Class Reference}
+\label{classStorageMinEnvFlowControl}\index{Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}}
+
+
+This class is a subclass of the main {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} class and represents storage water sources with minimum environmental flow control.  
+
+
+
+
+{\ttfamily \#include $<$Storage\+Min\+Env\+Flow\+Control.\+h$>$}
+
+Inheritance diagram for Storage\+Min\+Env\+Flow\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classStorageMinEnvFlowControl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStorageMinEnvFlowControl_aba965c28890bf5abb1230dd6d8879f18}{Storage\+Min\+Env\+Flow\+Control}} (int \mbox{\hyperlink{classMinEnvFlowControl_aada518a047598f386daec1d0358023aa}{water\+\_\+source\+\_\+id}}, const vector$<$ int $>$ \&aux\+\_\+water\+\_\+sources\+\_\+ids, vector$<$ double $>$ \&\mbox{\hyperlink{classStorageMinEnvFlowControl_af68170e5f561f1bfc2062f9e6ec8dd6d}{storages}}, vector$<$ double $>$ \&\mbox{\hyperlink{classStorageMinEnvFlowControl_af187563525a0b5b437d27134bff34646}{releases}})
+\begin{DoxyCompactList}\small\item\em Constructs a {\ttfamily \mbox{\hyperlink{classStorageMinEnvFlowControl}{Storage\+Min\+Env\+Flow\+Control}}} object for managing minimum environmental flow controls based on storage levels. Initializes the control with a specified water source ID, auxiliary water sources, storage thresholds, and corresponding release values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStorageMinEnvFlowControl_a2279f6d44b8ba69830a29654ddee8d3a}{Storage\+Min\+Env\+Flow\+Control}} (const \mbox{\hyperlink{classStorageMinEnvFlowControl}{Storage\+Min\+Env\+Flow\+Control}} \&min\+\_\+env\+\_\+control)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the {\ttfamily \mbox{\hyperlink{classStorageMinEnvFlowControl}{Storage\+Min\+Env\+Flow\+Control}}} class. Creates a new {\ttfamily \mbox{\hyperlink{classStorageMinEnvFlowControl}{Storage\+Min\+Env\+Flow\+Control}}} object by copying the attributes from an existing one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classStorageMinEnvFlowControl_af68170e5f561f1bfc2062f9e6ec8dd6d}{storages}}
+\begin{DoxyCompactList}\small\item\em A reference to the vector of doubles containing storage thresholds. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classStorageMinEnvFlowControl_af187563525a0b5b437d27134bff34646}{releases}}
+\begin{DoxyCompactList}\small\item\em A reference to the vector of doubles containing the corresponding release amounts for each storage threshold. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is a subclass of the main {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} class and represents storage water sources with minimum environmental flow control. 
+
+Created by bernardoct on 6/28/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStorageMinEnvFlowControl_aba965c28890bf5abb1230dd6d8879f18}\label{classStorageMinEnvFlowControl_aba965c28890bf5abb1230dd6d8879f18}} 
+\index{Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}!Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}}
+\index{Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}!Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{Storage\+Min\+Env\+Flow\+Control()}{StorageMinEnvFlowControl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Storage\+Min\+Env\+Flow\+Control\+::\+Storage\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}\item[{int}]{water\+\_\+source\+\_\+id,  }\item[{const vector$<$ int $>$ \&}]{aux\+\_\+water\+\_\+sources\+\_\+ids,  }\item[{vector$<$ double $>$ \&}]{storages,  }\item[{vector$<$ double $>$ \&}]{releases }\end{DoxyParamCaption})}
+
+
+
+Constructs a {\ttfamily \mbox{\hyperlink{classStorageMinEnvFlowControl}{Storage\+Min\+Env\+Flow\+Control}}} object for managing minimum environmental flow controls based on storage levels. Initializes the control with a specified water source ID, auxiliary water sources, storage thresholds, and corresponding release values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+source\+\_\+id} & Integer representing the ID of the primary water source under environmental flow control. \\
+\hline
+{\em aux\+\_\+water\+\_\+sources\+\_\+ids} & Reference to a vector of integers containing the I\+Ds of auxiliary water sources (e.\+g., reservoirs or quarries). \\
+\hline
+{\em storages} & Reference to a vector of doubles containing storage thresholds. \\
+\hline
+{\em releases} & Reference to a vector of doubles containing the corresponding release amounts for each storage threshold.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & If the number of auxiliary water sources is not exactly one. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classStorageMinEnvFlowControl_a2279f6d44b8ba69830a29654ddee8d3a}\label{classStorageMinEnvFlowControl_a2279f6d44b8ba69830a29654ddee8d3a}} 
+\index{Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}!Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}}
+\index{Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}!Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{Storage\+Min\+Env\+Flow\+Control()}{StorageMinEnvFlowControl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Storage\+Min\+Env\+Flow\+Control\+::\+Storage\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStorageMinEnvFlowControl}{Storage\+Min\+Env\+Flow\+Control}} \&}]{min\+\_\+env\+\_\+control }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the {\ttfamily \mbox{\hyperlink{classStorageMinEnvFlowControl}{Storage\+Min\+Env\+Flow\+Control}}} class. Creates a new {\ttfamily \mbox{\hyperlink{classStorageMinEnvFlowControl}{Storage\+Min\+Env\+Flow\+Control}}} object by copying the attributes from an existing one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+\_\+env\+\_\+control} & Reference to the {\ttfamily \mbox{\hyperlink{classStorageMinEnvFlowControl}{Storage\+Min\+Env\+Flow\+Control}}} object to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classStorageMinEnvFlowControl_af187563525a0b5b437d27134bff34646}\label{classStorageMinEnvFlowControl_af187563525a0b5b437d27134bff34646}} 
+\index{Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}!releases@{releases}}
+\index{releases@{releases}!Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{releases}{releases}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Storage\+Min\+Env\+Flow\+Control\+::releases}
+
+
+
+A reference to the vector of doubles containing the corresponding release amounts for each storage threshold. 
+
+\mbox{\Hypertarget{classStorageMinEnvFlowControl_af68170e5f561f1bfc2062f9e6ec8dd6d}\label{classStorageMinEnvFlowControl_af68170e5f561f1bfc2062f9e6ec8dd6d}} 
+\index{Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}!storages@{storages}}
+\index{storages@{storages}!Storage\+Min\+Env\+Flow\+Control@{Storage\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{storages}{storages}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Storage\+Min\+Env\+Flow\+Control\+::storages}
+
+
+
+A reference to the vector of doubles containing storage thresholds. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Controls/\mbox{\hyperlink{StorageMinEnvFlowControl_8h}{Storage\+Min\+Env\+Flow\+Control.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,378 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="DroughtMitigationPolicy_8h" kind="file" language="C++">
+    <compoundname>DroughtMitigationPolicy.h</compoundname>
+    <includes refid="Utility_8h" local="yes">../../SystemComponents/Utility/Utility.h</includes>
+    <includes refid="Constants_8h" local="yes">../../Utils/Constants.h</includes>
+    <includes refid="Graph_8h" local="yes">../../Utils/Graph/Graph.h</includes>
+    <includes refid="Matrices_8h" local="yes">../../Utils/Matrices.h</includes>
+    <includes refid="MinEnvFlowControl_8h" local="yes">../../Controls/Base/MinEnvFlowControl.h</includes>
+    <includedby refid="ContinuityModelRealization_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h</includedby>
+    <includedby refid="MasterDataCollector_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/MasterDataCollector.h</includedby>
+    <includedby refid="Restrictions_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Restrictions.h</includedby>
+    <includedby refid="Transfers_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h</includedby>
+    <includedby refid="InsuranceStorageToROF_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/InsuranceStorageToROF.h</includedby>
+    <includedby refid="Utils_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h</includedby>
+    <incdepgraph>
+      <node id="687">
+        <label>list</label>
+      </node>
+      <node id="681">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+      </node>
+      <node id="682">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="691">
+        <label>../../Controls/Base/MinEnvFlowControl.h</label>
+        <link refid="MinEnvFlowControl_8h"/>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="668" relation="include">
+        </childnode>
+      </node>
+      <node id="677">
+        <label>cmath</label>
+      </node>
+      <node id="675">
+        <label>stdexcept</label>
+      </node>
+      <node id="676">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+      </node>
+      <node id="684">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+      </node>
+      <node id="672">
+        <label>string</label>
+      </node>
+      <node id="669">
+        <label>map</label>
+      </node>
+      <node id="685">
+        <label>InfrastructureManager.h</label>
+        <link refid="InfrastructureManager_8h"/>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+      </node>
+      <node id="679">
+        <label>Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+      </node>
+      <node id="690">
+        <label>fstream</label>
+      </node>
+      <node id="667">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
+        <link refid="DroughtMitigationPolicy_8h"/>
+        <childnode refid="668" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+        <childnode refid="688" relation="include">
+        </childnode>
+        <childnode refid="691" relation="include">
+        </childnode>
+      </node>
+      <node id="668">
+        <label>../../SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+      </node>
+      <node id="674">
+        <label>vector</label>
+      </node>
+      <node id="686">
+        <label>../../Utils/Graph/Graph.h</label>
+        <link refid="Graph_8h"/>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+      </node>
+      <node id="673">
+        <label>../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+      </node>
+      <node id="671">
+        <label>../WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+      </node>
+      <node id="689">
+        <label>iostream</label>
+      </node>
+      <node id="683">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+      </node>
+      <node id="680">
+        <label>../../Bonds/Base/Bond.h</label>
+        <link refid="Bond_8h"/>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+      </node>
+      <node id="678">
+        <label>cstring</label>
+      </node>
+      <node id="688">
+        <label>../../Utils/Matrices.h</label>
+        <link refid="Matrices_8h"/>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="678" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+      </node>
+      <node id="670">
+        <label>memory</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="705">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/TransfersDataCollector.h</label>
+        <link refid="TransfersDataCollector_8h"/>
+      </node>
+      <node id="700">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Restrictions.h</label>
+        <link refid="Restrictions_8h"/>
+        <childnode refid="701" relation="include">
+        </childnode>
+        <childnode refid="703" relation="include">
+        </childnode>
+        <childnode refid="695" relation="include">
+        </childnode>
+      </node>
+      <node id="702">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/ObjectivesCalculator.h</label>
+        <link refid="ObjectivesCalculator_8h"/>
+      </node>
+      <node id="698">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/MasterDataCollector.h</label>
+        <link refid="MasterDataCollector_8h"/>
+        <childnode refid="699" relation="include">
+        </childnode>
+        <childnode refid="695" relation="include">
+        </childnode>
+      </node>
+      <node id="694">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/InsuranceStorageToROF.h</label>
+        <link refid="InsuranceStorageToROF_8h"/>
+      </node>
+      <node id="692">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h</label>
+        <link refid="DroughtMitigationPolicy_8h"/>
+        <childnode refid="693" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+        <childnode refid="700" relation="include">
+        </childnode>
+        <childnode refid="704" relation="include">
+        </childnode>
+        <childnode refid="694" relation="include">
+        </childnode>
+        <childnode refid="703" relation="include">
+        </childnode>
+      </node>
+      <node id="699">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Base/Problem.h</label>
+        <link refid="Problem_8h"/>
+        <childnode refid="696" relation="include">
+        </childnode>
+        <childnode refid="697" relation="include">
+        </childnode>
+      </node>
+      <node id="701">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h</label>
+        <link refid="RestrictionsDataCollector_8h"/>
+        <childnode refid="698" relation="include">
+        </childnode>
+        <childnode refid="702" relation="include">
+        </childnode>
+      </node>
+      <node id="693">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelRealization.h</label>
+        <link refid="ContinuityModelRealization_8h"/>
+        <childnode refid="694" relation="include">
+        </childnode>
+        <childnode refid="695" relation="include">
+        </childnode>
+      </node>
+      <node id="704">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h</label>
+        <link refid="Transfers_8h"/>
+        <childnode refid="705" relation="include">
+        </childnode>
+      </node>
+      <node id="695">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h</label>
+        <link refid="Simulation_8h"/>
+        <childnode refid="696" relation="include">
+        </childnode>
+        <childnode refid="697" relation="include">
+        </childnode>
+      </node>
+      <node id="696">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/PaperTestProblem.h</label>
+        <link refid="PaperTestProblem_8h"/>
+      </node>
+      <node id="697">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Triangle.h</label>
+        <link refid="Triangle_8h"/>
+      </node>
+      <node id="703">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Utils.h</label>
+        <link refid="Utils_8h"/>
+        <childnode refid="699" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classDroughtMitigationPolicy" prot="public">DroughtMitigationPolicy</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="7"><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_DROUGHTMITIGATIONPOLICY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_DROUGHTMITIGATIONPOLICY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../SystemComponents/Utility/Utility.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Utils/Constants.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Utils/Graph/Graph.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Utils/Matrices.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Controls/Base/MinEnvFlowControl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classDroughtMitigationPolicy" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Matrix2D&lt;double&gt;&gt;<sp/>*storage_to_rof_table_;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDroughtMitigationPolicy_1aaf0715876ce33a75c7db92e50523ea0c" kindref="member">DroughtMitigationPolicy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref><sp/>&amp;drought_mitigation_policy);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="classDroughtMitigationPolicy_1ad19fbc5a9fdf17ed50c0ba0b99d47eca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/><ref refid="classDroughtMitigationPolicy_1ad19fbc5a9fdf17ed50c0ba0b99d47eca" kindref="member">utilities_ids</ref>;</highlight></codeline>
+<codeline lineno="43" refid="classDroughtMitigationPolicy_1af6e5787a58017804d8598effbeeaba8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Utility<sp/>*&gt;<sp/><ref refid="classDroughtMitigationPolicy_1af6e5787a58017804d8598effbeeaba8e" kindref="member">realization_utilities</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classDroughtMitigationPolicy_1ae2104e99c421513902ba66d012484c0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/><ref refid="classDroughtMitigationPolicy_1ae2104e99c421513902ba66d012484c0e" kindref="member">realization_water_sources</ref>;</highlight></codeline>
+<codeline lineno="51" refid="classDroughtMitigationPolicy_1af583979405bc5d530ee576df8a6e9324" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;MinEnvFlowControl<sp/>*&gt;<sp/><ref refid="classDroughtMitigationPolicy_1af583979405bc5d530ee576df8a6e9324" kindref="member">realization_min_env_flow_controls</ref>;</highlight></codeline>
+<codeline lineno="55" refid="classDroughtMitigationPolicy_1a4c5a2dc2aa3a1c7550cdb17045e1fef3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>*<ref refid="classDroughtMitigationPolicy_1a4c5a2dc2aa3a1c7550cdb17045e1fef3" kindref="member">rdm_factors_all</ref>;</highlight></codeline>
+<codeline lineno="59" refid="classDroughtMitigationPolicy_1abef5c917bbc076514fe61bfebbd0e4fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*<ref refid="classDroughtMitigationPolicy_1abef5c917bbc076514fe61bfebbd0e4fc" kindref="member">rdm_factors_realization</ref>;</highlight></codeline>
+<codeline lineno="63" refid="classDroughtMitigationPolicy_1ace2a2425f6608c34a3189c11445978a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1ace2a2425f6608c34a3189c11445978a1" kindref="member">use_imported_tables</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1a685ce7eacb01cb262d7e5245a736aa38" kindref="member">getRofFromRealizationTable</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tier);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="81" refid="classDroughtMitigationPolicy_1abf3ed19ed98e0d74dc9ae24094be640b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1abf3ed19ed98e0d74dc9ae24094be640b" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="85" refid="classDroughtMitigationPolicy_1aaea5016d1462bec889cb8df85aececc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1aaea5016d1462bec889cb8df85aececc6" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDroughtMitigationPolicy_1aaf0715876ce33a75c7db92e50523ea0c" kindref="member">DroughtMitigationPolicy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1aaea5016d1462bec889cb8df85aececc6" kindref="member">type</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1a76c1a85eaf7707306fe173b6437cc31d" kindref="member">applyPolicy</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week)=<sp/>0;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1aaab042a79d781afe8e08753b7012372a" kindref="member">addSystemComponents</ref>(vector&lt;Utility<sp/>*&gt;<sp/>utilities,</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/>water_sources,</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;MinEnvFlowControl<sp/>*&gt;<sp/>min_env_flow_controls)=<sp/>0;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;int&gt;<sp/>&amp;<ref refid="classDroughtMitigationPolicy_1a4c3940352b0092e6a4f673f72693d239" kindref="member">getUtilities_ids</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1a0bf7d0fa94377ae6814e529daf0204c4" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref><sp/>*other);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1a576d3ddb09dc9372898a63c0949d08a6" kindref="member">operator&gt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref><sp/>*other);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1a9419c433241f36cbf018a5bbe3059d5a" kindref="member">~DroughtMitigationPolicy</ref>();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1a75710a6ab73213223222b3472f9251c0" kindref="member">setStorage_to_rof_table_</ref>(vector&lt;<ref refid="classMatrix2D" kindref="compound">Matrix2D&lt;double&gt;</ref>&gt;<sp/>&amp;storage_to_rof_table_,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1ace2a2425f6608c34a3189c11445978a1" kindref="member">use_imported_tables</ref>);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDroughtMitigationPolicy_1a5d2033543cacca1e412eebef5106eab4" kindref="member">setRealization</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>realization_id,<sp/>vector&lt;double&gt;<sp/>&amp;utilities_rdm,</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;water_sources_rdm,<sp/>vector&lt;double&gt;<sp/>&amp;policy_rdm)=<sp/>0;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_DROUGHTMITIGATIONPOLICY_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Base/DroughtMitigationPolicy.h"/>
+  </compounddef>
+</doxygen>

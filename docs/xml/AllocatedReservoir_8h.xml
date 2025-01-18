@@ -3,178 +3,221 @@
   <compounddef id="AllocatedReservoir_8h" kind="file" language="C++">
     <compoundname>AllocatedReservoir.h</compoundname>
     <includes refid="Reservoir_8h" local="yes">Reservoir.h</includes>
+    <includedby refid="AllocatedReservoirDataCollector_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h</includedby>
     <incdepgraph>
-      <node id="348">
-        <label>../Utils/Constants.h</label>
+      <node id="1235">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="1227" relation="include">
+        </childnode>
+        <childnode refid="1228" relation="include">
+        </childnode>
+        <childnode refid="1236" relation="include">
+        </childnode>
       </node>
-      <node id="353">
-        <label>../../Controls/EvaporationSeries.h</label>
+      <node id="1236">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
       </node>
-      <node id="347">
+      <node id="1231">
+        <label>cmath</label>
+      </node>
+      <node id="1228">
         <label>stdexcept</label>
       </node>
-      <node id="344">
+      <node id="1229">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
+        <childnode refid="1230" relation="include">
+        </childnode>
+        <childnode refid="1231" relation="include">
+        </childnode>
+        <childnode refid="1232" relation="include">
+        </childnode>
+        <childnode refid="1227" relation="include">
+        </childnode>
+        <childnode refid="1225" relation="include">
+        </childnode>
+      </node>
+      <node id="1225">
         <label>string</label>
       </node>
-      <node id="349">
+      <node id="1230">
+        <label>map</label>
+      </node>
+      <node id="1233">
         <label>Base/WaterSource.h</label>
         <link refid="WaterSource_8h"/>
-        <childnode refid="344" relation="include">
+        <childnode refid="1225" relation="include">
         </childnode>
-        <childnode refid="345" relation="include">
+        <childnode refid="1226" relation="include">
         </childnode>
-        <childnode refid="350" relation="include">
+        <childnode refid="1229" relation="include">
         </childnode>
-        <childnode refid="351" relation="include">
+        <childnode refid="1234" relation="include">
         </childnode>
       </node>
-      <node id="342">
+      <node id="1223">
         <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/AllocatedReservoir.h</label>
         <link refid="AllocatedReservoir_8h"/>
-        <childnode refid="343" relation="include">
+        <childnode refid="1224" relation="include">
         </childnode>
       </node>
-      <node id="352">
-        <label>../../Utils/DataSeries.h</label>
-      </node>
-      <node id="346">
+      <node id="1227">
         <label>vector</label>
       </node>
-      <node id="345">
+      <node id="1226">
         <label>../Catchment.h</label>
         <link refid="Catchment_8h"/>
-        <childnode refid="346" relation="include">
+        <childnode refid="1227" relation="include">
         </childnode>
-        <childnode refid="347" relation="include">
+        <childnode refid="1228" relation="include">
         </childnode>
-        <childnode refid="348" relation="include">
+        <childnode refid="1229" relation="include">
         </childnode>
       </node>
-      <node id="343">
+      <node id="1224">
         <label>Reservoir.h</label>
         <link refid="Reservoir_8h"/>
-        <childnode refid="344" relation="include">
+        <childnode refid="1225" relation="include">
         </childnode>
-        <childnode refid="345" relation="include">
+        <childnode refid="1226" relation="include">
         </childnode>
-        <childnode refid="349" relation="include">
+        <childnode refid="1233" relation="include">
         </childnode>
-        <childnode refid="352" relation="include">
+        <childnode refid="1235" relation="include">
         </childnode>
-        <childnode refid="353" relation="include">
+        <childnode refid="1237" relation="include">
         </childnode>
       </node>
-      <node id="350">
-        <label>../../../Utils/Constants.h</label>
+      <node id="1237">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="1227" relation="include">
+        </childnode>
+        <childnode refid="1226" relation="include">
+        </childnode>
       </node>
-      <node id="351">
+      <node id="1234">
         <label>../../Bonds/Base/Bond.h</label>
         <link refid="Bond_8h"/>
-        <childnode refid="346" relation="include">
+        <childnode refid="1227" relation="include">
         </childnode>
-        <childnode refid="347" relation="include">
+        <childnode refid="1228" relation="include">
         </childnode>
-        <childnode refid="350" relation="include">
+        <childnode refid="1229" relation="include">
         </childnode>
       </node>
+      <node id="1232">
+        <label>cstring</label>
+      </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="1239">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h</label>
+        <link refid="AllocatedReservoirDataCollector_8h"/>
+      </node>
+      <node id="1238">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/AllocatedReservoir.h</label>
+        <link refid="AllocatedReservoir_8h"/>
+        <childnode refid="1239" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <innerclass refid="classAllocatedReservoir" prot="public">AllocatedReservoir</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardoct<sp/>on<sp/>7/9/17.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_ALLOCATEDRESERVOIR_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_ALLOCATEDRESERVOIR_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Reservoir_8h" kindref="compound">Reservoir.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11" refid="classAllocatedReservoir" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classReservoir" kindref="compound">Reservoir</ref><sp/>{</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="16" refid="classAllocatedReservoir_1af6a1924f60de19b7f77781af0419c39b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1af6a1924f60de19b7f77781af0419c39b" kindref="member">has_water_quality_pool</ref>;</highlight></codeline>
-<codeline lineno="22" refid="classAllocatedReservoir_1ae34d7123ff096d676609e32ba4b83e47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1ae34d7123ff096d676609e32ba4b83e47" kindref="member">continuity_error</ref>;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a0b2d620a1d1fe9a9fe053269f35a9a70" kindref="member">AllocatedReservoir</ref>(</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity,</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EvaporationSeries<sp/>&amp;<ref refid="classReservoir_1a2d2d9b302c13703309bb798d24136810" kindref="member">evaporation_series</ref>,</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DataSeries<sp/>*<ref refid="classReservoir_1a46bd5b750963dfa9a57b247fd77ab8ff" kindref="member">storage_area_curve</ref>,</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>*<ref refid="classWaterSource_1ac345583fc2d0f7e1db31ee40244d7ace" kindref="member">utilities_with_allocations</ref>,</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>*<ref refid="classWaterSource_1a2f6655a80c4847fe039987255d9d998c" kindref="member">allocated_fractions</ref>,<sp/>vector&lt;double&gt;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="classWaterSource_1aa73fe10cfc6579b2fb79529e1dde5140" kindref="member">allocated_treatment_fractions</ref>);</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a0b2d620a1d1fe9a9fe053269f35a9a70" kindref="member">AllocatedReservoir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity,</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EvaporationSeries<sp/>&amp;<ref refid="classReservoir_1a2d2d9b302c13703309bb798d24136810" kindref="member">evaporation_series</ref>,<sp/>DataSeries<sp/>*<ref refid="classReservoir_1a46bd5b750963dfa9a57b247fd77ab8ff" kindref="member">storage_area_curve</ref>,</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;construction_time_range,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permitting_period,<sp/><ref refid="classBond" kindref="compound">Bond</ref><sp/>&amp;bond,</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>*<ref refid="classWaterSource_1ac345583fc2d0f7e1db31ee40244d7ace" kindref="member">utilities_with_allocations</ref>,<sp/>vector&lt;double&gt;<sp/>*<ref refid="classWaterSource_1a2f6655a80c4847fe039987255d9d998c" kindref="member">allocated_fractions</ref>,</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>*<ref refid="classWaterSource_1aa73fe10cfc6579b2fb79529e1dde5140" kindref="member">allocated_treatment_fractions</ref>);</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a0b2d620a1d1fe9a9fe053269f35a9a70" kindref="member">AllocatedReservoir</ref>(</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity,</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EvaporationSeries<sp/>&amp;<ref refid="classReservoir_1a2d2d9b302c13703309bb798d24136810" kindref="member">evaporation_series</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>storage_area,</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>*<ref refid="classWaterSource_1ac345583fc2d0f7e1db31ee40244d7ace" kindref="member">utilities_with_allocations</ref>,</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>*<ref refid="classWaterSource_1a2f6655a80c4847fe039987255d9d998c" kindref="member">allocated_fractions</ref>,<sp/>vector&lt;double&gt;</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="classWaterSource_1aa73fe10cfc6579b2fb79529e1dde5140" kindref="member">allocated_treatment_fractions</ref>);</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a0b2d620a1d1fe9a9fe053269f35a9a70" kindref="member">AllocatedReservoir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity,</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EvaporationSeries<sp/>&amp;<ref refid="classReservoir_1a2d2d9b302c13703309bb798d24136810" kindref="member">evaporation_series</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>storage_area,</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;construction_time_range,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permitting_period,<sp/><ref refid="classBond" kindref="compound">Bond</ref><sp/>&amp;bond,</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>*<ref refid="classWaterSource_1ac345583fc2d0f7e1db31ee40244d7ace" kindref="member">utilities_with_allocations</ref>,<sp/>vector&lt;double&gt;<sp/>*<ref refid="classWaterSource_1a2f6655a80c4847fe039987255d9d998c" kindref="member">allocated_fractions</ref>,</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>*<ref refid="classWaterSource_1aa73fe10cfc6579b2fb79529e1dde5140" kindref="member">allocated_treatment_fractions</ref>);</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a0b2d620a1d1fe9a9fe053269f35a9a70" kindref="member">AllocatedReservoir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref><sp/>&amp;allocated_reservoir);</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref><sp/>&amp;<ref refid="classAllocatedReservoir_1a31c1733dbf7385599f1b9866df353b4c" kindref="member">operator=</ref>(</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;allocated_reservoir);</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"></highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a3fc9aaca619a97d338449384e579900c" kindref="member">~AllocatedReservoir</ref>();</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"></highlight></codeline>
-<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1aa5a3683ac3a1e7a778627332c6a7fff7" kindref="member">applyContinuity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a7a69b2e9b6030f1035e6cf44d2918ee5" kindref="member">upstream_source_inflow</ref>,</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1aeb5a2d2d83383a70ca20f3e94635a9c7" kindref="member">wastewater_inflow</ref>,</highlight></codeline>
-<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;demand_outflow)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="203"><highlight class="normal"></highlight></codeline>
-<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1aea294cbca1e1630a1307072632d14b05" kindref="member">setFull</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="214"><highlight class="normal"></highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1ae161ebfc285aa69cb8b7f4fe20ee7a2e" kindref="member">getAvailableAllocatedVolume</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"></highlight></codeline>
-<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1a3a9b7ce2e1d42cc373095cfd40ef2ae2" kindref="member">removeWater</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>allocation_id,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>volume)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="242"><highlight class="normal"></highlight></codeline>
-<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1a8b9b38494fa23f0bea78134c82644bf1" kindref="member">getAllocatedCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"></highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1a731381982c9245b0bf24db4082dc74c1" kindref="member">getAllocatedFraction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="267"><highlight class="normal"></highlight></codeline>
-<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1a191cf4347eb2ea57b203c102f8fc805e" kindref="member">addCapacity</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="282"><highlight class="normal"></highlight></codeline>
-<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1ab781bee3253277f1dcfa4c12756d9d6f" kindref="member">addTreatmentCapacity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>added_plant_treatment_capacity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)</highlight></codeline>
-<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="300"><highlight class="normal"></highlight></codeline>
-<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1aba81b93e1aa1154ce411248903fabde6" kindref="member">getAllocatedTreatmentCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="315"><highlight class="normal"></highlight></codeline>
-<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1a114e9cde6a106b786ca0ed39283cbbed" kindref="member">getSupplyAllocatedFraction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="330"><highlight class="normal"></highlight></codeline>
-<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a9d025365aa42dfff13a0aac8ea7863fa" kindref="member">mass_balance_with_wq_pool</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>net_inflow,<sp/>vector&lt;double&gt;<sp/>&amp;demand_outflow);</highlight></codeline>
-<codeline lineno="346"><highlight class="normal"></highlight></codeline>
-<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1ac719b30d5a83ba19ea722449ce9580e1" kindref="member">mass_balance_without_wq_pool</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>net_inflow,<sp/>vector&lt;double&gt;<sp/>&amp;demand_outflow);</highlight></codeline>
-<codeline lineno="361"><highlight class="normal"></highlight></codeline>
-<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1a739d93f7981f597a3db0a3d613304b8e" kindref="member">setOnline</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="373"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="374"><highlight class="normal"></highlight></codeline>
-<codeline lineno="375"><highlight class="normal"></highlight></codeline>
-<codeline lineno="376"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_ALLOCATEDRESERVOIR_H</highlight></codeline>
+<codeline lineno="1"></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_ALLOCATEDRESERVOIR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_ALLOCATEDRESERVOIR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Reservoir_8h" kindref="compound">Reservoir.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classAllocatedReservoir" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classReservoir" kindref="compound">Reservoir</ref><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="20" refid="classAllocatedReservoir_1af6a1924f60de19b7f77781af0419c39b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1af6a1924f60de19b7f77781af0419c39b" kindref="member">has_water_quality_pool</ref>;</highlight></codeline>
+<codeline lineno="26" refid="classAllocatedReservoir_1ae34d7123ff096d676609e32ba4b83e47" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1ae34d7123ff096d676609e32ba4b83e47" kindref="member">continuity_error</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a0b2d620a1d1fe9a9fe053269f35a9a70" kindref="member">AllocatedReservoir</ref>(</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref><sp/>&amp;<ref refid="classReservoir_1a2d2d9b302c13703309bb798d24136810" kindref="member">evaporation_series</ref>,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classDataSeries" kindref="compound">DataSeries</ref><sp/>*<ref refid="classReservoir_1a46bd5b750963dfa9a57b247fd77ab8ff" kindref="member">storage_area_curve</ref>,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>*<ref refid="classWaterSource_1ac345583fc2d0f7e1db31ee40244d7ace" kindref="member">utilities_with_allocations</ref>,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>*<ref refid="classWaterSource_1a2f6655a80c4847fe039987255d9d998c" kindref="member">allocated_fractions</ref>,<sp/>vector&lt;double&gt;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="classWaterSource_1aa73fe10cfc6579b2fb79529e1dde5140" kindref="member">allocated_treatment_fractions</ref>);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a0b2d620a1d1fe9a9fe053269f35a9a70" kindref="member">AllocatedReservoir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref><sp/>&amp;<ref refid="classReservoir_1a2d2d9b302c13703309bb798d24136810" kindref="member">evaporation_series</ref>,<sp/><ref refid="classDataSeries" kindref="compound">DataSeries</ref><sp/>*<ref refid="classReservoir_1a46bd5b750963dfa9a57b247fd77ab8ff" kindref="member">storage_area_curve</ref>,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;construction_time_range,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permitting_period,<sp/><ref refid="classBond" kindref="compound">Bond</ref><sp/>&amp;bond,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>*<ref refid="classWaterSource_1ac345583fc2d0f7e1db31ee40244d7ace" kindref="member">utilities_with_allocations</ref>,<sp/>vector&lt;double&gt;<sp/>*<ref refid="classWaterSource_1a2f6655a80c4847fe039987255d9d998c" kindref="member">allocated_fractions</ref>,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>*<ref refid="classWaterSource_1aa73fe10cfc6579b2fb79529e1dde5140" kindref="member">allocated_treatment_fractions</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a0b2d620a1d1fe9a9fe053269f35a9a70" kindref="member">AllocatedReservoir</ref>(</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref><sp/>&amp;<ref refid="classReservoir_1a2d2d9b302c13703309bb798d24136810" kindref="member">evaporation_series</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>storage_area,</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>*<ref refid="classWaterSource_1ac345583fc2d0f7e1db31ee40244d7ace" kindref="member">utilities_with_allocations</ref>,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>*<ref refid="classWaterSource_1a2f6655a80c4847fe039987255d9d998c" kindref="member">allocated_fractions</ref>,<sp/>vector&lt;double&gt;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="classWaterSource_1aa73fe10cfc6579b2fb79529e1dde5140" kindref="member">allocated_treatment_fractions</ref>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a0b2d620a1d1fe9a9fe053269f35a9a70" kindref="member">AllocatedReservoir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classWaterSource_1a846ea74c5b453d014f594d41fee8c765" kindref="member">name</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Catchment<sp/>*&gt;<sp/>&amp;<ref refid="classWaterSource_1a8c18c34f23f8a06685c1d12f462ed830" kindref="member">catchments</ref>,</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>max_treatment_capacity,</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref><sp/>&amp;<ref refid="classReservoir_1a2d2d9b302c13703309bb798d24136810" kindref="member">evaporation_series</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>storage_area,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;double&gt;<sp/>&amp;construction_time_range,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>permitting_period,<sp/><ref refid="classBond" kindref="compound">Bond</ref><sp/>&amp;bond,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>*<ref refid="classWaterSource_1ac345583fc2d0f7e1db31ee40244d7ace" kindref="member">utilities_with_allocations</ref>,<sp/>vector&lt;double&gt;<sp/>*<ref refid="classWaterSource_1a2f6655a80c4847fe039987255d9d998c" kindref="member">allocated_fractions</ref>,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>*<ref refid="classWaterSource_1aa73fe10cfc6579b2fb79529e1dde5140" kindref="member">allocated_treatment_fractions</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a0b2d620a1d1fe9a9fe053269f35a9a70" kindref="member">AllocatedReservoir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref><sp/>&amp;allocated_reservoir);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref><sp/>&amp;<ref refid="classAllocatedReservoir_1a31c1733dbf7385599f1b9866df353b4c" kindref="member">operator=</ref>(</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;allocated_reservoir);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a3fc9aaca619a97d338449384e579900c" kindref="member">~AllocatedReservoir</ref>();</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1aa5a3683ac3a1e7a778627332c6a7fff7" kindref="member">applyContinuity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a7a69b2e9b6030f1035e6cf44d2918ee5" kindref="member">upstream_source_inflow</ref>,</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1aeb5a2d2d83383a70ca20f3e94635a9c7" kindref="member">wastewater_inflow</ref>,</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>&amp;demand_outflow)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1aea294cbca1e1630a1307072632d14b05" kindref="member">setFull</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1ae161ebfc285aa69cb8b7f4fe20ee7a2e" kindref="member">getAvailableAllocatedVolume</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1a3a9b7ce2e1d42cc373095cfd40ef2ae2" kindref="member">removeWater</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>allocation_id,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>volume)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1a8b9b38494fa23f0bea78134c82644bf1" kindref="member">getAllocatedCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1a731381982c9245b0bf24db4082dc74c1" kindref="member">getAllocatedFraction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1a191cf4347eb2ea57b203c102f8fc805e" kindref="member">addCapacity</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classWaterSource_1a2ec257b415b248214a8bce7fc5267723" kindref="member">capacity</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1ab781bee3253277f1dcfa4c12756d9d6f" kindref="member">addTreatmentCapacity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>added_plant_treatment_capacity,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1aba81b93e1aa1154ce411248903fabde6" kindref="member">getAllocatedTreatmentCapacity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1a114e9cde6a106b786ca0ed39283cbbed" kindref="member">getSupplyAllocatedFraction</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>utility_id)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1a9d025365aa42dfff13a0aac8ea7863fa" kindref="member">mass_balance_with_wq_pool</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>net_inflow,<sp/>vector&lt;double&gt;<sp/>&amp;demand_outflow);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classAllocatedReservoir_1ac719b30d5a83ba19ea722449ce9580e1" kindref="member">mass_balance_without_wq_pool</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>net_inflow,<sp/>vector&lt;double&gt;<sp/>&amp;demand_outflow);</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classAllocatedReservoir_1a739d93f7981f597a3db0a3d613304b8e" kindref="member">setOnline</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_ALLOCATEDRESERVOIR_H</highlight></codeline>
     </programlisting>
     <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/AllocatedReservoir.h"/>
   </compounddef>

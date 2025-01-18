@@ -1,0 +1,942 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classMatrix3D" kind="class" language="C++" prot="public">
+    <compoundname>Matrix3D</compoundname>
+    <includes refid="Matrices_8h" local="no">Matrices.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMatrix3D_1af1e032d3ea19a5fc312866bd401e0f2b" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Matrix3D&lt; T &gt;::di_</definition>
+        <argsstring></argsstring>
+        <name>di_</name>
+        <initializer>= NON_INITIALIZED</initializer>
+        <briefdescription>
+<para>The number of rows in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="383" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMatrix3D_1a204c91363d19e8dc16bf911dfd72b912" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Matrix3D&lt; T &gt;::dj_</definition>
+        <argsstring></argsstring>
+        <name>dj_</name>
+        <initializer>= NON_INITIALIZED</initializer>
+        <briefdescription>
+<para>The number of columns in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="387" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMatrix3D_1a9c5ce04b3a1cb28c7b19cd3b9b3646c6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Matrix3D&lt; T &gt;::dk_</definition>
+        <argsstring></argsstring>
+        <name>dk_</name>
+        <initializer>= NON_INITIALIZED</initializer>
+        <briefdescription>
+<para>The number of slices in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="391" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="391" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMatrix3D_1a94b477ac7008ab81acd18f2ee4d41d70" prot="private" static="no" mutable="no">
+        <type>unique_ptr&lt; T[]&gt;</type>
+        <definition>unique_ptr&lt;T[]&gt; Matrix3D&lt; T &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="392" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMatrix3D_1a1589c062f12fbbb1f3681f90c20c4b78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix3D&lt; T &gt;::Matrix3D</definition>
+        <argsstring>()</argsstring>
+        <name>Matrix3D</name>
+        <briefdescription>
+<para>A default constructor for a new <ref refid="classMatrix" kindref="compound">Matrix</ref> 3D&lt; T&gt;:: <ref refid="classMatrix" kindref="compound">Matrix</ref> 3D object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="394" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="472" bodyend="472"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a6c98f06b6f87c600bd9b00f6b253b37e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix3D&lt; T &gt;::Matrix3D</definition>
+        <argsstring>(int di, int dj, int dk)</argsstring>
+        <name>Matrix3D</name>
+        <param>
+          <type>int</type>
+          <declname>di</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dk</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classMatrix" kindref="compound">Matrix</ref> 3D&lt; T&gt;:: <ref refid="classMatrix" kindref="compound">Matrix</ref> 3D object with specified dimensions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>di</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows in the matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns in the matrix. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of slices in the matrix.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>length_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If either di, dj, or dk are 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="396" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="442" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a56e772adacd4ccf54388e6c90e3d1269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; Matrix3D&lt; T &gt;::operator()</definition>
+        <argsstring>(int i, int j, int k)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>A subscript operator that returns a reference to the element at position (i, j, k) in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the row index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The column index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slice index.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T&amp;</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>length_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the indices are out of bounds. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="398" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="555" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a600c100c8204bbc8f2e4ebefa55cab82" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T Matrix3D&lt; T &gt;::operator()</definition>
+        <argsstring>(int di, int dj, int dk) const</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>int</type>
+          <declname>di</declname>
+          <defname>i</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dj</declname>
+          <defname>j</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dk</declname>
+          <defname>k</defname>
+        </param>
+        <briefdescription>
+<para>A subscript operator that returns a reference to the element at position (i, j, k) in the matrix without changing the original matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the row index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The column index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slice index.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>length_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the indices are out of bounds. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="399" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="579" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a7fda610223910a2b4dcfea445d2eb6c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix3D&lt; T &gt;::~Matrix3D</definition>
+        <argsstring>()</argsstring>
+        <name>~Matrix3D</name>
+        <briefdescription>
+<para>Destroy the <ref refid="classMatrix" kindref="compound">Matrix</ref> 3D&lt; T&gt;:: <ref refid="classMatrix" kindref="compound">Matrix</ref> 3D object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="401" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="480" bodyend="480"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1ae3fc93ef3456a36c92f8cbb7db01c3a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix3D&lt; T &gt;::Matrix3D</definition>
+        <argsstring>(const Matrix3D &amp;m)</argsstring>
+        <name>Matrix3D</name>
+        <param>
+          <type>const <ref refid="classMatrix3D" kindref="compound">Matrix3D</ref> &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor for a new <ref refid="classMatrix" kindref="compound">Matrix</ref> 3D&lt; T&gt;:: <ref refid="classMatrix" kindref="compound">Matrix</ref> 3D object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classMatrix3D" kindref="compound">Matrix3D</ref> object to be copied.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>length_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If either di, dj, or dk of the original matrix are 0. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="402" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="459" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a0e84724f089ae3478283ea81d0b866af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMatrix3D" kindref="compound">Matrix3D</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix3D&lt; T &gt; &amp; Matrix3D&lt; T &gt;::operator=</definition>
+        <argsstring>(const Matrix3D&lt; T &gt; &amp;m)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classMatrix3D" kindref="compound">Matrix3D</ref>&lt; T &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Assignment operator for a <ref refid="classMatrix" kindref="compound">Matrix</ref> 3D&lt; T&gt;:: <ref refid="classMatrix" kindref="compound">Matrix</ref> 3D object. This operator copies the data from another matrix to this matrix, assigning the values in the original matrix to this matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to be copied.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix3D&lt;T&gt;&amp; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="403" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="492" bodyend="501"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a10b206ad9106931f7aa46a7b4d45c851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMatrix3D" kindref="compound">Matrix3D</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix3D&lt; T &gt; &amp; Matrix3D&lt; T &gt;::operator+=</definition>
+        <argsstring>(const Matrix3D&lt; T &gt; &amp;m)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="classMatrix3D" kindref="compound">Matrix3D</ref>&lt; T &gt; &amp;</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>In-place addition operator that adds each element in the matrix to the corresponding element in another matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to be added to the current matrix.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix3D&lt;T&gt;&amp;</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>length_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the dimensions of the two matrices are different. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="404" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="514" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1ad45bff7f2159a4ba0aa4546635e8a73f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMatrix3D" kindref="compound">Matrix3D</ref>&lt; T &gt; &amp;</type>
+        <definition>Matrix3D&lt; T &gt; &amp; Matrix3D&lt; T &gt;::operator/</definition>
+        <argsstring>(const double m)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>const double</type>
+          <declname>m</declname>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+<para>Division operator that divides each element in the matrix by a scalar. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The constant used to divide each element in the matrix.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix3D&lt;T&gt;&amp; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="406" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="534" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1ac5c77248be46bfef323f0229f6e0a59c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; T &gt;</type>
+        <definition>Matrix2D&lt; T &gt; Matrix3D&lt; T &gt;::get2D</definition>
+        <argsstring>(int ijk, char dim)</argsstring>
+        <name>get2D</name>
+        <param>
+          <type>int</type>
+          <declname>ijk</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+<para>Extract a 2D slice from the 3D matrix along the specified dimension. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ijk</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index along the selected dimension from which the slice is taken. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The dimension along which the slice is extracted (&apos;i&apos;, &apos;j&apos;, or &apos;k&apos;).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Matrix2D&lt;T&gt;</para></simplesect>
+<simplesect kind="see"><para><ref refid="classMatrix3D_1a056c035f4997b14c2a3e2b8ebee5142c" kindref="member">setData</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="408" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="683" bodyend="723"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a61afc3a397203f453f60772ebc10758a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix3D&lt; T &gt;::add_to_position</definition>
+        <argsstring>(int i, int j, int k, T *data, int length)</argsstring>
+        <name>add_to_position</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Adds a sequence of values to a specified position in a 3D matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The row index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The column index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slice index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the array of values to be added. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of elements in the <computeroutput>data</computeroutput> array.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="410" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="786" bodyend="792"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a46a7b732a44b77f6c09f72c0ae05edef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix3D&lt; T &gt;::setPartialData</definition>
+        <argsstring>(int i, int j, T *data, int length)</argsstring>
+        <name>setPartialData</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Set a subset of data at a specific position in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The row index where the data will be set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The data to be set. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The length of the data.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>length_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the indices are out of bounds. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="412" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="623" bodyend="627"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1ac21cf8967053b928f609b98abf1616e2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * Matrix3D&lt; T &gt;::getPointerToElement</definition>
+        <argsstring>(int i, int j, int k) const</argsstring>
+        <name>getPointerToElement</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Gets the memory adddress of the element at position (i, j, k) in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The row index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The column index. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slice index.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T* </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="414" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="769" bodyend="771"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1ac67d3ee632ccafaac86dfacdda95dfdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix3D&lt; T &gt;::reset</definition>
+        <argsstring>(T value)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Resets all elements in the matrix to a specific value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to which all elements in the matrix will be set.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="416" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="649" bodyend="651"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1abc1d3451a2fb3cce0bec1d1e33097b1e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix3D&lt; T &gt;::print</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>print</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>Print the contents of the i-th slice of the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The row index.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="418" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="662" bodyend="669"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a056c035f4997b14c2a3e2b8ebee5142c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Matrix3D&lt; T &gt;::setData</definition>
+        <argsstring>(T *data, int length)</argsstring>
+        <name>setData</name>
+        <param>
+          <type>T *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+<para>Set all elements in the matrix to specific values provided by the data. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to which all elements in the matrix will be set.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>throw_with_nested</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the size of the data does not match the size of the matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="420" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="601" bodyend="608"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1af02576e685de872ba1b75014d9a609c9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Matrix3D&lt; T &gt;::get_i</definition>
+        <argsstring>() const</argsstring>
+        <name>get_i</name>
+        <briefdescription>
+<para>Gets the number of slices in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="422" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="732" bodyend="734"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a083e3f136a0108aad991e194b078db7f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Matrix3D&lt; T &gt;::get_j</definition>
+        <argsstring>() const</argsstring>
+        <name>get_j</name>
+        <briefdescription>
+<para>Gets the number of rows in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="424" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="743" bodyend="745"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a35fad9c3c81914e0ef5ed40ceda5d324" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Matrix3D&lt; T &gt;::get_k</definition>
+        <argsstring>() const</argsstring>
+        <name>get_k</name>
+        <briefdescription>
+<para>Gets the number of columns in the matrix. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="426" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="754" bodyend="756"/>
+      </memberdef>
+      <memberdef kind="function" id="classMatrix3D_1a6f1e6328bac16786a4bfad6f107db641" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Matrix3D&lt; T &gt;::empty</definition>
+        <argsstring>() const</argsstring>
+        <name>empty</name>
+        <briefdescription>
+<para>Check if the matrix has been initialized. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The datatype stored in the 3D matrix. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the matrix has not been initialized, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="428" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="636" bodyend="638"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" line="378" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Matrices.h" bodystart="378" bodyend="429"/>
+    <listofallmembers>
+      <member refid="classMatrix3D_1a61afc3a397203f453f60772ebc10758a" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>add_to_position</name></member>
+      <member refid="classMatrix3D_1a94b477ac7008ab81acd18f2ee4d41d70" prot="private" virt="non-virtual"><scope>Matrix3D</scope><name>data_</name></member>
+      <member refid="classMatrix3D_1af1e032d3ea19a5fc312866bd401e0f2b" prot="private" virt="non-virtual"><scope>Matrix3D</scope><name>di_</name></member>
+      <member refid="classMatrix3D_1a204c91363d19e8dc16bf911dfd72b912" prot="private" virt="non-virtual"><scope>Matrix3D</scope><name>dj_</name></member>
+      <member refid="classMatrix3D_1a9c5ce04b3a1cb28c7b19cd3b9b3646c6" prot="private" virt="non-virtual"><scope>Matrix3D</scope><name>dk_</name></member>
+      <member refid="classMatrix3D_1a6f1e6328bac16786a4bfad6f107db641" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>empty</name></member>
+      <member refid="classMatrix3D_1ac5c77248be46bfef323f0229f6e0a59c" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>get2D</name></member>
+      <member refid="classMatrix3D_1af02576e685de872ba1b75014d9a609c9" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>get_i</name></member>
+      <member refid="classMatrix3D_1a083e3f136a0108aad991e194b078db7f" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>get_j</name></member>
+      <member refid="classMatrix3D_1a35fad9c3c81914e0ef5ed40ceda5d324" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>get_k</name></member>
+      <member refid="classMatrix3D_1ac21cf8967053b928f609b98abf1616e2" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>getPointerToElement</name></member>
+      <member refid="classMatrix3D_1a1589c062f12fbbb1f3681f90c20c4b78" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>Matrix3D</name></member>
+      <member refid="classMatrix3D_1a6c98f06b6f87c600bd9b00f6b253b37e" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>Matrix3D</name></member>
+      <member refid="classMatrix3D_1ae3fc93ef3456a36c92f8cbb7db01c3a9" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>Matrix3D</name></member>
+      <member refid="classMatrix3D_1a56e772adacd4ccf54388e6c90e3d1269" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>operator()</name></member>
+      <member refid="classMatrix3D_1a600c100c8204bbc8f2e4ebefa55cab82" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>operator()</name></member>
+      <member refid="classMatrix3D_1a10b206ad9106931f7aa46a7b4d45c851" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>operator+=</name></member>
+      <member refid="classMatrix3D_1ad45bff7f2159a4ba0aa4546635e8a73f" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>operator/</name></member>
+      <member refid="classMatrix3D_1a0e84724f089ae3478283ea81d0b866af" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>operator=</name></member>
+      <member refid="classMatrix3D_1abc1d3451a2fb3cce0bec1d1e33097b1e" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>print</name></member>
+      <member refid="classMatrix3D_1ac67d3ee632ccafaac86dfacdda95dfdf" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>reset</name></member>
+      <member refid="classMatrix3D_1a056c035f4997b14c2a3e2b8ebee5142c" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>setData</name></member>
+      <member refid="classMatrix3D_1a46a7b732a44b77f6c09f72c0ae05edef" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>setPartialData</name></member>
+      <member refid="classMatrix3D_1a7fda610223910a2b4dcfea445d2eb6c7" prot="public" virt="non-virtual"><scope>Matrix3D</scope><name>~Matrix3D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

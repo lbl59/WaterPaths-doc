@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classAllocatedReservoirDataCollector" kind="class" language="C++" prot="public">
+    <compoundname>AllocatedReservoirDataCollector</compoundname>
+    <basecompoundref refid="classReservoirDataCollector" prot="public" virt="non-virtual">ReservoirDataCollector</basecompoundref>
+    <includes refid="AllocatedReservoirDataCollector_8h" local="no">AllocatedReservoirDataCollector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classAllocatedReservoirDataCollector_1a8ba7549c1a0ec6afc6c87e264d2826e3" prot="private" static="no" mutable="no">
+        <type><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref> *</type>
+        <definition>AllocatedReservoir* AllocatedReservoirDataCollector::allocated_reservoir</definition>
+        <argsstring></argsstring>
+        <name>allocated_reservoir</name>
+        <briefdescription>
+<para>The <ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref> object from which data will be collected. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" line="20" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedReservoirDataCollector_1a2bb0db4f265998a9bbe710a8e97f481b" prot="private" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; AllocatedReservoirDataCollector::allocated_stored_volumes</definition>
+        <argsstring></argsstring>
+        <name>allocated_stored_volumes</name>
+        <briefdescription>
+<para>A 2D vector containing each utility&apos;s allocation of the stored volume for each utility in each week. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" line="24" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classAllocatedReservoirDataCollector_1ac5b879439204459a7362751139636643" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; AllocatedReservoirDataCollector::utilities_with_allocations</definition>
+        <argsstring></argsstring>
+        <name>utilities_with_allocations</name>
+        <briefdescription>
+<para>A vector containing the IDs of the utilities with allocations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" line="28" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_1a512b8604164f43d08f961e0f433678e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AllocatedReservoirDataCollector::AllocatedReservoirDataCollector</definition>
+        <argsstring>(AllocatedReservoir *allocated_reservoir, unsigned long realization)</argsstring>
+        <name>AllocatedReservoirDataCollector</name>
+        <param>
+          <type><ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref> *</type>
+          <declname>allocated_reservoir</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an <ref refid="classAllocatedReservoirDataCollector" kindref="compound">AllocatedReservoirDataCollector</ref> for managing and collecting data from an <ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref>. This function initializes the data collector with specific attributes for allocated reservoirs. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allocated_reservoir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="classAllocatedReservoir" kindref="compound">AllocatedReservoir</ref> object that this collector will manage. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realization</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unsigned long integer representing the realization (scenario or simulation ID). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_1ae5a9aa9b2a3cffd8f5ffe983c8fcf6c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedReservoirDataCollector::printTabularString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printTabularString</name>
+        <reimplements refid="classDataCollector_1a397fccabe0223267eea8fc7cac0e59da">printTabularString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Generates a tabular string representation of the allocated reservoir&apos;s data for a given week. This function extends the tabular output by including data for utilities with allocations. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the virtual function <computeroutput>printTabularString</computeroutput> from the <computeroutput><ref refid="classReservoirDataCollector" kindref="compound">ReservoirDataCollector</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the tabular data is being generated.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the tabular representation of the reservoir data for the specified week. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_1a35f8125d428e65c737ff3360ae9bd0cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedReservoirDataCollector::printCompactString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printCompactString</name>
+        <reimplements refid="classDataCollector_1a2eac264fa5612aed5a830b12de4f4ae3">printCompactString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Generates a compact, comma delimited string representation of the allocated reservoir&apos;s data for a given week. This function extends the compact output by appending data for utilities with allocations. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the virtual function <computeroutput>printCompactString</computeroutput> from the <computeroutput><ref refid="classReservoirDataCollector" kindref="compound">ReservoirDataCollector</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the compact data is being generated.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the compact representation of the reservoir data for the specified week. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_1ae82c7a68af1dce9003cccc6da1800e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedReservoirDataCollector::printTabularStringHeaderLine1</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine1</name>
+        <reimplements refid="classDataCollector_1a91619cfa9e9b8cefd2f7c20d5718b41e">printTabularStringHeaderLine1</reimplements>
+        <briefdescription>
+<para>Generates the first header line for a tabular representation of allocated reservoir data. This includes the base header line and additional columns for the stored volume of utilities with allocations. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the virtual function <computeroutput>printTabularStringHeaderLine1</computeroutput> from the <computeroutput><ref refid="classReservoirDataCollector" kindref="compound">ReservoirDataCollector</ref></computeroutput> class.</para><para><simplesect kind="return"><para>A string containing the first header line for the tabular representation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_1a30d8c59205862822f6548472ba62e537" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedReservoirDataCollector::printTabularStringHeaderLine2</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine2</name>
+        <reimplements refid="classDataCollector_1af01ea961314be2164f39e6d4cd59e443">printTabularStringHeaderLine2</reimplements>
+        <briefdescription>
+<para>Generates the second header line for a tabular representation of allocated reservoir data. This includes the base header line and additional columns for allocation percentage for each utility. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the virtual function <computeroutput>printTabularStringHeaderLine2</computeroutput> from the <computeroutput><ref refid="classReservoirDataCollector" kindref="compound">ReservoirDataCollector</ref></computeroutput> class.</para><para><simplesect kind="return"><para>A string containing the second header line for the tabular representation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_1adbedebdf593bee81447671fb8f6ef2fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string AllocatedReservoirDataCollector::printCompactStringHeader</definition>
+        <argsstring>() override</argsstring>
+        <name>printCompactStringHeader</name>
+        <reimplements refid="classDataCollector_1a98dcb4ec871d9c7fbf7545c64e5ccc67">printCompactStringHeader</reimplements>
+        <briefdescription>
+<para>Generates a compact string header for the allocated reservoir&apos;s data. This includes the base header and additional columns for utility allocations. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the virtual function <computeroutput>printCompactStringHeader</computeroutput> from the <computeroutput><ref refid="classReservoirDataCollector" kindref="compound">ReservoirDataCollector</ref></computeroutput> class.</para><para><simplesect kind="return"><para>A string containing the compact header representation for the reservoir data.</para></simplesect>
+<simplesect kind="see"><para><ref refid="classReservoirDataCollector_1aa8346433f037bbca41f3c8450f7f88cf" kindref="member">ReservoirDataCollector::printCompactStringHeader</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classAllocatedReservoirDataCollector_1a8ef8451d2cc6eb01b205eee75ab93729" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void AllocatedReservoirDataCollector::collect_data</definition>
+        <argsstring>() override</argsstring>
+        <name>collect_data</name>
+        <reimplements refid="classDataCollector_1a01486bf58acbe37b203f97b3b9a79c40">collect_data</reimplements>
+        <briefdescription>
+<para>Collects data for the allocated reservoir, including its allocated stored volumes. This function extends the base class data collection by storing allocated volume data. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the virtual function <computeroutput>collect_data</computeroutput> from the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" line="108" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <computeroutput><ref refid="classAllocatedReservoirDataCollector" kindref="compound">AllocatedReservoirDataCollector</ref></computeroutput> class is a subclass of the <computeroutput><ref refid="classReservoirDataCollector" kindref="compound">ReservoirDataCollector</ref></computeroutput> class, which in turn is a subclass of the main <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class. It implements the data collection of allocated reservoir objects. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by Created by bernardoct on 8/26/17. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="24">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="23">
+        <label>ReservoirDataCollector</label>
+        <link refid="classReservoirDataCollector"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>AllocatedReservoirDataCollector</label>
+        <link refid="classAllocatedReservoirDataCollector"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="27">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="26">
+        <label>ReservoirDataCollector</label>
+        <link refid="classReservoirDataCollector"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>AllocatedReservoirDataCollector</label>
+        <link refid="classAllocatedReservoirDataCollector"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" line="16" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/AllocatedReservoirDataCollector.h" bodystart="16" bodyend="109"/>
+    <listofallmembers>
+      <member refid="classAllocatedReservoirDataCollector_1a8ba7549c1a0ec6afc6c87e264d2826e3" prot="private" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>allocated_reservoir</name></member>
+      <member refid="classAllocatedReservoirDataCollector_1a2bb0db4f265998a9bbe710a8e97f481b" prot="private" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>allocated_stored_volumes</name></member>
+      <member refid="classAllocatedReservoirDataCollector_1a512b8604164f43d08f961e0f433678e3" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>AllocatedReservoirDataCollector</name></member>
+      <member refid="classAllocatedReservoirDataCollector_1a8ef8451d2cc6eb01b205eee75ab93729" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>collect_data</name></member>
+      <member refid="classDataCollector_1a3f89b18f4ac0557d7374d49531a004c0" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>DataCollector</name></member>
+      <member refid="classDataCollector_1a5cb840b6fbcf6afe364eef9114984383" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>id</name></member>
+      <member refid="classDataCollector_1a3a9a5033592f72ada429aa20056162b9" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>name</name></member>
+      <member refid="classAllocatedReservoirDataCollector_1a35f8125d428e65c737ff3360ae9bd0cd" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>printCompactString</name></member>
+      <member refid="classAllocatedReservoirDataCollector_1adbedebdf593bee81447671fb8f6ef2fe" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>printCompactStringHeader</name></member>
+      <member refid="classAllocatedReservoirDataCollector_1ae5a9aa9b2a3cffd8f5ffe983c8fcf6c8" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>printTabularString</name></member>
+      <member refid="classAllocatedReservoirDataCollector_1ae82c7a68af1dce9003cccc6da1800e28" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>printTabularStringHeaderLine1</name></member>
+      <member refid="classAllocatedReservoirDataCollector_1a30d8c59205862822f6548472ba62e537" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>printTabularStringHeaderLine2</name></member>
+      <member refid="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>realization</name></member>
+      <member refid="classReservoirDataCollector_1a7647adce7b2d7a8598ae678a5015dde5" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>ReservoirDataCollector</name></member>
+      <member refid="classReservoirDataCollector_1aaca132902fa717e71a0b0d5d5078c04c" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>ReservoirDataCollector</name></member>
+      <member refid="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>table_width</name></member>
+      <member refid="classDataCollector_1acad1c22d67a8eb3db056ba776a131900" prot="public" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>type</name></member>
+      <member refid="classAllocatedReservoirDataCollector_1ac5b879439204459a7362751139636643" prot="private" virt="non-virtual"><scope>AllocatedReservoirDataCollector</scope><name>utilities_with_allocations</name></member>
+      <member refid="classDataCollector_1ab6e826d46e651419309efe1e635d6e14" prot="public" virt="virtual"><scope>AllocatedReservoirDataCollector</scope><name>~DataCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

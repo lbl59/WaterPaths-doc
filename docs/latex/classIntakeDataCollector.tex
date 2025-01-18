@@ -1,0 +1,192 @@
+\hypertarget{classIntakeDataCollector}{}\section{Intake\+Data\+Collector Class Reference}
+\label{classIntakeDataCollector}\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+
+
+The {\ttfamily \mbox{\hyperlink{classIntakeDataCollector}{Intake\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of intake objects.  
+
+
+
+
+{\ttfamily \#include $<$Intake\+Data\+Collector.\+h$>$}
+
+Inheritance diagram for Intake\+Data\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIntakeDataCollector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIntakeDataCollector_a2ab4a81bec74a370c60c78609627e807}{Intake\+Data\+Collector}} (\mbox{\hyperlink{classIntake}{Intake}} $\ast$intake, unsigned long \mbox{\hyperlink{classDataCollector_a9ef2887466fe3123aa19ef956a219b96}{realization}})
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classIntakeDataCollector}{Intake\+Data\+Collector}} for managing and collecting data from an \mbox{\hyperlink{classIntake}{Intake}}. This function initializes the data collector with specific attributes for intakes. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classIntakeDataCollector_ada2b88b7a05455cf6f2eebf82d37b3c5}{print\+Tabular\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a tabular string representation of intake data for a given week. This includes demand, upstream inflows, wastewater inflows, catchment inflows, and outflows. Each of these values is separated by a column with a fixed width. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classIntakeDataCollector_ac39a40726fd4fe887425b24a10f04034}{print\+Compact\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a compact string representation of intake data for a given week. This includes demand, upstream inflows, wastewater inflows, catchment inflows, and outflows in a compact format. Each of these values is separated by a column. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classIntakeDataCollector_ae17ab7e6c75e77f5981f6a682597bb5c}{print\+Tabular\+String\+Header\+Line1}} () override
+\begin{DoxyCompactList}\small\item\em Generates the first header line for a tabular representation of intake data. This line includes column headers for upstream, wastewater, and catchment inflows, separated into columns with a fixed width. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classIntakeDataCollector_a2855eb8eed71649309bd4d9336f258c0}{print\+Tabular\+String\+Header\+Line2}} () override
+\begin{DoxyCompactList}\small\item\em Generates the second header line for a tabular representation of intake data. This line includes detailed column headers for demands, spillage, inflows, and outflows, separated into columns with a fixed width. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classIntakeDataCollector_a42d56dd08e57a7e6e48812a2ab522439}{print\+Compact\+String\+Header}} () override
+\begin{DoxyCompactList}\small\item\em Generates a compact string header for the intake data. This header includes column identifiers for demand, upstream spillage, wastewater inflow, catchment inflow, and downstream spillage, in a comma-\/delimited format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIntakeDataCollector_aed1610e5419465b35041b05b9f60c212}{collect\+\_\+data}} () override
+\begin{DoxyCompactList}\small\item\em Collects data for the intake, including demand, wasterwater and catchment inflows, as well as total outflows. This function stores the intake\textquotesingle{}s weekly data into corresponding data structures. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classIntakeDataCollector}{Intake\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of intake objects. 
+
+Created by bernardoct on 8/26/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIntakeDataCollector_a2ab4a81bec74a370c60c78609627e807}\label{classIntakeDataCollector_a2ab4a81bec74a370c60c78609627e807}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{Intake\+Data\+Collector()}{IntakeDataCollector()}}
+{\footnotesize\ttfamily Intake\+Data\+Collector\+::\+Intake\+Data\+Collector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIntake}{Intake}} $\ast$}]{intake,  }\item[{unsigned long}]{realization }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{classIntakeDataCollector}{Intake\+Data\+Collector}} for managing and collecting data from an \mbox{\hyperlink{classIntake}{Intake}}. This function initializes the data collector with specific attributes for intakes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em intake} & Pointer to the \mbox{\hyperlink{classIntake}{Intake}} object that this collector will manage. \\
+\hline
+{\em realization} & Unsigned long integer representing the realization (scenario or simulation ID). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classIntakeDataCollector_aed1610e5419465b35041b05b9f60c212}\label{classIntakeDataCollector_aed1610e5419465b35041b05b9f60c212}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!collect\+\_\+data@{collect\+\_\+data}}
+\index{collect\+\_\+data@{collect\+\_\+data}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{collect\+\_\+data()}{collect\_data()}}
+{\footnotesize\ttfamily void Intake\+Data\+Collector\+::collect\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Collects data for the intake, including demand, wasterwater and catchment inflows, as well as total outflows. This function stores the intake\textquotesingle{}s weekly data into corresponding data structures. 
+
+This function overrides the virtual function in the \mbox{\hyperlink{classDataCollector}{Data\+Collector}} class.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a01486bf58acbe37b203f97b3b9a79c40}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classIntakeDataCollector_ac39a40726fd4fe887425b24a10f04034}\label{classIntakeDataCollector_ac39a40726fd4fe887425b24a10f04034}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!print\+Compact\+String@{print\+Compact\+String}}
+\index{print\+Compact\+String@{print\+Compact\+String}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String()}{printCompactString()}}
+{\footnotesize\ttfamily string Intake\+Data\+Collector\+::print\+Compact\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a compact string representation of intake data for a given week. This includes demand, upstream inflows, wastewater inflows, catchment inflows, and outflows in a compact format. Each of these values is separated by a column. 
+
+This function overrides the virtual function in the \mbox{\hyperlink{classDataCollector}{Data\+Collector}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the compact data is being generated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the compact representation of the intake data for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classIntakeDataCollector_a42d56dd08e57a7e6e48812a2ab522439}\label{classIntakeDataCollector_a42d56dd08e57a7e6e48812a2ab522439}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!print\+Compact\+String\+Header@{print\+Compact\+String\+Header}}
+\index{print\+Compact\+String\+Header@{print\+Compact\+String\+Header}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String\+Header()}{printCompactStringHeader()}}
+{\footnotesize\ttfamily string Intake\+Data\+Collector\+::print\+Compact\+String\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a compact string header for the intake data. This header includes column identifiers for demand, upstream spillage, wastewater inflow, catchment inflow, and downstream spillage, in a comma-\/delimited format. 
+
+This function overrides the virtual function in the \mbox{\hyperlink{classDataCollector}{Data\+Collector}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the compact header representation for the intake data. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classIntakeDataCollector_ada2b88b7a05455cf6f2eebf82d37b3c5}\label{classIntakeDataCollector_ada2b88b7a05455cf6f2eebf82d37b3c5}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!print\+Tabular\+String@{print\+Tabular\+String}}
+\index{print\+Tabular\+String@{print\+Tabular\+String}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String()}{printTabularString()}}
+{\footnotesize\ttfamily string Intake\+Data\+Collector\+::print\+Tabular\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a tabular string representation of intake data for a given week. This includes demand, upstream inflows, wastewater inflows, catchment inflows, and outflows. Each of these values is separated by a column with a fixed width. 
+
+This function overrides the virtual function in the \mbox{\hyperlink{classDataCollector}{Data\+Collector}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the tabular data is being generated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the tabular representation of the intake data for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a397fccabe0223267eea8fc7cac0e59da}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classIntakeDataCollector_ae17ab7e6c75e77f5981f6a682597bb5c}\label{classIntakeDataCollector_ae17ab7e6c75e77f5981f6a682597bb5c}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}}
+\index{print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line1()}{printTabularStringHeaderLine1()}}
+{\footnotesize\ttfamily string Intake\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the first header line for a tabular representation of intake data. This line includes column headers for upstream, wastewater, and catchment inflows, separated into columns with a fixed width. 
+
+This function overrides the virtual function in the \mbox{\hyperlink{classDataCollector}{Data\+Collector}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the first header line for the tabular representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classIntakeDataCollector_a2855eb8eed71649309bd4d9336f258c0}\label{classIntakeDataCollector_a2855eb8eed71649309bd4d9336f258c0}} 
+\index{Intake\+Data\+Collector@{Intake\+Data\+Collector}!print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}}
+\index{print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}!Intake\+Data\+Collector@{Intake\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line2()}{printTabularStringHeaderLine2()}}
+{\footnotesize\ttfamily string Intake\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the second header line for a tabular representation of intake data. This line includes detailed column headers for demands, spillage, inflows, and outflows, separated into columns with a fixed width. 
+
+This function overrides the virtual function in the \mbox{\hyperlink{classDataCollector}{Data\+Collector}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the second header line for the tabular representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_af01ea961314be2164f39e6d4cd59e443}{Data\+Collector}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Data\+Collector/\mbox{\hyperlink{IntakeDataCollector_8h}{Intake\+Data\+Collector.\+h}}\end{DoxyCompactItemize}

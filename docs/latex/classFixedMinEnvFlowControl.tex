@@ -1,0 +1,114 @@
+\hypertarget{classFixedMinEnvFlowControl}{}\section{Fixed\+Min\+Env\+Flow\+Control Class Reference}
+\label{classFixedMinEnvFlowControl}\index{Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}}
+
+
+This class is a subclass of the main {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} class and represents a water source with fixed minimum environmental flow control.  
+
+
+
+
+{\ttfamily \#include $<$Fixed\+Min\+Env\+Flow\+Control.\+h$>$}
+
+Inheritance diagram for Fixed\+Min\+Env\+Flow\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFixedMinEnvFlowControl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFixedMinEnvFlowControl_ab03711220b87d6490a4c2ca81fcc89a0}{Fixed\+Min\+Env\+Flow\+Control}} (int \mbox{\hyperlink{classMinEnvFlowControl_aada518a047598f386daec1d0358023aa}{water\+\_\+source\+\_\+id}}, double release)
+\begin{DoxyCompactList}\small\item\em Constructs a {\ttfamily \mbox{\hyperlink{classFixedMinEnvFlowControl}{Fixed\+Min\+Env\+Flow\+Control}}} object for managing fixed minimum environmental flow controls on a water source. Initializes the control with a specified water source ID and a fixed release amount. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFixedMinEnvFlowControl_a57795231f747cae4a4b5b4cf9d4d044f}{Fixed\+Min\+Env\+Flow\+Control}} (const \mbox{\hyperlink{classFixedMinEnvFlowControl}{Fixed\+Min\+Env\+Flow\+Control}} \&min\+\_\+env\+\_\+control)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the {\ttfamily \mbox{\hyperlink{classFixedMinEnvFlowControl}{Fixed\+Min\+Env\+Flow\+Control}}} class. Creates a new {\ttfamily \mbox{\hyperlink{classFixedMinEnvFlowControl}{Fixed\+Min\+Env\+Flow\+Control}}} object by copying the attributes from an existing one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFixedMinEnvFlowControl_ac63298347dcaccf755ea45d1e2f94bad}{$\sim$\+Fixed\+Min\+Env\+Flow\+Control}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the {\ttfamily \mbox{\hyperlink{classFixedMinEnvFlowControl}{Fixed\+Min\+Env\+Flow\+Control}}} class. Cleans up resources associated with the object. Since the destructor is defaulted, no custom cleanup is required. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classFixedMinEnvFlowControl_af3ef98eef6a7124738a3b54dcadf757f}{get\+Release}} (int week) override
+\begin{DoxyCompactList}\small\item\em Retrieves the fixed release amount for the environmental flow control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is a subclass of the main {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} class and represents a water source with fixed minimum environmental flow control. 
+
+Created by bernardoct on 6/29/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFixedMinEnvFlowControl_ab03711220b87d6490a4c2ca81fcc89a0}\label{classFixedMinEnvFlowControl_ab03711220b87d6490a4c2ca81fcc89a0}} 
+\index{Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}!Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}}
+\index{Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}!Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{Fixed\+Min\+Env\+Flow\+Control()}{FixedMinEnvFlowControl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Fixed\+Min\+Env\+Flow\+Control\+::\+Fixed\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}\item[{int}]{water\+\_\+source\+\_\+id,  }\item[{double}]{release }\end{DoxyParamCaption})}
+
+
+
+Constructs a {\ttfamily \mbox{\hyperlink{classFixedMinEnvFlowControl}{Fixed\+Min\+Env\+Flow\+Control}}} object for managing fixed minimum environmental flow controls on a water source. Initializes the control with a specified water source ID and a fixed release amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+source\+\_\+id} & Integer representing the ID of the water source under environmental flow control. \\
+\hline
+{\em release} & Double representing the fixed release amount for the environmental flow. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFixedMinEnvFlowControl_a57795231f747cae4a4b5b4cf9d4d044f}\label{classFixedMinEnvFlowControl_a57795231f747cae4a4b5b4cf9d4d044f}} 
+\index{Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}!Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}}
+\index{Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}!Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{Fixed\+Min\+Env\+Flow\+Control()}{FixedMinEnvFlowControl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Fixed\+Min\+Env\+Flow\+Control\+::\+Fixed\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFixedMinEnvFlowControl}{Fixed\+Min\+Env\+Flow\+Control}} \&}]{min\+\_\+env\+\_\+control }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the {\ttfamily \mbox{\hyperlink{classFixedMinEnvFlowControl}{Fixed\+Min\+Env\+Flow\+Control}}} class. Creates a new {\ttfamily \mbox{\hyperlink{classFixedMinEnvFlowControl}{Fixed\+Min\+Env\+Flow\+Control}}} object by copying the attributes from an existing one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+\_\+env\+\_\+control} & Reference to the {\ttfamily \mbox{\hyperlink{classFixedMinEnvFlowControl}{Fixed\+Min\+Env\+Flow\+Control}}} object to be copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFixedMinEnvFlowControl_ac63298347dcaccf755ea45d1e2f94bad}\label{classFixedMinEnvFlowControl_ac63298347dcaccf755ea45d1e2f94bad}} 
+\index{Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}!````~Fixed\+Min\+Env\+Flow\+Control@{$\sim$\+Fixed\+Min\+Env\+Flow\+Control}}
+\index{````~Fixed\+Min\+Env\+Flow\+Control@{$\sim$\+Fixed\+Min\+Env\+Flow\+Control}!Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{$\sim$\+Fixed\+Min\+Env\+Flow\+Control()}{~FixedMinEnvFlowControl()}}
+{\footnotesize\ttfamily Fixed\+Min\+Env\+Flow\+Control\+::$\sim$\+Fixed\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the {\ttfamily \mbox{\hyperlink{classFixedMinEnvFlowControl}{Fixed\+Min\+Env\+Flow\+Control}}} class. Cleans up resources associated with the object. Since the destructor is defaulted, no custom cleanup is required. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFixedMinEnvFlowControl_af3ef98eef6a7124738a3b54dcadf757f}\label{classFixedMinEnvFlowControl_af3ef98eef6a7124738a3b54dcadf757f}} 
+\index{Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}!get\+Release@{get\+Release}}
+\index{get\+Release@{get\+Release}!Fixed\+Min\+Env\+Flow\+Control@{Fixed\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{get\+Release()}{getRelease()}}
+{\footnotesize\ttfamily double Fixed\+Min\+Env\+Flow\+Control\+::get\+Release (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the fixed release amount for the environmental flow control. 
+
+This function overrides the {\ttfamily get\+Release} function in the {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the release amount is requested. (Note\+: For this fixed flow control, the release amount does not depend on the week.)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double representing the fixed release amount. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMinEnvFlowControl_a5de79615852eb0c937dd559a9eb9402d}{Min\+Env\+Flow\+Control}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Controls/\mbox{\hyperlink{FixedMinEnvFlowControl_8h}{Fixed\+Min\+Env\+Flow\+Control.\+h}}\end{DoxyCompactItemize}

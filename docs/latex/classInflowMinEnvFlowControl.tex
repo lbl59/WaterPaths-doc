@@ -1,0 +1,117 @@
+\hypertarget{classInflowMinEnvFlowControl}{}\section{Inflow\+Min\+Env\+Flow\+Control Class Reference}
+\label{classInflowMinEnvFlowControl}\index{Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}}
+
+
+This class is a subclass of the main {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} class and represents inflow water sources with minimum environmental flow control.  
+
+
+
+
+{\ttfamily \#include $<$Inflow\+Min\+Env\+Flow\+Control.\+h$>$}
+
+Inheritance diagram for Inflow\+Min\+Env\+Flow\+Control\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classInflowMinEnvFlowControl}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInflowMinEnvFlowControl_aff6c04aaa6e206b29b072aea6fb38367}{Inflow\+Min\+Env\+Flow\+Control}} (int \mbox{\hyperlink{classMinEnvFlowControl_aada518a047598f386daec1d0358023aa}{water\+\_\+source\+\_\+id}}, const vector$<$ double $>$ \&\mbox{\hyperlink{classInflowMinEnvFlowControl_a669660259afa9313c77094dec815a52f}{inflows}}, const vector$<$ double $>$ \&\mbox{\hyperlink{classInflowMinEnvFlowControl_a2f82b53516516be63eb169d377df1f55}{releases}})
+\begin{DoxyCompactList}\small\item\em Constructs an {\ttfamily \mbox{\hyperlink{classInflowMinEnvFlowControl}{Inflow\+Min\+Env\+Flow\+Control}}} object for managing minimum environmental flow controls based on inflow values. Initializes the control with a specified water source ID, inflow thresholds, and corresponding release amounts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInflowMinEnvFlowControl_a6736e6aa07a27e314789e07a9ab30cad}{Inflow\+Min\+Env\+Flow\+Control}} (const \mbox{\hyperlink{classInflowMinEnvFlowControl}{Inflow\+Min\+Env\+Flow\+Control}} \&min\+\_\+env\+\_\+control)
+\begin{DoxyCompactList}\small\item\em Copy constructor for the {\ttfamily \mbox{\hyperlink{classInflowMinEnvFlowControl}{Inflow\+Min\+Env\+Flow\+Control}}} class. Creates a new {\ttfamily \mbox{\hyperlink{classInflowMinEnvFlowControl}{Inflow\+Min\+Env\+Flow\+Control}}} object by copying the attributes from an existing one. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classInflowMinEnvFlowControl_af96a86078cd257309ed55f0cd9ed032e}{$\sim$\+Inflow\+Min\+Env\+Flow\+Control}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the {\ttfamily \mbox{\hyperlink{classInflowMinEnvFlowControl}{Inflow\+Min\+Env\+Flow\+Control}}} class. Cleans up resources associated with the object. Since the destructor is defaulted, no custom cleanup is required. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classInflowMinEnvFlowControl_a669660259afa9313c77094dec815a52f}{inflows}}
+\begin{DoxyCompactList}\small\item\em A reference to a vector of doubles containing inflow. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classInflowMinEnvFlowControl_a2f82b53516516be63eb169d377df1f55}{releases}}
+\begin{DoxyCompactList}\small\item\em A reference to a vector of doubles containing the corresponding release amounts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class is a subclass of the main {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} class and represents inflow water sources with minimum environmental flow control. 
+
+Created by bernardoct on 6/29/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classInflowMinEnvFlowControl_aff6c04aaa6e206b29b072aea6fb38367}\label{classInflowMinEnvFlowControl_aff6c04aaa6e206b29b072aea6fb38367}} 
+\index{Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}!Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}}
+\index{Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}!Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{Inflow\+Min\+Env\+Flow\+Control()}{InflowMinEnvFlowControl()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Inflow\+Min\+Env\+Flow\+Control\+::\+Inflow\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}\item[{int}]{water\+\_\+source\+\_\+id,  }\item[{const vector$<$ double $>$ \&}]{inflows,  }\item[{const vector$<$ double $>$ \&}]{releases }\end{DoxyParamCaption})}
+
+
+
+Constructs an {\ttfamily \mbox{\hyperlink{classInflowMinEnvFlowControl}{Inflow\+Min\+Env\+Flow\+Control}}} object for managing minimum environmental flow controls based on inflow values. Initializes the control with a specified water source ID, inflow thresholds, and corresponding release amounts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+source\+\_\+id} & Integer representing the ID of the water source under environmental flow control. \\
+\hline
+{\em inflows} & Reference to a vector of doubles containing inflow thresholds. \\
+\hline
+{\em releases} & Reference to a vector of doubles containing the corresponding release amounts for each inflow threshold. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInflowMinEnvFlowControl_a6736e6aa07a27e314789e07a9ab30cad}\label{classInflowMinEnvFlowControl_a6736e6aa07a27e314789e07a9ab30cad}} 
+\index{Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}!Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}}
+\index{Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}!Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{Inflow\+Min\+Env\+Flow\+Control()}{InflowMinEnvFlowControl()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Inflow\+Min\+Env\+Flow\+Control\+::\+Inflow\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classInflowMinEnvFlowControl}{Inflow\+Min\+Env\+Flow\+Control}} \&}]{min\+\_\+env\+\_\+control }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for the {\ttfamily \mbox{\hyperlink{classInflowMinEnvFlowControl}{Inflow\+Min\+Env\+Flow\+Control}}} class. Creates a new {\ttfamily \mbox{\hyperlink{classInflowMinEnvFlowControl}{Inflow\+Min\+Env\+Flow\+Control}}} object by copying the attributes from an existing one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+\_\+env\+\_\+control} & Reference to the {\ttfamily \mbox{\hyperlink{classInflowMinEnvFlowControl}{Inflow\+Min\+Env\+Flow\+Control}}} object to be copied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classInflowMinEnvFlowControl_af96a86078cd257309ed55f0cd9ed032e}\label{classInflowMinEnvFlowControl_af96a86078cd257309ed55f0cd9ed032e}} 
+\index{Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}!````~Inflow\+Min\+Env\+Flow\+Control@{$\sim$\+Inflow\+Min\+Env\+Flow\+Control}}
+\index{````~Inflow\+Min\+Env\+Flow\+Control@{$\sim$\+Inflow\+Min\+Env\+Flow\+Control}!Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{$\sim$\+Inflow\+Min\+Env\+Flow\+Control()}{~InflowMinEnvFlowControl()}}
+{\footnotesize\ttfamily Inflow\+Min\+Env\+Flow\+Control\+::$\sim$\+Inflow\+Min\+Env\+Flow\+Control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the {\ttfamily \mbox{\hyperlink{classInflowMinEnvFlowControl}{Inflow\+Min\+Env\+Flow\+Control}}} class. Cleans up resources associated with the object. Since the destructor is defaulted, no custom cleanup is required. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classInflowMinEnvFlowControl_a669660259afa9313c77094dec815a52f}\label{classInflowMinEnvFlowControl_a669660259afa9313c77094dec815a52f}} 
+\index{Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}!inflows@{inflows}}
+\index{inflows@{inflows}!Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{inflows}{inflows}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Inflow\+Min\+Env\+Flow\+Control\+::inflows}
+
+
+
+A reference to a vector of doubles containing inflow. 
+
+\mbox{\Hypertarget{classInflowMinEnvFlowControl_a2f82b53516516be63eb169d377df1f55}\label{classInflowMinEnvFlowControl_a2f82b53516516be63eb169d377df1f55}} 
+\index{Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}!releases@{releases}}
+\index{releases@{releases}!Inflow\+Min\+Env\+Flow\+Control@{Inflow\+Min\+Env\+Flow\+Control}}
+\subsubsection{\texorpdfstring{releases}{releases}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Inflow\+Min\+Env\+Flow\+Control\+::releases}
+
+
+
+A reference to a vector of doubles containing the corresponding release amounts. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Controls/\mbox{\hyperlink{InflowMinEnvFlowControl_8h}{Inflow\+Min\+Env\+Flow\+Control.\+h}}\end{DoxyCompactItemize}

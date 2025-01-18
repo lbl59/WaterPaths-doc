@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classIntakeDataCollector" kind="class" language="C++" prot="public">
+    <compoundname>IntakeDataCollector</compoundname>
+    <basecompoundref refid="classDataCollector" prot="public" virt="non-virtual">DataCollector</basecompoundref>
+    <includes refid="IntakeDataCollector_8h" local="no">IntakeDataCollector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classIntakeDataCollector_1a0dfbf640d99394bb82413c9a116db19b" prot="private" static="no" mutable="no">
+        <type><ref refid="classIntake" kindref="compound">Intake</ref> *</type>
+        <definition>Intake* IntakeDataCollector::intake</definition>
+        <argsstring></argsstring>
+        <name>intake</name>
+        <briefdescription>
+<para>The intake object associated with this <ref refid="classDataCollector" kindref="compound">DataCollector</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="18" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIntakeDataCollector_1a5016d2fece2ef545f72b9fa22497c817" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; IntakeDataCollector::total_upstream_sources_inflows</definition>
+        <argsstring></argsstring>
+        <name>total_upstream_sources_inflows</name>
+        <briefdescription>
+<para>A vector with the total inflows from all upstream sources. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="22" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIntakeDataCollector_1a7d1d205c15423db421038e54ac0e1f36" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; IntakeDataCollector::demands</definition>
+        <argsstring></argsstring>
+        <name>demands</name>
+        <briefdescription>
+<para>A vector with the total demands from utilities. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="26" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIntakeDataCollector_1a4485bea7a536f9fde233a2cc37200ec6" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; IntakeDataCollector::wastewater_inflows</definition>
+        <argsstring></argsstring>
+        <name>wastewater_inflows</name>
+        <briefdescription>
+<para>A vector with the total inflows from wastewater treatment plants. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="30" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIntakeDataCollector_1ae0b0d07123dd9323402ca55e12802ac8" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; IntakeDataCollector::outflows</definition>
+        <argsstring></argsstring>
+        <name>outflows</name>
+        <briefdescription>
+<para>A vector with the total outflows from the intake. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="34" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classIntakeDataCollector_1aea2dbea83bb83c26df4474da669dd2eb" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; IntakeDataCollector::total_catchments_inflow</definition>
+        <argsstring></argsstring>
+        <name>total_catchments_inflow</name>
+        <briefdescription>
+<para>A vector with the total inflows from all upstream catchments. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="38" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classIntakeDataCollector_1a2ab4a81bec74a370c60c78609627e807" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>IntakeDataCollector::IntakeDataCollector</definition>
+        <argsstring>(Intake *intake, unsigned long realization)</argsstring>
+        <name>IntakeDataCollector</name>
+        <param>
+          <type><ref refid="classIntake" kindref="compound">Intake</ref> *</type>
+          <declname>intake</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an <ref refid="classIntakeDataCollector" kindref="compound">IntakeDataCollector</ref> for managing and collecting data from an <ref refid="classIntake" kindref="compound">Intake</ref>. This function initializes the data collector with specific attributes for intakes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intake</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the <ref refid="classIntake" kindref="compound">Intake</ref> object that this collector will manage. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realization</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unsigned long integer representing the realization (scenario or simulation ID). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntakeDataCollector_1ada2b88b7a05455cf6f2eebf82d37b3c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string IntakeDataCollector::printTabularString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printTabularString</name>
+        <reimplements refid="classDataCollector_1a397fccabe0223267eea8fc7cac0e59da">printTabularString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Generates a tabular string representation of intake data for a given week. This includes demand, upstream inflows, wastewater inflows, catchment inflows, and outflows. Each of these values is separated by a column with a fixed width. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the virtual function in the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the tabular data is being generated.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the tabular representation of the intake data for the specified week. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntakeDataCollector_1ac39a40726fd4fe887425b24a10f04034" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string IntakeDataCollector::printCompactString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printCompactString</name>
+        <reimplements refid="classDataCollector_1a2eac264fa5612aed5a830b12de4f4ae3">printCompactString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Generates a compact string representation of intake data for a given week. This includes demand, upstream inflows, wastewater inflows, catchment inflows, and outflows in a compact format. Each of these values is separated by a column. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the virtual function in the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the compact data is being generated.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the compact representation of the intake data for the specified week. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntakeDataCollector_1ae17ab7e6c75e77f5981f6a682597bb5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string IntakeDataCollector::printTabularStringHeaderLine1</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine1</name>
+        <reimplements refid="classDataCollector_1a91619cfa9e9b8cefd2f7c20d5718b41e">printTabularStringHeaderLine1</reimplements>
+        <briefdescription>
+<para>Generates the first header line for a tabular representation of intake data. This line includes column headers for upstream, wastewater, and catchment inflows, separated into columns with a fixed width. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the virtual function in the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class.</para><para><simplesect kind="return"><para>A string containing the first header line for the tabular representation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntakeDataCollector_1a2855eb8eed71649309bd4d9336f258c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string IntakeDataCollector::printTabularStringHeaderLine2</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine2</name>
+        <reimplements refid="classDataCollector_1af01ea961314be2164f39e6d4cd59e443">printTabularStringHeaderLine2</reimplements>
+        <briefdescription>
+<para>Generates the second header line for a tabular representation of intake data. This line includes detailed column headers for demands, spillage, inflows, and outflows, separated into columns with a fixed width. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the virtual function in the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class.</para><para><simplesect kind="return"><para>A string containing the second header line for the tabular representation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntakeDataCollector_1a42d56dd08e57a7e6e48812a2ab522439" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string IntakeDataCollector::printCompactStringHeader</definition>
+        <argsstring>() override</argsstring>
+        <name>printCompactStringHeader</name>
+        <reimplements refid="classDataCollector_1a98dcb4ec871d9c7fbf7545c64e5ccc67">printCompactStringHeader</reimplements>
+        <briefdescription>
+<para>Generates a compact string header for the intake data. This header includes column identifiers for demand, upstream spillage, wastewater inflow, catchment inflow, and downstream spillage, in a comma-delimited format. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the virtual function in the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class.</para><para><simplesect kind="return"><para>A string containing the compact header representation for the intake data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classIntakeDataCollector_1aed1610e5419465b35041b05b9f60c212" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void IntakeDataCollector::collect_data</definition>
+        <argsstring>() override</argsstring>
+        <name>collect_data</name>
+        <reimplements refid="classDataCollector_1a01486bf58acbe37b203f97b3b9a79c40">collect_data</reimplements>
+        <briefdescription>
+<para>Collects data for the intake, including demand, wasterwater and catchment inflows, as well as total outflows. This function stores the intake&apos;s weekly data into corresponding data structures. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the virtual function in the <ref refid="classDataCollector" kindref="compound">DataCollector</ref> class.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="117" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <computeroutput><ref refid="classIntakeDataCollector" kindref="compound">IntakeDataCollector</ref></computeroutput> class is a subclass of the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class that implements the data collection of intake objects. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by bernardoct on 8/26/17. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="140">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="139">
+        <label>IntakeDataCollector</label>
+        <link refid="classIntakeDataCollector"/>
+        <childnode refid="140" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="142">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="141">
+        <label>IntakeDataCollector</label>
+        <link refid="classIntakeDataCollector"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" line="14" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/IntakeDataCollector.h" bodystart="14" bodyend="118"/>
+    <listofallmembers>
+      <member refid="classIntakeDataCollector_1aed1610e5419465b35041b05b9f60c212" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>collect_data</name></member>
+      <member refid="classDataCollector_1a3f89b18f4ac0557d7374d49531a004c0" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>DataCollector</name></member>
+      <member refid="classIntakeDataCollector_1a7d1d205c15423db421038e54ac0e1f36" prot="private" virt="non-virtual"><scope>IntakeDataCollector</scope><name>demands</name></member>
+      <member refid="classDataCollector_1a5cb840b6fbcf6afe364eef9114984383" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>id</name></member>
+      <member refid="classIntakeDataCollector_1a0dfbf640d99394bb82413c9a116db19b" prot="private" virt="non-virtual"><scope>IntakeDataCollector</scope><name>intake</name></member>
+      <member refid="classIntakeDataCollector_1a2ab4a81bec74a370c60c78609627e807" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>IntakeDataCollector</name></member>
+      <member refid="classDataCollector_1a3a9a5033592f72ada429aa20056162b9" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>name</name></member>
+      <member refid="classIntakeDataCollector_1ae0b0d07123dd9323402ca55e12802ac8" prot="private" virt="non-virtual"><scope>IntakeDataCollector</scope><name>outflows</name></member>
+      <member refid="classIntakeDataCollector_1ac39a40726fd4fe887425b24a10f04034" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>printCompactString</name></member>
+      <member refid="classIntakeDataCollector_1a42d56dd08e57a7e6e48812a2ab522439" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>printCompactStringHeader</name></member>
+      <member refid="classIntakeDataCollector_1ada2b88b7a05455cf6f2eebf82d37b3c5" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>printTabularString</name></member>
+      <member refid="classIntakeDataCollector_1ae17ab7e6c75e77f5981f6a682597bb5c" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>printTabularStringHeaderLine1</name></member>
+      <member refid="classIntakeDataCollector_1a2855eb8eed71649309bd4d9336f258c0" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>printTabularStringHeaderLine2</name></member>
+      <member refid="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>realization</name></member>
+      <member refid="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>table_width</name></member>
+      <member refid="classIntakeDataCollector_1aea2dbea83bb83c26df4474da669dd2eb" prot="private" virt="non-virtual"><scope>IntakeDataCollector</scope><name>total_catchments_inflow</name></member>
+      <member refid="classIntakeDataCollector_1a5016d2fece2ef545f72b9fa22497c817" prot="private" virt="non-virtual"><scope>IntakeDataCollector</scope><name>total_upstream_sources_inflows</name></member>
+      <member refid="classDataCollector_1acad1c22d67a8eb3db056ba776a131900" prot="public" virt="non-virtual"><scope>IntakeDataCollector</scope><name>type</name></member>
+      <member refid="classIntakeDataCollector_1a4485bea7a536f9fde233a2cc37200ec6" prot="private" virt="non-virtual"><scope>IntakeDataCollector</scope><name>wastewater_inflows</name></member>
+      <member refid="classDataCollector_1ab6e826d46e651419309efe1e635d6e14" prot="public" virt="virtual"><scope>IntakeDataCollector</scope><name>~DataCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

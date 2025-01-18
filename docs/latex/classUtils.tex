@@ -1,0 +1,306 @@
+\hypertarget{classUtils}{}\section{Utils Class Reference}
+\label{classUtils}\index{Utils@{Utils}}
+
+
+The \mbox{\hyperlink{classUtils}{Utils}} class defines a set of utility functions that are used throughout the model.  
+
+
+
+
+{\ttfamily \#include $<$Utils.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classUtils_a70b9475aafa3277b7d177a74752263bf}{parse2\+D\+Csv\+File}} (basic\+\_\+string$<$ char, char\+\_\+traits$<$ char $>$, allocator$<$ char $>$$>$ file\+\_\+name, unsigned long max\+\_\+lines=10000000, vector$<$ unsigned long $>$ rows\+\_\+to\+\_\+read=vector$<$ unsigned long $>$())
+\begin{DoxyCompactList}\small\item\em Reads a C\+SV file into a 2D vector of doubles. This function parses the contents of a C\+SV file and returns it as a 2D vector, optionally reading a limited number of lines or specific rows. \end{DoxyCompactList}\item 
+static vector$<$ double $>$ \mbox{\hyperlink{classUtils_a42fdb9455286213b32abf5f111c21fd4}{parse1\+D\+Csv\+File}} (basic\+\_\+string$<$ char, char\+\_\+traits$<$ char $>$, allocator$<$ char $>$$>$ file\+\_\+name, unsigned long max\+\_\+lines=10000000, vector$<$ unsigned long $>$ rows\+\_\+to\+\_\+read=vector$<$ unsigned long $>$())
+\begin{DoxyCompactList}\small\item\em Reads a C\+SV file into a 1D vector of doubles. Parses a C\+SV file and extracts its data into a 1D vector with optional row filtering. \end{DoxyCompactList}\item 
+static vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$ $>$ \mbox{\hyperlink{classUtils_af50f672b3a5c4790386d943e04e960f9}{copy\+Water\+Source\+Vector}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ water\+\_\+sources\+\_\+original)
+\begin{DoxyCompactList}\small\item\em Creates a copy of a vector of {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} objects. This function deep copies water source objects based on their derived types. \end{DoxyCompactList}\item 
+static vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$ $>$ \mbox{\hyperlink{classUtils_aa640115dcdbe7309c058063c1f0cf943}{copy\+Utility\+Vector}} (vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ utility\+\_\+original, bool clear\+\_\+water\+\_\+sources=false)
+\begin{DoxyCompactList}\small\item\em Creates a copy of a vector of {\ttfamily \mbox{\hyperlink{classUtility}{Utility}}} objects. Optionally clears water sources in the copied utilities. \end{DoxyCompactList}\item 
+static vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$ $>$ \mbox{\hyperlink{classUtils_ab291735d88ca704e9317edf259b6a5ab}{copy\+Drought\+Mitigation\+Policy\+Vector}} (vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ drought\+\_\+mitigation\+\_\+policy\+\_\+original)
+\begin{DoxyCompactList}\small\item\em Creates a copy of a vector of {\ttfamily \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}} objects. This function duplicates drought mitigation policies based on their derived types. \end{DoxyCompactList}\item 
+static vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$ $>$ \mbox{\hyperlink{classUtils_a16d5d6b3ada64b5f018478e972b66b2a}{copy\+Min\+Env\+Flow\+Control\+Vector}} (vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ min\+\_\+env\+\_\+flow\+\_\+controls\+\_\+original)
+\begin{DoxyCompactList}\small\item\em Creates a copy of a vector of {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} objects. This function duplicates a vector of environmental flow controls based on their specific derived types. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classUtils_a3e4c6e935243165c89f059c5fedf2945}{is\+First\+Week\+Of\+The\+Year}} (int week)
+\begin{DoxyCompactList}\small\item\em Determines if a given week corresponds to the first week of the year. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classUtils_a510a7b15687fc6bd6b1c1742d7d7e9fd}{week\+Of\+The\+Year}} (int week)
+\begin{DoxyCompactList}\small\item\em Returns the week of the year for a given week index. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classUtils_a6022da71d614027a1da3a996531df85e}{remove\+Int\+From\+Vector}} (vector$<$ int $>$ \&vec, int el)
+\begin{DoxyCompactList}\small\item\em Deletes a specified element from an integer vector. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classUtils_a25184c319ab70a93b056d516e0aafd8e}{print\+\_\+exception}} (const exception \&e, int level=0)
+\begin{DoxyCompactList}\small\item\em Prints details of an exception with nesting levels. Recursively prints exception messages and nested exceptions. \end{DoxyCompactList}\item 
+static vector$<$ \mbox{\hyperlink{classBond}{Bond}} $\ast$ $>$ \mbox{\hyperlink{classUtils_af59616433568dbc50e28290524f40faa}{copy\+Bonds}} (vector$<$ \mbox{\hyperlink{classBond}{Bond}} $\ast$$>$ bonds\+\_\+original)
+\begin{DoxyCompactList}\small\item\em Creates a copy of a vector of {\ttfamily \mbox{\hyperlink{classBond}{Bond}}} objects. This function deep copies bond objects based on their derived types. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classUtils_a383900ac38ca9c17e58d8ff2156ac100}{create\+Dir}} (string directory)
+\begin{DoxyCompactList}\small\item\em Creates a directory at the specified path. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classUtils}{Utils}} class defines a set of utility functions that are used throughout the model. 
+
+Created by bernardo on 1/13/17. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classUtils_af59616433568dbc50e28290524f40faa}\label{classUtils_af59616433568dbc50e28290524f40faa}} 
+\index{Utils@{Utils}!copy\+Bonds@{copy\+Bonds}}
+\index{copy\+Bonds@{copy\+Bonds}!Utils@{Utils}}
+\subsubsection{\texorpdfstring{copy\+Bonds()}{copyBonds()}}
+{\footnotesize\ttfamily static vector$<$\mbox{\hyperlink{classBond}{Bond}} $\ast$$>$ Utils\+::copy\+Bonds (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classBond}{Bond}} $\ast$$>$}]{bonds\+\_\+original }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a copy of a vector of {\ttfamily \mbox{\hyperlink{classBond}{Bond}}} objects. This function deep copies bond objects based on their derived types. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bonds\+\_\+original} & The original vector of {\ttfamily \mbox{\hyperlink{classBond}{Bond}}} pointers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new vector containing deep copies of the input bonds.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if a bond type is not implemented. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classUtils_ab291735d88ca704e9317edf259b6a5ab}\label{classUtils_ab291735d88ca704e9317edf259b6a5ab}} 
+\index{Utils@{Utils}!copy\+Drought\+Mitigation\+Policy\+Vector@{copy\+Drought\+Mitigation\+Policy\+Vector}}
+\index{copy\+Drought\+Mitigation\+Policy\+Vector@{copy\+Drought\+Mitigation\+Policy\+Vector}!Utils@{Utils}}
+\subsubsection{\texorpdfstring{copy\+Drought\+Mitigation\+Policy\+Vector()}{copyDroughtMitigationPolicyVector()}}
+{\footnotesize\ttfamily static vector$<$\mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ Utils\+::copy\+Drought\+Mitigation\+Policy\+Vector (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$}]{drought\+\_\+mitigation\+\_\+policy\+\_\+original }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a copy of a vector of {\ttfamily \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}} objects. This function duplicates drought mitigation policies based on their derived types. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drought\+\_\+mitigation\+\_\+policy\+\_\+original} & The original vector of {\ttfamily \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}} pointers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new vector containing deep copies of the input policies. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtils_a16d5d6b3ada64b5f018478e972b66b2a}\label{classUtils_a16d5d6b3ada64b5f018478e972b66b2a}} 
+\index{Utils@{Utils}!copy\+Min\+Env\+Flow\+Control\+Vector@{copy\+Min\+Env\+Flow\+Control\+Vector}}
+\index{copy\+Min\+Env\+Flow\+Control\+Vector@{copy\+Min\+Env\+Flow\+Control\+Vector}!Utils@{Utils}}
+\subsubsection{\texorpdfstring{copy\+Min\+Env\+Flow\+Control\+Vector()}{copyMinEnvFlowControlVector()}}
+{\footnotesize\ttfamily static vector$<$\mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ Utils\+::copy\+Min\+Env\+Flow\+Control\+Vector (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$}]{min\+\_\+env\+\_\+flow\+\_\+controls\+\_\+original }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a copy of a vector of {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} objects. This function duplicates a vector of environmental flow controls based on their specific derived types. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+\_\+env\+\_\+flow\+\_\+controls\+\_\+original} & The original vector of {\ttfamily \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}}} pointers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new vector containing deep copies of the input objects.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if a control type is not implemented. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classUtils_aa640115dcdbe7309c058063c1f0cf943}\label{classUtils_aa640115dcdbe7309c058063c1f0cf943}} 
+\index{Utils@{Utils}!copy\+Utility\+Vector@{copy\+Utility\+Vector}}
+\index{copy\+Utility\+Vector@{copy\+Utility\+Vector}!Utils@{Utils}}
+\subsubsection{\texorpdfstring{copy\+Utility\+Vector()}{copyUtilityVector()}}
+{\footnotesize\ttfamily static vector$<$\mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ Utils\+::copy\+Utility\+Vector (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{utility\+\_\+original,  }\item[{bool}]{clear\+\_\+water\+\_\+sources = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a copy of a vector of {\ttfamily \mbox{\hyperlink{classUtility}{Utility}}} objects. Optionally clears water sources in the copied utilities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+original} & The original vector of {\ttfamily \mbox{\hyperlink{classUtility}{Utility}}} pointers. \\
+\hline
+{\em clear\+\_\+water\+\_\+sources} & Whether to clear water sources in the copied utilities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new vector containing deep copies of the input utilities. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtils_af50f672b3a5c4790386d943e04e960f9}\label{classUtils_af50f672b3a5c4790386d943e04e960f9}} 
+\index{Utils@{Utils}!copy\+Water\+Source\+Vector@{copy\+Water\+Source\+Vector}}
+\index{copy\+Water\+Source\+Vector@{copy\+Water\+Source\+Vector}!Utils@{Utils}}
+\subsubsection{\texorpdfstring{copy\+Water\+Source\+Vector()}{copyWaterSourceVector()}}
+{\footnotesize\ttfamily static vector$<$\mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ Utils\+::copy\+Water\+Source\+Vector (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$}]{water\+\_\+sources\+\_\+original }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a copy of a vector of {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} objects. This function deep copies water source objects based on their derived types. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+sources\+\_\+original} & The original vector of {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} pointers.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new vector containing deep copies of the input water sources.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if a water source type is not implemented. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classUtils_a383900ac38ca9c17e58d8ff2156ac100}\label{classUtils_a383900ac38ca9c17e58d8ff2156ac100}} 
+\index{Utils@{Utils}!create\+Dir@{create\+Dir}}
+\index{create\+Dir@{create\+Dir}!Utils@{Utils}}
+\subsubsection{\texorpdfstring{create\+Dir()}{createDir()}}
+{\footnotesize\ttfamily static void Utils\+::create\+Dir (\begin{DoxyParamCaption}\item[{string}]{directory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates a directory at the specified path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directory} & The path of the directory to create.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtils_a3e4c6e935243165c89f059c5fedf2945}\label{classUtils_a3e4c6e935243165c89f059c5fedf2945}} 
+\index{Utils@{Utils}!is\+First\+Week\+Of\+The\+Year@{is\+First\+Week\+Of\+The\+Year}}
+\index{is\+First\+Week\+Of\+The\+Year@{is\+First\+Week\+Of\+The\+Year}!Utils@{Utils}}
+\subsubsection{\texorpdfstring{is\+First\+Week\+Of\+The\+Year()}{isFirstWeekOfTheYear()}}
+{\footnotesize\ttfamily static bool Utils\+::is\+First\+Week\+Of\+The\+Year (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Determines if a given week corresponds to the first week of the year. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The week number to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the given week is the first week of the year; otherwise, false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtils_a42fdb9455286213b32abf5f111c21fd4}\label{classUtils_a42fdb9455286213b32abf5f111c21fd4}} 
+\index{Utils@{Utils}!parse1\+D\+Csv\+File@{parse1\+D\+Csv\+File}}
+\index{parse1\+D\+Csv\+File@{parse1\+D\+Csv\+File}!Utils@{Utils}}
+\subsubsection{\texorpdfstring{parse1\+D\+Csv\+File()}{parse1DCsvFile()}}
+{\footnotesize\ttfamily static vector$<$double$>$ Utils\+::parse1\+D\+Csv\+File (\begin{DoxyParamCaption}\item[{basic\+\_\+string$<$ char, char\+\_\+traits$<$ char $>$, allocator$<$ char $>$$>$}]{file\+\_\+name,  }\item[{unsigned long}]{max\+\_\+lines = {\ttfamily 10000000},  }\item[{vector$<$ unsigned long $>$}]{rows\+\_\+to\+\_\+read = {\ttfamily vector$<$~unsigned~long~$>$()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads a C\+SV file into a 1D vector of doubles. Parses a C\+SV file and extracts its data into a 1D vector with optional row filtering. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & The full path of the input C\+SV file. \\
+\hline
+{\em max\+\_\+lines} & The maximum number of lines to read from the file. \\
+\hline
+{\em rows\+\_\+to\+\_\+read} & Optional; a vector of row indices to read from the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector containing the parsed data as doubles.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if the file cannot be read. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classUtils_a70b9475aafa3277b7d177a74752263bf}\label{classUtils_a70b9475aafa3277b7d177a74752263bf}} 
+\index{Utils@{Utils}!parse2\+D\+Csv\+File@{parse2\+D\+Csv\+File}}
+\index{parse2\+D\+Csv\+File@{parse2\+D\+Csv\+File}!Utils@{Utils}}
+\subsubsection{\texorpdfstring{parse2\+D\+Csv\+File()}{parse2DCsvFile()}}
+{\footnotesize\ttfamily static vector$<$vector$<$double$>$ $>$ Utils\+::parse2\+D\+Csv\+File (\begin{DoxyParamCaption}\item[{basic\+\_\+string$<$ char, char\+\_\+traits$<$ char $>$, allocator$<$ char $>$$>$}]{file\+\_\+name,  }\item[{unsigned long}]{max\+\_\+lines = {\ttfamily 10000000},  }\item[{vector$<$ unsigned long $>$}]{rows\+\_\+to\+\_\+read = {\ttfamily vector$<$~unsigned~long~$>$()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads a C\+SV file into a 2D vector of doubles. This function parses the contents of a C\+SV file and returns it as a 2D vector, optionally reading a limited number of lines or specific rows. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+\_\+name} & The full path of the input C\+SV file. \\
+\hline
+{\em max\+\_\+lines} & The maximum number of lines to read from the file. \\
+\hline
+{\em rows\+\_\+to\+\_\+read} & Optional; a vector of row indices to read from the file.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of vectors containing the parsed data as doubles.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if the file is not found or appears to be space-\/separated. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classUtils_a25184c319ab70a93b056d516e0aafd8e}\label{classUtils_a25184c319ab70a93b056d516e0aafd8e}} 
+\index{Utils@{Utils}!print\+\_\+exception@{print\+\_\+exception}}
+\index{print\+\_\+exception@{print\+\_\+exception}!Utils@{Utils}}
+\subsubsection{\texorpdfstring{print\+\_\+exception()}{print\_exception()}}
+{\footnotesize\ttfamily static void Utils\+::print\+\_\+exception (\begin{DoxyParamCaption}\item[{const exception \&}]{e,  }\item[{int}]{level = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Prints details of an exception with nesting levels. Recursively prints exception messages and nested exceptions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The exception to be printed. \\
+\hline
+{\em level} & The current nesting level for formatting purposes.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtils_a6022da71d614027a1da3a996531df85e}\label{classUtils_a6022da71d614027a1da3a996531df85e}} 
+\index{Utils@{Utils}!remove\+Int\+From\+Vector@{remove\+Int\+From\+Vector}}
+\index{remove\+Int\+From\+Vector@{remove\+Int\+From\+Vector}!Utils@{Utils}}
+\subsubsection{\texorpdfstring{remove\+Int\+From\+Vector()}{removeIntFromVector()}}
+{\footnotesize\ttfamily static void Utils\+::remove\+Int\+From\+Vector (\begin{DoxyParamCaption}\item[{vector$<$ int $>$ \&}]{vec,  }\item[{int}]{el }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Deletes a specified element from an integer vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vec} & The vector from which to remove the element. \\
+\hline
+{\em el} & The integer value to be removed.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtils_a510a7b15687fc6bd6b1c1742d7d7e9fd}\label{classUtils_a510a7b15687fc6bd6b1c1742d7d7e9fd}} 
+\index{Utils@{Utils}!week\+Of\+The\+Year@{week\+Of\+The\+Year}}
+\index{week\+Of\+The\+Year@{week\+Of\+The\+Year}!Utils@{Utils}}
+\subsubsection{\texorpdfstring{week\+Of\+The\+Year()}{weekOfTheYear()}}
+{\footnotesize\ttfamily static int Utils\+::week\+Of\+The\+Year (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the week of the year for a given week index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The week number to process. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding week of the year. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Utils/\mbox{\hyperlink{Utils_8h}{Utils.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,192 @@
+\hypertarget{classJointWTPDataCollector}{}\section{Joint\+W\+T\+P\+Data\+Collector Class Reference}
+\label{classJointWTPDataCollector}\index{Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}}
+
+
+The {\ttfamily \mbox{\hyperlink{classJointWTPDataCollector}{Joint\+W\+T\+P\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of joint W\+TP objects.  
+
+
+
+
+{\ttfamily \#include $<$Joint\+W\+T\+P\+Data\+Collector.\+h$>$}
+
+Inheritance diagram for Joint\+W\+T\+P\+Data\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classJointWTPDataCollector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJointWTPDataCollector_adcff7bd94e8f81a848b073d3a17c29ee}{Joint\+W\+T\+P\+Data\+Collector}} (\mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}} $\ast$joint\+\_\+wtp, unsigned long \mbox{\hyperlink{classDataCollector_a9ef2887466fe3123aa19ef956a219b96}{realization}})
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classJointWTPDataCollector}{Joint\+W\+T\+P\+Data\+Collector}} for managing and collecting data from a Joint Water Treatment Plant (W\+TP). This function initializes the data collector with specific attributes for a Joint W\+TP. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classJointWTPDataCollector_a9159c0e5c58ceb8b9bf86f01b53ecdef}{print\+Tabular\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a tabular string representation of the Joint W\+TP data for a given week. This includes allocated treatment capacities for each utility partner with a treatment allocation to the Joint W\+TP, formatted in columns. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classJointWTPDataCollector_aadb9fb969b265c72555bb5a7d3ed945d}{print\+Compact\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a comma, delimited compact string representation of the Joint W\+TP data for a given week. This includes allocated treatment capacities for each utility partner with a treatment allocation to the Joint W\+TP. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classJointWTPDataCollector_a6b9ba2992f4a9c3a900ad675b8301d07}{print\+Tabular\+String\+Header\+Line1}} () override
+\begin{DoxyCompactList}\small\item\em Generates the first header line for a tabular representation of Joint W\+TP data. This line includes column headers for treatment capacities of utility partners. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classJointWTPDataCollector_ab5828bc2dec423f812b5591ea42e9972}{print\+Tabular\+String\+Header\+Line2}} () override
+\begin{DoxyCompactList}\small\item\em Generates the second header line for a tabular representation of Joint W\+TP data. This line includes column headers for treatment allocations of utility partners. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classJointWTPDataCollector_a42bacc8ab8cc78e38715966c8dbe8de9}{print\+Compact\+String\+Header}} () override
+\begin{DoxyCompactList}\small\item\em Generates a compact string header, in a comma-\/delimited format, for the Joint W\+TP data. This header includes column identifiers for allocated treatment capacities of utility partners. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJointWTPDataCollector_a64383431902c18f1d90a33fbcc211658}{collect\+\_\+data}} () override
+\begin{DoxyCompactList}\small\item\em Collects data for the Joint W\+TP, specifically the allocated treatment capacities for utility partners. This function stores the treatment capacity data for the current week. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classJointWTPDataCollector}{Joint\+W\+T\+P\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of joint W\+TP objects. 
+
+Created by dgorelic on 11/4/2019. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classJointWTPDataCollector_adcff7bd94e8f81a848b073d3a17c29ee}\label{classJointWTPDataCollector_adcff7bd94e8f81a848b073d3a17c29ee}} 
+\index{Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}!Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}}
+\index{Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}!Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}}
+\subsubsection{\texorpdfstring{Joint\+W\+T\+P\+Data\+Collector()}{JointWTPDataCollector()}}
+{\footnotesize\ttfamily Joint\+W\+T\+P\+Data\+Collector\+::\+Joint\+W\+T\+P\+Data\+Collector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}} $\ast$}]{joint\+\_\+wtp,  }\item[{unsigned long}]{realization }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \mbox{\hyperlink{classJointWTPDataCollector}{Joint\+W\+T\+P\+Data\+Collector}} for managing and collecting data from a Joint Water Treatment Plant (W\+TP). This function initializes the data collector with specific attributes for a Joint W\+TP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em joint\+\_\+wtp} & Pointer to the \mbox{\hyperlink{classJointWTP}{Joint\+W\+TP}} object that this collector will manage. \\
+\hline
+{\em realization} & Unsigned long integer representing the realization (scenario or simulation ID). \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classJointWTPDataCollector_a64383431902c18f1d90a33fbcc211658}\label{classJointWTPDataCollector_a64383431902c18f1d90a33fbcc211658}} 
+\index{Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}!collect\+\_\+data@{collect\+\_\+data}}
+\index{collect\+\_\+data@{collect\+\_\+data}!Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}}
+\subsubsection{\texorpdfstring{collect\+\_\+data()}{collect\_data()}}
+{\footnotesize\ttfamily void Joint\+W\+T\+P\+Data\+Collector\+::collect\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Collects data for the Joint W\+TP, specifically the allocated treatment capacities for utility partners. This function stores the treatment capacity data for the current week. 
+
+This function overrides the \mbox{\hyperlink{classDataCollector_a01486bf58acbe37b203f97b3b9a79c40}{Data\+Collector\+::collect\+\_\+data()}} function.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a01486bf58acbe37b203f97b3b9a79c40}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classJointWTPDataCollector_aadb9fb969b265c72555bb5a7d3ed945d}\label{classJointWTPDataCollector_aadb9fb969b265c72555bb5a7d3ed945d}} 
+\index{Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}!print\+Compact\+String@{print\+Compact\+String}}
+\index{print\+Compact\+String@{print\+Compact\+String}!Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String()}{printCompactString()}}
+{\footnotesize\ttfamily string Joint\+W\+T\+P\+Data\+Collector\+::print\+Compact\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a comma, delimited compact string representation of the Joint W\+TP data for a given week. This includes allocated treatment capacities for each utility partner with a treatment allocation to the Joint W\+TP. 
+
+This function overrides the \mbox{\hyperlink{classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3}{Data\+Collector\+::print\+Compact\+String()}} function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the compact data is being generated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the compact representation of the allocated treatment capacities for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classJointWTPDataCollector_a42bacc8ab8cc78e38715966c8dbe8de9}\label{classJointWTPDataCollector_a42bacc8ab8cc78e38715966c8dbe8de9}} 
+\index{Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}!print\+Compact\+String\+Header@{print\+Compact\+String\+Header}}
+\index{print\+Compact\+String\+Header@{print\+Compact\+String\+Header}!Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String\+Header()}{printCompactStringHeader()}}
+{\footnotesize\ttfamily string Joint\+W\+T\+P\+Data\+Collector\+::print\+Compact\+String\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a compact string header, in a comma-\/delimited format, for the Joint W\+TP data. This header includes column identifiers for allocated treatment capacities of utility partners. 
+
+This function overrides the \mbox{\hyperlink{classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67}{Data\+Collector\+::print\+Compact\+String\+Header()}} function.
+
+\begin{DoxyReturn}{Returns}
+A string containing the compact header representation for the Joint W\+TP data. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classJointWTPDataCollector_a9159c0e5c58ceb8b9bf86f01b53ecdef}\label{classJointWTPDataCollector_a9159c0e5c58ceb8b9bf86f01b53ecdef}} 
+\index{Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}!print\+Tabular\+String@{print\+Tabular\+String}}
+\index{print\+Tabular\+String@{print\+Tabular\+String}!Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String()}{printTabularString()}}
+{\footnotesize\ttfamily string Joint\+W\+T\+P\+Data\+Collector\+::print\+Tabular\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a tabular string representation of the Joint W\+TP data for a given week. This includes allocated treatment capacities for each utility partner with a treatment allocation to the Joint W\+TP, formatted in columns. 
+
+This function overrides the \mbox{\hyperlink{classDataCollector_a397fccabe0223267eea8fc7cac0e59da}{Data\+Collector\+::print\+Tabular\+String()}} function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the tabular data is being generated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the tabular representation of the allocated treatment capacities for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a397fccabe0223267eea8fc7cac0e59da}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classJointWTPDataCollector_a6b9ba2992f4a9c3a900ad675b8301d07}\label{classJointWTPDataCollector_a6b9ba2992f4a9c3a900ad675b8301d07}} 
+\index{Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}!print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}}
+\index{print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}!Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line1()}{printTabularStringHeaderLine1()}}
+{\footnotesize\ttfamily string Joint\+W\+T\+P\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the first header line for a tabular representation of Joint W\+TP data. This line includes column headers for treatment capacities of utility partners. 
+
+This function overrides the \mbox{\hyperlink{classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e}{Data\+Collector\+::print\+Tabular\+String\+Header\+Line1()}} function.
+
+\begin{DoxyReturn}{Returns}
+A string containing the first header line for the tabular representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classJointWTPDataCollector_ab5828bc2dec423f812b5591ea42e9972}\label{classJointWTPDataCollector_ab5828bc2dec423f812b5591ea42e9972}} 
+\index{Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}!print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}}
+\index{print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}!Joint\+W\+T\+P\+Data\+Collector@{Joint\+W\+T\+P\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line2()}{printTabularStringHeaderLine2()}}
+{\footnotesize\ttfamily string Joint\+W\+T\+P\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the second header line for a tabular representation of Joint W\+TP data. This line includes column headers for treatment allocations of utility partners. 
+
+This function overrides the \mbox{\hyperlink{classDataCollector_af01ea961314be2164f39e6d4cd59e443}{Data\+Collector\+::print\+Tabular\+String\+Header\+Line2()}} function.
+
+\begin{DoxyReturn}{Returns}
+A string containing the first header line for the tabular representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_af01ea961314be2164f39e6d4cd59e443}{Data\+Collector}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Data\+Collector/\mbox{\hyperlink{JointWTPDataCollector_8h}{Joint\+W\+T\+P\+Data\+Collector.\+h}}\end{DoxyCompactItemize}

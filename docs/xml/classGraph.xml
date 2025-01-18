@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classGraph" kind="class" language="C++" prot="public">
+    <compoundname>Graph</compoundname>
+    <includes refid="Graph_8h" local="no">Graph.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classGraph_1a2b722f7cfa7a21e4cb5fae488b3d4dcc" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Graph::V</definition>
+        <argsstring></argsstring>
+        <name>V</name>
+        <briefdescription>
+<para>The number of water sources represented as vertices of the <ref refid="classGraph" kindref="compound">Graph</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="22" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGraph_1a9a7e34b482b020fa136fc8e0fa2d0030" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Graph::n_edges</definition>
+        <argsstring></argsstring>
+        <name>n_edges</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The number of streams (edges) in the <ref refid="classGraph" kindref="compound">Graph</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="26" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGraph_1a04ab9c17ad31aa036def8db0f88b035b" prot="protected" static="no" mutable="no">
+        <type>list&lt; int &gt; *</type>
+        <definition>list&lt;int&gt;* Graph::adj</definition>
+        <argsstring></argsstring>
+        <name>adj</name>
+        <briefdescription>
+<para>A pointer to an array containing adjacency lists. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="31" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGraph_1a2b9dc8c44ac87d67b061af1bf8dab2fa" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; int &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;int&gt; &gt; Graph::upstream_sources</definition>
+        <argsstring></argsstring>
+        <name>upstream_sources</name>
+        <briefdescription>
+<para>A 2D vector containing the list of upstream sources for each vertex. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="35" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGraph_1a1c89a48555f165ef3e80b85ca5655bea" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; int &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;int&gt; &gt; Graph::downstream_sources</definition>
+        <argsstring></argsstring>
+        <name>downstream_sources</name>
+        <briefdescription>
+<para>A 2D vector containing the list of downstream sources for each vertex. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="39" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGraph_1ad18af6207537a43b3cf53b56acaf92fd" prot="protected" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; Graph::topological_order</definition>
+        <argsstring></argsstring>
+        <name>topological_order</name>
+        <briefdescription>
+<para>A vector containing the IDs of the water sources (vertices) in topological order. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="43" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGraph_1af903899bcb412f62ec4aa295eef9f45c" prot="protected" static="no" mutable="no">
+        <type>vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>vector&lt;vector&lt;double&gt; &gt; Graph::continuity_matrix_transpose</definition>
+        <argsstring></argsstring>
+        <name>continuity_matrix_transpose</name>
+        <briefdescription>
+<para>A 2D vector containing the continuity matrix of the <ref refid="classGraph" kindref="compound">Graph</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="47" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classGraph_1a6f175234dc3c87150a53eab5c4e586ef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Graph::addEdgeToEdgesList</definition>
+        <argsstring>(int u, int v)</argsstring>
+        <name>addEdgeToEdgesList</name>
+        <param>
+          <type>int</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Adds a directed edge (a stream) to the graph&apos;s adjacency list and updates edge-related data structures. This function adds an edge from vertex <computeroutput>u</computeroutput> to vertex <computeroutput>v</computeroutput> in the adjacency list, updates the list of downstream sources for vertex <computeroutput>u</computeroutput>, and increments the total edge count. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source vertex (water source) of the edge. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination (water source) vertex of the edge.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1a915f9d58884a00083bb6e5a256141fae" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; Graph::topologicalSort</definition>
+        <argsstring>()</argsstring>
+        <name>topologicalSort</name>
+        <briefdescription>
+<para>Performs a topological sort on the directed graph to sout sources from upstream to downstream.. This function computes a topological ordering of the vertices in the graph using Kahn&apos;s algorithm. It detects cycles and returns an empty ordering if the graph contains a cycle. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A vector containing the topological order of the vertices. If the graph contains a cycle, the returned vector may be incomplete, and a message is printed to indicate the cycle detection. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1a95b0b6a7689c519d38e820cc3f86fc70" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; Graph::findUpstreamSources</definition>
+        <argsstring>(int id) const</argsstring>
+        <name>findUpstreamSources</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Finds the upstream sources for a given vertex. This function identifies all vertices in the graph that have a directed edge leading to the specified vertex <computeroutput>id</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The vertex for which upstream sources are to be found.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector containing all upstream source vertices for the given vertex <computeroutput>id</computeroutput>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="82" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGraph_1af3ff6b295df8bf3bee0bafd7c7d56915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Graph::Graph</definition>
+        <argsstring>(int V)</argsstring>
+        <name>Graph</name>
+        <param>
+          <type>int</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a graph with a specified number of vertices. This constructor initializes the graph&apos;s adjacency list and downstream sources structure. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>V</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of vertices in the graph. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1ae4c72b8ac4d693c49800a4c7e273654f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Graph::Graph</definition>
+        <argsstring>()</argsstring>
+        <name>Graph</name>
+        <briefdescription>
+<para>Base constructor for a new <ref refid="classGraph" kindref="compound">Graph</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1a838b34813d6d5ddcfc9e452b357d98bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; int &gt;</type>
+        <definition>const vector&lt;int&gt; Graph::getTopological_order</definition>
+        <argsstring>() const</argsstring>
+        <name>getTopological_order</name>
+        <briefdescription>
+<para>Retrieves the topological order of the graph. This function returns the precomputed topological order of the water sources (vertices) in the graph. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant vector containing the topological order of the vertices. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1ad8c10df34357b2cd865c81e0c4f0bd8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Graph::addEdge</definition>
+        <argsstring>(int u, int v)</argsstring>
+        <name>addEdge</name>
+        <param>
+          <type>int</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Adds a directed edge (stream/pipes) to the graph and updates related structures. This function adds an connection from vertex <computeroutput>u</computeroutput> to vertex <computeroutput>v</computeroutput>, recalculates the topological order, updates upstream sources for all vertices, and adjusts the continuity matrix transpose. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The source vertex of the edge. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The destination vertex of the edge.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para></simplesect>
+<simplesect kind="see"><para><ref refid="classGraph_1a6f175234dc3c87150a53eab5c4e586ef" kindref="member">addEdgeToEdgesList</ref>, <ref refid="classGraph_1a915f9d58884a00083bb6e5a256141fae" kindref="member">topologicalSort</ref>, <ref refid="classGraph_1a95b0b6a7689c519d38e820cc3f86fc70" kindref="member">findUpstreamSources</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1a1ae92c80c49d220aff1e04f653db1e9e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; vector&lt; int &gt; &gt; &amp;</type>
+        <definition>const vector&lt;vector&lt;int&gt; &gt;&amp; Graph::getUpstream_sources</definition>
+        <argsstring>() const</argsstring>
+        <name>getUpstream_sources</name>
+        <briefdescription>
+<para>Retrieves the upstream sources of each water source (vertex) in the graph. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant 2D vector containing the IDs of each vertex mapped to their respective upstream sources. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1adeb6eb873f20aef3e2b611a322deb647" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; vector&lt; double &gt; &gt;</type>
+        <definition>const vector&lt;vector&lt;double&gt; &gt; Graph::getContinuityMatrix</definition>
+        <argsstring>() const</argsstring>
+        <name>getContinuityMatrix</name>
+        <briefdescription>
+<para>Constructs and returns the continuity matrix of the graph. This function returns a matrix in which rows correspond to vertexes. The first set of columns correspond to pipes/streams and the second set to flows in and out of vertexes. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A 2D vector representing the continuity matrix of the graph.</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the number of edges and sources is inconsistent with the graph structure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1a1621cd1ffcf6a135cbc7e039c305627b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Graph::~Graph</definition>
+        <argsstring>()</argsstring>
+        <name>~Graph</name>
+        <briefdescription>
+<para>Destroy the <ref refid="classGraph" kindref="compound">Graph</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classGraph_1aa41b35e6be8f6c4d555c7e9c1822809e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; vector&lt; int &gt; &gt;</type>
+        <definition>const vector&lt;vector&lt;int&gt; &gt; Graph::getDownSources</definition>
+        <argsstring>() const</argsstring>
+        <name>getDownSources</name>
+        <briefdescription>
+<para>Retrieves the downstream sources of each water source (vertex) in the graph. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant 2D vector containing the IDs of each vertex mapped to their respective downstream sources. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="152" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A C++ program to print topological sorting of a graph using indegrees. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by bernardo on 2/2/17. </para>    </detaileddescription>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" line="17" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Utils/Graph/Graph.h" bodystart="17" bodyend="153"/>
+    <listofallmembers>
+      <member refid="classGraph_1ad8c10df34357b2cd865c81e0c4f0bd8c" prot="public" virt="non-virtual"><scope>Graph</scope><name>addEdge</name></member>
+      <member refid="classGraph_1a6f175234dc3c87150a53eab5c4e586ef" prot="protected" virt="non-virtual"><scope>Graph</scope><name>addEdgeToEdgesList</name></member>
+      <member refid="classGraph_1a04ab9c17ad31aa036def8db0f88b035b" prot="protected" virt="non-virtual"><scope>Graph</scope><name>adj</name></member>
+      <member refid="classGraph_1af903899bcb412f62ec4aa295eef9f45c" prot="protected" virt="non-virtual"><scope>Graph</scope><name>continuity_matrix_transpose</name></member>
+      <member refid="classGraph_1a1c89a48555f165ef3e80b85ca5655bea" prot="protected" virt="non-virtual"><scope>Graph</scope><name>downstream_sources</name></member>
+      <member refid="classGraph_1a95b0b6a7689c519d38e820cc3f86fc70" prot="protected" virt="non-virtual"><scope>Graph</scope><name>findUpstreamSources</name></member>
+      <member refid="classGraph_1adeb6eb873f20aef3e2b611a322deb647" prot="public" virt="non-virtual"><scope>Graph</scope><name>getContinuityMatrix</name></member>
+      <member refid="classGraph_1aa41b35e6be8f6c4d555c7e9c1822809e" prot="public" virt="non-virtual"><scope>Graph</scope><name>getDownSources</name></member>
+      <member refid="classGraph_1a838b34813d6d5ddcfc9e452b357d98bd" prot="public" virt="non-virtual"><scope>Graph</scope><name>getTopological_order</name></member>
+      <member refid="classGraph_1a1ae92c80c49d220aff1e04f653db1e9e" prot="public" virt="non-virtual"><scope>Graph</scope><name>getUpstream_sources</name></member>
+      <member refid="classGraph_1af3ff6b295df8bf3bee0bafd7c7d56915" prot="public" virt="non-virtual"><scope>Graph</scope><name>Graph</name></member>
+      <member refid="classGraph_1ae4c72b8ac4d693c49800a4c7e273654f" prot="public" virt="non-virtual"><scope>Graph</scope><name>Graph</name></member>
+      <member refid="classGraph_1a9a7e34b482b020fa136fc8e0fa2d0030" prot="protected" virt="non-virtual"><scope>Graph</scope><name>n_edges</name></member>
+      <member refid="classGraph_1ad18af6207537a43b3cf53b56acaf92fd" prot="protected" virt="non-virtual"><scope>Graph</scope><name>topological_order</name></member>
+      <member refid="classGraph_1a915f9d58884a00083bb6e5a256141fae" prot="protected" virt="non-virtual"><scope>Graph</scope><name>topologicalSort</name></member>
+      <member refid="classGraph_1a2b9dc8c44ac87d67b061af1bf8dab2fa" prot="protected" virt="non-virtual"><scope>Graph</scope><name>upstream_sources</name></member>
+      <member refid="classGraph_1a2b722f7cfa7a21e4cb5fae488b3d4dcc" prot="protected" virt="non-virtual"><scope>Graph</scope><name>V</name></member>
+      <member refid="classGraph_1a1621cd1ffcf6a135cbc7e039c305627b" prot="public" virt="virtual"><scope>Graph</scope><name>~Graph</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

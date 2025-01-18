@@ -1,0 +1,393 @@
+\hypertarget{classDroughtMitigationPolicy}{}\section{Drought\+Mitigation\+Policy Class Reference}
+\label{classDroughtMitigationPolicy}\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+
+
+The {\ttfamily \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}} class is an abstract class that defines the interface for drought mitigation policies. Created by bernardo on 2/6/17.  
+
+
+
+
+{\ttfamily \#include $<$Drought\+Mitigation\+Policy.\+h$>$}
+
+Inheritance diagram for Drought\+Mitigation\+Policy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classDroughtMitigationPolicy}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDroughtMitigationPolicy_a00cce0117a5bc0c446727e0c0c59a8df}{Drought\+Mitigation\+Policy}} (const int \mbox{\hyperlink{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}{id}}, const int \mbox{\hyperlink{classDroughtMitigationPolicy_aaea5016d1462bec889cb8df85aececc6}{type}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object with specified attributes. This constructor initializes a \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object using the provided {\ttfamily id} and {\ttfamily type}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d}{apply\+Policy}} (int week)=0
+\begin{DoxyCompactList}\small\item\em Applies the Drought Mitigation Policy for a given week. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a}{add\+System\+Components}} (vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ utilities, vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ water\+\_\+sources, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ min\+\_\+env\+\_\+flow\+\_\+controls)=0
+\begin{DoxyCompactList}\small\item\em Adds system components (utilities, water sources, and minimum environment flow controls) to the Drought Mitigation Policy. \end{DoxyCompactList}\item 
+const vector$<$ int $>$ \& \mbox{\hyperlink{classDroughtMitigationPolicy_a4c3940352b0092e6a4f673f72693d239}{get\+Utilities\+\_\+ids}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the list of utility I\+Ds associated with this \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}. This function returns a reference to a vector containing the utility I\+Ds. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDroughtMitigationPolicy_a0bf7d0fa94377ae6814e529daf0204c4}{operator$<$}} (const \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$other)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} objects based on their I\+Ds. This operator checks whether the current object\textquotesingle{}s ID is less than the ID of another \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDroughtMitigationPolicy_a576d3ddb09dc9372898a63c0949d08a6}{operator$>$}} (const \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$other)
+\begin{DoxyCompactList}\small\item\em Compares two \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} objects based on their I\+Ds. This operator checks whether the current object\textquotesingle{}s ID is greater than the ID of another \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classDroughtMitigationPolicy_a9419c433241f36cbf018a5bbe3059d5a}{$\sim$\+Drought\+Mitigation\+Policy}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} class. This function cleans up resources used by the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDroughtMitigationPolicy_a75710a6ab73213223222b3472f9251c0}{set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+}} (vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+, int \mbox{\hyperlink{classDroughtMitigationPolicy_ace2a2425f6608c34a3189c11445978a1}{use\+\_\+imported\+\_\+tables}})
+\begin{DoxyCompactList}\small\item\em Sets the storage-\/to-\/\+R\+OF table and configuration for imported tables. This function updates the reference to the storage-\/to-\/\+R\+OF table and specifies whether imported tables are used. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4}{set\+Realization}} (unsigned long realization\+\_\+id, vector$<$ double $>$ \&utilities\+\_\+rdm, vector$<$ double $>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ double $>$ \&policy\+\_\+rdm)=0
+\begin{DoxyCompactList}\small\item\em Retrieves the risk-\/of-\/failure (R\+OF) value for a specified utility, week, and tier. This function accesses the storage-\/to-\/\+R\+OF table to fetch the corresponding R\+OF value based on the input parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}{id}}
+\begin{DoxyCompactList}\small\item\em The unique ID of the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classDroughtMitigationPolicy_aaea5016d1462bec889cb8df85aececc6}{type}}
+\begin{DoxyCompactList}\small\item\em The type of \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDroughtMitigationPolicy_aaf0715876ce33a75c7db92e50523ea0c}{Drought\+Mitigation\+Policy}} (const \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} \&drought\+\_\+mitigation\+\_\+policy)
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object by copying an existing one. This function initializes a new \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object by copying the {\ttfamily id} and {\ttfamily type} attributes from another instance. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classDroughtMitigationPolicy_a685ce7eacb01cb262d7e5245a736aa38}{get\+Rof\+From\+Realization\+Table}} (int utility\+\_\+id, int week, int tier)
+\begin{DoxyCompactList}\small\item\em Retrieves the risk-\/of-\/failure (R\+OF) value for a given utility, week, and tier from a given realization. This function accesses the storage-\/to-\/\+R\+OF table to fetch the corresponding R\+OF value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classDroughtMitigationPolicy_ad19fbc5a9fdf17ed50c0ba0b99d47eca}{utilities\+\_\+ids}}
+\begin{DoxyCompactList}\small\item\em A vector of the utility I\+Ds associated with the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$ $>$ \mbox{\hyperlink{classDroughtMitigationPolicy_af6e5787a58017804d8598effbeeaba8e}{realization\+\_\+utilities}}
+\begin{DoxyCompactList}\small\item\em A vector of pointers to the utilities associated with the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} in a given realization. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$ $>$ \mbox{\hyperlink{classDroughtMitigationPolicy_ae2104e99c421513902ba66d012484c0e}{realization\+\_\+water\+\_\+sources}}
+\begin{DoxyCompactList}\small\item\em A vector of pointers to the water sources associated with the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} in a given realization. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$ $>$ \mbox{\hyperlink{classDroughtMitigationPolicy_af583979405bc5d530ee576df8a6e9324}{realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls}}
+\begin{DoxyCompactList}\small\item\em A vector of pointers to the Min\+Env\+Flow\+Controls associated with the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} in a given realization. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ double $>$ $>$ $\ast$ \mbox{\hyperlink{classDroughtMitigationPolicy_a4c5a2dc2aa3a1c7550cdb17045e1fef3}{rdm\+\_\+factors\+\_\+all}}
+\begin{DoxyCompactList}\small\item\em A 2D vector of pointers to the R\+DM factors for all utilities associated with the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} in a given realization. \end{DoxyCompactList}\item 
+double $\ast$ \mbox{\hyperlink{classDroughtMitigationPolicy_abef5c917bbc076514fe61bfebbd0e4fc}{rdm\+\_\+factors\+\_\+realization}}
+\begin{DoxyCompactList}\small\item\em A pointer to the R\+DM factors for the current realization. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDroughtMitigationPolicy_ace2a2425f6608c34a3189c11445978a1}{use\+\_\+imported\+\_\+tables}}
+\begin{DoxyCompactList}\small\item\em A boolean flag indicating whether to use imported R\+OF tables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}} class is an abstract class that defines the interface for drought mitigation policies. Created by bernardo on 2/6/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDroughtMitigationPolicy_aaf0715876ce33a75c7db92e50523ea0c}\label{classDroughtMitigationPolicy_aaf0715876ce33a75c7db92e50523ea0c}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{Drought\+Mitigation\+Policy()}{DroughtMitigationPolicy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Drought\+Mitigation\+Policy\+::\+Drought\+Mitigation\+Policy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} \&}]{drought\+\_\+mitigation\+\_\+policy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Constructs a new \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object by copying an existing one. This function initializes a new \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object by copying the {\ttfamily id} and {\ttfamily type} attributes from another instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em drought\+\_\+mitigation\+\_\+policy} & The \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object to be copied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. This is a constructor. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a00cce0117a5bc0c446727e0c0c59a8df}\label{classDroughtMitigationPolicy_a00cce0117a5bc0c446727e0c0c59a8df}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{Drought\+Mitigation\+Policy()}{DroughtMitigationPolicy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Drought\+Mitigation\+Policy\+::\+Drought\+Mitigation\+Policy (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const int}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object with specified attributes. This constructor initializes a \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object using the provided {\ttfamily id} and {\ttfamily type}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier for the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}. \\
+\hline
+{\em type} & The type of the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a9419c433241f36cbf018a5bbe3059d5a}\label{classDroughtMitigationPolicy_a9419c433241f36cbf018a5bbe3059d5a}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!````~Drought\+Mitigation\+Policy@{$\sim$\+Drought\+Mitigation\+Policy}}
+\index{````~Drought\+Mitigation\+Policy@{$\sim$\+Drought\+Mitigation\+Policy}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{$\sim$\+Drought\+Mitigation\+Policy()}{~DroughtMitigationPolicy()}}
+{\footnotesize\ttfamily virtual Drought\+Mitigation\+Policy\+::$\sim$\+Drought\+Mitigation\+Policy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} class. This function cleans up resources used by the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object. 
+
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a}\label{classDroughtMitigationPolicy_aaab042a79d781afe8e08753b7012372a}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!add\+System\+Components@{add\+System\+Components}}
+\index{add\+System\+Components@{add\+System\+Components}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{add\+System\+Components()}{addSystemComponents()}}
+{\footnotesize\ttfamily virtual void Drought\+Mitigation\+Policy\+::add\+System\+Components (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{utilities,  }\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$}]{water\+\_\+sources,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$}]{min\+\_\+env\+\_\+flow\+\_\+controls }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds system components (utilities, water sources, and minimum environment flow controls) to the Drought Mitigation Policy. 
+
+This function is a purely virtual function that must be implemented by derived classes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em utilities} & A vector of pointers to the utilities associated with the Drought Mitigation Policy. \\
+\hline
+{\em water\+\_\+sources} & A vector of pointers to the water sources associated with the Drought Mitigation Policy. \\
+\hline
+{\em min\+\_\+env\+\_\+flow\+\_\+controls} & A vector of pointers to the minimum environment flow controls associated with the Drought Mitigation Policy.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classTransfers_a3c1930dbeb1273c1c0be93ad5ca57357}{Transfers}}, \mbox{\hyperlink{classInsuranceStorageToROF_ac7d317a7f189739275960e4f021108d8}{Insurance\+Storage\+To\+R\+OF}}, and \mbox{\hyperlink{classRestrictions_ab0a2b62495d6cdd8d1fedba419c05c37}{Restrictions}}.
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d}\label{classDroughtMitigationPolicy_a76c1a85eaf7707306fe173b6437cc31d}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!apply\+Policy@{apply\+Policy}}
+\index{apply\+Policy@{apply\+Policy}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{apply\+Policy()}{applyPolicy()}}
+{\footnotesize\ttfamily virtual void Drought\+Mitigation\+Policy\+::apply\+Policy (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Applies the Drought Mitigation Policy for a given week. 
+
+This is a purely virtual function that must be implemented by derived classes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The week for which to extract the Drought Mitigation Policy.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classTransfers_ad9e4e83ff763ac1ba518a19051cd2e69}{Transfers}}, \mbox{\hyperlink{classInsuranceStorageToROF_a17aa84e0559793b3c463c468dfda3753}{Insurance\+Storage\+To\+R\+OF}}, and \mbox{\hyperlink{classRestrictions_a1ef7559adc034bdddd047ee776b5f9a9}{Restrictions}}.
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a685ce7eacb01cb262d7e5245a736aa38}\label{classDroughtMitigationPolicy_a685ce7eacb01cb262d7e5245a736aa38}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!get\+Rof\+From\+Realization\+Table@{get\+Rof\+From\+Realization\+Table}}
+\index{get\+Rof\+From\+Realization\+Table@{get\+Rof\+From\+Realization\+Table}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{get\+Rof\+From\+Realization\+Table()}{getRofFromRealizationTable()}}
+{\footnotesize\ttfamily double Drought\+Mitigation\+Policy\+::get\+Rof\+From\+Realization\+Table (\begin{DoxyParamCaption}\item[{int}]{utility\+\_\+id,  }\item[{int}]{week,  }\item[{int}]{tier }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Retrieves the risk-\/of-\/failure (R\+OF) value for a given utility, week, and tier from a given realization. This function accesses the storage-\/to-\/\+R\+OF table to fetch the corresponding R\+OF value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+id} & The ID of the utility for which the R\+OF value is to be retrieved. \\
+\hline
+{\em week} & The week for which the R\+OF value is needed. \\
+\hline
+{\em tier} & The tier for which the R\+OF value is required.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The R\+OF value as a double for the specified utility, week, and tier from a given realization. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a4c3940352b0092e6a4f673f72693d239}\label{classDroughtMitigationPolicy_a4c3940352b0092e6a4f673f72693d239}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!get\+Utilities\+\_\+ids@{get\+Utilities\+\_\+ids}}
+\index{get\+Utilities\+\_\+ids@{get\+Utilities\+\_\+ids}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{get\+Utilities\+\_\+ids()}{getUtilities\_ids()}}
+{\footnotesize\ttfamily const vector$<$int$>$\& Drought\+Mitigation\+Policy\+::get\+Utilities\+\_\+ids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the list of utility I\+Ds associated with this \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}. This function returns a reference to a vector containing the utility I\+Ds. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of integers representing utility I\+Ds. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a0bf7d0fa94377ae6814e529daf0204c4}\label{classDroughtMitigationPolicy_a0bf7d0fa94377ae6814e529daf0204c4}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Drought\+Mitigation\+Policy\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$}]{other }\end{DoxyParamCaption})}
+
+
+
+Compares two \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} objects based on their I\+Ds. This operator checks whether the current object\textquotesingle{}s ID is less than the ID of another \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A pointer to the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object to compare with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the current object\textquotesingle{}s ID is less than the ID of the other object; otherwise, {\ttfamily false}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a576d3ddb09dc9372898a63c0949d08a6}\label{classDroughtMitigationPolicy_a576d3ddb09dc9372898a63c0949d08a6}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Drought\+Mitigation\+Policy\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$}]{other }\end{DoxyParamCaption})}
+
+
+
+Compares two \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} objects based on their I\+Ds. This operator checks whether the current object\textquotesingle{}s ID is greater than the ID of another \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & A pointer to the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object to compare with.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the current object\textquotesingle{}s ID is greater than the ID of the other object; otherwise, {\ttfamily false}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4}\label{classDroughtMitigationPolicy_a5d2033543cacca1e412eebef5106eab4}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!set\+Realization@{set\+Realization}}
+\index{set\+Realization@{set\+Realization}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{set\+Realization()}{setRealization()}}
+{\footnotesize\ttfamily virtual void Drought\+Mitigation\+Policy\+::set\+Realization (\begin{DoxyParamCaption}\item[{unsigned long}]{realization\+\_\+id,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{policy\+\_\+rdm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the risk-\/of-\/failure (R\+OF) value for a specified utility, week, and tier. This function accesses the storage-\/to-\/\+R\+OF table to fetch the corresponding R\+OF value based on the input parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+id} & The ID of the utility for which the R\+OF value is to be retrieved. \\
+\hline
+{\em week} & The week for which the R\+OF value is needed. \\
+\hline
+{\em tier} & The R\+OF tier required.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The R\+OF value as a {\ttfamily double} for the specified utility, week, and tier. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classTransfers_a75342a7c14b2ff69eb2520de240a1131}{Transfers}}, \mbox{\hyperlink{classInsuranceStorageToROF_a6318c3dca8b0c4d568eac494e5ccf712}{Insurance\+Storage\+To\+R\+OF}}, and \mbox{\hyperlink{classRestrictions_abc17a8a403311933a3bb58fbecd5f5fd}{Restrictions}}.
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a75710a6ab73213223222b3472f9251c0}\label{classDroughtMitigationPolicy_a75710a6ab73213223222b3472f9251c0}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+@{set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+}}
+\index{set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+@{set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+()}{setStorage\_to\_rof\_table\_()}}
+{\footnotesize\ttfamily void Drought\+Mitigation\+Policy\+::set\+Storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+ (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&}]{storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+,  }\item[{int}]{use\+\_\+imported\+\_\+tables }\end{DoxyParamCaption})}
+
+
+
+Sets the storage-\/to-\/\+R\+OF table and configuration for imported tables. This function updates the reference to the storage-\/to-\/\+R\+OF table and specifies whether imported tables are used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em storage\+\_\+to\+\_\+rof\+\_\+table\+\_\+} & A reference to a vector of {\ttfamily \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$double$>$} representing the storage-\/to-\/\+R\+OF table. \\
+\hline
+{\em use\+\_\+imported\+\_\+tables} & An integer flag indicating whether imported tables should be used. This is compared with {\ttfamily I\+M\+P\+O\+R\+T\+\_\+\+R\+O\+F\+\_\+\+T\+A\+B\+L\+ES}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}\label{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!id@{id}}
+\index{id@{id}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily const int Drought\+Mitigation\+Policy\+::id}
+
+
+
+The unique ID of the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object. 
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_a4c5a2dc2aa3a1c7550cdb17045e1fef3}\label{classDroughtMitigationPolicy_a4c5a2dc2aa3a1c7550cdb17045e1fef3}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!rdm\+\_\+factors\+\_\+all@{rdm\+\_\+factors\+\_\+all}}
+\index{rdm\+\_\+factors\+\_\+all@{rdm\+\_\+factors\+\_\+all}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{rdm\+\_\+factors\+\_\+all}{rdm\_factors\_all}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$$\ast$ Drought\+Mitigation\+Policy\+::rdm\+\_\+factors\+\_\+all\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A 2D vector of pointers to the R\+DM factors for all utilities associated with the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} in a given realization. 
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_abef5c917bbc076514fe61bfebbd0e4fc}\label{classDroughtMitigationPolicy_abef5c917bbc076514fe61bfebbd0e4fc}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!rdm\+\_\+factors\+\_\+realization@{rdm\+\_\+factors\+\_\+realization}}
+\index{rdm\+\_\+factors\+\_\+realization@{rdm\+\_\+factors\+\_\+realization}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{rdm\+\_\+factors\+\_\+realization}{rdm\_factors\_realization}}
+{\footnotesize\ttfamily double$\ast$ Drought\+Mitigation\+Policy\+::rdm\+\_\+factors\+\_\+realization\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A pointer to the R\+DM factors for the current realization. 
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_af583979405bc5d530ee576df8a6e9324}\label{classDroughtMitigationPolicy_af583979405bc5d530ee576df8a6e9324}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls@{realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls}}
+\index{realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls@{realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls}{realization\_min\_env\_flow\_controls}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ Drought\+Mitigation\+Policy\+::realization\+\_\+min\+\_\+env\+\_\+flow\+\_\+controls\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A vector of pointers to the Min\+Env\+Flow\+Controls associated with the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} in a given realization. 
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_af6e5787a58017804d8598effbeeaba8e}\label{classDroughtMitigationPolicy_af6e5787a58017804d8598effbeeaba8e}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!realization\+\_\+utilities@{realization\+\_\+utilities}}
+\index{realization\+\_\+utilities@{realization\+\_\+utilities}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{realization\+\_\+utilities}{realization\_utilities}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ Drought\+Mitigation\+Policy\+::realization\+\_\+utilities\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A vector of pointers to the utilities associated with the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} in a given realization. 
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_ae2104e99c421513902ba66d012484c0e}\label{classDroughtMitigationPolicy_ae2104e99c421513902ba66d012484c0e}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!realization\+\_\+water\+\_\+sources@{realization\+\_\+water\+\_\+sources}}
+\index{realization\+\_\+water\+\_\+sources@{realization\+\_\+water\+\_\+sources}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{realization\+\_\+water\+\_\+sources}{realization\_water\_sources}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ Drought\+Mitigation\+Policy\+::realization\+\_\+water\+\_\+sources\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A vector of pointers to the water sources associated with the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} in a given realization. 
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_aaea5016d1462bec889cb8df85aececc6}\label{classDroughtMitigationPolicy_aaea5016d1462bec889cb8df85aececc6}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!type@{type}}
+\index{type@{type}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily const int Drought\+Mitigation\+Policy\+::type}
+
+
+
+The type of \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} object. 
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_ace2a2425f6608c34a3189c11445978a1}\label{classDroughtMitigationPolicy_ace2a2425f6608c34a3189c11445978a1}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!use\+\_\+imported\+\_\+tables@{use\+\_\+imported\+\_\+tables}}
+\index{use\+\_\+imported\+\_\+tables@{use\+\_\+imported\+\_\+tables}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{use\+\_\+imported\+\_\+tables}{use\_imported\_tables}}
+{\footnotesize\ttfamily bool Drought\+Mitigation\+Policy\+::use\+\_\+imported\+\_\+tables\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A boolean flag indicating whether to use imported R\+OF tables. 
+
+\mbox{\Hypertarget{classDroughtMitigationPolicy_ad19fbc5a9fdf17ed50c0ba0b99d47eca}\label{classDroughtMitigationPolicy_ad19fbc5a9fdf17ed50c0ba0b99d47eca}} 
+\index{Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}!utilities\+\_\+ids@{utilities\+\_\+ids}}
+\index{utilities\+\_\+ids@{utilities\+\_\+ids}!Drought\+Mitigation\+Policy@{Drought\+Mitigation\+Policy}}
+\subsubsection{\texorpdfstring{utilities\+\_\+ids}{utilities\_ids}}
+{\footnotesize\ttfamily vector$<$int$>$ Drought\+Mitigation\+Policy\+::utilities\+\_\+ids\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A vector of the utility I\+Ds associated with the \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}}. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Drought\+Mitigation\+Instruments/\+Base/\mbox{\hyperlink{DroughtMitigationPolicy_8h}{Drought\+Mitigation\+Policy.\+h}}\end{DoxyCompactItemize}

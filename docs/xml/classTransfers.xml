@@ -1,0 +1,777 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classTransfers" kind="class" language="C++" prot="public">
+    <compoundname>Transfers</compoundname>
+    <basecompoundref refid="classDroughtMitigationPolicy" prot="public" virt="non-virtual">DroughtMitigationPolicy</basecompoundref>
+    <includes refid="Transfers_8h" local="no">Transfers.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTransfers_1a4513cfef08bd7e9980d098f8fb7d6a32" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int Transfers::source_utility_id</definition>
+        <argsstring></argsstring>
+        <name>source_utility_id</name>
+        <briefdescription>
+<para>The ID of the utility selling water to other utilities to fulfil transfer requests. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="20" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a69a7ec8b065b9c807e2256f205a3d41e" prot="private" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double Transfers::source_treatment_buffer</definition>
+        <argsstring></argsstring>
+        <name>source_treatment_buffer</name>
+        <briefdescription>
+<para>Treatment capacity to be left unused in source utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="25" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a7715c87efbee763488d6fcc4674f2523" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Transfers::average_pipe_capacity</definition>
+        <argsstring></argsstring>
+        <name>average_pipe_capacity</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>The average pipe capacity that limits the volume of transfers that can be conveyed through the network. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="30" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a039a24fe986a718da1ac61bac0e49644" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Transfers::transfer_water_source_id</definition>
+        <argsstring></argsstring>
+        <name>transfer_water_source_id</name>
+        <briefdescription>
+<para>The ID of the water source from which the source utility will be transferring water. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="34" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a420b61c6ff119fef48a39a39ae4e0958" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; Transfers::util_id_to_vertex_id</definition>
+        <argsstring></argsstring>
+        <name>util_id_to_vertex_id</name>
+        <briefdescription>
+<para>The vector mapping the ID of each utility to their topological vertex in the water transfer network. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="38" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a55506f9588e0132ffcad1cf0036a83af" prot="private" static="no" mutable="no">
+        <type>vector&lt; int &gt;</type>
+        <definition>vector&lt;int&gt; Transfers::buyers_ids</definition>
+        <argsstring></argsstring>
+        <name>buyers_ids</name>
+        <briefdescription>
+<para>The IDs of the utilities purchasing water transfers from <computeroutput>source_utility_id</computeroutput>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="42" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1ad956149e16363b5a04fd0a4f6efb3a61" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; Transfers::allocations</definition>
+        <argsstring></argsstring>
+        <name>allocations</name>
+        <briefdescription>
+<para>A vector of each utility&apos;s water allocations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="46" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a2989642c0fe0544dd9345d45042933d5" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; Transfers::conveyed_volumes</definition>
+        <argsstring></argsstring>
+        <name>conveyed_volumes</name>
+        <briefdescription>
+<para>The volume of water conveyed through a pipe during a water transfer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="50" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a6eab429701a7e1dc857675cc8571589c" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; Transfers::buyers_transfer_triggers</definition>
+        <argsstring></argsstring>
+        <name>buyers_transfer_triggers</name>
+        <briefdescription>
+<para>A vector of each buyer&apos;s ROF threshold after which they will request a water transfer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="54" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1ae3d752b6821c1a92801494304cef47e0" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Transfers::seller_transfer_trigger</definition>
+        <argsstring></argsstring>
+        <name>seller_transfer_trigger</name>
+        <briefdescription>
+<para>The short-term ROF threshold above which the seller will not fulfil transfer requests. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="58" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1af4ef4c75d49dfb3aee476c0695ff41d5" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; Transfers::flow_rates_and_allocations</definition>
+        <argsstring></argsstring>
+        <name>flow_rates_and_allocations</name>
+        <briefdescription>
+<para>A vector of flow rates and allocations for each pipe and utility. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="63" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a8c84c081f069f6835e9dd12a460d90eb" prot="private" static="no" mutable="no">
+        <type><ref refid="classUtility" kindref="compound">Utility</ref> *</type>
+        <definition>Utility* Transfers::source_utility</definition>
+        <argsstring></argsstring>
+        <name>source_utility</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>A pointer to the source <ref refid="classUtility" kindref="compound">Utility</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="67" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a6a23dc463d7a4b07bcb7f3a7472263b2" prot="private" static="no" mutable="no">
+        <type><ref refid="classWaterSource" kindref="compound">WaterSource</ref> *</type>
+        <definition>WaterSource* Transfers::transfer_water_source</definition>
+        <argsstring></argsstring>
+        <name>transfer_water_source</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+<para>A pointer to the source <ref refid="classWaterSource" kindref="compound">WaterSource</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="71" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1aec57a6a75061f18404e30d8e48c45ffd" prot="private" static="no" mutable="no">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; double &gt;</type>
+        <definition>Matrix&lt;double&gt; Transfers::H</definition>
+        <argsstring></argsstring>
+        <name>H</name>
+        <briefdescription>
+<para>The quadratic programming matrices and vectors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="75" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a1c2d27eb4e9294e32f04b5e7d929e71f" prot="private" static="no" mutable="no">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; double &gt;</type>
+        <definition>Matrix&lt;double&gt; Transfers::Aeq</definition>
+        <argsstring></argsstring>
+        <name>Aeq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="75" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a2acc8cfe6a1978d2468be289db636226" prot="private" static="no" mutable="no">
+        <type><ref refid="classMatrix" kindref="compound">Matrix</ref>&lt; double &gt;</type>
+        <definition>Matrix&lt;double&gt; Transfers::A</definition>
+        <argsstring></argsstring>
+        <name>A</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="75" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a77db57256093921b04035c1e38a20060" prot="private" static="no" mutable="no">
+        <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt;</type>
+        <definition>Vector&lt;double&gt; Transfers::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+<para>The quadratic programming vectors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="80" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a39d45672a21ce1a45925eceea79b921a" prot="private" static="no" mutable="no">
+        <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt;</type>
+        <definition>Vector&lt;double&gt; Transfers::beq</definition>
+        <argsstring></argsstring>
+        <name>beq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="80" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a24e66988fb2e50d151859813fda2e740" prot="private" static="no" mutable="no">
+        <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt;</type>
+        <definition>Vector&lt;double&gt; Transfers::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="80" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a22f332495395f41b340e370535a6b27a" prot="private" static="no" mutable="no">
+        <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt;</type>
+        <definition>Vector&lt;double&gt; Transfers::allocations_aux</definition>
+        <argsstring></argsstring>
+        <name>allocations_aux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="80" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1a10e5cae64016e52eca5dccc8e01e9791" prot="private" static="no" mutable="no">
+        <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt;</type>
+        <definition>Vector&lt;double&gt; Transfers::lb</definition>
+        <argsstring></argsstring>
+        <name>lb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="80" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTransfers_1aab0d3f08ed2897d9a74c9970612231d5" prot="private" static="no" mutable="no">
+        <type><ref refid="classVector" kindref="compound">Vector</ref>&lt; double &gt;</type>
+        <definition>Vector&lt;double&gt; Transfers::ub</definition>
+        <argsstring></argsstring>
+        <name>ub</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="80" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTransfers_1ae6abf817349382b66abc9cc3f45193a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Transfers::Transfers</definition>
+        <argsstring>(const int id, const int source_utility_id, int transfer_water_source_id, const double source_treatment_buffer, const vector&lt; int &gt; &amp;buyers_ids, const vector&lt; double &gt; &amp;pipe_transfer_capacities, const vector&lt; double &gt; &amp;buyers_transfer_triggers, const double seller_transfer_trigger, const Graph utilities_graph, vector&lt; double &gt; conveyance_costs, vector&lt; int &gt; pipe_owner)</argsstring>
+        <name>Transfers</name>
+        <param>
+          <type>const int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>source_utility_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>transfer_water_source_id</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>source_treatment_buffer</declname>
+        </param>
+        <param>
+          <type>const vector&lt; int &gt; &amp;</type>
+          <declname>buyers_ids</declname>
+        </param>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>pipe_transfer_capacities</declname>
+        </param>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>buyers_transfer_triggers</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>seller_transfer_trigger</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGraph" kindref="compound">Graph</ref></type>
+          <declname>utilities_graph</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt;</type>
+          <declname>conveyance_costs</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt;</type>
+          <declname>pipe_owner</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classTransfers" kindref="compound">Transfers</ref> object to manage water transfer allocations among utilities. This function initializes all data structures and ensures input validity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor allocates transfers by trying to minimize the mean square error between the optimal allocations and allocation requests, and between the available amount of water from source and actual conveyed capacity, which is limited by pipe conveyance capacities.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transfer policy ID. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source_utility_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the utility selling water to other utilities to fulfil transfer requests. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transfer_water_source_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the water source from which the source utility will be transferring water. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source_treatment_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Treatment capacity to be left unused in source utility. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buyers_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IDs of the buyer utilities. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pipe_transfer_capacities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capacities of transfer pipes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buyers_transfer_triggers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of each buyer&apos;s ROF threshold after which they will request a water transfer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seller_transfer_trigger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The short-term ROF threshold above which the seller will not fulfil transfer requests. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utilities_graph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="classGraph" kindref="compound">Graph</ref> object representing utilities and their connections. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>conveyance_costs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount charged by pipe owning utility to convey water to another utility. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pipe_owner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IDs of utilities owning each pipe.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the source utility is also listed as a buyer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransfers_1af88f7908692240eec9f3179128c6f343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Transfers::Transfers</definition>
+        <argsstring>(const Transfers &amp;transfers)</argsstring>
+        <name>Transfers</name>
+        <param>
+          <type>const <ref refid="classTransfers" kindref="compound">Transfers</ref> &amp;</type>
+          <declname>transfers</declname>
+        </param>
+        <briefdescription>
+<para>Creates a copy of an existing <ref refid="classTransfers" kindref="compound">Transfers</ref> object. This function duplicates all properties and settings of the given <ref refid="classTransfers" kindref="compound">Transfers</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transfers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="classTransfers" kindref="compound">Transfers</ref> object to be copied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransfers_1a5dfeafe7a9b9a446b1ab746b65ef3b4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Transfers::~Transfers</definition>
+        <argsstring>()</argsstring>
+        <name>~Transfers</name>
+        <briefdescription>
+<para>Destroys the <ref refid="classTransfers" kindref="compound">Transfers</ref> object, releasing allocated resources. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransfers_1abb5bd2978727424dc524c401dca0cbaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; Transfers::getAllocations</definition>
+        <argsstring>() const</argsstring>
+        <name>getAllocations</name>
+        <briefdescription>
+<para>Retrieves the current water allocations. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to the vector of allocations. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransfers_1ad9e4e83ff763ac1ba518a19051cd2e69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Transfers::applyPolicy</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>applyPolicy</name>
+        <reimplements refid="classDroughtMitigationPolicy_1a76c1a85eaf7707306fe173b6437cc31d">applyPolicy</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Applies the water transfer policy for a given week. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current week to solve.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransfers_1a3c1930dbeb1273c1c0be93ad5ca57357" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Transfers::addSystemComponents</definition>
+        <argsstring>(vector&lt; Utility *&gt; system_utilities, vector&lt; WaterSource *&gt; water_sources, vector&lt; MinEnvFlowControl *&gt; min_env_flow_controls) override</argsstring>
+        <name>addSystemComponents</name>
+        <reimplements refid="classDroughtMitigationPolicy_1aaab042a79d781afe8e08753b7012372a">addSystemComponents</reimplements>
+        <param>
+          <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt;</type>
+          <declname>system_utilities</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt;</type>
+          <declname>water_sources</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref> *&gt;</type>
+          <declname>min_env_flow_controls</declname>
+        </param>
+        <briefdescription>
+<para>Adds water sources, as well as buying and purchasing utilities to the <ref refid="classTransfers" kindref="compound">Transfers</ref> policy for initialization. FIXME: RIGHT NOW TRANSFERS CAN ONLY HAVE ONE SOURCE. THIS NEEDS TO BE EXPANDED. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>system_utilities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of pointers to the system utilities. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>water_sources</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of pointers to water sources. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_env_flow_controls</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="classVector" kindref="compound">Vector</ref> of minimum environmental flow controls.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void</para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if utilities or water sources are already assigned.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classTransfers_1a06f965588350cc854f3bf3d619416fdc" kindref="member">solve_QP</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransfers_1a06f965588350cc854f3bf3d619416fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; Transfers::solve_QP</definition>
+        <argsstring>(vector&lt; double &gt; allocation_requests, double available_transfer_volume, double min_transfer_volume, int week)</argsstring>
+        <name>solve_QP</name>
+        <param>
+          <type>vector&lt; double &gt;</type>
+          <declname>allocation_requests</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>available_transfer_volume</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>min_transfer_volume</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Solves the Quadratic Programming (QP) problem to find optimal allocations given transfer requests and constraints in conveyance capacities. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>allocation_requests</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allocation requests by each utility (0 for utilities not requesting transfers). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>available_transfer_volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Total volume available for transfers from source utilities. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_transfer_volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Minimum transfer volume to each utility. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current week to solve.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A vector of flow rates and allocations computed by the QP solver. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classTransfers_1a75342a7c14b2ff69eb2520de240a1131" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Transfers::setRealization</definition>
+        <argsstring>(unsigned long realization_id, vector&lt; double &gt; &amp;utilities_rdm, vector&lt; double &gt; &amp;water_sources_rdm, vector&lt; double &gt; &amp;policy_rdm) override</argsstring>
+        <name>setRealization</name>
+        <reimplements refid="classDroughtMitigationPolicy_1a5d2033543cacca1e412eebef5106eab4">setRealization</reimplements>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization_id</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>utilities_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>water_sources_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>policy_rdm</declname>
+        </param>
+        <briefdescription>
+<para>Sets the realization parameters for the current <ref refid="classTransfers" kindref="compound">Transfers</ref> policy. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the base class function in <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>realization_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the realization. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utilities_rdm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random decision matrix for utilities. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>water_sources_rdm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random decision matrix for water sources. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>policy_rdm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random decision matrix for the policy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="189" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <computeroutput><ref refid="classTransfers" kindref="compound">Transfers</ref></computeroutput> class is a subclass of the <computeroutput><ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref></computeroutput> class that implements treated water transfers based on risk of failure (ROF) triggers. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by bernardo on 2/21/17. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="263">
+        <label>Transfers</label>
+        <link refid="classTransfers"/>
+        <childnode refid="264" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>DroughtMitigationPolicy</label>
+        <link refid="classDroughtMitigationPolicy"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="265">
+        <label>Transfers</label>
+        <link refid="classTransfers"/>
+        <childnode refid="266" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="266">
+        <label>DroughtMitigationPolicy</label>
+        <link refid="classDroughtMitigationPolicy"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="14" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="14" bodyend="192"/>
+    <listofallmembers>
+      <member refid="classTransfers_1a2acc8cfe6a1978d2468be289db636226" prot="private" virt="non-virtual"><scope>Transfers</scope><name>A</name></member>
+      <member refid="classTransfers_1a3c1930dbeb1273c1c0be93ad5ca57357" prot="public" virt="virtual"><scope>Transfers</scope><name>addSystemComponents</name></member>
+      <member refid="classTransfers_1a1c2d27eb4e9294e32f04b5e7d929e71f" prot="private" virt="non-virtual"><scope>Transfers</scope><name>Aeq</name></member>
+      <member refid="classTransfers_1ad956149e16363b5a04fd0a4f6efb3a61" prot="private" virt="non-virtual"><scope>Transfers</scope><name>allocations</name></member>
+      <member refid="classTransfers_1a22f332495395f41b340e370535a6b27a" prot="private" virt="non-virtual"><scope>Transfers</scope><name>allocations_aux</name></member>
+      <member refid="classTransfers_1ad9e4e83ff763ac1ba518a19051cd2e69" prot="public" virt="virtual"><scope>Transfers</scope><name>applyPolicy</name></member>
+      <member refid="classTransfers_1a7715c87efbee763488d6fcc4674f2523" prot="private" virt="non-virtual"><scope>Transfers</scope><name>average_pipe_capacity</name></member>
+      <member refid="classTransfers_1a24e66988fb2e50d151859813fda2e740" prot="private" virt="non-virtual"><scope>Transfers</scope><name>b</name></member>
+      <member refid="classTransfers_1a39d45672a21ce1a45925eceea79b921a" prot="private" virt="non-virtual"><scope>Transfers</scope><name>beq</name></member>
+      <member refid="classTransfers_1a55506f9588e0132ffcad1cf0036a83af" prot="private" virt="non-virtual"><scope>Transfers</scope><name>buyers_ids</name></member>
+      <member refid="classTransfers_1a6eab429701a7e1dc857675cc8571589c" prot="private" virt="non-virtual"><scope>Transfers</scope><name>buyers_transfer_triggers</name></member>
+      <member refid="classTransfers_1a2989642c0fe0544dd9345d45042933d5" prot="private" virt="non-virtual"><scope>Transfers</scope><name>conveyed_volumes</name></member>
+      <member refid="classDroughtMitigationPolicy_1aaf0715876ce33a75c7db92e50523ea0c" prot="protected" virt="non-virtual"><scope>Transfers</scope><name>DroughtMitigationPolicy</name></member>
+      <member refid="classDroughtMitigationPolicy_1a00cce0117a5bc0c446727e0c0c59a8df" prot="public" virt="non-virtual"><scope>Transfers</scope><name>DroughtMitigationPolicy</name></member>
+      <member refid="classTransfers_1a77db57256093921b04035c1e38a20060" prot="private" virt="non-virtual"><scope>Transfers</scope><name>f</name></member>
+      <member refid="classTransfers_1af4ef4c75d49dfb3aee476c0695ff41d5" prot="private" virt="non-virtual"><scope>Transfers</scope><name>flow_rates_and_allocations</name></member>
+      <member refid="classTransfers_1abb5bd2978727424dc524c401dca0cbaf" prot="public" virt="non-virtual"><scope>Transfers</scope><name>getAllocations</name></member>
+      <member refid="classDroughtMitigationPolicy_1a685ce7eacb01cb262d7e5245a736aa38" prot="protected" virt="non-virtual"><scope>Transfers</scope><name>getRofFromRealizationTable</name></member>
+      <member refid="classDroughtMitigationPolicy_1a4c3940352b0092e6a4f673f72693d239" prot="public" virt="non-virtual"><scope>Transfers</scope><name>getUtilities_ids</name></member>
+      <member refid="classTransfers_1aec57a6a75061f18404e30d8e48c45ffd" prot="private" virt="non-virtual"><scope>Transfers</scope><name>H</name></member>
+      <member refid="classDroughtMitigationPolicy_1abf3ed19ed98e0d74dc9ae24094be640b" prot="public" virt="non-virtual"><scope>Transfers</scope><name>id</name></member>
+      <member refid="classTransfers_1a10e5cae64016e52eca5dccc8e01e9791" prot="private" virt="non-virtual"><scope>Transfers</scope><name>lb</name></member>
+      <member refid="classDroughtMitigationPolicy_1a0bf7d0fa94377ae6814e529daf0204c4" prot="public" virt="non-virtual"><scope>Transfers</scope><name>operator&lt;</name></member>
+      <member refid="classDroughtMitigationPolicy_1a576d3ddb09dc9372898a63c0949d08a6" prot="public" virt="non-virtual"><scope>Transfers</scope><name>operator&gt;</name></member>
+      <member refid="classDroughtMitigationPolicy_1a4c5a2dc2aa3a1c7550cdb17045e1fef3" prot="protected" virt="non-virtual"><scope>Transfers</scope><name>rdm_factors_all</name></member>
+      <member refid="classDroughtMitigationPolicy_1abef5c917bbc076514fe61bfebbd0e4fc" prot="protected" virt="non-virtual"><scope>Transfers</scope><name>rdm_factors_realization</name></member>
+      <member refid="classDroughtMitigationPolicy_1af583979405bc5d530ee576df8a6e9324" prot="protected" virt="non-virtual"><scope>Transfers</scope><name>realization_min_env_flow_controls</name></member>
+      <member refid="classDroughtMitigationPolicy_1af6e5787a58017804d8598effbeeaba8e" prot="protected" virt="non-virtual"><scope>Transfers</scope><name>realization_utilities</name></member>
+      <member refid="classDroughtMitigationPolicy_1ae2104e99c421513902ba66d012484c0e" prot="protected" virt="non-virtual"><scope>Transfers</scope><name>realization_water_sources</name></member>
+      <member refid="classTransfers_1ae3d752b6821c1a92801494304cef47e0" prot="private" virt="non-virtual"><scope>Transfers</scope><name>seller_transfer_trigger</name></member>
+      <member refid="classTransfers_1a75342a7c14b2ff69eb2520de240a1131" prot="public" virt="virtual"><scope>Transfers</scope><name>setRealization</name></member>
+      <member refid="classDroughtMitigationPolicy_1a75710a6ab73213223222b3472f9251c0" prot="public" virt="non-virtual"><scope>Transfers</scope><name>setStorage_to_rof_table_</name></member>
+      <member refid="classTransfers_1a06f965588350cc854f3bf3d619416fdc" prot="public" virt="non-virtual"><scope>Transfers</scope><name>solve_QP</name></member>
+      <member refid="classTransfers_1a69a7ec8b065b9c807e2256f205a3d41e" prot="private" virt="non-virtual"><scope>Transfers</scope><name>source_treatment_buffer</name></member>
+      <member refid="classTransfers_1a8c84c081f069f6835e9dd12a460d90eb" prot="private" virt="non-virtual"><scope>Transfers</scope><name>source_utility</name></member>
+      <member refid="classTransfers_1a4513cfef08bd7e9980d098f8fb7d6a32" prot="private" virt="non-virtual"><scope>Transfers</scope><name>source_utility_id</name></member>
+      <member refid="classTransfers_1a6a23dc463d7a4b07bcb7f3a7472263b2" prot="private" virt="non-virtual"><scope>Transfers</scope><name>transfer_water_source</name></member>
+      <member refid="classTransfers_1a039a24fe986a718da1ac61bac0e49644" prot="private" virt="non-virtual"><scope>Transfers</scope><name>transfer_water_source_id</name></member>
+      <member refid="classTransfers_1ae6abf817349382b66abc9cc3f45193a1" prot="public" virt="non-virtual"><scope>Transfers</scope><name>Transfers</name></member>
+      <member refid="classTransfers_1af88f7908692240eec9f3179128c6f343" prot="public" virt="non-virtual"><scope>Transfers</scope><name>Transfers</name></member>
+      <member refid="classDroughtMitigationPolicy_1aaea5016d1462bec889cb8df85aececc6" prot="public" virt="non-virtual"><scope>Transfers</scope><name>type</name></member>
+      <member refid="classTransfers_1aab0d3f08ed2897d9a74c9970612231d5" prot="private" virt="non-virtual"><scope>Transfers</scope><name>ub</name></member>
+      <member refid="classDroughtMitigationPolicy_1ace2a2425f6608c34a3189c11445978a1" prot="protected" virt="non-virtual"><scope>Transfers</scope><name>use_imported_tables</name></member>
+      <member refid="classTransfers_1a420b61c6ff119fef48a39a39ae4e0958" prot="private" virt="non-virtual"><scope>Transfers</scope><name>util_id_to_vertex_id</name></member>
+      <member refid="classDroughtMitigationPolicy_1ad19fbc5a9fdf17ed50c0ba0b99d47eca" prot="protected" virt="non-virtual"><scope>Transfers</scope><name>utilities_ids</name></member>
+      <member refid="classDroughtMitigationPolicy_1a9419c433241f36cbf018a5bbe3059d5a" prot="public" virt="virtual"><scope>Transfers</scope><name>~DroughtMitigationPolicy</name></member>
+      <member refid="classTransfers_1a5dfeafe7a9b9a446b1ab746b65ef3b4b" prot="public" virt="non-virtual"><scope>Transfers</scope><name>~Transfers</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -2,6 +2,11 @@
 \label{classReservoir}\index{Reservoir@{Reservoir}}
 
 
+The {\ttfamily \mbox{\hyperlink{classReservoir}{Reservoir}}} class is a subclass of the main {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} class. It represents a general reservoir object with a fixed or variable storage area curve.  
+
+
+
+
 {\ttfamily \#include $<$Reservoir.\+h$>$}
 
 Inheritance diagram for Reservoir\+:\begin{figure}[H]
@@ -13,24 +18,24 @@ Inheritance diagram for Reservoir\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classReservoir_ac9803ae5446e4e9a2631ce66817004cf}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, Evaporation\+Series \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, Data\+Series $\ast$\mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
+\mbox{\hyperlink{classReservoir_ac9803ae5446e4e9a2631ce66817004cf}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, \mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$\mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
 \begin{DoxyCompactList}\small\item\em Constructs a basic \mbox{\hyperlink{classReservoir}{Reservoir}} object with a storage area curve. It also ensures that the last storage value in the storage area curve matches the reservoir\textquotesingle{}s capacity. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classReservoir_a2e324b75aacc65d90b214ff7f62dfa89}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, Evaporation\+Series \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, Data\+Series $\ast$\mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
+\mbox{\hyperlink{classReservoir_a2e324b75aacc65d90b214ff7f62dfa89}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, \mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$\mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classReservoir}{Reservoir}} object with a storage area curve, treatment capacity. Also includes financing, construction, and permitting information. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classReservoir_a0a1041fc72df190bbc51d965ede96f49}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, Evaporation\+Series \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, double storage\+\_\+area, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
+\mbox{\hyperlink{classReservoir_a0a1041fc72df190bbc51d965ede96f49}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, double storage\+\_\+area, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classReservoir}{Reservoir}} object with a fixed storage area, treatment capacity, and evaporation data. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classReservoir_a56409325d4554f8ef32a9c3605ece5c8}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, Evaporation\+Series \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, double storage\+\_\+area, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
+\mbox{\hyperlink{classReservoir_a56409325d4554f8ef32a9c3605ece5c8}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, double storage\+\_\+area, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classReservoir}{Reservoir}} object with a fixed storage area, treatment capacity. Also includes financing, construction, and permitting information. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classReservoir_a1a6f078a9565dcb65843d3575bdd4172}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, Evaporation\+Series \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, Data\+Series $\ast$\mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}{allocated\+\_\+treatment\+\_\+fractions}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_a2f6655a80c4847fe039987255d9d998c}{allocated\+\_\+fractions}}, vector$<$ int $>$ $\ast$\mbox{\hyperlink{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}{utilities\+\_\+with\+\_\+allocations}}, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
+\mbox{\hyperlink{classReservoir_a1a6f078a9565dcb65843d3575bdd4172}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, \mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$\mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}{allocated\+\_\+treatment\+\_\+fractions}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_a2f6655a80c4847fe039987255d9d998c}{allocated\+\_\+fractions}}, vector$<$ int $>$ $\ast$\mbox{\hyperlink{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}{utilities\+\_\+with\+\_\+allocations}}, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classReservoir}{Reservoir}} object with specified storage area curve. Includes additional details like treatment fractions and allocation details to connected utilities. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classReservoir_a617f90b97899699d7e0dd97e7ebb34bc}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, Evaporation\+Series \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, double storage\+\_\+area, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}{allocated\+\_\+treatment\+\_\+fractions}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_a2f6655a80c4847fe039987255d9d998c}{allocated\+\_\+fractions}}, vector$<$ int $>$ $\ast$\mbox{\hyperlink{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}{utilities\+\_\+with\+\_\+allocations}}, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
+\mbox{\hyperlink{classReservoir_a617f90b97899699d7e0dd97e7ebb34bc}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, double storage\+\_\+area, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}{allocated\+\_\+treatment\+\_\+fractions}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_a2f6655a80c4847fe039987255d9d998c}{allocated\+\_\+fractions}}, vector$<$ int $>$ $\ast$\mbox{\hyperlink{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}{utilities\+\_\+with\+\_\+allocations}}, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classReservoir}{Reservoir}} object with specified storage area curve. Includes additional details like treatment fractions and allocation details to connected utilities. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classReservoir_ac20659043afad4d2df49ce91e08f5dad}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, Evaporation\+Series \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, Data\+Series $\ast$\mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}{allocated\+\_\+treatment\+\_\+fractions}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_a2f6655a80c4847fe039987255d9d998c}{allocated\+\_\+fractions}}, vector$<$ int $>$ $\ast$\mbox{\hyperlink{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}{utilities\+\_\+with\+\_\+allocations}}, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
+\mbox{\hyperlink{classReservoir_ac20659043afad4d2df49ce91e08f5dad}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, \mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$\mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}{allocated\+\_\+treatment\+\_\+fractions}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_a2f6655a80c4847fe039987255d9d998c}{allocated\+\_\+fractions}}, vector$<$ int $>$ $\ast$\mbox{\hyperlink{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}{utilities\+\_\+with\+\_\+allocations}}, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classReservoir}{Reservoir}} object with specified storage area curve. Includes additional details like treatment fractions and allocation details to connected utilities. Also includes financing, construction, and permitting information. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classReservoir_a37ca7ba59d127fee6522c1ad545c9caf}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, Evaporation\+Series \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, double storage\+\_\+area, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}{allocated\+\_\+treatment\+\_\+fractions}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_a2f6655a80c4847fe039987255d9d998c}{allocated\+\_\+fractions}}, vector$<$ int $>$ $\ast$\mbox{\hyperlink{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}{utilities\+\_\+with\+\_\+allocations}}, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
+\mbox{\hyperlink{classReservoir_a37ca7ba59d127fee6522c1ad545c9caf}{Reservoir}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, double storage\+\_\+area, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_aa73fe10cfc6579b2fb79529e1dde5140}{allocated\+\_\+treatment\+\_\+fractions}}, vector$<$ double $>$ $\ast$\mbox{\hyperlink{classWaterSource_a2f6655a80c4847fe039987255d9d998c}{allocated\+\_\+fractions}}, vector$<$ int $>$ $\ast$\mbox{\hyperlink{classWaterSource_ac345583fc2d0f7e1db31ee40244d7ace}{utilities\+\_\+with\+\_\+allocations}}, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond, int \mbox{\hyperlink{classWaterSource_afdd12c29fc74ea21dff1f1be9b8c2b7b}{source\+\_\+type}}=R\+E\+S\+E\+R\+V\+O\+IR)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classReservoir}{Reservoir}} object with fixed storage area. Includes additional details like treatment fractions and allocation details to connected utilities. Also includes financing, construction, and permitting information. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classReservoir_a3fc46303b2846aa23bb52f0b69b9585c}{Reservoir}} (const \mbox{\hyperlink{classReservoir}{Reservoir}} \&reservoir)
-\begin{DoxyCompactList}\small\item\em Copy constructor for creating a copy of an existing \mbox{\hyperlink{classReservoir}{Reservoir}} object. A new {\ttfamily Evaporation\+Series} is created to ensure deep copying of the evaporation data. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Copy constructor for creating a copy of an existing \mbox{\hyperlink{classReservoir}{Reservoir}} object. A new {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} is created to ensure deep copying of the evaporation data. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classReservoir}{Reservoir}} \& \mbox{\hyperlink{classReservoir_a8b43209f25276f279986d87b5a77c4f1}{operator=}} (const \mbox{\hyperlink{classReservoir}{Reservoir}} \&reservoir)
 \begin{DoxyCompactList}\small\item\em Assignment operator for copying data from another \mbox{\hyperlink{classReservoir}{Reservoir}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classReservoir_a2f8bfdc73c7470185775a940fb3531de}{$\sim$\+Reservoir}} () override
@@ -48,24 +53,29 @@ double \mbox{\hyperlink{classReservoir_af86ffdaa2842a38b7f59e0360a1004a1}{get\+A
 \item 
 const bool \mbox{\hyperlink{classReservoir_ad4b37aef4873071d1766baaccce5b8cf}{fixed\+\_\+area}}
 \begin{DoxyCompactList}\small\item\em The fixed area of the reservoir. \end{DoxyCompactList}\item 
-Evaporation\+Series \mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}
-\begin{DoxyCompactList}\small\item\em The Evaporation\+Series object representing the evaporation series of the reservoir. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object representing the evaporation series of the reservoir. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-Data\+Series $\ast$ \mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}
-\begin{DoxyCompactList}\small\item\em The Data\+Series object representing the storage area curve of the reservoir. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$ \mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{classDataSeries}{Data\+Series}} object representing the storage area curve of the reservoir. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{classReservoir_a57ab55e0dde9e29a4ff97de98b09e458}{area}} = N\+O\+N\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED
 \begin{DoxyCompactList}\small\item\em The area of the reservoir. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classReservoir}{Reservoir}}} class is a subclass of the main {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} class. It represents a general reservoir object with a fixed or variable storage area curve. 
+
+Created by bernardoct on 1/12/17. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classReservoir_ac9803ae5446e4e9a2631ce66817004cf}\label{classReservoir_ac9803ae5446e4e9a2631ce66817004cf}} 
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \subsubsection{\texorpdfstring{Reservoir()}{Reservoir()}\hspace{0.1cm}{\footnotesize\ttfamily [1/9]}}
-{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{Evaporation\+Series \&}]{evaporation\+\_\+series,  }\item[{Data\+Series $\ast$}]{storage\+\_\+area\+\_\+curve,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series,  }\item[{\mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$}]{storage\+\_\+area\+\_\+curve,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
 
 
 
@@ -85,9 +95,9 @@ Called for a reservoir that is already built and operational.
 \hline
 {\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the reservoir in cubic units per time unit. \\
 \hline
-{\em evaporation\+\_\+series} & A reference to an Evaporation\+Series object containing evaporation data for the reservoir. \\
+{\em evaporation\+\_\+series} & A reference to an \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object containing evaporation data for the reservoir. \\
 \hline
-{\em storage\+\_\+area\+\_\+curve} & A pointer to a Data\+Series object representing the storage area curve for the reservoir. \\
+{\em storage\+\_\+area\+\_\+curve} & A pointer to a \mbox{\hyperlink{classDataSeries}{Data\+Series}} object representing the storage area curve for the reservoir. \\
 \hline
 {\em source\+\_\+type} & The type of the source (e.\+g., a constant or specific reservoir type).\\
 \hline
@@ -101,7 +111,7 @@ Called for a reservoir that is already built and operational.
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \subsubsection{\texorpdfstring{Reservoir()}{Reservoir()}\hspace{0.1cm}{\footnotesize\ttfamily [2/9]}}
-{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{Evaporation\+Series \&}]{evaporation\+\_\+series,  }\item[{Data\+Series $\ast$}]{storage\+\_\+area\+\_\+curve,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series,  }\item[{\mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$}]{storage\+\_\+area\+\_\+curve,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
 
 
 
@@ -123,9 +133,9 @@ This function initializes a \mbox{\hyperlink{classReservoir}{Reservoir}} object 
 \hline
 {\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the reservoir in cubic units per time unit. \\
 \hline
-{\em evaporation\+\_\+series} & A reference to an Evaporation\+Series object containing evaporation data for the reservoir. \\
+{\em evaporation\+\_\+series} & A reference to an \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object containing evaporation data for the reservoir. \\
 \hline
-{\em storage\+\_\+area\+\_\+curve} & A pointer to a Data\+Series object representing the storage area curve for the reservoir. \\
+{\em storage\+\_\+area\+\_\+curve} & A pointer to a \mbox{\hyperlink{classDataSeries}{Data\+Series}} object representing the storage area curve for the reservoir. \\
 \hline
 {\em construction\+\_\+time\+\_\+range} & A vector of doubles representing the start and end times of the construction period. \\
 \hline
@@ -145,7 +155,7 @@ This function initializes a \mbox{\hyperlink{classReservoir}{Reservoir}} object 
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \subsubsection{\texorpdfstring{Reservoir()}{Reservoir()}\hspace{0.1cm}{\footnotesize\ttfamily [3/9]}}
-{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{Evaporation\+Series \&}]{evaporation\+\_\+series,  }\item[{double}]{storage\+\_\+area,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series,  }\item[{double}]{storage\+\_\+area,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
 
 
 
@@ -165,7 +175,7 @@ Called for a reservoir that is already built and operational.
 \hline
 {\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the reservoir in cubic units per time unit. \\
 \hline
-{\em evaporation\+\_\+series} & A reference to an Evaporation\+Series object containing evaporation data for the reservoir. \\
+{\em evaporation\+\_\+series} & A reference to an \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object containing evaporation data for the reservoir. \\
 \hline
 {\em storage\+\_\+area} & The area of the reservoir in square units. \\
 \hline
@@ -176,7 +186,7 @@ Called for a reservoir that is already built and operational.
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \subsubsection{\texorpdfstring{Reservoir()}{Reservoir()}\hspace{0.1cm}{\footnotesize\ttfamily [4/9]}}
-{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{Evaporation\+Series \&}]{evaporation\+\_\+series,  }\item[{double}]{storage\+\_\+area,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series,  }\item[{double}]{storage\+\_\+area,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
 
 
 
@@ -198,9 +208,9 @@ This function initializes a \mbox{\hyperlink{classReservoir}{Reservoir}} object 
 \hline
 {\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the reservoir in cubic units per time unit. \\
 \hline
-{\em evaporation\+\_\+series} & A reference to an Evaporation\+Series object containing evaporation data for the reservoir. \\
+{\em evaporation\+\_\+series} & A reference to an \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object containing evaporation data for the reservoir. \\
 \hline
-{\em storage\+\_\+area\+\_\+curve} & A pointer to a Data\+Series object representing the storage area curve for the reservoir. \\
+{\em storage\+\_\+area\+\_\+curve} & A pointer to a \mbox{\hyperlink{classDataSeries}{Data\+Series}} object representing the storage area curve for the reservoir. \\
 \hline
 {\em construction\+\_\+time\+\_\+range} & A vector of doubles representing the start and end times of the construction period. \\
 \hline
@@ -220,7 +230,7 @@ This function initializes a \mbox{\hyperlink{classReservoir}{Reservoir}} object 
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \subsubsection{\texorpdfstring{Reservoir()}{Reservoir()}\hspace{0.1cm}{\footnotesize\ttfamily [5/9]}}
-{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{Evaporation\+Series \&}]{evaporation\+\_\+series,  }\item[{Data\+Series $\ast$}]{storage\+\_\+area\+\_\+curve,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+treatment\+\_\+fractions,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+fractions,  }\item[{vector$<$ int $>$ $\ast$}]{utilities\+\_\+with\+\_\+allocations,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series,  }\item[{\mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$}]{storage\+\_\+area\+\_\+curve,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+treatment\+\_\+fractions,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+fractions,  }\item[{vector$<$ int $>$ $\ast$}]{utilities\+\_\+with\+\_\+allocations,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
 
 
 
@@ -240,9 +250,9 @@ Called for a reservoir that is already built and operational.
 \hline
 {\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the reservoir in cubic units per time unit. \\
 \hline
-{\em evaporation\+\_\+series} & A reference to an Evaporation\+Series object containing evaporation data for the reservoir. \\
+{\em evaporation\+\_\+series} & A reference to an \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object containing evaporation data for the reservoir. \\
 \hline
-{\em storage\+\_\+area\+\_\+curve} & A pointer to a Data\+Series object representing the storage area curve for the reservoir. \\
+{\em storage\+\_\+area\+\_\+curve} & A pointer to a \mbox{\hyperlink{classDataSeries}{Data\+Series}} object representing the storage area curve for the reservoir. \\
 \hline
 {\em allocated\+\_\+treatment\+\_\+fractions} & A pointer to a vector of treatment fractions allocated to utilities. \\
 \hline
@@ -262,7 +272,7 @@ Called for a reservoir that is already built and operational.
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \subsubsection{\texorpdfstring{Reservoir()}{Reservoir()}\hspace{0.1cm}{\footnotesize\ttfamily [6/9]}}
-{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{Evaporation\+Series \&}]{evaporation\+\_\+series,  }\item[{double}]{storage\+\_\+area,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+treatment\+\_\+fractions,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+fractions,  }\item[{vector$<$ int $>$ $\ast$}]{utilities\+\_\+with\+\_\+allocations,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series,  }\item[{double}]{storage\+\_\+area,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+treatment\+\_\+fractions,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+fractions,  }\item[{vector$<$ int $>$ $\ast$}]{utilities\+\_\+with\+\_\+allocations,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
 
 
 
@@ -282,7 +292,7 @@ Called for a reservoir that is already built and operational.
 \hline
 {\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the reservoir in cubic units per time unit. \\
 \hline
-{\em evaporation\+\_\+series} & A reference to an Evaporation\+Series object containing evaporation data for the reservoir. \\
+{\em evaporation\+\_\+series} & A reference to an \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object containing evaporation data for the reservoir. \\
 \hline
 {\em storage\+\_\+area} & The area of the reservoir in square units. \\
 \hline
@@ -299,7 +309,7 @@ Called for a reservoir that is already built and operational.
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \subsubsection{\texorpdfstring{Reservoir()}{Reservoir()}\hspace{0.1cm}{\footnotesize\ttfamily [7/9]}}
-{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{Evaporation\+Series \&}]{evaporation\+\_\+series,  }\item[{Data\+Series $\ast$}]{storage\+\_\+area\+\_\+curve,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+treatment\+\_\+fractions,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+fractions,  }\item[{vector$<$ int $>$ $\ast$}]{utilities\+\_\+with\+\_\+allocations,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series,  }\item[{\mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$}]{storage\+\_\+area\+\_\+curve,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+treatment\+\_\+fractions,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+fractions,  }\item[{vector$<$ int $>$ $\ast$}]{utilities\+\_\+with\+\_\+allocations,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
 
 
 
@@ -319,9 +329,9 @@ Called when the reservoir does not yet exist at the beginning of the simulation.
 \hline
 {\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the reservoir in cubic units per time unit. \\
 \hline
-{\em evaporation\+\_\+series} & A reference to an Evaporation\+Series object containing evaporation data for the reservoir. \\
+{\em evaporation\+\_\+series} & A reference to an \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object containing evaporation data for the reservoir. \\
 \hline
-{\em storage\+\_\+area\+\_\+curve} & A pointer to a Data\+Series object representing the storage area curve for the reservoir. \\
+{\em storage\+\_\+area\+\_\+curve} & A pointer to a \mbox{\hyperlink{classDataSeries}{Data\+Series}} object representing the storage area curve for the reservoir. \\
 \hline
 {\em allocated\+\_\+treatment\+\_\+fractions} & A pointer to a vector of treatment fractions allocated to utilities. \\
 \hline
@@ -347,7 +357,7 @@ Called when the reservoir does not yet exist at the beginning of the simulation.
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \index{Reservoir@{Reservoir}!Reservoir@{Reservoir}}
 \subsubsection{\texorpdfstring{Reservoir()}{Reservoir()}\hspace{0.1cm}{\footnotesize\ttfamily [8/9]}}
-{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{Evaporation\+Series \&}]{evaporation\+\_\+series,  }\item[{double}]{storage\+\_\+area,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+treatment\+\_\+fractions,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+fractions,  }\item[{vector$<$ int $>$ $\ast$}]{utilities\+\_\+with\+\_\+allocations,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Reservoir\+::\+Reservoir (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series,  }\item[{double}]{storage\+\_\+area,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+treatment\+\_\+fractions,  }\item[{vector$<$ double $>$ $\ast$}]{allocated\+\_\+fractions,  }\item[{vector$<$ int $>$ $\ast$}]{utilities\+\_\+with\+\_\+allocations,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond,  }\item[{int}]{source\+\_\+type = {\ttfamily RESERVOIR} }\end{DoxyParamCaption})}
 
 
 
@@ -367,7 +377,7 @@ Called when the reservoir does not yet exist at the beginning of the simulation.
 \hline
 {\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the reservoir in cubic units per time unit. \\
 \hline
-{\em evaporation\+\_\+series} & A reference to an Evaporation\+Series object containing evaporation data for the reservoir. \\
+{\em evaporation\+\_\+series} & A reference to an \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object containing evaporation data for the reservoir. \\
 \hline
 {\em storage\+\_\+area} & The area of the reservoir in square units. \\
 \hline
@@ -399,7 +409,7 @@ Called when the reservoir does not yet exist at the beginning of the simulation.
 
 
 
-Copy constructor for creating a copy of an existing \mbox{\hyperlink{classReservoir}{Reservoir}} object. A new {\ttfamily Evaporation\+Series} is created to ensure deep copying of the evaporation data. 
+Copy constructor for creating a copy of an existing \mbox{\hyperlink{classReservoir}{Reservoir}} object. A new {\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}}} is created to ensure deep copying of the evaporation data. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -541,11 +551,11 @@ The area of the reservoir.
 \index{Reservoir@{Reservoir}!evaporation\+\_\+series@{evaporation\+\_\+series}}
 \index{evaporation\+\_\+series@{evaporation\+\_\+series}!Reservoir@{Reservoir}}
 \subsubsection{\texorpdfstring{evaporation\+\_\+series}{evaporation\_series}}
-{\footnotesize\ttfamily Evaporation\+Series Reservoir\+::evaporation\+\_\+series}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} Reservoir\+::evaporation\+\_\+series}
 
 
 
-The Evaporation\+Series object representing the evaporation series of the reservoir. 
+The \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object representing the evaporation series of the reservoir. 
 
 \mbox{\Hypertarget{classReservoir_ad4b37aef4873071d1766baaccce5b8cf}\label{classReservoir_ad4b37aef4873071d1766baaccce5b8cf}} 
 \index{Reservoir@{Reservoir}!fixed\+\_\+area@{fixed\+\_\+area}}
@@ -561,11 +571,11 @@ The fixed area of the reservoir.
 \index{Reservoir@{Reservoir}!storage\+\_\+area\+\_\+curve@{storage\+\_\+area\+\_\+curve}}
 \index{storage\+\_\+area\+\_\+curve@{storage\+\_\+area\+\_\+curve}!Reservoir@{Reservoir}}
 \subsubsection{\texorpdfstring{storage\+\_\+area\+\_\+curve}{storage\_area\_curve}}
-{\footnotesize\ttfamily Data\+Series$\ast$ Reservoir\+::storage\+\_\+area\+\_\+curve\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classDataSeries}{Data\+Series}}$\ast$ Reservoir\+::storage\+\_\+area\+\_\+curve\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
-The Data\+Series object representing the storage area curve of the reservoir. 
+The \mbox{\hyperlink{classDataSeries}{Data\+Series}} object representing the storage area curve of the reservoir. 
 
 
 

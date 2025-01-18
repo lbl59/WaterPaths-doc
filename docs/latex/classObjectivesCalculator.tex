@@ -1,0 +1,201 @@
+\hypertarget{classObjectivesCalculator}{}\section{Objectives\+Calculator Class Reference}
+\label{classObjectivesCalculator}\index{Objectives\+Calculator@{Objectives\+Calculator}}
+
+
+The \mbox{\hyperlink{classObjectivesCalculator}{Objectives\+Calculator}} class calculates the objectives of the model based on the data collected during the simulation.  
+
+
+
+
+{\ttfamily \#include $<$Objectives\+Calculator.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classObjectivesCalculator_a4f34e541d573cc2e0690cfcdd8460c16}{calculate\+Reliability\+Objective}} (const vector$<$ \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} $\ast$$>$ \&utility\+\_\+collector, vector$<$ unsigned long $>$ realizations=vector$<$ unsigned long $>$(0))
+\begin{DoxyCompactList}\small\item\em Calculates the reliability objective based on storage capacity ratios. The reliability objective is defined as 1 minus the maximum annual failure ratio across realizations. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classObjectivesCalculator_ab01034697c3e9876fd06bff0c880b5ca}{calculate\+Restriction\+Frequency\+Objective}} (const vector$<$ \mbox{\hyperlink{classRestrictionsDataCollector}{Restrictions\+Data\+Collector}} $\ast$$>$ \&restriction\+\_\+data, vector$<$ unsigned long $>$ realizations=vector$<$ unsigned long $>$(0))
+\begin{DoxyCompactList}\small\item\em Calculates the restriction frequency objective. The restriction frequency objective measures the average ratio of years with restrictions to total years across all realizations. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classObjectivesCalculator_ac0860168c763c1957be518ba1a019812}{calculate\+Net\+Present\+Cost\+Infrastructure\+Objective}} (const vector$<$ \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} $\ast$$>$ \&utility\+\_\+data, vector$<$ unsigned long $>$ realizations=vector$<$ unsigned long $>$(0))
+\begin{DoxyCompactList}\small\item\em Calculates the net present cost (N\+PC) of infrastructure. This objective averages the total N\+PC across all realizations. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classObjectivesCalculator_a3de288911848c40150918d04879bdacb}{calculate\+Peak\+Financial\+Costs\+Objective}} (const vector$<$ \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} $\ast$$>$ \&utility\+\_\+data, vector$<$ unsigned long $>$ realizations=vector$<$ unsigned long $>$(0))
+\begin{DoxyCompactList}\small\item\em Calculates the peak financial costs objective. This objective is based on the maximum annual financial cost ratio across all realizations. It will also print a statement if the total financial cost is absurdly high ($>$10$^\wedge$10). \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classObjectivesCalculator_aaa5a9bb621c4346e106809f58afe1bd1}{calculate\+Worse\+Case\+Costs\+Objective}} (const vector$<$ \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} $\ast$$>$ \&utility\+\_\+data, vector$<$ unsigned long $>$ realizations=vector$<$ unsigned long $>$(0))
+\begin{DoxyCompactList}\small\item\em Calculates the worst-\/case financial costs objective. The worst-\/case cost is defined as the financial cost at the specified worst-\/case percentile across all realizations. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classObjectivesCalculator_a90547ef235596c39aa1bfe556d98b9f6}{calculate\+Unit\+Total\+Cost\+Objective}} (const vector$<$ \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} $\ast$$>$ \&utility\+\_\+data, vector$<$ unsigned long $>$ realizations=vector$<$ unsigned long $>$(0))
+\begin{DoxyCompactList}\small\item\em Calculates the unit total cost objective. This objective is based on the ratio of infrastructure cost to total water demand, normalized by the first-\/year demand. The unit cost output is in \$mil/\+M\+GD that should be converted to \$/k\+Gal for comparison with other objectives. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classObjectivesCalculator_aaf6480a2839ed67c9d5dd52d79e2954d}{calculate\+Net\+Present\+Cost\+Infrastructure\+Objective\+For\+Variable\+Debt\+Service}} (const vector$<$ \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} $\ast$$>$ \&utility\+\_\+data, vector$<$ unsigned long $>$ realizations=vector$<$ unsigned long $>$(0))
+\begin{DoxyCompactList}\small\item\em Calculates the net present cost (N\+PC) for variable debt service. This objective averages the total N\+PC for variable debt service across all realizations. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classObjectivesCalculator}{Objectives\+Calculator}} class calculates the objectives of the model based on the data collected during the simulation. 
+
+Created by bernardoct on 8/25/17. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classObjectivesCalculator_ac0860168c763c1957be518ba1a019812}\label{classObjectivesCalculator_ac0860168c763c1957be518ba1a019812}} 
+\index{Objectives\+Calculator@{Objectives\+Calculator}!calculate\+Net\+Present\+Cost\+Infrastructure\+Objective@{calculate\+Net\+Present\+Cost\+Infrastructure\+Objective}}
+\index{calculate\+Net\+Present\+Cost\+Infrastructure\+Objective@{calculate\+Net\+Present\+Cost\+Infrastructure\+Objective}!Objectives\+Calculator@{Objectives\+Calculator}}
+\subsubsection{\texorpdfstring{calculate\+Net\+Present\+Cost\+Infrastructure\+Objective()}{calculateNetPresentCostInfrastructureObjective()}}
+{\footnotesize\ttfamily static double Objectives\+Calculator\+::calculate\+Net\+Present\+Cost\+Infrastructure\+Objective (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} $\ast$$>$ \&}]{utility\+\_\+data,  }\item[{vector$<$ unsigned long $>$}]{realizations = {\ttfamily vector$<$~unsigned~long~$>$(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the net present cost (N\+PC) of infrastructure. This objective averages the total N\+PC across all realizations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+data} & \mbox{\hyperlink{classVector}{Vector}} of {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} pointers containing utility data for all realizations. \\
+\hline
+{\em realizations} & \mbox{\hyperlink{classVector}{Vector}} of realization indices to be evaluated. If empty, evaluates all realizations. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The average N\+PC as a double. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classObjectivesCalculator_aaf6480a2839ed67c9d5dd52d79e2954d}\label{classObjectivesCalculator_aaf6480a2839ed67c9d5dd52d79e2954d}} 
+\index{Objectives\+Calculator@{Objectives\+Calculator}!calculate\+Net\+Present\+Cost\+Infrastructure\+Objective\+For\+Variable\+Debt\+Service@{calculate\+Net\+Present\+Cost\+Infrastructure\+Objective\+For\+Variable\+Debt\+Service}}
+\index{calculate\+Net\+Present\+Cost\+Infrastructure\+Objective\+For\+Variable\+Debt\+Service@{calculate\+Net\+Present\+Cost\+Infrastructure\+Objective\+For\+Variable\+Debt\+Service}!Objectives\+Calculator@{Objectives\+Calculator}}
+\subsubsection{\texorpdfstring{calculate\+Net\+Present\+Cost\+Infrastructure\+Objective\+For\+Variable\+Debt\+Service()}{calculateNetPresentCostInfrastructureObjectiveForVariableDebtService()}}
+{\footnotesize\ttfamily static double Objectives\+Calculator\+::calculate\+Net\+Present\+Cost\+Infrastructure\+Objective\+For\+Variable\+Debt\+Service (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} $\ast$$>$ \&}]{utility\+\_\+data,  }\item[{vector$<$ unsigned long $>$}]{realizations = {\ttfamily vector$<$~unsigned~long~$>$(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the net present cost (N\+PC) for variable debt service. This objective averages the total N\+PC for variable debt service across all realizations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+data} & \mbox{\hyperlink{classVector}{Vector}} of {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} pointers containing utility data for all realizations. \\
+\hline
+{\em realizations} & \mbox{\hyperlink{classVector}{Vector}} of realization indices to be evaluated. If empty, evaluates all realizations. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The average N\+PC for variable debt service as a double. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classObjectivesCalculator_a3de288911848c40150918d04879bdacb}\label{classObjectivesCalculator_a3de288911848c40150918d04879bdacb}} 
+\index{Objectives\+Calculator@{Objectives\+Calculator}!calculate\+Peak\+Financial\+Costs\+Objective@{calculate\+Peak\+Financial\+Costs\+Objective}}
+\index{calculate\+Peak\+Financial\+Costs\+Objective@{calculate\+Peak\+Financial\+Costs\+Objective}!Objectives\+Calculator@{Objectives\+Calculator}}
+\subsubsection{\texorpdfstring{calculate\+Peak\+Financial\+Costs\+Objective()}{calculatePeakFinancialCostsObjective()}}
+{\footnotesize\ttfamily static double Objectives\+Calculator\+::calculate\+Peak\+Financial\+Costs\+Objective (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} $\ast$$>$ \&}]{utility\+\_\+data,  }\item[{vector$<$ unsigned long $>$}]{realizations = {\ttfamily vector$<$~unsigned~long~$>$(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the peak financial costs objective. This objective is based on the maximum annual financial cost ratio across all realizations. It will also print a statement if the total financial cost is absurdly high ($>$10$^\wedge$10). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+data} & \mbox{\hyperlink{classVector}{Vector}} of {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} pointers containing utility data for all realizations. \\
+\hline
+{\em realizations} & \mbox{\hyperlink{classVector}{Vector}} of realization indices to be evaluated. If empty, evaluates all realizations.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The average peak financial cost as a double.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & if the objective value is infinite. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classObjectivesCalculator_a4f34e541d573cc2e0690cfcdd8460c16}\label{classObjectivesCalculator_a4f34e541d573cc2e0690cfcdd8460c16}} 
+\index{Objectives\+Calculator@{Objectives\+Calculator}!calculate\+Reliability\+Objective@{calculate\+Reliability\+Objective}}
+\index{calculate\+Reliability\+Objective@{calculate\+Reliability\+Objective}!Objectives\+Calculator@{Objectives\+Calculator}}
+\subsubsection{\texorpdfstring{calculate\+Reliability\+Objective()}{calculateReliabilityObjective()}}
+{\footnotesize\ttfamily static double Objectives\+Calculator\+::calculate\+Reliability\+Objective (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} $\ast$$>$ \&}]{utility\+\_\+collector,  }\item[{vector$<$ unsigned long $>$}]{realizations = {\ttfamily vector$<$~unsigned~long~$>$(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the reliability objective based on storage capacity ratios. The reliability objective is defined as 1 minus the maximum annual failure ratio across realizations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+collector} & \mbox{\hyperlink{classVector}{Vector}} of {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} pointers containing utility data for all realizations. \\
+\hline
+{\em realizations} & \mbox{\hyperlink{classVector}{Vector}} of realization indices to be evaluated. If empty, evaluates all realizations.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated reliability objective as a double.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & if the objective value is infinite. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classObjectivesCalculator_ab01034697c3e9876fd06bff0c880b5ca}\label{classObjectivesCalculator_ab01034697c3e9876fd06bff0c880b5ca}} 
+\index{Objectives\+Calculator@{Objectives\+Calculator}!calculate\+Restriction\+Frequency\+Objective@{calculate\+Restriction\+Frequency\+Objective}}
+\index{calculate\+Restriction\+Frequency\+Objective@{calculate\+Restriction\+Frequency\+Objective}!Objectives\+Calculator@{Objectives\+Calculator}}
+\subsubsection{\texorpdfstring{calculate\+Restriction\+Frequency\+Objective()}{calculateRestrictionFrequencyObjective()}}
+{\footnotesize\ttfamily static double Objectives\+Calculator\+::calculate\+Restriction\+Frequency\+Objective (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classRestrictionsDataCollector}{Restrictions\+Data\+Collector}} $\ast$$>$ \&}]{restriction\+\_\+data,  }\item[{vector$<$ unsigned long $>$}]{realizations = {\ttfamily vector$<$~unsigned~long~$>$(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the restriction frequency objective. The restriction frequency objective measures the average ratio of years with restrictions to total years across all realizations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em restriction\+\_\+data} & \mbox{\hyperlink{classVector}{Vector}} of {\ttfamily \mbox{\hyperlink{classRestrictionsDataCollector}{Restrictions\+Data\+Collector}}} pointers containing restriction data for all realizations. \\
+\hline
+{\em realizations} & \mbox{\hyperlink{classVector}{Vector}} of realization indices to be evaluated. If empty, evaluates all realizations.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated restriction frequency objective as a double.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & if the objective value is infinite. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classObjectivesCalculator_a90547ef235596c39aa1bfe556d98b9f6}\label{classObjectivesCalculator_a90547ef235596c39aa1bfe556d98b9f6}} 
+\index{Objectives\+Calculator@{Objectives\+Calculator}!calculate\+Unit\+Total\+Cost\+Objective@{calculate\+Unit\+Total\+Cost\+Objective}}
+\index{calculate\+Unit\+Total\+Cost\+Objective@{calculate\+Unit\+Total\+Cost\+Objective}!Objectives\+Calculator@{Objectives\+Calculator}}
+\subsubsection{\texorpdfstring{calculate\+Unit\+Total\+Cost\+Objective()}{calculateUnitTotalCostObjective()}}
+{\footnotesize\ttfamily static double Objectives\+Calculator\+::calculate\+Unit\+Total\+Cost\+Objective (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} $\ast$$>$ \&}]{utility\+\_\+data,  }\item[{vector$<$ unsigned long $>$}]{realizations = {\ttfamily vector$<$~unsigned~long~$>$(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the unit total cost objective. This objective is based on the ratio of infrastructure cost to total water demand, normalized by the first-\/year demand. The unit cost output is in \$mil/\+M\+GD that should be converted to \$/k\+Gal for comparison with other objectives. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+data} & \mbox{\hyperlink{classVector}{Vector}} of {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} pointers containing utility data for all realizations. \\
+\hline
+{\em realizations} & \mbox{\hyperlink{classVector}{Vector}} of realization indices to be evaluated. If empty, evaluates all realizations.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The average unit total cost as a double. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classObjectivesCalculator_aaa5a9bb621c4346e106809f58afe1bd1}\label{classObjectivesCalculator_aaa5a9bb621c4346e106809f58afe1bd1}} 
+\index{Objectives\+Calculator@{Objectives\+Calculator}!calculate\+Worse\+Case\+Costs\+Objective@{calculate\+Worse\+Case\+Costs\+Objective}}
+\index{calculate\+Worse\+Case\+Costs\+Objective@{calculate\+Worse\+Case\+Costs\+Objective}!Objectives\+Calculator@{Objectives\+Calculator}}
+\subsubsection{\texorpdfstring{calculate\+Worse\+Case\+Costs\+Objective()}{calculateWorseCaseCostsObjective()}}
+{\footnotesize\ttfamily static double Objectives\+Calculator\+::calculate\+Worse\+Case\+Costs\+Objective (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} $\ast$$>$ \&}]{utility\+\_\+data,  }\item[{vector$<$ unsigned long $>$}]{realizations = {\ttfamily vector$<$~unsigned~long~$>$(0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Calculates the worst-\/case financial costs objective. The worst-\/case cost is defined as the financial cost at the specified worst-\/case percentile across all realizations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+data} & \mbox{\hyperlink{classVector}{Vector}} of {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} pointers containing utility data for all realizations. \\
+\hline
+{\em realizations} & \mbox{\hyperlink{classVector}{Vector}} of realization indices to be evaluated. If empty, evaluates all realizations.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The worst-\/case financial cost as a double.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & if the objective value is infinite. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Utils/\mbox{\hyperlink{ObjectivesCalculator_8h}{Objectives\+Calculator.\+h}}\end{DoxyCompactItemize}

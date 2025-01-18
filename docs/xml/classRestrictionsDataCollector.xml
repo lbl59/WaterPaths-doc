@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classRestrictionsDataCollector" kind="class" language="C++" prot="public">
+    <compoundname>RestrictionsDataCollector</compoundname>
+    <basecompoundref refid="classDataCollector" prot="public" virt="non-virtual">DataCollector</basecompoundref>
+    <includes refid="RestrictionsDataCollector_8h" local="no">RestrictionsDataCollector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classRestrictionsDataCollector_1a09e79e1e24fa4cc698c9dfa6914ee47d" prot="private" static="no" mutable="no">
+        <type><ref refid="classRestrictions" kindref="compound">Restrictions</ref> *</type>
+        <definition>Restrictions* RestrictionsDataCollector::restriction_policy</definition>
+        <argsstring></argsstring>
+        <name>restriction_policy</name>
+        <briefdescription>
+<para>A pointer to the restrictions policy associated with the data collector. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" line="20" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRestrictionsDataCollector_1afb6bc7f42a2490e2599c37baebe3995c" prot="private" static="no" mutable="no">
+        <type>vector&lt; double &gt;</type>
+        <definition>vector&lt;double&gt; RestrictionsDataCollector::restriction_multipliers</definition>
+        <argsstring></argsstring>
+        <name>restriction_multipliers</name>
+        <briefdescription>
+<para>The DU factor multipliers applied to scale the effectiveness of water use restrictions for each week. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" line="24" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRestrictionsDataCollector_1a0e700f013442a6df86fe75bcee4c31df" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RestrictionsDataCollector::RestrictionsDataCollector</definition>
+        <argsstring>(Restrictions *restriction_policy, unsigned long realization)</argsstring>
+        <name>RestrictionsDataCollector</name>
+        <param>
+          <type><ref refid="classRestrictions" kindref="compound">Restrictions</ref> *</type>
+          <declname>restriction_policy</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>realization</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <computeroutput><ref refid="classRestrictionsDataCollector" kindref="compound">RestrictionsDataCollector</ref></computeroutput> object to collect data related to a specific restriction policy. Initializes the base <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> with relevant identifiers and type information. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>restriction_policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the <computeroutput><ref refid="classRestrictions" kindref="compound">Restrictions</ref></computeroutput> object representing the restriction policy. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realization</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The realization index associated with the restriction policy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_1a45e5612e70ec98430e31271f68ca407e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string RestrictionsDataCollector::printTabularString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printTabularString</name>
+        <reimplements refid="classDataCollector_1a397fccabe0223267eea8fc7cac0e59da">printTabularString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Generates a tabular string representation of water restriction multipliers. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>printTabularString</computeroutput> function in the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the tabular data is generated.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the tabular representation of the demand offsets for the specified week. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_1ab8b8c30dca6b2e41c1ef5e3ac7e29813" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string RestrictionsDataCollector::printCompactString</definition>
+        <argsstring>(int week) override</argsstring>
+        <name>printCompactString</name>
+        <reimplements refid="classDataCollector_1a2eac264fa5612aed5a830b12de4f4ae3">printCompactString</reimplements>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Generates a compact, comma-delimited string representation of restriction multipliers for a specified week. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>printCompactString</computeroutput> function in the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the compact data is generated.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A string containing the compact representation of the demand offsets for the specified week. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_1a2676a6693b254997d223fc1c437258ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string RestrictionsDataCollector::printTabularStringHeaderLine1</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine1</name>
+        <reimplements refid="classDataCollector_1a91619cfa9e9b8cefd2f7c20d5718b41e">printTabularStringHeaderLine1</reimplements>
+        <briefdescription>
+<para>Generates the first header line for the tabular representation of restriction multipliers. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>printTabularStringHeaderLine1</computeroutput> function in the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><simplesect kind="return"><para>A string containing the first header line for the tabular representation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_1afb3c49c2c9b152bb2372e2fcc198e1b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string RestrictionsDataCollector::printTabularStringHeaderLine2</definition>
+        <argsstring>() override</argsstring>
+        <name>printTabularStringHeaderLine2</name>
+        <reimplements refid="classDataCollector_1af01ea961314be2164f39e6d4cd59e443">printTabularStringHeaderLine2</reimplements>
+        <briefdescription>
+<para>Generates the second header line for the tabular representation of restriction multipliers. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>printTabularStringHeaderLine2</computeroutput> function in the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><simplesect kind="return"><para>A string containing the second header line for the tabular representation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_1ad36ff12a666d72c92893c918715628f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>string</type>
+        <definition>string RestrictionsDataCollector::printCompactStringHeader</definition>
+        <argsstring>() override</argsstring>
+        <name>printCompactStringHeader</name>
+        <reimplements refid="classDataCollector_1a98dcb4ec871d9c7fbf7545c64e5ccc67">printCompactStringHeader</reimplements>
+        <briefdescription>
+<para>Generates a compact, comma-delimited string header for the water restriction multipliers. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>printCompactStringHeader</computeroutput> function in the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><simplesect kind="return"><para>A string containing the compact header representation for the water restriction multipliers. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_1a7d8b6433ec25a53ed50577c2cf89912d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void RestrictionsDataCollector::collect_data</definition>
+        <argsstring>() override</argsstring>
+        <name>collect_data</name>
+        <reimplements refid="classDataCollector_1a01486bf58acbe37b203f97b3b9a79c40">collect_data</reimplements>
+        <briefdescription>
+<para>Collects the current restriction multiplier from the associated restriction policy. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function overrides the <computeroutput>collect_data</computeroutput> function in the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classRestrictionsDataCollector_1a576be619485a838e9496fea66181cd06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const vector&lt; double &gt; &amp;</type>
+        <definition>const vector&lt;double&gt;&amp; RestrictionsDataCollector::getRestriction_multipliers</definition>
+        <argsstring>() const</argsstring>
+        <name>getRestriction_multipliers</name>
+        <briefdescription>
+<para>Retrieves the vector of collected restriction multipliers. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to the <computeroutput>vector&lt;double&gt;</computeroutput> containing the collected restriction multipliers. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" line="100" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The <computeroutput><ref refid="classRestrictionsDataCollector" kindref="compound">RestrictionsDataCollector</ref></computeroutput> class is a subclass of the <computeroutput><ref refid="classDataCollector" kindref="compound">DataCollector</ref></computeroutput> class that implements the data collection of water use restrictions. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by bernardoct on 8/25/17. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="244">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="243">
+        <label>RestrictionsDataCollector</label>
+        <link refid="classRestrictionsDataCollector"/>
+        <childnode refid="244" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="246">
+        <label>DataCollector</label>
+        <link refid="classDataCollector"/>
+      </node>
+      <node id="245">
+        <label>RestrictionsDataCollector</label>
+        <link refid="classRestrictionsDataCollector"/>
+        <childnode refid="246" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" line="15" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DataCollector/RestrictionsDataCollector.h" bodystart="15" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classRestrictionsDataCollector_1a7d8b6433ec25a53ed50577c2cf89912d" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>collect_data</name></member>
+      <member refid="classDataCollector_1a3f89b18f4ac0557d7374d49531a004c0" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>DataCollector</name></member>
+      <member refid="classRestrictionsDataCollector_1a576be619485a838e9496fea66181cd06" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>getRestriction_multipliers</name></member>
+      <member refid="classDataCollector_1a5cb840b6fbcf6afe364eef9114984383" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>id</name></member>
+      <member refid="classDataCollector_1a3a9a5033592f72ada429aa20056162b9" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>name</name></member>
+      <member refid="classRestrictionsDataCollector_1ab8b8c30dca6b2e41c1ef5e3ac7e29813" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>printCompactString</name></member>
+      <member refid="classRestrictionsDataCollector_1ad36ff12a666d72c92893c918715628f6" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>printCompactStringHeader</name></member>
+      <member refid="classRestrictionsDataCollector_1a45e5612e70ec98430e31271f68ca407e" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>printTabularString</name></member>
+      <member refid="classRestrictionsDataCollector_1a2676a6693b254997d223fc1c437258ab" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>printTabularStringHeaderLine1</name></member>
+      <member refid="classRestrictionsDataCollector_1afb3c49c2c9b152bb2372e2fcc198e1b8" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>printTabularStringHeaderLine2</name></member>
+      <member refid="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>realization</name></member>
+      <member refid="classRestrictionsDataCollector_1afb6bc7f42a2490e2599c37baebe3995c" prot="private" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>restriction_multipliers</name></member>
+      <member refid="classRestrictionsDataCollector_1a09e79e1e24fa4cc698c9dfa6914ee47d" prot="private" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>restriction_policy</name></member>
+      <member refid="classRestrictionsDataCollector_1a0e700f013442a6df86fe75bcee4c31df" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>RestrictionsDataCollector</name></member>
+      <member refid="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>table_width</name></member>
+      <member refid="classDataCollector_1acad1c22d67a8eb3db056ba776a131900" prot="public" virt="non-virtual"><scope>RestrictionsDataCollector</scope><name>type</name></member>
+      <member refid="classDataCollector_1ab6e826d46e651419309efe1e635d6e14" prot="public" virt="virtual"><scope>RestrictionsDataCollector</scope><name>~DataCollector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

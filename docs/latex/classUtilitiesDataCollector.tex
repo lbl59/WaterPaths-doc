@@ -1,0 +1,474 @@
+\hypertarget{classUtilitiesDataCollector}{}\section{Utilities\+Data\+Collector Class Reference}
+\label{classUtilitiesDataCollector}\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+
+
+The {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of \mbox{\hyperlink{classUtility}{Utility}} objects. It is the main subclass that results in the Utilities\textquotesingle{} output C\+SV files.  
+
+
+
+
+{\ttfamily \#include $<$Utilities\+Data\+Collector.\+h$>$}
+
+Inheritance diagram for Utilities\+Data\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classUtilitiesDataCollector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUtilitiesDataCollector_a7aee55a1cbd0fcdca59339a9e78ed08b}{Utilities\+Data\+Collector}} (const \mbox{\hyperlink{classUtility}{Utility}} $\ast$utility, unsigned long \mbox{\hyperlink{classDataCollector_a9ef2887466fe3123aa19ef956a219b96}{realization}})
+\begin{DoxyCompactList}\small\item\em Constructs a {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} for managing and collecting data related to a specific utility. Initializes the data collector with utility-\/specific attributes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} \& \mbox{\hyperlink{classUtilitiesDataCollector_a805182c7f423290135a5c92844cdbb4a}{operator=}} (const \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} \&utility\+\_\+data\+\_\+collector)
+\begin{DoxyCompactList}\small\item\em Overloads the assignment operator for the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} class, allowing assignment of one data collector to another. This operator performs a deep copy of the data collector\textquotesingle{}s attributes. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUtilitiesDataCollector_a39e7d28a70a0f71b3f1cc28b19c7e2d9}{print\+Tabular\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a tabular string representation of utility data for a specified week. This includes data such as combined storage, capacity, net inflow, R\+O\+Fs, demand, insurance, contingency funds, debt service payments, and revenues. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUtilitiesDataCollector_a57b5f9cd8ddf54154476749ab0977355}{print\+Compact\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a compact, comma-\/delimited representation of utility data for a specified week. This includes data such as combined storage, capacity, net inflow, R\+O\+Fs, demand, insurance, contingency funds, debt service payments, and revenues. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUtilitiesDataCollector_a796aa9d7637d8ed04dbd949ca2a34088}{print\+Tabular\+String\+Header\+Line1}} () override
+\begin{DoxyCompactList}\small\item\em Generates the first header line for the tabular representation of utility data. This header provides general column titles for data such as combined storage, capacity, net inflow, R\+O\+Fs, demand, insurance, contingency funds, debt service payments, and revenues. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUtilitiesDataCollector_ae502a096e8f4fdfdfd481ab2093f9771}{print\+Tabular\+String\+Header\+Line2}} () override
+\begin{DoxyCompactList}\small\item\em Generates the second header line for the tabular representation of utility data. This header provides general column titles for data such as combined storage, capacity, net inflow, R\+O\+Fs, demand, insurance, contingency funds, debt service payments, and revenues. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classUtilitiesDataCollector_ab3409c407783fd4451f310d2fc177b22}{print\+Compact\+String\+Header}} () override
+\begin{DoxyCompactList}\small\item\em Generates the header line for the compact, comma-\/delimited representation of utility data. This header provides general column titles for data such as combined storage, capacity, net inflow, R\+O\+Fs, demand, insurance, contingency funds, debt service payments, and revenues. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUtilitiesDataCollector_ab72c4432d6816beb1f4f4b354fb3023d}{collect\+\_\+data}} () override
+\begin{DoxyCompactList}\small\item\em Collects data for the utility and appends it to the respective data vectors. This includes combined storage, capacity, net inflow, R\+O\+Fs, demand, insurance, contingency funds, debt service payments, revenues, and infrastructure net present costs. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_a9d1478c486b9be64fa452b34258e8b03}{get\+Combined\+\_\+storage}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of combined storage data collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_a48369552a48650ea015b3ff18da5175f}{get\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of storage capacity data collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_adb6e9b219255d8bb1fb323d6e5582e5c}{get\+Gross\+\_\+revenues}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of gross revenue data collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_a9cb52112e6175775842474e80a37023d}{get\+Contingency\+\_\+fund\+\_\+contribution}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of contingency fund contribution data collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_a13635135acfe49ec8eb0b587af41c9f1}{get\+Debt\+\_\+service\+\_\+payments}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of weekly debt service payments collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_a96d4541f68916996c0ac74d7d4ad6474}{get\+Insurance\+\_\+contract\+\_\+cost}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of weekly insurance contract costs paid by the utility collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_a911a0651222ac1d8185eef001fdb2ea8}{get\+Drought\+\_\+mitigation\+\_\+cost}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of drought mitigation costs paid by the utility collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_a2fa923f7d2df2a31a20294279572aeb6}{get\+Contingency\+\_\+fund\+\_\+size}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of a utility\textquotesingle{}s net contingency fund sizes as it changes across all weeks collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ vector$<$ int $>$ $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_a0e09af9bbb446c502c0d10be477dcf00}{get\+Pathways}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the 2D vector of infrastructure pathways (infrastructure I\+Ds and their associated realizations) build by the utility. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_a90a0dbf95c1eaf8325c3703764408f84}{get\+Net\+\_\+present\+\_\+infrastructure\+\_\+cost}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of a utility\textquotesingle{}s weekly net infrastructure net present cost collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_aa9bc5b8d31c3a0bec03906cded8c0cf4}{get\+St\+\_\+rof}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of a utility\textquotesingle{}s weekly short-\/term R\+OF collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_af7463f468d5aaa3a13bc610660323648}{get\+Lt\+\_\+rof}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of a utility\textquotesingle{}s weekly long-\/term R\+OF collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_a78421c65929a05cd1312006bca24e658}{get\+Restricted\+\_\+demand}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of a utility\textquotesingle{}s weekly volumetric restricted demand collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_a11319f69ba0cf1c932502e8c35d7f741}{get\+Unrestricted\+\_\+demand}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of a utility\textquotesingle{}s weekly volumetric unrestricted demand collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_a04b4760bce9c615d450d84cc27126ef7}{get\+Recorded\+\_\+annual\+\_\+demand}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of a utility\textquotesingle{}s recorded (historical) annual demand collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+const vector$<$ double $>$ \& \mbox{\hyperlink{classUtilitiesDataCollector_afdfabc1bf2b9b2f8639744afeaa76e11}{get\+Present\+\_\+value\+\_\+debt\+\_\+service\+\_\+payments}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the vector of the present value of a utility\textquotesingle{}s weekly debt service payments collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUtilitiesDataCollector_af01392bbfae02a1fd9ee65b3c97a73a3}{check\+For\+Nans}} () const
+\begin{DoxyCompactList}\small\item\em Checks for {\ttfamily NaN} values in the most recent data entries collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. Throws a runtime error if any {\ttfamily NaN} value is detected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of \mbox{\hyperlink{classUtility}{Utility}} objects. It is the main subclass that results in the Utilities\textquotesingle{} output C\+SV files. 
+
+Created by bernardoct on 8/25/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a7aee55a1cbd0fcdca59339a9e78ed08b}\label{classUtilitiesDataCollector_a7aee55a1cbd0fcdca59339a9e78ed08b}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{Utilities\+Data\+Collector()}{UtilitiesDataCollector()}}
+{\footnotesize\ttfamily Utilities\+Data\+Collector\+::\+Utilities\+Data\+Collector (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classUtility}{Utility}} $\ast$}]{utility,  }\item[{unsigned long}]{realization }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} for managing and collecting data related to a specific utility. Initializes the data collector with utility-\/specific attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility} & Pointer to the {\ttfamily \mbox{\hyperlink{classUtility}{Utility}}} object for which the data collector is being created. \\
+\hline
+{\em realization} & Unsigned long integer representing the realization ID. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classUtilitiesDataCollector_af01392bbfae02a1fd9ee65b3c97a73a3}\label{classUtilitiesDataCollector_af01392bbfae02a1fd9ee65b3c97a73a3}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!check\+For\+Nans@{check\+For\+Nans}}
+\index{check\+For\+Nans@{check\+For\+Nans}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{check\+For\+Nans()}{checkForNans()}}
+{\footnotesize\ttfamily void Utilities\+Data\+Collector\+::check\+For\+Nans (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Checks for {\ttfamily NaN} values in the most recent data entries collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. Throws a runtime error if any {\ttfamily NaN} value is detected. 
+
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & If a {\ttfamily NaN} value is detected in any of the data fields for the utility. Additionally, logs a warning if the net present infrastructure cost exceeds an absurdly high threshold. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classUtilitiesDataCollector_ab72c4432d6816beb1f4f4b354fb3023d}\label{classUtilitiesDataCollector_ab72c4432d6816beb1f4f4b354fb3023d}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!collect\+\_\+data@{collect\+\_\+data}}
+\index{collect\+\_\+data@{collect\+\_\+data}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{collect\+\_\+data()}{collect\_data()}}
+{\footnotesize\ttfamily void Utilities\+Data\+Collector\+::collect\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Collects data for the utility and appends it to the respective data vectors. This includes combined storage, capacity, net inflow, R\+O\+Fs, demand, insurance, contingency funds, debt service payments, revenues, and infrastructure net present costs. 
+
+This function overrides the {\ttfamily collect\+\_\+data} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a01486bf58acbe37b203f97b3b9a79c40}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classUtilitiesDataCollector_a48369552a48650ea015b3ff18da5175f}\label{classUtilitiesDataCollector_a48369552a48650ea015b3ff18da5175f}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Capacity@{get\+Capacity}}
+\index{get\+Capacity@{get\+Capacity}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Capacity()}{getCapacity()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of storage capacity data collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the storage capacity data for the utility. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a9d1478c486b9be64fa452b34258e8b03}\label{classUtilitiesDataCollector_a9d1478c486b9be64fa452b34258e8b03}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Combined\+\_\+storage@{get\+Combined\+\_\+storage}}
+\index{get\+Combined\+\_\+storage@{get\+Combined\+\_\+storage}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Combined\+\_\+storage()}{getCombined\_storage()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Combined\+\_\+storage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of combined storage data collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the combined storage data for the utility. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a9cb52112e6175775842474e80a37023d}\label{classUtilitiesDataCollector_a9cb52112e6175775842474e80a37023d}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Contingency\+\_\+fund\+\_\+contribution@{get\+Contingency\+\_\+fund\+\_\+contribution}}
+\index{get\+Contingency\+\_\+fund\+\_\+contribution@{get\+Contingency\+\_\+fund\+\_\+contribution}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Contingency\+\_\+fund\+\_\+contribution()}{getContingency\_fund\_contribution()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Contingency\+\_\+fund\+\_\+contribution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of contingency fund contribution data collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the contingency fund contribution data for the utility. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a2fa923f7d2df2a31a20294279572aeb6}\label{classUtilitiesDataCollector_a2fa923f7d2df2a31a20294279572aeb6}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Contingency\+\_\+fund\+\_\+size@{get\+Contingency\+\_\+fund\+\_\+size}}
+\index{get\+Contingency\+\_\+fund\+\_\+size@{get\+Contingency\+\_\+fund\+\_\+size}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Contingency\+\_\+fund\+\_\+size()}{getContingency\_fund\_size()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Contingency\+\_\+fund\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of a utility\textquotesingle{}s net contingency fund sizes as it changes across all weeks collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the contingency fund size data for the utility. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a13635135acfe49ec8eb0b587af41c9f1}\label{classUtilitiesDataCollector_a13635135acfe49ec8eb0b587af41c9f1}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Debt\+\_\+service\+\_\+payments@{get\+Debt\+\_\+service\+\_\+payments}}
+\index{get\+Debt\+\_\+service\+\_\+payments@{get\+Debt\+\_\+service\+\_\+payments}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Debt\+\_\+service\+\_\+payments()}{getDebt\_service\_payments()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Debt\+\_\+service\+\_\+payments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of weekly debt service payments collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the weekly debt service payments made by the utility. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a911a0651222ac1d8185eef001fdb2ea8}\label{classUtilitiesDataCollector_a911a0651222ac1d8185eef001fdb2ea8}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Drought\+\_\+mitigation\+\_\+cost@{get\+Drought\+\_\+mitigation\+\_\+cost}}
+\index{get\+Drought\+\_\+mitigation\+\_\+cost@{get\+Drought\+\_\+mitigation\+\_\+cost}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Drought\+\_\+mitigation\+\_\+cost()}{getDrought\_mitigation\_cost()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Drought\+\_\+mitigation\+\_\+cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of drought mitigation costs paid by the utility collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the contingency fund contribution data for the utility. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_adb6e9b219255d8bb1fb323d6e5582e5c}\label{classUtilitiesDataCollector_adb6e9b219255d8bb1fb323d6e5582e5c}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Gross\+\_\+revenues@{get\+Gross\+\_\+revenues}}
+\index{get\+Gross\+\_\+revenues@{get\+Gross\+\_\+revenues}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Gross\+\_\+revenues()}{getGross\_revenues()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Gross\+\_\+revenues (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of gross revenue data collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the gross revenue data for the utility. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a96d4541f68916996c0ac74d7d4ad6474}\label{classUtilitiesDataCollector_a96d4541f68916996c0ac74d7d4ad6474}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Insurance\+\_\+contract\+\_\+cost@{get\+Insurance\+\_\+contract\+\_\+cost}}
+\index{get\+Insurance\+\_\+contract\+\_\+cost@{get\+Insurance\+\_\+contract\+\_\+cost}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Insurance\+\_\+contract\+\_\+cost()}{getInsurance\_contract\_cost()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Insurance\+\_\+contract\+\_\+cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of weekly insurance contract costs paid by the utility collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the weekly insurance contract costs paid by the utility. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_af7463f468d5aaa3a13bc610660323648}\label{classUtilitiesDataCollector_af7463f468d5aaa3a13bc610660323648}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Lt\+\_\+rof@{get\+Lt\+\_\+rof}}
+\index{get\+Lt\+\_\+rof@{get\+Lt\+\_\+rof}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Lt\+\_\+rof()}{getLt\_rof()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Lt\+\_\+rof (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of a utility\textquotesingle{}s weekly long-\/term R\+OF collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the utility\textquotesingle{}s long-\/term R\+OF. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a90a0dbf95c1eaf8325c3703764408f84}\label{classUtilitiesDataCollector_a90a0dbf95c1eaf8325c3703764408f84}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Net\+\_\+present\+\_\+infrastructure\+\_\+cost@{get\+Net\+\_\+present\+\_\+infrastructure\+\_\+cost}}
+\index{get\+Net\+\_\+present\+\_\+infrastructure\+\_\+cost@{get\+Net\+\_\+present\+\_\+infrastructure\+\_\+cost}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Net\+\_\+present\+\_\+infrastructure\+\_\+cost()}{getNet\_present\_infrastructure\_cost()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Net\+\_\+present\+\_\+infrastructure\+\_\+cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of a utility\textquotesingle{}s weekly net infrastructure net present cost collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the utility\textquotesingle{}s infrastructure net present cost. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a0e09af9bbb446c502c0d10be477dcf00}\label{classUtilitiesDataCollector_a0e09af9bbb446c502c0d10be477dcf00}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Pathways@{get\+Pathways}}
+\index{get\+Pathways@{get\+Pathways}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Pathways()}{getPathways()}}
+{\footnotesize\ttfamily const vector$<$vector$<$int$>$ $>$\& Utilities\+Data\+Collector\+::get\+Pathways (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the 2D vector of infrastructure pathways (infrastructure I\+Ds and their associated realizations) build by the utility. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a 2D vector of integers a utility\textquotesingle{}s infrastructure pathways. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_afdfabc1bf2b9b2f8639744afeaa76e11}\label{classUtilitiesDataCollector_afdfabc1bf2b9b2f8639744afeaa76e11}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Present\+\_\+value\+\_\+debt\+\_\+service\+\_\+payments@{get\+Present\+\_\+value\+\_\+debt\+\_\+service\+\_\+payments}}
+\index{get\+Present\+\_\+value\+\_\+debt\+\_\+service\+\_\+payments@{get\+Present\+\_\+value\+\_\+debt\+\_\+service\+\_\+payments}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Present\+\_\+value\+\_\+debt\+\_\+service\+\_\+payments()}{getPresent\_value\_debt\_service\_payments()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Present\+\_\+value\+\_\+debt\+\_\+service\+\_\+payments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of the present value of a utility\textquotesingle{}s weekly debt service payments collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the utility\textquotesingle{}s weekly restricted demand. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a04b4760bce9c615d450d84cc27126ef7}\label{classUtilitiesDataCollector_a04b4760bce9c615d450d84cc27126ef7}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Recorded\+\_\+annual\+\_\+demand@{get\+Recorded\+\_\+annual\+\_\+demand}}
+\index{get\+Recorded\+\_\+annual\+\_\+demand@{get\+Recorded\+\_\+annual\+\_\+demand}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Recorded\+\_\+annual\+\_\+demand()}{getRecorded\_annual\_demand()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Recorded\+\_\+annual\+\_\+demand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of a utility\textquotesingle{}s recorded (historical) annual demand collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the utility\textquotesingle{}s weekly restricted demand. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a78421c65929a05cd1312006bca24e658}\label{classUtilitiesDataCollector_a78421c65929a05cd1312006bca24e658}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Restricted\+\_\+demand@{get\+Restricted\+\_\+demand}}
+\index{get\+Restricted\+\_\+demand@{get\+Restricted\+\_\+demand}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Restricted\+\_\+demand()}{getRestricted\_demand()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Restricted\+\_\+demand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of a utility\textquotesingle{}s weekly volumetric restricted demand collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the utility\textquotesingle{}s weekly restricted demand. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_aa9bc5b8d31c3a0bec03906cded8c0cf4}\label{classUtilitiesDataCollector_aa9bc5b8d31c3a0bec03906cded8c0cf4}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+St\+\_\+rof@{get\+St\+\_\+rof}}
+\index{get\+St\+\_\+rof@{get\+St\+\_\+rof}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+St\+\_\+rof()}{getSt\_rof()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+St\+\_\+rof (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of a utility\textquotesingle{}s weekly short-\/term R\+OF collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the utility\textquotesingle{}s short-\/term R\+OF. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a11319f69ba0cf1c932502e8c35d7f741}\label{classUtilitiesDataCollector_a11319f69ba0cf1c932502e8c35d7f741}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!get\+Unrestricted\+\_\+demand@{get\+Unrestricted\+\_\+demand}}
+\index{get\+Unrestricted\+\_\+demand@{get\+Unrestricted\+\_\+demand}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{get\+Unrestricted\+\_\+demand()}{getUnrestricted\_demand()}}
+{\footnotesize\ttfamily const vector$<$double$>$\& Utilities\+Data\+Collector\+::get\+Unrestricted\+\_\+demand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the vector of a utility\textquotesingle{}s weekly volumetric unrestricted demand collected by the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}}. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to a vector of doubles containing the utility\textquotesingle{}s weekly unrestricted demand. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a805182c7f423290135a5c92844cdbb4a}\label{classUtilitiesDataCollector_a805182c7f423290135a5c92844cdbb4a}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!operator=@{operator=}}
+\index{operator=@{operator=}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}\& Utilities\+Data\+Collector\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}} \&}]{utility\+\_\+data\+\_\+collector }\end{DoxyParamCaption})}
+
+
+
+Overloads the assignment operator for the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} class, allowing assignment of one data collector to another. This operator performs a deep copy of the data collector\textquotesingle{}s attributes. 
+
+This function does not have an implementation in the .cpp file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em utility\+\_\+data\+\_\+collector} & A constant reference to the {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} object to be assigned.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the updated {\ttfamily \mbox{\hyperlink{classUtilitiesDataCollector}{Utilities\+Data\+Collector}}} object after the assignment. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUtilitiesDataCollector_a57b5f9cd8ddf54154476749ab0977355}\label{classUtilitiesDataCollector_a57b5f9cd8ddf54154476749ab0977355}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!print\+Compact\+String@{print\+Compact\+String}}
+\index{print\+Compact\+String@{print\+Compact\+String}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String()}{printCompactString()}}
+{\footnotesize\ttfamily string Utilities\+Data\+Collector\+::print\+Compact\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a compact, comma-\/delimited representation of utility data for a specified week. This includes data such as combined storage, capacity, net inflow, R\+O\+Fs, demand, insurance, contingency funds, debt service payments, and revenues. 
+
+This function overrides the {\ttfamily print\+Compact\+String} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the tabular data is generated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the compact representation of the utility data for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classUtilitiesDataCollector_ab3409c407783fd4451f310d2fc177b22}\label{classUtilitiesDataCollector_ab3409c407783fd4451f310d2fc177b22}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!print\+Compact\+String\+Header@{print\+Compact\+String\+Header}}
+\index{print\+Compact\+String\+Header@{print\+Compact\+String\+Header}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String\+Header()}{printCompactStringHeader()}}
+{\footnotesize\ttfamily string Utilities\+Data\+Collector\+::print\+Compact\+String\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the header line for the compact, comma-\/delimited representation of utility data. This header provides general column titles for data such as combined storage, capacity, net inflow, R\+O\+Fs, demand, insurance, contingency funds, debt service payments, and revenues. 
+
+This function overrides the {\ttfamily print\+Compact\+String\+Header} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the header line for the compact, comma-\/delimited representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classUtilitiesDataCollector_a39e7d28a70a0f71b3f1cc28b19c7e2d9}\label{classUtilitiesDataCollector_a39e7d28a70a0f71b3f1cc28b19c7e2d9}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!print\+Tabular\+String@{print\+Tabular\+String}}
+\index{print\+Tabular\+String@{print\+Tabular\+String}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String()}{printTabularString()}}
+{\footnotesize\ttfamily string Utilities\+Data\+Collector\+::print\+Tabular\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a tabular string representation of utility data for a specified week. This includes data such as combined storage, capacity, net inflow, R\+O\+Fs, demand, insurance, contingency funds, debt service payments, and revenues. 
+
+This function overrides the {\ttfamily print\+Tabular\+String} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the tabular data is generated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the tabular representation of the utility data for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a397fccabe0223267eea8fc7cac0e59da}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classUtilitiesDataCollector_a796aa9d7637d8ed04dbd949ca2a34088}\label{classUtilitiesDataCollector_a796aa9d7637d8ed04dbd949ca2a34088}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}}
+\index{print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line1()}{printTabularStringHeaderLine1()}}
+{\footnotesize\ttfamily string Utilities\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the first header line for the tabular representation of utility data. This header provides general column titles for data such as combined storage, capacity, net inflow, R\+O\+Fs, demand, insurance, contingency funds, debt service payments, and revenues. 
+
+This function overrides the {\ttfamily print\+Tabular\+String\+Header\+Line1} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the first header line for the tabular representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classUtilitiesDataCollector_ae502a096e8f4fdfdfd481ab2093f9771}\label{classUtilitiesDataCollector_ae502a096e8f4fdfdfd481ab2093f9771}} 
+\index{Utilities\+Data\+Collector@{Utilities\+Data\+Collector}!print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}}
+\index{print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}!Utilities\+Data\+Collector@{Utilities\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line2()}{printTabularStringHeaderLine2()}}
+{\footnotesize\ttfamily string Utilities\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the second header line for the tabular representation of utility data. This header provides general column titles for data such as combined storage, capacity, net inflow, R\+O\+Fs, demand, insurance, contingency funds, debt service payments, and revenues. 
+
+This function overrides the {\ttfamily print\+Tabular\+String\+Header\+Line2} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the first header line for the tabular representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_af01ea961314be2164f39e6d4cd59e443}{Data\+Collector}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Data\+Collector/\mbox{\hyperlink{UtilitiesDataCollector_8h}{Utilities\+Data\+Collector.\+h}}\end{DoxyCompactItemize}

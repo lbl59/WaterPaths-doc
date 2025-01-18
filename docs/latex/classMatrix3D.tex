@@ -1,0 +1,566 @@
+\hypertarget{classMatrix3D}{}\section{Matrix3D$<$ T $>$ Class Template Reference}
+\label{classMatrix3D}\index{Matrix3\+D$<$ T $>$@{Matrix3\+D$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Matrices.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMatrix3D_a1589c062f12fbbb1f3681f90c20c4b78}{Matrix3D}} ()
+\begin{DoxyCompactList}\small\item\em A default constructor for a new \mbox{\hyperlink{classMatrix}{Matrix}} 3D$<$ T$>$\+:\+: \mbox{\hyperlink{classMatrix}{Matrix}} 3D object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix3D_a6c98f06b6f87c600bd9b00f6b253b37e}{Matrix3D}} (int di, int dj, int dk)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classMatrix}{Matrix}} 3D$<$ T$>$\+:\+: \mbox{\hyperlink{classMatrix}{Matrix}} 3D object with specified dimensions. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{classMatrix3D_a56e772adacd4ccf54388e6c90e3d1269}{operator()}} (int i, int j, int k)
+\begin{DoxyCompactList}\small\item\em A subscript operator that returns a reference to the element at position (i, j, k) in the matrix. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classMatrix3D_a600c100c8204bbc8f2e4ebefa55cab82}{operator()}} (int di, int dj, int dk) const
+\begin{DoxyCompactList}\small\item\em A subscript operator that returns a reference to the element at position (i, j, k) in the matrix without changing the original matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix3D_a7fda610223910a2b4dcfea445d2eb6c7}{$\sim$\+Matrix3D}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classMatrix}{Matrix}} 3D$<$ T$>$\+:\+: \mbox{\hyperlink{classMatrix}{Matrix}} 3D object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix3D_ae3fc93ef3456a36c92f8cbb7db01c3a9}{Matrix3D}} (const \mbox{\hyperlink{classMatrix3D}{Matrix3D}} \&m)
+\begin{DoxyCompactList}\small\item\em Copy constructor for a new \mbox{\hyperlink{classMatrix}{Matrix}} 3D$<$ T$>$\+:\+: \mbox{\hyperlink{classMatrix}{Matrix}} 3D object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$ \& \mbox{\hyperlink{classMatrix3D_a0e84724f089ae3478283ea81d0b866af}{operator=}} (const \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$ \&m)
+\begin{DoxyCompactList}\small\item\em Assignment operator for a \mbox{\hyperlink{classMatrix}{Matrix}} 3D$<$ T$>$\+:\+: \mbox{\hyperlink{classMatrix}{Matrix}} 3D object. This operator copies the data from another matrix to this matrix, assigning the values in the original matrix to this matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$ \& \mbox{\hyperlink{classMatrix3D_a10b206ad9106931f7aa46a7b4d45c851}{operator+=}} (const \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$ \&m)
+\begin{DoxyCompactList}\small\item\em In-\/place addition operator that adds each element in the matrix to the corresponding element in another matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$ \& \mbox{\hyperlink{classMatrix3D_ad45bff7f2159a4ba0aa4546635e8a73f}{operator/}} (const double m)
+\begin{DoxyCompactList}\small\item\em Division operator that divides each element in the matrix by a scalar. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ T $>$ \mbox{\hyperlink{classMatrix3D_ac5c77248be46bfef323f0229f6e0a59c}{get2D}} (int ijk, char dim)
+\begin{DoxyCompactList}\small\item\em Extract a 2D slice from the 3D matrix along the specified dimension. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMatrix3D_a61afc3a397203f453f60772ebc10758a}{add\+\_\+to\+\_\+position}} (int i, int j, int k, T $\ast$data, int length)
+\begin{DoxyCompactList}\small\item\em Adds a sequence of values to a specified position in a 3D matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMatrix3D_a46a7b732a44b77f6c09f72c0ae05edef}{set\+Partial\+Data}} (int i, int j, T $\ast$data, int length)
+\begin{DoxyCompactList}\small\item\em Set a subset of data at a specific position in the matrix. \end{DoxyCompactList}\item 
+T $\ast$ \mbox{\hyperlink{classMatrix3D_ac21cf8967053b928f609b98abf1616e2}{get\+Pointer\+To\+Element}} (int i, int j, int k) const
+\begin{DoxyCompactList}\small\item\em Gets the memory adddress of the element at position (i, j, k) in the matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMatrix3D_ac67d3ee632ccafaac86dfacdda95dfdf}{reset}} (T value)
+\begin{DoxyCompactList}\small\item\em Resets all elements in the matrix to a specific value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMatrix3D_abc1d3451a2fb3cce0bec1d1e33097b1e}{print}} (int i) const
+\begin{DoxyCompactList}\small\item\em Print the contents of the i-\/th slice of the matrix. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMatrix3D_a056c035f4997b14c2a3e2b8ebee5142c}{set\+Data}} (T $\ast$data, int length)
+\begin{DoxyCompactList}\small\item\em Set all elements in the matrix to specific values provided by the data. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMatrix3D_af02576e685de872ba1b75014d9a609c9}{get\+\_\+i}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of slices in the matrix. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMatrix3D_a083e3f136a0108aad991e194b078db7f}{get\+\_\+j}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of rows in the matrix. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMatrix3D_a35fad9c3c81914e0ef5ed40ceda5d324}{get\+\_\+k}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of columns in the matrix. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classMatrix3D_a6f1e6328bac16786a4bfad6f107db641}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Check if the matrix has been initialized. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMatrix3D_a1589c062f12fbbb1f3681f90c20c4b78}\label{classMatrix3D_a1589c062f12fbbb1f3681f90c20c4b78}} 
+\index{Matrix3D@{Matrix3D}!Matrix3D@{Matrix3D}}
+\index{Matrix3D@{Matrix3D}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{Matrix3\+D()}{Matrix3D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::\mbox{\hyperlink{classMatrix3D}{Matrix3D}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A default constructor for a new \mbox{\hyperlink{classMatrix}{Matrix}} 3D$<$ T$>$\+:\+: \mbox{\hyperlink{classMatrix}{Matrix}} 3D object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classMatrix3D_a6c98f06b6f87c600bd9b00f6b253b37e}\label{classMatrix3D_a6c98f06b6f87c600bd9b00f6b253b37e}} 
+\index{Matrix3D@{Matrix3D}!Matrix3D@{Matrix3D}}
+\index{Matrix3D@{Matrix3D}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{Matrix3\+D()}{Matrix3D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::\mbox{\hyperlink{classMatrix3D}{Matrix3D}} (\begin{DoxyParamCaption}\item[{int}]{di,  }\item[{int}]{dj,  }\item[{int}]{dk }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classMatrix}{Matrix}} 3D$<$ T$>$\+:\+: \mbox{\hyperlink{classMatrix}{Matrix}} 3D object with specified dimensions. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em di} & The number of rows in the matrix. \\
+\hline
+{\em dj} & The number of columns in the matrix. \\
+\hline
+{\em dk} & The number of slices in the matrix.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em length\+\_\+error} & If either di, dj, or dk are 0. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classMatrix3D_a7fda610223910a2b4dcfea445d2eb6c7}\label{classMatrix3D_a7fda610223910a2b4dcfea445d2eb6c7}} 
+\index{Matrix3D@{Matrix3D}!````~Matrix3D@{$\sim$\+Matrix3D}}
+\index{````~Matrix3D@{$\sim$\+Matrix3D}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{$\sim$\+Matrix3\+D()}{~Matrix3D()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classMatrix3D}{Matrix3D}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classMatrix}{Matrix}} 3D$<$ T$>$\+:\+: \mbox{\hyperlink{classMatrix}{Matrix}} 3D object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classMatrix3D_ae3fc93ef3456a36c92f8cbb7db01c3a9}\label{classMatrix3D_ae3fc93ef3456a36c92f8cbb7db01c3a9}} 
+\index{Matrix3D@{Matrix3D}!Matrix3D@{Matrix3D}}
+\index{Matrix3D@{Matrix3D}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{Matrix3\+D()}{Matrix3D()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::\mbox{\hyperlink{classMatrix3D}{Matrix3D}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$ \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Copy constructor for a new \mbox{\hyperlink{classMatrix}{Matrix}} 3D$<$ T$>$\+:\+: \mbox{\hyperlink{classMatrix}{Matrix}} 3D object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The \mbox{\hyperlink{classMatrix3D}{Matrix3D}} object to be copied.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em length\+\_\+error} & If either di, dj, or dk of the original matrix are 0. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMatrix3D_a61afc3a397203f453f60772ebc10758a}\label{classMatrix3D_a61afc3a397203f453f60772ebc10758a}} 
+\index{Matrix3D@{Matrix3D}!add\+\_\+to\+\_\+position@{add\+\_\+to\+\_\+position}}
+\index{add\+\_\+to\+\_\+position@{add\+\_\+to\+\_\+position}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{add\+\_\+to\+\_\+position()}{add\_to\_position()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::add\+\_\+to\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k,  }\item[{T $\ast$}]{data,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Adds a sequence of values to a specified position in a 3D matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The row index. \\
+\hline
+{\em j} & The column index. \\
+\hline
+{\em k} & The slice index. \\
+\hline
+{\em data} & A pointer to the array of values to be added. \\
+\hline
+{\em length} & The number of elements in the {\ttfamily data} array.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix3D_a6f1e6328bac16786a4bfad6f107db641}\label{classMatrix3D_a6f1e6328bac16786a4bfad6f107db641}} 
+\index{Matrix3D@{Matrix3D}!empty@{empty}}
+\index{empty@{empty}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the matrix has been initialized. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+True if the matrix has not been initialized, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix3D_ac5c77248be46bfef323f0229f6e0a59c}\label{classMatrix3D_ac5c77248be46bfef323f0229f6e0a59c}} 
+\index{Matrix3D@{Matrix3D}!get2D@{get2D}}
+\index{get2D@{get2D}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{get2\+D()}{get2D()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ T $>$ \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::get2D (\begin{DoxyParamCaption}\item[{int}]{ijk,  }\item[{char}]{dim }\end{DoxyParamCaption})}
+
+
+
+Extract a 2D slice from the 3D matrix along the specified dimension. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em ijk} & The index along the selected dimension from which the slice is taken. \\
+\hline
+{\em dim} & The dimension along which the slice is extracted (\textquotesingle{}i\textquotesingle{}, \textquotesingle{}j\textquotesingle{}, or \textquotesingle{}k\textquotesingle{}).\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix2\+D$<$\+T$>$
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classMatrix3D_a056c035f4997b14c2a3e2b8ebee5142c}{set\+Data}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classMatrix3D_af02576e685de872ba1b75014d9a609c9}\label{classMatrix3D_af02576e685de872ba1b75014d9a609c9}} 
+\index{Matrix3D@{Matrix3D}!get\+\_\+i@{get\+\_\+i}}
+\index{get\+\_\+i@{get\+\_\+i}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{get\+\_\+i()}{get\_i()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::get\+\_\+i (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of slices in the matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix3D_a083e3f136a0108aad991e194b078db7f}\label{classMatrix3D_a083e3f136a0108aad991e194b078db7f}} 
+\index{Matrix3D@{Matrix3D}!get\+\_\+j@{get\+\_\+j}}
+\index{get\+\_\+j@{get\+\_\+j}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{get\+\_\+j()}{get\_j()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::get\+\_\+j (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of rows in the matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix3D_a35fad9c3c81914e0ef5ed40ceda5d324}\label{classMatrix3D_a35fad9c3c81914e0ef5ed40ceda5d324}} 
+\index{Matrix3D@{Matrix3D}!get\+\_\+k@{get\+\_\+k}}
+\index{get\+\_\+k@{get\+\_\+k}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{get\+\_\+k()}{get\_k()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::get\+\_\+k (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of columns in the matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix3D_ac21cf8967053b928f609b98abf1616e2}\label{classMatrix3D_ac21cf8967053b928f609b98abf1616e2}} 
+\index{Matrix3D@{Matrix3D}!get\+Pointer\+To\+Element@{get\+Pointer\+To\+Element}}
+\index{get\+Pointer\+To\+Element@{get\+Pointer\+To\+Element}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{get\+Pointer\+To\+Element()}{getPointerToElement()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T $\ast$ \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::get\+Pointer\+To\+Element (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption}) const}
+
+
+
+Gets the memory adddress of the element at position (i, j, k) in the matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The row index. \\
+\hline
+{\em j} & The column index. \\
+\hline
+{\em k} & The slice index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix3D_a56e772adacd4ccf54388e6c90e3d1269}\label{classMatrix3D_a56e772adacd4ccf54388e6c90e3d1269}} 
+\index{Matrix3D@{Matrix3D}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \& \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::operator() (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+
+
+A subscript operator that returns a reference to the element at position (i, j, k) in the matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the row index. \\
+\hline
+{\em j} & The column index. \\
+\hline
+{\em k} & The slice index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\&
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em length\+\_\+error} & If the indices are out of bounds. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classMatrix3D_a600c100c8204bbc8f2e4ebefa55cab82}\label{classMatrix3D_a600c100c8204bbc8f2e4ebefa55cab82}} 
+\index{Matrix3D@{Matrix3D}!operator()@{operator()}}
+\index{operator()@{operator()}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::operator() (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{k }\end{DoxyParamCaption}) const}
+
+
+
+A subscript operator that returns a reference to the element at position (i, j, k) in the matrix without changing the original matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & the row index. \\
+\hline
+{\em j} & The column index. \\
+\hline
+{\em k} & The slice index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em length\+\_\+error} & If the indices are out of bounds. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classMatrix3D_a10b206ad9106931f7aa46a7b4d45c851}\label{classMatrix3D_a10b206ad9106931f7aa46a7b4d45c851}} 
+\index{Matrix3D@{Matrix3D}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$ \& \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$ \&}]{m }\end{DoxyParamCaption})}
+
+
+
+In-\/place addition operator that adds each element in the matrix to the corresponding element in another matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix to be added to the current matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix3\+D$<$\+T$>$\&
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em length\+\_\+error} & If the dimensions of the two matrices are different. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classMatrix3D_ad45bff7f2159a4ba0aa4546635e8a73f}\label{classMatrix3D_ad45bff7f2159a4ba0aa4546635e8a73f}} 
+\index{Matrix3D@{Matrix3D}!operator/@{operator/}}
+\index{operator/@{operator/}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$ \& \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::operator/ (\begin{DoxyParamCaption}\item[{const double}]{n }\end{DoxyParamCaption})}
+
+
+
+Division operator that divides each element in the matrix by a scalar. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em n} & The constant used to divide each element in the matrix.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix3\+D$<$\+T$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix3D_a0e84724f089ae3478283ea81d0b866af}\label{classMatrix3D_a0e84724f089ae3478283ea81d0b866af}} 
+\index{Matrix3D@{Matrix3D}!operator=@{operator=}}
+\index{operator=@{operator=}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$ \& \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$ \&}]{m }\end{DoxyParamCaption})}
+
+
+
+Assignment operator for a \mbox{\hyperlink{classMatrix}{Matrix}} 3D$<$ T$>$\+:\+: \mbox{\hyperlink{classMatrix}{Matrix}} 3D object. This operator copies the data from another matrix to this matrix, assigning the values in the original matrix to this matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em m} & The matrix to be copied.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matrix3\+D$<$\+T$>$\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix3D_abc1d3451a2fb3cce0bec1d1e33097b1e}\label{classMatrix3D_abc1d3451a2fb3cce0bec1d1e33097b1e}} 
+\index{Matrix3D@{Matrix3D}!print@{print}}
+\index{print@{print}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::print (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Print the contents of the i-\/th slice of the matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The row index.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix3D_ac67d3ee632ccafaac86dfacdda95dfdf}\label{classMatrix3D_ac67d3ee632ccafaac86dfacdda95dfdf}} 
+\index{Matrix3D@{Matrix3D}!reset@{reset}}
+\index{reset@{reset}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::reset (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})}
+
+
+
+Resets all elements in the matrix to a specific value. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to which all elements in the matrix will be set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatrix3D_a056c035f4997b14c2a3e2b8ebee5142c}\label{classMatrix3D_a056c035f4997b14c2a3e2b8ebee5142c}} 
+\index{Matrix3D@{Matrix3D}!set\+Data@{set\+Data}}
+\index{set\+Data@{set\+Data}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{set\+Data()}{setData()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::set\+Data (\begin{DoxyParamCaption}\item[{T $\ast$}]{data,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Set all elements in the matrix to specific values provided by the data. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The value to which all elements in the matrix will be set.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em throw\+\_\+with\+\_\+nested} & If the size of the data does not match the size of the matrix. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classMatrix3D_a46a7b732a44b77f6c09f72c0ae05edef}\label{classMatrix3D_a46a7b732a44b77f6c09f72c0ae05edef}} 
+\index{Matrix3D@{Matrix3D}!set\+Partial\+Data@{set\+Partial\+Data}}
+\index{set\+Partial\+Data@{set\+Partial\+Data}!Matrix3D@{Matrix3D}}
+\subsubsection{\texorpdfstring{set\+Partial\+Data()}{setPartialData()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classMatrix3D}{Matrix3D}}$<$ T $>$\+::set\+Partial\+Data (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{T $\ast$}]{data,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Set a subset of data at a specific position in the matrix. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The datatype stored in the 3D matrix. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The row index where the data will be set. \\
+\hline
+{\em data} & The data to be set. \\
+\hline
+{\em length} & The length of the data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em length\+\_\+error} & If the indices are out of bounds. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Utils/\mbox{\hyperlink{Matrices_8h}{Matrices.\+h}}\end{DoxyCompactItemize}

@@ -3,167 +3,242 @@
   <compounddef id="ContinuityModelROF_8h" kind="file" language="C++">
     <compoundname>ContinuityModelROF.h</compoundname>
     <includes refid="ContinuityModel_8h" local="yes">Base/ContinuityModel.h</includes>
-    <includes local="yes">../Utils/Matrices.h</includes>
+    <includes refid="Matrices_8h" local="yes">../Utils/Matrices.h</includes>
+    <includedby refid="InsuranceStorageToROF_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/InsuranceStorageToROF.h</includedby>
     <includedby refid="Simulation_8h" local="yes">/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h</includedby>
     <incdepgraph>
-      <node id="59">
-        <label>../Utils/Constants.h</label>
+      <node id="82">
+        <label>list</label>
       </node>
-      <node id="72">
+      <node id="76">
+        <label>../../Utils/DataSeries.h</label>
+        <link refid="DataSeries_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>../Controls/Base/ControlRules.h</label>
+        <link refid="ControlRules_8h"/>
+      </node>
+      <node id="83">
         <label>../../Controls/Base/MinEnvFlowControl.h</label>
-      </node>
-      <node id="73">
-        <label>../Utils/Matrices.h</label>
-      </node>
-      <node id="71">
-        <label>../../Utils/Graph/Graph.h</label>
-      </node>
-      <node id="53">
-        <label>Base/ContinuityModel.h</label>
-        <link refid="ContinuityModel_8h"/>
-        <childnode refid="54" relation="include">
-        </childnode>
-        <childnode refid="62" relation="include">
-        </childnode>
+        <link refid="MinEnvFlowControl_8h"/>
         <childnode refid="63" relation="include">
         </childnode>
-        <childnode refid="71" relation="include">
-        </childnode>
-        <childnode refid="72" relation="include">
-        </childnode>
-        <childnode refid="57" relation="include">
+        <childnode refid="73" relation="include">
         </childnode>
       </node>
-      <node id="68">
-        <label>../../Controls/EvaporationSeries.h</label>
-      </node>
-      <node id="58">
-        <label>stdexcept</label>
-      </node>
-      <node id="55">
-        <label>string</label>
-      </node>
-      <node id="64">
-        <label>map</label>
-      </node>
-      <node id="70">
-        <label>InfrastructureManager.h</label>
-        <link refid="InfrastructureManager_8h"/>
-        <childnode refid="57" relation="include">
+      <node id="62">
+        <label>Base/ContinuityModel.h</label>
+        <link refid="ContinuityModel_8h"/>
+        <childnode refid="63" relation="include">
         </childnode>
-        <childnode refid="54" relation="include">
+        <childnode refid="68" relation="include">
         </childnode>
-      </node>
-      <node id="54">
-        <label>../../SystemComponents/WaterSources/Base/WaterSource.h</label>
-        <link refid="WaterSource_8h"/>
-        <childnode refid="55" relation="include">
+        <childnode refid="73" relation="include">
         </childnode>
-        <childnode refid="56" relation="include">
+        <childnode refid="81" relation="include">
         </childnode>
-        <childnode refid="60" relation="include">
-        </childnode>
-        <childnode refid="61" relation="include">
-        </childnode>
-      </node>
-      <node id="67">
-        <label>../../Utils/DataSeries.h</label>
-      </node>
-      <node id="63">
-        <label>../../SystemComponents/Utility/Utility.h</label>
-        <link refid="Utility_8h"/>
-        <childnode refid="64" relation="include">
-        </childnode>
-        <childnode refid="65" relation="include">
+        <childnode refid="83" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
-        </childnode>
+      </node>
+      <node id="70">
+        <label>cmath</label>
+      </node>
+      <node id="67">
+        <label>stdexcept</label>
+      </node>
+      <node id="68">
+        <label>../Utils/Constants.h</label>
+        <link refid="Constants_8h"/>
         <childnode refid="69" relation="include">
         </childnode>
         <childnode refid="70" relation="include">
         </childnode>
-      </node>
-      <node id="57">
-        <label>vector</label>
-      </node>
-      <node id="56">
-        <label>../../Catchment.h</label>
-        <link refid="Catchment_8h"/>
-        <childnode refid="57" relation="include">
+        <childnode refid="71" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="66" relation="include">
         </childnode>
-        <childnode refid="59" relation="include">
+        <childnode refid="64" relation="include">
         </childnode>
       </node>
-      <node id="62">
-        <label>../../Utils/Constants.h</label>
+      <node id="79">
+        <label>../../Controls/WwtpDischargeRule.h</label>
+        <link refid="WwtpDischargeRule_8h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>string</label>
+      </node>
+      <node id="69">
+        <label>map</label>
+      </node>
+      <node id="80">
+        <label>InfrastructureManager.h</label>
+        <link refid="InfrastructureManager_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>../../SystemComponents/WaterSources/Base/WaterSource.h</label>
+        <link refid="WaterSource_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>fstream</label>
+      </node>
+      <node id="73">
+        <label>../../SystemComponents/Utility/Utility.h</label>
+        <link refid="Utility_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
       </node>
       <node id="66">
-        <label>../WaterSources/Reservoir.h</label>
-        <link refid="Reservoir_8h"/>
-        <childnode refid="55" relation="include">
+        <label>vector</label>
+      </node>
+      <node id="81">
+        <label>../../Utils/Graph/Graph.h</label>
+        <link refid="Graph_8h"/>
+        <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="54" relation="include">
+        <childnode refid="66" relation="include">
         </childnode>
         <childnode refid="67" relation="include">
         </childnode>
         <childnode refid="68" relation="include">
         </childnode>
       </node>
-      <node id="60">
-        <label>../../../Utils/Constants.h</label>
+      <node id="65">
+        <label>../../Catchment.h</label>
+        <link refid="Catchment_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
       </node>
-      <node id="69">
-        <label>../../Controls/WwtpDischargeRule.h</label>
+      <node id="75">
+        <label>../WaterSources/Reservoir.h</label>
+        <link refid="Reservoir_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
       </node>
-      <node id="61">
+      <node id="85">
+        <label>iostream</label>
+      </node>
+      <node id="78">
+        <label>../../Controls/EvaporationSeries.h</label>
+        <link refid="EvaporationSeries_8h"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
         <label>../../Bonds/Base/Bond.h</label>
         <link refid="Bond_8h"/>
-        <childnode refid="57" relation="include">
+        <childnode refid="66" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="67" relation="include">
         </childnode>
-        <childnode refid="60" relation="include">
+        <childnode refid="68" relation="include">
         </childnode>
       </node>
-      <node id="65">
+      <node id="71">
+        <label>cstring</label>
+      </node>
+      <node id="84">
+        <label>../Utils/Matrices.h</label>
+        <link refid="Matrices_8h"/>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
         <label>memory</label>
       </node>
-      <node id="52">
+      <node id="61">
         <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h</label>
         <link refid="ContinuityModelROF_8h"/>
-        <childnode refid="53" relation="include">
+        <childnode refid="62" relation="include">
         </childnode>
-        <childnode refid="73" relation="include">
+        <childnode refid="84" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="75">
+      <node id="88">
+        <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/InsuranceStorageToROF.h</label>
+        <link refid="InsuranceStorageToROF_8h"/>
+      </node>
+      <node id="89">
         <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h</label>
         <link refid="Simulation_8h"/>
-        <childnode refid="76" relation="include">
+        <childnode refid="90" relation="include">
         </childnode>
-        <childnode refid="77" relation="include">
+        <childnode refid="91" relation="include">
         </childnode>
       </node>
-      <node id="76">
+      <node id="90">
         <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/PaperTestProblem.h</label>
         <link refid="PaperTestProblem_8h"/>
       </node>
-      <node id="77">
+      <node id="91">
         <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/Triangle.h</label>
         <link refid="Triangle_8h"/>
       </node>
-      <node id="74">
+      <node id="87">
         <label>/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h</label>
         <link refid="ContinuityModelROF_8h"/>
-        <childnode refid="75" relation="include">
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -173,106 +248,102 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>bernardo<sp/>on<sp/>1/26/17.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_CONTINUITYMODELROF_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_CONTINUITYMODELROF_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ContinuityModel_8h" kindref="compound">Base/ContinuityModel.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Utils/Matrices.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_CONTINUITYMODELROF_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_CONTINUITYMODELROF_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13" refid="classContinuityModelROF" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classContinuityModelROF" kindref="compound">ContinuityModelROF</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classContinuityModel" kindref="compound">ContinuityModel</ref><sp/>{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Matrix3D&lt;double&gt;<sp/>storage_to_rof_table;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Matrix3D&lt;double&gt;<sp/>storage_to_rof_rof_realization;</highlight></codeline>
-<codeline lineno="20"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Matrix2D&lt;double&gt;&gt;<sp/>ut_storage_to_rof_rof_realization;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>online_downstream_sources;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*storage_wout_downstream;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_topo_sources;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>use_precomputed_rof_tables;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="42" refid="classContinuityModelROF_1ad0a8c47eca4ca66b58a2636ab907a4f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1ad0a8c47eca4ca66b58a2636ab907a4f2" kindref="member">beginning_tier</ref><sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="46" refid="classContinuityModelROF_1a77048d247b8d1f70fbdd31559b4d3337" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/><ref refid="classContinuityModelROF_1a77048d247b8d1f70fbdd31559b4d3337" kindref="member">realization_water_sources</ref>;</highlight></codeline>
-<codeline lineno="50" refid="classContinuityModelROF_1a75c6823d8dd37f274ee91ce158088dc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Utility<sp/>*&gt;<sp/><ref refid="classContinuityModelROF_1a75c6823d8dd37f274ee91ce158088dc4" kindref="member">realization_utilities</ref>;</highlight></codeline>
-<codeline lineno="54" refid="classContinuityModelROF_1ada25d241caf860255ad00097f5e7adb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Matrix2D&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1ada25d241caf860255ad00097f5e7adb6" kindref="member">ut_storage_to_rof_table</ref>;</highlight></codeline>
-<codeline lineno="58" refid="classContinuityModelROF_1a1a90c8816944aab36f395e89f7b84c06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1a1a90c8816944aab36f395e89f7b84c06" kindref="member">table_storage_shift</ref>;</highlight></codeline>
-<codeline lineno="62" refid="classContinuityModelROF_1a2bc5728653819a0d54a36ffbb1df44a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1a2bc5728653819a0d54a36ffbb1df44a3" kindref="member">table_base_storage_shift</ref>;</highlight></codeline>
-<codeline lineno="66" refid="classContinuityModelROF_1aedb1313e889617d718d2a93d719cb3f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1aedb1313e889617d718d2a93d719cb3f1" kindref="member">treatment_demand_buffer_shift</ref>;</highlight></codeline>
-<codeline lineno="70" refid="classContinuityModelROF_1a6a429c37f019777325ea4e5b9ad26cae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1a6a429c37f019777325ea4e5b9ad26cae" kindref="member">utility_base_storage_capacity</ref>;</highlight></codeline>
-<codeline lineno="74" refid="classContinuityModelROF_1a017041335a639ba56cc3e26dea07b514" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1a017041335a639ba56cc3e26dea07b514" kindref="member">utility_base_delta_capacity_table</ref>;</highlight></codeline>
-<codeline lineno="78" refid="classContinuityModelROF_1adcaf978b52ba016474952a42856ba373" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1adcaf978b52ba016474952a42856ba373" kindref="member">current_and_base_storage_capacity_ratio</ref>;</highlight></codeline>
-<codeline lineno="82" refid="classContinuityModelROF_1a443efa8d5a8bcbb1fea1a0bc929c77cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1a443efa8d5a8bcbb1fea1a0bc929c77cd" kindref="member">current_storage_table_shift</ref>;</highlight></codeline>
-<codeline lineno="86" refid="classContinuityModelROF_1acaebccba4f4ed286c5da02d6c2c90605" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1acaebccba4f4ed286c5da02d6c2c90605" kindref="member">current_base_storage_table_shift</ref>;</highlight></codeline>
-<codeline lineno="90" refid="classContinuityModelROF_1a1a274033b741e664268515de8e8eb3bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1a1a274033b741e664268515de8e8eb3bc" kindref="member">current_demand_ratio_buffer</ref>;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classContinuityModelROF_1a23bd422349e4e2246bd44b2007564fd1" kindref="member">ContinuityModelROF</ref>(vector&lt;WaterSource<sp/>*&gt;<sp/>water_sources,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Graph<sp/>&amp;<ref refid="classContinuityModel_1a563401588c6fa622f03393909a3522db" kindref="member">water_sources_graph</ref>,</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;int&gt;&gt;<sp/>&amp;<ref refid="classContinuityModel_1ae8516bcbbf52650190277fc8b06c1843" kindref="member">water_sources_to_utilities</ref>,<sp/>vector&lt;Utility<sp/>*&gt;<sp/>utilities,</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;MinEnvFlowControl<sp/>*&gt;<sp/><ref refid="classContinuityModel_1afc991e5c0d144020e49a97751a04b302" kindref="member">min_env_flow_controls</ref>,<sp/>vector&lt;double&gt;&amp;<sp/><ref refid="classContinuityModel_1aa4a00b76da6295d2faa11e3dcaea1896" kindref="member">utilities_rdm</ref>,</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;&amp;<sp/><ref refid="classContinuityModel_1ab7b8fa93a6f56b328e425e1ead6cfefa" kindref="member">water_sources_rdm</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>total_weeks_simulation,</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>use_precomputed_rof_tables,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classContinuityModel_1a7b6c99bf256f6c6b633ebb78282f43c7" kindref="member">realization_id</ref>);</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a4acab850e28a3a41182a19d86a7de709" kindref="member">~ContinuityModelROF</ref>();</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1a0386963b5914aaaa145de60a2ff1f84e" kindref="member">calculateShortTermROF</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>import_export_rof_tables);</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"></highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1a975e7566b4c0db6e3731647b6e76b9c8" kindref="member">calculateShortTermROFFullCalcs</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"></highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1a48b31e060f1d75e31fa591015f4a1c22" kindref="member">calculateShortTermROFTable</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/>vector&lt;Utility<sp/>*&gt;<sp/>utilities,</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>utilities_base_storage_capacity,</highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Matrix2D&lt;double&gt;&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1ada25d241caf860255ad00097f5e7adb6" kindref="member">ut_storage_to_rof_table</ref>,</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1a443efa8d5a8bcbb1fea1a0bc929c77cd" kindref="member">current_storage_table_shift</ref>,</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1acaebccba4f4ed286c5da02d6c2c90605" kindref="member">current_base_storage_table_shift</ref>,</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1a1a274033b741e664268515de8e8eb3bc" kindref="member">current_demand_ratio_buffer</ref>);</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"></highlight></codeline>
-<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1a0b66880fe153cbd0b85a5b416b98e9a6" kindref="member">calculateLongTermROF</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"></highlight></codeline>
-<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1acd72d71a29cef49c4de3d111378b76c7" kindref="member">resetUtilitiesAndReservoirs</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rof_type);</highlight></codeline>
-<codeline lineno="221"><highlight class="normal"></highlight></codeline>
-<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a0c12b5dad97c3783361baad7e53a2634" kindref="member">connectRealizationWaterSources</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1a77048d247b8d1f70fbdd31559b4d3337" kindref="member">realization_water_sources</ref>);</highlight></codeline>
-<codeline lineno="234"><highlight class="normal"></highlight></codeline>
-<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1abc16c650a854b60dfc42ab2d32ef4b0c" kindref="member">connectRealizationUtilities</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Utility<sp/>*&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1a75c6823d8dd37f274ee91ce158088dc4" kindref="member">realization_utilities</ref>);</highlight></codeline>
-<codeline lineno="247"><highlight class="normal"></highlight></codeline>
-<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a06cf47a32d6793b0ee912deccf92fc5b" kindref="member">updateOnlineInfrastructure</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
-<codeline lineno="262"><highlight class="normal"></highlight></codeline>
-<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a28834584763c3aa27a6f0917aa68926f" kindref="member">updateStorageToROFTable</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>storage_percent_decrement,</highlight></codeline>
-<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week_of_the_year,</highlight></codeline>
-<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*to_full_toposort);</highlight></codeline>
-<codeline lineno="282"><highlight class="normal"></highlight></codeline>
-<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a4f2b25687bcdeb4a88e22397c84789de" kindref="member">shiftStorages</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*available_volumes_shifted,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*delta_storage);</highlight></codeline>
-<codeline lineno="303"><highlight class="normal"></highlight></codeline>
-<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a1bb8362ce39e694937a787805613e106" kindref="member">printROFTable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;folder);</highlight></codeline>
-<codeline lineno="320"><highlight class="normal"></highlight></codeline>
-<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a83fc5e19e0f92d12d659c3446b90fa13" kindref="member">setROFTablesAndShifts</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Matrix2D&lt;double&gt;&gt;<sp/>&amp;storage_to_rof_table,</highlight></codeline>
-<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1a1a90c8816944aab36f395e89f7b84c06" kindref="member">table_storage_shift</ref>,</highlight></codeline>
-<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1a2bc5728653819a0d54a36ffbb1df44a3" kindref="member">table_base_storage_shift</ref>,</highlight></codeline>
-<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1aedb1313e889617d718d2a93d719cb3f1" kindref="member">treatment_demand_buffer_shift</ref>);</highlight></codeline>
-<codeline lineno="340"><highlight class="normal"></highlight></codeline>
-<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a10a8a95f3177d305d3881e654f01d65d" kindref="member">tableROFExceptionHandler</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>u,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
-<codeline lineno="360"><highlight class="normal"></highlight></codeline>
-<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a0c46d5905f5d0ae2cf0abd0d4653bbc7" kindref="member">setInitialTableTier</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;utilities,<sp/>vector&lt;Matrix2D&lt;double&gt;&gt;<sp/>&amp;vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;tier);</highlight></codeline>
-<codeline lineno="376"><highlight class="normal"></highlight></codeline>
-<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1aa2348a2a5dea751462771ef538243e75" kindref="member">recordROFStorageTable</ref>(vector&lt;Matrix2D&lt;double&gt;&gt;<sp/>&amp;ut_storage_to_rof_rof_realization,</highlight></codeline>
-<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;Matrix2D&lt;double&gt;&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1ada25d241caf860255ad00097f5e7adb6" kindref="member">ut_storage_to_rof_table</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;<ref refid="classContinuityModel_1a6df6198ebc99a099df08f4b8ce6b52b9" kindref="member">n_utilities</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;week,</highlight></codeline>
-<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;week_of_the_year);</highlight></codeline>
-<codeline lineno="395"><highlight class="normal"></highlight></codeline>
-<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1aa720006d12410fc35b8768eda716c149" kindref="member">calculateEmptyVolumes</ref>(vector&lt;WaterSource<sp/>*&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1a77048d247b8d1f70fbdd31559b4d3337" kindref="member">realization_water_sources</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*to_full);</highlight></codeline>
-<codeline lineno="409"><highlight class="normal"></highlight></codeline>
-<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a082567cc3a16b971632c14b5a603c692" kindref="member">updateJointWTPTreatmentAllocations</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/>&amp;non_rof_water_sources);</highlight></codeline>
-<codeline lineno="424"><highlight class="normal"></highlight></codeline>
-<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a360a69a3811c56e8354a64a598228663" kindref="member">updateUtilityTreatmentAllocations</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Utility<sp/>*&gt;<sp/>&amp;non_rof_utilities);</highlight></codeline>
-<codeline lineno="438"><highlight class="normal"></highlight></codeline>
-<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Matrix2D&lt;double&gt;&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1ad798adad5127a2674c5d4a3e8f24302d" kindref="member">getUt_storage_to_rof_table</ref>();</highlight></codeline>
-<codeline lineno="450"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="451"><highlight class="normal"></highlight></codeline>
-<codeline lineno="452"><highlight class="normal"></highlight></codeline>
-<codeline lineno="453"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_CONTINUITYMODELROF_H</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ContinuityModel_8h" kindref="compound">Base/ContinuityModel.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Utils/Matrices.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classContinuityModelROF" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classContinuityModelROF" kindref="compound">ContinuityModelROF</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classContinuityModel" kindref="compound">ContinuityModel</ref><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Matrix3D&lt;double&gt;<sp/>storage_to_rof_table;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Matrix3D&lt;double&gt;<sp/>storage_to_rof_rof_realization;</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Matrix2D&lt;double&gt;&gt;<sp/>ut_storage_to_rof_rof_realization;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;int&gt;<sp/>online_downstream_sources;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>*storage_wout_downstream;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_topo_sources;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>use_precomputed_rof_tables;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46" refid="classContinuityModelROF_1ad0a8c47eca4ca66b58a2636ab907a4f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1ad0a8c47eca4ca66b58a2636ab907a4f2" kindref="member">beginning_tier</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50" refid="classContinuityModelROF_1a77048d247b8d1f70fbdd31559b4d3337" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/><ref refid="classContinuityModelROF_1a77048d247b8d1f70fbdd31559b4d3337" kindref="member">realization_water_sources</ref>;</highlight></codeline>
+<codeline lineno="54" refid="classContinuityModelROF_1a75c6823d8dd37f274ee91ce158088dc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Utility<sp/>*&gt;<sp/><ref refid="classContinuityModelROF_1a75c6823d8dd37f274ee91ce158088dc4" kindref="member">realization_utilities</ref>;</highlight></codeline>
+<codeline lineno="58" refid="classContinuityModelROF_1ada25d241caf860255ad00097f5e7adb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Matrix2D&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1ada25d241caf860255ad00097f5e7adb6" kindref="member">ut_storage_to_rof_table</ref>;</highlight></codeline>
+<codeline lineno="62" refid="classContinuityModelROF_1a1a90c8816944aab36f395e89f7b84c06" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1a1a90c8816944aab36f395e89f7b84c06" kindref="member">table_storage_shift</ref>;</highlight></codeline>
+<codeline lineno="66" refid="classContinuityModelROF_1a2bc5728653819a0d54a36ffbb1df44a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1a2bc5728653819a0d54a36ffbb1df44a3" kindref="member">table_base_storage_shift</ref>;</highlight></codeline>
+<codeline lineno="70" refid="classContinuityModelROF_1aedb1313e889617d718d2a93d719cb3f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1aedb1313e889617d718d2a93d719cb3f1" kindref="member">treatment_demand_buffer_shift</ref>;</highlight></codeline>
+<codeline lineno="74" refid="classContinuityModelROF_1a6a429c37f019777325ea4e5b9ad26cae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1a6a429c37f019777325ea4e5b9ad26cae" kindref="member">utility_base_storage_capacity</ref>;</highlight></codeline>
+<codeline lineno="78" refid="classContinuityModelROF_1a017041335a639ba56cc3e26dea07b514" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1a017041335a639ba56cc3e26dea07b514" kindref="member">utility_base_delta_capacity_table</ref>;</highlight></codeline>
+<codeline lineno="82" refid="classContinuityModelROF_1adcaf978b52ba016474952a42856ba373" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1adcaf978b52ba016474952a42856ba373" kindref="member">current_and_base_storage_capacity_ratio</ref>;</highlight></codeline>
+<codeline lineno="86" refid="classContinuityModelROF_1a443efa8d5a8bcbb1fea1a0bc929c77cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1a443efa8d5a8bcbb1fea1a0bc929c77cd" kindref="member">current_storage_table_shift</ref>;</highlight></codeline>
+<codeline lineno="90" refid="classContinuityModelROF_1acaebccba4f4ed286c5da02d6c2c90605" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1acaebccba4f4ed286c5da02d6c2c90605" kindref="member">current_base_storage_table_shift</ref>;</highlight></codeline>
+<codeline lineno="94" refid="classContinuityModelROF_1a1a274033b741e664268515de8e8eb3bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1a1a274033b741e664268515de8e8eb3bc" kindref="member">current_demand_ratio_buffer</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classContinuityModelROF_1a23bd422349e4e2246bd44b2007564fd1" kindref="member">ContinuityModelROF</ref>(vector&lt;WaterSource<sp/>*&gt;<sp/>water_sources,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGraph" kindref="compound">Graph</ref><sp/>&amp;<ref refid="classContinuityModel_1a563401588c6fa622f03393909a3522db" kindref="member">water_sources_graph</ref>,</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;int&gt;&gt;<sp/>&amp;<ref refid="classContinuityModel_1ae8516bcbbf52650190277fc8b06c1843" kindref="member">water_sources_to_utilities</ref>,<sp/>vector&lt;Utility<sp/>*&gt;<sp/>utilities,</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;MinEnvFlowControl<sp/>*&gt;<sp/><ref refid="classContinuityModel_1afc991e5c0d144020e49a97751a04b302" kindref="member">min_env_flow_controls</ref>,<sp/>vector&lt;double&gt;&amp;<sp/><ref refid="classContinuityModel_1aa4a00b76da6295d2faa11e3dcaea1896" kindref="member">utilities_rdm</ref>,</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;&amp;<sp/><ref refid="classContinuityModel_1ab7b8fa93a6f56b328e425e1ead6cfefa" kindref="member">water_sources_rdm</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>total_weeks_simulation,</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>use_precomputed_rof_tables,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="classContinuityModel_1a7b6c99bf256f6c6b633ebb78282f43c7" kindref="member">realization_id</ref>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a4acab850e28a3a41182a19d86a7de709" kindref="member">~ContinuityModelROF</ref>();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1a0386963b5914aaaa145de60a2ff1f84e" kindref="member">calculateShortTermROF</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>import_export_rof_tables);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1a975e7566b4c0db6e3731647b6e76b9c8" kindref="member">calculateShortTermROFFullCalcs</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1a48b31e060f1d75e31fa591015f4a1c22" kindref="member">calculateShortTermROFTable</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/>vector&lt;Utility<sp/>*&gt;<sp/>utilities,</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>utilities_base_storage_capacity,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;<ref refid="classMatrix2D" kindref="compound">Matrix2D&lt;double&gt;</ref>&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1ada25d241caf860255ad00097f5e7adb6" kindref="member">ut_storage_to_rof_table</ref>,</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1a443efa8d5a8bcbb1fea1a0bc929c77cd" kindref="member">current_storage_table_shift</ref>,</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1acaebccba4f4ed286c5da02d6c2c90605" kindref="member">current_base_storage_table_shift</ref>,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/><ref refid="classContinuityModelROF_1a1a274033b741e664268515de8e8eb3bc" kindref="member">current_demand_ratio_buffer</ref>);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/><ref refid="classContinuityModelROF_1a0b66880fe153cbd0b85a5b416b98e9a6" kindref="member">calculateLongTermROF</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1acd72d71a29cef49c4de3d111378b76c7" kindref="member">resetUtilitiesAndReservoirs</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rof_type);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a0c12b5dad97c3783361baad7e53a2634" kindref="member">connectRealizationWaterSources</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1a77048d247b8d1f70fbdd31559b4d3337" kindref="member">realization_water_sources</ref>);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1abc16c650a854b60dfc42ab2d32ef4b0c" kindref="member">connectRealizationUtilities</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Utility<sp/>*&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1a75c6823d8dd37f274ee91ce158088dc4" kindref="member">realization_utilities</ref>);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a06cf47a32d6793b0ee912deccf92fc5b" kindref="member">updateOnlineInfrastructure</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a28834584763c3aa27a6f0917aa68926f" kindref="member">updateStorageToROFTable</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>storage_percent_decrement,</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week_of_the_year,</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*to_full_toposort);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a4f2b25687bcdeb4a88e22397c84789de" kindref="member">shiftStorages</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*available_volumes_shifted,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*delta_storage);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a1bb8362ce39e694937a787805613e106" kindref="member">printROFTable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;folder);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a83fc5e19e0f92d12d659c3446b90fa13" kindref="member">setROFTablesAndShifts</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;<ref refid="classMatrix2D" kindref="compound">Matrix2D&lt;double&gt;</ref>&gt;<sp/>&amp;storage_to_rof_table,</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1a1a90c8816944aab36f395e89f7b84c06" kindref="member">table_storage_shift</ref>,</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1a2bc5728653819a0d54a36ffbb1df44a3" kindref="member">table_base_storage_shift</ref>,</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1aedb1313e889617d718d2a93d719cb3f1" kindref="member">treatment_demand_buffer_shift</ref>);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a10a8a95f3177d305d3881e654f01d65d" kindref="member">tableROFExceptionHandler</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>u,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a0c46d5905f5d0ae2cf0abd0d4653bbc7" kindref="member">setInitialTableTier</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>week,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;utilities,<sp/>vector&lt;<ref refid="classMatrix2D" kindref="compound">Matrix2D&lt;double&gt;</ref>&gt;<sp/>&amp;vector,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;tier);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1aa2348a2a5dea751462771ef538243e75" kindref="member">recordROFStorageTable</ref>(vector&lt;<ref refid="classMatrix2D" kindref="compound">Matrix2D&lt;double&gt;</ref>&gt;<sp/>&amp;ut_storage_to_rof_rof_realization,</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;<ref refid="classMatrix2D" kindref="compound">Matrix2D&lt;double&gt;</ref>&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1ada25d241caf860255ad00097f5e7adb6" kindref="member">ut_storage_to_rof_table</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;<ref refid="classContinuityModel_1a6df6198ebc99a099df08f4b8ce6b52b9" kindref="member">n_utilities</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;week,</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;week_of_the_year);</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1aa720006d12410fc35b8768eda716c149" kindref="member">calculateEmptyVolumes</ref>(vector&lt;WaterSource<sp/>*&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1a77048d247b8d1f70fbdd31559b4d3337" kindref="member">realization_water_sources</ref>,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*to_full);</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a082567cc3a16b971632c14b5a603c692" kindref="member">updateJointWTPTreatmentAllocations</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;WaterSource<sp/>*&gt;<sp/>&amp;non_rof_water_sources);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classContinuityModelROF_1a360a69a3811c56e8354a64a598228663" kindref="member">updateUtilityTreatmentAllocations</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;Utility<sp/>*&gt;<sp/>&amp;non_rof_utilities);</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;Matrix2D&lt;double&gt;&gt;<sp/>&amp;<ref refid="classContinuityModelROF_1ad798adad5127a2674c5d4a3e8f24302d" kindref="member">getUt_storage_to_rof_table</ref>();</highlight></codeline>
+<codeline lineno="454"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_CONTINUITYMODELROF_H</highlight></codeline>
     </programlisting>
     <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/ContinuityModels/ContinuityModelROF.h"/>
   </compounddef>

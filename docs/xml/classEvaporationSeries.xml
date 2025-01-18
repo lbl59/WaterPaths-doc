@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classEvaporationSeries" kind="class" language="C++" prot="public">
+    <compoundname>EvaporationSeries</compoundname>
+    <basecompoundref refid="classCatchment" prot="public" virt="non-virtual">Catchment</basecompoundref>
+    <includes refid="EvaporationSeries_8h" local="no">EvaporationSeries.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classEvaporationSeries_1af0903d8555a148f9bf45f915877120b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EvaporationSeries::EvaporationSeries</definition>
+        <argsstring>(vector&lt; vector&lt; double &gt;&gt; *evaporation_series, int series_length)</argsstring>
+        <name>EvaporationSeries</name>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; *</type>
+          <declname>evaporation_series</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>series_length</declname>
+        </param>
+        <briefdescription>
+<para>Constructs an <computeroutput><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref></computeroutput> object for managing and storing evaporation data over time. Initializes the series with a pointer to evaporation data and its length. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evaporation_series</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to a vector of vectors containing the evaporation data series. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>series_length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the length of the evaporation data series. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/EvaporationSeries.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaporationSeries_1aa8d8cd8bbc0fd5b368b748cb090ad414" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EvaporationSeries::EvaporationSeries</definition>
+        <argsstring>(const EvaporationSeries &amp;evaporation_series)</argsstring>
+        <name>EvaporationSeries</name>
+        <param>
+          <type>const <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
+          <declname>evaporation_series</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor for the <computeroutput><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref></computeroutput> class. Creates a new <computeroutput><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref></computeroutput> object by copying an existing one. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evaporation_series</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the <computeroutput><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref></computeroutput> object to be copied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/EvaporationSeries.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaporationSeries_1ae9f1fc3bb0bf32db12dcc531c6af2e6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
+        <definition>EvaporationSeries&amp; EvaporationSeries::operator=</definition>
+        <argsstring>(const EvaporationSeries &amp;evaporation_series)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
+          <declname>evaporation_series</declname>
+        </param>
+        <briefdescription>
+<para>Overloads the assignment operator for the <computeroutput><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref></computeroutput> class, allowing one object to be assigned the attributes of another. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>evaporation_series</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to the <computeroutput><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref></computeroutput> object to be assigned.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the updated <computeroutput><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref></computeroutput> object after assignment. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/EvaporationSeries.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaporationSeries_1a201a00eaaadc9c523d544e0d6a4c50e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EvaporationSeries::~EvaporationSeries</definition>
+        <argsstring>() override</argsstring>
+        <name>~EvaporationSeries</name>
+        <briefdescription>
+<para>Destructor for the <computeroutput><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref></computeroutput> class. Cleans up resources associated with the object. Since no dynamic allocation is explicitly used, the destructor is empty. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/EvaporationSeries.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaporationSeries_1a4d793fbcb73e8fb6c179968130d6fd0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double EvaporationSeries::getEvaporation</definition>
+        <argsstring>(int week)</argsstring>
+        <name>getEvaporation</name>
+        <param>
+          <type>int</type>
+          <declname>week</declname>
+        </param>
+        <briefdescription>
+<para>Retrieves the evaporation value for a specified week. This is a wrapper for the base class <computeroutput><ref refid="classCatchment_1af4e8206ffab5c901e5e4cdd6136f73a1" kindref="member">Catchment::getStreamflow</ref></computeroutput> function. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>week</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer representing the week for which the evaporation value is requested.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A double representing the evaporation value for the specified week. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/EvaporationSeries.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classEvaporationSeries_1a4985ac4c81ec111657861e5750b24c0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void EvaporationSeries::setRealization</definition>
+        <argsstring>(unsigned long r, vector&lt; double &gt; &amp;rdm_factors) override</argsstring>
+        <name>setRealization</name>
+        <reimplements refid="classCatchment_1ad76654af47dcd69bcb795c1c152409cc">setRealization</reimplements>
+        <param>
+          <type>unsigned long</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>rdm_factors</declname>
+        </param>
+        <briefdescription>
+<para>Sets the realization for the <computeroutput><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref></computeroutput> object and scales the evaporation values based on its corresponding DU factors. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Unsigned long integer representing the realization ID. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rdm_factors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reference to a vector of doubles containing Random Decision-Making (RDM) factors to modify evaporation values.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/EvaporationSeries.h" line="70" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class is a subclass of the main <computeroutput><ref refid="classCatchment" kindref="compound">Catchment</ref></computeroutput> class and represents a series of evaporation data over time. </para>    </briefdescription>
+    <detaileddescription>
+<para>Created by bernardoct on 6/22/17. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="95">
+        <label>Catchment</label>
+        <link refid="classCatchment"/>
+      </node>
+      <node id="94">
+        <label>EvaporationSeries</label>
+        <link refid="classEvaporationSeries"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="97">
+        <label>Catchment</label>
+        <link refid="classCatchment"/>
+      </node>
+      <node id="96">
+        <label>EvaporationSeries</label>
+        <link refid="classEvaporationSeries"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/EvaporationSeries.h" line="14" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Controls/EvaporationSeries.h" bodystart="14" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classCatchment_1aafdee6ee868a8892314672abb119e60f" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>Catchment</name></member>
+      <member refid="classCatchment_1ae311c4b2d857a8b5abc01f5317b04df2" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>Catchment</name></member>
+      <member refid="classCatchment_1a20548a9d03f0d39f297cb15b3c0433ad" prot="protected" virt="non-virtual"><scope>EvaporationSeries</scope><name>delta_week</name></member>
+      <member refid="classEvaporationSeries_1af0903d8555a148f9bf45f915877120b3" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>EvaporationSeries</name></member>
+      <member refid="classEvaporationSeries_1aa8d8cd8bbc0fd5b368b748cb090ad414" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>EvaporationSeries</name></member>
+      <member refid="classEvaporationSeries_1a4d793fbcb73e8fb6c179968130d6fd0a" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>getEvaporation</name></member>
+      <member refid="classCatchment_1af4e8206ffab5c901e5e4cdd6136f73a1" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>getStreamflow</name></member>
+      <member refid="classEvaporationSeries_1ae9f1fc3bb0bf32db12dcc531c6af2e6b" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>operator=</name></member>
+      <member refid="classCatchment_1a5abab52eab9c05164f76e46954833989" prot="public" virt="non-virtual" ambiguityscope="Catchment::"><scope>EvaporationSeries</scope><name>operator=</name></member>
+      <member refid="classCatchment_1a472ff6892f90d94b8c4dba53c462dedf" prot="protected" virt="non-virtual"><scope>EvaporationSeries</scope><name>parent</name></member>
+      <member refid="classCatchment_1a2d4994220f63b876348b4ce4892bc6d3" prot="protected" virt="non-virtual"><scope>EvaporationSeries</scope><name>series_length</name></member>
+      <member refid="classEvaporationSeries_1a4985ac4c81ec111657861e5750b24c0e" prot="public" virt="virtual"><scope>EvaporationSeries</scope><name>setRealization</name></member>
+      <member refid="classCatchment_1a579ccda86831f286c19c76354e7125c3" prot="protected" virt="non-virtual"><scope>EvaporationSeries</scope><name>streamflows_all</name></member>
+      <member refid="classCatchment_1aaf04c295ecd6b666fa1439d3d5bc072a" prot="protected" virt="non-virtual"><scope>EvaporationSeries</scope><name>streamflows_realization</name></member>
+      <member refid="classCatchment_1ad12bc6d64d4bd5133ac1086a52e240b3" prot="public" virt="virtual"><scope>EvaporationSeries</scope><name>~Catchment</name></member>
+      <member refid="classEvaporationSeries_1a201a00eaaadc9c523d544e0d6a4c50e5" prot="public" virt="non-virtual"><scope>EvaporationSeries</scope><name>~EvaporationSeries</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

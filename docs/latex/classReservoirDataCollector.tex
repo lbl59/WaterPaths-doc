@@ -1,0 +1,215 @@
+\hypertarget{classReservoirDataCollector}{}\section{Reservoir\+Data\+Collector Class Reference}
+\label{classReservoirDataCollector}\index{Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}}
+
+
+The {\ttfamily \mbox{\hyperlink{classReservoirDataCollector}{Reservoir\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of \mbox{\hyperlink{classReservoir}{Reservoir}} objects.  
+
+
+
+
+{\ttfamily \#include $<$Reservoir\+Data\+Collector.\+h$>$}
+
+Inheritance diagram for Reservoir\+Data\+Collector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classReservoirDataCollector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classReservoirDataCollector_a7647adce7b2d7a8598ae678a5015dde5}{Reservoir\+Data\+Collector}} (\mbox{\hyperlink{classReservoir}{Reservoir}} $\ast$reservoir, unsigned long \mbox{\hyperlink{classDataCollector_a9ef2887466fe3123aa19ef956a219b96}{realization}})
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classReservoirDataCollector}{Reservoir\+Data\+Collector}} for managing and collecting data from a \mbox{\hyperlink{classReservoir}{Reservoir}}. This function initializes the data collector with specific attributes for a \mbox{\hyperlink{classReservoir}{Reservoir}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classReservoirDataCollector_aaca132902fa717e71a0b0d5d5078c04c}{Reservoir\+Data\+Collector}} (\mbox{\hyperlink{classReservoir}{Reservoir}} $\ast$reservoir, int \mbox{\hyperlink{classDataCollector_acad1c22d67a8eb3db056ba776a131900}{type}}, int \mbox{\hyperlink{classDataCollector_af46c27a47de92d92dcdae6b26a905a44}{table\+\_\+width}}, unsigned long \mbox{\hyperlink{classDataCollector_a9ef2887466fe3123aa19ef956a219b96}{realization}})
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classReservoirDataCollector}{Reservoir\+Data\+Collector}} instance. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classReservoirDataCollector_a81777b029bf26be403b9f4d67f01588b}{print\+Tabular\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a tabular string representation of reservoir data for a given week. This function formats and returns reservoir data values as a tab-\/separated string. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classReservoirDataCollector_a0b68d7fa4a6d704350340d1ac3e8a1d2}{print\+Compact\+String}} (int week) override
+\begin{DoxyCompactList}\small\item\em Generates a compact, comma-\/delimited string representation of reservoir data for a specified week. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classReservoirDataCollector_a62e7c7abc34c8154b338dfbd284ed665}{print\+Tabular\+String\+Header\+Line1}} () override
+\begin{DoxyCompactList}\small\item\em Generates the first header line for the tabular representation of reservoir data. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classReservoirDataCollector_ae2f8e808c5960608e510a64c7f00ad1b}{print\+Tabular\+String\+Header\+Line2}} () override
+\begin{DoxyCompactList}\small\item\em Generates the second header line for the tabular representation of reservoir data. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classReservoirDataCollector_aa8346433f037bbca41f3c8450f7f88cf}{print\+Compact\+String\+Header}} () override
+\begin{DoxyCompactList}\small\item\em Generates a compact, comma-\/delimited string header for the reservoir data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classReservoirDataCollector_a5c2e1355c40e45b409168e98245eef95}{collect\+\_\+data}} () override
+\begin{DoxyCompactList}\small\item\em Collects the reservoir data for the current week. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classReservoirDataCollector}{Reservoir\+Data\+Collector}}} class is a subclass of the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class that implements the data collection of \mbox{\hyperlink{classReservoir}{Reservoir}} objects. 
+
+Created by bernardoct on 8/25/17. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classReservoirDataCollector_a7647adce7b2d7a8598ae678a5015dde5}\label{classReservoirDataCollector_a7647adce7b2d7a8598ae678a5015dde5}} 
+\index{Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}!Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}}
+\index{Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}!Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}}
+\subsubsection{\texorpdfstring{Reservoir\+Data\+Collector()}{ReservoirDataCollector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Reservoir\+Data\+Collector\+::\+Reservoir\+Data\+Collector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classReservoir}{Reservoir}} $\ast$}]{reservoir,  }\item[{unsigned long}]{realization }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \mbox{\hyperlink{classReservoirDataCollector}{Reservoir\+Data\+Collector}} for managing and collecting data from a \mbox{\hyperlink{classReservoir}{Reservoir}}. This function initializes the data collector with specific attributes for a \mbox{\hyperlink{classReservoir}{Reservoir}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reservoir} & Pointer to the \mbox{\hyperlink{classReservoir}{Reservoir}} object that this collector will manage. \\
+\hline
+{\em realization} & Unsigned long integer representing the realization (scenario or simulation ID). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classReservoirDataCollector_aaca132902fa717e71a0b0d5d5078c04c}\label{classReservoirDataCollector_aaca132902fa717e71a0b0d5d5078c04c}} 
+\index{Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}!Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}}
+\index{Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}!Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}}
+\subsubsection{\texorpdfstring{Reservoir\+Data\+Collector()}{ReservoirDataCollector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Reservoir\+Data\+Collector\+::\+Reservoir\+Data\+Collector (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classReservoir}{Reservoir}} $\ast$}]{reservoir,  }\item[{int}]{type,  }\item[{int}]{table\+\_\+width,  }\item[{unsigned long}]{realization }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructs a \mbox{\hyperlink{classReservoirDataCollector}{Reservoir\+Data\+Collector}} instance. 
+
+This constructor initializes the \mbox{\hyperlink{classReservoirDataCollector}{Reservoir\+Data\+Collector}} object by associating it with a specified reservoir and configuring its data collection parameters such as type, table width, and realization.
+
+
+\begin{DoxyParams}{Parameters}
+{\em reservoir} & Pointer to the \mbox{\hyperlink{classReservoir}{Reservoir}} object whose data is being collected. \\
+\hline
+{\em type} & Integer representing the type of data collection. \\
+\hline
+{\em table\+\_\+width} & Integer specifying the width of the data table. \\
+\hline
+{\em realization} & Unsigned long integer representing the realization or simulation instance. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classReservoirDataCollector_a5c2e1355c40e45b409168e98245eef95}\label{classReservoirDataCollector_a5c2e1355c40e45b409168e98245eef95}} 
+\index{Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}!collect\+\_\+data@{collect\+\_\+data}}
+\index{collect\+\_\+data@{collect\+\_\+data}!Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}}
+\subsubsection{\texorpdfstring{collect\+\_\+data()}{collect\_data()}}
+{\footnotesize\ttfamily void Reservoir\+Data\+Collector\+::collect\+\_\+data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Collects the reservoir data for the current week. 
+
+This function overrides the {\ttfamily collect\+\_\+data} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a01486bf58acbe37b203f97b3b9a79c40}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classReservoirDataCollector_a0b68d7fa4a6d704350340d1ac3e8a1d2}\label{classReservoirDataCollector_a0b68d7fa4a6d704350340d1ac3e8a1d2}} 
+\index{Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}!print\+Compact\+String@{print\+Compact\+String}}
+\index{print\+Compact\+String@{print\+Compact\+String}!Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String()}{printCompactString()}}
+{\footnotesize\ttfamily string Reservoir\+Data\+Collector\+::print\+Compact\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a compact, comma-\/delimited string representation of reservoir data for a specified week. 
+
+This function overrides the {\ttfamily print\+Compact\+String} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & Integer representing the week for which the compact data is generated.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the compact representation of the demand offsets for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a2eac264fa5612aed5a830b12de4f4ae3}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classReservoirDataCollector_aa8346433f037bbca41f3c8450f7f88cf}\label{classReservoirDataCollector_aa8346433f037bbca41f3c8450f7f88cf}} 
+\index{Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}!print\+Compact\+String\+Header@{print\+Compact\+String\+Header}}
+\index{print\+Compact\+String\+Header@{print\+Compact\+String\+Header}!Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Compact\+String\+Header()}{printCompactStringHeader()}}
+{\footnotesize\ttfamily string Reservoir\+Data\+Collector\+::print\+Compact\+String\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a compact, comma-\/delimited string header for the reservoir data. 
+
+This function overrides the {\ttfamily print\+Compact\+String\+Header} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the compact header representation for the reservoir data. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a98dcb4ec871d9c7fbf7545c64e5ccc67}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classReservoirDataCollector_a81777b029bf26be403b9f4d67f01588b}\label{classReservoirDataCollector_a81777b029bf26be403b9f4d67f01588b}} 
+\index{Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}!print\+Tabular\+String@{print\+Tabular\+String}}
+\index{print\+Tabular\+String@{print\+Tabular\+String}!Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String()}{printTabularString()}}
+{\footnotesize\ttfamily string Reservoir\+Data\+Collector\+::print\+Tabular\+String (\begin{DoxyParamCaption}\item[{int}]{week }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a tabular string representation of reservoir data for a given week. This function formats and returns reservoir data values as a tab-\/separated string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em week} & The week index for which the data is to be printed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string containing the formatted reservoir data for the specified week. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a397fccabe0223267eea8fc7cac0e59da}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classReservoirDataCollector_a62e7c7abc34c8154b338dfbd284ed665}\label{classReservoirDataCollector_a62e7c7abc34c8154b338dfbd284ed665}} 
+\index{Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}!print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}}
+\index{print\+Tabular\+String\+Header\+Line1@{print\+Tabular\+String\+Header\+Line1}!Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line1()}{printTabularStringHeaderLine1()}}
+{\footnotesize\ttfamily string Reservoir\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the first header line for the tabular representation of reservoir data. 
+
+This function overrides the {\ttfamily print\+Tabular\+String\+Header\+Line1} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the first header line for the tabular representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_a91619cfa9e9b8cefd2f7c20d5718b41e}{Data\+Collector}}.
+
+\mbox{\Hypertarget{classReservoirDataCollector_ae2f8e808c5960608e510a64c7f00ad1b}\label{classReservoirDataCollector_ae2f8e808c5960608e510a64c7f00ad1b}} 
+\index{Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}!print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}}
+\index{print\+Tabular\+String\+Header\+Line2@{print\+Tabular\+String\+Header\+Line2}!Reservoir\+Data\+Collector@{Reservoir\+Data\+Collector}}
+\subsubsection{\texorpdfstring{print\+Tabular\+String\+Header\+Line2()}{printTabularStringHeaderLine2()}}
+{\footnotesize\ttfamily string Reservoir\+Data\+Collector\+::print\+Tabular\+String\+Header\+Line2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates the second header line for the tabular representation of reservoir data. 
+
+This function overrides the {\ttfamily print\+Tabular\+String\+Header\+Line2} function in the {\ttfamily \mbox{\hyperlink{classDataCollector}{Data\+Collector}}} class.
+
+\begin{DoxyReturn}{Returns}
+A string containing the second header line for the tabular representation. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classDataCollector_af01ea961314be2164f39e6d4cd59e443}{Data\+Collector}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/fs02/pmr82\+\_\+0001/lbl59/\+Water\+Paths-\/doc/src/\+Data\+Collector/\mbox{\hyperlink{ReservoirDataCollector_8h}{Reservoir\+Data\+Collector.\+h}}\end{DoxyCompactItemize}

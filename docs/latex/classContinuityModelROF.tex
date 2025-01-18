@@ -2,18 +2,23 @@
 \label{classContinuityModelROF}\index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
 
 
+The {\ttfamily \mbox{\hyperlink{classContinuityModelROF}{Continuity\+Model\+R\+OF}}} subclass extends the {\ttfamily \mbox{\hyperlink{classContinuityModel}{Continuity\+Model}}} class to include the implementation long-\/ and short-\/term R\+OF calculations for utilities.  
+
+
+
+
 {\ttfamily \#include $<$Continuity\+Model\+R\+O\+F.\+h$>$}
 
 Inheritance diagram for Continuity\+Model\+R\+OF\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classContinuityModelROF}
+\includegraphics[height=3.000000cm]{classContinuityModelROF}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classContinuityModelROF_a23bd422349e4e2246bd44b2007564fd1}{Continuity\+Model\+R\+OF}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ water\+\_\+sources, const Graph \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ utilities, vector$<$ Min\+Env\+Flow\+Control $\ast$$>$ \mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, unsigned long total\+\_\+weeks\+\_\+simulation, const int use\+\_\+precomputed\+\_\+rof\+\_\+tables, const unsigned long \mbox{\hyperlink{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7}{realization\+\_\+id}})
+\mbox{\hyperlink{classContinuityModelROF_a23bd422349e4e2246bd44b2007564fd1}{Continuity\+Model\+R\+OF}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ water\+\_\+sources, const \mbox{\hyperlink{classGraph}{Graph}} \&\mbox{\hyperlink{classContinuityModel_a563401588c6fa622f03393909a3522db}{water\+\_\+sources\+\_\+graph}}, const vector$<$ vector$<$ int $>$$>$ \&\mbox{\hyperlink{classContinuityModel_ae8516bcbbf52650190277fc8b06c1843}{water\+\_\+sources\+\_\+to\+\_\+utilities}}, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ utilities, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \mbox{\hyperlink{classContinuityModel_afc991e5c0d144020e49a97751a04b302}{min\+\_\+env\+\_\+flow\+\_\+controls}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_aa4a00b76da6295d2faa11e3dcaea1896}{utilities\+\_\+rdm}}, vector$<$ double $>$ \&\mbox{\hyperlink{classContinuityModel_ab7b8fa93a6f56b328e425e1ead6cfefa}{water\+\_\+sources\+\_\+rdm}}, unsigned long total\+\_\+weeks\+\_\+simulation, const int use\+\_\+precomputed\+\_\+rof\+\_\+tables, const unsigned long \mbox{\hyperlink{classContinuityModel_a7b6c99bf256f6c6b633ebb78282f43c7}{realization\+\_\+id}})
 \begin{DoxyCompactList}\small\item\em Initializes the \mbox{\hyperlink{classContinuityModelROF}{Continuity\+Model\+R\+OF}} object for simulating risks of failure (R\+OF). \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classContinuityModelROF_a4acab850e28a3a41182a19d86a7de709}{$\sim$\+Continuity\+Model\+R\+OF}} ()
 \begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classContinuityModelROF}{Continuity\+Model\+R\+OF}} class. \end{DoxyCompactList}\item 
@@ -21,7 +26,7 @@ vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classContinuityModelROF_a038
 \begin{DoxyCompactList}\small\item\em This function calculates the short-\/term risk of failure (R\+OF) for all utilities. \end{DoxyCompactList}\item 
 vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classContinuityModelROF_a975e7566b4c0db6e3731647b6e76b9c8}{calculate\+Short\+Term\+R\+O\+F\+Full\+Calcs}} (int week)
 \begin{DoxyCompactList}\small\item\em This function performs a full calculation of the short-\/term risk of failure (R\+OF) for each utility for the given week. \end{DoxyCompactList}\item 
-vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classContinuityModelROF_a48b31e060f1d75e31fa591015f4a1c22}{calculate\+Short\+Term\+R\+O\+F\+Table}} (int week, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ utilities, vector$<$ double $>$ utilities\+\_\+base\+\_\+storage\+\_\+capacity, const vector$<$ Matrix2D$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_ada25d241caf860255ad00097f5e7adb6}{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}}, vector$<$ double $>$ \mbox{\hyperlink{classContinuityModelROF_a443efa8d5a8bcbb1fea1a0bc929c77cd}{current\+\_\+storage\+\_\+table\+\_\+shift}}, vector$<$ double $>$ \mbox{\hyperlink{classContinuityModelROF_acaebccba4f4ed286c5da02d6c2c90605}{current\+\_\+base\+\_\+storage\+\_\+table\+\_\+shift}}, vector$<$ double $>$ \mbox{\hyperlink{classContinuityModelROF_a1a274033b741e664268515de8e8eb3bc}{current\+\_\+demand\+\_\+ratio\+\_\+buffer}})
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classContinuityModelROF_a48b31e060f1d75e31fa591015f4a1c22}{calculate\+Short\+Term\+R\+O\+F\+Table}} (int week, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ utilities, vector$<$ double $>$ utilities\+\_\+base\+\_\+storage\+\_\+capacity, const vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_ada25d241caf860255ad00097f5e7adb6}{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}}, vector$<$ double $>$ \mbox{\hyperlink{classContinuityModelROF_a443efa8d5a8bcbb1fea1a0bc929c77cd}{current\+\_\+storage\+\_\+table\+\_\+shift}}, vector$<$ double $>$ \mbox{\hyperlink{classContinuityModelROF_acaebccba4f4ed286c5da02d6c2c90605}{current\+\_\+base\+\_\+storage\+\_\+table\+\_\+shift}}, vector$<$ double $>$ \mbox{\hyperlink{classContinuityModelROF_a1a274033b741e664268515de8e8eb3bc}{current\+\_\+demand\+\_\+ratio\+\_\+buffer}})
 \begin{DoxyCompactList}\small\item\em This function calculates the short-\/term risk of failure (R\+OF) for each utility based on the current storage levels and treatment capacity ratios, using a predefined R\+OF table. \end{DoxyCompactList}\item 
 vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classContinuityModelROF_a0b66880fe153cbd0b85a5b416b98e9a6}{calculate\+Long\+Term\+R\+OF}} (int week)
 \begin{DoxyCompactList}\small\item\em This function calculates the long-\/term risk of failure (R\+OF) for each utility, considering both storage and treatment capacity, based on projected demand and predefined failure thresholds. \end{DoxyCompactList}\item 
@@ -39,13 +44,13 @@ void \mbox{\hyperlink{classContinuityModelROF_a4f2b25687bcdeb4a88e22397c84789de}
 \begin{DoxyCompactList}\small\item\em Shifts storage volumes based on delta values. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classContinuityModelROF_a1bb8362ce39e694937a787805613e106}{print\+R\+O\+F\+Table}} (const string \&folder)
 \begin{DoxyCompactList}\small\item\em Prints the R\+OF table to C\+SV files for each utility. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classContinuityModelROF_a83fc5e19e0f92d12d659c3446b90fa13}{set\+R\+O\+F\+Tables\+And\+Shifts}} (const vector$<$ Matrix2D$<$ double $>$$>$ \&storage\+\_\+to\+\_\+rof\+\_\+table, const vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_a1a90c8816944aab36f395e89f7b84c06}{table\+\_\+storage\+\_\+shift}}, const vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_a2bc5728653819a0d54a36ffbb1df44a3}{table\+\_\+base\+\_\+storage\+\_\+shift}}, const vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_aedb1313e889617d718d2a93d719cb3f1}{treatment\+\_\+demand\+\_\+buffer\+\_\+shift}})
+void \mbox{\hyperlink{classContinuityModelROF_a83fc5e19e0f92d12d659c3446b90fa13}{set\+R\+O\+F\+Tables\+And\+Shifts}} (const vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&storage\+\_\+to\+\_\+rof\+\_\+table, const vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_a1a90c8816944aab36f395e89f7b84c06}{table\+\_\+storage\+\_\+shift}}, const vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_a2bc5728653819a0d54a36ffbb1df44a3}{table\+\_\+base\+\_\+storage\+\_\+shift}}, const vector$<$ vector$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_aedb1313e889617d718d2a93d719cb3f1}{treatment\+\_\+demand\+\_\+buffer\+\_\+shift}})
 \begin{DoxyCompactList}\small\item\em Sets the R\+OF tables and shifts for the model. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classContinuityModelROF_a10a8a95f3177d305d3881e654f01d65d}{table\+R\+O\+F\+Exception\+Handler}} (double m, int u, int week)
 \begin{DoxyCompactList}\small\item\em Handles exceptions related to R\+OF table extrapolation or errors during R\+OF calculations. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classContinuityModelROF_a0c46d5905f5d0ae2cf0abd0d4653bbc7}{set\+Initial\+Table\+Tier}} (int week, const int \&utilities, vector$<$ Matrix2D$<$ double $>$$>$ \&vector, int \&tier)
+void \mbox{\hyperlink{classContinuityModelROF_a0c46d5905f5d0ae2cf0abd0d4653bbc7}{set\+Initial\+Table\+Tier}} (int week, const int \&utilities, vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&vector, int \&tier)
 \begin{DoxyCompactList}\small\item\em Sets the initial table tier based on the failure conditions for utilities at a specific week. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classContinuityModelROF_aa2348a2a5dea751462771ef538243e75}{record\+R\+O\+F\+Storage\+Table}} (vector$<$ Matrix2D$<$ double $>$$>$ \&ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization, vector$<$ Matrix2D$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_ada25d241caf860255ad00097f5e7adb6}{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}}, const int \&\mbox{\hyperlink{classContinuityModel_a6df6198ebc99a099df08f4b8ce6b52b9}{n\+\_\+utilities}}, int \&week, int \&week\+\_\+of\+\_\+the\+\_\+year)
+void \mbox{\hyperlink{classContinuityModelROF_aa2348a2a5dea751462771ef538243e75}{record\+R\+O\+F\+Storage\+Table}} (vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization, vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&\mbox{\hyperlink{classContinuityModelROF_ada25d241caf860255ad00097f5e7adb6}{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}}, const int \&\mbox{\hyperlink{classContinuityModel_a6df6198ebc99a099df08f4b8ce6b52b9}{n\+\_\+utilities}}, int \&week, int \&week\+\_\+of\+\_\+the\+\_\+year)
 \begin{DoxyCompactList}\small\item\em Records the risk of failure (R\+OF) storage table data for a given utility and week. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classContinuityModelROF_aa720006d12410fc35b8768eda716c149}{calculate\+Empty\+Volumes}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&\mbox{\hyperlink{classContinuityModelROF_a77048d247b8d1f70fbdd31559b4d3337}{realization\+\_\+water\+\_\+sources}}, double $\ast$to\+\_\+full)
 \begin{DoxyCompactList}\small\item\em Calculates the empty volume for each water source. This information is later used for updating the R\+OF tables. \end{DoxyCompactList}\item 
@@ -53,7 +58,7 @@ void \mbox{\hyperlink{classContinuityModelROF_a082567cc3a16b971632c14b5a603c692}
 \begin{DoxyCompactList}\small\item\em Updates treatment allocations for joint water treatment plants. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classContinuityModelROF_a360a69a3811c56e8354a64a598228663}{update\+Utility\+Treatment\+Allocations}} (const vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&non\+\_\+rof\+\_\+utilities)
 \begin{DoxyCompactList}\small\item\em Updates treatment capacities for utilities. \end{DoxyCompactList}\item 
-vector$<$ Matrix2D$<$ double $>$ $>$ \& \mbox{\hyperlink{classContinuityModelROF_ad798adad5127a2674c5d4a3e8f24302d}{get\+Ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}} ()
+vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$ $>$ \& \mbox{\hyperlink{classContinuityModelROF_ad798adad5127a2674c5d4a3e8f24302d}{get\+Ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}} ()
 \begin{DoxyCompactList}\small\item\em Retrieves the storage-\/to-\/\+R\+OF table. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -64,8 +69,8 @@ vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$ $>$ \mbox{\h
 \begin{DoxyCompactList}\small\item\em A vector of {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} pointers representing the water sources in the realization. \end{DoxyCompactList}\item 
 vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$ $>$ \mbox{\hyperlink{classContinuityModelROF_a75c6823d8dd37f274ee91ce158088dc4}{realization\+\_\+utilities}}
 \begin{DoxyCompactList}\small\item\em A vector of {\ttfamily \mbox{\hyperlink{classUtility}{Utility}}} pointers representing the utilities in the realization. \end{DoxyCompactList}\item 
-vector$<$ Matrix2D$<$ double $>$ $>$ \mbox{\hyperlink{classContinuityModelROF_ada25d241caf860255ad00097f5e7adb6}{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}}
-\begin{DoxyCompactList}\small\item\em A vector of {\ttfamily Matrix2D} objects representing the storage-\/to-\/\+R\+OF tables for each utility. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$ $>$ \mbox{\hyperlink{classContinuityModelROF_ada25d241caf860255ad00097f5e7adb6}{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}}
+\begin{DoxyCompactList}\small\item\em A vector of {\ttfamily \mbox{\hyperlink{classMatrix2D}{Matrix2D}}} objects representing the storage-\/to-\/\+R\+OF tables for each utility. \end{DoxyCompactList}\item 
 vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classContinuityModelROF_a1a90c8816944aab36f395e89f7b84c06}{table\+\_\+storage\+\_\+shift}}
 \begin{DoxyCompactList}\small\item\em A 2D vector of doubles representing the shifts in storage-\/to-\/\+R\+OF tables for each utility. \end{DoxyCompactList}\item 
 vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classContinuityModelROF_a2bc5728653819a0d54a36ffbb1df44a3}{table\+\_\+base\+\_\+storage\+\_\+shift}}
@@ -87,12 +92,17 @@ vector$<$ double $>$ \mbox{\hyperlink{classContinuityModelROF_a1a274033b741e6642
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classContinuityModelROF}{Continuity\+Model\+R\+OF}}} subclass extends the {\ttfamily \mbox{\hyperlink{classContinuityModel}{Continuity\+Model}}} class to include the implementation long-\/ and short-\/term R\+OF calculations for utilities. 
+
+Created by bernardo on 1/26/17. 
+
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classContinuityModelROF_a23bd422349e4e2246bd44b2007564fd1}\label{classContinuityModelROF_a23bd422349e4e2246bd44b2007564fd1}} 
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
 \subsubsection{\texorpdfstring{Continuity\+Model\+R\+O\+F()}{ContinuityModelROF()}}
-{\footnotesize\ttfamily Continuity\+Model\+R\+O\+F\+::\+Continuity\+Model\+R\+OF (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$}]{water\+\_\+sources,  }\item[{const Graph \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{utilities,  }\item[{vector$<$ Min\+Env\+Flow\+Control $\ast$$>$}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{unsigned long}]{total\+\_\+weeks\+\_\+simulation,  }\item[{const int}]{use\+\_\+precomputed\+\_\+rof\+\_\+tables,  }\item[{const unsigned long}]{realization\+\_\+id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Continuity\+Model\+R\+O\+F\+::\+Continuity\+Model\+R\+OF (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$}]{water\+\_\+sources,  }\item[{const \mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{utilities,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{vector$<$ double $>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ double $>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{unsigned long}]{total\+\_\+weeks\+\_\+simulation,  }\item[{const int}]{use\+\_\+precomputed\+\_\+rof\+\_\+tables,  }\item[{const unsigned long}]{realization\+\_\+id }\end{DoxyParamCaption})}
 
 
 
@@ -102,19 +112,19 @@ This constructor sets up the \mbox{\hyperlink{classContinuityModelROF}{Continuit
 
 
 \begin{DoxyParams}{Parameters}
-{\em water\+\_\+sources} & Vector of water source objects used in the model. \\
+{\em water\+\_\+sources} & \mbox{\hyperlink{classVector}{Vector}} of water source objects used in the model. \\
 \hline
-{\em water\+\_\+sources\+\_\+graph} & Graph representing the topological relationships between water sources. \\
+{\em water\+\_\+sources\+\_\+graph} & \mbox{\hyperlink{classGraph}{Graph}} representing the topological relationships between water sources. \\
 \hline
 {\em water\+\_\+sources\+\_\+to\+\_\+utilities} & Mapping of water sources to utilities. \\
 \hline
-{\em utilities} & Vector of utility objects to manage water demand and allocation. \\
+{\em utilities} & \mbox{\hyperlink{classVector}{Vector}} of utility objects to manage water demand and allocation. \\
 \hline
-{\em min\+\_\+env\+\_\+flow\+\_\+controls} & Vector of minimum environmental flow controls. \\
+{\em min\+\_\+env\+\_\+flow\+\_\+controls} & \mbox{\hyperlink{classVector}{Vector}} of minimum environmental flow controls. \\
 \hline
-{\em utilities\+\_\+rdm} & Vector of random deviations for utilities. \\
+{\em utilities\+\_\+rdm} & \mbox{\hyperlink{classVector}{Vector}} of random deviations for utilities. \\
 \hline
-{\em water\+\_\+sources\+\_\+rdm} & Vector of random deviations for water sources. \\
+{\em water\+\_\+sources\+\_\+rdm} & \mbox{\hyperlink{classVector}{Vector}} of random deviations for water sources. \\
 \hline
 {\em total\+\_\+weeks\+\_\+simulation} & Total number of weeks for the simulation. \\
 \hline
@@ -247,7 +257,7 @@ A 2D vector of doubles representing the risk of failure for each utility\+:
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!calculate\+Short\+Term\+R\+O\+F\+Table@{calculate\+Short\+Term\+R\+O\+F\+Table}}
 \index{calculate\+Short\+Term\+R\+O\+F\+Table@{calculate\+Short\+Term\+R\+O\+F\+Table}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
 \subsubsection{\texorpdfstring{calculate\+Short\+Term\+R\+O\+F\+Table()}{calculateShortTermROFTable()}}
-{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Continuity\+Model\+R\+O\+F\+::calculate\+Short\+Term\+R\+O\+F\+Table (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{utilities,  }\item[{vector$<$ double $>$}]{utilities\+\_\+base\+\_\+storage\+\_\+capacity,  }\item[{const vector$<$ Matrix2D$<$ double $>$$>$ \&}]{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table,  }\item[{vector$<$ double $>$}]{current\+\_\+storage\+\_\+table\+\_\+shift,  }\item[{vector$<$ double $>$}]{current\+\_\+base\+\_\+storage\+\_\+table\+\_\+shift,  }\item[{vector$<$ double $>$}]{current\+\_\+demand\+\_\+ratio\+\_\+buffer }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Continuity\+Model\+R\+O\+F\+::calculate\+Short\+Term\+R\+O\+F\+Table (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$}]{utilities,  }\item[{vector$<$ double $>$}]{utilities\+\_\+base\+\_\+storage\+\_\+capacity,  }\item[{const vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&}]{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table,  }\item[{vector$<$ double $>$}]{current\+\_\+storage\+\_\+table\+\_\+shift,  }\item[{vector$<$ double $>$}]{current\+\_\+base\+\_\+storage\+\_\+table\+\_\+shift,  }\item[{vector$<$ double $>$}]{current\+\_\+demand\+\_\+ratio\+\_\+buffer }\end{DoxyParamCaption})}
 
 
 
@@ -326,7 +336,7 @@ None
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!get\+Ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table@{get\+Ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}}
 \index{get\+Ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table@{get\+Ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
 \subsubsection{\texorpdfstring{get\+Ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table()}{getUt\_storage\_to\_rof\_table()}}
-{\footnotesize\ttfamily vector$<$Matrix2D$<$double$>$ $>$\& Continuity\+Model\+R\+O\+F\+::get\+Ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$double$>$ $>$\& Continuity\+Model\+R\+O\+F\+::get\+Ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -368,7 +378,7 @@ None
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!record\+R\+O\+F\+Storage\+Table@{record\+R\+O\+F\+Storage\+Table}}
 \index{record\+R\+O\+F\+Storage\+Table@{record\+R\+O\+F\+Storage\+Table}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
 \subsubsection{\texorpdfstring{record\+R\+O\+F\+Storage\+Table()}{recordROFStorageTable()}}
-{\footnotesize\ttfamily void Continuity\+Model\+R\+O\+F\+::record\+R\+O\+F\+Storage\+Table (\begin{DoxyParamCaption}\item[{vector$<$ Matrix2D$<$ double $>$$>$ \&}]{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization,  }\item[{vector$<$ Matrix2D$<$ double $>$$>$ \&}]{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table,  }\item[{const int \&}]{n\+\_\+utilities,  }\item[{int \&}]{week,  }\item[{int \&}]{week\+\_\+of\+\_\+the\+\_\+year }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Continuity\+Model\+R\+O\+F\+::record\+R\+O\+F\+Storage\+Table (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&}]{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+rof\+\_\+realization,  }\item[{vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&}]{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table,  }\item[{const int \&}]{n\+\_\+utilities,  }\item[{int \&}]{week,  }\item[{int \&}]{week\+\_\+of\+\_\+the\+\_\+year }\end{DoxyParamCaption})}
 
 
 
@@ -420,7 +430,7 @@ None
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!set\+Initial\+Table\+Tier@{set\+Initial\+Table\+Tier}}
 \index{set\+Initial\+Table\+Tier@{set\+Initial\+Table\+Tier}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
 \subsubsection{\texorpdfstring{set\+Initial\+Table\+Tier()}{setInitialTableTier()}}
-{\footnotesize\ttfamily void Continuity\+Model\+R\+O\+F\+::set\+Initial\+Table\+Tier (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{const int \&}]{utilities,  }\item[{vector$<$ Matrix2D$<$ double $>$$>$ \&}]{vector,  }\item[{int \&}]{tier }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Continuity\+Model\+R\+O\+F\+::set\+Initial\+Table\+Tier (\begin{DoxyParamCaption}\item[{int}]{week,  }\item[{const int \&}]{utilities,  }\item[{vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&}]{vector,  }\item[{int \&}]{tier }\end{DoxyParamCaption})}
 
 
 
@@ -446,7 +456,7 @@ None
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!set\+R\+O\+F\+Tables\+And\+Shifts@{set\+R\+O\+F\+Tables\+And\+Shifts}}
 \index{set\+R\+O\+F\+Tables\+And\+Shifts@{set\+R\+O\+F\+Tables\+And\+Shifts}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
 \subsubsection{\texorpdfstring{set\+R\+O\+F\+Tables\+And\+Shifts()}{setROFTablesAndShifts()}}
-{\footnotesize\ttfamily void Continuity\+Model\+R\+O\+F\+::set\+R\+O\+F\+Tables\+And\+Shifts (\begin{DoxyParamCaption}\item[{const vector$<$ Matrix2D$<$ double $>$$>$ \&}]{storage\+\_\+to\+\_\+rof\+\_\+table,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{table\+\_\+storage\+\_\+shift,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{table\+\_\+base\+\_\+storage\+\_\+shift,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{treatment\+\_\+demand\+\_\+buffer\+\_\+shift }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Continuity\+Model\+R\+O\+F\+::set\+R\+O\+F\+Tables\+And\+Shifts (\begin{DoxyParamCaption}\item[{const vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$ \&}]{storage\+\_\+to\+\_\+rof\+\_\+table,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{table\+\_\+storage\+\_\+shift,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{table\+\_\+base\+\_\+storage\+\_\+shift,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{treatment\+\_\+demand\+\_\+buffer\+\_\+shift }\end{DoxyParamCaption})}
 
 
 
@@ -565,6 +575,10 @@ This function checks for any new infrastructure that has become online in the re
 \begin{DoxyReturn}{Returns}
 None 
 \end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classInsuranceStorageToROF_a5870934b8b33e1d872eca7b0940398ac}{Insurance\+Storage\+To\+R\+OF}}.
+
 \mbox{\Hypertarget{classContinuityModelROF_a28834584763c3aa27a6f0917aa68926f}\label{classContinuityModelROF_a28834584763c3aa27a6f0917aa68926f}} 
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!update\+Storage\+To\+R\+O\+F\+Table@{update\+Storage\+To\+R\+O\+F\+Table}}
 \index{update\+Storage\+To\+R\+O\+F\+Table@{update\+Storage\+To\+R\+O\+F\+Table}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
@@ -583,7 +597,7 @@ This function updates the storage-\/to-\/\+R\+OF table for each week by shifting
 \hline
 {\em week\+\_\+of\+\_\+the\+\_\+year} & The week of the year to update the table for. \\
 \hline
-{\em to\+\_\+full} & Array of available water volumes to full storage capacity for each water source.\\
+{\em to\+\_\+full} & \mbox{\hyperlink{classArray}{Array}} of available water volumes to full storage capacity for each water source.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -721,11 +735,11 @@ A 2D vector of doubles representing the shifts in treatment demand buffer for ea
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table@{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}}
 \index{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table@{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}!Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}}
 \subsubsection{\texorpdfstring{ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table}{ut\_storage\_to\_rof\_table}}
-{\footnotesize\ttfamily vector$<$Matrix2D$<$double$>$ $>$ Continuity\+Model\+R\+O\+F\+::ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$double$>$ $>$ Continuity\+Model\+R\+O\+F\+::ut\+\_\+storage\+\_\+to\+\_\+rof\+\_\+table\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
-A vector of {\ttfamily Matrix2D} objects representing the storage-\/to-\/\+R\+OF tables for each utility. 
+A vector of {\ttfamily \mbox{\hyperlink{classMatrix2D}{Matrix2D}}} objects representing the storage-\/to-\/\+R\+OF tables for each utility. 
 
 \mbox{\Hypertarget{classContinuityModelROF_a017041335a639ba56cc3e26dea07b514}\label{classContinuityModelROF_a017041335a639ba56cc3e26dea07b514}} 
 \index{Continuity\+Model\+R\+OF@{Continuity\+Model\+R\+OF}!utility\+\_\+base\+\_\+delta\+\_\+capacity\+\_\+table@{utility\+\_\+base\+\_\+delta\+\_\+capacity\+\_\+table}}

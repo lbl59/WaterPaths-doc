@@ -2,6 +2,11 @@
 \label{classQuarry}\index{Quarry@{Quarry}}
 
 
+The {\ttfamily \mbox{\hyperlink{classQuarry}{Quarry}}} is a subclass of the {\ttfamily \mbox{\hyperlink{classReservoir}{Reservoir}}} class, which in turn is a subclass of the main {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} class. It represents a quarry reservoir that diverts water from upstream catchments.  
+
+
+
+
 {\ttfamily \#include $<$Quarry.\+h$>$}
 
 Inheritance diagram for Quarry\+:\begin{figure}[H]
@@ -13,13 +18,13 @@ Inheritance diagram for Quarry\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classQuarry_a126fddda9e5deeb667a6a9dbb0533470}{Quarry}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, Evaporation\+Series \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, Data\+Series $\ast$\mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}, double max\+\_\+diversion)
+\mbox{\hyperlink{classQuarry_a126fddda9e5deeb667a6a9dbb0533470}{Quarry}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, \mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$\mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}, double max\+\_\+diversion)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classQuarry}{Quarry}} object. This function initializes a quarry reservoir with specified parameters such as name, ID, catchments, capacity, treatment capacity, evaporation data, and more. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classQuarry_a13cc1caeda6846900893f8d24c49b111}{Quarry}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, Evaporation\+Series \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, Data\+Series $\ast$\mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond, double max\+\_\+diversion)
+\mbox{\hyperlink{classQuarry_a13cc1caeda6846900893f8d24c49b111}{Quarry}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, \mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$\mbox{\hyperlink{classReservoir_a46bd5b750963dfa9a57b247fd77ab8ff}{storage\+\_\+area\+\_\+curve}}, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond, double max\+\_\+diversion)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classQuarry}{Quarry}} object. This function initializes a quarry reservoir with specified parameters such as name, ID, catchments, capacity, treatment capacity, evaporation data. It also includes additional parameters that define the construction timeline, and financial bond details. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classQuarry_a28c4db26230c2ff3f82c8c0f70f2f124}{Quarry}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, Evaporation\+Series \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, double storage\+\_\+area, double max\+\_\+diversion)
+\mbox{\hyperlink{classQuarry_a28c4db26230c2ff3f82c8c0f70f2f124}{Quarry}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, double storage\+\_\+area, double max\+\_\+diversion)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classQuarry}{Quarry}} object. This function initializes a quarry reservoir with specified parameters such as name, ID, catchments, capacity, treatment capacity, evaporation data. It specifies a fixed storage area instead of a storage area curve. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classQuarry_a561616791620a55709bfca645bc8cbad}{Quarry}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, Evaporation\+Series \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, double storage\+\_\+area, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond, double max\+\_\+diversion)
+\mbox{\hyperlink{classQuarry_a561616791620a55709bfca645bc8cbad}{Quarry}} (const char $\ast$\mbox{\hyperlink{classWaterSource_a846ea74c5b453d014f594d41fee8c765}{name}}, const int \mbox{\hyperlink{classWaterSource_a6eafe5dfefd317877d1244e8a7c6e742}{id}}, const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&\mbox{\hyperlink{classWaterSource_a8c18c34f23f8a06685c1d12f462ed830}{catchments}}, const double \mbox{\hyperlink{classWaterSource_a2ec257b415b248214a8bce7fc5267723}{capacity}}, const double max\+\_\+treatment\+\_\+capacity, \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&\mbox{\hyperlink{classReservoir_a2d2d9b302c13703309bb798d24136810}{evaporation\+\_\+series}}, double storage\+\_\+area, const vector$<$ double $>$ \&construction\+\_\+time\+\_\+range, double permitting\+\_\+period, \mbox{\hyperlink{classBond}{Bond}} \&bond, double max\+\_\+diversion)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classQuarry}{Quarry}} object. This function initializes a quarry reservoir with specified parameters such as name, ID, catchments, capacity, treatment capacity, evaporation data. It also includes additional parameters that define the construction timeline, and financial bond details. It specifies a fixed storage area instead of a storage area curve. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classQuarry_a5a43f5a3f1cb837bc313046cf82b49e3}{Quarry}} (const \mbox{\hyperlink{classQuarry}{Quarry}} \&quarry, const double max\+\_\+diversion)
 \begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classQuarry}{Quarry}} object as a copy of an existing \mbox{\hyperlink{classQuarry}{Quarry}} object, with an option to set a new maximum diversion rate by overriding the max diversion of the original \mbox{\hyperlink{classQuarry}{Quarry}} object. \end{DoxyCompactList}\item 
@@ -34,12 +39,17 @@ void \mbox{\hyperlink{classQuarry_af5fe04fa188d399485b2b4e64381e169}{set\+Online
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+The {\ttfamily \mbox{\hyperlink{classQuarry}{Quarry}}} is a subclass of the {\ttfamily \mbox{\hyperlink{classReservoir}{Reservoir}}} class, which in turn is a subclass of the main {\ttfamily \mbox{\hyperlink{classWaterSource}{Water\+Source}}} class. It represents a quarry reservoir that diverts water from upstream catchments. 
+
+Created by bernardoct on 5/3/17. 
+
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classQuarry_a126fddda9e5deeb667a6a9dbb0533470}\label{classQuarry_a126fddda9e5deeb667a6a9dbb0533470}} 
 \index{Quarry@{Quarry}!Quarry@{Quarry}}
 \index{Quarry@{Quarry}!Quarry@{Quarry}}
 \subsubsection{\texorpdfstring{Quarry()}{Quarry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
-{\footnotesize\ttfamily Quarry\+::\+Quarry (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{Evaporation\+Series \&}]{evaporation\+\_\+series,  }\item[{Data\+Series $\ast$}]{storage\+\_\+area\+\_\+curve,  }\item[{double}]{max\+\_\+diversion }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Quarry\+::\+Quarry (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series,  }\item[{\mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$}]{storage\+\_\+area\+\_\+curve,  }\item[{double}]{max\+\_\+diversion }\end{DoxyParamCaption})}
 
 
 
@@ -57,9 +67,9 @@ Constructs a \mbox{\hyperlink{classQuarry}{Quarry}} object. This function initia
 \hline
 {\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the quarry. \\
 \hline
-{\em evaporation\+\_\+series} & A reference to an Evaporation\+Series object containing evaporation data for the quarry. \\
+{\em evaporation\+\_\+series} & A reference to an \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object containing evaporation data for the quarry. \\
 \hline
-{\em storage\+\_\+area\+\_\+curve} & A pointer to a Data\+Series object defining the relationship between storage and surface area of the quarry. Can be null. \\
+{\em storage\+\_\+area\+\_\+curve} & A pointer to a \mbox{\hyperlink{classDataSeries}{Data\+Series}} object defining the relationship between storage and surface area of the quarry. Can be null. \\
 \hline
 {\em max\+\_\+diversion} & The maximum diversion flow rate allowed from the quarry. \\
 \hline
@@ -68,7 +78,7 @@ Constructs a \mbox{\hyperlink{classQuarry}{Quarry}} object. This function initia
 \index{Quarry@{Quarry}!Quarry@{Quarry}}
 \index{Quarry@{Quarry}!Quarry@{Quarry}}
 \subsubsection{\texorpdfstring{Quarry()}{Quarry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
-{\footnotesize\ttfamily Quarry\+::\+Quarry (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{Evaporation\+Series \&}]{evaporation\+\_\+series,  }\item[{Data\+Series $\ast$}]{storage\+\_\+area\+\_\+curve,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond,  }\item[{double}]{max\+\_\+diversion }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Quarry\+::\+Quarry (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series,  }\item[{\mbox{\hyperlink{classDataSeries}{Data\+Series}} $\ast$}]{storage\+\_\+area\+\_\+curve,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond,  }\item[{double}]{max\+\_\+diversion }\end{DoxyParamCaption})}
 
 
 
@@ -86,9 +96,9 @@ Constructs a \mbox{\hyperlink{classQuarry}{Quarry}} object. This function initia
 \hline
 {\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the quarry. \\
 \hline
-{\em evaporation\+\_\+series} & A reference to an Evaporation\+Series object containing evaporation data for the quarry. \\
+{\em evaporation\+\_\+series} & A reference to an \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object containing evaporation data for the quarry. \\
 \hline
-{\em storage\+\_\+area\+\_\+curve} & A pointer to a Data\+Series object defining the relationship between storage and surface area of the quarry. Can be null. \\
+{\em storage\+\_\+area\+\_\+curve} & A pointer to a \mbox{\hyperlink{classDataSeries}{Data\+Series}} object defining the relationship between storage and surface area of the quarry. Can be null. \\
 \hline
 {\em construction\+\_\+time\+\_\+range} & A vector of doubles representing the start and end times of the quarry\textquotesingle{}s construction period. \\
 \hline
@@ -103,7 +113,7 @@ Constructs a \mbox{\hyperlink{classQuarry}{Quarry}} object. This function initia
 \index{Quarry@{Quarry}!Quarry@{Quarry}}
 \index{Quarry@{Quarry}!Quarry@{Quarry}}
 \subsubsection{\texorpdfstring{Quarry()}{Quarry()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
-{\footnotesize\ttfamily Quarry\+::\+Quarry (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{Evaporation\+Series \&}]{evaporation\+\_\+series,  }\item[{double}]{storage\+\_\+area,  }\item[{double}]{max\+\_\+diversion }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Quarry\+::\+Quarry (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series,  }\item[{double}]{storage\+\_\+area,  }\item[{double}]{max\+\_\+diversion }\end{DoxyParamCaption})}
 
 
 
@@ -121,7 +131,7 @@ Constructs a \mbox{\hyperlink{classQuarry}{Quarry}} object. This function initia
 \hline
 {\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the quarry . \\
 \hline
-{\em evaporation\+\_\+series} & A reference to an Evaporation\+Series object containing evaporation data for the quarry. \\
+{\em evaporation\+\_\+series} & A reference to an \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object containing evaporation data for the quarry. \\
 \hline
 {\em storage\+\_\+area} & The surface area of the quarry in square units. \\
 \hline
@@ -132,7 +142,7 @@ Constructs a \mbox{\hyperlink{classQuarry}{Quarry}} object. This function initia
 \index{Quarry@{Quarry}!Quarry@{Quarry}}
 \index{Quarry@{Quarry}!Quarry@{Quarry}}
 \subsubsection{\texorpdfstring{Quarry()}{Quarry()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
-{\footnotesize\ttfamily Quarry\+::\+Quarry (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{Evaporation\+Series \&}]{evaporation\+\_\+series,  }\item[{double}]{storage\+\_\+area,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond,  }\item[{double}]{max\+\_\+diversion }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Quarry\+::\+Quarry (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{const int}]{id,  }\item[{const vector$<$ \mbox{\hyperlink{classCatchment}{Catchment}} $\ast$$>$ \&}]{catchments,  }\item[{const double}]{capacity,  }\item[{const double}]{max\+\_\+treatment\+\_\+capacity,  }\item[{\mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} \&}]{evaporation\+\_\+series,  }\item[{double}]{storage\+\_\+area,  }\item[{const vector$<$ double $>$ \&}]{construction\+\_\+time\+\_\+range,  }\item[{double}]{permitting\+\_\+period,  }\item[{\mbox{\hyperlink{classBond}{Bond}} \&}]{bond,  }\item[{double}]{max\+\_\+diversion }\end{DoxyParamCaption})}
 
 
 
@@ -150,7 +160,7 @@ Constructs a \mbox{\hyperlink{classQuarry}{Quarry}} object. This function initia
 \hline
 {\em max\+\_\+treatment\+\_\+capacity} & The maximum treatment capacity of the quarry. \\
 \hline
-{\em evaporation\+\_\+series} & A reference to an Evaporation\+Series object containing evaporation data for the quarry. \\
+{\em evaporation\+\_\+series} & A reference to an \mbox{\hyperlink{classEvaporationSeries}{Evaporation\+Series}} object containing evaporation data for the quarry. \\
 \hline
 {\em storage\+\_\+area} & The surface area of the quarry in square units. \\
 \hline

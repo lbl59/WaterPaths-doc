@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="16" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" bodystart="16" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="19" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classQuarry_1ac2fe4ae274f23b1cc932655c5fb6263d" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="20" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" bodystart="20" bodyend="-1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="23" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -61,11 +61,11 @@
           <declname>max_treatment_capacity</declname>
         </param>
         <param>
-          <type>EvaporationSeries &amp;</type>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
           <declname>evaporation_series</declname>
         </param>
         <param>
-          <type>DataSeries *</type>
+          <type><ref refid="classDataSeries" kindref="compound">DataSeries</ref> *</type>
           <declname>storage_area_curve</declname>
         </param>
         <param>
@@ -115,14 +115,14 @@
 <parametername>evaporation_series</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to an EvaporationSeries object containing evaporation data for the quarry. </para></parameterdescription>
+<para>A reference to an <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object containing evaporation data for the quarry. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>storage_area_curve</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A pointer to a DataSeries object defining the relationship between storage and surface area of the quarry. Can be null. </para></parameterdescription>
+<para>A pointer to a <ref refid="classDataSeries" kindref="compound">DataSeries</ref> object defining the relationship between storage and surface area of the quarry. Can be null. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -135,7 +135,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="41" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="44" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classQuarry_1a13cc1caeda6846900893f8d24c49b111" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -163,11 +163,11 @@
           <declname>max_treatment_capacity</declname>
         </param>
         <param>
-          <type>EvaporationSeries &amp;</type>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
           <declname>evaporation_series</declname>
         </param>
         <param>
-          <type>DataSeries *</type>
+          <type><ref refid="classDataSeries" kindref="compound">DataSeries</ref> *</type>
           <declname>storage_area_curve</declname>
         </param>
         <param>
@@ -229,14 +229,14 @@
 <parametername>evaporation_series</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to an EvaporationSeries object containing evaporation data for the quarry. </para></parameterdescription>
+<para>A reference to an <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object containing evaporation data for the quarry. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>storage_area_curve</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A pointer to a DataSeries object defining the relationship between storage and surface area of the quarry. Can be null. </para></parameterdescription>
+<para>A pointer to a <ref refid="classDataSeries" kindref="compound">DataSeries</ref> object defining the relationship between storage and surface area of the quarry. Can be null. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -270,7 +270,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="72" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="75" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classQuarry_1a28c4db26230c2ff3f82c8c0f70f2f124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -298,7 +298,7 @@
           <declname>max_treatment_capacity</declname>
         </param>
         <param>
-          <type>EvaporationSeries &amp;</type>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
           <declname>evaporation_series</declname>
         </param>
         <param>
@@ -352,7 +352,7 @@
 <parametername>evaporation_series</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to an EvaporationSeries object containing evaporation data for the quarry. </para></parameterdescription>
+<para>A reference to an <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object containing evaporation data for the quarry. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -372,7 +372,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="93" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="96" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classQuarry_1a561616791620a55709bfca645bc8cbad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -400,7 +400,7 @@
           <declname>max_treatment_capacity</declname>
         </param>
         <param>
-          <type>EvaporationSeries &amp;</type>
+          <type><ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> &amp;</type>
           <declname>evaporation_series</declname>
         </param>
         <param>
@@ -466,7 +466,7 @@
 <parametername>evaporation_series</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>A reference to an EvaporationSeries object containing evaporation data for the quarry. </para></parameterdescription>
+<para>A reference to an <ref refid="classEvaporationSeries" kindref="compound">EvaporationSeries</ref> object containing evaporation data for the quarry. </para></parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
@@ -507,7 +507,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="123" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="126" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classQuarry_1a5a43f5a3f1cb837bc313046cf82b49e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -543,7 +543,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="138" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="141" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classQuarry_1adc3df376f620f8337b5dbf0868cf7fb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classQuarry" kindref="compound">Quarry</ref> &amp;</type>
@@ -569,7 +569,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="151" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="154" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classQuarry_1a6c528c6222e8e5adc134db5cafbe62e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -582,7 +582,7 @@
 <para>This function cleans up resources used by the <ref refid="classQuarry" kindref="compound">Quarry</ref> object. Since the class does not dynamically allocate resources directly, the destructor relies on the base class (<computeroutput><ref refid="classReservoir" kindref="compound">Reservoir</ref></computeroutput>) and standard cleanup mechanisms. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="160" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="163" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classQuarry_1a6999b854a740ce92baaa610cf5b08bd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -641,7 +641,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="176" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="179" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classQuarry_1af5fe04fa188d399485b2b4e64381e169" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -655,50 +655,76 @@
 <para>This function transitions the <ref refid="classQuarry" kindref="compound">Quarry</ref> to an operational state by marking it as online. The available volume is initially set to <computeroutput>NONE</computeroutput>, simulating an empty reservoir that begins to fill as inflows occur. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="187" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="190" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-    </briefdescription>
+<para>The <computeroutput><ref refid="classQuarry" kindref="compound">Quarry</ref></computeroutput> is a subclass of the <computeroutput><ref refid="classReservoir" kindref="compound">Reservoir</ref></computeroutput> class, which in turn is a subclass of the main <computeroutput><ref refid="classWaterSource" kindref="compound">WaterSource</ref></computeroutput> class. It represents a quarry reservoir that diverts water from upstream catchments. </para>    </briefdescription>
     <detaileddescription>
-    </detaileddescription>
+<para>Created by bernardoct on 5/3/17. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="80">
+      <node id="199">
         <label>Quarry</label>
         <link refid="classQuarry"/>
-        <childnode refid="81" relation="public-inheritance">
+        <childnode refid="200" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="82">
+      <node id="201">
         <label>WaterSource</label>
         <link refid="classWaterSource"/>
       </node>
-      <node id="81">
+      <node id="200">
         <label>Reservoir</label>
         <link refid="classReservoir"/>
-        <childnode refid="82" relation="public-inheritance">
+        <childnode refid="201" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="83">
+      <node id="202">
         <label>Quarry</label>
         <link refid="classQuarry"/>
-        <childnode refid="84" relation="public-inheritance">
+        <childnode refid="203" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="85">
+      <node id="207">
+        <label>DataSeries</label>
+        <link refid="classDataSeries"/>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>ControlRules</label>
+        <link refid="classControlRules"/>
+      </node>
+      <node id="204">
         <label>WaterSource</label>
         <link refid="classWaterSource"/>
       </node>
-      <node id="84">
+      <node id="206">
+        <label>Catchment</label>
+        <link refid="classCatchment"/>
+      </node>
+      <node id="205">
+        <label>EvaporationSeries</label>
+        <link refid="classEvaporationSeries"/>
+        <childnode refid="206" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="203">
         <label>Reservoir</label>
         <link refid="classReservoir"/>
-        <childnode refid="85" relation="public-inheritance">
+        <childnode refid="204" relation="public-inheritance">
+        </childnode>
+        <childnode refid="205" relation="usage">
+          <edgelabel>evaporation_series</edgelabel>
+        </childnode>
+        <childnode refid="207" relation="usage">
+          <edgelabel>storage_area_curve</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="11" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" bodystart="11" bodyend="188"/>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" line="14" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/WaterSources/Quarry.h" bodystart="14" bodyend="191"/>
     <listofallmembers>
       <member refid="classWaterSource_1ab869abb3d3dde1875e933482bedc3ae3" prot="public" virt="virtual"><scope>Quarry</scope><name>addCapacity</name></member>
       <member refid="classWaterSource_1ac2bc1a09fce3a3201d62a73052b27b0b" prot="public" virt="virtual"><scope>Quarry</scope><name>addTreatmentCapacity</name></member>
