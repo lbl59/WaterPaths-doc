@@ -1,7 +1,7 @@
 QPSolver Module
 ===============
 
-The `QPSolver` submodule contains classes and functions related defining the system network. It is a submodule of the :doc:`Utils <../Utils_index>` module.
+The `QPSolver` submodule contains classes and functions related to defining the system network. It is a submodule of the :doc:`Utils <../Utils_index>` module.
 
 QPSolver Components
 ^^^^^^^^^^^^^^^^^^^
