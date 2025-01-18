@@ -6,7 +6,7 @@ The `Utils` contains classes and functions related to basic data structure imple
 API Reference
 -------------
 
-Below is the API reference for the `Bonds` submodule. Documentation is automatically extracted from the header files.
+Below is the API reference for the `Utils` submodule. Documentation is automatically extracted from the header files.
 
 Submodule Components
 ^^^^^^^^^^^^^^^^^^^^
