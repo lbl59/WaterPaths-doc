@@ -25,68 +25,68 @@ private:
      */
     const int n_utilities = 3;
     /**
-     * @brief A 2D vector of all Durham's historical and synthetic streamflows.
+     * @brief A 2D vector of all Dryville's historical and synthetic streamflows.
      */
     vector<vector<double>> streamflows_durham;
     /**
-     * @brief A 2D vector of all Clayton's (downstream) historical and synthetic streamflows.
+     * @brief A 2D vector of all downstream historical and synthetic streamflows.
      */
     vector<vector<double>> streamflows_clayton;
     /**
-     * @brief A 2D vector of all Lower Flat River's (Raleigh) historical and synthetic streamflows.
+     * @brief A 2D vector of one of Fallsland's water source's historical and synthetic streamflows.
      */
     vector<vector<double>> streamflows_flat;
     /**
-     * @brief A 2D vector of all Little River's (Raleigh) historical and synthetic streamflows.
+     * @brief A 2D vector of one of Fallsland's water source's historical and synthetic streamflows.
      */
     vector<vector<double>> streamflows_llr;
     /**
-     * @brief A 2D vector of all Swift Creek's (Raleigh) historical and synthetic streamflows.
+     * @brief A 2D vector of one of Fallsland's water source's historical and synthetic streamflows.
      */
     vector<vector<double>> streamflows_swift;
     /**
-     * @brief A 2D vector of all Phils Creek's (OWASA) historical and synthetic streamflows.
+     * @brief A 2D vector of one of Watertown's water source's historical and synthetic streamflows.
      */
     vector<vector<double>> streamflows_phils;
     /**
-     * @brief A 2D vector of all Cane Creek's (OWASA) historical and synthetic streamflows.
+     * @brief A 2D vector of one of Watertown's water source's historical and synthetic streamflows.
      */
     vector<vector<double>> streamflows_cane;
     /**
-     * @brief A 2D vector of all Morgan Creek's (OWASA) historical and synthetic streamflows.
+     * @brief A 2D vector of one of Watertown's water source's historical and synthetic streamflows.
      */
     vector<vector<double>> streamflows_morgan;
     vector<vector<double>> streamflows_crabtree;
     /**
-     * @brief A 2D vector of all Haw River's (Cary) historical and synthetic streamflows.
+     * @brief A 2D vector of one of Watertown's water source's historical and synthetic streamflows.
      */
     vector<vector<double>> streamflows_haw;
     /**
-     * @brief A 2D vector of all Lillington's (downstream) historical and synthetic streamflows.
+     * @brief A 2D vector of one of Watertown's water source's historical and synthetic streamflows.
      */
     vector<vector<double>> streamflows_lillington;
     /**
-     * @brief A 2D vector of all Durham's historical and synthetic evaporation data.
+     * @brief A 2D vector of all Dryville's historical and synthetic evaporation data.
      */
     vector<vector<double>> evap_durham;
     /**
-     * @brief A 2D vector of all Falls Lake's historical and synthetic evaporation data.
+     * @brief A 2D vector of all Lake Autumn's historical and synthetic evaporation data.
      */
     vector<vector<double>> evap_falls_lake;
     /**
-     * @brief A 2D vector of all OWASA's historical and synthetic evaporation data.
+     * @brief A 2D vector of all Watertown's historical and synthetic evaporation data.
      */
     vector<vector<double>> evap_owasa;
     /**
-     * @brief A 2D vector of all Little River Raleigh's historical and synthetic evaporation data.
+     * @brief A 2D vector of all Esquerda River's historical and synthetic evaporation data.
      */
     vector<vector<double>> evap_little_river;
     /**
-     * @brief A 2D vector of all Lake Wheeler and Lake Benson's historical and synthetic evaporation data.
+     * @brief A 2D vector of all College Rock Reservoir's historical and synthetic evaporation data.
      */
     vector<vector<double>> evap_wheeler_benson;
     /**
-     * @brief A 2D vector of all Jordan Lake's historical and synthetic evaporation data.
+     * @brief A 2D vector of all Lake Michael's historical and synthetic evaporation data.
      */
     vector<vector<double>> evap_jordan_lake;
     /**
