@@ -4,7 +4,7 @@ Controls Module
 API Reference
 -------------
 
-Below is the API reference for submodules of the :code:`Controls` module. Documentation is automatically extracted from the header files.
+Below is the API reference for submodules of the :code:`Controls` module. 
 
 Submodule Components
 ^^^^^^^^^^^^^^^

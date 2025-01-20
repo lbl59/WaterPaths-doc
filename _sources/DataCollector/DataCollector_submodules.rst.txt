@@ -4,7 +4,7 @@ DataCollector Module
 API Reference
 -------------
 
-Below is the API reference for submodules of the `DataCollector` module. Documentation is automatically extracted from the header files.
+Below is the API reference for submodules of the :code:`DataCollector` module.
 
 Submodule Components
 ^^^^^^^^^^^^^^^^^^^^

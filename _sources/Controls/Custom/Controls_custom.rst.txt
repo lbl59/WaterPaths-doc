@@ -4,7 +4,7 @@ Controls Module
 API Reference
 -------------
 
-Below is the API reference for custom implementation of the :code:`Controls` module (see the documentation page :doc:`here <../Controls_index>`). Documentation is automatically extracted from the header files.
+Below is the API reference for custom implementation of the :code:`Controls` module (see the documentation page :doc:`here <../Controls_index>`).
 
 Custom Components
 ^^^^^^^^^^^^^^^^^

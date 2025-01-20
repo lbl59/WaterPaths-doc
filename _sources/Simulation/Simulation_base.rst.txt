@@ -4,7 +4,7 @@ Simulation Module
 API Reference
 -------------
 
-The base components define foundational functionality of the `Simulation` class for maintaining continuity.
+The base components define foundational functionality of the :code:`Simulation` class that performs week-to-week simulations across all specified realizations.
 
 Base Components
 ^^^^^^^^^^^^^^^
