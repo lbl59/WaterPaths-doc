@@ -399,28 +399,27 @@ void MasterDataCollector::printUtilityObjectivesToRowOutStream(vector<UtilitiesD
     double unit_cost = ObjectivesCalculator::calculateUnitTotalCostObjective(u, realizations_ran);
 
     outStream << setw(COLUMN_WIDTH) << u[realizations_ran[0]]->name
-              /// Reliability
+              // Reliability
               << setw(COLUMN_WIDTH * 2)
               << setprecision(COLUMN_PRECISION)
               << reliability
-              /// Restriction Frequency
+              // Restriction Frequency
               << setw(COLUMN_WIDTH * 2)
               << setprecision(COLUMN_PRECISION)
               << restriction_freq
-              /// Infrastructure NPC
+              // Infrastructure NPC
               << setw(COLUMN_WIDTH * 2)
               << setprecision(COLUMN_PRECISION)
               << inf_npc
-              /// Peak Financial Cost
+              // Peak Financial Cost
               << setw(COLUMN_WIDTH * 2)
               << setprecision(COLUMN_PRECISION)
               << financial_cost
-              /// Worse Case Costs
+              // Worse Case Costs
               << setw(COLUMN_WIDTH * 2)
               << setprecision(COLUMN_PRECISION)
               << worse_cost
-              << endl;
-              /// Unit Cost
+              // Unit Cost
               << setw(COLUMN_WIDTH * 2)
               << setprecision(COLUMN_PRECISION)
               << unit_cost
@@ -449,7 +448,7 @@ vector<double> MasterDataCollector::calculatePrintObjectives(string file_name, b
                   << setw(COLUMN_WIDTH * 2) << "Restriction Freq."
                   << setw(COLUMN_WIDTH * 2) << "Infrastructure NPC"
                   << setw(COLUMN_WIDTH * 2) << "Peak Financial Cost"
-                  << setw(COLUMN_WIDTH * 2) << "Worse Case Costs" << endl;
+                  << setw(COLUMN_WIDTH * 2) << "Worse Case Costs"
                   << setw(COLUMN_WIDTH * 2) << "Unit Cost" << endl;
 
         for (auto &u : utility_collectors) {

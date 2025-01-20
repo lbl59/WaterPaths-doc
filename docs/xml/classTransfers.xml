@@ -296,6 +296,138 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTransfers_1a40555bc28e085d0e119a9f039317c79f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Transfers::Transfers</definition>
+        <argsstring>(const int id, const int source_utility_id, int transfer_water_source_id, const double source_treatment_buffer, const vector&lt; int &gt; &amp;buyers_ids, const vector&lt; double &gt; &amp;pipe_transfer_capacities, const vector&lt; double &gt; &amp;buyers_transfer_triggers, const Graph utilities_graph, vector&lt; double &gt; conveyance_costs, vector&lt; int &gt; pipe_owner)</argsstring>
+        <name>Transfers</name>
+        <param>
+          <type>const int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>source_utility_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>transfer_water_source_id</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>source_treatment_buffer</declname>
+        </param>
+        <param>
+          <type>const vector&lt; int &gt; &amp;</type>
+          <declname>buyers_ids</declname>
+        </param>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>pipe_transfer_capacities</declname>
+        </param>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>buyers_transfer_triggers</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGraph" kindref="compound">Graph</ref></type>
+          <declname>utilities_graph</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt;</type>
+          <declname>conveyance_costs</declname>
+        </param>
+        <param>
+          <type>vector&lt; int &gt;</type>
+          <declname>pipe_owner</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a <ref refid="classTransfers" kindref="compound">Transfers</ref> object to manage water transfer allocations among utilities without seller information. This function initializes all data structures and ensures input validity. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor allocates transfers by trying to minimize the mean square error between the optimal allocations and allocation requests, and between the available amount of water from source and actual conveyed capacity, which is limited by pipe conveyance capacities.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Transfer policy ID. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source_utility_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the utility selling water to other utilities to fulfil transfer requests. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transfer_water_source_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the water source from which the source utility will be transferring water. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>source_treatment_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Treatment capacity to be left unused in source utility. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buyers_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IDs of the buyer utilities. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pipe_transfer_capacities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capacities of transfer pipes. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>buyers_transfer_triggers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of each buyer&apos;s ROF threshold after which they will request a water transfer. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utilities_graph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="classGraph" kindref="compound">Graph</ref> object representing utilities and their connections. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>conveyance_costs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Amount charged by pipe owning utility to convey water to another utility. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pipe_owner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IDs of utilities owning each pipe.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the source utility is also listed as a buyer. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="104" column="1"/>
+      </memberdef>
       <memberdef kind="function" id="classTransfers_1ae6abf817349382b66abc9cc3f45193a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>Transfers::Transfers</definition>
@@ -346,7 +478,7 @@
           <declname>pipe_owner</declname>
         </param>
         <briefdescription>
-<para>Constructs a <ref refid="classTransfers" kindref="compound">Transfers</ref> object to manage water transfer allocations among utilities. This function initializes all data structures and ensures input validity. </para>        </briefdescription>
+<para>Constructs a <ref refid="classTransfers" kindref="compound">Transfers</ref> object to manage water transfer allocations among utilities including seller information. This function initializes all data structures and ensures input validity. </para>        </briefdescription>
         <detaileddescription>
 <para>This constructor allocates transfers by trying to minimize the mean square error between the optimal allocations and allocation requests, and between the available amount of water from source and actual conveyed capacity, which is limited by pipe conveyance capacities.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -437,7 +569,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="105" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="135" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classTransfers_1af88f7908692240eec9f3179128c6f343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -462,7 +594,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="121" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="151" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classTransfers_1a5dfeafe7a9b9a446b1ab746b65ef3b4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -475,7 +607,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="126" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="156" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classTransfers_1abb5bd2978727424dc524c401dca0cbaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const vector&lt; double &gt; &amp;</type>
@@ -489,7 +621,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="133" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="163" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classTransfers_1ad9e4e83ff763ac1ba518a19051cd2e69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -516,7 +648,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="142" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="172" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classTransfers_1a3c1930dbeb1273c1c0be93ad5ca57357" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -574,7 +706,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="159" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="189" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classTransfers_1a06f965588350cc854f3bf3d619416fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>vector&lt; double &gt;</type>
@@ -633,7 +765,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="176" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="206" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classTransfers_1a75342a7c14b2ff69eb2520de240a1131" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -692,7 +824,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="189" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="219" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -700,30 +832,30 @@
     <detaileddescription>
 <para>Created by bernardo on 2/21/17. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="263">
+      <node id="257">
         <label>Transfers</label>
         <link refid="classTransfers"/>
-        <childnode refid="264" relation="public-inheritance">
+        <childnode refid="258" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="264">
+      <node id="258">
         <label>DroughtMitigationPolicy</label>
         <link refid="classDroughtMitigationPolicy"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="265">
+      <node id="259">
         <label>Transfers</label>
         <link refid="classTransfers"/>
-        <childnode refid="266" relation="public-inheritance">
+        <childnode refid="260" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="266">
+      <node id="260">
         <label>DroughtMitigationPolicy</label>
         <link refid="classDroughtMitigationPolicy"/>
       </node>
     </collaborationgraph>
-    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="14" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="14" bodyend="192"/>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" line="14" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/DroughtMitigationInstruments/Transfers.h" bodystart="14" bodyend="222"/>
     <listofallmembers>
       <member refid="classTransfers_1a2acc8cfe6a1978d2468be289db636226" prot="private" virt="non-virtual"><scope>Transfers</scope><name>A</name></member>
       <member refid="classTransfers_1a3c1930dbeb1273c1c0be93ad5ca57357" prot="public" virt="virtual"><scope>Transfers</scope><name>addSystemComponents</name></member>
@@ -763,6 +895,7 @@
       <member refid="classTransfers_1a4513cfef08bd7e9980d098f8fb7d6a32" prot="private" virt="non-virtual"><scope>Transfers</scope><name>source_utility_id</name></member>
       <member refid="classTransfers_1a6a23dc463d7a4b07bcb7f3a7472263b2" prot="private" virt="non-virtual"><scope>Transfers</scope><name>transfer_water_source</name></member>
       <member refid="classTransfers_1a039a24fe986a718da1ac61bac0e49644" prot="private" virt="non-virtual"><scope>Transfers</scope><name>transfer_water_source_id</name></member>
+      <member refid="classTransfers_1a40555bc28e085d0e119a9f039317c79f" prot="public" virt="non-virtual"><scope>Transfers</scope><name>Transfers</name></member>
       <member refid="classTransfers_1ae6abf817349382b66abc9cc3f45193a1" prot="public" virt="non-virtual"><scope>Transfers</scope><name>Transfers</name></member>
       <member refid="classTransfers_1af88f7908692240eec9f3179128c6f343" prot="public" virt="non-virtual"><scope>Transfers</scope><name>Transfers</name></member>
       <member refid="classDroughtMitigationPolicy_1aaea5016d1462bec889cb8df85aececc6" prot="public" virt="non-virtual"><scope>Transfers</scope><name>type</name></member>

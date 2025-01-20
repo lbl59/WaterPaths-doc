@@ -18,8 +18,10 @@ Inheritance diagram for Transfers\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classTransfers_a40555bc28e085d0e119a9f039317c79f}{Transfers}} (const int \mbox{\hyperlink{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}{id}}, const int source\+\_\+utility\+\_\+id, int transfer\+\_\+water\+\_\+source\+\_\+id, const double source\+\_\+treatment\+\_\+buffer, const vector$<$ int $>$ \&buyers\+\_\+ids, const vector$<$ double $>$ \&pipe\+\_\+transfer\+\_\+capacities, const vector$<$ double $>$ \&buyers\+\_\+transfer\+\_\+triggers, const \mbox{\hyperlink{classGraph}{Graph}} utilities\+\_\+graph, vector$<$ double $>$ conveyance\+\_\+costs, vector$<$ int $>$ pipe\+\_\+owner)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classTransfers}{Transfers}} object to manage water transfer allocations among utilities without seller information. This function initializes all data structures and ensures input validity. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classTransfers_ae6abf817349382b66abc9cc3f45193a1}{Transfers}} (const int \mbox{\hyperlink{classDroughtMitigationPolicy_abf3ed19ed98e0d74dc9ae24094be640b}{id}}, const int source\+\_\+utility\+\_\+id, int transfer\+\_\+water\+\_\+source\+\_\+id, const double source\+\_\+treatment\+\_\+buffer, const vector$<$ int $>$ \&buyers\+\_\+ids, const vector$<$ double $>$ \&pipe\+\_\+transfer\+\_\+capacities, const vector$<$ double $>$ \&buyers\+\_\+transfer\+\_\+triggers, const double seller\+\_\+transfer\+\_\+trigger, const \mbox{\hyperlink{classGraph}{Graph}} utilities\+\_\+graph, vector$<$ double $>$ conveyance\+\_\+costs, vector$<$ int $>$ pipe\+\_\+owner)
-\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classTransfers}{Transfers}} object to manage water transfer allocations among utilities. This function initializes all data structures and ensures input validity. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classTransfers}{Transfers}} object to manage water transfer allocations among utilities including seller information. This function initializes all data structures and ensures input validity. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classTransfers_af88f7908692240eec9f3179128c6f343}{Transfers}} (const \mbox{\hyperlink{classTransfers}{Transfers}} \&transfers)
 \begin{DoxyCompactList}\small\item\em Creates a copy of an existing \mbox{\hyperlink{classTransfers}{Transfers}} object. This function duplicates all properties and settings of the given \mbox{\hyperlink{classTransfers}{Transfers}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classTransfers_a5dfeafe7a9b9a446b1ab746b65ef3b4b}{$\sim$\+Transfers}} ()
@@ -43,15 +45,55 @@ The {\ttfamily \mbox{\hyperlink{classTransfers}{Transfers}}} class is a subclass
 Created by bernardo on 2/21/17. 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTransfers_a40555bc28e085d0e119a9f039317c79f}\label{classTransfers_a40555bc28e085d0e119a9f039317c79f}} 
+\index{Transfers@{Transfers}!Transfers@{Transfers}}
+\index{Transfers@{Transfers}!Transfers@{Transfers}}
+\subsubsection{\texorpdfstring{Transfers()}{Transfers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Transfers\+::\+Transfers (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const int}]{source\+\_\+utility\+\_\+id,  }\item[{int}]{transfer\+\_\+water\+\_\+source\+\_\+id,  }\item[{const double}]{source\+\_\+treatment\+\_\+buffer,  }\item[{const vector$<$ int $>$ \&}]{buyers\+\_\+ids,  }\item[{const vector$<$ double $>$ \&}]{pipe\+\_\+transfer\+\_\+capacities,  }\item[{const vector$<$ double $>$ \&}]{buyers\+\_\+transfer\+\_\+triggers,  }\item[{const \mbox{\hyperlink{classGraph}{Graph}}}]{utilities\+\_\+graph,  }\item[{vector$<$ double $>$}]{conveyance\+\_\+costs,  }\item[{vector$<$ int $>$}]{pipe\+\_\+owner }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classTransfers}{Transfers}} object to manage water transfer allocations among utilities without seller information. This function initializes all data structures and ensures input validity. 
+
+This constructor allocates transfers by trying to minimize the mean square error between the optimal allocations and allocation requests, and between the available amount of water from source and actual conveyed capacity, which is limited by pipe conveyance capacities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Transfer policy ID. \\
+\hline
+{\em source\+\_\+utility\+\_\+id} & The ID of the utility selling water to other utilities to fulfil transfer requests. \\
+\hline
+{\em transfer\+\_\+water\+\_\+source\+\_\+id} & The ID of the water source from which the source utility will be transferring water. \\
+\hline
+{\em source\+\_\+treatment\+\_\+buffer} & Treatment capacity to be left unused in source utility. \\
+\hline
+{\em buyers\+\_\+ids} & I\+Ds of the buyer utilities. \\
+\hline
+{\em pipe\+\_\+transfer\+\_\+capacities} & Capacities of transfer pipes. \\
+\hline
+{\em buyers\+\_\+transfer\+\_\+triggers} & A vector of each buyer\textquotesingle{}s R\+OF threshold after which they will request a water transfer. \\
+\hline
+{\em utilities\+\_\+graph} & A \mbox{\hyperlink{classGraph}{Graph}} object representing utilities and their connections. \\
+\hline
+{\em conveyance\+\_\+costs} & Amount charged by pipe owning utility to convey water to another utility. \\
+\hline
+{\em pipe\+\_\+owner} & I\+Ds of utilities owning each pipe.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if the source utility is also listed as a buyer. \\
+\hline
+\end{DoxyExceptions}
 \mbox{\Hypertarget{classTransfers_ae6abf817349382b66abc9cc3f45193a1}\label{classTransfers_ae6abf817349382b66abc9cc3f45193a1}} 
 \index{Transfers@{Transfers}!Transfers@{Transfers}}
 \index{Transfers@{Transfers}!Transfers@{Transfers}}
-\subsubsection{\texorpdfstring{Transfers()}{Transfers()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\subsubsection{\texorpdfstring{Transfers()}{Transfers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily Transfers\+::\+Transfers (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const int}]{source\+\_\+utility\+\_\+id,  }\item[{int}]{transfer\+\_\+water\+\_\+source\+\_\+id,  }\item[{const double}]{source\+\_\+treatment\+\_\+buffer,  }\item[{const vector$<$ int $>$ \&}]{buyers\+\_\+ids,  }\item[{const vector$<$ double $>$ \&}]{pipe\+\_\+transfer\+\_\+capacities,  }\item[{const vector$<$ double $>$ \&}]{buyers\+\_\+transfer\+\_\+triggers,  }\item[{const double}]{seller\+\_\+transfer\+\_\+trigger,  }\item[{const \mbox{\hyperlink{classGraph}{Graph}}}]{utilities\+\_\+graph,  }\item[{vector$<$ double $>$}]{conveyance\+\_\+costs,  }\item[{vector$<$ int $>$}]{pipe\+\_\+owner }\end{DoxyParamCaption})}
 
 
 
-Constructs a \mbox{\hyperlink{classTransfers}{Transfers}} object to manage water transfer allocations among utilities. This function initializes all data structures and ensures input validity. 
+Constructs a \mbox{\hyperlink{classTransfers}{Transfers}} object to manage water transfer allocations among utilities including seller information. This function initializes all data structures and ensures input validity. 
 
 This constructor allocates transfers by trying to minimize the mean square error between the optimal allocations and allocation requests, and between the available amount of water from source and actual conveyed capacity, which is limited by pipe conveyance capacities.
 
@@ -88,7 +130,7 @@ This constructor allocates transfers by trying to minimize the mean square error
 \mbox{\Hypertarget{classTransfers_af88f7908692240eec9f3179128c6f343}\label{classTransfers_af88f7908692240eec9f3179128c6f343}} 
 \index{Transfers@{Transfers}!Transfers@{Transfers}}
 \index{Transfers@{Transfers}!Transfers@{Transfers}}
-\subsubsection{\texorpdfstring{Transfers()}{Transfers()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\subsubsection{\texorpdfstring{Transfers()}{Transfers()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily Transfers\+::\+Transfers (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classTransfers}{Transfers}} \&}]{transfers }\end{DoxyParamCaption})}
 
 

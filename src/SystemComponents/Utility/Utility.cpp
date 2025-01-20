@@ -604,7 +604,7 @@ double Utility::updateCurrent_debt_payment(int week) {
             // which isn't the same as the definition in WaterSource
 
             // Adjust the debt service based on the utility's allocated treatment fraction for the water source.
-            bond->setDebtService(water_sources.at(bond->getWaterSourceID())->getAllocatedTreatmentFraction(id))
+            bond->setDebtService(water_sources.at(bond->getWaterSourceID())->getAllocatedTreatmentFraction(id));
         }
     }
 

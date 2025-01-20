@@ -9,12 +9,6 @@ Below is the API reference for submodules of the :code:`Problem` module.
 Submodule Components
 ^^^^^^^^^^^^^^^^^^^^
 
-PaperTestProblem.h
-~~~~~~~~~~~~~~~~~~~
-
-.. doxygenfile:: Problem/PaperTestProblem.h
-   :project: WaterPaths
-
 Triangle.h
 ~~~~~~~~~~
 

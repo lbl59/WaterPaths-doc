@@ -5,9 +5,9 @@
  * This class represents a bond (typically a municipal bond) where the floating coupon payments are 
  * adjusted at specified intervals. This bond is associated with a specific water source.
  * 
- * Created by dgorelic on 11/4/2019.
  */
 
+// Created by dgorelic on 11/4/2019.
 #ifndef TRIANGLEMODEL_VARIABLEDEBTSERVICEBOND_H
 #define TRIANGLEMODEL_VARIABLEDEBTSERVICEBOND_H
 
@@ -34,8 +34,6 @@ private:
     int n_payments_made = 0;
 
 public:
-    Here’s the Sphinx-style documentation for the VariableDebtServiceBond::VariableDebtServiceBond constructor:
-
     /**
      * @brief Constructs a variable debt service bond with specified parameters.
      *        This constructor initializes the bond with a set of parameters specific to variable debt service bonds,

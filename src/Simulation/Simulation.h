@@ -2,10 +2,10 @@
  * @class Simulation
  * @brief The `Simulation` class represents the main simulation object that implements the simulation process.
  * 
- * Created by bernardo on 1/25/17.
- * 
  */
 
+
+// Created by bernardo on 1/25/17.
 #ifndef TRIANGLEMODEL_SIMULATION_H
 #define TRIANGLEMODEL_SIMULATION_H
 
@@ -149,7 +149,7 @@ public:
             vector<unsigned long> &realizations_to_run);
 
     /**
-     * @brief Constructor for the Simulation class with precomputed ROF tables and shifts.
+     * @brief Constructor for the Simulation class with precomputed ROF tables and shifts for storage and treatment ROFs.
      * 
      * This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, 
      * drought mitigation policies, environmental flow controls, various randomization matrices, and precomputed ROF 

@@ -13,6 +13,78 @@ Transfers::Transfers(
         const vector<int> &buyers_ids,
         const vector<double> &pipe_transfer_capacities,
         const vector<double> &buyers_transfer_triggers,
+        const Graph utilities_graph, vector<double> conveyance_costs,
+        vector<int> pipe_owner)
+        : DroughtMitigationPolicy(id, TRANSFERS),
+          source_utility_id(source_utility_id),
+          source_treatment_buffer(source_treatment_buffer),
+          transfer_water_source_id(transfer_water_source_id),
+          buyers_ids(buyers_ids),
+          buyers_transfer_triggers(buyers_transfer_triggers) {
+
+    for (int i : buyers_ids)
+        if (i == source_utility_id)
+            throw std::invalid_argument("Source utility cannot be a buyer "
+                                                "utility as well.");
+
+    utilities_ids = buyers_ids;
+    utilities_ids.push_back(source_utility_id);
+    allocations = vector<double>(utilities_ids.size(), 0);
+    for (const double &d : pipe_transfer_capacities)
+        average_pipe_capacity += d;
+
+    vector<vector<double>> continuity_matrix =
+            utilities_graph.getContinuityMatrix();
+    continuity_matrix[source_utility_id][
+            continuity_matrix.size() + source_utility_id] = 1;
+
+    int max_buyer_id = *std::max_element(buyers_ids.begin(),
+                                                  buyers_ids.end());
+    util_id_to_vertex_id = vector<int>(max_buyer_id + 1, NON_INITIALIZED);
+
+    for (int i = 0; i < (int) buyers_ids.size(); ++i) {
+        util_id_to_vertex_id[buyers_ids.at((unsigned long) i)] = i;
+    }
+
+    unsigned long n_flow_rates_Q_source =
+             pipe_transfer_capacities.size() + 1;
+    unsigned long n_allocations = buyers_ids.size();
+    unsigned long n_vars = n_flow_rates_Q_source + n_allocations;
+
+    H.resize(0, n_vars, n_vars);
+    for (unsigned long i = 0; i < n_vars; ++i)
+        if (i < n_flow_rates_Q_source) H[i][i] = 1e-6;
+        else H[i][i] = 2;
+
+    f.resize(0, n_vars);
+
+    Aeq.resize(0, n_allocations + 1, n_vars);
+    for (unsigned long i = 0; i < continuity_matrix.size(); ++i) {
+        for (unsigned long j = 0; j < continuity_matrix.at(i).size(); ++j) {
+            Aeq[i][j] = continuity_matrix.at(i).at(j);
+        }
+    }
+
+    beq.resize(0, n_allocations + 1);
+
+    A.resize(0, 0);
+
+    b.resize(0);
+
+    lb.resize(0, n_vars);
+    ub.resize(0, n_vars);
+    for (unsigned long i = 0; i < pipe_transfer_capacities.size(); ++i) {
+        lb[i] = -pipe_transfer_capacities[i];
+        ub[i] = pipe_transfer_capacities[i];
+    }
+}
+
+Transfers::Transfers(
+        const int id, const int source_utility_id,
+        int transfer_water_source_id, const double source_treatment_buffer,
+        const vector<int> &buyers_ids,
+        const vector<double> &pipe_transfer_capacities,
+        const vector<double> &buyers_transfer_triggers,
         const double seller_transfer_trigger,
         const Graph utilities_graph, vector<double> conveyance_costs,
         vector<int> pipe_owner)
@@ -75,8 +147,8 @@ Transfers::Transfers(
         }
     }
 
-    // Create ce0 vector of 0 so that mass balance is enforced on the nodes (utilities).
-    ce0.resize(0, n_allocations + 1);
+    // Create beq vector of 0 so that mass balance is enforced on the nodes (utilities).
+    beq.resize(0, n_allocations + 1);
 
     // Create empty A and b. They'll be re-dimensioned in the QP solver.
     A.resize(0, 0);

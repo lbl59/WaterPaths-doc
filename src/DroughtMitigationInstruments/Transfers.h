@@ -81,7 +81,37 @@ private:
 
 public:
     /**
-     * @brief Constructs a Transfers object to manage water transfer allocations among utilities.
+     * @brief Constructs a Transfers object to manage water transfer allocations among utilities without seller information.
+     *        This function initializes all data structures and ensures input validity.
+     * 
+     * This constructor allocates transfers by trying to minimize the mean square error between the
+     * optimal allocations and allocation requests, and between the available amount of water from source 
+     * and actual conveyed capacity, which is limited by pipe conveyance capacities.
+     *
+     * @param id Transfer policy ID.
+     * @param source_utility_id The ID of the utility selling water to other utilities to fulfil transfer requests.
+     * @param transfer_water_source_id The ID of the water source from which the source utility will be transferring water.
+     * @param source_treatment_buffer Treatment capacity to be left unused in source utility.
+     * @param buyers_ids IDs of the buyer utilities.
+     * @param pipe_transfer_capacities Capacities of transfer pipes.
+     * @param buyers_transfer_triggers A vector of each buyer's ROF threshold after which they will request a water transfer.
+     * @param utilities_graph A Graph object representing utilities and their connections.
+     * @param conveyance_costs Amount charged by pipe owning utility to convey water to another utility.
+     * @param pipe_owner IDs of utilities owning each pipe.
+     * 
+     * @throws std::invalid_argument if the source utility is also listed as a buyer.
+     */
+    Transfers(
+            const int id, const int source_utility_id,
+            int transfer_water_source_id, const double source_treatment_buffer,
+            const vector<int> &buyers_ids,
+            const vector<double> &pipe_transfer_capacities,
+            const vector<double> &buyers_transfer_triggers,
+            const Graph utilities_graph, vector<double> conveyance_costs,
+            vector<int> pipe_owner);
+
+    /**
+     * @brief Constructs a Transfers object to manage water transfer allocations among utilities including seller information.
      *        This function initializes all data structures and ensures input validity.
      * 
      * This constructor allocates transfers by trying to minimize the mean square error between the

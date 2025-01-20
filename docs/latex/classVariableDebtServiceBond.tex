@@ -18,6 +18,8 @@ Inheritance diagram for Variable\+Debt\+Service\+Bond\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classVariableDebtServiceBond_adc0d18eba4f4a7c7d359640131225f55}{Variable\+Debt\+Service\+Bond}} (const int \mbox{\hyperlink{classBond_a7f75bcafbc16676ad6dbafbf40afae4a}{id}}, const int water\+\_\+source\+\_\+id, const double total\+\_\+unallocated\+\_\+cost\+\_\+of\+\_\+capital, const double initial\+\_\+fraction\+\_\+of\+\_\+allocated\+\_\+debt, const int \mbox{\hyperlink{classBond_a4a227b6de2eeada118d82ab1633b1db8}{n\+\_\+payments}}, const double \mbox{\hyperlink{classBond_a5f66785534e24caa43d9f730130a6463}{coupon\+\_\+rate}}, vector$<$ int $>$ \mbox{\hyperlink{classBond_ae8dd46fcbf95c993460ffe4ea1f52739}{pay\+\_\+on\+\_\+weeks}}, bool begin\+\_\+repayment\+\_\+at\+\_\+issuance=false)
+\begin{DoxyCompactList}\small\item\em Constructs a variable debt service bond with specified parameters. This constructor initializes the bond with a set of parameters specific to variable debt service bonds, including the bond\textquotesingle{}s debt allocation and associated water source ID. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classVariableDebtServiceBond_a8259b64265dd9701ac5888e0fe0bc565}{$\sim$\+Variable\+Debt\+Service\+Bond}} () override
 \begin{DoxyCompactList}\small\item\em Destroys the variable debt service bond object. This destructor cleans up resources associated with the variable debt service bond. It is automatically called when an object of the {\ttfamily \mbox{\hyperlink{classVariableDebtServiceBond}{Variable\+Debt\+Service\+Bond}}} class goes out of scope or is deleted. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{classVariableDebtServiceBond_a575a9a41df38e005ba0a1cff3eb2b921}{get\+Debt\+Service}} (int week) override
@@ -32,34 +34,45 @@ void \mbox{\hyperlink{classVariableDebtServiceBond_a692563150053b280f6e1ef23fd47
 \begin{DoxyCompactList}\small\item\em Calculates and updates the variable debt service payment based on the provided allocated fraction of annual debt service. Overrides the virtual base class method. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classVariableDebtServiceBond_a3edee29f26e8ac74f9767770c6a951c9}{get\+Water\+Source\+ID}} () override
 \begin{DoxyCompactList}\small\item\em Retrieves the water source ID associated with the bond. Overrides the virtual base class method. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond \mbox{\hyperlink{classVariableDebtServiceBond_a9369eb5b081c45a8608630b3eacae979}{constructor}}\+: \mbox{\hyperlink{classVariableDebtServiceBond}{Variable\+Debt\+Service\+Bond}}(const int \mbox{\hyperlink{classBond_a7f75bcafbc16676ad6dbafbf40afae4a}{id}}
-\item 
-Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int \mbox{\hyperlink{classVariableDebtServiceBond_a1b43195523e5571e04f2ed558497ab6a}{water\+\_\+source\+\_\+id}}
-\item 
-Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int const double \mbox{\hyperlink{classVariableDebtServiceBond_ac011dd32658be19f8dfc72e7d3b1e02c}{total\+\_\+unallocated\+\_\+cost\+\_\+of\+\_\+capital}}
-\item 
-Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int const double const double \mbox{\hyperlink{classVariableDebtServiceBond_a23f451bb14e4898aaa585fbeae9667f9}{initial\+\_\+fraction\+\_\+of\+\_\+allocated\+\_\+debt}}
-\item 
-Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int const double const double const int \mbox{\hyperlink{classVariableDebtServiceBond_ab4035559da3d8155d792612e628285ae}{n\+\_\+payments}}
-\item 
-Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int const double const double const int const double \mbox{\hyperlink{classVariableDebtServiceBond_a4062feaf0e15546bbcf575aa8ec372e0}{coupon\+\_\+rate}}
-\item 
-Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int const double const double const int const double vector$<$ int $>$ \mbox{\hyperlink{classVariableDebtServiceBond_a9ba0adce7f7b3f30e14e55837424ff7c}{pay\+\_\+on\+\_\+weeks}}
-\item 
-Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int const double const double const int const double vector$<$ int $>$ bool \mbox{\hyperlink{classVariableDebtServiceBond_a24b333de66efd610ef5d94a673250ff9}{begin\+\_\+repayment\+\_\+at\+\_\+issuance}} = false)
-\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 The {\ttfamily \mbox{\hyperlink{classVariableDebtServiceBond}{Variable\+Debt\+Service\+Bond}}} class is a subclass of the main {\ttfamily \mbox{\hyperlink{classBond}{Bond}}} class. This class represents a bond (typically a municipal bond) where the floating coupon payments are adjusted at specified intervals. This bond is associated with a specific water source. 
 
-Created by dgorelic on 11/4/2019. 
-
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVariableDebtServiceBond_adc0d18eba4f4a7c7d359640131225f55}\label{classVariableDebtServiceBond_adc0d18eba4f4a7c7d359640131225f55}} 
+\index{Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}!Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}}
+\index{Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}!Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}}
+\subsubsection{\texorpdfstring{Variable\+Debt\+Service\+Bond()}{VariableDebtServiceBond()}}
+{\footnotesize\ttfamily Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond (\begin{DoxyParamCaption}\item[{const int}]{id,  }\item[{const int}]{water\+\_\+source\+\_\+id,  }\item[{const double}]{total\+\_\+unallocated\+\_\+cost\+\_\+of\+\_\+capital,  }\item[{const double}]{initial\+\_\+fraction\+\_\+of\+\_\+allocated\+\_\+debt,  }\item[{const int}]{n\+\_\+payments,  }\item[{const double}]{coupon\+\_\+rate,  }\item[{vector$<$ int $>$}]{pay\+\_\+on\+\_\+weeks,  }\item[{bool}]{begin\+\_\+repayment\+\_\+at\+\_\+issuance = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Constructs a variable debt service bond with specified parameters. This constructor initializes the bond with a set of parameters specific to variable debt service bonds, including the bond\textquotesingle{}s debt allocation and associated water source ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The unique identifier for the bond. \\
+\hline
+{\em water\+\_\+source\+\_\+id} & The identifier for the water source associated with the bond. \\
+\hline
+{\em total\+\_\+unallocated\+\_\+cost\+\_\+of\+\_\+capital} & The total cost of capital for the bond that has not been allocated yet. \\
+\hline
+{\em initial\+\_\+fraction\+\_\+of\+\_\+allocated\+\_\+debt} & The initial fraction of the allocated debt for the bond. \\
+\hline
+{\em n\+\_\+payments} & The number of payments to be made on the bond. \\
+\hline
+{\em coupon\+\_\+rate} & The interest rate to be applied to the bond\textquotesingle{}s payments. \\
+\hline
+{\em pay\+\_\+on\+\_\+weeks} & A vector of weeks in each calendar year when payments are due. \\
+\hline
+{\em begin\+\_\+repayment\+\_\+at\+\_\+issuance} & A boolean indicating whether repayment begins at the issuance date.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classVariableDebtServiceBond_a8259b64265dd9701ac5888e0fe0bc565}\label{classVariableDebtServiceBond_a8259b64265dd9701ac5888e0fe0bc565}} 
 \index{Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}!````~Variable\+Debt\+Service\+Bond@{$\sim$\+Variable\+Debt\+Service\+Bond}}
 \index{````~Variable\+Debt\+Service\+Bond@{$\sim$\+Variable\+Debt\+Service\+Bond}!Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}}
@@ -216,57 +229,6 @@ void
 
 
 Reimplemented from \mbox{\hyperlink{classBond_aff7fc4e1edcf199fb592d22c765b854e}{Bond}}.
-
-
-
-\subsection{Member Data Documentation}
-\mbox{\Hypertarget{classVariableDebtServiceBond_a24b333de66efd610ef5d94a673250ff9}\label{classVariableDebtServiceBond_a24b333de66efd610ef5d94a673250ff9}} 
-\index{Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}!begin\+\_\+repayment\+\_\+at\+\_\+issuance@{begin\+\_\+repayment\+\_\+at\+\_\+issuance}}
-\index{begin\+\_\+repayment\+\_\+at\+\_\+issuance@{begin\+\_\+repayment\+\_\+at\+\_\+issuance}!Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}}
-\subsubsection{\texorpdfstring{begin\+\_\+repayment\+\_\+at\+\_\+issuance}{begin\_repayment\_at\_issuance}}
-{\footnotesize\ttfamily Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int const double const double const int const double vector$<$int$>$ bool Variable\+Debt\+Service\+Bond\+::begin\+\_\+repayment\+\_\+at\+\_\+issuance = false)}
-
-\mbox{\Hypertarget{classVariableDebtServiceBond_a9369eb5b081c45a8608630b3eacae979}\label{classVariableDebtServiceBond_a9369eb5b081c45a8608630b3eacae979}} 
-\index{Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}!constructor@{constructor}}
-\index{constructor@{constructor}!Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}}
-\subsubsection{\texorpdfstring{constructor}{constructor}}
-{\footnotesize\ttfamily Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond Variable\+Debt\+Service\+Bond\+::constructor}
-
-\mbox{\Hypertarget{classVariableDebtServiceBond_a4062feaf0e15546bbcf575aa8ec372e0}\label{classVariableDebtServiceBond_a4062feaf0e15546bbcf575aa8ec372e0}} 
-\index{Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}!coupon\+\_\+rate@{coupon\+\_\+rate}}
-\index{coupon\+\_\+rate@{coupon\+\_\+rate}!Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}}
-\subsubsection{\texorpdfstring{coupon\+\_\+rate}{coupon\_rate}}
-{\footnotesize\ttfamily Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int const double const double const int const double Variable\+Debt\+Service\+Bond\+::coupon\+\_\+rate}
-
-\mbox{\Hypertarget{classVariableDebtServiceBond_a23f451bb14e4898aaa585fbeae9667f9}\label{classVariableDebtServiceBond_a23f451bb14e4898aaa585fbeae9667f9}} 
-\index{Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}!initial\+\_\+fraction\+\_\+of\+\_\+allocated\+\_\+debt@{initial\+\_\+fraction\+\_\+of\+\_\+allocated\+\_\+debt}}
-\index{initial\+\_\+fraction\+\_\+of\+\_\+allocated\+\_\+debt@{initial\+\_\+fraction\+\_\+of\+\_\+allocated\+\_\+debt}!Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}}
-\subsubsection{\texorpdfstring{initial\+\_\+fraction\+\_\+of\+\_\+allocated\+\_\+debt}{initial\_fraction\_of\_allocated\_debt}}
-{\footnotesize\ttfamily Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int const double const double Variable\+Debt\+Service\+Bond\+::initial\+\_\+fraction\+\_\+of\+\_\+allocated\+\_\+debt}
-
-\mbox{\Hypertarget{classVariableDebtServiceBond_ab4035559da3d8155d792612e628285ae}\label{classVariableDebtServiceBond_ab4035559da3d8155d792612e628285ae}} 
-\index{Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}!n\+\_\+payments@{n\+\_\+payments}}
-\index{n\+\_\+payments@{n\+\_\+payments}!Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}}
-\subsubsection{\texorpdfstring{n\+\_\+payments}{n\_payments}}
-{\footnotesize\ttfamily Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int const double const double const int Variable\+Debt\+Service\+Bond\+::n\+\_\+payments}
-
-\mbox{\Hypertarget{classVariableDebtServiceBond_a9ba0adce7f7b3f30e14e55837424ff7c}\label{classVariableDebtServiceBond_a9ba0adce7f7b3f30e14e55837424ff7c}} 
-\index{Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}!pay\+\_\+on\+\_\+weeks@{pay\+\_\+on\+\_\+weeks}}
-\index{pay\+\_\+on\+\_\+weeks@{pay\+\_\+on\+\_\+weeks}!Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}}
-\subsubsection{\texorpdfstring{pay\+\_\+on\+\_\+weeks}{pay\_on\_weeks}}
-{\footnotesize\ttfamily Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int const double const double const int const double vector$<$int$>$ Variable\+Debt\+Service\+Bond\+::pay\+\_\+on\+\_\+weeks}
-
-\mbox{\Hypertarget{classVariableDebtServiceBond_ac011dd32658be19f8dfc72e7d3b1e02c}\label{classVariableDebtServiceBond_ac011dd32658be19f8dfc72e7d3b1e02c}} 
-\index{Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}!total\+\_\+unallocated\+\_\+cost\+\_\+of\+\_\+capital@{total\+\_\+unallocated\+\_\+cost\+\_\+of\+\_\+capital}}
-\index{total\+\_\+unallocated\+\_\+cost\+\_\+of\+\_\+capital@{total\+\_\+unallocated\+\_\+cost\+\_\+of\+\_\+capital}!Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}}
-\subsubsection{\texorpdfstring{total\+\_\+unallocated\+\_\+cost\+\_\+of\+\_\+capital}{total\_unallocated\_cost\_of\_capital}}
-{\footnotesize\ttfamily Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int const double Variable\+Debt\+Service\+Bond\+::total\+\_\+unallocated\+\_\+cost\+\_\+of\+\_\+capital}
-
-\mbox{\Hypertarget{classVariableDebtServiceBond_a1b43195523e5571e04f2ed558497ab6a}\label{classVariableDebtServiceBond_a1b43195523e5571e04f2ed558497ab6a}} 
-\index{Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}!water\+\_\+source\+\_\+id@{water\+\_\+source\+\_\+id}}
-\index{water\+\_\+source\+\_\+id@{water\+\_\+source\+\_\+id}!Variable\+Debt\+Service\+Bond@{Variable\+Debt\+Service\+Bond}}
-\subsubsection{\texorpdfstring{water\+\_\+source\+\_\+id}{water\_source\_id}}
-{\footnotesize\ttfamily Here’s the Sphinx style documentation for the Variable\+Debt\+Service\+Bond\+::\+Variable\+Debt\+Service\+Bond const int Variable\+Debt\+Service\+Bond\+::water\+\_\+source\+\_\+id}
 
 
 

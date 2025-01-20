@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
   <compounddef id="classProblem" kind="class" language="C++" prot="public" abstract="yes">
     <compoundname>Problem</compoundname>
-    <derivedcompoundref refid="classPaperTestProblem" prot="public" virt="non-virtual">PaperTestProblem</derivedcompoundref>
     <derivedcompoundref refid="classTriangle" prot="public" virt="non-virtual">Triangle</derivedcompoundref>
     <includes refid="Problem_8h" local="no">Problem.h</includes>
       <sectiondef kind="protected-attrib">
@@ -476,7 +475,6 @@
         <definition>virtual int Problem::functionEvaluation</definition>
         <argsstring>(double *vars, double *objs, double *consts)=0</argsstring>
         <name>functionEvaluation</name>
-        <reimplementedby refid="classPaperTestProblem_1a6db78df74d40f69a750b164caaca75c7">functionEvaluation</reimplementedby>
         <reimplementedby refid="classTriangle_1a9e95039d098fd61cce1a830b85ed7004">functionEvaluation</reimplementedby>
         <param>
           <type>double *</type>
@@ -1167,32 +1165,26 @@
     <detaileddescription>
 <para>Created by Bernardo on 11/24/2017. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="192">
+      <node id="187">
         <label>Problem</label>
         <link refid="classProblem"/>
       </node>
-      <node id="194">
+      <node id="188">
         <label>Triangle</label>
         <link refid="classTriangle"/>
-        <childnode refid="192" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="193">
-        <label>PaperTestProblem</label>
-        <link refid="classPaperTestProblem"/>
-        <childnode refid="192" relation="public-inheritance">
+        <childnode refid="187" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="195">
+      <node id="189">
         <label>Problem</label>
         <link refid="classProblem"/>
-        <childnode refid="196" relation="usage">
+        <childnode refid="190" relation="usage">
           <edgelabel>master_data_collector</edgelabel>
         </childnode>
       </node>
-      <node id="196">
+      <node id="190">
         <label>MasterDataCollector</label>
         <link refid="classMasterDataCollector"/>
       </node>

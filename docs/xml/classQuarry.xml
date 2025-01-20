@@ -663,63 +663,63 @@
     <detaileddescription>
 <para>Created by bernardoct on 5/3/17. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="199">
+      <node id="193">
         <label>Quarry</label>
         <link refid="classQuarry"/>
-        <childnode refid="200" relation="public-inheritance">
+        <childnode refid="194" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="201">
+      <node id="195">
         <label>WaterSource</label>
         <link refid="classWaterSource"/>
       </node>
-      <node id="200">
+      <node id="194">
         <label>Reservoir</label>
         <link refid="classReservoir"/>
-        <childnode refid="201" relation="public-inheritance">
+        <childnode refid="195" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="202">
+      <node id="196">
         <label>Quarry</label>
         <link refid="classQuarry"/>
-        <childnode refid="203" relation="public-inheritance">
+        <childnode refid="197" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="207">
+      <node id="201">
         <label>DataSeries</label>
         <link refid="classDataSeries"/>
-        <childnode refid="208" relation="public-inheritance">
+        <childnode refid="202" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="208">
+      <node id="202">
         <label>ControlRules</label>
         <link refid="classControlRules"/>
       </node>
-      <node id="204">
+      <node id="198">
         <label>WaterSource</label>
         <link refid="classWaterSource"/>
       </node>
-      <node id="206">
+      <node id="200">
         <label>Catchment</label>
         <link refid="classCatchment"/>
       </node>
-      <node id="205">
+      <node id="199">
         <label>EvaporationSeries</label>
         <link refid="classEvaporationSeries"/>
-        <childnode refid="206" relation="public-inheritance">
+        <childnode refid="200" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="203">
+      <node id="197">
         <label>Reservoir</label>
         <link refid="classReservoir"/>
-        <childnode refid="204" relation="public-inheritance">
+        <childnode refid="198" relation="public-inheritance">
         </childnode>
-        <childnode refid="205" relation="usage">
+        <childnode refid="199" relation="usage">
           <edgelabel>evaporation_series</edgelabel>
         </childnode>
-        <childnode refid="207" relation="usage">
+        <childnode refid="201" relation="usage">
           <edgelabel>storage_area_curve</edgelabel>
         </childnode>
       </node>
