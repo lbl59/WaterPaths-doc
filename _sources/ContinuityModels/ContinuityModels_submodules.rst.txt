@@ -4,7 +4,7 @@ ContinuityModels Module
 API Reference
 -------------
 
-Below is the API reference for submodules of the `ContinuityModels` module. Documentation is automatically extracted from the header files.
+Below is the API reference for submodules of the :code:`ContinuityModels` module. It enforces week-to-week continuity of inflows, demands, and evaporation over the simulation period.
 
 Submodule Components
 ^^^^^^^^^^^^^^^^^^^^

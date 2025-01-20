@@ -2,7 +2,7 @@
 Controls Module
 ==============
 
-The `Controls` module contains classes and functions related to the reservoir controls of the water sources in the system.
+The :code:`Controls` module contains classes and functions related to the reservoir controls of the water sources in the system.
 
 Contents
 --------
