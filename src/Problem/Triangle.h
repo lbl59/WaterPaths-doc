@@ -23,7 +23,6 @@ private:
      * 
      */
     const int n_utilities = 4;
-
     /**
      * @brief A 2D vector of all Durham's historical and synthetic streamflows.
      */
@@ -145,15 +144,15 @@ private:
     vector<vector<double>> evap_jordan_lake;
 
     /**
-     * @brief A 2D vector of all Raleigh's demand:wastewater fraction.
+     * @brief A 2D vector of all Raleigh's demand-to-wastewater fraction.
      */
     vector<vector<double>> demand_to_wastewater_fraction_owasa_raleigh;
     /**
-     * @brief A 2D vector of all Durham's demand:wastewater fraction.
+     * @brief A 2D vector of all Durham's demand-to-wastewater fraction.
      */
     vector<vector<double>> demand_to_wastewater_fraction_durham;
     /**
-     * @brief A 2D vector of all Chatham's demand:wastewater fraction.
+     * @brief A 2D vector of all Chatham's demand-to-wastewater fraction.
      */
     vector<vector<double>> demand_to_wastewater_fraction_chatham;
 
@@ -223,7 +222,6 @@ public:
 
     /**
      * @brief Destructor for the Triangle object.
-     * 
      */
     ~Triangle();
 
@@ -260,7 +258,6 @@ public:
 
     /**
      * @brief Reads in all input inflow, evaporation, and demand data for the Triangle problem.
-     * 
      */
     void readInputData();
 
