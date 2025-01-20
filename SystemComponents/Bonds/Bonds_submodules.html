@@ -539,9 +539,31 @@
 <dd><div class="docutils container">
 <em>#include &lt;VariableDebtServiceBond.h&gt;</em></div>
 <p>The <code class="docutils literal notranslate"><a class="reference internal" href="#classVariableDebtServiceBond"><span class="std std-ref"><span class="pre">VariableDebtServiceBond</span></span></a></code> class is a subclass of the main <code class="docutils literal notranslate"><a class="reference internal" href="Base/Bonds_base.html#classBond"><span class="std std-ref"><span class="pre">Bond</span></span></a></code> class. This class represents a bond (typically a municipal bond) where the floating coupon payments are adjusted at specified intervals. This bond is associated with a specific water source. </p>
-<p>Created by dgorelic on 11/4/2019. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23VariableDebtServiceBond23VariableDebtServiceBondEKiKiKdKdKiKd6vectorIiEb">
+<span id="_CPPv3N23VariableDebtServiceBond23VariableDebtServiceBondEKiKiKdKdKiKd6vectorIiEb"></span><span id="_CPPv2N23VariableDebtServiceBond23VariableDebtServiceBondEKiKiKdKdKiKd6vectorIiEb"></span><span id="VariableDebtServiceBond::VariableDebtServiceBond__iC.iC.doubleC.doubleC.iC.doubleC.vector:i:.b"></span><span class="target" id="classVariableDebtServiceBond_1adc0d18eba4f4a7c7d359640131225f55"></span><span class="sig-name descname"><span class="n"><span class="pre">VariableDebtServiceBond</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_source_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">total_unallocated_cost_of_capital</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">initial_fraction_of_allocated_debt</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_payments</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">coupon_rate</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">pay_on_weeks</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">begin_repayment_at_issuance</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">false</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23VariableDebtServiceBond23VariableDebtServiceBondEKiKiKdKdKiKd6vectorIiEb" title="Link to this definition"></a><br /></dt>
+<dd><p>Constructs a variable debt service bond with specified parameters. This constructor initializes the bond with a set of parameters specific to variable debt service bonds, including the bond’s debt allocation and associated water source ID. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – The unique identifier for the bond. </p></li>
+<li><p><strong>water_source_id</strong> – The identifier for the water source associated with the bond. </p></li>
+<li><p><strong>total_unallocated_cost_of_capital</strong> – The total cost of capital for the bond that has not been allocated yet. </p></li>
+<li><p><strong>initial_fraction_of_allocated_debt</strong> – The initial fraction of the allocated debt for the bond. </p></li>
+<li><p><strong>n_payments</strong> – The number of payments to be made on the bond. </p></li>
+<li><p><strong>coupon_rate</strong> – The interest rate to be applied to the bond’s payments. </p></li>
+<li><p><strong>pay_on_weeks</strong> – A vector of weeks in each calendar year when payments are due. </p></li>
+<li><p><strong>begin_repayment_at_issuance</strong> – A boolean indicating whether repayment begins at the issuance date.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N23VariableDebtServiceBondD0Ev">
 <span id="_CPPv3N23VariableDebtServiceBondD0Ev"></span><span id="_CPPv2N23VariableDebtServiceBondD0Ev"></span><span id="VariableDebtServiceBond::~VariableDebtServiceBond"></span><span class="target" id="classVariableDebtServiceBond_1a8259b64265dd9701ac5888e0fe0bc565"></span><span class="sig-name descname"><span class="n"><span class="pre">~VariableDebtServiceBond</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N23VariableDebtServiceBondD0Ev" title="Link to this definition"></a><br /></dt>
@@ -646,49 +668,6 @@
 </dd>
 </dl>
 </dd></dl>
-
-</div>
-<div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
-<dl class="cpp var">
-<dt class="sig sig-object cpp">
-<span class="target" id="classVariableDebtServiceBond_1a9369eb5b081c45a8608630b3eacae979"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">constructor</span></span></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp">
-<span class="target" id="classVariableDebtServiceBond_1a1b43195523e5571e04f2ed558497ab6a"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">water_source_id</span></span></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp">
-<span class="target" id="classVariableDebtServiceBond_1ac011dd32658be19f8dfc72e7d3b1e02c"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">total_unallocated_cost_of_capital</span></span></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp">
-<span class="target" id="classVariableDebtServiceBond_1a23f451bb14e4898aaa585fbeae9667f9"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">initial_fraction_of_allocated_debt</span></span></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp">
-<span class="target" id="classVariableDebtServiceBond_1ab4035559da3d8155d792612e628285ae"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">n_payments</span></span></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp">
-<span class="target" id="classVariableDebtServiceBond_1a4062feaf0e15546bbcf575aa8ec372e0"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">coupon_rate</span></span></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp">
-<span class="target" id="classVariableDebtServiceBond_1a9ba0adce7f7b3f30e14e55837424ff7c"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">vector&lt;</span> <span class="pre">int</span> <span class="pre">&gt;</span> <span class="pre">pay_on_weeks</span></span></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt class="sig sig-object cpp">
-<span class="target" id="classVariableDebtServiceBond_1a24b333de66efd610ef5d94a673250ff9"></span><span class="sig-name descname"><span class="pre">Here’s</span> <span class="pre">the</span> <span class="pre">Sphinx</span> <span class="pre">style</span> <span class="pre">documentation</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">VariableDebtServiceBond::VariableDebtServiceBond</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">const</span> <span class="pre">int</span> <span class="pre">const</span> <span class="pre">double</span> <span class="pre">vector&lt;</span> <span class="pre">int</span> <span class="pre">&gt;</span> <span class="pre">bool</span> <span class="pre">begin_repayment_at_issuance</span>&#160;&#160; <span class="pre">=</span> <span class="pre">false)</span></span></dt>
-<dd></dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
