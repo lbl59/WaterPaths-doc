@@ -101,27 +101,57 @@
 <span id="_CPPv316PaperTestProblem"></span><span id="_CPPv216PaperTestProblem"></span><span id="PaperTestProblem"></span><span class="target" id="classPaperTestProblem"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">PaperTestProblem</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/Problem_base.html#_CPPv47Problem" title="Problem"><span class="n"><span class="pre">Problem</span></span></a><a class="headerlink" href="#_CPPv416PaperTestProblem" title="Link to this definition"></a><br /></dt>
 <dd><div class="docutils container">
 <em>#include &lt;PaperTestProblem.h&gt;</em></div>
+<p>The <code class="docutils literal notranslate"><a class="reference internal" href="#classPaperTestProblem"><span class="std std-ref"><span class="pre">PaperTestProblem</span></span></a></code> class is a subclass of the main <code class="docutils literal notranslate"><a class="reference internal" href="Base/Problem_base.html#classProblem"><span class="std std-ref"><span class="pre">Problem</span></span></a></code> class. This class represents the three-utility Sedento Valley test case water management and planning problem. </p>
+<p>Created by dfg42 on 8/28/18. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem16PaperTestProblemEmi">
 <span id="_CPPv3N16PaperTestProblem16PaperTestProblemEmi"></span><span id="_CPPv2N16PaperTestProblem16PaperTestProblemEmi"></span><span id="PaperTestProblem::PaperTestProblem__unsigned-l.i"></span><span class="target" id="classPaperTestProblem_1acc053a5b4515f3959494ce58c763d582"></span><span class="sig-name descname"><span class="n"><span class="pre">PaperTestProblem</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_weeks</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">import_export_rof_table</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N16PaperTestProblem16PaperTestProblemEmi" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Constructor for a new <a class="reference internal" href="#classPaperTestProblem"><span class="std std-ref">PaperTestProblem</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_weeks</strong> – An integer representing the number of weeks in the simulation. </p></li>
+<li><p><strong>import_export_rof_table</strong> – An integer indicating the ROF table import/export/ignore mode. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblemD0Ev">
 <span id="_CPPv3N16PaperTestProblemD0Ev"></span><span id="_CPPv2N16PaperTestProblemD0Ev"></span><span id="PaperTestProblem::~PaperTestProblem"></span><span class="target" id="classPaperTestProblem_1a571a92266d4c58ebc27e20391f7ad81b"></span><span class="sig-name descname"><span class="n"><span class="pre">~PaperTestProblem</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblemD0Ev" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Destructor for the <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a> object. </p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem18functionEvaluationEPdPdPd">
 <span id="_CPPv3N16PaperTestProblem18functionEvaluationEPdPdPd"></span><span id="_CPPv2N16PaperTestProblem18functionEvaluationEPdPdPd"></span><span id="PaperTestProblem::functionEvaluation__doubleP.doubleP.doubleP"></span><span class="target" id="classPaperTestProblem_1a6db78df74d40f69a750b164caaca75c7"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">functionEvaluation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">vars</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">objs</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">consts</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem18functionEvaluationEPdPdPd" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Runs the Sedento Valley problem. </p>
+<p><dl>
+<dt class="sig sig-object cpp">
+<em><span class="pre">Todo:</span></em></dt>
+<dd><p>check for solutions in which a utility does not have an allocation on Jordan Lake (or any generic lake) but still pay for joint treatment infrastructure). </p>
+</dd></dl>
+
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vars</strong> – A pointer to a double containing the number of variables in the problem. </p></li>
+<li><p><strong>objs</strong> – A pointer to the double containing the number of objectives in the problem. </p></li>
+<li><p><strong>consts</strong> – A pointer to the double containing the number of constraints in the problem.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="cpp function">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem13readInputDataEv">
 <span id="_CPPv3N16PaperTestProblem13readInputDataEv"></span><span id="_CPPv2N16PaperTestProblem13readInputDataEv"></span><span id="PaperTestProblem::readInputData"></span><span class="target" id="classPaperTestProblem_1ae4bcc17d6ceab628f88174306d54fdc9"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readInputData</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N16PaperTestProblem13readInputDataEv" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>Reads in all input inflow, evaporation, and demand data for the Sedento Valley problem. </p>
+</dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
@@ -129,47 +159,56 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem11n_utilitiesE">
 <span id="_CPPv3N16PaperTestProblem11n_utilitiesE"></span><span id="_CPPv2N16PaperTestProblem11n_utilitiesE"></span><span id="PaperTestProblem::n_utilities__iC"></span><span class="target" id="classPaperTestProblem_1af4990348248cc169eb2137003dbe2e00"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_utilities</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">3</span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem11n_utilitiesE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>An integer indicating the default number utilities in the Sedento Valley problem. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem18streamflows_durhamE">
 <span id="_CPPv3N16PaperTestProblem18streamflows_durhamE"></span><span id="_CPPv2N16PaperTestProblem18streamflows_durhamE"></span><span id="PaperTestProblem::streamflows_durham__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a6169e129c59da20034c2f9be422d517f"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_durham</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem18streamflows_durhamE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Dryville’s historical and synthetic streamflows. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem19streamflows_claytonE">
 <span id="_CPPv3N16PaperTestProblem19streamflows_claytonE"></span><span id="_CPPv2N16PaperTestProblem19streamflows_claytonE"></span><span id="PaperTestProblem::streamflows_clayton__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a4e7333f37fe66ba2cc893da6a63923a2"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_clayton</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem19streamflows_claytonE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all downstream historical and synthetic streamflows. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem16streamflows_flatE">
 <span id="_CPPv3N16PaperTestProblem16streamflows_flatE"></span><span id="_CPPv2N16PaperTestProblem16streamflows_flatE"></span><span id="PaperTestProblem::streamflows_flat__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a64ec117093c48136883b8ece3842ebc4"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_flat</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem16streamflows_flatE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of one of Fallsland’s water source’s historical and synthetic streamflows. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem15streamflows_llrE">
 <span id="_CPPv3N16PaperTestProblem15streamflows_llrE"></span><span id="_CPPv2N16PaperTestProblem15streamflows_llrE"></span><span id="PaperTestProblem::streamflows_llr__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1ad9662a0ff669acb6b4fe37672dce1932"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_llr</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem15streamflows_llrE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of one of Fallsland’s water source’s historical and synthetic streamflows. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem17streamflows_swiftE">
 <span id="_CPPv3N16PaperTestProblem17streamflows_swiftE"></span><span id="_CPPv2N16PaperTestProblem17streamflows_swiftE"></span><span id="PaperTestProblem::streamflows_swift__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a6d22fc82ecff030315ffd8c4b464f239"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_swift</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem17streamflows_swiftE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of one of Fallsland’s water source’s historical and synthetic streamflows. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem17streamflows_philsE">
 <span id="_CPPv3N16PaperTestProblem17streamflows_philsE"></span><span id="_CPPv2N16PaperTestProblem17streamflows_philsE"></span><span id="PaperTestProblem::streamflows_phils__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1aadc7191d1960cd52ee527196aabee985"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_phils</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem17streamflows_philsE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of one of Watertown’s water source’s historical and synthetic streamflows. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem16streamflows_caneE">
 <span id="_CPPv3N16PaperTestProblem16streamflows_caneE"></span><span id="_CPPv2N16PaperTestProblem16streamflows_caneE"></span><span id="PaperTestProblem::streamflows_cane__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1aacac987101625859b4d6192bffcb08a2"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_cane</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem16streamflows_caneE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of one of Watertown’s water source’s historical and synthetic streamflows. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem18streamflows_morganE">
 <span id="_CPPv3N16PaperTestProblem18streamflows_morganE"></span><span id="_CPPv2N16PaperTestProblem18streamflows_morganE"></span><span id="PaperTestProblem::streamflows_morgan__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a838a01bac4428be605162a7deab1cfff"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_morgan</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem18streamflows_morganE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of one of Watertown’s water source’s historical and synthetic streamflows. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem20streamflows_crabtreeE">
@@ -179,97 +218,116 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem15streamflows_hawE">
 <span id="_CPPv3N16PaperTestProblem15streamflows_hawE"></span><span id="_CPPv2N16PaperTestProblem15streamflows_hawE"></span><span id="PaperTestProblem::streamflows_haw__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a7d96d2ddb089e51068380c1aa0e691e8"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_haw</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem15streamflows_hawE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of one of Watertown’s water source’s historical and synthetic streamflows. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem22streamflows_lillingtonE">
 <span id="_CPPv3N16PaperTestProblem22streamflows_lillingtonE"></span><span id="_CPPv2N16PaperTestProblem22streamflows_lillingtonE"></span><span id="PaperTestProblem::streamflows_lillington__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a77aa63c91de59ca1445239a9ce7424df"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_lillington</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem22streamflows_lillingtonE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of one of Watertown’s water source’s historical and synthetic streamflows. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem11evap_durhamE">
 <span id="_CPPv3N16PaperTestProblem11evap_durhamE"></span><span id="_CPPv2N16PaperTestProblem11evap_durhamE"></span><span id="PaperTestProblem::evap_durham__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1aafd6edcc514c3b365c18fb3357f7d58a"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_durham</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem11evap_durhamE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Dryville’s historical and synthetic evaporation data. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem15evap_falls_lakeE">
 <span id="_CPPv3N16PaperTestProblem15evap_falls_lakeE"></span><span id="_CPPv2N16PaperTestProblem15evap_falls_lakeE"></span><span id="PaperTestProblem::evap_falls_lake__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a6ff2293ecad9cc169484376cd419c166"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_falls_lake</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem15evap_falls_lakeE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Lake Autumn’s historical and synthetic evaporation data. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem10evap_owasaE">
 <span id="_CPPv3N16PaperTestProblem10evap_owasaE"></span><span id="_CPPv2N16PaperTestProblem10evap_owasaE"></span><span id="PaperTestProblem::evap_owasa__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a9feb0214e7f4840bf9ddd81d50473496"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_owasa</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem10evap_owasaE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Watertown’s historical and synthetic evaporation data. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem17evap_little_riverE">
 <span id="_CPPv3N16PaperTestProblem17evap_little_riverE"></span><span id="_CPPv2N16PaperTestProblem17evap_little_riverE"></span><span id="PaperTestProblem::evap_little_river__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a546f7d60630162c03a980b233195bfbe"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_little_river</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem17evap_little_riverE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Esquerda River’s historical and synthetic evaporation data. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem19evap_wheeler_bensonE">
 <span id="_CPPv3N16PaperTestProblem19evap_wheeler_bensonE"></span><span id="_CPPv2N16PaperTestProblem19evap_wheeler_bensonE"></span><span id="PaperTestProblem::evap_wheeler_benson__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a5e4e84230783614660cf17719a723eb0"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_wheeler_benson</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem19evap_wheeler_bensonE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all College Rock <a class="reference internal" href="../SystemComponents/WaterSources/WaterSources_submodules.html#classReservoir"><span class="std std-ref">Reservoir</span></a>’s historical and synthetic evaporation data. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem16evap_jordan_lakeE">
 <span id="_CPPv3N16PaperTestProblem16evap_jordan_lakeE"></span><span id="_CPPv2N16PaperTestProblem16evap_jordan_lakeE"></span><span id="PaperTestProblem::evap_jordan_lake__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1aed8a373010157bf691b3a7177288acdd"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_jordan_lake</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem16evap_jordan_lakeE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Lake Michael’s historical and synthetic evaporation data. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem16demand_watertownE">
 <span id="_CPPv3N16PaperTestProblem16demand_watertownE"></span><span id="_CPPv2N16PaperTestProblem16demand_watertownE"></span><span id="PaperTestProblem::demand_watertown__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a79efa6cbc7f2bd003f70419fe6d45efd"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_watertown</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem16demand_watertownE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Watertown’s historical and synthetic demands. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem15demand_dryvilleE">
 <span id="_CPPv3N16PaperTestProblem15demand_dryvilleE"></span><span id="_CPPv2N16PaperTestProblem15demand_dryvilleE"></span><span id="PaperTestProblem::demand_dryville__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a74c88139d65ef34aec2aa2111697c7be"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_dryville</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem15demand_dryvilleE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Dryville’s historical and synthetic demands. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem16demand_fallslandE">
 <span id="_CPPv3N16PaperTestProblem16demand_fallslandE"></span><span id="_CPPv2N16PaperTestProblem16demand_fallslandE"></span><span id="PaperTestProblem::demand_fallsland__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1acd6b67e6c12e3ef1ff2278f312888f4e"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_fallsland</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem16demand_fallslandE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Fallsland’s historical and synthetic demands. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem39demand_to_wastewater_fraction_fallslandE">
 <span id="_CPPv3N16PaperTestProblem39demand_to_wastewater_fraction_fallslandE"></span><span id="_CPPv2N16PaperTestProblem39demand_to_wastewater_fraction_fallslandE"></span><span id="PaperTestProblem::demand_to_wastewater_fraction_fallsland__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a37afd20e40b7e6f26d229bc79221ea97"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_to_wastewater_fraction_fallsland</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem39demand_to_wastewater_fraction_fallslandE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Fallsland’s demand-to-wastewater fraction. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem38demand_to_wastewater_fraction_dryvilleE">
 <span id="_CPPv3N16PaperTestProblem38demand_to_wastewater_fraction_dryvilleE"></span><span id="_CPPv2N16PaperTestProblem38demand_to_wastewater_fraction_dryvilleE"></span><span id="PaperTestProblem::demand_to_wastewater_fraction_dryville__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a6641660439d10f0476f39ee28967edb5"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_to_wastewater_fraction_dryville</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem38demand_to_wastewater_fraction_dryvilleE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Dryville’s demand-to-wastewater fraction. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem31watertownDemandClassesFractionsE">
 <span id="_CPPv3N16PaperTestProblem31watertownDemandClassesFractionsE"></span><span id="_CPPv2N16PaperTestProblem31watertownDemandClassesFractionsE"></span><span id="PaperTestProblem::watertownDemandClassesFractions__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a7808c1a9863d8188e4aa66cfd485ef0a"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">watertownDemandClassesFractions</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem31watertownDemandClassesFractionsE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Watertown’s demand classes fractions. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem30dryvilleDemandClassesFractionsE">
 <span id="_CPPv3N16PaperTestProblem30dryvilleDemandClassesFractionsE"></span><span id="_CPPv2N16PaperTestProblem30dryvilleDemandClassesFractionsE"></span><span id="PaperTestProblem::dryvilleDemandClassesFractions__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a3a8dfe7b057844b686eeb3bd4ad30c4b"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dryvilleDemandClassesFractions</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem30dryvilleDemandClassesFractionsE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Dryville’s demand classes fractions. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem31fallslandDemandClassesFractionsE">
 <span id="_CPPv3N16PaperTestProblem31fallslandDemandClassesFractionsE"></span><span id="_CPPv2N16PaperTestProblem31fallslandDemandClassesFractionsE"></span><span id="PaperTestProblem::fallslandDemandClassesFractions__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a506bdb234395692f92fe0f7fee088c60"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fallslandDemandClassesFractions</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem31fallslandDemandClassesFractionsE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Fallsland’s demand classes fractions. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem31watertownUserClassesWaterPricesE">
 <span id="_CPPv3N16PaperTestProblem31watertownUserClassesWaterPricesE"></span><span id="_CPPv2N16PaperTestProblem31watertownUserClassesWaterPricesE"></span><span id="PaperTestProblem::watertownUserClassesWaterPrices__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a615952a6a9f19f58361037810a4d5903"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">watertownUserClassesWaterPrices</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem31watertownUserClassesWaterPricesE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Watertown’s user water prices. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem30dryvilleUserClassesWaterPricesE">
 <span id="_CPPv3N16PaperTestProblem30dryvilleUserClassesWaterPricesE"></span><span id="_CPPv2N16PaperTestProblem30dryvilleUserClassesWaterPricesE"></span><span id="PaperTestProblem::dryvilleUserClassesWaterPrices__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1a2007d9d8030d96bf2147505265db4540"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">dryvilleUserClassesWaterPrices</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem30dryvilleUserClassesWaterPricesE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Dryville’s user water prices. </p>
+</dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N16PaperTestProblem31fallslandUserClassesWaterPricesE">
 <span id="_CPPv3N16PaperTestProblem31fallslandUserClassesWaterPricesE"></span><span id="_CPPv2N16PaperTestProblem31fallslandUserClassesWaterPricesE"></span><span id="PaperTestProblem::fallslandUserClassesWaterPrices__vector:vector:double::"></span><span class="target" id="classPaperTestProblem_1acd8ca29e3e165f9008ee6be50e46b253"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">fallslandUserClassesWaterPrices</span></span></span><a class="headerlink" href="#_CPPv4N16PaperTestProblem31fallslandUserClassesWaterPricesE" title="Link to this definition"></a><br /></dt>
-<dd></dd></dl>
+<dd><p>A 2D vector of all Fallsland’s user water prices. </p>
+</dd></dl>
 
 </div>
 </dd></dl>
@@ -539,19 +597,19 @@
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Triangle43demand_to_wastewater_fraction_owasa_raleighE">
 <span id="_CPPv3N8Triangle43demand_to_wastewater_fraction_owasa_raleighE"></span><span id="_CPPv2N8Triangle43demand_to_wastewater_fraction_owasa_raleighE"></span><span id="Triangle::demand_to_wastewater_fraction_owasa_raleigh__vector:vector:double::"></span><span class="target" id="classTriangle_1ac1aeb61eae9f469b139c38d688235724"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_to_wastewater_fraction_owasa_raleigh</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle43demand_to_wastewater_fraction_owasa_raleighE" title="Link to this definition"></a><br /></dt>
-<dd><p>A 2D vector of all Raleigh’s demand:wastewater fraction. </p>
+<dd><p>A 2D vector of all Raleigh’s demand-to-wastewater fraction. </p>
 </dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Triangle36demand_to_wastewater_fraction_durhamE">
 <span id="_CPPv3N8Triangle36demand_to_wastewater_fraction_durhamE"></span><span id="_CPPv2N8Triangle36demand_to_wastewater_fraction_durhamE"></span><span id="Triangle::demand_to_wastewater_fraction_durham__vector:vector:double::"></span><span class="target" id="classTriangle_1a69d6615c9468c9637a2ce0ea52e23930"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_to_wastewater_fraction_durham</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle36demand_to_wastewater_fraction_durhamE" title="Link to this definition"></a><br /></dt>
-<dd><p>A 2D vector of all Durham’s demand:wastewater fraction. </p>
+<dd><p>A 2D vector of all Durham’s demand-to-wastewater fraction. </p>
 </dd></dl>
 
 <dl class="cpp var">
 <dt class="sig sig-object cpp" id="_CPPv4N8Triangle37demand_to_wastewater_fraction_chathamE">
 <span id="_CPPv3N8Triangle37demand_to_wastewater_fraction_chathamE"></span><span id="_CPPv2N8Triangle37demand_to_wastewater_fraction_chathamE"></span><span id="Triangle::demand_to_wastewater_fraction_chatham__vector:vector:double::"></span><span class="target" id="classTriangle_1a00acfdf1f437b38613a5815e9b524345"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_to_wastewater_fraction_chatham</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle37demand_to_wastewater_fraction_chathamE" title="Link to this definition"></a><br /></dt>
-<dd><p>A 2D vector of all Chatham’s demand:wastewater fraction. </p>
+<dd><p>A 2D vector of all Chatham’s demand-to-wastewater fraction. </p>
 </dd></dl>
 
 <dl class="cpp var">
