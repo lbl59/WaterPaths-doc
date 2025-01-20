@@ -1,7 +1,7 @@
 Utility Module
 ==============
 
-The `Utility` module contains classes and functions related defining the utilities of the water system. It is a submodule of the :doc:`SystemComponents <../SystemComponents_index>`_ module.
+The :code:`Utility` module contains classes and functions related defining the utilities of the water system. It is a submodule of the :doc:`SystemComponents <../SystemComponents_index>`_ module.
 
 Contents
 --------

@@ -1,7 +1,7 @@
 WaterSources Module
 ==============
 
-The `WaterSources` module contains classes and functions related defining the components of the water system that supply water. This module is a submodule of the :doc:`SystemComponents <../SystemComponents_index>` module.
+The :code:`WaterSources` module contains classes and functions related defining the components of the water system that supply water. This module is a submodule of the :doc:`SystemComponents <../SystemComponents_index>` module.
 
 Contents
 --------

@@ -1,7 +1,7 @@
 Problem Module
 ===============
 
-The `Problem` module contains classes and functions related to the tools defining custom problems such as the six-utility North Carolina Research Triangle system and the Sedento Valley test case.
+The :code:`Problem` module contains classes and functions related to the tools defining custom problems such as the six-utility North Carolina Research Triangle system and the Sedento Valley test case.
 
 Contents
 --------

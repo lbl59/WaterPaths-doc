@@ -1,12 +1,12 @@
 Utils Module
 =============
 
-The `Utils` contains classes and functions related to basic data structure implementations in WaterPaths such as vectors, matrices, and graphs. It also defines a quadratic programming solver.
+The :code:`Utils` contains classes and functions related to basic data structure implementations in WaterPaths such as vectors, matrices, and graphs. It also defines a quadratic programming solver.
 
 API Reference
 -------------
 
-Below is the API reference for the `Utils` submodule. Documentation is automatically extracted from the header files.
+Below is the API reference for the :code:`Utils` submodule.
 
 Submodule Components
 ^^^^^^^^^^^^^^^^^^^^

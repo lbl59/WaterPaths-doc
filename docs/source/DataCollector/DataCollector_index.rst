@@ -1,7 +1,7 @@
 DataCollector Module
 ====================
 
-The `DataCollector` module contains classes and functions related to collecting data from all system components over each simulation week and across realizations.
+The :code:`DataCollector` module contains classes and functions related to collecting data from all system components over each simulation week and across realizations.
 
 Contents
 --------

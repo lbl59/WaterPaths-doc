@@ -1,7 +1,7 @@
 Graph Module
 =============
 
-The `Graph` submodule contains classes and functions related defining the system network. It is a submodule of the :doc:`Utils <../Utils_index>` module.
+The :code:`Graph` submodule contains classes and functions related defining the system network. It is a submodule of the :doc:`Utils <../Utils_index>` module.
 
 Graph Components
 ^^^^^^^^^^^^^^^

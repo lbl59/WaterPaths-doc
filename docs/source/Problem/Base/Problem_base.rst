@@ -4,7 +4,7 @@ Problem Module
 API Reference
 -------------
 
-The base components define foundational functionality of the `Problem` class for maintaining continuity.
+The base components define foundational functionality of the :code:`Problem` class for maintaining continuity.
 
 Base Components
 ^^^^^^^^^^^^^^^^

@@ -4,7 +4,7 @@ DataCollector Module
 API Reference
 -------------
 
-The base components define foundational functionality of the `DataCollector` class for maintaining continuity.
+The base components define foundational functionality of the :code:`DataCollector` class for maintaining continuity.
 
 Base Components
 ^^^^^^^^^^^^^^^^

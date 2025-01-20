@@ -1,7 +1,7 @@
 SystemComponents Module
 =======================
 
-The `SystemComponents` module contains classes and functions related to defining the system components of the water distribution system.
+The :code:`SystemComponents` module contains classes and functions related to defining the system components of the water distribution system.
 
 Contents
 --------

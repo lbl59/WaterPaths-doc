@@ -1,7 +1,7 @@
 DroughtMitigationInstruments Module
 ===================================
 
-The `DroughtMitigationInstruments` module contains classes and functions related to the tools used by the system utilities to mitgate drought including water-use restrictions, insurance, and transfers.
+The :code:`DroughtMitigationInstruments` module contains classes and functions related to the tools used by the system utilities to mitgate drought including water-use restrictions, insurance, and transfers.
 
 Contents
 --------

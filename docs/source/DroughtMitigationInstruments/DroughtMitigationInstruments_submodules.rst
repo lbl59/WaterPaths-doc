@@ -4,7 +4,7 @@ DroughtMitigationInstruments Module
 API Reference
 -------------
 
-Below is the API reference for submodules of the `DroughtMitigationInstruments` module. Documentation is automatically extracted from the header files.
+Below is the API reference for submodules of the :code:`DroughtMitigationInstruments` module.
 
 Submodule Components
 ^^^^^^^^^^^^^^^^^^^^
