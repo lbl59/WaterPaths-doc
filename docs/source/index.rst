@@ -16,7 +16,7 @@ water supply planning and management policy pathways. To view its associated pub
 Install and Run
 ================
 
-To install and run WaterPaths, clone the `GitHub Repository <https://github.com/bernardoct/WaterPaths>`_ (Trindade et al, 2020). Follow the directions in the README to run a simple WaterPaths simulation.
+To install and run WaterPaths, clone this `GitHub Repository <https://github.com/bernardoct/WaterPaths>`_. Follow the directions in the corresponding README to run a simple WaterPaths simulation.
 
 Modules
 =======

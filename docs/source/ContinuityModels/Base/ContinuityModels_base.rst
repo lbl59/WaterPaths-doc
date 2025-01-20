@@ -4,7 +4,7 @@ ContinuityModel Module
 API Reference
 -------------
 
-The base components define foundational functionality of the `ContinuityModel` class for maintaining continuity.
+The base components define foundational functionality of the :code:`ContinuityModel` class for maintaining continuity.
 
 Base Components
 ^^^^^^^^^^^^^^^^
