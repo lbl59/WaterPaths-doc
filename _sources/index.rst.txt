@@ -26,7 +26,7 @@ Modules
    Continuity Models <ContinuityModels/ContinuityModels_index>
    Controls <Controls/Controls_index>
    Data Collector <DataCollector/DataCollector_index>
-   Drought Mitigation Instruments <DroughtMitigationInstruments/DroughtMitigationInstruments>
+   Drought Mitigation Instruments <DroughtMitigationInstruments/DroughtMitigationInstruments_index>
    Problem Implementations <Problem/Problem_index>
    Simulation <Simulation/Simulation_index>
    System Components <SystemComponents/SystemComponents_index>
