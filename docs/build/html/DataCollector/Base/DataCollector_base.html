@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DataCollector Module &mdash; WaterPaths 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="DataCollector Module" href="../DataCollector_submodules.html" />
+    <link rel="prev" title="DataCollector Module" href="../DataCollector_index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            WaterPaths
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuityModels/ContinuityModels_index.html">Continuity Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Controls/Controls_index.html">Controls</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../DataCollector_index.html">Data Collector</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../DataCollector_index.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Base implementation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api-reference">API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../DataCollector_submodules.html">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../Problem/Problem_index.html">Problem Implementations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Simulation/Simulation_index.html">Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SystemComponents/SystemComponents_index.html">System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Utils/Utils_index.html">Utils</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">WaterPaths</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../DataCollector_index.html">DataCollector Module</a></li>
+      <li class="breadcrumb-item active">DataCollector Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/DataCollector/Base/DataCollector_base.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="datacollector-module">
+<h1>DataCollector Module<a class="headerlink" href="#datacollector-module" title="Permalink to this heading"></a></h1>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
+<p>The base components define foundational functionality of the <code class="code docutils literal notranslate"><span class="pre">DataCollector</span></code> class for maintaining continuity.</p>
+<div class="section" id="base-components">
+<h3>Base Components<a class="headerlink" href="#base-components" title="Permalink to this heading"></a></h3>
+<div class="section" id="datacollector-h">
+<h4>DataCollector.h<a class="headerlink" href="#datacollector-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv413DataCollector">
+<span id="_CPPv313DataCollector"></span><span id="_CPPv213DataCollector"></span><span id="DataCollector"></span><span class="target" id="classDataCollector"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DataCollector</span></span></span><a class="headerlink" href="#_CPPv413DataCollector" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;DataCollector.h&gt;</em></div>
+<p>The <code class="docutils literal notranslate"><a class="reference internal" href="#classDataCollector"><span class="std std-ref"><span class="pre">DataCollector</span></span></a></code> class is an abstract class that defines the interface for collecting data in the <a class="reference internal" href="../../Problem/Problem_submodules.html#classTriangle"><span class="std std-ref">Triangle</span></a> Model. Created by bernardoct on 8/25/17. </p>
+<p>Subclassed by <a class="reference internal" href="../DataCollector_submodules.html#classAllocatedIntakeDataCollector"><span class="std std-ref">AllocatedIntakeDataCollector</span></a>, <a class="reference internal" href="../DataCollector_submodules.html#classEmptyDataCollector"><span class="std std-ref">EmptyDataCollector</span></a>, <a class="reference internal" href="../DataCollector_submodules.html#classIntakeDataCollector"><span class="std std-ref">IntakeDataCollector</span></a>, <a class="reference internal" href="../DataCollector_submodules.html#classJointWTPDataCollector"><span class="std std-ref">JointWTPDataCollector</span></a>, <a class="reference internal" href="../DataCollector_submodules.html#classReservoirDataCollector"><span class="std std-ref">ReservoirDataCollector</span></a>, <a class="reference internal" href="../DataCollector_submodules.html#classRestrictionsDataCollector"><span class="std std-ref">RestrictionsDataCollector</span></a>, <a class="reference internal" href="../DataCollector_submodules.html#classTransfersDataCollector"><span class="std std-ref">TransfersDataCollector</span></a>, <a class="reference internal" href="../DataCollector_submodules.html#classUtilitiesDataCollector"><span class="std std-ref">UtilitiesDataCollector</span></a>, <a class="reference internal" href="../DataCollector_submodules.html#classWaterReuseDataCollector"><span class="std std-ref">WaterReuseDataCollector</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollector13DataCollectorEiPKcmii">
+<span id="_CPPv3N13DataCollector13DataCollectorEiPKcmii"></span><span id="_CPPv2N13DataCollector13DataCollectorEiPKcmii"></span><span id="DataCollector::DataCollector__i.cCP.unsigned-l.i.i"></span><span class="target" id="classDataCollector_1a3f89b18f4ac0557d7374d49531a004c0"></span><span class="k"><span class="pre">explicit</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DataCollector</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realization</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">type</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">table_width</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13DataCollector13DataCollectorEiPKcmii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructor for the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> class. This function initializes a <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object with the specified attributes. </p>
+<p>This constructor is marked as explicit to avoid implicit conversions from integer to <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – The unique identifier for the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object. </p></li>
+<li><p><strong>name</strong> – The name of the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object as a constant character pointer. </p></li>
+<li><p><strong>realization</strong> – The realization number associated with the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a>. </p></li>
+<li><p><strong>type</strong> – The type of the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object. </p></li>
+<li><p><strong>table_width</strong> – The width of the data table. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollectorD0Ev">
+<span id="_CPPv3N13DataCollectorD0Ev"></span><span id="_CPPv2N13DataCollectorD0Ev"></span><span id="DataCollector::~DataCollector"></span><span class="target" id="classDataCollector_1ab6e826d46e651419309efe1e635d6e14"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~DataCollector</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N13DataCollectorD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destructor for the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> class. </p>
+<p>This function cleans up resources used by the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollector18printTabularStringEi">
+<span id="_CPPv3N13DataCollector18printTabularStringEi"></span><span id="_CPPv2N13DataCollector18printTabularStringEi"></span><span id="DataCollector::printTabularString__i"></span><span class="target" id="classDataCollector_1a397fccabe0223267eea8fc7cac0e59da"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">printTabularString</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N13DataCollector18printTabularStringEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Prints the data collected by the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object in a tabular format. </p>
+<p>This function does not have an implementation in the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> class and must be implemented by derived classes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>week</strong> – The week number to print the data for. </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A string containing the data collected by the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object in a tabular format. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollector18printCompactStringEi">
+<span id="_CPPv3N13DataCollector18printCompactStringEi"></span><span id="_CPPv2N13DataCollector18printCompactStringEi"></span><span id="DataCollector::printCompactString__i"></span><span class="target" id="classDataCollector_1a2eac264fa5612aed5a830b12de4f4ae3"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">printCompactString</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N13DataCollector18printCompactStringEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Prints the data collected by the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object in a compact format. </p>
+<p>This function does not have an implementation in the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> class and must be implemented by derived classes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>week</strong> – The week number to print the data for. </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A string containing the data collected by the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object in a compact format. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollector29printTabularStringHeaderLine1Ev">
+<span id="_CPPv3N13DataCollector29printTabularStringHeaderLine1Ev"></span><span id="_CPPv2N13DataCollector29printTabularStringHeaderLine1Ev"></span><span id="DataCollector::printTabularStringHeaderLine1"></span><span class="target" id="classDataCollector_1a91619cfa9e9b8cefd2f7c20d5718b41e"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">printTabularStringHeaderLine1</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N13DataCollector29printTabularStringHeaderLine1Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Prints the header for the tabular data collected by the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object. </p>
+<p>This function does not have an implementation in the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> class and must be implemented by derived classes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A string containing the header for the tabular data collected by the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollector29printTabularStringHeaderLine2Ev">
+<span id="_CPPv3N13DataCollector29printTabularStringHeaderLine2Ev"></span><span id="_CPPv2N13DataCollector29printTabularStringHeaderLine2Ev"></span><span id="DataCollector::printTabularStringHeaderLine2"></span><span class="target" id="classDataCollector_1af01ea961314be2164f39e6d4cd59e443"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">printTabularStringHeaderLine2</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N13DataCollector29printTabularStringHeaderLine2Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Prints the second line of the header for the tabular data collected by the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object. </p>
+<p>This function does not have an implementation in the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> class and must be implemented by derived classes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A string containing the second line of the header for the tabular data collected by the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollector24printCompactStringHeaderEv">
+<span id="_CPPv3N13DataCollector24printCompactStringHeaderEv"></span><span id="_CPPv2N13DataCollector24printCompactStringHeaderEv"></span><span id="DataCollector::printCompactStringHeader"></span><span class="target" id="classDataCollector_1a98dcb4ec871d9c7fbf7545c64e5ccc67"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">printCompactStringHeader</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N13DataCollector24printCompactStringHeaderEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Prints the header for the compact data collected by the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object. </p>
+<p>This function does not have an implementation in the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> class and must be implemented by derived classes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A string containing the header for the compact data collected by the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollector12collect_dataEv">
+<span id="_CPPv3N13DataCollector12collect_dataEv"></span><span id="_CPPv2N13DataCollector12collect_dataEv"></span><span id="DataCollector::collect_data"></span><span class="target" id="classDataCollector_1a01486bf58acbe37b203f97b3b9a79c40"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">collect_data</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N13DataCollector12collect_dataEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Collects the data for the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> object. </p>
+<p>This function does not have an implementation in the <a class="reference internal" href="#classDataCollector"><span class="std std-ref">DataCollector</span></a> class and must be implemented by derived classes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollector2idE">
+<span id="_CPPv3N13DataCollector2idE"></span><span id="_CPPv2N13DataCollector2idE"></span><span id="DataCollector::id__iC"></span><span class="target" id="classDataCollector_1a5cb840b6fbcf6afe364eef9114984383"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">id</span></span></span><a class="headerlink" href="#_CPPv4N13DataCollector2idE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The unique ID of the data collector. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollector4typeE">
+<span id="_CPPv3N13DataCollector4typeE"></span><span id="_CPPv2N13DataCollector4typeE"></span><span id="DataCollector::type__iC"></span><span class="target" id="classDataCollector_1acad1c22d67a8eb3db056ba776a131900"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">type</span></span></span><a class="headerlink" href="#_CPPv4N13DataCollector4typeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The type of data collector. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollector11table_widthE">
+<span id="_CPPv3N13DataCollector11table_widthE"></span><span id="_CPPv2N13DataCollector11table_widthE"></span><span id="DataCollector::table_width__iC"></span><span class="target" id="classDataCollector_1af46c27a47de92d92dcdae6b26a905a44"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">table_width</span></span></span><a class="headerlink" href="#_CPPv4N13DataCollector11table_widthE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The width of the table to print the data. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollector4nameE">
+<span id="_CPPv3N13DataCollector4nameE"></span><span id="_CPPv2N13DataCollector4nameE"></span><span id="DataCollector::name__cCP"></span><span class="target" id="classDataCollector_1a3a9a5033592f72ada429aa20056162b9"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">name</span></span></span><a class="headerlink" href="#_CPPv4N13DataCollector4nameE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The name of the data collector. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N13DataCollector11realizationE">
+<span id="_CPPv3N13DataCollector11realizationE"></span><span id="_CPPv2N13DataCollector11realizationE"></span><span id="DataCollector::realization__unsigned-l"></span><span class="target" id="classDataCollector_1a9ef2887466fe3123aa19ef956a219b96"></span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">realization</span></span></span><a class="headerlink" href="#_CPPv4N13DataCollector11realizationE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The realization number associated with the data collector. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../DataCollector_index.html" class="btn btn-neutral float-left" title="DataCollector Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../DataCollector_submodules.html" class="btn btn-neutral float-right" title="DataCollector Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Lillian Lau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

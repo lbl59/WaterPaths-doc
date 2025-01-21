@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controls Module &mdash; WaterPaths 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Controls Module" href="../Custom/Controls_custom.html" />
+    <link rel="prev" title="Controls Module" href="../Controls_index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            WaterPaths
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuityModels/ContinuityModels_index.html">Continuity Models</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Controls_index.html">Controls</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../Controls_index.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Base implementation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api-reference">API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Custom/Controls_custom.html">Custom Implementation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Controls_submodules.html">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../DataCollector/DataCollector_index.html">Data Collector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Problem/Problem_index.html">Problem Implementations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Simulation/Simulation_index.html">Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SystemComponents/SystemComponents_index.html">System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Utils/Utils_index.html">Utils</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">WaterPaths</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Controls_index.html">Controls Module</a></li>
+      <li class="breadcrumb-item active">Controls Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Controls/Base/Controls_base.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="controls-module">
+<h1>Controls Module<a class="headerlink" href="#controls-module" title="Permalink to this heading"></a></h1>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
+<p>Below is the API reference for base implementation of the <code class="code docutils literal notranslate"><span class="pre">Controls</span></code> module.</p>
+<div class="section" id="base-components">
+<h3>Base Components<a class="headerlink" href="#base-components" title="Permalink to this heading"></a></h3>
+<div class="section" id="controlrules-h">
+<h4>ControlRules.h<a class="headerlink" href="#controlrules-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv412ControlRules">
+<span id="_CPPv312ControlRules"></span><span id="_CPPv212ControlRules"></span><span id="ControlRules"></span><span class="target" id="classControlRules"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ControlRules</span></span></span><a class="headerlink" href="#_CPPv412ControlRules" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;ControlRules.h&gt;</em></div>
+<p>This class is a header-only abstract class that defines the interface for control rules. </p>
+<p>Created by bernardoct on 6/26/17. </p>
+<p>Subclassed by <a class="reference internal" href="../../Utils/Utils_submodules.html#classDataSeries"><span class="std std-ref">DataSeries</span></a>, <a class="reference internal" href="../Controls_submodules.html#classWwtpDischargeRule"><span class="std std-ref">WwtpDischargeRule</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ControlRules22get_dependent_variableEd">
+<span id="_CPPv3N12ControlRules22get_dependent_variableEd"></span><span id="_CPPv2N12ControlRules22get_dependent_variableEd"></span><span id="ControlRules::get_dependent_variable__double"></span><span class="target" id="classControlRules_1a749c604121ebb1df808df9cd957a09f1"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dependent_variable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12ControlRules22get_dependent_variableEd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the double dependent variable for a given independent variable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> – independent variable. </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dependent variable. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ControlRules22get_dependent_variableEi">
+<span id="_CPPv3N12ControlRules22get_dependent_variableEi"></span><span id="_CPPv2N12ControlRules22get_dependent_variableEi"></span><span id="ControlRules::get_dependent_variable__i"></span><span class="target" id="classControlRules_1a56a42b40bf093237929a9c835dc9b772"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dependent_variable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12ControlRules22get_dependent_variableEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the integer dependent variable for a given independent variable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – independent variable. </p></li>
+<li><p><strong>week</strong> – week of the year. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dependent variable. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ControlRules22get_dependent_variableEdi">
+<span id="_CPPv3N12ControlRules22get_dependent_variableEdi"></span><span id="_CPPv2N12ControlRules22get_dependent_variableEdi"></span><span id="ControlRules::get_dependent_variable__double.i"></span><span class="target" id="classControlRules_1a4c5a86844c3d6409bfa0ba2b058f82e7"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dependent_variable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12ControlRules22get_dependent_variableEdi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the double dependent variable for a given independent variable at a specific week.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – independent variable. </p></li>
+<li><p><strong>week</strong> – week of the year. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dependent variable. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N12ControlRules22get_dependent_variableEii">
+<span id="_CPPv3N12ControlRules22get_dependent_variableEii"></span><span id="_CPPv2N12ControlRules22get_dependent_variableEii"></span><span id="ControlRules::get_dependent_variable__i.i"></span><span class="target" id="classControlRules_1a3d4b00d92729c6662473fc25707c0d9b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dependent_variable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N12ControlRules22get_dependent_variableEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Returns the integer dependent variable for a given independent variable at a specific week.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – independent variable. </p></li>
+<li><p><strong>week</strong> – week of the year. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dependent variable. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="minenvflowcontrol-h">
+<h4>MinEnvFlowControl.h<a class="headerlink" href="#minenvflowcontrol-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv417MinEnvFlowControl">
+<span id="_CPPv317MinEnvFlowControl"></span><span id="_CPPv217MinEnvFlowControl"></span><span id="MinEnvFlowControl"></span><span class="target" id="classMinEnvFlowControl"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MinEnvFlowControl</span></span></span><a class="headerlink" href="#_CPPv417MinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;MinEnvFlowControl.h&gt;</em></div>
+<p>This class is a defines the control rules for minimum environmental flow. </p>
+<p>This class represents a minimum environmental flow control object. FIXME: This class is seems to be a duplicate of the <a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref">MinEnvFlowControl</span></a> class.</p>
+<p>Created by bernardoct on 6/28/17.</p>
+<p>Created by bct52 on 6/28/17. </p>
+<p>Subclassed by <a class="reference internal" href="../Custom/Controls_custom.html#classFallsLakeMinEnvFlowControl"><span class="std std-ref">FallsLakeMinEnvFlowControl</span></a>, <a class="reference internal" href="../Controls_submodules.html#classFixedMinEnvFlowControl"><span class="std std-ref">FixedMinEnvFlowControl</span></a>, <a class="reference internal" href="../Controls_submodules.html#classInflowMinEnvFlowControl"><span class="std std-ref">InflowMinEnvFlowControl</span></a>, <a class="reference internal" href="../Custom/Controls_custom.html#classJordanLakeMinEnvFlowControl"><span class="std std-ref">JordanLakeMinEnvFlowControl</span></a>, <a class="reference internal" href="../Controls_submodules.html#classSeasonalMinEnvFlowControl"><span class="std std-ref">SeasonalMinEnvFlowControl</span></a>, <a class="reference internal" href="../Controls_submodules.html#classStorageMinEnvFlowControl"><span class="std std-ref">StorageMinEnvFlowControl</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControl17MinEnvFlowControlEiRK6vectorIiERK6vectorIiEi">
+<span id="_CPPv3N17MinEnvFlowControl17MinEnvFlowControlEiRK6vectorIiERK6vectorIiEi"></span><span id="_CPPv2N17MinEnvFlowControl17MinEnvFlowControlEiRK6vectorIiERK6vectorIiEi"></span><span id="MinEnvFlowControl::MinEnvFlowControl__i.vector:i:CR.vector:i:CR.i"></span><span class="target" id="classMinEnvFlowControl_1a093b292294d85f426c38deb6b7537d81"></span><span class="sig-name descname"><span class="n"><span class="pre">MinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_source_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">aux_water_sources_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">aux_utilities_ids</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControl17MinEnvFlowControlEiRK6vectorIiERK6vectorIiEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object for managing minimum environmental flow controls on specified water sources. Initializes the object with associated water source and utility IDs and a control type. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_source_id</strong> – Integer representing the ID of the primary water source under environmental flow control. </p></li>
+<li><p><strong>water_sources_ids</strong> – Reference to a vector of integers containing the IDs of additional water sources affected by the control. </p></li>
+<li><p><strong>aux_utilities_ids</strong> – Reference to a vector of integers containing the IDs of auxiliary utilities associated with the control. </p></li>
+<li><p><strong>type</strong> – Integer representing the type of environmental flow control. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControl17MinEnvFlowControlERK17MinEnvFlowControl">
+<span id="_CPPv3N17MinEnvFlowControl17MinEnvFlowControlERK17MinEnvFlowControl"></span><span id="_CPPv2N17MinEnvFlowControl17MinEnvFlowControlERK17MinEnvFlowControl"></span><span id="MinEnvFlowControl::MinEnvFlowControl__MinEnvFlowControlCR"></span><span class="target" id="classMinEnvFlowControl_1a0e12d2b8583a539d200acfc5fac795b6"></span><span class="sig-name descname"><span class="n"><span class="pre">MinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N17MinEnvFlowControl17MinEnvFlowControlERK17MinEnvFlowControl" title="MinEnvFlowControl::MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">min_env_control</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControl17MinEnvFlowControlERK17MinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Copy constructor for a <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object. This function copies the attributes from an existing <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>min_env_control</strong> – Reference to the <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object to be copied. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControlD0Ev">
+<span id="_CPPv3N17MinEnvFlowControlD0Ev"></span><span id="_CPPv2N17MinEnvFlowControlD0Ev"></span><span id="MinEnvFlowControl::~MinEnvFlowControl"></span><span class="target" id="classMinEnvFlowControl_1a3a5f44703a5a0cdeb48c948af397137d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~MinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControlD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destructor for the <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> class. Cleans up resources associated with the object. Since the destructor is defaulted, no custom cleanup is required. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControl10getReleaseEi">
+<span id="_CPPv3N17MinEnvFlowControl10getReleaseEi"></span><span id="_CPPv2N17MinEnvFlowControl10getReleaseEi"></span><span id="MinEnvFlowControl::getRelease__i"></span><span class="target" id="classMinEnvFlowControl_1a5de79615852eb0c937dd559a9eb9402d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRelease</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControl10getReleaseEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Get the Release object. This function is a pure virtual function that must be implemented by derived classes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>week</strong> – The week for which the release is requested.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>double </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControl13addComponentsE6vectorIP11WaterSourceE6vectorIP7UtilityE">
+<span id="_CPPv3N17MinEnvFlowControl13addComponentsE6vectorIP11WaterSourceE6vectorIP7UtilityE"></span><span id="_CPPv2N17MinEnvFlowControl13addComponentsE6vectorIP11WaterSourceE6vectorIP7UtilityE"></span><span id="MinEnvFlowControl::addComponents__vector:WaterSourceP:.vector:UtilityP:"></span><span class="target" id="classMinEnvFlowControl_1a4f849e1385f68c9d8f2835889f14a71f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addComponents</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">utilities</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControl13addComponentsE6vectorIP11WaterSourceE6vectorIP7UtilityE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Associates water sources and utilities with the <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object based on their IDs. The associations are established by mapping the provided vectors of water sources and utilities to the corresponding IDs. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_sources</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> objects representing all available water sources. </p></li>
+<li><p><strong>utilities</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../SystemComponents/Utility/Utility_submodules.html#classUtility"><span class="std std-ref"><span class="pre">Utility</span></span></a></code> objects representing all available utilities.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControl14setRealizationEmR6vectorIdE">
+<span id="_CPPv3N17MinEnvFlowControl14setRealizationEmR6vectorIdE"></span><span id="_CPPv2N17MinEnvFlowControl14setRealizationEmR6vectorIdE"></span><span id="MinEnvFlowControl::setRealization__unsigned-l.vector:double:R"></span><span class="target" id="classMinEnvFlowControl_1a630550c31f5c4e1a368289cbd5ab98ee"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealization</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">r</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rdm_factors</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControl14setRealizationEmR6vectorIdE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the realization for the <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object. This function is a pure virtual function that must be implemented by derived classes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> – Unsigned long integer representing the realization ID. </p></li>
+<li><p><strong>rdm_factors</strong> – Reference to a vector of doubles containing the RDM factors to be applied.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControl17water_sources_idsE">
+<span id="_CPPv3N17MinEnvFlowControl17water_sources_idsE"></span><span id="_CPPv2N17MinEnvFlowControl17water_sources_idsE"></span><span id="MinEnvFlowControl::water_sources_ids__vector:i:C"></span><span class="target" id="classMinEnvFlowControl_1a775d6408e5c581754ee4240eea68abdc"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_sources_ids</span></span></span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControl17water_sources_idsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> IDs that require minimum environment flow control. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControl13utilities_idsE">
+<span id="_CPPv3N17MinEnvFlowControl13utilities_idsE"></span><span id="_CPPv2N17MinEnvFlowControl13utilities_idsE"></span><span id="MinEnvFlowControl::utilities_ids__vector:i:C"></span><span class="target" id="classMinEnvFlowControl_1a5c67ab20c181a1d22e4bf94e398451fc"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utilities_ids</span></span></span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControl13utilities_idsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <a class="reference internal" href="../../SystemComponents/Utility/Utility_submodules.html#classUtility"><span class="std std-ref">Utility</span></a> IDs that enable minimum environment flow control. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControl15water_source_idE">
+<span id="_CPPv3N17MinEnvFlowControl15water_source_idE"></span><span id="_CPPv2N17MinEnvFlowControl15water_source_idE"></span><span id="MinEnvFlowControl::water_source_id__iC"></span><span class="target" id="classMinEnvFlowControl_1aada518a047598f386daec1d0358023aa"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_source_id</span></span></span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControl15water_source_idE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The ID of the <a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> object that requires minimum environment flow control. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControl4typeE">
+<span id="_CPPv3N17MinEnvFlowControl4typeE"></span><span id="_CPPv2N17MinEnvFlowControl4typeE"></span><span id="MinEnvFlowControl::type__iC"></span><span class="target" id="classMinEnvFlowControl_1abc3f168cd1ec36ba59e4b8604dfae8ec"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">type</span></span></span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControl4typeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The type of minimum environment flow control. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControl13water_sourcesE">
+<span id="_CPPv3N17MinEnvFlowControl13water_sourcesE"></span><span id="_CPPv2N17MinEnvFlowControl13water_sourcesE"></span><span id="MinEnvFlowControl::water_sources__vector:WaterSourceP:"></span><span class="target" id="classMinEnvFlowControl_1a36b50d0e6887b956051ae53bf5d2e3a9"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_sources</span></span></span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControl13water_sourcesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> objects that require minimum environment flow control. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControl10catchmentsE">
+<span id="_CPPv3N17MinEnvFlowControl10catchmentsE"></span><span id="_CPPv2N17MinEnvFlowControl10catchmentsE"></span><span id="MinEnvFlowControl::catchments__vector:CatchmentP:"></span><span class="target" id="classMinEnvFlowControl_1a99502573f30daf84d9ad7a2f62197b77"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/SystemComponents_catchment.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">catchments</span></span></span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControl10catchmentsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <a class="reference internal" href="../../SystemComponents/SystemComponents_catchment.html#classCatchment"><span class="std std-ref">Catchment</span></a> objects that enable minimum environment flow control. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17MinEnvFlowControl9utilitiesE">
+<span id="_CPPv3N17MinEnvFlowControl9utilitiesE"></span><span id="_CPPv2N17MinEnvFlowControl9utilitiesE"></span><span id="MinEnvFlowControl::utilities__vector:UtilityP:"></span><span class="target" id="classMinEnvFlowControl_1a1a0a309138b35e8199c205efb5fb5f80"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utilities</span></span></span><a class="headerlink" href="#_CPPv4N17MinEnvFlowControl9utilitiesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <a class="reference internal" href="../../SystemComponents/Utility/Utility_submodules.html#classUtility"><span class="std std-ref">Utility</span></a> objects that enable minimum environment flow control. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="minenvironflowcontrol-h">
+<h4>MinEnvironFlowControl.h<a class="headerlink" href="#minenvironflowcontrol-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv421MinEnvironFlowControl">
+<span id="_CPPv321MinEnvironFlowControl"></span><span id="_CPPv221MinEnvironFlowControl"></span><span id="MinEnvironFlowControl"></span><span class="target" id="classMinEnvironFlowControl"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MinEnvironFlowControl</span></span></span><a class="headerlink" href="#_CPPv421MinEnvironFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;MinEnvironFlowControl.h&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21MinEnvironFlowControl21MinEnvironFlowControlEiRK6vectorIiERK6vectorIiEi">
+<span id="_CPPv3N21MinEnvironFlowControl21MinEnvironFlowControlEiRK6vectorIiERK6vectorIiEi"></span><span id="_CPPv2N21MinEnvironFlowControl21MinEnvironFlowControlEiRK6vectorIiERK6vectorIiEi"></span><span id="MinEnvironFlowControl::MinEnvironFlowControl__i.vector:i:CR.vector:i:CR.i"></span><span class="target" id="classMinEnvironFlowControl_1a5b40c3f8da8c63513edb30804bf2ca01"></span><span class="sig-name descname"><span class="n"><span class="pre">MinEnvironFlowControl</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_source_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">aux_water_sources_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">aux_utilities_ids</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21MinEnvironFlowControl21MinEnvironFlowControlEiRK6vectorIiERK6vectorIiEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object for managing minimum environmental flow controls on specified water sources. Initializes the object with associated water source and utility IDs and a control type. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_source_id</strong> – Integer representing the ID of the primary water source under environmental flow control. </p></li>
+<li><p><strong>water_sources_ids</strong> – Reference to a vector of integers containing the IDs of additional water sources affected by the control. </p></li>
+<li><p><strong>aux_utilities_ids</strong> – Reference to a vector of integers containing the IDs of auxiliary utilities associated with the control. </p></li>
+<li><p><strong>type</strong> – Integer representing the type of environmental flow control. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21MinEnvironFlowControl21MinEnvironFlowControlERK21MinEnvironFlowControl">
+<span id="_CPPv3N21MinEnvironFlowControl21MinEnvironFlowControlERK21MinEnvironFlowControl"></span><span id="_CPPv2N21MinEnvironFlowControl21MinEnvironFlowControlERK21MinEnvironFlowControl"></span><span id="MinEnvironFlowControl::MinEnvironFlowControl__MinEnvironFlowControlCR"></span><span class="target" id="classMinEnvironFlowControl_1a274fc5217a2a79d9c488d903708f5e68"></span><span class="sig-name descname"><span class="n"><span class="pre">MinEnvironFlowControl</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N21MinEnvironFlowControl21MinEnvironFlowControlERK21MinEnvironFlowControl" title="MinEnvironFlowControl::MinEnvironFlowControl"><span class="n"><span class="pre">MinEnvironFlowControl</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">min_env_control</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21MinEnvironFlowControl21MinEnvironFlowControlERK21MinEnvironFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Copy constructor for a <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object. This function copies the attributes from an existing <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>min_env_control</strong> – Reference to the <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object to be copied. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21MinEnvironFlowControl10getReleaseEi">
+<span id="_CPPv3N21MinEnvironFlowControl10getReleaseEi"></span><span id="_CPPv2N21MinEnvironFlowControl10getReleaseEi"></span><span id="MinEnvironFlowControl::getRelease__i"></span><span class="target" id="classMinEnvironFlowControl_1ac7357455a533f7e6882cdb1ef303359b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRelease</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N21MinEnvironFlowControl10getReleaseEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Get the Release object. This function is a pure virtual function that must be implemented by derived classes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>week</strong> – The week for which the release is requested.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>double </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21MinEnvironFlowControl13addComponentsE6vectorIP11WaterSourceE6vectorIP7UtilityE">
+<span id="_CPPv3N21MinEnvironFlowControl13addComponentsE6vectorIP11WaterSourceE6vectorIP7UtilityE"></span><span id="_CPPv2N21MinEnvironFlowControl13addComponentsE6vectorIP11WaterSourceE6vectorIP7UtilityE"></span><span id="MinEnvironFlowControl::addComponents__vector:WaterSourceP:.vector:UtilityP:"></span><span class="target" id="classMinEnvironFlowControl_1a9dd9d33661f121dda9704288658ecf7e"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addComponents</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">utilities</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21MinEnvironFlowControl13addComponentsE6vectorIP11WaterSourceE6vectorIP7UtilityE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Associates water sources and utilities with the <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object based on their IDs. The associations are established by mapping the provided vectors of water sources and utilities to the corresponding IDs. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_sources</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref"><span class="pre">WaterSource</span></span></a></code> objects representing all available water sources. </p></li>
+<li><p><strong>utilities</strong> – A vector of pointers to <code class="docutils literal notranslate"><a class="reference internal" href="../../SystemComponents/Utility/Utility_submodules.html#classUtility"><span class="std std-ref"><span class="pre">Utility</span></span></a></code> objects representing all available utilities.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N21MinEnvironFlowControl14setRealizationEjR6vectorIdE">
+<span id="_CPPv3N21MinEnvironFlowControl14setRealizationEjR6vectorIdE"></span><span id="_CPPv2N21MinEnvironFlowControl14setRealizationEjR6vectorIdE"></span><span id="MinEnvironFlowControl::setRealization__unsigned-i.vector:double:R"></span><span class="target" id="classMinEnvironFlowControl_1ae8ba384400c2d4302cefb9ca6eaec3a8"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealization</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">r</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rdm_factors</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N21MinEnvironFlowControl14setRealizationEjR6vectorIdE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the realization for the <code class="docutils literal notranslate"><a class="reference internal" href="#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object. This function is a pure virtual function that must be implemented by derived classes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> – Unsigned long integer representing the realization ID. </p></li>
+<li><p><strong>rdm_factors</strong> – Reference to a vector of doubles containing the RDM factors to be applied.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21MinEnvironFlowControl17water_sources_idsE">
+<span id="_CPPv3N21MinEnvironFlowControl17water_sources_idsE"></span><span id="_CPPv2N21MinEnvironFlowControl17water_sources_idsE"></span><span id="MinEnvironFlowControl::water_sources_ids__vector:i:C"></span><span class="target" id="classMinEnvironFlowControl_1a1544571a77557853d0cc8189bd29f4b3"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_sources_ids</span></span></span><a class="headerlink" href="#_CPPv4N21MinEnvironFlowControl17water_sources_idsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> IDs that require minimum environment flow control. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21MinEnvironFlowControl13utilities_idsE">
+<span id="_CPPv3N21MinEnvironFlowControl13utilities_idsE"></span><span id="_CPPv2N21MinEnvironFlowControl13utilities_idsE"></span><span id="MinEnvironFlowControl::utilities_ids__vector:i:C"></span><span class="target" id="classMinEnvironFlowControl_1ae5acc488f8a0b8aaf7a85cfc8a25bbf9"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utilities_ids</span></span></span><a class="headerlink" href="#_CPPv4N21MinEnvironFlowControl13utilities_idsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <a class="reference internal" href="../../SystemComponents/Utility/Utility_submodules.html#classUtility"><span class="std std-ref">Utility</span></a> IDs that enable minimum environment flow control. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21MinEnvironFlowControl15water_source_idE">
+<span id="_CPPv3N21MinEnvironFlowControl15water_source_idE"></span><span id="_CPPv2N21MinEnvironFlowControl15water_source_idE"></span><span id="MinEnvironFlowControl::water_source_id__iC"></span><span class="target" id="classMinEnvironFlowControl_1a571d4d56086eb752aebb20b2d85fa8e7"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_source_id</span></span></span><a class="headerlink" href="#_CPPv4N21MinEnvironFlowControl15water_source_idE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The ID of the <a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> object that requires minimum environment flow control. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21MinEnvironFlowControl4typeE">
+<span id="_CPPv3N21MinEnvironFlowControl4typeE"></span><span id="_CPPv2N21MinEnvironFlowControl4typeE"></span><span id="MinEnvironFlowControl::type__iC"></span><span class="target" id="classMinEnvironFlowControl_1a1a10a6b5720c934eef698cd72c9d883c"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">type</span></span></span><a class="headerlink" href="#_CPPv4N21MinEnvironFlowControl4typeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The type of minimum environment flow control. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21MinEnvironFlowControl13water_sourcesE">
+<span id="_CPPv3N21MinEnvironFlowControl13water_sourcesE"></span><span id="_CPPv2N21MinEnvironFlowControl13water_sourcesE"></span><span id="MinEnvironFlowControl::water_sources__vector:WaterSourceP:"></span><span class="target" id="classMinEnvironFlowControl_1ac5be281d802ad1de433bed588bb13cfe"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">water_sources</span></span></span><a class="headerlink" href="#_CPPv4N21MinEnvironFlowControl13water_sourcesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#classWaterSource"><span class="std std-ref">WaterSource</span></a> objects that require minimum environment flow control. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21MinEnvironFlowControl10catchmentsE">
+<span id="_CPPv3N21MinEnvironFlowControl10catchmentsE"></span><span id="_CPPv2N21MinEnvironFlowControl10catchmentsE"></span><span id="MinEnvironFlowControl::catchments__vector:CatchmentP:"></span><span class="target" id="classMinEnvironFlowControl_1a3d55c77bc8ba49b14b20eb494868b3ce"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/SystemComponents_catchment.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">catchments</span></span></span><a class="headerlink" href="#_CPPv4N21MinEnvironFlowControl10catchmentsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <a class="reference internal" href="../../SystemComponents/SystemComponents_catchment.html#classCatchment"><span class="std std-ref">Catchment</span></a> objects that enable minimum environment flow control. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N21MinEnvironFlowControl9utilitiesE">
+<span id="_CPPv3N21MinEnvironFlowControl9utilitiesE"></span><span id="_CPPv2N21MinEnvironFlowControl9utilitiesE"></span><span id="MinEnvironFlowControl::utilities__vector:UtilityP:"></span><span class="target" id="classMinEnvironFlowControl_1a6c43408d05901838fa567c8e23a37009"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utilities</span></span></span><a class="headerlink" href="#_CPPv4N21MinEnvironFlowControl9utilitiesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of <a class="reference internal" href="../../SystemComponents/Utility/Utility_submodules.html#classUtility"><span class="std std-ref">Utility</span></a> objects that enable minimum environment flow control. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Controls_index.html" class="btn btn-neutral float-left" title="Controls Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Custom/Controls_custom.html" class="btn btn-neutral float-right" title="Controls Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Lillian Lau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

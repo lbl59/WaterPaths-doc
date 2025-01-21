@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DroughtMitigationInstruments Module &mdash; WaterPaths 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            WaterPaths
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuityModels/ContinuityModels_index.html">Continuity Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Controls/Controls_index.html">Controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DataCollector/DataCollector_index.html">Data Collector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Problem/Problem_index.html">Problem Implementations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Simulation/Simulation_index.html">Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SystemComponents/SystemComponents_index.html">System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Utils/Utils_index.html">Utils</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">WaterPaths</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">DroughtMitigationInstruments Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/DroughtMitigationInstruments/Base/DroughtMitigationInstruments_base.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="droughtmitigationinstruments-module">
+<h1>DroughtMitigationInstruments Module<a class="headerlink" href="#droughtmitigationinstruments-module" title="Permalink to this heading"></a></h1>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
+<p>The base components define foundational functionality of the <code class="code docutils literal notranslate"><span class="pre">DroughtMitigationInstruments</span></code> class for maintaining continuity.</p>
+<div class="section" id="base-components">
+<h3>Base Components<a class="headerlink" href="#base-components" title="Permalink to this heading"></a></h3>
+<div class="section" id="droughtmitigationinstruments-h">
+<h4>DroughtMitigationInstruments.h<a class="headerlink" href="#droughtmitigationinstruments-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv423DroughtMitigationPolicy">
+<span id="_CPPv323DroughtMitigationPolicy"></span><span id="_CPPv223DroughtMitigationPolicy"></span><span id="DroughtMitigationPolicy"></span><span class="target" id="classDroughtMitigationPolicy"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></span><a class="headerlink" href="#_CPPv423DroughtMitigationPolicy" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;DroughtMitigationPolicy.h&gt;</em></div>
+<p>The <code class="docutils literal notranslate"><a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref"><span class="pre">DroughtMitigationPolicy</span></span></a></code> class is an abstract class that defines the interface for drought mitigation policies. Created by bernardo on 2/6/17. </p>
+<p>Subclassed by <a class="reference internal" href="../DroughtMitigationInstruments_submodules.html#classInsuranceStorageToROF"><span class="std std-ref">InsuranceStorageToROF</span></a>, <a class="reference internal" href="../DroughtMitigationInstruments_submodules.html#classRestrictions"><span class="std std-ref">Restrictions</span></a>, <a class="reference internal" href="../DroughtMitigationInstruments_submodules.html#classTransfers"><span class="std std-ref">Transfers</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy23DroughtMitigationPolicyEKiKi">
+<span id="_CPPv3N23DroughtMitigationPolicy23DroughtMitigationPolicyEKiKi"></span><span id="_CPPv2N23DroughtMitigationPolicy23DroughtMitigationPolicyEKiKi"></span><span id="DroughtMitigationPolicy::DroughtMitigationPolicy__iC.iC"></span><span class="target" id="classDroughtMitigationPolicy_1a00cce0117a5bc0c446727e0c0c59a8df"></span><span class="sig-name descname"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">type</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy23DroughtMitigationPolicyEKiKi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a new <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> object with specified attributes. This constructor initializes a <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> object using the provided <code class="docutils literal notranslate"><span class="pre">id</span></code> and <code class="docutils literal notranslate"><span class="pre">type</span></code>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> – The unique identifier for the <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a>. </p></li>
+<li><p><strong>type</strong> – The type of the <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a>. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy11applyPolicyEi">
+<span id="_CPPv3N23DroughtMitigationPolicy11applyPolicyEi"></span><span id="_CPPv2N23DroughtMitigationPolicy11applyPolicyEi"></span><span id="DroughtMitigationPolicy::applyPolicy__i"></span><span class="target" id="classDroughtMitigationPolicy_1a76c1a85eaf7707306fe173b6437cc31d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">applyPolicy</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy11applyPolicyEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Applies the Drought Mitigation Policy for a given week. </p>
+<p>This is a purely virtual function that must be implemented by derived classes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>week</strong> – The week for which to extract the Drought Mitigation Policy.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE">
+<span id="_CPPv3N23DroughtMitigationPolicy19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE"></span><span id="_CPPv2N23DroughtMitigationPolicy19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE"></span><span id="DroughtMitigationPolicy::addSystemComponents__vector:UtilityP:.vector:WaterSourceP:.vector:MinEnvFlowControlP:"></span><span class="target" id="classDroughtMitigationPolicy_1aaab042a79d781afe8e08753b7012372a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addSystemComponents</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">utilities</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_sources</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../Controls/Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_env_flow_controls</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy19addSystemComponentsE6vectorIP7UtilityE6vectorIP11WaterSourceE6vectorIP17MinEnvFlowControlE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Adds system components (utilities, water sources, and minimum environment flow controls) to the Drought Mitigation Policy. </p>
+<p>This function is a purely virtual function that must be implemented by derived classes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utilities</strong> – A vector of pointers to the utilities associated with the Drought Mitigation Policy. </p></li>
+<li><p><strong>water_sources</strong> – A vector of pointers to the water sources associated with the Drought Mitigation Policy. </p></li>
+<li><p><strong>min_env_flow_controls</strong> – A vector of pointers to the minimum environment flow controls associated with the Drought Mitigation Policy.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK23DroughtMitigationPolicy16getUtilities_idsEv">
+<span id="_CPPv3NK23DroughtMitigationPolicy16getUtilities_idsEv"></span><span id="_CPPv2NK23DroughtMitigationPolicy16getUtilities_idsEv"></span><span id="DroughtMitigationPolicy::getUtilities_idsC"></span><span class="target" id="classDroughtMitigationPolicy_1a4c3940352b0092e6a4f673f72693d239"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getUtilities_ids</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK23DroughtMitigationPolicy16getUtilities_idsEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the list of utility IDs associated with this <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a>. This function returns a reference to a vector containing the utility IDs. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A constant reference to a vector of integers representing utility IDs. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicyltEPK23DroughtMitigationPolicy">
+<span id="_CPPv3N23DroughtMitigationPolicyltEPK23DroughtMitigationPolicy"></span><span id="_CPPv2N23DroughtMitigationPolicyltEPK23DroughtMitigationPolicy"></span><span id="DroughtMitigationPolicy::lt-operator__DroughtMitigationPolicyCP"></span><span class="target" id="classDroughtMitigationPolicy_1a0bf7d0fa94377ae6814e529daf0204c4"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&lt;</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv423DroughtMitigationPolicy" title="DroughtMitigationPolicy"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicyltEPK23DroughtMitigationPolicy" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Compares two <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> objects based on their IDs. This operator checks whether the current object’s ID is less than the ID of another <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – A pointer to the <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> object to compare with.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the current object’s ID is less than the ID of the other object; otherwise, <code class="docutils literal notranslate"><span class="pre">false</span></code>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicygtEPK23DroughtMitigationPolicy">
+<span id="_CPPv3N23DroughtMitigationPolicygtEPK23DroughtMitigationPolicy"></span><span id="_CPPv2N23DroughtMitigationPolicygtEPK23DroughtMitigationPolicy"></span><span id="DroughtMitigationPolicy::gt-operator__DroughtMitigationPolicyCP"></span><span class="target" id="classDroughtMitigationPolicy_1a576d3ddb09dc9372898a63c0949d08a6"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">&gt;</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv423DroughtMitigationPolicy" title="DroughtMitigationPolicy"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">other</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicygtEPK23DroughtMitigationPolicy" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Compares two <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> objects based on their IDs. This operator checks whether the current object’s ID is greater than the ID of another <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>other</strong> – A pointer to the <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> object to compare with.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">true</span></code> if the current object’s ID is greater than the ID of the other object; otherwise, <code class="docutils literal notranslate"><span class="pre">false</span></code>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicyD0Ev">
+<span id="_CPPv3N23DroughtMitigationPolicyD0Ev"></span><span id="_CPPv2N23DroughtMitigationPolicyD0Ev"></span><span id="DroughtMitigationPolicy::~DroughtMitigationPolicy"></span><span class="target" id="classDroughtMitigationPolicy_1a9419c433241f36cbf018a5bbe3059d5a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~DroughtMitigationPolicy</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicyD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destructor for the <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> class. This function cleans up resources used by the <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy24setStorage_to_rof_table_ER6vectorI8Matrix2DIdEEi">
+<span id="_CPPv3N23DroughtMitigationPolicy24setStorage_to_rof_table_ER6vectorI8Matrix2DIdEEi"></span><span id="_CPPv2N23DroughtMitigationPolicy24setStorage_to_rof_table_ER6vectorI8Matrix2DIdEEi"></span><span id="DroughtMitigationPolicy::setStorage_to_rof_table___vector:Matrix2D:double::R.i"></span><span class="target" id="classDroughtMitigationPolicy_1a75710a6ab73213223222b3472f9251c0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setStorage_to_rof_table_</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../Utils/Utils_submodules.html#_CPPv4I0E8Matrix2D" title="Matrix2D"><span class="n"><span class="pre">Matrix2D</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">storage_to_rof_table_</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">use_imported_tables</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy24setStorage_to_rof_table_ER6vectorI8Matrix2DIdEEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the storage-to-ROF table and configuration for imported tables. This function updates the reference to the storage-to-ROF table and specifies whether imported tables are used. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>storage_to_rof_table_</strong> – A reference to a vector of <code class="docutils literal notranslate"><a class="reference internal" href="../../Utils/Utils_submodules.html#classMatrix2D"><span class="std std-ref"><span class="pre">Matrix2D</span></span></a><span class="pre">&lt;double&gt;</span></code> representing the storage-to-ROF table. </p></li>
+<li><p><strong>use_imported_tables</strong> – An integer flag indicating whether imported tables should be used. This is compared with <code class="docutils literal notranslate"><span class="pre">IMPORT_ROF_TABLES</span></code>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE">
+<span id="_CPPv3N23DroughtMitigationPolicy14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE"></span><span id="_CPPv2N23DroughtMitigationPolicy14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE"></span><span id="DroughtMitigationPolicy::setRealization__unsigned-l.vector:double:R.vector:double:R.vector:double:R"></span><span class="target" id="classDroughtMitigationPolicy_1a5d2033543cacca1e412eebef5106eab4"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealization</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">realization_id</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">utilities_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">water_sources_rdm</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">policy_rdm</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy14setRealizationEmR6vectorIdER6vectorIdER6vectorIdE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the risk-of-failure (ROF) value for a specified utility, week, and tier. This function accesses the storage-to-ROF table to fetch the corresponding ROF value based on the input parameters. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utility_id</strong> – The ID of the utility for which the ROF value is to be retrieved. </p></li>
+<li><p><strong>week</strong> – The week for which the ROF value is needed. </p></li>
+<li><p><strong>tier</strong> – The ROF tier required.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The ROF value as a <code class="docutils literal notranslate"><span class="pre">double</span></code> for the specified utility, week, and tier. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy2idE">
+<span id="_CPPv3N23DroughtMitigationPolicy2idE"></span><span id="_CPPv2N23DroughtMitigationPolicy2idE"></span><span id="DroughtMitigationPolicy::id__iC"></span><span class="target" id="classDroughtMitigationPolicy_1abf3ed19ed98e0d74dc9ae24094be640b"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">id</span></span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy2idE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The unique ID of the <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> object. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy4typeE">
+<span id="_CPPv3N23DroughtMitigationPolicy4typeE"></span><span id="_CPPv2N23DroughtMitigationPolicy4typeE"></span><span id="DroughtMitigationPolicy::type__iC"></span><span class="target" id="classDroughtMitigationPolicy_1aaea5016d1462bec889cb8df85aececc6"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">type</span></span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy4typeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The type of <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> object. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy23DroughtMitigationPolicyERK23DroughtMitigationPolicy">
+<span id="_CPPv3N23DroughtMitigationPolicy23DroughtMitigationPolicyERK23DroughtMitigationPolicy"></span><span id="_CPPv2N23DroughtMitigationPolicy23DroughtMitigationPolicyERK23DroughtMitigationPolicy"></span><span id="DroughtMitigationPolicy::DroughtMitigationPolicy__DroughtMitigationPolicyCR"></span><span class="target" id="classDroughtMitigationPolicy_1aaf0715876ce33a75c7db92e50523ea0c"></span><span class="sig-name descname"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N23DroughtMitigationPolicy23DroughtMitigationPolicyERK23DroughtMitigationPolicy" title="DroughtMitigationPolicy::DroughtMitigationPolicy"><span class="n"><span class="pre">DroughtMitigationPolicy</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">drought_mitigation_policy</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy23DroughtMitigationPolicyERK23DroughtMitigationPolicy" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a new <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> object by copying an existing one. This function initializes a new <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> object by copying the <code class="docutils literal notranslate"><span class="pre">id</span></code> and <code class="docutils literal notranslate"><span class="pre">type</span></code> attributes from another instance. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>drought_mitigation_policy</strong> – The <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> object to be copied.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None. This is a constructor. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy26getRofFromRealizationTableEiii">
+<span id="_CPPv3N23DroughtMitigationPolicy26getRofFromRealizationTableEiii"></span><span id="_CPPv2N23DroughtMitigationPolicy26getRofFromRealizationTableEiii"></span><span id="DroughtMitigationPolicy::getRofFromRealizationTable__i.i.i"></span><span class="target" id="classDroughtMitigationPolicy_1a685ce7eacb01cb262d7e5245a736aa38"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRofFromRealizationTable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">utility_id</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">tier</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy26getRofFromRealizationTableEiii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the risk-of-failure (ROF) value for a given utility, week, and tier from a given realization. This function accesses the storage-to-ROF table to fetch the corresponding ROF value. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>utility_id</strong> – The ID of the utility for which the ROF value is to be retrieved. </p></li>
+<li><p><strong>week</strong> – The week for which the ROF value is needed. </p></li>
+<li><p><strong>tier</strong> – The tier for which the ROF value is required.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The ROF value as a double for the specified utility, week, and tier from a given realization. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy13utilities_idsE">
+<span id="_CPPv3N23DroughtMitigationPolicy13utilities_idsE"></span><span id="_CPPv2N23DroughtMitigationPolicy13utilities_idsE"></span><span id="DroughtMitigationPolicy::utilities_ids__vector:i:"></span><span class="target" id="classDroughtMitigationPolicy_1ad19fbc5a9fdf17ed50c0ba0b99d47eca"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">utilities_ids</span></span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy13utilities_idsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of the utility IDs associated with the <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy21realization_utilitiesE">
+<span id="_CPPv3N23DroughtMitigationPolicy21realization_utilitiesE"></span><span id="_CPPv2N23DroughtMitigationPolicy21realization_utilitiesE"></span><span id="DroughtMitigationPolicy::realization_utilities__vector:UtilityP:"></span><span class="target" id="classDroughtMitigationPolicy_1af6e5787a58017804d8598effbeeaba8e"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/Utility/Utility_submodules.html#_CPPv47Utility" title="Utility"><span class="n"><span class="pre">Utility</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">realization_utilities</span></span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy21realization_utilitiesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of pointers to the utilities associated with the <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> in a given realization. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy25realization_water_sourcesE">
+<span id="_CPPv3N23DroughtMitigationPolicy25realization_water_sourcesE"></span><span id="_CPPv2N23DroughtMitigationPolicy25realization_water_sourcesE"></span><span id="DroughtMitigationPolicy::realization_water_sources__vector:WaterSourceP:"></span><span class="target" id="classDroughtMitigationPolicy_1ae2104e99c421513902ba66d012484c0e"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../SystemComponents/WaterSources/Base/WaterSources_base.html#_CPPv411WaterSource" title="WaterSource"><span class="n"><span class="pre">WaterSource</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">realization_water_sources</span></span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy25realization_water_sourcesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of pointers to the water sources associated with the <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> in a given realization. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy33realization_min_env_flow_controlsE">
+<span id="_CPPv3N23DroughtMitigationPolicy33realization_min_env_flow_controlsE"></span><span id="_CPPv2N23DroughtMitigationPolicy33realization_min_env_flow_controlsE"></span><span id="DroughtMitigationPolicy::realization_min_env_flow_controls__vector:MinEnvFlowControlP:"></span><span class="target" id="classDroughtMitigationPolicy_1af583979405bc5d530ee576df8a6e9324"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../Controls/Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><span class="p"><span class="pre">*</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">realization_min_env_flow_controls</span></span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy33realization_min_env_flow_controlsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of pointers to the MinEnvFlowControls associated with the <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> in a given realization. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy15rdm_factors_allE">
+<span id="_CPPv3N23DroughtMitigationPolicy15rdm_factors_allE"></span><span id="_CPPv2N23DroughtMitigationPolicy15rdm_factors_allE"></span><span id="DroughtMitigationPolicy::rdm_factors_all__vector:vector:double::P"></span><span class="target" id="classDroughtMitigationPolicy_1a4c5a2dc2aa3a1c7550cdb17045e1fef3"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">rdm_factors_all</span></span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy15rdm_factors_allE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of pointers to the RDM factors for all utilities associated with the <a class="reference internal" href="#classDroughtMitigationPolicy"><span class="std std-ref">DroughtMitigationPolicy</span></a> in a given realization. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy23rdm_factors_realizationE">
+<span id="_CPPv3N23DroughtMitigationPolicy23rdm_factors_realizationE"></span><span id="_CPPv2N23DroughtMitigationPolicy23rdm_factors_realizationE"></span><span id="DroughtMitigationPolicy::rdm_factors_realization__doubleP"></span><span class="target" id="classDroughtMitigationPolicy_1abef5c917bbc076514fe61bfebbd0e4fc"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">rdm_factors_realization</span></span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy23rdm_factors_realizationE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A pointer to the RDM factors for the current realization. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy19use_imported_tablesE">
+<span id="_CPPv3N23DroughtMitigationPolicy19use_imported_tablesE"></span><span id="_CPPv2N23DroughtMitigationPolicy19use_imported_tablesE"></span><span id="DroughtMitigationPolicy::use_imported_tables__b"></span><span class="target" id="classDroughtMitigationPolicy_1ace2a2425f6608c34a3189c11445978a1"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">use_imported_tables</span></span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy19use_imported_tablesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A boolean flag indicating whether to use imported ROF tables. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23DroughtMitigationPolicy21storage_to_rof_table_E">
+<span id="_CPPv3N23DroughtMitigationPolicy21storage_to_rof_table_E"></span><span id="_CPPv2N23DroughtMitigationPolicy21storage_to_rof_table_E"></span><span id="DroughtMitigationPolicy::storage_to_rof_table___vector:Matrix2D:double::P"></span><span class="target" id="classDroughtMitigationPolicy_1aa7d724adcd8ebcd5641de13b8f08098c"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="../../Utils/Utils_submodules.html#_CPPv4I0E8Matrix2D" title="Matrix2D"><span class="n"><span class="pre">Matrix2D</span></span></a><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">storage_to_rof_table_</span></span></span><a class="headerlink" href="#_CPPv4N23DroughtMitigationPolicy21storage_to_rof_table_E" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of 2D matrices that maps the storage of a utility to the ROF of that utility. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Lillian Lau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

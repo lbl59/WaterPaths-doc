@@ -90,7 +90,6 @@ public:
      * 
      * @return A reference to the current `JointWTP` object after the assignment.
      * 
-     * @throws None.
      */
     JointWTP &operator=(const JointWTP &joint_water_treatment_plant);
 

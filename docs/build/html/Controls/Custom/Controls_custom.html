@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controls Module &mdash; WaterPaths 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Controls Module" href="../Controls_submodules.html" />
+    <link rel="prev" title="Controls Module" href="../Base/Controls_base.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            WaterPaths
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuityModels/ContinuityModels_index.html">Continuity Models</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Controls_index.html">Controls</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../Controls_index.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Base/Controls_base.html">Base implementation</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Custom Implementation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api-reference">API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Controls_submodules.html">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../DataCollector/DataCollector_index.html">Data Collector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Problem/Problem_index.html">Problem Implementations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Simulation/Simulation_index.html">Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SystemComponents/SystemComponents_index.html">System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Utils/Utils_index.html">Utils</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">WaterPaths</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Controls_index.html">Controls Module</a></li>
+      <li class="breadcrumb-item active">Controls Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Controls/Custom/Controls_custom.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="controls-module">
+<h1>Controls Module<a class="headerlink" href="#controls-module" title="Permalink to this heading"></a></h1>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
+<p>Below is the API reference for custom implementation of the <code class="code docutils literal notranslate"><span class="pre">Controls</span></code> module (see the documentation page <a class="reference internal" href="../Controls_index.html"><span class="doc">here</span></a>).</p>
+<div class="section" id="custom-components">
+<h3>Custom Components<a class="headerlink" href="#custom-components" title="Permalink to this heading"></a></h3>
+<div class="section" id="fallslakeminenvflowcontrol-h">
+<h4>FallsLakeMinEnvFlowControl.h<a class="headerlink" href="#fallslakeminenvflowcontrol-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv426FallsLakeMinEnvFlowControl">
+<span id="_CPPv326FallsLakeMinEnvFlowControl"></span><span id="_CPPv226FallsLakeMinEnvFlowControl"></span><span id="FallsLakeMinEnvFlowControl"></span><span class="target" id="classFallsLakeMinEnvFlowControl"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FallsLakeMinEnvFlowControl</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="../Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><a class="headerlink" href="#_CPPv426FallsLakeMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;FallsLakeMinEnvFlowControl.h&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26FallsLakeMinEnvFlowControl26FallsLakeMinEnvFlowControlEii6vectorIiE6vectorIdE6vectorIdER9Catchment">
+<span id="_CPPv3N26FallsLakeMinEnvFlowControl26FallsLakeMinEnvFlowControlEii6vectorIiE6vectorIdE6vectorIdER9Catchment"></span><span id="_CPPv2N26FallsLakeMinEnvFlowControl26FallsLakeMinEnvFlowControlEii6vectorIiE6vectorIdE6vectorIdER9Catchment"></span><span id="FallsLakeMinEnvFlowControl::FallsLakeMinEnvFlowControl__i.i.vector:i:.vector:double:.vector:double:.CatchmentR"></span><span class="target" id="classFallsLakeMinEnvFlowControl_1a9cef248e2fd8a194c92454a79398a6a6"></span><span class="sig-name descname"><span class="n"><span class="pre">FallsLakeMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_source_id</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">neuse_river_intake_id</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week_interval</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">base_min_env_flows</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">base_gage_flows</span></span>, <a class="reference internal" href="../../SystemComponents/SystemComponents_catchment.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">crabtree</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N26FallsLakeMinEnvFlowControl26FallsLakeMinEnvFlowControlEii6vectorIiE6vectorIdE6vectorIdER9Catchment" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26FallsLakeMinEnvFlowControl26FallsLakeMinEnvFlowControlERK26FallsLakeMinEnvFlowControl">
+<span id="_CPPv3N26FallsLakeMinEnvFlowControl26FallsLakeMinEnvFlowControlERK26FallsLakeMinEnvFlowControl"></span><span id="_CPPv2N26FallsLakeMinEnvFlowControl26FallsLakeMinEnvFlowControlERK26FallsLakeMinEnvFlowControl"></span><span id="FallsLakeMinEnvFlowControl::FallsLakeMinEnvFlowControl__FallsLakeMinEnvFlowControlCR"></span><span class="target" id="classFallsLakeMinEnvFlowControl_1a0ac46bcd8bea2e6e56824b5398129418"></span><span class="sig-name descname"><span class="n"><span class="pre">FallsLakeMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N26FallsLakeMinEnvFlowControl26FallsLakeMinEnvFlowControlERK26FallsLakeMinEnvFlowControl" title="FallsLakeMinEnvFlowControl::FallsLakeMinEnvFlowControl"><span class="n"><span class="pre">FallsLakeMinEnvFlowControl</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">min_env_control</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N26FallsLakeMinEnvFlowControl26FallsLakeMinEnvFlowControlERK26FallsLakeMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26FallsLakeMinEnvFlowControl10getReleaseEi">
+<span id="_CPPv3N26FallsLakeMinEnvFlowControl10getReleaseEi"></span><span id="_CPPv2N26FallsLakeMinEnvFlowControl10getReleaseEi"></span><span id="FallsLakeMinEnvFlowControl::getRelease__i"></span><span class="target" id="classFallsLakeMinEnvFlowControl_1a50453b443fb6e5869fcfc9a183f42b2f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRelease</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N26FallsLakeMinEnvFlowControl10getReleaseEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Get the Release object. This function is a pure virtual function that must be implemented by derived classes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>week</strong> – The week for which the release is requested.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>double </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26FallsLakeMinEnvFlowControl14setRealizationEmR6vectorIdE">
+<span id="_CPPv3N26FallsLakeMinEnvFlowControl14setRealizationEmR6vectorIdE"></span><span id="_CPPv2N26FallsLakeMinEnvFlowControl14setRealizationEmR6vectorIdE"></span><span id="FallsLakeMinEnvFlowControl::setRealization__unsigned-l.vector:double:R"></span><span class="target" id="classFallsLakeMinEnvFlowControl_1a6ea8a5e9ff9179066cceb77d896f3f97"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealization</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">r</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rdm_factors</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N26FallsLakeMinEnvFlowControl14setRealizationEmR6vectorIdE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the realization for the <code class="docutils literal notranslate"><a class="reference internal" href="../Base/Controls_base.html#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object. This function is a pure virtual function that must be implemented by derived classes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> – Unsigned long integer representing the realization ID. </p></li>
+<li><p><strong>rdm_factors</strong> – Reference to a vector of doubles containing the RDM factors to be applied.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N26FallsLakeMinEnvFlowControlD0Ev">
+<span id="_CPPv3N26FallsLakeMinEnvFlowControlD0Ev"></span><span id="_CPPv2N26FallsLakeMinEnvFlowControlD0Ev"></span><span id="FallsLakeMinEnvFlowControl::~FallsLakeMinEnvFlowControl"></span><span class="target" id="classFallsLakeMinEnvFlowControl_1a747aefedd1e590007206ef08145be351"></span><span class="sig-name descname"><span class="n"><span class="pre">~FallsLakeMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N26FallsLakeMinEnvFlowControlD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26FallsLakeMinEnvFlowControl13week_intervalE">
+<span id="_CPPv3N26FallsLakeMinEnvFlowControl13week_intervalE"></span><span id="_CPPv2N26FallsLakeMinEnvFlowControl13week_intervalE"></span><span id="FallsLakeMinEnvFlowControl::week_interval__vector:i:C"></span><span class="target" id="classFallsLakeMinEnvFlowControl_1a382dbd49bfc62c5e6ba2a56cfb7682e3"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">week_interval</span></span></span><a class="headerlink" href="#_CPPv4N26FallsLakeMinEnvFlowControl13week_intervalE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26FallsLakeMinEnvFlowControl18base_min_env_flowsE">
+<span id="_CPPv3N26FallsLakeMinEnvFlowControl18base_min_env_flowsE"></span><span id="_CPPv2N26FallsLakeMinEnvFlowControl18base_min_env_flowsE"></span><span id="FallsLakeMinEnvFlowControl::base_min_env_flows__vector:double:C"></span><span class="target" id="classFallsLakeMinEnvFlowControl_1a7780ba93a2ea312c6f48ff741f6f8291"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">base_min_env_flows</span></span></span><a class="headerlink" href="#_CPPv4N26FallsLakeMinEnvFlowControl18base_min_env_flowsE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26FallsLakeMinEnvFlowControl19base_min_gage_flowsE">
+<span id="_CPPv3N26FallsLakeMinEnvFlowControl19base_min_gage_flowsE"></span><span id="_CPPv2N26FallsLakeMinEnvFlowControl19base_min_gage_flowsE"></span><span id="FallsLakeMinEnvFlowControl::base_min_gage_flows__vector:double:C"></span><span class="target" id="classFallsLakeMinEnvFlowControl_1a0250acb652ec1fd55423cc3702f3f6a0"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">base_min_gage_flows</span></span></span><a class="headerlink" href="#_CPPv4N26FallsLakeMinEnvFlowControl19base_min_gage_flowsE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26FallsLakeMinEnvFlowControl21neuse_river_intake_idE">
+<span id="_CPPv3N26FallsLakeMinEnvFlowControl21neuse_river_intake_idE"></span><span id="_CPPv2N26FallsLakeMinEnvFlowControl21neuse_river_intake_idE"></span><span id="FallsLakeMinEnvFlowControl::neuse_river_intake_id__iC"></span><span class="target" id="classFallsLakeMinEnvFlowControl_1aa0e54d145d945d9b8c462294187e7fb5"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">neuse_river_intake_id</span></span></span><a class="headerlink" href="#_CPPv4N26FallsLakeMinEnvFlowControl21neuse_river_intake_idE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N26FallsLakeMinEnvFlowControl8crabtreeE">
+<span id="_CPPv3N26FallsLakeMinEnvFlowControl8crabtreeE"></span><span id="_CPPv2N26FallsLakeMinEnvFlowControl8crabtreeE"></span><span id="FallsLakeMinEnvFlowControl::crabtree__Catchment"></span><span class="target" id="classFallsLakeMinEnvFlowControl_1af12d738a62d604cd01ee48bfc6c73c6d"></span><a class="reference internal" href="../../SystemComponents/SystemComponents_catchment.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">crabtree</span></span></span><a class="headerlink" href="#_CPPv4N26FallsLakeMinEnvFlowControl8crabtreeE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="jordanlakeminenvflowcontrol-h">
+<h4>JordanLakeMinEnvFlowControl.h<a class="headerlink" href="#jordanlakeminenvflowcontrol-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv427JordanLakeMinEnvFlowControl">
+<span id="_CPPv327JordanLakeMinEnvFlowControl"></span><span id="_CPPv227JordanLakeMinEnvFlowControl"></span><span id="JordanLakeMinEnvFlowControl"></span><span class="target" id="classJordanLakeMinEnvFlowControl"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">JordanLakeMinEnvFlowControl</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="../Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><a class="headerlink" href="#_CPPv427JordanLakeMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;JordanLakeMinEnvFlowControl.h&gt;</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl27JordanLakeMinEnvFlowControlEiR9Catchmentdddddddd">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl27JordanLakeMinEnvFlowControlEiR9Catchmentdddddddd"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl27JordanLakeMinEnvFlowControlEiR9Catchmentdddddddd"></span><span id="JordanLakeMinEnvFlowControl::JordanLakeMinEnvFlowControl__i.CatchmentR.double.double.double.double.double.double.double.double"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1ac8e2b846b66115c2db3bc4ea3ed44297"></span><span class="sig-name descname"><span class="n"><span class="pre">JordanLakeMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">jordan_lake_id</span></span>, <a class="reference internal" href="../../SystemComponents/SystemComponents_catchment.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">lillington_gage_catchment</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rel02</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rel04</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">rel06_up</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_rel_llt06</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_rel_llt08</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min_rel_llt08_up</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">quality_capacity</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">supply_capacity</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl27JordanLakeMinEnvFlowControlEiR9Catchmentdddddddd" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl27JordanLakeMinEnvFlowControlERK27JordanLakeMinEnvFlowControl">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl27JordanLakeMinEnvFlowControlERK27JordanLakeMinEnvFlowControl"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl27JordanLakeMinEnvFlowControlERK27JordanLakeMinEnvFlowControl"></span><span id="JordanLakeMinEnvFlowControl::JordanLakeMinEnvFlowControl__JordanLakeMinEnvFlowControlCR"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1a44dfb259a9b61886b9acfcb3bec96c0f"></span><span class="sig-name descname"><span class="n"><span class="pre">JordanLakeMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N27JordanLakeMinEnvFlowControl27JordanLakeMinEnvFlowControlERK27JordanLakeMinEnvFlowControl" title="JordanLakeMinEnvFlowControl::JordanLakeMinEnvFlowControl"><span class="n"><span class="pre">JordanLakeMinEnvFlowControl</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">jl_min_flow_control</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl27JordanLakeMinEnvFlowControlERK27JordanLakeMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControlaSERK27JordanLakeMinEnvFlowControl">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControlaSERK27JordanLakeMinEnvFlowControl"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControlaSERK27JordanLakeMinEnvFlowControl"></span><span id="JordanLakeMinEnvFlowControl::assign-operator__JordanLakeMinEnvFlowControlCR"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1a1ac6bbacecf928296ff5f86ddbf0d973"></span><a class="reference internal" href="#_CPPv427JordanLakeMinEnvFlowControl" title="JordanLakeMinEnvFlowControl"><span class="n"><span class="pre">JordanLakeMinEnvFlowControl</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv427JordanLakeMinEnvFlowControl" title="JordanLakeMinEnvFlowControl"><span class="n"><span class="pre">JordanLakeMinEnvFlowControl</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">jl_min_flow_control</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControlaSERK27JordanLakeMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl10getReleaseEi">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl10getReleaseEi"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl10getReleaseEi"></span><span id="JordanLakeMinEnvFlowControl::getRelease__i"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1a5c2456c26fa141824c247cd15bf5c57d"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRelease</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl10getReleaseEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Get the Release object. This function is a pure virtual function that must be implemented by derived classes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>week</strong> – The week for which the release is requested.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>double </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl14setRealizationEmR6vectorIdE">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl14setRealizationEmR6vectorIdE"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl14setRealizationEmR6vectorIdE"></span><span id="JordanLakeMinEnvFlowControl::setRealization__unsigned-l.vector:double:R"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1aa1e816121060212f3dbeffda90a7baec"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealization</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">r</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rdm_factors</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl14setRealizationEmR6vectorIdE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the realization for the <code class="docutils literal notranslate"><a class="reference internal" href="../Base/Controls_base.html#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> object. This function is a pure virtual function that must be implemented by derived classes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> – Unsigned long integer representing the realization ID. </p></li>
+<li><p><strong>rdm_factors</strong> – Reference to a vector of doubles containing the RDM factors to be applied.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControlD0Ev">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControlD0Ev"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControlD0Ev"></span><span id="JordanLakeMinEnvFlowControl::~JordanLakeMinEnvFlowControl"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1a97c9cefc5e56d0bee8075a7c1616143e"></span><span class="sig-name descname"><span class="n"><span class="pre">~JordanLakeMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControlD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl25lillington_gage_catchmentE">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl25lillington_gage_catchmentE"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl25lillington_gage_catchmentE"></span><span id="JordanLakeMinEnvFlowControl::lillington_gage_catchment__Catchment"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1a7f219e0a63dd4171df6ce7954f32904f"></span><a class="reference internal" href="../../SystemComponents/SystemComponents_catchment.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">lillington_gage_catchment</span></span></span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl25lillington_gage_catchmentE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl5rel02E">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl5rel02E"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl5rel02E"></span><span id="JordanLakeMinEnvFlowControl::rel02__double"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1ad093178e42f3ceb287d22a961c47f186"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rel02</span></span></span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl5rel02E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl5rel04E">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl5rel04E"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl5rel04E"></span><span id="JordanLakeMinEnvFlowControl::rel04__double"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1ada2755ec609acff7761acf707daf798c"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rel04</span></span></span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl5rel04E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl8rel06_upE">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl8rel06_upE"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl8rel06_upE"></span><span id="JordanLakeMinEnvFlowControl::rel06_up__double"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1ad1dd5a5959f7f43f966a53002dec1f2b"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">rel06_up</span></span></span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl8rel06_upE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl13min_rel_llt06E">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl13min_rel_llt06E"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl13min_rel_llt06E"></span><span id="JordanLakeMinEnvFlowControl::min_rel_llt06__double"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1a3defdfb0e3c8bb9f222b086cb93b7852"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_rel_llt06</span></span></span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl13min_rel_llt06E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl13min_rel_llt08E">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl13min_rel_llt08E"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl13min_rel_llt08E"></span><span id="JordanLakeMinEnvFlowControl::min_rel_llt08__double"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1a3cf68a0987b00668e3b8e582830f05db"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_rel_llt08</span></span></span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl13min_rel_llt08E" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl16min_rel_llt08_upE">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl16min_rel_llt08_upE"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl16min_rel_llt08_upE"></span><span id="JordanLakeMinEnvFlowControl::min_rel_llt08_up__double"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1ad6367768fdfff0af0d347ae2ca7e1821"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">min_rel_llt08_up</span></span></span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl16min_rel_llt08_upE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl16quality_capacityE">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl16quality_capacityE"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl16quality_capacityE"></span><span id="JordanLakeMinEnvFlowControl::quality_capacity__double"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1a671f40efb6f6d3ada453d5d261fc7ebc"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">quality_capacity</span></span></span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl16quality_capacityE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N27JordanLakeMinEnvFlowControl15supply_capacityE">
+<span id="_CPPv3N27JordanLakeMinEnvFlowControl15supply_capacityE"></span><span id="_CPPv2N27JordanLakeMinEnvFlowControl15supply_capacityE"></span><span id="JordanLakeMinEnvFlowControl::supply_capacity__double"></span><span class="target" id="classJordanLakeMinEnvFlowControl_1a028ed65d1a68c0462334d949ccf19ce2"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">supply_capacity</span></span></span><a class="headerlink" href="#_CPPv4N27JordanLakeMinEnvFlowControl15supply_capacityE" title="Permalink to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Base/Controls_base.html" class="btn btn-neutral float-left" title="Controls Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Controls_submodules.html" class="btn btn-neutral float-right" title="Controls Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Lillian Lau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

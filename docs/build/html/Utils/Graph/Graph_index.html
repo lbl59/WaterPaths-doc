@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graph Module &mdash; WaterPaths 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="QPSolver Module" href="../QPSolver/QPSolver_index.html" />
+    <link rel="prev" title="Utils Module" href="../Utils_index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            WaterPaths
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../ContinuityModels/ContinuityModels_index.html">Continuity Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Controls/Controls_index.html">Controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../DataCollector/DataCollector_index.html">Data Collector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Problem/Problem_index.html">Problem Implementations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../Simulation/Simulation_index.html">Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../SystemComponents/SystemComponents_index.html">System Components</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Utils_index.html">Utils</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../Utils_index.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Graph</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#graph-components">Graph Components</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../QPSolver/QPSolver_index.html">Quadratic Programming Solver</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../Utils_submodules.html">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">WaterPaths</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../Utils_index.html">Utils Module</a></li>
+      <li class="breadcrumb-item active">Graph Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/Utils/Graph/Graph_index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="graph-module">
+<h1>Graph Module<a class="headerlink" href="#graph-module" title="Permalink to this heading"></a></h1>
+<p>The <code class="code docutils literal notranslate"><span class="pre">Graph</span></code> submodule contains classes and functions related defining the system network. It is a submodule of the <a class="reference internal" href="../Utils_index.html"><span class="doc">Utils</span></a> module.</p>
+<div class="section" id="graph-components">
+<h2>Graph Components<a class="headerlink" href="#graph-components" title="Permalink to this heading"></a></h2>
+<div class="section" id="graph-h">
+<h3>Graph.h<a class="headerlink" href="#graph-h" title="Permalink to this heading"></a></h3>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv45Graph">
+<span id="_CPPv35Graph"></span><span id="_CPPv25Graph"></span><span id="Graph"></span><span class="target" id="classGraph"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Graph</span></span></span><a class="headerlink" href="#_CPPv45Graph" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Graph.h&gt;</em></div>
+<p>A C++ program to print topological sorting of a graph using indegrees. </p>
+<p>Created by bernardo on 2/2/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Graph5GraphEi">
+<span id="_CPPv3N5Graph5GraphEi"></span><span id="_CPPv2N5Graph5GraphEi"></span><span id="Graph::Graph__i"></span><span class="target" id="classGraph_1af3ff6b295df8bf3bee0bafd7c7d56915"></span><span class="sig-name descname"><span class="n"><span class="pre">Graph</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">V</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Graph5GraphEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a graph with a specified number of vertices. This constructor initializes the graph’s adjacency list and downstream sources structure. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>V</strong> – The number of vertices in the graph. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Graph5GraphEv">
+<span id="_CPPv3N5Graph5GraphEv"></span><span id="_CPPv2N5Graph5GraphEv"></span><span id="Graph::Graph"></span><span class="target" id="classGraph_1ae4c72b8ac4d693c49800a4c7e273654f"></span><span class="sig-name descname"><span class="n"><span class="pre">Graph</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Graph5GraphEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Base constructor for a new <a class="reference internal" href="#classGraph"><span class="std std-ref">Graph</span></a> object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5Graph20getTopological_orderEv">
+<span id="_CPPv3NK5Graph20getTopological_orderEv"></span><span id="_CPPv2NK5Graph20getTopological_orderEv"></span><span id="Graph::getTopological_orderC"></span><span class="target" id="classGraph_1a838b34813d6d5ddcfc9e452b357d98bd"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getTopological_order</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5Graph20getTopological_orderEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the topological order of the graph. This function returns the precomputed topological order of the water sources (vertices) in the graph. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A constant vector containing the topological order of the vertices. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Graph7addEdgeEii">
+<span id="_CPPv3N5Graph7addEdgeEii"></span><span id="_CPPv2N5Graph7addEdgeEii"></span><span id="Graph::addEdge__i.i"></span><span class="target" id="classGraph_1ad8c10df34357b2cd865c81e0c4f0bd8c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addEdge</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">u</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Graph7addEdgeEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Adds a directed edge (stream/pipes) to the graph and updates related structures. This function adds an connection from vertex <code class="docutils literal notranslate"><span class="pre">u</span></code> to vertex <code class="docutils literal notranslate"><span class="pre">v</span></code>, recalculates the topological order, updates upstream sources for all vertices, and adjusts the continuity matrix transpose. </p>
+<p><div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#classGraph_1a6f175234dc3c87150a53eab5c4e586ef"><span class="std std-ref">addEdgeToEdgesList</span></a>, <a class="reference internal" href="#classGraph_1a915f9d58884a00083bb6e5a256141fae"><span class="std std-ref">topologicalSort</span></a>, <a class="reference internal" href="#classGraph_1a95b0b6a7689c519d38e820cc3f86fc70"><span class="std std-ref">findUpstreamSources</span></a></p>
+</div>
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>u</strong> – The source vertex of the edge. </p></li>
+<li><p><strong>v</strong> – The destination vertex of the edge.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5Graph19getUpstream_sourcesEv">
+<span id="_CPPv3NK5Graph19getUpstream_sourcesEv"></span><span id="_CPPv2NK5Graph19getUpstream_sourcesEv"></span><span id="Graph::getUpstream_sourcesC"></span><span class="target" id="classGraph_1a1ae92c80c49d220aff1e04f653db1e9e"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getUpstream_sources</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5Graph19getUpstream_sourcesEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the upstream sources of each water source (vertex) in the graph. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A constant 2D vector containing the IDs of each vertex mapped to their respective upstream sources. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5Graph19getContinuityMatrixEv">
+<span id="_CPPv3NK5Graph19getContinuityMatrixEv"></span><span id="_CPPv2NK5Graph19getContinuityMatrixEv"></span><span id="Graph::getContinuityMatrixC"></span><span class="target" id="classGraph_1adeb6eb873f20aef3e2b611a322deb647"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getContinuityMatrix</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5Graph19getContinuityMatrixEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs and returns the continuity matrix of the graph. This function returns a matrix in which rows correspond to vertexes. The first set of columns correspond to pipes/streams and the second set to flows in and out of vertexes. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Throws</dt>
+<dd class="field-odd"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – If the number of edges and sources is inconsistent with the graph structure. </p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A 2D vector representing the continuity matrix of the graph.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5GraphD0Ev">
+<span id="_CPPv3N5GraphD0Ev"></span><span id="_CPPv2N5GraphD0Ev"></span><span id="Graph::~Graph"></span><span class="target" id="classGraph_1a1621cd1ffcf6a135cbc7e039c305627b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Graph</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5GraphD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destroy the <a class="reference internal" href="#classGraph"><span class="std std-ref">Graph</span></a> object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5Graph14getDownSourcesEv">
+<span id="_CPPv3NK5Graph14getDownSourcesEv"></span><span id="_CPPv2NK5Graph14getDownSourcesEv"></span><span id="Graph::getDownSourcesC"></span><span class="target" id="classGraph_1aa41b35e6be8f6c4d555c7e9c1822809e"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getDownSources</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5Graph14getDownSourcesEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the downstream sources of each water source (vertex) in the graph. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A constant 2D vector containing the IDs of each vertex mapped to their respective downstream sources. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-functions">Protected Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Graph18addEdgeToEdgesListEii">
+<span id="_CPPv3N5Graph18addEdgeToEdgesListEii"></span><span id="_CPPv2N5Graph18addEdgeToEdgesListEii"></span><span id="Graph::addEdgeToEdgesList__i.i"></span><span class="target" id="classGraph_1a6f175234dc3c87150a53eab5c4e586ef"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addEdgeToEdgesList</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">u</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">v</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Graph18addEdgeToEdgesListEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Adds a directed edge (a stream) to the graph’s adjacency list and updates edge-related data structures. This function adds an edge from vertex <code class="docutils literal notranslate"><span class="pre">u</span></code> to vertex <code class="docutils literal notranslate"><span class="pre">v</span></code> in the adjacency list, updates the list of downstream sources for vertex <code class="docutils literal notranslate"><span class="pre">u</span></code>, and increments the total edge count. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>u</strong> – The source vertex (water source) of the edge. </p></li>
+<li><p><strong>v</strong> – The destination (water source) vertex of the edge.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N5Graph15topologicalSortEv">
+<span id="_CPPv3N5Graph15topologicalSortEv"></span><span id="_CPPv2N5Graph15topologicalSortEv"></span><span id="Graph::topologicalSort"></span><span class="target" id="classGraph_1a915f9d58884a00083bb6e5a256141fae"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">topologicalSort</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Graph15topologicalSortEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Performs a topological sort on the directed graph to sout sources from upstream to downstream.. This function computes a topological ordering of the vertices in the graph using Kahn’s algorithm. It detects cycles and returns an empty ordering if the graph contains a cycle. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A vector containing the topological order of the vertices. If the graph contains a cycle, the returned vector may be incomplete, and a message is printed to indicate the cycle detection. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK5Graph19findUpstreamSourcesEi">
+<span id="_CPPv3NK5Graph19findUpstreamSourcesEi"></span><span id="_CPPv2NK5Graph19findUpstreamSourcesEi"></span><span id="Graph::findUpstreamSources__iC"></span><span class="target" id="classGraph_1a95b0b6a7689c519d38e820cc3f86fc70"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">findUpstreamSources</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">id</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK5Graph19findUpstreamSourcesEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Finds the upstream sources for a given vertex. This function identifies all vertices in the graph that have a directed edge leading to the specified vertex <code class="docutils literal notranslate"><span class="pre">id</span></code>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>id</strong> – The vertex for which upstream sources are to be found.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A vector containing all upstream source vertices for the given vertex <code class="docutils literal notranslate"><span class="pre">id</span></code>. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-protected-attributes">Protected Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Graph1VE">
+<span id="_CPPv3N5Graph1VE"></span><span id="_CPPv2N5Graph1VE"></span><span id="Graph::V__i"></span><span class="target" id="classGraph_1a2b722f7cfa7a21e4cb5fae488b3d4dcc"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">V</span></span></span><a class="headerlink" href="#_CPPv4N5Graph1VE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The number of water sources represented as vertices of the <a class="reference internal" href="#classGraph"><span class="std std-ref">Graph</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Graph7n_edgesE">
+<span id="_CPPv3N5Graph7n_edgesE"></span><span id="_CPPv2N5Graph7n_edgesE"></span><span id="Graph::n_edges__i"></span><span class="target" id="classGraph_1a9a7e34b482b020fa136fc8e0fa2d0030"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_edges</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N5Graph7n_edgesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The number of streams (edges) in the <a class="reference internal" href="#classGraph"><span class="std std-ref">Graph</span></a>. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Graph3adjE">
+<span id="_CPPv3N5Graph3adjE"></span><span id="_CPPv2N5Graph3adjE"></span><span id="Graph::adj__list:i:P"></span><span class="target" id="classGraph_1a04ab9c17ad31aa036def8db0f88b035b"></span><span class="n"><span class="pre">list</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">adj</span></span></span><a class="headerlink" href="#_CPPv4N5Graph3adjE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A pointer to an array containing adjacency lists. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Graph16upstream_sourcesE">
+<span id="_CPPv3N5Graph16upstream_sourcesE"></span><span id="_CPPv2N5Graph16upstream_sourcesE"></span><span id="Graph::upstream_sources__vector:vector:i::"></span><span class="target" id="classGraph_1a2b9dc8c44ac87d67b061af1bf8dab2fa"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">upstream_sources</span></span></span><a class="headerlink" href="#_CPPv4N5Graph16upstream_sourcesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector containing the list of upstream sources for each vertex. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Graph18downstream_sourcesE">
+<span id="_CPPv3N5Graph18downstream_sourcesE"></span><span id="_CPPv2N5Graph18downstream_sourcesE"></span><span id="Graph::downstream_sources__vector:vector:i::"></span><span class="target" id="classGraph_1a1c89a48555f165ef3e80b85ca5655bea"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">downstream_sources</span></span></span><a class="headerlink" href="#_CPPv4N5Graph18downstream_sourcesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector containing the list of downstream sources for each vertex. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Graph17topological_orderE">
+<span id="_CPPv3N5Graph17topological_orderE"></span><span id="_CPPv2N5Graph17topological_orderE"></span><span id="Graph::topological_order__vector:i:"></span><span class="target" id="classGraph_1ad18af6207537a43b3cf53b56acaf92fd"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">topological_order</span></span></span><a class="headerlink" href="#_CPPv4N5Graph17topological_orderE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector containing the IDs of the water sources (vertices) in topological order. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N5Graph27continuity_matrix_transposeE">
+<span id="_CPPv3N5Graph27continuity_matrix_transposeE"></span><span id="_CPPv2N5Graph27continuity_matrix_transposeE"></span><span id="Graph::continuity_matrix_transpose__vector:vector:double::"></span><span class="target" id="classGraph_1af903899bcb412f62ec4aa295eef9f45c"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">continuity_matrix_transpose</span></span></span><a class="headerlink" href="#_CPPv4N5Graph27continuity_matrix_transposeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector containing the continuity matrix of the <a class="reference internal" href="#classGraph"><span class="std std-ref">Graph</span></a>. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Utils_index.html" class="btn btn-neutral float-left" title="Utils Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../QPSolver/QPSolver_index.html" class="btn btn-neutral float-right" title="QPSolver Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Lillian Lau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

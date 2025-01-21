@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Problem Module &mdash; WaterPaths 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Simulation Module" href="../Simulation/Simulation_index.html" />
+    <link rel="prev" title="Problem Module" href="Base/Problem_base.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            WaterPaths
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ContinuityModels/ContinuityModels_index.html">Continuity Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Controls/Controls_index.html">Controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../DataCollector/DataCollector_index.html">Data Collector</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Problem_index.html">Problem Implementations</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="Problem_index.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Base/Problem_base.html">Base implementation</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api-reference">API Reference</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Simulation/Simulation_index.html">Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SystemComponents/SystemComponents_index.html">System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Utils/Utils_index.html">Utils</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">WaterPaths</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="Problem_index.html">Problem Module</a></li>
+      <li class="breadcrumb-item active">Problem Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Problem/Problem_submodules.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="problem-module">
+<h1>Problem Module<a class="headerlink" href="#problem-module" title="Permalink to this heading"></a></h1>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
+<p>Below is the API reference for submodules of the <code class="code docutils literal notranslate"><span class="pre">Problem</span></code> module.</p>
+<div class="section" id="submodule-components">
+<h3>Submodule Components<a class="headerlink" href="#submodule-components" title="Permalink to this heading"></a></h3>
+<div class="section" id="triangle-h">
+<h4>Triangle.h<a class="headerlink" href="#triangle-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv48Triangle">
+<span id="_CPPv38Triangle"></span><span id="_CPPv28Triangle"></span><span id="Triangle"></span><span class="target" id="classTriangle"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Triangle</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/Problem_base.html#_CPPv47Problem" title="Problem"><span class="n"><span class="pre">Problem</span></span></a><a class="headerlink" href="#_CPPv48Triangle" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Triangle.h&gt;</em></div>
+<p>The <code class="docutils literal notranslate"><a class="reference internal" href="#classTriangle"><span class="std std-ref"><span class="pre">Triangle</span></span></a></code> class is a subclass of the main <code class="docutils literal notranslate"><a class="reference internal" href="Base/Problem_base.html#classProblem"><span class="std std-ref"><span class="pre">Problem</span></span></a></code> class. This class represents the six-utility North Carolina Research <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a> water management and planning problem. </p>
+<p>Created by Bernardo on 11/23/2017. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle8TriangleEmi">
+<span id="_CPPv3N8Triangle8TriangleEmi"></span><span id="_CPPv2N8Triangle8TriangleEmi"></span><span id="Triangle::Triangle__unsigned-l.i"></span><span class="target" id="classTriangle_1a24833bad242ddc3f671b36678dff5738"></span><span class="sig-name descname"><span class="n"><span class="pre">Triangle</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">n_weeks</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">import_export_rof_table</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Triangle8TriangleEmi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructor for a new <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a> object. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_weeks</strong> – An integer representing the number of weeks in the simulation. </p></li>
+<li><p><strong>import_export_rof_table</strong> – An integer indicating the ROF table import/export/ignore mode. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8TriangleD0Ev">
+<span id="_CPPv3N8TriangleD0Ev"></span><span id="_CPPv2N8TriangleD0Ev"></span><span id="Triangle::~Triangle"></span><span class="target" id="classTriangle_1a5199760a17454f4dc94c855a57e3a152"></span><span class="sig-name descname"><span class="n"><span class="pre">~Triangle</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TriangleD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destructor for the <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a> object. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle18functionEvaluationEPdPdPd">
+<span id="_CPPv3N8Triangle18functionEvaluationEPdPdPd"></span><span id="_CPPv2N8Triangle18functionEvaluationEPdPdPd"></span><span id="Triangle::functionEvaluation__doubleP.doubleP.doubleP"></span><span class="target" id="classTriangle_1a9e95039d098fd61cce1a830b85ed7004"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">functionEvaluation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">vars</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">objs</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">consts</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N8Triangle18functionEvaluationEPdPdPd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Runs the North Carolina Research <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a> (6-utility) problem. </p>
+<p><dl>
+<dt class="sig sig-object cpp">
+<em><span class="pre">Todo:</span></em></dt>
+<dd><p>check for solutions in which a utility does not have an allocation on Jordan Lake (or any generic lake) but still pay for joint treatment infrastructure). </p>
+</dd></dl>
+
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vars</strong> – A pointer to a double containing the number of variables in the problem. </p></li>
+<li><p><strong>objs</strong> – A pointer to the double containing the number of objectives in the problem. </p></li>
+<li><p><strong>consts</strong> – A pointer to the double containing the number of constraints in the problem.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle25simulationExceptionHanderERKNSt9exceptionEP10SimulationPdPKd">
+<span id="_CPPv3N8Triangle25simulationExceptionHanderERKNSt9exceptionEP10SimulationPdPKd"></span><span id="_CPPv2N8Triangle25simulationExceptionHanderERKNSt9exceptionEP10SimulationPdPKd"></span><span id="Triangle::simulationExceptionHander__std::exceptionCR.SimulationP.doubleP.doubleCP"></span><span class="target" id="classTriangle_1a816ff476231f6bd575c82978706f4b9a"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">simulationExceptionHander</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n"><span class="pre">std</span></span></a><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">exception</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">e</span></span>, <a class="reference internal" href="../Simulation/Simulation_base.html#_CPPv410Simulation" title="Simulation"><span class="n"><span class="pre">Simulation</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">s</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">objs</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">vars</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Triangle25simulationExceptionHanderERKNSt9exceptionEP10SimulationPdPKd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Handles exceptions that occur during the simulation by printing the rank of the error-causing thread’s decision variables to a file and printing the exception message to the console. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>e</strong> – An exception object </p></li>
+<li><p><strong>s</strong> – A pointer to the simulation object </p></li>
+<li><p><strong>objs</strong> – A pointer to the objectives array </p></li>
+<li><p><strong>vars</strong> – A pointer to the decision variables array</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>int </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle13readInputDataEv">
+<span id="_CPPv3N8Triangle13readInputDataEv"></span><span id="_CPPv2N8Triangle13readInputDataEv"></span><span id="Triangle::readInputData"></span><span class="target" id="classTriangle_1a045e3263a62a8a628fe5645f0323b7e4"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">readInputData</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Triangle13readInputDataEv" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Reads in all input inflow, evaporation, and demand data for the <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a> problem. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle11n_utilitiesE">
+<span id="_CPPv3N8Triangle11n_utilitiesE"></span><span id="_CPPv2N8Triangle11n_utilitiesE"></span><span id="Triangle::n_utilities__iC"></span><span class="target" id="classTriangle_1a27fd697e6e14227b71a617ddbcec9653"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">n_utilities</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">4</span></span><a class="headerlink" href="#_CPPv4N8Triangle11n_utilitiesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>An integer indicating the default number utilities in the <a class="reference internal" href="#classTriangle"><span class="std std-ref">Triangle</span></a> problem. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle18streamflows_durhamE">
+<span id="_CPPv3N8Triangle18streamflows_durhamE"></span><span id="_CPPv2N8Triangle18streamflows_durhamE"></span><span id="Triangle::streamflows_durham__vector:vector:double::"></span><span class="target" id="classTriangle_1a20fe79b08b5b0db16b3154d4d9a9b5eb"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_durham</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle18streamflows_durhamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Durham’s historical and synthetic streamflows. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle16streamflows_flatE">
+<span id="_CPPv3N8Triangle16streamflows_flatE"></span><span id="_CPPv2N8Triangle16streamflows_flatE"></span><span id="Triangle::streamflows_flat__vector:vector:double::"></span><span class="target" id="classTriangle_1a1d93dad189b3fb422f5404f75a08b6f7"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_flat</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle16streamflows_flatE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Lower Flat River’s (Raleigh) historical and synthetic streamflows. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle17streamflows_swiftE">
+<span id="_CPPv3N8Triangle17streamflows_swiftE"></span><span id="_CPPv2N8Triangle17streamflows_swiftE"></span><span id="Triangle::streamflows_swift__vector:vector:double::"></span><span class="target" id="classTriangle_1a6fc8ddba9b9c2afea0ff19ac21343807"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_swift</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle17streamflows_swiftE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Swift Creek’s (Raleigh) historical and synthetic streamflows. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle15streamflows_llrE">
+<span id="_CPPv3N8Triangle15streamflows_llrE"></span><span id="_CPPv2N8Triangle15streamflows_llrE"></span><span id="Triangle::streamflows_llr__vector:vector:double::"></span><span class="target" id="classTriangle_1a776794a53c778e47ebe0f8a6b49cd740"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_llr</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle15streamflows_llrE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Little River’s (Raleigh) historical and synthetic streamflows. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle20streamflows_crabtreeE">
+<span id="_CPPv3N8Triangle20streamflows_crabtreeE"></span><span id="_CPPv2N8Triangle20streamflows_crabtreeE"></span><span id="Triangle::streamflows_crabtree__vector:vector:double::"></span><span class="target" id="classTriangle_1a8c97075d74abc5e38084934fb213fe2a"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_crabtree</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle20streamflows_crabtreeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Crabtree Creek’s (Raleigh) historical and synthetic streamflows. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle17streamflows_philsE">
+<span id="_CPPv3N8Triangle17streamflows_philsE"></span><span id="_CPPv2N8Triangle17streamflows_philsE"></span><span id="Triangle::streamflows_phils__vector:vector:double::"></span><span class="target" id="classTriangle_1a936a703fc9bb94bce59bb0cbec005115"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_phils</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle17streamflows_philsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Phils Creek’s (OWASA) historical and synthetic streamflows. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle16streamflows_caneE">
+<span id="_CPPv3N8Triangle16streamflows_caneE"></span><span id="_CPPv2N8Triangle16streamflows_caneE"></span><span id="Triangle::streamflows_cane__vector:vector:double::"></span><span class="target" id="classTriangle_1a0a20ad805c77f2af96433b17eb3cc733"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_cane</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle16streamflows_caneE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Cane Creek’s (OWASA) historical and synthetic streamflows. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle18streamflows_morganE">
+<span id="_CPPv3N8Triangle18streamflows_morganE"></span><span id="_CPPv2N8Triangle18streamflows_morganE"></span><span id="Triangle::streamflows_morgan__vector:vector:double::"></span><span class="target" id="classTriangle_1a3426e30cdc767333d491895438bdb00f"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_morgan</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle18streamflows_morganE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Morgan Creek’s (OWASA) historical and synthetic streamflows. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle15streamflows_hawE">
+<span id="_CPPv3N8Triangle15streamflows_hawE"></span><span id="_CPPv2N8Triangle15streamflows_hawE"></span><span id="Triangle::streamflows_haw__vector:vector:double::"></span><span class="target" id="classTriangle_1a2303d7ba019fa2c88ad9bcf4968b9522"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_haw</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle15streamflows_hawE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Haw River’s (Cary) historical and synthetic streamflows. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle19streamflows_claytonE">
+<span id="_CPPv3N8Triangle19streamflows_claytonE"></span><span id="_CPPv2N8Triangle19streamflows_claytonE"></span><span id="Triangle::streamflows_clayton__vector:vector:double::"></span><span class="target" id="classTriangle_1a2c59e6b06ce2824ac697ca97c2423060"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_clayton</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle19streamflows_claytonE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Clayton’s (downstream) historical and synthetic streamflows. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle22streamflows_lillingtonE">
+<span id="_CPPv3N8Triangle22streamflows_lillingtonE"></span><span id="_CPPv2N8Triangle22streamflows_lillingtonE"></span><span id="Triangle::streamflows_lillington__vector:vector:double::"></span><span class="target" id="classTriangle_1ac69585cb9a4f8a477f030a3d66cea92f"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">streamflows_lillington</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle22streamflows_lillingtonE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Lillington’s (downstream) historical and synthetic streamflows. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle11demand_caryE">
+<span id="_CPPv3N8Triangle11demand_caryE"></span><span id="_CPPv2N8Triangle11demand_caryE"></span><span id="Triangle::demand_cary__vector:vector:double::"></span><span class="target" id="classTriangle_1a64dfcb5c1225f772fdadee71f776bc6a"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_cary</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle11demand_caryE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Cary’s historical and synthetic demands. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle13demand_durhamE">
+<span id="_CPPv3N8Triangle13demand_durhamE"></span><span id="_CPPv2N8Triangle13demand_durhamE"></span><span id="Triangle::demand_durham__vector:vector:double::"></span><span class="target" id="classTriangle_1a0e82969571c5cdb51e98fe4b74a89597"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_durham</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle13demand_durhamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Durham’s historical and synthetic demands. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle14demand_raleighE">
+<span id="_CPPv3N8Triangle14demand_raleighE"></span><span id="_CPPv2N8Triangle14demand_raleighE"></span><span id="Triangle::demand_raleigh__vector:vector:double::"></span><span class="target" id="classTriangle_1a94d23326283d34b4000ac9c1ab6e848f"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_raleigh</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle14demand_raleighE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Raleigh’s historical and synthetic demands. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle12demand_owasaE">
+<span id="_CPPv3N8Triangle12demand_owasaE"></span><span id="_CPPv2N8Triangle12demand_owasaE"></span><span id="Triangle::demand_owasa__vector:vector:double::"></span><span class="target" id="classTriangle_1a3a3e2438a3c125a53d08101dc0ba82ac"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_owasa</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle12demand_owasaE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all OWASA’s historical and synthetic demands. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle16demand_pittsboroE">
+<span id="_CPPv3N8Triangle16demand_pittsboroE"></span><span id="_CPPv2N8Triangle16demand_pittsboroE"></span><span id="Triangle::demand_pittsboro__vector:vector:double::"></span><span class="target" id="classTriangle_1a7d6bd2daccfe871d4c2cc510f5003f30"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_pittsboro</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle16demand_pittsboroE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Pittsboro’s historical and synthetic demands. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle14demand_chathamE">
+<span id="_CPPv3N8Triangle14demand_chathamE"></span><span id="_CPPv2N8Triangle14demand_chathamE"></span><span id="Triangle::demand_chatham__vector:vector:double::"></span><span class="target" id="classTriangle_1a82d188ad70195a5433e6a77d21697cb8"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_chatham</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle14demand_chathamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Chatham’s historical and synthetic demands. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle22demand_projection_caryE">
+<span id="_CPPv3N8Triangle22demand_projection_caryE"></span><span id="_CPPv2N8Triangle22demand_projection_caryE"></span><span id="Triangle::demand_projection_cary__vector:double:"></span><span class="target" id="classTriangle_1a120291dab66bd5cd55a20cc28602e964"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_projection_cary</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle22demand_projection_caryE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Cary’s annual demand projections. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle24demand_projection_durhamE">
+<span id="_CPPv3N8Triangle24demand_projection_durhamE"></span><span id="_CPPv2N8Triangle24demand_projection_durhamE"></span><span id="Triangle::demand_projection_durham__vector:double:"></span><span class="target" id="classTriangle_1a1e9cf765ec082728747bcb764afb65c1"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_projection_durham</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle24demand_projection_durhamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Durham’s annual demand projections. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle25demand_projection_raleighE">
+<span id="_CPPv3N8Triangle25demand_projection_raleighE"></span><span id="_CPPv2N8Triangle25demand_projection_raleighE"></span><span id="Triangle::demand_projection_raleigh__vector:double:"></span><span class="target" id="classTriangle_1a9baefa771a35e983bef69be315674018"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_projection_raleigh</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle25demand_projection_raleighE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Raleigh’s annual demand projections. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle23demand_projection_owasaE">
+<span id="_CPPv3N8Triangle23demand_projection_owasaE"></span><span id="_CPPv2N8Triangle23demand_projection_owasaE"></span><span id="Triangle::demand_projection_owasa__vector:double:"></span><span class="target" id="classTriangle_1abd773301ebaa53dc48221eab99a65415"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_projection_owasa</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle23demand_projection_owasaE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all OWASA’s annual demand projections. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle27demand_projection_pittsboroE">
+<span id="_CPPv3N8Triangle27demand_projection_pittsboroE"></span><span id="_CPPv2N8Triangle27demand_projection_pittsboroE"></span><span id="Triangle::demand_projection_pittsboro__vector:double:"></span><span class="target" id="classTriangle_1a97ac68c9d8d4f8aabfb1dc39236fe458"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_projection_pittsboro</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle27demand_projection_pittsboroE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Pittsboro’s annual demand projections. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle25demand_projection_chathamE">
+<span id="_CPPv3N8Triangle25demand_projection_chathamE"></span><span id="_CPPv2N8Triangle25demand_projection_chathamE"></span><span id="Triangle::demand_projection_chatham__vector:double:"></span><span class="target" id="classTriangle_1a16648fd432d646e1a2eaf25c64125b7a"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_projection_chatham</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle25demand_projection_chathamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Chatham’s annual demand projections. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle11evap_durhamE">
+<span id="_CPPv3N8Triangle11evap_durhamE"></span><span id="_CPPv2N8Triangle11evap_durhamE"></span><span id="Triangle::evap_durham__vector:vector:double::"></span><span class="target" id="classTriangle_1a11dd71d21edee3cf466d30117e378fb9"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_durham</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle11evap_durhamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Durham’s historical and synthetic evaporation data. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle15evap_falls_lakeE">
+<span id="_CPPv3N8Triangle15evap_falls_lakeE"></span><span id="_CPPv2N8Triangle15evap_falls_lakeE"></span><span id="Triangle::evap_falls_lake__vector:vector:double::"></span><span class="target" id="classTriangle_1a4ad865bba9e2b65233aa453ea95d1950"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_falls_lake</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle15evap_falls_lakeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Falls Lake’s historical and synthetic evaporation data. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle10evap_owasaE">
+<span id="_CPPv3N8Triangle10evap_owasaE"></span><span id="_CPPv2N8Triangle10evap_owasaE"></span><span id="Triangle::evap_owasa__vector:vector:double::"></span><span class="target" id="classTriangle_1a9b1fbfcfe6230372f486382bd3b47717"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_owasa</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle10evap_owasaE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all OWASA’s historical and synthetic evaporation data. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle17evap_little_riverE">
+<span id="_CPPv3N8Triangle17evap_little_riverE"></span><span id="_CPPv2N8Triangle17evap_little_riverE"></span><span id="Triangle::evap_little_river__vector:vector:double::"></span><span class="target" id="classTriangle_1a48c51eabed2ace852d31b1df2e98f8d4"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_little_river</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle17evap_little_riverE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Little River Raleigh’s historical and synthetic evaporation data. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle19evap_wheeler_bensonE">
+<span id="_CPPv3N8Triangle19evap_wheeler_bensonE"></span><span id="_CPPv2N8Triangle19evap_wheeler_bensonE"></span><span id="Triangle::evap_wheeler_benson__vector:vector:double::"></span><span class="target" id="classTriangle_1a03a6df04c98f4a9030de3da381155cd8"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_wheeler_benson</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle19evap_wheeler_bensonE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Lake Wheeler and Lake Benson’s historical and synthetic evaporation data. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle16evap_jordan_lakeE">
+<span id="_CPPv3N8Triangle16evap_jordan_lakeE"></span><span id="_CPPv2N8Triangle16evap_jordan_lakeE"></span><span id="Triangle::evap_jordan_lake__vector:vector:double::"></span><span class="target" id="classTriangle_1aa340181943eedb577bf81215e34701f5"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">evap_jordan_lake</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle16evap_jordan_lakeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Jordan Lake’s historical and synthetic evaporation data. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle43demand_to_wastewater_fraction_owasa_raleighE">
+<span id="_CPPv3N8Triangle43demand_to_wastewater_fraction_owasa_raleighE"></span><span id="_CPPv2N8Triangle43demand_to_wastewater_fraction_owasa_raleighE"></span><span id="Triangle::demand_to_wastewater_fraction_owasa_raleigh__vector:vector:double::"></span><span class="target" id="classTriangle_1ac1aeb61eae9f469b139c38d688235724"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_to_wastewater_fraction_owasa_raleigh</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle43demand_to_wastewater_fraction_owasa_raleighE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Raleigh’s demand-to-wastewater fraction. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle36demand_to_wastewater_fraction_durhamE">
+<span id="_CPPv3N8Triangle36demand_to_wastewater_fraction_durhamE"></span><span id="_CPPv2N8Triangle36demand_to_wastewater_fraction_durhamE"></span><span id="Triangle::demand_to_wastewater_fraction_durham__vector:vector:double::"></span><span class="target" id="classTriangle_1a69d6615c9468c9637a2ce0ea52e23930"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_to_wastewater_fraction_durham</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle36demand_to_wastewater_fraction_durhamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Durham’s demand-to-wastewater fraction. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle37demand_to_wastewater_fraction_chathamE">
+<span id="_CPPv3N8Triangle37demand_to_wastewater_fraction_chathamE"></span><span id="_CPPv2N8Triangle37demand_to_wastewater_fraction_chathamE"></span><span id="Triangle::demand_to_wastewater_fraction_chatham__vector:vector:double::"></span><span class="target" id="classTriangle_1a00acfdf1f437b38613a5815e9b524345"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">demand_to_wastewater_fraction_chatham</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle37demand_to_wastewater_fraction_chathamE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Chatham’s demand-to-wastewater fraction. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle26caryDemandClassesFractionsE">
+<span id="_CPPv3N8Triangle26caryDemandClassesFractionsE"></span><span id="_CPPv2N8Triangle26caryDemandClassesFractionsE"></span><span id="Triangle::caryDemandClassesFractions__vector:vector:double::"></span><span class="target" id="classTriangle_1a7fdcf318d2bcf58cea83c451b59df74b"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">caryDemandClassesFractions</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle26caryDemandClassesFractionsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Cary’s demand classes fractions. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle28durhamDemandClassesFractionsE">
+<span id="_CPPv3N8Triangle28durhamDemandClassesFractionsE"></span><span id="_CPPv2N8Triangle28durhamDemandClassesFractionsE"></span><span id="Triangle::durhamDemandClassesFractions__vector:vector:double::"></span><span class="target" id="classTriangle_1a276e7bb08c7fb20aa0dc6fe256cef46d"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">durhamDemandClassesFractions</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle28durhamDemandClassesFractionsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Durham’s demand classes fractions. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle29raleighDemandClassesFractionsE">
+<span id="_CPPv3N8Triangle29raleighDemandClassesFractionsE"></span><span id="_CPPv2N8Triangle29raleighDemandClassesFractionsE"></span><span id="Triangle::raleighDemandClassesFractions__vector:vector:double::"></span><span class="target" id="classTriangle_1abf4c57a8823a6f1af7ce08c467cec491"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">raleighDemandClassesFractions</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle29raleighDemandClassesFractionsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Raleigh’s demand classes fractions. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle27owasaDemandClassesFractionsE">
+<span id="_CPPv3N8Triangle27owasaDemandClassesFractionsE"></span><span id="_CPPv2N8Triangle27owasaDemandClassesFractionsE"></span><span id="Triangle::owasaDemandClassesFractions__vector:vector:double::"></span><span class="target" id="classTriangle_1af2243c78316c4f0afc1535d35aef182c"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">owasaDemandClassesFractions</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle27owasaDemandClassesFractionsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all OWASA’s demand classes fractions. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle31pittsboroDemandClassesFractionsE">
+<span id="_CPPv3N8Triangle31pittsboroDemandClassesFractionsE"></span><span id="_CPPv2N8Triangle31pittsboroDemandClassesFractionsE"></span><span id="Triangle::pittsboroDemandClassesFractions__vector:vector:double::"></span><span class="target" id="classTriangle_1a7234ceaf16855ec0cad968643af11b1d"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pittsboroDemandClassesFractions</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle31pittsboroDemandClassesFractionsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Pittsboro’s demand classes fractions. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle29chathamDemandClassesFractionsE">
+<span id="_CPPv3N8Triangle29chathamDemandClassesFractionsE"></span><span id="_CPPv2N8Triangle29chathamDemandClassesFractionsE"></span><span id="Triangle::chathamDemandClassesFractions__vector:vector:double::"></span><span class="target" id="classTriangle_1af3d25799904b5216e8eaa69d047720e6"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">chathamDemandClassesFractions</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle29chathamDemandClassesFractionsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Chatham’s demand classes fractions. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle26caryUserClassesWaterPricesE">
+<span id="_CPPv3N8Triangle26caryUserClassesWaterPricesE"></span><span id="_CPPv2N8Triangle26caryUserClassesWaterPricesE"></span><span id="Triangle::caryUserClassesWaterPrices__vector:vector:double::"></span><span class="target" id="classTriangle_1afdd592d6d1c494ac598aa293fc99bed5"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">caryUserClassesWaterPrices</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle26caryUserClassesWaterPricesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Cary’s user water prices. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle28durhamUserClassesWaterPricesE">
+<span id="_CPPv3N8Triangle28durhamUserClassesWaterPricesE"></span><span id="_CPPv2N8Triangle28durhamUserClassesWaterPricesE"></span><span id="Triangle::durhamUserClassesWaterPrices__vector:vector:double::"></span><span class="target" id="classTriangle_1ab1b016ce397014e287ae5a213b04643d"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">durhamUserClassesWaterPrices</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle28durhamUserClassesWaterPricesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Durham’s user water prices. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle29raleighUserClassesWaterPricesE">
+<span id="_CPPv3N8Triangle29raleighUserClassesWaterPricesE"></span><span id="_CPPv2N8Triangle29raleighUserClassesWaterPricesE"></span><span id="Triangle::raleighUserClassesWaterPrices__vector:vector:double::"></span><span class="target" id="classTriangle_1a626cdfe51d52c966bda22de9afc237f7"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">raleighUserClassesWaterPrices</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle29raleighUserClassesWaterPricesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Raleigh’s user water prices. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle27owasaUserClassesWaterPricesE">
+<span id="_CPPv3N8Triangle27owasaUserClassesWaterPricesE"></span><span id="_CPPv2N8Triangle27owasaUserClassesWaterPricesE"></span><span id="Triangle::owasaUserClassesWaterPrices__vector:vector:double::"></span><span class="target" id="classTriangle_1a8501e1edfb25770f4f06fc9e57e274c2"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">owasaUserClassesWaterPrices</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle27owasaUserClassesWaterPricesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all OWASA’s user water prices. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle31pittsboroUserClassesWaterPricesE">
+<span id="_CPPv3N8Triangle31pittsboroUserClassesWaterPricesE"></span><span id="_CPPv2N8Triangle31pittsboroUserClassesWaterPricesE"></span><span id="Triangle::pittsboroUserClassesWaterPrices__vector:vector:double::"></span><span class="target" id="classTriangle_1a94cf854f70c4956acf77ff59491c6ef5"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pittsboroUserClassesWaterPrices</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle31pittsboroUserClassesWaterPricesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Pittsboro’s user water prices. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle29chathamUserClassesWaterPricesE">
+<span id="_CPPv3N8Triangle29chathamUserClassesWaterPricesE"></span><span id="_CPPv2N8Triangle29chathamUserClassesWaterPricesE"></span><span id="Triangle::chathamUserClassesWaterPrices__vector:vector:double::"></span><span class="target" id="classTriangle_1abc00c472c31299d21d32fcc23a9d292f"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">chathamUserClassesWaterPrices</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle29chathamUserClassesWaterPricesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all Chatham’s user water prices. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N8Triangle20owasaPriceSurchargesE">
+<span id="_CPPv3N8Triangle20owasaPriceSurchargesE"></span><span id="_CPPv2N8Triangle20owasaPriceSurchargesE"></span><span id="Triangle::owasaPriceSurcharges__vector:vector:double::"></span><span class="target" id="classTriangle_1ae6fc047b9fb03b541036b0e8c6affba1"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">owasaPriceSurcharges</span></span></span><a class="headerlink" href="#_CPPv4N8Triangle20owasaPriceSurchargesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of all OWASA’s user price surcharges. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Base/Problem_base.html" class="btn btn-neutral float-left" title="Problem Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Simulation/Simulation_index.html" class="btn btn-neutral float-right" title="Simulation Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Lillian Lau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

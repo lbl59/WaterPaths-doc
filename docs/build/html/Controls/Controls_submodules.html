@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controls Module &mdash; WaterPaths 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="DataCollector Module" href="../DataCollector/DataCollector_index.html" />
+    <link rel="prev" title="Controls Module" href="Custom/Controls_custom.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            WaterPaths
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../ContinuityModels/ContinuityModels_index.html">Continuity Models</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Controls_index.html">Controls</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="Controls_index.html#contents">Contents</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Base/Controls_base.html">Base implementation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Custom/Controls_custom.html">Custom Implementation</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Submodules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api-reference">API Reference</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../DataCollector/DataCollector_index.html">Data Collector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Problem/Problem_index.html">Problem Implementations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Simulation/Simulation_index.html">Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SystemComponents/SystemComponents_index.html">System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Utils/Utils_index.html">Utils</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">WaterPaths</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="Controls_index.html">Controls Module</a></li>
+      <li class="breadcrumb-item active">Controls Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/Controls/Controls_submodules.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="controls-module">
+<h1>Controls Module<a class="headerlink" href="#controls-module" title="Permalink to this heading"></a></h1>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this heading"></a></h2>
+<p>Below is the API reference for submodules of the <code class="code docutils literal notranslate"><span class="pre">Controls</span></code> module.</p>
+<div class="section" id="submodule-components">
+<h3>Submodule Components<a class="headerlink" href="#submodule-components" title="Permalink to this heading"></a></h3>
+<div class="section" id="evaporationseries-h">
+<h4>EvaporationSeries.h<a class="headerlink" href="#evaporationseries-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv417EvaporationSeries">
+<span id="_CPPv317EvaporationSeries"></span><span id="_CPPv217EvaporationSeries"></span><span id="EvaporationSeries"></span><span class="target" id="classEvaporationSeries"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">EvaporationSeries</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="../SystemComponents/SystemComponents_catchment.html#_CPPv49Catchment" title="Catchment"><span class="n"><span class="pre">Catchment</span></span></a><a class="headerlink" href="#_CPPv417EvaporationSeries" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;EvaporationSeries.h&gt;</em></div>
+<p>This class is a subclass of the main <code class="docutils literal notranslate"><a class="reference internal" href="../SystemComponents/SystemComponents_catchment.html#classCatchment"><span class="std std-ref"><span class="pre">Catchment</span></span></a></code> class and represents a series of evaporation data over time. </p>
+<p>Created by bernardoct on 6/22/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17EvaporationSeries17EvaporationSeriesEP6vectorI6vectorIdEEi">
+<span id="_CPPv3N17EvaporationSeries17EvaporationSeriesEP6vectorI6vectorIdEEi"></span><span id="_CPPv2N17EvaporationSeries17EvaporationSeriesEP6vectorI6vectorIdEEi"></span><span id="EvaporationSeries::EvaporationSeries__vector:vector:double::P.i"></span><span class="target" id="classEvaporationSeries_1af0903d8555a148f9bf45f915877120b3"></span><span class="sig-name descname"><span class="n"><span class="pre">EvaporationSeries</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n sig-param"><span class="pre">evaporation_series</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">series_length</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N17EvaporationSeries17EvaporationSeriesEP6vectorI6vectorIdEEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs an <code class="docutils literal notranslate"><a class="reference internal" href="#classEvaporationSeries"><span class="std std-ref"><span class="pre">EvaporationSeries</span></span></a></code> object for managing and storing evaporation data over time. Initializes the series with a pointer to evaporation data and its length. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>evaporation_series</strong> – Pointer to a vector of vectors containing the evaporation data series. </p></li>
+<li><p><strong>series_length</strong> – Integer representing the length of the evaporation data series. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17EvaporationSeries17EvaporationSeriesERK17EvaporationSeries">
+<span id="_CPPv3N17EvaporationSeries17EvaporationSeriesERK17EvaporationSeries"></span><span id="_CPPv2N17EvaporationSeries17EvaporationSeriesERK17EvaporationSeries"></span><span id="EvaporationSeries::EvaporationSeries__EvaporationSeriesCR"></span><span class="target" id="classEvaporationSeries_1aa8d8cd8bbc0fd5b368b748cb090ad414"></span><span class="sig-name descname"><span class="n"><span class="pre">EvaporationSeries</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N17EvaporationSeries17EvaporationSeriesERK17EvaporationSeries" title="EvaporationSeries::EvaporationSeries"><span class="n"><span class="pre">EvaporationSeries</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">evaporation_series</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N17EvaporationSeries17EvaporationSeriesERK17EvaporationSeries" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Copy constructor for the <code class="docutils literal notranslate"><a class="reference internal" href="#classEvaporationSeries"><span class="std std-ref"><span class="pre">EvaporationSeries</span></span></a></code> class. Creates a new <code class="docutils literal notranslate"><a class="reference internal" href="#classEvaporationSeries"><span class="std std-ref"><span class="pre">EvaporationSeries</span></span></a></code> object by copying an existing one. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>evaporation_series</strong> – Reference to the <code class="docutils literal notranslate"><a class="reference internal" href="#classEvaporationSeries"><span class="std std-ref"><span class="pre">EvaporationSeries</span></span></a></code> object to be copied. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17EvaporationSeriesaSERK17EvaporationSeries">
+<span id="_CPPv3N17EvaporationSeriesaSERK17EvaporationSeries"></span><span id="_CPPv2N17EvaporationSeriesaSERK17EvaporationSeries"></span><span id="EvaporationSeries::assign-operator__EvaporationSeriesCR"></span><span class="target" id="classEvaporationSeries_1ae9f1fc3bb0bf32db12dcc531c6af2e6b"></span><a class="reference internal" href="#_CPPv417EvaporationSeries" title="EvaporationSeries"><span class="n"><span class="pre">EvaporationSeries</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv417EvaporationSeries" title="EvaporationSeries"><span class="n"><span class="pre">EvaporationSeries</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">evaporation_series</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N17EvaporationSeriesaSERK17EvaporationSeries" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Overloads the assignment operator for the <code class="docutils literal notranslate"><a class="reference internal" href="#classEvaporationSeries"><span class="std std-ref"><span class="pre">EvaporationSeries</span></span></a></code> class, allowing one object to be assigned the attributes of another. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>evaporation_series</strong> – Reference to the <code class="docutils literal notranslate"><a class="reference internal" href="#classEvaporationSeries"><span class="std std-ref"><span class="pre">EvaporationSeries</span></span></a></code> object to be assigned.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A reference to the updated <code class="docutils literal notranslate"><a class="reference internal" href="#classEvaporationSeries"><span class="std std-ref"><span class="pre">EvaporationSeries</span></span></a></code> object after assignment. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17EvaporationSeriesD0Ev">
+<span id="_CPPv3N17EvaporationSeriesD0Ev"></span><span id="_CPPv2N17EvaporationSeriesD0Ev"></span><span id="EvaporationSeries::~EvaporationSeries"></span><span class="target" id="classEvaporationSeries_1a201a00eaaadc9c523d544e0d6a4c50e5"></span><span class="sig-name descname"><span class="n"><span class="pre">~EvaporationSeries</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N17EvaporationSeriesD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destructor for the <code class="docutils literal notranslate"><a class="reference internal" href="#classEvaporationSeries"><span class="std std-ref"><span class="pre">EvaporationSeries</span></span></a></code> class. Cleans up resources associated with the object. Since no dynamic allocation is explicitly used, the destructor is empty. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17EvaporationSeries14getEvaporationEi">
+<span id="_CPPv3N17EvaporationSeries14getEvaporationEi"></span><span id="_CPPv2N17EvaporationSeries14getEvaporationEi"></span><span id="EvaporationSeries::getEvaporation__i"></span><span class="target" id="classEvaporationSeries_1a4d793fbcb73e8fb6c179968130d6fd0a"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getEvaporation</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N17EvaporationSeries14getEvaporationEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the evaporation value for a specified week. This is a wrapper for the base class <code class="docutils literal notranslate"><a class="reference internal" href="../SystemComponents/SystemComponents_catchment.html#classCatchment_1af4e8206ffab5c901e5e4cdd6136f73a1"><span class="std std-ref"><span class="pre">Catchment::getStreamflow</span></span></a></code> function. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>week</strong> – Integer representing the week for which the evaporation value is requested.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A double representing the evaporation value for the specified week. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17EvaporationSeries14setRealizationEmR6vectorIdE">
+<span id="_CPPv3N17EvaporationSeries14setRealizationEmR6vectorIdE"></span><span id="_CPPv2N17EvaporationSeries14setRealizationEmR6vectorIdE"></span><span id="EvaporationSeries::setRealization__unsigned-l.vector:double:R"></span><span class="target" id="classEvaporationSeries_1a4985ac4c81ec111657861e5750b24c0e"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setRealization</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">long</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">r</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">rdm_factors</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N17EvaporationSeries14setRealizationEmR6vectorIdE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Sets the realization for the <code class="docutils literal notranslate"><a class="reference internal" href="#classEvaporationSeries"><span class="std std-ref"><span class="pre">EvaporationSeries</span></span></a></code> object and scales the evaporation values based on its corresponding DU factors. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>r</strong> – Unsigned long integer representing the realization ID. </p></li>
+<li><p><strong>rdm_factors</strong> – Reference to a vector of doubles containing Random Decision-Making (RDM) factors to modify evaporation values.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="fixedminenvflowcontrol-h">
+<h4>FixedMinEnvFlowControl.h<a class="headerlink" href="#fixedminenvflowcontrol-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv422FixedMinEnvFlowControl">
+<span id="_CPPv322FixedMinEnvFlowControl"></span><span id="_CPPv222FixedMinEnvFlowControl"></span><span id="FixedMinEnvFlowControl"></span><span class="target" id="classFixedMinEnvFlowControl"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">FixedMinEnvFlowControl</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><a class="headerlink" href="#_CPPv422FixedMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;FixedMinEnvFlowControl.h&gt;</em></div>
+<p>This class is a subclass of the main <code class="docutils literal notranslate"><a class="reference internal" href="Base/Controls_base.html#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> class and represents a water source with fixed minimum environmental flow control. </p>
+<p>Created by bernardoct on 6/29/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N22FixedMinEnvFlowControl22FixedMinEnvFlowControlEid">
+<span id="_CPPv3N22FixedMinEnvFlowControl22FixedMinEnvFlowControlEid"></span><span id="_CPPv2N22FixedMinEnvFlowControl22FixedMinEnvFlowControlEid"></span><span id="FixedMinEnvFlowControl::FixedMinEnvFlowControl__i.double"></span><span class="target" id="classFixedMinEnvFlowControl_1ab03711220b87d6490a4c2ca81fcc89a0"></span><span class="sig-name descname"><span class="n"><span class="pre">FixedMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_source_id</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">release</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N22FixedMinEnvFlowControl22FixedMinEnvFlowControlEid" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <code class="docutils literal notranslate"><a class="reference internal" href="#classFixedMinEnvFlowControl"><span class="std std-ref"><span class="pre">FixedMinEnvFlowControl</span></span></a></code> object for managing fixed minimum environmental flow controls on a water source. Initializes the control with a specified water source ID and a fixed release amount. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_source_id</strong> – Integer representing the ID of the water source under environmental flow control. </p></li>
+<li><p><strong>release</strong> – Double representing the fixed release amount for the environmental flow. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N22FixedMinEnvFlowControl22FixedMinEnvFlowControlERK22FixedMinEnvFlowControl">
+<span id="_CPPv3N22FixedMinEnvFlowControl22FixedMinEnvFlowControlERK22FixedMinEnvFlowControl"></span><span id="_CPPv2N22FixedMinEnvFlowControl22FixedMinEnvFlowControlERK22FixedMinEnvFlowControl"></span><span id="FixedMinEnvFlowControl::FixedMinEnvFlowControl__FixedMinEnvFlowControlCR"></span><span class="target" id="classFixedMinEnvFlowControl_1a57795231f747cae4a4b5b4cf9d4d044f"></span><span class="sig-name descname"><span class="n"><span class="pre">FixedMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N22FixedMinEnvFlowControl22FixedMinEnvFlowControlERK22FixedMinEnvFlowControl" title="FixedMinEnvFlowControl::FixedMinEnvFlowControl"><span class="n"><span class="pre">FixedMinEnvFlowControl</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">min_env_control</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N22FixedMinEnvFlowControl22FixedMinEnvFlowControlERK22FixedMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Copy constructor for the <code class="docutils literal notranslate"><a class="reference internal" href="#classFixedMinEnvFlowControl"><span class="std std-ref"><span class="pre">FixedMinEnvFlowControl</span></span></a></code> class. Creates a new <code class="docutils literal notranslate"><a class="reference internal" href="#classFixedMinEnvFlowControl"><span class="std std-ref"><span class="pre">FixedMinEnvFlowControl</span></span></a></code> object by copying the attributes from an existing one. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>min_env_control</strong> – Reference to the <code class="docutils literal notranslate"><a class="reference internal" href="#classFixedMinEnvFlowControl"><span class="std std-ref"><span class="pre">FixedMinEnvFlowControl</span></span></a></code> object to be copied. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N22FixedMinEnvFlowControlD0Ev">
+<span id="_CPPv3N22FixedMinEnvFlowControlD0Ev"></span><span id="_CPPv2N22FixedMinEnvFlowControlD0Ev"></span><span id="FixedMinEnvFlowControl::~FixedMinEnvFlowControl"></span><span class="target" id="classFixedMinEnvFlowControl_1ac63298347dcaccf755ea45d1e2f94bad"></span><span class="sig-name descname"><span class="n"><span class="pre">~FixedMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N22FixedMinEnvFlowControlD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destructor for the <code class="docutils literal notranslate"><a class="reference internal" href="#classFixedMinEnvFlowControl"><span class="std std-ref"><span class="pre">FixedMinEnvFlowControl</span></span></a></code> class. Cleans up resources associated with the object. Since the destructor is defaulted, no custom cleanup is required. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N22FixedMinEnvFlowControl10getReleaseEi">
+<span id="_CPPv3N22FixedMinEnvFlowControl10getReleaseEi"></span><span id="_CPPv2N22FixedMinEnvFlowControl10getReleaseEi"></span><span id="FixedMinEnvFlowControl::getRelease__i"></span><span class="target" id="classFixedMinEnvFlowControl_1af3ef98eef6a7124738a3b54dcadf757f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRelease</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N22FixedMinEnvFlowControl10getReleaseEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the fixed release amount for the environmental flow control. </p>
+<p>This function overrides the <code class="docutils literal notranslate"><span class="pre">getRelease</span></code> function in the <code class="docutils literal notranslate"><a class="reference internal" href="Base/Controls_base.html#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>week</strong> – Integer representing the week for which the release amount is requested. (Note: For this fixed flow control, the release amount does not depend on the week.)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A double representing the fixed release amount. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N22FixedMinEnvFlowControl7releaseE">
+<span id="_CPPv3N22FixedMinEnvFlowControl7releaseE"></span><span id="_CPPv2N22FixedMinEnvFlowControl7releaseE"></span><span id="FixedMinEnvFlowControl::release__double"></span><span class="target" id="classFixedMinEnvFlowControl_1a16665ce65b1fe997390eb913926bd229"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">release</span></span></span><a class="headerlink" href="#_CPPv4N22FixedMinEnvFlowControl7releaseE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>The release to be maintained to ensure minimum environmental flow. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="inflowminenvflowcontrol-h">
+<h4>InflowMinEnvFlowControl.h<a class="headerlink" href="#inflowminenvflowcontrol-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv423InflowMinEnvFlowControl">
+<span id="_CPPv323InflowMinEnvFlowControl"></span><span id="_CPPv223InflowMinEnvFlowControl"></span><span id="InflowMinEnvFlowControl"></span><span class="target" id="classInflowMinEnvFlowControl"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">InflowMinEnvFlowControl</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><a class="headerlink" href="#_CPPv423InflowMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;InflowMinEnvFlowControl.h&gt;</em></div>
+<p>This class is a subclass of the main <code class="docutils literal notranslate"><a class="reference internal" href="Base/Controls_base.html#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> class and represents inflow water sources with minimum environmental flow control. </p>
+<p>Created by bernardoct on 6/29/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23InflowMinEnvFlowControl23InflowMinEnvFlowControlEiRK6vectorIdERK6vectorIdE">
+<span id="_CPPv3N23InflowMinEnvFlowControl23InflowMinEnvFlowControlEiRK6vectorIdERK6vectorIdE"></span><span id="_CPPv2N23InflowMinEnvFlowControl23InflowMinEnvFlowControlEiRK6vectorIdERK6vectorIdE"></span><span id="InflowMinEnvFlowControl::InflowMinEnvFlowControl__i.vector:double:CR.vector:double:CR"></span><span class="target" id="classInflowMinEnvFlowControl_1aff6c04aaa6e206b29b072aea6fb38367"></span><span class="sig-name descname"><span class="n"><span class="pre">InflowMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_source_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">inflows</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">releases</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23InflowMinEnvFlowControl23InflowMinEnvFlowControlEiRK6vectorIdERK6vectorIdE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs an <code class="docutils literal notranslate"><a class="reference internal" href="#classInflowMinEnvFlowControl"><span class="std std-ref"><span class="pre">InflowMinEnvFlowControl</span></span></a></code> object for managing minimum environmental flow controls based on inflow values. Initializes the control with a specified water source ID, inflow thresholds, and corresponding release amounts. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_source_id</strong> – Integer representing the ID of the water source under environmental flow control. </p></li>
+<li><p><strong>inflows</strong> – Reference to a vector of doubles containing inflow thresholds. </p></li>
+<li><p><strong>releases</strong> – Reference to a vector of doubles containing the corresponding release amounts for each inflow threshold. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23InflowMinEnvFlowControl23InflowMinEnvFlowControlERK23InflowMinEnvFlowControl">
+<span id="_CPPv3N23InflowMinEnvFlowControl23InflowMinEnvFlowControlERK23InflowMinEnvFlowControl"></span><span id="_CPPv2N23InflowMinEnvFlowControl23InflowMinEnvFlowControlERK23InflowMinEnvFlowControl"></span><span id="InflowMinEnvFlowControl::InflowMinEnvFlowControl__InflowMinEnvFlowControlCR"></span><span class="target" id="classInflowMinEnvFlowControl_1a6736e6aa07a27e314789e07a9ab30cad"></span><span class="sig-name descname"><span class="n"><span class="pre">InflowMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N23InflowMinEnvFlowControl23InflowMinEnvFlowControlERK23InflowMinEnvFlowControl" title="InflowMinEnvFlowControl::InflowMinEnvFlowControl"><span class="n"><span class="pre">InflowMinEnvFlowControl</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">min_env_control</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N23InflowMinEnvFlowControl23InflowMinEnvFlowControlERK23InflowMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Copy constructor for the <code class="docutils literal notranslate"><a class="reference internal" href="#classInflowMinEnvFlowControl"><span class="std std-ref"><span class="pre">InflowMinEnvFlowControl</span></span></a></code> class. Creates a new <code class="docutils literal notranslate"><a class="reference internal" href="#classInflowMinEnvFlowControl"><span class="std std-ref"><span class="pre">InflowMinEnvFlowControl</span></span></a></code> object by copying the attributes from an existing one. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>min_env_control</strong> – Reference to the <code class="docutils literal notranslate"><a class="reference internal" href="#classInflowMinEnvFlowControl"><span class="std std-ref"><span class="pre">InflowMinEnvFlowControl</span></span></a></code> object to be copied. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23InflowMinEnvFlowControlD0Ev">
+<span id="_CPPv3N23InflowMinEnvFlowControlD0Ev"></span><span id="_CPPv2N23InflowMinEnvFlowControlD0Ev"></span><span id="InflowMinEnvFlowControl::~InflowMinEnvFlowControl"></span><span class="target" id="classInflowMinEnvFlowControl_1af96a86078cd257309ed55f0cd9ed032e"></span><span class="sig-name descname"><span class="n"><span class="pre">~InflowMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N23InflowMinEnvFlowControlD0Ev" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Destructor for the <code class="docutils literal notranslate"><a class="reference internal" href="#classInflowMinEnvFlowControl"><span class="std std-ref"><span class="pre">InflowMinEnvFlowControl</span></span></a></code> class. Cleans up resources associated with the object. Since the destructor is defaulted, no custom cleanup is required. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>void </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23InflowMinEnvFlowControl7inflowsE">
+<span id="_CPPv3N23InflowMinEnvFlowControl7inflowsE"></span><span id="_CPPv2N23InflowMinEnvFlowControl7inflowsE"></span><span id="InflowMinEnvFlowControl::inflows__vector:double:CR"></span><span class="target" id="classInflowMinEnvFlowControl_1a669660259afa9313c77094dec815a52f"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">inflows</span></span></span><a class="headerlink" href="#_CPPv4N23InflowMinEnvFlowControl7inflowsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A reference to a vector of doubles containing inflow. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N23InflowMinEnvFlowControl8releasesE">
+<span id="_CPPv3N23InflowMinEnvFlowControl8releasesE"></span><span id="_CPPv2N23InflowMinEnvFlowControl8releasesE"></span><span id="InflowMinEnvFlowControl::releases__vector:double:CR"></span><span class="target" id="classInflowMinEnvFlowControl_1a2f82b53516516be63eb169d377df1f55"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">releases</span></span></span><a class="headerlink" href="#_CPPv4N23InflowMinEnvFlowControl8releasesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A reference to a vector of doubles containing the corresponding release amounts. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N23InflowMinEnvFlowControl10getReleaseEi">
+<span id="_CPPv3N23InflowMinEnvFlowControl10getReleaseEi"></span><span id="_CPPv2N23InflowMinEnvFlowControl10getReleaseEi"></span><span id="InflowMinEnvFlowControl::getRelease__i"></span><span class="target" id="classInflowMinEnvFlowControl_1a91bf5813168a995bd4ddf9e0ff553112"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRelease</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N23InflowMinEnvFlowControl10getReleaseEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the release amount for a specified week based on the inflow thresholds and corresponding release values. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>week</strong> – Integer representing the week for which the release amount is calculated.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A double representing the calculated release amount for the specified week. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="minenvflowcontrol-h">
+<h4>MinEnvFlowControl.h<a class="headerlink" href="#minenvflowcontrol-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv425SeasonalMinEnvFlowControl">
+<span id="_CPPv325SeasonalMinEnvFlowControl"></span><span id="_CPPv225SeasonalMinEnvFlowControl"></span><span id="SeasonalMinEnvFlowControl"></span><span class="target" id="classSeasonalMinEnvFlowControl"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">SeasonalMinEnvFlowControl</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><a class="headerlink" href="#_CPPv425SeasonalMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;SeasonalMinEnvFlowControl.h&gt;</em></div>
+<p>This class is a subclass of the main <code class="docutils literal notranslate"><a class="reference internal" href="Base/Controls_base.html#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> class and represents water sources with seasonal minimum environmental flow control. </p>
+<p>Created by bernardoct on 6/28/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N25SeasonalMinEnvFlowControl25SeasonalMinEnvFlowControlEiRK6vectorIiERK6vectorIdE">
+<span id="_CPPv3N25SeasonalMinEnvFlowControl25SeasonalMinEnvFlowControlEiRK6vectorIiERK6vectorIdE"></span><span id="_CPPv2N25SeasonalMinEnvFlowControl25SeasonalMinEnvFlowControlEiRK6vectorIiERK6vectorIdE"></span><span id="SeasonalMinEnvFlowControl::SeasonalMinEnvFlowControl__i.vector:i:CR.vector:double:CR"></span><span class="target" id="classSeasonalMinEnvFlowControl_1a02ea55181dd200190a6b792e57f30193"></span><span class="sig-name descname"><span class="n"><span class="pre">SeasonalMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_source_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">week_thresholds</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">min_env_flows</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N25SeasonalMinEnvFlowControl25SeasonalMinEnvFlowControlEiRK6vectorIiERK6vectorIdE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <code class="docutils literal notranslate"><a class="reference internal" href="#classSeasonalMinEnvFlowControl"><span class="std std-ref"><span class="pre">SeasonalMinEnvFlowControl</span></span></a></code> object for managing seasonal minimum environmental flow controls. Initializes the control with a specified water source ID, seasonal week thresholds, and corresponding minimum flow rates. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_source_id</strong> – Integer representing the ID of the water source under environmental flow control. </p></li>
+<li><p><strong>week_thresholds</strong> – Reference to a vector of integers specifying the week intervals that define seasonal periods. </p></li>
+<li><p><strong>min_env_flows</strong> – Reference to a vector of doubles specifying the minimum flow rates for each seasonal period.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – If the size of <code class="docutils literal notranslate"><span class="pre">week_thresholds</span></code> is not one more than the size of <code class="docutils literal notranslate"><span class="pre">min_env_flows</span></code>. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – If the first threshold is not 0 or the last threshold is not 53 (for years with 53 weeks). </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N25SeasonalMinEnvFlowControl25SeasonalMinEnvFlowControlERK25SeasonalMinEnvFlowControl">
+<span id="_CPPv3N25SeasonalMinEnvFlowControl25SeasonalMinEnvFlowControlERK25SeasonalMinEnvFlowControl"></span><span id="_CPPv2N25SeasonalMinEnvFlowControl25SeasonalMinEnvFlowControlERK25SeasonalMinEnvFlowControl"></span><span id="SeasonalMinEnvFlowControl::SeasonalMinEnvFlowControl__SeasonalMinEnvFlowControlCR"></span><span class="target" id="classSeasonalMinEnvFlowControl_1ad0eeb570fc096a92b788b5c4a48bcec4"></span><span class="sig-name descname"><span class="n"><span class="pre">SeasonalMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N25SeasonalMinEnvFlowControl25SeasonalMinEnvFlowControlERK25SeasonalMinEnvFlowControl" title="SeasonalMinEnvFlowControl::SeasonalMinEnvFlowControl"><span class="n"><span class="pre">SeasonalMinEnvFlowControl</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">min_env_control</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N25SeasonalMinEnvFlowControl25SeasonalMinEnvFlowControlERK25SeasonalMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Copy constructor for the <code class="docutils literal notranslate"><a class="reference internal" href="#classSeasonalMinEnvFlowControl"><span class="std std-ref"><span class="pre">SeasonalMinEnvFlowControl</span></span></a></code> class. Creates a new <code class="docutils literal notranslate"><a class="reference internal" href="#classSeasonalMinEnvFlowControl"><span class="std std-ref"><span class="pre">SeasonalMinEnvFlowControl</span></span></a></code> object by copying the attributes from an existing one. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>min_env_control</strong> – Reference to the <code class="docutils literal notranslate"><a class="reference internal" href="#classSeasonalMinEnvFlowControl"><span class="std std-ref"><span class="pre">SeasonalMinEnvFlowControl</span></span></a></code> object to be copied. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N25SeasonalMinEnvFlowControl10getReleaseEi">
+<span id="_CPPv3N25SeasonalMinEnvFlowControl10getReleaseEi"></span><span id="_CPPv2N25SeasonalMinEnvFlowControl10getReleaseEi"></span><span id="SeasonalMinEnvFlowControl::getRelease__i"></span><span class="target" id="classSeasonalMinEnvFlowControl_1a5c5ddcab367812bdd2e23b383449d202"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRelease</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N25SeasonalMinEnvFlowControl10getReleaseEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the release amount for a specified week based on seasonal week thresholds and corresponding flow rates. </p>
+<p>This function overrides the <code class="docutils literal notranslate"><span class="pre">getRelease</span></code> function in the <code class="docutils literal notranslate"><a class="reference internal" href="Base/Controls_base.html#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>week</strong> – Integer representing the week for which the release amount is calculated.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A double representing the calculated release amount for the specified week. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N25SeasonalMinEnvFlowControl15week_thresholdsE">
+<span id="_CPPv3N25SeasonalMinEnvFlowControl15week_thresholdsE"></span><span id="_CPPv2N25SeasonalMinEnvFlowControl15week_thresholdsE"></span><span id="SeasonalMinEnvFlowControl::week_thresholds__vector:i:CR"></span><span class="target" id="classSeasonalMinEnvFlowControl_1adea056def640b4e799b8549383838317"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">week_thresholds</span></span></span><a class="headerlink" href="#_CPPv4N25SeasonalMinEnvFlowControl15week_thresholdsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A reference to a vector of integers containing the week thresholds for seasonal minimum environmental flow requirements. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N25SeasonalMinEnvFlowControl13min_env_flowsE">
+<span id="_CPPv3N25SeasonalMinEnvFlowControl13min_env_flowsE"></span><span id="_CPPv2N25SeasonalMinEnvFlowControl13min_env_flowsE"></span><span id="SeasonalMinEnvFlowControl::min_env_flows__vector:double:CR"></span><span class="target" id="classSeasonalMinEnvFlowControl_1aa9225667157707da3230276d0de890ba"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">min_env_flows</span></span></span><a class="headerlink" href="#_CPPv4N25SeasonalMinEnvFlowControl13min_env_flowsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A reference to a vector of doubles containing the minimum environmental flow requirements for each week. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="storageminenvflowcontrol-h">
+<h4>StorageMinEnvFlowControl.h<a class="headerlink" href="#storageminenvflowcontrol-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv424StorageMinEnvFlowControl">
+<span id="_CPPv324StorageMinEnvFlowControl"></span><span id="_CPPv224StorageMinEnvFlowControl"></span><span id="StorageMinEnvFlowControl"></span><span class="target" id="classStorageMinEnvFlowControl"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">StorageMinEnvFlowControl</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/Controls_base.html#_CPPv417MinEnvFlowControl" title="MinEnvFlowControl"><span class="n"><span class="pre">MinEnvFlowControl</span></span></a><a class="headerlink" href="#_CPPv424StorageMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;StorageMinEnvFlowControl.h&gt;</em></div>
+<p>This class is a subclass of the main <code class="docutils literal notranslate"><a class="reference internal" href="Base/Controls_base.html#classMinEnvFlowControl"><span class="std std-ref"><span class="pre">MinEnvFlowControl</span></span></a></code> class and represents storage water sources with minimum environmental flow control. </p>
+<p>Created by bernardoct on 6/28/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N24StorageMinEnvFlowControl24StorageMinEnvFlowControlEiRK6vectorIiER6vectorIdER6vectorIdE">
+<span id="_CPPv3N24StorageMinEnvFlowControl24StorageMinEnvFlowControlEiRK6vectorIiER6vectorIdER6vectorIdE"></span><span id="_CPPv2N24StorageMinEnvFlowControl24StorageMinEnvFlowControlEiRK6vectorIiER6vectorIdER6vectorIdE"></span><span id="StorageMinEnvFlowControl::StorageMinEnvFlowControl__i.vector:i:CR.vector:double:R.vector:double:R"></span><span class="target" id="classStorageMinEnvFlowControl_1aba965c28890bf5abb1230dd6d8879f18"></span><span class="sig-name descname"><span class="n"><span class="pre">StorageMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_source_id</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">aux_water_sources_ids</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">storages</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">releases</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N24StorageMinEnvFlowControl24StorageMinEnvFlowControlEiRK6vectorIiER6vectorIdER6vectorIdE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <code class="docutils literal notranslate"><a class="reference internal" href="#classStorageMinEnvFlowControl"><span class="std std-ref"><span class="pre">StorageMinEnvFlowControl</span></span></a></code> object for managing minimum environmental flow controls based on storage levels. Initializes the control with a specified water source ID, auxiliary water sources, storage thresholds, and corresponding release values. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_source_id</strong> – Integer representing the ID of the primary water source under environmental flow control. </p></li>
+<li><p><strong>aux_water_sources_ids</strong> – Reference to a vector of integers containing the IDs of auxiliary water sources (e.g., reservoirs or quarries). </p></li>
+<li><p><strong>storages</strong> – Reference to a vector of doubles containing storage thresholds. </p></li>
+<li><p><strong>releases</strong> – Reference to a vector of doubles containing the corresponding release amounts for each storage threshold.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – If the number of auxiliary water sources is not exactly one. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N24StorageMinEnvFlowControl24StorageMinEnvFlowControlERK24StorageMinEnvFlowControl">
+<span id="_CPPv3N24StorageMinEnvFlowControl24StorageMinEnvFlowControlERK24StorageMinEnvFlowControl"></span><span id="_CPPv2N24StorageMinEnvFlowControl24StorageMinEnvFlowControlERK24StorageMinEnvFlowControl"></span><span id="StorageMinEnvFlowControl::StorageMinEnvFlowControl__StorageMinEnvFlowControlCR"></span><span class="target" id="classStorageMinEnvFlowControl_1a2279f6d44b8ba69830a29654ddee8d3a"></span><span class="sig-name descname"><span class="n"><span class="pre">StorageMinEnvFlowControl</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv4N24StorageMinEnvFlowControl24StorageMinEnvFlowControlERK24StorageMinEnvFlowControl" title="StorageMinEnvFlowControl::StorageMinEnvFlowControl"><span class="n"><span class="pre">StorageMinEnvFlowControl</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">min_env_control</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N24StorageMinEnvFlowControl24StorageMinEnvFlowControlERK24StorageMinEnvFlowControl" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Copy constructor for the <code class="docutils literal notranslate"><a class="reference internal" href="#classStorageMinEnvFlowControl"><span class="std std-ref"><span class="pre">StorageMinEnvFlowControl</span></span></a></code> class. Creates a new <code class="docutils literal notranslate"><a class="reference internal" href="#classStorageMinEnvFlowControl"><span class="std std-ref"><span class="pre">StorageMinEnvFlowControl</span></span></a></code> object by copying the attributes from an existing one. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>min_env_control</strong> – Reference to the <code class="docutils literal notranslate"><a class="reference internal" href="#classStorageMinEnvFlowControl"><span class="std std-ref"><span class="pre">StorageMinEnvFlowControl</span></span></a></code> object to be copied. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24StorageMinEnvFlowControl8storagesE">
+<span id="_CPPv3N24StorageMinEnvFlowControl8storagesE"></span><span id="_CPPv2N24StorageMinEnvFlowControl8storagesE"></span><span id="StorageMinEnvFlowControl::storages__vector:double:CR"></span><span class="target" id="classStorageMinEnvFlowControl_1af68170e5f561f1bfc2062f9e6ec8dd6d"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">storages</span></span></span><a class="headerlink" href="#_CPPv4N24StorageMinEnvFlowControl8storagesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A reference to the vector of doubles containing storage thresholds. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N24StorageMinEnvFlowControl8releasesE">
+<span id="_CPPv3N24StorageMinEnvFlowControl8releasesE"></span><span id="_CPPv2N24StorageMinEnvFlowControl8releasesE"></span><span id="StorageMinEnvFlowControl::releases__vector:double:CR"></span><span class="target" id="classStorageMinEnvFlowControl_1af187563525a0b5b437d27134bff34646"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">releases</span></span></span><a class="headerlink" href="#_CPPv4N24StorageMinEnvFlowControl8releasesE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A reference to the vector of doubles containing the corresponding release amounts for each storage threshold. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-functions">Private Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N24StorageMinEnvFlowControl10getReleaseEi">
+<span id="_CPPv3N24StorageMinEnvFlowControl10getReleaseEi"></span><span id="_CPPv2N24StorageMinEnvFlowControl10getReleaseEi"></span><span id="StorageMinEnvFlowControl::getRelease__i"></span><span class="target" id="classStorageMinEnvFlowControl_1ae78055a8be7ad9e119384958ef88e174"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getRelease</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N24StorageMinEnvFlowControl10getReleaseEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Calculates the release amount for a specified week based on storage thresholds and corresponding release values. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>week</strong> – Integer representing the week for which the release amount is calculated.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A double representing the calculated release amount for the specified week. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="wwtpdischargerule-h">
+<h4>WwtpDischargeRule.h<a class="headerlink" href="#wwtpdischargerule-h" title="Permalink to this heading"></a></h4>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv417WwtpDischargeRule">
+<span id="_CPPv317WwtpDischargeRule"></span><span id="_CPPv217WwtpDischargeRule"></span><span id="WwtpDischargeRule"></span><span class="target" id="classWwtpDischargeRule"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">WwtpDischargeRule</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Base/Controls_base.html#_CPPv412ControlRules" title="ControlRules"><span class="n"><span class="pre">ControlRules</span></span></a><a class="headerlink" href="#_CPPv417WwtpDischargeRule" title="Permalink to this definition"></a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;WwtpDischargeRule.h&gt;</em></div>
+<p>This class is a subclass of the main <code class="docutils literal notranslate"><a class="reference internal" href="Base/Controls_base.html#classControlRules"><span class="std std-ref"><span class="pre">ControlRules</span></span></a></code> class and represents the discharge rules for a wastewater treatment plant (WWTP). </p>
+<p>Created by bernardoct on 6/26/17. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17WwtpDischargeRule17WwtpDischargeRuleE6vectorI6vectorIdEE6vectorIiE">
+<span id="_CPPv3N17WwtpDischargeRule17WwtpDischargeRuleE6vectorI6vectorIdEE6vectorIiE"></span><span id="_CPPv2N17WwtpDischargeRule17WwtpDischargeRuleE6vectorI6vectorIdEE6vectorIiE"></span><span id="WwtpDischargeRule::WwtpDischargeRule__vector:vector:double::.vector:i:"></span><span class="target" id="classWwtpDischargeRule_1ae904657855c9d983ea0e5995109cd561"></span><span class="sig-name descname"><span class="n"><span class="pre">WwtpDischargeRule</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">year_series_fraction_discharge</span></span>, <span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">discharge_to_source_ids</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N17WwtpDischargeRule17WwtpDischargeRuleE6vectorI6vectorIdEE6vectorIiE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Constructs a <code class="docutils literal notranslate"><a class="reference internal" href="#classWwtpDischargeRule"><span class="std std-ref"><span class="pre">WwtpDischargeRule</span></span></a></code> object to manage discharge rules for a wastewater treatment plant (WWTP). Initializes the object with time-series discharge fractions and the associated discharge source IDs. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>year_series_fraction_discharge</strong> – A vector of vectors, where each inner vector contains discharge fractions for each week of the year. Each vector must have exactly 53 elements (to account for years with an extra week). </p></li>
+<li><p><strong>discharge_to_source_ids</strong> – A vector of integers representing the IDs of the discharge sources.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – If any time series does not have exactly 53 elements. </p></li>
+<li><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – If the number of discharge time series does not match the number of discharge source IDs. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17WwtpDischargeRule17WwtpDischargeRuleER17WwtpDischargeRule">
+<span id="_CPPv3N17WwtpDischargeRule17WwtpDischargeRuleER17WwtpDischargeRule"></span><span id="_CPPv2N17WwtpDischargeRule17WwtpDischargeRuleER17WwtpDischargeRule"></span><span id="WwtpDischargeRule::WwtpDischargeRule__WwtpDischargeRuleR"></span><span class="target" id="classWwtpDischargeRule_1ac433e50df1414ba4bbb40022832b43ff"></span><span class="sig-name descname"><span class="n"><span class="pre">WwtpDischargeRule</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N17WwtpDischargeRule17WwtpDischargeRuleER17WwtpDischargeRule" title="WwtpDischargeRule::WwtpDischargeRule"><span class="n"><span class="pre">WwtpDischargeRule</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">wwtp_discharge_rule</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N17WwtpDischargeRule17WwtpDischargeRuleER17WwtpDischargeRule" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Copy constructor for the <code class="docutils literal notranslate"><a class="reference internal" href="#classWwtpDischargeRule"><span class="std std-ref"><span class="pre">WwtpDischargeRule</span></span></a></code> class. Creates a new <code class="docutils literal notranslate"><a class="reference internal" href="#classWwtpDischargeRule"><span class="std std-ref"><span class="pre">WwtpDischargeRule</span></span></a></code> object by copying the attributes from an existing one. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>wwtp_discharge_rule</strong> – Reference to the <code class="docutils literal notranslate"><a class="reference internal" href="#classWwtpDischargeRule"><span class="std std-ref"><span class="pre">WwtpDischargeRule</span></span></a></code> object to be copied. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17WwtpDischargeRuleaSERK17WwtpDischargeRule">
+<span id="_CPPv3N17WwtpDischargeRuleaSERK17WwtpDischargeRule"></span><span id="_CPPv2N17WwtpDischargeRuleaSERK17WwtpDischargeRule"></span><span id="WwtpDischargeRule::assign-operator__WwtpDischargeRuleCR"></span><span class="target" id="classWwtpDischargeRule_1a59b2b1f56607106a237011f16a3915c3"></span><a class="reference internal" href="#_CPPv417WwtpDischargeRule" title="WwtpDischargeRule"><span class="n"><span class="pre">WwtpDischargeRule</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="k"><span class="pre">operator</span></span><span class="o"><span class="pre">=</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv417WwtpDischargeRule" title="WwtpDischargeRule"><span class="n"><span class="pre">WwtpDischargeRule</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">wwtp_discharge_rule</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N17WwtpDischargeRuleaSERK17WwtpDischargeRule" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Overloads the assignment operator for the <code class="docutils literal notranslate"><a class="reference internal" href="#classWwtpDischargeRule"><span class="std std-ref"><span class="pre">WwtpDischargeRule</span></span></a></code> class, allowing one object to be assigned the attributes of another. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>wwtp_discharge_rule</strong> – Reference to the <code class="docutils literal notranslate"><a class="reference internal" href="#classWwtpDischargeRule"><span class="std std-ref"><span class="pre">WwtpDischargeRule</span></span></a></code> object to be assigned.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A reference to the updated <code class="docutils literal notranslate"><a class="reference internal" href="#classWwtpDischargeRule"><span class="std std-ref"><span class="pre">WwtpDischargeRule</span></span></a></code> object after assignment. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17WwtpDischargeRule22get_dependent_variableEd">
+<span id="_CPPv3N17WwtpDischargeRule22get_dependent_variableEd"></span><span id="_CPPv2N17WwtpDischargeRule22get_dependent_variableEd"></span><span id="WwtpDischargeRule::get_dependent_variable__double"></span><span class="target" id="classWwtpDischargeRule_1a4cea07bf746d200c9ca3018405a77a46"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dependent_variable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_source_id</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N17WwtpDischargeRule22get_dependent_variableEd" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Throws an exception because this overload of <code class="docutils literal notranslate"><span class="pre">get_dependent_variable</span></code> is not valid for <code class="docutils literal notranslate"><a class="reference internal" href="#classWwtpDischargeRule"><span class="std std-ref"><span class="pre">WwtpDischargeRule</span></span></a></code>. This function serves to catch the potential error where the user misses the <code class="docutils literal notranslate"><span class="pre">week</span></code> parameter. </p>
+<p>This function overrides the <code class="docutils literal notranslate"><span class="pre">get_dependent_variable</span></code> method in the <code class="docutils literal notranslate"><a class="reference internal" href="Base/Controls_base.html#classControlRules"><span class="std std-ref"><span class="pre">ControlRules</span></span></a></code> class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>water_source_id</strong> – Double placeholder parameter (not used in this implementation).</p>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – Always throws an exception with a message indicating that this overload is invalid. The valid method requires a both water source ID (int) and a week number (int) as arguments. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17WwtpDischargeRule22get_dependent_variableEi">
+<span id="_CPPv3N17WwtpDischargeRule22get_dependent_variableEi"></span><span id="_CPPv2N17WwtpDischargeRule22get_dependent_variableEi"></span><span id="WwtpDischargeRule::get_dependent_variable__i"></span><span class="target" id="classWwtpDischargeRule_1a3338c0fc43d656a6730ca72dd5d3e51e"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dependent_variable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">water_source_id</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N17WwtpDischargeRule22get_dependent_variableEi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the fraction of the week’s demand to be discharged as effluent for a specified water source and week. </p>
+<p>This function overrides the <code class="docutils literal notranslate"><span class="pre">get_dependent_variable</span></code> method in the <code class="docutils literal notranslate"><a class="reference internal" href="Base/Controls_base.html#classControlRules"><span class="std std-ref"><span class="pre">ControlRules</span></span></a></code> class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_source_id</strong> – Integer representing the ID of the water source for which the discharge fraction is requested. </p></li>
+<li><p><strong>week</strong> – Integer representing the week for which the discharge fraction is requested.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A double representing the fraction of the week’s demand to be discharged as effluent. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17WwtpDischargeRule22get_dependent_variableEdi">
+<span id="_CPPv3N17WwtpDischargeRule22get_dependent_variableEdi"></span><span id="_CPPv2N17WwtpDischargeRule22get_dependent_variableEdi"></span><span id="WwtpDischargeRule::get_dependent_variable__double.i"></span><span class="target" id="classWwtpDischargeRule_1a10eb6f901b6479dadc107e0a7c07e03b"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dependent_variable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N17WwtpDischargeRule22get_dependent_variableEdi" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Throws an exception because this overload of <code class="docutils literal notranslate"><span class="pre">get_dependent_variable</span></code> is not valid for <code class="docutils literal notranslate"><a class="reference internal" href="#classWwtpDischargeRule"><span class="std std-ref"><span class="pre">WwtpDischargeRule</span></span></a></code>. This function serves to catch the potential error where the user attempts to call <code class="docutils literal notranslate"><span class="pre">get_dependent_variable</span></code> with a double parameter. </p>
+<p>This function overrides the <code class="docutils literal notranslate"><span class="pre">get_dependent_variable</span></code> method in the <code class="docutils literal notranslate"><a class="reference internal" href="Base/Controls_base.html#classControlRules"><span class="std std-ref"><span class="pre">ControlRules</span></span></a></code> class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – Double placeholder parameter (not used in this implementation). </p></li>
+<li><p><strong>week</strong> – Integer representing the week for which the discharge fraction is requested.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Throws</dt>
+<dd class="field-even"><p><span><span class="cpp-expr sig sig-inline cpp"><a class="reference internal" href="../ContinuityModels/Base/ContinuityModels_base.html#_CPPv4St" title="std"><span class="n">std</span></a><span class="p">::</span><span class="n">invalid_argument</span></span></span> – Always throws an exception with a message indicating that this overload is invalid. The valid method requires a water source ID (int) and a week number (int) as arguments. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N17WwtpDischargeRule22get_dependent_variableEii">
+<span id="_CPPv3N17WwtpDischargeRule22get_dependent_variableEii"></span><span id="_CPPv2N17WwtpDischargeRule22get_dependent_variableEii"></span><span id="WwtpDischargeRule::get_dependent_variable__i.i"></span><span class="target" id="classWwtpDischargeRule_1a8eade5d595ec0fdc76769e67c7ffc5f4"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get_dependent_variable</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">x</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">week</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N17WwtpDischargeRule22get_dependent_variableEii" title="Permalink to this definition"></a><br /></dt>
+<dd><p>Retrieves the fraction of the week’s demand to be discharged as effluent for a specified water source and week. </p>
+<p>This function overrides the <code class="docutils literal notranslate"><span class="pre">get_dependent_variable</span></code> method in the <code class="docutils literal notranslate"><a class="reference internal" href="Base/Controls_base.html#classControlRules"><span class="std std-ref"><span class="pre">ControlRules</span></span></a></code> class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>water_source_id</strong> – Integer representing the ID of the water source for which the discharge fraction is requested. </p></li>
+<li><p><strong>week</strong> – Integer representing the week for which the discharge fraction is requested.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A double representing the fraction of the week’s demand to be discharged as effluent. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17WwtpDischargeRule30year_series_fraction_dischargeE">
+<span id="_CPPv3N17WwtpDischargeRule30year_series_fraction_dischargeE"></span><span id="_CPPv2N17WwtpDischargeRule30year_series_fraction_dischargeE"></span><span id="WwtpDischargeRule::year_series_fraction_discharge__vector:vector:double::"></span><span class="target" id="classWwtpDischargeRule_1a5d193e0cbc2eb23e1b86e79fb2eafad3"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">double</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">year_series_fraction_discharge</span></span></span><a class="headerlink" href="#_CPPv4N17WwtpDischargeRule30year_series_fraction_dischargeE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A 2D vector of doubles containing the fraction of the week’s demand to be discharged as effluent. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17WwtpDischargeRule23discharge_to_source_idsE">
+<span id="_CPPv3N17WwtpDischargeRule23discharge_to_source_idsE"></span><span id="_CPPv2N17WwtpDischargeRule23discharge_to_source_idsE"></span><span id="WwtpDischargeRule::discharge_to_source_ids__vector:i:"></span><span class="target" id="classWwtpDischargeRule_1ac2f77a9fca93eef3fd26ff1d579130be"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">discharge_to_source_ids</span></span></span><a class="headerlink" href="#_CPPv4N17WwtpDischargeRule23discharge_to_source_idsE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of integers containing the IDs of the sources receiving the effluent. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N17WwtpDischargeRule25source_id_to_vector_indexE">
+<span id="_CPPv3N17WwtpDischargeRule25source_id_to_vector_indexE"></span><span id="_CPPv2N17WwtpDischargeRule25source_id_to_vector_indexE"></span><span id="WwtpDischargeRule::source_id_to_vector_index__vector:i:"></span><span class="target" id="classWwtpDischargeRule_1a99be200d8d3ccf1f95a8d6e84a225df1"></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">source_id_to_vector_index</span></span></span><a class="headerlink" href="#_CPPv4N17WwtpDischargeRule25source_id_to_vector_indexE" title="Permalink to this definition"></a><br /></dt>
+<dd><p>A vector of IDs mapping the source IDs to the corresponding index in the <code class="docutils literal notranslate"><span class="pre">discharge_to_source_ids</span></code> vector. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Custom/Controls_custom.html" class="btn btn-neutral float-left" title="Controls Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../DataCollector/DataCollector_index.html" class="btn btn-neutral float-right" title="DataCollector Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Lillian Lau.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

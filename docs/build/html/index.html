@@ -21,7 +21,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="ContinuityModels Module" href="ContinuityModels/index.html" /> 
+    <link rel="next" title="ContinuityModels Module" href="ContinuityModels/ContinuityModels_index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,19 +43,15 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="ContinuityModels/index.html">ContinuityModels Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ContinuityModels/Base/index.html">Base Components</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problem/index.html">Problem Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Problem/Base/index.html">Base Components</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Simulation/index.html">Simulation Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SystemComponents/index.html">SystemComponents Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SystemComponents/Bonds/index.html">Bonds Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SystemComponents/Bonds/Base/index.html">Bonds Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SystemComponents/Utility/index.html">Utility Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SystemComponents/WaterSources/index.html">SystemComponents Module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="SystemComponents/WaterSources/Base/index.html">WaterSources Module</a></li>
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="ContinuityModels/ContinuityModels_index.html">Continuity Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Controls/Controls_index.html">Controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DataCollector/DataCollector_index.html">Data Collector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DroughtMitigationInstruments/DroughtMitigationInstruments_index.html">Drought Mitigation Instruments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem/Problem_index.html">Problem Implementations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Simulation/Simulation_index.html">Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SystemComponents/SystemComponents_index.html">System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utils/Utils_index.html">Utils</a></li>
 </ul>
 
         </div>
@@ -84,237 +80,38 @@
              
   <div class="section" id="welcome-to-the-official-waterpaths-documentation">
 <h1>Welcome to the official WaterPaths documentation!<a class="headerlink" href="#welcome-to-the-official-waterpaths-documentation" title="Permalink to this heading"></a></h1>
-<blockquote class="epigraph">
-<div><p>WaterPaths is a Python package for the optimization of water distribution systems. It is a utility planning and management tool built to facilitate the identification of regionally-robust
-water supply planning and management policy pathways. For the original implementation of the code, please see the GitHub Repository here.</p>
-</div></blockquote>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This site is a work in progress. If you see any mistakes or would like to request any additional material, please submit a new <a class="reference external" href="https://github.com/lbl59/WaterPaths-doc/issues">Issue on GitHub</a>.</p>
+</div>
+<p><strong>WaterPaths</strong> is a C++ package for the optimization of multi-actor water distribution systems under deep uncertainty. It is a utility planning and management tool built to facilitate the identification of regionally-robust
+water supply planning and management policy pathways. To view its associated publication, please see <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1364815220301511">Trindade et al, 2020</a>.</p>
+</div>
+<div class="section" id="install-and-run">
+<h1>Install and Run<a class="headerlink" href="#install-and-run" title="Permalink to this heading"></a></h1>
+<p>To install and run WaterPaths, clone this <a class="reference external" href="https://github.com/bernardoct/WaterPaths">GitHub Repository</a>. Follow the directions in the corresponding README to run a simple WaterPaths simulation.</p>
+</div>
+<div class="section" id="modules">
+<h1>Modules<a class="headerlink" href="#modules" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="ContinuityModels/index.html">ContinuityModels Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ContinuityModels/index.html#contents">Contents</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ContinuityModels/Base/index.html">Base Components</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="ContinuityModels/Base/index.html#api-reference">API Reference</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="ContinuityModels/index.html#api-reference">API Reference</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ContinuityModels/index.html#base-components">Base Components</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="ContinuityModels/index.html#continuitymodel-h">ContinuityModel.h</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="ContinuityModels/index.html#specific-implementations">Specific Implementations</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="ContinuityModels/index.html#continuitymodelrealization-h">ContinuityModelRealization.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ContinuityModels/index.html#continuitymodelrof-h">ContinuityModelROF.h</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="ContinuityModels/Base/index.html">Base Components</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ContinuityModels/Base/index.html#api-reference">API Reference</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ContinuityModels/Base/index.html#continuitymodel-class">ContinuityModel Class</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="ContinuityModels/Base/index.html#continuitymodel-h">ContinuityModel.h</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Problem/index.html">Problem Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Problem/index.html#contents">Contents</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Problem/Base/index.html">Base Components</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Problem/Base/index.html#api-reference">API Reference</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Problem/index.html#api-reference">API Reference</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Problem/index.html#base-components">Base Components</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Problem/index.html#problem-h">Problem.h</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="Problem/index.html#specific-problems">Specific Problems</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Problem/index.html#papertestproblem-h">PaperTestProblem.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="Problem/index.html#triangle-h">Triangle.h</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Problem/Base/index.html">Base Components</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Problem/Base/index.html#api-reference">API Reference</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Problem/Base/index.html#problem-class">Problem Class</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Problem/Base/index.html#problem-h">Problem.h</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="Simulation/index.html">Simulation Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Simulation/index.html#contents">Contents</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="Simulation/index.html#api-reference">API Reference</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Simulation/index.html#base-components">Base Components</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="Simulation/index.html#simulation-h">Simulation.h</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="SystemComponents/index.html">SystemComponents Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="SystemComponents/index.html#contents">Contents</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/Bonds/index.html">Bonds Module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Bonds/index.html#contents">Contents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Bonds/index.html#api-reference">API Reference</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/Bonds/Base/index.html">Bonds Module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Bonds/Base/index.html#contents">Contents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Bonds/Base/index.html#api-reference">API Reference</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/Utility/index.html">Utility Module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Utility/index.html#contents">Contents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Utility/index.html#api-reference">API Reference</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/WaterSources/index.html">SystemComponents Module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#contents">Contents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#api-reference">API Reference</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/WaterSources/Base/index.html">WaterSources Module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/Base/index.html#contents">Contents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/Base/index.html#api-reference">API Reference</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="SystemComponents/index.html#api-reference">API Reference</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/index.html#base-components">Base Components</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/index.html#catchment-h">Catchment.h</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="SystemComponents/Bonds/index.html">Bonds Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="SystemComponents/Bonds/index.html#contents">Contents</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/Bonds/Base/index.html">Bonds Module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Bonds/Base/index.html#contents">Contents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Bonds/Base/index.html#api-reference">API Reference</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="SystemComponents/Bonds/index.html#api-reference">API Reference</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/Bonds/index.html#base-components">Base Components</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Bonds/index.html#balloonpaymentbond-h">BalloonPaymentBond.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Bonds/index.html#floatinginterestballoonpaymentbond-h">FloatingInterestBalloonPaymentBond.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Bonds/index.html#leveldebtservicebond-h">LevelDebtServiceBond.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Bonds/index.html#variabledebtservicebond-h">VariableDebtServiceBond.h</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="SystemComponents/Bonds/Base/index.html">Bonds Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="SystemComponents/Bonds/Base/index.html#contents">Contents</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="SystemComponents/Bonds/Base/index.html#api-reference">API Reference</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/Bonds/Base/index.html#base-components">Base Components</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Bonds/Base/index.html#bond-h">Bond.h</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="SystemComponents/Utility/index.html">Utility Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="SystemComponents/Utility/index.html#contents">Contents</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="SystemComponents/Utility/index.html#api-reference">API Reference</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/Utility/index.html#base-components">Base Components</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Utility/index.html#infrastructuremanager-h">InfrastructureManager.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/Utility/index.html#utility-h">Utility.h</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="SystemComponents/WaterSources/index.html">SystemComponents Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="SystemComponents/WaterSources/index.html#contents">Contents</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/WaterSources/Base/index.html">WaterSources Module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/Base/index.html#contents">Contents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/Base/index.html#api-reference">API Reference</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="SystemComponents/WaterSources/index.html#api-reference">API Reference</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/WaterSources/index.html#base-components">Base Components</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#allocatedintake-h">AllocatedIntake.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#allocatedintakeexpansion-h">AllocatedIntakeExpansion.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#allocatedreservoir-h">AllocatedReservoir.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#fixedjointwtp-h">FixedJointWTP.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#intake-h">Intake.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#intakeexpansion-h">IntakeExpansion.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#jointwtp-h">JointWTP.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#quarry-h">Quarry.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#relocation-h">Relocation.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#reservoir-h">Reservoir.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#reservoirexpansion-h">ReservoirExpansion.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#sequentialjointtreatmentexpansion-h">SequentialJointTreatmentExpansion.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#variablejointwtp-h">VariableJointWTP.h</a></li>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/index.html#waterreuse-h">WaterReuse.h</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="SystemComponents/WaterSources/Base/index.html">WaterSources Module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="SystemComponents/WaterSources/Base/index.html#contents">Contents</a><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="SystemComponents/WaterSources/Base/index.html#api-reference">API Reference</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="SystemComponents/WaterSources/Base/index.html#base-components">Base Components</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="SystemComponents/WaterSources/Base/index.html#watersource-h">WaterSource.h</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="ContinuityModels/ContinuityModels_index.html">Continuity Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Controls/Controls_index.html">Controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DataCollector/DataCollector_index.html">Data Collector</a></li>
+<li class="toctree-l1"><a class="reference internal" href="DroughtMitigationInstruments/DroughtMitigationInstruments_index.html">Drought Mitigation Instruments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Problem/Problem_index.html">Problem Implementations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Simulation/Simulation_index.html">Simulation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SystemComponents/SystemComponents_index.html">System Components</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Utils/Utils_index.html">Utils</a></li>
 </ul>
 </div>
-</div>
-<div class="section" id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this heading"></a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
-</ul>
 </div>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="ContinuityModels/index.html" class="btn btn-neutral float-right" title="ContinuityModels Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="ContinuityModels/ContinuityModels_index.html" class="btn btn-neutral float-right" title="ContinuityModels Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
