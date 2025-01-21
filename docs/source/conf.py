@@ -28,11 +28,10 @@ breathe_projects = {
 }
 breathe_default_project = "WaterPaths"
 
-sys.path.insert(0, os.path.abspath('../../src'))
+sys.path.insert(0, os.path.abspath('../src'))
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "sphinx_rtd_theme"
-html_static_path = ['../build/html/_static']
-html_css_files = ["../build/html/_static/css/custom.css"]
+html_static_path = ['../_static']
