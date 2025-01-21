@@ -35,3 +35,4 @@ sys.path.insert(0, os.path.abspath('../../src'))
 
 html_theme = "sphinx_rtd_theme"
 html_static_path = ['../build/html/_static']
+html_css_files = ["../build/html/_static/css/custom.css"]
