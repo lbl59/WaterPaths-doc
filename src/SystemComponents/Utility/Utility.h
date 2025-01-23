@@ -329,7 +329,7 @@ public:
     const double demand_buffer;
 
     /**
-      * @brief Main constructor for a Utility object with specified attributes and initializes its parameters.
+      * @brief Main constructor (14-parameter) for a Utility object with specified attributes and initializes its parameters.
       *  
       * This constructor sets up the Utility instance with various properties related to water demand, pricing,
       * contingency funds, and infrastructure financing. It also computes the weekly average water prices based on
@@ -372,9 +372,61 @@ public:
         int demand_projection_forecast_length,
         int demand_projection_historical_period_to_use,
         int demand_projection_reprojection_frequency);
-        
+    
     /**
-      * @brief Constructs a Utility object for when there is infrastructure to be built.
+      * @brief The constructor (16-parameter) for a Utility object for when there is infrastructure to be built.
+      *  
+      * This constructor sets up a Utility with specified attributes and initializes its parameters and infrastructure manager.
+      * Sets up the Utility instance, initializes water demand, pricing, and financial properties, 
+      * and integrates infrastructure construction management functionality. It also computes weekly average water prices 
+      * and ensures the provided parameters are valid.
+      * 
+      * @param name The name of the utility.
+      * @param id The unique identifier for the utility.
+      * @param demands_all_realizations A vector of weekly demand data for all realizations.
+      * @param annual_demand_projections A vector of annual demand projections.
+      * @param number_of_week_demands The number of weekly demand entries.
+      * @param percent_contingency_fund_contribution Percentage contribution to the contingency fund.
+      * @param typesMonthlyDemandFraction A reference to a vector of vectors containing monthly demand fractions by water type.
+      *         Table of size 12 (months in year) by number of consumer tiers with the fraction of the total demand consumed by each tier in each month of the year. 
+      *         The last column must be the fraction of the demand treated as sewage. 
+      *         The summation of all number in a row but the last one, therefore, must sum to 1.      
+      * @param typesMonthlyWaterPrice A reference to a vector of vectors containing monthly water prices by tier type.
+      *         The last column is the price charged for waste water treatment.
+      * @param wwtp_discharge_rule The rule governing wastewater treatment plant discharges.
+      *         A 53-week-long time series according to which fractions of sewage is discharged in different water sources 
+      *         (normally one for each WWTP).
+      * @param demand_buffer A buffer for smoothing demand projections.
+      * @param rof_infra_construction_order A vector defining the ROF-based construction order for infrastructure.
+      * @param demand_infra_construction_order A vector defining the demand-based construction order for infrastructure.
+      * @param infra_construction_triggers A vector of construction triggers for infrastructure projects.
+      * @param infra_discount_rate The discount rate applied to infrastructure construction costs.
+      * @param bond_term The term of infrastructure bonds.
+      * @param bond_interest_rate The interest rate for infrastructure bonds.
+      * 
+      * @throws std::invalid_argument If both construction order vectors are empty.
+      * @throws std::invalid_argument If the infrastructure discount rate is less than or equal to zero.
+      * 
+      * @see Utility::calculateWeeklyAverageWaterPrices for details on the computation of weekly average water prices.
+      * @see InfrastructureManager for details on infrastructure construction management.
+      */
+    Utility(const char *name, int id, 
+        vector<vector<double>>& demands_all_realizations,
+        vector<double>& annual_demand_projections,
+        int number_of_week_demands, 
+        const double percent_contingency_fund_contribution,
+        const vector<vector<double>> &typesMonthlyDemandFraction,
+        const vector<vector<double>> &typesMonthlyWaterPrice, 
+        WwtpDischargeRule wwtp_discharge_rule,
+        double demand_buffer, 
+        const vector<int> &rof_infra_construction_order,
+        const vector<int> &demand_infra_construction_order,
+        const vector<double> &infra_construction_triggers, 
+        double infra_discount_rate, double bond_term,
+        double bond_interest_rate);
+
+    /**
+      * @brief The constructor (21-parameter) for a Utility object for when there is infrastructure to be built.
       *  
       * This constructor sets up a Utility with specified attributes and initializes its parameters and infrastructure manager.
       * Sets up the Utility instance, initializes water demand, pricing, and financial properties, 
@@ -431,7 +483,7 @@ public:
         int demand_projection_reprojection_frequency);
 
     /**
-      * @brief Constructs a Utility object for when there is infrastructure to be built 
+      * @brief Constructor (20-parameter) for a Utility object for when there is infrastructure to be built 
       *         (uses a different InfrastructureManager constructor). Also includes a check for empty demand
       *         vectors that the prior constructor does not have.
       *  

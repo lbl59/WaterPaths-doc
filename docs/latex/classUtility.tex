@@ -13,11 +13,13 @@ The {\ttfamily \mbox{\hyperlink{classUtility}{Utility}}} class manages the water
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classUtility_a53fb19e5a344de5892c5cfbcc1225da9}{Utility}} (const char $\ast$\mbox{\hyperlink{classUtility_ad0ce5c179a7f5ceb46d4fcae08dbfb47}{name}}, int \mbox{\hyperlink{classUtility_ad41c4ea5c911c5000452a3371cd65d5f}{id}}, vector$<$ vector$<$ double $>$$>$ \&demands\+\_\+all\+\_\+realizations, vector$<$ double $>$ \&annual\+\_\+demand\+\_\+projections, int \mbox{\hyperlink{classUtility_a0548db3746582251082aa430db49dad0}{number\+\_\+of\+\_\+week\+\_\+demands}}, const double \mbox{\hyperlink{classUtility_a7b1a097ec188be8e7175d058b5e6596c}{percent\+\_\+contingency\+\_\+fund\+\_\+contribution}}, const double contingency\+\_\+fund\+\_\+cap, const vector$<$ vector$<$ double $>$$>$ \&types\+Monthly\+Demand\+Fraction, const vector$<$ vector$<$ double $>$$>$ \&types\+Monthly\+Water\+Price, \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} wwtp\+\_\+discharge\+\_\+rule, double \mbox{\hyperlink{classUtility_a4be9760339ec06e5c932890da8e566b3}{demand\+\_\+buffer}}, int demand\+\_\+projection\+\_\+forecast\+\_\+length, int demand\+\_\+projection\+\_\+historical\+\_\+period\+\_\+to\+\_\+use, int demand\+\_\+projection\+\_\+reprojection\+\_\+frequency)
-\begin{DoxyCompactList}\small\item\em Main constructor for a \mbox{\hyperlink{classUtility}{Utility}} object with specified attributes and initializes its parameters. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Main constructor (14-\/parameter) for a \mbox{\hyperlink{classUtility}{Utility}} object with specified attributes and initializes its parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUtility_a919917c54f726067d3666f22b1e98a3f}{Utility}} (const char $\ast$\mbox{\hyperlink{classUtility_ad0ce5c179a7f5ceb46d4fcae08dbfb47}{name}}, int \mbox{\hyperlink{classUtility_ad41c4ea5c911c5000452a3371cd65d5f}{id}}, vector$<$ vector$<$ double $>$$>$ \&demands\+\_\+all\+\_\+realizations, vector$<$ double $>$ \&annual\+\_\+demand\+\_\+projections, int \mbox{\hyperlink{classUtility_a0548db3746582251082aa430db49dad0}{number\+\_\+of\+\_\+week\+\_\+demands}}, const double \mbox{\hyperlink{classUtility_a7b1a097ec188be8e7175d058b5e6596c}{percent\+\_\+contingency\+\_\+fund\+\_\+contribution}}, const vector$<$ vector$<$ double $>$$>$ \&types\+Monthly\+Demand\+Fraction, const vector$<$ vector$<$ double $>$$>$ \&types\+Monthly\+Water\+Price, \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} wwtp\+\_\+discharge\+\_\+rule, double \mbox{\hyperlink{classUtility_a4be9760339ec06e5c932890da8e566b3}{demand\+\_\+buffer}}, const vector$<$ int $>$ \&rof\+\_\+infra\+\_\+construction\+\_\+order, const vector$<$ int $>$ \&demand\+\_\+infra\+\_\+construction\+\_\+order, const vector$<$ double $>$ \&infra\+\_\+construction\+\_\+triggers, double infra\+\_\+discount\+\_\+rate, double bond\+\_\+term, double bond\+\_\+interest\+\_\+rate)
+\begin{DoxyCompactList}\small\item\em The constructor (16-\/parameter) for a \mbox{\hyperlink{classUtility}{Utility}} object for when there is infrastructure to be built. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classUtility_aac7acd5b6fa457869763bbf3b83f870e}{Utility}} (const char $\ast$\mbox{\hyperlink{classUtility_ad0ce5c179a7f5ceb46d4fcae08dbfb47}{name}}, int \mbox{\hyperlink{classUtility_ad41c4ea5c911c5000452a3371cd65d5f}{id}}, vector$<$ vector$<$ double $>$$>$ \&demands\+\_\+all\+\_\+realizations, vector$<$ double $>$ \&annual\+\_\+demand\+\_\+projections, int \mbox{\hyperlink{classUtility_a0548db3746582251082aa430db49dad0}{number\+\_\+of\+\_\+week\+\_\+demands}}, const double \mbox{\hyperlink{classUtility_a7b1a097ec188be8e7175d058b5e6596c}{percent\+\_\+contingency\+\_\+fund\+\_\+contribution}}, const double contingency\+\_\+fund\+\_\+cap, const vector$<$ vector$<$ double $>$$>$ \&types\+Monthly\+Demand\+Fraction, const vector$<$ vector$<$ double $>$$>$ \&types\+Monthly\+Water\+Price, \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} wwtp\+\_\+discharge\+\_\+rule, double \mbox{\hyperlink{classUtility_a4be9760339ec06e5c932890da8e566b3}{demand\+\_\+buffer}}, const vector$<$ int $>$ \&rof\+\_\+infra\+\_\+construction\+\_\+order, const vector$<$ int $>$ \&demand\+\_\+infra\+\_\+construction\+\_\+order, const vector$<$ double $>$ \&infra\+\_\+construction\+\_\+triggers, double infra\+\_\+discount\+\_\+rate, const vector$<$ vector$<$ int $>$$>$ \&infra\+\_\+if\+\_\+built\+\_\+remove, double bond\+\_\+term, double bond\+\_\+interest\+\_\+rate, int demand\+\_\+projection\+\_\+forecast\+\_\+length, int demand\+\_\+projection\+\_\+historical\+\_\+period\+\_\+to\+\_\+use, int demand\+\_\+projection\+\_\+reprojection\+\_\+frequency)
-\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classUtility}{Utility}} object for when there is infrastructure to be built. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em The constructor (21-\/parameter) for a \mbox{\hyperlink{classUtility}{Utility}} object for when there is infrastructure to be built. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classUtility_ae590079ab073cb52a00cda7d921909c4}{Utility}} (const char $\ast$\mbox{\hyperlink{classUtility_ad0ce5c179a7f5ceb46d4fcae08dbfb47}{name}}, int \mbox{\hyperlink{classUtility_ad41c4ea5c911c5000452a3371cd65d5f}{id}}, vector$<$ vector$<$ double $>$$>$ \&demands\+\_\+all\+\_\+realizations, vector$<$ double $>$ \&annual\+\_\+demand\+\_\+projections, int \mbox{\hyperlink{classUtility_a0548db3746582251082aa430db49dad0}{number\+\_\+of\+\_\+week\+\_\+demands}}, const double \mbox{\hyperlink{classUtility_a7b1a097ec188be8e7175d058b5e6596c}{percent\+\_\+contingency\+\_\+fund\+\_\+contribution}}, const double contingency\+\_\+fund\+\_\+cap, const vector$<$ vector$<$ double $>$$>$ \&types\+Monthly\+Demand\+Fraction, const vector$<$ vector$<$ double $>$$>$ \&types\+Monthly\+Water\+Price, \mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}} wwtp\+\_\+discharge\+\_\+rule, double \mbox{\hyperlink{classUtility_a4be9760339ec06e5c932890da8e566b3}{demand\+\_\+buffer}}, const vector$<$ int $>$ \&rof\+\_\+infra\+\_\+construction\+\_\+order, const vector$<$ int $>$ \&demand\+\_\+infra\+\_\+construction\+\_\+order, const vector$<$ double $>$ \&infra\+\_\+construction\+\_\+triggers, double infra\+\_\+discount\+\_\+rate, double bond\+\_\+term, double bond\+\_\+interest\+\_\+rate, int demand\+\_\+projection\+\_\+forecast\+\_\+length, int demand\+\_\+projection\+\_\+historical\+\_\+period\+\_\+to\+\_\+use, int demand\+\_\+projection\+\_\+reprojection\+\_\+frequency)
-\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classUtility}{Utility}} object for when there is infrastructure to be built (uses a different \mbox{\hyperlink{classInfrastructureManager}{Infrastructure\+Manager}} constructor). Also includes a check for empty demand vectors that the prior constructor does not have. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructor (20-\/parameter) for a \mbox{\hyperlink{classUtility}{Utility}} object for when there is infrastructure to be built (uses a different \mbox{\hyperlink{classInfrastructureManager}{Infrastructure\+Manager}} constructor). Also includes a check for empty demand vectors that the prior constructor does not have. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classUtility_a44eaefb71f90fcf28143e3e919074a97}{Utility}} (\mbox{\hyperlink{classUtility}{Utility}} \&utility)
 \begin{DoxyCompactList}\small\item\em Copy constructor for the \mbox{\hyperlink{classUtility}{Utility}} class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classUtility_aecfe4b31e39b00555158a2d8288b874a}{$\sim$\+Utility}} ()
@@ -205,12 +207,12 @@ Created by Bernardo on 1/13/17.
 \mbox{\Hypertarget{classUtility_a53fb19e5a344de5892c5cfbcc1225da9}\label{classUtility_a53fb19e5a344de5892c5cfbcc1225da9}} 
 \index{Utility@{Utility}!Utility@{Utility}}
 \index{Utility@{Utility}!Utility@{Utility}}
-\subsubsection{\texorpdfstring{Utility()}{Utility()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+\subsubsection{\texorpdfstring{Utility()}{Utility()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
 {\footnotesize\ttfamily Utility\+::\+Utility (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{id,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{demands\+\_\+all\+\_\+realizations,  }\item[{vector$<$ double $>$ \&}]{annual\+\_\+demand\+\_\+projections,  }\item[{int}]{number\+\_\+of\+\_\+week\+\_\+demands,  }\item[{const double}]{percent\+\_\+contingency\+\_\+fund\+\_\+contribution,  }\item[{const double}]{contingency\+\_\+fund\+\_\+cap,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{types\+Monthly\+Demand\+Fraction,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{types\+Monthly\+Water\+Price,  }\item[{\mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}}]{wwtp\+\_\+discharge\+\_\+rule,  }\item[{double}]{demand\+\_\+buffer,  }\item[{int}]{demand\+\_\+projection\+\_\+forecast\+\_\+length,  }\item[{int}]{demand\+\_\+projection\+\_\+historical\+\_\+period\+\_\+to\+\_\+use,  }\item[{int}]{demand\+\_\+projection\+\_\+reprojection\+\_\+frequency }\end{DoxyParamCaption})}
 
 
 
-Main constructor for a \mbox{\hyperlink{classUtility}{Utility}} object with specified attributes and initializes its parameters. 
+Main constructor (14-\/parameter) for a \mbox{\hyperlink{classUtility}{Utility}} object with specified attributes and initializes its parameters. 
 
 This constructor sets up the \mbox{\hyperlink{classUtility}{Utility}} instance with various properties related to water demand, pricing, contingency funds, and infrastructure financing. It also computes the weekly average water prices based on monthly demand fractions and water price types.
 
@@ -248,15 +250,75 @@ This constructor sets up the \mbox{\hyperlink{classUtility}{Utility}} instance w
 \begin{DoxySeeAlso}{See also}
 \mbox{\hyperlink{classUtility_a0189edb631c9596f094b15afeeb934fd}{Utility\+::calculate\+Weekly\+Average\+Water\+Prices}} for details on the computation of weekly average water prices. 
 \end{DoxySeeAlso}
+\mbox{\Hypertarget{classUtility_a919917c54f726067d3666f22b1e98a3f}\label{classUtility_a919917c54f726067d3666f22b1e98a3f}} 
+\index{Utility@{Utility}!Utility@{Utility}}
+\index{Utility@{Utility}!Utility@{Utility}}
+\subsubsection{\texorpdfstring{Utility()}{Utility()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily Utility\+::\+Utility (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{id,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{demands\+\_\+all\+\_\+realizations,  }\item[{vector$<$ double $>$ \&}]{annual\+\_\+demand\+\_\+projections,  }\item[{int}]{number\+\_\+of\+\_\+week\+\_\+demands,  }\item[{const double}]{percent\+\_\+contingency\+\_\+fund\+\_\+contribution,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{types\+Monthly\+Demand\+Fraction,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{types\+Monthly\+Water\+Price,  }\item[{\mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}}]{wwtp\+\_\+discharge\+\_\+rule,  }\item[{double}]{demand\+\_\+buffer,  }\item[{const vector$<$ int $>$ \&}]{rof\+\_\+infra\+\_\+construction\+\_\+order,  }\item[{const vector$<$ int $>$ \&}]{demand\+\_\+infra\+\_\+construction\+\_\+order,  }\item[{const vector$<$ double $>$ \&}]{infra\+\_\+construction\+\_\+triggers,  }\item[{double}]{infra\+\_\+discount\+\_\+rate,  }\item[{double}]{bond\+\_\+term,  }\item[{double}]{bond\+\_\+interest\+\_\+rate }\end{DoxyParamCaption})}
+
+
+
+The constructor (16-\/parameter) for a \mbox{\hyperlink{classUtility}{Utility}} object for when there is infrastructure to be built. 
+
+This constructor sets up a \mbox{\hyperlink{classUtility}{Utility}} with specified attributes and initializes its parameters and infrastructure manager. Sets up the \mbox{\hyperlink{classUtility}{Utility}} instance, initializes water demand, pricing, and financial properties, and integrates infrastructure construction management functionality. It also computes weekly average water prices and ensures the provided parameters are valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the utility. \\
+\hline
+{\em id} & The unique identifier for the utility. \\
+\hline
+{\em demands\+\_\+all\+\_\+realizations} & A vector of weekly demand data for all realizations. \\
+\hline
+{\em annual\+\_\+demand\+\_\+projections} & A vector of annual demand projections. \\
+\hline
+{\em number\+\_\+of\+\_\+week\+\_\+demands} & The number of weekly demand entries. \\
+\hline
+{\em percent\+\_\+contingency\+\_\+fund\+\_\+contribution} & Percentage contribution to the contingency fund. \\
+\hline
+{\em types\+Monthly\+Demand\+Fraction} & A reference to a vector of vectors containing monthly demand fractions by water type. Table of size 12 (months in year) by number of consumer tiers with the fraction of the total demand consumed by each tier in each month of the year. The last column must be the fraction of the demand treated as sewage. The summation of all number in a row but the last one, therefore, must sum to 1. ~\newline
+\\
+\hline
+{\em types\+Monthly\+Water\+Price} & A reference to a vector of vectors containing monthly water prices by tier type. The last column is the price charged for waste water treatment. \\
+\hline
+{\em wwtp\+\_\+discharge\+\_\+rule} & The rule governing wastewater treatment plant discharges. A 53-\/week-\/long time series according to which fractions of sewage is discharged in different water sources (normally one for each W\+W\+TP). \\
+\hline
+{\em demand\+\_\+buffer} & A buffer for smoothing demand projections. \\
+\hline
+{\em rof\+\_\+infra\+\_\+construction\+\_\+order} & A vector defining the R\+O\+F-\/based construction order for infrastructure. \\
+\hline
+{\em demand\+\_\+infra\+\_\+construction\+\_\+order} & A vector defining the demand-\/based construction order for infrastructure. \\
+\hline
+{\em infra\+\_\+construction\+\_\+triggers} & A vector of construction triggers for infrastructure projects. \\
+\hline
+{\em infra\+\_\+discount\+\_\+rate} & The discount rate applied to infrastructure construction costs. \\
+\hline
+{\em bond\+\_\+term} & The term of infrastructure bonds. \\
+\hline
+{\em bond\+\_\+interest\+\_\+rate} & The interest rate for infrastructure bonds.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & If both construction order vectors are empty. \\
+\hline
+{\em std\+::invalid\+\_\+argument} & If the infrastructure discount rate is less than or equal to zero.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classUtility_a0189edb631c9596f094b15afeeb934fd}{Utility\+::calculate\+Weekly\+Average\+Water\+Prices}} for details on the computation of weekly average water prices. 
+
+\mbox{\hyperlink{classInfrastructureManager}{Infrastructure\+Manager}} for details on infrastructure construction management. 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classUtility_aac7acd5b6fa457869763bbf3b83f870e}\label{classUtility_aac7acd5b6fa457869763bbf3b83f870e}} 
 \index{Utility@{Utility}!Utility@{Utility}}
 \index{Utility@{Utility}!Utility@{Utility}}
-\subsubsection{\texorpdfstring{Utility()}{Utility()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+\subsubsection{\texorpdfstring{Utility()}{Utility()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
 {\footnotesize\ttfamily Utility\+::\+Utility (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{id,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{demands\+\_\+all\+\_\+realizations,  }\item[{vector$<$ double $>$ \&}]{annual\+\_\+demand\+\_\+projections,  }\item[{int}]{number\+\_\+of\+\_\+week\+\_\+demands,  }\item[{const double}]{percent\+\_\+contingency\+\_\+fund\+\_\+contribution,  }\item[{const double}]{contingency\+\_\+fund\+\_\+cap,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{types\+Monthly\+Demand\+Fraction,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{types\+Monthly\+Water\+Price,  }\item[{\mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}}]{wwtp\+\_\+discharge\+\_\+rule,  }\item[{double}]{demand\+\_\+buffer,  }\item[{const vector$<$ int $>$ \&}]{rof\+\_\+infra\+\_\+construction\+\_\+order,  }\item[{const vector$<$ int $>$ \&}]{demand\+\_\+infra\+\_\+construction\+\_\+order,  }\item[{const vector$<$ double $>$ \&}]{infra\+\_\+construction\+\_\+triggers,  }\item[{double}]{infra\+\_\+discount\+\_\+rate,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{infra\+\_\+if\+\_\+built\+\_\+remove,  }\item[{double}]{bond\+\_\+term,  }\item[{double}]{bond\+\_\+interest\+\_\+rate,  }\item[{int}]{demand\+\_\+projection\+\_\+forecast\+\_\+length,  }\item[{int}]{demand\+\_\+projection\+\_\+historical\+\_\+period\+\_\+to\+\_\+use,  }\item[{int}]{demand\+\_\+projection\+\_\+reprojection\+\_\+frequency }\end{DoxyParamCaption})}
 
 
 
-Constructs a \mbox{\hyperlink{classUtility}{Utility}} object for when there is infrastructure to be built. 
+The constructor (21-\/parameter) for a \mbox{\hyperlink{classUtility}{Utility}} object for when there is infrastructure to be built. 
 
 This constructor sets up a \mbox{\hyperlink{classUtility}{Utility}} with specified attributes and initializes its parameters and infrastructure manager. Sets up the \mbox{\hyperlink{classUtility}{Utility}} instance, initializes water demand, pricing, and financial properties, and integrates infrastructure construction management functionality. It also computes weekly average water prices and ensures the provided parameters are valid.
 
@@ -321,12 +383,12 @@ This constructor sets up a \mbox{\hyperlink{classUtility}{Utility}} with specifi
 \mbox{\Hypertarget{classUtility_ae590079ab073cb52a00cda7d921909c4}\label{classUtility_ae590079ab073cb52a00cda7d921909c4}} 
 \index{Utility@{Utility}!Utility@{Utility}}
 \index{Utility@{Utility}!Utility@{Utility}}
-\subsubsection{\texorpdfstring{Utility()}{Utility()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+\subsubsection{\texorpdfstring{Utility()}{Utility()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
 {\footnotesize\ttfamily Utility\+::\+Utility (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{int}]{id,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{demands\+\_\+all\+\_\+realizations,  }\item[{vector$<$ double $>$ \&}]{annual\+\_\+demand\+\_\+projections,  }\item[{int}]{number\+\_\+of\+\_\+week\+\_\+demands,  }\item[{const double}]{percent\+\_\+contingency\+\_\+fund\+\_\+contribution,  }\item[{const double}]{contingency\+\_\+fund\+\_\+cap,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{types\+Monthly\+Demand\+Fraction,  }\item[{const vector$<$ vector$<$ double $>$$>$ \&}]{types\+Monthly\+Water\+Price,  }\item[{\mbox{\hyperlink{classWwtpDischargeRule}{Wwtp\+Discharge\+Rule}}}]{wwtp\+\_\+discharge\+\_\+rule,  }\item[{double}]{demand\+\_\+buffer,  }\item[{const vector$<$ int $>$ \&}]{rof\+\_\+infra\+\_\+construction\+\_\+order,  }\item[{const vector$<$ int $>$ \&}]{demand\+\_\+infra\+\_\+construction\+\_\+order,  }\item[{const vector$<$ double $>$ \&}]{infra\+\_\+construction\+\_\+triggers,  }\item[{double}]{infra\+\_\+discount\+\_\+rate,  }\item[{double}]{bond\+\_\+term,  }\item[{double}]{bond\+\_\+interest\+\_\+rate,  }\item[{int}]{demand\+\_\+projection\+\_\+forecast\+\_\+length,  }\item[{int}]{demand\+\_\+projection\+\_\+historical\+\_\+period\+\_\+to\+\_\+use,  }\item[{int}]{demand\+\_\+projection\+\_\+reprojection\+\_\+frequency }\end{DoxyParamCaption})}
 
 
 
-Constructs a \mbox{\hyperlink{classUtility}{Utility}} object for when there is infrastructure to be built (uses a different \mbox{\hyperlink{classInfrastructureManager}{Infrastructure\+Manager}} constructor). Also includes a check for empty demand vectors that the prior constructor does not have. 
+Constructor (20-\/parameter) for a \mbox{\hyperlink{classUtility}{Utility}} object for when there is infrastructure to be built (uses a different \mbox{\hyperlink{classInfrastructureManager}{Infrastructure\+Manager}} constructor). Also includes a check for empty demand vectors that the prior constructor does not have. 
 
 This constructor sets up a \mbox{\hyperlink{classUtility}{Utility}} with specified attributes and initializes its parameters and infrastructure manager. Sets up the \mbox{\hyperlink{classUtility}{Utility}} instance, initializes water demand, pricing, and financial properties, and integrates infrastructure construction management functionality. It also computes weekly average water prices and ensures the provided parameters are valid.
 
@@ -391,7 +453,7 @@ F\+I\+X\+ME\+: Unclear where this constructor is used, and how it differs from t
 \mbox{\Hypertarget{classUtility_a44eaefb71f90fcf28143e3e919074a97}\label{classUtility_a44eaefb71f90fcf28143e3e919074a97}} 
 \index{Utility@{Utility}!Utility@{Utility}}
 \index{Utility@{Utility}!Utility@{Utility}}
-\subsubsection{\texorpdfstring{Utility()}{Utility()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+\subsubsection{\texorpdfstring{Utility()}{Utility()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
 {\footnotesize\ttfamily Utility\+::\+Utility (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUtility}{Utility}} \&}]{utility }\end{DoxyParamCaption})}
 
 

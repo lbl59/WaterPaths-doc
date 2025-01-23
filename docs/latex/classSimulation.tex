@@ -13,11 +13,13 @@ The {\ttfamily \mbox{\hyperlink{classSimulation}{Simulation}}} class represents 
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classSimulation_ac9b9db9c3de5f9ff33f6ea89e2435c87}{Simulation}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, \mbox{\hyperlink{classGraph}{Graph}} \&water\+\_\+sources\+\_\+graph, const vector$<$ vector$<$ int $>$$>$ \&water\+\_\+sources\+\_\+to\+\_\+utilities, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&drought\+\_\+mitigation\+\_\+policies, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+controls, vector$<$ vector$<$ double $>$$>$ \&utilities\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&policies\+\_\+rdm, const unsigned long total\+\_\+simulation\+\_\+time, vector$<$ unsigned long $>$ \&realizations\+\_\+to\+\_\+run)
-\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classSimulation}{Simulation}} class. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructor (11-\/parameter) for the \mbox{\hyperlink{classSimulation}{Simulation}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSimulation_aa225c1836ebd788eb0f35c8cd53f0533}{Simulation}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, \mbox{\hyperlink{classGraph}{Graph}} \&water\+\_\+sources\+\_\+graph, const vector$<$ vector$<$ int $>$$>$ \&water\+\_\+sources\+\_\+to\+\_\+utilities, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&drought\+\_\+mitigation\+\_\+policies, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+controls, vector$<$ vector$<$ double $>$$>$ \&utilities\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&policies\+\_\+rdm, const unsigned long total\+\_\+simulation\+\_\+time, vector$<$ unsigned long $>$ \&realizations\+\_\+to\+\_\+run, vector$<$ vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$$>$ \&precomputed\+\_\+rof\+\_\+tables, vector$<$ vector$<$ double $>$$>$ \&table\+\_\+storage\+\_\+shift, string \&rof\+\_\+tables\+\_\+folder)
+\begin{DoxyCompactList}\small\item\em Constructor (14-\/parameter) for the \mbox{\hyperlink{classSimulation}{Simulation}} class with precomputed R\+OF tables and shifts for storage and treatment R\+O\+Fs. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSimulation_a99c76e396f63ca8f98d362c76804345b}{Simulation}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, \mbox{\hyperlink{classGraph}{Graph}} \&water\+\_\+sources\+\_\+graph, const vector$<$ vector$<$ int $>$$>$ \&water\+\_\+sources\+\_\+to\+\_\+utilities, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&drought\+\_\+mitigation\+\_\+policies, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+controls, vector$<$ vector$<$ double $>$$>$ \&utilities\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&policies\+\_\+rdm, const unsigned long total\+\_\+simulation\+\_\+time, vector$<$ unsigned long $>$ \&realizations\+\_\+to\+\_\+run, vector$<$ vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$$>$ \&precomputed\+\_\+rof\+\_\+tables, vector$<$ vector$<$ double $>$$>$ \&table\+\_\+storage\+\_\+shift, vector$<$ vector$<$ double $>$$>$ \&table\+\_\+base\+\_\+storage\+\_\+shift, vector$<$ vector$<$ double $>$$>$ \&treatment\+\_\+demand\+\_\+buffer\+\_\+shift, string \&rof\+\_\+tables\+\_\+folder)
-\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classSimulation}{Simulation}} class with precomputed R\+OF tables and shifts for storage and treatment R\+O\+Fs. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructor (16-\/parameter) for the \mbox{\hyperlink{classSimulation}{Simulation}} class with precomputed R\+OF tables and shifts for storage and treatment R\+O\+Fs. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSimulation_a68f43435cf8308d5415cdfcdb84e1fac}{Simulation}} (vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&water\+\_\+sources, \mbox{\hyperlink{classGraph}{Graph}} \&water\+\_\+sources\+\_\+graph, const vector$<$ vector$<$ int $>$$>$ \&water\+\_\+sources\+\_\+to\+\_\+utilities, vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&utilities, const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&drought\+\_\+mitigation\+\_\+policies, vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&min\+\_\+env\+\_\+flow\+\_\+controls, vector$<$ vector$<$ double $>$$>$ \&utilities\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&water\+\_\+sources\+\_\+rdm, vector$<$ vector$<$ double $>$$>$ \&policies\+\_\+rdm, const unsigned long total\+\_\+simulation\+\_\+time, vector$<$ unsigned long $>$ \&realizations\+\_\+to\+\_\+run, string \&rof\+\_\+tables\+\_\+folder)
-\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classSimulation}{Simulation}} class with the option to export R\+OF tables. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructor (12-\/parameter) for the \mbox{\hyperlink{classSimulation}{Simulation}} class with the option to export R\+OF tables. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSimulation}{Simulation}} \& \mbox{\hyperlink{classSimulation_acc5a0541c0439cea0604d4d0e38ed3b2}{operator=}} (const \mbox{\hyperlink{classSimulation}{Simulation}} \&simulation)
 \begin{DoxyCompactList}\small\item\em Assignment operator for the \mbox{\hyperlink{classSimulation}{Simulation}} class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classSimulation_a701bd94edc5cf562b5c4e66ae43400bb}{$\sim$\+Simulation}} ()
@@ -39,12 +41,12 @@ The {\ttfamily \mbox{\hyperlink{classSimulation}{Simulation}}} class represents 
 \mbox{\Hypertarget{classSimulation_ac9b9db9c3de5f9ff33f6ea89e2435c87}\label{classSimulation_ac9b9db9c3de5f9ff33f6ea89e2435c87}} 
 \index{Simulation@{Simulation}!Simulation@{Simulation}}
 \index{Simulation@{Simulation}!Simulation@{Simulation}}
-\subsubsection{\texorpdfstring{Simulation()}{Simulation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\subsubsection{\texorpdfstring{Simulation()}{Simulation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily Simulation\+::\+Simulation (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{\mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{policies\+\_\+rdm,  }\item[{const unsigned long}]{total\+\_\+simulation\+\_\+time,  }\item[{vector$<$ unsigned long $>$ \&}]{realizations\+\_\+to\+\_\+run }\end{DoxyParamCaption})}
 
 
 
-Constructor for the \mbox{\hyperlink{classSimulation}{Simulation}} class. 
+Constructor (11-\/parameter) for the \mbox{\hyperlink{classSimulation}{Simulation}} class. 
 
 This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, drought mitigation policies, environmental flow controls, and various randomization matrices for the simulation. It also sets up the realization processes to be run during the simulation.
 
@@ -76,15 +78,64 @@ This constructor initializes a simulation with the provided parameters, setting 
 \begin{DoxyReturn}{Returns}
 None 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classSimulation_aa225c1836ebd788eb0f35c8cd53f0533}\label{classSimulation_aa225c1836ebd788eb0f35c8cd53f0533}} 
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\index{Simulation@{Simulation}!Simulation@{Simulation}}
+\subsubsection{\texorpdfstring{Simulation()}{Simulation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Simulation\+::\+Simulation (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{\mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{policies\+\_\+rdm,  }\item[{const unsigned long}]{total\+\_\+simulation\+\_\+time,  }\item[{vector$<$ unsigned long $>$ \&}]{realizations\+\_\+to\+\_\+run,  }\item[{vector$<$ vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$$>$ \&}]{precomputed\+\_\+rof\+\_\+tables,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{table\+\_\+storage\+\_\+shift,  }\item[{string \&}]{rof\+\_\+tables\+\_\+folder }\end{DoxyParamCaption})}
+
+
+
+Constructor (14-\/parameter) for the \mbox{\hyperlink{classSimulation}{Simulation}} class with precomputed R\+OF tables and shifts for storage and treatment R\+O\+Fs. 
+
+This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, drought mitigation policies, environmental flow controls, various randomization matrices, and precomputed R\+OF tables for the simulation. It also imports pre-\/computed R\+OF tables and sets up the realization processes to be run during the simulation.
+
+
+\begin{DoxyParams}{Parameters}
+{\em water\+\_\+sources} & A vector of water source pointers that are part of the simulation. \\
+\hline
+{\em water\+\_\+sources\+\_\+graph} & A graph representing the relationships between water sources. \\
+\hline
+{\em water\+\_\+sources\+\_\+to\+\_\+utilities} & A matrix that maps water sources to utilities. \\
+\hline
+{\em utilities} & A vector of utility pointers involved in the simulation. \\
+\hline
+{\em drought\+\_\+mitigation\+\_\+policies} & A vector of drought mitigation policies. \\
+\hline
+{\em min\+\_\+env\+\_\+flow\+\_\+controls} & A vector of minimum environmental flow controls. \\
+\hline
+{\em utilities\+\_\+rdm} & A matrix of utilities randomization data. \\
+\hline
+{\em water\+\_\+sources\+\_\+rdm} & A matrix of water sources randomization data. \\
+\hline
+{\em policies\+\_\+rdm} & A matrix of policies randomization data. \\
+\hline
+{\em total\+\_\+simulation\+\_\+time} & The total duration of the simulation. \\
+\hline
+{\em realizations\+\_\+to\+\_\+run} & A vector of realization I\+Ds to be run during the simulation. \\
+\hline
+{\em precomputed\+\_\+rof\+\_\+tables} & A vector of precomputed R\+OF tables used for simulation. \\
+\hline
+{\em table\+\_\+storage\+\_\+shift} & A matrix of storage shifts for the R\+OF tables. \\
+\hline
+{\em rof\+\_\+tables\+\_\+folder} & A string representing the folder containing the R\+OF tables.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classSimulation_ac9ff965191f13b1ce044344fd1e5d0ac}{setup\+Simulation}} 
+\end{DoxySeeAlso}
 \mbox{\Hypertarget{classSimulation_a99c76e396f63ca8f98d362c76804345b}\label{classSimulation_a99c76e396f63ca8f98d362c76804345b}} 
 \index{Simulation@{Simulation}!Simulation@{Simulation}}
 \index{Simulation@{Simulation}!Simulation@{Simulation}}
-\subsubsection{\texorpdfstring{Simulation()}{Simulation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\subsubsection{\texorpdfstring{Simulation()}{Simulation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily Simulation\+::\+Simulation (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{\mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{policies\+\_\+rdm,  }\item[{const unsigned long}]{total\+\_\+simulation\+\_\+time,  }\item[{vector$<$ unsigned long $>$ \&}]{realizations\+\_\+to\+\_\+run,  }\item[{vector$<$ vector$<$ \mbox{\hyperlink{classMatrix2D}{Matrix2D}}$<$ double $>$$>$$>$ \&}]{precomputed\+\_\+rof\+\_\+tables,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{table\+\_\+storage\+\_\+shift,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{table\+\_\+base\+\_\+storage\+\_\+shift,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{treatment\+\_\+demand\+\_\+buffer\+\_\+shift,  }\item[{string \&}]{rof\+\_\+tables\+\_\+folder }\end{DoxyParamCaption})}
 
 
 
-Constructor for the \mbox{\hyperlink{classSimulation}{Simulation}} class with precomputed R\+OF tables and shifts for storage and treatment R\+O\+Fs. 
+Constructor (16-\/parameter) for the \mbox{\hyperlink{classSimulation}{Simulation}} class with precomputed R\+OF tables and shifts for storage and treatment R\+O\+Fs. 
 
 This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, drought mitigation policies, environmental flow controls, various randomization matrices, and precomputed R\+OF tables for the simulation. It also imports pre-\/computed R\+OF tables and sets up the realization processes to be run during the simulation.
 
@@ -132,12 +183,12 @@ None
 \mbox{\Hypertarget{classSimulation_a68f43435cf8308d5415cdfcdb84e1fac}\label{classSimulation_a68f43435cf8308d5415cdfcdb84e1fac}} 
 \index{Simulation@{Simulation}!Simulation@{Simulation}}
 \index{Simulation@{Simulation}!Simulation@{Simulation}}
-\subsubsection{\texorpdfstring{Simulation()}{Simulation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\subsubsection{\texorpdfstring{Simulation()}{Simulation()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily Simulation\+::\+Simulation (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classWaterSource}{Water\+Source}} $\ast$$>$ \&}]{water\+\_\+sources,  }\item[{\mbox{\hyperlink{classGraph}{Graph}} \&}]{water\+\_\+sources\+\_\+graph,  }\item[{const vector$<$ vector$<$ int $>$$>$ \&}]{water\+\_\+sources\+\_\+to\+\_\+utilities,  }\item[{vector$<$ \mbox{\hyperlink{classUtility}{Utility}} $\ast$$>$ \&}]{utilities,  }\item[{const vector$<$ \mbox{\hyperlink{classDroughtMitigationPolicy}{Drought\+Mitigation\+Policy}} $\ast$$>$ \&}]{drought\+\_\+mitigation\+\_\+policies,  }\item[{vector$<$ \mbox{\hyperlink{classMinEnvFlowControl}{Min\+Env\+Flow\+Control}} $\ast$$>$ \&}]{min\+\_\+env\+\_\+flow\+\_\+controls,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{utilities\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{water\+\_\+sources\+\_\+rdm,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{policies\+\_\+rdm,  }\item[{const unsigned long}]{total\+\_\+simulation\+\_\+time,  }\item[{vector$<$ unsigned long $>$ \&}]{realizations\+\_\+to\+\_\+run,  }\item[{string \&}]{rof\+\_\+tables\+\_\+folder }\end{DoxyParamCaption})}
 
 
 
-Constructor for the \mbox{\hyperlink{classSimulation}{Simulation}} class with the option to export R\+OF tables. 
+Constructor (12-\/parameter) for the \mbox{\hyperlink{classSimulation}{Simulation}} class with the option to export R\+OF tables. 
 
 This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, drought mitigation policies, environmental flow controls, various randomization matrices, and enables the export of R\+OF tables for the simulation. It also allows R\+OF tables to be exported and sets up the realization processes to be run during the simulation.
 

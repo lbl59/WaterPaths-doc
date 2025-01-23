@@ -2,7 +2,7 @@
 \label{classPaperTestProblem}\index{Paper\+Test\+Problem@{Paper\+Test\+Problem}}
 
 
-The {\ttfamily \mbox{\hyperlink{classPaperTestProblem}{Paper\+Test\+Problem}}} class is a subclass of the main {\ttfamily \mbox{\hyperlink{classProblem}{Problem}}} class. This class represents the three-\/utility Sedento Valley test case water management and planning problem.  
+The {\ttfamily \mbox{\hyperlink{classPaperTestProblem}{Paper\+Test\+Problem}}} class is a subclass of the main {\ttfamily \mbox{\hyperlink{classProblem}{Problem}}} class. This class represents the three-\/utility Sedento Valley \mbox{\hyperlink{classProblem}{Problem}}.  
 
 
 
@@ -19,20 +19,18 @@ Inheritance diagram for Paper\+Test\+Problem\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classPaperTestProblem_acc053a5b4515f3959494ce58c763d582}{Paper\+Test\+Problem}} (unsigned long \mbox{\hyperlink{classProblem_ac7513bb0ecdfa4bbb7d2ada3595d71ec}{n\+\_\+weeks}}, int import\+\_\+export\+\_\+rof\+\_\+table)
-\begin{DoxyCompactList}\small\item\em Constructor for a new \mbox{\hyperlink{classPaperTestProblem}{Paper\+Test\+Problem}} object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Construct a new Paper Test \mbox{\hyperlink{classProblem}{Problem}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classPaperTestProblem_a571a92266d4c58ebc27e20391f7ad81b}{$\sim$\+Paper\+Test\+Problem}} () override
-\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classTriangle}{Triangle}} object. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Destroy the Paper Test \mbox{\hyperlink{classProblem}{Problem}} object. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classPaperTestProblem_a6db78df74d40f69a750b164caaca75c7}{function\+Evaluation}} (double $\ast$vars, double $\ast$objs, double $\ast$consts) override
-\begin{DoxyCompactList}\small\item\em Runs the Sedento Valley problem. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Runs the three-\/utility Sedento Valley test case problem. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPaperTestProblem_ae4bcc17d6ceab628f88174306d54fdc9}{read\+Input\+Data}} ()
 \begin{DoxyCompactList}\small\item\em Reads in all input inflow, evaporation, and demand data for the Sedento Valley problem. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-The {\ttfamily \mbox{\hyperlink{classPaperTestProblem}{Paper\+Test\+Problem}}} class is a subclass of the main {\ttfamily \mbox{\hyperlink{classProblem}{Problem}}} class. This class represents the three-\/utility Sedento Valley test case water management and planning problem. 
-
-Created by dfg42 on 8/28/18. 
+The {\ttfamily \mbox{\hyperlink{classPaperTestProblem}{Paper\+Test\+Problem}}} class is a subclass of the main {\ttfamily \mbox{\hyperlink{classProblem}{Problem}}} class. This class represents the three-\/utility Sedento Valley \mbox{\hyperlink{classProblem}{Problem}}. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classPaperTestProblem_acc053a5b4515f3959494ce58c763d582}\label{classPaperTestProblem_acc053a5b4515f3959494ce58c763d582}} 
@@ -43,13 +41,13 @@ Created by dfg42 on 8/28/18.
 
 
 
-Constructor for a new \mbox{\hyperlink{classPaperTestProblem}{Paper\+Test\+Problem}} object. 
+Construct a new Paper Test \mbox{\hyperlink{classProblem}{Problem}} object. 
 
 
 \begin{DoxyParams}{Parameters}
 {\em n\+\_\+weeks} & An integer representing the number of weeks in the simulation. \\
 \hline
-{\em import\+\_\+export\+\_\+rof\+\_\+table} & An integer indicating the R\+OF table import/export/ignore mode. \\
+{\em import\+\_\+export\+\_\+rof\+\_\+table} & An integer flag indicating to import/export/ignore mode for R\+OF tables. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classPaperTestProblem_a571a92266d4c58ebc27e20391f7ad81b}\label{classPaperTestProblem_a571a92266d4c58ebc27e20391f7ad81b}} 
@@ -60,7 +58,7 @@ Constructor for a new \mbox{\hyperlink{classPaperTestProblem}{Paper\+Test\+Probl
 
 
 
-Destructor for the \mbox{\hyperlink{classTriangle}{Triangle}} object. 
+Destroy the Paper Test \mbox{\hyperlink{classProblem}{Problem}} object. 
 
 
 
@@ -73,19 +71,20 @@ Destructor for the \mbox{\hyperlink{classTriangle}{Triangle}} object.
 
 
 
-Runs the Sedento Valley problem. 
+Runs the three-\/utility Sedento Valley test case problem. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em vars} & A pointer to a double containing the number of variables in the problem. \\
+{\em vars} & The number of variables to run the problem with. \\
 \hline
-{\em objs} & A pointer to the double containing the number of objectives in the problem. \\
+{\em objs} & The number of performance objectives to evaluate. \\
 \hline
-{\em consts} & A pointer to the double containing the number of constraints in the problem.\\
+{\em consts} & U\+N\+U\+S\+ED P\+A\+R\+A\+M\+E\+T\+ER\\
 \hline
 \end{DoxyParams}
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]check for solutions in which a utility does not have an allocation on Jordan Lake (or any generic lake) but still pay for joint treatment infrastructure). \end{DoxyRefDesc}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classProblem_acd924a80df4422c5199748c714e9405c}{Problem}}.
@@ -100,6 +99,9 @@ Implements \mbox{\hyperlink{classProblem_acd924a80df4422c5199748c714e9405c}{Prob
 
 Reads in all input inflow, evaporation, and demand data for the Sedento Valley problem. 
 
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

@@ -353,67 +353,77 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"></codeline>
-<codeline lineno="8"><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_PAPERTESTPROBLEM_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_PAPERTESTPROBLEM_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>PARALLEL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Borg/borgms.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Problem_8h" kindref="compound">Base/Problem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Simulation/Simulation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">//<sp/>Created<sp/>by<sp/>dfg42<sp/>on<sp/>8/28/18.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TRIANGLEMODEL_PAPERTESTPROBLEM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRIANGLEMODEL_PAPERTESTPROBLEM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/><sp/>PARALLEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../Borg/borgms.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Problem_8h" kindref="compound">Base/Problem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Simulation/Simulation.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20" refid="classPaperTestProblem" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPaperTestProblem" kindref="compound">PaperTestProblem</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classProblem" kindref="compound">Problem</ref><sp/>{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_utilities<sp/>=<sp/>3;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_durham;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_clayton;</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_flat;</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_llr;</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_swift;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_phils;</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_cane;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_morgan;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_crabtree;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_haw;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_lillington;</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_durham;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_falls_lake;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_owasa;</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_little_river;</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_wheeler_benson;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_jordan_lake;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_watertown;</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_dryville;</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_fallsland;</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_to_wastewater_fraction_fallsland;</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_to_wastewater_fraction_dryville;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>watertownDemandClassesFractions;</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>dryvilleDemandClassesFractions;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>fallslandDemandClassesFractions;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>watertownUserClassesWaterPrices;</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>dryvilleUserClassesWaterPrices;</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>fallslandUserClassesWaterPrices;</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPaperTestProblem" kindref="compound">PaperTestProblem</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>n_weeks,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>import_export_rof_table);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classPaperTestProblem" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPaperTestProblem" kindref="compound">PaperTestProblem</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classProblem" kindref="compound">Problem</ref><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n_utilities<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_durham;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_clayton;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_flat;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_llr;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_swift;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_phils;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_cane;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_morgan;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_crabtree;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_haw;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>streamflows_lillington;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_durham;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_falls_lake;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_owasa;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_little_river;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_wheeler_benson;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>evap_jordan_lake;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_watertown;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_dryville;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_fallsland;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_watertown;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_dryville;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;double&gt;<sp/>demand_projection_fallsland;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_to_wastewater_fraction_fallsland;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>demand_to_wastewater_fraction_dryville;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>watertownDemandClassesFractions;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>dryvilleDemandClassesFractions;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>fallslandDemandClassesFractions;</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classPaperTestProblem" kindref="compound">PaperTestProblem</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PARALLEL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setProblemDefinition(BORG_Problem<sp/>&amp;problem);</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>functionEvaluation(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*vars,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*objs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*consts)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>watertownUserClassesWaterPrices;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>dryvilleUserClassesWaterPrices;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;vector&lt;double&gt;&gt;<sp/>fallslandUserClassesWaterPrices;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPaperTestProblem" kindref="compound">PaperTestProblem</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>n_weeks,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>import_export_rof_table);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="classPaperTestProblem" kindref="compound">PaperTestProblem</ref>()<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"></highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>readInputData();</highlight></codeline>
-<codeline lineno="177"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="178"><highlight class="normal"></highlight></codeline>
-<codeline lineno="179"><highlight class="normal"></highlight></codeline>
-<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_PAPERTESTPROBLEM_H</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PARALLEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setProblemDefinition(BORG_Problem<sp/>&amp;problem);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>functionEvaluation(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*vars,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*objs,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*consts)<sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>readInputData();</highlight></codeline>
+<codeline lineno="199"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//TRIANGLEMODEL_PAPERTESTPROBLEM_H</highlight></codeline>
     </programlisting>
     <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Problem/PaperTestProblem.h"/>
   </compounddef>

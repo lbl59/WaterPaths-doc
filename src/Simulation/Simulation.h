@@ -116,7 +116,7 @@ private:
 public:
 
     /**
-     * @brief Constructor for the Simulation class.
+     * @brief Constructor (11-parameter) for the Simulation class.
      * 
      * This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, 
      * drought mitigation policies, environmental flow controls, and various randomization matrices for the simulation.
@@ -149,7 +149,48 @@ public:
             vector<unsigned long> &realizations_to_run);
 
     /**
-     * @brief Constructor for the Simulation class with precomputed ROF tables and shifts for storage and treatment ROFs.
+     * @brief Constructor (14-parameter) for the Simulation class with precomputed ROF tables and shifts for storage and treatment ROFs.
+     * 
+     * This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, 
+     * drought mitigation policies, environmental flow controls, various randomization matrices, and precomputed ROF 
+     * tables for the simulation. It also imports pre-computed ROF tables and 
+     * sets up the realization processes to be run during the simulation.
+     * 
+     * @param water_sources A vector of water source pointers that are part of the simulation.
+     * @param water_sources_graph A graph representing the relationships between water sources.
+     * @param water_sources_to_utilities A matrix that maps water sources to utilities.
+     * @param utilities A vector of utility pointers involved in the simulation.
+     * @param drought_mitigation_policies A vector of drought mitigation policies.
+     * @param min_env_flow_controls A vector of minimum environmental flow controls.
+     * @param utilities_rdm A matrix of utilities randomization data.
+     * @param water_sources_rdm A matrix of water sources randomization data.
+     * @param policies_rdm A matrix of policies randomization data.
+     * @param total_simulation_time The total duration of the simulation.
+     * @param realizations_to_run A vector of realization IDs to be run during the simulation.
+     * @param precomputed_rof_tables A vector of precomputed ROF tables used for simulation.
+     * @param table_storage_shift A matrix of storage shifts for the ROF tables.
+     * @param rof_tables_folder A string representing the folder containing the ROF tables.
+     * 
+     * @return None
+     * 
+     * @see setupSimulation
+     */
+    Simulation(vector<WaterSource *> &water_sources, Graph &water_sources_graph,
+               const vector<vector<int>> &water_sources_to_utilities,
+               vector<Utility *> &utilities,
+               const vector<DroughtMitigationPolicy *> &drought_mitigation_policies,
+               vector<MinEnvFlowControl *> &min_env_flow_controls,
+               vector<vector<double>> &utilities_rdm,
+               vector<vector<double>> &water_sources_rdm,
+               vector<vector<double>> &policies_rdm,
+               const unsigned long total_simulation_time,
+               vector<unsigned long> &realizations_to_run,
+               vector<vector<Matrix2D<double>>> &precomputed_rof_tables,
+               vector<vector<double>> &table_storage_shift,
+               string &rof_tables_folder);
+
+    /**
+     * @brief Constructor (16-parameter) for the Simulation class with precomputed ROF tables and shifts for storage and treatment ROFs.
      * 
      * This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, 
      * drought mitigation policies, environmental flow controls, various randomization matrices, and precomputed ROF 
@@ -194,7 +235,7 @@ public:
                string &rof_tables_folder);
 
     /**
-     * @brief Constructor for the Simulation class with the option to export ROF tables.
+     * @brief Constructor (12-parameter) for the Simulation class with the option to export ROF tables.
      * 
      * This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, 
      * drought mitigation policies, environmental flow controls, various randomization matrices, and enables the 

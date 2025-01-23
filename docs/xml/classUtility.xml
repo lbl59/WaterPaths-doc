@@ -911,7 +911,7 @@
           <declname>demand_projection_reprojection_frequency</declname>
         </param>
         <briefdescription>
-<para>Main constructor for a <ref refid="classUtility" kindref="compound">Utility</ref> object with specified attributes and initializes its parameters. </para>        </briefdescription>
+<para>Main constructor (14-parameter) for a <ref refid="classUtility" kindref="compound">Utility</ref> object with specified attributes and initializes its parameters. </para>        </briefdescription>
         <detaileddescription>
 <para>This constructor sets up the <ref refid="classUtility" kindref="compound">Utility</ref> instance with various properties related to water demand, pricing, contingency funds, and infrastructure financing. It also computes the weekly average water prices based on monthly demand fractions and water price types.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1018,6 +1018,214 @@
         </inbodydescription>
         <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="361" column="1"/>
       </memberdef>
+      <memberdef kind="function" id="classUtility_1a919917c54f726067d3666f22b1e98a3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Utility::Utility</definition>
+        <argsstring>(const char *name, int id, vector&lt; vector&lt; double &gt;&gt; &amp;demands_all_realizations, vector&lt; double &gt; &amp;annual_demand_projections, int number_of_week_demands, const double percent_contingency_fund_contribution, const vector&lt; vector&lt; double &gt;&gt; &amp;typesMonthlyDemandFraction, const vector&lt; vector&lt; double &gt;&gt; &amp;typesMonthlyWaterPrice, WwtpDischargeRule wwtp_discharge_rule, double demand_buffer, const vector&lt; int &gt; &amp;rof_infra_construction_order, const vector&lt; int &gt; &amp;demand_infra_construction_order, const vector&lt; double &gt; &amp;infra_construction_triggers, double infra_discount_rate, double bond_term, double bond_interest_rate)</argsstring>
+        <name>Utility</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>demands_all_realizations</declname>
+        </param>
+        <param>
+          <type>vector&lt; double &gt; &amp;</type>
+          <declname>annual_demand_projections</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number_of_week_demands</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>percent_contingency_fund_contribution</declname>
+        </param>
+        <param>
+          <type>const vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>typesMonthlyDemandFraction</declname>
+        </param>
+        <param>
+          <type>const vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>typesMonthlyWaterPrice</declname>
+        </param>
+        <param>
+          <type><ref refid="classWwtpDischargeRule" kindref="compound">WwtpDischargeRule</ref></type>
+          <declname>wwtp_discharge_rule</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>demand_buffer</declname>
+        </param>
+        <param>
+          <type>const vector&lt; int &gt; &amp;</type>
+          <declname>rof_infra_construction_order</declname>
+        </param>
+        <param>
+          <type>const vector&lt; int &gt; &amp;</type>
+          <declname>demand_infra_construction_order</declname>
+        </param>
+        <param>
+          <type>const vector&lt; double &gt; &amp;</type>
+          <declname>infra_construction_triggers</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>infra_discount_rate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bond_term</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bond_interest_rate</declname>
+        </param>
+        <briefdescription>
+<para>The constructor (16-parameter) for a <ref refid="classUtility" kindref="compound">Utility</ref> object for when there is infrastructure to be built. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor sets up a <ref refid="classUtility" kindref="compound">Utility</ref> with specified attributes and initializes its parameters and infrastructure manager. Sets up the <ref refid="classUtility" kindref="compound">Utility</ref> instance, initializes water demand, pricing, and financial properties, and integrates infrastructure construction management functionality. It also computes weekly average water prices and ensures the provided parameters are valid.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the utility. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The unique identifier for the utility. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>demands_all_realizations</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of weekly demand data for all realizations. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>annual_demand_projections</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of annual demand projections. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>number_of_week_demands</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of weekly demand entries. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>percent_contingency_fund_contribution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Percentage contribution to the contingency fund. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>typesMonthlyDemandFraction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to a vector of vectors containing monthly demand fractions by water type. Table of size 12 (months in year) by number of consumer tiers with the fraction of the total demand consumed by each tier in each month of the year. The last column must be the fraction of the demand treated as sewage. The summation of all number in a row but the last one, therefore, must sum to 1. <linebreak/>
+</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>typesMonthlyWaterPrice</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to a vector of vectors containing monthly water prices by tier type. The last column is the price charged for waste water treatment. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>wwtp_discharge_rule</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The rule governing wastewater treatment plant discharges. A 53-week-long time series according to which fractions of sewage is discharged in different water sources (normally one for each WWTP). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>demand_buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A buffer for smoothing demand projections. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rof_infra_construction_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector defining the ROF-based construction order for infrastructure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>demand_infra_construction_order</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector defining the demand-based construction order for infrastructure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>infra_construction_triggers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of construction triggers for infrastructure projects. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>infra_discount_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The discount rate applied to infrastructure construction costs. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bond_term</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The term of infrastructure bonds. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bond_interest_rate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The interest rate for infrastructure bonds.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If both construction order vectors are empty. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the infrastructure discount rate is less than or equal to zero.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="classUtility_1a0189edb631c9596f094b15afeeb934fd" kindref="member">Utility::calculateWeeklyAverageWaterPrices</ref> for details on the computation of weekly average water prices. </para></simplesect>
+<simplesect kind="see"><para><ref refid="classInfrastructureManager" kindref="compound">InfrastructureManager</ref> for details on infrastructure construction management. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="413" column="1"/>
+      </memberdef>
       <memberdef kind="function" id="classUtility_1aac7acd5b6fa457869763bbf3b83f870e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>Utility::Utility</definition>
@@ -1108,7 +1316,7 @@
           <declname>demand_projection_reprojection_frequency</declname>
         </param>
         <briefdescription>
-<para>Constructs a <ref refid="classUtility" kindref="compound">Utility</ref> object for when there is infrastructure to be built. </para>        </briefdescription>
+<para>The constructor (21-parameter) for a <ref refid="classUtility" kindref="compound">Utility</ref> object for when there is infrastructure to be built. </para>        </briefdescription>
         <detaileddescription>
 <para>This constructor sets up a <ref refid="classUtility" kindref="compound">Utility</ref> with specified attributes and initializes its parameters and infrastructure manager. Sets up the <ref refid="classUtility" kindref="compound">Utility</ref> instance, initializes water demand, pricing, and financial properties, and integrates infrastructure construction management functionality. It also computes weekly average water prices and ensures the provided parameters are valid.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1279,7 +1487,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="420" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="472" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ae590079ab073cb52a00cda7d921909c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1367,7 +1575,7 @@
           <declname>demand_projection_reprojection_frequency</declname>
         </param>
         <briefdescription>
-<para>Constructs a <ref refid="classUtility" kindref="compound">Utility</ref> object for when there is infrastructure to be built (uses a different <ref refid="classInfrastructureManager" kindref="compound">InfrastructureManager</ref> constructor). Also includes a check for empty demand vectors that the prior constructor does not have. </para>        </briefdescription>
+<para>Constructor (20-parameter) for a <ref refid="classUtility" kindref="compound">Utility</ref> object for when there is infrastructure to be built (uses a different <ref refid="classInfrastructureManager" kindref="compound">InfrastructureManager</ref> constructor). Also includes a check for empty demand vectors that the prior constructor does not have. </para>        </briefdescription>
         <detaileddescription>
 <para>This constructor sets up a <ref refid="classUtility" kindref="compound">Utility</ref> with specified attributes and initializes its parameters and infrastructure manager. Sets up the <ref refid="classUtility" kindref="compound">Utility</ref> instance, initializes water demand, pricing, and financial properties, and integrates infrastructure construction management functionality. It also computes weekly average water prices and ensures the provided parameters are valid.</para><para>FIXME: Unclear where this constructor is used, and how it differs from the other constructor.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1531,7 +1739,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="478" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="530" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a44eaefb71f90fcf28143e3e919074a97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1556,7 +1764,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="502" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="554" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1aecfe4b31e39b00555158a2d8288b874a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1569,7 +1777,7 @@
 <para>Cleans up resources associated with the <ref refid="classUtility" kindref="compound">Utility</ref> instance. Specifically, clears the water_sources vector to release any dynamically allocated water source objects or references. </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="511" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="563" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a9a362d68a5aa3ec934c286f3a7e9b721" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classUtility" kindref="compound">Utility</ref> &amp;</type>
@@ -1595,7 +1803,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="524" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="576" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ae2dad8029e34c5bb073a5ddf4381d278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1621,7 +1829,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="537" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="589" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a222897e8c338fde0d754df4683fbc89b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1647,7 +1855,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="546" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="598" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a68d5088951f6bdccbb7af18ea8f153f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1672,7 +1880,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="563" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="615" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1aadf42161486c8305b0b55aa65c5f519e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1708,7 +1916,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="571" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="623" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1af394fe9f04a371a7cf10ddadba575e85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1724,7 +1932,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="583" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="635" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a5feecc73d561de022eb6ba3c657b3dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1760,7 +1968,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="597" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="649" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a38381b003d13986e37757dfea683f7f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1787,7 +1995,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="615" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="667" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1aebbfd65c13e86cfeda8bdfbcc6712587" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1815,7 +2023,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="635" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="687" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1aca42b14087c3184d4fec10a2e8729c05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1876,7 +2084,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="655" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="707" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a0674d7d95f4d6595f7e01817a4d84a98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1910,7 +2118,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="671" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="723" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1af9ec9c2cb69166db021f03ce9ddf4d8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1924,7 +2132,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="682" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="734" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a152ceea2917ea7715e8fbf8aff24390f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1962,7 +2170,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="700" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="752" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a0189edb631c9596f094b15afeeb934fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2008,7 +2216,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="725" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="777" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a0dca2586b9ed761cdab3b0a344daf21c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2043,7 +2251,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="746" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="798" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a7daa5b948a370eca83bc8c63890f6b19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2090,7 +2298,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="771" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="823" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ae93114986578d3d3fbae56f271ac7df6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2137,7 +2345,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="796" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="848" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a01ec91140b9d23bf5b03e0fc55bced0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2183,7 +2391,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="822" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="874" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ab663efd526505a3d843cae7075cc3b91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2263,7 +2471,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="856" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="908" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a16f8269dc5f80c1d079c49f33495f620" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2278,7 +2486,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="869" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="921" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ab43bfbf7db1b5dc2e554a584b19f9e3c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2293,7 +2501,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="883" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="935" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a0e27f2877c780e214c6dda06d03246fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2308,7 +2516,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="897" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="949" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a2903344b317f0949014c687d285b64b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2324,7 +2532,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="911" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="963" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ad562626bc39694622495d2fb2b68ecd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2352,7 +2560,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="929" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="981" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a6e7f1df1fcde0b14475c7045bdcaf218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2391,7 +2599,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="948" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1000" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a6ab2e5b8aec47bcfed522c98ea1b5f79" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2407,7 +2615,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="964" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1016" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ae01127adf3c99415310e77b22bd9f3b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2445,7 +2653,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="982" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1034" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a63f5ae95014d9e729a3de51f19540042" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2481,7 +2689,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1004" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1056" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ab396bc312d5e5ddc0554138060a8a4d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2495,7 +2703,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1015" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1067" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1aa5fd345867aa8fb5c49d05110d51ca52" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2509,7 +2717,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1026" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1078" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ade3427a88355631a3657f752ace874fc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2523,7 +2731,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1038" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1090" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a7f642d886a6d1d165e86b2e6a7c51ed4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2549,7 +2757,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1053" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1105" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a04a400d8bfb89214632f9afca8c4eef5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2563,7 +2771,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1065" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1117" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ae2d1b744d965d9b916dd7d3103631c92" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2597,7 +2805,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1083" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1135" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ab806fee785718cbc82b1963316785448" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2611,7 +2819,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1095" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1147" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ab0e6984f9bad9d5d2a756f015216f54f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2625,7 +2833,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1106" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1158" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1af1745fc1364e7a03dc561dd9832b7db4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2639,7 +2847,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1117" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1169" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a27dc0aeabdcb9fdb5a7d388e67e905f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2653,7 +2861,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1128" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1180" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a2eaf70b4492ab8ec0e0420d6b7c3b821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2679,7 +2887,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1141" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1193" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1aa770f28c76e84747bbd643f55dbc4dd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2693,7 +2901,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1153" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1205" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a97073e3d7a30275c639484b3158284fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2719,7 +2927,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1166" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1218" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1af789e394a867f007b681c68af3fb3349" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2733,7 +2941,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1177" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1229" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1aa9a26e9b3b5af555c8278330c9f4a468" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2747,7 +2955,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1188" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1240" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a446e46d3dac749121db6cb839acf28dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const vector&lt; int &gt; &amp;</type>
@@ -2762,7 +2970,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1202" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1254" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a2d41989b4154aed5c2fb99a27183ca34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2804,7 +3012,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1226" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1278" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1abe05c15d0ea2efec00c00a8ee418b53b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const vector&lt; int &gt;</type>
@@ -2819,7 +3027,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1239" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1291" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a6a89bff2044b4f68714ce9934344e2ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2833,7 +3041,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1252" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1304" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a6ac587bf46d7147f9722dc4c89abbb3b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2855,7 +3063,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1261" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1313" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ab62d06b45773fb9e5574a339ac0c449e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const vector&lt; int &gt; &amp;</type>
@@ -2869,7 +3077,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1273" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1325" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a54c8621f2cce5257343f8dc6bfd76cff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>vector&lt; double &gt;</type>
@@ -2895,7 +3103,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1287" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1339" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1af68f63148aa901e781b939c8aa3699af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> * &gt; &amp;</type>
@@ -2909,7 +3117,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1299" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1351" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a68dc298c3078ff450cdc7b6a69422da1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2923,7 +3131,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1311" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1363" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a6128e9ac10cc873773112593b5788d81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2937,7 +3145,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1322" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1374" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a0ac180e13fb963a29c2860664c3f352a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2951,7 +3159,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1334" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1386" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a062fd9a622bd9893c142ae56523010dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2965,7 +3173,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1346" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1398" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a93d865d309801d2b44687b2e14620386" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2979,7 +3187,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1358" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1410" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a5d932aef9e201e824ac681cd6928613a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -2993,7 +3201,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1369" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1421" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a0e8ecb5bbf910de9abecbef06c1662e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classInfrastructureManager" kindref="compound">InfrastructureManager</ref> &amp;</type>
@@ -3008,7 +3216,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1383" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1435" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1acdd0e90d638d4a127a06787fe427ab59" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -3022,7 +3230,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1394" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1446" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a70f24df5a7d4346ad0ebccd9b30960d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -3036,7 +3244,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1405" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1457" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a73afadbbcd2d1a21452937b514d10c34" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -3050,7 +3258,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1416" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1468" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a0a5ccfc2e606ef46f1c1a52707fb5071" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3087,7 +3295,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1430" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1482" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a3c35a6860d65f40648238b2719377bf6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -3101,7 +3309,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1441" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1493" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1aade5d5dc1ea04641ef9f709542848316" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -3115,7 +3323,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1452" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1504" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a10f96b2f34ba7e6e12a8e8fb98b8534a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3161,7 +3369,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1472" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1524" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a67627ab2e5f526a979099bb6b2d2f13f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -3175,7 +3383,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1482" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1534" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a9ca028b10b1c466e010dcacca6a0b24e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -3189,7 +3397,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1493" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1545" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1aa465673857827435f256bde97d36b77d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3215,7 +3423,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1505" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1557" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a0a3190b991d667caf30a2e7cf447fae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3241,7 +3449,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1517" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1569" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a5bae4fe8c3f0c782f0cdf5d14b7b92a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>vector&lt; double &gt;</type>
@@ -3267,7 +3475,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1532" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1584" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ae0134c9627b79067e1789c95c775570d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3301,7 +3509,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1542" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1594" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ae2dd2175d9fe1d71ea1f1e8b43a21148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3327,7 +3535,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1551" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1603" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1ab920387a318f7d7956da5e92582a58a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -3362,7 +3570,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1566" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1618" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a407debda53abcf80ebd290414c1bf5bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -3376,7 +3584,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1576" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1628" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1aaaa05e97f2d33cf7a28b5c91ec253026" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -3390,7 +3598,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1586" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1638" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1a1fd8aedeaf56d674fd024dac1f11b20c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -3404,7 +3612,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1596" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1648" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classUtility_1affbfd106c7b5cdf6703d01d6ad838fde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -3463,7 +3671,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1612" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="1664" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -3502,14 +3710,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="556" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="608" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>The <computeroutput><ref refid="classUtility" kindref="compound">Utility</ref></computeroutput> class manages the water supply, demand, financial, and ROF aspects of a utility. It also handles all its connected water sources. </para>    </briefdescription>
     <detaileddescription>
 <para>Created by Bernardo on 1/13/17. </para>    </detaileddescription>
-    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="16" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" bodystart="16" bodyend="1614"/>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" line="16" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/SystemComponents/Utility/Utility.h" bodystart="16" bodyend="1666"/>
     <listofallmembers>
       <member refid="classUtility_1a2eaf70b4492ab8ec0e0420d6b7c3b821" prot="public" virt="non-virtual"><scope>Utility</scope><name>addInsurancePayout</name></member>
       <member refid="classUtility_1aebbfd65c13e86cfeda8bdfbcc6712587" prot="public" virt="non-virtual"><scope>Utility</scope><name>addWaterSource</name></member>
@@ -3643,6 +3851,7 @@
       <member refid="classUtility_1ae0134c9627b79067e1789c95c775570d" prot="public" virt="non-virtual"><scope>Utility</scope><name>updateTreatmentCapacity</name></member>
       <member refid="classUtility_1a4333d1e4444eeaf94acee51a7af35fb0" prot="private" virt="non-virtual"><scope>Utility</scope><name>used_for_realization</name></member>
       <member refid="classUtility_1a53fb19e5a344de5892c5cfbcc1225da9" prot="public" virt="non-virtual"><scope>Utility</scope><name>Utility</name></member>
+      <member refid="classUtility_1a919917c54f726067d3666f22b1e98a3f" prot="public" virt="non-virtual"><scope>Utility</scope><name>Utility</name></member>
       <member refid="classUtility_1aac7acd5b6fa457869763bbf3b83f870e" prot="public" virt="non-virtual"><scope>Utility</scope><name>Utility</name></member>
       <member refid="classUtility_1ae590079ab073cb52a00cda7d921909c4" prot="public" virt="non-virtual"><scope>Utility</scope><name>Utility</name></member>
       <member refid="classUtility_1a44eaefb71f90fcf28143e3e919074a97" prot="public" virt="non-virtual"><scope>Utility</scope><name>Utility</name></member>

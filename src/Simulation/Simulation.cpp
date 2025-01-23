@@ -64,6 +64,46 @@ Simulation::Simulation(
         vector<unsigned long> &realizations_to_run,
         vector<vector<Matrix2D<double>>> &precomputed_rof_tables,
         vector<vector<double>> &table_storage_shift,
+        string &rof_tables_folder) :
+        total_simulation_time(total_simulation_time),
+        realizations_to_run(realizations_to_run),
+        import_export_rof_tables(IMPORT_ROF_TABLES),
+        n_realizations(realizations_to_run.size()),
+        water_sources(water_sources),
+        water_sources_graph(water_sources_graph),
+        water_sources_to_utilities(water_sources_to_utilities),
+        utilities(utilities),
+        drought_mitigation_policies(drought_mitigation_policies),
+        min_env_flow_controls(min_env_flow_controls),
+        utilities_rdm(utilities_rdm),
+        water_sources_rdm(water_sources_rdm),
+        policies_rdm(policies_rdm),
+        precomputed_rof_tables(&precomputed_rof_tables),
+        table_storage_shift(&table_storage_shift) {
+    setRof_tables_folder(rof_tables_folder);
+
+    setupSimulation(
+            water_sources, water_sources_graph,
+            water_sources_to_utilities, utilities, drought_mitigation_policies,
+            min_env_flow_controls,
+            utilities_rdm, water_sources_rdm,
+            policies_rdm,
+            realizations_to_run);
+}
+
+Simulation::Simulation(
+        vector<WaterSource *> &water_sources, Graph &water_sources_graph,
+        const vector<vector<int>> &water_sources_to_utilities,
+        vector<Utility *> &utilities,
+        const vector<DroughtMitigationPolicy *> &drought_mitigation_policies,
+        vector<MinEnvFlowControl *> &min_env_flow_controls,
+        vector<vector<double>>& utilities_rdm,
+        vector<vector<double>>& water_sources_rdm,
+        vector<vector<double>>& policies_rdm,
+        const unsigned long total_simulation_time,
+        vector<unsigned long> &realizations_to_run,
+        vector<vector<Matrix2D<double>>> &precomputed_rof_tables,
+        vector<vector<double>> &table_storage_shift,
         vector<vector<double>> &table_base_storage_shift,
         vector<vector<double>> &treatment_demand_buffer_shift,
         string &rof_tables_folder) :

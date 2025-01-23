@@ -332,7 +332,7 @@
           <declname>realizations_to_run</declname>
         </param>
         <briefdescription>
-<para>Constructor for the <ref refid="classSimulation" kindref="compound">Simulation</ref> class. </para>        </briefdescription>
+<para>Constructor (11-parameter) for the <ref refid="classSimulation" kindref="compound">Simulation</ref> class. </para>        </briefdescription>
         <detaileddescription>
 <para>This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, drought mitigation policies, environmental flow controls, and various randomization matrices for the simulation. It also sets up the realization processes to be run during the simulation.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -418,6 +418,176 @@
         </inbodydescription>
         <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="139" column="1"/>
       </memberdef>
+      <memberdef kind="function" id="classSimulation_1aa225c1836ebd788eb0f35c8cd53f0533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Simulation::Simulation</definition>
+        <argsstring>(vector&lt; WaterSource *&gt; &amp;water_sources, Graph &amp;water_sources_graph, const vector&lt; vector&lt; int &gt;&gt; &amp;water_sources_to_utilities, vector&lt; Utility *&gt; &amp;utilities, const vector&lt; DroughtMitigationPolicy *&gt; &amp;drought_mitigation_policies, vector&lt; MinEnvFlowControl *&gt; &amp;min_env_flow_controls, vector&lt; vector&lt; double &gt;&gt; &amp;utilities_rdm, vector&lt; vector&lt; double &gt;&gt; &amp;water_sources_rdm, vector&lt; vector&lt; double &gt;&gt; &amp;policies_rdm, const unsigned long total_simulation_time, vector&lt; unsigned long &gt; &amp;realizations_to_run, vector&lt; vector&lt; Matrix2D&lt; double &gt;&gt;&gt; &amp;precomputed_rof_tables, vector&lt; vector&lt; double &gt;&gt; &amp;table_storage_shift, string &amp;rof_tables_folder)</argsstring>
+        <name>Simulation</name>
+        <param>
+          <type>vector&lt; <ref refid="classWaterSource" kindref="compound">WaterSource</ref> *&gt; &amp;</type>
+          <declname>water_sources</declname>
+        </param>
+        <param>
+          <type><ref refid="classGraph" kindref="compound">Graph</ref> &amp;</type>
+          <declname>water_sources_graph</declname>
+        </param>
+        <param>
+          <type>const vector&lt; vector&lt; int &gt;&gt; &amp;</type>
+          <declname>water_sources_to_utilities</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classUtility" kindref="compound">Utility</ref> *&gt; &amp;</type>
+          <declname>utilities</declname>
+        </param>
+        <param>
+          <type>const vector&lt; <ref refid="classDroughtMitigationPolicy" kindref="compound">DroughtMitigationPolicy</ref> *&gt; &amp;</type>
+          <declname>drought_mitigation_policies</declname>
+        </param>
+        <param>
+          <type>vector&lt; <ref refid="classMinEnvFlowControl" kindref="compound">MinEnvFlowControl</ref> *&gt; &amp;</type>
+          <declname>min_env_flow_controls</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>utilities_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>water_sources_rdm</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>policies_rdm</declname>
+        </param>
+        <param>
+          <type>const unsigned long</type>
+          <declname>total_simulation_time</declname>
+        </param>
+        <param>
+          <type>vector&lt; unsigned long &gt; &amp;</type>
+          <declname>realizations_to_run</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; <ref refid="classMatrix2D" kindref="compound">Matrix2D</ref>&lt; double &gt;&gt;&gt; &amp;</type>
+          <declname>precomputed_rof_tables</declname>
+        </param>
+        <param>
+          <type>vector&lt; vector&lt; double &gt;&gt; &amp;</type>
+          <declname>table_storage_shift</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>rof_tables_folder</declname>
+        </param>
+        <briefdescription>
+<para>Constructor (14-parameter) for the <ref refid="classSimulation" kindref="compound">Simulation</ref> class with precomputed ROF tables and shifts for storage and treatment ROFs. </para>        </briefdescription>
+        <detaileddescription>
+<para>This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, drought mitigation policies, environmental flow controls, various randomization matrices, and precomputed ROF tables for the simulation. It also imports pre-computed ROF tables and sets up the realization processes to be run during the simulation.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>water_sources</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of water source pointers that are part of the simulation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>water_sources_graph</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A graph representing the relationships between water sources. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>water_sources_to_utilities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A matrix that maps water sources to utilities. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utilities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of utility pointers involved in the simulation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>drought_mitigation_policies</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of drought mitigation policies. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>min_env_flow_controls</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of minimum environmental flow controls. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>utilities_rdm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A matrix of utilities randomization data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>water_sources_rdm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A matrix of water sources randomization data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>policies_rdm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A matrix of policies randomization data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>total_simulation_time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The total duration of the simulation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realizations_to_run</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of realization IDs to be run during the simulation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>precomputed_rof_tables</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A vector of precomputed ROF tables used for simulation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>table_storage_shift</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A matrix of storage shifts for the ROF tables. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rof_tables_folder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string representing the folder containing the ROF tables.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>None</para></simplesect>
+<simplesect kind="see"><para><ref refid="classSimulation_1ac9ff965191f13b1ce044344fd1e5d0ac" kindref="member">setupSimulation</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="178" column="1"/>
+      </memberdef>
       <memberdef kind="function" id="classSimulation_1a99c76e396f63ca8f98d362c76804345b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>Simulation::Simulation</definition>
@@ -488,7 +658,7 @@
           <declname>rof_tables_folder</declname>
         </param>
         <briefdescription>
-<para>Constructor for the <ref refid="classSimulation" kindref="compound">Simulation</ref> class with precomputed ROF tables and shifts for storage and treatment ROFs. </para>        </briefdescription>
+<para>Constructor (16-parameter) for the <ref refid="classSimulation" kindref="compound">Simulation</ref> class with precomputed ROF tables and shifts for storage and treatment ROFs. </para>        </briefdescription>
         <detaileddescription>
 <para>This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, drought mitigation policies, environmental flow controls, various randomization matrices, and precomputed ROF tables for the simulation. It also imports pre-computed ROF tables and sets up the realization processes to be run during the simulation.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -608,7 +778,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="180" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="221" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classSimulation_1a68f43435cf8308d5415cdfcdb84e1fac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -664,7 +834,7 @@
           <declname>rof_tables_folder</declname>
         </param>
         <briefdescription>
-<para>Constructor for the <ref refid="classSimulation" kindref="compound">Simulation</ref> class with the option to export ROF tables. </para>        </briefdescription>
+<para>Constructor (12-parameter) for the <ref refid="classSimulation" kindref="compound">Simulation</ref> class with the option to export ROF tables. </para>        </briefdescription>
         <detaileddescription>
 <para>This constructor initializes a simulation with the provided parameters, setting up water sources, utilities, drought mitigation policies, environmental flow controls, various randomization matrices, and enables the export of ROF tables for the simulation. It also allows ROF tables to be exported and sets up the realization processes to be run during the simulation.</para><para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -755,7 +925,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="219" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="260" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classSimulation_1acc5a0541c0439cea0604d4d0e38ed3b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classSimulation" kindref="compound">Simulation</ref> &amp;</type>
@@ -781,7 +951,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="241" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="282" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classSimulation_1a701bd94edc5cf562b5c4e66ae43400bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -795,7 +965,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="251" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="292" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classSimulation_1a401edb8c7e3390fee0340212993bcd79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classMasterDataCollector" kindref="compound">MasterDataCollector</ref> *</type>
@@ -840,7 +1010,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="270" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="311" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classSimulation_1ac9ff965191f13b1ce044344fd1e5d0ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -975,7 +1145,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="297" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="338" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classSimulation_1aa2e2863a0038345c46dd827b97008347" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1023,7 +1193,7 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="319" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="360" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classSimulation_1a3279f9efae2c262b54ad4d16c631033c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1049,14 +1219,14 @@
 </para>        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="332" column="1"/>
+        <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="373" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
 <para>The <computeroutput><ref refid="classSimulation" kindref="compound">Simulation</ref></computeroutput> class represents the main simulation object that implements the simulation process. </para>    </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="26" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" bodystart="26" bodyend="333"/>
+    <location file="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" line="26" column="1" bodyfile="/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/src/Simulation/Simulation.h" bodystart="26" bodyend="374"/>
     <listofallmembers>
       <member refid="classSimulation_1aa2e2863a0038345c46dd827b97008347" prot="public" virt="non-virtual"><scope>Simulation</scope><name>createContinuityModels</name></member>
       <member refid="classSimulation_1a23df9c17244a1cde0e32b42829623724" prot="private" virt="non-virtual"><scope>Simulation</scope><name>drought_mitigation_policies</name></member>
@@ -1074,6 +1244,7 @@
       <member refid="classSimulation_1a0f01e328435fab79c18ccdda28617bae" prot="private" virt="non-virtual"><scope>Simulation</scope><name>setRof_tables_folder</name></member>
       <member refid="classSimulation_1ac9ff965191f13b1ce044344fd1e5d0ac" prot="public" virt="non-virtual"><scope>Simulation</scope><name>setupSimulation</name></member>
       <member refid="classSimulation_1ac9b9db9c3de5f9ff33f6ea89e2435c87" prot="public" virt="non-virtual"><scope>Simulation</scope><name>Simulation</name></member>
+      <member refid="classSimulation_1aa225c1836ebd788eb0f35c8cd53f0533" prot="public" virt="non-virtual"><scope>Simulation</scope><name>Simulation</name></member>
       <member refid="classSimulation_1a99c76e396f63ca8f98d362c76804345b" prot="public" virt="non-virtual"><scope>Simulation</scope><name>Simulation</name></member>
       <member refid="classSimulation_1a68f43435cf8308d5415cdfcdb84e1fac" prot="public" virt="non-virtual"><scope>Simulation</scope><name>Simulation</name></member>
       <member refid="classSimulation_1ad2d6987ec81948619b26f7b687bb03cf" prot="private" virt="non-virtual"><scope>Simulation</scope><name>table_base_storage_shift</name></member>

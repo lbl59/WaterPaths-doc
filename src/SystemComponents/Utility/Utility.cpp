@@ -190,6 +190,60 @@ Utility::Utility(const char *name, int id, vector<vector<double>>& demands_all_r
                                       typesMonthlyWaterPrice);
 }
 
+Utility::Utility(const char *name, int id, vector<vector<double>>& demands_all_realizations,
+                 vector<double>& annual_demand_projections,
+                 int number_of_week_demands, const double percent_contingency_fund_contribution,
+                 const vector<vector<double>> &typesMonthlyDemandFraction,
+                 const vector<vector<double>> &typesMonthlyWaterPrice, WwtpDischargeRule wwtp_discharge_rule,
+                 double demand_buffer, const vector<int> &rof_infra_construction_order,
+                 const vector<int> &demand_infra_construction_order,
+                 const vector<double> &infra_construction_triggers, double infra_discount_rate, double bond_term,
+                 double bond_interest_rate) :
+        total_storage_capacity(NONE),
+        total_available_volume(NONE),
+        wwtp_discharge_rule(wwtp_discharge_rule),
+        demands_all_realizations(demands_all_realizations),
+        annual_demand_projections(annual_demand_projections),
+        infra_discount_rate(infra_discount_rate),
+        bond_term_multiplier(bond_term),
+        bond_interest_rate_multiplier(bond_interest_rate),
+        id(id),
+        number_of_week_demands(number_of_week_demands),
+        name(name),
+        percent_contingency_fund_contribution(percent_contingency_fund_contribution),
+        demand_buffer(demand_buffer) {
+    infrastructure_construction_manager = InfrastructureManager(id, infra_construction_triggers,
+                                                                vector<vector<int>>(), infra_discount_rate,
+                                                                bond_term, bond_interest_rate,
+                                                                rof_infra_construction_order,
+                                                                demand_infra_construction_order);
+
+    infrastructure_construction_manager.connectWaterSourcesVectorsToUtilitys(water_sources,
+                                                                             priority_draw_water_source,
+                                                                             non_priority_draw_water_source);
+
+    if (rof_infra_construction_order.empty() &&
+            demand_infra_construction_order.empty())
+        throw std::invalid_argument("At least one infrastructure construction "
+                                            "order vector must have at least "
+                                            "one water source ID. If there's "
+                                            "not infrastructure to be build, "
+                                            "use other constructor "
+                                            "instead.");
+    if (infra_discount_rate <= 0)
+        throw std::invalid_argument("Infrastructure discount rate must be "
+                                            "greater than 0.");
+
+    if (demands_all_realizations.empty()) {
+        char error[256];
+        sprintf(error, "Empty demand vectors passed to utility %d", id);
+        throw std::invalid_argument(error);
+    }
+
+    calculateWeeklyAverageWaterPrices(typesMonthlyDemandFraction,
+                                      typesMonthlyWaterPrice);
+}
+
 Utility::Utility(Utility &utility) :
         weekly_average_volumetric_price(utility.weekly_average_volumetric_price),
         total_storage_capacity(utility.total_storage_capacity),

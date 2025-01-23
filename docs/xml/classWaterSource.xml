@@ -466,8 +466,8 @@
         <reimplementedby refid="classAllocatedIntakeExpansion_1a67185ec779549c32b289666663232bc4">applyContinuity</reimplementedby>
         <reimplementedby refid="classAllocatedIntake_1a92c562dddb4f6434c8ad766c03b2cf5c">applyContinuity</reimplementedby>
         <reimplementedby refid="classFixedJointWTP_1a68bfbed58c0106d896ef422ae9747d40">applyContinuity</reimplementedby>
-        <reimplementedby refid="classSequentialJointTreatmentExpansion_1a64fdd68fc68f6b1145291575c2116815">applyContinuity</reimplementedby>
         <reimplementedby refid="classJointWTP_1a07106b573ea34386621a95d3fbcafd1a">applyContinuity</reimplementedby>
+        <reimplementedby refid="classSequentialJointTreatmentExpansion_1a64fdd68fc68f6b1145291575c2116815">applyContinuity</reimplementedby>
         <reimplementedby refid="classIntake_1acd5ab74c4091b286e69ecdcc495d83ce">applyContinuity</reimplementedby>
         <reimplementedby refid="classQuarry_1a6999b854a740ce92baaa610cf5b08bd9">applyContinuity</reimplementedby>
         <reimplementedby refid="classAllocatedReservoir_1aa5a3683ac3a1e7a778627332c6a7fff7">applyContinuity</reimplementedby>
@@ -2958,92 +2958,92 @@
     <detaileddescription>
 <para>Created by bernardo on 1/22/17. </para>    </detaileddescription>
     <inheritancegraph>
-      <node id="309">
+      <node id="315">
         <label>Quarry</label>
         <link refid="classQuarry"/>
-        <childnode refid="307" relation="public-inheritance">
+        <childnode refid="313" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="310">
+      <node id="316">
         <label>ReservoirExpansion</label>
         <link refid="classReservoirExpansion"/>
-        <childnode refid="298" relation="public-inheritance">
+        <childnode refid="304" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="303">
+      <node id="309">
         <label>JointWTP</label>
         <link refid="classJointWTP"/>
-        <childnode refid="298" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="305">
-        <label>VariableJointWTP</label>
-        <link refid="classVariableJointWTP"/>
-        <childnode refid="303" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="299">
-        <label>AllocatedIntake</label>
-        <link refid="classAllocatedIntake"/>
-        <childnode refid="298" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="304">
-        <label>FixedJointWTP</label>
-        <link refid="classFixedJointWTP"/>
-        <childnode refid="303" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="298">
-        <label>WaterSource</label>
-        <link refid="classWaterSource"/>
-      </node>
-      <node id="301">
-        <label>Intake</label>
-        <link refid="classIntake"/>
-        <childnode refid="298" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="306">
-        <label>Relocation</label>
-        <link refid="classRelocation"/>
-        <childnode refid="298" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="307">
-        <label>Reservoir</label>
-        <link refid="classReservoir"/>
-        <childnode refid="298" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="308">
-        <label>AllocatedReservoir</label>
-        <link refid="classAllocatedReservoir"/>
-        <childnode refid="307" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="302">
-        <label>IntakeExpansion</label>
-        <link refid="classIntakeExpansion"/>
-        <childnode refid="298" relation="public-inheritance">
+        <childnode refid="304" relation="public-inheritance">
         </childnode>
       </node>
       <node id="311">
-        <label>SequentialJointTreatmentExpansion</label>
-        <link refid="classSequentialJointTreatmentExpansion"/>
-        <childnode refid="298" relation="public-inheritance">
+        <label>VariableJointWTP</label>
+        <link refid="classVariableJointWTP"/>
+        <childnode refid="309" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>AllocatedIntake</label>
+        <link refid="classAllocatedIntake"/>
+        <childnode refid="304" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>FixedJointWTP</label>
+        <link refid="classFixedJointWTP"/>
+        <childnode refid="309" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>WaterSource</label>
+        <link refid="classWaterSource"/>
+      </node>
+      <node id="307">
+        <label>Intake</label>
+        <link refid="classIntake"/>
+        <childnode refid="304" relation="public-inheritance">
         </childnode>
       </node>
       <node id="312">
-        <label>WaterReuse</label>
-        <link refid="classWaterReuse"/>
-        <childnode refid="298" relation="public-inheritance">
+        <label>Relocation</label>
+        <link refid="classRelocation"/>
+        <childnode refid="304" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="300">
+      <node id="313">
+        <label>Reservoir</label>
+        <link refid="classReservoir"/>
+        <childnode refid="304" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>AllocatedReservoir</label>
+        <link refid="classAllocatedReservoir"/>
+        <childnode refid="313" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>IntakeExpansion</label>
+        <link refid="classIntakeExpansion"/>
+        <childnode refid="304" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>SequentialJointTreatmentExpansion</label>
+        <link refid="classSequentialJointTreatmentExpansion"/>
+        <childnode refid="304" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>WaterReuse</label>
+        <link refid="classWaterReuse"/>
+        <childnode refid="304" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="306">
         <label>AllocatedIntakeExpansion</label>
         <link refid="classAllocatedIntakeExpansion"/>
-        <childnode refid="298" relation="public-inheritance">
+        <childnode refid="304" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>

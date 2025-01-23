@@ -22,7 +22,7 @@ private:
      * @brief An integer indicating the default number utilities in the Triangle problem.
      * 
      */
-    const int n_utilities = 4;
+    const int n_utilities = 6;
     /**
      * @brief A 2D vector of all Durham's historical and synthetic streamflows.
      */
@@ -258,6 +258,8 @@ public:
 
     /**
      * @brief Reads in all input inflow, evaporation, and demand data for the Triangle problem.
+     * 
+     * @return void
      */
     void readInputData();
 
