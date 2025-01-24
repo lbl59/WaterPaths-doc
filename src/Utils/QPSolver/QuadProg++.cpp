@@ -15,6 +15,7 @@ File $Id: QuadProg++.cc 232 2007-06-21 12:29:00Z digasper $
 #include <iostream>
 #include <algorithm>
 #include <sstream>
+#include <limits>
 #include "QuadProg++.h"
 
 // Utility functions for updating some data needed by the solution method 
