@@ -802,9 +802,9 @@ void PaperTestProblem::readInputData() {
     cout << "Reading input data." << endl;
     string data_dir = DEFAULT_DATA_DIR + BAR;
 
-    string rdm_tseries_dir;
+    //string rdm_tseries_dir;
     //rdm_tseries_dir = "/scratch/bct52/paper3_reeval_time_series/rdm_" + to_string(rdm_no) + BAR;
-    rdm_tseries_dir = "/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/TestFiles" + BAR;
+    //rdm_tseries_dir = "/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/TestFiles" + BAR;
 
 #pragma omp parallel num_threads(omp_get_thread_num())
     {
@@ -863,7 +863,7 @@ void PaperTestProblem::readInputData() {
                 "falls_lake_evap.csv", n_realizations);
 #pragma omp single
         evap_owasa = Utils::parse2DCsvFile(
-        DEFAULT_DATA_DIR + "evaporation" + BAR +
+                DEFAULT_DATA_DIR + "evaporation" + BAR +
                 "jordan_lake_evap.csv", n_realizations);
 #pragma omp single
         evap_little_river = Utils::parse2DCsvFile(
