@@ -803,102 +803,104 @@ void PaperTestProblem::readInputData() {
     string data_dir = DEFAULT_DATA_DIR + BAR;
 
     string rdm_tseries_dir;
-    rdm_tseries_dir = "/scratch/bct52/paper3_reeval_time_series/rdm_" + to_string(rdm_no) + BAR;
+    //rdm_tseries_dir = "/scratch/bct52/paper3_reeval_time_series/rdm_" + to_string(rdm_no) + BAR;
+    rdm_tseries_dir = "/home/fs02/pmr82_0001/lbl59/WaterPaths-doc/TestFiles" + BAR;
 
 #pragma omp parallel num_threads(omp_get_thread_num())
     {
 #pragma omp single
         streamflows_durham = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "inflows" + evap_inflows_suffix +
-                BAR + "durham_inflows.csv", n_realizations);
+                rdm_tseries_dir + "inflows" + BAR +
+                "durham_inflows.csv", n_realizations);
 #pragma omp single
         streamflows_flat = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "inflows" + evap_inflows_suffix +
-                BAR + "falls_lake_inflows.csv", n_realizations);
+                rdm_tseries_dir + "inflows" + BAR +
+                "falls_lake_inflows.csv", n_realizations);
 #pragma omp single
         streamflows_swift = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "inflows" + evap_inflows_suffix +
-                BAR + "lake_wb_inflows.csv", n_realizations);
+                rdm_tseries_dir + "inflows" + BAR +
+                "lake_wb_inflows.csv", n_realizations);
 #pragma omp single
         streamflows_llr = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "inflows" + evap_inflows_suffix +
-                BAR + "little_river_raleigh_inflows.csv", n_realizations);
+                rdm_tseries_dir + "inflows" + BAR +
+                "little_river_raleigh_inflows.csv", n_realizations);
 #pragma omp single
         streamflows_phils = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "inflows" + evap_inflows_suffix +
-                BAR + "stone_quarry_inflows.csv", n_realizations);
+                rdm_tseries_dir + "inflows" + BAR +
+                "stone_quarry_inflows.csv", n_realizations);
 #pragma omp single
         streamflows_cane = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "inflows" + evap_inflows_suffix +
-                BAR + "cane_creek_inflows.csv", n_realizations);
+                rdm_tseries_dir + "inflows" + BAR +
+                "cane_creek_inflows.csv", n_realizations);
 #pragma omp single
         streamflows_morgan = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "inflows" + evap_inflows_suffix +
-                BAR + "university_lake_inflows.csv", n_realizations);
+                rdm_tseries_dir + "inflows" + BAR +
+                "university_lake_inflows.csv", n_realizations);
 #pragma omp single
         streamflows_crabtree = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "inflows" + evap_inflows_suffix +
-                BAR + "crabtree_inflows.csv", n_realizations);
+                rdm_tseries_dir + "inflows" + BAR +
+                "crabtree_inflows.csv", n_realizations);
 #pragma omp single
         streamflows_haw = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "inflows" + evap_inflows_suffix +
-                BAR + "jordan_lake_inflows.csv", n_realizations);
+                rdm_tseries_dir + "inflows" + BAR +
+                "jordan_lake_inflows.csv", n_realizations);
 #pragma omp single
         streamflows_lillington = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "inflows" + evap_inflows_suffix +
-                BAR + "lillington_inflows.csv", n_realizations);
+                rdm_tseries_dir + "inflows" + BAR +
+                "lillington_inflows.csv", n_realizations);
 #pragma omp single
         streamflows_clayton = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "inflows" + evap_inflows_suffix +
-                BAR + "clayton_inflows.csv", n_realizations);
+                rdm_tseries_dir + "inflows" + BAR +
+                "clayton_inflows.csv", n_realizations);
+
 #pragma omp single
         evap_durham = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "evaporation" + evap_inflows_suffix +
-                BAR + "durham_evap.csv", n_realizations);
+                rdm_tseries_dir + "evaporation" + BAR +
+                "durham_evap.csv", n_realizations);
 #pragma omp single
         evap_falls_lake = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "evaporation" + evap_inflows_suffix +
-                BAR + "falls_lake_evap.csv", n_realizations);
+                rdm_tseries_dir + "evaporation" + BAR +
+                "falls_lake_evap.csv", n_realizations);
 #pragma omp single
         evap_owasa = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "evaporation" + evap_inflows_suffix +
-                BAR + "jordan_lake_evap.csv", n_realizations);
+                rdm_tseries_dir + "evaporation" + BAR +
+                "jordan_lake_evap.csv", n_realizations);
 #pragma omp single
         evap_little_river = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "evaporation" + evap_inflows_suffix +
-                BAR + "little_river_raleigh_evap.csv", n_realizations);
+                rdm_tseries_dir + "evaporation" + BAR +
+                "little_river_raleigh_evap.csv", n_realizations);
 #pragma omp single
         {
             evap_wheeler_benson = Utils::parse2DCsvFile(
-                    rdm_tseries_dir + "evaporation" + evap_inflows_suffix +
-                    BAR + "wb_evap.csv", n_realizations);
+                    rdm_tseries_dir + "evaporation" + BAR +
+                    "wb_evap.csv", n_realizations);
             evap_jordan_lake = evap_owasa;
         }
 #pragma omp single
         demand_watertown = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "demands" + evap_inflows_suffix +
-                BAR + "cary_demand.csv", n_realizations);
+                rdm_tseries_dir + "demands" + BAR +
+                "cary_demand.csv", n_realizations);
 #pragma omp single
         demand_dryville = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "demands" + evap_inflows_suffix +
-                BAR + "durham_demand.csv", n_realizations);
+                rdm_tseries_dir + "demands" + BAR +
+                "durham_demand.csv", n_realizations);
 #pragma omp single
         demand_fallsland = Utils::parse2DCsvFile(
-                rdm_tseries_dir + "demands" + evap_inflows_suffix +
-                BAR + "raleigh_demand.csv", n_realizations);
+                rdm_tseries_dir + "demands" + BAR +
+                "raleigh_demand.csv", n_realizations);
 
         unsigned long length_of_projection_years = 60;
 #pragma omp single
         demand_projection_watertown = Utils::parse1DCsvFile(
-                rdm_tseries_dir + "demands" + BAR + demand_path_subfolder +
+                rdm_tseries_dir + "demands" + BAR +
                 "cary_annual_demand_projections_MGW.csv", length_of_projection_years);
 #pragma omp single
         demand_projection_dryville = Utils::parse1DCsvFile(
-                rdm_tseries_dir + "demands" + BAR + demand_path_subfolder +
+                rdm_tseries_dir + "demands" + BAR +
                 "durham_annual_demand_projections_MGW.csv", length_of_projection_years);
 #pragma omp single
         demand_projection_fallsland = Utils::parse1DCsvFile(
-                rdm_tseries_dir + "demands" + BAR + demand_path_subfolder +
+                rdm_tseries_dir + "demands" + BAR +
                 "raleigh_annual_demand_projections_MGW.csv", length_of_projection_years);
 
 #pragma omp single
